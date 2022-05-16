@@ -2,55 +2,6 @@
   "build": {
     "content": [
       {
-        "files": ["**/toc.md", "**/toc.yml", "toc.yml"],
-        "exclude": [
-          "common/**",
-          "common_preview/**",
-          "excel/**",
-          "excel_1_1/**",
-          "excel_1_2/**",
-          "excel_1_3/**",
-          "excel_1_4/**",
-          "excel_1_5/**",
-          "excel_1_6/**",
-          "excel_1_7/**",
-          "excel_1_8/**",
-          "excel_1_9/**",
-          "excel_1_10/**",
-          "excel_1_11/**",
-          "excel_1_12/**",
-          "excel_1_13/**",
-          "excel_1_14/**",
-          "excel_online/**",
-          "office/**",
-          "office_release/**",
-          "onenote/**",
-          "outlook/**",
-          "outlook_1_1/**",
-          "outlook_1_2/**",
-          "outlook_1_3/**",
-          "outlook_1_4/**",
-          "outlook_1_5/**",
-          "outlook_1_6/**",
-          "outlook_1_7/**",
-          "outlook_1_8/**",
-          "outlook_1_9/**",
-          "outlook_1_10/**",
-          "outlook_1_11/**",
-          "powerpoint/**",
-          "powerpoint_1_1/**",
-          "powerpoint_1_2/**",
-          "powerpoint_1_3/**",
-          "visio/**",
-          "word/**",
-          "word_1_1/**",
-          "word_1_2/**",
-          "word_1_3/**"
-        ],
-        "src": "docs-ref-autogen",
-        "dest": "api/office_ref_toc"
-      },
-      {
         "files": ["toc.yml"],
         "src": "",
         "dest": "api/office_ref_toc"
@@ -60,64 +11,6 @@
         "src": "docs-ref-conceptual",
         "dest": "office",
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "**/_themes/**",
-          "**/_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "src": "docs-ref-autogen",
-        "dest": "api",
-        "exclude": [
-          "common/**",
-          "common_preview/**",
-          "excel/**",
-          "excel_1_1/**",
-          "excel_1_2/**",
-          "excel_1_3/**",
-          "excel_1_4/**",
-          "excel_1_5/**",
-          "excel_1_6/**",
-          "excel_1_7/**",
-          "excel_1_8/**",
-          "excel_1_9/**",
-          "excel_1_10/**",
-          "excel_1_11/**",
-          "excel_1_12/**",
-          "excel_1_13/**",
-          "excel_1_14/**",
-          "excel_online/**",
-          "office/**",
-          "office_release/**",
-          "onenote/**",
-          "outlook/**",
-          "outlook_1_1/**",
-          "outlook_1_2/**",
-          "outlook_1_3/**",
-          "outlook_1_4/**",
-          "outlook_1_5/**",
-          "outlook_1_6/**",
-          "outlook_1_7/**",
-          "outlook_1_8/**",
-          "outlook_1_9/**",
-          "outlook_1_10/**",
-          "outlook_1_11/**",
-          "overview/overview.md",
-          "powerpoint/**",
-          "powerpoint_1_1/**",
-          "powerpoint_1_2/**",
-          "powerpoint_1_3/**",
-          "visio/**",
-          "word/**",
-          "word_1_1/**",
-          "word_1_2/**",
-          "word_1_3/**",
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
@@ -168,20 +61,26 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "office",
-        "src": "docs-ref-autogen/office",
-        "dest": "api"
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
+        "group": "common-js-toc",
         "src": "docs-ref-autogen/common",
         "dest": "api"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-preview",
+        "group": "common-js-preview-toc",
         "src": "docs-ref-autogen/common_preview",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office_release",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office",
         "dest": "api"
       },
       {
@@ -422,14 +321,6 @@
       }
     ],
     "groups": {
-      "common-js": {
-        "dest": "common-js",
-        "moniker_range": "common-js"
-      },
-      "common-js-preview": {
-        "dest": "common-js-preview",
-        "moniker_range": "common-js-preview"
-      },
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
         "moniker_range": "outlook-js-preview"
@@ -582,9 +473,21 @@
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
       },
-      "office": {
-        "dest": "office",
-        "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || >=word-js-1.1"
+      "common-js-toc": {
+        "dest": "common-js-toc",
+        "moniker_range": "common-js"
+      },
+      "common-js-preview-toc": {
+        "dest": "common-js-preview-toc",
+        "moniker_range": "common-js-preview"
+      },
+      "common-js": {
+        "dest": "common-js",
+        "moniker_range": "common-js || <outlook-js-preview || <excel-js-preview || <powerpoint-js-preview || <word-js-preview"
+      },
+      "common-js-preview": {
+        "dest": "common-js-preview",
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
         "dest": "all",
@@ -625,8 +528,6 @@
         "docs-ref-conceptual/**/*": "/answers/products/m365"
       },
       "product": {
-        "docs-ref-autogen/common/**": ["common"],
-        "docs-ref-autogen/common_preview/**": ["common preview"],
         "docs-ref-autogen/excel/**": ["excel preview"],
         "docs-ref-autogen/excel/custom-functions-runtime/**": [
           "excel",
@@ -714,8 +615,6 @@
         "docs-ref-autogen/word_1_3/word/**": ["word 1.3"]
       },
       "ms.prod": {
-        "docs-ref-autogen/common/**": "non-product-specific",
-        "docs-ref-autogen/common_preview/**": "non-product-specific",
         "docs-ref-autogen/excel/**": "excel",
         "docs-ref-autogen/excel/custom-functions-runtime/**": "excel",
         "docs-ref-autogen/excel/excel/**": "excel",
