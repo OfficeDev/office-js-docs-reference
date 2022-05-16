@@ -71,6 +71,53 @@ Office.AddinCommands.Event#source:member:
 
         event.completed();
     }
+Office.AddinCommands.EventCompletedOptions#allowEvent:member:
+  - |-
+    // The following example checks whether a location is specified in an appointment before it's sent.
+    function onAppointmentSendHandler(event) {
+        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                return;
+            }
+
+            if (asyncResult.value === "") {
+                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
+                return;
+            } else {
+                // If a location is specified, the appointment is sent.
+                event.completed({ allowEvent: true });
+            }
+        });
+    }
+Office.AddinCommands.EventCompletedOptions#errorMessage:member:
+  - |-
+    // The following example checks whether a message's subject is prefixed with "[For Review]" before it's sent.
+    function onMessageSendHandler(event) {
+        Office.context.mailbox.item.subject.getAsync({ asyncContext = event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the message's subject, the message isn't sent and the user is alerted.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get item's subject." });
+                return;
+            }
+
+            if (asyncResult.value.startsWith("[For Review]")) {
+                // If the message's subject is prefixed with "[For Review]", the message is sent.
+                event.completed({ allowEvent: true });
+            } else {
+                // If the message's subject isn't prefixed with "[For Review]", the message isn't sent and the user is alerted to
+                // add the tag to the subject.
+                event.completed({ allowEvent: false, errorMessage: "Remember to add '[For Review]' before the subject." });
+                return;
+            }
+        });
+    }
 Office.AddinCommands.Source#id:member:
   - |-
     // In this example, consider a button defined in an add-in manifest as follows:

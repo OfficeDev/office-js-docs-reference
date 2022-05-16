@@ -5957,8 +5957,8 @@ Office.AddinCommands.Event,N/A,Class,Good,false
 Office.AddinCommands.Event,source,Property,Good,true
 Office.AddinCommands.Event,completed(options),Method,Poor,true
 Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
-Office.AddinCommands.EventCompletedOptions,allowEvent,Property,Good,false
-Office.AddinCommands.EventCompletedOptions,errorMessage,Property,Good,false
+Office.AddinCommands.EventCompletedOptions,allowEvent,Method,Good,true
+Office.AddinCommands.EventCompletedOptions,errorMessage,Method,Good,true
 Office.AddinCommands.Source,N/A,Class,Fine,false
 Office.AddinCommands.Source,id,Property,Good,true
 Office.AsyncContextOptions,N/A,Class,Fine,false
