@@ -463,7 +463,7 @@
       },
       "common-js": {
         "dest": "common-js",
-        "moniker_range": "common-js || <outlook-js-preview || <excel-js-preview || <onenote-js-1.1 || <powerpoint-js-preview || <word-js-preview"
+        "moniker_range": "common-js || <outlook-js-preview || <excel-js-preview || <powerpoint-js-preview || <word-js-preview"
       },
       "common-js-preview": {
         "dest": "common-js-preview",
