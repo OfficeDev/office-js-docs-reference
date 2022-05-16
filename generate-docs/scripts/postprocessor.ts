@@ -177,8 +177,8 @@ tryCatch(async () => {
 
     // remove to prevent build errors
     fsx.removeSync(docsDestination + "/office/overview.md");
-    fsx.removeSync(docsDestination + "/office/toc.yml");
-    fsx.removeSync(docsDestination + "/office_release/toc.yml");
+    // fsx.removeSync(docsDestination + "/office/toc.yml");
+    // fsx.removeSync(docsDestination + "/office_release/toc.yml");
 
     console.log("\nPostprocessor script complete!\n");
 
