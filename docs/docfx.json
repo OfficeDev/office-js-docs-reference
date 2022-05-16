@@ -61,6 +61,18 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-toc",
+        "src": "docs-ref-autogen/common",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-preview-toc",
+        "src": "docs-ref-autogen/common_preview",
+        "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
         "group": "common-js",
         "src": "docs-ref-autogen/office_release",
         "dest": "api"
@@ -460,6 +472,14 @@
       "word-js-1.3": {
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
+      },
+      "common-js-toc": {
+        "dest": "common-js-toc",
+        "moniker_range": "common-js"
+      },
+      "common-js-preview-toc": {
+        "dest": "common-js-preview-toc",
+        "moniker_range": "common-js-preview"
       },
       "common-js": {
         "dest": "common-js",
