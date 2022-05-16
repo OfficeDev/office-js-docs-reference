@@ -61,13 +61,13 @@
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
+        "group": ["common-js", "release"],
         "src": "docs-ref-autogen/office_release",
         "dest": "api"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-preview",
+        "group": ["common-js-preview", "preview"],
         "src": "docs-ref-autogen/office",
         "dest": "api"
       },
@@ -463,10 +463,18 @@
       },
       "common-js": {
         "dest": "common-js",
-        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
+        "moniker_range": "common-js"
       },
       "common-js-preview": {
         "dest": "common-js-preview",
+        "moniker_range": "common-js-preview"
+      },
+      "release": {
+        "dest": "release",
+        "moniker_range": "common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
+      },
+      "preview": {
+        "dest": "preview",
         "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || visio-js-1.1 || >=word-js-1.1"
       },
       "all": {
