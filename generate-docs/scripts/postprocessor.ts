@@ -175,7 +175,6 @@ tryCatch(async () => {
                 });
         });
 
-
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common_preview/toc.yml");
     fsx.copySync(docsDestination + "/office_release/toc.yml", docsDestination +  "/common/toc.yml");
