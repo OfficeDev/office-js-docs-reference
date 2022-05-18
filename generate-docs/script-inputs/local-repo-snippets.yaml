@@ -1474,7 +1474,7 @@ Office.AddinCommands.EventCompletedOptions#errorMessage:member:
   - |-
     // The following example checks whether a message's subject is prefixed with "[For Review]" before it's sent.
     function onMessageSendHandler(event) {
-        Office.context.mailbox.item.subject.getAsync({ asyncContext = event }, asyncResult => {
+        Office.context.mailbox.item.subject.getAsync({ asyncContext: event }, asyncResult => {
             let event = asyncResult.asyncContext;
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 console.log(asyncResult.error.message);
@@ -4873,6 +4873,7 @@ OfficeExtension.LoadOption#top:member:
                 }
             })
         });
+
 OneNote.Application#getActiveNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
