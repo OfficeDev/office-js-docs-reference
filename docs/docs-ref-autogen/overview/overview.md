@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 12/14/2021
+ms.date: 05/19/2022
 ---
 
 # Office Add-ins JavaScript API reference
@@ -35,6 +35,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <ul>
                 <li><a href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.15">ExcelApi 1.15</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.14">ExcelApi 1.14</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.13">ExcelApi 1.13</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.12">ExcelApi 1.12</a></li>
