@@ -1,0 +1,361 @@
+### YamlMime:TSType
+name: Excel.AutoFilter
+uid: 'excel!Excel.AutoFilter:class'
+package: excel!
+fullName: Excel.AutoFilter
+summary: >-
+  Represents the `AutoFilter` object. AutoFilter turns the values in Excel column into specific filters based on the
+  cell contents.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.AutoFilter#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: criteria
+    uid: 'excel!Excel.AutoFilter#criteria:member'
+    package: excel!
+    fullName: criteria
+    summary: An array that holds all the filter criteria in the autofiltered range.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly criteria: Excel.FilterCriteria[];'
+      return:
+        type: '<xref uid="excel!Excel.FilterCriteria:interface" />[]'
+  - name: enabled
+    uid: 'excel!Excel.AutoFilter#enabled:member'
+    package: excel!
+    fullName: enabled
+    summary: Specifies if the AutoFilter is enabled.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly enabled: boolean;'
+      return:
+        type: boolean
+  - name: isDataFiltered
+    uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
+    package: excel!
+    fullName: isDataFiltered
+    summary: Specifies if the AutoFilter has filter criteria.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isDataFiltered: boolean;'
+      return:
+        type: boolean
+methods:
+  - name: 'apply(range, columnIndex, criteria)'
+    uid: 'excel!Excel.AutoFilter#apply:member(1)'
+    package: excel!
+    fullName: 'apply(range, columnIndex, criteria)'
+    summary: Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          // This method adds a percentage AutoFilter to the active worksheet 
+          // and applies the filter to a column of the used range.
+
+          // Retrieve the active worksheet and the used range on that worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+          const farmData = sheet.getUsedRange();
+
+          // Add a filter that will only show the rows with the top 50% of values in column 3.
+          sheet.autoFilter.apply(farmData, 3, {
+              criterion1: "50",
+              filterOn: Excel.FilterOn.topPercent
+          });
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;'
+      parameters:
+        - id: range
+          description: The range on which the AutoFilter will apply.
+          type: '<xref uid="excel!Excel.Range:class" /> | string'
+        - id: columnIndex
+          description: The zero-based column index to which the AutoFilter is applied.
+          type: number
+        - id: criteria
+          description: The filter criteria.
+          type: '<xref uid="excel!Excel.FilterCriteria:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: clearColumnCriteria(columnIndex)
+    uid: 'excel!Excel.AutoFilter#clearColumnCriteria:member(1)'
+    package: excel!
+    fullName: clearColumnCriteria(columnIndex)
+    summary: Clears the column filter criteria of the AutoFilter.
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          // This method clears the AutoFilter setting from one column.
+
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Clear the filter from only column 3.
+          sheet.autoFilter.clearColumnCriteria(3);
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearColumnCriteria(columnIndex: number): void;'
+      parameters:
+        - id: columnIndex
+          description: >-
+            The zero-based column index, which represents which column filter needs to be cleared. If the index value is
+            not supported(for example, if the value is a negative number, or if the value is greater than the number of
+            available columns in the range), then an `InvalidArgument` exception will be thrown.
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: clearCriteria()
+    uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+    package: excel!
+    fullName: clearCriteria()
+    summary: Clears the filter criteria and sort state of the AutoFilter.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearCriteria(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getRange()
+    uid: 'excel!Excel.AutoFilter#getRange:member(1)'
+    package: excel!
+    fullName: getRange()
+    summary: Returns the `Range` object that represents the range to which the AutoFilter applies.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getRangeOrNullObject()
+    uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+    package: excel!
+    fullName: getRangeOrNullObject()
+    summary: >-
+      Returns the `Range` object that represents the range to which the AutoFilter applies. If there is no `Range`
+      object associated with the AutoFilter, then this method returns an object with its `isNullObject` property set to
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeOrNullObject(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.AutoFilter#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.AutoFilterLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.AutoFilter#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.AutoFilter#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.AutoFilter;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.AutoFilter:class" />'
+        description: ''
+  - name: reapply()
+    uid: 'excel!Excel.AutoFilter#reapply:member(1)'
+    package: excel!
+    fullName: reapply()
+    summary: Applies the specified AutoFilter object currently on the range.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          // This method refreshes the AutoFilter to ensure that changes are captured.
+
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Reapply the filter to capture changes.
+          sheet.autoFilter.reapply();
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type: void
+        description: ''
+  - name: remove()
+    uid: 'excel!Excel.AutoFilter#remove:member(1)'
+    package: excel!
+    fullName: remove()
+    summary: Removes the AutoFilter for the range.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
+      await Excel.run(async (context) => {
+          // This method removes all AutoFilters from the active worksheet.
+
+          // Retrieve the active worksheet.
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // Remove all filters.
+          sheet.autoFilter.remove();
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.AutoFilter#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.AutoFilter object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.AutoFilterData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.AutoFilterData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

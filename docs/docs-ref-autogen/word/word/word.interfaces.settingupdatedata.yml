@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.Interfaces.SettingUpdateData
+uid: 'word!Word.Interfaces.SettingUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.SettingUpdateData
+summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: 'word!Word.Interfaces.SettingUpdateData#value:member'
+    package: word!
+    fullName: value
+    summary: Gets or sets the value of the setting.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'value?: any;'
+      return:
+        type: any

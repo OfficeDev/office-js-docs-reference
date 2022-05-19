@@ -4775,7 +4775,356 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         histogram = "Histogram",
-         1.7 for Array]
+                                                            }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum ChartUnderlineStyle {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        single = "Single"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum BindingType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        range = "Range",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        table = "Table",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        text = "Text"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum BorderIndex {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        edgeTop = "EdgeTop",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        edgeBottom = "EdgeBottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        edgeLeft = "EdgeLeft",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        edgeRight = "EdgeRight",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        insideVertical = "InsideVertical",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        insideHorizontal = "InsideHorizontal",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        diagonalDown = "DiagonalDown",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        diagonalUp = "DiagonalUp"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum BorderLineStyle {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        none = "None",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        continuous = "Continuous",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        dash = "Dash",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        dashDot = "DashDot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        dashDotDot = "DashDotDot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        dot = "Dot",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        slantDashDot = "SlantDashDot"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum BorderWeight {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        hairline = "Hairline",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        thin = "Thin",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        medium = "Medium",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        thick = "Thick"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum CalculationMode {
+        /**
+         * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        automatic = "Automatic",
+        /**
+         * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        automaticExceptTables = "AutomaticExceptTables",
+        /**
+         * Calculations only occur when the user or add-in requests them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        manual = "Manual"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum CalculationType {
+        /**
+         * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        recalculate = "Recalculate",
+        /**
+         * This will mark all cells as dirty and then recalculate them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        full = "Full",
+        /**
+         * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        fullRebuild = "FullRebuild"
+    }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
+     */
+    enum ClearApplyTo {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        all = "All",
+        /**
+         * Clears all formatting for the range.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        formats = "Formats",
+        /**
+         * Clears the contents of the range.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        contents = "Contents",
+                    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum DeleteShiftDirection {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        up = "Up",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        left = "Left"
+    }
+    
+    
+    
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum HorizontalAlignment {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        general = "General",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        left = "Left",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        center = "Center",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        right = "Right",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        fill = "Fill",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        justify = "Justify",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        centerAcrossSelection = "CenterAcrossSelection",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        distributed = "Distributed"
+    }
+    
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum InsertShiftDirection {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        down = "Down",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        right = "Right"
+    }
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
      */
     enum NamedItemType {
         /**
@@ -4808,36 +5157,184 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         error = "Error",
-        
-        
-        
+            }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum RangeUnderlineStyle {
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
-        load(options?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
+        none = "None",
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
-        load(propertyNames?: string | string[]): FunctionResult<T>;
+        single = "Single",
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         * @remarks
+         * [Api set: ExcelApi 1.1]
          */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): FunctionResult<T>;
+        double = "Double",
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `FunctionResult<T>` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Interfaces.FunctionResultData<T>;
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        singleAccountant = "SingleAccountant",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        doubleAccountant = "DoubleAccountant"
     }
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum SheetVisibility {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        visible = "Visible",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        hidden = "Hidden",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        veryHidden = "VeryHidden"
+    }
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     */
+    enum RangeValueType {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        unknown = "Unknown",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        empty = "Empty",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        string = "String",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        integer = "Integer",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        double = "Double",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        boolean = "Boolean",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        error = "Error",
+            }
+    
+    
+    
+    
+    
+    
+    /**
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    enum VerticalAlignment {
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        top = "Top",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        center = "Center",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        justify = "Justify",
+        /**
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        distributed = "Distributed"
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     enum ErrorCodes {
         accessDenied = "AccessDenied",

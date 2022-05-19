@@ -1,0 +1,68 @@
+### YamlMime:TSEnum
+name: Word.EventType
+uid: 'word!Word.EventType:enum'
+package: word!
+fullName: Word.EventType
+summary: >-
+  Provides information about the type of a raised event. For each object type, please keep the order of: deleted,
+  selection changed, data changed, added.
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: annotationAdded
+    uid: 'word!Word.EventType.annotationAdded:member'
+    package: word!
+    summary: |-
+      AnnotationAdded represents the event an annotation has been added to the document.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationAdded"'
+  - name: annotationChanged
+    uid: 'word!Word.EventType.annotationChanged:member'
+    package: word!
+    summary: |-
+      AnnotationAdded represents the event an annotation has been updated in the document.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationChanged"'
+  - name: annotationDeleted
+    uid: 'word!Word.EventType.annotationDeleted:member'
+    package: word!
+    summary: |-
+      AnnotationAdded represents the event an annotation has been deleted from the document.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"AnnotationDeleted"'
+  - name: contentControlAdded
+    uid: 'word!Word.EventType.contentControlAdded:member'
+    package: word!
+    summary: |-
+      ContentControlAdded represents the event a content control has been added to the document.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ContentControlAdded"'
+  - name: contentControlDataChanged
+    uid: 'word!Word.EventType.contentControlDataChanged:member'
+    package: word!
+    summary: |-
+      ContentControlDataChanged represents the event that the data in the content control have been changed.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ContentControlDataChanged"'
+  - name: contentControlDeleted
+    uid: 'word!Word.EventType.contentControlDeleted:member'
+    package: word!
+    summary: |-
+      ContentControlDeleted represent the event that the content control has been deleted.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ContentControlDeleted"'
+  - name: contentControlSelectionChanged
+    uid: 'word!Word.EventType.contentControlSelectionChanged:member'
+    package: word!
+    summary: |-
+      ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"ContentControlSelectionChanged"'

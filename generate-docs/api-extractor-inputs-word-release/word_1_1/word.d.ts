@@ -2691,6 +2691,66 @@ export declare namespace Word {
         evenPages = "EvenPages",
     }
     
+    /**
+     * This enum sets where the cursor (insertion point) in the document is after a selection.
+     *
+     * @remarks
+     * [Api set: WordApi 1.1]
+     */
+    enum SelectionMode {
+        /**
+         * The entire range is selected.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        select = "Select",
+        /**
+         * The cursor is at the beginning of the selection (just before the start of the selected range).
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        start = "Start",
+        /**
+         * The cursor is at the end of the selection (just after the end of the selected range).
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        end = "End",
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    enum ErrorCodes {
+        accessDenied = "AccessDenied",
+        generalException = "GeneralException",
+        invalidArgument = "InvalidArgument",
+        itemNotFound = "ItemNotFound",
+        notImplemented = "NotImplemented",
+        searchDialogIsOpen = "SearchDialogIsOpen",
+        searchStringInvalidOrTooLong = "SearchStringInvalidOrTooLong",
+    }
+    export module Interfaces {
+        /**
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
+        export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
+            $skip?: number;
+        }
         /** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**

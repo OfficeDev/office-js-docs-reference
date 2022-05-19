@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.EntityViewLayouts
+uid: 'excel!Excel.EntityViewLayouts:interface'
+package: excel!
+fullName: Excel.EntityViewLayouts
+summary: Represents layout information for various views of the entity.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: card
+    uid: 'excel!Excel.EntityViewLayouts#card:member'
+    package: excel!
+    fullName: card
+    summary: >-
+      Represents the layout of this entity in card view. If the `CardLayout` object does not have a layout property, it
+      is assumed to be "Entity".
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'card?: CardLayout;'
+      return:
+        type: '<xref uid="excel!Excel.CardLayout:type" />'

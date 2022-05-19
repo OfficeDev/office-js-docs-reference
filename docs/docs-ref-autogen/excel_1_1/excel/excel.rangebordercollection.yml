@@ -1,0 +1,241 @@
+### YamlMime:TSType
+name: Excel.RangeBorderCollection
+uid: 'excel!Excel.RangeBorderCollection:class'
+package: excel!
+fullName: Excel.RangeBorderCollection
+summary: Represents the border objects that make up the range border.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.RangeBorderCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: count
+    uid: 'excel!Excel.RangeBorderCollection#count:member'
+    package: excel!
+    fullName: count
+    summary: Number of border objects in the collection.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type: number
+  - name: items
+    uid: 'excel!Excel.RangeBorderCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.RangeBorder[];'
+      return:
+        type: '<xref uid="excel!Excel.RangeBorder:class" />[]'
+methods:
+  - name: getItem(index)
+    uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+    package: excel!
+    fullName: getItem(index)
+    summary: Gets a border object using its name.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
+          border.load('style');
+          await context.sync();
+
+          console.log(border.style);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
+      parameters:
+        - id: index
+          description: Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+          type: '<xref uid="excel!Excel.BorderIndex:enum" />'
+      return:
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
+        description: ''
+  - name: getItem(indexString)
+    uid: 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+    package: excel!
+    fullName: getItem(indexString)
+    summary: Gets a border object using its name.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal"
+        | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+      parameters:
+        - id: indexString
+          description: Index value of the border object to be retrieved. See `Excel.BorderIndex` for details.
+          type: >-
+            "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown"
+            | "DiagonalUp"
+      return:
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
+        description: ''
+  - name: getItemAt(index)
+    uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: Gets a border object using its index.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var border = range.format.borders.getItemAt(0);
+          border.load('sideIndex');
+          await context.sync();
+          
+          console.log(border.sideIndex);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeBorder;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.RangeBorder:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.RangeBorderCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface" /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.RangeBorderCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeBorderCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => { 
+              var sheetName = "Sheet1";
+              var rangeAddress = "A1:F8";
+              var worksheet = context.workbook.worksheets.getItem(sheetName);
+              var range = worksheet.getRange(rangeAddress);
+              var borders = range.format.borders;
+              borders.load('items');
+              await context.sync();
+              
+              console.log(borders.count);
+              for (var i = 0; i < borders.items.length; i++) {
+                  console.log(borders.items[i].sideIndex);
+              }
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.RangeBorderCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.RangeBorderCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.RangeBorderCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

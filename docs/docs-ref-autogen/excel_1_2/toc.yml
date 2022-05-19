@@ -1,0 +1,1002 @@
+items:
+  - name: API reference
+    items:
+      - name: API reference overview
+        href: ../overview/overview.md
+      - name: Excel
+        uid: excel!
+        items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: BindingType
+                uid: 'excel!Excel.BindingType:enum'
+              - name: BorderIndex
+                uid: 'excel!Excel.BorderIndex:enum'
+              - name: BorderLineStyle
+                uid: 'excel!Excel.BorderLineStyle:enum'
+              - name: BorderWeight
+                uid: 'excel!Excel.BorderWeight:enum'
+              - name: CalculationMode
+                uid: 'excel!Excel.CalculationMode:enum'
+              - name: CalculationType
+                uid: 'excel!Excel.CalculationType:enum'
+              - name: ChartDataLabelPosition
+                uid: 'excel!Excel.ChartDataLabelPosition:enum'
+              - name: ChartLegendPosition
+                uid: 'excel!Excel.ChartLegendPosition:enum'
+              - name: ChartSeriesBy
+                uid: 'excel!Excel.ChartSeriesBy:enum'
+              - name: ChartType
+                uid: 'excel!Excel.ChartType:enum'
+              - name: ChartUnderlineStyle
+                uid: 'excel!Excel.ChartUnderlineStyle:enum'
+              - name: ClearApplyTo
+                uid: 'excel!Excel.ClearApplyTo:enum'
+              - name: DeleteShiftDirection
+                uid: 'excel!Excel.DeleteShiftDirection:enum'
+              - name: DynamicFilterCriteria
+                uid: 'excel!Excel.DynamicFilterCriteria:enum'
+              - name: ErrorCodes
+                uid: 'excel!Excel.ErrorCodes:enum'
+              - name: FilterDatetimeSpecificity
+                uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+              - name: FilterOn
+                uid: 'excel!Excel.FilterOn:enum'
+              - name: FilterOperator
+                uid: 'excel!Excel.FilterOperator:enum'
+              - name: HorizontalAlignment
+                uid: 'excel!Excel.HorizontalAlignment:enum'
+              - name: IconSet
+                uid: 'excel!Excel.IconSet:enum'
+              - name: ImageFittingMode
+                uid: 'excel!Excel.ImageFittingMode:enum'
+              - name: InsertShiftDirection
+                uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: NamedItemType
+                uid: 'excel!Excel.NamedItemType:enum'
+              - name: RangeUnderlineStyle
+                uid: 'excel!Excel.RangeUnderlineStyle:enum'
+              - name: RangeValueType
+                uid: 'excel!Excel.RangeValueType:enum'
+              - name: SheetVisibility
+                uid: 'excel!Excel.SheetVisibility:enum'
+              - name: SortDataOption
+                uid: 'excel!Excel.SortDataOption:enum'
+              - name: SortMethod
+                uid: 'excel!Excel.SortMethod:enum'
+              - name: SortOn
+                uid: 'excel!Excel.SortOn:enum'
+              - name: SortOrientation
+                uid: 'excel!Excel.SortOrientation:enum'
+              - name: VerticalAlignment
+                uid: 'excel!Excel.VerticalAlignment:enum'
+          - name: Icon Sets
+            uid: ''
+            items:
+              - name: FiveArrowsGraySet
+                uid: 'excel!Excel.FiveArrowsGraySet:interface'
+              - name: FiveArrowsSet
+                uid: 'excel!Excel.FiveArrowsSet:interface'
+              - name: FiveBoxesSet
+                uid: 'excel!Excel.FiveBoxesSet:interface'
+              - name: FiveQuartersSet
+                uid: 'excel!Excel.FiveQuartersSet:interface'
+              - name: FiveRatingSet
+                uid: 'excel!Excel.FiveRatingSet:interface'
+              - name: FourArrowsGraySet
+                uid: 'excel!Excel.FourArrowsGraySet:interface'
+              - name: FourArrowsSet
+                uid: 'excel!Excel.FourArrowsSet:interface'
+              - name: FourRatingSet
+                uid: 'excel!Excel.FourRatingSet:interface'
+              - name: FourRedToBlackSet
+                uid: 'excel!Excel.FourRedToBlackSet:interface'
+              - name: FourTrafficLightsSet
+                uid: 'excel!Excel.FourTrafficLightsSet:interface'
+              - name: IconCollections
+                uid: 'excel!Excel.IconCollections:interface'
+              - name: ThreeArrowsGraySet
+                uid: 'excel!Excel.ThreeArrowsGraySet:interface'
+              - name: ThreeArrowsSet
+                uid: 'excel!Excel.ThreeArrowsSet:interface'
+              - name: ThreeFlagsSet
+                uid: 'excel!Excel.ThreeFlagsSet:interface'
+              - name: ThreeSignsSet
+                uid: 'excel!Excel.ThreeSignsSet:interface'
+              - name: ThreeStarsSet
+                uid: 'excel!Excel.ThreeStarsSet:interface'
+              - name: ThreeSymbols2Set
+                uid: 'excel!Excel.ThreeSymbols2Set:interface'
+              - name: ThreeSymbolsSet
+                uid: 'excel!Excel.ThreeSymbolsSet:interface'
+              - name: ThreeTrafficLights1Set
+                uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
+              - name: ThreeTrafficLights2Set
+                uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
+              - name: ThreeTrianglesSet
+                uid: 'excel!Excel.ThreeTrianglesSet:interface'
+          - name: Application
+            uid: 'excel!Excel.Application:class'
+          - name: Binding
+            uid: 'excel!Excel.Binding:class'
+          - name: BindingCollection
+            uid: 'excel!Excel.BindingCollection:class'
+          - name: BindingDataChangedEventArgs
+            uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
+          - name: BindingSelectionChangedEventArgs
+            uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
+          - name: Chart
+            uid: 'excel!Excel.Chart:class'
+          - name: ChartAreaFormat
+            uid: 'excel!Excel.ChartAreaFormat:class'
+          - name: ChartAxes
+            uid: 'excel!Excel.ChartAxes:class'
+          - name: ChartAxis
+            uid: 'excel!Excel.ChartAxis:class'
+          - name: ChartAxisFormat
+            uid: 'excel!Excel.ChartAxisFormat:class'
+          - name: ChartAxisTitle
+            uid: 'excel!Excel.ChartAxisTitle:class'
+          - name: ChartAxisTitleFormat
+            uid: 'excel!Excel.ChartAxisTitleFormat:class'
+          - name: ChartCollection
+            uid: 'excel!Excel.ChartCollection:class'
+          - name: ChartDataLabelFormat
+            uid: 'excel!Excel.ChartDataLabelFormat:class'
+          - name: ChartDataLabels
+            uid: 'excel!Excel.ChartDataLabels:class'
+          - name: ChartFill
+            uid: 'excel!Excel.ChartFill:class'
+          - name: ChartFont
+            uid: 'excel!Excel.ChartFont:class'
+          - name: ChartGridlines
+            uid: 'excel!Excel.ChartGridlines:class'
+          - name: ChartGridlinesFormat
+            uid: 'excel!Excel.ChartGridlinesFormat:class'
+          - name: ChartLegend
+            uid: 'excel!Excel.ChartLegend:class'
+          - name: ChartLegendFormat
+            uid: 'excel!Excel.ChartLegendFormat:class'
+          - name: ChartLineFormat
+            uid: 'excel!Excel.ChartLineFormat:class'
+          - name: ChartPoint
+            uid: 'excel!Excel.ChartPoint:class'
+          - name: ChartPointFormat
+            uid: 'excel!Excel.ChartPointFormat:class'
+          - name: ChartPointsCollection
+            uid: 'excel!Excel.ChartPointsCollection:class'
+          - name: ChartSeries
+            uid: 'excel!Excel.ChartSeries:class'
+          - name: ChartSeriesCollection
+            uid: 'excel!Excel.ChartSeriesCollection:class'
+          - name: ChartSeriesFormat
+            uid: 'excel!Excel.ChartSeriesFormat:class'
+          - name: ChartTitle
+            uid: 'excel!Excel.ChartTitle:class'
+          - name: ChartTitleFormat
+            uid: 'excel!Excel.ChartTitleFormat:class'
+          - name: Filter
+            uid: 'excel!Excel.Filter:class'
+          - name: FilterCriteria
+            uid: 'excel!Excel.FilterCriteria:interface'
+          - name: FilterDatetime
+            uid: 'excel!Excel.FilterDatetime:interface'
+          - name: FormatProtection
+            uid: 'excel!Excel.FormatProtection:class'
+          - name: FunctionResult
+            uid: 'excel!Excel.FunctionResult:class'
+          - name: Functions
+            uid: 'excel!Excel.Functions:class'
+          - name: Icon
+            uid: 'excel!Excel.Icon:interface'
+          - name: NamedItem
+            uid: 'excel!Excel.NamedItem:class'
+          - name: NamedItemCollection
+            uid: 'excel!Excel.NamedItemCollection:class'
+          - name: Range
+            uid: 'excel!Excel.Range:class'
+          - name: RangeBorder
+            uid: 'excel!Excel.RangeBorder:class'
+          - name: RangeBorderCollection
+            uid: 'excel!Excel.RangeBorderCollection:class'
+          - name: RangeFill
+            uid: 'excel!Excel.RangeFill:class'
+          - name: RangeFont
+            uid: 'excel!Excel.RangeFont:class'
+          - name: RangeFormat
+            uid: 'excel!Excel.RangeFormat:class'
+          - name: RangeReference
+            uid: 'excel!Excel.RangeReference:interface'
+          - name: RangeSort
+            uid: 'excel!Excel.RangeSort:class'
+          - name: RequestContext
+            uid: 'excel!Excel.RequestContext:class'
+          - name: RunOptions
+            uid: 'excel!Excel.RunOptions:interface'
+          - name: SelectionChangedEventArgs
+            uid: 'excel!Excel.SelectionChangedEventArgs:interface'
+          - name: Session
+            uid: 'excel!Excel.Session:interface'
+          - name: SortField
+            uid: 'excel!Excel.SortField:interface'
+          - name: Table
+            uid: 'excel!Excel.Table:class'
+          - name: TableCollection
+            uid: 'excel!Excel.TableCollection:class'
+          - name: TableColumn
+            uid: 'excel!Excel.TableColumn:class'
+          - name: TableColumnCollection
+            uid: 'excel!Excel.TableColumnCollection:class'
+          - name: TableRow
+            uid: 'excel!Excel.TableRow:class'
+          - name: TableRowCollection
+            uid: 'excel!Excel.TableRowCollection:class'
+          - name: TableSort
+            uid: 'excel!Excel.TableSort:class'
+          - name: Workbook
+            uid: 'excel!Excel.Workbook:class'
+          - name: Worksheet
+            uid: 'excel!Excel.Worksheet:class'
+          - name: WorksheetCollection
+            uid: 'excel!Excel.WorksheetCollection:class'
+          - name: WorksheetProtection
+            uid: 'excel!Excel.WorksheetProtection:class'
+          - name: WorksheetProtectionOptions
+            uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+      - name: OneNote
+        href: /javascript/api/onenote
+      - name: Outlook
+        href: /javascript/api/outlook
+      - name: PowerPoint
+        href: /javascript/api/powerpoint
+      - name: Visio
+        href: /javascript/api/visio
+      - name: Word
+        href: /javascript/api/word
+      - name: Common APIs
+        uid: office!
+        items:
+          - name: Office
+            uid: office!
+            items:
+              - name: Enums
+                uid: ''
+                items:
+                  - name: ActiveView
+                    uid: 'office!Office.ActiveView:enum'
+                  - name: AsyncResultStatus
+                    uid: 'office!Office.AsyncResultStatus:enum'
+                  - name: BindingType
+                    uid: 'office!Office.BindingType:enum'
+                  - name: CoercionType
+                    uid: 'office!Office.CoercionType:enum'
+                  - name: CustomXMLNodeType
+                    uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DocumentMode
+                    uid: 'office!Office.DocumentMode:enum'
+                  - name: EventType
+                    uid: 'office!Office.EventType:enum'
+                  - name: FileType
+                    uid: 'office!Office.FileType:enum'
+                  - name: FilterType
+                    uid: 'office!Office.FilterType:enum'
+                  - name: GoToType
+                    uid: 'office!Office.GoToType:enum'
+                  - name: HostType
+                    uid: 'office!Office.HostType:enum'
+                  - name: Index
+                    uid: 'office!Office.Index:enum'
+                  - name: InitializationReason
+                    uid: 'office!Office.InitializationReason:enum'
+                  - name: PlatformType
+                    uid: 'office!Office.PlatformType:enum'
+                  - name: ProjectProjectFields
+                    uid: 'office!Office.ProjectProjectFields:enum'
+                  - name: ProjectResourceFields
+                    uid: 'office!Office.ProjectResourceFields:enum'
+                  - name: ProjectTaskFields
+                    uid: 'office!Office.ProjectTaskFields:enum'
+                  - name: ProjectViewTypes
+                    uid: 'office!Office.ProjectViewTypes:enum'
+                  - name: SelectionMode
+                    uid: 'office!Office.SelectionMode:enum'
+                  - name: StartupBehavior
+                    uid: 'office!Office.StartupBehavior:enum'
+                  - name: Table
+                    uid: 'office!Office.Table:enum'
+                  - name: ValueFormat
+                    uid: 'office!Office.ValueFormat:enum'
+                  - name: VisibilityMode
+                    uid: 'office!Office.VisibilityMode:enum'
+              - name: Actions
+                uid: 'office!Office.Actions:interface'
+              - name: AddBindingFromNamedItemOptions
+                uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+              - name: AddBindingFromPromptOptions
+                uid: 'office!Office.AddBindingFromPromptOptions:interface'
+              - name: AddBindingFromSelectionOptions
+                uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+              - name: Addin
+                uid: 'office!Office.Addin:interface'
+              - name: AddinCommands.Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: AddinCommands.EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: AddinCommands.Source
+                uid: 'office!Office.AddinCommands.Source:interface'
+              - name: AsyncContextOptions
+                uid: 'office!Office.AsyncContextOptions:interface'
+              - name: AsyncResult
+                uid: 'office!Office.AsyncResult:interface'
+              - name: Auth
+                uid: 'office!Office.Auth:interface'
+              - name: AuthOptions
+                uid: 'office!Office.AuthOptions:interface'
+              - name: Binding
+                uid: 'office!Office.Binding:interface'
+              - name: BindingDataChangedEventArgs
+                uid: 'office!Office.BindingDataChangedEventArgs:interface'
+              - name: Bindings
+                uid: 'office!Office.Bindings:interface'
+              - name: BindingSelectionChangedEventArgs
+                uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+              - name: Context
+                uid: 'office!Office.Context:interface'
+              - name: ContextInformation
+                uid: 'office!Office.ContextInformation:interface'
+              - name: Control
+                uid: 'office!Office.Control:interface'
+              - name: CustomXmlNode
+                uid: 'office!Office.CustomXmlNode:interface'
+              - name: CustomXmlPart
+                uid: 'office!Office.CustomXmlPart:interface'
+              - name: CustomXmlParts
+                uid: 'office!Office.CustomXmlParts:interface'
+              - name: CustomXmlPrefixMappings
+                uid: 'office!Office.CustomXmlPrefixMappings:interface'
+              - name: Dialog
+                uid: 'office!Office.Dialog:interface'
+              - name: DialogMessageOptions
+                uid: 'office!Office.DialogMessageOptions:interface'
+              - name: DialogOptions
+                uid: 'office!Office.DialogOptions:interface'
+              - name: DialogParentMessageReceivedEventArgs
+                uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+              - name: Document
+                uid: 'office!Office.Document:interface'
+              - name: DocumentSelectionChangedEventArgs
+                uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+              - name: Error
+                uid: 'office!Office.Error:interface'
+              - name: File
+                uid: 'office!Office.File:interface'
+              - name: FileProperties
+                uid: 'office!Office.FileProperties:interface'
+              - name: GetBindingDataOptions
+                uid: 'office!Office.GetBindingDataOptions:interface'
+              - name: GetFileOptions
+                uid: 'office!Office.GetFileOptions:interface'
+              - name: GetSelectedDataOptions
+                uid: 'office!Office.GetSelectedDataOptions:interface'
+              - name: GoToByIdOptions
+                uid: 'office!Office.GoToByIdOptions:interface'
+              - name: Group
+                uid: 'office!Office.Group:interface'
+              - name: IPromiseConstructor
+                uid: 'office!Office.IPromiseConstructor:interface'
+              - name: MatrixBinding
+                uid: 'office!Office.MatrixBinding:interface'
+              - name: NodeDeletedEventArgs
+                uid: 'office!Office.NodeDeletedEventArgs:interface'
+              - name: NodeInsertedEventArgs
+                uid: 'office!Office.NodeInsertedEventArgs:interface'
+              - name: NodeReplacedEventArgs
+                uid: 'office!Office.NodeReplacedEventArgs:interface'
+              - name: OfficeTheme
+                uid: 'office!Office.OfficeTheme:interface'
+              - name: RangeCoordinates
+                uid: 'office!Office.RangeCoordinates:interface'
+              - name: RangeFormatConfiguration
+                uid: 'office!Office.RangeFormatConfiguration:interface'
+              - name: RemoveHandlerOptions
+                uid: 'office!Office.RemoveHandlerOptions:interface'
+              - name: RequirementSetSupport
+                uid: 'office!Office.RequirementSetSupport:interface'
+              - name: Ribbon
+                uid: 'office!Office.Ribbon:interface'
+              - name: RibbonUpdaterData
+                uid: 'office!Office.RibbonUpdaterData:interface'
+              - name: SaveSettingsOptions
+                uid: 'office!Office.SaveSettingsOptions:interface'
+              - name: SetBindingDataOptions
+                uid: 'office!Office.SetBindingDataOptions:interface'
+              - name: SetSelectedDataOptions
+                uid: 'office!Office.SetSelectedDataOptions:interface'
+              - name: Settings
+                uid: 'office!Office.Settings:interface'
+              - name: SettingsChangedEventArgs
+                uid: 'office!Office.SettingsChangedEventArgs:interface'
+              - name: Slice
+                uid: 'office!Office.Slice:interface'
+              - name: Tab
+                uid: 'office!Office.Tab:interface'
+              - name: TableBinding
+                uid: 'office!Office.TableBinding:interface'
+              - name: TableData
+                uid: 'office!Office.TableData:class'
+              - name: TextBinding
+                uid: 'office!Office.TextBinding:interface'
+              - name: UI
+                uid: 'office!Office.UI:interface'
+              - name: VisibilityModeChangedMessage
+                uid: 'office!Office.VisibilityModeChangedMessage:interface'
+          - name: OfficeExtension
+            items:
+              - name: ClientObject
+                uid: 'office!OfficeExtension.ClientObject:class'
+              - name: ClientRequestContext
+                uid: 'office!OfficeExtension.ClientRequestContext:class'
+              - name: ClientResult
+                uid: 'office!OfficeExtension.ClientResult:class'
+              - name: DebugInfo
+                uid: 'office!OfficeExtension.DebugInfo:interface'
+              - name: EmbeddedOptions
+                uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+              - name: EmbeddedSession
+                uid: 'office!OfficeExtension.EmbeddedSession:class'
+              - name: Error
+                uid: 'office!OfficeExtension.Error:class'
+              - name: ErrorCodes
+                uid: 'office!OfficeExtension.ErrorCodes:class'
+              - name: EventHandlerResult
+                uid: 'office!OfficeExtension.EventHandlerResult:class'
+              - name: EventHandlers
+                uid: 'office!OfficeExtension.EventHandlers:class'
+              - name: EventInfo
+                uid: 'office!OfficeExtension.EventInfo:interface'
+              - name: IPromise
+                uid: 'office!OfficeExtension.IPromise:type'
+              - name: LoadOption
+                uid: 'office!OfficeExtension.LoadOption:interface'
+              - name: RequestContextDebugInfo
+                uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+              - name: RequestUrlAndHeaderInfo
+                uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+              - name: RunOptions
+                uid: 'office!OfficeExtension.RunOptions:interface'
+              - name: TrackedObjects
+                uid: 'office!OfficeExtension.TrackedObjects:class'
+              - name: UpdateOptions
+                uid: 'office!OfficeExtension.UpdateOptions:interface'
+          - name: OfficeRuntime
+            uid: office-runtime!
+            items:
+              - name: ApiInformation
+                uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
+              - name: Auth
+                uid: 'office-runtime!OfficeRuntime.Auth:interface'
+              - name: AuthOptions
+                uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
+              - name: Dialog
+                uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+              - name: DisplayWebDialogOptions
+                uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+              - name: Storage
+                uid: 'office-runtime!OfficeRuntime.Storage:interface'
+  - name: Manifest reference
+    items:
+      - name: Manifest overview
+        href: ../../manifest/manifest.md
+      - name: AllowSnapshot
+        href: ../../manifest/allowsnapshot.md
+      - name: AlternateId
+        href: ../../manifest/alternateid.md
+      - name: AppDomain
+        href: ../../manifest/appdomain.md
+      - name: AppDomains
+        href: ../../manifest/appdomains.md
+      - name: CitationText
+        href: ../../manifest/citationtext.md
+      - name: DefaultLocale
+        href: ../../manifest/defaultlocale.md
+      - name: DefaultSettings
+        href: ../../manifest/defaultsettings.md
+      - name: Description
+        href: ../../manifest/description.md
+      - name: DesktopSettings
+        href: ../../manifest/desktopsettings.md
+      - name: Dictionary
+        href: ../../manifest/dictionary.md
+      - name: DictionaryHomePage
+        href: ../../manifest/dictionaryhomepage.md
+      - name: DisableEntityHighlighting
+        href: ../../manifest/disableentityhighlighting.md
+      - name: DisplayName
+        href: ../../manifest/displayname.md
+      - name: EquivalentAddin
+        href: ../../manifest/equivalentaddin.md
+      - name: EquivalentAddins
+        href: ../../manifest/equivalentaddins.md
+      - name: ExtendedOverrides
+        href: ../../manifest/extendedoverrides.md
+      - name: FileName
+        href: ../../manifest/filename.md
+      - name: Form
+        href: ../../manifest/form.md
+      - name: FormSettings
+        href: ../../manifest/formsettings.md
+      - name: HighResolutionIconUrl
+        href: ../../manifest/highresolutioniconurl.md
+      - name: Host
+        href: ../../manifest/host.md
+      - name: Hosts
+        href: ../../manifest/hosts.md
+      - name: IconUrl
+        href: ../../manifest/iconurl.md
+      - name: Id
+        href: ../../manifest/id.md
+      - name: Metadata
+        href: ../../manifest/metadata.md
+      - name: Method
+        href: ../../manifest/method.md
+      - name: Methods
+        href: ../../manifest/methods.md
+      - name: Namespace
+        href: ../../manifest/namespace.md
+      - name: OfficeApp
+        href: ../../manifest/officeapp.md
+      - name: Override
+        href: ../../manifest/override.md
+      - name: Permissions
+        href: ../../manifest/permissions.md
+      - name: PhoneSettings
+        href: ../../manifest/phonesettings.md
+      - name: ProgId
+        href: ../../manifest/progid.md
+      - name: ProviderName
+        href: ../../manifest/providername.md
+      - name: QueryUri
+        href: ../../manifest/queryuri.md
+      - name: RequestedHeight
+        href: ../../manifest/requestedheight.md
+      - name: RequestedWidth
+        href: ../../manifest/requestedwidth.md
+      - name: Requirements
+        href: ../../manifest/requirements.md
+      - name: Rule
+        href: ../../manifest/rule.md
+      - name: Set
+        href: ../../manifest/set.md
+      - name: Sets
+        href: ../../manifest/sets.md
+      - name: SourceLocation
+        href: ../../manifest/sourcelocation.md
+      - name: SupportUrl
+        href: ../../manifest/supporturl.md
+      - name: TabletSettings
+        href: ../../manifest/tabletsettings.md
+      - name: TargetDialect
+        href: ../../manifest/targetdialect.md
+      - name: TargetDialects
+        href: ../../manifest/targetdialects.md
+      - name: Tokens
+        href: ../../manifest/tokens.md
+      - name: Token
+        href: ../../manifest/token.md
+      - name: Type
+        href: ../../manifest/type.md
+      - name: Version
+        href: ../../manifest/version.md
+      - name: VersionOverrides
+        items:
+          - name: VersionOverrides Overview
+            href: ../../manifest/versionoverrides.md
+          - name: VersionOverrides 1.0 TaskPane
+            href: ../../manifest/versionoverrides-1-0-taskpane.md
+          - name: VersionOverrides 1.0 Content
+            href: ../../manifest/versionoverrides-1-0-content.md
+          - name: VersionOverrides 1.0 Mail
+            href: ../../manifest/versionoverrides-1-0-mail.md
+          - name: VersionOverrides 1.1 Mail
+            href: ../../manifest/versionoverrides-1-1-mail.md
+          - name: Action
+            href: ../../manifest/action.md
+          - name: AllFormFactors
+            href: ../../manifest/allformfactors.md
+          - name: Control
+            href: ../../manifest/control.md
+          - name: Control (Button)
+            href: ../../manifest/control-button.md
+          - name: Control (Menu)
+            href: ../../manifest/control-menu.md
+          - name: Control (MobileButton)
+            href: ../../manifest/control-mobilebutton.md
+          - name: CustomTab
+            href: ../../manifest/customtab.md
+          - name: DesktopFormFactor
+            href: ../../manifest/desktopformfactor.md
+          - name: Enabled
+            href: ../../manifest/enabled.md
+          - name: EquivalentAddin
+            href: ../../manifest/equivalentaddin.md
+          - name: EquivalentAddins
+            href: ../../manifest/equivalentaddins.md
+          - name: Event
+            href: ../../manifest/event.md
+          - name: ExtendedPermission
+            href: ../../manifest/extendedpermission.md
+          - name: ExtendedPermissions
+            href: ../../manifest/extendedpermissions.md
+          - name: ExtensionPoint
+            href: ../../manifest/extensionpoint.md
+          - name: FunctionFile
+            href: ../../manifest/functionfile.md
+          - name: GetStarted
+            href: ../../manifest/getstarted.md
+          - name: Group
+            href: ../../manifest/group.md
+          - name: Hosts
+            href: ../../manifest/hosts.md
+          - name: Icon
+            href: ../../manifest/icon.md
+          - name: Item
+            href: ../../manifest/item.md
+          - name: Items
+            href: ../../manifest/items.md
+          - name: LaunchEvent
+            href: ../../manifest/launchevent.md
+          - name: LaunchEvents
+            href: ../../manifest/launchevents.md
+          - name: MobileFormFactor
+            href: ../../manifest/mobileformfactor.md
+          - name: OfficeMenu
+            href: ../../manifest/officemenu.md
+          - name: OfficeTab
+            href: ../../manifest/officetab.md
+          - name: OverriddenByRibbonApi
+            href: ../../manifest/overriddenbyribbonapi.md
+          - name: Page
+            href: ../../manifest/page.md
+          - name: Resources
+            href: ../../manifest/resources.md
+          - name: Runtime
+            href: ../../manifest/runtime.md
+          - name: Runtimes
+            href: ../../manifest/runtimes.md
+          - name: Scopes
+            href: ../../manifest/scopes.md
+          - name: Script
+            href: ../../manifest/script.md
+          - name: SourceLocation (custom functions)
+            href: ../../manifest/customfunctionssourcelocation.md
+          - name: Supertip
+            href: ../../manifest/supertip.md
+          - name: SupportsSharedFolders
+            href: ../../manifest/supportssharedfolders.md
+          - name: WebApplicationInfo
+            href: ../../manifest/webapplicationinfo.md
+  - name: Requirement sets
+    items:
+      - name: Application and platform availability
+        href: ../../requirement-sets/requirement-sets.md
+      - name: Excel requirement sets
+        items:
+          - name: Overview
+            href: ../../requirement-sets/excel/excel-api-requirement-sets.md
+            displayName: Excel
+          - name: CustomFunctionsRuntime API requirement sets
+            href: ../../requirement-sets/excel/custom-functions-requirement-sets.md
+            displayName: 'Excel, Custom Functions'
+          - name: Excel preview APIs
+            href: ../../requirement-sets/excel/excel-preview-apis.md
+            displayName: Excel
+          - name: ExcelApi online-only requirement set
+            href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.14 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-14-requirement-set.md
+          - name: ExcelApi 1.13 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-13-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.12 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-12-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.11 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-11-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.10 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-10-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.9 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-9-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.8 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-8-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.7 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-7-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.6 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-6-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.5 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-5-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.4 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-4-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.3 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-3-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.2 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-2-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.1 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-1-requirement-set.md
+            displayName: Excel
+      - name: OneNote requirement sets
+        items:
+          - name: API requirement sets
+            href: ../../requirement-sets/onenote/onenote-api-requirement-sets.md
+            displayName: OneNote
+      - name: Outlook requirement sets
+        items:
+          - name: Overview
+            href: ../../requirement-sets/outlook/outlook-api-requirement-sets.md
+            displayName: Outlook
+          - name: Mailbox preview requirement set
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md
+              - name: Office
+                href: >-
+                  ../../requirement-sets/outlook/preview-requirement-set/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/preview-requirement-set/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.11
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.11/outlook-requirement-set-1.11.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.11/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.11/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.11/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.11/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.10
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.10/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.10/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.10/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.10/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.9
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.9/outlook-requirement-set-1.9.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.9/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.9/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.9/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.9/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.8
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.8/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.8/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.8/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.8/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.7
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.7/outlook-requirement-set-1.7.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.7/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.7/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.7/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.7/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.6
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.6/outlook-requirement-set-1.6.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.6/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.6/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.6/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.6/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.5
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.5/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.5/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.5/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.5/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.4
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.4/outlook-requirement-set-1.4.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.4/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.4/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.4/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.4/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.3
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.3/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.3/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.3/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.3/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.2
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.2/outlook-requirement-set-1.2.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.2/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.2/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.2/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.2/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.1
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.1/outlook-requirement-set-1.1.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.1/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.1/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.1/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.1/Office.context.mailbox.item.md
+      - name: PowerPoint requirement sets
+        items:
+          - name: Overview
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-requirement-sets.md
+            displayName: PowerPoint
+          - name: PowerPointApi preview requirement set
+            href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.3 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-3-requirement-set.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.2 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-2-requirement-set.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.1 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-1-requirement-set.md
+            displayName: PowerPoint
+      - name: Word requirement sets
+        items:
+          - name: Overview
+            href: ../../requirement-sets/word/word-api-requirement-sets.md
+            displayName: Word
+          - name: Word preview APIs
+            href: ../../requirement-sets/word/word-preview-apis.md
+            displayName: Word
+          - name: WordApi 1.3 requirement set
+            href: ../../requirement-sets/word/word-api-1-3-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.2 requirement set
+            href: ../../requirement-sets/word/word-api-1-2-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.1 requirement set
+            href: ../../requirement-sets/word/word-api-1-1-requirement-set.md
+            displayName: Word
+      - name: Common API requirement sets
+        items:
+          - name: Overview
+            href: ../../requirement-sets/common/office-add-in-requirement-sets.md
+          - name: Add-in commands requirement sets
+            href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Dialog API requirement sets
+            href: ../../requirement-sets/common/dialog-api-requirement-sets.md
+          - name: Dialog Origin requirement sets
+            href: ../../requirement-sets/common/dialog-origin-requirement-sets.md
+          - name: Identity API requirement sets
+            href: ../../requirement-sets/common/identity-api-requirement-sets.md
+          - name: Image Coercion requirement sets
+            href: ../../requirement-sets/common/image-coercion-requirement-sets.md
+          - name: Keyboard Shortcuts requirement sets
+            href: >-
+              ../../requirement-sets/common/keyboard-shortcuts-requirement-sets.md
+          - name: Open Browser Window requirement sets
+            href: >-
+              ../../requirement-sets/common/open-browser-window-api-requirement-sets.md
+          - name: Ribbon API requirement sets
+            href: ../../requirement-sets/common/ribbon-api-requirement-sets.md
+          - name: Shared Runtime requirement sets
+            href: ../../requirement-sets/common/shared-runtime-requirement-sets.md

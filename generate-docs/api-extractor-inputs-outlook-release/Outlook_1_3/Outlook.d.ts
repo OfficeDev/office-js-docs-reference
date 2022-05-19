@@ -99,7 +99,156 @@ export declare namespace Office {
              * The notification message is an error message.
              */
             ErrorMessage = "errorMessage",
-            
+                    }
+        /**
+         * Specifies an item's type.
+         *
+         * @remarks
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         */
+        enum ItemType {
+            /**
+             * An email, meeting request, meeting response, or meeting cancellation.
+             */
+            Message = "message",
+            /**
+             * An appointment item.
+             */
+            Appointment = "appointment"
+        }
+        
+        
+        /**
+         * Represents the current view of Outlook on the web.
+         */
+        enum OWAView {
+            /**
+             * One-column view. Displayed when the screen is narrow. Outlook on the web uses this single-column layout on the entire screen of a smartphone.
+             */
+            OneColumn = "OneColumn",
+            /**
+             * Two-column view. Displayed when the screen is wider. Outlook on the web uses this view on most tablets.
+             */
+            TwoColumns = "TwoColumns",
+            /**
+             Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a desktop 
+             computer.
+             */
+            ThreeColumns = "ThreeColumns"
+        }
+        /**
+         * Specifies the type of recipient for an appointment.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.1]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * 
+         * **Important**: A `recipientType` property value isn't returned by the 
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+         * and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+         * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
+         */
+        enum RecipientType {
+            /**
+             * Specifies that the recipient is a distribution list containing a list of email addresses.
+             */
+            DistributionList = "distributionList",
+            /**
+             * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+             */
+            User = "user",
+            /**
+             * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+             */
+            ExternalUser = "externalUser",
+            /**
+             * Specifies that the recipient is not one of the other recipient types.
+             */
+            Other = "other"
+        }
+        
+        
+        /**  
+         * Specifies the type of response to a meeting invitation.
+         *
+         * @remarks
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         */
+        enum ResponseType {
+            /**
+             * There has been no response from the attendee.
+             */
+            None = "none",
+            /**
+             * The attendee is the meeting organizer.
+             */
+            Organizer = "organizer",
+            /**
+             * The meeting request was tentatively accepted by the attendee.
+             */
+            Tentative = "tentative",
+            /**
+             * The meeting request was accepted by the attendee.
+             */
+            Accepted = "accepted",
+            /**
+             * The meeting request was declined by the attendee.
+             */
+            Declined = "declined"
+        }
+        /**
+         * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         */
+        enum RestVersion {
+            /**
+             * Version 1.0.
+             */
+            v1_0 = "v1.0",
+            /**
+             * Version 2.0.
+             */
+            v2_0 = "v2.0",
+            /**
+             * Beta.
+             */
+            Beta = "beta"
+        }
+        /**
+         * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
+         * 
+         * @remarks
+         * [Api set: Mailbox 1.2]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         */
+        enum SourceProperty {
+            /**
+             * The source of the data is from the body of the item.
+             */
+            Body = "body",
+            /**
+             * The source of the data is from the subject of the item.
+             */
+            Subject = "subject"
+        }
+        
+    }
+    /**
+     * Provides an option for the data format.
+     */
+    export interface CoercionTypeOptions {
+        /**
+         * The desired data format.
+         */
+        coercionType?: CommonAPI.CoercionType | string;
     }
     /**
      * The subclass of {@link Office.Item | Item} dealing with appointments.

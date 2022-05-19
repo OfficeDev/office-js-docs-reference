@@ -1,0 +1,1106 @@
+### YamlMime:TSType
+name: Excel.ChartSeries
+uid: 'excel!Excel.ChartSeries:class'
+package: excel!
+fullName: Excel.ChartSeries
+summary: Represents a series in a chart.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: axisGroup
+    uid: 'excel!Excel.ChartSeries#axisGroup:member'
+    package: excel!
+    fullName: axisGroup
+    summary: Specifies the group for the specified series.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";'
+      return:
+        type: '<xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" | "Secondary"'
+  - name: binOptions
+    uid: 'excel!Excel.ChartSeries#binOptions:member'
+    package: excel!
+    fullName: binOptions
+    summary: Encapsulates the bin options for histogram charts and pareto charts.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly binOptions: Excel.ChartBinOptions;'
+      return:
+        type: '<xref uid="excel!Excel.ChartBinOptions:class" />'
+  - name: boxwhiskerOptions
+    uid: 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
+    package: excel!
+    fullName: boxwhiskerOptions
+    summary: Encapsulates the options for the box and whisker charts.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly boxwhiskerOptions: Excel.ChartBoxwhiskerOptions;'
+      return:
+        type: '<xref uid="excel!Excel.ChartBoxwhiskerOptions:class" />'
+  - name: bubbleScale
+    uid: 'excel!Excel.ChartSeries#bubbleScale:member'
+    package: excel!
+    fullName: bubbleScale
+    summary: >-
+      This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
+      only applies to bubble charts.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bubbleScale: number;'
+      return:
+        type: number
+  - name: chartType
+    uid: 'excel!Excel.ChartSeries#chartType:member'
+    package: excel!
+    fullName: chartType
+    summary: Represents the chart type of a series. See `Excel.ChartType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+      return:
+        type: >-
+          <xref uid="excel!Excel.ChartType:enum" /> | "Invalid" | "ColumnClustered" | "ColumnStacked" |
+          "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" |
+          "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" |
+          "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded"
+          | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" |
+          "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" |
+          "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+          "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+          "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+          "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
+          "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+          "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+          "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie"
+          | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap"
+          | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+  - name: context
+    uid: 'excel!Excel.ChartSeries#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: dataLabels
+    uid: 'excel!Excel.ChartSeries#dataLabels:member'
+    package: excel!
+    fullName: dataLabels
+    summary: Represents a collection of all data labels in the series.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly dataLabels: Excel.ChartDataLabels;'
+      return:
+        type: '<xref uid="excel!Excel.ChartDataLabels:class" />'
+  - name: doughnutHoleSize
+    uid: 'excel!Excel.ChartSeries#doughnutHoleSize:member'
+    package: excel!
+    fullName: doughnutHoleSize
+    summary: >-
+      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnut exploded charts. Throws
+      an `InvalidArgument` error on invalid charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'doughnutHoleSize: number;'
+      return:
+        type: number
+  - name: explosion
+    uid: 'excel!Excel.ChartSeries#explosion:member'
+    package: excel!
+    fullName: explosion
+    summary: >-
+      Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion
+      (the tip of the slice is in the center of the pie).
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'explosion: number;'
+      return:
+        type: number
+  - name: filtered
+    uid: 'excel!Excel.ChartSeries#filtered:member'
+    package: excel!
+    fullName: filtered
+    summary: Specifies if the series is filtered. Not applicable for surface charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filtered: boolean;'
+      return:
+        type: boolean
+  - name: firstSliceAngle
+    uid: 'excel!Excel.ChartSeries#firstSliceAngle:member'
+    package: excel!
+    fullName: firstSliceAngle
+    summary: >-
+      Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies
+      only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstSliceAngle: number;'
+      return:
+        type: number
+  - name: format
+    uid: 'excel!Excel.ChartSeries#format:member'
+    package: excel!
+    fullName: format
+    summary: 'Represents the formatting of a chart series, which includes fill and line formatting.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly format: Excel.ChartSeriesFormat;'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeriesFormat:class" />'
+  - name: gapWidth
+    uid: 'excel!Excel.ChartSeries#gapWidth:member'
+    package: excel!
+    fullName: gapWidth
+    summary: >-
+      Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
+      line and pie charts. Throws an invalid argument exception on invalid charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gapWidth: number;'
+      return:
+        type: number
+  - name: gradientMaximumColor
+    uid: 'excel!Excel.ChartSeries#gradientMaximumColor:member'
+    package: excel!
+    fullName: gradientMaximumColor
+    summary: Specifies the color for maximum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMaximumColor: string;'
+      return:
+        type: string
+  - name: gradientMaximumType
+    uid: 'excel!Excel.ChartSeries#gradientMaximumType:member'
+    package: excel!
+    fullName: gradientMaximumType
+    summary: Specifies the type for maximum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMaximumType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";'
+      return:
+        type: '<xref uid="excel!Excel.ChartGradientStyleType:enum" /> | "ExtremeValue" | "Number" | "Percent"'
+  - name: gradientMaximumValue
+    uid: 'excel!Excel.ChartSeries#gradientMaximumValue:member'
+    package: excel!
+    fullName: gradientMaximumValue
+    summary: Specifies the maximum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMaximumValue: number;'
+      return:
+        type: number
+  - name: gradientMidpointColor
+    uid: 'excel!Excel.ChartSeries#gradientMidpointColor:member'
+    package: excel!
+    fullName: gradientMidpointColor
+    summary: Specifies the color for the midpoint value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMidpointColor: string;'
+      return:
+        type: string
+  - name: gradientMidpointType
+    uid: 'excel!Excel.ChartSeries#gradientMidpointType:member'
+    package: excel!
+    fullName: gradientMidpointType
+    summary: Specifies the type for the midpoint value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMidpointType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";'
+      return:
+        type: '<xref uid="excel!Excel.ChartGradientStyleType:enum" /> | "ExtremeValue" | "Number" | "Percent"'
+  - name: gradientMidpointValue
+    uid: 'excel!Excel.ChartSeries#gradientMidpointValue:member'
+    package: excel!
+    fullName: gradientMidpointValue
+    summary: Specifies the midpoint value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMidpointValue: number;'
+      return:
+        type: number
+  - name: gradientMinimumColor
+    uid: 'excel!Excel.ChartSeries#gradientMinimumColor:member'
+    package: excel!
+    fullName: gradientMinimumColor
+    summary: Specifies the color for the minimum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMinimumColor: string;'
+      return:
+        type: string
+  - name: gradientMinimumType
+    uid: 'excel!Excel.ChartSeries#gradientMinimumType:member'
+    package: excel!
+    fullName: gradientMinimumType
+    summary: Specifies the type for the minimum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMinimumType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";'
+      return:
+        type: '<xref uid="excel!Excel.ChartGradientStyleType:enum" /> | "ExtremeValue" | "Number" | "Percent"'
+  - name: gradientMinimumValue
+    uid: 'excel!Excel.ChartSeries#gradientMinimumValue:member'
+    package: excel!
+    fullName: gradientMinimumValue
+    summary: Specifies the minimum value of a region map chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientMinimumValue: number;'
+      return:
+        type: number
+  - name: gradientStyle
+    uid: 'excel!Excel.ChartSeries#gradientStyle:member'
+    package: excel!
+    fullName: gradientStyle
+    summary: Specifies the series gradient style of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'gradientStyle: Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";'
+      return:
+        type: '<xref uid="excel!Excel.ChartGradientStyle:enum" /> | "TwoPhaseColor" | "ThreePhaseColor"'
+  - name: hasDataLabels
+    uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
+    package: excel!
+    fullName: hasDataLabels
+    summary: Specifies if the series has data labels.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasDataLabels: boolean;'
+      return:
+        type: boolean
+  - name: invertColor
+    uid: 'excel!Excel.ChartSeries#invertColor:member'
+    package: excel!
+    fullName: invertColor
+    summary: Specifies the fill color for negative data points in a series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'invertColor: string;'
+      return:
+        type: string
+  - name: invertIfNegative
+    uid: 'excel!Excel.ChartSeries#invertIfNegative:member'
+    package: excel!
+    fullName: invertIfNegative
+    summary: True if Excel inverts the pattern in the item when it corresponds to a negative number.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'invertIfNegative: boolean;'
+      return:
+        type: boolean
+  - name: mapOptions
+    uid: 'excel!Excel.ChartSeries#mapOptions:member'
+    package: excel!
+    fullName: mapOptions
+    summary: Encapsulates the options for a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly mapOptions: Excel.ChartMapOptions;'
+      return:
+        type: '<xref uid="excel!Excel.ChartMapOptions:class" />'
+  - name: markerBackgroundColor
+    uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
+    package: excel!
+    fullName: markerBackgroundColor
+    summary: Specifies the marker background color of a chart series.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerBackgroundColor: string;'
+      return:
+        type: string
+  - name: markerForegroundColor
+    uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
+    package: excel!
+    fullName: markerForegroundColor
+    summary: Specifies the marker foreground color of a chart series.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerForegroundColor: string;'
+      return:
+        type: string
+  - name: markerSize
+    uid: 'excel!Excel.ChartSeries#markerSize:member'
+    package: excel!
+    fullName: markerSize
+    summary: Specifies the marker size of a chart series.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerSize: number;'
+      return:
+        type: number
+  - name: markerStyle
+    uid: 'excel!Excel.ChartSeries#markerStyle:member'
+    package: excel!
+    fullName: markerStyle
+    summary: Specifies the marker style of a chart series. See `Excel.ChartMarkerStyle` for details.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
+
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X"
+        | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
+      return:
+        type: >-
+          <xref uid="excel!Excel.ChartMarkerStyle:enum" /> | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" |
+          "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+  - name: name
+    uid: 'excel!Excel.ChartSeries#name:member'
+    package: excel!
+    fullName: name
+    summary: Specifies the name of a series in a chart. The name's length should not be greater than 255 characters.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: overlap
+    uid: 'excel!Excel.ChartSeries#overlap:member'
+    package: excel!
+    fullName: overlap
+    summary: >-
+      Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
+      2-D column charts.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overlap: number;'
+      return:
+        type: number
+  - name: parentLabelStrategy
+    uid: 'excel!Excel.ChartSeries#parentLabelStrategy:member'
+    package: excel!
+    fullName: parentLabelStrategy
+    summary: Specifies the series parent label strategy area for a treemap chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentLabelStrategy: Excel.ChartParentLabelStrategy | "None" | "Banner" | "Overlapping";'
+      return:
+        type: '<xref uid="excel!Excel.ChartParentLabelStrategy:enum" /> | "None" | "Banner" | "Overlapping"'
+  - name: plotOrder
+    uid: 'excel!Excel.ChartSeries#plotOrder:member'
+    package: excel!
+    fullName: plotOrder
+    summary: Specifies the plot order of a chart series within the chart group.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'plotOrder: number;'
+      return:
+        type: number
+  - name: points
+    uid: 'excel!Excel.ChartSeries#points:member'
+    package: excel!
+    fullName: points
+    summary: Returns a collection of all points in the series.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly points: Excel.ChartPointsCollection;'
+      return:
+        type: '<xref uid="excel!Excel.ChartPointsCollection:class" />'
+  - name: secondPlotSize
+    uid: 'excel!Excel.ChartSeries#secondPlotSize:member'
+    package: excel!
+    fullName: secondPlotSize
+    summary: >-
+      Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of
+      the size of the primary pie. Can be a value from 5 to 200.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondPlotSize: number;'
+      return:
+        type: number
+  - name: showConnectorLines
+    uid: 'excel!Excel.ChartSeries#showConnectorLines:member'
+    package: excel!
+    fullName: showConnectorLines
+    summary: Specifies whether connector lines are shown in waterfall charts.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showConnectorLines: boolean;'
+      return:
+        type: boolean
+  - name: showLeaderLines
+    uid: 'excel!Excel.ChartSeries#showLeaderLines:member'
+    package: excel!
+    fullName: showLeaderLines
+    summary: Specifies whether leader lines are displayed for each data label in the series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showLeaderLines: boolean;'
+      return:
+        type: boolean
+  - name: showShadow
+    uid: 'excel!Excel.ChartSeries#showShadow:member'
+    package: excel!
+    fullName: showShadow
+    summary: Specifies if the series has a shadow.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type: boolean
+  - name: smooth
+    uid: 'excel!Excel.ChartSeries#smooth:member'
+    package: excel!
+    fullName: smooth
+    summary: Specifies if the series is smooth. Only applicable to line and scatter charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'smooth: boolean;'
+      return:
+        type: boolean
+  - name: splitType
+    uid: 'excel!Excel.ChartSeries#splitType:member'
+    package: excel!
+    fullName: splitType
+    summary: Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        splitType: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
+        "SplitByCustomSplit";
+      return:
+        type: >-
+          <xref uid="excel!Excel.ChartSplitType:enum" /> | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" |
+          "SplitByCustomSplit"
+  - name: splitValue
+    uid: 'excel!Excel.ChartSeries#splitValue:member'
+    package: excel!
+    fullName: splitValue
+    summary: Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'splitValue: number;'
+      return:
+        type: number
+  - name: trendlines
+    uid: 'excel!Excel.ChartSeries#trendlines:member'
+    package: excel!
+    fullName: trendlines
+    summary: The collection of trendlines in the series.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
+      return:
+        type: '<xref uid="excel!Excel.ChartTrendlineCollection:class" />'
+  - name: varyByCategories
+    uid: 'excel!Excel.ChartSeries#varyByCategories:member'
+    package: excel!
+    fullName: varyByCategories
+    summary: True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'varyByCategories: boolean;'
+      return:
+        type: boolean
+  - name: xErrorBars
+    uid: 'excel!Excel.ChartSeries#xErrorBars:member'
+    package: excel!
+    fullName: xErrorBars
+    summary: Represents the error bar object of a chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly xErrorBars: Excel.ChartErrorBars;'
+      return:
+        type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
+  - name: yErrorBars
+    uid: 'excel!Excel.ChartSeries#yErrorBars:member'
+    package: excel!
+    fullName: yErrorBars
+    summary: Represents the error bar object of a chart series.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly yErrorBars: Excel.ChartErrorBars;'
+      return:
+        type: '<xref uid="excel!Excel.ChartErrorBars:class" />'
+methods:
+  - name: delete()
+    uid: 'excel!Excel.ChartSeries#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: Deletes the chart series.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const seriesCollection = sheet.charts.getItemAt(0).series;
+        seriesCollection.load("count");
+        await context.sync();
+
+        if (seriesCollection.count > 0) {
+          const series = seriesCollection.getItemAt(0);
+
+          // Delete the first series.
+          series.delete();
+        }
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartSeries#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.ChartSeriesLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeries:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartSeries#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeries:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          // Rename the 1st series of Chart1 to "New Series Name".
+          await Excel.run(async (context) => { 
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              chart.series.getItemAt(0).name = "New Series Name";
+              await context.sync();
+
+              console.log("Series1 Renamed");
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartSeries#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartSeries;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.ChartSeries:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'excel!Excel.ChartSeries#set:member(1)'
+    package: excel!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ChartSeriesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.ChartSeries#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.ChartSeries): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.ChartSeries:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setBubbleSizes(sourceData)
+    uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
+    package: excel!
+    fullName: setBubbleSizes(sourceData)
+    summary: Sets the bubble sizes for a chart series. Only works for bubble charts.
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
+
+      await Excel.run(async (context) => {
+        /*
+          The table is expected to look like this:
+          Product, Inventory, Price, Current Market Share
+          Calamansi, 2000, $2.45, 10%
+          ...
+
+          We want each bubble to represent a single row.
+        */
+
+        // Get the worksheet and table data.
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const table = sheet.tables.getItem("Sales");
+        const dataRange = table.getDataBodyRange();
+
+        // Get the table data without the row names.
+        const valueRange = dataRange.getOffsetRange(0, 1).getResizedRange(0, -1);
+
+        // Create the chart.
+        const bubbleChart = sheet.charts.add(Excel.ChartType.bubble, valueRange);
+        bubbleChart.name = "Product Chart";
+
+        // Remove the default series, since we want a unique series for each row.
+        bubbleChart.series.getItemAt(0).delete();
+
+        // Load the data necessary to make a chart series.
+        dataRange.load(["rowCount", "values"]);
+        await context.sync();
+
+        // For each row, create a chart series (a bubble).
+        for (let i = 0; i < dataRange.rowCount; i++) {
+          const newSeries = bubbleChart.series.add(dataRange.values[i][0], i);
+          newSeries.setXAxisValues(dataRange.getCell(i, 1));
+          newSeries.setValues(dataRange.getCell(i, 2));
+          newSeries.setBubbleSizes(dataRange.getCell(i, 3));
+
+          // Show the product name and market share percentage.
+          newSeries.dataLabels.showSeriesName = true;
+          newSeries.dataLabels.showBubbleSize = true;
+          newSeries.dataLabels.showValue = false;
+        }
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBubbleSizes(sourceData: Range): void;'
+      parameters:
+        - id: sourceData
+          description: The `Range` object corresponding to the source data.
+          type: '<xref uid="excel!Excel.Range:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setValues(sourceData)
+    uid: 'excel!Excel.ChartSeries#setValues:member(1)'
+    package: excel!
+    fullName: setValues(sourceData)
+    summary: 'Sets the values for a chart series. For scatter charts, it refers to y-axis values.'
+    remarks: >-
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        let seriesCollection = sheet.charts.getItemAt(0);
+        let rangeSelection = sheet.getRange("C2:C7");
+        let xRangeSelection = sheet.getRange("A1:A7");
+
+        // Add a series.
+        let newSeries = seriesCollection.series.add("Qtr2");
+        newSeries.setValues(rangeSelection);
+        newSeries.setXAxisValues(xRangeSelection);
+
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValues(sourceData: Range): void;'
+      parameters:
+        - id: sourceData
+          description: The `Range` object corresponding to the source data.
+          type: '<xref uid="excel!Excel.Range:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setXAxisValues(sourceData)
+    uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
+    package: excel!
+    fullName: setXAxisValues(sourceData)
+    summary: Sets the values of the x-axis for a chart series. Only works for scatter charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setXAxisValues(sourceData: Range): void;'
+      parameters:
+        - id: sourceData
+          description: The `Range` object corresponding to the source data.
+          type: '<xref uid="excel!Excel.Range:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartSeries#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

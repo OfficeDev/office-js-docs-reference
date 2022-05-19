@@ -1,0 +1,33 @@
+### YamlMime:TSEnum
+name: Excel.ClearApplyTo
+uid: 'excel!Excel.ClearApplyTo:enum'
+package: excel!
+fullName: Excel.ClearApplyTo
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and
+  RemoveHyperlinks.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'excel!Excel.ClearApplyTo.all:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"All"'
+  - name: contents
+    uid: 'excel!Excel.ClearApplyTo.contents:member'
+    package: excel!
+    summary: |-
+      Clears the contents of the range.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Contents"'
+  - name: formats
+    uid: 'excel!Excel.ClearApplyTo.formats:member'
+    package: excel!
+    summary: |-
+      Clears all formatting for the range.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Formats"'

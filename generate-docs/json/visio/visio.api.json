@@ -194,7 +194,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -395,7 +395,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -1000,7 +1000,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1255,7 +1255,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -1468,7 +1468,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1518,7 +1518,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -1735,7 +1735,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "visio!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -2864,7 +2864,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -3114,7 +3114,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3155,7 +3155,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3196,7 +3196,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3237,7 +3237,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3278,7 +3278,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3319,7 +3319,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3360,7 +3360,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3401,7 +3401,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "visio!OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -3479,7 +3479,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -4061,7 +4061,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -4397,7 +4397,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -4828,7 +4828,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -5212,7 +5212,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -5262,7 +5262,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -5479,7 +5479,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "visio!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -10634,7 +10634,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -11028,7 +11028,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -11297,7 +11297,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -11347,7 +11347,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -11564,7 +11564,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "visio!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -11832,7 +11832,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -11957,7 +11957,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -12039,7 +12039,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -12233,7 +12233,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -12561,7 +12561,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientRequestContext",
-                  "canonicalReference": "visio!OfficeExtension.ClientRequestContext:class"
+                  "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                 },
                 {
                   "kind": "Content",
@@ -12587,7 +12587,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EmbeddedSession",
-                      "canonicalReference": "visio!OfficeExtension.EmbeddedSession:class"
+                      "canonicalReference": "office!OfficeExtension.EmbeddedSession:class"
                     },
                     {
                       "kind": "Content",
@@ -12734,7 +12734,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -12743,7 +12743,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.EmbeddedSession",
-                  "canonicalReference": "visio!OfficeExtension.EmbeddedSession:class"
+                  "canonicalReference": "office!OfficeExtension.EmbeddedSession:class"
                 },
                 {
                   "kind": "Content",
@@ -12840,7 +12840,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -12941,7 +12941,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientRequestContext",
-                  "canonicalReference": "visio!OfficeExtension.ClientRequestContext:class"
+                  "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                 },
                 {
                   "kind": "Content",
@@ -13038,7 +13038,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -13315,7 +13315,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -13393,7 +13393,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -13696,7 +13696,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -14087,7 +14087,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -14137,7 +14137,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -14354,7 +14354,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "visio!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -14486,7 +14486,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -14870,7 +14870,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -14920,7 +14920,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -15137,7 +15137,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "visio!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -15405,7 +15405,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "visio!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -15478,7 +15478,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -15609,7 +15609,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "visio!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -15945,7 +15945,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "visio!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",

@@ -1,0 +1,76 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.Month
+uid: 'outlook!Office.MailboxEnums.Month:enum'
+package: outlook!
+fullName: Office.MailboxEnums.Month
+summary: Specifies the month.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Apr
+    uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
+    package: outlook!
+    summary: April
+    value: '"apr"'
+  - name: Aug
+    uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
+    package: outlook!
+    summary: August
+    value: '"aug"'
+  - name: Dec
+    uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
+    package: outlook!
+    summary: December
+    value: '"dec"'
+  - name: Feb
+    uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
+    package: outlook!
+    summary: February
+    value: '"feb"'
+  - name: Jan
+    uid: 'outlook!Office.MailboxEnums.Month.Jan:member'
+    package: outlook!
+    summary: January
+    value: '"jan"'
+  - name: Jul
+    uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
+    package: outlook!
+    summary: July
+    value: '"jul"'
+  - name: Jun
+    uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
+    package: outlook!
+    summary: June
+    value: '"jun"'
+  - name: Mar
+    uid: 'outlook!Office.MailboxEnums.Month.Mar:member'
+    package: outlook!
+    summary: March
+    value: '"mar"'
+  - name: May
+    uid: 'outlook!Office.MailboxEnums.Month.May:member'
+    package: outlook!
+    summary: May
+    value: '"may"'
+  - name: Nov
+    uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
+    package: outlook!
+    summary: November
+    value: '"nov"'
+  - name: Oct
+    uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
+    package: outlook!
+    summary: October
+    value: '"oct"'
+  - name: Sep
+    uid: 'outlook!Office.MailboxEnums.Month.Sep:member'
+    package: outlook!
+    summary: September
+    value: '"sep"'

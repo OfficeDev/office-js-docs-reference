@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: Word.ContentControlEventArgs
+uid: 'word!Word.ContentControlEventArgs:interface'
+package: word!
+fullName: Word.ContentControlEventArgs
+summary: Provides information about the content control that raised an event.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: contentControl
+    uid: 'word!Word.ContentControlEventArgs#contentControl:member'
+    package: word!
+    fullName: contentControl
+    summary: The object that raised the event. Load this object to get its properties.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentControl: Word.ContentControl;'
+      return:
+        type: '<xref uid="word!Word.ContentControl:class" />'
+  - name: eventType
+    uid: 'word!Word.ContentControlEventArgs#eventType:member'
+    package: word!
+    fullName: eventType
+    summary: The event type. See Word.EventType for details.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+        "AnnotationDeleted";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+          "AnnotationDeleted"

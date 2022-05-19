@@ -1,0 +1,123 @@
+### YamlMime:TSType
+name: Office.Diagnostics
+uid: 'outlook!Office.Diagnostics:interface'
+package: outlook!
+fullName: Office.Diagnostics
+summary: Provides diagnostic information to an Outlook add-in.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  Starting with Mailbox requirement set 1.5, you can also use the
+  [Office.context.diagnostics](https://docs.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
+  property to get similar information.
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: hostName
+    uid: 'outlook!Office.Diagnostics#hostName:member'
+    package: outlook!
+    fullName: hostName
+    summary: >-
+      Gets a string that represents the name of the host application.
+
+
+      A string that can be one of the following values: `Outlook`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!--
+      -->, or `OutlookAndroid`<!-- -->.
+
+
+      **Note**: The `Outlook` value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostName: string;'
+      return:
+        type: string
+  - name: hostVersion
+    uid: 'outlook!Office.Diagnostics#hostVersion:member'
+    package: outlook!
+    fullName: hostVersion
+    summary: >-
+      Gets a string that represents the version of either the host application or the Exchange Server (e.g.,
+      "15.0.468.0").
+
+
+      If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the
+      version of the host application, Outlook. In Outlook on the web, the property returns the version of the Exchange
+      Server.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostVersion: string;'
+      return:
+        type: string
+  - name: OWAView
+    uid: 'outlook!Office.Diagnostics#OWAView:member'
+    package: outlook!
+    fullName: OWAView
+    summary: >-
+      Gets a string that represents the current view of Outlook on the web.
+
+
+      The returned string can be one of the following values: `OneColumn`<!-- -->, `TwoColumns`<!-- -->, or
+      `ThreeColumns`<!-- -->.
+
+
+      If the host application is not Outlook on the web, then accessing this property results in undefined.
+
+
+      Outlook on the web has three views that correspond to the width of the screen and the window, and the number of
+      columns that can be displayed:
+
+
+      - `OneColumn`<!-- -->, which is displayed when the screen is narrow. Outlook on the web uses this single-column
+      layout on the entire screen of a smartphone.
+
+
+      - `TwoColumns`<!-- -->, which is displayed when the screen is wider. Outlook on the web uses this view on most
+      tablets.
+
+
+      - `ThreeColumns`<!-- -->, which is displayed when the screen is wide. For example, Outlook on the web uses this
+      view in a full screen window on a desktop computer.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";'
+      return:
+        type: '<xref uid="outlook!Office.MailboxEnums.OWAView:enum" /> | "OneColumn" | "TwoColumns" | "ThreeColumns"'

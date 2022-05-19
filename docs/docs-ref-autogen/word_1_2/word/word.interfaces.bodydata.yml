@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: Word.Interfaces.BodyData
+uid: 'word!Word.Interfaces.BodyData:interface'
+package: word!
+fullName: Word.Interfaces.BodyData
+summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contentControls
+    uid: 'word!Word.Interfaces.BodyData#contentControls:member'
+    package: word!
+    fullName: contentControls
+    summary: Gets the collection of rich text content control objects in the body. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: font
+    uid: 'word!Word.Interfaces.BodyData#font:member'
+    package: word!
+    fullName: font
+    summary: 'Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontData:interface" />'
+  - name: inlinePictures
+    uid: 'word!Word.Interfaces.BodyData#inlinePictures:member'
+    package: word!
+    fullName: inlinePictures
+    summary: >-
+      Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+      Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.InlinePictureData:interface" />[]'
+  - name: paragraphs
+    uid: 'word!Word.Interfaces.BodyData#paragraphs:member'
+    package: word!
+    fullName: paragraphs
+    summary: >-
+      Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not
+      returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ParagraphData:interface" />[]'
+  - name: style
+    uid: 'word!Word.Interfaces.BodyData#style:member'
+    package: word!
+    fullName: style
+    summary: >-
+      Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: string;'
+      return:
+        type: string
+  - name: text
+    uid: 'word!Word.Interfaces.BodyData#text:member'
+    package: word!
+    fullName: text
+    summary: Gets the text of the body. Use the insertText method to insert text. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string

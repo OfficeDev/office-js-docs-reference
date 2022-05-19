@@ -1,0 +1,895 @@
+### YamlMime:TSEnum
+name: Excel.GeometricShapeType
+uid: 'excel!Excel.GeometricShapeType:enum'
+package: excel!
+fullName: Excel.GeometricShapeType
+summary: Specifies the shape type for a `GeometricShape` object.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accentBorderCallout1
+    uid: 'excel!Excel.GeometricShapeType.accentBorderCallout1:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentBorderCallout1"'
+  - name: accentBorderCallout2
+    uid: 'excel!Excel.GeometricShapeType.accentBorderCallout2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentBorderCallout2"'
+  - name: accentBorderCallout3
+    uid: 'excel!Excel.GeometricShapeType.accentBorderCallout3:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentBorderCallout3"'
+  - name: accentCallout1
+    uid: 'excel!Excel.GeometricShapeType.accentCallout1:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentCallout1"'
+  - name: accentCallout2
+    uid: 'excel!Excel.GeometricShapeType.accentCallout2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentCallout2"'
+  - name: accentCallout3
+    uid: 'excel!Excel.GeometricShapeType.accentCallout3:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"AccentCallout3"'
+  - name: actionButtonBackPrevious
+    uid: 'excel!Excel.GeometricShapeType.actionButtonBackPrevious:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonBackPrevious"'
+  - name: actionButtonBeginning
+    uid: 'excel!Excel.GeometricShapeType.actionButtonBeginning:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonBeginning"'
+  - name: actionButtonBlank
+    uid: 'excel!Excel.GeometricShapeType.actionButtonBlank:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonBlank"'
+  - name: actionButtonDocument
+    uid: 'excel!Excel.GeometricShapeType.actionButtonDocument:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonDocument"'
+  - name: actionButtonEnd
+    uid: 'excel!Excel.GeometricShapeType.actionButtonEnd:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonEnd"'
+  - name: actionButtonForwardNext
+    uid: 'excel!Excel.GeometricShapeType.actionButtonForwardNext:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonForwardNext"'
+  - name: actionButtonHelp
+    uid: 'excel!Excel.GeometricShapeType.actionButtonHelp:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonHelp"'
+  - name: actionButtonHome
+    uid: 'excel!Excel.GeometricShapeType.actionButtonHome:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonHome"'
+  - name: actionButtonInformation
+    uid: 'excel!Excel.GeometricShapeType.actionButtonInformation:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonInformation"'
+  - name: actionButtonMovie
+    uid: 'excel!Excel.GeometricShapeType.actionButtonMovie:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonMovie"'
+  - name: actionButtonReturn
+    uid: 'excel!Excel.GeometricShapeType.actionButtonReturn:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonReturn"'
+  - name: actionButtonSound
+    uid: 'excel!Excel.GeometricShapeType.actionButtonSound:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ActionButtonSound"'
+  - name: arc
+    uid: 'excel!Excel.GeometricShapeType.arc:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Arc"'
+  - name: bentArrow
+    uid: 'excel!Excel.GeometricShapeType.bentArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BentArrow"'
+  - name: bentUpArrow
+    uid: 'excel!Excel.GeometricShapeType.bentUpArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BentUpArrow"'
+  - name: bevel
+    uid: 'excel!Excel.GeometricShapeType.bevel:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Bevel"'
+  - name: blockArc
+    uid: 'excel!Excel.GeometricShapeType.blockArc:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BlockArc"'
+  - name: borderCallout1
+    uid: 'excel!Excel.GeometricShapeType.borderCallout1:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BorderCallout1"'
+  - name: borderCallout2
+    uid: 'excel!Excel.GeometricShapeType.borderCallout2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BorderCallout2"'
+  - name: borderCallout3
+    uid: 'excel!Excel.GeometricShapeType.borderCallout3:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BorderCallout3"'
+  - name: bracePair
+    uid: 'excel!Excel.GeometricShapeType.bracePair:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BracePair"'
+  - name: bracketPair
+    uid: 'excel!Excel.GeometricShapeType.bracketPair:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"BracketPair"'
+  - name: callout1
+    uid: 'excel!Excel.GeometricShapeType.callout1:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Callout1"'
+  - name: callout2
+    uid: 'excel!Excel.GeometricShapeType.callout2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Callout2"'
+  - name: callout3
+    uid: 'excel!Excel.GeometricShapeType.callout3:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Callout3"'
+  - name: can
+    uid: 'excel!Excel.GeometricShapeType.can:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Can"'
+  - name: chartPlus
+    uid: 'excel!Excel.GeometricShapeType.chartPlus:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ChartPlus"'
+  - name: chartStar
+    uid: 'excel!Excel.GeometricShapeType.chartStar:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ChartStar"'
+  - name: chartX
+    uid: 'excel!Excel.GeometricShapeType.chartX:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"ChartX"'
+  - name: chevron
+    uid: 'excel!Excel.GeometricShapeType.chevron:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Chevron"'
+  - name: chord
+    uid: 'excel!Excel.GeometricShapeType.chord:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Chord"'
+  - name: circularArrow
+    uid: 'excel!Excel.GeometricShapeType.circularArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CircularArrow"'
+  - name: cloud
+    uid: 'excel!Excel.GeometricShapeType.cloud:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Cloud"'
+  - name: cloudCallout
+    uid: 'excel!Excel.GeometricShapeType.cloudCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CloudCallout"'
+  - name: corner
+    uid: 'excel!Excel.GeometricShapeType.corner:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Corner"'
+  - name: cornerTabs
+    uid: 'excel!Excel.GeometricShapeType.cornerTabs:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CornerTabs"'
+  - name: cube
+    uid: 'excel!Excel.GeometricShapeType.cube:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Cube"'
+  - name: curvedDownArrow
+    uid: 'excel!Excel.GeometricShapeType.curvedDownArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CurvedDownArrow"'
+  - name: curvedLeftArrow
+    uid: 'excel!Excel.GeometricShapeType.curvedLeftArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CurvedLeftArrow"'
+  - name: curvedRightArrow
+    uid: 'excel!Excel.GeometricShapeType.curvedRightArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CurvedRightArrow"'
+  - name: curvedUpArrow
+    uid: 'excel!Excel.GeometricShapeType.curvedUpArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CurvedUpArrow"'
+  - name: decagon
+    uid: 'excel!Excel.GeometricShapeType.decagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Decagon"'
+  - name: diagonalStripe
+    uid: 'excel!Excel.GeometricShapeType.diagonalStripe:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"DiagonalStripe"'
+  - name: diamond
+    uid: 'excel!Excel.GeometricShapeType.diamond:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Diamond"'
+  - name: dodecagon
+    uid: 'excel!Excel.GeometricShapeType.dodecagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Dodecagon"'
+  - name: donut
+    uid: 'excel!Excel.GeometricShapeType.donut:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Donut"'
+  - name: doubleWave
+    uid: 'excel!Excel.GeometricShapeType.doubleWave:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"DoubleWave"'
+  - name: downArrow
+    uid: 'excel!Excel.GeometricShapeType.downArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"DownArrow"'
+  - name: downArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.downArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"DownArrowCallout"'
+  - name: ellipse
+    uid: 'excel!Excel.GeometricShapeType.ellipse:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Ellipse"'
+  - name: ellipseRibbon
+    uid: 'excel!Excel.GeometricShapeType.ellipseRibbon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"EllipseRibbon"'
+  - name: ellipseRibbon2
+    uid: 'excel!Excel.GeometricShapeType.ellipseRibbon2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"EllipseRibbon2"'
+  - name: flowChartAlternateProcess
+    uid: 'excel!Excel.GeometricShapeType.flowChartAlternateProcess:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartAlternateProcess"'
+  - name: flowChartCollate
+    uid: 'excel!Excel.GeometricShapeType.flowChartCollate:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartCollate"'
+  - name: flowChartConnector
+    uid: 'excel!Excel.GeometricShapeType.flowChartConnector:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartConnector"'
+  - name: flowChartDecision
+    uid: 'excel!Excel.GeometricShapeType.flowChartDecision:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartDecision"'
+  - name: flowChartDelay
+    uid: 'excel!Excel.GeometricShapeType.flowChartDelay:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartDelay"'
+  - name: flowChartDisplay
+    uid: 'excel!Excel.GeometricShapeType.flowChartDisplay:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartDisplay"'
+  - name: flowChartDocument
+    uid: 'excel!Excel.GeometricShapeType.flowChartDocument:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartDocument"'
+  - name: flowChartExtract
+    uid: 'excel!Excel.GeometricShapeType.flowChartExtract:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartExtract"'
+  - name: flowChartInputOutput
+    uid: 'excel!Excel.GeometricShapeType.flowChartInputOutput:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartInputOutput"'
+  - name: flowChartInternalStorage
+    uid: 'excel!Excel.GeometricShapeType.flowChartInternalStorage:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartInternalStorage"'
+  - name: flowChartMagneticDisk
+    uid: 'excel!Excel.GeometricShapeType.flowChartMagneticDisk:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartMagneticDisk"'
+  - name: flowChartMagneticDrum
+    uid: 'excel!Excel.GeometricShapeType.flowChartMagneticDrum:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartMagneticDrum"'
+  - name: flowChartMagneticTape
+    uid: 'excel!Excel.GeometricShapeType.flowChartMagneticTape:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartMagneticTape"'
+  - name: flowChartManualInput
+    uid: 'excel!Excel.GeometricShapeType.flowChartManualInput:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartManualInput"'
+  - name: flowChartManualOperation
+    uid: 'excel!Excel.GeometricShapeType.flowChartManualOperation:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartManualOperation"'
+  - name: flowChartMerge
+    uid: 'excel!Excel.GeometricShapeType.flowChartMerge:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartMerge"'
+  - name: flowChartMultidocument
+    uid: 'excel!Excel.GeometricShapeType.flowChartMultidocument:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartMultidocument"'
+  - name: flowChartOfflineStorage
+    uid: 'excel!Excel.GeometricShapeType.flowChartOfflineStorage:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartOfflineStorage"'
+  - name: flowChartOffpageConnector
+    uid: 'excel!Excel.GeometricShapeType.flowChartOffpageConnector:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartOffpageConnector"'
+  - name: flowChartOnlineStorage
+    uid: 'excel!Excel.GeometricShapeType.flowChartOnlineStorage:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartOnlineStorage"'
+  - name: flowChartOr
+    uid: 'excel!Excel.GeometricShapeType.flowChartOr:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartOr"'
+  - name: flowChartPredefinedProcess
+    uid: 'excel!Excel.GeometricShapeType.flowChartPredefinedProcess:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartPredefinedProcess"'
+  - name: flowChartPreparation
+    uid: 'excel!Excel.GeometricShapeType.flowChartPreparation:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartPreparation"'
+  - name: flowChartProcess
+    uid: 'excel!Excel.GeometricShapeType.flowChartProcess:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartProcess"'
+  - name: flowChartPunchedCard
+    uid: 'excel!Excel.GeometricShapeType.flowChartPunchedCard:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartPunchedCard"'
+  - name: flowChartPunchedTape
+    uid: 'excel!Excel.GeometricShapeType.flowChartPunchedTape:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartPunchedTape"'
+  - name: flowChartSort
+    uid: 'excel!Excel.GeometricShapeType.flowChartSort:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartSort"'
+  - name: flowChartSummingJunction
+    uid: 'excel!Excel.GeometricShapeType.flowChartSummingJunction:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartSummingJunction"'
+  - name: flowChartTerminator
+    uid: 'excel!Excel.GeometricShapeType.flowChartTerminator:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FlowChartTerminator"'
+  - name: foldedCorner
+    uid: 'excel!Excel.GeometricShapeType.foldedCorner:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"FoldedCorner"'
+  - name: frame
+    uid: 'excel!Excel.GeometricShapeType.frame:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Frame"'
+  - name: funnel
+    uid: 'excel!Excel.GeometricShapeType.funnel:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Funnel"'
+  - name: gear6
+    uid: 'excel!Excel.GeometricShapeType.gear6:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Gear6"'
+  - name: gear9
+    uid: 'excel!Excel.GeometricShapeType.gear9:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Gear9"'
+  - name: halfFrame
+    uid: 'excel!Excel.GeometricShapeType.halfFrame:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"HalfFrame"'
+  - name: heart
+    uid: 'excel!Excel.GeometricShapeType.heart:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Heart"'
+  - name: heptagon
+    uid: 'excel!Excel.GeometricShapeType.heptagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Heptagon"'
+  - name: hexagon
+    uid: 'excel!Excel.GeometricShapeType.hexagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Hexagon"'
+  - name: homePlate
+    uid: 'excel!Excel.GeometricShapeType.homePlate:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"HomePlate"'
+  - name: horizontalScroll
+    uid: 'excel!Excel.GeometricShapeType.horizontalScroll:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"HorizontalScroll"'
+  - name: irregularSeal1
+    uid: 'excel!Excel.GeometricShapeType.irregularSeal1:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"IrregularSeal1"'
+  - name: irregularSeal2
+    uid: 'excel!Excel.GeometricShapeType.irregularSeal2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"IrregularSeal2"'
+  - name: leftArrow
+    uid: 'excel!Excel.GeometricShapeType.leftArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftArrow"'
+  - name: leftArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.leftArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftArrowCallout"'
+  - name: leftBrace
+    uid: 'excel!Excel.GeometricShapeType.leftBrace:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftBrace"'
+  - name: leftBracket
+    uid: 'excel!Excel.GeometricShapeType.leftBracket:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftBracket"'
+  - name: leftCircularArrow
+    uid: 'excel!Excel.GeometricShapeType.leftCircularArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftCircularArrow"'
+  - name: leftRightArrow
+    uid: 'excel!Excel.GeometricShapeType.leftRightArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftRightArrow"'
+  - name: leftRightArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.leftRightArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftRightArrowCallout"'
+  - name: leftRightCircularArrow
+    uid: 'excel!Excel.GeometricShapeType.leftRightCircularArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftRightCircularArrow"'
+  - name: leftRightRibbon
+    uid: 'excel!Excel.GeometricShapeType.leftRightRibbon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftRightRibbon"'
+  - name: leftRightUpArrow
+    uid: 'excel!Excel.GeometricShapeType.leftRightUpArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftRightUpArrow"'
+  - name: leftUpArrow
+    uid: 'excel!Excel.GeometricShapeType.leftUpArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LeftUpArrow"'
+  - name: lightningBolt
+    uid: 'excel!Excel.GeometricShapeType.lightningBolt:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LightningBolt"'
+  - name: lineInverse
+    uid: 'excel!Excel.GeometricShapeType.lineInverse:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LineInverse"'
+  - name: mathDivide
+    uid: 'excel!Excel.GeometricShapeType.mathDivide:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathDivide"'
+  - name: mathEqual
+    uid: 'excel!Excel.GeometricShapeType.mathEqual:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathEqual"'
+  - name: mathMinus
+    uid: 'excel!Excel.GeometricShapeType.mathMinus:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathMinus"'
+  - name: mathMultiply
+    uid: 'excel!Excel.GeometricShapeType.mathMultiply:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathMultiply"'
+  - name: mathNotEqual
+    uid: 'excel!Excel.GeometricShapeType.mathNotEqual:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathNotEqual"'
+  - name: mathPlus
+    uid: 'excel!Excel.GeometricShapeType.mathPlus:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"MathPlus"'
+  - name: moon
+    uid: 'excel!Excel.GeometricShapeType.moon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Moon"'
+  - name: nonIsoscelesTrapezoid
+    uid: 'excel!Excel.GeometricShapeType.nonIsoscelesTrapezoid:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"NonIsoscelesTrapezoid"'
+  - name: noSmoking
+    uid: 'excel!Excel.GeometricShapeType.noSmoking:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"NoSmoking"'
+  - name: notchedRightArrow
+    uid: 'excel!Excel.GeometricShapeType.notchedRightArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"NotchedRightArrow"'
+  - name: octagon
+    uid: 'excel!Excel.GeometricShapeType.octagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Octagon"'
+  - name: parallelogram
+    uid: 'excel!Excel.GeometricShapeType.parallelogram:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Parallelogram"'
+  - name: pentagon
+    uid: 'excel!Excel.GeometricShapeType.pentagon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Pentagon"'
+  - name: pie
+    uid: 'excel!Excel.GeometricShapeType.pie:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Pie"'
+  - name: pieWedge
+    uid: 'excel!Excel.GeometricShapeType.pieWedge:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"PieWedge"'
+  - name: plaque
+    uid: 'excel!Excel.GeometricShapeType.plaque:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Plaque"'
+  - name: plaqueTabs
+    uid: 'excel!Excel.GeometricShapeType.plaqueTabs:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"PlaqueTabs"'
+  - name: plus
+    uid: 'excel!Excel.GeometricShapeType.plus:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Plus"'
+  - name: quadArrow
+    uid: 'excel!Excel.GeometricShapeType.quadArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"QuadArrow"'
+  - name: quadArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.quadArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"QuadArrowCallout"'
+  - name: rectangle
+    uid: 'excel!Excel.GeometricShapeType.rectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Rectangle"'
+  - name: ribbon
+    uid: 'excel!Excel.GeometricShapeType.ribbon:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Ribbon"'
+  - name: ribbon2
+    uid: 'excel!Excel.GeometricShapeType.ribbon2:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Ribbon2"'
+  - name: rightArrow
+    uid: 'excel!Excel.GeometricShapeType.rightArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RightArrow"'
+  - name: rightArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.rightArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RightArrowCallout"'
+  - name: rightBrace
+    uid: 'excel!Excel.GeometricShapeType.rightBrace:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RightBrace"'
+  - name: rightBracket
+    uid: 'excel!Excel.GeometricShapeType.rightBracket:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RightBracket"'
+  - name: rightTriangle
+    uid: 'excel!Excel.GeometricShapeType.rightTriangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RightTriangle"'
+  - name: round1Rectangle
+    uid: 'excel!Excel.GeometricShapeType.round1Rectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Round1Rectangle"'
+  - name: round2DiagonalRectangle
+    uid: 'excel!Excel.GeometricShapeType.round2DiagonalRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Round2DiagonalRectangle"'
+  - name: round2SameRectangle
+    uid: 'excel!Excel.GeometricShapeType.round2SameRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Round2SameRectangle"'
+  - name: roundRectangle
+    uid: 'excel!Excel.GeometricShapeType.roundRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"RoundRectangle"'
+  - name: smileyFace
+    uid: 'excel!Excel.GeometricShapeType.smileyFace:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"SmileyFace"'
+  - name: snip1Rectangle
+    uid: 'excel!Excel.GeometricShapeType.snip1Rectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Snip1Rectangle"'
+  - name: snip2DiagonalRectangle
+    uid: 'excel!Excel.GeometricShapeType.snip2DiagonalRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Snip2DiagonalRectangle"'
+  - name: snip2SameRectangle
+    uid: 'excel!Excel.GeometricShapeType.snip2SameRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Snip2SameRectangle"'
+  - name: snipRoundRectangle
+    uid: 'excel!Excel.GeometricShapeType.snipRoundRectangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"SnipRoundRectangle"'
+  - name: squareTabs
+    uid: 'excel!Excel.GeometricShapeType.squareTabs:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"SquareTabs"'
+  - name: star10
+    uid: 'excel!Excel.GeometricShapeType.star10:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star10"'
+  - name: star12
+    uid: 'excel!Excel.GeometricShapeType.star12:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star12"'
+  - name: star16
+    uid: 'excel!Excel.GeometricShapeType.star16:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star16"'
+  - name: star24
+    uid: 'excel!Excel.GeometricShapeType.star24:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star24"'
+  - name: star32
+    uid: 'excel!Excel.GeometricShapeType.star32:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star32"'
+  - name: star4
+    uid: 'excel!Excel.GeometricShapeType.star4:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star4"'
+  - name: star5
+    uid: 'excel!Excel.GeometricShapeType.star5:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star5"'
+  - name: star6
+    uid: 'excel!Excel.GeometricShapeType.star6:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star6"'
+  - name: star7
+    uid: 'excel!Excel.GeometricShapeType.star7:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star7"'
+  - name: star8
+    uid: 'excel!Excel.GeometricShapeType.star8:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Star8"'
+  - name: stripedRightArrow
+    uid: 'excel!Excel.GeometricShapeType.stripedRightArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"StripedRightArrow"'
+  - name: sun
+    uid: 'excel!Excel.GeometricShapeType.sun:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Sun"'
+  - name: swooshArrow
+    uid: 'excel!Excel.GeometricShapeType.swooshArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"SwooshArrow"'
+  - name: teardrop
+    uid: 'excel!Excel.GeometricShapeType.teardrop:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Teardrop"'
+  - name: trapezoid
+    uid: 'excel!Excel.GeometricShapeType.trapezoid:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Trapezoid"'
+  - name: triangle
+    uid: 'excel!Excel.GeometricShapeType.triangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Triangle"'
+  - name: upArrow
+    uid: 'excel!Excel.GeometricShapeType.upArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"UpArrow"'
+  - name: upArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.upArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"UpArrowCallout"'
+  - name: upDownArrow
+    uid: 'excel!Excel.GeometricShapeType.upDownArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"UpDownArrow"'
+  - name: upDownArrowCallout
+    uid: 'excel!Excel.GeometricShapeType.upDownArrowCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"UpDownArrowCallout"'
+  - name: uturnArrow
+    uid: 'excel!Excel.GeometricShapeType.uturnArrow:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"UturnArrow"'
+  - name: verticalScroll
+    uid: 'excel!Excel.GeometricShapeType.verticalScroll:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"VerticalScroll"'
+  - name: wave
+    uid: 'excel!Excel.GeometricShapeType.wave:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Wave"'
+  - name: wedgeEllipseCallout
+    uid: 'excel!Excel.GeometricShapeType.wedgeEllipseCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"WedgeEllipseCallout"'
+  - name: wedgeRectCallout
+    uid: 'excel!Excel.GeometricShapeType.wedgeRectCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"WedgeRectCallout"'
+  - name: wedgeRRectCallout
+    uid: 'excel!Excel.GeometricShapeType.wedgeRRectCallout:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"WedgeRRectCallout"'

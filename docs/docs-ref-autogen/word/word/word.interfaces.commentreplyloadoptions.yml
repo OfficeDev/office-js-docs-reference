@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyLoadOptions
+uid: 'word!Word.Interfaces.CommentReplyLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.CommentReplyLoadOptions
+summary: Represents a comment reply in the document.
+remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: authorEmail
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#authorEmail:member'
+    package: word!
+    fullName: authorEmail
+    summary: Gets the email of the comment reply's author.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type: boolean
+  - name: authorName
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#authorName:member'
+    package: word!
+    fullName: authorName
+    summary: Gets the name of the comment reply's author.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type: boolean
+  - name: content
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#content:member'
+    package: word!
+    fullName: content
+    summary: Gets or sets the comment reply's content. The string is plain text.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type: boolean
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Gets or sets the commentReply's content range.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeLoadOptions:interface" />'
+  - name: creationDate
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#creationDate:member'
+    package: word!
+    fullName: creationDate
+    summary: Gets the creation date of the comment reply.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#id:member'
+    package: word!
+    fullName: id
+    summary: Gets the ID of the comment reply. Read-only.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: parentComment
+    uid: 'word!Word.Interfaces.CommentReplyLoadOptions#parentComment:member'
+    package: word!
+    fullName: parentComment
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentComment?: Word.Interfaces.CommentLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentLoadOptions:interface" />'

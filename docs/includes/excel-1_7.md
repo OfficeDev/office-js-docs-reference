@@ -125,8 +125,6 @@
 ||[revisionNumber](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-revisionnumber-member)|Gets the revision number of the workbook.|
 ||[subject](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-subject-member)|The subject of the workbook.|
 ||[title](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-title-member)|The title of the workbook.|
-|[FunctionResult](/javascript/api/excel/excel.functionresult)|[error](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-error-member)|Error value (such as "#DIV/0") representing the error.|
-||[value](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-value-member)|The value of function evaluation.|
 |[NamedItem](/javascript/api/excel/excel.nameditem)|[arrayValues](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-arrayvalues-member)|Returns an object containing values and types of the named item.|
 ||[formula](/javascript/api/excel/excel.nameditem#excel-excel-nameditem-formula-member)|The formula of the named item.|
 |[NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues)|[types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)|Represents the types for each item in the named item array|

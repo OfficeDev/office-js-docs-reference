@@ -1,0 +1,42 @@
+### YamlMime:TSEnum
+name: Office.PlatformType
+uid: 'office!Office.PlatformType:enum'
+package: office!
+fullName: Office.PlatformType
+summary: Specifies the OS or other platform on which the Office host application is running.
+remarks: |-
+  **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
+
+  #### Examples
+
+  ```javascript
+  var contextInfo = Office.context.diagnostics;
+  console.log("Platform: " + contextInfo.platform);
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Android
+    uid: 'office!Office.PlatformType.Android:member'
+    package: office!
+    summary: The platform is an Android device.
+  - name: iOS
+    uid: 'office!Office.PlatformType.iOS:member'
+    package: office!
+    summary: The platform is an iOS device.
+  - name: Mac
+    uid: 'office!Office.PlatformType.Mac:member'
+    package: office!
+    summary: The platform is Mac.
+  - name: OfficeOnline
+    uid: 'office!Office.PlatformType.OfficeOnline:member'
+    package: office!
+    summary: The platform is Office on the web (in a browser).
+  - name: PC
+    uid: 'office!Office.PlatformType.PC:member'
+    package: office!
+    summary: The platform is PC (Windows).
+  - name: Universal
+    uid: 'office!Office.PlatformType.Universal:member'
+    package: office!
+    summary: The platform is WinRT.

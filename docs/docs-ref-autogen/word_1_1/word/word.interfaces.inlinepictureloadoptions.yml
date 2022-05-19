@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: Word.Interfaces.InlinePictureLoadOptions
+uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.InlinePictureLoadOptions
+summary: Represents an inline picture.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: altTextDescription
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#altTextDescription:member'
+    package: word!
+    fullName: altTextDescription
+    summary: Gets or sets a string that represents the alternative text associated with the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type: boolean
+  - name: altTextTitle
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#altTextTitle:member'
+    package: word!
+    fullName: altTextTitle
+    summary: Gets or sets a string that contains the title for the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#height:member'
+    package: word!
+    fullName: height
+    summary: Gets or sets a number that describes the height of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: hyperlink
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#hyperlink:member'
+    package: word!
+    fullName: hyperlink
+    summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type: boolean
+  - name: lockAspectRatio
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#lockAspectRatio:member'
+    package: word!
+    fullName: lockAspectRatio
+    summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
+  - name: parentContentControl
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member'
+    package: word!
+    fullName: parentContentControl
+    summary: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
+  - name: width
+    uid: 'word!Word.Interfaces.InlinePictureLoadOptions#width:member'
+    package: word!
+    fullName: width
+    summary: Gets or sets a number that describes the width of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

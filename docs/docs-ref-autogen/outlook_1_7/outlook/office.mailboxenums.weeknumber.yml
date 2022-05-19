@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.WeekNumber
+uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
+package: outlook!
+fullName: Office.MailboxEnums.WeekNumber
+summary: Specifies the week of the month.
+remarks: >-
+  \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+fields:
+  - name: First
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.First:member'
+    package: outlook!
+    summary: First week of the month.
+    value: '"first"'
+  - name: Fourth
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Fourth:member'
+    package: outlook!
+    summary: Fourth week of the month.
+    value: '"fourth"'
+  - name: Last
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Last:member'
+    package: outlook!
+    summary: Last week of the month.
+    value: '"last"'
+  - name: Second
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Second:member'
+    package: outlook!
+    summary: Second week of the month.
+    value: '"second"'
+  - name: Third
+    uid: 'outlook!Office.MailboxEnums.WeekNumber.Third:member'
+    package: outlook!
+    summary: Third week of the month.
+    value: '"third"'

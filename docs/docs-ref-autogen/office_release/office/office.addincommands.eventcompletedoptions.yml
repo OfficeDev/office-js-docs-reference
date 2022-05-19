@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: Office.AddinCommands.EventCompletedOptions
+uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+package: office!
+fullName: Office.AddinCommands.EventCompletedOptions
+summary: Specifies the behavior for when the event is completed.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowEvent
+    uid: 'office!Office.AddinCommands.EventCompletedOptions#allowEvent:member'
+    package: office!
+    fullName: allowEvent
+    summary: >-
+      A boolean value. When the completed method is used to signal completion of an event handler, this value indicates
+      if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend`
+      event can set `allowEvent` to `false` to cancel sending of the message.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEvent: boolean;'
+      return:
+        type: boolean
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // The following example checks whether a location is specified in an appointment before it's sent.
+          function onAppointmentSendHandler(event) {
+              Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+                  let event = asyncResult.asyncContext;
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      console.log(asyncResult.error.message);
+                      // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                      event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                      return;
+                  }
+
+                  if (asyncResult.value === "") {
+                      // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                      event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
+                      return;
+                  } else {
+                      // If a location is specified, the appointment is sent.
+                      event.completed({ allowEvent: true });
+                  }
+              });
+          }
+          ```

@@ -1,0 +1,402 @@
+### YamlMime:TSType
+name: OneNote.Image
+uid: 'onenote!OneNote.Image:class'
+package: onenote!
+fullName: OneNote.Image
+summary: Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'onenote!OneNote.Image#context:member'
+    package: onenote!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="onenote!OneNote.RequestContext:class" />'
+  - name: description
+    uid: 'onenote!OneNote.Image#description:member'
+    package: onenote!
+    fullName: description
+    summary: Gets or sets the description of the Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'description: string;'
+      return:
+        type: string
+  - name: height
+    uid: 'onenote!OneNote.Image#height:member'
+    package: onenote!
+    fullName: height
+    summary: Gets or sets the height of the Image layout.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: hyperlink
+    uid: 'onenote!OneNote.Image#hyperlink:member'
+    package: onenote!
+    fullName: hyperlink
+    summary: Gets or sets the hyperlink of the Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'onenote!OneNote.Image#id:member'
+    package: onenote!
+    fullName: id
+    summary: Gets the ID of the Image object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: ocrData
+    uid: 'onenote!OneNote.Image#ocrData:member'
+    package: onenote!
+    fullName: ocrData
+    summary: 'Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.'
+    remarks: |-
+      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      var image = null;
+
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          var outline = context.application.getActiveOutline();
+
+          // Queue a command to load paragraphs and their types.
+          outline.load("paragraphs")
+          await context.sync();
+
+          for (var i=0; i < outline.paragraphs.items.length; i++) {
+              var paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+          if (image != null) {
+              image.load("ocrData");
+          }
+
+          await context.sync();
+                  
+          // Log ocrText and ocrLanguageId.
+          console.log(image.ocrData.ocrText);
+          console.log(image.ocrData.ocrLanguageId);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly ocrData: OneNote.ImageOcrData;'
+      return:
+        type: '<xref uid="onenote!OneNote.ImageOcrData:interface" />'
+  - name: pageContent
+    uid: 'onenote!OneNote.Image#pageContent:member'
+    package: onenote!
+    fullName: pageContent
+    summary: >-
+      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
+      This object defines the position of the Image on the page. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly pageContent: OneNote.PageContent;'
+      return:
+        type: '<xref uid="onenote!OneNote.PageContent:class" />'
+  - name: paragraph
+    uid: 'onenote!OneNote.Image#paragraph:member'
+    package: onenote!
+    fullName: paragraph
+    summary: >-
+      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+      Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly paragraph: OneNote.Paragraph;'
+      return:
+        type: '<xref uid="onenote!OneNote.Paragraph:class" />'
+  - name: width
+    uid: 'onenote!OneNote.Image#width:member'
+    package: onenote!
+    fullName: width
+    summary: Gets or sets the width of the Image layout.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+methods:
+  - name: getBase64Image()
+    uid: 'onenote!OneNote.Image#getBase64Image:member(1)'
+    package: onenote!
+    fullName: getBase64Image()
+    summary: >-
+      Gets the base64-encoded binary representation of the Image. Example:
+      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
+    remarks: |-
+      \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      var image = null;
+      var imageString;
+
+      await OneNote.run(async (context) => {
+          // Get the current outline.
+          var outline = context.application.getActiveOutline();
+          
+          // Queue a command to load paragraphs and their types.
+          outline.load("paragraphs/type")
+          await context.sync();
+          for (var i=0; i < outline.paragraphs.items.length; i++) {
+              var paragraph = outline.paragraphs.items[i];
+              if (paragraph.type == "Image")
+              {
+                  image = paragraph.image;
+              }
+          }
+
+          if (image != null) {
+              imageString = image.getBase64Image();
+              await context.sync();
+          }
+
+          console.log(imageString);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBase64Image(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: load(options)
+    uid: 'onenote!OneNote.Image#load:member(1)'
+    package: onenote!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="onenote!OneNote.Interfaces.ImageLoadOptions:interface" />'
+      return:
+        type: '<xref uid="onenote!OneNote.Image:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'onenote!OneNote.Image#load:member(2)'
+    package: onenote!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.Image;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="onenote!OneNote.Image:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await OneNote.run(async (context) => {
+              // Get the current outline.
+              var outline = context.application.getActiveOutline();
+              var image = null;
+              
+              // Queue a command to load paragraphs and their types.
+              outline.load("paragraphs/type")
+              await context.sync();
+
+              for (var i=0; i < outline.paragraphs.items.length; i++) {
+                  var paragraph = outline.paragraphs.items[i];
+                  if (paragraph.type == "Image")
+                  {
+                      image = paragraph.image;
+                  }
+              }
+
+              if (image != null) {
+                  // Load all properties and relationships.
+                  image.load(["id", "width", "height", "description", "hyperlink"]);
+                  await context.sync();
+              }
+
+              if (image != null) {                   
+                  console.log("image " + image.id + " width is " + image.width + " height is " + image.height);
+                  console.log("description: " + image.description);                   
+                  console.log("hyperlink: " + image.hyperlink);
+              }
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'onenote!OneNote.Image#load:member(3)'
+    package: onenote!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): OneNote.Image;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="onenote!OneNote.Image:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'onenote!OneNote.Image#set:member(1)'
+    package: onenote!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.ImageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'onenote!OneNote.Image#set:member(2)'
+    package: onenote!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: OneNote.Image): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="onenote!OneNote.Image:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'onenote!OneNote.Image#toJSON:member(1)'
+    package: onenote!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.Image object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `OneNote.Interfaces.ImageData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.ImageData;'
+      return:
+        type: '<xref uid="onenote!OneNote.Interfaces.ImageData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'onenote!OneNote.Image#track:member(1)'
+    package: onenote!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): OneNote.Image;'
+      return:
+        type: '<xref uid="onenote!OneNote.Image:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'onenote!OneNote.Image#untrack:member(1)'
+    package: onenote!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): OneNote.Image;'
+      return:
+        type: '<xref uid="onenote!OneNote.Image:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

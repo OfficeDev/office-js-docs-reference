@@ -1,0 +1,300 @@
+### YamlMime:TSType
+name: Excel.Binding
+uid: 'excel!Excel.Binding:class'
+package: excel!
+fullName: Excel.Binding
+summary: Represents an Office.js binding that is defined in the workbook.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.Binding#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: id
+    uid: 'excel!Excel.Binding#id:member'
+    package: excel!
+    fullName: id
+    summary: Represents the binding identifier.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'excel!Excel.Binding#type:member'
+    package: excel!
+    fullName: type
+    summary: Returns the type of the binding. See `Excel.BindingType` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
+      return:
+        type: '<xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"'
+methods:
+  - name: delete()
+    uid: 'excel!Excel.Binding#delete:member(1)'
+    package: excel!
+    fullName: delete()
+    summary: Deletes the binding.
+    remarks: '\[ [API set: ExcelApi 1.3](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getRange()
+    uid: 'excel!Excel.Binding#getRange:member(1)'
+    package: excel!
+    fullName: getRange()
+    summary: Returns the range represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+          var binding = context.workbook.bindings.getItemAt(0);
+          var range = binding.getRange();
+          range.load('cellCount');
+          await context.sync();
+
+          console.log(range.cellCount);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type: '<xref uid="excel!Excel.Range:class" />'
+        description: ''
+  - name: getTable()
+    uid: 'excel!Excel.Binding#getTable:member(1)'
+    package: excel!
+    fullName: getTable()
+    summary: Returns the table represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+          var binding = context.workbook.bindings.getItemAt(0);
+          var table = binding.getTable();
+          table.load('name');
+          await context.sync();
+
+          console.log(table.name);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTable(): Excel.Table;'
+      return:
+        type: '<xref uid="excel!Excel.Table:class" />'
+        description: ''
+  - name: getText()
+    uid: 'excel!Excel.Binding#getText:member(1)'
+    package: excel!
+    fullName: getText()
+    summary: Returns the text represented by the binding. Will throw an error if the binding is not of the correct type.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+          var binding = context.workbook.bindings.getItemAt(0);
+          var text = binding.getText();
+          binding.load('text');
+          await context.sync();
+
+          console.log(text);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.Binding#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="excel!Excel.Interfaces.BindingLoadOptions:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.Binding:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.Binding#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Binding;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.Binding:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => { 
+              var binding = context.workbook.bindings.getItemAt(0);
+              binding.load('type');
+              await context.sync();
+
+              console.log(binding.type);
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.Binding#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Binding;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="excel!Excel.Binding:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.Binding#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.BindingData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.BindingData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />'
+        description: ''
+events:
+  - name: onDataChanged
+    uid: 'excel!Excel.Binding#onDataChanged:member'
+    package: excel!
+    fullName: onDataChanged
+    summary: Occurs when data or formatting within the binding is changed.
+    remarks: >-
+      \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
+
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");    
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+          salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+          console.log("The data changed handler is registered.");
+
+          await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
+  - name: onSelectionChanged
+    uid: 'excel!Excel.Binding#onSelectionChanged:member'
+    package: excel!
+    fullName: onSelectionChanged
+    summary: >-
+      Occurs when the selected content in the binding is changed.
+
+
+      *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
+      information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

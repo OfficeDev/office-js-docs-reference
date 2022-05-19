@@ -1,0 +1,168 @@
+### YamlMime:TSType
+name: Office.UserProfile
+uid: 'outlook!Office.UserProfile:interface'
+package: outlook!
+fullName: Office.UserProfile
+summary: >-
+  Information about the user associated with the mailbox. This includes their account type, display name, email address,
+  and time zone.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `ReadItem`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: accountType
+    uid: 'outlook!Office.UserProfile#accountType:member'
+    package: outlook!
+    fullName: accountType
+    summary: |-
+      Gets the account type of the user associated with the mailbox.
+
+      **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
+    remarks: >-
+      \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      The possible account types are listed in the following table.
+
+
+      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
+      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with a Microsoft 365 work or school
+      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
+      account.</td> </tr> </table>
+
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log(Office.context.mailbox.userProfile.accountType);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type: string
+  - name: displayName
+    uid: 'outlook!Office.UserProfile#displayName:member'
+    package: outlook!
+    fullName: displayName
+    summary: Gets the user's display name.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Allie Bellew
+
+      console.log(Office.context.mailbox.userProfile.displayName);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type: string
+  - name: emailAddress
+    uid: 'outlook!Office.UserProfile#emailAddress:member'
+    package: outlook!
+    fullName: emailAddress
+    summary: Gets the user's SMTP email address.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: allieb@contoso.com
+
+      console.log(Office.context.mailbox.userProfile.emailAddress);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type: string
+  - name: timeZone
+    uid: 'outlook!Office.UserProfile#timeZone:member'
+    package: outlook!
+    fullName: timeZone
+    summary: >-
+      Gets the user's time zone in Windows format.
+
+
+      The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
+      preferences is returned instead.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Pacific Standard Time
+
+      console.log(Office.context.mailbox.userProfile.timeZone);
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeZone: string;'
+      return:
+        type: string

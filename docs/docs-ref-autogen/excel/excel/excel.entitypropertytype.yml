@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: Excel.EntityPropertyType
+uid: 'excel!Excel.EntityPropertyType:type'
+package: excel!
+fullName: Excel.EntityPropertyType
+summary: Represents the value of a property.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+syntax: export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;

@@ -1,0 +1,190 @@
+### YamlMime:TSType
+name: Excel.ChartSeriesCollection
+uid: 'excel!Excel.ChartSeriesCollection:class'
+package: excel!
+fullName: Excel.ChartSeriesCollection
+summary: Represents a collection of chart series.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'excel!Excel.ChartSeriesCollection#context:member'
+    package: excel!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: count
+    uid: 'excel!Excel.ChartSeriesCollection#count:member'
+    package: excel!
+    fullName: count
+    summary: Returns the number of series in the collection.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type: number
+  - name: items
+    uid: 'excel!Excel.ChartSeriesCollection#items:member'
+    package: excel!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Excel.ChartSeries[];'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeries:class" />[]'
+methods:
+  - name: getCount()
+    uid: 'excel!Excel.ChartSeriesCollection#getCount:member(1)'
+    package: excel!
+    fullName: getCount()
+    summary: Returns the number of series in the collection.
+    remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getItemAt(index)
+    uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+    package: excel!
+    fullName: getItemAt(index)
+    summary: Retrieves a series based on its position in the collection.
+    remarks: |-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Get the name of the first series in the series collection.
+      await Excel.run(async (context) => { 
+          var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('items');
+          await context.sync();
+          
+          console.log(seriesCollection.items[0].name);
+      });
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartSeries;'
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type: number
+      return:
+        type: '<xref uid="excel!Excel.ChartSeries:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
+    package: excel!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartSeriesCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface" /> & <xref
+            uid="excel!Excel.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="excel!Excel.ChartSeriesCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'excel!Excel.ChartSeriesCollection#load:member(2)'
+    package: excel!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeriesCollection:class" />'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          // Get the number of chart series in the collection.
+          await Excel.run(async (context) => { 
+              var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+              seriesCollection.load('count');
+              await context.sync();
+
+              console.log("series: Count= " + seriesCollection.count);
+          });
+          ```
+  - name: load(propertyNamesAndPaths)
+    uid: 'excel!Excel.ChartSeriesCollection#load:member(3)'
+    package: excel!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="excel!Excel.ChartSeriesCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'excel!Excel.ChartSeriesCollection#toJSON:member(1)'
+    package: excel!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartSeriesCollectionData;'
+      return:
+        type: '<xref uid="excel!Excel.Interfaces.ChartSeriesCollectionData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

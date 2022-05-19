@@ -5908,7 +5908,1294 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         tableCell = "TableCell",
-        
+                            }
+    /**
+     * This enum sets where the cursor (insertion point) in the document is after a selection.
+     *
+     * @remarks
+     * [Api set: WordApi 1.1]
+     */
+    enum SelectionMode {
+        /**
+         * The entire range is selected.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        select = "Select",
+        /**
+         * The cursor is at the beginning of the selection (just before the start of the selected range).
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        start = "Start",
+        /**
+         * The cursor is at the end of the selection (just after the end of the selected range).
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        end = "End",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum RangeLocation {
+        /**
+         * The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table characters after the content control are also included.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        whole = "Whole",
+        /**
+         * The starting point of the object. For content control, it is the point after the opening tag.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        start = "Start",
+        /**
+         * The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the point before the closing tag.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        end = "End",
+        /**
+         * For content control only. It is the point before the opening tag.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        before = "Before",
+        /**
+         * The point after the object. If the object is a paragraph content control or table content control, it is the point after the EOP or Table characters.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        after = "After",
+        /**
+         * The range between 'Start' and 'End'.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        content = "Content",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum LocationRelation {
+        /**
+         * Indicates that this instance and the range are in different sub-documents.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        unrelated = "Unrelated",
+        /**
+         * Indicates that this instance and the range represent the same range.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        equal = "Equal",
+        /**
+         * Indicates that this instance contains the range and that it shares the same start character. The range does not share the same end character as this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        containsStart = "ContainsStart",
+        /**
+         * Indicates that this instance contains the range and that it shares the same end character. The range does not share the same start character as this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        containsEnd = "ContainsEnd",
+        /**
+         * Indicates that this instance contains the range, with the exception of the start and end character of this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        contains = "Contains",
+        /**
+         * Indicates that this instance is inside the range and that it shares the same start character. The range does not share the same end character as this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        insideStart = "InsideStart",
+        /**
+         * Indicates that this instance is inside the range and that it shares the same end character. The range does not share the same start character as this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        insideEnd = "InsideEnd",
+        /**
+         * Indicates that this instance is inside the range. The range does not share the same start and end characters as this instance.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        inside = "Inside",
+        /**
+         * Indicates that this instance occurs before, and is adjacent to, the range.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        adjacentBefore = "AdjacentBefore",
+        /**
+         * Indicates that this instance starts before the range and overlaps the range’s first character.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        overlapsBefore = "OverlapsBefore",
+        /**
+         * Indicates that this instance occurs before the range.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        before = "Before",
+        /**
+         * Indicates that this instance occurs after, and is adjacent to, the range.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        adjacentAfter = "AdjacentAfter",
+        /**
+         * Indicates that this instance starts inside the range and overlaps the range’s last character.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        overlapsAfter = "OverlapsAfter",
+        /**
+         * Indicates that this instance occurs after the range.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        after = "After",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum BorderLocation {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        top = "Top",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        left = "Left",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        right = "Right",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        insideHorizontal = "InsideHorizontal",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        insideVertical = "InsideVertical",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        inside = "Inside",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        outside = "Outside",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        all = "All",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum CellPaddingLocation {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        top = "Top",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        left = "Left",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bottom = "Bottom",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        right = "Right",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum BorderType {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        mixed = "Mixed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        none = "None",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        single = "Single",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        double = "Double",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dotted = "Dotted",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dashed = "Dashed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dotDashed = "DotDashed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dot2Dashed = "Dot2Dashed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        triple = "Triple",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickSmall = "ThinThickSmall",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thickThinSmall = "ThickThinSmall",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickThinSmall = "ThinThickThinSmall",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickMed = "ThinThickMed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thickThinMed = "ThickThinMed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickThinMed = "ThinThickThinMed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickLarge = "ThinThickLarge",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thickThinLarge = "ThickThinLarge",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        thinThickThinLarge = "ThinThickThinLarge",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        wave = "Wave",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        doubleWave = "DoubleWave",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dashedSmall = "DashedSmall",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        dashDotStroked = "DashDotStroked",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        threeDEmboss = "ThreeDEmboss",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        threeDEngrave = "ThreeDEngrave",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum VerticalAlignment {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        mixed = "Mixed",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        top = "Top",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        center = "Center",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bottom = "Bottom",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum ListLevelType {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bullet = "Bullet",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        number = "Number",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        picture = "Picture",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum ListBullet {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        custom = "Custom",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        solid = "Solid",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        hollow = "Hollow",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        square = "Square",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        diamonds = "Diamonds",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        arrow = "Arrow",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        checkmark = "Checkmark",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum ListNumbering {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        none = "None",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        arabic = "Arabic",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        upperRoman = "UpperRoman",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        lowerRoman = "LowerRoman",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        upperLetter = "UpperLetter",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        lowerLetter = "LowerLetter",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum Style {
+        /**
+         * Mixed styles or other style not in this list.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        other = "Other",
+        /**
+         * Reset character and paragraph style to default.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        normal = "Normal",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading1 = "Heading1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading2 = "Heading2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading3 = "Heading3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading4 = "Heading4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading5 = "Heading5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading6 = "Heading6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading7 = "Heading7",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading8 = "Heading8",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        heading9 = "Heading9",
+        /**
+         * Table-of-content level 1.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc1 = "Toc1",
+        /**
+         * Table-of-content level 2.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc2 = "Toc2",
+        /**
+         * Table-of-content level 3.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc3 = "Toc3",
+        /**
+         * Table-of-content level 4.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc4 = "Toc4",
+        /**
+         * Table-of-content level 5.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc5 = "Toc5",
+        /**
+         * Table-of-content level 6.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc6 = "Toc6",
+        /**
+         * Table-of-content level 7.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc7 = "Toc7",
+        /**
+         * Table-of-content level 8.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc8 = "Toc8",
+        /**
+         * Table-of-content level 9.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        toc9 = "Toc9",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        footnoteText = "FootnoteText",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        header = "Header",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        footer = "Footer",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        caption = "Caption",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        footnoteReference = "FootnoteReference",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        endnoteReference = "EndnoteReference",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        endnoteText = "EndnoteText",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        title = "Title",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        subtitle = "Subtitle",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        hyperlink = "Hyperlink",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        strong = "Strong",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        emphasis = "Emphasis",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        noSpacing = "NoSpacing",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listParagraph = "ListParagraph",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        quote = "Quote",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        intenseQuote = "IntenseQuote",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        subtleEmphasis = "SubtleEmphasis",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        intenseEmphasis = "IntenseEmphasis",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        subtleReference = "SubtleReference",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        intenseReference = "IntenseReference",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bookTitle = "BookTitle",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        bibliography = "Bibliography",
+        /**
+         * Table-of-content heading.
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        tocHeading = "TocHeading",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        tableGrid = "TableGrid",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        plainTable1 = "PlainTable1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        plainTable2 = "PlainTable2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        plainTable3 = "PlainTable3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        plainTable4 = "PlainTable4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        plainTable5 = "PlainTable5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        tableGridLight = "TableGridLight",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light = "GridTable1Light",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent1 = "GridTable1Light_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent2 = "GridTable1Light_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent3 = "GridTable1Light_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent4 = "GridTable1Light_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent5 = "GridTable1Light_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable1Light_Accent6 = "GridTable1Light_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2 = "GridTable2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent1 = "GridTable2_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent2 = "GridTable2_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent3 = "GridTable2_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent4 = "GridTable2_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent5 = "GridTable2_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable2_Accent6 = "GridTable2_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3 = "GridTable3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent1 = "GridTable3_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent2 = "GridTable3_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent3 = "GridTable3_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent4 = "GridTable3_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent5 = "GridTable3_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable3_Accent6 = "GridTable3_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4 = "GridTable4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent1 = "GridTable4_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent2 = "GridTable4_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent3 = "GridTable4_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent4 = "GridTable4_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent5 = "GridTable4_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable4_Accent6 = "GridTable4_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark = "GridTable5Dark",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent1 = "GridTable5Dark_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent2 = "GridTable5Dark_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent3 = "GridTable5Dark_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent4 = "GridTable5Dark_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent5 = "GridTable5Dark_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable5Dark_Accent6 = "GridTable5Dark_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful = "GridTable6Colorful",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent1 = "GridTable6Colorful_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent2 = "GridTable6Colorful_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent3 = "GridTable6Colorful_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent4 = "GridTable6Colorful_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent5 = "GridTable6Colorful_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable6Colorful_Accent6 = "GridTable6Colorful_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful = "GridTable7Colorful",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent1 = "GridTable7Colorful_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent2 = "GridTable7Colorful_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent3 = "GridTable7Colorful_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent4 = "GridTable7Colorful_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent5 = "GridTable7Colorful_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        gridTable7Colorful_Accent6 = "GridTable7Colorful_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light = "ListTable1Light",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent1 = "ListTable1Light_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent2 = "ListTable1Light_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent3 = "ListTable1Light_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent4 = "ListTable1Light_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent5 = "ListTable1Light_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable1Light_Accent6 = "ListTable1Light_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2 = "ListTable2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent1 = "ListTable2_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent2 = "ListTable2_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent3 = "ListTable2_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent4 = "ListTable2_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent5 = "ListTable2_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable2_Accent6 = "ListTable2_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3 = "ListTable3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent1 = "ListTable3_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent2 = "ListTable3_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent3 = "ListTable3_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent4 = "ListTable3_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent5 = "ListTable3_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable3_Accent6 = "ListTable3_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4 = "ListTable4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent1 = "ListTable4_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent2 = "ListTable4_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent3 = "ListTable4_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent4 = "ListTable4_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent5 = "ListTable4_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable4_Accent6 = "ListTable4_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark = "ListTable5Dark",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent1 = "ListTable5Dark_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent2 = "ListTable5Dark_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent3 = "ListTable5Dark_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent4 = "ListTable5Dark_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent5 = "ListTable5Dark_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable5Dark_Accent6 = "ListTable5Dark_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful = "ListTable6Colorful",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent1 = "ListTable6Colorful_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent2 = "ListTable6Colorful_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent3 = "ListTable6Colorful_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent4 = "ListTable6Colorful_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent5 = "ListTable6Colorful_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable6Colorful_Accent6 = "ListTable6Colorful_Accent6",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful = "ListTable7Colorful",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent1 = "ListTable7Colorful_Accent1",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent2 = "ListTable7Colorful_Accent2",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent3 = "ListTable7Colorful_Accent3",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent4 = "ListTable7Colorful_Accent4",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent5 = "ListTable7Colorful_Accent5",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        listTable7Colorful_Accent6 = "ListTable7Colorful_Accent6",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    enum DocumentPropertyType {
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        string = "String",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        number = "Number",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        date = "Date",
+        /**
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        boolean = "Boolean",
+    }
+    enum ErrorCodes {
+        accessDenied = "AccessDenied",
+        generalException = "GeneralException",
+        invalidArgument = "InvalidArgument",
+        itemNotFound = "ItemNotFound",
+        notImplemented = "NotImplemented",
+        searchDialogIsOpen = "SearchDialogIsOpen",
+        searchStringInvalidOrTooLong = "SearchStringInvalidOrTooLong",
+    }
+    export module Interfaces {
+        /**
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
+        export interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
             /**
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
