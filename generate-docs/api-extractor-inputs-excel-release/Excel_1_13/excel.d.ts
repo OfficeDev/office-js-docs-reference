@@ -1719,6 +1719,36 @@ export declare namespace Excel {
          */
         worksheetId: string;
         
+        
+        /**
+         *
+         * Gets the range that represents the changed area of a specific worksheet.
+         *
+         * [Api set: ExcelApi 1.8]
+         */
+        getRange(ctx: Excel.RequestContext): Excel.Range;
+        /**
+         *
+         * Gets the range that represents the changed area of a specific worksheet. It might return null object.
+         *
+         * [Api set: ExcelApi 1.8]
+         */
+        getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;
+    }
+    /**
+     * Provides information about the worksheet format change event.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.9]
+     */
+    export interface WorksheetFormatChangedEventArgs {
+        /**
+         * Gets the range address that represents the changed area of a specific worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        address: string;
         /**
          * Gets the source of the event. See `Excel.EventSource` for details.
          *
@@ -2958,6 +2988,205 @@ export declare namespace Excel {
         readonly functions: Excel.Functions;
         
         /**
+         * Represents a collection of workbook-scoped named items (named ranges and constants).
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        readonly names: Excel.NamedItemCollection;
+        /**
+         * Represents a collection of PivotTableStyles associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly pivotTableStyles: Excel.PivotTableStyleCollection;
+        /**
+         * Represents a collection of PivotTables associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.3]
+         */
+        readonly pivotTables: Excel.PivotTableCollection;
+        /**
+         * Gets the workbook properties.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        readonly properties: Excel.DocumentProperties;
+        /**
+         * Returns the protection object for a workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        readonly protection: Excel.WorkbookProtection;
+        
+        /**
+         * Represents a collection of settings associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.4]
+         */
+        readonly settings: Excel.SettingCollection;
+        /**
+         * Represents a collection of SlicerStyles associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly slicerStyles: Excel.SlicerStyleCollection;
+        /**
+         * Represents a collection of slicers associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly slicers: Excel.SlicerCollection;
+        /**
+         * Represents a collection of styles associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        readonly styles: Excel.StyleCollection;
+        /**
+         * Represents a collection of TableStyles associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly tableStyles: Excel.TableStyleCollection;
+        /**
+         * Represents a collection of tables associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        readonly tables: Excel.TableCollection;
+        /**
+         * Represents a collection of TimelineStyles associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly timelineStyles: Excel.TimelineStyleCollection;
+        /**
+         * Represents a collection of worksheets associated with the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        readonly worksheets: Excel.WorksheetCollection;
+        /**
+         * Specifies if the workbook is in AutoSave mode.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly autoSave: boolean;
+        /**
+         * Returns a number about the version of Excel Calculation Engine.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly calculationEngineVersion: number;
+        /**
+         * True if all charts in the workbook are tracking the actual data points to which they are attached.
+                    False if the charts track the index of the data points.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        chartDataPointTrack: boolean;
+        /**
+         * Specifies if changes have been made since the workbook was last saved.
+                    You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        isDirty: boolean;
+        /**
+         * Gets the workbook name.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        readonly name: string;
+        /**
+         * Specifies if the workbook has ever been saved locally or online.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly previouslySaved: boolean;
+        /**
+         * Returns `true` if the workbook is open in read-only mode.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.8]
+         */
+        readonly readOnly: boolean;
+        /**
+         * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+                    Data will permanently lose accuracy when switching this property from `false` to `true`.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        usePrecisionAsDisplayed: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Workbook): void;
+        /**
+         * Close current workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.11]
+         *
+         * @param closeBehavior - workbook close behavior.
+         */
+        close(closeBehavior?: Excel.CloseBehavior): void;
+        /**
+         * Close current workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.11]
+         *
+         * @param closeBehaviorString - workbook close behavior.
+         */
+        close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        /**
+         * Gets the currently active cell from the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        getActiveCell(): Excel.Range;
+        /**
+         * Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is thrown.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        getActiveChart(): Excel.Chart;
+        /**
+         * Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        getActiveChartOrNullObject(): Excel.Chart;
+        /**
          * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
          *
          * @remarks
@@ -3224,6 +3453,213 @@ export declare namespace Excel {
         readonly horizontalPageBreaks: Excel.PageBreakCollection;
         
         /**
+         * Collection of names scoped to the current worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.4]
+         */
+        readonly names: Excel.NamedItemCollection;
+        /**
+         * Gets the `PageLayout` object of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly pageLayout: Excel.PageLayout;
+        /**
+         * Collection of PivotTables that are part of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.3]
+         */
+        readonly pivotTables: Excel.PivotTableCollection;
+        /**
+         * Returns the sheet protection object for a worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
+        readonly protection: Excel.WorksheetProtection;
+        /**
+         * Returns the collection of all the Shape objects on the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly shapes: Excel.ShapeCollection;
+        /**
+         * Returns a collection of slicers that are part of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         */
+        readonly slicers: Excel.SlicerCollection;
+        /**
+         * Collection of tables that are part of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        readonly tables: Excel.TableCollection;
+        /**
+         * Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        readonly verticalPageBreaks: Excel.PageBreakCollection;
+        /**
+         * Determines if Excel should recalculate the worksheet when necessary.
+                    True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        enableCalculation: boolean;
+        /**
+         * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        readonly id: string;
+        /**
+         * The display name of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        name: string;
+        /**
+         * The zero-based position of the worksheet within the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        position: number;
+        /**
+         * Specifies if gridlines are visible to the user.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.8]
+         */
+        showGridlines: boolean;
+        /**
+         * Specifies if headings are visible to the user.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.8]
+         */
+        showHeadings: boolean;
+        /**
+         * Returns the standard (default) height of all the rows in the worksheet, in points.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        readonly standardHeight: number;
+        /**
+         * Specifies the standard (default) width of all the columns in the worksheet.
+                    One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        standardWidth: number;
+        /**
+         * The tab color of the worksheet.
+                    When retrieving the tab color, if the worksheet is invisible, the value will be `null`. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form #RRGGBB (e.g., "FFA500").
+                    When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        tabColor: string;
+        
+        /**
+         * The visibility of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+         */
+        visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.Worksheet): void;
+        /**
+         * Activate the worksheet in the Excel UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        activate(): void;
+        /**
+         * Calculates all cells on a worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.6]
+         *
+         * @param markAllDirty - True, to mark all as dirty.
+         */
+        calculate(markAllDirty: boolean): void;
+        /**
+         * Copies a worksheet and places it at the specified position.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         *
+         * @param positionType - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+         * @param relativeTo - The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
+         * @returns The newly created worksheet.
+         */
+        copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        /**
+         * Copies a worksheet and places it at the specified position.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         *
+         * @param positionTypeString - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+         * @param relativeTo - The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
+         * @returns The newly created worksheet.
+         */
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        /**
+         * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        delete(): void;
+        /**
+         * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case-sensitive.
+         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If no cells meet this criteria, an `ItemNotFound` error will be thrown.
+         */
+        findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
+        /**
+         * Finds all occurrences of the given string based on the criteria specified and returns them as a `RangeAreas` object, comprising one or more rectangular ranges.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case-sensitive.
+         * @returns A `RangeAreas` object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         */
+        findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
+        /**
          * Gets the `Range` object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.
          *
          * @remarks
@@ -3430,6 +3866,63 @@ export declare namespace Excel {
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         
+        
+        /**
+         * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.11]
+         *
+         * @eventproperty
+         */
+        readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
+        /**
+         * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         *
+         * @eventproperty
+         */
+        readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;
+        /**
+         * Occurs when the selection changes on a specific worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         *
+         * @eventproperty
+         */
+        readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+        /**
+         * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
+
+                    - The user drags the mouse for multi-selection.
+
+                    - The user selects a cell in the mode when cell arguments are selected for formula references.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         *
+         * @eventproperty
+         */
+        readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
+        
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.WorksheetData;
+    }
+    /**
+     * Represents a collection of worksheet objects that are part of the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    export class WorksheetCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Worksheet[];
         /**
@@ -3594,6 +4087,62 @@ export declare namespace Excel {
          */
         readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;
         
+        
+        
+        /**
+         * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.11]
+         *
+         * @eventproperty
+         */
+        readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
+        /**
+         * Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         *
+         * @eventproperty
+         */
+        readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;
+        /**
+         * Occurs when the selection changes on any worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @eventproperty
+         */
+        readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+        /**
+         * Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:
+                    - The user drags the mouse for multi-selection.
+                    - The user selects a cell in the mode when cell arguments are selected for formula references.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.10]
+         *
+         * @eventproperty
+         */
+        readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
+        
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.WorksheetCollectionData;
+    }
+    /**
+     * Represents the protection of a worksheet object.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.2]
+     */
+    export class WorksheetProtection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
          * Specifies the protection options for the worksheet.
          *
@@ -4477,6 +5026,107 @@ export declare namespace Excel {
          */
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         
+        /**
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.13]
+         *
+         * @param direction - The direction from the active cell.
+         * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
+         */
+        getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range | string): Excel.Range;
+        /**
+         * Returns a range object that is the edge cell of the data region that corresponds to the provided direction. This matches the Ctrl+Arrow key behavior in the Excel on Windows UI.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.13]
+         *
+         * @param directionString - The direction from the active cell.
+         * @param activeCell - The active cell in this range. By default, the active cell is the top-left cell of the range. An error is thrown if the active cell is not in this range.
+         */
+        getRangeEdge(directionString: "Left" | "Right" | "Up" | "Down", activeCell?: Range | string): Excel.Range;
+        /**
+         * Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         *
+         * @param deltaRows - The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         * @param deltaColumns - The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         */
+        getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;
+        /**
+         * Gets a row contained in the range.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         *
+         * @param row - Row number of the range to be retrieved. Zero-indexed.
+         */
+        getRow(row: number): Excel.Range;
+        /**
+         * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties. For properties that are not consistent across each cell within a given row, `null` will be returned.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param rowPropertiesLoadOptions - An object that represents which row properties to load.
+         * @returns An array where each item represents the requested properties of the corresponding row.
+         */
+        getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): OfficeExtension.ClientResult<RowProperties[]>;
+        /**
+         * Gets a certain number of rows above the current `Range` object.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         *
+         * @param count - Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         */
+        getRowsAbove(count?: number): Excel.Range;
+        /**
+         * Gets a certain number of rows below the current `Range` object.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         *
+         * @param count - Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         */
+        getRowsBelow(count?: number): Excel.Range;
+        /**
+         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
+                    If no special cells are found, an `ItemNotFound` error will be thrown.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         */
+        getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
+        /**
+         * Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
+                    If no special cells are found, an `ItemNotFound` error will be thrown.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param cellTypeString - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         */
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
+        /**
+         * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
+                    If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         *
+         * @param cellType - The type of cells to include.
+         * @param cellValueType - If `cellType` is either `constants` or `formulas`, this argument is used to determine which types of cells to include in the result. These values can be combined together to return more than one type. The default is to select all constants or formulas, no matter what the type.
+         */
+        getSpecialCellsOrNullObject(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;
         /**
          * Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the specified type and value.
                     If no special cells are found, then this method returns an object with its `isNullObject` property set to `true`.
@@ -6730,6 +7380,40 @@ export declare namespace Excel {
         getItem(key: string): Excel.Table;
         
         /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableScopedCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.TableScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.TableScopedCollectionData;
+    }
+    /**
+     * Represents an Excel table.
+                To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    export class Table extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
          * Represents the `AutoFilter` object of the table.
          *
          * @remarks
@@ -7203,6 +7887,66 @@ export declare namespace Excel {
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
+        
+        /**
+         * Gets the number of rows in the table.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.4]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a row based on its position in the collection.
+                    
+                     Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
+                     a `TableRow` object represents the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         *
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
+         */
+        getItemAt(index: number): Excel.TableRow;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableRowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableRowCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.TableRowCollectionData;
+    }
+    /**
+     * Represents a row in a table.
+                
+                 Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
+                 a `TableRow` object represents the physical location of the table row, but not the data.
+                 That is, if the data is sorted or if new rows are added, a table row will continue
+                 to point at the index for which it was created.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.1]
+     */
+    export class TableRow extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
          * Returns the index number of the row within the rows collection of the table. Zero-indexed.
          *
@@ -8607,6 +9351,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
+        
         
         /**
          * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
@@ -13122,6 +13867,29 @@ export declare namespace Excel {
         apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;
         
         /**
+         * Clears the filter criteria and sort state of the AutoFilter.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        clearCriteria(): void;
+        /**
+         * Returns the `Range` object that represents the range to which the AutoFilter applies.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        getRange(): Excel.Range;
+        /**
+         * Returns the `Range` object that represents the range to which the AutoFilter applies.
+                    If there is no `Range` object associated with the AutoFilter, then this method returns an object with its `isNullObject` property set to `true`.
+                    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.9]
+         */
+        getRangeOrNullObject(): Excel.Range;
+        /**
          * Applies the specified AutoFilter object currently on the range.
          *
          * @remarks
@@ -15954,6 +16722,40 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.ConditionalFormat;
         
         /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalFormatCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ConditionalFormatCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;
+    }
+    /**
+     * An object encapsulating a conditional format's range, format, rule, and other properties.
+                To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.6]
+     */
+    export class ConditionalFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
          * Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.
          *
          * @remarks
@@ -17733,6 +18535,39 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Style;
         
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.StyleCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.StyleCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.StyleCollectionData;
+    }
+    /**
+     * Represents a collection of table styles.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.10]
+     */
+    export class TableStyleCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.TableStyle[];
         /**
@@ -19297,6 +20132,66 @@ export declare namespace Excel {
         getItemByReplyId(replyId: string): Excel.Comment;
         
         /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CommentCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CommentCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentCollection;
+        /**
+         * Occurs when the comments are added.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.12]
+         *
+         * @eventproperty
+         */
+        readonly onAdded: OfficeExtension.EventHandlers<Excel.CommentAddedEventArgs>;
+        /**
+         * Occurs when comments or replies in a comment collection are changed, including when replies are deleted.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.12]
+         *
+         * @eventproperty
+         */
+        readonly onChanged: OfficeExtension.EventHandlers<Excel.CommentChangedEventArgs>;
+        /**
+         * Occurs when comments are deleted in the comment collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.12]
+         *
+         * @eventproperty
+         */
+        readonly onDeleted: OfficeExtension.EventHandlers<Excel.CommentDeletedEventArgs>;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.CommentCollectionData;
+    }
+    /**
+     * Represents a comment in the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.10]
+     */
+    export class Comment extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
          * Represents a collection of reply objects associated with the comment.
          *
          * @remarks
@@ -19481,6 +20376,39 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.CommentReply;
         
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CommentReplyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CommentReplyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.CommentReplyCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.CommentReplyCollectionData;
+    }
+    /**
+     * Represents a comment reply in the workbook.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.10]
+     */
+    export class CommentReply extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
          * Gets the email of the comment reply's author.
          *
@@ -19717,6 +20645,40 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Shape;
         
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ShapeCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.ShapeCollectionData;
+    }
+    /**
+     * Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes, etc.
+                To learn more about the shape object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes | Work with shapes using the Excel JavaScript API}.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.9]
+     */
+    export class Shape extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
          * Returns the fill formatting of this shape.
          *
@@ -20282,6 +21244,39 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.Shape;
         
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.GroupShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.GroupShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.GroupShapeCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.GroupShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.GroupShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.GroupShapeCollectionData;
+    }
+    /**
+     * Represents a line inside a worksheet. To get the corresponding `Shape` object, use `Line.shape`.
+     *
+     * @remarks
+     * [Api set: ExcelApi 1.9]
+     */
+    export class Line extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
         /**
          * Represents the shape to which the beginning of the specified line is attached.
          *
@@ -32044,6 +33039,17 @@ export declare namespace Excel {
         /** An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ... })`. */
         export interface LinkedWorkbookCollectionUpdateData {
             
+            items?: Excel.Interfaces.LinkedWorkbookData[];
+        }
+        /** An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`. */
+        export interface RuntimeUpdateData {
+            /**
+             * Toggle JavaScript events in the current task pane or content add-in.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.8]
+             */
+            enableEvents?: boolean;
         }
         /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
@@ -34042,6 +35048,25 @@ export declare namespace Excel {
         export interface ChartDataTableUpdateData {
             
             
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the `ChartDataTableFormat` object, for use in `chartDataTableFormat.set({ ... })`. */
+        export interface ChartDataTableFormatUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
+        export interface ChartErrorBarsUpdateData {
+            /**
+            * Specifies the formatting type of the error bars.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.9]
+            */
+            format?: Excel.Interfaces.ChartErrorBarsFormatUpdateData;
             /**
              * Specifies if error bars have an end style cap.
              *
@@ -36715,13 +37740,30 @@ export declare namespace Excel {
         export interface NamedSheetViewUpdateData {
             
         }
+        /** An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`. */
+        export interface NamedSheetViewCollectionUpdateData {
+            items?: Excel.Interfaces.NamedSheetViewData[];
+        }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
             
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `queryCollection.toJSON()`. */
+        export interface QueryCollectionData {
+            items?: Excel.Interfaces.QueryData[];
         }
         /** An interface describing the data returned by calling `linkedWorkbook.toJSON()`. */
         export interface LinkedWorkbookData {
             
+        }
+        /** An interface describing the data returned by calling `linkedWorkbookCollection.toJSON()`. */
+        export interface LinkedWorkbookCollectionData {
+            items?: Excel.Interfaces.LinkedWorkbookData[];
         }
         /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
@@ -37167,6 +38209,17 @@ export declare namespace Excel {
              */
             tabColor?: string;
             
+            /**
+             * The visibility of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
+        }
+        /** An interface describing the data returned by calling `worksheetCollection.toJSON()`. */
+        export interface WorksheetCollectionData {
+            items?: Excel.Interfaces.WorksheetData[];
         }
         /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
@@ -39594,6 +40647,25 @@ export declare namespace Excel {
         export interface ChartDataTableData {
             
             
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `chartDataTableFormat.toJSON()`. */
+        export interface ChartDataTableFormatData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `chartErrorBars.toJSON()`. */
+        export interface ChartErrorBarsData {
+            /**
+            * Specifies the formatting type of the error bars.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.9]
+            */
+            format?: Excel.Interfaces.ChartErrorBarsFormatData;
             /**
              * Specifies if error bars have an end style cap.
              *
@@ -42986,6 +44058,10 @@ export declare namespace Excel {
         export interface NamedSheetViewData {
             
         }
+        /** An interface describing the data returned by calling `namedSheetViewCollection.toJSON()`. */
+        export interface NamedSheetViewCollectionData {
+            items?: Excel.Interfaces.NamedSheetViewData[];
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -43158,6 +44234,98 @@ export declare namespace Excel {
             bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
             
             /**
+            * Gets the workbook properties.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.7]
+            */
+            properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;
+            /**
+            * Returns the protection object for a workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.7]
+            */
+            protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;
+            /**
+            * Represents a collection of tables associated with the workbook.
+            *
+            * @remarks
+            * [Api set: ExcelApi 1.1]
+            */
+            tables?: Excel.Interfaces.TableCollectionLoadOptions;
+            /**
+             * Specifies if the workbook is in AutoSave mode.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            autoSave?: boolean;
+            /**
+             * Returns a number about the version of Excel Calculation Engine.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            calculationEngineVersion?: boolean;
+            /**
+             * True if all charts in the workbook are tracking the actual data points to which they are attached.
+                        False if the charts track the index of the data points.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            chartDataPointTrack?: boolean;
+            /**
+             * Specifies if changes have been made since the workbook was last saved.
+                        You can set this property to `true` if you want to close a modified workbook without either saving it or being prompted to save it.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            isDirty?: boolean;
+            /**
+             * Gets the workbook name.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.7]
+             */
+            name?: boolean;
+            /**
+             * Specifies if the workbook has ever been saved locally or online.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            previouslySaved?: boolean;
+            /**
+             * Returns `true` if the workbook is open in read-only mode.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.8]
+             */
+            readOnly?: boolean;
+            /**
+             * True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+                        Data will permanently lose accuracy when switching this property from `false` to `true`.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.9]
+             */
+            usePrecisionAsDisplayed?: boolean;
+        }
+        /**
+         * Represents the protection of a workbook object.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.7]
+         */
+        export interface WorkbookProtectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
              * Specifies if the workbook is protected.
              *
              * @remarks
@@ -43281,6 +44449,25 @@ export declare namespace Excel {
             tabColor?: boolean;
             
             /**
+             * The visibility of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
+        /**
+         * Represents a collection of worksheet objects that are part of the workbook.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.1]
+         */
+        export interface WorksheetCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
             * For EACH ITEM in the collection: Represents the `AutoFilter` object of the worksheet.
             *
             * @remarks
@@ -43383,6 +44570,25 @@ export declare namespace Excel {
              */
             tabColor?: boolean;
             
+            /**
+             * For EACH ITEM in the collection: The visibility of the worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
+             */
+            visibility?: boolean;
+        }
+        /**
+         * Represents the protection of a worksheet object.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.2]
+         */
+        export interface WorksheetProtectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
             /**
              * Specifies the protection options for the worksheet.
              *

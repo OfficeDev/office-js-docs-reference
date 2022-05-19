@@ -194,7 +194,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "powerpoint!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -244,7 +244,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientRequestContext",
-                      "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
+                      "canonicalReference": "powerpoint!OfficeExtension.ClientRequestContext:class"
                     },
                     {
                       "kind": "Content",
@@ -1166,7 +1166,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "powerpoint!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1422,7 +1422,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientRequestContext",
-                  "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
+                  "canonicalReference": "powerpoint!OfficeExtension.ClientRequestContext:class"
                 },
                 {
                   "kind": "Content",
@@ -1551,7 +1551,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1564,7 +1564,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1618,7 +1618,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "powerpoint!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1640,7 +1640,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1653,7 +1653,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1715,7 +1715,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "powerpoint!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1741,7 +1741,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",
@@ -1754,7 +1754,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.IPromise",
-                  "canonicalReference": "office!OfficeExtension.IPromise:type"
+                  "canonicalReference": "powerpoint!OfficeExtension.IPromise:type"
                 },
                 {
                   "kind": "Content",

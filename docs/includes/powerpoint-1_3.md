@@ -2,13 +2,8 @@
 |:---|:---|:---|
 |[AddSlideOptions](/javascript/api/powerpoint/powerpoint.addslideoptions)|[layoutId](/javascript/api/powerpoint/powerpoint.addslideoptions#powerpoint-powerpoint-addslideoptions-layoutid-member)|Specifies the ID of a Slide Layout to be used for the new slide.|
 ||[slideMasterId](/javascript/api/powerpoint/powerpoint.addslideoptions#powerpoint-powerpoint-addslideoptions-slidemasterid-member)|Specifies the ID of a Slide Master to be used for the new slide.|
-|[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions)](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-insertslidesfrombase64-member(1))|Inserts the specified slides from a presentation into the current presentation.|
-||[slideMasters](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slidemasters-member)|Returns the collection of `SlideMaster` objects that are in the presentation.|
-||[slides](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slides-member)|Returns an ordered collection of slides in the presentation.|
+|[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[slideMasters](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-slidemasters-member)|Returns the collection of `SlideMaster` objects that are in the presentation.|
 ||[tags](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-tags-member)|Returns a collection of tags attached to the presentation.|
-||[title](/javascript/api/powerpoint/powerpoint.presentation#powerpoint-powerpoint-presentation-title-member)||
-|[RequestContext](/javascript/api/powerpoint/powerpoint.requestcontext)|[application](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-application-member)|Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext.|
-||[presentation](/javascript/api/powerpoint/powerpoint.requestcontext#powerpoint-powerpoint-requestcontext-presentation-member)||
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[delete()](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-delete-member(1))|Deletes the shape from the shape collection.|
 ||[id](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-id-member)|Gets the unique ID of the shape.|
 ||[tags](/javascript/api/powerpoint/powerpoint.shape#powerpoint-powerpoint-shape-tags-member)|Returns a collection of tags in the shape.|
@@ -17,17 +12,11 @@
 ||[getItemAt(index: number)](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemat-member(1))|Gets a shape using its zero-based index in the collection.|
 ||[getItemOrNullObject(id: string)](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-getitemornullobject-member(1))|Gets a shape using its unique ID.|
 ||[items](/javascript/api/powerpoint/powerpoint.shapecollection#powerpoint-powerpoint-shapecollection-items-member)|Gets the loaded child items in this collection.|
-|[Slide](/javascript/api/powerpoint/powerpoint.slide)|[delete()](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-delete-member(1))|Deletes the slide from the presentation.|
-||[id](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-id-member)|Gets the unique ID of the slide.|
-||[layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)|Gets the layout of the slide.|
+|[Slide](/javascript/api/powerpoint/powerpoint.slide)|[layout](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-layout-member)|Gets the layout of the slide.|
 ||[shapes](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-shapes-member)|Returns a collection of shapes in the slide.|
 ||[slideMaster](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-slidemaster-member)|Gets the `SlideMaster` object that represents the slide's default content.|
 ||[tags](/javascript/api/powerpoint/powerpoint.slide#powerpoint-powerpoint-slide-tags-member)|Returns a collection of tags in the slide.|
 |[SlideCollection](/javascript/api/powerpoint/powerpoint.slidecollection)|[add(options?: PowerPoint.AddSlideOptions)](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-add-member(1))|Adds a new slide at the end of the collection.|
-||[getCount()](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getcount-member(1))|Gets the number of slides in the collection.|
-||[getItem(key: string)](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitem-member(1))|Gets a slide using its unique ID.|
-||[getItemAt(index: number)](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemat-member(1))|Gets a slide using its zero-based index in the collection.|
-||[getItemOrNullObject(id: string)](/javascript/api/powerpoint/powerpoint.slidecollection#powerpoint-powerpoint-slidecollection-getitemornullobject-member(1))|Gets a slide using its unique ID.|
 |[SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout)|[id](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-id-member)|Gets the unique ID of the slide layout.|
 ||[name](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-name-member)|Gets the name of the slide layout.|
 ||[shapes](/javascript/api/powerpoint/powerpoint.slidelayout#powerpoint-powerpoint-slidelayout-shapes-member)|Returns a collection of shapes in the slide layout.|

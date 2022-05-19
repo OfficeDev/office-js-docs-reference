@@ -127,7 +127,7 @@
 |[EntityCellValue](/javascript/api/excel/excel.entitycellvalue)|[basicType](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[layouts](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-layouts-member)|Represents layout information for views of this entity.|
-||[properties: {            [key: string]](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
+||[properties: {            [key: string]](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
 ||[provider](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-provider-member)|Represents information that describes the service that provided the data in this `EntityCellValue`.|
 ||[referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)|Represents the cell values which are referenced within `EntityCellValue.properties`.|
 ||[text](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|
@@ -181,7 +181,7 @@
 ||[basicValue](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[cardLayout](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-cardlayout-member)|Represents the layout of this linked entity in card view.|
 ||[id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)|Represents the service source that provided the information in this value.|
-||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this linked entity and their metadata.|
+||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this linked entity and their metadata.|
 ||[propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-propertymetadata-member)||
 ||[provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)|Represents information that describes the service that provided data in this `LinkedEntityCellValue`.|
 ||[text](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|

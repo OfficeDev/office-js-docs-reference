@@ -518,6 +518,28 @@ export declare namespace Office {
         requiredAttendees: Recipients;
         
         /**
+         * Gets the id of the series that an instance belongs to.
+         * 
+         * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+         * 
+         * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier. 
+         * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. 
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`. 
+         * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+         * 
+         * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests 
+         * and returns `undefined` for any other items that are not meeting requests.
+         * 
+         * @remarks
+         * [Api set: Mailbox 1.7]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         */
+        seriesId: string;
+        /**
          * Gets or sets the date and time that the appointment is to begin.
          *
          * The `start` property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
@@ -828,6 +850,7 @@ export declare namespace Office {
          */
         close(): void;
         
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -1064,6 +1087,7 @@ export declare namespace Office {
          *                 The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
         
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
@@ -1875,6 +1899,7 @@ export declare namespace Office {
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         
+        
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -1897,6 +1922,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
         
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
@@ -2453,6 +2479,7 @@ export declare namespace Office {
      */
     export interface Body {
         
+        
         /**
          * Returns the current body in a specified format.
          *
@@ -2725,6 +2752,7 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         
+        
      }
     /**
      * Represents the categories on an item.
@@ -2958,6 +2986,20 @@ export declare namespace Office {
          */
         get(name: string): any;
         
+        /**
+         * Removes the specified property from the custom property collection.
+         *
+         * To make the removal of the property permanent, you must call the `saveAsync` method of the `CustomProperties` object.
+         *
+         * @remarks
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * 
+         * @param name - The `name` of the property to be removed.
+         */
+        remove(name: string): void;
         /**
          * Saves item-specific custom properties to the server.
          *
@@ -4062,6 +4104,7 @@ export declare namespace Office {
          */
         displayAppointmentForm(itemId: string): void;
         
+        
         /**
          * Displays an existing message.
          *
@@ -4086,6 +4129,7 @@ export declare namespace Office {
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
          */
         displayMessageForm(itemId: string): void;
+        
         
         /**
          * Displays a form for creating a new calendar appointment.
@@ -4114,6 +4158,7 @@ export declare namespace Office {
          * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
          */
         displayNewAppointmentForm(parameters: AppointmentForm): void;
+        
         
          /**
          * Displays a form for creating a new message.
@@ -4162,6 +4207,7 @@ export declare namespace Office {
          *        This is a string up to 100 characters.
          */
         displayNewMessageForm(parameters: any): void;
+        
         
         /**
          * Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
@@ -4727,6 +4773,28 @@ export declare namespace Office {
         notificationMessages: NotificationMessages;
         
         /**
+         * Gets the ID of the series that an instance belongs to.
+         * 
+         * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
+         * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
+         * 
+         * **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier.
+         * The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API.
+         * Before making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`.
+         * For more details, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
+         * 
+         * The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests
+         * and returns `undefined` for any other items that are not meeting requests.
+         * 
+         * @remarks
+         * [Api set: Mailbox 1.7]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         */
+        seriesId: string;
+        /**
          * Gets or sets the description that appears in the subject field of an item.
          *
          * The `subject` property gets or sets the entire subject of the item, as sent by the email server.
@@ -5025,6 +5093,7 @@ export declare namespace Office {
          */
         close(): void;
         
+        
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
@@ -5117,6 +5186,7 @@ export declare namespace Office {
          *                 the failure.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
+        
         
         /**
          * Asynchronously gets the ID of a saved item.
@@ -5282,6 +5352,7 @@ export declare namespace Office {
          *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
+        
         
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
@@ -5963,6 +6034,7 @@ export declare namespace Office {
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         
+        
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -5985,6 +6057,7 @@ export declare namespace Office {
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
         
         /**
          * Gets all the internet headers for the message as a string.
@@ -6430,6 +6503,40 @@ export declare namespace Office {
          */
         persistent?: Boolean;
         
+    }
+    /**
+     * The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.3]
+     * 
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+     * 
+     * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+     */
+    export interface NotificationMessages {
+        /**
+         * Adds a notification to an item.
+         *
+         * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * @param key - A developer-specified key used to reference this notification message.
+         *             Developers can use it to modify this message later. It can't be longer than 32 characters.
+         * @param JSONmessage - A JSON object that contains the notification message to be added to the item.
+         *                    It contains a `NotificationMessageDetails` object.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         */
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds a notification to an item.
          *

@@ -1,5 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[Application](/javascript/api/excel/excel.application)|[suspendApiCalculationUntilNextSync()](/javascript/api/excel/excel.application#excel-excel-application-suspendapicalculationuntilnextsync-member(1))|Suspends calculation until the next `context.sync()` is called.|
 |[CellValueConditionalFormat](/javascript/api/excel/excel.cellvalueconditionalformat)|[format](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-format-member)|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.|
 ||[rule](/javascript/api/excel/excel.cellvalueconditionalformat#excel-excel-cellvalueconditionalformat-rule-member)|Specifies the rule object on this conditional format.|
 |[ColorScaleConditionalFormat](/javascript/api/excel/excel.colorscaleconditionalformat)|[criteria](/javascript/api/excel/excel.colorscaleconditionalformat#excel-excel-colorscaleconditionalformat-criteria-member)|The criteria of the color scale.|
@@ -22,35 +23,35 @@
 ||[gradientFill](/javascript/api/excel/excel.conditionaldatabarpositiveformat#excel-excel-conditionaldatabarpositiveformat-gradientfill-member)|Specifies if the data bar has a gradient.|
 |[ConditionalDataBarRule](/javascript/api/excel/excel.conditionaldatabarrule)|[formula](/javascript/api/excel/excel.conditionaldatabarrule#excel-excel-conditionaldatabarrule-formula-member)|The formula, if required, on which to evaluate the data bar rule.|
 ||[type](/javascript/api/excel/excel.conditionaldatabarrule#excel-excel-conditionaldatabarrule-type-member)|The type of rule for the data bar.|
+|[ConditionalFormat](/javascript/api/excel/excel.conditionalformat)|[cellValue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalue-member)|Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.|
+||[cellValueOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-cellvalueornullobject-member)|Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.|
+||[colorScale](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscale-member)|Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.|
+||[colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-colorscaleornullobject-member)|Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.|
+||[custom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-custom-member)|Returns the custom conditional format properties if the current conditional format is a custom type.|
+||[customOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-customornullobject-member)|Returns the custom conditional format properties if the current conditional format is a custom type.|
+||[dataBar](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databar-member)|Returns the data bar properties if the current conditional format is a data bar.|
+||[dataBarOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-databarornullobject-member)|Returns the data bar properties if the current conditional format is a data bar.|
+||[delete()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-delete-member(1))|Deletes this conditional format.|
+||[getRange()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrange-member(1))|Returns the range the conditonal format is applied to.|
+||[getRangeOrNullObject()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-getrangeornullobject-member(1))|Returns the range to which the conditonal format is applied.|
+||[iconSet](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconset-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
+||[iconSetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-iconsetornullobject-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
+||[id](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-id-member)|The priority of the conditional format in the current `ConditionalFormatCollection`.|
+||[preset](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-preset-member)|Returns the preset criteria conditional format.|
+||[presetOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-presetornullobject-member)|Returns the preset criteria conditional format.|
+||[priority](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-priority-member)|The priority (or index) within the conditional format collection that this conditional format currently exists in.|
+||[stopIfTrue](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-stopiftrue-member)|If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.|
+||[textComparison](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparison-member)|Returns the specific text conditional format properties if the current conditional format is a text type.|
+||[textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-textcomparisonornullobject-member)|Returns the specific text conditional format properties if the current conditional format is a text type.|
+||[topBottom](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-topbottom-member)|Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.|
+||[topBottomOrNullObject](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-topbottomornullobject-member)|Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.|
+||[type](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-type-member)|A type of conditional format.|
 |[ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection)|[add(type: Excel.ConditionalFormatType)](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-add-member(1))|Adds a new conditional format to the collection at the first/top priority.|
-||[cellValue](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-cellvalue-member)|Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.|
-||[cellValueOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-cellvalueornullobject-member)|Returns the cell value conditional format properties if the current conditional format is a `CellValue` type.|
 ||[clearAll()](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-clearall-member(1))|Clears all conditional formats active on the current specified range.|
-||[colorScale](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-colorscale-member)|Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.|
-||[colorScaleOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-colorscaleornullobject-member)|Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.|
-||[custom](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-custom-member)|Returns the custom conditional format properties if the current conditional format is a custom type.|
-||[customOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-customornullobject-member)|Returns the custom conditional format properties if the current conditional format is a custom type.|
-||[dataBar](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-databar-member)|Returns the data bar properties if the current conditional format is a data bar.|
-||[dataBarOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-databarornullobject-member)|Returns the data bar properties if the current conditional format is a data bar.|
-||[delete()](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-delete-member(1))|Deletes this conditional format.|
 ||[getCount()](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getcount-member(1))|Returns the number of conditional formats in the workbook.|
 ||[getItem(id: string)](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitem-member(1))|Returns a conditional format for the given ID.|
 ||[getItemAt(index: number)](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getitemat-member(1))|Returns a conditional format at the given index.|
-||[getRange()](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getrange-member(1))|Returns the range the conditonal format is applied to.|
-||[getRangeOrNullObject()](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-getrangeornullobject-member(1))|Returns the range to which the conditonal format is applied.|
-||[iconSet](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-iconset-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
-||[iconSetOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-iconsetornullobject-member)|Returns the icon set conditional format properties if the current conditional format is an `IconSet` type.|
-||[id](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-id-member)|The priority of the conditional format in the current `ConditionalFormatCollection`.|
 ||[items](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-items-member)|Gets the loaded child items in this collection.|
-||[preset](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-preset-member)|Returns the preset criteria conditional format.|
-||[presetOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-presetornullobject-member)|Returns the preset criteria conditional format.|
-||[priority](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-priority-member)|The priority (or index) within the conditional format collection that this conditional format currently exists in.|
-||[stopIfTrue](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-stopiftrue-member)|If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.|
-||[textComparison](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-textcomparison-member)|Returns the specific text conditional format properties if the current conditional format is a text type.|
-||[textComparisonOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-textcomparisonornullobject-member)|Returns the specific text conditional format properties if the current conditional format is a text type.|
-||[topBottom](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-topbottom-member)|Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.|
-||[topBottomOrNullObject](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-topbottomornullobject-member)|Returns the top/bottom conditional format properties if the current conditional format is a `TopBottom` type.|
-||[type](/javascript/api/excel/excel.conditionalformatcollection#excel-excel-conditionalformatcollection-type-member)|A type of conditional format.|
 |[ConditionalFormatRule](/javascript/api/excel/excel.conditionalformatrule)|[formula](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-formula-member)|The formula, if required, on which to evaluate the conditional format rule.|
 ||[formulaLocal](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-formulalocal-member)|The formula, if required, on which to evaluate the conditional format rule in the user's language.|
 ||[formulaR1C1](/javascript/api/excel/excel.conditionalformatrule#excel-excel-conditionalformatrule-formular1c1-member)|The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.|
@@ -102,21 +103,10 @@
 ||[style](/javascript/api/excel/excel.iconsetconditionalformat#excel-excel-iconsetconditionalformat-style-member)|If set, displays the icon set option for the conditional format.|
 |[PresetCriteriaConditionalFormat](/javascript/api/excel/excel.presetcriteriaconditionalformat)|[format](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-format-member)|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.|
 ||[rule](/javascript/api/excel/excel.presetcriteriaconditionalformat#excel-excel-presetcriteriaconditionalformat-rule-member)|The rule of the conditional format.|
-|[Range](/javascript/api/excel/excel.range)|[cellAddresses](/javascript/api/excel/excel.range#excel-excel-range-celladdresses-member)|Represents the cell addresses of the `RangeView`.|
-||[columnCount](/javascript/api/excel/excel.range#excel-excel-range-columncount-member)|The number of visible columns.|
+|[Range](/javascript/api/excel/excel.range)|[calculate()](/javascript/api/excel/excel.range#excel-excel-range-calculate-member(1))|Calculates a range of cells on a worksheet.|
 ||[conditionalFormats](/javascript/api/excel/excel.range#excel-excel-range-conditionalformats-member)|The collection of `ConditionalFormats` that intersect the range.|
-||[formulas](/javascript/api/excel/excel.range#excel-excel-range-formulas-member)|Represents the formula in A1-style notation.|
-||[formulasLocal](/javascript/api/excel/excel.range#excel-excel-range-formulaslocal-member)|Represents the formula in A1-style notation, in the user's language and number-formatting locale.|
-||[formulasR1C1](/javascript/api/excel/excel.range#excel-excel-range-formulasr1c1-member)|Represents the formula in R1C1-style notation.|
-||[getRange()](/javascript/api/excel/excel.range#excel-excel-range-getrange-member(1))|Gets the parent range associated with the current `RangeView`.|
-||[index](/javascript/api/excel/excel.range#excel-excel-range-index-member)|Returns a value that represents the index of the `RangeView`.|
-||[numberFormat](/javascript/api/excel/excel.range#excel-excel-range-numberformat-member)|Represents Excel's number format code for the given cell.|
-||[rowCount](/javascript/api/excel/excel.range#excel-excel-range-rowcount-member)|The number of visible rows.|
-||[rows](/javascript/api/excel/excel.range#excel-excel-range-rows-member)|Represents a collection of range views associated with the range.|
-||[text](/javascript/api/excel/excel.range#excel-excel-range-text-member)|Text values of the specified range.|
-||[valueTypes](/javascript/api/excel/excel.range#excel-excel-range-valuetypes-member)|Represents the type of data of each cell.|
-||[values](/javascript/api/excel/excel.range#excel-excel-range-values-member)|Represents the raw values of the specified range view.|
 |[TextConditionalFormat](/javascript/api/excel/excel.textconditionalformat)|[format](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-format-member)|Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.|
 ||[rule](/javascript/api/excel/excel.textconditionalformat#excel-excel-textconditionalformat-rule-member)|The rule of the conditional format.|
 |[TopBottomConditionalFormat](/javascript/api/excel/excel.topbottomconditionalformat)|[format](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-format-member)|Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.|
 ||[rule](/javascript/api/excel/excel.topbottomconditionalformat#excel-excel-topbottomconditionalformat-rule-member)|The criteria of the top/bottom conditional format.|
+|[Worksheet](/javascript/api/excel/excel.worksheet)|[calculate(markAllDirty: boolean)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-calculate-member(1))|Calculates all cells on a worksheet.|
