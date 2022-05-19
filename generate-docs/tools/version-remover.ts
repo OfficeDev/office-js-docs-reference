@@ -21,8 +21,8 @@ while (indexOfApiSetTag >= 0) {
     let endPosition = commentEnd + declarationString.length;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
         endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
-    } else if (declarationString.indexOf(";") >= 0) {
-        endPosition = wholeDTS.indexOf(";", commentEnd);
+    } else {
+        endPosition = getDeclarationEnd(wholeDTS, commentEnd);
     }
 
     if (endPosition === -1) {
@@ -41,3 +41,18 @@ if (process.argv[3] === "ExcelApi 1.11") {
 }
 
 fsx.writeFileSync(process.argv[4], wholeDTS);
+
+
+function getDeclarationEnd(wholeDts: string, startIndex: number): number {
+    let nextSemicolon = wholeDTS.indexOf(";", startIndex);
+    let nextNewLine = wholeDTS.indexOf("\n", startIndex);
+    let nextEndBrace = wholeDTS.indexOf("}", startIndex);
+    
+    if (nextSemicolon < nextNewLine) {
+        return nextSemicolon;
+    } else {
+        // The declaration is on multiple lines, likely due to an internal class.
+        wholeDTS.substring(startIndex, wholeDTS.indexOf(";", nextEndBrace));        
+        return wholeDTS.indexOf(";", nextEndBrace);
+    }
+}

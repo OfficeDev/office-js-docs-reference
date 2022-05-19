@@ -2,27 +2,28 @@
 |:---|:---|:---|
 |[Binding](/javascript/api/excel/excel.binding)|[onDataChanged](/javascript/api/excel/excel.binding#excel-excel-binding-ondatachanged-member)|Occurs when data or formatting within the binding is changed.|
 ||[onSelectionChanged](/javascript/api/excel/excel.binding#excel-excel-binding-onselectionchanged-member)|Occurs when the selected content in the binding is changed.|
+|[BindingCollection](/javascript/api/excel/excel.bindingcollection)|[add(address: Range \| string, hasHeaders: boolean)](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-add-member(1))|Creates a new table.|
+||[count](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-count-member)|Returns the number of bindings in the collection.|
+||[count](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-count-member)|Returns the number of tables in the workbook.|
+||[delete()](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-delete-member(1))|Deletes the column from the table.|
+||[filter](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-filter-member)|Retrieves the filter applied to the column.|
+||[getDataBodyRange()](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getdatabodyrange-member(1))|Gets the range object associated with the data body of the column.|
+||[getHeaderRowRange()](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getheaderrowrange-member(1))|Gets the range object associated with the header row of the column.|
+||[getRange()](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-getrange-member(1))|Gets the range object associated with the entire column.|
+||[getTotalRowRange()](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-gettotalrowrange-member(1))|Gets the range object associated with the totals row of the column.|
+||[id](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-id-member)|Returns a unique key that identifies the column within the table.|
+||[index](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-index-member)|Returns the index number of the column within the columns collection of the table.|
+||[items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)|Gets the loaded child items in this collection.|
+||[items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)|Gets the loaded child items in this collection.|
+||[items](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-items-member)|Gets the loaded child items in this collection.|
+||[name](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-name-member)|Specifies the name of the table column.|
+||[values](/javascript/api/excel/excel.bindingcollection#excel-excel-bindingcollection-values-member)|Represents the raw values of the specified range.|
 |[BindingDataChangedEventArgs](/javascript/api/excel/excel.bindingdatachangedeventargs)|[binding](/javascript/api/excel/excel.bindingdatachangedeventargs#excel-excel-bindingdatachangedeventargs-binding-member)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event.|
 |[BindingSelectionChangedEventArgs](/javascript/api/excel/excel.bindingselectionchangedeventargs)|[binding](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-binding-member)|Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event.|
 ||[columnCount](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-columncount-member)|Gets the number of columns selected.|
 ||[rowCount](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-rowcount-member)|Gets the number of rows selected.|
 ||[startColumn](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-startcolumn-member)|Gets the index of the first column of the selection (zero-based).|
 ||[startRow](/javascript/api/excel/excel.bindingselectionchangedeventargs#excel-excel-bindingselectionchangedeventargs-startrow-member)|Gets the index of the first row of the selection (zero-based).|
-|[Chart](/javascript/api/excel/excel.chart)|[getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode)](/javascript/api/excel/excel.chart#excel-excel-chart-getimage-member(1))|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
-||[worksheet](/javascript/api/excel/excel.chart#excel-excel-chart-worksheet-member)|The worksheet containing the current chart.|
-|[Filter](/javascript/api/excel/excel.filter)|[apply(criteria: Excel.FilterCriteria)](/javascript/api/excel/excel.filter#excel-excel-filter-apply-member(1))|Apply the given filter criteria on the given column.|
-||[applyBottomItemsFilter(count: number)](/javascript/api/excel/excel.filter#excel-excel-filter-applybottomitemsfilter-member(1))|Apply a "Bottom Item" filter to the column for the given number of elements.|
-||[applyBottomPercentFilter(percent: number)](/javascript/api/excel/excel.filter#excel-excel-filter-applybottompercentfilter-member(1))|Apply a "Bottom Percent" filter to the column for the given percentage of elements.|
-||[applyCellColorFilter(color: string)](/javascript/api/excel/excel.filter#excel-excel-filter-applycellcolorfilter-member(1))|Apply a "Cell Color" filter to the column for the given color.|
-||[applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator)](/javascript/api/excel/excel.filter#excel-excel-filter-applycustomfilter-member(1))|Apply an "Icon" filter to the column for the given criteria strings.|
-||[applyDynamicFilter(criteria: Excel.DynamicFilterCriteria)](/javascript/api/excel/excel.filter#excel-excel-filter-applydynamicfilter-member(1))|Apply a "Dynamic" filter to the column.|
-||[applyFontColorFilter(color: string)](/javascript/api/excel/excel.filter#excel-excel-filter-applyfontcolorfilter-member(1))|Apply a "Font Color" filter to the column for the given color.|
-||[applyIconFilter(icon: Excel.Icon)](/javascript/api/excel/excel.filter#excel-excel-filter-applyiconfilter-member(1))|Apply an "Icon" filter to the column for the given icon.|
-||[applyTopItemsFilter(count: number)](/javascript/api/excel/excel.filter#excel-excel-filter-applytopitemsfilter-member(1))|Apply a "Top Item" filter to the column for the given number of elements.|
-||[applyTopPercentFilter(percent: number)](/javascript/api/excel/excel.filter#excel-excel-filter-applytoppercentfilter-member(1))|Apply a "Top Percent" filter to the column for the given percentage of elements.|
-||[applyValuesFilter(values: Array<string \| FilterDatetime>)](/javascript/api/excel/excel.filter#excel-excel-filter-applyvaluesfilter-member(1))|Apply a "Values" filter to the column for the given values.|
-||[clear()](/javascript/api/excel/excel.filter#excel-excel-filter-clear-member(1))|Clear the filter on the given column.|
-||[criteria](/javascript/api/excel/excel.filter#excel-excel-filter-criteria-member)|The currently applied filter on the given column.|
 |[FilterCriteria](/javascript/api/excel/excel.filtercriteria)|[color](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-color-member)|The HTML color string used to filter cells.|
 ||[criterion1](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-criterion1-member)|The first criterion used to filter data.|
 ||[criterion2](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-criterion2-member)|The second criterion used to filter data.|
@@ -30,9 +31,7 @@
 ||[filterOn](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-filteron-member)|The property used by the filter to determine whether the values should stay visible.|
 ||[icon](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-icon-member)|The icon used to filter cells.|
 ||[operator](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-operator-member)|The operator used to combine criterion 1 and 2 when using `custom` filtering.|
-||[values](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-values-member)|The set of values to be used as part of `values` filtering.|
-|[FilterDatetime](/javascript/api/excel/excel.filterdatetime)|[date](/javascript/api/excel/excel.filterdatetime#excel-excel-filterdatetime-date-member)|The date in ISO8601 format used to filter data.|
-||[specificity](/javascript/api/excel/excel.filterdatetime#excel-excel-filterdatetime-specificity-member)|How specific the date should be used to keep data.|
+||[specificity](/javascript/api/excel/excel.filtercriteria#excel-excel-filtercriteria-specificity-member)|How specific the date should be used to keep data.|
 |[FiveArrowsGraySet](/javascript/api/excel/excel.fivearrowsgrayset)|[grayDownArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydownarrow-member)||
 ||[grayDownInclineArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graydowninclinearrow-member)||
 ||[graySideArrow](/javascript/api/excel/excel.fivearrowsgrayset#excel-excel-fivearrowsgrayset-graysidearrow-member)||
@@ -58,8 +57,6 @@
 ||[oneBar](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-onebar-member)||
 ||[threeBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-threebars-member)||
 ||[twoBars](/javascript/api/excel/excel.fiveratingset#excel-excel-fiveratingset-twobars-member)||
-|[FormatProtection](/javascript/api/excel/excel.formatprotection)|[formulaHidden](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-formulahidden-member)|Specifies if Excel hides the formula for the cells in the range.|
-||[locked](/javascript/api/excel/excel.formatprotection#excel-excel-formatprotection-locked-member)|Specifies if Excel locks the cells in the object.|
 |[FourArrowsGraySet](/javascript/api/excel/excel.fourarrowsgrayset)|[grayDownArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydownarrow-member)||
 ||[grayDownInclineArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-graydowninclinearrow-member)||
 ||[grayUpArrow](/javascript/api/excel/excel.fourarrowsgrayset#excel-excel-fourarrowsgrayset-grayuparrow-member)||
@@ -80,8 +77,6 @@
 ||[greenCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-greencircle-member)||
 ||[redCircleWithBorder](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-redcirclewithborder-member)||
 ||[yellowCircle](/javascript/api/excel/excel.fourtrafficlightsset#excel-excel-fourtrafficlightsset-yellowcircle-member)||
-|[FunctionResult](/javascript/api/excel/excel.functionresult)|[error](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-error-member)|Error value (such as "#DIV/0") representing the error.|
-||[value](/javascript/api/excel/excel.functionresult#excel-excel-functionresult-value-member)|The value of function evaluation.|
 |[Functions](/javascript/api/excel/excel.functions)|[abs(number: number \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult)](/javascript/api/excel/excel.functions#excel-excel-functions-abs-member(1))|Returns the absolute value of a number, a number without its sign.|
 ||[accrInt(issue: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, firstInterest: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, settlement: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, rate: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, par: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, frequency: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, basis?: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, calcMethod?: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult)](/javascript/api/excel/excel.functions#excel-excel-functions-accrint-member(1))|Returns the accrued interest for a security that pays periodic interest.|
 ||[accrIntM(issue: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, settlement: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, rate: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, par: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult, basis?: number \| string \| boolean \| Excel.Range \| Excel.RangeReference \| Excel.FunctionResult)](/javascript/api/excel/excel.functions#excel-excel-functions-accrintm-member(1))|Returns the accrued interest for a security that pays interest at maturity.|
@@ -469,51 +464,36 @@
 ||[threeTrafficLights1](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights1-member)||
 ||[threeTrafficLights2](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetrafficlights2-member)||
 ||[threeTriangles](/javascript/api/excel/excel.iconcollections#excel-excel-iconcollections-threetriangles-member)||
-|[Range](/javascript/api/excel/excel.range)|[columnHidden](/javascript/api/excel/excel.range#excel-excel-range-columnhidden-member)|Represents if all columns in the current range are hidden.|
-||[formulasR1C1](/javascript/api/excel/excel.range#excel-excel-range-formulasr1c1-member)|Represents the formula in R1C1-style notation.|
-||[getColumnsAfter(count?: number)](/javascript/api/excel/excel.range#excel-excel-range-getcolumnsafter-member(1))|Gets a certain number of columns to the right of the current `Range` object.|
-||[getColumnsBefore(count?: number)](/javascript/api/excel/excel.range#excel-excel-range-getcolumnsbefore-member(1))|Gets a certain number of columns to the left of the current `Range` object.|
-||[getResizedRange(deltaRows: number, deltaColumns: number)](/javascript/api/excel/excel.range#excel-excel-range-getresizedrange-member(1))|Gets a `Range` object similar to the current `Range` object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.|
-||[getRowsAbove(count?: number)](/javascript/api/excel/excel.range#excel-excel-range-getrowsabove-member(1))|Gets a certain number of rows above the current `Range` object.|
-||[getRowsBelow(count?: number)](/javascript/api/excel/excel.range#excel-excel-range-getrowsbelow-member(1))|Gets a certain number of rows below the current `Range` object.|
-||[getUsedRange(valuesOnly?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-getusedrange-member(1))|Returns the used range of the given range object.|
-||[hidden](/javascript/api/excel/excel.range#excel-excel-range-hidden-member)|Represents if all cells in the current range are hidden.|
-||[merge(across?: boolean)](/javascript/api/excel/excel.range#excel-excel-range-merge-member(1))|Merge the range cells into one region in the worksheet.|
-||[rowHidden](/javascript/api/excel/excel.range#excel-excel-range-rowhidden-member)|Represents if all rows in the current range are hidden.|
-||[sort](/javascript/api/excel/excel.range#excel-excel-range-sort-member)|Represents the range sort of the current range.|
-||[unmerge()](/javascript/api/excel/excel.range#excel-excel-range-unmerge-member(1))|Unmerge the range cells into separate cells.|
-|[RangeFormat](/javascript/api/excel/excel.rangeformat)|[autofitColumns()](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-autofitcolumns-member(1))|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
-||[autofitRows()](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-autofitrows-member(1))|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
-||[columnWidth](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-columnwidth-member)|Specifies the width of all colums within the range.|
+|[RangeFormat](/javascript/api/excel/excel.rangeformat)|[formulaHidden](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-formulahidden-member)|Specifies if Excel hides the formula for the cells in the range.|
+||[locked](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-locked-member)|Specifies if Excel locks the cells in the object.|
 ||[protection](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-protection-member)|Returns the format protection object for a range.|
-||[rowHeight](/javascript/api/excel/excel.rangeformat#excel-excel-rangeformat-rowheight-member)|The height of all rows in the range.|
-|[RangeReference](/javascript/api/excel/excel.rangereference)|[address](/javascript/api/excel/excel.rangereference#excel-excel-rangereference-address-member)|The address of the range, for example "SheetName!A1:B5".|
 |[RangeSort](/javascript/api/excel/excel.rangesort)|[apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation, method?: Excel.SortMethod)](/javascript/api/excel/excel.rangesort#excel-excel-rangesort-apply-member(1))|Perform a sort operation.|
 |[SelectionChangedEventArgs](/javascript/api/excel/excel.selectionchangedeventargs)|[workbook](/javascript/api/excel/excel.selectionchangedeventargs#excel-excel-selectionchangedeventargs-workbook-member)|Gets the workbook object that raised the selection changed event.|
-|[SortField](/javascript/api/excel/excel.sortfield)|[ascending](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-ascending-member)|Specifies if the sorting is done in an ascending fashion.|
+|[SortField](/javascript/api/excel/excel.sortfield)|[apply(criteria: Excel.FilterCriteria)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-apply-member(1))|Apply the given filter criteria on the given column.|
+||[applyBottomItemsFilter(count: number)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applybottomitemsfilter-member(1))|Apply a "Bottom Item" filter to the column for the given number of elements.|
+||[applyBottomPercentFilter(percent: number)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applybottompercentfilter-member(1))|Apply a "Bottom Percent" filter to the column for the given percentage of elements.|
+||[applyCellColorFilter(color: string)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applycellcolorfilter-member(1))|Apply a "Cell Color" filter to the column for the given color.|
+||[applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applycustomfilter-member(1))|Apply an "Icon" filter to the column for the given criteria strings.|
+||[applyDynamicFilter(criteria: Excel.DynamicFilterCriteria)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applydynamicfilter-member(1))|Apply a "Dynamic" filter to the column.|
+||[applyFontColorFilter(color: string)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applyfontcolorfilter-member(1))|Apply a "Font Color" filter to the column for the given color.|
+||[applyIconFilter(icon: Excel.Icon)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applyiconfilter-member(1))|Apply an "Icon" filter to the column for the given icon.|
+||[applyTopItemsFilter(count: number)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applytopitemsfilter-member(1))|Apply a "Top Item" filter to the column for the given number of elements.|
+||[applyTopPercentFilter(percent: number)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applytoppercentfilter-member(1))|Apply a "Top Percent" filter to the column for the given percentage of elements.|
+||[applyValuesFilter(values: Array<string \| FilterDatetime>)](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-applyvaluesfilter-member(1))|Apply a "Values" filter to the column for the given values.|
+||[ascending](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-ascending-member)|Specifies if the sorting is done in an ascending fashion.|
+||[clear()](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-clear-member(1))|Clear the filter on the given column.|
 ||[color](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-color-member)|Specifies the color that is the target of the condition if the sorting is on font or cell color.|
+||[criteria](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-criteria-member)|The currently applied filter on the given column.|
 ||[dataOption](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-dataoption-member)|Represents additional sorting options for this field.|
 ||[icon](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-icon-member)|Specifies the icon that is the target of the condition, if the sorting is on the cell's icon.|
 ||[key](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-key-member)|Specifies the column (or row, depending on the sort orientation) that the condition is on.|
 ||[sortOn](/javascript/api/excel/excel.sortfield#excel-excel-sortfield-sorton-member)|Specifies the type of sorting of this condition.|
-|[Table](/javascript/api/excel/excel.table)|[clearFilters()](/javascript/api/excel/excel.table#excel-excel-table-clearfilters-member(1))|Clears all the filters currently applied on the table.|
-||[convertToRange()](/javascript/api/excel/excel.table#excel-excel-table-converttorange-member(1))|Converts the table into a normal range of cells.|
-||[reapplyFilters()](/javascript/api/excel/excel.table#excel-excel-table-reapplyfilters-member(1))|Reapplies all the filters currently on the table.|
-||[sort](/javascript/api/excel/excel.table#excel-excel-table-sort-member)|Represents the sorting for the table.|
-||[worksheet](/javascript/api/excel/excel.table#excel-excel-table-worksheet-member)|The worksheet containing the current table.|
-|[TableColumn](/javascript/api/excel/excel.tablecolumn)|[filter](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-filter-member)|Retrieves the filter applied to the column.|
 |[TableSort](/javascript/api/excel/excel.tablesort)|[apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod)](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-apply-member(1))|Perform a sort operation.|
 ||[clear()](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-clear-member(1))|Clears the sorting that is currently on the table.|
 ||[fields](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-fields-member)|Specifies the current conditions used to last sort the table.|
 ||[matchCase](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-matchcase-member)|Specifies if the casing impacts the last sort of the table.|
 ||[method](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-method-member)|Represents the Chinese character ordering method last used to sort the table.|
 ||[reapply()](/javascript/api/excel/excel.tablesort#excel-excel-tablesort-reapply-member(1))|Reapplies the current sorting parameters to the table.|
-|[ThreeArrowsGraySet](/javascript/api/excel/excel.threearrowsgrayset)|[grayDownArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graydownarrow-member)||
-||[graySideArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-graysidearrow-member)||
-||[grayUpArrow](/javascript/api/excel/excel.threearrowsgrayset#excel-excel-threearrowsgrayset-grayuparrow-member)||
-|[ThreeArrowsSet](/javascript/api/excel/excel.threearrowsset)|[greenUpArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-greenuparrow-member)||
-||[redDownArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-reddownarrow-member)||
-||[yellowSideArrow](/javascript/api/excel/excel.threearrowsset#excel-excel-threearrowsset-yellowsidearrow-member)||
 |[ThreeFlagsSet](/javascript/api/excel/excel.threeflagsset)|[greenFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-greenflag-member)||
 ||[redFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-redflag-member)||
 ||[yellowFlag](/javascript/api/excel/excel.threeflagsset#excel-excel-threeflagsset-yellowflag-member)||
@@ -538,21 +518,3 @@
 |[ThreeTrianglesSet](/javascript/api/excel/excel.threetrianglesset)|[greenUpTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-greenuptriangle-member)||
 ||[redDownTriangle](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-reddowntriangle-member)||
 ||[yellowDash](/javascript/api/excel/excel.threetrianglesset#excel-excel-threetrianglesset-yellowdash-member)||
-|[Workbook](/javascript/api/excel/excel.workbook)|[functions](/javascript/api/excel/excel.workbook#excel-excel-workbook-functions-member)|Represents a collection of worksheet functions that can be used for computation.|
-||[onSelectionChanged](/javascript/api/excel/excel.workbook#excel-excel-workbook-onselectionchanged-member)|Occurs when the selection in the document is changed.|
-|[Worksheet](/javascript/api/excel/excel.worksheet)|[getUsedRange(valuesOnly?: boolean)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getusedrange-member(1))|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.|
-||[protection](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-protection-member)|Returns the sheet protection object for a worksheet.|
-|[WorksheetProtection](/javascript/api/excel/excel.worksheetprotection)|[options](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-options-member)|Specifies the protection options for the worksheet.|
-||[protect(options?: Excel.WorksheetProtectionOptions, password?: string)](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protect-member(1))|Protects a worksheet.|
-||[protected](/javascript/api/excel/excel.worksheetprotection#excel-excel-worksheetprotection-protected-member)|Specifies if the worksheet is protected.|
-|[WorksheetProtectionOptions](/javascript/api/excel/excel.worksheetprotectionoptions)|[allowAutoFilter](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowautofilter-member)|Represents the worksheet protection option allowing use of the AutoFilter feature.|
-||[allowDeleteColumns](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowdeletecolumns-member)|Represents the worksheet protection option allowing deleting of columns.|
-||[allowDeleteRows](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowdeleterows-member)|Represents the worksheet protection option allowing deleting of rows.|
-||[allowFormatCells](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowformatcells-member)|Represents the worksheet protection option allowing formatting of cells.|
-||[allowFormatColumns](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowformatcolumns-member)|Represents the worksheet protection option allowing formatting of columns.|
-||[allowFormatRows](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowformatrows-member)|Represents the worksheet protection option allowing formatting of rows.|
-||[allowInsertColumns](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowinsertcolumns-member)|Represents the worksheet protection option allowing inserting of columns.|
-||[allowInsertHyperlinks](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowinserthyperlinks-member)|Represents the worksheet protection option allowing inserting of hyperlinks.|
-||[allowInsertRows](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowinsertrows-member)|Represents the worksheet protection option allowing inserting of rows.|
-||[allowPivotTables](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowpivottables-member)|Represents the worksheet protection option allowing use of the PivotTable feature.|
-||[allowSort](/javascript/api/excel/excel.worksheetprotectionoptions#excel-excel-worksheetprotectionoptions-allowsort-member)|Represents the worksheet protection option allowing use of the sort feature.|

@@ -22,255 +22,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly font: Word.Font;
-        /**
-         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly inlinePictures: Word.InlinePictureCollection;
         
-        /**
-         * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly paragraphs: Word.ParagraphCollection;
-        
-        
-        /**
-         * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly parentContentControl: Word.ContentControl;
-        
-        
-        
-        
-        /**
-         * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        style: string;
-        
-        /**
-         * Gets the text of the body. Use the insertText method to insert text. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly text: string;
-        
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.Body): void;
-        /**
-         * Clears the contents of the body object. The user can perform the undo operation on the cleared content.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        clear(): void;
-        /**
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getHtml(): OfficeExtension.ClientResult<string>;
-        /**
-         * Gets the OOXML (Office Open XML) representation of the body object.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakType - Required. The break type to add to the body.
-         * @param insertLocation - Required. The value must be 'Start' or 'End'.
-         */
-        insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakTypeString - Required. The break type to add to the body.
-         * @param insertLocation - Required. The value must be 'Start' or 'End'.
-         */
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-        /**
-         * Wraps the body object with a Rich Text content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        insertContentControl(): Word.ContentControl;
-        /**
-         * Inserts a document into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts a document into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in the document.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a picture into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocation - Required. The value must be 'Start' or 'End'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
-        /**
-         * Inserts a picture into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocationString - Required. The value must be 'Start' or 'End'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value must be 'Start' or 'End'.
-         */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Start' or 'End'.
-         */
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
-        
-        
-        /**
-         * Inserts text into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts text into the body at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Performs a search with the specified SearchOptions on the scope of the body object. The search results are a collection of range objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param searchText - Required. The search text. Can be a maximum of 255 characters.
-         * @param searchOptions - Optional. Options for the search.
-         */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
         /**
          * Selects the body and navigates the Word UI to it.
          *
@@ -324,6 +76,11 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.BodyData;
     }
+    
+    
+    
+    
+    
     /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
      *
@@ -340,330 +97,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly font: Word.Font;
-        /**
-         * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly inlinePictures: Word.InlinePictureCollection;
         
-        /**
-         * Gets the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly paragraphs: Word.ParagraphCollection;
-        
-        /**
-         * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly parentContentControl: Word.ContentControl;
-        
-        
-        
-        
-        
-        
-        /**
-         * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
-        /**
-         * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        cannotDelete: boolean;
-        /**
-         * Gets or sets a value that indicates whether the user can edit the contents of the content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        cannotEdit: boolean;
-        /**
-         * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        color: string;
-        /**
-         * Gets an integer that represents the content control identifier. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly id: number;
-        /**
-         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-         * **Note**: The set operation for this property is not supported in Word on the web.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        placeholderText: string;
-        /**
-         * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        removeWhenEdited: boolean;
-        /**
-         * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        style: string;
-        
-        
-        /**
-         * Gets or sets a tag to identify a content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        tag: string;
-        /**
-         * Gets the text of the content control. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly text: string;
-        /**
-         * Gets or sets the title for a content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        title: string;
-        /**
-         * Gets the content control type. Only rich text content controls are supported currently. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly type: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.ContentControlUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.ContentControl): void;
-        /**
-         * Clears the contents of the content control. The user can perform the undo operation on the cleared content.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        clear(): void;
-        /**
-         * Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
-         */
-        delete(keepContent: boolean): void;
-        /**
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getHtml(): OfficeExtension.ClientResult<string>;
-        /**
-         * Gets the Office Open XML (OOXML) representation of the content control object.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        /**
-         * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakType - Required. Type of break.
-         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
-         */
-        insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
-        /**
-         * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakTypeString - Required. Type of break.
-         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.
-         */
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-        /**
-         * Inserts a document into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts a document into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts HTML into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts HTML into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in to the content control.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts an inline picture into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
-        /**
-         * Inserts an inline picture into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
-        /**
-         * Inserts OOXML into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts OOXML into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted in to the content control.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-         */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-         */
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
-        
-        
-        /**
-         * Inserts text into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts text into the content control at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. The text to be inserted in to the content control.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-         */
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Performs a search with the specified SearchOptions on the scope of the content control object. The search results are a collection of range objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param searchText - Required. The search text.
-         * @param searchOptions - Optional. Options for the search.
-         */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
         /**
          * Selects the content control. This causes Word to scroll to the selection.
          *
@@ -683,27 +117,6 @@ export declare namespace Word {
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.ContentControl;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.ContentControl;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -739,69 +152,21 @@ export declare namespace Word {
          */
         getById(id: number): Word.ContentControl;
         
-        /**
-         * Gets the content controls that have the specified tag.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param tag - Required. A tag set on a content control.
-         */
-        getByTag(tag: string): Word.ContentControlCollection;
-        /**
-         * Gets the content controls that have the specified title.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param title - Required. The title of a content control.
-         */
-        getByTitle(title: string): Word.ContentControlCollection;
         
-        
-        
-        /**
-         * Gets a content control by its index in the collection.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param index - The index.
-         */
-        getItem(index: number): Word.ContentControl;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.ContentControlCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ContentControlCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
-        track(): Word.ContentControlCollection;
+        track(): Word.CustomProperty;
         /**
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
-        untrack(): Word.ContentControlCollection;
+        untrack(): Word.CustomProperty;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        * Whereas the original Word.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
         */
-        toJSON(): Word.Interfaces.ContentControlCollectionData;
+        toJSON(): Word.Interfaces.CustomPropertyData;
     }
-    
     
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
@@ -827,63 +192,6 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         
-        /**
-         * Gets the collection of section objects in the document. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly sections: Word.SectionCollection;
-        /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly saved: boolean;
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.Document): void;
-        /**
-         * Gets the current selection of the document. Multiple selections are not supported.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getSelection(): Word.Range;
-        /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        save(): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.DocumentLoadOptions): Word.Document;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.Document;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.Document;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1054,264 +362,6 @@ export declare namespace Word {
          */
         readonly parentContentControl: Word.ContentControl;
         
-        
-        
-        
-        
-        /**
-         * Gets or sets a string that represents the alternative text associated with the inline image.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        altTextDescription: string;
-        /**
-         * Gets or sets a string that contains the title for the inline image.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        altTextTitle: string;
-        /**
-         * Gets or sets a number that describes the height of the inline image.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        height: number;
-        /**
-         * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        hyperlink: string;
-        /**
-         * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        lockAspectRatio: boolean;
-        /**
-         * Gets or sets a number that describes the width of the inline image.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        width: number;
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.InlinePictureUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.InlinePicture): void;
-        /**
-         * Deletes the inline picture from the document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         */
-        delete(): void;
-        /**
-         * Gets the base64 encoded string representation of the inline image.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getBase64ImageSrc(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param breakType - Required. The break type to add.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param breakTypeString - Required. The break type to add.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-        /**
-         * Wraps the inline picture with a rich text content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        insertContentControl(): Word.ContentControl;
-        /**
-         * Inserts a document at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts a document at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param html - Required. The HTML to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts an inline picture at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
-        /**
-         * Inserts an inline picture at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Before', or 'After'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
-        /**
-         * Inserts text at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts text at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Selects the inline picture. This causes Word to scroll to the selection.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
-         */
-        select(selectionMode?: Word.SelectionMode): void;
-        /**
-         * Selects the inline picture. This causes Word to scroll to the selection.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
-         */
-        select(selectionModeString?: "Select" | "Start" | "End"): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.InlinePicture;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.InlinePicture;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1340,37 +390,20 @@ export declare namespace Word {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.InlinePictureCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
-        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
-        track(): Word.InlinePictureCollection;
+        track(): Word.List;
         /**
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
-        untrack(): Word.InlinePictureCollection;
+        untrack(): Word.List;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        * Whereas the original Word.List object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
         */
-        toJSON(): Word.Interfaces.InlinePictureCollectionData;
+        toJSON(): Word.Interfaces.ListData;
     }
+    
     
     
     
@@ -1390,337 +423,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly font: Word.Font;
-        /**
-         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly inlinePictures: Word.InlinePictureCollection;
         
-        
-        
-        
-        
-        /**
-         * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly parentContentControl: Word.ContentControl;
-        
-        
-        
-        
-        
-        /**
-         * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
-        /**
-         * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        firstLineIndent: number;
-        
-        
-        /**
-         * Gets or sets the left indent value, in points, for the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        leftIndent: number;
-        /**
-         * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        lineSpacing: number;
-        /**
-         * Gets or sets the amount of spacing, in grid lines, after the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        lineUnitAfter: number;
-        /**
-         * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        lineUnitBefore: number;
-        /**
-         * Gets or sets the outline level for the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        outlineLevel: number;
-        /**
-         * Gets or sets the right indent value, in points, for the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        rightIndent: number;
-        /**
-         * Gets or sets the spacing, in points, after the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        spaceAfter: number;
-        /**
-         * Gets or sets the spacing, in points, before the paragraph.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        spaceBefore: number;
-        /**
-         * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        style: string;
-        
-        
-        /**
-         * Gets the text of the paragraph. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly text: string;
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.ParagraphUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.Paragraph): void;
-        
-        /**
-         * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        clear(): void;
-        /**
-         * Deletes the paragraph and its content from the document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        delete(): void;
-        
-        /**
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getHtml(): OfficeExtension.ClientResult<string>;
-        
-        
-        /**
-         * Gets the Office Open XML (OOXML) representation of the paragraph object.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        
-        
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakType - Required. The break type to add to the document.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakTypeString - Required. The break type to add to the document.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-        /**
-         * Wraps the paragraph object with a rich text content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        insertContentControl(): Word.ContentControl;
-        /**
-         * Inserts a document into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts a document into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts HTML into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts HTML into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted in the paragraph.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a picture into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
-        /**
-         * Inserts a picture into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
-        /**
-         * Inserts OOXML into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts OOXML into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
-        
-        
-        /**
-         * Inserts text into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts text into the paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.
-         */
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param searchText - Required. The search text.
-         * @param searchOptions - Optional. Options for the search.
-         */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
         /**
          * Selects and navigates the Word UI to the paragraph.
          *
@@ -1740,28 +443,6 @@ export declare namespace Word {
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         
-        
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.Paragraph;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.Paragraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1788,50 +469,6 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Paragraph[];
         
-        
-        
-        
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.ParagraphCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ParagraphCollection;
-        /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
-         */
-        track(): Word.ParagraphCollection;
-        /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
-         */
-        untrack(): Word.ParagraphCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Word.Interfaces.ParagraphCollectionData;
-    }
-    /**
-     * Represents a contiguous area in a document.
-     *
-     * @remarks
-     * [Api set: WordApi 1.1]
-     */
-    export class Range extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
         /**
          * Gets the collection of content control objects in the range. Read-only.
          *
@@ -1839,273 +476,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly font: Word.Font;
-        /**
-         * Gets the collection of inline picture objects in the range. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         */
-        readonly inlinePictures: Word.InlinePictureCollection;
         
-        /**
-         * Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly paragraphs: Word.ParagraphCollection;
-        
-        /**
-         * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly parentContentControl: Word.ContentControl;
-        
-        
-        
-        
-        
-        
-        
-        
-        /**
-         * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        style: string;
-        
-        /**
-         * Gets the text of the range. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        readonly text: string;
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Word.Range): void;
-        /**
-         * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        clear(): void;
-        
-        /**
-         * Deletes the range and its content from the document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        delete(): void;
-        
-        
-        /**
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getHtml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        /**
-         * Gets the OOXML representation of the range object.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        getOoxml(): OfficeExtension.ClientResult<string>;
-        
-        
-        
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakType - Required. The break type to add.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
-        /**
-         * Inserts a break at the specified location in the main document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param breakTypeString - Required. The break type to add.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-        /**
-         * Wraps the range object with a rich text content control.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        insertContentControl(): Word.ContentControl;
-        /**
-         * Inserts a document at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts a document at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts HTML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param html - Required. The HTML to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a picture at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
-        /**
-         * Inserts a picture at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.2]
-         *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts OOXML at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param ooxml - Required. The OOXML to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocation - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
-        /**
-         * Inserts a paragraph at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param paragraphText - Required. The paragraph text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Before' or 'After'.
-         */
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
-        
-        
-        /**
-         * Inserts text at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
-        /**
-         * Inserts text at the specified location.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param text - Required. Text to be inserted.
-         * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-         */
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
-        
-        
-        /**
-         * Performs a search with the specified SearchOptions on the scope of the range object. The search results are a collection of range objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         *
-         * @param searchText - Required. The search text.
-         * @param searchOptions - Optional. Options for the search.
-         */
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-            ignorePunct?: boolean;
-            ignoreSpace?: boolean;
-            matchCase?: boolean;
-            matchPrefix?: boolean;
-            matchSuffix?: boolean;
-            matchWholeWord?: boolean;
-            matchWildcards?: boolean;
-        }): Word.RangeCollection;
         /**
          * Selects and navigates the Word UI to the range.
          *
@@ -2125,27 +496,6 @@ export declare namespace Word {
          */
         select(selectionModeString?: "Select" | "Start" | "End"): void;
         
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.RangeLoadOptions): Word.Range;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.Range;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2172,50 +522,6 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Range[];
         
-        
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.RangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.RangeCollection;
-        /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
-         */
-        track(): Word.RangeCollection;
-        /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
-         */
-        untrack(): Word.RangeCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Word.Interfaces.RangeCollectionData;
-    }
-    /**
-     * Specifies the options to be included in a search operation.
-     *
-     * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
-     *
-     * @remarks
-     * [Api set: WordApi 1.1]
-     */
-    export class SearchOptions extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
         /**
          * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
          *
@@ -2365,28 +671,6 @@ export declare namespace Word {
          */
         getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         
-        
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.SectionLoadOptions): Word.Section;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.Section;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Word.Section;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2414,38 +698,23 @@ export declare namespace Word {
         readonly items: Word.Section[];
         
         
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Word.SectionCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.SectionCollection;
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
-        track(): Word.SectionCollection;
+        track(): Word.Table;
         /**
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
-        untrack(): Word.SectionCollection;
+        untrack(): Word.Table;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        * Whereas the original Word.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
         */
-        toJSON(): Word.Interfaces.SectionCollectionData;
+        toJSON(): Word.Interfaces.TableData;
     }
+    
+    
     
     
     
@@ -2868,66 +1137,6 @@ export declare namespace Word {
         evenPages = "EvenPages",
     }
     
-    /**
-     * This enum sets where the cursor (insertion point) in the document is after a selection.
-     *
-     * @remarks
-     * [Api set: WordApi 1.1]
-     */
-    enum SelectionMode {
-        /**
-         * The entire range is selected.
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        select = "Select",
-        /**
-         * The cursor is at the beginning of the selection (just before the start of the selected range).
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        start = "Start",
-        /**
-         * The cursor is at the end of the selection (just after the end of the selected range).
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        end = "End",
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    enum ErrorCodes {
-        accessDenied = "AccessDenied",
-        generalException = "GeneralException",
-        invalidArgument = "InvalidArgument",
-        itemNotFound = "ItemNotFound",
-        notImplemented = "NotImplemented",
-        searchDialogIsOpen = "SearchDialogIsOpen",
-        searchStringInvalidOrTooLong = "SearchStringInvalidOrTooLong",
-    }
-    export module Interfaces {
-        /**
-        * Provides ways to load properties of only a subset of members of a collection.
-        */
-        export interface CollectionLoadOptions {
-            /**
-            * Specify the number of items in the queried collection to be included in the result.
-            */
-            $top?: number;
-            /**
-            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
-            */
-            $skip?: number;
-        }
         /** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
@@ -2945,16 +1154,6 @@ export declare namespace Word {
              */
             style?: string;
             
-        }
-        /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
-        export interface ContentControlUpdateData {
-            /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontUpdateData;
             /**
              * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
@@ -3006,32 +1205,10 @@ export declare namespace Word {
              */
             style?: string;
             
-            /**
-             * Gets or sets a tag to identify a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            tag?: string;
-            /**
-             * Gets or sets the title for a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            title?: string;
-        }
-        /** An interface for updating data on the ContentControlCollection object, for use in `contentControlCollection.set({ ... })`. */
-        export interface ContentControlCollectionUpdateData {
-            items?: Word.Interfaces.ContentControlData[];
         }
         /** An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
-        }
-        /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
-        export interface CustomPropertyCollectionUpdateData {
-            items?: Word.Interfaces.CustomPropertyData[];
         }
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
@@ -3043,45 +1220,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyUpdateData;
             
-        }
-        /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
-        export interface DocumentCreatedUpdateData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyUpdateData;
-            /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesUpdateData;
-        }
-        /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
-        export interface DocumentPropertiesUpdateData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
-        export interface FontUpdateData {
-            /**
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            bold?: boolean;
             /**
              * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -3210,100 +1349,7 @@ export declare namespace Word {
         /** An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`. */
         export interface ListItemUpdateData {
             
-        }
-        /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
-        export interface ParagraphUpdateData {
-            /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontUpdateData;
             
-            
-            /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
-            /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: number;
-            /**
-             * Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: number;
-            /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: number;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: number;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: number;
-            /**
-             * Gets or sets the outline level for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: number;
-            /**
-             * Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: number;
-            /**
-             * Gets or sets the spacing, in points, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: number;
-            /**
-             * Gets or sets the spacing, in points, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: number;
-            /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-        }
-        /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
-        export interface ParagraphCollectionUpdateData {
-            items?: Word.Interfaces.ParagraphData[];
         }
         /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
@@ -3315,18 +1361,6 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontUpdateData;
             
-            /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-        }
-        /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
-        export interface RangeCollectionUpdateData {
-            items?: Word.Interfaces.RangeData[];
         }
         /** An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`. */
         export interface SearchOptionsUpdateData {
@@ -3397,66 +1431,18 @@ export declare namespace Word {
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`. */
-        export interface TableCollectionUpdateData {
-            items?: Word.Interfaces.TableData[];
         }
         /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             
-            
-            
-            
-            
-            
-        }
-        /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
-        export interface TableRowCollectionUpdateData {
-            items?: Word.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
             
-            
-            
-            
-            
-            
-        }
-        /** An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`. */
-        export interface TableCellCollectionUpdateData {
-            items?: Word.Interfaces.TableCellData[];
         }
         /** An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`. */
         export interface TableBorderUpdateData {
             
-            
-            
-        }
-        /** An interface describing the data returned by calling `body.toJSON()`. */
-        export interface BodyData {
-            /**
-            * Gets the collection of rich text content control objects in the body. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
             /**
             * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
             *
@@ -3473,40 +1459,6 @@ export declare namespace Word {
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            paragraphs?: Word.Interfaces.ParagraphData[];
-            
-            /**
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-            /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-            
-        }
-        /** An interface describing the data returned by calling `contentControl.toJSON()`. */
-        export interface ContentControlData {
-            /**
-            * Gets the collection of content control objects in the content control. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
-            /**
             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
             *
             * @remarks
@@ -3521,115 +1473,10 @@ export declare namespace Word {
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
-            /**
-            * Get the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            paragraphs?: Word.Interfaces.ParagraphData[];
-            
-            /**
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
-            /**
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            color?: string;
-            /**
-             * Gets an integer that represents the content control identifier. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            id?: number;
-            /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: string;
-            /**
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-            
-            /**
-             * Gets or sets a tag to identify a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            tag?: string;
-            /**
-             * Gets the text of the content control. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-            /**
-             * Gets or sets the title for a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            title?: string;
-            /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            type?: Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText";
-        }
-        /** An interface describing the data returned by calling `contentControlCollection.toJSON()`. */
-        export interface ContentControlCollectionData {
-            items?: Word.Interfaces.ContentControlData[];
         }
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
             
-            
-            
-        }
-        /** An interface describing the data returned by calling `customPropertyCollection.toJSON()`. */
-        export interface CustomPropertyCollectionData {
-            items?: Word.Interfaces.CustomPropertyData[];
         }
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
@@ -3648,89 +1495,7 @@ export declare namespace Word {
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
-            /**
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            sections?: Word.Interfaces.SectionData[];
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            saved?: boolean;
-        }
-        /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
-        export interface DocumentCreatedData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
-            /**
-            * Gets the properties of the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            sections?: Word.Interfaces.SectionData[];
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
-        }
-        /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
-        export interface DocumentPropertiesData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface describing the data returned by calling `font.toJSON()`. */
-        export interface FontData {
-            /**
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            bold?: boolean;
             /**
              * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
@@ -3855,29 +1620,10 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `list.toJSON()`. */
         export interface ListData {
             
-            
-            
-            
-        }
-        /** An interface describing the data returned by calling `listCollection.toJSON()`. */
-        export interface ListCollectionData {
-            items?: Word.Interfaces.ListData[];
         }
         /** An interface describing the data returned by calling `listItem.toJSON()`. */
         export interface ListItemData {
             
-            
-            
-        }
-        /** An interface describing the data returned by calling `paragraph.toJSON()`. */
-        export interface ParagraphData {
-            /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontData;
             /**
             * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
             *
@@ -3886,99 +1632,6 @@ export declare namespace Word {
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
-            
-            /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
-            /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: number;
-            
-            
-            /**
-             * Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: number;
-            /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: number;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: number;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: number;
-            /**
-             * Gets or sets the outline level for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: number;
-            /**
-             * Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: number;
-            /**
-             * Gets or sets the spacing, in points, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: number;
-            /**
-             * Gets or sets the spacing, in points, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: number;
-            /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-            
-            /**
-             * Gets the text of the paragraph. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-        }
-        /** An interface describing the data returned by calling `paragraphCollection.toJSON()`. */
-        export interface ParagraphCollectionData {
-            items?: Word.Interfaces.ParagraphData[];
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -3997,26 +1650,6 @@ export declare namespace Word {
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
-            
-            /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            
-            /**
-             * Gets the text of the range. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-        }
-        /** An interface describing the data returned by calling `rangeCollection.toJSON()`. */
-        export interface RangeCollectionData {
-            items?: Word.Interfaces.RangeData[];
         }
         /** An interface describing the data returned by calling `searchOptions.toJSON()`. */
         export interface SearchOptionsData {
@@ -4087,80 +1720,18 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
-        export interface TableCollectionData {
-            items?: Word.Interfaces.TableData[];
         }
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
-        export interface TableRowCollectionData {
-            items?: Word.Interfaces.TableRowData[];
         }
         /** An interface describing the data returned by calling `tableCell.toJSON()`. */
         export interface TableCellData {
             
-            
-            
-            
-            
-            
-            
-            
-            
-        }
-        /** An interface describing the data returned by calling `tableCellCollection.toJSON()`. */
-        export interface TableCellCollectionData {
-            items?: Word.Interfaces.TableCellData[];
         }
         /** An interface describing the data returned by calling `tableBorder.toJSON()`. */
         export interface TableBorderData {
             
-            
-            
-        }
-        /**
-         * Represents the body of a document or a section.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface BodyLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
             *
@@ -4169,45 +1740,6 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             
-            
-            /**
-            * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            /**
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            
-        }
-        /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface ContentControlLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
             *
@@ -4217,117 +1749,6 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            
-            
-            /**
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: boolean;
-            /**
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            color?: boolean;
-            /**
-             * Gets an integer that represents the content control identifier. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            id?: boolean;
-            /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: boolean;
-            /**
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            
-            /**
-             * Gets or sets a tag to identify a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            tag?: boolean;
-            /**
-             * Gets the text of the content control. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            /**
-             * Gets or sets the title for a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            title?: boolean;
-            /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            type?: boolean;
-        }
-        /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface ContentControlCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
             * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
@@ -4335,119 +1756,8 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             
-            /**
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
             
-            
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            color?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            id?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            tag?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the title for a content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            title?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            type?: boolean;
-        }
-        
-        
-        /**
-         * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface DocumentLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
@@ -4456,27 +1766,7 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
             
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            saved?: boolean;
-        }
-        
-        
-        /**
-         * Represents a font.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface FontLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
+            
             /**
              * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
@@ -4582,64 +1872,6 @@ export declare namespace Word {
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             
-            
-            
-            
-            
-            /**
-             * Gets or sets a string that represents the alternative text associated with the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            altTextDescription?: boolean;
-            /**
-             * Gets or sets a string that contains the title for the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            altTextTitle?: boolean;
-            /**
-             * Gets or sets a number that describes the height of the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            height?: boolean;
-            /**
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            hyperlink?: boolean;
-            /**
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lockAspectRatio?: boolean;
-            /**
-             * Gets or sets a number that describes the width of the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            width?: boolean;
-        }
-        /**
-         * Contains a collection of {@link Word.InlinePicture} objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface InlinePictureCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
             *
@@ -4658,64 +1890,6 @@ export declare namespace Word {
             
             
             
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            altTextDescription?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            altTextTitle?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            height?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            hyperlink?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lockAspectRatio?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            width?: boolean;
-        }
-        
-        
-        
-        /**
-         * Represents a single paragraph in a selection, range, content control, or document body.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface ParagraphLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
             *
@@ -4724,122 +1898,6 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             
-            
-            
-            
-            
-            /**
-            * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            
-            
-            /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: boolean;
-            /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: boolean;
-            
-            
-            /**
-             * Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: boolean;
-            /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: boolean;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: boolean;
-            /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: boolean;
-            /**
-             * Gets or sets the outline level for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: boolean;
-            /**
-             * Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: boolean;
-            /**
-             * Gets or sets the spacing, in points, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: boolean;
-            /**
-             * Gets or sets the spacing, in points, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: boolean;
-            /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            
-            /**
-             * Gets the text of the paragraph. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         * Contains a collection of {@link Word.Paragraph} objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface ParagraphCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
             *
@@ -4848,122 +1906,6 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             
-            
-            
-            
-            
-            /**
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: boolean;
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: boolean;
-            /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         * Represents a contiguous area in a document.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface RangeLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
             *
@@ -4973,47 +1915,6 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the range. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            
-            
-            
-            
-            /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            /**
-             * Gets the text of the range. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         * Contains a collection of {@link Word.Range} objects.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface RangeCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
             * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
@@ -5021,47 +1922,6 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             
-            /**
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't a parent content control.
-            *
-            * @remarks
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            
-            
-            
-            
-            
-            
-            
-            /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            
-            /**
-             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         * Specifies the options to be included in a search operation.
-         *
-         * @remarks
-         * [Api set: WordApi 1.1]
-         */
-        export interface SearchOptionsLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
             /**
              * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
              *

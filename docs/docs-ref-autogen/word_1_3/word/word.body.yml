@@ -398,9 +398,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";'
+      content: >-
+        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" |
+        "Footnote" | "Endnote" | "NoteItem";
       return:
-        type: '<xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"'
+        type: >-
+          <xref uid="word!Word.BodyType:enum" /> | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
+          | "Footnote" | "Endnote" | "NoteItem"
 methods:
   - name: clear()
     uid: 'word!Word.Body#clear:member(1)'

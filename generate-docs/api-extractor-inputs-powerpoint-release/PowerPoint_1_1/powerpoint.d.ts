@@ -32,31 +32,6 @@ export declare namespace PowerPoint {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         
-        
-        
-        readonly title: string;
-        
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: PowerPoint.Interfaces.PresentationLoadOptions): PowerPoint.Presentation;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): PowerPoint.Presentation;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): PowerPoint.Presentation;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original PowerPoint.Presentation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `PowerPoint.Interfaces.PresentationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -105,10 +80,6 @@ export declare namespace PowerPoint {
         export interface TagUpdateData {
             
         }
-        /** An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`. */
-        export interface TagCollectionUpdateData {
-            items?: PowerPoint.Interfaces.TagData[];
-        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -128,41 +99,15 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `slideLayout.toJSON()`. */
         export interface SlideLayoutData {
             
-            
-        }
-        /** An interface describing the data returned by calling `slideLayoutCollection.toJSON()`. */
-        export interface SlideLayoutCollectionData {
-            items?: PowerPoint.Interfaces.SlideLayoutData[];
         }
         /** An interface describing the data returned by calling `slideMaster.toJSON()`. */
         export interface SlideMasterData {
             
             
         }
-        /** An interface describing the data returned by calling `tag.toJSON()`. */
-        export interface TagData {
-            
-            
-        }
-        /** An interface describing the data returned by calling `tagCollection.toJSON()`. */
-        export interface TagCollectionData {
-            items?: PowerPoint.Interfaces.TagData[];
-        }
         /** An interface describing the data returned by calling `slide.toJSON()`. */
         export interface SlideData {
             
-        }
-        /** An interface describing the data returned by calling `shape.toJSON()`. */
-        export interface ShapeData {
-            
-        }
-        /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
-        export interface SlideCollectionData {
-            items?: PowerPoint.Interfaces.SlideData[];
-        }
-        /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
-        export interface SlideMasterCollectionData {
-            items?: PowerPoint.Interfaces.SlideMasterData[];
         }
         /**
          * @remarks
@@ -182,20 +127,6 @@ export declare namespace PowerPoint {
         
         
         
-        
-        
-        
-    }
-}
-export declare namespace PowerPoint {
-    /**
-     * The RequestContext object facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the request context is required to get access to the PowerPoint object model from the add-in.
-     */
-    export class RequestContext extends OfficeExtension.ClientRequestContext {
-        constructor(url?: string);
-        readonly presentation: Presentation;
-        readonly application: Application;
-    }
     /**
      * Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the Office add-in and the PowerPoint application run in two different processes, the RequestContext is required to get access to the PowerPoint object model from the add-in.
