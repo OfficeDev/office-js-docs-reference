@@ -22,7 +22,7 @@ while (indexOfApiSetTag >= 0) {
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
         endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
     } else {
-        endPosition = getDeclarationEnd(wholeDTS, commentEnd);
+        endPosition = getDeclarationEnd(wholeDTS, commentEnd + 2);
     }
 
     if (endPosition === -1) {
