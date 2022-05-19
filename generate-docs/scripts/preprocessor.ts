@@ -33,8 +33,8 @@ tryCatch(async () => {
         case "DT+":
             forceRebuild = true;
         case "DT":
-            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/40f33c3c4ffe26b29890994a72b4b02ff40f3176/types/office-js/index.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/40f33c3c4ffe26b29890994a72b4b02ff40f3176/types/office-js-preview/index.d.ts";
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
@@ -57,14 +57,12 @@ tryCatch(async () => {
     // Process office.d.ts
     // ----
     const localReleaseDtsPath = "../script-inputs/office.d.ts";
-    //const localReleaseDtsPath = "../../../ElizabethSamuel-MSFT/DefinitelyTyped/types/office-js/index.d.ts";
     if (urlToCopyOfficeJsFrom.length > 0) {
         console.log(`Pulling Office.js TypeScript definition file from: ${urlToCopyOfficeJsFrom}`);
         fsx.writeFileSync(localReleaseDtsPath, await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
-    //const localPreviewDtsPath = "../../../ElizabethSamuel-MSFT/DefinitelyTyped/types/office-js-preview/index.d.ts";
     if (urlToCopyPreviewOfficeJsFrom.length > 0) {
         console.log(`Pulling Office.js (preview) TypeScript definition file from: ${urlToCopyPreviewOfficeJsFrom}`);
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
