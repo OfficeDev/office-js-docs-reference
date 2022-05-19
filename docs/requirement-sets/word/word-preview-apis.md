@@ -32,31 +32,17 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[ContentControlEventArgs](/javascript/api/word/word.contentcontroleventargs)|[contentControl](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-contentcontrol-member)|The object that raised the event.|
 ||[eventType](/javascript/api/word/word.contentcontroleventargs#word-word-contentcontroleventargs-eventtype-member)|The event type.|
 |[CustomXmlPart](/javascript/api/word/word.customxmlpart)|[delete()](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-delete-member(1))|Deletes the custom XML part.|
-||[deleteAttribute(xpath: string, namespaceMappings: {
-            [key: string]: string
-        }, name: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteattribute-member(1))|Deletes an attribute with the given name from the element identified by xpath.|
-||[deleteElement(xpath: string, namespaceMappings: {
-            [key: string]: string
-        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteelement-member(1))|Deletes the element identified by xpath.|
+||[deleteAttribute(xpath: string, namespaceMappings: {[key: string]: string}, name: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteattribute-member(1))|Deletes an attribute with the given name from the element identified by xpath.|
+||[deleteElement(xpath: string, namespaceMappings: {[key: string]: string})](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-deleteelement-member(1))|Deletes the element identified by xpath.|
 ||[getXml()](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-getxml-member(1))|Gets the full XML content of the custom XML part.|
 ||[id](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-id-member)|Gets the ID of the custom XML part.|
-||[insertAttribute(xpath: string, namespaceMappings: {
-            [key: string]: string
-        }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertattribute-member(1))|Inserts an attribute with the given name and value to the element identified by xpath.|
-||[insertElement(xpath: string, xml: string, namespaceMappings: {
-            [key: string]: string
-        }, index?: number)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertelement-member(1))|Inserts the given XML under the parent element identified by xpath at child position index.|
+||[insertAttribute(xpath: string, namespaceMappings: {[key: string]: string}, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertattribute-member(1))|Inserts an attribute with the given name and value to the element identified by xpath.|
+||[insertElement(xpath: string, xml: string, namespaceMappings: {[key: string]: string}, index?: number)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-insertelement-member(1))|Inserts the given XML under the parent element identified by xpath at child position index.|
 ||[namespaceUri](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-namespaceuri-member)|Gets the namespace URI of the custom XML part.|
-||[query(xpath: string, namespaceMappings: {
-            [key: string]: string
-        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-query-member(1))|Queries the XML content of the custom XML part.|
+||[query(xpath: string, namespaceMappings: {[key: string]: string})](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-query-member(1))|Queries the XML content of the custom XML part.|
 ||[setXml(xml: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-setxml-member(1))|Sets the full XML content of the custom XML part.|
-||[updateAttribute(xpath: string, namespaceMappings: {
-            [key: string]: string
-        }, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateattribute-member(1))|Updates the value of an attribute with the given name of the element identified by xpath.|
-||[updateElement(xpath: string, xml: string, namespaceMappings: {
-            [key: string]: string
-        })](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateelement-member(1))|Updates the XML of the element identified by xpath.|
+||[updateAttribute(xpath: string, namespaceMappings: {[key: string]: string}, name: string, value: string)](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateattribute-member(1))|Updates the value of an attribute with the given name of the element identified by xpath.|
+||[updateElement(xpath: string, xml: string, namespaceMappings: {[key: string]: string})](/javascript/api/word/word.customxmlpart#word-word-customxmlpart-updateelement-member(1))|Updates the XML of the element identified by xpath.|
 |[CustomXmlPartCollection](/javascript/api/word/word.customxmlpartcollection)|[add(xml: string)](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-add-member(1))|Adds a new custom XML part to the document.|
 ||[getByNamespace(namespaceUri: string)](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getbynamespace-member(1))|Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.|
 ||[getCount()](/javascript/api/word/word.customxmlpartcollection#word-word-customxmlpartcollection-getcount-member(1))|Gets the number of items in the collection.|
