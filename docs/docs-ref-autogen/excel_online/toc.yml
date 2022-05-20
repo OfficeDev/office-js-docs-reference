@@ -80,6 +80,8 @@ items:
                 uid: 'excel!Excel.ChartColorScheme:enum'
               - name: ChartDataLabelPosition
                 uid: 'excel!Excel.ChartDataLabelPosition:enum'
+              - name: ChartDataSourceType
+                uid: 'excel!Excel.ChartDataSourceType:enum'
               - name: ChartDisplayBlanksAs
                 uid: 'excel!Excel.ChartDisplayBlanksAs:enum'
               - name: ChartErrorBarsInclude
@@ -170,6 +172,8 @@ items:
                 uid: 'excel!Excel.ContentType:enum'
               - name: DataChangeType
                 uid: 'excel!Excel.DataChangeType:enum'
+              - name: DataSourceType
+                uid: 'excel!Excel.DataSourceType:enum'
               - name: DataValidationAlertStyle
                 uid: 'excel!Excel.DataValidationAlertStyle:enum'
               - name: DataValidationOperator

@@ -83,7 +83,7 @@ call node version-remover ..\api-extractor-inputs-word-release\word_1_1\word.d.t
 
 call node whats-new excel ..\api-extractor-inputs-excel\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\..\docs\includes\excel-preview
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts ..\..\docs\includes\excel-online
-call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\..\docs\includes\excel-1_15
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\..\docs\includes\excel-1_15
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts ..\..\docs\includes\excel-1_14
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\..\docs\includes\excel-1_13
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts ..\..\docs\includes\excel-1_12

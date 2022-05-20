@@ -1,14 +1,14 @@
 ---
 title: Excel JavaScript API requirement set 1.15
 description: Details about the ExcelApi 1.15 requirement set.
-ms.date: 05/18/2022
+ms.date: 05/20/2022
 ms.prod: excel
 ms.localizationpriority: medium
 ---
 
 # What's new in Excel JavaScript API 1.15
 
-The ExcelApi 1.15 added an a method to locate all the dependent cells of a formula, methods to retrieve information about the data source of both ChartSeries and PivotTables to support the copy experience, and additional control when adding data to tables to support co-authoring.
+The ExcelApi 1.15 added an a method to locate all the dependent cells of a formula, methods to retrieve information about the data source of both [`ChartSeries`](/javascript/api/excel/excel.chartseries) and [`PivotTable`](/javascript/api/excel/excel.pivottable) objects to support the copy experience, and additional control when adding data to tables to support co-authoring.
 
 ## API list
 

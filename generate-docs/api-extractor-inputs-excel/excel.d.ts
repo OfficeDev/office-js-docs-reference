@@ -574,6 +574,31 @@ export declare namespace Excel {
     */
     export type CardLayout = EntityCardLayout;
     /**
+    * The compact layout properties for an entity.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityCompactLayout {
+        /**
+        * Specifies the name of the icon which is used to open the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        icon?: string;
+    }
+    /**
+    * Represents the layout used when there is limited space to represent the entity.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export type CompactLayout = EntityCompactLayout;
+    /**
     * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
     *
     * @remarks
@@ -1463,6 +1488,14 @@ export declare namespace Excel {
         * @beta
         */
         card?: CardLayout;
+        /**
+        * Represents the layout used when there is limited space to represent the entity.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        compact?: CompactLayout;
     }
     /**
     * Represents a card layout best used for an entity.
@@ -4852,15 +4885,13 @@ export declare namespace Excel {
      * Represents a command type of `DataConnection`.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.15]
      */
     enum DataSourceType {
         /**
          * The data source type is unknown or unsupported.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         unknown = "Unknown",
         /**
@@ -4873,17 +4904,22 @@ export declare namespace Excel {
         /**
          * The data source type is a range in the current workbook.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         localRange = "LocalRange",
         /**
          * The data source type is a table in the current workbook.
          * @remarks
+         * [Api set: ExcelApi 1.15]
+         */
+        localTable = "LocalTable",
+        /**
+         * Contains command text that the OLE DB provider (such as Power BI) understands.
+         * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        localTable = "LocalTable"
+        oledbDefault = "OledbDefault"
     }
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
@@ -10635,22 +10671,21 @@ export declare namespace Excel {
          */
         getColumnsBefore(count?: number): Excel.Range;
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependents of a cell in the same worksheet or in multiple worksheets.
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified range in the same worksheet or across multiple worksheets.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         getDependents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in the same worksheet or in multiple worksheets.
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
          */
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in the same worksheet or in multiple worksheets.
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -10767,7 +10802,7 @@ export declare namespace Excel {
          */
         getPivotTables(fullyContained?: boolean): Excel.PivotTableScopedCollection;
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the same worksheet or in multiple worksheets.
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified range in the same worksheet or across multiple worksheets.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
@@ -13763,7 +13798,7 @@ export declare namespace Excel {
                      to point at the index for which it was created.
          *
          * @remarks
-         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; ExcelApi BETA (PREVIEW ONLY) for adding `alwaysInsert` parameter.]
+         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
@@ -15960,8 +15995,7 @@ export declare namespace Excel {
          * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          *
          * @param dimension - The dimension of the axis where the data is from.
          */
@@ -15970,8 +16004,7 @@ export declare namespace Excel {
          * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          *
          * @param dimensionString - The dimension of the axis where the data is from.
          */
@@ -15980,8 +16013,7 @@ export declare namespace Excel {
          * Gets the data source type of the chart series.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          *
          * @param dimension - The dimension of the axis where the data is from.
          */
@@ -15990,8 +16022,7 @@ export declare namespace Excel {
          * Gets the data source type of the chart series.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          *
          * @param dimensionString - The dimension of the axis where the data is from.
          */
@@ -18442,22 +18473,6 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Sets and gets the uniform color fill formatting of a chart element.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        solidColor: string;
-        /**
-         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
-         */
-        set(properties: Interfaces.ChartFillUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Excel.ChartFill): void;
-        /**
          * Clears the fill color of a chart element.
          *
          * @remarks
@@ -18473,32 +18488,6 @@ export declare namespace Excel {
          * @param color - HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setSolidColor(color: string): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.ChartFillLoadOptions): Excel.ChartFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.ChartFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartFill;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.ChartFillData;
     }
     /**
      * Represents the border formatting of a chart element.
@@ -20565,8 +20554,7 @@ export declare namespace Excel {
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         getFirstOrNullObject(): Excel.PivotTable;
         /**
@@ -20862,16 +20850,14 @@ export declare namespace Excel {
                     Otherwise, it returns an empty string.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         getDataSourceString(): OfficeExtension.ClientResult<string>;
         /**
          * Gets the type of the data source for the PivotTable.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         getDataSourceType(): OfficeExtension.ClientResult<Excel.DataSourceType>;
         /**
@@ -27154,8 +27140,7 @@ export declare namespace Excel {
                     this API to get the name that is displayed in the UI.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.15]
          */
         readonly displayName: string;
         /**
@@ -29982,31 +29967,34 @@ export declare namespace Excel {
         rows = "Rows"
     }
     /**
-     * Specifies whether the series data range is local range, external range, list or unknown.
-     *
+     * Specifies the data source type of the chart series.
+     * 
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.15]
      */
     enum ChartDataSourceType {
         /**
+         * The data source type of the chart series is a local range.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.15]
          */
         localRange = "LocalRange",
         /**
+         * The data source type of the chart series is an external range.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.15]
          */
         externalRange = "ExternalRange",
         /**
+         * The data source type of the chart series is a list.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.15]
          */
         list = "List",
         /**
+         * The data source type of the chart series is unknown or unsupported.
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.15]
          */
         unknown = "Unknown"
     }
@@ -42767,17 +42755,6 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartFill object, for use in `chartFill.set({ ... })`. */
-        export interface ChartFillUpdateData {
-            /**
-             * Sets and gets the uniform color fill formatting of a chart element.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            solidColor?: string;
-        }
         /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
             /**
@@ -49005,17 +48982,6 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontData;
         }
-        /** An interface describing the data returned by calling `chartFill.toJSON()`. */
-        export interface ChartFillData {
-            /**
-             * Sets and gets the uniform color fill formatting of a chart element.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            solidColor?: string;
-        }
         /** An interface describing the data returned by calling `chartBorder.toJSON()`. */
         export interface ChartBorderData {
             /**
@@ -51480,8 +51446,7 @@ export declare namespace Excel {
                         this API to get the name that is displayed in the UI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.15]
              */
             displayName?: string;
             /**
@@ -58143,26 +58108,6 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontLoadOptions;
         }
         /**
-         * Represents the fill formatting for a chart element.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         */
-        export interface ChartFillLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Sets and gets the uniform color fill formatting of a chart element.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            solidColor?: boolean;
-        }
-        /**
          * Represents the border formatting of a chart element.
          *
          * @remarks
@@ -62588,8 +62533,7 @@ export declare namespace Excel {
                         this API to get the name that is displayed in the UI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.15]
              */
             displayName?: boolean;
             /**
@@ -62790,8 +62734,7 @@ export declare namespace Excel {
                         this API to get the name that is displayed in the UI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.15]
              */
             displayName?: boolean;
             /**
@@ -63076,8 +63019,7 @@ export declare namespace Excel {
                         this API to get the name that is displayed in the UI.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.15]
              */
             displayName?: boolean;
             /**
