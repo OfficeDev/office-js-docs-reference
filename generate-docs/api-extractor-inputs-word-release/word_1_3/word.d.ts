@@ -51,6 +51,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
          * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
          *
@@ -58,6 +59,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
          *
@@ -155,7 +157,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
+        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -171,6 +173,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         clear(): void;
+        
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -203,6 +206,8 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        
+        
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -445,6 +450,11 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.BodyData;
     }
+    
+    
+    
+    
+    
     /**
      * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
      *
@@ -461,6 +471,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
          * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
          *
@@ -468,6 +479,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
          *
@@ -668,6 +680,7 @@ export declare namespace Word {
          * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
+        
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
@@ -700,6 +713,8 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location must be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        
+        
         /**
          * Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
          *
@@ -1270,6 +1285,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
+        
         /**
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
          *
@@ -1285,6 +1301,8 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        
+        
         /**
          * Gets the current selection of the document. Multiple selections are not supported.
          *
@@ -1299,6 +1317,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         save(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2535,6 +2554,8 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.ListItemData;
     }
+    
+    
     /**
      * Represents a single paragraph in a selection, range, content control, or document body.
      *
@@ -2551,6 +2572,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
          * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
          *
@@ -2558,6 +2580,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
          *
@@ -2793,6 +2816,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         detachFromList(): void;
+        
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -2853,6 +2877,8 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        
+        
         /**
          * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
          *
@@ -3210,6 +3236,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
          * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
          *
@@ -3217,6 +3244,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets the collection of inline picture objects in the range. Read-only.
          *
@@ -3378,6 +3406,7 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         expandToOrNullObject(range: Word.Range): Word.Range;
+        
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -3437,6 +3466,8 @@ export declare namespace Word {
          * @param rangeLocationString - Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
          */
         getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;
+        
+        
         /**
          * Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
          *
@@ -3467,6 +3498,7 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        
         /**
          * Wraps the range object with a rich text content control.
          *
@@ -3474,6 +3506,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         insertContentControl(): Word.ContentControl;
+        
         /**
          * Inserts a document at the specified location.
          *
@@ -3494,6 +3527,7 @@ export declare namespace Word {
          * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
+        
         /**
          * Inserts HTML at the specified location.
          *
@@ -4050,6 +4084,7 @@ export declare namespace Word {
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
          *
@@ -4057,6 +4092,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets the parent body of the table. Read-only.
          *
@@ -4670,6 +4706,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly cells: Word.TableCellCollection;
+        
         /**
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
          *
@@ -4677,6 +4714,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly font: Word.Font;
+        
         /**
          * Gets parent table. Read-only.
          *
@@ -5369,6 +5407,9 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.TableBorderData;
     }
+    
+    
+    
     /**
      * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
      *
@@ -5867,7 +5908,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         tableCell = "TableCell",
-    }
+                            }
     /**
      * This enum sets where the cursor (insertion point) in the document is after a selection.
      *
@@ -7184,6 +7225,34 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
+        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        export interface CommentUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        export interface CommentCollectionUpdateData {
+            items?: Word.Interfaces.CommentData[];
+        }
+        /** An interface for updating data on the CommentContentRange object, for use in `commentContentRange.set({ ... })`. */
+        export interface CommentContentRangeUpdateData {
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        export interface CommentReplyUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        export interface CommentReplyCollectionUpdateData {
+            items?: Word.Interfaces.CommentReplyData[];
+        }
         /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
@@ -7299,6 +7368,7 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
+            
         }
         /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
@@ -7526,6 +7596,15 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             level?: number;
+        }
+        /** An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`. */
+        export interface NoteItemUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the NoteItemCollection object, for use in `noteItemCollection.set({ ... })`. */
+        export interface NoteItemCollectionUpdateData {
+            items?: Word.Interfaces.NoteItemData[];
         }
         /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
@@ -8045,7 +8124,46 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";
+            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+        }
+        /** An interface describing the data returned by calling `comment.toJSON()`. */
+        export interface CommentData {
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
+        export interface CommentCollectionData {
+            items?: Word.Interfaces.CommentData[];
+        }
+        /** An interface describing the data returned by calling `commentContentRange.toJSON()`. */
+        export interface CommentContentRangeData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `commentReply.toJSON()`. */
+        export interface CommentReplyData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `commentReplyCollection.toJSON()`. */
+        export interface CommentReplyCollectionData {
+            items?: Word.Interfaces.CommentReplyData[];
         }
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
@@ -8253,6 +8371,7 @@ export declare namespace Word {
             * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
+            
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
@@ -8616,6 +8735,16 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             siblingIndex?: number;
+        }
+        /** An interface describing the data returned by calling `noteItem.toJSON()`. */
+        export interface NoteItemData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `noteItemCollection.toJSON()`. */
+        export interface NoteItemCollectionData {
+            items?: Word.Interfaces.NoteItemData[];
         }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
@@ -9293,6 +9422,11 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        
+        
+        
+        
+        
         /**
          * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
          *
@@ -9718,6 +9852,7 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
+            
             /**
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
@@ -10285,6 +10420,8 @@ export declare namespace Word {
              */
             siblingIndex?: boolean;
         }
+        
+        
         /**
          * Represents a single paragraph in a selection, range, content control, or document body.
          *

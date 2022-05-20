@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.RangeCopyType
+uid: 'excel!Excel.RangeCopyType:enum'
+package: excel!
+fullName: Excel.RangeCopyType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'excel!Excel.RangeCopyType.all:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"All"'
+  - name: formats
+    uid: 'excel!Excel.RangeCopyType.formats:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Formats"'
+  - name: formulas
+    uid: 'excel!Excel.RangeCopyType.formulas:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Formulas"'
+  - name: values
+    uid: 'excel!Excel.RangeCopyType.values:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Values"'

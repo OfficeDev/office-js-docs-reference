@@ -521,9 +521,6 @@ export declare namespace Office {
     }
     /**
      * Manages actions and keyboard shortcuts.
-     * 
-     * @remarks
-     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
      export interface Actions {
         /**
@@ -531,9 +528,6 @@ export declare namespace Office {
          * 
          * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
-         * 
-         * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
     }

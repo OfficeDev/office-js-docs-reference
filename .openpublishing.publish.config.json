@@ -24,6 +24,7 @@
         "excel-js-1.12",
         "excel-js-1.13",
         "excel-js-1.14",
+        "excel-js-1.15",
         "excel-js-online",
         "onenote-js-1.1",
         "outlook-js-preview",
@@ -46,7 +47,8 @@
         "word-js-preview",
         "word-js-1.1",
         "word-js-1.2",
-        "word-js-1.3"
+        "word-js-1.3",
+        "word-js-online"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -213,6 +215,10 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
+      "ReferenceTOC": "docs/docs-ref-autogen/excel_1_15/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
       "ReferenceTOC": "docs/docs-ref-autogen/excel_online/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
@@ -258,6 +264,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/word_1_3/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/word_online/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ],

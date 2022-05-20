@@ -1,0 +1,331 @@
+### YamlMime:TSType
+name: Word.Interfaces.ContentControlCollectionLoadOptions
+uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ContentControlCollectionLoadOptions
+summary: >-
+  Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
+  bounded and potentially labeled regions in a document that serve as containers for specific types of content.
+  Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
+  only rich text content controls are supported.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: appearance
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#appearance:member'
+    package: word!
+    fullName: appearance
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be
+      'BoundingBox', 'Tags', or 'Hidden'.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appearance?: boolean;'
+      return:
+        type: boolean
+  - name: cannotDelete
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member'
+    package: word!
+    fullName: cannotDelete
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content
+      control. Mutually exclusive with removeWhenEdited.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cannotDelete?: boolean;'
+      return:
+        type: boolean
+  - name: cannotEdit
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotEdit:member'
+    package: word!
+    fullName: cannotEdit
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the
+      content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cannotEdit?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member'
+    package: word!
+    fullName: color
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '\#RRGGBB'
+      format or by using the color name.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member'
+    package: word!
+    fullName: font
+    summary: >-
+      For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name,
+      size, color, and other properties.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
+  - name: id
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member'
+    package: word!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: parentBody
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentBody:member'
+    package: word!
+    fullName: parentBody
+    summary: 'For EACH ITEM in the collection: Gets the parent body of the content control.'
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyLoadOptions:interface" />'
+  - name: parentContentControl
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member'
+    package: word!
+    fullName: parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if
+      there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
+  - name: parentContentControlOrNullObject
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControlOrNullObject:member'
+    package: word!
+    fullName: parentContentControlOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object
+      if there isn't a parent content control.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlLoadOptions:interface" />'
+  - name: parentTable
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTable:member'
+    package: word!
+    fullName: parentTable
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the content control. Throws an error if it is not
+      contained in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
+  - name: parentTableCell
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member'
+    package: word!
+    fullName: parentTableCell
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an error if it is
+      not contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
+  - name: parentTableCellOrNullObject
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCellOrNullObject:member'
+    package: word!
+    fullName: parentTableCellOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if
+      it is not contained in a table cell.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableCellLoadOptions:interface" />'
+  - name: parentTableOrNullObject
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableOrNullObject:member'
+    package: word!
+    fullName: parentTableOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is
+      not contained in a table.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableLoadOptions:interface" />'
+  - name: placeholderText
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member'
+    package: word!
+    fullName: placeholderText
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be
+      displayed when the content control is empty. **Note**: The set operation for this property is not supported in
+      Word on the web.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'placeholderText?: boolean;'
+      return:
+        type: boolean
+  - name: removeWhenEdited
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member'
+    package: word!
+    fullName: removeWhenEdited
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after
+      it is edited. Mutually exclusive with cannotDelete.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeWhenEdited?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#style:member'
+    package: word!
+    fullName: style
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom
+      styles and localized style names. To use the built-in styles that are portable between locales, see the
+      "styleBuiltIn" property.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: styleBuiltIn
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#styleBuiltIn:member'
+    package: word!
+    fullName: styleBuiltIn
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property
+      for built-in styles that are portable between locales. To use custom styles or localized style names, see the
+      "style" property.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'styleBuiltIn?: boolean;'
+      return:
+        type: boolean
+  - name: subtype
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#subtype:member'
+    package: word!
+    fullName: subtype
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline',
+      'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+      Read-only.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subtype?: boolean;'
+      return:
+        type: boolean
+  - name: tag
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member'
+    package: word!
+    fullName: tag
+    summary: 'For EACH ITEM in the collection: Gets or sets a tag to identify a content control.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tag?: boolean;'
+      return:
+        type: boolean
+  - name: text
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#text:member'
+    package: word!
+    fullName: text
+    summary: 'For EACH ITEM in the collection: Gets the text of the content control. Read-only.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#title:member'
+    package: word!
+    fullName: title
+    summary: 'For EACH ITEM in the collection: Gets or sets the title for a content control.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported
+      currently. Read-only.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

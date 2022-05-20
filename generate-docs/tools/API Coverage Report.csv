@@ -1076,15 +1076,8 @@ Excel.ChartErrorBarsType,stDev,EnumField,Fine,false
 Excel.ChartErrorBarsType,stError,EnumField,Fine,false
 Excel.ChartFill,N/A,Class,Good,false
 Excel.ChartFill,context,Property,Good,false
-Excel.ChartFill,solidColor,Property,Good,false
 Excel.ChartFill,clear(),Method,Poor,true
-Excel.ChartFill,load(options),Method,Poor,false
-Excel.ChartFill,load(propertyNames),Method,Poor,false
-Excel.ChartFill,load(propertyNamesAndPaths),Method,Poor,false
-Excel.ChartFill,set(properties,Method,Poor,false
-Excel.ChartFill,set(properties),Method,Poor,false
 Excel.ChartFill,setSolidColor(color),Method,Poor,true
-Excel.ChartFill,toJSON(),Method,Poor,false
 Excel.ChartFont,N/A,Class,Good,true
 Excel.ChartFont,bold,Property,Good,false
 Excel.ChartFont,color,Property,Good,false
@@ -1803,6 +1796,7 @@ Excel.CommentReplyCollection,toJSON(),Method,Poor,false
 Excel.CommentRichContent,N/A,Class,Good,false
 Excel.CommentRichContent,mentions,Property,Good,true
 Excel.CommentRichContent,richContent,Property,Good,false
+Excel.CompactLayout,N/A,Class,Good,false
 Excel.ConditionalCellValueOperator,N/A,Class,Good,false
 Excel.ConditionalCellValueOperator,between,EnumField,Fine,false
 Excel.ConditionalCellValueOperator,equalTo,EnumField,Fine,false
@@ -2258,6 +2252,7 @@ Excel.DataSourceType,N/A,Class,Good,false
 Excel.DataSourceType,cube,EnumField,Fine,false
 Excel.DataSourceType,localRange,EnumField,Fine,false
 Excel.DataSourceType,localTable,EnumField,Fine,false
+Excel.DataSourceType,oledbDefault,EnumField,Fine,false
 Excel.DataSourceType,unknown,EnumField,Fine,false
 Excel.DataValidation,N/A,Class,Good,false
 Excel.DataValidation,context,Property,Good,false
@@ -2552,11 +2547,14 @@ Excel.EntityCellValue,provider,Property,Good,false
 Excel.EntityCellValue,referencedValues,Property,Good,false
 Excel.EntityCellValue,text,Property,Good,false
 Excel.EntityCellValue,type,Property,Good,false
+Excel.EntityCompactLayout,N/A,Class,Good,false
+Excel.EntityCompactLayout,icon,Property,Good,false
 Excel.EntityPropertyExtraProperties,N/A,Class,Good,false
 Excel.EntityPropertyExtraProperties,propertyMetadata,Property,Good,false
 Excel.EntityPropertyType,N/A,Class,Good,false
 Excel.EntityViewLayouts,N/A,Class,Good,false
 Excel.EntityViewLayouts,card,Property,Good,false
+Excel.EntityViewLayouts,compact,Property,Good,false
 Excel.ErrorCellValue,N/A,Class,Good,true
 Excel.ErrorCellValueType,N/A,Class,Good,true
 Excel.ErrorCellValueType,blocked,EnumField,Fine,false
@@ -5926,8 +5924,8 @@ Excel.WorksheetVisibilityChangedEventArgs,type,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityAfter,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,visibilityBefore,Property,Good,false
 Excel.WorksheetVisibilityChangedEventArgs,worksheetId,Property,Good,false
-Office.Actions,N/A,Class,Good,false
-Office.Actions,associate,Property,Good,false
+Office.Actions,N/A,Class,Poor,false
+Office.Actions,associate,Property,Fine,false
 Office.Actions,areShortcutsInUse(shortcuts),Method,Good,false
 Office.Actions,getShortcuts(),Method,Good,false
 Office.Actions,replaceShortcuts(shortcuts),Method,Good,false

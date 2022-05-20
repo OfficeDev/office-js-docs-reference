@@ -4,7 +4,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 14;
+const CURRENT_EXCEL_RELEASE = 15;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 11;
 const CURRENT_WORD_RELEASE = 3;
@@ -186,6 +186,7 @@ tryCatch(async () => {
     writeSnippetFileAndClearYamlIfNew("../json/visio/snippets.yaml", yaml.safeDump(visioSnippets), "visio");
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets), "word");
     }
@@ -240,6 +241,11 @@ function cleanUpJson(host: string) {
         console.log(`\nCompleted ${host}_online`);
     } else if (host === "word") {
         currentRelease = CURRENT_WORD_RELEASE;
+        // Handle WordApiOnline corner case.
+        console.log(`\nStarting ${host}_online...`);
+        json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_online`);
     } else if (host === "powerpoint") {
         currentRelease = CURRENT_POWERPOINT_RELEASE;
     } else {

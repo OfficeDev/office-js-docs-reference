@@ -71,7 +71,7 @@
 'Word.Body#footnotes:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -83,7 +83,7 @@
 'Word.Body#getComments:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comments = context.document.body.getComments();
@@ -472,7 +472,7 @@
 'Word.ChangeTrackingMode:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -490,7 +490,7 @@
 'Word.ChangeTrackingVersion:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -505,7 +505,7 @@
 'Word.Comment#content:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#edit-comment-text")
@@ -527,7 +527,7 @@
 'Word.Comment#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       context.document
@@ -542,7 +542,7 @@
 'Word.Comment#getRange:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let range = context.document
@@ -558,7 +558,7 @@
 'Word.Comment#reply:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#reply-text")
@@ -578,7 +578,7 @@
 'Word.Comment#resolved:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comment = context.document
@@ -602,7 +602,7 @@
 'Word.CommentCollection#getFirst:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let range = context.document
@@ -618,7 +618,7 @@
 'Word.CommentCollection#items:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#reply-text")
@@ -1304,7 +1304,7 @@
 'Word.Document#changeTrackingMode:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -1692,7 +1692,7 @@
 'Word.NoteItem#body:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -1710,7 +1710,7 @@
 'Word.NoteItem#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -1727,7 +1727,7 @@
 'Word.NoteItem#getNext:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -1743,7 +1743,7 @@
 'Word.NoteItem#reference:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -1762,7 +1762,7 @@
 'Word.NoteItem#type:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -1777,7 +1777,7 @@
 'Word.NoteItemCollection#getFirst:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       let reference = context.document.body.footnotes.getFirst().reference;
@@ -2258,7 +2258,7 @@
 'Word.Range#footnotes:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.getSelection().footnotes;
@@ -2270,7 +2270,7 @@
 'Word.Range#getComments:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comments = context.document.getSelection().getComments();
@@ -2319,7 +2319,7 @@
 'Word.Range#getReviewedText:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -2381,7 +2381,7 @@
 'Word.Range#insertComment:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#comment-text")
@@ -2441,7 +2441,7 @@
 'Word.Range#insertFootnote:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const text = $("#input-footnote")

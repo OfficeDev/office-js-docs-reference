@@ -31,8 +31,7 @@ properties:
     fullName: changeTrackingMode
     summary: Gets or sets the ChangeTracking mode.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -41,7 +40,7 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
       await Word.run(async (context) => {
         const document = context.document;
@@ -58,7 +57,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
@@ -231,10 +230,8 @@ methods:
     package: word!
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body. Read-only. Not implemented in Word on the web.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getEndnoteBody(): Word.Body;'
@@ -246,10 +243,8 @@ methods:
     package: word!
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body. Read-only. Not implemented in Word on the web.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getFootnoteBody(): Word.Body;'
@@ -441,8 +436,8 @@ methods:
     summary: >-
       Performs a search with the specified search options on the scope of the whole document. The search results are a
       collection of range objects.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-

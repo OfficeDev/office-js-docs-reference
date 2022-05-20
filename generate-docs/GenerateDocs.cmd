@@ -31,7 +31,8 @@ pushd tools
 call md tool-inputs
 call npm install
 call npm run build
-call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts "ExcelApi 1.15" ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts "ExcelApi 1.14" ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts "ExcelApi 1.13" ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts "ExcelApi 1.12" ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts
@@ -74,13 +75,15 @@ call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
 
 
+call node version-remover ..\api-extractor-inputs-word-release\word_online\word.d.ts "WordApiOnline 1.1" ..\api-extractor-inputs-word-release\word_1_3\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_1\word.d.ts "WordApi 1.1" .\tool-inputs\word-base.d.ts
 
 
 call node whats-new excel ..\api-extractor-inputs-excel\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\..\docs\includes\excel-preview
-call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\..\docs\includes\excel-online
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts ..\..\docs\includes\excel-online
+call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\..\docs\includes\excel-1_15
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts ..\..\docs\includes\excel-1_14
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\..\docs\includes\excel-1_13
 call node whats-new excel ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts ..\..\docs\includes\excel-1_12
@@ -114,7 +117,8 @@ call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerp
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\includes\powerpoint-1_2
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts .\tool-inputs\powerpoint-base.d.ts ..\..\docs\includes\powerpoint-1_1
 
-call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\includes\word-preview
+call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_online\word.d.ts ..\..\docs\includes\word-preview
+call node whats-new word ..\api-extractor-inputs-word-release\word_online\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\includes\word-online
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\..\docs\includes\word-1_3
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\api-extractor-inputs-word-release\word_1_1\word.d.ts ..\..\docs\includes\word-1_2
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts .\tool-inputs\word-base.d.ts ..\..\docs\includes\word-1_1
@@ -143,6 +147,12 @@ if NOT EXIST "json/excel" (
 if NOT EXIST "json/excel_online" (
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release\excel_online
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
+if NOT EXIST "json/excel_1_15" (
+    echo Running API Extractor for Excel 1.15.
+    pushd api-extractor-inputs-excel-release\excel_1_15
     call ..\..\node_modules\.bin\api-extractor run
     popd
 )
@@ -349,6 +359,12 @@ if NOT EXIST "json/word" (
     call ..\node_modules\.bin\api-extractor run
     popd
 )
+if NOT EXIST "json/word_online" (
+    echo Running API Extractor for Word online.
+    pushd api-extractor-inputs-word-release\word_online
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 if NOT EXIST "json/word_1_3" (
     echo Running API Extractor for Word 1.3.
     pushd api-extractor-inputs-word-release\word_1_3
@@ -405,6 +421,7 @@ if NOT EXIST "yaml/excel_1_11" ( call .\node_modules\.bin\api-documenter yaml --
 if NOT EXIST "yaml/excel_1_12" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_12 --output-folder .\yaml\excel_1_12 --office 2> nul )
 if NOT EXIST "yaml/excel_1_13" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_13 --output-folder .\yaml\excel_1_13 --office 2> nul )
 if NOT EXIST "yaml/excel_1_14" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_14 --output-folder .\yaml\excel_1_14 --office 2> nul )
+if NOT EXIST "yaml/excel_1_15" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_15 --output-folder .\yaml\excel_1_15 --office 2> nul )
 if NOT EXIST "yaml/excel_online" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office 2> nul )
 if NOT EXIST "yaml/onenote" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\onenote --output-folder .\yaml\onenote --office )
 if NOT EXIST "yaml/outlook" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office )
@@ -428,6 +445,7 @@ if NOT EXIST "yaml/word" ( call .\node_modules\.bin\api-documenter yaml --input-
 if NOT EXIST "yaml/word_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul )
 if NOT EXIST "yaml/word_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul )
 if NOT EXIST "yaml/word_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul )
+if NOT EXIST "yaml/word_online" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_online --output-folder .\yaml\word_online --office 2> nul )
 
 pushd scripts
 call node postprocessor.js

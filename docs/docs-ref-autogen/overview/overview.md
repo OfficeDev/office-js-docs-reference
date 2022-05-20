@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 12/14/2021
+ms.date: 05/20/2022
 ---
 
 # Office Add-ins JavaScript API reference
@@ -16,7 +16,12 @@ The JavaScript API for Office enables you to create web applications that intera
 
 The following is a list of APIs for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). Common API links include all APIs not attributed to a particular host (as detailed in [Office Common API requirement set](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets)). Other items link to a version of the API reference documentation for that host based on a requirement set. The reference documentation will be versioned to include all APIs up to and including that requirement set (for example, ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs).
 
-`ExcelApiOnline 1.1` is a special requirement set. It contains the latest APIs for Excel on the web, but those APIs may not yet be fully supported across all platforms. See [Excel JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/excel-api-online-requirement-set) for more information.
+## Online-only requirement set
+
+The online-only requirement set is a special requirement set. It contains the latest APIs for the web version of the supporting applications (currently Excel and Word). However, those APIs may not yet be fully supported across all platforms. For more information, see one of the following as applicable.
+
+- `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/excel-api-online-requirement-set)
+- `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/word-api-online-requirement-set)
 
 > [!TIP]
 > You can change the version of a reference page by using the filter selection drop-down menu above the table of contents at any time. If the page doesn't exist in that particular version, you'll be returned to the current version.
@@ -35,6 +40,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <ul>
                 <li><a href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.15">ExcelApi 1.15</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.14">ExcelApi 1.14</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.13">ExcelApi 1.13</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.12">ExcelApi 1.12</a></li>
@@ -88,6 +94,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <h3>Word APIs</h3>
             <ul>
                 <li><a href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
+                <li><a href="/javascript/api/word?view=word-js-online">WordApiOnline 1.1</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>

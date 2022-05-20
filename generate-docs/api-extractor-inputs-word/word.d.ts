@@ -55,8 +55,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the body. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -78,8 +77,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the body. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -199,8 +197,7 @@ export declare namespace Word {
          * Gets comments associated with the body.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getComments(): Word.CommentCollection;
         /**
@@ -239,8 +236,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -249,8 +245,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -501,74 +496,65 @@ export declare namespace Word {
      * Represents a comment in the document.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class Comment extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+         * Gets or sets the comment's content range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         contentRange: Word.CommentContentRange;
         /**
          * Gets the collection of reply objects associated with the comment.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly replies: Word.CommentReplyCollection;
         /**
          * Gets the email of the comment's author.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly authorEmail: string;
         /**
          * Gets the name of the comment's author.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly authorName: string;
         /**
          * Gets or sets the comment's content as plain text.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         content: string;
         /**
          * Gets the creation date of the comment.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly creationDate: Date;
         /**
          * Gets the ID of the comment. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly id: string;
         /**
          * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         resolved: boolean;
         /**
@@ -583,24 +569,21 @@ export declare namespace Word {
          * Deletes the comment and its replies.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         delete(): void;
         /**
          * Gets the range in the main document where the comment is on.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getRange(): Word.Range;
         /**
          * Adds a new reply to the end of the comment thread.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param replyText - Required. Reply text.
          */
@@ -644,8 +627,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.Comment} objects.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class CommentCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -656,24 +638,21 @@ export declare namespace Word {
          * Gets the first comment in the collection. Throws an error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirst(): Word.Comment;
         /**
          * Gets the first comment in the collection. If the collection is empty, returns a null object.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirstOrNullObject(): Word.Comment;
         /**
          * Gets a comment object by its index in the collection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param index - A number that identifies the index location of a comment object.
          */
@@ -712,8 +691,7 @@ export declare namespace Word {
     }
     /**
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class CommentContentRange extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -722,56 +700,49 @@ export declare namespace Word {
          * Gets or sets a value that indicates whether the comment text is bold.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         bold: boolean;
         /**
          * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         hyperlink: string;
         /**
          * Checks whether the range length is zero. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly isEmpty: boolean;
         /**
          * Gets or sets a value that indicates whether the comment text is italicized.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         italic: boolean;
         /**
          * Gets or sets a value that indicates whether the comment text has a strikethrough.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         strikeThrough: boolean;
         /**
          * Gets the text of the comment range. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly text: string;
         /**
          * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         underline: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         /**
@@ -786,8 +757,7 @@ export declare namespace Word {
          * Inserts text into at the specified location.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param text - Required. The text to be inserted in to the CommentContentRange.
          * @param insertLocation - Required. The value must be 'After', 'Before', 'Replace', 'Start', or 'End'.
@@ -797,8 +767,7 @@ export declare namespace Word {
          * Inserts text into at the specified location.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param text - Required. The text to be inserted in to the CommentContentRange.
          * @param insertLocationString - Required. The value must be 'After', 'Before', 'Replace', 'Start', or 'End'.
@@ -843,8 +812,7 @@ export declare namespace Word {
      * Represents a comment reply in the document.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class CommentReply extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -853,56 +821,49 @@ export declare namespace Word {
          * Gets or sets the commentReply's content range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         contentRange: Word.CommentContentRange;
         /**
          * Gets the parent comment of this reply.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly parentComment: Word.Comment;
         /**
          * Gets the email of the comment reply's author.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly authorEmail: string;
         /**
          * Gets the name of the comment reply's author.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly authorName: string;
         /**
          * Gets or sets the comment reply's content. The string is plain text.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         content: string;
         /**
          * Gets the creation date of the comment reply.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly creationDate: Date;
         /**
          * Gets the ID of the comment reply. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly id: string;
         /**
@@ -917,8 +878,7 @@ export declare namespace Word {
          * Deletes the comment reply.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         delete(): void;
         /**
@@ -960,8 +920,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.CommentReply} objects. Represents all comment replies in one comment thread.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class CommentReplyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -972,24 +931,21 @@ export declare namespace Word {
          * Gets the first comment reply in the collection. Throws an error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirst(): Word.CommentReply;
         /**
          * Gets the first comment reply in the collection. If the collection is empty, returns a null object.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirstOrNullObject(): Word.CommentReply;
         /**
          * Gets a comment reply object by its index in the collection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param index - A number that identifies the index location of a comment reply object.
          */
@@ -1046,8 +1002,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the contentcontrol. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -1069,8 +1024,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the contentcontrol. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -1277,8 +1231,7 @@ export declare namespace Word {
          * Gets comments associated with the body.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getComments(): Word.CommentCollection;
         /**
@@ -1317,8 +1270,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -1327,8 +1279,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -2425,8 +2376,7 @@ export declare namespace Word {
          * Gets or sets the ChangeTracking mode.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         /**
@@ -2479,8 +2429,7 @@ export declare namespace Word {
                     Not implemented in Word on the web.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getEndnoteBody(): Word.Body;
         /**
@@ -2488,8 +2437,7 @@ export declare namespace Word {
                     Not implemented in Word on the web.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFootnoteBody(): Word.Body;
         /**
@@ -2510,8 +2458,7 @@ export declare namespace Word {
          * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -4077,34 +4024,30 @@ export declare namespace Word {
      * Represents a footnote or endnote.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class NoteItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+         * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly body: Word.Body;
         /**
          * Represents a footnote or endnote reference in the main document.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly reference: Word.Range;
         /**
          * Represents the note item type: footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly type: Word.NoteItemType | "Footnote" | "Endnote";
         /**
@@ -4119,24 +4062,21 @@ export declare namespace Word {
          * Deletes the note item.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         delete(): void;
         /**
          * Gets the next note item of the same type. Throws an error if this note item is the last one.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getNext(): Word.NoteItem;
         /**
          * Gets the next note item of the same type. Returns a null object if this note item is the last one.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getNextOrNullObject(): Word.NoteItem;
         /**
@@ -4178,8 +4118,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.NoteItem} objects.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     export class NoteItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4190,16 +4129,14 @@ export declare namespace Word {
          * Gets the first note item in this collection. Throws an error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirst(): Word.NoteItem;
         /**
          * Gets the first note item in this collection. Returns a null object if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getFirstOrNullObject(): Word.NoteItem;
         /**
@@ -4254,8 +4191,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the paragraph. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -4277,8 +4213,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the paragraph. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -4520,8 +4455,7 @@ export declare namespace Word {
          * Gets comments associated with the paragraph.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         getComments(): Word.CommentCollection;
         /**
@@ -4588,8 +4522,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -4598,8 +4531,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -4965,8 +4897,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the range. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -4988,8 +4919,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the range. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -5168,8 +5098,7 @@ export declare namespace Word {
          * Gets comments associated with the range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          * @returns
          */
         getComments(): Word.CommentCollection;
@@ -5236,8 +5165,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersion - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -5246,8 +5174,7 @@ export declare namespace Word {
          * Gets reviewed text based on ChangeTrackingVersion selection.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param changeTrackingVersionString - Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
          */
@@ -5296,8 +5223,7 @@ export declare namespace Word {
          * Insert a comment on the range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param commentText - Required. The comment text to be inserted.
          * @returns comment object
@@ -5314,8 +5240,7 @@ export declare namespace Word {
          * Inserts an endnote. The endnote reference is placed after the range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param insertText - Optional. Text to be inserted into the endnote body. The default is "".
          */
@@ -5344,8 +5269,7 @@ export declare namespace Word {
          * Inserts a footnote. The footnote reference is placed after the range.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          *
          * @param insertText - Optional. Text to be inserted into the footnote body. The default is "".
          */
@@ -6078,8 +6002,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the table. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -6101,8 +6024,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the table. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -6735,8 +6657,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the table row. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -6758,8 +6679,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the table row. Read-only.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -7485,29 +7405,25 @@ export declare namespace Word {
      * ChangeTracking mode.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     enum ChangeTrackingMode {
         /**
          * ChangeTracking is turned off.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         off = "Off",
         /**
          * ChangeTracking is turned on for everyone.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         trackAll = "TrackAll",
         /**
          * Tracking is turned on for my changes only.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         trackMineOnly = "TrackMineOnly",
     }
@@ -7515,18 +7431,17 @@ export declare namespace Word {
      * Specify the current version or the original version of the text.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     enum ChangeTrackingVersion {
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApiOnline 1.1]
          */
         original = "Original",
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApiOnline 1.1]
          */
         current = "Current",
     }
@@ -7534,18 +7449,17 @@ export declare namespace Word {
      * Note item type
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiOnline 1.1]
      */
     enum NoteItemType {
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApiOnline 1.1]
          */
         footnote = "Footnote",
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApiOnline 1.1]
          */
         endnote = "Endnote",
     }
@@ -8074,17 +7988,17 @@ export declare namespace Word {
         tableCell = "TableCell",
         /**
          * @remarks
-         * [Api set: WordApi 1.3]
+         * [Api set: WordApiOnline 1.1]
          */
         footnote = "Footnote",
         /**
          * @remarks
-         * [Api set: WordApi 1.3]
+         * [Api set: WordApiOnline 1.1]
          */
         endnote = "Endnote",
         /**
          * @remarks
-         * [Api set: WordApi 1.3]
+         * [Api set: WordApiOnline 1.1]
          */
         noteItem = "NoteItem",
     }
@@ -9484,27 +9398,24 @@ export declare namespace Word {
         /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
             /**
-            * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+            * Gets or sets the comment's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeUpdateData;
             /**
              * Gets or sets the comment's content as plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: string;
             /**
              * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             resolved?: boolean;
         }
@@ -9518,40 +9429,35 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text is bold.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             bold?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             hyperlink?: string;
             /**
              * Gets or sets a value that indicates whether the comment text is italicized.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             italic?: boolean;
             /**
              * Gets or sets a value that indicates whether the comment text has a strikethrough.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             strikeThrough?: boolean;
             /**
              * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
@@ -9561,24 +9467,21 @@ export declare namespace Word {
             * Gets or sets the commentReply's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeUpdateData;
             /**
             * Gets the parent comment of this reply.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             parentComment?: Word.Interfaces.CommentUpdateData;
             /**
              * Gets or sets the comment reply's content. The string is plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: string;
         }
@@ -9713,8 +9616,7 @@ export declare namespace Word {
              * Gets or sets the ChangeTracking mode.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         }
@@ -9952,19 +9854,17 @@ export declare namespace Word {
         /** An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`. */
         export interface NoteItemUpdateData {
             /**
-            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             reference?: Word.Interfaces.RangeUpdateData;
         }
@@ -10518,67 +10418,59 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `comment.toJSON()`. */
         export interface CommentData {
             /**
-            * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+            * Gets or sets the comment's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeData;
             /**
             * Gets the collection of reply objects associated with the comment.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             replies?: Word.Interfaces.CommentReplyData[];
             /**
              * Gets the email of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: string;
             /**
              * Gets the name of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: string;
             /**
              * Gets or sets the comment's content as plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: string;
             /**
              * Gets the creation date of the comment.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: Date;
             /**
              * Gets the ID of the comment. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: string;
             /**
              * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             resolved?: boolean;
         }
@@ -10592,56 +10484,49 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text is bold.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             bold?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             hyperlink?: string;
             /**
              * Checks whether the range length is zero. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             isEmpty?: boolean;
             /**
              * Gets or sets a value that indicates whether the comment text is italicized.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             italic?: boolean;
             /**
              * Gets or sets a value that indicates whether the comment text has a strikethrough.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             strikeThrough?: boolean;
             /**
              * Gets the text of the comment range. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             text?: string;
             /**
              * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
@@ -10651,56 +10536,49 @@ export declare namespace Word {
             * Gets or sets the commentReply's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeData;
             /**
             * Gets the parent comment of this reply.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             parentComment?: Word.Interfaces.CommentData;
             /**
              * Gets the email of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: string;
             /**
              * Gets the name of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: string;
             /**
              * Gets or sets the comment reply's content. The string is plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: string;
             /**
              * Gets the creation date of the comment reply.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: Date;
             /**
              * Gets the ID of the comment reply. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: string;
         }
@@ -10969,8 +10847,7 @@ export declare namespace Word {
              * Gets or sets the ChangeTracking mode.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
             /**
@@ -11387,27 +11264,24 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `noteItem.toJSON()`. */
         export interface NoteItemData {
             /**
-            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             reference?: Word.Interfaces.RangeData;
             /**
              * Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             type?: Word.NoteItemType | "Footnote" | "Endnote";
         }
@@ -12150,8 +12024,7 @@ export declare namespace Word {
          * Represents a comment in the document.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface CommentLoadOptions {
             /**
@@ -12159,59 +12032,52 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+            * Gets or sets the comment's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
              * Gets the email of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: boolean;
             /**
              * Gets the name of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: boolean;
             /**
              * Gets or sets the comment's content as plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: boolean;
             /**
              * Gets the creation date of the comment.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: boolean;
             /**
              * Gets the ID of the comment. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: boolean;
             /**
              * Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             resolved?: boolean;
         }
@@ -12219,8 +12085,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.Comment} objects.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface CommentCollectionLoadOptions {
             /**
@@ -12228,66 +12093,58 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
+            * For EACH ITEM in the collection: Gets or sets the comment's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the email of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the comment's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the comment's content as plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the creation date of the comment.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the ID of the comment. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means that the comment thread is resolved.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             resolved?: boolean;
         }
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface CommentContentRangeLoadOptions {
             /**
@@ -12298,56 +12155,49 @@ export declare namespace Word {
              * Gets or sets a value that indicates whether the comment text is bold.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             bold?: boolean;
             /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             hyperlink?: boolean;
             /**
              * Checks whether the range length is zero. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             isEmpty?: boolean;
             /**
              * Gets or sets a value that indicates whether the comment text is italicized.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             italic?: boolean;
             /**
              * Gets or sets a value that indicates whether the comment text has a strikethrough.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             strikeThrough?: boolean;
             /**
              * Gets the text of the comment range. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             text?: boolean;
             /**
              * Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             underline?: boolean;
         }
@@ -12355,8 +12205,7 @@ export declare namespace Word {
          * Represents a comment reply in the document.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface CommentReplyLoadOptions {
             /**
@@ -12367,56 +12216,49 @@ export declare namespace Word {
             * Gets or sets the commentReply's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
             * Gets the parent comment of this reply.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             parentComment?: Word.Interfaces.CommentLoadOptions;
             /**
              * Gets the email of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: boolean;
             /**
              * Gets the name of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: boolean;
             /**
              * Gets or sets the comment reply's content. The string is plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: boolean;
             /**
              * Gets the creation date of the comment reply.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: boolean;
             /**
              * Gets the ID of the comment reply. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: boolean;
         }
@@ -12424,8 +12266,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.CommentReply} objects. Represents all comment replies in one comment thread.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface CommentReplyCollectionLoadOptions {
             /**
@@ -12436,56 +12277,49 @@ export declare namespace Word {
             * For EACH ITEM in the collection: Gets or sets the commentReply's content range.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;
             /**
             * For EACH ITEM in the collection: Gets the parent comment of this reply.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             parentComment?: Word.Interfaces.CommentLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the email of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorEmail?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the comment reply's author.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             authorName?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             content?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the creation date of the comment reply.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             creationDate?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the ID of the comment reply. Read-only.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             id?: boolean;
         }
@@ -13005,8 +12839,7 @@ export declare namespace Word {
              * Gets or sets the ChangeTracking mode.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             changeTrackingMode?: boolean;
             /**
@@ -13766,8 +13599,7 @@ export declare namespace Word {
          * Represents a footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface NoteItemLoadOptions {
             /**
@@ -13775,27 +13607,24 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
              * Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             type?: boolean;
         }
@@ -13803,8 +13632,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.NoteItem} objects.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiOnline 1.1]
          */
         export interface NoteItemCollectionLoadOptions {
             /**
@@ -13812,27 +13640,24 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-            * For EACH ITEM in the collection: Represents the body object of the note item. It is the portion of the text within the footnote or endnote.
+            * For EACH ITEM in the collection: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiOnline 1.1]
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
              * For EACH ITEM in the collection: Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiOnline 1.1]
              */
             type?: boolean;
         }

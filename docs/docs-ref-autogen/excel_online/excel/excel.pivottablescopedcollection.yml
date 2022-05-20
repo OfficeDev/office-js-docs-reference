@@ -66,6 +66,25 @@ methods:
       return:
         type: '<xref uid="excel!Excel.PivotTable:class" />'
         description: ''
+  - name: getFirstOrNullObject()
+    uid: 'excel!Excel.PivotTableScopedCollection#getFirstOrNullObject:member(1)'
+    package: excel!
+    fullName: getFirstOrNullObject()
+    summary: >-
+      Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and
+      left-to-right, such that the top-left table is the first PivotTable in the collection. If the collection is empty,
+      then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFirstOrNullObject(): Excel.PivotTable;'
+      return:
+        type: '<xref uid="excel!Excel.PivotTable:class" />'
+        description: ''
   - name: getItem(key)
     uid: 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
     package: excel!

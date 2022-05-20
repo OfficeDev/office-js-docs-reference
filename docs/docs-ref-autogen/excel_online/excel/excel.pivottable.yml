@@ -322,6 +322,90 @@ methods:
       return:
         type: void
         description: ''
+  - name: getDataSourceString()
+    uid: 'excel!Excel.PivotTable#getDataSourceString:member(1)'
+    package: excel!
+    fullName: getDataSourceString()
+    summary: >-
+      Returns the string representation of the data source for the PivotTable. This method currently supports string
+      representations for table and range objects. Otherwise, it returns an empty string.
+    remarks: >-
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
+
+      await Excel.run(async (context) => {
+        // This method logs information about the data source of a PivotTable.
+
+        const worksheet = context.workbook.worksheets.getItem("TotalPivot");
+        const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
+
+        // Retrieve the type and string representation of the data source of the PivotTable.
+        const pivotTableDataSourceType = pivotTable.getDataSourceType();
+        const pivotTableDataSourceString = pivotTable.getDataSourceString();
+        await context.sync();
+
+        // Log the data source information.
+        console.log("Data source: " + pivotTableDataSourceString.value);
+        console.log("Source type: " + pivotTableDataSourceType.value);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDataSourceString(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getDataSourceType()
+    uid: 'excel!Excel.PivotTable#getDataSourceType:member(1)'
+    package: excel!
+    fullName: getDataSourceType()
+    summary: Gets the type of the data source for the PivotTable.
+    remarks: >-
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
+
+      await Excel.run(async (context) => {
+        // This method logs information about the data source of a PivotTable.
+
+        const worksheet = context.workbook.worksheets.getItem("TotalPivot");
+        const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
+
+        // Retrieve the type and string representation of the data source of the PivotTable.
+        const pivotTableDataSourceType = pivotTable.getDataSourceType();
+        const pivotTableDataSourceString = pivotTable.getDataSourceString();
+        await context.sync();
+
+        // Log the data source information.
+        console.log("Data source: " + pivotTableDataSourceString.value);
+        console.log("Source type: " + pivotTableDataSourceType.value);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDataSourceType(): OfficeExtension.ClientResult<Excel.DataSourceType>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.DataSourceType:enum" />&gt;'
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.PivotTable#load:member(1)'
     package: excel!
