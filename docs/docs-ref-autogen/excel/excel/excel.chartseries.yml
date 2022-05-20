@@ -836,7 +836,7 @@ methods:
       Gets the string representation of the data source of the chart series.The string representation could be
       information such as a cell address.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -868,7 +868,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string>;'
@@ -886,8 +886,8 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series.The string representation could be
       information such as a cell address.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -906,7 +906,7 @@ methods:
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -938,7 +938,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -958,8 +958,8 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimensionString)
     summary: Gets the data source type of the chart series.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

@@ -631,6 +631,8 @@ items:
             uid: 'excel!Excel.CommentReplyCollection:class'
           - name: CommentRichContent
             uid: 'excel!Excel.CommentRichContent:interface'
+          - name: CompactLayout
+            uid: 'excel!Excel.CompactLayout:type'
           - name: ConditionalCellValueRule
             uid: 'excel!Excel.ConditionalCellValueRule:interface'
           - name: ConditionalColorScaleCriteria
@@ -727,6 +729,8 @@ items:
             uid: 'excel!Excel.EntityCardLayout:interface'
           - name: EntityCellValue
             uid: 'excel!Excel.EntityCellValue:interface'
+          - name: EntityCompactLayout
+            uid: 'excel!Excel.EntityCompactLayout:interface'
           - name: EntityPropertyExtraProperties
             uid: 'excel!Excel.EntityPropertyExtraProperties:interface'
           - name: EntityPropertyType
@@ -1555,8 +1559,12 @@ items:
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
             displayName: Excel
+          - name: ExcelApi 1.15 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-15-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.14 requirement set
             href: ../../requirement-sets/excel/excel-api-1-14-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.13 requirement set
             href: ../../requirement-sets/excel/excel-api-1-13-requirement-set.md
             displayName: Excel

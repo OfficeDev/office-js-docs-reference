@@ -4,9 +4,7 @@ uid: 'office!Office.Actions:interface'
 package: office!
 fullName: Office.Actions
 summary: Manages actions and keyboard shortcuts.
-remarks: >-
-  **Requirement set**: [SharedRuntime
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,9 +14,7 @@ properties:
     package: office!
     fullName: associate
     summary: Associates the ID or name of an action with a function.
-    remarks: >-
-      **Requirement set**: [SharedRuntime
-      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,8 +30,15 @@ methods:
       Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the
       host Office application.
     remarks: >-
-      **Requirement set**: [KeyboardShortcuts
+      **Requirement sets**:
+
+
+      - [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+
+
+      - [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -64,8 +67,15 @@ methods:
       add-ins](https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins)<!--
       -->.
     remarks: >-
-      **Requirement set**: [KeyboardShortcuts
+      **Requirement sets**:
+
+
+      - [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+
+
+      - [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
@@ -82,8 +92,15 @@ methods:
     fullName: replaceShortcuts(shortcuts)
     summary: Replaces existing add-in shortcuts with custom shortcuts for the user.
     remarks: >-
-      **Requirement set**: [KeyboardShortcuts
+      **Requirement sets**:
+
+
+      - [KeyboardShortcuts
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets)
+
+
+      - [SharedRuntime
+      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: true
     isDeprecated: false
     syntax:
