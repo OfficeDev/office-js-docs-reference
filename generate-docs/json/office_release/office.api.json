@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Actions:interface",
-              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n */\n",
+              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -198,7 +198,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Actions#associate:member",
-                  "docComment": "/**\n * Associates the ID or name of an action with a function.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
+                  "docComment": "/**\n * Associates the ID or name of an action with a function.\n *\n * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

@@ -1559,8 +1559,12 @@ items:
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
             displayName: Excel
+          - name: ExcelApi 1.15 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-15-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.14 requirement set
             href: ../../requirement-sets/excel/excel-api-1-14-requirement-set.md
+            displayName: Excel
           - name: ExcelApi 1.13 requirement set
             href: ../../requirement-sets/excel/excel-api-1-13-requirement-set.md
             displayName: Excel
