@@ -9822,7 +9822,7 @@ Word.FieldCollection,N/A,Class,Good,false
 Word.FieldCollection,context,Property,Good,false
 Word.FieldCollection,items,Property,Fine,true
 Word.FieldCollection,getFirst(),Method,Poor,false
-Word.FieldCollection,getFirstOrNullObject(),Method,Poor,false
+Word.FieldCollection,getFirstOrNullObject(),Method,Poor,true
 Word.FieldCollection,load(options),Method,Poor,false
 Word.FieldCollection,load(propertyNames),Method,Poor,false
 Word.FieldCollection,load(propertyNamesAndPaths),Method,Poor,false

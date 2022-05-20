@@ -1384,7 +1384,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-dependents.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-dependents.yaml
 
       await Excel.run(async (context) => {
         // This method highlights all the dependent cells of the active cell.

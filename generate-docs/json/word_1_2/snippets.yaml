@@ -1424,26 +1424,6 @@
         console.log("Result of first field: " + field.result);
       }
     });
-'Word.Field#getFirstOrNullObject:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
-
-    // Gets the first field in the document body.
-
-    await Word.run(async (context) => {
-      const field = context.document.body.fields.getFirstOrNullObject();
-      field.load(["code", "result"]);
-
-      await context.sync();
-
-      if (field.isNullObject) {
-        console.log("There are no fields in this document.");
-      } else {
-        console.log("Code of first field: " + field.code);
-        console.log("Result of first field: " + field.result);
-      }
-    });
 'Word.Field#parentBody:member':
   - >-
     // Link to full sample:
@@ -1465,6 +1445,26 @@
       }
     });
 'Word.Field#result:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#getFirstOrNullObject:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
