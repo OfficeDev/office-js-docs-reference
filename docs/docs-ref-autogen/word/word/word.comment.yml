@@ -4,8 +4,8 @@ uid: 'word!Word.Comment:class'
 package: word!
 fullName: Word.Comment
 summary: Represents a comment in the document.
-remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -14,10 +14,8 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly authorEmail: string;'
@@ -28,10 +26,8 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly authorName: string;'
@@ -43,8 +39,7 @@ properties:
     fullName: content
     summary: Gets or sets the comment's content as plain text.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -53,7 +48,7 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         let text = $("#edit-comment-text")
@@ -74,7 +69,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: string;'
@@ -84,11 +79,9 @@ properties:
     uid: 'word!Word.Comment#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    summary: Gets or sets the comment's content range.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange: Word.CommentContentRange;'
@@ -102,7 +95,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -113,10 +106,8 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly creationDate: Date;'
@@ -127,10 +118,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly id: string;'
@@ -141,10 +130,8 @@ properties:
     package: word!
     fullName: replies
     summary: Gets the collection of reply objects associated with the comment.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly replies: Word.CommentReplyCollection;'
@@ -158,8 +145,7 @@ properties:
       Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
       means that the comment thread is resolved.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -168,7 +154,7 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         let comment = context.document
@@ -191,7 +177,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resolved: boolean;'
@@ -204,8 +190,7 @@ methods:
     fullName: delete()
     summary: Deletes the comment and its replies.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -214,7 +199,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         context.document
@@ -228,7 +213,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -241,8 +226,7 @@ methods:
     fullName: getRange()
     summary: Gets the range in the main document where the comment is on.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -251,7 +235,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         let range = context.document
@@ -266,7 +250,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getRange(): Word.Range;'
@@ -281,7 +265,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.CommentLoadOptions): Word.Comment;'
@@ -300,7 +284,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.Comment;'
@@ -319,7 +303,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -346,8 +330,7 @@ methods:
     fullName: reply(replyText)
     summary: Adds a new reply to the end of the comment thread.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -356,7 +339,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         let text = $("#reply-text")
@@ -375,7 +358,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'reply(replyText: string): Word.CommentReply;'
@@ -394,7 +377,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;'
@@ -416,7 +399,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Word.Comment): void;'
@@ -438,7 +421,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.CommentData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.CommentData;'
@@ -456,7 +439,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.Comment;'
@@ -473,7 +456,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.Comment;'

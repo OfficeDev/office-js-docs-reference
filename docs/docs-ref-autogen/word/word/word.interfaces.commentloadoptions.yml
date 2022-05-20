@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.CommentLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.CommentLoadOptions
 summary: Represents a comment in the document.
-remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -28,10 +28,8 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'authorEmail?: boolean;'
@@ -42,10 +40,8 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'authorName?: boolean;'
@@ -56,10 +52,8 @@ properties:
     package: word!
     fullName: content
     summary: Gets or sets the comment's content as plain text.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content?: boolean;'
@@ -69,11 +63,9 @@ properties:
     uid: 'word!Word.Interfaces.CommentLoadOptions#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: Gets or sets the comment thread status. A value of true means that the comment thread is resolved.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    summary: Gets or sets the comment's content range.
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
@@ -84,10 +76,8 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'creationDate?: boolean;'
@@ -98,10 +88,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: boolean;'
@@ -114,10 +102,8 @@ properties:
     summary: >-
       Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
       means that the comment thread is resolved.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resolved?: boolean;'

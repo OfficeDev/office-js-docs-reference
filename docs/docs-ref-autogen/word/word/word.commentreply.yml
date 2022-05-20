@@ -4,8 +4,8 @@ uid: 'word!Word.CommentReply:class'
 package: word!
 fullName: Word.CommentReply
 summary: Represents a comment reply in the document.
-remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -14,10 +14,8 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly authorEmail: string;'
@@ -28,10 +26,8 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly authorName: string;'
@@ -42,10 +38,8 @@ properties:
     package: word!
     fullName: content
     summary: Gets or sets the comment reply's content. The string is plain text.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: string;'
@@ -56,10 +50,8 @@ properties:
     package: word!
     fullName: contentRange
     summary: Gets or sets the commentReply's content range.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange: Word.CommentContentRange;'
@@ -73,7 +65,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -84,10 +76,8 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly creationDate: Date;'
@@ -98,10 +88,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment reply. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly id: string;'
@@ -112,10 +100,8 @@ properties:
     package: word!
     fullName: parentComment
     summary: Gets the parent comment of this reply.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly parentComment: Word.Comment;'
@@ -127,10 +113,8 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the comment reply.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'
@@ -145,7 +129,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(options?: Word.Interfaces.CommentReplyLoadOptions): Word.CommentReply;'
@@ -164,7 +148,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.CommentReply;'
@@ -183,7 +167,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -212,7 +196,7 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Interfaces.CommentReplyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
@@ -234,7 +218,7 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'set(properties: Word.CommentReply): void;'
@@ -256,7 +240,7 @@ methods:
       JavaScript object (typed as `Word.Interfaces.CommentReplyData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.CommentReplyData;'
@@ -274,7 +258,7 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.CommentReply;'
@@ -291,7 +275,7 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.CommentReply;'

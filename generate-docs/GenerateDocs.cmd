@@ -75,6 +75,7 @@ call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
 
 
+call node version-remover ..\api-extractor-inputs-word-release\word_online\word.d.ts "WordApiOnline 1.1" ..\api-extractor-inputs-word-release\word_1_3\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_1\word.d.ts "WordApi 1.1" .\tool-inputs\word-base.d.ts
@@ -116,7 +117,8 @@ call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerp
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\includes\powerpoint-1_2
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts .\tool-inputs\powerpoint-base.d.ts ..\..\docs\includes\powerpoint-1_1
 
-call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\includes\word-preview
+call node whats-new word ..\api-extractor-inputs-word\word.d.ts ..\api-extractor-inputs-word-release\word_online\word.d.ts ..\..\docs\includes\word-preview
+call node whats-new word ..\api-extractor-inputs-word-release\word_online\word.d.ts ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\..\docs\includes\word-online
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_3\word.d.ts ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\..\docs\includes\word-1_3
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_2\word.d.ts ..\api-extractor-inputs-word-release\word_1_1\word.d.ts ..\..\docs\includes\word-1_2
 call node whats-new word ..\api-extractor-inputs-word-release\word_1_1\word.d.ts .\tool-inputs\word-base.d.ts ..\..\docs\includes\word-1_1
@@ -357,6 +359,12 @@ if NOT EXIST "json/word" (
     call ..\node_modules\.bin\api-extractor run
     popd
 )
+if NOT EXIST "json/word_online" (
+    echo Running API Extractor for Word online.
+    pushd api-extractor-inputs-word-release\word_online
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 if NOT EXIST "json/word_1_3" (
     echo Running API Extractor for Word 1.3.
     pushd api-extractor-inputs-word-release\word_1_3
@@ -437,6 +445,7 @@ if NOT EXIST "yaml/word" ( call .\node_modules\.bin\api-documenter yaml --input-
 if NOT EXIST "yaml/word_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul )
 if NOT EXIST "yaml/word_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_2 --output-folder .\yaml\word_1_2 --office 2> nul )
 if NOT EXIST "yaml/word_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --output-folder .\yaml\word_1_3 --office 2> nul )
+if NOT EXIST "yaml/word_online" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_online --output-folder .\yaml\word_online --office 2> nul )
 
 pushd scripts
 call node postprocessor.js
