@@ -98,7 +98,7 @@ tryCatch(async () => {
                             {host: "outlook", versions: 12},
                             {host: "powerpoint", versions: 4},
                             {host: "visio", versions: 1},
-                            {host: "word", versions: 4}];
+                            {host: "word", versions: 4}]; /* not including online*/
 
     hostVersionMap.forEach(category => {
         if (category.versions > 1) {
@@ -114,6 +114,9 @@ tryCatch(async () => {
 
     // Special case for ExcelApi Online
     scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithReleaseCommon, "excel", 99);
+
+    // Special case for WordApi Online
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);

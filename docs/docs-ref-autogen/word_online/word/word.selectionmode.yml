@@ -1,0 +1,34 @@
+### YamlMime:TSEnum
+name: Word.SelectionMode
+uid: 'word!Word.SelectionMode:enum'
+package: word!
+fullName: Word.SelectionMode
+summary: This enum sets where the cursor (insertion point) in the document is after a selection.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: end
+    uid: 'word!Word.SelectionMode.end:member'
+    package: word!
+    summary: |-
+      The cursor is at the end of the selection (just after the end of the selected range).
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"End"'
+  - name: select
+    uid: 'word!Word.SelectionMode.select:member'
+    package: word!
+    summary: |-
+      The entire range is selected.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Select"'
+  - name: start
+    uid: 'word!Word.SelectionMode.start:member'
+    package: word!
+    summary: |-
+      The cursor is at the beginning of the selection (just before the start of the selected range).
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"Start"'

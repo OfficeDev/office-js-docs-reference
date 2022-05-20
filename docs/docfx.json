@@ -310,6 +310,12 @@
         "group": "word-js-1.3",
         "src": "docs-ref-autogen/word_1_3",
         "dest": "api"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-online",
+        "src": "docs-ref-autogen/word_online",
+        "dest": "api"
       }
     ],
     "resource": [
@@ -473,6 +479,10 @@
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
       },
+      "word-js-online": {
+        "dest": "word-js-online",
+        "moniker_range": "word-js-online"
+      },
       "common-js-toc": {
         "dest": "common-js-toc",
         "moniker_range": "common-js"
@@ -612,7 +622,9 @@
         "docs-ref-autogen/word_1_2/**": ["word 1.2"],
         "docs-ref-autogen/word_1_2/word/**": ["word 1.2"],
         "docs-ref-autogen/word_1_3/**": ["word 1.3"],
-        "docs-ref-autogen/word_1_3/word/**": ["word 1.3"]
+        "docs-ref-autogen/word_1_3/word/**": ["word 1.3"],
+        "docs-ref-autogen/word_online/**": ["word online"],
+        "docs-ref-autogen/word_online/word/**": ["word online"]
       },
       "ms.prod": {
         "docs-ref-autogen/excel/**": "excel",
@@ -698,6 +710,8 @@
         "docs-ref-autogen/word_1_2/word/**": "word",
         "docs-ref-autogen/word_1_3/**": "word",
         "docs-ref-autogen/word_1_3/word/**": "word",
+        "docs-ref-autogen/word_online/**": "word",
+        "docs-ref-autogen/word_online/word/**": "word",
         "manifest/**": "non-product-specific",
         "requirement-sets/**": "non-product-specific",
         "requirement-sets/common/**": "non-product-specific",

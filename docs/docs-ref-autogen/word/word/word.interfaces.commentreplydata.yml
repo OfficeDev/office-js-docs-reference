@@ -14,10 +14,8 @@ properties:
     package: word!
     fullName: authorEmail
     summary: Gets the email of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'authorEmail?: string;'
@@ -28,10 +26,8 @@ properties:
     package: word!
     fullName: authorName
     summary: Gets the name of the comment reply's author.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'authorName?: string;'
@@ -42,10 +38,8 @@ properties:
     package: word!
     fullName: content
     summary: Gets or sets the comment reply's content. The string is plain text.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content?: string;'
@@ -56,10 +50,8 @@ properties:
     package: word!
     fullName: contentRange
     summary: Gets or sets the commentReply's content range.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentRange?: Word.Interfaces.CommentContentRangeData;'
@@ -70,10 +62,8 @@ properties:
     package: word!
     fullName: creationDate
     summary: Gets the creation date of the comment reply.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'creationDate?: Date;'
@@ -84,10 +74,8 @@ properties:
     package: word!
     fullName: id
     summary: Gets the ID of the comment reply. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id?: string;'
@@ -98,10 +86,8 @@ properties:
     package: word!
     fullName: parentComment
     summary: Gets the parent comment of this reply.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentComment?: Word.Interfaces.CommentData;'

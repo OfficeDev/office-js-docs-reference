@@ -93,10 +93,8 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the contentcontrol. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly endnotes: Word.NoteItemCollection;'
@@ -135,10 +133,8 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the contentcontrol. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly footnotes: Word.NoteItemCollection;'
@@ -662,10 +658,8 @@ methods:
     package: word!
     fullName: getComments()
     summary: Gets comments associated with the body.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getComments(): Word.CommentCollection;'
@@ -804,10 +798,8 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;'
@@ -823,10 +815,8 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersionString)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;'

@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 01/14/2022
+ms.date: 05/20/2022
 ms.prod: word
 ms.localizationpriority: high
 ---
@@ -15,13 +15,14 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 Word add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, iPad, and Mac. The following table lists the Word requirement sets, the Office client applications that support that requirement set, and the build or version numbers for those applications.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
+> To use APIs in any of the numbered requirement sets or `WordApiOnline`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
 |  Requirement set  |   Office on Windows\*<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web  |
 |:-----|-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Office Insider program](https://insider.office.com)) |
+| [WordApiOnline 1.1](word-api-online-requirement-set.md) | N/A | N/A | N/A | Latest (see [requirement set page](word-api-online-requirement-set.md)) |
 | [WordApi 1.3](word-api-1-3-requirement-set.md) | Version 1612 (Build 7668.1000) or later| March 2017, 2.22 or later | March 2017, 15.32 or later| March 2017 |
 | [WordApi 1.2](word-api-1-2-requirement-set.md) | December 2015 update, Version 1601 (Build 6568.1000) or later | January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 |
 | [WordApi 1.1](word-api-1-1-requirement-set.md) | Version 1509 (Build 4266.1001) or later| January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 |

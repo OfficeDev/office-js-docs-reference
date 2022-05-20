@@ -28,10 +28,8 @@ properties:
     package: word!
     fullName: changeTrackingMode
     summary: Gets or sets the ChangeTracking mode.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'

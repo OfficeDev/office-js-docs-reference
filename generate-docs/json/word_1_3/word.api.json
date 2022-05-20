@@ -2767,7 +2767,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | \"Unknown\" | \"MainDoc\" | \"Section\" | \"Header\" | \"Footer\" | \"TableCell\""
+                      "text": " | \"Unknown\" | \"MainDoc\" | \"Section\" | \"Header\" | \"Footer\" | \"TableCell\" | \"Footnote\" | \"Endnote\" | \"NoteItem\""
                     },
                     {
                       "kind": "Content",
@@ -15030,7 +15030,7 @@
                         },
                         {
                           "kind": "Content",
-                          "text": " | \"Unknown\" | \"MainDoc\" | \"Section\" | \"Header\" | \"Footer\" | \"TableCell\""
+                          "text": " | \"Unknown\" | \"MainDoc\" | \"Section\" | \"Header\" | \"Footer\" | \"TableCell\" | \"Footnote\" | \"Endnote\" | \"NoteItem\""
                         },
                         {
                           "kind": "Content",
@@ -15549,6 +15549,284 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.CommentCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.CommentData",
+                          "canonicalReference": "word!Word.Interfaces.CommentData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.CommentCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.CommentData",
+                          "canonicalReference": "word!Word.Interfaces.CommentData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentContentRangeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentContentRange.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentContentRangeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentContentRangeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentContentRangeUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentContentRange object, for use in `commentContentRange.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentContentRangeUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentContentRangeUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `comment.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentReplyCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.CommentReplyData",
+                          "canonicalReference": "word!Word.Interfaces.CommentReplyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.CommentReplyCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.CommentReplyData",
+                          "canonicalReference": "word!Word.Interfaces.CommentReplyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentReplyData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentReply.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentReplyUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.CommentUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Comment object, for use in `comment.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -23057,6 +23335,130 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.NoteItemCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `noteItemCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NoteItemCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NoteItemCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.NoteItemCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.NoteItemData",
+                          "canonicalReference": "word!Word.Interfaces.NoteItemData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.NoteItemCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the NoteItemCollection object, for use in `noteItemCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NoteItemCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NoteItemCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "word!Word.Interfaces.NoteItemCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Word.Interfaces.NoteItemData",
+                          "canonicalReference": "word!Word.Interfaces.NoteItemData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.NoteItemData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `noteItem.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NoteItemData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NoteItemData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "word!Word.Interfaces.NoteItemUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface NoteItemUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "NoteItemUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {

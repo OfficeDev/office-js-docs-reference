@@ -46,7 +46,8 @@
         "word-js-preview",
         "word-js-1.1",
         "word-js-1.2",
-        "word-js-1.3"
+        "word-js-1.3",
+        "word-js-online"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -258,6 +259,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/word_1_3/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/word_online/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ],
