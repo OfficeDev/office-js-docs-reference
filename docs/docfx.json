@@ -2,13 +2,6 @@
   "build": {
     "content": [
       {
-        "files": ["**/toc.yml"],
-        "exclude": ["breadcrumb/toc.yml"],
-        "group": "all",
-        "src": ".",
-        "dest": "api/office_ref_toc"
-      },
-      {
         "files": ["**/*.md", "**/*.yml"],
         "src": "docs-ref-conceptual",
         "dest": "office",
@@ -324,6 +317,13 @@
         "group": "word-js-online",
         "src": "docs-ref-autogen/word_online",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "exclude": ["breadcrumb/toc.yml"],
+        "group": "all",
+        "src": ".",
+        "dest": "api/office_ref_toc"
       }
     ],
     "resource": [
