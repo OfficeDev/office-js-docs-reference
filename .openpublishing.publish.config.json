@@ -96,7 +96,6 @@
   "JoinTOCPlugin": [
     {
       "ReferenceTOC": "docs/toc.yml",
-      "ReferenceTOCUrl": "office-js/toc.json",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
