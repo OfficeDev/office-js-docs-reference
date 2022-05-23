@@ -2,19 +2,10 @@
   "build": {
     "content": [
       {
-        "files": ["toc.yml"],
+        "files": ["**/toc.yml"],
+        "exclude": ["breadcrumb/toc.yml"],
         "src": ".",
         "dest": "api/office_ref_toc"
-      },
-      {
-        "files": ["toc.yml"],
-        "src": "requirement-sets",
-        "dest": "api/office_ref_toc/requirement"
-      },
-      {
-        "files": ["toc.yml"],
-        "src": "manifest",
-        "dest": "api/office_ref_toc/manifest"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
