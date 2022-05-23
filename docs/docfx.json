@@ -4,6 +4,7 @@
       {
         "files": ["**/toc.yml"],
         "exclude": ["breadcrumb/toc.yml"],
+        "group": "all",
         "src": ".",
         "dest": "api/office_ref_toc"
       },
