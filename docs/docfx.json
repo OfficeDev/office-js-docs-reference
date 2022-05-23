@@ -3,7 +3,7 @@
     "content": [
       {
         "files": ["toc.yml"],
-        "src": "",
+        "src": ".",
         "dest": "api/office_ref_toc"
       },
       {
