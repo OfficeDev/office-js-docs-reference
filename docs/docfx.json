@@ -2,7 +2,8 @@
   "build": {
     "content": [
       {
-        "files": ["toc.yml"],
+        "files": ["**/toc.yml"],
+        "exclude": ["breadcrumb/toc.yml"]
         "src": ".",
         "dest": "api/office_ref_toc"
       },
