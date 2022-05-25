@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 02/11/2022
+ms.date: 05/25/2022
 ms.localizationpriority: medium
 ---
 
@@ -43,8 +43,11 @@ The primary command surface in Word, Excel, PowerPoint, and OneNote is the ribbo
 
 |Element|Description|
 |:-----|:-----|
-|[CustomTab](customtab.md|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **CustomTab** element, you can't use the **OfficeTab** element. The **id** attribute is required.|
+|[CustomTab](customtab.md|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **CustomTab** element, you can't use the **OfficeTab** element. The **id** attribute is required. There can be no more than one **CustomTab** child element.|
 |[OfficeTab](officetab.md)|Required if you want to extend a default Office app ribbon tab (using **PrimaryCommandSurface**). If you use the **OfficeTab** element, you can't use the **CustomTab** element.|
+
+> [!IMPORTANT]
+> There can be no more than one **ExtensionPoint** element in the add-in that has a child **CustomTab** element; and that one **ExtensionPoint** element can have only one **CustomTab**, so there is only one **CustomTab** element across all **ExtensionPoint** elements.
 
 #### Example
 
