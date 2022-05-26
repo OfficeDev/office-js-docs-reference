@@ -1,13 +1,13 @@
 ---
 title: Requirements element in the manifest file
 description: The Requirements element specifies the minimum requirement set and methods your Office Add-in needs to be activated by Office or to override base manifest settings.
-ms.date: 01/26/2022
+ms.date: 05/26/2022
 ms.localizationpriority: medium
 ---
 
 # Requirements element
 
-The meaning of this element depends on whether it's used [in the base manifest](#in-the-base-manifest) or [as a child of a **VersionOverrides** element](#as-a-child-of-a-versionoverrides-element).
+The meaning of this element depends on whether it's used [in the base manifest](#in-the-base-manifest), [as a child of a **VersionOverrides** element](#as-a-child-of-a-versionoverrides-element), or [as a child of the Override element](#as-a-child-of-the-override-element).
 
 > [!TIP]
 > Before using this element, be familiar with [Specify Office hosts and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
@@ -60,6 +60,38 @@ The **Requirements** element serves no purpose in a **VersionOverrides** if it s
 > [!NOTE]
 > In Mail add-ins, it's possible for a **VersionOverrides** 1.1 to be nested inside a **VersionOverrides** 1.0. Office will always use the highest version **VersionOverrides** that is supported by the platform and Office version.
 
+## As a child of the Override element
+
+A **Requirements** element can be a child of an [Override](override.md) element in the context of an ancestor [ExtendedOverrides](extendedoverrides.md) element. An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RequirementTokenOverride** (meaning that the `xsi:type` of it's parent [Token](token.md) element is `RequirementsToken`), then the child **Requirements** element expresses the condition, and the `Value` attribute is the consequent. For example, the first **Override** in the following is read "If the current platform supports FeatureOne version 1.7, then use string 'oldAddinVersion' in place of the `${token.requirements}` token in the URL of the grandparent **ExtendedOverrides** (instead of the default string 'upgrade')." For more information, see [ExtendedOverrides](extendedoverrides.md).
+
+```xml
+<ExtendedOverrides Url="http://contoso.com/addinmetadata/${token.requirements}/extended-manifest-overrides.json">
+    <Tokens>
+        <Token Name="requirements" DefaultValue="upgrade" xsi:type="RequirementsToken">
+            <Override Value="oldAddinVersion">
+                <Requirements>
+                    <Sets>
+                        <Set Name="FeatureOne" MinVersion="1.7" />
+                    </Sets>
+                </Requirements>
+            </Override>
+            <Override Value="currentAddinVersion">
+                <Requirements>
+                    <Sets>
+                        <Set Name="FeatureOne" MinVersion="1.8" />
+                    </Sets>
+                    <Methods>
+                        <Method Name="MethodThree" />
+                    </Methods>
+                </Requirements>
+            </Override>
+        </Token>
+    </Tokens>
+</ExtendedOverrides>
+```
+
+**Add-in type:** Task pane
+
 ## Syntax
 
 ```XML
@@ -72,6 +104,7 @@ The **Requirements** element serves no purpose in a **VersionOverrides** if it s
 
 [OfficeApp](officeapp.md)
 [VersionOverrides](versionoverrides.md)
+[Override](override.md)
 
 ## Can contain
 
