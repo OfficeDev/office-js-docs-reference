@@ -196,6 +196,56 @@
               "name": "Actions",
               "members": [
                 {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#areShortcutsInUse:member(1)",
+                  "docComment": "/**\n * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param shortcuts - An array of shortcut combinations. For example, `[\"Ctrl+1\", \"Ctrl+2\"]`.\n *\n * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:\"Ctrl+1\", inUse:true},{shortcut:\"Ctrl+2\", inUse:false}]`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "areShortcutsInUse(shortcuts: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{shortcut: string, inUse: boolean}[]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "shortcuts",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "areShortcutsInUse"
+                },
+                {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Actions#associate:member",
                   "docComment": "/**\n * Associates the ID or name of an action with a function.\n *\n * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
@@ -220,6 +270,89 @@
                     "startIndex": 1,
                     "endIndex": 2
                   }
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#getShortcuts:member(1)",
+                  "docComment": "/**\n * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\", \"SetUnderline\": null}`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getShortcuts(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{[actionId: string]: string|null}>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getShortcuts"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#replaceShortcuts:member(1)",
+                  "docComment": "/**\n * Replaces existing add-in shortcuts with custom shortcuts for the user.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\"}`. To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)\n *\n * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered. Otherwise, the promise will be rejected with error code and error message. An \"InvalidOperation\" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "replaceShortcuts(shortcuts: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{[actionId: string]: string}"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "shortcuts",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "replaceShortcuts"
                 }
               ],
               "extendsTokenRanges": []
