@@ -541,8 +541,6 @@ export declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
-         * @beta
-         * 
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
          * To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
          * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
@@ -561,8 +559,6 @@ export declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
-         * @beta
-         * 
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
         getShortcuts(): Promise<{[actionId: string]: string|null}>;   
@@ -577,9 +573,7 @@ export declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
-         * @beta
-         * 
-         * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
+         * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`. 
          * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
          */
         areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;
