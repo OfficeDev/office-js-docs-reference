@@ -1,7 +1,7 @@
 ---
 title: CustomTab element in the manifest file
 description: On the ribbon, you specify which tab and group for their add-in commands.
-ms.date: 02/25/2022
+ms.date: 05/25/2022
 ms.localizationpriority: medium
 ---
 
@@ -136,7 +136,7 @@ The following markup example adds the Office Paragraph control group to a custom
 
 ```xml
 <ExtensionPoint xsi:type="ContosoRibbonTab">
-  <CustomTab id="Contoso.TabCustom1">
+  <CustomTab id="Contoso.TabCustom">
     <Group id="Contoso.TabCustom1.group1">
        <!-- additional markup omitted -->
     </Group>
@@ -150,7 +150,7 @@ The following markup example adds the Office Superscript control to a custom gro
 
 ```xml
 <ExtensionPoint xsi:type="ContosoRibbonTab">
-  <CustomTab id="Contoso.TabCustom2">
+  <CustomTab id="Contoso.TabCustom">
     <Group id="Contoso.TabCustom2.group2">
         <Label resid="residCustomTabGroupLabel"/>
         <Icon>

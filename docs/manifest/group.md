@@ -1,7 +1,7 @@
 ---
 title: Group element in the manifest file
 description: Defines a group of UI controls in a tab. 
-ms.date: 02/17/2022
+ms.date: 05/25/2022
 ms.localizationpriority: medium
 ---
 
@@ -117,12 +117,12 @@ Optional (boolean). Specifies whether the **Group** will be hidden on applicatio
 
 ```xml
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
-  <CustomTab id="Contoso.CustomTab3">
-    <Group id="Contoso.CustomTab3.group1">
+  <CustomTab id="Contoso.CustomTab">
+    <Group id="Contoso.CustomTab.group1">
       <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
       <!-- other child elements of the group -->
     </Group>
-    <Label resid="customTabLabel1"/>
+    <Label resid="customTabLabel"/>
   </CustomTab>
 </ExtensionPoint>
 ```

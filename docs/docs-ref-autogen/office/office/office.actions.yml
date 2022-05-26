@@ -39,7 +39,7 @@ methods:
 
       - [SharedRuntime
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;'
@@ -76,7 +76,7 @@ methods:
 
       - [SharedRuntime
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getShortcuts(): Promise<{[actionId: string]: string|null}>;'
@@ -101,7 +101,7 @@ methods:
 
       - [SharedRuntime
       1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;'
