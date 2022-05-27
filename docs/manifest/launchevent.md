@@ -50,7 +50,7 @@ When you include the `OnMessageSend` or `OnAppointmentSend` event in the manifes
 
 If the item doesn't meet the add-in's conditions, the user can choose **Send Anyway** in the alert, or address the issue then try to send the item again. If the add-in is taking a long time to process the item, the user will be prompted with the option to stop running the add-in and choose **Send Anyway**. In the event the add-in is unavailable (for example, there's an error loading the add-in), the item will be sent.
 
-![PromptUser dialog with the Send Anyway and Don't Send options.](../images/outlook-promptUser.png)
+![PromptUser dialog with the Send Anyway and Don't Send options.](/javascript/api/images/outlook-launchevent-promptUser.png)
 
 Use the `PromptUser` option in your add-in if one of the following applies.
 
@@ -63,7 +63,7 @@ Some scenarios where the `PromptUser` option is applied include suggesting to ta
 
 Default option if the **SendMode** property isn't included. The user is alerted that the item they're sending doesn't meet the add-in's conditions and they must address the issue before trying to send the item again. However, if the add-in is unavailable (for example, there's an error loading the add-in), the item will be sent.
 
-![SoftBlock dialog with the Don't Send option.](../images/outlook-soft-block.png)
+![SoftBlock dialog with the Don't Send option.](/javascript/api/images/outlook-launchevent-soft-block.png)
 
 Use the `SoftBlock` option in your add-in when you want a condition to be met before a message or appointment can be sent, but you don't want the user to be blocked from sending the item if the add-in is unavailable. Sample scenarios where the `SoftBlock` option is used include prompting the user to set a message or appointment's importance level and checking that the appropriate signature is applied before the item is sent.
 
@@ -75,7 +75,7 @@ The item isn't sent if any of the following situations occur.
 - The add-in is unable to connect to the server.
 - There's an error loading the add-in.
 
-![Block dialog with the Don't Send option.](../images/outlook-block.png)
+![Block dialog with the Don't Send option.](/javascript/api/images/outlook-launchevent-block.png)
 
 Use the `Block` option if the add-in's conditions are mandatory, even if the add-in is unavailable. For example, the `Block` option is ideal when users are required to apply a sensitivity label to a message or appointment before it can be sent.
 
