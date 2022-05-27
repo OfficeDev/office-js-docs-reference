@@ -77,7 +77,7 @@ The item isn't sent if any of the following situations occur.
 
 ![Block dialog with the Don't Send option.](../images/outlook-block.png)
 
-Use the `Block` option if the add-in's conditions are mandatory, even when the add-in is unavailable. For example, the `Block` option is ideal when users are required to apply a sensitivity label to a message or appointment before it can be sent.
+Use the `Block` option if the add-in's conditions are mandatory, even if the add-in is unavailable. For example, the `Block` option is ideal when users are required to apply a sensitivity label to a message or appointment before it can be sent.
 
 For additional information on each **SendMode** option's behavior in particular scenarios, see [Smart Alerts feature behavior and scenarios](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#smart-alerts-feature-behavior-and-scenarios).
 
