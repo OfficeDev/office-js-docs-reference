@@ -55,7 +55,7 @@ If the item doesn't meet the add-in's conditions, the user can choose **Send Any
 Use the `PromptUser` option in your add-in if one of the following applies.
 
 - The condition checked by the add-in isn't mandatory, but is nice to have in the message or appointment being sent.
-- If you'd like to recommend an action and allow the user to decide whether they want to apply it to the message or appointment being sent.
+- You'd like to recommend an action and allow the user to decide whether they want to apply it to the message or appointment being sent.
 
 Some scenarios where the `PromptUser` option is applied include suggesting to tag the message or appointment as low or high importance and recommending to apply a color category to the item.
 
