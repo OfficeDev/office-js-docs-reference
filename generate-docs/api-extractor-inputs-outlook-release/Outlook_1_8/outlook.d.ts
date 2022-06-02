@@ -7672,7 +7672,7 @@ export declare namespace Office {
          * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
          * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
          * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js-docs-pr/issues/2962 | related GitHub issue}.
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -7700,7 +7700,7 @@ export declare namespace Office {
          * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
          * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
          * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js-docs-pr/issues/2962 | related GitHub issue}.
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
