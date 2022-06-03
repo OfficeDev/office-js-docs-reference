@@ -4,15 +4,16 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "node",
             "request": "launch",
             "name": "Test",
-            "program": "${workspaceRoot}/generate-docs/scripts/preprocessor.js",
-            "args": [],
+            "program": "${workspaceRoot}/generate-docs/tools/whats-new.js",
+            "args": ["excel", "..\\api-extractor-inputs-excel-release\\Excel_1_9\\excel.d.ts", "..\\api-extractor-inputs-excel-release\\Excel_1_8\\excel.d.ts", "..\\..\\docs\\includes\\excel-1_9"],
             "sourceMaps": true,
             "outFiles": [],
-            "cwd": "${workspaceRoot}/generate-docs/scripts",
+            "cwd": "${workspaceRoot}/generate-docs/tools",
             "console": "integratedTerminal"
         },
         {

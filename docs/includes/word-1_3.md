@@ -182,17 +182,10 @@
 ||[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.table#word-word-table-getrange-member(1))|Gets the range that contains this table, or the range at the start or end of the table.|
 ||[headerRowCount](/javascript/api/word/word.table#word-word-table-headerrowcount-member)|Gets and sets the number of header rows.|
 ||[horizontalAlignment](/javascript/api/word/word.table#word-word-table-horizontalalignment-member)|Gets and sets the horizontal alignment of every cell in the table.|
-||[ignorePunct](/javascript/api/word/word.table#word-word-table-ignorepunct-member)||
-||[ignoreSpace](/javascript/api/word/word.table#word-word-table-ignorespace-member)||
 ||[insertContentControl()](/javascript/api/word/word.table#word-word-table-insertcontentcontrol-member(1))|Inserts a content control on the table.|
 ||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation)](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.table#word-word-table-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[isUniform](/javascript/api/word/word.table#word-word-table-isuniform-member)|Indicates whether all of the table rows are uniform.|
-||[matchCase](/javascript/api/word/word.table#word-word-table-matchcase-member)||
-||[matchPrefix](/javascript/api/word/word.table#word-word-table-matchprefix-member)||
-||[matchSuffix](/javascript/api/word/word.table#word-word-table-matchsuffix-member)||
-||[matchWholeWord](/javascript/api/word/word.table#word-word-table-matchwholeword-member)||
-||[matchWildcards](/javascript/api/word/word.table#word-word-table-matchwildcards-member)||
 ||[nestingLevel](/javascript/api/word/word.table#word-word-table-nestinglevel-member)|Gets the nesting level of the table.|
 ||[parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)|Gets the parent body of the table.|
 ||[parentContentControl](/javascript/api/word/word.table#word-word-table-parentcontentcontrol-member)|Gets the content control that contains the table.|
@@ -257,15 +250,8 @@
 ||[getNext()](/javascript/api/word/word.tablerow#word-word-tablerow-getnext-member(1))|Gets the next row.|
 ||[getNextOrNullObject()](/javascript/api/word/word.tablerow#word-word-tablerow-getnextornullobject-member(1))|Gets the next row.|
 ||[horizontalAlignment](/javascript/api/word/word.tablerow#word-word-tablerow-horizontalalignment-member)|Gets and sets the horizontal alignment of every cell in the row.|
-||[ignorePunct](/javascript/api/word/word.tablerow#word-word-tablerow-ignorepunct-member)||
-||[ignoreSpace](/javascript/api/word/word.tablerow#word-word-tablerow-ignorespace-member)||
 ||[insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][])](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))|Inserts rows using this row as a template.|
 ||[isHeader](/javascript/api/word/word.tablerow#word-word-tablerow-isheader-member)|Checks whether the row is a header row.|
-||[matchCase](/javascript/api/word/word.tablerow#word-word-tablerow-matchcase-member)||
-||[matchPrefix](/javascript/api/word/word.tablerow#word-word-tablerow-matchprefix-member)||
-||[matchSuffix](/javascript/api/word/word.tablerow#word-word-tablerow-matchsuffix-member)||
-||[matchWholeWord](/javascript/api/word/word.tablerow#word-word-tablerow-matchwholeword-member)||
-||[matchWildcards](/javascript/api/word/word.tablerow#word-word-tablerow-matchwildcards-member)||
 ||[parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)|Gets parent table.|
 ||[preferredHeight](/javascript/api/word/word.tablerow#word-word-tablerow-preferredheight-member)|Gets and sets the preferred height of the row in points.|
 ||[rowIndex](/javascript/api/word/word.tablerow#word-word-tablerow-rowindex-member)|Gets the index of the row in its parent table.|
