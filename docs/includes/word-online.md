@@ -46,13 +46,6 @@
 |[Document](/javascript/api/word/word.document)|[changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)|Gets or sets the ChangeTracking mode.|
 ||[getEndnoteBody()](/javascript/api/word/word.document#word-word-document-getendnotebody-member(1))|Gets the document's endnotes in a single body.|
 ||[getFootnoteBody()](/javascript/api/word/word.document#word-word-document-getfootnotebody-member(1))|Gets the document's footnotes in a single body.|
-||[ignorePunct](/javascript/api/word/word.document#word-word-document-ignorepunct-member)||
-||[ignoreSpace](/javascript/api/word/word.document#word-word-document-ignorespace-member)||
-||[matchCase](/javascript/api/word/word.document#word-word-document-matchcase-member)||
-||[matchPrefix](/javascript/api/word/word.document#word-word-document-matchprefix-member)||
-||[matchSuffix](/javascript/api/word/word.document#word-word-document-matchsuffix-member)||
-||[matchWholeWord](/javascript/api/word/word.document#word-word-document-matchwholeword-member)||
-||[matchWildcards](/javascript/api/word/word.document#word-word-document-matchwildcards-member)||
 ||[search(searchText: string, searchOptions?: Word.SearchOptions \| {            ignorePunct?: boolean            ignoreSpace?: boolean            matchCase?: boolean            matchPrefix?: boolean            matchSuffix?: boolean            matchWholeWord?: boolean            matchWildcards?: boolean        })](/javascript/api/word/word.document#word-word-document-search-member(1))|Performs a search with the specified search options on the scope of the whole document.|
 |[NoteItem](/javascript/api/word/word.noteitem)|[body](/javascript/api/word/word.noteitem#word-word-noteitem-body-member)|Represents the body object of the note item.|
 ||[delete()](/javascript/api/word/word.noteitem#word-word-noteitem-delete-member(1))|Deletes the note item.|

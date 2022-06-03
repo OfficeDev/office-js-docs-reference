@@ -183,12 +183,18 @@ export class APISet {
 
                         // remove unnecessary parts of the declaration string
                         let newItemText = field.declarationString.replace(/;/g, "");
-                        newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                        newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
+                        
                         if (field.type === FieldType.Property) {
+                            // Remove the optional modifier and type.
                             newItemText = newItemText.replace(/\?/g, "");
+                            newItemText = newItemText.substring(0, newItemText.indexOf(":"));
+                        } else {
+                            // Remove the return type.
+                            newItemText = newItemText.substring(0, newItemText.lastIndexOf(":"));
                         }
 
+                        newItemText = newItemText.replace("readonly ", "");
+                        newItemText = newItemText.replace(/\|/g, "\\|").replace(/\n|\t/gm, "");
                         newItemText = newItemText.replace(/\<any\>/g, "");
 
                         let tableLine = "[" + newItemText + "]("
@@ -282,6 +288,8 @@ function parseDTSInternal(node: ts.Node, allClasses: APISet): void {
         case ts.SyntaxKind.MethodDeclaration:
             parseDTSFieldItem(node as ts.MethodDeclaration, FieldType.Method);
             break;
+        case ts.SyntaxKind.TypeLiteral:
+            return;
         default:
             // the compiler parses comments after the class/field, therefore this connects to the previous item
             if (node.getText().indexOf("/**") >= 0 &&
@@ -297,8 +305,8 @@ function parseDTSInternal(node: ts.Node, allClasses: APISet): void {
             }
     }
 
-    node.getChildren().forEach((element) => {
-        parseDTSInternal(element, allClasses);
+        node.getChildren().forEach((element) => {
+            parseDTSInternal(element, allClasses);
     });
 }
 
@@ -314,10 +322,7 @@ function parseDTSTopLevelItem(
 function parseDTSFieldItem(
     node: ts.PropertySignature | ts.PropertyDeclaration | ts.EnumMember | ts.MethodSignature | ts.MethodDeclaration,
     type: FieldType): void {
-    // checking for and ignoring mid-method parameters for load()
-    if (node.getText().indexOf("expand?") < 0 && node.getText().indexOf("select?") < 0) {
-        const newField: FieldStruct = new FieldStruct(node.getText(), "", type, node.name.getText());
-        topClass.fields.push(newField);
-        lastItem = newField;
-    }
+    const newField: FieldStruct = new FieldStruct(node.getText(), "", type, node.name.getText());
+    topClass.fields.push(newField);
+    lastItem = newField;
 }
