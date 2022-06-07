@@ -8527,17 +8527,17 @@ export declare namespace OfficeExtension {
     const Promise: Office.IPromiseConstructor;
     export type IPromise<T> = Promise<T>;
 
-    /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+    /**
+     * Collection of tracked objects, contained within a request context.
+     * See {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects}
+     * for more information.
+     */
     export class TrackedObjects {
         /** 
          * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
          * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
          * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
          * to the tracked object collection when the object was first created. 
-         * 
-         * This method also has the following signature: 
-         * 
-         * `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
          */
         add(object: ClientObject): void;
         /**
@@ -8551,10 +8551,6 @@ export declare namespace OfficeExtension {
          * Release the memory associated with an object that was previously added to this collection. 
          * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
          * You will need to call `context.sync()` before the memory release takes effect.
-         * 
-         * This method also has the following signature: 
-         * 
-         * `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
          */
         remove(object: ClientObject): void;
         /**
