@@ -749,6 +749,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
                 Used to configure the type of PivotFilter that is applied to the field.
@@ -4901,15 +4902,16 @@ export declare namespace Excel {
          * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
+        
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in the same worksheet or in multiple worksheets.
-         *
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
+         * 
          * @remarks
          * [Api set: ExcelApi 1.13]
          */
         getDirectDependents(): Excel.WorkbookRangeAreas;
         /**
-         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in the same worksheet or in multiple worksheets.
+         * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a specified range in the same worksheet or across multiple worksheets.
          *
          * @remarks
          * [Api set: ExcelApi 1.12]
@@ -7880,10 +7882,11 @@ export declare namespace Excel {
                      to point at the index for which it was created.
          *
          * @remarks
-         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
+         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
+         * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
@@ -10019,6 +10022,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         delete(): void;
+        
+        
+        
+        
         /**
          * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
          *
@@ -14388,6 +14395,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.12]
          */
         getFirst(): Excel.PivotTable;
+        
         /**
          * Gets a PivotTable by name.
          *
@@ -14627,6 +14635,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.8]
          */
         delete(): void;
+        
+        
         /**
          * Refreshes the PivotTable.
          *
@@ -20756,6 +20766,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly connectionSiteCount: number;
+        
         /**
          * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
          *
@@ -23171,6 +23182,7 @@ export declare namespace Excel {
          */
         rows = "Rows"
     }
+    
     /**
      * Represents the horizontal alignment for the specified object.
      *
@@ -43466,6 +43478,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: number;
+            
             /**
              * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
              *
@@ -53340,6 +53353,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
              *
@@ -53532,6 +53546,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
+            
             /**
              * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
              *
@@ -53808,6 +53823,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
+            
             /**
              * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
              *
