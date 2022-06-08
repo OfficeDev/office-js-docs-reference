@@ -32,7 +32,7 @@ call md tool-inputs
 call npm install
 call npm run build
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApiOnline 1.1" ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts
-call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts "ExcelApi 1.15" ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_15\excel.d.ts "ExcelApi 1.15" ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_14\excel.d.ts "ExcelApi 1.14" ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_13\excel.d.ts "ExcelApi 1.13" ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_12\excel.d.ts "ExcelApi 1.12" ..\api-extractor-inputs-excel-release\Excel_1_11\excel.d.ts
