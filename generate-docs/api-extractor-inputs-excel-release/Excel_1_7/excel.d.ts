@@ -275,6 +275,7 @@ export declare namespace Excel {
     
     
     
+    
     /**
      * Provides information about the selection that raised the selection changed event.
                 
@@ -2102,6 +2103,7 @@ export declare namespace Excel {
         getColumnsBefore(count?: number): Excel.Range;
         
         
+        
         /**
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
          *
@@ -3825,10 +3827,11 @@ export declare namespace Excel {
                      to point at the index for which it was created.
          *
          * @remarks
-         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
+         * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding `alwaysInsert` parameter.]
          *
          * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
          * @param values - Optional. A 2D array of unformatted values of the table row.
+         * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
@@ -5107,6 +5110,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         delete(): void;
+        
+        
+        
+        
         
         
         /**
@@ -8240,6 +8247,8 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.PivotTable): void;
         
+        
+        
         /**
          * Refreshes the PivotTable.
          *
@@ -11074,6 +11083,7 @@ export declare namespace Excel {
          */
         rows = "Rows"
     }
+    
     /**
      * Represents the horizontal alignment for the specified object.
      *
@@ -24360,6 +24370,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
+            
             
             
             

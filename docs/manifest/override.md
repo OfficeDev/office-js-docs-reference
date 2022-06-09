@@ -1,7 +1,7 @@
 ---
 title: Override element in the manifest file
 description: The Override element enables you to specify the value of a setting depending on a specified condition.
-ms.date: 01/22/2022
+ms.date: 06/09/2022
 ms.localizationpriority: medium
 ---
 
@@ -228,7 +228,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 <!-- Event-based activation happens in a lightweight runtime.-->
 <Runtimes>
   <!-- HTML file including reference to or inline JavaScript event handlers.
-  This is used by Outlook on the web and Outlook on the new Mac UI preview. -->
+  This is used by Outlook on the web and on the new Mac UI. -->
   <Runtime resid="WebViewRuntime.Url">
     <!-- JavaScript file containing event handlers. This is used by Outlook Desktop. -->
     <Override type="javascript" resid="JSRuntime.Url"/>
