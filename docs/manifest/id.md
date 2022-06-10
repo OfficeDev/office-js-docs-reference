@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Id element
 
-Specifies the unique ID of your Office Add-in as a GUID. Use a random GUID generating tool. The GUID should be hyphenated, but have no other punctuation.
+Specifies the unique ID of your Office Add-in as a GUID. Use a random GUID generating tool to get your GUID. The GUID should be hyphenated, but have no other punctuation.
 
 **Add-in type:** Content, Task pane, Mail
 
