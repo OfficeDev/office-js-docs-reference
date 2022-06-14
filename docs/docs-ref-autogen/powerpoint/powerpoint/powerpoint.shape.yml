@@ -28,10 +28,8 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fill: PowerPoint.ShapeFill;'
@@ -44,10 +42,8 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
       value.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'height: number;'
@@ -70,10 +66,8 @@ properties:
     package: powerpoint!
     fullName: left
     summary: 'The distance, in points, from the left side of the shape to the left side of the slide.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'left: number;'
@@ -84,10 +78,8 @@ properties:
     package: powerpoint!
     fullName: lineFormat
     summary: Returns the line formatting of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly lineFormat: PowerPoint.ShapeLineFormat;'
@@ -98,10 +90,8 @@ properties:
     package: powerpoint!
     fullName: name
     summary: Specifies the name of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string;'
@@ -124,10 +114,8 @@ properties:
     package: powerpoint!
     fullName: textFrame
     summary: Returns the text frame object of this shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textFrame: PowerPoint.TextFrame;'
@@ -138,10 +126,8 @@ properties:
     package: powerpoint!
     fullName: top
     summary: 'The distance, in points, from the top edge of the shape to the top edge of the slide.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'top: number;'
@@ -152,10 +138,8 @@ properties:
     package: powerpoint!
     fullName: type
     summary: 'Returns the type of this shape. See [PowerPoint.ShapeType](xref:powerpoint!PowerPoint.ShapeType:enum) for details.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
@@ -170,10 +154,8 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
       value.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'width: number;'

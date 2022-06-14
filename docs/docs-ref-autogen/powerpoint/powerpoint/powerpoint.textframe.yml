@@ -4,10 +4,8 @@ uid: 'powerpoint!PowerPoint.TextFrame:class'
 package: powerpoint!
 fullName: PowerPoint.TextFrame
 summary: Represents the text frame of a shape object.
-remarks: >-
-  \[ [API set: PowerPointApi BETA (PREVIEW
-  ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-isPreview: true
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -18,10 +16,8 @@ properties:
     summary: >-
       The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
       text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -36,10 +32,8 @@ properties:
     package: powerpoint!
     fullName: bottomMargin
     summary: 'Represents the bottom margin, in points, of the text frame.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bottomMargin: number;'
@@ -53,7 +47,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -64,10 +58,8 @@ properties:
     package: powerpoint!
     fullName: hasText
     summary: Specifies if the text frame contains text.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly hasText: boolean;'
@@ -78,10 +70,8 @@ properties:
     package: powerpoint!
     fullName: leftMargin
     summary: 'Represents the left margin, in points, of the text frame.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'leftMargin: number;'
@@ -92,10 +82,8 @@ properties:
     package: powerpoint!
     fullName: rightMargin
     summary: 'Represents the right margin, in points, of the text frame.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'rightMargin: number;'
@@ -108,10 +96,8 @@ properties:
     summary: >-
       Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
       text. See [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) for details.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly textRange: PowerPoint.TextRange;'
@@ -122,10 +108,8 @@ properties:
     package: powerpoint!
     fullName: topMargin
     summary: 'Represents the top margin, in points, of the text frame.'
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'topMargin: number;'
@@ -138,10 +122,8 @@ properties:
     summary: >-
       Represents the vertical alignment of the text frame. See
       [PowerPoint.TextVerticalAlignment](xref:powerpoint!PowerPoint.TextVerticalAlignment:enum) for details.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -156,10 +138,8 @@ properties:
     package: powerpoint!
     fullName: wordWrap
     summary: Determines whether lines break automatically to fit text inside the shape.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'wordWrap: boolean;'
@@ -171,10 +151,8 @@ methods:
     package: powerpoint!
     fullName: deleteText()
     summary: Deletes all the text in the text frame.
-    remarks: >-
-      \[ [API set: PowerPointApi BETA (PREVIEW
-      ONLY)](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
-    isPreview: true
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deleteText(): void;'
@@ -206,7 +184,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(options?: PowerPoint.Interfaces.TextFrameLoadOptions): PowerPoint.TextFrame;'
@@ -225,7 +203,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): PowerPoint.TextFrame;'
@@ -244,7 +222,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -276,7 +254,7 @@ methods:
       plain JavaScript object (typed as `PowerPoint.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): PowerPoint.Interfaces.TextFrameData;'

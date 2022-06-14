@@ -10526,6 +10526,10 @@ export declare namespace Office {
          *     <td>The mailbox is associated with a personal Outlook.com account.</td>
          *   </tr>
          * </table>
+         * 
+         * **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted.
+         * If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's hosted on 
+         * Exchange Online, the account type value is **office365**.
          */
         accountType: string;
         /**
