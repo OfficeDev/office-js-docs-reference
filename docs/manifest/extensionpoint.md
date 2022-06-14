@@ -403,7 +403,7 @@ This extension point adds an event handler for a specified event. For more infor
 
 ### DetectedEntity
 
-This extension point adds a contextual add-in activation on a specified entity type.
+This extension point adds a contextual add-in activation on a specified entity type. For more information about using this extension point, see [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins).
 
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
