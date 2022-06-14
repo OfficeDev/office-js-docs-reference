@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
-ms.date: 12/14/2021
+ms.date: 06/13/2022
 ms.prod: powerpoint
 ms.localizationpriority: high
 ---
@@ -14,6 +14,7 @@ The following table lists the PowerPoint requirement sets, the Office client app
 
 |  Requirement set  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web |
 |:-----|-----|:-----|:-----|:-----|:-----|
+| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md)  | Version 2207 (Build 15330.20122) or later| not yet<br>supported | 16.62 or later | May 2022 |
 | [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md)  | Version 2111 (Build 14701.20060) or later| not yet<br>supported | 16.55 or later | December 2021 |
 | [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md)  | Version 2011 (Build 13426.20184) or later| not yet<br>supported | 16.43 or later | October 2020 |
 | [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Version 1810 (Build 11001.20074) or later | 2.17 or later | 16.19 or later | October 2018 |
@@ -35,6 +36,10 @@ PowerPoint JavaScript API 1.2 adds support for inserting slides from another Pow
 ## PowerPoint JavaScript API 1.3
 
 PowerPoint JavaScript API 1.3 adds additional support for adding and deleting slides. It also lets add-ins apply custom metadata tags. For details about the APIs, see [Add and delete slides in PowerPoint](/office/dev/add-ins/powerpoint/add-slides) and [Use custom tags for presentations, slides, and shapes in PowerPoint](/office/dev/add-ins/powerpoint/tagging-presentations-slides-shapes).
+
+## PowerPoint JavaScript API 1.4
+
+PowerPoint JavaScript API 1.4 adds additional support for adding, moving, sizing, formatting, and deleting shapes. For more information about using these APIs, see [Working with shapes](/office/dev/add-ins/powerpoint/shapes.md).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 

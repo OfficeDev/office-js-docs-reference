@@ -66,8 +66,8 @@ methods:
       object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
       new rows are added, a table row will continue to point at the index for which it was created.
     remarks: >-
-      \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
-      rows.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows; 1.15 for adding
+      `alwaysInsert` parameter.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -102,7 +102,10 @@ methods:
           description: Optional. A 2D array of unformatted values of the table row.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
         - id: alwaysInsert
-          description: ''
+          description: >-
+            Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If
+            `true`<!-- -->, the new rows will be inserted into the table. If `false`<!-- -->, the new rows will be added
+            below the table. Default is `true`<!-- -->.
           type: boolean
       return:
         type: '<xref uid="excel!Excel.TableRow:class" />'

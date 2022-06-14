@@ -8537,14 +8537,16 @@ export declare namespace OfficeExtension {
          * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
          * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
          * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
-         * to the tracked object collection when the object was first created. 
+         * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
+         * the parent collection.
          */
         add(object: ClientObject): void;
         /**
          * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
          * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
          * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
-         * to the tracked object collection when the object was first created.
+         * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
+         * the parent collection.
          */
         add(objects: ClientObject[]): void;
         /** 

@@ -70,6 +70,7 @@ call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\ou
 call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts Outlook 1.1
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_4\powerpoint.d.ts "PowerPointApi 1.4" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts "PowerPointApi 1.3" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts
@@ -112,7 +113,8 @@ call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_3\
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts ..\..\docs\includes\outlook-1_2
 call node whats-new outlook ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts .\tool-inputs\outlook-base.d.ts ..\..\docs\includes\outlook-1_1
 
-call node whats-new powerpoint ..\api-extractor-inputs-powerpoint\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts ..\..\docs\includes\powerpoint-preview
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_4\powerpoint.d.ts ..\..\docs\includes\powerpoint-preview
+call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_4\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts ..\..\docs\includes\powerpoint-1_4
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\..\docs\includes\powerpoint-1_3
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts ..\..\docs\includes\powerpoint-1_2
 call node whats-new powerpoint ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts .\tool-inputs\powerpoint-base.d.ts ..\..\docs\includes\powerpoint-1_1
@@ -327,6 +329,12 @@ if NOT EXIST "json/powerpoint" (
     call ..\node_modules\.bin\api-extractor run
     popd
 )
+if NOT EXIST "json/powerpoint_1_4" (
+    echo Running API Extractor for PowerPoint 1.4.
+    pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_4
+    call ..\..\node_modules\.bin\api-extractor run
+    popd
+)
 if NOT EXIST "json/powerpoint_1_3" (
     echo Running API Extractor for PowerPoint 1.3.
     pushd api-extractor-inputs-powerpoint-release\PowerPoint_1_3
@@ -440,6 +448,7 @@ if NOT EXIST "yaml/powerpoint" ( call .\node_modules\.bin\api-documenter yaml --
 if NOT EXIST "yaml/powerpoint_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_1 --output-folder .\yaml\powerpoint_1_1 --office 2> nul )
 if NOT EXIST "yaml/powerpoint_1_2" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_2 --output-folder .\yaml\powerpoint_1_2 --office 2> nul )
 if NOT EXIST "yaml/powerpoint_1_3" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_3 --output-folder .\yaml\powerpoint_1_3 --office 2> nul )
+if NOT EXIST "yaml/powerpoint_1_4" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\powerpoint_1_4 --output-folder .\yaml\powerpoint_1_4 --office 2> nul )
 if NOT EXIST "yaml/visio" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\visio --output-folder .\yaml\visio --office )
 if NOT EXIST "yaml/word" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word --output-folder .\yaml\word --office )
 if NOT EXIST "yaml/word_1_1" ( call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_1 --output-folder .\yaml\word_1_1 --office 2> nul )
