@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript preview APIs
 description: Details about upcoming PowerPoint JavaScript APIs.
-ms.date: 12/14/2021
+ms.date: 06/13/2022
 ms.prod: powerpoint
 ms.localizationpriority: medium
 ---
@@ -16,12 +16,11 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| Slide management | Adds support for adding slides as well as managing slide layouts and slide masters. | [Slide](/javascript/api/powerpoint/powerpoint.slide)<br>[SlideLayout](/javascript/api/powerpoint/powerpoint.slidelayout)<br>[SlideMaster](/javascript/api/powerpoint/powerpoint.slidemaster)|
-| Shapes | Adds support for getting references to the shapes in a slide. | [Shape](/javascript/api/powerpoint/powerpoint.shape) |
+| Selection APIs | Adds more ways to programmatically select slides, shapes, and text ranges. | See the table later in this article. |
 
 ## API list
 
-The following table lists the PowerPoint JavaScript APIs currently in preview. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
+The following table lists the PowerPoint JavaScript APIs currently in preview. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
 [!INCLUDE[API table](../../includes/powerpoint-preview.md)]

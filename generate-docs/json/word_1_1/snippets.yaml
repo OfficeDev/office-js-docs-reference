@@ -2739,6 +2739,36 @@
         await context.sync();
         console.log("Added a header to the first section.");
     });  
+'Word.Section:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next page");
+    });
+'Word.SectionCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next even page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next even page");
+    });
 'Word.Setting#delete:member(1)':
   - |-
     // Run a batch operation against the Word object model.

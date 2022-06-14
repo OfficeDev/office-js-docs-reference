@@ -970,7 +970,7 @@ items:
             href: ../../manifest/scopes.md
           - name: Script
             href: ../../manifest/script.md
-          - name: SourceLocation (custom functions)
+          - name: SourceLocation (version overrides)
             href: ../../manifest/customfunctionssourcelocation.md
           - name: Supertip
             href: ../../manifest/supertip.md
@@ -1252,6 +1252,10 @@ items:
             displayName: PowerPoint
           - name: PowerPointApi preview requirement set
             href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.4 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-4-requirement-set.md
             displayName: PowerPoint
           - name: PowerPointApi 1.3 requirement set
             href: >-

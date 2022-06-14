@@ -10235,7 +10235,7 @@ Word.SearchOptions,newObject(context),Method,Poor,false
 Word.SearchOptions,set(properties,Method,Poor,false
 Word.SearchOptions,set(properties),Method,Poor,false
 Word.SearchOptions,toJSON(),Method,Poor,false
-Word.Section,N/A,Class,Good,false
+Word.Section,N/A,Class,Good,true
 Word.Section,body,Property,Good,false
 Word.Section,context,Property,Good,false
 Word.Section,getFooter(type),Method,Poor,true
@@ -10252,7 +10252,7 @@ Word.Section,set(properties),Method,Poor,false
 Word.Section,toJSON(),Method,Poor,false
 Word.Section,track(),Method,Poor,false
 Word.Section,untrack(),Method,Poor,false
-Word.SectionCollection,N/A,Class,Good,false
+Word.SectionCollection,N/A,Class,Good,true
 Word.SectionCollection,context,Property,Good,false
 Word.SectionCollection,items,Property,Fine,false
 Word.SectionCollection,getFirst(),Method,Poor,false

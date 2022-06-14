@@ -1306,8 +1306,8 @@ methods:
     package: excel!
     fullName: getDirectDependents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in
-      the same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a
+      specified range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1352,8 +1352,8 @@ methods:
     package: excel!
     fullName: getDirectPrecedents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in
-      the same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
+      specified range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1918,8 +1918,8 @@ methods:
     package: excel!
     fullName: getPrecedents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the
-      same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified
+      range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

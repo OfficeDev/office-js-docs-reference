@@ -117,6 +117,9 @@ export declare namespace PowerPoint {
          */
         slideMasterId?: string;
     }
+    
+    
+    
     /**
      * Specifies the formatting options for when slides are inserted.
      *
@@ -172,6 +175,9 @@ export declare namespace PowerPoint {
          */
         targetSlideId?: string;
     }
+    
+    
+    
     /**
      * Represents the collection of shapes.
      *
@@ -183,6 +189,11 @@ export declare namespace PowerPoint {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: PowerPoint.Shape[];
+        
+        
+        
+        
+        
         /**
          * Gets the number of shapes in the collection.
          *
@@ -660,6 +671,18 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.SlideData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Represents a single shape in the slide.
      *
@@ -669,6 +692,8 @@ export declare namespace PowerPoint {
     export class Shape extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
         /**
          * Returns a collection of tags in the shape.
          *
@@ -676,6 +701,8 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly tags: PowerPoint.TagCollection;
+        
+        
         /**
          * Gets the unique ID of the shape.
          *
@@ -683,6 +710,11 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         readonly id: string;
+        
+        
+        
+        
+        
         /**
          * Deletes the shape from the shape collection. Does nothing if the shape does not exist.
          *
@@ -893,6 +925,14 @@ export declare namespace PowerPoint {
             */
             $skip?: number;
         }
+        /** An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`. */
+        export interface BulletFormatUpdateData {
+            
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
+            
+        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: PowerPoint.Interfaces.ShapeData[];
@@ -915,6 +955,51 @@ export declare namespace PowerPoint {
         export interface TagCollectionUpdateData {
             items?: PowerPoint.Interfaces.TagData[];
         }
+        /** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
+        export interface ShapeFillUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
+        export interface ShapeLineFormatUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
+        export interface ShapeFontUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
+        export interface TextRangeUpdateData {
+            
+        }
+        /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
+        export interface TextFrameUpdateData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
+        export interface ShapeUpdateData {
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
@@ -926,6 +1011,14 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `presentation.toJSON()`. */
         export interface PresentationData {
             title?: string;
+        }
+        /** An interface describing the data returned by calling `bulletFormat.toJSON()`. */
+        export interface BulletFormatData {
+            
+        }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
+            
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
@@ -1000,8 +1093,48 @@ export declare namespace PowerPoint {
              */
             id?: string;
         }
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
+        export interface ShapeFillData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
+        export interface ShapeLineFormatData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
+        export interface ShapeFontData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `textRange.toJSON()`. */
+        export interface TextRangeData {
+            
+        }
+        /** An interface describing the data returned by calling `textFrame.toJSON()`. */
+        export interface TextFrameData {
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
+            
             /**
              * Gets the unique ID of the shape.
              *
@@ -1009,6 +1142,11 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: string;
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
@@ -1029,6 +1167,8 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
+        
+        
         /**
          * Represents the collection of shapes.
          *
@@ -1040,6 +1180,10 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
             /**
              * For EACH ITEM in the collection: Gets the unique ID of the shape.
              *
@@ -1047,6 +1191,11 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            
+            
+            
+            
+            
         }
         /**
          * Represents the layout of a slide.
@@ -1211,6 +1360,11 @@ export declare namespace PowerPoint {
              */
             id?: boolean;
         }
+        
+        
+        
+        
+        
         /**
          * Represents a single shape in the slide.
          *
@@ -1222,6 +1376,10 @@ export declare namespace PowerPoint {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
+            
             /**
              * Gets the unique ID of the shape.
              *
@@ -1229,6 +1387,11 @@ export declare namespace PowerPoint {
              * [Api set: PowerPointApi 1.3]
              */
             id?: boolean;
+            
+            
+            
+            
+            
         }
         /**
          * Represents the collection of slides in the presentation.

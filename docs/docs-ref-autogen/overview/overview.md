@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 05/20/2022
+ms.date: 06/13/2022
 ---
 
 # Office Add-ins JavaScript API reference
@@ -112,6 +112,7 @@ The online-only requirement set is a special requirement set. It contains the la
             <h3>PowerPoint APIs</h3>
             <ul>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-preview">PowerPointApi Preview</a></li>
+                <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.4">PowerPointApi 1.4</a></li>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.3">PowerPointApi 1.3</a></li>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.2">PowerPointApi 1.2</a></li>
                 <li><a href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
