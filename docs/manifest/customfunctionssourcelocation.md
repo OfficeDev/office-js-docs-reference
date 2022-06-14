@@ -29,7 +29,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-- [ExtensionPoint](extensionpoint.md) ([Contextual](extensionpoint#detectedentity) and [LaunchEvent](extensionpoint#launchevent) mail add-ins)
+- [ExtensionPoint](extensionpoint.md) ([Contextual](extensionpoint.md#detectedentity) and [LaunchEvent](extensionpoint.md#launchevent) mail add-ins)
 - [Page](page.md)
 - [Script](script.md)
 
