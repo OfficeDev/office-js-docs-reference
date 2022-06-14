@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # What's new in PowerPoint JavaScript API 1.4
 
-PowerPointApi 1.4 added additional support for shapes management.
+PowerPointApi 1.4 added additional support for management of shapes.
 
 The first table provides a concise summary of the APIs, while the subsequent table gives a detailed list.
 
