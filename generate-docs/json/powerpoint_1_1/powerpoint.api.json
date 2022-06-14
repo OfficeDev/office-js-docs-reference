@@ -416,6 +416,36 @@
               "members": [
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.BulletFormatData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `bulletFormat.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface BulletFormatData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "BulletFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the BulletFormat object, for use in `bulletFormat.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface BulletFormatUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "BulletFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface",
                   "docComment": "/**\n * Provides ways to load properties of only a subset of members of a collection.\n */\n",
                   "excerptTokens": [
@@ -480,6 +510,36 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `paragraphFormat.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ParagraphFormatData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ParagraphFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ParagraphFormatUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ParagraphFormatUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -698,6 +758,111 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeFillData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeFill.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeFillData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFillData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeFillUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeFillUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFillUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeFontData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeFont.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeFontData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFontData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeFontUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeFontUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFontUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLineFormatData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeLineFormat.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeLineFormatData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeLineFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeLineFormatUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeLineFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Shape object, for use in `shape.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1149,6 +1314,66 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TagUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TextFrameData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `textFrame.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TextFrameData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextFrameData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TextFrameUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TextFrameUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextFrameUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TextRangeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `textRange.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TextRangeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextRangeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.TextRangeUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TextRangeUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextRangeUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 }

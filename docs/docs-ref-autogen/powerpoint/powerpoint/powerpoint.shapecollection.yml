@@ -51,7 +51,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
       await PowerPoint.run(async (context) => {
         var shapes = context.presentation.slides.getItemAt(0).shapes;
@@ -185,7 +185,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
       await PowerPoint.run(async (context) => {
         var shapes = context.presentation.slides.getItemAt(0).shapes;
@@ -266,7 +266,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
       await PowerPoint.run(async (context) => {
         var shapes = context.presentation.slides.getItemAt(0).shapes;

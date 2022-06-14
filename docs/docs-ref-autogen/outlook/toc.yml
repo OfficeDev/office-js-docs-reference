@@ -601,7 +601,7 @@ items:
             href: ../../manifest/scopes.md
           - name: Script
             href: ../../manifest/script.md
-          - name: SourceLocation (custom functions)
+          - name: SourceLocation (version overrides)
             href: ../../manifest/customfunctionssourcelocation.md
           - name: Supertip
             href: ../../manifest/supertip.md
