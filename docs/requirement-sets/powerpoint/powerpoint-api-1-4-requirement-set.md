@@ -14,7 +14,7 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| [Shape management](/office/dev/add-ins/powerpoint/shapes) | Adds support for adding, moving, sizing, formatting, and removiing shapes. | [ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill)<br>[ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont)<br>[ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat)|
+| [Shape management](/office/dev/add-ins/powerpoint/shapes) | Adds support for adding, moving, sizing, formatting, and removing shapes. | [ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill)<br>[ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont)<br>[ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat)|
 
 ## API list
 
