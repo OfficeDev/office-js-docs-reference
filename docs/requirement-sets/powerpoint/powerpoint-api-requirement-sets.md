@@ -14,7 +14,7 @@ The following table lists the PowerPoint requirement sets, the Office client app
 
 |  Requirement set  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web |
 |:-----|-----|:-----|:-----|:-----|:-----|
-| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md)  | Version 2207 (Build 15407.20000) or later| not yet<br>supported | 16.55 or later | June 2022 |
+| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md)  | Version 2207 (Build 15330.20122) or later| not yet<br>supported | 16.62 or later | May 2022 |
 | [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md)  | Version 2111 (Build 14701.20060) or later| not yet<br>supported | 16.55 or later | December 2021 |
 | [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md)  | Version 2011 (Build 13426.20184) or later| not yet<br>supported | 16.43 or later | October 2020 |
 | [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Version 1810 (Build 11001.20074) or later | 2.17 or later | 16.19 or later | October 2018 |
