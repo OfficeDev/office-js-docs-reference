@@ -70,7 +70,7 @@ call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\ou
 call node ..\scripts\versioned-dts-cleanup ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts Outlook 1.1
 call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts "Mailbox 1.1" .\tool-inputs\outlook-base.d.ts
 
-call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts "PowerPointApi 1.4" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts
+call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_4\powerpoint.d.ts "PowerPointApi 1.4" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_3\powerpoint.d.ts "PowerPointApi 1.3" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_2\powerpoint.d.ts "PowerPointApi 1.2" ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts
 call node version-remover ..\api-extractor-inputs-powerpoint-release\powerpoint_1_1\powerpoint.d.ts "PowerPointApi 1.1" .\tool-inputs\powerpoint-base.d.ts

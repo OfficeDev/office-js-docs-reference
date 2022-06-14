@@ -20,7 +20,7 @@ The first table provides a concise summary of the APIs, while the subsequent tab
 
 ## API list
 
-The following table lists the PowerPoint JavaScript APIs currently in preview. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
+The following table lists the PowerPoint JavaScript APIs currently in preview. For a complete list of all PowerPoint JavaScript APIs (including preview APIs and previously released APIs), see [all PowerPoint JavaScript APIs](/javascript/api/powerpoint?view=powerpoint-js-preview&preserve-view=true).
 
 
 [!INCLUDE[API table](../../includes/powerpoint-preview.md)]
