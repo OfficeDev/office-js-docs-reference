@@ -535,6 +535,69 @@ Excel.NamedItemCollection#load:member(2):
             console.log(nameditems.items[i].name);
         }
     });
+Excel.Query#name:member:
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the name of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Name of each query: ")
+        console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+    });
+Excel.Query#refreshDate:member:
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the last refresh date of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Last refresh date of each query: ")
+        console.log("  " + queries.items.map((query) => query.refreshDate).join("\n  "));
+    });       
+Excel.Query#rowsLoadedCount:member:
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the number of rows loaded in each query.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Rows loaded from each query: ")
+        console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
+    });
+Excel.QueryCollection#items:member:
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the name of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Name of each query: ")
+        console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+    });
+Excel.QueryCollection#getCount:member(1):
+  - |-
+    await Excel.run(async (context) => { 
+      // This method retrieves the query collection in a workbook and then 
+      // logs the number of queries in the collection to the console.
+      const queries = context.workbook.queries; 
+      const count = queries.getCount();
+      await context.sync();
+
+      console.log("Query count: " + count.value);
+    });
 Excel.Range#clear:member(1):
   - |-
     // Clear the format and contents of the range.
