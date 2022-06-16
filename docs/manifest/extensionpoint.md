@@ -367,7 +367,7 @@ This extension point enables an add-in to activate based on supported events in 
 |  Element |  Description  |
 |:-----|:-----|
 | [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
-| [SourceLocation](sourcelocation.md) |  The location of the source JavaScript file.  |
+| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
 
 #### Example
 
@@ -416,7 +416,7 @@ The containing [VersionOverrides](versionoverrides.md) element must have an `xsi
 |  Element |  Description  |
 |:-----|:-----|
 |  [Label](#label) |  Specifies the label for the add-in in the contextual window.  |
-|  [SourceLocation](sourcelocation.md) |  Specifies the URL for the contextual window.  |
+|  [SourceLocation](customfunctionssourcelocation.md) |  Specifies the URL for the contextual window.  |
 |  [Rule](rule.md) |  Specifies the rule or rules that determine when an add-in activates.  |
 
 #### Label
