@@ -1058,7 +1058,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "office!Office.AddinCommands.EventCompletedOptions#allowEvent:member",
-                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
+                      "docComment": "/**\n * When the completed method is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

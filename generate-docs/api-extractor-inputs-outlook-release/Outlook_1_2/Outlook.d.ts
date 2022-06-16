@@ -782,9 +782,9 @@ export declare namespace Office {
         *
         * - Windows: 500 members
         *
-        * - Mac: 100 members
+        * - Classic Mac UI: 100 members
         *
-        * - Other: No limit
+        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -820,9 +820,9 @@ export declare namespace Office {
         *
         * - Windows: 500 members
         *
-        * - Mac: 100 members
+        * - Classic Mac UI: 100 members
         *
-        * - Other: No limit
+        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -1061,9 +1061,9 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
-         * - Other: No limit
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -1091,9 +1091,9 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
-         * - Other: No limit
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -3056,11 +3056,11 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
          * - Web browser: 20 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          *
@@ -3303,11 +3303,11 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
          * - Web browser: 20 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          *
@@ -3609,9 +3609,9 @@ export declare namespace Office {
          * - Windows: 100 recipients.
          * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Mac, web browser: 100 recipients
+         * - Classic Mac UI, web browser: 100 recipients
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3647,9 +3647,9 @@ export declare namespace Office {
          * - Windows: 100 recipients.
          * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Mac, web browser: 100 recipients
+         * - Classic Mac UI, web browser: 100 recipients
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3673,9 +3673,9 @@ export declare namespace Office {
          * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
          * objects. Collection size limits:
          *
-         * - Windows, Mac, web browser: 500 members
+         * - Windows, classic Mac UI, web browser: 500 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
          * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
@@ -3701,9 +3701,9 @@ export declare namespace Office {
          * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
          * objects. Collection size limits:
          *
-         * - Windows, Mac, web browser: 500 members
+         * - Windows, classic Mac UI, web browser: 500 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
          * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
@@ -3736,9 +3736,12 @@ export declare namespace Office {
          *
          * Maximum number that can be set:
          *
-         * - Windows, Mac, web browser: 100 recipients
+         * - Windows: 100 recipients.
+         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Other: No limit
+         * - Classic Mac UI, web browser: 100 recipients
+         *
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3774,9 +3777,12 @@ export declare namespace Office {
          *
          * Maximum number that can be set:
          *
-         * - Windows, Mac, web browser: 100 recipients
+         * - Windows: 100 recipients.
+         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Other: No limit
+         * - Classic Mac UI, web browser: 100 recipients
+         *
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
