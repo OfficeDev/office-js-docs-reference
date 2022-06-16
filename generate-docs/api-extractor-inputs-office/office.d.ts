@@ -1084,15 +1084,15 @@ export declare namespace Office {
          */
         export interface EventCompletedOptions {
             /**
-             * A boolean value. When the completed method is used to signal completion of an event handler,
+             * When the completed method is used to signal completion of an event handler,
              * this value indicates if the handled event should continue execution or be canceled.
              * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
              */
             allowEvent: boolean;
 
             /**
-             * A string value. When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
-             * this value sets the error message that will be displayed to the user. For an example, refer to
+             * When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
+             * this value sets the error message that will be displayed to the user. For an example, refer to the 
              * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
              * 
              * [Api set: Mailbox preview]
