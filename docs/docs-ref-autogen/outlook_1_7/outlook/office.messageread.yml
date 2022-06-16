@@ -157,13 +157,13 @@ properties:
       - Windows: 500 members
 
 
-      - Mac: 100 members
+      - Classic Mac UI: 100 members
 
 
       - Web browser: 20 members
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1043,13 +1043,13 @@ properties:
       - Windows: 500 members
 
 
-      - Mac: 100 members
+      - Classic Mac UI: 100 members
 
 
       - Web browser: 20 members
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:

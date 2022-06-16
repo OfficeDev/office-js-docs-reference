@@ -68,7 +68,24 @@ properties:
     package: excel!
     fullName: name
     summary: Gets the name of the query. Query names cannot contain periods or quotation marks.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          // This method retrieves the query collection in a workbook, 
+          // loads the query items in that collection, and then 
+          // logs the name of each query to the console.
+          const queries = context.workbook.queries; 
+          queries.load("items"); 
+          await context.sync(); 
+
+          console.log("Name of each query: ")
+          console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +97,24 @@ properties:
     package: excel!
     fullName: refreshDate
     summary: Gets the date and time when the query was last refreshed.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          // This method retrieves the query collection in a workbook, 
+          // loads the query items in that collection, and then 
+          // logs the last refresh date of each query to the console.
+          const queries = context.workbook.queries; 
+          queries.load("items"); 
+          await context.sync(); 
+
+          console.log("Last refresh date of each query: ")
+          console.log("  " + queries.items.map((query) => query.refreshDate).join("\n  "));
+      });       
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +128,24 @@ properties:
     summary: >-
       Gets the number of rows that were loaded when the query was last refreshed. If last refresh has errors the value
       will be -1.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          // This method retrieves the query collection in a workbook, 
+          // loads the query items in that collection, and then 
+          // logs the number of rows loaded in each query.
+          const queries = context.workbook.queries; 
+          queries.load("items"); 
+          await context.sync(); 
+
+          console.log("Rows loaded from each query: ")
+          console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -47,10 +47,10 @@ methods:
       field on the item is 500 recipients.
 
 
-      - Mac, web browser: 100 recipients
+      - Classic Mac UI, web browser: 100 recipients
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -154,10 +154,10 @@ methods:
       field on the item is 500 recipients.
 
 
-      - Mac, web browser: 100 recipients
+      - Classic Mac UI, web browser: 100 recipients
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -209,10 +209,10 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
 
 
-      - Windows, Mac, web browser: 500 members
+      - Windows, classic Mac UI, web browser: 500 members
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
 
 
       **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link
@@ -266,10 +266,10 @@ methods:
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
 
 
-      - Windows, Mac, web browser: 500 members
+      - Windows, classic Mac UI, web browser: 500 members
 
 
-      - Other: No limit
+      - New Mac UI, Android: No limit
 
 
       **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link
@@ -419,24 +419,36 @@ methods:
     uid: 'outlook!Office.Recipients#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(recipients, options, callback)'
-    summary: |-
+    summary: >-
       Sets a recipient list for an appointment or message.
+
 
       The `setAsync` method overwrites the current recipient list.
 
+
       The recipients parameter can be an array of one of the following:
+
 
       - Strings containing SMTP email addresses
 
+
       - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
 
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
+
       Maximum number that can be set:
 
-      - Windows, Mac, web browser: 100 recipients
 
-      - Other: No limit
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Classic Mac UI, web browser: 100 recipients
+
+
+      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -485,24 +497,36 @@ methods:
     uid: 'outlook!Office.Recipients#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(recipients, callback)'
-    summary: |-
+    summary: >-
       Sets a recipient list for an appointment or message.
+
 
       The `setAsync` method overwrites the current recipient list.
 
+
       The recipients parameter can be an array of one of the following:
+
 
       - Strings containing SMTP email addresses
 
+
       - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
+
 
       - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
+
       Maximum number that can be set:
 
-      - Windows, Mac, web browser: 100 recipients
 
-      - Other: No limit
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
+      field on the item is 500 recipients.
+
+
+      - Classic Mac UI, web browser: 100 recipients
+
+
+      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

@@ -1019,7 +1019,7 @@ export declare namespace Office {
          */
         export interface EventCompletedOptions {
             /**
-             * A boolean value. When the completed method is used to signal completion of an event handler, 
+             * When the completed method is used to signal completion of an event handler, 
              * this value indicates if the handled event should continue execution or be canceled. 
              * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
              */

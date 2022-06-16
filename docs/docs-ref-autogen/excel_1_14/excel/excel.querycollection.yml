@@ -35,13 +35,46 @@ properties:
       content: 'readonly items: Excel.Query[];'
       return:
         type: '<xref uid="excel!Excel.Query:class" />[]'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              // This method retrieves the query collection in a workbook, 
+              // loads the query items in that collection, and then 
+              // logs the name of each query to the console.
+              const queries = context.workbook.queries; 
+              queries.load("items"); 
+              await context.sync(); 
+
+              console.log("Name of each query: ")
+              console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+          });
+          ```
 methods:
   - name: getCount()
     uid: 'excel!Excel.QueryCollection#getCount:member(1)'
     package: excel!
     fullName: getCount()
     summary: Gets the number of queries in the workbook.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => { 
+        // This method retrieves the query collection in a workbook and then 
+        // logs the number of queries in the collection to the console.
+        const queries = context.workbook.queries; 
+        const count = queries.getCount();
+        await context.sync();
+
+        console.log("Query count: " + count.value);
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

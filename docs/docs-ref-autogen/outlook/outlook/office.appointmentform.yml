@@ -135,10 +135,10 @@ properties:
       - Windows: 500 members
 
 
-      - Mac: 100 members
+      - Classic Mac UI: 100 members
 
 
-      - Other: No limit
+      - New Mac UI, web browser, Android: No limit
 
 
       *Compose mode*
@@ -185,10 +185,10 @@ properties:
       - Windows: 500 members
 
 
-      - Mac: 100 members
+      - Classic Mac UI: 100 members
 
 
-      - Other: No limit
+      - New Mac UI, web browser, Android: No limit
 
 
       *Compose mode*
