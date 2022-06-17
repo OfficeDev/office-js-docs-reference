@@ -12,17 +12,18 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 The Ribbon API set supports programmatic control of when custom add-in commands (that is, custom ribbon buttons and menu items) are enabled and disabled and when contextual tabs appear on the ribbon.
 
-> [!NOTE]
-> The RibbonApi requirement sets are supported only on task pane add-ins.
-
 Office Add-ins run across multiple versions of Office. The following table lists the Ribbon API requirement sets, the Office client applications that support that requirement set, and the build or version numbers for the Office application.
 
-|  Requirement set  | Office 2021 or later on Windows\*<br>(one-time purchase) | Office on Windows\*<br>(connected to a Microsoft 365 subscription) |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac\*<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web\*  |  Office Online Server  |
+|  Requirement set  | Office 2021 or later on Windows<br>(one-time purchase) | Office on Windows<br>(connected to a Microsoft 365 subscription) |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |  Office Online Server  |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | RibbonApi 1.2  | Build 16.0.14326.20454 or later | 2102 (Build 13801.20294) | N/A | 16.53.806.0 | May, 2021 | N/A|
 | RibbonApi 1.1  | Build 16.0.14326.20454 or later | See support<br>section below | N/A | 16.38 | November, 2020 | N/A|
 
-> **&#42;** The Ribbon API is supported for production add-ins only in Excel. It's available as a preview in PowerPoint and Word, but only in Office on Windows (subscription) and Mac. 
+> [!IMPORTANT]
+>
+> - The RibbonApi requirement sets are supported only on task pane add-ins.
+> - The RibbonApi requirement sets are supported for production add-ins only in Excel.
+> - RibbonApi 1.1 (not 1.2) is available as a preview in PowerPoint and Word, but only in Office on Windows (subscription) and Office on Mac. It is not available in Office on the web (except in Excel).
 
 ## Support for version 1.1 on Office on Windows (subscription)
 
