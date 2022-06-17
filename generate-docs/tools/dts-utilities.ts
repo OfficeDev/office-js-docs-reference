@@ -199,7 +199,7 @@ export class APISet {
 
                         let tableLine = "[" + newItemText + "]("
                             + buildFieldLink(relativePath, className, field) + ")|";
-                        tableLine += extractFirstSentenceFromComment(field.comment);
+                        tableLine += removeAtLink(extractFirstSentenceFromComment(field.comment));
                         output += tableLine + "|\n";
                     });
                 } else {
@@ -225,7 +225,7 @@ export class APISet {
     }
 }
 
-function extractFirstSentenceFromComment(commentText) {
+function extractFirstSentenceFromComment(commentText): string {
     const firstSentenceIndex = commentText.indexOf("* ") + 2;
     const multiSentenceEndIndex = commentText.indexOf(". ", firstSentenceIndex);
     const lineBreakEndIndex = commentText.indexOf("\n", firstSentenceIndex);
@@ -241,6 +241,15 @@ function extractFirstSentenceFromComment(commentText) {
     }
 
     return commentText.substring(firstSentenceIndex, endIndex).trim();
+}
+
+function removeAtLink(commentText: string): string {
+    // Replace links with the format "{@link Foo}" with "Foo".
+    commentText = commentText.replace(/{@link ([^|]*?)}/gm, "$1");
+    
+    // Replace links with the format "{@link Foo | URL}" with "[Foo](URL)".
+    commentText = commentText.replace(/{@link ([^}]*?) \| (.*?)}/gm, "[$1]($2)");
+    return commentText;
 }
 
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
