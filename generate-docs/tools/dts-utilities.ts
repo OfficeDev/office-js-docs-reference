@@ -248,7 +248,7 @@ function removeAtLink(commentText: string): string {
     commentText = commentText.replace(/{@link ([^|]*?)}/gm, "$1");
     
     // Replace links with the format "{@link Foo | URL}" with "[Foo](URL)".
-    commentText = commentText.replace(/{@link ([^}]*?) \| (.*?)}/gm, "[$1]($2)");
+    commentText = commentText.replace(/{@link ([^}]*?) \| (http.*?)}/gm, "[$1]($2)");
     return commentText;
 }
 
