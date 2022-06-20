@@ -39,7 +39,7 @@ PowerPoint JavaScript API 1.3 adds additional support for adding and deleting sl
 
 ## PowerPoint JavaScript API 1.4
 
-PowerPoint JavaScript API 1.4 adds additional support for adding, moving, sizing, formatting, and deleting shapes. For more information about using these APIs, see [Working with shapes](/office/dev/add-ins/powerpoint/shapes.md).
+PowerPoint JavaScript API 1.4 adds additional support for adding, moving, sizing, formatting, and deleting shapes. For more information about using these APIs, see [Working with shapes](/office/dev/add-ins/powerpoint/shapes).
 
 ## How to use PowerPoint requirement sets at runtime and in the manifest
 
