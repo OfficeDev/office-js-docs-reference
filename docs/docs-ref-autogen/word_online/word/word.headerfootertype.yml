@@ -4,7 +4,28 @@ uid: 'word!Word.HeaderFooterType:enum'
 package: word!
 fullName: Word.HeaderFooterType
 summary: ''
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+  await Word.run(async (context) => {
+    context.document.sections
+      .getFirst()
+      .getHeader(Word.HeaderFooterType.primary)
+      .insertParagraph("This is a primary header.", "End");
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
