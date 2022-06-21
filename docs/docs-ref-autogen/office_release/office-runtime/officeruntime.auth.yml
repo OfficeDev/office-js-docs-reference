@@ -5,7 +5,8 @@ package: office-runtime!
 fullName: OfficeRuntime.Auth
 summary: Interface that contains authorization related APIs.
 remarks: >-
-  The methods in this interface are equivalent to those in the `Office.auth` interface. If new authentication types are
+  The methods in this interface are equivalent to those in the [Office.auth
+  interface](https://docs.microsoft.com/javascript/api/office/office.auth)<!-- -->. If new authentication types are
   added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples
   throughout the documentation use `Office.auth`<!-- -->.
 isPreview: false
@@ -26,7 +27,7 @@ methods:
       both user account types to access resources in the Microsoft Graph.
 
 
-      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: '**Hosts**: Excel, Outlook, PowerPoint, Word'
     isPreview: false
     isDeprecated: false
