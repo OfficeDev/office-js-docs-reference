@@ -9848,7 +9848,7 @@ Word.Font,set(properties),Method,Poor,false
 Word.Font,toJSON(),Method,Poor,false
 Word.Font,track(),Method,Poor,false
 Word.Font,untrack(),Method,Poor,false
-Word.HeaderFooterType,N/A,Class,Fine,false
+Word.HeaderFooterType,N/A,Class,Fine,true
 Word.HeaderFooterType,evenPages,EnumField,Fine,false
 Word.HeaderFooterType,firstPage,EnumField,Fine,false
 Word.HeaderFooterType,primary,EnumField,Fine,false
@@ -10529,7 +10529,7 @@ Word.TableBorder,set(properties),Method,Poor,false
 Word.TableBorder,toJSON(),Method,Poor,false
 Word.TableBorder,track(),Method,Poor,false
 Word.TableBorder,untrack(),Method,Poor,false
-Word.TableCell,N/A,Class,Good,false
+Word.TableCell,N/A,Class,Good,true
 Word.TableCell,body,Property,Good,false
 Word.TableCell,cellIndex,Property,Good,false
 Word.TableCell,columnWidth,Property,Good,false
