@@ -2898,20 +2898,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyUpdateData;
-            /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesUpdateData;
+            
+            
         }
         /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
@@ -3566,41 +3554,11 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
-            /**
-            * Gets the properties of the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            sections?: Word.Interfaces.SectionData[];
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {

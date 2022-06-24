@@ -1,0 +1,2965 @@
+'Word.Body#clear:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to clear the contents of the body.
+        body.clear();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        console.log('Cleared the body contents.');
+    });
+
+    // The Silly stories add-in sample shows how the 
+    // clear method can be used to clear the contents of a document.
+    // https://aka.ms/sillystorywordaddin
+'Word.Body#fields:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
+'Word.Body#font:member':
+  - >-
+    // Get the style and the font size, font name, and font color properties on
+    the body object.
+
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to load font and style information for the document body.
+        context.load(body, 'font/size, font/name, font/color, style');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        
+        // Show the results of the load method.
+        // Here we show the property values on the body object.
+        var results = 'Font size: ' + body.font.size +
+                        '; Font name: ' + body.font.name +
+                        '; Font color: ' + body.font.color +
+                        '; Body style: ' + body.style;
+
+        console.log(results);
+    });
+'Word.Body#footnotes:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("length");
+      await context.sync();
+
+      console.log("Number of footnotes in the document body: " + footnotes.items.length);
+    });
+'Word.Body#getComments:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comments = context.document.body.getComments();
+
+      // Load objects for display in Script Lab console.
+      comments.load();
+      await context.sync();
+
+      console.log("All comments:");
+      console.log(comments);
+    });
+'Word.Body#getHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to get the HTML contents of the body.
+        var bodyHTML = body.getHtml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log("Body HTML contents: " + bodyHTML.value);
+    });
+'Word.Body#getOoxml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to get the OOXML contents of the body.
+        var bodyOOXML = body.getOoxml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log("Body OOXML contents: " + bodyOOXML.value);
+    });
+'Word.Body#insertBreak:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert a page break at the start of the document body.
+        body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Added a page break at the start of the document body.');
+    });
+'Word.Body#insertContentControl:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to wrap the body in a content control.
+        body.insertContentControl();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Wrapped the body in a content control.');
+    });
+'Word.Body#insertFileFromBase64:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert base64 encoded .docx at the beginning of the content body.
+        // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
+        body.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Added base64 encoded text to the beginning of the document body.');
+    });
+'Word.Body#insertHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert HTML in to the beginning of the body.
+        body.insertHtml(
+            '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('HTML added to the beginning of the document body.');
+    });
+'Word.Body#insertInlinePictureFromBase64:member(1)':
+  - >-
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert OOXML in to the beginning of the body.
+        body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('OOXML added to the beginning of the document body.');
+    });
+
+
+    // Read "Create better add-ins for Word with Office Open XML" for guidance
+    on working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+
+    // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
+    assemble a document.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+'Word.Body#insertParagraph:member(1)':
+  - >-
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert the paragraph at the end of the document body.
+        body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Paragraph added at the end of the document body.');
+    });
+
+
+    // The Word-Add-in-DocumentAssembly sample shows how you can use the
+    insertParagraph method to assemble a document.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+'Word.Body#insertParagraph:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+    await Word.run(async (context) => {
+      // Second sentence, let's insert it as a paragraph after the previously inserted one.
+      let secondSentence = context.document.body.insertParagraph(
+        "This is the first text with a custom style.",
+        "End"
+      );
+      secondSentence.font.set({
+        bold: false,
+        italic: true,
+        name: "Berlin Sans FB",
+        color: "blue",
+        size: 30
+      });
+
+      await context.sync();
+    });
+'Word.Body#insertTable:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+    await Word.run(async (context) => {
+      // Use a two-dimensional array to hold the initial table values.
+      let data = [
+        ["Tokyo", "Beijing", "Seattle"],
+        ["Apple", "Orange", "Pineapple"]
+      ];
+      let table = context.document.body.insertTable(2, 3, "Start", data);
+      table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+      table.styleFirstColumn = false;
+
+      await context.sync();
+    });
+'Word.Body#insertText:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to insert text in to the beginning of the body.
+        body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Text added to the beginning of the document body.');
+    });
+'Word.Body#paragraphs:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
+
+    await Word.run(async (context) => {
+      let paragraphs = context.document.body.paragraphs;
+      paragraphs.load("text");
+      await context.sync();
+
+      let text = [];
+      paragraphs.items.forEach((item) => {
+        let paragraph = item.text.trim();
+        if (paragraph) {
+          paragraph.split(" ").forEach((term) => {
+            let currentTerm = term.trim();
+            if (currentTerm) {
+              text.push(currentTerm);
+            }
+          });
+        }
+      });
+
+      let makeTextDistinct = new Set(text);
+      let distinctText = Array.from(makeTextDistinct);
+      let allSearchResults = [];
+
+      for (let i = 0; i < distinctText.length; i++) {
+        let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+        results.load("text");
+
+        // Map search term with its results.
+        let correlatedResults = {
+          searchTerm: distinctText[i],
+          hits: results
+        };
+
+        allSearchResults.push(correlatedResults);
+      }
+
+      await context.sync();
+
+      // Display counts.
+      allSearchResults.forEach((result) => {
+        let length = result.hits.items.length;
+
+        console.log("Search term: " + result.searchTerm + " => Count: " + length);
+      });
+    });
+'Word.Body#search:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
+
+    await Word.run(async (context) => {
+      let results = context.document.body.search("Online");
+      results.load("length");
+
+      await context.sync();
+
+      // Let's traverse the search results... and highlight...
+      for (let i = 0; i < results.items.length; i++) {
+        results.items[i].font.highlightColor = "yellow";
+      }
+
+      await context.sync();
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
+
+    await Word.run(async (context) => {
+      // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
+      // (i.e. use wildcards).
+      let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+      results.load("length");
+
+      await context.sync();
+
+      // Let's traverse the search results... and highlight...
+      for (let i = 0; i < results.items.length; i++) {
+        results.items[i].font.highlightColor = "red";
+        results.items[i].font.color = "white";
+      }
+
+      await context.sync();
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
+
+    await Word.run(async (context) => {
+      let paragraphs = context.document.body.paragraphs;
+      paragraphs.load("text");
+      await context.sync();
+
+      let text = [];
+      paragraphs.items.forEach((item) => {
+        let paragraph = item.text.trim();
+        if (paragraph) {
+          paragraph.split(" ").forEach((term) => {
+            let currentTerm = term.trim();
+            if (currentTerm) {
+              text.push(currentTerm);
+            }
+          });
+        }
+      });
+
+      let makeTextDistinct = new Set(text);
+      let distinctText = Array.from(makeTextDistinct);
+      let allSearchResults = [];
+
+      for (let i = 0; i < distinctText.length; i++) {
+        let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+        results.load("text");
+
+        // Map search term with its results.
+        let correlatedResults = {
+          searchTerm: distinctText[i],
+          hits: results
+        };
+
+        allSearchResults.push(correlatedResults);
+      }
+
+      await context.sync();
+
+      // Display counts.
+      allSearchResults.forEach((result) => {
+        let length = result.hits.items.length;
+
+        console.log("Search term: " + result.searchTerm + " => Count: " + length);
+      });
+    });
+'Word.Body#select:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to select the document body.
+        // The Word UI will move to the selected document body.
+        body.select();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Selected the document body.');
+    });
+'Word.Body#text:member':
+  - |-
+    // Get the text property on the body object
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+
+        // Queue a command to load the text in document body.
+        context.load(body, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log("Body contents: " + body.text);
+    });
+'Word.ChangeTrackingMode:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const document = context.document;
+      document.load("changeTrackingMode");
+      await context.sync();
+
+      if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+        console.log("Only my changes are being tracked.");
+      } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+        console.log("Everyone's changes are being tracked.");
+      } else {
+        console.log("No changes are being tracked.");
+      }
+    });
+'Word.ChangeTrackingVersion:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const range = context.document.getSelection();
+      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+      await context.sync();
+
+      console.log(`Reviewed text (before):\n${before.value}`);
+      console.log(`Reviewed text (after):\n${after.value}`);
+    });
+'Word.Comment#content:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#edit-comment-text")
+        .val()
+        .toString();
+      let comment = context.document
+        .getSelection()
+        .getComments()
+        .getFirst();
+      comment.content = text;
+
+      // Load object for display in Script Lab console.
+      comment.load();
+      await context.sync();
+
+      console.log("Comment content changed:");
+      console.log(comment);
+    });
+'Word.Comment#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .delete();
+      await context.sync();
+
+      console.log("Comment deleted");
+    });
+'Word.Comment#getRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let range = context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .getRange();
+      range.load("text");
+      await context.sync();
+
+      console.log(`Comment location: ${range.text}`);
+    });
+'Word.Comment#reply:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#reply-text")
+        .val()
+        .toString();
+      let comments = context.document.getSelection().getComments();
+      comments.load("items");
+      await context.sync();
+      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      if (firstActiveComment) {
+        let reply = firstActiveComment.reply(text);
+        console.log("Reply added");
+      } else {
+        console.log("No active comment was found in the selection so couldn't reply.");
+      }
+    });
+'Word.Comment#resolved:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comment = context.document
+        .getSelection()
+        .getComments()
+        .getFirst();
+      comment.load("resolved");
+      await context.sync();
+
+      // Toggle resolved status.
+      // If the comment is active, set as resolved.
+      // If it's resolved, set resolved to false.
+      let toggleResolved: boolean = comment.resolved;
+      comment.resolved = !toggleResolved;
+      comment.load();
+      await context.sync();
+
+      console.log(`Comment Resolved status: ${comment.resolved}`);
+      console.log(comment);
+    });
+'Word.CommentCollection#getFirst:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let range = context.document
+        .getSelection()
+        .getComments()
+        .getFirst()
+        .getRange();
+      range.load("text");
+      await context.sync();
+
+      console.log(`Comment location: ${range.text}`);
+    });
+'Word.CommentCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#reply-text")
+        .val()
+        .toString();
+      let comments = context.document.getSelection().getComments();
+      comments.load("items");
+      await context.sync();
+      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      if (firstActiveComment) {
+        let reply = firstActiveComment.reply(text);
+        console.log("Reply added");
+      } else {
+        console.log("No active comment was found in the selection so couldn't reply.");
+      }
+    });
+'Word.ContentControl#clear:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the content controls collection.
+        contentControls.load('text');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+            
+        if (contentControls.items.length === 0) {
+            console.log("There isn't a content control in this document.");
+        } else {
+            // Queue a command to clear the contents of the first content control.
+            contentControls.items[0].clear();
+
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Content control cleared of contents.');
+        }
+    });
+'Word.ContentControl#delete:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the content controls collection.
+        contentControls.load('text');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+            
+        if (contentControls.items.length === 0) {
+            console.log("There isn't a content control in this document.");
+        } else {            
+            // Queue a command to delete the first content control. 
+            // The contents will remain in the document.
+            contentControls.items[0].delete(true);
+
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Content control cleared of contents.'); 
+        }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    await Word.run(async (context) => {
+      let contentControls = context.document.contentControls.getByTag("forTesting");
+      contentControls.load("items");
+      await context.sync();
+
+      if (contentControls.items.length === 0) {
+        console.log("There are no content controls in this document.");
+      } else {
+        console.log("Control to be deleted:");
+        console.log(contentControls.items[0]);
+        contentControls.items[0].delete(false);
+        await context.sync();
+      }
+    });
+'Word.ContentControl#getHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection that contains a specific tag.
+        var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+        
+        // Queue a command to load the tag property for all of content controls.
+        context.load(contentControlsWithTag, 'tag');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControlsWithTag.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to get the HTML contents of the first content control.
+            var html = contentControlsWithTag.items[0].getHtml();
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Content control HTML: ' + html.value);
+        }
+    });
+'Word.ContentControl#getOoxml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to get the OOXML contents of the first content control.
+            var ooxml = contentControls.items[0].getOoxml();
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Content control OOXML: ' + ooxml.value);
+        }
+    });
+'Word.ContentControl#insertBreak:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of content controls.
+        context.load(contentControls, 'id');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        // We now will have access to the content control collection.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to insert a page break after the first content control.
+            contentControls.items[0].insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Inserted a page break after the first content control.');    
+        }
+    });
+'Word.ContentControl#insertHtml:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to put HTML into the contents of the first content control.
+            contentControls.items[0].insertHtml(
+                '<strong>HTML content inserted into the content control.</strong>',
+                'Start');
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Inserted HTML in the first content control.');
+        }
+    });
+'Word.ContentControl#insertOoxml:member(2)':
+  - >-
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to put OOXML into the contents of the first content control.
+            contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Inserted OOXML in the first content control.');
+        }
+    });  
+
+
+    // Read "Create better add-ins for Word with Office Open XML" for guidance
+    on working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+'Word.ContentControl#insertParagraph:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to insert a paragraph after the first content control.
+            contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Inserted a paragraph after the first content control.');
+        }
+    });  
+'Word.ContentControl#insertText:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to replace text in the first content control.
+            contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Replaced text in the first content control.');
+        }
+    });  
+
+    // The Silly stories add-in sample shows how to use the insertText method.
+    // https://aka.ms/sillystorywordaddin
+'Word.ContentControl#load:member(1)':
+  - |-
+    // Load all of the content control properties
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        } else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');             
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' + 
+                '   ----- appearance: ' + contentControls.items[0].appearance + 
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });  
+'Word.ContentControl#onDeleted:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    await Word.run(async (context) => {
+      let contentControls = context.document.contentControls;
+      contentControls.load("items");
+      await context.sync();
+
+      // Register the onDeleted event handler on each content control.
+      if (contentControls.items.length === 0) {
+        console.log("There aren't any content controls in this document so can't register event handlers.");
+      } else {
+        for (let i = 0; i < contentControls.items.length; i++) {
+          eventContexts[i] = contentControls.items[i].onDeleted.add(contentControlDeleted);
+          contentControls.items[i].track();
+        }
+
+        await context.sync();
+
+        console.log("Added event handlers for when content controls are deleted.");
+      }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
+'Word.ContentControl#search:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to select the first content control.
+            contentControls.items[0].select();
+        
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Selected the first content control.');
+        }
+    });  
+'Word.ContentControl#set:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+    // Adds title and colors to odd and even content controls and changes their
+    appearance.
+
+    await Word.run(async (context) => {
+      // Gets the complete sentence (as range) associated with the insertion point.
+      let evenContentControls = context.document.contentControls.getByTag("even");
+      let oddContentControls = context.document.contentControls.getByTag("odd");
+      evenContentControls.load("length");
+      oddContentControls.load("length");
+
+      await context.sync();
+
+      for (let i = 0; i < evenContentControls.items.length; i++) {
+        // Change a few properties and append a paragraph
+        evenContentControls.items[i].set({
+          color: "red",
+          title: "Odd ContentControl #" + (i + 1),
+          appearance: "Tags"
+        });
+        evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+      }
+
+      for (let j = 0; j < oddContentControls.items.length; j++) {
+        // Change a few properties and append a paragraph
+        oddContentControls.items[j].set({
+          color: "green",
+          title: "Even ContentControl #" + (j + 1),
+          appearance: "Tags"
+        });
+        oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+      }
+
+      await context.sync();
+    });
+'Word.ContentControl#tag:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+    // Traverses each paragraph of the document and wraps a content control on
+    each with either a even or odd tags.
+
+    await Word.run(async (context) => {
+      let paragraphs = context.document.body.paragraphs;
+      paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
+
+      await context.sync();
+
+      for (let i = 0; i < paragraphs.items.length; i++) {
+        let contentControl = paragraphs.items[i].insertContentControl();
+        // For even, tag "even".
+        if (i % 2 === 0) {
+          contentControl.tag = "even";
+        } else {
+          contentControl.tag = "odd";
+        }
+      }
+      console.log("Content controls inserted: " + paragraphs.items.length);
+
+      await context.sync();
+    });
+'Word.ContentControlCollection#getById:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content control that contains a specific id.
+        var contentControl = context.document.contentControls.getById(30086310);
+
+        // Queue a command to load the text property for a content control.
+        context.load(contentControl, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The content control with that Id has been found in this document.');
+    });
+'Word.ContentControlCollection#getByIdOrNullObject:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content control that contains a specific id.
+        var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+
+        // Queue a command to load the text property for a content control.
+        context.load(contentControl, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControl.isNullObject) {
+            console.log('There is no content control with that ID.')
+        } else {
+            console.log('The content control with that ID has been found in this document.');
+        }
+    });
+'Word.ContentControlCollection#getByTag:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+    await Word.run(async (context) => {
+        let contentControls = context.document.contentControls.getByTag("customer");
+        contentControls.load("text");
+
+        await context.sync();
+
+        for (let i = 0; i < contentControls.items.length; i++) {
+          contentControls.items[i].insertText("Fabrikam", "Replace");
+        }
+
+        await context.sync();
+    });
+'Word.ContentControlCollection#getByTitle:member(1)':
+  - >-
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection that contains a specific title.
+        var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
+
+        // Queue a command to load the text property for all of content controls with a specific title.
+        context.load(contentControlsWithTitle, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControlsWithTitle.items.length === 0) {
+            console.log(
+                "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
+        } else {
+            console.log(
+                "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
+                contentControlsWithTitle.items[0].text);
+        }
+    });
+
+
+    // The Word-Add-in-DocumentAssembly sample has another example of using the
+    getByTitle method.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+'Word.ContentControlCollection#getFirst:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the first content control in the document.
+        var contentControl = context.document.contentControls.getFirstOrNullObject();
+
+        // Queue a command to load the text property for a content control.
+        context.load(contentControl, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControl.isNullObject) {
+            console.log('There are no content controls in this document.')
+        } else {
+            console.log('The first content control has been found in this document.');
+        }
+    });
+'Word.ContentControlCollection#load:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        context.load(contentControls, 'id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
+
+    // The Silly stories add-in sample shows how the load method is used
+    // to load the content control collection with the tag and title properties.
+    // https://aka.ms/sillystorywordaddin
+'Word.ContentControlEventArgs#contentControl:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
+'Word.CustomPropertyCollection#add:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+    await Word.run(async (context) => {
+        context.document.properties.customProperties.add("Numeric Property", 1234);
+
+        await context.sync();
+        console.log("Property added");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+    await Word.run(async (context) => {
+        context.document.properties.customProperties.add("String Property", "Hello World!");
+
+        await context.sync();
+        console.log("Property added");
+    });
+'Word.CustomPropertyCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+    await Word.run(async (context) => {
+        let properties = context.document.properties.customProperties;
+        properties.load("key,type,value");
+
+        await context.sync();
+        for (var i = 0; i < properties.items.length; i++)
+            console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+    });
+'Word.Document#changeTrackingMode:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const document = context.document;
+      document.load("changeTrackingMode");
+      await context.sync();
+
+      if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+        console.log("Only my changes are being tracked.");
+      } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+        console.log("Everyone's changes are being tracked.");
+      } else {
+        console.log("No changes are being tracked.");
+      }
+    });
+'Word.Document#getSelection:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        var textSample = 'This is an example of the insert text method. This is a method ' + 
+            'which allows users to insert text into a selection. It can insert text into a ' +
+            'relative location or it can overwrite the current selection. Since the ' +
+            'getSelection method returns a range object, look up the range object documentation ' +
+            'for everything you can do with a selection.';
+        
+        // Create a range proxy object for the current selection.
+        var range = context.document.getSelection();
+        
+        // Queue a command to insert text at the end of the selection.
+        range.insertText(textSample, Word.InsertLocation.end);
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Inserted the text at the end of the selection.');
+    });  
+'Word.Document#load:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the document.
+        var thisDocument = context.document;
+        
+        // Queue a command to load content control properties.
+        context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (thisDocument.contentControls.items.length !== 0) {
+            for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
+                console.log(thisDocument.contentControls.items[i].id);
+                console.log(thisDocument.contentControls.items[i].text);
+                console.log(thisDocument.contentControls.items[i].tag);
+            }
+        } else {
+            console.log('No content controls in this document.');
+        }
+    });
+'Word.Document#properties:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
+
+    await Word.run(async (context) => {
+        let builtInProperties = context.document.properties;
+        builtInProperties.load("*"); // Let's get all!
+
+        await context.sync();
+        console.log(JSON.stringify(builtInProperties, null, 4));
+    });
+'Word.Document#save:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the document.
+        var thisDocument = context.document;
+
+        // Queue a command to load the document save state (on the saved property).
+        context.load(thisDocument, 'saved');    
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+            
+        if (thisDocument.saved === false) {
+            // Queue a command to save this document.
+            thisDocument.save();
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Saved the document');
+        } else {
+            console.log('The document has not changed since the last save.');
+        }
+        });
+'Word.Field#code:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.Field#parentBody:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the parent body of the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load("parentBody/text");
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        const parentBody = field.parentBody;
+        console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+      }
+    });
+'Word.Field#result:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#getFirstOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
+'Word.Font#bold:member':
+  - |-
+    // Bold format text
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to make the current selection bold.
+        selection.font.bold = true;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The selection is now bold.');
+    });
+'Word.Font#color:member':
+  - |-
+    // Change the font color
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to change the font color of the current selection.
+        selection.font.color = 'blue';
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The font color of the selection has been changed.');
+    });
+'Word.Font#highlightColor:member':
+  - |-
+    // Highlight selected text
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to highlight the current selection.
+        selection.font.highlightColor = '#FFFF00'; // Yellow
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The selection has been highlighted.');
+    });
+'Word.Font#name:member':
+  - |-
+    // Change the font name
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to change the current selection's font name.
+        selection.font.name = 'Arial';
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The font name has changed.');
+    });
+'Word.Font#size:member':
+  - |-
+    // Change the font size
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to change the current selection's font size.
+        selection.font.size = 20;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The font size has changed.');
+    });
+'Word.Font#strikeThrough:member':
+  - |-
+    // Strike format text
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to strikethrough the font of the current selection.
+        selection.font.strikeThrough = true;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The selection now has a strikethrough.');
+    });
+'Word.Font#underline:member':
+  - |-
+    // Underline format text
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to underline the current selection.
+        selection.font.underline = Word.UnderlineType.single;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The selection now has an underline style.');
+    });
+'Word.HeaderFooterType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getHeader(Word.HeaderFooterType.primary)
+        .insertParagraph("This is a primary header.", "End");
+
+      await context.sync();
+    });
+'Word.InlinePicture#getBase64ImageSrc:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+    await Word.run(async (context) => {
+      const firstPicture = context.document.body.inlinePictures.getFirst();
+      firstPicture.load("width, height");
+
+      await context.sync();
+      console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+      // Get the image encoded as base64.
+      const base64 = firstPicture.getBase64ImageSrc();
+
+      await context.sync();
+      console.log(base64.value);
+    });
+'Word.InlinePicture#getNext:member(1)':
+  - >-
+    // To use this snippet, add an inline picture to the document and assign it
+    an alt text title.
+
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the first inline picture.
+        var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+
+        // Queue a command to load the alternative text title of the picture.
+        context.load(firstPicture, 'altTextTitle');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (firstPicture.isNullObject) {
+            console.log('There are no inline pictures in this document.')
+        } else {
+            console.log(firstPicture.altTextTitle);
+        }
+    }); 
+'Word.InlinePicture#getNextOrNullObject:member(1)':
+  - >-
+    // To use this snippet, add an inline picture to the document and assign it
+    an alt text title.
+
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+        
+        // Create a proxy object for the first inline picture.
+        var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+
+        // Queue a command to load the alternative text title of the picture.
+        context.load(firstPicture, 'altTextTitle');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (firstPicture.isNullObject) {
+            console.log('There are no inline pictures in this document.')
+        } else {
+            console.log(firstPicture.altTextTitle);
+        }
+    }); 
+'Word.NoteItem#body:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/body");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      let footnoteBody = footnotes.items[mark].body.getRange();
+      footnoteBody.load("text");
+      await context.sync();
+
+      console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+    });
+'Word.NoteItem#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      footnotes.items[mark].delete();
+      await context.sync();
+
+      console.log("Footnote deleted.");
+    });
+'Word.NoteItem#getNext:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/reference");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const reference = footnotes.items[mark].getNext().reference;
+      reference.select();
+      console.log("Selected is the next footnote: " + (mark + 2));
+    });
+'Word.NoteItem#reference:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/reference");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const item = footnotes.items[mark];
+      let reference = item.reference;
+      reference.select();
+      await context.sync();
+
+      console.log(`Reference ${referenceNumber} is selected.`);
+    });
+'Word.NoteItem#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/type");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const itemType = footnotes.items[mark].type;
+      console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
+    });
+'Word.NoteItemCollection#getFirst:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      let reference = context.document.body.footnotes.getFirst().reference;
+      reference.select();
+      console.log("The first footnote is selected.");
+    });
+'Word.Paragraph#alignment:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+    await Word.run(async (context) => {
+      // Centers last paragraph alignment.
+      context.document.body.paragraphs.getLast().alignment = "Centered";
+
+      await context.sync();
+    });
+'Word.Paragraph#clear:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for all of the paragraphs.
+        context.load(paragraphs, 'style');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to clear the contents of the first paragraph.
+        paragraphs.items[0].clear();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Cleared the contents of the first paragraph.');
+    });
+'Word.Paragraph#delete:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the text property for all of the paragraphs.
+        context.load(paragraphs, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to delete the first paragraph.
+        paragraphs.items[0].delete();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Deleted the first paragraph.');
+    });
+'Word.Paragraph#getHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for all of the paragraphs.
+        context.load(paragraphs, 'style');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a set of commands to get the HTML of the first paragraph.
+        var html = paragraphs.items[0].getHtml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Paragraph HTML: ' + html.value);
+    });
+'Word.Paragraph#getOoxml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for the top 2 paragraphs.
+        context.load(paragraphs, {select: 'style', top: 2} );
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a set of commands to get the OOXML of the first paragraph.
+        var ooxml = paragraphs.items[0].getOoxml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Paragraph OOXML: ' + ooxml.value);
+    });
+'Word.Paragraph#getPreviousOrNullObject:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the text property for all of the paragraphs.
+        context.load(paragraphs, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue commands to create a proxy object for the next-to-last paragraph.
+        var indexOfLastParagraph = paragraphs.items.length - 1;
+        var precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
+
+        // Queue a command to load the text of the preceding paragraph.
+        context.load(precedingParagraph, 'text');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (precedingParagraph.isNullObject) {
+            console.log('There are no paragraphs before the current one.');
+        } else {
+            console.log('The preceding paragraph is: ' + precedingParagraph.text);
+        }
+    });
+'Word.Paragraph#insertBreak:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+
+    Word.run(async (context) => {
+      context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+
+      await context.sync();
+      console.log("success");
+    });
+'Word.Paragraph#insertBreak:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for the top 2 paragraphs.
+        // We never perform an empty load. We always must request a property.
+        context.load(paragraphs, {select: 'style', top: 2} );
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to get the first paragraph.
+        var paragraph = paragraphs.items[0];
+
+        // Queue a command to insert a page break after the first paragraph.
+        paragraph.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Inserted a page break after the paragraph.');
+    });
+'Word.Paragraph#insertContentControl:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for the top 2 paragraphs.
+        // We never perform an empty load. We always must request a property.
+        context.load(paragraphs, {select: 'style', top: 2} );
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to get the first paragraph.
+        var paragraph = paragraphs.items[0];
+
+        // Queue a command to wrap the first paragraph in a rich text content control.
+        paragraph.insertContentControl();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Wrapped the first paragraph in a content control.');
+    });
+'Word.Paragraph#insertHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for the top 2 paragraphs.
+        // We never perform an empty load. We always must request a property.
+        context.load(paragraphs, {select: 'style', top: 2} );
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to get the first paragraph.
+        var paragraph = paragraphs.items[0];
+
+        // Queue a command to insert HTML content at the end of the first paragraph.
+        paragraph.insertHtml('<strong>Inserted HTML.</strong>', Word.InsertLocation.end);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Inserted HTML content at the end of the first paragraph.');
+    });
+'Word.Paragraph#insertInlinePictureFromBase64:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the style property for all of the paragraphs.
+        context.load(paragraphs, 'style');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a command to get the first paragraph.
+        var paragraph = paragraphs.items[0];
+
+        var b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
+
+        // Queue a command to insert a base64 encoded image at the beginning of the first paragraph.
+        paragraph.insertInlinePictureFromBase64(b64encodedImg, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Added an image to the first paragraph.');
+    });
+'Word.Paragraph#insertText:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
+
+    await Word.run(async (context) => {
+      // Replace the last paragraph.
+      let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+      range.font.highlightColor = "black";
+      range.font.color = "white";
+
+      await context.sync();
+    });
+'Word.Paragraph#leftIndent:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+    await Word.run(async (context) => {
+      // Indents the first paragraph.
+      context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
+
+      return context.sync();
+    });
+'Word.Paragraph#lineSpacing:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+    await Word.run(async (context) => {
+      // Adjusts line spacing.
+      context.document.body.paragraphs.getFirst().lineSpacing = 20;
+
+      await context.sync();
+    });
+'Word.Paragraph#select:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+    await Word.run(async (context) => {
+      // If select is called with no parameters, it selects the object.
+      context.document.body.paragraphs.getLast().select();
+
+      await context.sync();
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+    await Word.run(async (context) => {
+      // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+      context.document.body.paragraphs.getLast().select("End");
+
+      await context.sync();
+    });
+'Word.Paragraph#set:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
+
+    await Word.run(async (context) => {
+      const paragraph = context.document.body.paragraphs.getFirst();
+      paragraph.set({
+        leftIndent: 30,
+        font: {
+          bold: true,
+          color: "red"
+        }
+      });
+
+      await context.sync();
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
+
+    await Word.run(async (context) => {
+      const firstParagraph = context.document.body.paragraphs.getFirst();
+      const secondParagraph = firstParagraph.getNext();
+      firstParagraph.load("text, font/color, font/bold, leftIndent");
+
+      await context.sync();
+
+      secondParagraph.set(firstParagraph);
+
+      await context.sync();
+    });
+'Word.Paragraph#spaceAfter:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+    await Word.run(async (context) => {
+      // Adjust space between paragraphs.
+      context.document.body.paragraphs.getFirst().spaceAfter = 20;
+
+      await context.sync();
+    });
+'Word.Paragraph#split:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
+
+    await Word.run(async (context) => {
+      let paragraph = context.document.body.paragraphs.getFirst();
+      let words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+      words.load("text");
+
+      await context.sync();
+
+      for (let i = 0; i < words.items.length; i++) {
+        if (i >= 1) {
+          words.items[i - 1].font.highlightColor = "#FFFFFF";
+        }
+        words.items[i].font.highlightColor = "#FFFF00";
+
+        await context.sync();
+        await pause(200);
+      }
+    });
+'Word.Paragraph#startNewList:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
+
+    // This example starts a new list stating with the second paragraph.
+
+    await Word.run(async (context) => {
+      let paragraphs = context.document.body.paragraphs;
+      paragraphs.load("$none"); // No properties needed.
+
+      await context.sync();
+
+      var list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
+      list.load("$none"); // No properties needed.
+
+      await context.sync();
+
+      // To add new items to the list use start/end on the insert location parameter.
+      list.insertParagraph("New list item on top of the list", "Start");
+      let paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
+      paragraph.listItem.level = 4; // Sets up list level for the lsit item.
+      // To add paragraphs outside the list use before/after:
+      list.insertParagraph("New paragraph goes after (not part of the list)", "After");
+
+      await context.sync();
+    });
+'Word.Paragraph#text:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+    await Word.run(async (context) => {
+      // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+      let paragraph = context.document.getSelection().paragraphs.getFirst();
+      paragraph.load("text");
+
+      await context.sync();
+      console.log(paragraph.text);
+    });
+'Word.ParagraphCollection#load:member(1)':
+  - |-
+    // This example shows how to get the paragraphs in the Word document
+    // along with their text and font size properties.
+    // 
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the paragraphs collection.
+        var paragraphs = context.document.body.paragraphs;
+
+        // Queue a command to load the text and font properties.
+        // It is best practice to always specify the property set. Otherwise, all properties are
+        // returned in on the object.
+        context.load(paragraphs, 'text, font/size');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Insert code that works with the paragraphs loaded by context.load().
+    });
+'Word.Range#clear:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to clear the contents of the proxy range object.
+        range.clear();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Cleared the selection (range object)');
+    });
+'Word.Range#delete:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to delete the range object.
+        range.delete();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Deleted the selection (range object)');
+    });
+'Word.Range#footnotes:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.getSelection().footnotes;
+      footnotes.load("length");
+      await context.sync();
+
+      console.log("Number of footnotes in the selected range: " + footnotes.items.length);
+    });
+'Word.Range#getComments:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let comments = context.document.getSelection().getComments();
+
+      // Load objects for display in Script Lab console.
+      comments.load();
+      await context.sync();
+
+      console.log("Comments:");
+      console.log(comments);
+    });
+'Word.Range#getHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to get the HTML of the current selection.
+        var html = range.getHtml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The HTML read from the document was: ' + html.value);
+    });
+'Word.Range#getOoxml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to get the OOXML of the current selection.
+        var ooxml = range.getOoxml();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The OOXML read from the document was:  ' + ooxml.value);
+    });
+'Word.Range#getReviewedText:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+    await Word.run(async (context) => {
+      const range = context.document.getSelection();
+      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
+      await context.sync();
+
+      console.log(`Reviewed text (before):\n${before.value}`);
+      console.log(`Reviewed text (after):\n${after.value}`);
+    });
+'Word.Range#getTextRanges:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+    await Word.run(async (context) => {
+      // Gets the complete sentence (as range) associated with the insertion point.
+      let sentences = context.document
+        .getSelection()
+        .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+      sentences.load("$none");
+      await context.sync();
+
+      // Expands the range to the end of the paragraph to get all the complete sentences.
+      let sentencesToTheEndOfParagraph = sentences.items[0]
+        .getRange()
+        .expandTo(
+          context.document
+            .getSelection()
+            .paragraphs.getFirst()
+            .getRange("End")
+        )
+        .getTextRanges(["."], false /* Don't trim spaces*/);
+      sentencesToTheEndOfParagraph.load("text");
+      await context.sync();
+
+      for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+        console.log(sentencesToTheEndOfParagraph.items[i].text);
+      }
+    });
+'Word.Range#insertBreak:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert a page break after the selected text.
+        range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Inserted a page break after the selected text.');
+    });
+'Word.Range#insertComment:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+    await Word.run(async (context) => {
+      let text = $("#comment-text")
+        .val()
+        .toString();
+      let comment = context.document.getSelection().insertComment(text);
+
+      // Load object for display in Script Lab console.
+      comment.load();
+      await context.sync();
+
+      console.log("Comment inserted:");
+      console.log(comment);
+    });
+'Word.Range#insertContentControl:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+    await Word.run(async (context) => {
+        let results = context.document.body.search("Contractor");
+        results.load("font/bold");
+
+        // Check to make sure these content controls haven't been added yet.
+        let customerContentControls = context.document.contentControls.getByTag("customer");
+        customerContentControls.load("text");
+        await context.sync();
+
+      if (customerContentControls.items.length === 0) {
+        for (var i = 0; i < results.items.length; i++) { 
+            results.items[i].font.bold = true;
+            var cc = results.items[i].insertContentControl();
+            cc.tag = "customer";  // This value is used in the next step of this sample.
+            cc.title = "Customer Name " + i;
+        }
+      }
+        await context.sync();
+    });
+'Word.Range#insertFileFromBase64:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert base64 encoded .docx at the beginning of the range.
+        // You'll need to implement getBase64() to make this work.
+        range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Added base64 encoded text to the beginning of the range.');
+    });
+'Word.Range#insertFootnote:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const text = $("#input-footnote")
+        .val()
+        .toString();
+      const footnote = context.document.getSelection().insertFootnote(text);
+      await context.sync();
+
+      console.log("Inserted footnote.");
+    });
+'Word.Range#insertHtml:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert HTML in to the beginning of the range.
+        range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('HTML added to the beginning of the range.');
+    });
+'Word.Range#insertOoxml:member(1)':
+  - >-
+    // Run a batch operation against the Word object model.
+
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert OOXML in to the beginning of the range.
+        range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('OOXML added to the beginning of the range.');
+    });
+
+
+    // Read "Create better add-ins for Word with Office Open XML" for guidance
+    on working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+'Word.Range#insertParagraph:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert the paragraph after the range.
+        range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Paragraph added to the end of the range.');
+    });
+'Word.Range#insertText:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert the paragraph at the end of the range.
+        range.insertText('New text inserted into the range.', Word.InsertLocation.end);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Text added to the end of the range.');
+    });
+'Word.Range#select:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to get the current selection and then
+        // create a proxy range object with the results.
+        var range = context.document.getSelection();
+
+        // Queue a command to insert HTML in to the beginning of the range.
+        range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
+
+        // Queue a command to select the HTML that was inserted.
+        range.select();
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Selected the range.');
+    });
+'Word.SearchOptions#load:member(1)':
+  - |-
+    // Ignore punctuation search
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Queue a command to search the document and ignore punctuation.
+        var searchResults = context.document.body.search('video you', {ignorePunct: true});
+
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Found count: ' + searchResults.items.length);
+
+        // Queue a set of commands to change the font for each found item.
+        for (var i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'purple';
+            searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    });  
+  - |-
+    // Search based on a prefix
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Queue a command to search the document based on a prefix.
+        var searchResults = context.document.body.search('vid', {matchPrefix: true});
+
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+
+        // Queue a set of commands to change the font for each found item.
+        for (var i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'purple';
+            searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    }); 
+  - |-
+    // Search based on a suffix
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue a command to search the document for any string of characters after 'ly'.
+        var searchResults = context.document.body.search('ly', {matchSuffix: true});
+
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Found count: ' + searchResults.items.length);
+
+        // Queue a set of commands to change the font for each found item.
+        for (var i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'orange';
+            searchResults.items[i].font.highlightColor = 'black';
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    });  
+  - |-
+    // Search using a wildcard
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Queue a command to search the document with a wildcard
+        // for any string of characters that starts with 'to' and ends with 'n'.
+        var searchResults = context.document.body.search('to*n', {matchWildcards: true});
+
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Found count: ' + searchResults.items.length);
+
+        // Queue a set of commands to change the font for each found item.
+        for (var i = 0; i < searchResults.items.length; i++) {
+            searchResults.items[i].font.color = 'purple';
+            searchResults.items[i].font.highlightColor = 'pink';
+            searchResults.items[i].font.bold = true;
+        }
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+    }); 
+'Word.Section#getFooter:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getFooter("Primary")
+        .insertParagraph("This is a primary footer.", "End");
+
+      await context.sync();
+    });
+'Word.Section#getFooter:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy sectionsCollection object.
+        var mySections = context.document.sections;
+        
+        // Queue a command to load the sections.
+        context.load(mySections, 'body/style');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+            
+        // Create a proxy object the primary footer of the first section.
+        // Note that the footer is a body object.
+            var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
+        
+        // Queue a command to insert text at the end of the footer.
+        myFooter.insertText("This is a footer.", Word.InsertLocation.end);
+        
+        // Queue a command to wrap the header in a content control.
+        myFooter.insertContentControl();
+                                
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log("Added a footer to the first section.");   
+    });  
+'Word.Section#getHeader:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getHeader(Word.HeaderFooterType.primary)
+        .insertParagraph("This is a primary header.", "End");
+
+      await context.sync();
+    });
+'Word.Section#getHeader:member(2)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+        
+        // Create a proxy sectionsCollection object.
+        var mySections = context.document.sections;
+        
+        // Queue a command to load the sections.
+        context.load(mySections, 'body/style');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        
+        // Create a proxy object the primary header of the first section.
+        // Note that the header is a body object.
+        var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+        
+        // Queue a command to insert text at the end of the header.
+        myHeader.insertText("This is a header.", Word.InsertLocation.end);
+        
+        // Queue a command to wrap the header in a content control.
+        myHeader.insertContentControl();
+                                
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log("Added a header to the first section.");
+    });  
+'Word.Section:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next page");
+    });
+'Word.SectionCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next even page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next even page");
+    });
+'Word.Setting#delete:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue commands add a setting.
+        var settings = context.document.settings;
+        var startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
+
+        // Queue a command to get the count of settings.
+        var count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+
+        // Queue a command to delete the setting.
+        startMonth.delete();
+
+        // Queue a command to get the new count of settings.
+        count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+    });
+'Word.SettingCollection#deleteAll:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue commands add a setting.
+        var settings = context.document.settings;
+        settings.add('startMonth', { month: 'March', year: 1998 });
+
+        // Queue a command to get the count of settings.
+        var count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+
+        // Queue a command to delete all settings.
+        settings.deleteAll();
+
+        // Queue a command to get the new count of settings.
+        count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+    });
+'Word.SettingCollection#getCount:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue commands add a setting.
+        var settings = context.document.settings;
+        settings.add('startMonth', { month: 'March', year: 1998 });
+
+        // Queue a command to get the count of settings.
+        var count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+
+        // Queue a command to delete all settings.
+        settings.deleteAll();
+
+        // Queue a command to get the new count of settings.
+        count = settings.getCount();
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(count.value);
+    });
+'Word.SettingCollection#getItem:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue commands add a setting.
+        var settings = context.document.settings;
+        settings.add('startMonth', { month: 'March', year: 1998 });
+
+        // Queue a command to retrieve a setting.
+        var startMonth = settings.getItem('startMonth');
+
+        // Queue a command to load the setting.
+        context.load(startMonth);
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log(JSON.stringify(startMonth.value));
+    });
+'Word.SettingCollection#getItemOrNullObject:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Queue commands add a setting.
+        var settings = context.document.settings;
+        settings.add('startMonth', { month: 'March', year: 1998 });
+        
+        // Queue commands to retrieve settings.
+        var startMonth = settings.getItemOrNullObject('startMonth');
+        var endMonth = settings.getItemOrNullObject('endMonth');
+
+        // Queue commands to load settings.
+        context.load(startMonth);
+        context.load(endMonth);
+
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        await context.sync();
+            if (startMonth.isNullObject) {
+                console.log("No such setting.");
+            }
+            else {
+                console.log(JSON.stringify(startMonth.value));
+            }
+            if (endMonth.isNullObject) {
+                console.log("No such setting.");
+            }
+            else {
+                console.log(JSON.stringify(endMonth.value));
+            }
+    });
+'Word.Style:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+    await Word.run(async (context) => {
+      let sentence = context.document.body.insertParagraph(
+        "To be or not to be",
+        "End"
+      );
+
+      // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use: range.style = "name of your style";
+      sentence.styleBuiltIn = Word.Style.intenseReference;
+
+      await context.sync();
+    });
+'Word.Table#getCell:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+    await Word.run(async (context) => {
+      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      firstCell.load("text");
+
+      await context.sync();
+      console.log("First cell text is " + firstCell.text);
+    });
+'Word.TableCell:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+    await Word.run(async (context) => {
+      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      firstCell.load("text");
+
+      await context.sync();
+      console.log("First cell text is " + firstCell.text);
+    });
