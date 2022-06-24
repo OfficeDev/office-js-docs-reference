@@ -177,7 +177,7 @@ tryCatch(async () => {
         forceRebuild
     );
 
-    console.log("\ncreate file: word.d.ts (desktop)");
+    console.log("\ncreate file: word-init.d.ts (release-desktop)");
     makeDtsAndClearJsonIfNew(
         '../api-extractor-inputs-word-release/word_desktop/word-init.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
