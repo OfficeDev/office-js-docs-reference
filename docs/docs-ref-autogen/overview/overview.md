@@ -18,7 +18,7 @@ The following is a list of APIs for the [supported Office host applications](/of
 
 ## Special requirement sets
 
-The online-only and desktop-only requirement sets are special requirement sets. The online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). The desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Word). However, those APIs may not yet be fully supported across all platforms. For more information, see one of the following as applicable.
+The online-only and desktop-only requirement sets are special requirement sets. The online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). The desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Word). APIs in these requirement sets aren't fully supported across all platforms. For more information, see one of the following as applicable.
 
 - `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
 - `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)

@@ -15,7 +15,7 @@ When APIs in the `WordApiHiddenDocument` requirement set are supported across al
 > [!IMPORTANT]
 >
 > - `WordApiHiddenDocument` is a superset of the latest numbered requirement set.
-> - `WordApiHiddenDocument 1.3` is currently the only version of the desktop-only APIs.
+> - `WordApiHiddenDocument 1.3` is currently the only desktop-only requirement set.
 
 ## Recommended usage
 
