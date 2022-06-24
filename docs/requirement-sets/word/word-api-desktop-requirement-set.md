@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 The `WordApiHiddenDocument` requirement set is a special requirement set that includes features that are only available for Word on Windows and on Mac. APIs in this requirement set are considered to be production APIs for the Word application on Windows and on Mac. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiHiddenDocument` APIs are considered to be "preview" APIs for other platforms (web, iPad) and may not be supported by any of those platforms.
 
-When APIs in the `WordApiHiddenDocument` requirement set are supported across all platforms, they will added to the next released requirement set (`WordApi 1.[NEXT]`). Once that new requirement is public, those APIs will be removed from `WordApiHiddenDocument`. Think of this as a similar promotion process to an API moving from preview to release.
+When APIs in the `WordApiHiddenDocument` requirement set are supported across all platforms, they will be added to a subsequent released requirement set (`WordApi 1.[FUTURE]`). Once that new requirement is public, those APIs will be removed from `WordApiHiddenDocument`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
 >
-> - `WordApiHiddenDocument` is a superset of the latest numbered requirement set.
+> - `WordApiHiddenDocument` is a superset of the WordApi 1.3 requirement set.
 > - `WordApiHiddenDocument 1.3` is currently the only desktop-only requirement set.
 
 ## Recommended usage
