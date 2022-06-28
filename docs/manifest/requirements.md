@@ -102,9 +102,9 @@ A **Requirements** element can be a child of an [Override](override.md) element 
 
 ## Contained in
 
-[OfficeApp](officeapp.md)</br>
-[VersionOverrides](versionoverrides.md)</br>
-[Override](override.md)</br>
+- [OfficeApp](officeapp.md)
+- [VersionOverrides](versionoverrides.md)
+- [Override](override.md)
 
 ## Can contain
 
