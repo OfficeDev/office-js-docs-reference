@@ -66,4 +66,4 @@ The following is an example of the `ExtendedPermission` element.
 
 ## Contained in
 
-[ExtendedPermissions](extendedpermissions.md)
+- [ExtendedPermissions](extendedpermissions.md)

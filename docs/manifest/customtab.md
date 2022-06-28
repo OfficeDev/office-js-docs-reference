@@ -43,7 +43,7 @@ Required. Unique identifier for the custom tab. It is a string with a maximum of
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Group](group.md)      | No |  Defines a Group of commands.  |
 |  [OfficeGroup](#officegroup)      | No |  Represents a built-in Office control group. **Important**: Not available in Outlook. |
 |  [Label](#label-tab)      | Yes |  The label for the CustomTab.  |

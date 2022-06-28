@@ -64,8 +64,8 @@ The following is an example of the `ExtendedPermissions` element.
 
 ## Contained in
 
-[VersionOverrides](versionoverrides.md)
+- [VersionOverrides](versionoverrides.md)
 
 ## Can contain
 
-[ExtendedPermission](extendedpermission.md)
+- [ExtendedPermission](extendedpermission.md)

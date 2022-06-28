@@ -21,16 +21,17 @@ Specifies an additional domain that Office should trust, in addition to the one 
 ```
 
 > [!IMPORTANT]
+>
 > 1. The value of the **AppDomain** element must include the protocol (e.g., `<AppDomain>https://myappdomain.com</AppDomain>`).
-> 2. If there is an explicit port for the domain, include it (e.g.,`<AppDomain>https://myappdomain.com:9999</AppDomain>`).
-> 3. If a subdomain needs to be trusted, include it (e.g.,`<AppDomain>https://mysubdomain.myappdomain.com</AppDomain>`). The subdomain `mysubdomain.mydomain.com` and `mydomain.com` are different domains. If both need to be trusted, then both need to be in separate **AppDomain** elements.
-> 4. Listing the same domain as the one specified in the [SourceLocation element](sourcelocation.md) has no effect and may be misleading. In particular, when you are developing on `localhost`, you don't need to create an **AppDomain** element for `localhost`.
-> 5. Don't include any segments of a URL past the domain. For example, don't include the full URL of a page.
-> 6. Do *not* put a closing slash, "/", on the value.
+> 1. If there is an explicit port for the domain, include it (e.g.,`<AppDomain>https://myappdomain.com:9999</AppDomain>`).
+> 1. If a subdomain needs to be trusted, include it (e.g.,`<AppDomain>https://mysubdomain.myappdomain.com</AppDomain>`). The subdomain `mysubdomain.mydomain.com` and `mydomain.com` are different domains. If both need to be trusted, then both need to be in separate **AppDomain** elements.
+> 1. Listing the same domain as the one specified in the [SourceLocation element](sourcelocation.md) has no effect and may be misleading. In particular, when you are developing on `localhost`, you don't need to create an **AppDomain** element for `localhost`.
+> 1. Don't include any segments of a URL past the domain. For example, don't include the full URL of a page.
+> 1. Do *not* put a closing slash, "/", on the value.
 
 ## Contained in
 
-[AppDomains](appdomains.md)
+- [AppDomains](appdomains.md)
 
 ## Remarks
 

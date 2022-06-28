@@ -21,15 +21,17 @@ Specifies the default source location and other default settings for your conten
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
+The **DefaultSettings** element can contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[SourceLocation](sourcelocation.md)|x||x|
-|[RequestedWidth](requestedwidth.md)|x|||
-|[RequestedHeight](requestedheight.md)|x|||
+|:-----|:-----:|:-----:|:-----:|
+|[SourceLocation](sourcelocation.md)|Yes|No|Yes|
+|[RequestedWidth](requestedwidth.md)|Yes|No|No|
+|[RequestedHeight](requestedheight.md)|Yes|No|No|
 
 ## Remarks
 

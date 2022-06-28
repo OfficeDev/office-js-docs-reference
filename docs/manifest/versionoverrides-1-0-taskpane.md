@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) (Required for Excel, PowerPoint, and Word.)
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) (Required for Excel, PowerPoint, and Word)
 - Some child elements may be associated with additional requirement sets.
 
 ## Child elements
@@ -33,7 +33,7 @@ The following table applies only to version 1.0 of **VersionOverrides** elements
 > In iOS, only **WebApplicationInfo** is supported. All other child elements of **VersionOverrides** are ignored.
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Description](#description)    |  No   |  Describes the add-in. |
 |  [Requirements](requirements.md)  |  No   |  Specifies the minimum requirement sets that must be supported in order for the markup in the parent **VersionOverrides** to take effect. This should always be *more* restrictive than the **Requirements** element in the base portion of the manifest.|
 |  [Hosts](hosts.md)                |  Yes  |  Specifies a collection of Office applications. The child Hosts element overrides the Hosts element in the parent portion of the manifest.  |

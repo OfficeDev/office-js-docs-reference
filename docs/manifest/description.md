@@ -19,10 +19,8 @@ Specifies the description of your Office Add-in as a string no longer than 250 c
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
-
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
-[Override](override.md)
-
+- [Override](override.md)

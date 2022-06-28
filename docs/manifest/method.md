@@ -37,13 +37,13 @@ Specifies an individual method from the Office JavaScript API that must be suppo
 
 ## Contained in
 
-[Methods](methods.md)
+- [Methods](methods.md)
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|Name|string|required|Specifies the name of the required method qualified with its parent object. For example, to specify the `getSelectedDataAsync` method, you must specify `"Document.getSelectedDataAsync"`.|
+|:-----|:-----|:-----:|:-----|
+|Name|string|Yes|Specifies the name of the required method qualified with its parent object. For example, to specify the `getSelectedDataAsync` method, you must specify `"Document.getSelectedDataAsync"`.|
 
 ## Remarks
 

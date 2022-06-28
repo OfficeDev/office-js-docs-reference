@@ -19,7 +19,7 @@ Specifies the URL of the home page for the dictionary.
 
 ## Contained in
 
-[Dictionary](dictionary.md)
+- [Dictionary](dictionary.md)
 
 ## See also
 

@@ -35,10 +35,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  **Id**    |  Yes   |  The **Application Id** of the add-in's associated service as registered in the Azure Active Directory v 2.0 endpoint.|
 |  **Resource**  |  Yes   |  Specifies the **Application ID URI** of the add-in as registered in the Azure Active Directory v 2.0 endpoint.|
-|  [Scopes](scopes.md)                |  Yes  |  Specifies the permissions that the add-in needs to a resource, such as Microsoft Graph.  |
+|  [Scopes](scopes.md) |  Yes  |  Specifies the permissions that the add-in needs to a resource, such as Microsoft Graph.  |
 
 ## WebApplicationInfo example
 

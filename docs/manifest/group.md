@@ -26,7 +26,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [id](#id-attribute)  |  Yes  | A unique ID for the group.|
 
 ### id attribute
@@ -36,7 +36,7 @@ Required. Unique identifier for the group. It is a string with a maximum of 125 
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Label](#label)      | Yes |  The label for a group.  |
 |  [Icon](icon.md)      | Yes |  The image for a group. Not supported in Outlook add-ins. |
 |  [Control](#control)    | No |  Represents a Control object. Can be zero or more.  |
