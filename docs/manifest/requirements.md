@@ -108,7 +108,7 @@ A **Requirements** element can be a child of an [Override](override.md) element 
 
 ## Can contain
 
-The Requirements element can contain the following types.
+The Requirements element can contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
 |:-----|:-----|:-----|:-----|
