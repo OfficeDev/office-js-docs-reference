@@ -19,7 +19,7 @@ When defined in the basic manifest (under [OfficeApp](officeapp.md)), the host t
 ### Attributes
 
 | Attribute     | Type   | Required | Description                                      |
-|:--------------|:-------|:---------:|:-------------------------------------------------|
+|:--------------|:-------:|:---------:|:-------------------------------------------------|
 | [Name](#name) | string | Yes | The name of the type of Office client application. |
 
 ### Name

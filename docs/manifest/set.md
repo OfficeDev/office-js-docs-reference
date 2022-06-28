@@ -42,7 +42,7 @@ Specifies a [requirement set](/office/dev/add-ins/develop/office-versions-and-re
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----:|:-----|
+|:-----|:-----:|:-----:|:-----|
 |Name|string|Yes|The name of a [requirement set](/office/dev/add-ins/develop/office-versions-and-requirement-sets).|
 |MinVersion|string|No|Specifies the minimum version of the API set required by your add-in. Overrides the value of **DefaultMinVersion**, if it is specified in the parent [Sets](sets.md) element.|
 

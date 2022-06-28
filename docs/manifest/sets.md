@@ -48,7 +48,7 @@ Specifies the minimum set of Office JavaScript API requirements ([requirement se
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----:|:-----|
+|:-----|:-----:|:-----:|:-----|
 |DefaultMinVersion|string|No|Specifies the default **MinVersion** attribute value for all child [Set](set.md) elements. The default value is "1.1".|
 
 ## Remarks

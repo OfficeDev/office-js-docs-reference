@@ -29,5 +29,5 @@ Specifies the source file locations for your Office Add-in as a URL between 1 an
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----:|:-----|
+|:-----|:-----:|:-----:|:-----|
 |DefaultValue|URL|Yes|Specifies the default value for this setting for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
