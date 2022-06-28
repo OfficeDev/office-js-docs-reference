@@ -102,16 +102,18 @@ A **Requirements** element can be a child of an [Override](override.md) element 
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
-[VersionOverrides](versionoverrides.md)
-[Override](override.md)
+- [OfficeApp](officeapp.md)
+- [VersionOverrides](versionoverrides.md)
+- [Override](override.md)
 
 ## Can contain
 
+The Requirements element can contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
 |:-----|:-----|:-----|:-----|
-|[Sets](sets.md)|x|x|x|
-|[Methods](methods.md)|x||x|
+|[Sets](sets.md)|Yes|Yes|Yes|
+|[Methods](methods.md)|Yes|No|Yes|
 
 ## See also
 
