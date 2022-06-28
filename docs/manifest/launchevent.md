@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # LaunchEvent element
 
-Configures your add-in to activate based on supported events. Child of the [`<LaunchEvents>`](launchevents.md) element. For more information, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
+Configures your add-in to activate based on supported events. Child of the [LaunchEvents](launchevents.md) element. For more information, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
 
 **Add-in type:** Mail
 

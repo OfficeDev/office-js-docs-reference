@@ -94,7 +94,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ## Override element for `RequirementToken`
 
-An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RequirementTokenOverride**, then the child **Requirements** element expresses the condition, and the `Value` attribute is the consequent. For example, the first **Override** in the following is read "If the current platform supports FeatureOne version 1.7, then use string 'oldAddinVersion' in place of the `${token.requirements}` token in the URL of the grandparent `<ExtendedOverrides>` (instead of the default string 'upgrade')."
+An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RequirementTokenOverride**, then the child **Requirements** element expresses the condition, and the `Value` attribute is the consequent. For example, the first **Override** in the following is read "If the current platform supports FeatureOne version 1.7, then use string 'oldAddinVersion' in place of the `${token.requirements}` token in the URL of the grandparent **ExtendedOverrides** (instead of the default string 'upgrade')."
 
 ```xml
 <ExtendedOverrides Url="http://contoso.com/addinmetadata/${token.requirements}/extended-manifest-overrides.json">

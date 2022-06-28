@@ -15,16 +15,16 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
-|  **xmlns**       |  Yes  |  The VersionOverrides schema namespace. The allowed values vary depending on  this `<VersionOverrides>` element's **xsi:type** value and the **xsi:type** value of the parent `<OfficeApp>` element. See [Namespace values](#namespace-values) below.|
+|  **xmlns**       |  Yes  |  The VersionOverrides schema namespace. The allowed values vary depending on  this **VersionOverrides** element's **xsi:type** value and the **xsi:type** value of the parent **OfficeApp** element. See [Namespace values](#namespace-values) below.|
 |  **xsi:type**  |  Yes  | The schema version. At this time, the only valid values are `VersionOverridesV1_0` and `VersionOverridesV1_1`. |
 
 ### Namespace values
 
-The following lists the required value of the **xmlns** attribute depending on the **xsi:type** value of the root `<OfficeApp>` element.
+The following lists the required value of the **xmlns** attribute depending on the **xsi:type** value of the root **OfficeApp** element.
 
 - **TaskPaneApp** supports only version 1.0 of VersionOverrides, and the **xmlns** must be `http://schemas.microsoft.com/office/taskpaneappversionoverrides`.
 - **ContentApp** supports only version 1.0 of VersionOverrides, and the **xmlns** must be `http://schemas.microsoft.com/office/contentappversionoverrides`.
-- **MailApp** supports versions 1.0 and 1.1 of VersionOverrides, so the value of **xmlns** varies depending on this `<VersionOverrides>` element's **xsi:type** value:
+- **MailApp** supports versions 1.0 and 1.1 of VersionOverrides, so the value of **xmlns** varies depending on this **VersionOverrides** element's **xsi:type** value:
   - When **xsi:type** is `VersionOverridesV1_0`, **xmlns** must be `http://schemas.microsoft.com/office/mailappversionoverrides`.
   - When **xsi:type** is `VersionOverridesV1_1`, **xmlns** must be `http://schemas.microsoft.com/office/mailappversionoverrides/1.1`.
 

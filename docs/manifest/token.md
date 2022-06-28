@@ -32,7 +32,7 @@ Defines an individual URL token. For more information about the use of this elem
 
 |Attribute|Description|
 |:-----|:-----|
-|DefaultValue|Default value for this token if no condition in any child `<Override>` element matches.|
+|DefaultValue|Default value for this token if no condition in any child **Override** element matches.|
 |Name|Token name. This name is user-defined. The type of the token is determined by the type attribute.|
 |xsi:type|Defines the kind of Token. This attribute should be set to one of:  `"RequirementsToken"`,  or  `"LocaleToken"`.|
 
