@@ -24,7 +24,7 @@ Each resource can have one or more **Override** child elements to define a diffe
 ## Child elements
 
 |  Element |  Type  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Images](#images)            |  image   |  Provides the HTTPS URL to an image for an icon. |
 |  **Urls**                |  url     |  Provides an HTTPS URL location. A URL can have a maximum of 2048 characters. |
 |  **ShortStrings** |  string  |  The text for **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|

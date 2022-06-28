@@ -15,7 +15,7 @@ This section contains information about every element used by an Office Add-in's
 ## Elements
 
 | Name | Category |
-|---|---|
+|:---|:---:|
 |[Action](action.md)| VersionOverrides |
 |[AllFormFactors](allformfactors.md)| VersionOverrides |
 |[AllowSnapshot](allowsnapshot.md)| General |
