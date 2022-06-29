@@ -6,7 +6,7 @@
   },
   "docModel": {
     "enabled": true,
-    "apiJsonFilePath": "../../json/word_desktop/<unscopedPackageName>.api.json"
+    "apiJsonFilePath": "../../json/word_1_3_hidden_document/<unscopedPackageName>.api.json"
   },
   "dtsRollup": {
     "enabled": false

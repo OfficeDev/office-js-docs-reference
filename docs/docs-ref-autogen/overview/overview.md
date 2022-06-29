@@ -96,7 +96,7 @@ The online-only and desktop-only requirement sets are special requirement sets. 
             <ul>
                 <li><a href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
                 <li><a href="/javascript/api/word?view=word-js-online">WordApiOnline 1.1</a></li>
-                <li><a href="/javascript/api/word?view=word-js-desktop">WordApiHiddenDocument 1.3</a> (Desktop only)</li>
+                <li><a href="/javascript/api/word?view=word-js-1.3-hidden-document">WordApiHiddenDocument 1.3</a> (Desktop only)</li>
                 <li><a href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>

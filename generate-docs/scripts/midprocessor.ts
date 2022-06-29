@@ -187,7 +187,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
-    writeSnippetFileAndClearYamlIfNew("../json/word_desktop/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_1_3_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets), "word");
     }
@@ -248,10 +248,10 @@ function cleanUpJson(host: string) {
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
         // Handle WordApiHiddenDocument corner case.
-        console.log(`\nStarting ${host}_desktop...`);
-        json = fsx.readFileSync(`${jsonPath}_desktop/${fileName}`).toString();
-        fsx.writeFileSync(`${jsonPath}_desktop/${fileName}`, cleanUpRichApiJson(json));
-        console.log(`\nCompleted ${host}_desktop`);
+        console.log(`\nStarting ${host}_1_3_hidden_document...`);
+        json = fsx.readFileSync(`${jsonPath}_1_3_hidden_document/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_1_3_hidden_document/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_1_3_hidden_document`);
     } else if (host === "powerpoint") {
         currentRelease = CURRENT_POWERPOINT_RELEASE;
     } else {

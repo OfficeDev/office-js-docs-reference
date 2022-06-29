@@ -119,7 +119,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
-    scrubAndWriteToc(path.resolve(`${docsDestination}/word_desktop`), tocWithReleaseCommon, "word", 95);
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);
 
     console.log(`Namespace pass on Outlook docs`);
     // replace Outlook/CommonAPI namespace references with Office
