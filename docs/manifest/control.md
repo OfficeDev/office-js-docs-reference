@@ -27,7 +27,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |**xsi:type**|Yes|The type of control being defined. Can be `Button`, `Menu`, or `MobileButton`. |
 |**id**|Yes|The ID of the control element. Can be a maximum of 125 characters. Must be unique across all **Control** elements in the manifest.|
 

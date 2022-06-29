@@ -37,4 +37,4 @@ Specifies control settings that apply when your mail add-in is used on a tablet.
 
 ## Contained in
 
-[Form](form.md)
+- [Form](form.md)

@@ -37,7 +37,7 @@ UX settings for the forms that your mail add-in will use when running on a parti
 
 ## Contained in
 
-[FormSettings](formsettings.md)
+- [FormSettings](formsettings.md)
 
 ## Can contain
 
@@ -50,5 +50,5 @@ UX settings for the forms that your mail add-in will use when running on a parti
 ## Attributes
 
 |Attribute|Required|Description|
-|:-----|:-----|:-----|
-|xsi:type|required|Specifies where the add-in appears in Outlook. If your add-in should appear when a user reads messages or appointments, set the attribute to `ItemRead`. However, if your add-in should appear when a user composes a reply, creates a new message or appointment, or edits an existing appointment, set the attribute to `ItemEdit`.|
+|:-----|:-----:|:-----|
+|xsi:type|Yes|Specifies where the add-in appears in Outlook. If your add-in should appear when a user reads messages or appointments, set the attribute to `ItemRead`. However, if your add-in should appear when a user composes a reply, creates a new message or appointment, or edits an existing appointment, set the attribute to `ItemEdit`.|

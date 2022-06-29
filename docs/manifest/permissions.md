@@ -27,7 +27,7 @@ For mail add-ins:
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Remarks
 

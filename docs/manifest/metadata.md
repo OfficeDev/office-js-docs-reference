@@ -28,7 +28,7 @@ None
 ## Child elements
 
 |  Element  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [SourceLocation](customfunctionssourcelocation.md)  |  Yes  | String with the resource id of the JSON file used by custom functions. |
 
 ## Example

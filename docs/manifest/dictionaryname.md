@@ -19,7 +19,7 @@ Specifies the name of this dictionary.
 
 ## Contained in
 
-[Dictionary](dictionary.md)
+- [Dictionary](dictionary.md)
 
 ## See also
 

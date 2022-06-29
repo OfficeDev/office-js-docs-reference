@@ -39,21 +39,20 @@ Specifies the minimum set of Office JavaScript API requirements ([requirement se
 
 ## Contained in
 
-[Requirements](requirements.md)
+- [Requirements](requirements.md)
 
 ## Can contain
 
-[Set](set.md)
+- [Set](set.md)
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|DefaultMinVersion|string|optional|Specifies the default **MinVersion** attribute value for all child [Set](set.md) elements. The default value is "1.1".|
+|:-----|:-----:|:-----:|:-----|
+|DefaultMinVersion|string|No|Specifies the default **MinVersion** attribute value for all child [Set](set.md) elements. The default value is "1.1".|
 
 ## Remarks
 
 For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 For more information about the **MinVersion** attribute of the **Set** element and the **DefaultMinVersion** attribute of the **Sets** element, see [Specify which Office versions and platforms can host your add-in](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements#specify-which-office-versions-and-platforms-can-host-your-add-in).
-

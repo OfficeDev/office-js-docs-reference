@@ -28,7 +28,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the menu item. |
 |  [Supertip](supertip.md)  | Yes |  The supertip for the menu item.    |
 |  [Icon](icon.md)      | No |  An image for the menu item.         |

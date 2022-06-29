@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Hosts element
 
-Specifies the Office client applications where the Office Add-in will activate. Contains a collection of **Host** elements and their settings. 
+Specifies the Office client applications where the Office Add-in will activate. Contains a collection of **Host** elements and their settings.
 
 ## As child of VersionOverrides element
 
@@ -28,5 +28,5 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Host](host.md)    |  Yes   |  Describes a host and its settings. |

@@ -30,7 +30,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Control of type Menu](control-menu.md)    | Yes |  A collection of one or more Control objects.  |
 
 ## xsi:type
