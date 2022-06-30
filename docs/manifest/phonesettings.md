@@ -37,5 +37,4 @@ Specifies source location and control settings that apply when your mail add-in 
 
 ## Contained in
 
-[Form](form.md)
-
+- [Form](form.md)

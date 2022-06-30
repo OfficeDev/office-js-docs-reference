@@ -21,7 +21,7 @@ Defines settings for a task pane add-in that implements additional dictionary su
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 

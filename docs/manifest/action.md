@@ -26,7 +26,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [xsi:type](#xsitype)  |  Yes  | Action type to take|
 
 ## Child elements

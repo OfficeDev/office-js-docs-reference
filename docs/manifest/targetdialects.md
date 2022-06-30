@@ -21,7 +21,7 @@ Defines the regional language or languages supported by this dictionary.
 
 ## Contained in
 
-[Dictionary](dictionary.md)
+- [Dictionary](dictionary.md)
 
 ## See also
 

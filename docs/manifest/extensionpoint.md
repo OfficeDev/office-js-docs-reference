@@ -22,7 +22,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  **xsi:type**  |  Yes  | The type of extension point being defined. Possible values depend on the Office host application defined in the grandparent **Host** element value.|
 
 ## Extension points for Excel, OneNote, PowerPoint, and Word add-in commands

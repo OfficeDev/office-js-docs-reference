@@ -25,11 +25,11 @@ Lists any domains, in addition to the domain specified in the `SourceLocation` e
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
-[AppDomain](appdomain.md)
+- [AppDomain](appdomain.md)
 
 ## Remarks
 

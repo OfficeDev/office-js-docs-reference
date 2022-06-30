@@ -29,8 +29,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
-|  **Scope**                |  Yes     |   The name of a permission; for example, Files.Read.All or profile. |
+|:-----|:-----:|:-----|
+|  **Scope** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. |
 
 ## Example
 

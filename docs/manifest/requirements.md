@@ -22,11 +22,11 @@ When used in the base manifest (that is, as a direct child of [OfficeApp](office
 
 When used as a child of [VersionOverrides](versionoverrides.md), specifies the minimum set of Office JavaScript API requirements ([requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets#specify-office-applications-and-requirement-sets) and/or methods) that must be supported by the Office version and platform (such as Windows, Mac, web, and iOS or iPad) in order for the settings in the **VersionOverrides** element *that override base manifest settings* to take effect.
 
-Consider an add-in that specifies requirement A in the base manifest and specifies requirement B inside the **VersionOverrides**. 
+Consider an add-in that specifies requirement A in the base manifest and specifies requirement B inside the **VersionOverrides**.
 
-- If the platform and Office version don't support A, then the add-in isn't activated and Office doesn't parse the **VersionOverrides** section of the manifest. 
+- If the platform and Office version don't support A, then the add-in isn't activated and Office doesn't parse the **VersionOverrides** section of the manifest.
 - If both A and B are supported, then the add-in is activated and all the markup in the **VersionOverrides** takes effect. 
-- If A is supported, but B is not, then the add-in is activated and *some* of the markup in the **VersionOverrides** takes effect. Specifically, child elements of the **VersionOverrides** that don't override base manifest elements take effect. For example, a **WebApplicationInfo** element or a **EquivalentAddins** take effect. However, all child elements of the **VersionOverrides** that override a base manifest element, such as **Hosts**, don't take effect. Instead, Office uses the values of the base manifest markup that would otherwise have been overridden. 
+- If A is supported, but B is not, then the add-in is activated and *some* of the markup in the **VersionOverrides** takes effect. Specifically, child elements of the **VersionOverrides** that don't override base manifest elements take effect. For example, a **WebApplicationInfo** element or a **EquivalentAddins** take effect. However, all child elements of the **VersionOverrides** that override a base manifest element, such as **Hosts**, don't take effect. Instead, Office uses the values of the base manifest markup that would otherwise have been overridden.
 
 **Add-in type:** Task pane, Mail
 
@@ -108,10 +108,10 @@ A **Requirements** element can be a child of an [Override](override.md) element 
 
 ## Can contain
 
-The Requirements element can contain the following child elements depending on the add-in type.
+The **Requirements** element can contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----:|:-----:|:-----:|
 |[Sets](sets.md)|Yes|Yes|Yes|
 |[Methods](methods.md)|Yes|No|Yes|
 

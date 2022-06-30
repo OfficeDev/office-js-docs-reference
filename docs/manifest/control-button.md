@@ -20,7 +20,7 @@ A button performs a single action when the user selects it. It can either execut
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the button. |
 |  **ToolTip**    |No|The tooltip for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resources.md) element.|
 |  [Supertip](supertip.md)  | Yes |  The supertip for the button.    |

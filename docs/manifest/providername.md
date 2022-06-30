@@ -19,5 +19,4 @@ Specifies the name of the individual or company that developed this Office Add-i
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
-
+- [OfficeApp](officeapp.md)

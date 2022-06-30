@@ -35,11 +35,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-[Control element of type Menu](control-menu.md)
+- [Control element of type Menu](control-menu.md)
 
 ## Must contain
 
-[Item](item.md)
+- [Item](item.md)
 
 ## Examples
 
