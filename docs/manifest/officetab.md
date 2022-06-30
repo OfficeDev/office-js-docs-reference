@@ -28,7 +28,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  Group      | Yes |  Defines a group of commands. You can add only one group per add-in to the default tab.  |
 
 The following are valid tab `id` values by application. Values in **bold** are supported in both desktop and online (for example, Word 2016 or later on Windows and Word on the web).

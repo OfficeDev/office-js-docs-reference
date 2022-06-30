@@ -31,7 +31,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the button. |
 |  [Icon](icon.md)      | Yes |  An image for the button.         |
 |  [Action](action.md)    | Yes |  Specifies the action to perform. There can be only one **Action** child of a **Control** element. |

@@ -19,5 +19,4 @@ Specifies the unique ID of your Office Add-in as a GUID. Use a random GUID gener
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
-
+- [OfficeApp](officeapp.md)

@@ -30,16 +30,16 @@ Specifies the URL of a page that provides support information for your add-in.
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
 |  Element | Required | Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Override](override.md)   | No | Specifies the setting for additional locale urls |
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|DefaultValue|URL|required|Specifies the default value for this setting, expressed for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
+|:-----|:-----:|:-----:|:-----|
+|DefaultValue|URL|Yes|Specifies the default value for this setting, expressed for the locale specified in the [DefaultLocale](defaultlocale.md) element.|

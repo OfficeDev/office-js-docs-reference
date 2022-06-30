@@ -29,7 +29,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 | [Description](#description)   | Yes      | The description / body content for the callout.|
 | [LearnMoreUrl](#learnmoreurl) | Yes       | A URL to a page that explains the add-in in detail.   |
 
-### Title 
+### Title
 
 Required. The title used for the top of the callout. The **resid** attribute references a valid ID in the **ShortStrings** element in the [Resources](resources.md) section and can be no more than 32 characters.
 
@@ -42,12 +42,12 @@ Required. The description / body content for the callout. The **resid** attribut
 Required. The URL to a page where the user can learn more about your add-in. The **resid** attribute references a valid ID in the **Urls** element in the [Resources](resources.md) section and can be no more than 32 characters.
 
 > [!NOTE]
-> **LearnMoreUrl** does not currently render in Word, Excel, or PowerPoint clients. We recommend that you add this URL for all clients so that the URL will render when it becomes available. 
+> **LearnMoreUrl** does not currently render in Word, Excel, or PowerPoint clients. We recommend that you add this URL for all clients so that the URL will render when it becomes available.
 
 ## See also
 
 The following code samples use the **GetStarted** element.
 
-* [Excel Web Add-in for Manipulating Table and Chart Formatting](https://github.com/OfficeDev/Excel-Add-in-JavaScript-SalesTracker)
-* [Word Add-in JavaScript SpecKit](https://github.com/OfficeDev/Word-Add-in-JS-SpecKit)
-* [Insert Excel charts using Microsoft Graph in a PowerPoint add-in](https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart)
+- [Excel Web Add-in for Manipulating Table and Chart Formatting](https://github.com/OfficeDev/Excel-Add-in-JavaScript-SalesTracker)
+- [Word Add-in JavaScript SpecKit](https://github.com/OfficeDev/Word-Add-in-JS-SpecKit)
+- [Insert Excel charts using Microsoft Graph in a PowerPoint add-in](https://github.com/OfficeDev/PowerPoint-Add-in-Microsoft-Graph-ASPNET-InsertChart)

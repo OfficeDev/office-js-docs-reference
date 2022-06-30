@@ -19,7 +19,7 @@ Specifies the version of your Office Add-in. The version number can be 1, 2, 3, 
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Remarks
 

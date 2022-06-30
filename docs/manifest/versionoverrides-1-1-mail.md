@@ -33,7 +33,7 @@ The following table applies only to version 1.1 of **VersionOverrides** elements
 > In iOS, only **WebApplicationInfo** is supported. All other child elements of **VersionOverrides** are ignored.
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Description](#description)    |  No   |  Describes the add-in. |
 |  [Requirements](requirements.md)  |  No   |  Specifies the minimum requirement sets that must be supported in order for the markup in the parent **VersionOverrides** to take effect. This should always be *more* restrictive than the **Requirements** element in the base portion of the manifest.|
 |  [Hosts](hosts.md)                |  Yes  |  Specifies a collection of Office applications. The child Hosts element overrides the Hosts element in the parent portion of the manifest.  |

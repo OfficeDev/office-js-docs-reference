@@ -28,13 +28,13 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  **xsi:type**  |  No  | The type of icon being defined. This is only applicable to icons in mobile form factors. **Icon** elements contained within a [MobileFormFactor](mobileformfactor.md) element must have this attribute set to `bt:MobileIconList`. |
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Image](#image)        | Yes |   resid of an image to use         |
 
 ### Image

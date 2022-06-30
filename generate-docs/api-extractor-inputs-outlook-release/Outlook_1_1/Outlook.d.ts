@@ -3451,17 +3451,30 @@ export declare namespace Office {
          *
          * - New Mac UI, Android: No limit
          *
-         * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
-         * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
-         * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * 
+         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         * 
+         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         * 
+         * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
+         * 
+         * - A Teams meeting status icon appears before the recipient's name or email address.
+         * 
+         * - A semicolon appears after the recipient's name or email address.
+         * 
+         * - The recipient's name or email address is underlined or enclosed in a box.
+         * 
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         * the auto-complete list.
          * 
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -3479,11 +3492,6 @@ export declare namespace Office {
          *
          * - New Mac UI, Android: No limit
          *
-         * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
-         * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
-         * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          * 
@@ -3491,6 +3499,24 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         * 
+         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         * 
+         * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
+         * 
+         * - A Teams meeting status icon appears before the recipient's name or email address.
+         * 
+         * - A semicolon appears after the recipient's name or email address.
+         * 
+         * - The recipient's name or email address is underlined or enclosed in a box.
+         * 
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         * the auto-complete list.
+         * 
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
          */

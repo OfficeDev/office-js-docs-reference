@@ -19,7 +19,7 @@ Specifies the alternate ID for your Office Add-in as issued by AppSource.
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Remarks
 

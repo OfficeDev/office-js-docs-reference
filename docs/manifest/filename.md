@@ -19,8 +19,7 @@ Specifies the file name of the equivalent XLL for custom functions in your web a
 
 ## Contained in
 
-[EquivalentAddin](equivalentaddin.md)
-
+- [EquivalentAddin](equivalentaddin.md)
 
 ## See also
 

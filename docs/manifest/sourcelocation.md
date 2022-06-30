@@ -24,10 +24,10 @@ Specifies the source file locations for your Office Add-in as a URL between 1 an
 
 ## Can contain
 
-[Override](override.md)
+- [Override](override.md)
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|DefaultValue|URL|required|Specifies the default value for this setting for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
+|:-----|:-----:|:-----:|:-----|
+|DefaultValue|URL|Yes|Specifies the default value for this setting for the locale specified in the [DefaultLocale](defaultlocale.md) element.|

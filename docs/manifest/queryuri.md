@@ -19,7 +19,7 @@ Specifies the URL of the endpoint for the dictionary query service.
 
 ## Contained in
 
-[Dictionary](dictionary.md)
+- [Dictionary](dictionary.md)
 
 ## See also
 

@@ -39,11 +39,11 @@ Specifies the minimum set of Office JavaScript API methods that must be supporte
 
 ## Contained in
 
-[Requirements](requirements.md)
+- [Requirements](requirements.md)
 
 ## Can contain
 
-[Method](method.md)
+- [Method](method.md)
 
 ## Remarks
 
