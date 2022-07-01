@@ -52,14 +52,14 @@ Required. Unique identifier for the custom tab. It is a string with a maximum of
 
 ### Group
 
-Optional, but if not present there must be at least one **OfficeGroup** element. See [Group element](group.md). The order of **\<Group\>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **\<Label\>** element.
+Optional, but if not present there must be at least one **\<OfficeGroup\>** element. See [Group element](group.md). The order of **\<Group\>** and **\<OfficeGroup\>** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **\<Label\>** element.
 
 ### OfficeGroup
 
-Optional, but if not present there must be at least one **\<Group\>** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](/office/dev/add-ins/design/built-in-button-integration#find-the-ids-of-controls-and-control-groups). The order of **\<Group\>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **\<Label\>** element.
+Optional, but if not present there must be at least one **\<Group\>** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](/office/dev/add-ins/design/built-in-button-integration#find-the-ids-of-controls-and-control-groups). The order of **\<Group\>** and **\<OfficeGroup\>** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **\<Label\>** element.
 
 > [!IMPORTANT]
-> The **OfficeGroup** element is not available in Outlook. In PowerPoint, it is in preview for Mac and Windows; but is available for production add-ins in PowerPoint on the web.
+> The **\<OfficeGroup\>** element is not available in Outlook. In PowerPoint, it is in preview for Mac and Windows; but is available for production add-ins in PowerPoint on the web.
 
 **Add-in type:** Task pane
 
