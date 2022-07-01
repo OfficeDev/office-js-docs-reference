@@ -32,7 +32,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-- [ExtensionPoint](extensionpoint.md) (**<LaunchEvent>** mail add-in)
+- [ExtensionPoint](extensionpoint.md) (**\<LaunchEvent\>** mail add-in)
 
 ## Child elements
 

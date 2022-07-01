@@ -40,7 +40,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
-| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one **<Override>** element and it must be of type `javascript`.|
+| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one **\<Override\>** element and it must be of type `javascript`.|
 
 ## Attributes
 

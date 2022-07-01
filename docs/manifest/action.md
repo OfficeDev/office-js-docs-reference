@@ -19,9 +19,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **<VersionOverrides>** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **<VersionOverrides>** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **<VersionOverrides>** is type Mail 1.1.
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
+- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Attributes
 
@@ -144,7 +144,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > [!NOTE]
 > This child element is not supported in Outlook add-ins.
 
-The following example shows an action that uses the **Title** element. Note that you don't assign the **Title** to a string directly. Instead, you assign it a resource ID (resid), that is defined in the **<Resources>** section of the manifest and can be no more than 32 characters.
+The following example shows an action that uses the **Title** element. Note that you don't assign the **Title** to a string directly. Instead, you assign it a resource ID (resid), that is defined in the **\<Resources\>** section of the manifest and can be no more than 32 characters.
 
 ```xml
 <Action xsi:type="ShowTaskpane">

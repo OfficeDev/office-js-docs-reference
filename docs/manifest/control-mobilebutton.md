@@ -12,7 +12,7 @@ Defines a button that executes an action or launches a task pane and that appear
 > [!NOTE]
 > This article assumes familiarity with the basic [Control reference article](control.md) which contains important information about the element's attributes.
 
-A mobile button performs a single action when the user selects it. It can either execute a function or show a task pane. Each button control must have an `id` attribute value that is unique among all **<Control>** elements in the manifest.
+A mobile button performs a single action when the user selects it. It can either execute a function or show a task pane. Each button control must have an `id` attribute value that is unique among all **\<Control\>** elements in the manifest.
 
 **Add-in type:** Mail
 
@@ -34,7 +34,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the button. |
 |  [Icon](icon.md)      | Yes |  An image for the button.         |
-|  [Action](action.md)    | Yes |  Specifies the action to perform. There can be only one **<Action>** child of a **<Control>** element. |
+|  [Action](action.md)    | Yes |  Specifies the action to perform. There can be only one **\<Action\>** child of a **\<Control\>** element. |
 
 ### Label
 

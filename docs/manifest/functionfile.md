@@ -22,14 +22,14 @@ Specifies the source code file for operations that an add-in exposes in one of t
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
-The **<FunctionFile>** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **<FunctionFile>** element can be no more than 32 characters and is set to the value of the `id` attribute of a **Url** element in the **<Resources>** element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
+The **\<FunctionFile\>** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **\<FunctionFile\>** element can be no more than 32 characters and is set to the value of the `id` attribute of a **Url** element in the **\<Resources\>** element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
 
 > [!NOTE]
 > When the add-in is configured to use a [shared runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime), the functions in the code file run in the same JavaScript runtime (and share a common global namespace) as the JavaScript in the add-in's task pane (if any).
 >
-> The **<FunctionFile>** element and the associated code file also have a special role to play with [custom keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts), which require a shared runtime.
+> The **\<FunctionFile\>** element and the associated code file also have a special role to play with [custom keyboard shortcuts](/office/dev/add-ins/design/keyboard-shortcuts), which require a shared runtime.
 
-The following is an example of the **<FunctionFile>** element.
+The following is an example of the **\<FunctionFile\>** element.
 
 ```XML
 <DesktopFormFactor>
@@ -43,7 +43,7 @@ The following is an example of the **<FunctionFile>** element.
 </DesktopFormFactor>
 ```
 
-The JavaScript in the HTML file indicated by the **<FunctionFile>** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for UI-less buttons.
+The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for UI-less buttons.
 
 The following is an example of the contents of a `<script>` tag in an HTML file. The code defines and registers a `trackMessage` function.
 

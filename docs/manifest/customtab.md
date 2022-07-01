@@ -7,10 +7,10 @@ ms.localizationpriority: medium
 
 # CustomTab element
 
-Defines a custom tab for the Office ribbon. Add ribbon controls and groups for the add-in either to one of the build-in Office tabs or to your own custom tab. Use the **<CustomTab>** element to add a custom tab to the ribbon. On custom tabs, the add-in can have custom or built-in groups. Add-ins are limited to one custom tab.
+Defines a custom tab for the Office ribbon. Add ribbon controls and groups for the add-in either to one of the build-in Office tabs or to your own custom tab. Use the **\<CustomTab\>** element to add a custom tab to the ribbon. On custom tabs, the add-in can have custom or built-in groups. Add-ins are limited to one custom tab.
 
 > [!IMPORTANT]
-> In Outlook on Mac, the **<CustomTab>** element is not available, but you can put *custom* groups of controls on one of the built-in [OfficeTab](officetab.md)s instead. You cannot put *built-in* groups on *built-in* tabs in Outlook on any platform.
+> In Outlook on Mac, the **\<CustomTab\>** element is not available, but you can put *custom* groups of controls on one of the built-in [OfficeTab](officetab.md)s instead. You cannot put *built-in* groups on *built-in* tabs in Outlook on any platform.
 
 **Add-in type:** Task pane, Mail
 
@@ -52,11 +52,11 @@ Required. Unique identifier for the custom tab. It is a string with a maximum of
 
 ### Group
 
-Optional, but if not present there must be at least one **OfficeGroup** element. See [Group element](group.md). The order of **<Group>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
+Optional, but if not present there must be at least one **OfficeGroup** element. See [Group element](group.md). The order of **\<Group\>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
 
 ### OfficeGroup
 
-Optional, but if not present there must be at least one **<Group>** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](/office/dev/add-ins/design/built-in-button-integration#find-the-ids-of-controls-and-control-groups). The order of **<Group>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
+Optional, but if not present there must be at least one **\<Group\>** element. Represents a built-in Office control group. The **id** attribute specifies the ID of the built-in Office group. To find the ID of a built-in group, see [Find the IDs of controls and control groups](/office/dev/add-ins/design/built-in-button-integration#find-the-ids-of-controls-and-control-groups). The order of **\<Group\>** and **OfficeGroup** in the manifest should be the order you want them to appear on the custom tab. They can be intermingled if there are multiple elements, but all must be above the **Label** element.
 
 > [!IMPORTANT]
 > The **OfficeGroup** element is not available in Outlook. In PowerPoint, it is in preview for Mac and Windows; but is available for production add-ins in PowerPoint on the web.

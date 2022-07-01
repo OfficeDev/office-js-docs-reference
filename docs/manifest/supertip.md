@@ -21,9 +21,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **<VersionOverrides>** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **<VersionOverrides>** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **<VersionOverrides>** is type Mail 1.1.
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
+- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Child elements
 
@@ -41,7 +41,7 @@ Required. The text for the supertip. The **resid** attribute can be no more than
 Required. The description for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the [Resources](resources.md) element.
 
 > [!NOTE]
-> For Outlook, only Windows and Mac clients support the **<Description>** element.
+> For Outlook, only Windows and Mac clients support the **\<Description\>** element.
 
 ## Example
 

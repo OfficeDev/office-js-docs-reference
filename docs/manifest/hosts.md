@@ -7,13 +7,13 @@ ms.localizationpriority: medium
 
 # Hosts element
 
-Specifies the Office client applications where the Office Add-in will activate. Contains a collection of **<Host>** elements and their settings.
+Specifies the Office client applications where the Office Add-in will activate. Contains a collection of **\<Host\>** elements and their settings.
 
 ## As child of VersionOverrides element
 
-The information in this section applies *only* when the **<Hosts>** element is a child of a [VersionOverrides](versionoverrides.md).
+The information in this section applies *only* when the **\<Hosts\>** element is a child of a [VersionOverrides](versionoverrides.md).
 
-This element overrides the **<Hosts>** element in the base manifest.
+This element overrides the **\<Hosts\>** element in the base manifest.
 
 **Add-in type:** Task pane, Mail
 
