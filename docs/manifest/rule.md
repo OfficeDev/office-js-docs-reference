@@ -14,7 +14,7 @@ Specifies the activation rules that should be evaluated for this contextual mail
 ## Contained in
 
 - [OfficeApp](officeapp.md)
-- [ExtensionPoint](extensionpoint.md) ([**CustomPane** (deprecated)](https://developer.microsoft.com/outlook/blogs/make-your-add-ins-available-in-the-office-ribbon/), [**DetectedEntity**](extensionpoint.md#detectedentity))
+- [ExtensionPoint](extensionpoint.md) ([**CustomPane** (deprecated)](https://developer.microsoft.com/outlook/blogs/make-your-add-ins-available-in-the-office-ribbon/), [DetectedEntity](extensionpoint.md#detectedentity))
 
 ## Attributes
 
@@ -38,8 +38,8 @@ Defines a rule that evaluates to true if the selected item is of the specified t
 
 | Attribute | Required | Description |
 |:-----|:-----:|:-----|
-| **\<Type\>** | Yes | Specifies the item type to match. Can be `Message` or `Appointment`. `Message` item type includes email, meeting requests, meeting responses, and meeting cancellations. |
-| **\<Type\>** | No (within [ExtensionPoint](extensionpoint.md)), Yes (within [OfficeApp](officeapp.md)) | Specifies whether the app should appear in read or edit form for the item. Can be one of the following: `Read`, `Edit`, `ReadOrEdit`. If specified on a `Rule` within an `ExtensionPoint`, this value MUST be `Read`. |
+| **ItemType** | Yes | Specifies the item type to match. Can be `Message` or `Appointment`. `Message` item type includes email, meeting requests, meeting responses, and meeting cancellations. |
+| **FormType** | No (within [ExtensionPoint](extensionpoint.md)), Yes (within [OfficeApp](officeapp.md)) | Specifies whether the app should appear in read or edit form for the item. Can be one of the following: `Read`, `Edit`, `ReadOrEdit`. If specified on a `Rule` within an `ExtensionPoint`, this value MUST be `Read`. |
 | **ItemClass** | No | Specifies the custom message class to match. For more information, see [Activate a mail add-in in Outlook for a specific message class](/office/dev/add-ins/outlook/activation-rules). |
 | **IncludeSubClasses** | No | Specifies whether the rule should evaluate to true if the item is of a subclass of the specified message class; the default is `false`. |
 

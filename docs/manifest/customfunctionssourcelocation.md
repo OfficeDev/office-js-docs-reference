@@ -7,10 +7,10 @@ ms.localizationpriority: medium
 
 # SourceLocation element (version overrides)
 
-Defines the location of a resource needed by the **\<Script\>** or **\<Page\>** elements used by custom functions in Excel, or needed by the **DetectedEntity** or **\<LaunchEvent\>** extension points in Outlook.
+Defines the location of a resource needed by the **\<Script\>** or **\<Page\>** elements used by custom functions in Excel, or needed by the **\<DetectedEntity\>** or **\<LaunchEvent\>** extension points in Outlook.
 
 > [!IMPORTANT]
-> This article refers only to the **\<SourceLocation\>** that is a child of the **\<Page\>** or **\<Script\>** elements, or of the **DetectedEntity** or **\<LaunchEvent\>** extension points. See [SourceLocation](sourcelocation.md) for information about the **\<SourceLocation\>** element of the base manifest.
+> This article refers only to the **\<SourceLocation\>** that is a child of the **\<Page\>** or **\<Script\>** elements, or of the **\<DetectedEntity\>** or **\<LaunchEvent\>** extension points. See [SourceLocation](sourcelocation.md) for information about the **\<SourceLocation\>** element of the base manifest.
 
 **Add-in type:** Custom function, Mail
 

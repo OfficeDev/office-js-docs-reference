@@ -144,7 +144,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > [!NOTE]
 > This child element is not supported in Outlook add-ins.
 
-The following example shows an action that uses the **Title** element. Note that you don't assign the **Title** to a string directly. Instead, you assign it a resource ID (resid), that is defined in the **\<Resources\>** section of the manifest and can be no more than 32 characters.
+The following example shows an action that uses the **\<Title\>** element. Note that you don't assign the **\<Title\>** to a string directly. Instead, you assign it a resource ID (resid), that is defined in the **\<Resources\>** section of the manifest and can be no more than 32 characters.
 
 ```xml
 <Action xsi:type="ShowTaskpane">

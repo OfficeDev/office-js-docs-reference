@@ -11,9 +11,9 @@ Provides a way to override the value of a manifest setting depending on a specif
 
 - An Office locale that is different from the default `LocaleToken`, called **LocaleTokenOverride**.
 - A pattern of requirement set support that is different from the default `RequirementToken` pattern, called **RequirementTokenOverride**.
-- The source is different from the default `Runtime`, called **\<Override\>**.
+- The source is different from the default `Runtime`, called **RuntimeOverride**.
 
-An **\<Override\>** element that is inside of a **\<Runtime\>** element must be of type **\<Override\>**.
+An **\<Override\>** element that is inside of a **\<Runtime\>** element must be of type **RuntimeOverride**.
 
 There is no `overrideType` attribute for the **\<Override\>** element. The difference is determined by the parent element and the parent element's type. An **\<Override\>** element that is inside of a **\<Token\>** element whose `xsi:type` is `RequirementToken`, must be of type **RequirementTokenOverride**. An **\<Override\>** element inside any other parent element, or inside an **\<Override\>** element of type `LocaleToken`, must be of type **LocaleTokenOverride**. For more information about the use of this element when it's a child of a **\<Token\>** element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
 
@@ -197,7 +197,7 @@ The **\<Override\>** element for `RequirementToken` must contain the following c
 > [!IMPORTANT]
 > Support for this element was introduced in [Mailbox requirement set 1.10](../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
 
-An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **\<Override\>**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
 
 ```xml
 <Runtime resid="WebViewRuntime.Url">

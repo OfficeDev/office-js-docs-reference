@@ -27,7 +27,7 @@ When used with the **ContextMenu** [extension point](extensionpoint.md), a root 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the menu. |
-|  **ToolTip**    |No|The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element.|
+|  **\<ToolTip\>**    |No|The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element.|
 |  [Supertip](supertip.md)  | Yes |  The supertip for this menu.    |
 |  [Icon](icon.md)      | Yes |  An image for the menu.         |
 |  **\<Items\>**     | Yes |  A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
