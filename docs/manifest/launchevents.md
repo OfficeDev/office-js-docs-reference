@@ -32,12 +32,12 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-[ExtensionPoint](extensionpoint.md) (**LaunchEvent** mail add-in)
+- [ExtensionPoint](extensionpoint.md) (**LaunchEvent** mail add-in)
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 | [LaunchEvent](launchevent.md) | Yes |  Map supported event to its function in the JavaScript file for add-in activation. |
 
 ## See also

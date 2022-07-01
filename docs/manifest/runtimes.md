@@ -17,8 +17,8 @@ Specifies the runtime of your add-in. Child of the [Host](host.md) element.
 
 **Valid only in these VersionOverrides schemas**:
 
- - Task pane 1.0
- - Mail 1.1
+- Task pane 1.0
+- Mail 1.1
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
@@ -44,7 +44,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
-| [Runtime](runtime.md) | Yes |  The runtime for your add-in. **Important**: At present, you can only define one **Runtime** element. |
+| [Runtime](runtime.md) | Yes |  The runtime for your add-in. **Important**: At present, you can only define one **<Runtime>** element. |
+
 
 ## See also
 

@@ -9,8 +9,8 @@ ms.localizationpriority: medium
 
 Specifies the source code file for operations that an add-in exposes in one of the following ways.
 
-* Add-in commands that execute a JavaScript function instead of displaying UI.
-* Keyboard shortcuts that execute a JavaScript function.
+- Add-in commands that execute a JavaScript function instead of displaying UI.
+- Keyboard shortcuts that execute a JavaScript function.
 
 **Add-in type:** Task pane, Mail
 

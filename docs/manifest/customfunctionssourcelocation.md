@@ -36,7 +36,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 | Attribute | Required | Description                                                                          |
-|-----------|----------|--------------------------------------------------------------------------------------|
+|:----------|:--------:|:-------------------------------------------------------------------------------------|
 | resid     | Yes      | The name of a URL resource defined in the **Resources** section of the manifest. Can be no more than 32 characters. |
 
 ## Child elements

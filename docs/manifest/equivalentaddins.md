@@ -30,11 +30,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-[VersionOverrides](versionoverrides.md)
+- [VersionOverrides](versionoverrides.md)
 
 ## Must contain
 
-[EquivalentAddin](equivalentaddin.md)
+- [EquivalentAddin](equivalentaddin.md)
 
 ## See also
 

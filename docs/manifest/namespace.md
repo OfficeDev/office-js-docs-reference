@@ -24,7 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  **resid="namespace"**  |  No  | Should match the ShortStrings title for your custom function, specified within the [Resources](resources.md) element. Can be no more than 32 characters. |
 
 ## Child elements

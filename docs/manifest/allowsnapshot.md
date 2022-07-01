@@ -19,7 +19,7 @@ Specifies whether a snapshot image of your content add-in is saved with the host
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Remarks
 

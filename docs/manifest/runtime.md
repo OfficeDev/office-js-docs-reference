@@ -13,8 +13,8 @@ Configures your add-in to use a shared JavaScript runtime so that various compon
 
 **Valid only in these VersionOverrides schemas**:
 
- - Task pane 1.0
- - Mail 1.1
+- Task pane 1.0
+- Mail 1.1
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 

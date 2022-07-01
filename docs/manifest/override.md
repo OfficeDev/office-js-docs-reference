@@ -56,9 +56,9 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|Locale|string|required|Specifies the culture name of the locale for this override in the BCP 47 language tag format, such as  `"en-US"`.|
-|Value|string|required|Specifies value of the setting expressed for the specified locale.|
+|:-----|:-----:|:-----:|:-----|
+|Locale|string|Yes|Specifies the culture name of the locale for this override in the BCP 47 language tag format, such as  `"en-US"`.|
+|Value|string|Yes|Specifies value of the setting expressed for the specified locale.|
 
 ### Examples
 
@@ -138,15 +138,17 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ### Must contain
 
+The **Override** element for `RequirementToken` must contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Requirements](requirements.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[Requirements](requirements.md)|No|No|Yes|
 
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|Value|string|required|Value of the grandparent token when the condition is satisfied.|
+|:-----|:-----:|:-----:|:-----|
+|Value|string|Yes|Value of the grandparent token when the condition is satisfied.|
 
 ### Example
 
@@ -218,7 +220,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----:|:-----:|:-----|
 |**type**|string|Yes|Specifies the language for this override. At present, `"javascript"` is the only supported option.|
 |**resid**|string|Yes|Specifies the URL location of the JavaScript file that should override the URL location of the default HTML defined in the parent [Runtime](runtime.md) element's `resid`. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element.|
 

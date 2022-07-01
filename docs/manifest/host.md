@@ -19,8 +19,8 @@ When defined in the basic manifest (under [OfficeApp](officeapp.md)), the host t
 ### Attributes
 
 | Attribute     | Type   | Required | Description                                      |
-|:--------------|:-------|:---------|:-------------------------------------------------|
-| [Name](#name) | string | required | The name of the type of Office client application. |
+|:--------------|:-------:|:---------:|:-------------------------------------------------|
+| [Name](#name) | string | Yes | The name of the type of Office client application. |
 
 ### Name
 
@@ -65,13 +65,13 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ### Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [xsi:type](#xsitype)  |  Yes  | Specifies the Office application where these settings apply.|
 
 ### Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [DesktopFormFactor](desktopformfactor.md)    |  Yes   |  Defines the settings for the desktop form factor. |
 |  [MobileFormFactor](mobileformfactor.md)    |  No   |  Defines the settings for the mobile form factor. **Note:** This element is only supported in Outlook on iOS and Android. |
 |  [AllFormFactors](allformfactors.md)    |  No   |  Defines the settings for all form factors. Only used by custom functions in Excel. |

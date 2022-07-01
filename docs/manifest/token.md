@@ -20,13 +20,15 @@ Defines an individual URL token. For more information about the use of this elem
 
 ## Contained in
 
-[Tokens](tokens.md)
+- [Tokens](tokens.md)
 
 ## Can contain
 
+The **Token** element can contain the following child element depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Override](override.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[Override](override.md)|No|No|Yes|
 
 ## Attributes
 
