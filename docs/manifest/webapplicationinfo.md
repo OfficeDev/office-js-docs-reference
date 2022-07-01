@@ -30,13 +30,13 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > [!NOTE]
 > The single sign-on API is currently supported for Word, Excel, Outlook, and PowerPoint. For more information about where the single sign-on API is currently supported, see [IdentityAPI requirement sets](../requirement-sets/common/identity-api-requirement-sets.md). If you are working with an Outlook add-in, be sure to enable Modern Authentication for the Microsoft 365 tenancy. To learn how to do this, see [Exchange Online: How to enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx).
 
-**WebApplicationInfo** is a child element of the [VersionOverrides](versionoverrides.md) element in the manifest.  
+**<WebApplicationInfo>** is a child element of the [VersionOverrides](versionoverrides.md) element in the manifest.  
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  **Id**    |  Yes   |  The **Application Id** of the add-in's associated service as registered in the Azure Active Directory v 2.0 endpoint.|
+|  **<Id>**    |  Yes   |  The **Application Id** of the add-in's associated service as registered in the Azure Active Directory v 2.0 endpoint.|
 |  **Resource**  |  Yes   |  Specifies the **Application ID URI** of the add-in as registered in the Azure Active Directory v 2.0 endpoint.|
 |  [Scopes](scopes.md) |  Yes  |  Specifies the permissions that the add-in needs to a resource, such as Microsoft Graph.  |
 

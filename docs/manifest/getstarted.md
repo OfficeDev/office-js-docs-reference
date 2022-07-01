@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # GetStarted element
 
-Provides information used by the callout that appears when the add-in is installed in Word, Excel, PowerPoint, and OneNote. The **GetStarted** element is a child element of [DesktopFormFactor](desktopformfactor.md). If the **GetStarted** element is omitted, the callout uses the values from the [DisplayName](displayname.md) and [Description](description.md) elements instead.
+Provides information used by the callout that appears when the add-in is installed in Word, Excel, PowerPoint, and OneNote. The **<GetStarted>** element is a child element of [DesktopFormFactor](desktopformfactor.md). If the **<GetStarted>** element is omitted, the callout uses the values from the [DisplayName](displayname.md) and [Description](description.md) elements instead.
 
 **Add-in type:** Task pane
 
@@ -46,7 +46,7 @@ Required. The URL to a page where the user can learn more about your add-in. The
 
 ## See also
 
-The following code samples use the **GetStarted** element.
+The following code samples use the **<GetStarted>** element.
 
 - [Excel Web Add-in for Manipulating Table and Chart Formatting](https://github.com/OfficeDev/Excel-Add-in-JavaScript-SalesTracker)
 - [Word Add-in JavaScript SpecKit](https://github.com/OfficeDev/Word-Add-in-JS-SpecKit)

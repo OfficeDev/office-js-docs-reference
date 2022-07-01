@@ -24,7 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 - [IdentityAPI 1.3](../requirement-sets/common/identity-api-requirement-sets.md)
 
-**Scopes** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
+**<Scopes>** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
 
 ## Child elements
 

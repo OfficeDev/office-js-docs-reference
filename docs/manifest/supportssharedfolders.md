@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # SupportsSharedFolders element
 
-Defines whether the Outlook add-in is available in shared mailbox (now in preview) and shared folders (that is, delegate access) scenarios. The **SupportsSharedFolders** element is a child element of [DesktopFormFactor](desktopformfactor.md). It is set to *false* by default.
+Defines whether the Outlook add-in is available in shared mailbox (now in preview) and shared folders (that is, delegate access) scenarios. The **<SupportsSharedFolders>** element is a child element of [DesktopFormFactor](desktopformfactor.md). It is set to *false* by default.
 
 > [!IMPORTANT]
 > Support for this element was introduced in requirement set 1.8. See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
@@ -24,7 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 - [Mailbox 1.8](../requirement-sets/outlook/requirement-set-1.8/outlook-requirement-set-1.8.md)
 
-The following is an example of the **SupportsSharedFolders** element.
+The following is an example of the **<SupportsSharedFolders>** element.
 
 ```XML
 ...

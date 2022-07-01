@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # VersionOverrides element
 
-This element contains information for features that aren't supported in the base manifest. Its child markup may override some of the markup in the base manifest (or in a parent **VersionOverrides**). **VersionOverrides** is a child element of either the root [OfficeApp](officeapp.md) element in the manifest or a parent **VersionOverrides** element. This element is supported in manifest schema v1.1 and later but is defined in separate VersionOverrides schemas.
+This element contains information for features that aren't supported in the base manifest. Its child markup may override some of the markup in the base manifest (or in a parent **<VersionOverrides>**). **<VersionOverrides>** is a child element of either the root [OfficeApp](officeapp.md) element in the manifest or a parent **<VersionOverrides>** element. This element is supported in manifest schema v1.1 and later but is defined in separate VersionOverrides schemas.
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
@@ -20,11 +20,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ### Namespace values
 
-The following lists the required value of the **xmlns** attribute depending on the **xsi:type** value of the root **OfficeApp** element.
+The following lists the required value of the **xmlns** attribute depending on the **xsi:type** value of the root **<OfficeApp>** element.
 
 - **TaskPaneApp** supports only version 1.0 of VersionOverrides, and the **xmlns** must be `http://schemas.microsoft.com/office/taskpaneappversionoverrides`.
 - **ContentApp** supports only version 1.0 of VersionOverrides, and the **xmlns** must be `http://schemas.microsoft.com/office/contentappversionoverrides`.
-- **MailApp** supports versions 1.0 and 1.1 of VersionOverrides, so the value of **xmlns** varies depending on this **VersionOverrides** element's **xsi:type** value:
+- **MailApp** supports versions 1.0 and 1.1 of VersionOverrides, so the value of **xmlns** varies depending on this **<VersionOverrides>** element's **xsi:type** value:
   - When **xsi:type** is `VersionOverridesV1_0`, **xmlns** must be `http://schemas.microsoft.com/office/mailappversionoverrides`.
   - When **xsi:type** is `VersionOverridesV1_1`, **xmlns** must be `http://schemas.microsoft.com/office/mailappversionoverrides/1.1`.
 

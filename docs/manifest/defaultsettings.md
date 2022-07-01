@@ -25,7 +25,7 @@ Specifies the default source location and other default settings for your conten
 
 ## Can contain
 
-The **DefaultSettings** element can contain the following child elements depending on the add-in type.
+The **<DefaultSettings>** element can contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
 |:-----|:-----:|:-----:|:-----:|
@@ -35,4 +35,4 @@ The **DefaultSettings** element can contain the following child elements dependi
 
 ## Remarks
 
-The source location and other settings in the **DefaultSettings** element apply only to content and task pane add-ins. For mail add-ins, you specify the default locations for source files and other default settings in the [FormSettings](formsettings.md) element.
+The source location and other settings in the **<DefaultSettings>** element apply only to content and task pane add-ins. For mail add-ins, you specify the default locations for source files and other default settings in the [FormSettings](formsettings.md) element.
