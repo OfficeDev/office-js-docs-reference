@@ -34,11 +34,11 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ### Title
 
-Required. The text for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the [Resources](resources.md) element.
+Required. The text for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** element in the [Resources](resources.md) element.
 
 ### Description
 
-Required. The description for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the [Resources](resources.md) element.
+Required. The description for the supertip. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<LongStrings\>** element in the [Resources](resources.md) element.
 
 > [!NOTE]
 > For Outlook, only Windows and Mac clients support the **\<Description\>** element.

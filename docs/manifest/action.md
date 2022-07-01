@@ -63,7 +63,7 @@ Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of t
 
 ## SourceLocation
 
-Required element when **xsi:type** is `ShowTaskpane`. Specifies the source file location for this action. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **Url** element in the **Urls** element in the [Resources](resources.md) element.
+Required element when **xsi:type** is `ShowTaskpane`. Specifies the source file location for this action. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<Url\>** element in the **\<Urls\>** element in the [Resources](resources.md) element.
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -73,7 +73,7 @@ Required element when **xsi:type** is `ShowTaskpane`. Specifies the source file 
 
 ## TaskpaneId
 
-Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the ID of the task pane container. When you have multiple `ShowTaskpane` actions, use a different **TaskpaneId** if you want an independent pane for each. Use the same **TaskpaneId** for  different actions that share the same pane. When users choose commands that share the same **TaskpaneId**, the pane container will remain open but the contents of the pane will be replaced with the corresponding Action `SourceLocation`.
+Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the ID of the task pane container. When you have multiple `ShowTaskpane` actions, use a different **\<TaskpaneId\>** if you want an independent pane for each. Use the same **\<TaskpaneId\>** for  different actions that share the same pane. When users choose commands that share the same **\<TaskpaneId\>**, the pane container will remain open but the contents of the pane will be replaced with the corresponding Action `SourceLocation`.
 
 **Add-in type:** Task pane
 
@@ -90,7 +90,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 > [!NOTE]
 > This element is not supported in Outlook.
 
-The following example shows two actions that share the same **TaskpaneId**.
+The following example shows two actions that share the same **\<TaskpaneId\>**.
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -104,7 +104,7 @@ The following example shows two actions that share the same **TaskpaneId**.
 </Action>
 ```  
 
-The following examples show two actions that use a different **TaskpaneId**. To see these examples in context, see [Simple Add-in Commands Sample](https://github.com/OfficeDev/Office-Add-in-Commands-Samples/blob/master/Simple/Manifest/SimpleAddin.xml).
+The following examples show two actions that use a different **\<TaskpaneId\>**. To see these examples in context, see [Simple Add-in Commands Sample](https://github.com/OfficeDev/Office-Add-in-Commands-Samples/blob/master/Simple/Manifest/SimpleAddin.xml).
 
 ```xml
 <Action xsi:type="ShowTaskpane">

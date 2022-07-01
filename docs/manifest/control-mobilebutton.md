@@ -38,7 +38,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ### Label
 
-Specifies the text for the button by means of its only attribute, **resid**, which can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** child of the [Resources](resources.md) element.
+Specifies the text for the button by means of its only attribute, **resid**, which can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** child of the [Resources](resources.md) element.
 
 **Add-in type:** Mail
 

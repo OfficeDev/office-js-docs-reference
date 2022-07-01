@@ -31,18 +31,18 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ### Title
 
-Required. The title used for the top of the callout. The **resid** attribute references a valid ID in the **ShortStrings** element in the [Resources](resources.md) section and can be no more than 32 characters.
+Required. The title used for the top of the callout. The **resid** attribute references a valid ID in the **\<ShortStrings\>** element in the [Resources](resources.md) section and can be no more than 32 characters.
 
 ### Description
 
-Required. The description / body content for the callout. The **resid** attribute references a valid ID in the **LongStrings** element in the [Resources](resources.md) section and can be no more than 32 characters.
+Required. The description / body content for the callout. The **resid** attribute references a valid ID in the **\<LongStrings\>** element in the [Resources](resources.md) section and can be no more than 32 characters.
 
 ### LearnMoreUrl
 
-Required. The URL to a page where the user can learn more about your add-in. The **resid** attribute references a valid ID in the **Urls** element in the [Resources](resources.md) section and can be no more than 32 characters.
+Required. The URL to a page where the user can learn more about your add-in. The **resid** attribute references a valid ID in the **\<Urls\>** element in the [Resources](resources.md) section and can be no more than 32 characters.
 
 > [!NOTE]
-> **LearnMoreUrl** does not currently render in Word, Excel, or PowerPoint clients. We recommend that you add this URL for all clients so that the URL will render when it becomes available.
+> **\<LearnMoreUrl\>** does not currently render in Word, Excel, or PowerPoint clients. We recommend that you add this URL for all clients so that the URL will render when it becomes available.
 
 ## See also
 

@@ -421,7 +421,7 @@ The containing [VersionOverrides](versionoverrides.md) element must have an `xsi
 
 #### Label
 
-Required. The label of the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the [Resources](resources.md) element.
+Required. The label of the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** element in the [Resources](resources.md) element.
 
 #### Highlight requirements
 

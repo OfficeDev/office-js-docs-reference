@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Icon element
 
-Defines a set of **Image** elements for [Button](control-button.md) or [Menu](control-menu.md) controls.
+Defines a set of **\<Image\>** elements for [Button](control-button.md) or [Menu](control-menu.md) controls.
 
 **Add-in type:** Task pane, Mail
 
@@ -39,7 +39,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ### Image
 
-An image for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the [Resources](resources.md) element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).
+An image for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of an **\<Image\>** element in the **\<Images\>** element in the [Resources](resources.md) element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).
 
 ```xml
 <Icon>
