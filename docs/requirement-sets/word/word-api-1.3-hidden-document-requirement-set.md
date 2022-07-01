@@ -1,21 +1,20 @@
 ---
-title: Word JavaScript API desktop-only requirement set
-description: Details about the WordApiHiddenDocument requirement set.
-ms.date: 06/29/2022
+title: Word JavaScript API Hidden Document requirement set 1.3
+description: Details about the WordApiHiddenDocument 1.3 requirement set.
+ms.date: 07/01/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---
 
-# Word JavaScript API desktop-only requirement set
+# Word JavaScript API Hidden Document requirement set 1.3
 
-The `WordApiHiddenDocument` requirement set is a special requirement set that includes features that are only available for Word on Windows and on Mac. APIs in this requirement set are considered to be production APIs for the Word application on Windows and on Mac. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiHiddenDocument` APIs are considered to be "preview" APIs for other platforms (web, iPad) and may not be supported by any of those platforms.
+The `WordApiHiddenDocument 1.3` requirement set is a special requirement set that includes features that are only available for Word on Windows and on Mac. APIs in this requirement set are considered to be production APIs for the Word application on Windows and on Mac. They follow [Microsoft 365 developer support policies](/office/dev/add-ins/publish/maintain-breaking-changes). `WordApiHiddenDocument` APIs are considered to be "preview" APIs for other platforms (web, iPad) and may not be supported by any of those platforms.
 
 When APIs in the `WordApiHiddenDocument` requirement set are supported across all platforms, they will be added to a subsequent released requirement set (`WordApi 1.[FUTURE]`) and no longer tagged as `WordApiHiddenDocument`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
 >
-> - `WordApiHiddenDocument` is a superset of the WordApi 1.3 requirement set.
-> - `WordApiHiddenDocument 1.3` is currently the only desktop-only requirement set.
+> - `WordApiHiddenDocument 1.3` is a superset of the WordApi 1.3 requirement set and is a desktop-only requirement set.
 
 ## Recommended usage
 
@@ -23,7 +22,7 @@ Because `WordApiHiddenDocument` APIs are only supported by Word on Windows and o
 
 ```js
 if (Office.context.requirements.isSetSupported("WordApiHiddenDocument", "1.3")) {
-   // Any API exclusive to the desktop-only requirement set.
+   // Any API exclusive to this desktop-only requirement set.
 }
 ```
 
