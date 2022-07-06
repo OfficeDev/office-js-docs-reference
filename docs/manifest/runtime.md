@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Runtime element
 
-Configures your add-in to use a shared JavaScript runtime so that various components all run in the same runtime. Child of the [`<Runtimes>`](runtimes.md) element.
+Configures your add-in to use a shared JavaScript runtime so that various components all run in the same runtime. Child of the [Runtimes](runtimes.md) element.
 
 **Add-in type:** Task pane, Mail
 
@@ -40,7 +40,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
-| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one `<Override>` element and it must be of type `javascript`.|
+| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one **\<Override\>** element and it must be of type `javascript`.|
 
 ## Attributes
 
