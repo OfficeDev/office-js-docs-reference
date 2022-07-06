@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies an individual Office application type where the add-in should activate.
 
 > [!IMPORTANT]
-> The **Host** element syntax varies depending on whether the element is defined within the [basic manifest](#basic-manifest) or within the [VersionOverrides](#versionoverrides-node) node. However, the functionality is the same.  
+> The **\<Host\>** element syntax varies depending on whether the element is defined within the [basic manifest](#basic-manifest) or within the [VersionOverrides](#versionoverrides-node) node. However, the functionality is the same.  
 
 ## Basic manifest
 
@@ -50,7 +50,7 @@ Specifies the Host type targeted by this add-in. The value must be one of the fo
 
 When defined in [VersionOverrides](versionoverrides.md), the host type is determined by the `xsi:type` attribute. 
 
-This element overrides the **Hosts** element in the basic manifest.
+This element overrides the **\<Hosts\>** element in the basic manifest.
 
 **Add-in type:** Task pane, Mail
 

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Control element
 
-Defines a control that executes an action or launches a task pane. A **Control** element can be either a button or a menu option. At least one **Control** must be included in a [Group](group.md) element.
+Defines a control that executes an action or launches a task pane. A **\<Control\>** element can be either a button or a menu option. At least one **\<Control\>** must be included in a [Group](group.md) element.
 
 **Add-in type:** Task pane, Mail
 
@@ -29,10 +29,10 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |**xsi:type**|Yes|The type of control being defined. Can be `Button`, `Menu`, or `MobileButton`. |
-|**id**|Yes|The ID of the control element. Can be a maximum of 125 characters. Must be unique across all **Control** elements in the manifest.|
+|**id**|Yes|The ID of the control element. Can be a maximum of 125 characters. Must be unique across all **\<Control\>** elements in the manifest.|
 
 > [!NOTE]
-> The `MobileButton` value for **xsi:type** is defined in VersionOverrides schema 1.1. It only applies to the **Control** elements contained within a [MobileFormFactor](mobileformfactor.md) element.
+> The `MobileButton` value for **xsi:type** is defined in VersionOverrides schema 1.1. It only applies to the **\<Control\>** elements contained within a [MobileFormFactor](mobileformfactor.md) element.
 
 ## Child elements
 

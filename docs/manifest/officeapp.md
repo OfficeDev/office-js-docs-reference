@@ -28,7 +28,7 @@ None
 
 ## Must contain
 
-The **OfficeApp** element must contain the following child elements depending on the add-in type.
+The **\<OfficeApp\>** element must contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
 |:-----|:-----:|:-----:|:-----:|
@@ -45,7 +45,7 @@ The **OfficeApp** element must contain the following child elements depending on
 
 ## Can contain
 
-The **OfficeApp** element can contain the following child elements depending on the add-in type.
+The **\<OfficeApp\>** element can contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
 |:-----|:-----:|:-----:|:-----:|
