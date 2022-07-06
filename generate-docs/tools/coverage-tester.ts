@@ -9,6 +9,7 @@ import * as path from "path";
  */
  enum ApiType{
     Class = "Class",
+    Enum = "Enum",
     EnumField = "EnumField",
     Property = "Property",
     Method = "Method"
@@ -185,16 +186,17 @@ function rateClass(classYml: ApiYaml) : ClassCoverageRating {
 
 function rateClassDescription(classYml: ApiYaml) : CoverageRating {
     let rating : CoverageRating;
+    let type: ApiType = classYml.type === "interface" || classYml.type === "class" ? ApiType.Class : ApiType.Enum;
     let indexOfExample = classYml.remarks?.indexOf("#### Examples");
     if (indexOfExample > 0) {
         rating = {
-            type: ApiType.Class,
+            type: type,
             descriptionRating: rateDescriptionString((classYml.summary + " " + classYml.remarks.substring(0, indexOfExample)).trim()),
             hasExample: true
         }
     } else {
         rating = {
-            type: ApiType.Class,
+            type: type,
             descriptionRating: rateDescriptionString((classYml.summary + " " + classYml.remarks).trim()),
             hasExample: false
         }
