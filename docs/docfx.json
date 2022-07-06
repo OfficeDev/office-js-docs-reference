@@ -7,7 +7,7 @@
         "dest": "api/office_ref_toc"
       },
       {
-        "files": ["**/images/**", "**/*.md", "**/*.yml"],
+        "files": ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.md", "**/*.yml"],
         "src": "docs-ref-conceptual",
         "dest": "office",
         "exclude": [
