@@ -30,16 +30,16 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## Contained in
 
-[EquivalentAddins](equivalentaddins.md)
+- [EquivalentAddins](equivalentaddins.md)
 
 ## Must contain
 
-[Type](type.md)
+- [Type](type.md)
 
 ## Can contain
 
-[ProgId](progid.md)
-[FileName](filename.md)
+- [ProgId](progid.md)
+- [FileName](filename.md)
 
 ## Remarks
 

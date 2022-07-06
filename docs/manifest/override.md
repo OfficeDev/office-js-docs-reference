@@ -13,15 +13,15 @@ Provides a way to override the value of a manifest setting depending on a specif
 - A pattern of requirement set support that is different from the default `RequirementToken` pattern, called **RequirementTokenOverride**.
 - The source is different from the default `Runtime`, called **RuntimeOverride**.
 
-An **Override** element that is inside of a **Runtime** element must be of type **RuntimeOverride**.
+An **\<Override\>** element that is inside of a **\<Runtime\>** element must be of type **RuntimeOverride**.
 
-There is no `overrideType` attribute for the **Override** element. The difference is determined by the parent element and the parent element's type. An **Override** element that is inside of a **Token** element whose `xsi:type` is `RequirementToken`, must be of type **RequirementTokenOverride**. An **Override** element inside any other parent element, or inside an **Override** element of type `LocaleToken`, must be of type **LocaleTokenOverride**. For more information about the use of this element when it's a child of a **Token** element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
+There is no `overrideType` attribute for the **\<Override\>** element. The difference is determined by the parent element and the parent element's type. An **\<Override\>** element that is inside of a **\<Token\>** element whose `xsi:type` is `RequirementToken`, must be of type **RequirementTokenOverride**. An **\<Override\>** element inside any other parent element, or inside an **\<Override\>** element of type `LocaleToken`, must be of type **LocaleTokenOverride**. For more information about the use of this element when it's a child of a **\<Token\>** element, see [Work with extended overrides of the manifest](/office/dev/add-ins/develop/extended-overrides).
 
 Each type is described in separate sections later in this article.
 
 ## Override element for `LocaleToken`
 
-An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **LocaleTokenOverride**, then the `Locale` attribute is the condition, and the `Value` attribute is the consequent. For example, the following is read "If the Office locale setting is fr-fr, then the display name is 'Lecteur vidéo'."
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **LocaleTokenOverride**, then the `Locale` attribute is the condition, and the `Value` attribute is the consequent. For example, the following is read "If the Office locale setting is fr-fr, then the display name is 'Lecteur vidéo'."
 
 ```xml
 <DisplayName DefaultValue="Video player">
@@ -56,9 +56,9 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|Locale|string|required|Specifies the culture name of the locale for this override in the BCP 47 language tag format, such as  `"en-US"`.|
-|Value|string|required|Specifies value of the setting expressed for the specified locale.|
+|:-----|:-----:|:-----:|:-----|
+|Locale|string|Yes|Specifies the culture name of the locale for this override in the BCP 47 language tag format, such as  `"en-US"`.|
+|Value|string|Yes|Specifies value of the setting expressed for the specified locale.|
 
 ### Examples
 
@@ -94,7 +94,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ## Override element for `RequirementToken`
 
-An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RequirementTokenOverride**, then the child **Requirements** element expresses the condition, and the `Value` attribute is the consequent. For example, the first **Override** in the following is read "If the current platform supports FeatureOne version 1.7, then use string 'oldAddinVersion' in place of the `${token.requirements}` token in the URL of the grandparent `<ExtendedOverrides>` (instead of the default string 'upgrade')."
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RequirementTokenOverride**, then the child **\<Requirements\>** element expresses the condition, and the `Value` attribute is the consequent. For example, the first **\<Override\>** in the following is read "If the current platform supports FeatureOne version 1.7, then use string 'oldAddinVersion' in place of the `${token.requirements}` token in the URL of the grandparent **\<ExtendedOverrides\>** (instead of the default string 'upgrade')."
 
 ```xml
 <ExtendedOverrides Url="http://contoso.com/addinmetadata/${token.requirements}/extended-manifest-overrides.json">
@@ -138,15 +138,17 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 
 ### Must contain
 
+The **\<Override\>** element for `RequirementToken` must contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Requirements](requirements.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[Requirements](requirements.md)|No|No|Yes|
 
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|Value|string|required|Value of the grandparent token when the condition is satisfied.|
+|:-----|:-----:|:-----:|:-----|
+|Value|string|Yes|Value of the grandparent token when the condition is satisfied.|
 
 ### Example
 
@@ -195,7 +197,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 > [!IMPORTANT]
 > Support for this element was introduced in [Mailbox requirement set 1.10](../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
 
-An **Override** element expresses a conditional and can be read as an "If ... then ..." statement. If the **Override** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
 
 ```xml
 <Runtime resid="WebViewRuntime.Url">
@@ -218,7 +220,7 @@ An **Override** element expresses a conditional and can be read as an "If ... th
 ### Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----:|:-----:|:-----|
 |**type**|string|Yes|Specifies the language for this override. At present, `"javascript"` is the only supported option.|
 |**resid**|string|Yes|Specifies the URL location of the JavaScript file that should override the URL location of the default HTML defined in the parent [Runtime](runtime.md) element's `resid`. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element.|
 

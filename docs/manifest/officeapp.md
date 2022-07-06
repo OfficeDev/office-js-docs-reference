@@ -24,40 +24,44 @@ The root element in the manifest of an Office Add-in.
 
 ## Contained in
 
- _none_
+None
 
 ## Must contain
 
+The **\<OfficeApp\>** element must contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Id](id.md)|x|x|x|
-|[Version](version.md)|x|x|x|
-|[ProviderName](providername.md)|x|x|x|
-|[DefaultLocale](defaultlocale.md)|x|x|x|
-|[DefaultSettings](defaultsettings.md)|x||x|
-|[DisplayName](displayname.md)|x|x|x|
-|[Description](description.md)|x|x|x|
-|[FormSettings](formsettings.md)||x||
-|[Permissions](permissions.md)|x||x|
-|[Rule](rule.md)||x||
+|:-----|:-----:|:-----:|:-----:|
+|[Id](id.md)|Yes|Yes|Yes|
+|[Version](version.md)|Yes|Yes|Yes|
+|[ProviderName](providername.md)|Yes|Yes|Yes|
+|[DefaultLocale](defaultlocale.md)|Yes|Yes|Yes|
+|[DefaultSettings](defaultsettings.md)|Yes|No|Yes|
+|[DisplayName](displayname.md)|Yes|Yes|Yes|
+|[Description](description.md)|Yes|Yes|Yes|
+|[FormSettings](formsettings.md)|No|Yes|No|
+|[Permissions](permissions.md)|Yes|No|Yes|
+|[Rule](rule.md)|No|Yes|No|
 
 ## Can contain
 
+The **\<OfficeApp\>** element can contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[AlternateId](alternateid.md)|x|x|x|
-|[IconUrl](iconurl.md)|x|x|x|
-|[HighResolutionIconUrl](highresolutioniconurl.md)|x|x|x|
-|[SupportUrl](supporturl.md)|x|x|x|
-|[AppDomains](appdomains.md)|x|x|x|
-|[Hosts](hosts.md)|x|x|x|
-|[Requirements](requirements.md)|x|x|x|
-|[AllowSnapshot](allowsnapshot.md)|x|||
-|[Permissions](permissions.md)||x||
-|[DisableEntityHighlighting](disableentityhighlighting.md)||x||
-|[Dictionary](dictionary.md)|||x|
-|[VersionOverrides](versionoverrides.md)|x|x|x|
-|[ExtendedOverrides](extendedoverrides.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[AlternateId](alternateid.md)|Yes|Yes|Yes|
+|[IconUrl](iconurl.md)|Yes|Yes|Yes|
+|[HighResolutionIconUrl](highresolutioniconurl.md)|Yes|Yes|Yes|
+|[SupportUrl](supporturl.md)|Yes|Yes|Yes|
+|[AppDomains](appdomains.md)|Yes|Yes|Yes|
+|[Hosts](hosts.md)|Yes|Yes|Yes|
+|[Requirements](requirements.md)|Yes|Yes|Yes|
+|[AllowSnapshot](allowsnapshot.md)|Yes|No|No|
+|[Permissions](permissions.md)|No|Yes|No|
+|[DisableEntityHighlighting](disableentityhighlighting.md)|No|Yes|No|
+|[Dictionary](dictionary.md)|No|No|Yes|
+|[VersionOverrides](versionoverrides.md)|Yes|Yes|Yes|
+|[ExtendedOverrides](extendedoverrides.md)|No|No|Yes|
 
 ## Attributes
 

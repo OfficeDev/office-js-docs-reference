@@ -19,13 +19,13 @@ Specifies the URL of the image that is used to represent your Office Add-in in t
 
 ## Can contain
 
-[Override](override.md)
+- [Override](override.md)
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|DefaultValue|string|required|Specifies the default value for this setting, expressed for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
+|:-----|:-----:|:-----:|:-----|
+|DefaultValue|string|Yes|Specifies the default value for this setting, expressed for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
 
 ## Remarks
 

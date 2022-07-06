@@ -19,7 +19,7 @@ Specifies if the equivalent add-in is a COM add-in or an XLL.
 
 ## Contained in
 
-[EquivalentAddin](equivalentaddin.md)
+- [EquivalentAddin](equivalentaddin.md)
 
 ## Add-in type values
 

@@ -19,7 +19,7 @@ Specifies the programmatic identifier of the equivalent COM add-in for the task 
 
 ## Contained in
 
-[EquivalentAddin](equivalentaddin.md)
+- [EquivalentAddin](equivalentaddin.md)
 
 ## See also
 

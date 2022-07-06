@@ -21,7 +21,7 @@ Defines a regional language supported by this dictionary, represented as a cultu
 
 ## Contained in
 
-[TargetDialects](targetdialects.md)
+- [TargetDialects](targetdialects.md)
 
 ## Remarks
 

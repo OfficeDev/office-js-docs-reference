@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Specifies an individual Office application type where the add-in should activate.
 
 > [!IMPORTANT]
-> The **Host** element syntax varies depending on whether the element is defined within the [basic manifest](#basic-manifest) or within the [VersionOverrides](#versionoverrides-node) node. However, the functionality is the same.  
+> The **\<Host\>** element syntax varies depending on whether the element is defined within the [basic manifest](#basic-manifest) or within the [VersionOverrides](#versionoverrides-node) node. However, the functionality is the same.  
 
 ## Basic manifest
 
@@ -19,8 +19,8 @@ When defined in the basic manifest (under [OfficeApp](officeapp.md)), the host t
 ### Attributes
 
 | Attribute     | Type   | Required | Description                                      |
-|:--------------|:-------|:---------|:-------------------------------------------------|
-| [Name](#name) | string | required | The name of the type of Office client application. |
+|:--------------|:-------:|:---------:|:-------------------------------------------------|
+| [Name](#name) | string | Yes | The name of the type of Office client application. |
 
 ### Name
 
@@ -50,7 +50,7 @@ Specifies the Host type targeted by this add-in. The value must be one of the fo
 
 When defined in [VersionOverrides](versionoverrides.md), the host type is determined by the `xsi:type` attribute. 
 
-This element overrides the **Hosts** element in the basic manifest.
+This element overrides the **\<Hosts\>** element in the basic manifest.
 
 **Add-in type:** Task pane, Mail
 
@@ -65,13 +65,13 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ### Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [xsi:type](#xsitype)  |  Yes  | Specifies the Office application where these settings apply.|
 
 ### Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [DesktopFormFactor](desktopformfactor.md)    |  Yes   |  Defines the settings for the desktop form factor. |
 |  [MobileFormFactor](mobileformfactor.md)    |  No   |  Defines the settings for the mobile form factor. **Note:** This element is only supported in Outlook on iOS and Android. |
 |  [AllFormFactors](allformfactors.md)    |  No   |  Defines the settings for all form factors. Only used by custom functions in Excel. |

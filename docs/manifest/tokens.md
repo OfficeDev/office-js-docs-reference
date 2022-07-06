@@ -19,13 +19,15 @@ Defines tokens that could be used in template URLs. For more information about t
 
 ## Contained in
 
-[ExtendedOverrides](extendedoverrides.md)
+- [ExtendedOverrides](extendedoverrides.md)
 
 ## Must contain
 
+The **\<Tokens\>** element can contain the following child elements depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Token](token.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[Token](token.md)|No|No|Yes|
 
 ## Example
 

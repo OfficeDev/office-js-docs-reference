@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Icon element
 
-Defines a set of **Image** elements for [Button](control-button.md) or [Menu](control-menu.md) controls.
+Defines a set of **\<Image\>** elements for [Button](control-button.md) or [Menu](control-menu.md) controls.
 
 **Add-in type:** Task pane, Mail
 
@@ -21,25 +21,25 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **VersionOverrides** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **VersionOverrides** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **VersionOverrides** is type Mail 1.1.
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
+- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
-|  **xsi:type**  |  No  | The type of icon being defined. This is only applicable to icons in mobile form factors. **Icon** elements contained within a [MobileFormFactor](mobileformfactor.md) element must have this attribute set to `bt:MobileIconList`. |
+|:-----|:-----:|:-----|
+|  **xsi:type**  |  No  | The type of icon being defined. This is only applicable to icons in mobile form factors. **\<Icon\>** elements contained within a [MobileFormFactor](mobileformfactor.md) element must have this attribute set to `bt:MobileIconList`. |
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Image](#image)        | Yes |   resid of an image to use         |
 
 ### Image
 
-An image for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of an **Image** element in the **Images** element in the [Resources](resources.md) element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).
+An image for the button. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of an **\<Image\>** element in the **\<Images\>** element in the [Resources](resources.md) element. The **size** attribute indicates the size in pixels of the image. Three image sizes are required (16, 32, and 80 pixels) while five other sizes are supported (20, 24, 40, 48, and 64 pixels).
 
 ```xml
 <Icon>
@@ -54,7 +54,7 @@ An image for the button. The **resid** attribute can be no more than 32 characte
 
 ## Additional requirements for mobile form factors
 
-When the parent **Icon** element is a descendant of a [MobileFormFactor](mobileformfactor.md) element, the minimum required sizes are slightly different. The manifest must minimally provide 25, 32, and 48 pixel sizes. Each size provided must appear three times, with a `scale` attribute set to `1`, `2`, or `3`. This attribute specifies the `UIScreen.scale` property for iOS devices. For more information, see [scale](https://developer.apple.com/documentation/uikit/uiscreen/1617836-scale).
+When the parent **\<Icon\>** element is a descendant of a [MobileFormFactor](mobileformfactor.md) element, the minimum required sizes are slightly different. The manifest must minimally provide 25, 32, and 48 pixel sizes. Each size provided must appear three times, with a `scale` attribute set to `1`, `2`, or `3`. This attribute specifies the `UIScreen.scale` property for iOS devices. For more information, see [scale](https://developer.apple.com/documentation/uikit/uiscreen/1617836-scale).
 
 ```xml
 <Icon xsi:type="bt:MobileIconList">

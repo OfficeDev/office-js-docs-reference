@@ -11,7 +11,7 @@ The meaning of this element depends on where it's used in the manifest.
 
 ## In the base manifest
 
-When used in the base manifest (that is, the parent **Requirements** element is a direct child of [OfficeApp](officeapp.md)), the **Methods** element specifies the list of Office JavaScript API methods that your Office Add-in needs in order to be activated by Office.
+When used in the base manifest (that is, the parent **\<Requirements\>** element is a direct child of [OfficeApp](officeapp.md)), the **\<Methods\>** element specifies the list of Office JavaScript API methods that your Office Add-in needs in order to be activated by Office.
 
 **Add-in type:** Content, Task pane
 
@@ -39,12 +39,12 @@ Specifies the minimum set of Office JavaScript API methods that must be supporte
 
 ## Contained in
 
-[Requirements](requirements.md)
+- [Requirements](requirements.md)
 
 ## Can contain
 
-[Method](method.md)
+- [Method](method.md)
 
 ## Remarks
 
-The **Methods** and **Method** elements aren't supported in mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
+The **\<Methods\>** and **\<Method\>** elements aren't supported in mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).

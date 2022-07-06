@@ -19,13 +19,15 @@ Specifies the full URLs for JSON-formatted files that extend the manifest. For d
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
+The **\<ExtendedOverrides\>** element can contain the following child element depending on the add-in type.
+
 |Element|Content|Mail|TaskPane|
-|:-----|:-----|:-----|:-----|
-|[Tokens](tokens.md)|||x|
+|:-----|:-----:|:-----:|:-----:|
+|[Tokens](tokens.md)|No|No|Yes|
 
 ## Attributes
 

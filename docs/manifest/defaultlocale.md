@@ -19,10 +19,8 @@ Specifies the default culture name of the locale used by strings in your add-in.
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Remarks
 
 Specify the value in the BCP 47  `language` tag format, such as **en-US**.
-
-
