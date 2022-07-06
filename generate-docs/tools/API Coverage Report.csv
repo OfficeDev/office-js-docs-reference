@@ -9309,7 +9309,7 @@ Visio.ToolBarType,N/A,Class,Fine,false
 Visio.ToolBarType,commandBar,EnumField,Poor,false
 Visio.ToolBarType,pageNavigationBar,EnumField,Poor,false
 Visio.ToolBarType,statusBar,EnumField,Poor,false
-Word.Alignment,N/A,Class,Fine,false
+Word.Alignment,N/A,Class,Fine,true
 Word.Alignment,centered,EnumField,Fine,false
 Word.Alignment,justified,EnumField,Fine,false
 Word.Alignment,left,EnumField,Fine,false
@@ -9416,7 +9416,7 @@ Word.BorderType,threeDEmboss,EnumField,Fine,false
 Word.BorderType,threeDEngrave,EnumField,Fine,false
 Word.BorderType,triple,EnumField,Fine,false
 Word.BorderType,wave,EnumField,Fine,false
-Word.BreakType,N/A,Class,Good,false
+Word.BreakType,N/A,Class,Good,true
 Word.BreakType,line,EnumField,Fine,false
 Word.BreakType,next,EnumField,Good,false
 Word.BreakType,page,EnumField,Fine,false
@@ -9919,7 +9919,7 @@ Word.InlinePictureCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.InlinePictureCollection,toJSON(),Method,Poor,false
 Word.InlinePictureCollection,track(),Method,Poor,false
 Word.InlinePictureCollection,untrack(),Method,Poor,false
-Word.InsertLocation,N/A,Class,Good,false
+Word.InsertLocation,N/A,Class,Good,true
 Word.InsertLocation,after,EnumField,Fine,false
 Word.InsertLocation,before,EnumField,Fine,false
 Word.InsertLocation,end,EnumField,Fine,false
@@ -10040,7 +10040,7 @@ Word.NoteItemCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.NoteItemCollection,toJSON(),Method,Poor,false
 Word.NoteItemCollection,track(),Method,Poor,false
 Word.NoteItemCollection,untrack(),Method,Poor,false
-Word.NoteItemType,N/A,Class,Fine,false
+Word.NoteItemType,N/A,Class,Fine,true
 Word.NoteItemType,endnote,EnumField,Fine,false
 Word.NoteItemType,footnote,EnumField,Fine,false
 Word.Paragraph,N/A,Class,Good,false
