@@ -7,7 +7,7 @@
         "dest": "api/office_ref_toc"
       },
       {
-        "files": ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.md", "**/*.yml"],
+        "files": ["**/*.md", "**/*.yml"],
         "src": "docs-ref-conceptual",
         "dest": "office",
         "exclude": [
@@ -602,7 +602,7 @@
     ],
     "resource": [
       {
-        "files": ["**/*.png", "**/*.jpg", "**/*.svg"],
+        "files": ["**/images/*.png", "**/*.jpg", "**/*.svg"],
         "exclude": ["**/obj/**", "**/includes/**"],
         "src": "docs-ref-autogen",
         "dest": "api"
