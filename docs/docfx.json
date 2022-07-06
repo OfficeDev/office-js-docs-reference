@@ -602,7 +602,7 @@
     ],
     "resource": [
       {
-        "files": ["**/*.png", "**/*.jpg", "**/*.svg"],
+        "files": ["**/images/**", "**/*.png", "**/*.jpg", "**/*.svg"],
         "exclude": ["**/obj/**", "**/includes/**"],
         "src": "docs-ref-autogen",
         "dest": "api"
