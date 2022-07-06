@@ -660,9 +660,9 @@ export declare namespace Office {
         *
         * - Windows: 500 members
         *
-        * - Mac: 100 members
+        * - Classic Mac UI: 100 members
         *
-        * - Other: No limit
+        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -698,9 +698,9 @@ export declare namespace Office {
         *
         * - Windows: 500 members
         *
-        * - Mac: 100 members
+        * - Classic Mac UI: 100 members
         *
-        * - Other: No limit
+        * - New Mac UI, web browser, Android: No limit
         *
         * *Compose mode*
         *
@@ -939,9 +939,9 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
-         * - Other: No limit
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -969,9 +969,9 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
-         * - Other: No limit
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -2830,11 +2830,11 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
          * - Web browser: 20 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          *
@@ -3077,11 +3077,11 @@ export declare namespace Office {
          *
          * - Windows: 500 members
          *
-         * - Mac: 100 members
+         * - Classic Mac UI: 100 members
          *
          * - Web browser: 20 members
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          *
@@ -3383,9 +3383,9 @@ export declare namespace Office {
          * - Windows: 100 recipients.
          * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Mac, web browser: 100 recipients
+         * - Classic Mac UI, web browser: 100 recipients
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3421,9 +3421,9 @@ export declare namespace Office {
          * - Windows: 100 recipients.
          * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Mac, web browser: 100 recipients
+         * - Classic Mac UI, web browser: 100 recipients
          *
-         * - Other: No limit
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3447,14 +3447,9 @@ export declare namespace Office {
          * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
          * objects. Collection size limits:
          *
-         * - Windows, Mac, web browser: 500 members
+         * - Windows, classic Mac UI, web browser: 500 members
          *
-         * - Other: No limit
-         *
-         * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
-         * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
-         * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js-docs-pr/issues/2962 | related GitHub issue}.
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3462,6 +3457,24 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * 
+         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         * 
+         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         * 
+         * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
+         * 
+         * - A Teams meeting status icon appears before the recipient's name or email address.
+         * 
+         * - A semicolon appears after the recipient's name or email address.
+         * 
+         * - The recipient's name or email address is underlined or enclosed in a box.
+         * 
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         * the auto-complete list.
          * 
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
@@ -3475,14 +3488,9 @@ export declare namespace Office {
          * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
          * objects. Collection size limits:
          *
-         * - Windows, Mac, web browser: 500 members
+         * - Windows, classic Mac UI, web browser: 500 members
          *
-         * - Other: No limit
-         *
-         * **Important**: In Outlook on the web, if a user created a new message by activating a contact's email address link from their contact or
-         * profile card, your add-in's `getAsync` call currently won't return a value in the `displayName` property of the
-         * associated `EmailAddressDetails` object. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js-docs-pr/issues/2962 | related GitHub issue}.
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3491,6 +3499,24 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         * 
+         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         * 
+         * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
+         * 
+         * - A Teams meeting status icon appears before the recipient's name or email address.
+         * 
+         * - A semicolon appears after the recipient's name or email address.
+         * 
+         * - The recipient's name or email address is underlined or enclosed in a box.
+         * 
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         * the auto-complete list.
+         * 
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
          */
@@ -3510,9 +3536,12 @@ export declare namespace Office {
          *
          * Maximum number that can be set:
          *
-         * - Windows, Mac, web browser: 100 recipients
+         * - Windows: 100 recipients.
+         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Other: No limit
+         * - Classic Mac UI, web browser: 100 recipients
+         *
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -3548,9 +3577,12 @@ export declare namespace Office {
          *
          * Maximum number that can be set:
          *
-         * - Windows, Mac, web browser: 100 recipients
+         * - Windows: 100 recipients.
+         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
          *
-         * - Other: No limit
+         * - Classic Mac UI, web browser: 100 recipients
+         *
+         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]

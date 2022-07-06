@@ -303,10 +303,8 @@
 ||[hyperlink](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-hyperlink-member)|Represents the `hyperlink` property.|
 ||[style](/javascript/api/excel/excel.settablecellproperties#excel-excel-settablecellproperties-style-member)|Represents the `style` property.|
 |[SettableColumnProperties](/javascript/api/excel/excel.settablecolumnproperties)|[columnHidden](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-columnhidden-member)|Represents the `columnHidden` property.|
-||[columnWidth](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-columnwidth-member)||
-||[format: Excel.CellPropertiesFormat & {            columnWidth](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-format-member)|Represents the `format` property.|
-|[SettableRowProperties](/javascript/api/excel/excel.settablerowproperties)|[format: Excel.CellPropertiesFormat & {            rowHeight](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-format-member)|Represents the `format` property.|
-||[rowHeight](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-rowheight-member)||
+||[format](/javascript/api/excel/excel.settablecolumnproperties#excel-excel-settablecolumnproperties-format-member)|Represents the `format` property.|
+|[SettableRowProperties](/javascript/api/excel/excel.settablerowproperties)|[format](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-format-member)|Represents the `format` property.|
 ||[rowHidden](/javascript/api/excel/excel.settablerowproperties#excel-excel-settablerowproperties-rowhidden-member)|Represents the `rowHidden` property.|
 |[Shape](/javascript/api/excel/excel.shape)|[altTextDescription](/javascript/api/excel/excel.shape#excel-excel-shape-alttextdescription-member)|Specifies the alternative description text for a `Shape` object.|
 ||[altTextTitle](/javascript/api/excel/excel.shape#excel-excel-shape-alttexttitle-member)|Specifies the alternative title text for a `Shape` object.|

@@ -29,7 +29,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 The following are the available values.
 
 |Available value|Description|Hosts|
-|---|---|---|
+|:---|:---|:---|
 |`AppendOnSend`|Declares that the add-in is using the [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-appendonsendasync-member(1)) API.|Outlook|
 
 ## `ExtendedPermission` example
@@ -66,4 +66,4 @@ The following is an example of the `ExtendedPermission` element.
 
 ## Contained in
 
-[ExtendedPermissions](extendedpermissions.md)
+- [ExtendedPermissions](extendedpermissions.md)

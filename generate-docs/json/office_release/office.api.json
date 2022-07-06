@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.Actions:interface",
-              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n */\n",
+              "docComment": "/**\n * Manages actions and keyboard shortcuts.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -196,9 +196,59 @@
               "name": "Actions",
               "members": [
                 {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#areShortcutsInUse:member(1)",
+                  "docComment": "/**\n * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param shortcuts - An array of shortcut combinations. For example, `[\"Ctrl+1\", \"Ctrl+2\"]`.\n *\n * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:\"Ctrl+1\", inUse:true},{shortcut:\"Ctrl+2\", inUse:false}]`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "areShortcutsInUse(shortcuts: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{shortcut: string, inUse: boolean}[]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "shortcuts",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "areShortcutsInUse"
+                },
+                {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Actions#associate:member",
-                  "docComment": "/**\n * Associates the ID of an action with a function.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param actionId - The ID of an action that is defined in an extended manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
+                  "docComment": "/**\n * Associates the ID or name of an action with a function.\n *\n * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.\n *\n * @param actionFunction - The function that is run when the action is invoked.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -220,6 +270,89 @@
                     "startIndex": 1,
                     "endIndex": 2
                   }
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#getShortcuts:member(1)",
+                  "docComment": "/**\n * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist. The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\", \"SetUnderline\": null}`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getShortcuts(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{[actionId: string]: string|null}>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getShortcuts"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Actions#replaceShortcuts:member(1)",
+                  "docComment": "/**\n * Replaces existing add-in shortcuts with custom shortcuts for the user.\n *\n * @remarks\n *\n * **Requirement sets**:\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}\n *\n * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}\n *\n * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{\"SetItalic\": \"Ctrl+1\", \"SetBold\": \"Ctrl+2\"}`. To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)\n *\n * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered. Otherwise, the promise will be rejected with error code and error message. An \"InvalidOperation\" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "replaceShortcuts(shortcuts: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{[actionId: string]: string}"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "shortcuts",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "replaceShortcuts"
                 }
               ],
               "extendsTokenRanges": []
@@ -925,7 +1058,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "office!Office.AddinCommands.EventCompletedOptions#allowEvent:member",
-                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
+                      "docComment": "/**\n * When the completed method is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -1259,7 +1392,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Auth#getAccessToken:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * @remarks\n *\n * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word\n *\n * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}\n *\n * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from version 2111 (build 14701.20000). To retrieve an access token in older builds, use {@link https://docs.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js#office-runtime-officeruntime-auth-getaccesstoken-member(1) | OfficeRuntime.auth.getAccessToken} instead. For more information, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17762,7 +17895,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.OfficeTheme:interface",
-              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \\> Office Account \\> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word\n *\n * `OfficeTheme` is only supported in Office on Windows.\n */\n",
+              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \\> Office Account \\> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word\n *\n * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -31914,12 +32047,12 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "office!OfficeExtension.DebugInfo#statements:member",
+                  "canonicalReference": "office!OfficeExtension.DebugInfo#statement:member",
                   "docComment": "/**\n * The statement that caused the error, if available.\n *\n * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "statements?: "
+                      "text": "statement?: "
                     },
                     {
                       "kind": "Content",
@@ -31932,7 +32065,7 @@
                   ],
                   "isOptional": true,
                   "releaseTag": "Public",
-                  "name": "statements",
+                  "name": "statement",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -33716,7 +33849,7 @@
             {
               "kind": "Class",
               "canonicalReference": "office!OfficeExtension.TrackedObjects:class",
-              "docComment": "/**\n * Collection of tracked objects, contained within a request context. See \"context.trackedObjects\" for more information.\n */\n",
+              "docComment": "/**\n * Collection of tracked objects, contained within a request context. See {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects} for more information.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -33729,7 +33862,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.TrackedObjects#add:member(1)",
-                  "docComment": "/**\n * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n *\n * This method also has the following signature:\n *\n * `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.\n */\n",
+                  "docComment": "/**\n * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33776,7 +33909,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.TrackedObjects#add:member(2)",
-                  "docComment": "/**\n * Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track the parent collection.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33827,7 +33960,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.TrackedObjects#remove:member(1)",
-                  "docComment": "/**\n * Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n *\n * This method also has the following signature:\n *\n * `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # AllFormFactors element
 
-Specifies the settings for an add-in for all form factors. Currently, the only feature using **AllFormFactors** is custom functions. **AllFormFactors** is a required element when using custom functions.
+Specifies the settings for an add-in for all form factors. Currently, the only feature using **\<AllFormFactors\>** is custom functions. **\<AllFormFactors\>** is a required element when using custom functions.
 
 **Add-in type:** Task pane
 
@@ -27,7 +27,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [ExtensionPoint](extensionpoint.md) |  Yes |  Defines where an add-in exposes functionality. |
 
 ## AllFormFactors example

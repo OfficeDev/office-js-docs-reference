@@ -21,9 +21,8 @@ Specifies source location and control settings for your mail add-in.
 
 ## Contained in
 
-[OfficeApp](officeapp.md)
+- [OfficeApp](officeapp.md)
 
 ## Can contain
 
-[Form](form.md)
-
+- [Form](form.md)

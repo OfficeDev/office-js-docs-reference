@@ -64,9 +64,6 @@
 |[CellValueProviderAttributes](/javascript/api/excel/excel.cellvalueproviderattributes)|[description](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-description-member)|Represents the provider description property that is used in card view if no logo is specified.|
 ||[logoSourceAddress](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-logosourceaddress-member)|Represents a URL used to download an image that will be used as a logo in card view.|
 ||[logoTargetAddress](/javascript/api/excel/excel.cellvalueproviderattributes#excel-excel-cellvalueproviderattributes-logotargetaddress-member)|Represents a URL that is the navigation target if the user clicks on the logo element in card view.|
-|[ChartFill](/javascript/api/excel/excel.chartfill)|[solidColor](/javascript/api/excel/excel.chartfill#excel-excel-chartfill-solidcolor-member)|Sets and gets the uniform color fill formatting of a chart element.|
-|[ChartSeries](/javascript/api/excel/excel.chartseries)|[getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcestring-member(1))|Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.|
-||[getDimensionDataSourceType(dimension: Excel.ChartSeriesDimension)](/javascript/api/excel/excel.chartseries#excel-excel-chartseries-getdimensiondatasourcetype-member(1))|Gets the data source type of the chart series.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Identity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
@@ -127,13 +124,15 @@
 |[EntityCellValue](/javascript/api/excel/excel.entitycellvalue)|[basicType](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[layouts](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-layouts-member)|Represents layout information for views of this entity.|
-||[properties: {            [key: string]](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
+||[properties](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-properties-member)|Represents the properties of this entity and their metadata.|
 ||[provider](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-provider-member)|Represents information that describes the service that provided the data in this `EntityCellValue`.|
 ||[referencedValues](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-referencedvalues-member)|Represents the cell values which are referenced within `EntityCellValue.properties`.|
 ||[text](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|
 ||[type](/javascript/api/excel/excel.entitycellvalue#excel-excel-entitycellvalue-type-member)|Represents the type of this cell value.|
+|[EntityCompactLayout](/javascript/api/excel/excel.entitycompactlayout)|[icon](/javascript/api/excel/excel.entitycompactlayout#excel-excel-entitycompactlayout-icon-member)|Specifies the name of the icon which is used to open the card.|
 |[EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)|[propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)|Represents metadata about the property.|
 |[EntityViewLayouts](/javascript/api/excel/excel.entityviewlayouts)|[card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)|Represents the layout of this entity in card view.|
+||[compact](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-compact-member)|Represents the layout used when there is limited space to represent the entity.|
 |[FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue)|[basicType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)|Represents the type of `FieldErrorCellValue`.|
@@ -181,8 +180,7 @@
 ||[basicValue](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[cardLayout](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-cardlayout-member)|Represents the layout of this linked entity in card view.|
 ||[id](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-id-member)|Represents the service source that provided the information in this value.|
-||[properties: {            [key: string]: CellValue & {                propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this linked entity and their metadata.|
-||[propertyMetadata](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-propertymetadata-member)||
+||[properties](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-properties-member)|Represents the properties of this linked entity and their metadata.|
 ||[provider](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-provider-member)|Represents information that describes the service that provided data in this `LinkedEntityCellValue`.|
 ||[text](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-text-member)|Represents the text shown when a cell with this value is rendered.|
 ||[type](/javascript/api/excel/excel.linkedentitycellvalue#excel-excel-linkedentitycellvalue-type-member)|Represents the type of this cell value.|
@@ -214,16 +212,12 @@
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
-|[PivotTable](/javascript/api/excel/excel.pivottable)|[getDataSourceString()](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcestring-member(1))|Returns the string representation of the data source for the PivotTable.|
-||[getDataSourceType()](/javascript/api/excel/excel.pivottable#excel-excel-pivottable-getdatasourcetype-member(1))|Gets the type of the data source for the PivotTable.|
-|[PivotTableScopedCollection](/javascript/api/excel/excel.pivottablescopedcollection)|[getFirstOrNullObject()](/javascript/api/excel/excel.pivottablescopedcollection#excel-excel-pivottablescopedcollection-getfirstornullobject-member(1))|Gets the first PivotTable in the collection.|
 |[PlaceholderErrorCellValue](/javascript/api/excel/excel.placeholdererrorcellvalue)|[basicType](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorType](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
 ||[target](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-target-member)|`PlaceholderErrorCellValue` is used during processing, while data is downloaded.|
 ||[type](/javascript/api/excel/excel.placeholdererrorcellvalue#excel-excel-placeholdererrorcellvalue-type-member)|Represents the type of this cell value.|
-|[Range](/javascript/api/excel/excel.range)|[getDependents()](/javascript/api/excel/excel.range#excel-excel-range-getdependents-member(1))|Returns a `WorkbookRangeAreas` object that represents the range containing all the dependents of a cell in the same worksheet or in multiple worksheets.|
-||[valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
+|[Range](/javascript/api/excel/excel.range)|[valuesAsJson](/javascript/api/excel/excel.range#excel-excel-range-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
 ||[valuesAsJsonLocal](/javascript/api/excel/excel.range#excel-excel-range-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this range.|
 |[RangeView](/javascript/api/excel/excel.rangeview)|[valuesAsJson](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjson-member)|A JSON representation of the values in the cells in this range.|
 ||[valuesAsJsonLocal](/javascript/api/excel/excel.rangeview#excel-excel-rangeview-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this range.|
@@ -248,7 +242,6 @@
 |[RootReferenceCellValue](/javascript/api/excel/excel.rootreferencecellvalue)|[basicType](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[type](/javascript/api/excel/excel.rootreferencecellvalue#excel-excel-rootreferencecellvalue-type-member)|Represents the type of this cell value.|
-|[Shape](/javascript/api/excel/excel.shape)|[displayName](/javascript/api/excel/excel.shape#excel-excel-shape-displayname-member)|Gets the display name of the shape.|
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#excel-excel-shapecollection-addsvg-member(1))|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 |[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#excel-excel-slicer-nameinformula-member)|Represents the slicer name used in the formula.|
 ||[setStyle(style: string \| SlicerStyle \| BuiltInSlicerStyle)](/javascript/api/excel/excel.slicer#excel-excel-slicer-setstyle-member(1))|Sets the style applied to the slicer.|

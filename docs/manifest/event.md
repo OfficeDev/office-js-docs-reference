@@ -24,7 +24,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [Type](#type-attribute)  |  Yes  | Specifies the event to handle. |
 |  [FunctionExecution](#functionexecution-attribute)  |  Yes  | Specifies the execution style for the event handler, asynchronous or synchronous. Currently only synchronous event handlers are supported. |
 |  [FunctionName](#functionname-attribute)  |  Yes  | Specifies the function name for the event handler. |

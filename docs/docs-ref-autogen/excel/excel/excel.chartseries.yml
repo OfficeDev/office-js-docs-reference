@@ -836,7 +836,7 @@ methods:
       Gets the string representation of the data source of the chart series.The string representation could be
       information such as a cell address.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -845,7 +845,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/chart-data-source.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
       await Excel.run(async (context) => {
         // This method retrieves the data source information of a chart series in the Sample worksheet.
@@ -868,7 +868,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string>;'
@@ -886,8 +886,8 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series.The string representation could be
       information such as a cell address.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -906,7 +906,7 @@ methods:
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -915,7 +915,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/chart-data-source.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
       await Excel.run(async (context) => {
         // This method retrieves the data source information of a chart series in the Sample worksheet.
@@ -938,7 +938,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -958,8 +958,8 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimensionString)
     summary: Gets the data source type of the chart series.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

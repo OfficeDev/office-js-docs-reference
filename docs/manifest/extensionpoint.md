@@ -1,13 +1,13 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 04/15/2022
+ms.date: 05/25/2022
 ms.localizationpriority: medium
 ---
 
 # ExtensionPoint element
 
- Defines where an add-in exposes functionality in the Office UI. The **ExtensionPoint** element is a child element of [AllFormFactors](allformfactors.md), [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md).
+ Defines where an add-in exposes functionality in the Office UI. The **\<ExtensionPoint\>** element is a child element of [AllFormFactors](allformfactors.md), [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md).
 
 **Add-in type:** Task pane, Mail
 
@@ -22,8 +22,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
-|:-----|:-----|:-----|
-|  **xsi:type**  |  Yes  | The type of extension point being defined. Possible values depend on the Office host application defined in the grandparent **Host** element value.|
+|:-----|:-----:|:-----|
+|  **xsi:type**  |  Yes  | The type of extension point being defined. Possible values depend on the Office host application defined in the grandparent **\<Host\>** element value.|
 
 ## Extension points for Excel, OneNote, PowerPoint, and Word add-in commands
 
@@ -43,12 +43,15 @@ The primary command surface in Word, Excel, PowerPoint, and OneNote is the ribbo
 
 |Element|Description|
 |:-----|:-----|
-|[CustomTab](customtab.md|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **CustomTab** element, you can't use the **OfficeTab** element. The **id** attribute is required.|
-|[OfficeTab](officetab.md)|Required if you want to extend a default Office app ribbon tab (using **PrimaryCommandSurface**). If you use the **OfficeTab** element, you can't use the **CustomTab** element.|
+|[CustomTab](customtab.md|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **\<CustomTab\>** element, you can't use the **\<OfficeTab\>** element. The **id** attribute is required. There can be no more than one **\<CustomTab\>** child element.|
+|[OfficeTab](officetab.md)|Required if you want to extend a default Office app ribbon tab (using **PrimaryCommandSurface**). If you use the **\<OfficeTab\>** element, you can't use the **\<CustomTab\>** element.|
+
+> [!IMPORTANT]
+> There can be no more than one **\<ExtensionPoint\>** element in the add-in that has a child **\<CustomTab\>** element; and that one **\<ExtensionPoint\>** element can have only one **\<CustomTab\>**, so there is only one **\<CustomTab\>** element across all **\<ExtensionPoint\>** elements.
 
 #### Example
 
-The following example shows how to use the **ExtensionPoint** element with **PrimaryCommandSurface**. It adds a custom tab to the ribbon.
+The following example shows how to use the **\<ExtensionPoint\>** element with **PrimaryCommandSurface**. It adds a custom tab to the ribbon.
 
 > [!IMPORTANT]
 > For elements that contain an ID attribute, make sure you provide a unique ID.
@@ -291,9 +294,9 @@ This extension point puts buttons in the command surface for the mail read view 
 |:-----|:-----|
 |  [Group](group.md) |  Adds a group of buttons to the command surface.  |
 
-**ExtensionPoint** elements of this type can only have one child element: a **Group** element.
+**\<ExtensionPoint\>** elements of this type can only have one child element: a **\<Group\>** element.
 
-**Control** elements contained in this extension point must have the **xsi:type** attribute set to `MobileButton`.
+**\<Control\>** elements contained in this extension point must have the **xsi:type** attribute set to `MobileButton`.
 
 #### Example
 
@@ -410,7 +413,7 @@ This extension point enables an add-in to activate based on supported events in 
 |  Element |  Description  |
 |:-----|:-----|
 | [LaunchEvents](launchevents.md) |  List of [LaunchEvent](launchevent.md) for event-based activation.  |
-| [SourceLocation](sourcelocation.md) |  The location of the source JavaScript file.  |
+| [SourceLocation](customfunctionssourcelocation.md) |  The location of the source JavaScript file.  |
 
 #### Example
 
@@ -446,7 +449,7 @@ This extension point adds an event handler for a specified event. For more infor
 
 ### DetectedEntity
 
-This extension point adds a contextual add-in activation on a specified entity type.
+This extension point adds a contextual add-in activation on a specified entity type. For more information about using this extension point, see [Contextual Outlook add-ins](/office/dev/add-ins/outlook/contextual-outlook-add-ins).
 
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
@@ -459,12 +462,12 @@ The containing [VersionOverrides](versionoverrides.md) element must have an `xsi
 |  Element |  Description  |
 |:-----|:-----|
 |  [Label](#label) |  Specifies the label for the add-in in the contextual window.  |
-|  [SourceLocation](sourcelocation.md) |  Specifies the URL for the contextual window.  |
+|  [SourceLocation](customfunctionssourcelocation.md) |  Specifies the URL for the contextual window.  |
 |  [Rule](rule.md) |  Specifies the rule or rules that determine when an add-in activates.  |
 
 #### Label
 
-Required. The label of the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the [Resources](resources.md) element.
+Required. The label of the group. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** element in the [Resources](resources.md) element.
 
 #### Highlight requirements
 

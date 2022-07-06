@@ -1,7 +1,7 @@
 ---
 title: Form element in the manifest file
 description: UX settings for the forms that your mail add-in will use when running on a particular device (desktop, tablet, or phone).
-ms.date: 04/09/2020
+ms.date: 06/10/2022
 ms.localizationpriority: medium
 ---
 
@@ -37,8 +37,7 @@ UX settings for the forms that your mail add-in will use when running on a parti
 
 ## Contained in
 
-[FormSettings](formsettings.md)
-
+- [FormSettings](formsettings.md)
 
 ## Can contain
 
@@ -47,3 +46,9 @@ UX settings for the forms that your mail add-in will use when running on a parti
 |[DesktopSettings](desktopsettings.md)|
 |[TabletSettings](tabletsettings.md)|
 |[PhoneSettings](phonesettings.md)|
+
+## Attributes
+
+|Attribute|Required|Description|
+|:-----|:-----:|:-----|
+|xsi:type|Yes|Specifies where the add-in appears in Outlook. If your add-in should appear when a user reads messages or appointments, set the attribute to `ItemRead`. However, if your add-in should appear when a user composes a reply, creates a new message or appointment, or edits an existing appointment, set the attribute to `ItemEdit`.|

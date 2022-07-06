@@ -35,6 +35,35 @@ properties:
       content: 'readonly items: Word.Field[];'
       return:
         type: '<xref uid="word!Word.Field:class" />[]'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+          // Gets all fields in the document body.
+
+          await Word.run(async (context) => {
+            const fields = context.document.body.fields.load("items");
+
+            await context.sync();
+
+            if (fields.items.length === 0) {
+              console.log("No fields in this document.");
+            } else {
+              for (let i = 0; i < fields.items.length; i++) {
+                console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+                console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+              }
+            }
+          });
+
+          ```
 methods:
   - name: getFirst()
     uid: 'word!Word.FieldCollection#getFirst:member(1)'
@@ -59,6 +88,33 @@ methods:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+      // Gets the first field in the document body.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + field.result);
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

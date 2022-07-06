@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: Excel.RangeUnderlineStyle
+uid: 'excel!Excel.RangeUnderlineStyle:enum'
+package: excel!
+fullName: Excel.RangeUnderlineStyle
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+fields:
+  - name: double
+    uid: 'excel!Excel.RangeUnderlineStyle.double:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Double"'
+  - name: doubleAccountant
+    uid: 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"DoubleAccountant"'
+  - name: none
+    uid: 'excel!Excel.RangeUnderlineStyle.none:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"None"'
+  - name: single
+    uid: 'excel!Excel.RangeUnderlineStyle.single:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Single"'
+  - name: singleAccountant
+    uid: 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"SingleAccountant"'

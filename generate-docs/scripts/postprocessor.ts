@@ -93,12 +93,12 @@ tryCatch(async () => {
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 15}, /*not including online*/
+    const hostVersionMap = [{host: "excel", versions: 16}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 12},
-                            {host: "powerpoint", versions: 4},
+                            {host: "powerpoint", versions: 5},
                             {host: "visio", versions: 1},
-                            {host: "word", versions: 4}];
+                            {host: "word", versions: 4}]; /* not including online*/
 
     hostVersionMap.forEach(category => {
         if (category.versions > 1) {
@@ -114,6 +114,9 @@ tryCatch(async () => {
 
     // Special case for ExcelApi Online
     scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithReleaseCommon, "excel", 99);
+
+    // Special case for WordApi Online
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);
@@ -174,7 +177,6 @@ tryCatch(async () => {
                     }
                 });
         });
-
 
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common_preview/toc.yml");

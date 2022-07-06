@@ -1372,10 +1372,10 @@ methods:
     package: excel!
     fullName: getDependents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the dependents of a cell in the
-      same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified
+      range in the same worksheet or across multiple worksheets.
     remarks: >-
-      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
       #### Examples
@@ -1384,7 +1384,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-dependents.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-dependents.yaml
 
       await Excel.run(async (context) => {
         // This method highlights all the dependent cells of the active cell.
@@ -1409,7 +1409,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getDependents(): Excel.WorkbookRangeAreas;'
@@ -1421,8 +1421,8 @@ methods:
     package: excel!
     fullName: getDirectDependents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependents of a cell in
-      the same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a
+      specified range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1467,8 +1467,8 @@ methods:
     package: excel!
     fullName: getDirectPrecedents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in
-      the same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
+      specified range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -2033,8 +2033,8 @@ methods:
     package: excel!
     fullName: getPrecedents()
     summary: >-
-      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the
-      same worksheet or in multiple worksheets.
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified
+      range in the same worksheet or across multiple worksheets.
     remarks: >-
       \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

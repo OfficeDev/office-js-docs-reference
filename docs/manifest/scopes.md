@@ -24,13 +24,13 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 - [IdentityAPI 1.3](../requirement-sets/common/identity-api-requirement-sets.md)
 
-**Scopes** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
+**\<Scopes\>** is a child element of the [WebApplicationInfo](webapplicationinfo.md) element in the manifest.
 
 ## Child elements
 
 |  Element |  Required  |  Description  |
-|:-----|:-----|:-----|
-|  **Scope**                |  Yes     |   The name of a permission; for example, Files.Read.All or profile. |
+|:-----|:-----:|:-----|
+|  **\<Scope\>** |  Yes     |   The name of a permission; for example, Files.Read.All or profile. |
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 title: SourceLocation element in the manifest file
 description: The SourceLocation element specifies the source file locations for your Office Add-in.
-ms.date: 05/12/2021
+ms.date: 06/14/2022
 ms.localizationpriority: medium
 ---
 
@@ -20,15 +20,14 @@ Specifies the source file locations for your Office Add-in as a URL between 1 an
 ## Contained in
 
 - [DefaultSettings](defaultsettings.md) (Content and task pane add-ins)
-- [FormSettings](formsettings.md) (Mail add-ins)
-- [ExtensionPoint](extensionpoint.md) (Contextual and LaunchEvent mail add-ins)
+- [Form](form.md) (Mail add-ins)
 
 ## Can contain
 
-[Override](override.md)
+- [Override](override.md)
 
 ## Attributes
 
 |Attribute|Type|Required|Description|
-|:-----|:-----|:-----|:-----|
-|DefaultValue|URL|required|Specifies the default value for this setting for the locale specified in the [DefaultLocale](defaultlocale.md) element.|
+|:-----|:-----:|:-----:|:-----|
+|DefaultValue|URL|Yes|Specifies the default value for this setting for the locale specified in the [DefaultLocale](defaultlocale.md) element.|

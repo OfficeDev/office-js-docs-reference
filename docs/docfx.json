@@ -2,55 +2,6 @@
   "build": {
     "content": [
       {
-        "files": ["**/toc.md", "**/toc.yml", "toc.yml"],
-        "exclude": [
-          "common/**",
-          "common_preview/**",
-          "excel/**",
-          "excel_1_1/**",
-          "excel_1_2/**",
-          "excel_1_3/**",
-          "excel_1_4/**",
-          "excel_1_5/**",
-          "excel_1_6/**",
-          "excel_1_7/**",
-          "excel_1_8/**",
-          "excel_1_9/**",
-          "excel_1_10/**",
-          "excel_1_11/**",
-          "excel_1_12/**",
-          "excel_1_13/**",
-          "excel_1_14/**",
-          "excel_online/**",
-          "office/**",
-          "office_release/**",
-          "onenote/**",
-          "outlook/**",
-          "outlook_1_1/**",
-          "outlook_1_2/**",
-          "outlook_1_3/**",
-          "outlook_1_4/**",
-          "outlook_1_5/**",
-          "outlook_1_6/**",
-          "outlook_1_7/**",
-          "outlook_1_8/**",
-          "outlook_1_9/**",
-          "outlook_1_10/**",
-          "outlook_1_11/**",
-          "powerpoint/**",
-          "powerpoint_1_1/**",
-          "powerpoint_1_2/**",
-          "powerpoint_1_3/**",
-          "visio/**",
-          "word/**",
-          "word_1_1/**",
-          "word_1_2/**",
-          "word_1_3/**"
-        ],
-        "src": "docs-ref-autogen",
-        "dest": "api/office_ref_toc"
-      },
-      {
         "files": ["toc.yml"],
         "src": "",
         "dest": "api/office_ref_toc"
@@ -60,64 +11,6 @@
         "src": "docs-ref-conceptual",
         "dest": "office",
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "**/_themes/**",
-          "**/_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": ["**/*.md", "**/*.yml"],
-        "src": "docs-ref-autogen",
-        "dest": "api",
-        "exclude": [
-          "common/**",
-          "common_preview/**",
-          "excel/**",
-          "excel_1_1/**",
-          "excel_1_2/**",
-          "excel_1_3/**",
-          "excel_1_4/**",
-          "excel_1_5/**",
-          "excel_1_6/**",
-          "excel_1_7/**",
-          "excel_1_8/**",
-          "excel_1_9/**",
-          "excel_1_10/**",
-          "excel_1_11/**",
-          "excel_1_12/**",
-          "excel_1_13/**",
-          "excel_1_14/**",
-          "excel_online/**",
-          "office/**",
-          "office_release/**",
-          "onenote/**",
-          "outlook/**",
-          "outlook_1_1/**",
-          "outlook_1_2/**",
-          "outlook_1_3/**",
-          "outlook_1_4/**",
-          "outlook_1_5/**",
-          "outlook_1_6/**",
-          "outlook_1_7/**",
-          "outlook_1_8/**",
-          "outlook_1_9/**",
-          "outlook_1_10/**",
-          "outlook_1_11/**",
-          "overview/overview.md",
-          "powerpoint/**",
-          "powerpoint_1_1/**",
-          "powerpoint_1_2/**",
-          "powerpoint_1_3/**",
-          "visio/**",
-          "word/**",
-          "word_1_1/**",
-          "word_1_2/**",
-          "word_1_3/**",
           "**/obj/**",
           "**/includes/**",
           "**/_themes/**",
@@ -167,22 +60,58 @@
         "dest": "office_js_breadcrumb"
       },
       {
-        "files": ["**/*.md", "**/*.yml"],
-        "group": "office",
-        "src": "docs-ref-autogen/office",
-        "dest": "api"
+        "files": ["**/toc.yml"],
+        "group": "common-js-toc",
+        "src": "docs-ref-autogen/common",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js",
+        "group": "common-js-toc",
         "src": "docs-ref-autogen/common",
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "common-js-preview-toc",
+        "src": "docs-ref-autogen/common_preview",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
-        "group": "common-js-preview",
+        "group": "common-js-preview-toc",
         "src": "docs-ref-autogen/common_preview",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office_release",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office_release",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "common-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/outlook",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -191,10 +120,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/outlook_1_1",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.1",
         "src": "docs-ref-autogen/outlook_1_1",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen/outlook_1_2",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -203,10 +144,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.3",
+        "src": "docs-ref-autogen/outlook_1_3",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.3",
         "src": "docs-ref-autogen/outlook_1_3",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.4",
+        "src": "docs-ref-autogen/outlook_1_4",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -215,10 +168,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen/outlook_1_5",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.5",
         "src": "docs-ref-autogen/outlook_1_5",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.6",
+        "src": "docs-ref-autogen/outlook_1_6",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -227,10 +192,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen/outlook_1_7",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.7",
         "src": "docs-ref-autogen/outlook_1_7",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.8",
+        "src": "docs-ref-autogen/outlook_1_8",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -239,10 +216,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.9",
+        "src": "docs-ref-autogen/outlook_1_9",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.9",
         "src": "docs-ref-autogen/outlook_1_9",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.10",
+        "src": "docs-ref-autogen/outlook_1_10",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -251,10 +240,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "outlook-js-1.11",
+        "src": "docs-ref-autogen/outlook_1_11",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "outlook-js-1.11",
         "src": "docs-ref-autogen/outlook_1_11",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen/excel",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -263,10 +264,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/excel_1_1",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.1",
         "src": "docs-ref-autogen/excel_1_1",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/excel_1_2",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -275,10 +288,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen/excel_1_3",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.3",
         "src": "docs-ref-autogen/excel_1_3",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.4",
+        "src": "docs-ref-autogen/excel_1_4",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -287,10 +312,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.5",
+        "src": "docs-ref-autogen/excel_1_5",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.5",
         "src": "docs-ref-autogen/excel_1_5",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.6",
+        "src": "docs-ref-autogen/excel_1_6",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -299,10 +336,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.7",
+        "src": "docs-ref-autogen/excel_1_7",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.7",
         "src": "docs-ref-autogen/excel_1_7",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.8",
+        "src": "docs-ref-autogen/excel_1_8",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -311,10 +360,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.9",
+        "src": "docs-ref-autogen/excel_1_9",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.9",
         "src": "docs-ref-autogen/excel_1_9",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.10",
+        "src": "docs-ref-autogen/excel_1_10",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -323,10 +384,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.11",
+        "src": "docs-ref-autogen/excel_1_11",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.11",
         "src": "docs-ref-autogen/excel_1_11",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.12",
+        "src": "docs-ref-autogen/excel_1_12",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -335,10 +408,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.13",
+        "src": "docs-ref-autogen/excel_1_13",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-1.13",
         "src": "docs-ref-autogen/excel_1_13",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.14",
+        "src": "docs-ref-autogen/excel_1_14",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -347,10 +432,34 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-1.15",
+        "src": "docs-ref-autogen/excel_1_15",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "excel-js-1.15",
+        "src": "docs-ref-autogen/excel_1_15",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "excel-js-online",
+        "src": "docs-ref-autogen/excel_online",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "excel-js-online",
         "src": "docs-ref-autogen/excel_online",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "onenote-js-1.1",
+        "src": "docs-ref-autogen/onenote",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -359,10 +468,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-preview",
+        "src": "docs-ref-autogen/powerpoint",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "powerpoint-js-preview",
         "src": "docs-ref-autogen/powerpoint",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.1",
+        "src": "docs-ref-autogen/powerpoint_1_1",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -371,10 +492,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.2",
+        "src": "docs-ref-autogen/powerpoint_1_2",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "powerpoint-js-1.2",
         "src": "docs-ref-autogen/powerpoint_1_2",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.3",
+        "src": "docs-ref-autogen/powerpoint_1_3",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -383,10 +516,34 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.4",
+        "src": "docs-ref-autogen/powerpoint_1_4",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.4",
+        "src": "docs-ref-autogen/powerpoint_1_4",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "visio-js-1.1",
+        "src": "docs-ref-autogen/visio",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "visio-js-1.1",
         "src": "docs-ref-autogen/visio",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-preview",
+        "src": "docs-ref-autogen/word",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -395,10 +552,22 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "word-js-1.1",
+        "src": "docs-ref-autogen/word_1_1",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "word-js-1.1",
         "src": "docs-ref-autogen/word_1_1",
         "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-1.2",
+        "src": "docs-ref-autogen/word_1_2",
+        "dest": "api/office-js-docs-reference"
       },
       {
         "files": ["**/*.md", "**/*.yml"],
@@ -407,9 +576,27 @@
         "dest": "api"
       },
       {
+        "files": ["**/toc.yml"],
+        "group": "word-js-1.3",
+        "src": "docs-ref-autogen/word_1_3",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
         "files": ["**/*.md", "**/*.yml"],
         "group": "word-js-1.3",
         "src": "docs-ref-autogen/word_1_3",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-online",
+        "src": "docs-ref-autogen/word_online",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-online",
+        "src": "docs-ref-autogen/word_online",
         "dest": "api"
       }
     ],
@@ -422,14 +609,6 @@
       }
     ],
     "groups": {
-      "common-js": {
-        "dest": "common-js",
-        "moniker_range": "common-js"
-      },
-      "common-js-preview": {
-        "dest": "common-js-preview",
-        "moniker_range": "common-js-preview"
-      },
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
         "moniker_range": "outlook-js-preview"
@@ -538,6 +717,10 @@
         "dest": "excel-js-1.14",
         "moniker_range": "excel-js-1.14"
       },
+      "excel-js-1.15": {
+        "dest": "excel-js-1.15",
+        "moniker_range": "excel-js-1.15"
+      },
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -562,6 +745,10 @@
         "dest": "powerpoint-js-1.3",
         "moniker_range": "powerpoint-js-1.3"
       },
+      "powerpoint-js-1.4": {
+        "dest": "powerpoint-js-1.4",
+        "moniker_range": "powerpoint-js-1.4"
+      },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
         "moniker_range": "visio-js-1.1"
@@ -582,9 +769,25 @@
         "dest": "word-js-1.3",
         "moniker_range": "word-js-1.3"
       },
-      "office": {
-        "dest": "office",
-        "moniker_range": ">=common-js || >=outlook-js-1.1 || >=excel-js-1.1 || onenote-js-1.1 || >=powerpoint-js-1.1 || >=word-js-1.1"
+      "word-js-online": {
+        "dest": "word-js-online",
+        "moniker_range": "word-js-online"
+      },
+      "common-js-toc": {
+        "dest": "common-js-toc",
+        "moniker_range": "common-js"
+      },
+      "common-js-preview-toc": {
+        "dest": "common-js-preview-toc",
+        "moniker_range": "common-js-preview"
+      },
+      "common-js": {
+        "dest": "common-js",
+        "moniker_range": "common-js || <outlook-js-preview || <excel-js-preview || <powerpoint-js-preview || <word-js-preview"
+      },
+      "common-js-preview": {
+        "dest": "common-js-preview",
+        "moniker_range": "common-js-preview || outlook-js-preview || excel-js-preview || onenote-js-1.1 || powerpoint-js-preview || word-js-preview"
       },
       "all": {
         "dest": "all",
@@ -625,8 +828,6 @@
         "docs-ref-conceptual/**/*": "/answers/products/m365"
       },
       "product": {
-        "docs-ref-autogen/common/**": ["common"],
-        "docs-ref-autogen/common_preview/**": ["common preview"],
         "docs-ref-autogen/excel/**": ["excel preview"],
         "docs-ref-autogen/excel/custom-functions-runtime/**": [
           "excel",
@@ -661,6 +862,8 @@
         "docs-ref-autogen/excel_1_13/excel/**": ["excel 1.13"],
         "docs-ref-autogen/excel_1_14/**": ["excel 1.14"],
         "docs-ref-autogen/excel_1_14/excel/**": ["excel 1.14"],
+        "docs-ref-autogen/excel_1_15/**": ["excel 1.15"],
+        "docs-ref-autogen/excel_1_15/excel/**": ["excel 1.15"],
         "docs-ref-autogen/excel_online/**": ["excel online"],
         "docs-ref-autogen/excel_online/excel/**": ["excel online"],
         "docs-ref-autogen/office/**": ["common preview"],
@@ -702,6 +905,8 @@
         "docs-ref-autogen/powerpoint_1_2/powerpoint/**": ["powerpoint 1.2"],
         "docs-ref-autogen/powerpoint_1_3/**": ["powerpoint 1.3"],
         "docs-ref-autogen/powerpoint_1_3/powerpoint/**": ["powerpoint 1.3"],
+        "docs-ref-autogen/powerpoint_1_4/**": ["powerpoint 1.4"],
+        "docs-ref-autogen/powerpoint_1_4/powerpoint/**": ["powerpoint 1.4"],
         "docs-ref-autogen/visio/**": ["visio"],
         "docs-ref-autogen/visio/visio/**": ["visio"],
         "docs-ref-autogen/word/**": ["word preview"],
@@ -711,11 +916,11 @@
         "docs-ref-autogen/word_1_2/**": ["word 1.2"],
         "docs-ref-autogen/word_1_2/word/**": ["word 1.2"],
         "docs-ref-autogen/word_1_3/**": ["word 1.3"],
-        "docs-ref-autogen/word_1_3/word/**": ["word 1.3"]
+        "docs-ref-autogen/word_1_3/word/**": ["word 1.3"],
+        "docs-ref-autogen/word_online/**": ["word online"],
+        "docs-ref-autogen/word_online/word/**": ["word online"]
       },
       "ms.prod": {
-        "docs-ref-autogen/common/**": "non-product-specific",
-        "docs-ref-autogen/common_preview/**": "non-product-specific",
         "docs-ref-autogen/excel/**": "excel",
         "docs-ref-autogen/excel/custom-functions-runtime/**": "excel",
         "docs-ref-autogen/excel/excel/**": "excel",
@@ -734,6 +939,7 @@
         "docs-ref-autogen/excel_1_12/**": "excel",
         "docs-ref-autogen/excel_1_13/**": "excel",
         "docs-ref-autogen/excel_1_14/**": "excel",
+        "docs-ref-autogen/excel_1_15/**": "excel",
         "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/excel_1_1/excel/**": "excel",
         "docs-ref-autogen/excel_1_2/excel/**": "excel",
@@ -749,6 +955,7 @@
         "docs-ref-autogen/excel_1_12/excel/**": "excel",
         "docs-ref-autogen/excel_1_13/excel/**": "excel",
         "docs-ref-autogen/excel_1_14/excel/**": "excel",
+        "docs-ref-autogen/excel_1_15/excel/**": "excel",
         "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",
@@ -789,6 +996,8 @@
         "docs-ref-autogen/powerpoint_1_2/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_3/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_3/powerpoint/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_4/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_4/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/visio/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
@@ -799,6 +1008,8 @@
         "docs-ref-autogen/word_1_2/word/**": "word",
         "docs-ref-autogen/word_1_3/**": "word",
         "docs-ref-autogen/word_1_3/word/**": "word",
+        "docs-ref-autogen/word_online/**": "word",
+        "docs-ref-autogen/word_online/word/**": "word",
         "manifest/**": "non-product-specific",
         "requirement-sets/**": "non-product-specific",
         "requirement-sets/common/**": "non-product-specific",

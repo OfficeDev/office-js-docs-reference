@@ -4,7 +4,30 @@ uid: 'word!Word.Section:class'
 package: word!
 fullName: Word.Section
 summary: Represents a section in a Word document.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+  // Inserts a section break on the next page.
+
+  await Word.run(async (context) => {
+    let body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+
+    await context.sync();
+
+    console.log("Inserted section break on next page");
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -56,8 +79,10 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
       await Word.run(async (context) => {
-        context.document.sections.getFirst().getFooter("Primary")
-          .insertParagraph("This is a footer", "End");
+        context.document.sections
+          .getFirst()
+          .getFooter("Primary")
+          .insertParagraph("This is a primary footer.", "End");
 
         await context.sync();
       });
@@ -143,8 +168,10 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
       await Word.run(async (context) => {
-        context.document.sections.getFirst().getHeader("Primary")
-          .insertParagraph("This is a header", "End");
+        context.document.sections
+          .getFirst()
+          .getHeader(Word.HeaderFooterType.primary)
+          .insertParagraph("This is a primary header.", "End");
 
         await context.sync();
       });

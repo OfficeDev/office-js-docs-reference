@@ -23,3 +23,15 @@ properties:
       content: 'card?: CardLayout;'
       return:
         type: '<xref uid="excel!Excel.CardLayout:type" />'
+  - name: compact
+    uid: 'excel!Excel.EntityViewLayouts#compact:member'
+    package: excel!
+    fullName: compact
+    summary: Represents the layout used when there is limited space to represent the entity.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'compact?: CompactLayout;'
+      return:
+        type: '<xref uid="excel!Excel.CompactLayout:type" />'

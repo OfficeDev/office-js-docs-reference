@@ -1270,7 +1270,7 @@
 'Excel.ChartSeries#getDimensionDataSourceString:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/chart-data-source.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
     await Excel.run(async (context) => {
       // This method retrieves the data source information of a chart series in the Sample worksheet.
@@ -1294,7 +1294,7 @@
 'Excel.ChartSeries#getDimensionDataSourceType:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/chart-data-source.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
     await Excel.run(async (context) => {
       // This method retrieves the data source information of a chart series in the Sample worksheet.
@@ -3991,7 +3991,7 @@
 'Excel.PivotTable#getDataSourceString:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-source-data.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
 
     await Excel.run(async (context) => {
       // This method logs information about the data source of a PivotTable.
@@ -4011,7 +4011,7 @@
 'Excel.PivotTable#getDataSourceType:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/pivottable-source-data.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
 
     await Excel.run(async (context) => {
       // This method logs information about the data source of a PivotTable.
@@ -4049,6 +4049,18 @@
         await context.sync();
         console.log("Pivot layout is now " + pivotTable.layout.layoutType);
     });
+'Excel.PivotTable#refresh:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
+
+    await Excel.run(async (context) => {
+      // This method refreshes the "Farm Sales" PivotTable,
+      // which updates the PivotTable with changes made to the source table.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      pivotTable.refresh();
+      await context.sync();
+    });
 'Excel.PivotTableCollection#add:member(1)':
   - >-
     // Link to full sample:
@@ -4060,6 +4072,18 @@
         context.workbook.worksheets.getItem("Pivot").pivotTables.add("Farm Sales", rangeToAnalyze, rangeToPlacePivot);
 
         await context.sync();
+    });
+'Excel.PivotTableCollection#getItem:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
+
+    await Excel.run(async (context) => {
+      // This method refreshes the "Farm Sales" PivotTable,
+      // which updates the PivotTable with changes made to the source table.
+      const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
+      pivotTable.refresh();
+      await context.sync();
     });
 'Excel.PresetCriteriaConditionalFormat#rule:member':
   - >-
@@ -4088,6 +4112,69 @@
         conditionalFormat.custom.format.font.color = "green";
 
         await context.sync();
+    });
+'Excel.Query#name:member':
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the name of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Name of each query: ")
+        console.log("  " + queries.items.map((query) => query.name).join("\n  "));
+    });
+'Excel.Query#refreshDate:member':
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the last refresh date of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Last refresh date of each query: ")
+        console.log("  " + queries.items.map((query) => query.refreshDate).join("\n  "));
+    });       
+'Excel.Query#rowsLoadedCount:member':
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the number of rows loaded in each query.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Rows loaded from each query: ")
+        console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
+    });
+'Excel.QueryCollection#getCount:member(1)':
+  - |-
+    await Excel.run(async (context) => { 
+      // This method retrieves the query collection in a workbook and then 
+      // logs the number of queries in the collection to the console.
+      const queries = context.workbook.queries; 
+      const count = queries.getCount();
+      await context.sync();
+
+      console.log("Query count: " + count.value);
+    });
+'Excel.QueryCollection#items:member':
+  - |-
+    await Excel.run(async (context) => {
+        // This method retrieves the query collection in a workbook, 
+        // loads the query items in that collection, and then 
+        // logs the name of each query to the console.
+        const queries = context.workbook.queries; 
+        queries.load("items"); 
+        await context.sync(); 
+
+        console.log("Name of each query: ")
+        console.log("  " + queries.items.map((query) => query.name).join("\n  "));
     });
 'Excel.Range#autoFill:member(1)':
   - >-
@@ -4252,7 +4339,7 @@
 'Excel.Range#getDependents:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/range-dependents.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-dependents.yaml
 
     await Excel.run(async (context) => {
       // This method highlights all the dependent cells of the active cell.
@@ -7871,6 +7958,57 @@
         }
 
         event.completed();
+    }
+'Office.AddinCommands.EventCompletedOptions#allowEvent:member':
+  - >-
+    // The following example checks whether a location is specified in an
+    appointment before it's sent.
+
+    function onAppointmentSendHandler(event) {
+        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                return;
+            }
+
+            if (asyncResult.value === "") {
+                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
+                return;
+            } else {
+                // If a location is specified, the appointment is sent.
+                event.completed({ allowEvent: true });
+            }
+        });
+    }
+'Office.AddinCommands.EventCompletedOptions#errorMessage:member':
+  - >-
+    // The following example checks whether a message's subject is prefixed with
+    "[For Review]" before it's sent.
+
+    function onMessageSendHandler(event) {
+        Office.context.mailbox.item.subject.getAsync({ asyncContext: event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the message's subject, the message isn't sent and the user is alerted.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get item's subject." });
+                return;
+            }
+
+            if (asyncResult.value.startsWith("[For Review]")) {
+                // If the message's subject is prefixed with "[For Review]", the message is sent.
+                event.completed({ allowEvent: true });
+            } else {
+                // If the message's subject isn't prefixed with "[For Review]", the message isn't sent and the user is alerted to
+                // add the tag to the subject.
+                event.completed({ allowEvent: false, errorMessage: "Remember to add '[For Review]' before the subject." });
+                return;
+            }
+        });
     }
 'Office.AddinCommands.Source#id:member':
   - >-
@@ -12156,8 +12294,9 @@
                 var myFile = result.value;
                 var sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
-                // Now, you can call getSliceAsync to download the files,
-                // as described in the previous code segment (compressed format).
+                // Get the file slices.
+                var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                 
                 myFile.closeAsync();
             }
@@ -14672,30 +14811,35 @@
     }
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/make-ews-request-async.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/get-icaluid-as-attendee.yaml
 
-    var ewsId = Office.context.mailbox.item.itemId;
+    const ewsId = Office.context.mailbox.item.itemId;
 
-    var request = '<soap:Envelope
+    const request = `<soap:Envelope
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
-        '  <soap:Header><t:RequestServerVersion Version="Exchange2013" /></soap:Header>' +
-        '  <soap:Body>' +
-        '    <m:GetItem>' +
-        '      <m:ItemShape>' +
-        '        <t:BaseShape>IdOnly</t:BaseShape>' +
-        '      </m:ItemShape >' +
-        '      <m:ItemIds>' +
-        '        <t:ItemId Id="' + ewsId + '" />' +
-        '      </m:ItemIds>' +
-        '    </m:GetItem>' +
-        '  </soap:Body>' +
-        '</soap:Envelope>';
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+          <soap:Header><t:RequestServerVersion Version="Exchange2013" /></soap:Header>
+          <soap:Body>
+            <m:GetItem>
+              <m:ItemShape>
+                <t:BaseShape>AllProperties</t:BaseShape>
+              </m:ItemShape >
+              <m:ItemIds>
+                <t:ItemId Id="${ewsId}" />
+              </m:ItemIds>
+            </m:GetItem>
+          </soap:Body>
+        </soap:Envelope>`;
 
-    Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
-        console.log(result);
+    Office.context.mailbox.makeEwsRequestAsync(request, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) {
+        console.error(result.error.message);
+        return;
+      }
+
+      console.log(getUID(result.value));
     });
   - >-
     // Link to full sample:
@@ -19732,7 +19876,7 @@
 'PowerPoint.ShapeCollection#addGeometricShape:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
     await PowerPoint.run(async (context) => {
       var shapes = context.presentation.slides.getItemAt(0).shapes;
@@ -19750,7 +19894,7 @@
 'PowerPoint.ShapeCollection#addLine:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
     await PowerPoint.run(async (context) => {
       var shapes = context.presentation.slides.getItemAt(0).shapes;
@@ -19771,7 +19915,7 @@
 'PowerPoint.ShapeCollection#addTextBox:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
 
     await PowerPoint.run(async (context) => {
       var shapes = context.presentation.slides.getItemAt(0).shapes;
@@ -20415,6 +20559,27 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Alignment:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+    await Word.run(async (context) => {
+      const body = context.document.body;
+      body.clear();
+      body.insertParagraph(
+        "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+        "Start"
+      );
+      body.paragraphs
+        .getLast()
+        .insertText(
+          "To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.",
+          "Replace"
+        );
+      body.paragraphs.getFirst().alignment = "Left";
+      body.paragraphs.getLast().alignment = Word.Alignment.left;
+    });
 'Word.Body#clear:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -20436,6 +20601,27 @@
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
+'Word.Body#fields:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
 'Word.Body#font:member':
   - >-
     // Get the style and the font size, font name, and font color properties on
@@ -20467,7 +20653,7 @@
 'Word.Body#footnotes:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -20479,7 +20665,7 @@
 'Word.Body#getComments:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comments = context.document.body.getComments();
@@ -20865,10 +21051,21 @@
         await context.sync();
         console.log("Body contents: " + body.text);
     });
+'Word.BreakType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+
+    await Word.run(async (context) => {
+      context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+
+      await context.sync();
+      console.log("success");
+    });
 'Word.ChangeTrackingMode:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -20886,7 +21083,7 @@
 'Word.ChangeTrackingVersion:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -20901,7 +21098,7 @@
 'Word.Comment#content:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#edit-comment-text")
@@ -20923,7 +21120,7 @@
 'Word.Comment#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       context.document
@@ -20938,7 +21135,7 @@
 'Word.Comment#getRange:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let range = context.document
@@ -20954,7 +21151,7 @@
 'Word.Comment#reply:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#reply-text")
@@ -20974,7 +21171,7 @@
 'Word.Comment#resolved:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comment = context.document
@@ -20998,7 +21195,7 @@
 'Word.CommentCollection#getFirst:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let range = context.document
@@ -21014,7 +21211,7 @@
 'Word.CommentCollection#items:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#reply-text")
@@ -21700,7 +21897,7 @@
 'Word.Document#changeTrackingMode:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -21800,6 +21997,107 @@
             console.log('The document has not changed since the last save.');
         }
         });
+'Word.Field#code:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.Field#parentBody:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the parent body of the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load("parentBody/text");
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        const parentBody = field.parentBody;
+        console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+      }
+    });
+'Word.Field#result:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#getFirstOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets the first field in the document body.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + field.result);
+      }
+    });
+'Word.FieldCollection#items:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+    // Gets all fields in the document body.
+
+    await Word.run(async (context) => {
+      const fields = context.document.body.fields.load("items");
+
+      await context.sync();
+
+      if (fields.items.length === 0) {
+        console.log("No fields in this document.");
+      } else {
+        for (let i = 0; i < fields.items.length; i++) {
+          console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+        }
+      }
+    });
 'Word.Font#bold:member':
   - |-
     // Bold format text
@@ -21919,6 +22217,19 @@
         await context.sync();
         console.log('The selection now has an underline style.');
     });
+'Word.HeaderFooterType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getHeader(Word.HeaderFooterType.primary)
+        .insertParagraph("This is a primary header.", "End");
+
+      await context.sync();
+    });
 'Word.InlinePicture#getBase64ImageSrc:member(1)':
   - >-
     // Link to full sample:
@@ -21984,10 +22295,25 @@
             console.log(firstPicture.altTextTitle);
         }
     }); 
+'Word.InsertLocation:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section without an associated page break.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section without an associated page break");
+    });
 'Word.NoteItem#body:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -22005,7 +22331,7 @@
 'Word.NoteItem#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -22022,7 +22348,7 @@
 'Word.NoteItem#getNext:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -22038,7 +22364,7 @@
 'Word.NoteItem#reference:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -22057,7 +22383,7 @@
 'Word.NoteItem#type:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -22072,12 +22398,27 @@
 'Word.NoteItemCollection#getFirst:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       let reference = context.document.body.footnotes.getFirst().reference;
       reference.select();
       console.log("The first footnote is selected.");
+    });
+'Word.NoteItemType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    await Word.run(async (context) => {
+      const footnotes = context.document.body.footnotes;
+      footnotes.load("items/type");
+      await context.sync();
+
+      const referenceNumber = $("#input-reference").val();
+      let mark = (referenceNumber as number) - 1;
+      const itemType = footnotes.items[mark].type;
+      console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
     });
 'Word.Paragraph#alignment:member':
   - >-
@@ -22553,7 +22894,7 @@
 'Word.Range#footnotes:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const footnotes = context.document.getSelection().footnotes;
@@ -22565,7 +22906,7 @@
 'Word.Range#getComments:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let comments = context.document.getSelection().getComments();
@@ -22614,7 +22955,7 @@
 'Word.Range#getReviewedText:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-change-tracking.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -22676,7 +23017,7 @@
 'Word.Range#insertComment:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
     await Word.run(async (context) => {
       let text = $("#comment-text")
@@ -22736,7 +23077,7 @@
 'Word.Range#insertFootnote:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
     await Word.run(async (context) => {
       const text = $("#input-footnote")
@@ -22958,8 +23299,10 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
-      context.document.sections.getFirst().getFooter("Primary")
-        .insertParagraph("This is a footer", "End");
+      context.document.sections
+        .getFirst()
+        .getFooter("Primary")
+        .insertParagraph("This is a primary footer.", "End");
 
       await context.sync();
     });
@@ -22999,8 +23342,10 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
-      context.document.sections.getFirst().getHeader("Primary")
-        .insertParagraph("This is a header", "End");
+      context.document.sections
+        .getFirst()
+        .getHeader(Word.HeaderFooterType.primary)
+        .insertParagraph("This is a primary header.", "End");
 
       await context.sync();
     });
@@ -23034,6 +23379,36 @@
         await context.sync();
         console.log("Added a header to the first section.");
     });  
+'Word.Section:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next page");
+    });
+'Word.SectionCollection:class':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+    // Inserts a section break on the next even page.
+
+    await Word.run(async (context) => {
+      let body = context.document.body;
+      body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
+
+      await context.sync();
+
+      console.log("Inserted section break on next even page");
+    });
 'Word.Setting#delete:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -23188,6 +23563,18 @@
       await context.sync();
     });
 'Word.Table#getCell:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
+
+    await Word.run(async (context) => {
+      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      firstCell.load("text");
+
+      await context.sync();
+      console.log("First cell text is " + firstCell.text);
+    });
+'Word.TableCell:class':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml

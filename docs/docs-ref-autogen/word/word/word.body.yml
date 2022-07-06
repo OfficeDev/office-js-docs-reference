@@ -40,10 +40,8 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the body. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly endnotes: Word.NoteItemCollection;'
@@ -57,6 +55,34 @@ properties:
     remarks: >-
       \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
       \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+
+      // Gets all fields in the document body.
+
+      await Word.run(async (context) => {
+        const fields = context.document.body.fields.load("items");
+
+        await context.sync();
+
+        if (fields.items.length === 0) {
+          console.log("No fields in this document.");
+        } else {
+          for (let i = 0; i < fields.items.length; i++) {
+            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+            console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+          }
+        }
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -110,8 +136,7 @@ properties:
     fullName: footnotes
     summary: Gets the collection of footnotes in the body. Read-only.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -120,7 +145,7 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-footnotes.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -131,7 +156,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly footnotes: Word.NoteItemCollection;'
@@ -511,8 +536,7 @@ methods:
     fullName: getComments()
     summary: Gets comments associated with the body.
     remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -521,7 +545,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-comments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
       await Word.run(async (context) => {
         let comments = context.document.body.getComments();
@@ -535,7 +559,7 @@ methods:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getComments(): Word.CommentCollection;'
@@ -651,10 +675,8 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion): OfficeExtension.ClientResult<string>;'
@@ -670,10 +692,8 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersionString)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getReviewedText(changeTrackingVersionString?: "Original" | "Current"): OfficeExtension.ClientResult<string>;'

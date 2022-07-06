@@ -521,19 +521,13 @@ export declare namespace Office {
     }
     /**
      * Manages actions and keyboard shortcuts.
-     * 
-     * @remarks
-     * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
      */
     export interface Actions {
         /**
-         * Associates the ID of an action with a function.
+         * Associates the ID or name of an action with a function. 
          * 
-         * @param actionId - The ID of an action that is defined in an extended manifest.
+         * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
-         * 
-         * @remarks
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          */
         associate: (actionId: string, actionFunction: (arg?: any) => void) => void;
         /**
@@ -541,8 +535,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * @beta
+         * **Requirement sets**:
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
          * @param shortcuts - An object of custom shortcuts with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2"}`.
          * To learn how to specify a valid action ID and a key combination, see {@link https://docs.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts | Add custom keyboard shortcuts to your Office Add-ins}. (Note that a key combination can be `null`, in which case, the action keeps the key combination specified in the JSON file.)
@@ -556,8 +553,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * @beta
+         * **Requirement sets**:
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
          * 
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
@@ -567,10 +567,13 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * @beta
+         * **Requirement sets**:
          * 
-         * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`.
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
+         * 
+         * - {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
+         * 
+         * @param shortcuts - An array of shortcut combinations. For example, `["Ctrl+1", "Ctrl+2"]`. 
          * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
          */
         areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;
@@ -1081,15 +1084,15 @@ export declare namespace Office {
          */
         export interface EventCompletedOptions {
             /**
-             * A boolean value. When the completed method is used to signal completion of an event handler,
+             * When the completed method is used to signal completion of an event handler,
              * this value indicates if the handled event should continue execution or be canceled.
              * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
              */
             allowEvent: boolean;
 
             /**
-             * A string value. When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
-             * this value sets the error message that will be displayed to the user. For an example, refer to
+             * When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
+             * this value sets the error message that will be displayed to the user. For an example, refer to the 
              * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
              * 
              * [Api set: Mailbox preview]
@@ -1517,9 +1520,15 @@ export declare namespace Office {
          *
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
-         * **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox. 
-         *
          * **Requirement set**: {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
+         * 
+         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         * 
+         * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from version 2111 (build 14701.20000).
+         * To retrieve an access token in older builds, use 
+         * {@link https://docs.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) | 
+         * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
          *
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
          * @returns Promise to the access token.
@@ -1949,7 +1958,7 @@ export declare namespace Office {
      *
      * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
      *
-     * `OfficeTheme` is only supported in Office on Windows.
+     * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
      */
     export interface OfficeTheme {
         /**
@@ -8461,7 +8470,7 @@ export declare namespace OfficeExtension {
          * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
          * but will be a close approximation.
          */
-        statements?: string;
+        statement?: string;
         /**
          * The statements that closely precede and follow the statement that caused the error, if available.
          *
@@ -8524,34 +8533,32 @@ export declare namespace OfficeExtension {
     const Promise: Office.IPromiseConstructor;
     export type IPromise<T> = Promise<T>;
 
-    /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+    /**
+     * Collection of tracked objects, contained within a request context.
+     * See {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects}
+     * for more information.
+     */
     export class TrackedObjects {
         /** 
          * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
          * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
          * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
-         * to the tracked object collection when the object was first created. 
-         * 
-         * This method also has the following signature: 
-         * 
-         * `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
+         * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
+         * the parent collection.
          */
         add(object: ClientObject): void;
         /**
          * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
          * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
          * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
-         * to the tracked object collection when the object was first created.
+         * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
+         * the parent collection.
          */
         add(objects: ClientObject[]): void;
         /** 
          * Release the memory associated with an object that was previously added to this collection. 
          * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
          * You will need to call `context.sync()` before the memory release takes effect.
-         * 
-         * This method also has the following signature: 
-         * 
-         * `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
          */
         remove(object: ClientObject): void;
         /**

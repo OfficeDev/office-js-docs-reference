@@ -1,7 +1,7 @@
 ---
 title: OverriddenByRibbonApi element in the manifest file
-description: Learn how to specify that a custom tab, group, control, or menu item shouldn't appear when it is also part of a custom contextual tab.
-ms.date: 02/04/2022
+description: Learn how to specify that a group, control, or menu item shouldn't appear when it is also part of a custom contextual tab.
+ms.date: 05/25/2022
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +26,7 @@ If this element is omitted, the default is `false`. If it's used, it must be the
 > [!NOTE]
 > For a full understanding of this element, please read [Implement an alternate UI experience when custom contextual tabs are not supported](/office/dev/add-ins/design/contextual-tabs#implement-an-alternate-ui-experience-when-custom-contextual-tabs-are-not-supported).
 
-The purpose of this element is to create a fallback experience in an add-in that implements custom contextual tabs when the add-in is running on an application or platform that doesn't support custom contextual tabs. The essential strategy is that you duplicate some or all of the groups and controls from your custom contextual tab onto one or more custom core tabs (that is, *noncontextual* custom tabs). Then, to ensure that these groups and controls appear when custom contextual tabs are *not* supported, but do not appear when custom contextual tabs *are* supported, you add `<OverriddenByRibbonApi>true</OverriddenByRibbonApi>` as the first child element of the **Group**, **Control**, or menu **Item** elements. The effect of doing so is the following:
+The purpose of this element is to create a fallback experience in an add-in that implements custom contextual tabs when the add-in is running on an application or platform that doesn't support custom contextual tabs. The essential strategy is that you duplicate some or all of the groups and controls from your custom contextual tab onto a custom core tab (that is, *noncontextual* custom tab). Then, to ensure that these groups and controls appear when custom contextual tabs are *not* supported, but do not appear when custom contextual tabs *are* supported, you add `<OverriddenByRibbonApi>true</OverriddenByRibbonApi>` as the first child element of the **\<Group\>**, **\<Control\>**, or menu **\<Item\>** elements. The effect of doing so is the following:
 
 - If the add-in runs on an application and platform that support custom contextual tabs, then the duplicated groups and controls won't appear on the ribbon. Instead, the custom contextual tab will be installed when the add-in calls the `requestCreateControls` method.
 - If the add-in runs on an application or platform that *doesn't* support custom contextual tabs, then the duplicated groups and controls will appear on the ribbon.
@@ -37,14 +37,14 @@ The purpose of this element is to create a fallback experience in an add-in that
 
 ```xml
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
-  <CustomTab id="Contoso.TabCustom1">
-    <Group id="Contoso.CustomTab1.group1">
+  <CustomTab id="Contoso.TabCustom">
+    <Group id="Contoso.CustomTab.group1">
       <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
       <Control  xsi:type="Button" id="Contoso.MyButton1">
         <!-- Child elements omitted. -->
       </Control>
     </Group>
-    <Label resid="customTabLabel1"/>
+    <Label resid="customTabLabel"/>
   </CustomTab>
 </ExtensionPoint>
 ```
@@ -53,14 +53,14 @@ The purpose of this element is to create a fallback experience in an add-in that
 
 ```xml
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
-  <CustomTab id="Contoso.TabCustom2">
-    <Group id="Contoso.CustomTab2.group2">
+  <CustomTab id="Contoso.TabCustom">
+    <Group id="Contoso.CustomTab.group2">
       <Control  xsi:type="Button" id="Contoso.MyButton2">
         <OverriddenByRibbonApi>true</OverriddenByRibbonApi>
         <!-- Other child elements omitted. -->
       </Control>
     </Group>
-    <Label resid="customTabLabel1"/>
+    <Label resid="customTabLabel"/>
   </CustomTab>
 </ExtensionPoint>
 ```
@@ -69,8 +69,8 @@ The purpose of this element is to create a fallback experience in an add-in that
 
 ```xml
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
-  <CustomTab id="Contoso.TabCustom3">
-    <Group id="Contoso.CustomTab3.group3">
+  <CustomTab id="Contoso.TabCustom">
+    <Group id="Contoso.CustomTab.group3">
       <Control  xsi:type="Menu" id="Contoso.MyMenu">
         <!-- Other child elements omitted. -->
         <Items>
@@ -81,7 +81,7 @@ The purpose of this element is to create a fallback experience in an add-in that
         </Items>
       </Control>
     </Group>
-    <Label resid="customTabLabel1"/>
+    <Label resid="customTabLabel"/>
   </CustomTab>
 </ExtensionPoint>
 ```

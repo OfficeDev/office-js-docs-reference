@@ -28,7 +28,7 @@ None
 ## Child elements
 
 |Elements  |  Required  |  Description  |
-|:-----|:-----|:-----|
+|:-----|:-----:|:-----|
 |  [SourceLocation](customfunctionssourcelocation.md)  |  Yes  | String with resource id of the JavaScript file used by custom functions.|
 
 ## Example

@@ -4,7 +4,26 @@ uid: 'word!Word.BreakType:enum'
 package: word!
 fullName: Word.BreakType
 summary: Specifies the form of a break.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+
+  await Word.run(async (context) => {
+    context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+
+    await context.sync();
+    console.log("success");
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

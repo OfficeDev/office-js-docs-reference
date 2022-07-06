@@ -147,7 +147,7 @@ tryCatch(async () => {
 
     console.log("create file: powerpoint.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_3/powerpoint.d.ts',
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_4/powerpoint.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
         "powerpoint",
         forceRebuild
@@ -171,7 +171,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: word.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
+        '../api-extractor-inputs-word-release/word_online/word.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
         "word",
         forceRebuild
