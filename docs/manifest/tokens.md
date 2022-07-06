@@ -23,7 +23,7 @@ Defines tokens that could be used in template URLs. For more information about t
 
 ## Must contain
 
-The **Tokens** element can contain the following child elements depending on the add-in type.
+The **\<Tokens\>** element can contain the following child elements depending on the add-in type.
 
 |Element|Content|Mail|TaskPane|
 |:-----|:-----:|:-----:|:-----:|

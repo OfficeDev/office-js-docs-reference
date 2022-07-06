@@ -19,23 +19,23 @@ Contains icons, strings, and URLs for the [VersionOverrides](versionoverrides.md
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
-Each resource can have one or more **Override** child elements to define a different resource for a specific locale.
+Each resource can have one or more **\<Override\>** child elements to define a different resource for a specific locale.
 
 ## Child elements
 
 |  Element |  Type  |  Description  |
 |:-----|:-----:|:-----|
 |  [Images](#images)            |  image   |  Provides the HTTPS URL to an image for an icon. |
-|  **Urls**                |  url     |  Provides an HTTPS URL location. A URL can have a maximum of 2048 characters. |
-|  **ShortStrings** |  string  |  The text for **Label** and **Title** elements. Each **String** contains a maximum of 125 characters.|
-|  **LongStrings**  |  string  | The text for **Description** attributes. Each **String** contains a maximum of 250 characters.|
+|  **\<Urls\>**                |  url     |  Provides an HTTPS URL location. A URL can have a maximum of 2048 characters. |
+|  **\<ShortStrings\>** |  string  |  The text for **\<Label\>** and **\<Title\>** elements. Each **\<String\>** contains a maximum of 125 characters.|
+|  **\<LongStrings\>**  |  string  | The text for **\<Description\>** attributes. Each **\<String\>** contains a maximum of 250 characters.|
 
 > [!NOTE]
-> You must use Secure Sockets Layer (SSL) for all URLs in the **Image** and **Url** elements.
+> You must use Secure Sockets Layer (SSL) for all URLs in the **\<Image\>** and **\<Url\>** elements.
 
 ### Images
 
-Each icon must have three **Images** elements, one for each of the three mandatory sizes:
+Each icon must have three **\<Images\>** elements, one for each of the three mandatory sizes:
 
 - 16x16
 - 32x32

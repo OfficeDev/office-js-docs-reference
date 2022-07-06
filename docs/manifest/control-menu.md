@@ -27,15 +27,15 @@ When used with the **ContextMenu** [extension point](extensionpoint.md), a root 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
 |  [Label](#label)     | Yes |  The text for the menu. |
-|  **ToolTip**    |No|The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resources.md) element.|
+|  **\<ToolTip\>**    |No|The tooltip for the menu. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element. The **\<String\>** element is a child of the **\<LongStrings\>** element, which is a child of the [Resources](resources.md) element.|
 |  [Supertip](supertip.md)  | Yes |  The supertip for this menu.    |
 |  [Icon](icon.md)      | Yes |  An image for the menu.         |
-|  **Items**     | Yes |  A collection of items to display within the menu. Contains the **Item** element for each item. |
+|  **\<Items\>**     | Yes |  A collection of items to display within the menu. Contains the **\<Item\>** element for each item. |
 |  [OverriddenByRibbonApi](overriddenbyribbonapi.md)      | No |  Specifies whether the menu should appear on application and platform combinations that support custom contextual tabs. If used, it must be the *first* child element. |
 
 ### Label
 
-Specifies the text for the menu name by means of its only attribute, **resid**, which can be no more than 32 characters and must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** child of the [Resources](resources.md) element.
+Specifies the text for the menu name by means of its only attribute, **resid**, which can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<String\>** element in the **\<ShortStrings\>** child of the [Resources](resources.md) element.
 
 **Add-in type:** Task pane, Mail
 
@@ -49,9 +49,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **VersionOverrides** is type Taskpane 1.0.
-- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **VersionOverrides** is type Mail 1.0.
-- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **VersionOverrides** is type Mail 1.1.
+- [AddinCommands 1.1](../requirement-sets/common/add-in-commands-requirement-sets.md) when the parent **\<VersionOverrides\>** is type Taskpane 1.0.
+- [Mailbox 1.3](../requirement-sets/outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) when the parent **\<VersionOverrides\>** is type Mail 1.0.
+- [Mailbox 1.5](../requirement-sets/outlook/requirement-set-1.5/outlook-requirement-set-1.5.md) when the parent **\<VersionOverrides\>** is type Mail 1.1.
 
 ## Examples
 

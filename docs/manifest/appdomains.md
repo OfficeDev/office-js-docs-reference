@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # AppDomains element
 
-Lists any domains, in addition to the domain specified in the `SourceLocation` element, that your Office Add-in will use and that should be trusted by Office. This enables pages in the domains to make calls to Office.js APIs from IFrames within the add-in and has other effects. For each additional domain, specify an **AppDomain** element.
+Lists any domains, in addition to the domain specified in the `SourceLocation` element, that your Office Add-in will use and that should be trusted by Office. This enables pages in the domains to make calls to Office.js APIs from IFrames within the add-in and has other effects. For each additional domain, specify an **\<AppDomain\>** element.
 
  **Add-in type:** Content, Task pane, Mail
 
@@ -21,7 +21,7 @@ Lists any domains, in addition to the domain specified in the `SourceLocation` e
 ```
 
 > [!IMPORTANT]
-> There are restrictions on what can be the value of a **AppDomain** element. For more information, see [AppDomain](appdomain.md).
+> There are restrictions on what can be the value of a **\<AppDomain\>** element. For more information, see [AppDomain](appdomain.md).
 
 ## Contained in
 

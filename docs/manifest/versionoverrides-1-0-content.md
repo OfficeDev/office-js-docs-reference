@@ -14,11 +14,11 @@ This element contains information for features that aren't supported in the base
 
 ## Child elements
 
-The following table applies only to version 1.0 of **VersionOverrides** elements and only to content add-ins.
+The following table applies only to version 1.0 of **\<VersionOverrides\>** elements and only to content add-ins.
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
-|  **VersionOverrides**    |  No  | Not currently usable in VersionOverrides 1.0 for content add-ins. |
+|  **\<VersionOverrides\>**    |  No  | Not currently usable in VersionOverrides 1.0 for content add-ins. |
 |  [WebApplicationInfo](webapplicationinfo.md)    |  No  | Specifies details about the add-in's registration with secure token issuers, such as Azure Active Directory V2.0. |
 
 ## Example

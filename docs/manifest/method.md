@@ -11,7 +11,7 @@ The meaning of this element depends on where it's used in the manifest.
 
 ## In the base manifest
 
-When used in the base manifest (that is, the grandparent **Requirements** element is a direct child of [OfficeApp](officeapp.md)), the **Method** element specifies an individual method from the Office JavaScript API that your Office Add-in needs in order to be activated by Office.
+When used in the base manifest (that is, the grandparent **\<Requirements\>** element is a direct child of [OfficeApp](officeapp.md)), the **\<Method\>** element specifies an individual method from the Office JavaScript API that your Office Add-in needs in order to be activated by Office.
 
 **Add-in type:** Content, Task pane
 
@@ -47,7 +47,7 @@ Specifies an individual method from the Office JavaScript API that must be suppo
 
 ## Remarks
 
-The **Methods** and **Method** elements aren't supported by mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
+The **\<Methods\>** and **\<Method\>** elements aren't supported by mail add-ins when used in the base manifest. For more information about requirement sets, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 > [!IMPORTANT]
 > Because there is no way to specify the minimum version requirement for individual methods, to make sure that a method is available at runtime, you should also use an **if** statement when calling that method in the script of your add-in. For more information about how to do this, see [Understanding the Office JavaScript API](/office/dev/add-ins/develop/understanding-the-javascript-api-for-office).

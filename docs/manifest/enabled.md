@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Enabled element
 
-Specifies whether a [Button control](control-button.md) or [Menu control](control-menu.md) is enabled when the add-in launches. The **Enabled** element is a child element of [Control](control.md). If it is omitted, the default is `true`.
+Specifies whether a [Button control](control-button.md) or [Menu control](control-menu.md) is enabled when the add-in launches. The **\<Enabled\>** element is a child element of [Control](control.md). If it is omitted, the default is `true`.
 
 **Add-in type:** Task pane
 
