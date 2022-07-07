@@ -10406,4 +10406,21 @@ Word.SettingCollection#getItemOrNullObject:member(1):
                 console.log(JSON.stringify(endMonth.value));
             }
     });
+Word.UnderlineType:enum:
+  - |-
+    // Underline format text
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+    
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+    
+        // Queue a command to underline the current selection.
+        selection.font.underline = Word.UnderlineType.single;
+    
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('The selection now has an underline style.');
+    });
 

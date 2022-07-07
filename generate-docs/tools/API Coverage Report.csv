@@ -10639,7 +10639,7 @@ Word.TableRowCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.TableRowCollection,toJSON(),Method,Poor,false
 Word.TableRowCollection,track(),Method,Poor,false
 Word.TableRowCollection,untrack(),Method,Poor,false
-Word.UnderlineType,N/A,Enum,Good,false
+Word.UnderlineType,N/A,Enum,Good,true
 Word.UnderlineType,dashLine,EnumField,Fine,false
 Word.UnderlineType,dashLineHeavy,EnumField,Fine,false
 Word.UnderlineType,dashLineLong,EnumField,Fine,false
