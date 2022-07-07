@@ -43,7 +43,7 @@ The primary command surface in Word, Excel, PowerPoint, and OneNote is the ribbo
 
 |Element|Description|
 |:-----|:-----|
-|[CustomTab](customtab.md|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **\<CustomTab\>** element, you can't use the **\<OfficeTab\>** element. The **id** attribute is required. There can be no more than one **\<CustomTab\>** child element.|
+|[CustomTab](customtab.md)|Required if you want to add a custom tab to the ribbon (using **PrimaryCommandSurface**). If you use the **\<CustomTab\>** element, you can't use the **\<OfficeTab\>** element. The **id** attribute is required. There can be no more than one **\<CustomTab\>** child element.|
 |[OfficeTab](officetab.md)|Required if you want to extend a default Office app ribbon tab (using **PrimaryCommandSurface**). If you use the **\<OfficeTab\>** element, you can't use the **\<CustomTab\>** element.|
 
 > [!IMPORTANT]
