@@ -33,7 +33,7 @@ For a mail add-in, the icon is displayed in the **File** > **Manage add-ins** UI
 
 The image is also used on the vertical tab bar for the task pane when more than one task pane is open. The tab bar appears beside the task pane whenever a second task pane is opened, regardless of whether it is a task pane in the same add-in or a different add-in. The following image shows the tab bar when the [Script Lab](/office/dev/add-ins/overview/explore-with-script-lab.md) add-in and another add-in have both been started and both the **Code** and **Run** task pane pages of Script Lab have been opened.
 
-:::image type="content" source="/javascript/api/images/built-in-vertical-tab-bar.png" alt-text="Screenshot of the top inch of a task pane, with three square tabs to the right of the upper right corner. Two of the tabs have the Script Lab icon. The third has a different icon.":::
+:::image type="content" source="/javascript/api/images/built-in-vertical-tab-bar.png" alt-text="The top inch of a task pane, with three square tabs to the right of the upper right corner. Two of the tabs have the Script Lab icon. The third has an icon for a different add-in.":::
 
 For all add-in types, the icon is also used in [AppSource](https://appsource.microsoft.com), if you publish your add-in to AppSource.
 
