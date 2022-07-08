@@ -369,7 +369,24 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        lambdaInCell = "LambdaInCell"
+        lambdaInCell = "LambdaInCell",
+        /**
+        * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        tooDeeplyNested = "TooDeeplyNested",
+        /**
+        * An error caused by a cell's formula returning a string that exceeds the maximum of 32767 characters. Displays as error type #CALC! in Excel.
+        * Some characters, like emoji, may appear to be one character in the Excel UI but are actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum character limit.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        textOverflow = "TextOverflow"
     }
     /**
     * Represents the value of a cell containing a #CALC! error.
@@ -420,7 +437,15 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell";
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow";
+        /**
+        * Represents the name of the function causing the error.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        functionName?: string;
     }
     /**
     * Represents a reference to a property used by the card layout.
@@ -431,7 +456,7 @@ export declare namespace Excel {
     */
     export interface CardLayoutPropertyReference {
         /**
-        * The name of the property referenced by the card layout.
+        * Represents the name of the property referenced by the card layout.
         *
         * @remarks
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -1563,6 +1588,14 @@ export declare namespace Excel {
         */
         div0 = "Div0",
         /**
+        * Represents an `ExternalErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        external = "External",
+        /**
         * Represents a `FieldErrorCellValue`.
         *
         * @remarks
@@ -1650,7 +1683,83 @@ export declare namespace Excel {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+    /**
+    * Represents types of #EXTERNAL! errors.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum ExternalErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #EXTERNAL! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unknown = "Unknown",
+        /**
+        * An error returned by the Python interpreter as a result of running the Python code. Displays as error type #EXTERNAL! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pythonError = "PythonError"
+    }
+    /**
+    * Represents the value of a cell containing an #EXTERNAL! error.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface ExternalErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicValue?: "#EXTERNAL!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorType?: ErrorCellValueType.external | "External";
+        /**
+        * Represents the type of `ExternalErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorSubType?: ExternalErrorCellValueSubType | "Unknown" | "PythonError";
+    }
     /**
     * Represents types of #FIELD! errors.
     *
@@ -1734,6 +1843,14 @@ export declare namespace Excel {
         * @beta
         */
         errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
+        /**
+        * Represents the field which was not found by FIELDVALUE.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        fieldName?: string;
     }
     /**
     * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
@@ -2075,6 +2192,31 @@ export declare namespace Excel {
         errorType?: ErrorCellValueType.null | "Null";
     }
     /**
+    * Represents types of #NUM! errors.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum NumErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #NUM! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a cell's formula having an array parameter with too many rows or columns. The maximum number of rows and columns in an array parameter is 1048576. Displays as error type #NUM! in Excel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        arrayTooLarge = "ArrayTooLarge"
+    }
+    /**
     * Represents the value of a cell containing a #NUM! error.
     *
     * @remarks
@@ -2116,6 +2258,22 @@ export declare namespace Excel {
         * @beta
         */
         errorType?: ErrorCellValueType.num | "Num";
+        /**
+        * Represents the type of `NumErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        errorSubType?: NumErrorCellValueSubType | "Unknown" | "ArrayTooLarge";
+        /**
+        * Represents the name of the function causing the error.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        functionName?: string;
     }
     /**
     * Represents types of #REF! errors.
@@ -13573,6 +13731,19 @@ export declare namespace Excel {
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         /**
+         * Adds a new column to the table.
+                    Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
+         * @param values - Optional. A 2D array of cell values of the table column.
+         * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.
+         */
+        addAsJson(index?: number, values?: CellValue[][], name?: string): Excel.TableColumn;
+        /**
          * Gets the number of columns in the table.
          *
          * @remarks
@@ -13805,6 +13976,24 @@ export declare namespace Excel {
          * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
+        /**
+         * Adds one or more rows to the table. The returned object will be the top row of the newly added row or rows.
+                     Unlike `add()`, `addAsJson()` takes any type of cell value, such as image or entity data types.
+                    
+                     Note that unlike ranges or columns, which will adjust if new rows or columns are added before them,
+                     a `TableRow` object represents the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
+         * @param values - Optional. A 2D array of cell values of the table row.
+         * @param alwaysInsert - Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If `true`, the new rows will be inserted into the table. If `false`, the new rows will be added below the table. Default is `true`.
+         */
+        addAsJson(index?: number, values?: CellValue[][], alwaysInsert?: boolean): Excel.TableRow;
         /**
          * Delete multiple rows from a table.
                     These rows don't need to be sequential. This method will throw the `InvalidArgument` error if a chosen row has already been deleted or doesn't exist.

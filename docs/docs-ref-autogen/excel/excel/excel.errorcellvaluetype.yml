@@ -78,6 +78,14 @@ fields:
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Div0"'
+  - name: external
+    uid: 'excel!Excel.ErrorCellValueType.external:member'
+    package: excel!
+    summary: |-
+      Represents an `ExternalErrorCellValue`<!-- -->.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"External"'
   - name: field
     uid: 'excel!Excel.ErrorCellValueType.field:member'
     package: excel!

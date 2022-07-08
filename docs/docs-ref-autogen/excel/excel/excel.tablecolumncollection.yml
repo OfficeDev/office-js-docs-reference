@@ -96,6 +96,33 @@ methods:
       return:
         type: '<xref uid="excel!Excel.TableColumn:class" />'
         description: ''
+  - name: 'addAsJson(index, values, name)'
+    uid: 'excel!Excel.TableColumnCollection#addAsJson:member(1)'
+    package: excel!
+    fullName: 'addAsJson(index, values, name)'
+    summary: >-
+      Adds a new column to the table. Unlike `add()`<!-- -->, `addAsJson()` takes any type of cell value, such as image
+      or entity data types.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addAsJson(index?: number, values?: CellValue[][], name?: string): Excel.TableColumn;'
+      parameters:
+        - id: index
+          description: >-
+            Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end.
+            Columns with a higher index will be shifted to the side. Zero-indexed.
+          type: number
+        - id: values
+          description: Optional. A 2D array of cell values of the table column.
+          type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+        - id: name
+          description: 'Optional. Specifies the name of the new column. If `null`<!-- -->, the default name will be used.'
+          type: string
+      return:
+        type: '<xref uid="excel!Excel.TableColumn:class" />'
+        description: ''
   - name: getCount()
     uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
     package: excel!
