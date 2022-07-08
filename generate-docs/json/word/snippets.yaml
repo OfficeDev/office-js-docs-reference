@@ -1081,7 +1081,7 @@
         evenContentControls.items[i].set({
           color: "red",
           title: "Odd ContentControl #" + (i + 1),
-          appearance: "Tags"
+          appearance: Word.ContentControlAppearance.tags
         });
         evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
       }
@@ -1122,6 +1122,45 @@
         }
       }
       console.log("Content controls inserted: " + paragraphs.items.length);
+
+      await context.sync();
+    });
+'Word.ContentControlAppearance:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+    // Adds title and colors to odd and even content controls and changes their
+    appearance.
+
+    await Word.run(async (context) => {
+      // Gets the complete sentence (as range) associated with the insertion point.
+      let evenContentControls = context.document.contentControls.getByTag("even");
+      let oddContentControls = context.document.contentControls.getByTag("odd");
+      evenContentControls.load("length");
+      oddContentControls.load("length");
+
+      await context.sync();
+
+      for (let i = 0; i < evenContentControls.items.length; i++) {
+        // Change a few properties and append a paragraph
+        evenContentControls.items[i].set({
+          color: "red",
+          title: "Odd ContentControl #" + (i + 1),
+          appearance: Word.ContentControlAppearance.tags
+        });
+        evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+      }
+
+      for (let j = 0; j < oddContentControls.items.length; j++) {
+        // Change a few properties and append a paragraph
+        oddContentControls.items[j].set({
+          color: "green",
+          title: "Even ContentControl #" + (j + 1),
+          appearance: "Tags"
+        });
+        oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+      }
 
       await context.sync();
     });
@@ -1993,6 +2032,36 @@
             console.log('The preceding paragraph is: ' + precedingParagraph.text);
         }
     });
+'Word.Paragraph#getRange:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+    await Word.run(async (context) => {
+      // Gets the complete sentence (as range) associated with the insertion point.
+      let sentences = context.document
+        .getSelection()
+        .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+      sentences.load("$none");
+      await context.sync();
+
+      // Expands the range to the end of the paragraph to get all the complete sentences.
+      let sentencesToTheEndOfParagraph = sentences.items[0]
+        .getRange()
+        .expandTo(
+          context.document
+            .getSelection()
+            .paragraphs.getFirst()
+            .getRange(Word.RangeLocation.end)
+        )
+        .getTextRanges(["."], false /* Don't trim spaces*/);
+      sentencesToTheEndOfParagraph.load("text");
+      await context.sync();
+
+      for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+        console.log(sentencesToTheEndOfParagraph.items[i].text);
+      }
+    });
 'Word.Paragraph#insertBreak:member(1)':
   - >-
     // Link to full sample:
@@ -2165,7 +2234,7 @@
 
     await Word.run(async (context) => {
       // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-      context.document.body.paragraphs.getLast().select("End");
+      context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
 
       await context.sync();
     });
@@ -2426,7 +2495,7 @@
           context.document
             .getSelection()
             .paragraphs.getFirst()
-            .getRange("End")
+            .getRange(Word.RangeLocation.end)
         )
         .getTextRanges(["."], false /* Don't trim spaces*/);
       sentencesToTheEndOfParagraph.load("text");
@@ -2622,6 +2691,36 @@
         // and return a promise to indicate task completion.
         await context.sync();
         console.log('Selected the range.');
+    });
+'Word.RangeLocation:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+    await Word.run(async (context) => {
+      // Gets the complete sentence (as range) associated with the insertion point.
+      let sentences = context.document
+        .getSelection()
+        .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+      sentences.load("$none");
+      await context.sync();
+
+      // Expands the range to the end of the paragraph to get all the complete sentences.
+      let sentencesToTheEndOfParagraph = sentences.items[0]
+        .getRange()
+        .expandTo(
+          context.document
+            .getSelection()
+            .paragraphs.getFirst()
+            .getRange(Word.RangeLocation.end)
+        )
+        .getTextRanges(["."], false /* Don't trim spaces*/);
+      sentencesToTheEndOfParagraph.load("text");
+      await context.sync();
+
+      for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+        console.log(sentencesToTheEndOfParagraph.items[i].text);
+      }
     });
 'Word.SearchOptions#load:member(1)':
   - |-
@@ -2847,6 +2946,17 @@
       await context.sync();
 
       console.log("Inserted section break on next even page");
+    });
+'Word.SelectionMode:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+    await Word.run(async (context) => {
+      // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+      context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+
+      await context.sync();
     });
 'Word.Setting#delete:member(1)':
   - |-
