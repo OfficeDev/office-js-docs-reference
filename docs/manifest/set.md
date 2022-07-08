@@ -54,6 +54,7 @@ Certain requirement sets can't be declared in this element of the manifest; they
 |:---|:---|
 |[ExcelApiOnline 1.1](../requirement-sets/excel/excel-api-online-requirement-set.md#recommended-usage)|Excel|
 |[IdentityApi 1.3](../requirement-sets/common/identity-api-requirement-sets.md#outlook-and-identity-api-requirement-sets)|Outlook|
+|[WordApiHiddenDocument 1.3](../requirement-sets/word/word-api-1.3-hidden-document-requirement-set.md#recommended-usage)|Word|
 |[WordApiOnline 1.1](../requirement-sets/word/word-api-online-requirement-set.md#recommended-usage)|Word|
 |[Preview APIs](/office/dev/add-ins/develop/referencing-the-javascript-api-for-office-library-from-its-cdn#preview-apis)|All hosts|
 

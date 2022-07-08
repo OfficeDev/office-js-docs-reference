@@ -11,6 +11,28 @@ remarks: >-
   To be used with an API call, such as `obj.insertSomething(newStuff, location);` If the location is "Before" or
   "After", the new content will be outside of the modified object. If the location is "Start" or "End", the new content
   will be included as part of the modified object.
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+  // Inserts a section without an associated page break.
+
+  await Word.run(async (context) => {
+    let body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
+
+    await context.sync();
+
+    console.log("Inserted section without an associated page break");
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

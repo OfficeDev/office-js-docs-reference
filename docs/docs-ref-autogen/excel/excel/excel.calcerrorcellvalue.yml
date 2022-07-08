@@ -47,11 +47,13 @@ properties:
     syntax:
       content: >-
         errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" |
-        "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell";
+        "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested"
+        | "TextOverflow";
       return:
         type: >-
           <xref uid="excel!Excel.CalcErrorCellValueSubType:enum" /> | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" |
-          "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell"
+          "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" |
+          "TooDeeplyNested" | "TextOverflow"
   - name: errorType
     uid: 'excel!Excel.CalcErrorCellValue#errorType:member'
     package: excel!
@@ -64,6 +66,18 @@ properties:
       content: 'errorType?: ErrorCellValueType.calc | "Calc";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.calc:member" /> | "Calc"'
+  - name: functionName
+    uid: 'excel!Excel.CalcErrorCellValue#functionName:member'
+    package: excel!
+    fullName: functionName
+    summary: Represents the name of the function causing the error.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'functionName?: string;'
+      return:
+        type: string
   - name: type
     uid: 'excel!Excel.CalcErrorCellValue#type:member'
     package: excel!

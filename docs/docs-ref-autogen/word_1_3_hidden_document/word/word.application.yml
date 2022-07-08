@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: Word.Application
+uid: 'word!Word.Application:class'
+package: word!
+fullName: Word.Application
+summary: Represents the application object.
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.Application#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+methods:
+  - name: createDocument(base64File)
+    uid: 'word!Word.Application#createDocument:member(1)'
+    package: word!
+    fullName: createDocument(base64File)
+    summary: Creates a new document by using an optional base64 encoded .docx file.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'createDocument(base64File?: string): Word.DocumentCreated;'
+      parameters:
+        - id: base64File
+          description: Optional. The base64 encoded .docx file. The default value is null.
+          type: string
+      return:
+        type: '<xref uid="word!Word.DocumentCreated:class" />'
+        description: ''
+  - name: newObject(context)
+    uid: 'word!Word.Application.newObject:member(1)'
+    package: word!
+    fullName: newObject(context)
+    summary: Create a new instance of Word.Application object
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
+      parameters:
+        - id: context
+          description: ''
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+      return:
+        type: '<xref uid="word!Word.Application:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.Application#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Application object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: string;
+                  }
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
