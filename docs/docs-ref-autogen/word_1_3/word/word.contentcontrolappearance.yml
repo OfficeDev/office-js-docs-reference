@@ -4,10 +4,56 @@ uid: 'word!Word.ContentControlAppearance:enum'
 package: word!
 fullName: Word.ContentControlAppearance
 summary: ContentControl appearance
-remarks: |-
+remarks: >-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+
   Content control appearance options are bounding box, tags, or hidden.
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+  // Adds title and colors to odd and even content controls and changes their appearance.
+
+  await Word.run(async (context) => {
+    // Gets the complete sentence (as range) associated with the insertion point.
+    let evenContentControls = context.document.contentControls.getByTag("even");
+    let oddContentControls = context.document.contentControls.getByTag("odd");
+    evenContentControls.load("length");
+    oddContentControls.load("length");
+
+    await context.sync();
+
+    for (let i = 0; i < evenContentControls.items.length; i++) {
+      // Change a few properties and append a paragraph
+      evenContentControls.items[i].set({
+        color: "red",
+        title: "Odd ContentControl #" + (i + 1),
+        appearance: Word.ContentControlAppearance.tags
+      });
+      evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+    }
+
+    for (let j = 0; j < oddContentControls.items.length; j++) {
+      // Change a few properties and append a paragraph
+      oddContentControls.items[j].set({
+        color: "green",
+        title: "Even ContentControl #" + (j + 1),
+        appearance: "Tags"
+      });
+      oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+    }
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
