@@ -151,7 +151,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription in an Exchange Online or on-premises Exchange environment (in preview)), Outlook on Mac
+**Available in**: Outlook on Windows (Exchange Online or on-premises Exchange environment (in preview)), Outlook on Mac
 
 ## See also
 
