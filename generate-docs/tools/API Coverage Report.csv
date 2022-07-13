@@ -447,6 +447,7 @@ Excel.CalcErrorCellValue,basicType,Property,Good,false
 Excel.CalcErrorCellValue,basicValue,Property,Good,false
 Excel.CalcErrorCellValue,errorSubType,Property,Good,false
 Excel.CalcErrorCellValue,errorType,Property,Good,false
+Excel.CalcErrorCellValue,functionName,Property,Good,false
 Excel.CalcErrorCellValue,type,Property,Good,false
 Excel.CalcErrorCellValueSubType,N/A,Enum,Good,false
 Excel.CalcErrorCellValueSubType,arrayOfArrays,EnumField,Good,false
@@ -454,6 +455,8 @@ Excel.CalcErrorCellValueSubType,arrayOfRanges,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,dataTableReferencedPendingFormula,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,emptyArray,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,lambdaInCell,EnumField,Good,false
+Excel.CalcErrorCellValueSubType,textOverflow,EnumField,Good,false
+Excel.CalcErrorCellValueSubType,tooDeeplyNested,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,tooManyCells,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.CalcErrorCellValueSubType,unsupportedLifting,EnumField,Good,false
@@ -2562,6 +2565,7 @@ Excel.ErrorCellValueType,busy,EnumField,Fine,false
 Excel.ErrorCellValueType,calc,EnumField,Fine,false
 Excel.ErrorCellValueType,connect,EnumField,Fine,false
 Excel.ErrorCellValueType,div0,EnumField,Fine,false
+Excel.ErrorCellValueType,external,EnumField,Fine,false
 Excel.ErrorCellValueType,field,EnumField,Fine,false
 Excel.ErrorCellValueType,gettingData,EnumField,Fine,false
 Excel.ErrorCellValueType,name,EnumField,Fine,false
@@ -2655,11 +2659,21 @@ Excel.EventType,worksheetRowSorted,EnumField,Fine,false
 Excel.EventType,worksheetSelectionChanged,EnumField,Fine,false
 Excel.EventType,worksheetSingleClicked,EnumField,Fine,false
 Excel.EventType,worksheetVisibilityChanged,EnumField,Fine,false
+Excel.ExternalErrorCellValue,N/A,Class,Good,false
+Excel.ExternalErrorCellValue,basicType,Property,Good,false
+Excel.ExternalErrorCellValue,basicValue,Property,Good,false
+Excel.ExternalErrorCellValue,errorSubType,Property,Good,false
+Excel.ExternalErrorCellValue,errorType,Property,Good,false
+Excel.ExternalErrorCellValue,type,Property,Good,false
+Excel.ExternalErrorCellValueSubType,N/A,Enum,Good,false
+Excel.ExternalErrorCellValueSubType,pythonError,EnumField,Good,false
+Excel.ExternalErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.FieldErrorCellValue,N/A,Class,Good,false
 Excel.FieldErrorCellValue,basicType,Property,Good,false
 Excel.FieldErrorCellValue,basicValue,Property,Good,false
 Excel.FieldErrorCellValue,errorSubType,Property,Good,false
 Excel.FieldErrorCellValue,errorType,Property,Good,false
+Excel.FieldErrorCellValue,fieldName,Property,Good,false
 Excel.FieldErrorCellValue,type,Property,Good,false
 Excel.FieldErrorCellValueSubType,N/A,Enum,Good,false
 Excel.FieldErrorCellValueSubType,dataProviderError,EnumField,Good,false
@@ -3829,8 +3843,13 @@ Excel.NumberFormatInfo,toJSON(),Method,Poor,false
 Excel.NumErrorCellValue,N/A,Class,Good,false
 Excel.NumErrorCellValue,basicType,Property,Good,false
 Excel.NumErrorCellValue,basicValue,Property,Good,false
+Excel.NumErrorCellValue,errorSubType,Property,Good,false
 Excel.NumErrorCellValue,errorType,Property,Good,false
+Excel.NumErrorCellValue,functionName,Property,Good,false
 Excel.NumErrorCellValue,type,Property,Good,false
+Excel.NumErrorCellValueSubType,N/A,Enum,Good,false
+Excel.NumErrorCellValueSubType,arrayTooLarge,EnumField,Good,false
+Excel.NumErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.PageBreak,N/A,Class,Fine,false
 Excel.PageBreak,columnIndex,Property,Good,false
 Excel.PageBreak,context,Property,Good,false
@@ -5318,6 +5337,7 @@ Excel.TableColumnCollection,context,Property,Good,false
 Excel.TableColumnCollection,count,Property,Good,false
 Excel.TableColumnCollection,items,Property,Fine,false
 Excel.TableColumnCollection,add(index,Method,Fine,true
+Excel.TableColumnCollection,addAsJson(index,Method,Fine,false
 Excel.TableColumnCollection,getCount(),Method,Poor,false
 Excel.TableColumnCollection,getItem(key),Method,Poor,true
 Excel.TableColumnCollection,getItemAt(index),Method,Poor,true
@@ -5355,6 +5375,7 @@ Excel.TableRowCollection,context,Property,Good,false
 Excel.TableRowCollection,count,Property,Good,false
 Excel.TableRowCollection,items,Property,Fine,false
 Excel.TableRowCollection,add(index,Method,Fine,true
+Excel.TableRowCollection,addAsJson(index,Method,Fine,false
 Excel.TableRowCollection,deleteRows(rows),Method,Poor,false
 Excel.TableRowCollection,deleteRowsAt(index,Method,Fine,false
 Excel.TableRowCollection,getCount(),Method,Poor,false
@@ -9580,7 +9601,7 @@ Word.ContentControl,split(delimiters,Method,Fine,false
 Word.ContentControl,toJSON(),Method,Poor,false
 Word.ContentControl,track(),Method,Poor,false
 Word.ContentControl,untrack(),Method,Poor,false
-Word.ContentControlAppearance,N/A,Enum,Fine,false
+Word.ContentControlAppearance,N/A,Enum,Fine,true
 Word.ContentControlAppearance,boundingBox,EnumField,Fine,false
 Word.ContentControlAppearance,hidden,EnumField,Fine,false
 Word.ContentControlAppearance,tags,EnumField,Fine,false
@@ -10089,7 +10110,7 @@ Word.Paragraph,getNextOrNullObject(),Method,Poor,false
 Word.Paragraph,getOoxml(),Method,Poor,true
 Word.Paragraph,getPrevious(),Method,Poor,false
 Word.Paragraph,getPreviousOrNullObject(),Method,Poor,true
-Word.Paragraph,getRange(rangeLocation),Method,Poor,false
+Word.Paragraph,getRange(rangeLocation),Method,Poor,true
 Word.Paragraph,getRange(rangeLocationString),Method,Poor,false
 Word.Paragraph,getReviewedText(changeTrackingVersion),Method,Poor,false
 Word.Paragraph,getReviewedText(changeTrackingVersionString),Method,Poor,false
@@ -10209,7 +10230,7 @@ Word.RangeCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.RangeCollection,toJSON(),Method,Poor,false
 Word.RangeCollection,track(),Method,Poor,false
 Word.RangeCollection,untrack(),Method,Poor,false
-Word.RangeLocation,N/A,Enum,Fine,false
+Word.RangeLocation,N/A,Enum,Fine,true
 Word.RangeLocation,after,EnumField,Good,false
 Word.RangeLocation,before,EnumField,Good,false
 Word.RangeLocation,content,EnumField,Fine,false
@@ -10263,7 +10284,7 @@ Word.SectionCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.SectionCollection,toJSON(),Method,Poor,false
 Word.SectionCollection,track(),Method,Poor,false
 Word.SectionCollection,untrack(),Method,Poor,false
-Word.SelectionMode,N/A,Enum,Good,false
+Word.SelectionMode,N/A,Enum,Good,true
 Word.SelectionMode,end,EnumField,Fine,false
 Word.SelectionMode,select,EnumField,Fine,false
 Word.SelectionMode,start,EnumField,Fine,false
@@ -10639,7 +10660,7 @@ Word.TableRowCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.TableRowCollection,toJSON(),Method,Poor,false
 Word.TableRowCollection,track(),Method,Poor,false
 Word.TableRowCollection,untrack(),Method,Poor,false
-Word.UnderlineType,N/A,Enum,Good,false
+Word.UnderlineType,N/A,Enum,Good,true
 Word.UnderlineType,dashLine,EnumField,Fine,false
 Word.UnderlineType,dashLineHeavy,EnumField,Fine,false
 Word.UnderlineType,dashLineLong,EnumField,Fine,false

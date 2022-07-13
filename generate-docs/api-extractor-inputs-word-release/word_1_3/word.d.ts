@@ -1362,41 +1362,11 @@ export declare namespace Word {
     export class DocumentCreated extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
-        /**
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly body: Word.Body;
-        /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly contentControls: Word.ContentControlCollection;
-        /**
-         * Gets the properties of the document. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly properties: Word.DocumentProperties;
-        /**
-         * Gets the collection of section objects in the document. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly sections: Word.SectionCollection;
-        /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly saved: boolean;
+        
+        
+        
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -1412,13 +1382,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         open(): void;
-        /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
-         *
-         * @remarks
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        save(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7372,20 +7336,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyUpdateData;
-            /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesUpdateData;
+            
+            
         }
         /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
@@ -8382,41 +8334,11 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            contentControls?: Word.Interfaces.ContentControlData[];
-            /**
-            * Gets the properties of the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            sections?: Word.Interfaces.SectionData[];
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
@@ -9872,27 +9794,9 @@ export declare namespace Word {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
-            /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-            * Gets the properties of the document.
-            *
-            * @remarks
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * @remarks
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
+            
+            
+            
         }
         /**
          * Represents document properties.

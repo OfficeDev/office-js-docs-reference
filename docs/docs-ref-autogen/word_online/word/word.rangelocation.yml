@@ -4,7 +4,45 @@ uid: 'word!Word.RangeLocation:enum'
 package: word!
 fullName: Word.RangeLocation
 summary: ''
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+  await Word.run(async (context) => {
+    // Gets the complete sentence (as range) associated with the insertion point.
+    let sentences = context.document
+      .getSelection()
+      .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+    sentences.load("$none");
+    await context.sync();
+
+    // Expands the range to the end of the paragraph to get all the complete sentences.
+    let sentencesToTheEndOfParagraph = sentences.items[0]
+      .getRange()
+      .expandTo(
+        context.document
+          .getSelection()
+          .paragraphs.getFirst()
+          .getRange(Word.RangeLocation.end)
+      )
+      .getTextRanges(["."], false /* Don't trim spaces*/);
+    sentencesToTheEndOfParagraph.load("text");
+    await context.sync();
+
+    for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+      console.log(sentencesToTheEndOfParagraph.items[i].text);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

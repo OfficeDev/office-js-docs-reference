@@ -36,9 +36,10 @@
 ||[basicValue](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errorsubtype-member)|Represents the type of `CalcErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
+||[functionName](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-functionname-member)|Represents the name of the function causing the error.|
 ||[type](/javascript/api/excel/excel.calcerrorcellvalue#excel-excel-calcerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[CardLayoutListSection](/javascript/api/excel/excel.cardlayoutlistsection)|[layout](/javascript/api/excel/excel.cardlayoutlistsection#excel-excel-cardlayoutlistsection-layout-member)|Represents the type of layout for this section.|
-|[CardLayoutPropertyReference](/javascript/api/excel/excel.cardlayoutpropertyreference)|[property](/javascript/api/excel/excel.cardlayoutpropertyreference#excel-excel-cardlayoutpropertyreference-property-member)|The name of the property referenced by the card layout.|
+|[CardLayoutPropertyReference](/javascript/api/excel/excel.cardlayoutpropertyreference)|[property](/javascript/api/excel/excel.cardlayoutpropertyreference#excel-excel-cardlayoutpropertyreference-property-member)|Represents the name of the property referenced by the card layout.|
 |[CardLayoutSectionStandardProperties](/javascript/api/excel/excel.cardlayoutsectionstandardproperties)|[collapsed](/javascript/api/excel/excel.cardlayoutsectionstandardproperties#excel-excel-cardlayoutsectionstandardproperties-collapsed-member)|Represents whether this section of the card is initially collapsed.|
 ||[collapsible](/javascript/api/excel/excel.cardlayoutsectionstandardproperties#excel-excel-cardlayoutsectionstandardproperties-collapsible-member)|Represents whether this section of the card is collapsible.|
 ||[properties](/javascript/api/excel/excel.cardlayoutsectionstandardproperties#excel-excel-cardlayoutsectionstandardproperties-properties-member)|Represents the names of the properties in this section.|
@@ -133,10 +134,16 @@
 |[EntityPropertyExtraProperties](/javascript/api/excel/excel.entitypropertyextraproperties)|[propertyMetadata](/javascript/api/excel/excel.entitypropertyextraproperties#excel-excel-entitypropertyextraproperties-propertymetadata-member)|Represents metadata about the property.|
 |[EntityViewLayouts](/javascript/api/excel/excel.entityviewlayouts)|[card](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-card-member)|Represents the layout of this entity in card view.|
 ||[compact](/javascript/api/excel/excel.entityviewlayouts#excel-excel-entityviewlayouts-compact-member)|Represents the layout used when there is limited space to represent the entity.|
+|[ExternalErrorCellValue](/javascript/api/excel/excel.externalerrorcellvalue)|[basicType](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[errorSubType](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-errorsubtype-member)|Represents the type of `ExternalErrorCellValue`.|
+||[errorType](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
+||[type](/javascript/api/excel/excel.externalerrorcellvalue#excel-excel-externalerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[FieldErrorCellValue](/javascript/api/excel/excel.fielderrorcellvalue)|[basicType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errorsubtype-member)|Represents the type of `FieldErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
+||[fieldName](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-fieldname-member)|Represents the field which was not found by FIELDVALUE.|
 ||[type](/javascript/api/excel/excel.fielderrorcellvalue#excel-excel-fielderrorcellvalue-type-member)|Represents the type of this cell value.|
 |[FormattedNumberCellValue](/javascript/api/excel/excel.formattednumbercellvalue)|[basicType](/javascript/api/excel/excel.formattednumbercellvalue#excel-excel-formattednumbercellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.formattednumbercellvalue#excel-excel-formattednumbercellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
@@ -207,7 +214,9 @@
 ||[type](/javascript/api/excel/excel.nullerrorcellvalue#excel-excel-nullerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[NumErrorCellValue](/javascript/api/excel/excel.numerrorcellvalue)|[basicType](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[errorSubType](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-errorsubtype-member)|Represents the type of `NumErrorCellValue`.|
 ||[errorType](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-errortype-member)|Represents the type of `ErrorCellValue`.|
+||[functionName](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-functionname-member)|Represents the name of the function causing the error.|
 ||[type](/javascript/api/excel/excel.numerrorcellvalue#excel-excel-numerrorcellvalue-type-member)|Represents the type of this cell value.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
@@ -263,11 +272,13 @@
 |[TableCollection](/javascript/api/excel/excel.tablecollection)|[onFiltered](/javascript/api/excel/excel.tablecollection#excel-excel-tablecollection-onfiltered-member)|Occurs when a filter is applied on any table in a workbook, or a worksheet.|
 |[TableColumn](/javascript/api/excel/excel.tablecolumn)|[valuesAsJson](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjson-member)|A JSON representation of the values in the cells in this table column.|
 ||[valuesAsJsonLocal](/javascript/api/excel/excel.tablecolumn#excel-excel-tablecolumn-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this table column.|
+|[TableColumnCollection](/javascript/api/excel/excel.tablecolumncollection)|[addAsJson(index?: number, values?: CellValue[][], name?: string)](/javascript/api/excel/excel.tablecolumncollection#excel-excel-tablecolumncollection-addasjson-member(1))|Adds a new column to the table.|
 |[TableFilteredEventArgs](/javascript/api/excel/excel.tablefilteredeventargs)|[tableId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-tableid-member)|Gets the ID of the table in which the filter is applied.|
 ||[type](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-type-member)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.tablefilteredeventargs#excel-excel-tablefilteredeventargs-worksheetid-member)|Gets the ID of the worksheet which contains the table.|
 |[TableRow](/javascript/api/excel/excel.tablerow)|[valuesAsJson](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjson-member)|A JSON representation of the values in the cells in this table row.|
 ||[valuesAsJsonLocal](/javascript/api/excel/excel.tablerow#excel-excel-tablerow-valuesasjsonlocal-member)|A JSON representation of the values in the cells in this table row.|
+|[TableRowCollection](/javascript/api/excel/excel.tablerowcollection)|[addAsJson(index?: number, values?: CellValue[][], alwaysInsert?: boolean)](/javascript/api/excel/excel.tablerowcollection#excel-excel-tablerowcollection-addasjson-member(1))|Adds one or more rows to the table.|
 |[ValueErrorCellValue](/javascript/api/excel/excel.valueerrorcellvalue)|[basicType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
 ||[basicValue](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
 ||[errorSubType](/javascript/api/excel/excel.valueerrorcellvalue#excel-excel-valueerrorcellvalue-errorsubtype-member)|Represents the type of `ValueErrorCellValue`.|

@@ -39,6 +39,6 @@ isPreview: true
 isDeprecated: false
 syntax: >-
   export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue |
-  Div0ErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue
-  | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue |
-  ValueErrorCellValue;
+  Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue |
+  NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue |
+  RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
