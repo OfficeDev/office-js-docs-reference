@@ -59,7 +59,7 @@ properties:
     fullName: options
     summary: >-
       An object literal that contains the following property. `asyncContext`<!-- -->: Developers can provide any object
-      they wish to access in the callback method.
+      they wish to access in the callback function.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -184,7 +184,7 @@ methods:
       A maximum of 32KB is available for the settings of each add-in.
 
 
-      Any changes made to settings using the set function will not be saved to the server until the `saveAsync` function
+      Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method
       is called.
     remarks: >-
       **[Minimum permission

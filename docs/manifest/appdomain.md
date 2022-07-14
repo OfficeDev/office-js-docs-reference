@@ -1,7 +1,7 @@
 ---
 title: AppDomain element in the manifest file
 description: Specifies additional domains that are used by your add-in and should be trusted by Office.
-ms.date: 06/12/2020
+ms.date: 07/14/2022
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ Specifies an additional domain that Office should trust, in addition to the one 
 
 > [!IMPORTANT]
 >
-> 1. The value of the **\<AppDomain\>** element must include the protocol (e.g., `<AppDomain>https://myappdomain.com</AppDomain>`).
+> 1. The value of the **\<AppDomain\>** element must include the protocol (e.g., `<AppDomain>https://myappdomain.com</AppDomain>`), and the protocol must be either `http` or `https`.
 > 1. If there is an explicit port for the domain, include it (e.g.,`<AppDomain>https://myappdomain.com:9999</AppDomain>`).
 > 1. If a subdomain needs to be trusted, include it (e.g.,`<AppDomain>https://mysubdomain.myappdomain.com</AppDomain>`). The subdomain `mysubdomain.mydomain.com` and `mydomain.com` are different domains. If both need to be trusted, then both need to be in separate **\<AppDomain\>** elements.
 > 1. Listing the same domain as the one specified in the [SourceLocation element](sourcelocation.md) has no effect and may be misleading. In particular, when you are developing on `localhost`, you don't need to create an **\<AppDomain\>** element for `localhost`.

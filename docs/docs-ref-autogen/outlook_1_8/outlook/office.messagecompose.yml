@@ -992,7 +992,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true, indicates
+            can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body, and should not be displayed in the attachment
             list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
@@ -1190,7 +1190,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true, indicates
+            can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body and should not be displayed in the attachment
             list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
@@ -1333,7 +1333,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1399,9 +1399,9 @@ methods:
 
 
       The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      compose form. If you specify a callback function, the method is called with one parameter, `asyncResult`<!-- -->,
       which contains either the attachment identifier or a code that indicates any error that occurred while attaching
-      the item. You can use the options parameter to pass state information to the callback method, if needed.
+      the item. You can use the options parameter to pass state information to the callback function, if needed.
 
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
@@ -1491,7 +1491,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1512,9 +1512,9 @@ methods:
 
 
       The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      compose form. If you specify a callback function, the method is called with one parameter, `asyncResult`<!-- -->,
       which contains either the attachment identifier or a code that indicates any error that occurred while attaching
-      the item. You can use the options parameter to pass state information to the callback method, if needed.
+      the item. You can use the options parameter to pass state information to the callback function, if needed.
 
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
@@ -1716,7 +1716,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1840,7 +1840,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1894,7 +1894,7 @@ methods:
       Asynchronously gets the ID of a saved item.
 
 
-      When invoked, this method returns the item ID via the callback method.
+      When invoked, this method returns the item ID via the callback function.
 
 
       **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
@@ -1928,7 +1928,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1946,7 +1946,7 @@ methods:
       Asynchronously gets the ID of a saved item.
 
 
-      When invoked, this method returns the item ID via the callback method.
+      When invoked, this method returns the item ID via the callback function.
 
 
       **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
@@ -2015,9 +2015,9 @@ methods:
       error.
 
 
-      To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
-      property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
-      `body` or `subject`<!-- -->.
+      To access the selected data from the callback function, call `asyncResult.value.data`<!-- -->. To access the
+      source property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be
+      either `body` or `subject`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2068,7 +2068,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2091,9 +2091,9 @@ methods:
       error.
 
 
-      To access the selected data from the callback method, call `asyncResult.value.data`<!-- -->. To access the source
-      property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be either
-      `body` or `subject`<!-- -->.
+      To access the selected data from the callback function, call `asyncResult.value.data`<!-- -->. To access the
+      source property that the selection comes from, call `asyncResult.value.sourceProperty`<!-- -->, which will be
+      either `body` or `subject`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2252,7 +2252,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2546,7 +2546,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2646,7 +2646,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2706,9 +2706,9 @@ methods:
       Asynchronously saves an item.
 
 
-      When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In
-      Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item
-      is saved to the local cache.
+      When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
+      In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
+      item is saved to the local cache.
 
 
       Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will
@@ -2752,7 +2752,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2770,9 +2770,9 @@ methods:
       Asynchronously saves an item.
 
 
-      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
-      Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item
-      is saved to the local cache.
+      When invoked, this method saves the current message as a draft and returns the item id via the callback function.
+      In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
+      item is saved to the local cache.
 
 
       Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will
@@ -2922,7 +2922,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: If text, the
+            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
             current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the
             text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't),
             the current style is applied in Outlook on the web and the default style is applied in Outlook on desktop

@@ -1,7 +1,7 @@
 ---
 title: Shared runtime requirement sets
 description: Specifies the platforms and Office applications that support the SharedRuntime APIs.
-ms.date: 03/15/2022
+ms.date: 07/06/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -16,26 +16,10 @@ The following table lists the SharedRuntime 1.1 requirement set, the Office clie
 
 | Requirement set | Office 2021 or later on Windows<br>(one-time purchase) | Office on Windows<br>(connected to a Microsoft 365 subscription) | Office on iPad<br>(connected to a Microsoft 365 subscription) | Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)  | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.1  | Build 16.0.14326.20454 or later | Version 2002 (Build 12527.20092) or later | N/A | 16.35 or later | February 2020 | N/A |
+| SharedRuntime 1.1  | **Excel:** Build 16.0.12527.20092 or later<br> **Word:** 16.0.13218.10000 or later<br> **PowerPoint:** 16.0.13218.10000 or later | **Excel:** Version 2002 Build 12527.20092 or later<br> **Word:** Version 2008 Build 13218.10000 or later<br> **PowerPoint:** Version 2008 Build 13218.10000 or later | N/A | **Excel:** 16.35 or later<br> **Word:** Build 16.46.207.0 or later<br> **PowerPoint:** Build 16.46.207.0 or later | **Excel:** February 2020<br> **Word:** July 2022<br> **PowerPoint:** February 2022 | N/A |
 
 > [!IMPORTANT]
 > At this time, the shared JavaScript runtime is not supported on iPad or in one-time purchase versions of Office 2019 or earlier. For additional support details, see the following sections.
-
-## Support for version 1.1 on Excel
-
-The SharedRuntime 1.1 requirement set is released for Excel on the web, Windows, and Mac.
-
-## Preview support for version 1.1 on Word and PowerPoint
-
-The following table lists additional application builds that support a preview of the shared JavaScript runtime. The preview version of the shared runtime is subject to change. It is not supported for use in production environments. To get the latest build you need to [join Office Insider](https://insider.office.com/join). A good way to try out preview features is by using a Microsoft 365 subscription. If you don't already have a Microsoft 365 subscription, you can get one by joining the [Microsoft 365 developer program](https://developer.microsoft.com/office/dev-program).
-
-|Office application |Build |
-|-------------------|------|
-|PowerPoint on Windows |Build 16.0.13218.10000 or later |
-|PowerPoint on Mac |Build Build 16.46.207.0 or later |
-|PowerPoint on the web | February 2022 |
-|Word on Windows |Build 16.0.13218.10000 or later |
-|Word on Mac |Build 16.46.207.0 or later |
 
 ## Office versions and build numbers
 
