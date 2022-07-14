@@ -185,7 +185,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.ApiInformation:interface",
-              "docComment": "/**\n * Interface that contains functions for checking API requirement-set support.\n */\n",
+              "docComment": "/**\n * Interface that contains methods for checking API requirement-set support.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -620,7 +620,7 @@
             {
               "kind": "Function",
               "canonicalReference": "office-runtime!OfficeRuntime.displayWebDialog:function(1)",
-              "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * [Api set: SharedRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
+              "docComment": "/**\n * Function that enables a pop up web dialog box.\n *\n * [Api set: SharedRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
