@@ -258,8 +258,8 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this function.
      * 
      * For more information about Office host application and server requirements, see 
      * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
@@ -283,7 +283,7 @@ export declare namespace Office {
     * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call 
     * the callback and resolve the promise with "null" for both the host and platform.
     * 
-    * @param callback - An optional callback method, that will receive the host and platform info. 
+    * @param callback - An optional callback function, that will receive the host and platform info. 
     *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
     * @returns A Promise that contains the host and platform info, once initialization is completed.
     */
@@ -295,8 +295,8 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this function.
      * 
      * For more information about Office host application and server requirements, see 
      * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
@@ -1171,7 +1171,7 @@ export declare namespace Office {
         *
         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
         * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
-        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
+        * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
         displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
@@ -1271,7 +1271,7 @@ export declare namespace Office {
         * </table>
         *
         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
-        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
+        * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
@@ -1404,7 +1404,7 @@ export declare namespace Office {
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
          *
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
-         * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
+         * @param callback - Optional. Accepts a callback function that can parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
          *                   If `AsyncResult.status` is "succeeded", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
          */
         getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult<string>) => void): void;
@@ -1428,7 +1428,7 @@ export declare namespace Office {
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
          *
-         * @param callback - Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
+         * @param callback - Optional. Accepts a callback function that can parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
          *                   If `AsyncResult.status` is "succeeded", then `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
          */
         getAccessTokenAsync(callback?: (result: AsyncResult<string>) => void): void;
@@ -1952,7 +1952,7 @@ export declare namespace Office {
     }
 
     /**
-     * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
+     * Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
      * 
      * @param expression - The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
      * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -1961,8 +1961,8 @@ export declare namespace Office {
      * 
      * **Support details**
      * 
-     * A capital Y in the following matrix indicates that this method is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this method.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application. 
+     * An empty cell indicates that the Office host application doesn't support this function.
      * 
      * For more information about Office host application and server requirements, see 
      * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.

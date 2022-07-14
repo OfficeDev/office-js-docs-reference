@@ -704,7 +704,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method. `isInline`<!-- -->: If true, indicates
+            can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body, and should not be displayed in the attachment
             list.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
@@ -797,9 +797,9 @@ methods:
 
 
       The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      compose form. If you specify a callback function, the method is called with one parameter, `asyncResult`<!-- -->,
       which contains either the attachment identifier or a code that indicates any error that occurred while attaching
-      the item. You can use the `options` parameter to pass state information to the callback method, if needed.
+      the item. You can use the `options` parameter to pass state information to the callback function, if needed.
 
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
@@ -889,7 +889,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -910,9 +910,9 @@ methods:
 
 
       The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`<!-- -->,
+      compose form. If you specify a callback function, the method is called with one parameter, `asyncResult`<!-- -->,
       which contains either the attachment identifier or a code that indicates any error that occurred while attaching
-      the item. You can use the `options` parameter to pass state information to the callback method, if needed.
+      the item. You can use the `options` parameter to pass state information to the callback function, if needed.
 
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
@@ -1166,7 +1166,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-

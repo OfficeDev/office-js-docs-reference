@@ -53,7 +53,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -134,7 +134,7 @@ methods:
       The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
 
 
-      **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
+      **Important**: In the Windows client, you can't use this method to update the start or end of a recurrence.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -233,7 +233,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -260,7 +260,7 @@ methods:
       The time must be in UTC; you can get the correct UTC time by using the `convertToUtcClientTime` method.
 
 
-      **Important**: In the Windows client, you can't use this function to update the start or end of a recurrence.
+      **Important**: In the Windows client, you can't use this method to update the start or end of a recurrence.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

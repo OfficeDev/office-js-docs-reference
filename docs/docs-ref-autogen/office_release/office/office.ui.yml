@@ -233,7 +233,7 @@ methods:
           type: '<xref uid="office!Office.DialogOptions:interface" />'
         - id: callback
           description: >-
-            Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
+            Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the
             AsyncResult.value is a Dialog object.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Dialog:interface"
@@ -340,7 +340,7 @@ methods:
           type: string
         - id: callback
           description: >-
-            Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
+            Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the
             AsyncResult.value is a Dialog object.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Dialog:interface"
