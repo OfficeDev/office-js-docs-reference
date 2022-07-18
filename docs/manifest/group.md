@@ -1,7 +1,7 @@
 ---
 title: Group element in the manifest file
 description: Defines a group of UI controls in a tab. 
-ms.date: 05/25/2022
+ms.date: 07/18/2022
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +40,7 @@ Required. Unique identifier for the group. It is a string with a maximum of 125 
 |  [Label](#label)      | Yes |  The label for a group.  |
 |  [Icon](icon.md)      | Yes |  The image for a group. Not supported in Outlook add-ins. |
 |  [Control](#control)    | No |  Represents a Control object. Can be zero or more.  |
-|  [OfficeControl](#officecontrol)  | No | Represents one of the built-in Office controls. Can be zero or more. Not supported in Outlook add-ins.|
+|  [OfficeControl](#officecontrol)  | No | Represents one of the built-in Office controls. Can be zero or more. Supported only in PowerPoint add-ins.|
 |  [OverriddenByRibbonApi](overriddenbyribbonapi.md)      | No |  Specifies whether the group should appear on application and platform combinations that support custom contextual tabs. Not supported in Outlook add-ins. |
 
 ### Label
@@ -90,7 +90,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 - [AddinCommands 1.3](../requirement-sets/common/add-in-commands-requirement-sets.md)
 
 > [!NOTE]
-> This child element is not supported in Outlook add-ins.
+> This child element is supported only in PowerPoint add-ins.
 
 ```xml
 <Group id="Contoso.CustomTab2.group2">
