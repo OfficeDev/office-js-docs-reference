@@ -263,7 +263,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                 let primaryList = [] as any;
                 if (membersToMove.items) {
                     let enumList = membersToMove.items.filter(item => {
-                        return enumFilter.indexOf(item.name) >= 0;
+                        return enumFilter.indexOf(item.name) >= 0 && item.uid.indexOf("enum") >= 0;
                     });
                     primaryList = membersToMove.items.filter(item => {
                         // Remove previous chosen items and anything with the "Interfaces" namespace (those are Rich API duplicates for load/set).
