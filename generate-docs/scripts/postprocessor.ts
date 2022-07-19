@@ -265,8 +265,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                     let enumList = membersToMove.items.filter(item => {
                         let isEnum = enumFilter.indexOf(item.name) >= 0 && item.uid.indexOf("enum") >= 0;
                         if (enumFilter.indexOf(item.name) >= 0 && item.uid.indexOf("enum") < 0) {
-                            generalFilter.splice(generalFilter.indexOf(item.name), 1);
-                            generalFilter.splice(generalFilter.indexOf(item.name), 1);
+                            generalFilter.splice(generalFilter.indexOf(item.name, generalFilter.indexOf(item.name) + 1), 1);
                         }
         
                         return isEnum;
