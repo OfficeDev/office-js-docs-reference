@@ -29,7 +29,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
                 uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
-              - name: RecurrenceTimeZone
+              - &ref_0
+                name: MailboxEnums.RecurrenceTimeZone
                 uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
               - name: RecurrenceType
                 uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
@@ -75,6 +76,7 @@ items:
             uid: 'outlook!Office.Location:interface'
           - name: Mailbox
             uid: 'outlook!Office.Mailbox:interface'
+          - *ref_0
           - name: MeetingSuggestion
             uid: 'outlook!Office.MeetingSuggestion:interface'
           - name: MessageCompose
@@ -101,6 +103,8 @@ items:
             uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
           - name: RecurrenceProperties
             uid: 'outlook!Office.RecurrenceProperties:interface'
+          - name: RecurrenceTimeZone
+            uid: 'outlook!Office.RecurrenceTimeZone:interface'
           - name: ReplyFormAttachment
             uid: 'outlook!Office.ReplyFormAttachment:interface'
           - name: ReplyFormData
