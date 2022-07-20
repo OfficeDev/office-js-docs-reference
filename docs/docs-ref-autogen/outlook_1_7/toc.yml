@@ -41,8 +41,6 @@ items:
                 uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
               - name: WeekNumber
                 uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
-              - name: RecurrenceTimeZone
-                uid: 'outlook!Office.RecurrenceTimeZone:interface'
           - name: AppointmentCompose
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
@@ -103,6 +101,8 @@ items:
             uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
           - name: RecurrenceProperties
             uid: 'outlook!Office.RecurrenceProperties:interface'
+          - name: RecurrenceTimeZone
+            uid: 'outlook!Office.RecurrenceTimeZone:interface'
           - name: ReplyFormAttachment
             uid: 'outlook!Office.ReplyFormAttachment:interface'
           - name: ReplyFormData
