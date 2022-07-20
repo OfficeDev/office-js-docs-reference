@@ -224,8 +224,6 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     let membersToMove = <IMembers>{};
 
     let generalFilter: string[] = ["Interfaces"];
-    let enumFilter: string[] = generateEnumList(fsx.readFileSync(`../api-extractor-inputs-${hostName}/${hostName}.d.ts`).toString());
-    generalFilter = generalFilter.concat(enumFilter);
 
     // create custom folders
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
@@ -235,7 +233,7 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
     if (hostName === "excel") {
         generalFilter = generalFilter.concat(excelIconSetFilter);
     } else if (hostName === "outlook") {
-        generalFilter = generalFilter.concat(enumFilter).concat(['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message']);
+        generalFilter = generalFilter.concat(['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message']);
     }
 
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -263,16 +261,11 @@ function fixToc(tocPath: string, globalToc: Toc, hostName: string, versionNumber
                 let primaryList = [] as any;
                 if (membersToMove.items) {
                     let enumList = membersToMove.items.filter(item => {
-                        let isEnum = enumFilter.indexOf(item.name) >= 0 && item.uid.indexOf("enum") >= 0;
-                        if (enumFilter.indexOf(item.name) >= 0 && item.uid.indexOf("enum") < 0) {
-                            generalFilter.splice(generalFilter.indexOf(item.name, generalFilter.indexOf(item.name) + 1), 1);
-                        }
-        
-                        return isEnum;
+                        return item.uid.indexOf("enum") >= 0;        
                     });
                     primaryList = membersToMove.items.filter(item => {
                         // Remove previous chosen items and anything with the "Interfaces" namespace (those are Rich API duplicates for load/set).
-                        return generalFilter.indexOf(item.name) < 0 && item.uid.indexOf(".Interfaces.") < 0;
+                        return generalFilter.indexOf(item.name) < 0 && item.uid.indexOf(".Interfaces.") < 0 && item.uid.indexOf("enum") < 0;
                     });
 
                     if (enumList) {

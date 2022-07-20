@@ -49,8 +49,7 @@ items:
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
                 uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
-              - &ref_0
-                name: MailboxEnums.RecurrenceTimeZone
+              - name: RecurrenceTimeZone
                 uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
               - name: RecurrenceType
                 uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
@@ -124,7 +123,6 @@ items:
             uid: 'outlook!Office.LocationIdentifier:interface'
           - name: Mailbox
             uid: 'outlook!Office.Mailbox:interface'
-          - *ref_0
           - name: MasterCategories
             uid: 'outlook!Office.MasterCategories:interface'
           - name: MeetingSuggestion
