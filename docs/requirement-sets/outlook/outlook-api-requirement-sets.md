@@ -50,9 +50,9 @@ else {
 Alternatively, developers can check for the existence of a newer API by using standard JavaScript technique.
 
 ```js
-if (item.somePropertyOrFunction !== undefined) {
-  // Use item.somePropertyOrFunction.
-  item.somePropertyOrFunction;
+if (item.somePropertyOrMethod !== undefined) {
+  // Use item.somePropertyOrMethod.
+  item.somePropertyOrMethod;
 }
 ```
 
