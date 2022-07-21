@@ -341,9 +341,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
 
-      await Excel.run(async (context) => {
-        // This method logs information about the data source of a PivotTable.
+      // This function logs information about the data source of a PivotTable.
 
+      await Excel.run(async (context) => {
         const worksheet = context.workbook.worksheets.getItem("TotalPivot");
         const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
 
@@ -382,9 +382,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-source-data.yaml
 
-      await Excel.run(async (context) => {
-        // This method logs information about the data source of a PivotTable.
+      // This function logs information about the data source of a PivotTable.
 
+      await Excel.run(async (context) => {
         const worksheet = context.workbook.worksheets.getItem("TotalPivot");
         const pivotTable = worksheet.pivotTables.getItem("All Farm Sales");
 
@@ -490,9 +490,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-refresh.yaml
 
+      // This function refreshes the "Farm Sales" PivotTable,
+
+      // which updates the PivotTable with changes made to the source table.
+
       await Excel.run(async (context) => {
-        // This method refreshes the "Farm Sales" PivotTable,
-        // which updates the PivotTable with changes made to the source table.
         const pivotTable = context.workbook.pivotTables.getItem("Farm Sales");
         pivotTable.refresh();
         await context.sync();

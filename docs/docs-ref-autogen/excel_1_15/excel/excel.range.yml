@@ -1320,10 +1320,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-dependents.yaml
 
-      await Excel.run(async (context) => {
-        // This method highlights all the dependent cells of the active cell.
-        // Dependent cells contain formulas that refer to other cells.
+      // This function highlights all the dependent cells of the active cell.
 
+      // Dependent cells contain formulas that refer to other cells.
+
+      await Excel.run(async (context) => {
         // Get addresses of the active cell's dependent cells.
         const range = context.workbook.getActiveCell();
         const dependents = range.getDependents();
@@ -1686,7 +1687,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -1700,7 +1701,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {
@@ -2536,7 +2537,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -2550,7 +2551,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {
