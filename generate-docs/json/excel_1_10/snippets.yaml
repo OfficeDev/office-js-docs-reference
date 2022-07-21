@@ -3105,10 +3105,9 @@
     });
 'Excel.FilterOn:enum':
   - |-
+    // This function adds a custom AutoFilter to the active worksheet 
+    // and applies the filter to a column of the used range.
     await Excel.run(async (context) => {
-        // This method adds a custom AutoFilter to the active worksheet 
-        // and applies the filter to a column of the used range.
-
         // Retrieve the active worksheet and the used range on that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
@@ -4115,10 +4114,10 @@
     });
 'Excel.Query#name:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4128,10 +4127,10 @@
     });
 'Excel.Query#refreshDate:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the last refresh date of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the last refresh date of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4141,10 +4140,10 @@
     });       
 'Excel.Query#rowsLoadedCount:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the number of rows loaded in each query.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the number of rows loaded in each query.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4154,9 +4153,9 @@
     });
 'Excel.QueryCollection#getCount:member(1)':
   - |-
+    // This function retrieves the query collection in a workbook and then 
+    // logs the number of queries in the collection to the console.
     await Excel.run(async (context) => { 
-      // This method retrieves the query collection in a workbook and then 
-      // logs the number of queries in the collection to the console.
       const queries = context.workbook.queries; 
       const count = queries.getCount();
       await context.sync();
@@ -4165,10 +4164,10 @@
     });
 'Excel.QueryCollection#items:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 

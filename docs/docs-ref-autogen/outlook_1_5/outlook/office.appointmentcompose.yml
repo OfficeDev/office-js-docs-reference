@@ -122,7 +122,7 @@ properties:
           if (result.error) {
               console.debug(result.error);
           } else {
-              // Access the asyncContext that was passed to the setAsync function.
+              // Access the asyncContext that was passed to the setAsync method.
               console.debug("End Time " + result.asyncContext.verb);
           }
       });
@@ -1325,7 +1325,7 @@ methods:
       // the custom properties.
 
       Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
+          // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
               var mailbox = Office.context.mailbox;

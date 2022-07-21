@@ -243,7 +243,7 @@
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
@@ -601,7 +601,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -1267,7 +1267,7 @@
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.AppointmentRead#displayReplyAllForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -1349,7 +1349,7 @@
     });
 'Office.AppointmentRead#displayReplyForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -1958,7 +1958,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -2524,7 +2524,7 @@
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var item = Office.context.mailbox.item;
@@ -4144,7 +4144,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -4583,7 +4583,7 @@
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.MessageRead#displayReplyAllForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -4665,7 +4665,7 @@
     });
 'Office.MessageRead#displayReplyForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -5289,7 +5289,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -6311,7 +6311,7 @@
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });

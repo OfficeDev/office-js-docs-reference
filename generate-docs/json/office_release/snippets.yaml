@@ -353,8 +353,8 @@
     });    
 'Office.Binding#addHandlerAsync:member(2)':
   - >-
-    // The following code sample calls the select method of the Office object to
-    access the binding
+    // The following code sample calls the select function of the Office object
+    to access the binding
 
     // with ID "MyBinding", and then calls the addHandlerAsync method to add a
     handler function 
@@ -959,7 +959,7 @@
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Initialize instance variables to access API objects.
@@ -3969,7 +3969,7 @@
     // to display how the task pane or content add-in was initialized.
 
     Office.initialize = function (reason) {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Display initialization reason.
@@ -3989,7 +3989,7 @@
     }
 'Office.select:function(1)':
   - >-
-    // The following code example uses the select method to retrieve a binding
+    // The following code example uses the select function to retrieve a binding
     with the id "cities" from
 
     // the Bindings collection, and then calls the addHandlerAsync method to add
