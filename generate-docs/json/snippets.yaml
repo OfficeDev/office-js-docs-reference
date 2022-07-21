@@ -3105,10 +3105,9 @@
     });
 'Excel.FilterOn:enum':
   - |-
+    // This function adds a custom AutoFilter to the active worksheet 
+    // and applies the filter to a column of the used range.
     await Excel.run(async (context) => {
-        // This method adds a custom AutoFilter to the active worksheet 
-        // and applies the filter to a column of the used range.
-
         // Retrieve the active worksheet and the used range on that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
@@ -4115,10 +4114,10 @@
     });
 'Excel.Query#name:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4128,10 +4127,10 @@
     });
 'Excel.Query#refreshDate:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the last refresh date of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the last refresh date of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4141,10 +4140,10 @@
     });       
 'Excel.Query#rowsLoadedCount:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the number of rows loaded in each query.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the number of rows loaded in each query.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -4154,9 +4153,9 @@
     });
 'Excel.QueryCollection#getCount:member(1)':
   - |-
+    // This function retrieves the query collection in a workbook and then 
+    // logs the number of queries in the collection to the console.
     await Excel.run(async (context) => { 
-      // This method retrieves the query collection in a workbook and then 
-      // logs the number of queries in the collection to the console.
       const queries = context.workbook.queries; 
       const count = queries.getCount();
       await context.sync();
@@ -4165,10 +4164,10 @@
     });
 'Excel.QueryCollection#items:member':
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -8323,7 +8322,7 @@
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
@@ -8681,7 +8680,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -9347,7 +9346,7 @@
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.AppointmentRead#displayReplyAllForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -9429,7 +9428,7 @@
     });
 'Office.AppointmentRead#displayReplyForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -10038,7 +10037,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -10451,8 +10450,8 @@
     });    
 'Office.Binding#addHandlerAsync:member(2)':
   - >-
-    // The following code sample calls the select method of the Office object to
-    access the binding
+    // The following code sample calls the select function of the Office object
+    to access the binding
 
     // with ID "MyBinding", and then calls the addHandlerAsync method to add a
     handler function 
@@ -11313,7 +11312,7 @@
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Initialize instance variables to access API objects.
@@ -11393,7 +11392,7 @@
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var item = Office.context.mailbox.item;
@@ -15694,7 +15693,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -16133,7 +16132,7 @@
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.MessageRead#displayReplyAllForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -16215,7 +16214,7 @@
     });
 'Office.MessageRead#displayReplyForm:member(1)':
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -16839,7 +16838,7 @@
     // the custom properties.
 
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -18131,7 +18130,7 @@
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
@@ -18198,7 +18197,7 @@
     // to display how the task pane or content add-in was initialized.
 
     Office.initialize = function (reason) {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Display initialization reason.
@@ -18218,7 +18217,7 @@
     }
 'Office.select:function(1)':
   - >-
-    // The following code example uses the select method to retrieve a binding
+    // The following code example uses the select function to retrieve a binding
     with the id "cities" from
 
     // the Bindings collection, and then calls the addHandlerAsync method to add

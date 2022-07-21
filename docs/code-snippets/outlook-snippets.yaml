@@ -76,7 +76,7 @@ Office.AppointmentCompose#end:member:
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
@@ -126,7 +126,7 @@ Office.AppointmentCompose#loadCustomPropertiesAsync:member(1):
     // custom property otherProp, and then finally calls the saveAsync method to save
     // the custom properties.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -253,7 +253,7 @@ Office.AppointmentRead#body:member:
     }
 Office.AppointmentRead#displayReplyAllForm:member(1):
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -318,7 +318,7 @@ Office.AppointmentRead#displayReplyAllForm:member(1):
     });
 Office.AppointmentRead#displayReplyForm:member(1):
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -497,7 +497,7 @@ Office.AppointmentRead#loadCustomPropertiesAsync:member(1):
     // custom property otherProp, and then finally calls the saveAsync method to save
     // the custom properties.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -698,7 +698,7 @@ Office.CustomProperties#saveAsync:member(1):
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var item = Office.context.mailbox.item;
@@ -1118,7 +1118,7 @@ Office.MessageCompose#loadCustomPropertiesAsync:member(1):
     // custom property otherProp, and then finally calls the saveAsync method to save
     // the custom properties.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -1226,7 +1226,7 @@ Office.MessageRead#body:member:
     }
 Office.MessageRead#displayReplyAllForm:member(1):
   - |-
-    // The following code passes a string to the `displayReplyAllForm` function.
+    // The following code passes a string to the `displayReplyAllForm` method.
     Office.context.mailbox.item.displayReplyAllForm('hello there');
     Office.context.mailbox.item.displayReplyAllForm('<b>hello there</b>');
 
@@ -1291,7 +1291,7 @@ Office.MessageRead#displayReplyAllForm:member(1):
     });
 Office.MessageRead#displayReplyForm:member(1):
   - |-
-    // The following code passes a string to the `displayReplyForm` function.
+    // The following code passes a string to the `displayReplyForm` method.
     Office.context.mailbox.item.displayReplyForm('hello there');
     Office.context.mailbox.item.displayReplyForm('<b>hello there</b>');
 
@@ -1466,7 +1466,7 @@ Office.MessageRead#loadCustomPropertiesAsync:member(1):
     // custom property otherProp, and then finally calls the saveAsync method to save
     // the custom properties.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
             // After the DOM is loaded, add-in-specific code can run.
             var mailbox = Office.context.mailbox;
@@ -1778,7 +1778,7 @@ Office.Time#setAsync:member(1):
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function.
+            // Access the asyncContext that was passed to the setAsync method.
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
