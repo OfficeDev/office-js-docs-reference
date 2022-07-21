@@ -4,7 +4,7 @@ uid: 'office!Office.AddinCommands.Event:interface'
 package: office!
 fullName: Office.AddinCommands.Event
 summary: >-
-  The `Event` object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows
+  The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows
   the add-in to identify which button was clicked and to signal the host that it has completed its processing.
 remarks: >-
   See [Add-in commands requirement
@@ -14,7 +14,7 @@ remarks: >-
 
   **[Minimum permission level
   (Outlook)](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  Restricted
+  `Restricted`
 
 
   **[Applicable Outlook
@@ -128,20 +128,25 @@ methods:
       Indicates that the add-in has completed processing and will automatically be closed.
 
 
-      This method must be called at the end of a function which was invoked by the following.
+      This method must be called at the end of a function which was invoked by the following:
 
 
-      - A UI-less button (i.e., an add-in command defined with an `Action` element where the `xsi:type` attribute is set
-      to `ExecuteFunction`<!-- -->)
+      - A function command button (that is, an add-in command defined with an `Action` element, where the `xsi:type`
+      attribute is set to `ExecuteFunction`<!-- -->).
+
+
+      - An event defined in the [LaunchEvent extension
+      point](https://docs.microsoft.com/javascript/api/manifest/extensionpoint#launchevent)<!-- -->. For example, an
+      `OnMessageSend` event.
 
 
       - An [event](https://docs.microsoft.com/javascript/api/manifest/event) defined in the [Events extension
-      point](https://docs.microsoft.com/javascript/api/manifest/extensionpoint#events)<!-- -->, e.g., an `ItemSend`
-      event
-
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      point](https://docs.microsoft.com/javascript/api/manifest/extensionpoint#events)<!-- -->. For example, an
+      `ItemSend` event.
     remarks: >-
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`

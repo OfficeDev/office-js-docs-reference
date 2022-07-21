@@ -48,6 +48,8 @@ node version-remover ../api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts 
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts "ExcelApi 1.2" ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts "ExcelApi 1.1" ./tool-inputs/excel-base.d.ts
 
+node version-remover ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts "Mailbox 1.12" ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts
+node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts Outlook 1.11
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts "Mailbox 1.11" ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts
 node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts Outlook 1.10
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts "Mailbox 1.10" ../api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts
@@ -103,6 +105,7 @@ node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts 
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../../docs/includes/excel-1_1
 
 node whats-new outlook ../api-extractor-inputs-outlook/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../../docs/includes/outlook-preview
+node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../../docs/includes/outlook-1_12
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../../docs/includes/outlook-1_11
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts ../../docs/includes/outlook-1_10
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts ../../docs/includes/outlook-1_9
@@ -257,6 +260,12 @@ if [ ! -d "json/outlook" ]; then
     echo Running API Extractor for Outlook preview.
     pushd api-extractor-inputs-outlook
     ../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/outlook_1_12" ]; then
+    echo Running API Extractor for Outlook 1.12.
+    pushd api-extractor-inputs-outlook-release/outlook_1_12
+    ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/outlook_1_11" ]; then
@@ -516,6 +525,9 @@ if [ ! -d "yaml/outlook_1_10" ]; then
 fi
 if [ ! -d "yaml/outlook_1_11" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_11 --output-folder ./yaml/outlook_1_11 --office 2>/dev/null
+fi
+if [ ! -d "yaml/outlook_1_12" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_12 --output-folder ./yaml/outlook_1_12 --office 2>/dev/null
 fi
 if [ ! -d "yaml/powerpoint" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint --output-folder ./yaml/powerpoint --office
