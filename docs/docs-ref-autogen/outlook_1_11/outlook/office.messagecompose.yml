@@ -2742,7 +2742,7 @@ methods:
       // the custom properties.
 
       Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
+          // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
               var mailbox = Office.context.mailbox;

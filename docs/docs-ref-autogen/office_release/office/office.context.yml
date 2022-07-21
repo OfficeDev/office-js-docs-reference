@@ -214,7 +214,7 @@ properties:
 
           // The initialize function is required for all add-ins.
           Office.initialize = function () {
-              // Checks for the DOM to load using the jQuery ready function.
+              // Checks for the DOM to load using the jQuery ready method.
               $(document).ready(function () {
               // After the DOM is loaded, code specific to the add-in can run.
               // Initialize instance variables to access API objects.

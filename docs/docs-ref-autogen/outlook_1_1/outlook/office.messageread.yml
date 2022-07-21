@@ -885,7 +885,7 @@ methods:
 
       ```javascript
 
-      // The following code passes a string to the `displayReplyAllForm` function.
+      // The following code passes a string to the `displayReplyAllForm` method.
 
       Office.context.mailbox.item.displayReplyAllForm('hello there');
 
@@ -1029,7 +1029,7 @@ methods:
 
       ```javascript
 
-      // The following code passes a string to the `displayReplyForm` function.
+      // The following code passes a string to the `displayReplyForm` method.
 
       Office.context.mailbox.item.displayReplyForm('hello there');
 
@@ -1603,7 +1603,7 @@ methods:
       // the custom properties.
 
       Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
+          // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
               var mailbox = Office.context.mailbox;
