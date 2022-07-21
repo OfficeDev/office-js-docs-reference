@@ -454,9 +454,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
 
-      await Excel.run(async (context) => {
-        // This method adds a data table to a chart that already exists on the worksheet. 
+      // This function adds a data table to a chart that already exists on the worksheet. 
 
+      await Excel.run(async (context) => {
         // Retrieve the chart named "SalesChart" from the "Sample" worksheet.
         const chart = context.workbook.worksheets.getItem("Sample").charts.getItem("SalesChart");
 

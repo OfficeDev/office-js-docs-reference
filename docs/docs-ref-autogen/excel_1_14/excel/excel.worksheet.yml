@@ -29,10 +29,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method adds a percentage AutoFilter to the active worksheet 
-          // and applies the filter to a column of the used range.
+      // This function adds a percentage AutoFilter to the active worksheet 
 
+      // and applies the filter to a column of the used range.
+
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           const farmData = sheet.getUsedRange();
@@ -1583,9 +1584,9 @@ events:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
-      await Excel.run(async (context) => {
-          // This method registers an event handler for the onProtectionChanged event of a worksheet.
+      // This function registers an event handler for the onProtectionChanged event of a worksheet.
 
+      await Excel.run(async (context) => {
           // Set "Sample" as the active worksheet.
           context.workbook.worksheets.getItemOrNullObject("Sample").delete();
           const sheet = context.workbook.worksheets.add("Sample");
@@ -1605,8 +1606,9 @@ events:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;

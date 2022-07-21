@@ -935,7 +935,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -949,7 +949,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {
@@ -1261,7 +1261,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -1275,7 +1275,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {

@@ -847,8 +847,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
+      // This function retrieves the data source information of a chart series in the Sample worksheet.
+
       await Excel.run(async (context) => {
-        // This method retrieves the data source information of a chart series in the Sample worksheet.
         const sheet = context.workbook.worksheets.getItem("Sample");
 
         // Get the first chart series from the first chart on the worksheet.
@@ -917,8 +918,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
 
+      // This function retrieves the data source information of a chart series in the Sample worksheet.
+
       await Excel.run(async (context) => {
-        // This method retrieves the data source information of a chart series in the Sample worksheet.
         const sheet = context.workbook.worksheets.getItem("Sample");
 
         // Get the first chart series from the first chart on the worksheet.
