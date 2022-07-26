@@ -21,9 +21,8 @@ properties:
       "requiresAddress": true }`
 
 
-      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->. \[
-      [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
-    remarks: ''
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->.
+    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,10 +33,8 @@ properties:
     uid: 'custom-functions-runtime!CustomFunctions.Invocation#functionName:member'
     package: custom-functions-runtime!
     fullName: functionName
-    summary: >-
-      The name of this function. \[ [API set: CustomFunctionsRuntime
-      1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
-    remarks: ''
+    summary: The name of this function.
+    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,9 +54,8 @@ properties:
 
 
       If the metadata JSON file is being generated from JSDoc comments, include the tag
-      `@requiresParameterAddresses`<!-- -->. \[ [API set: CustomFunctionsRuntime
-      1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
-    remarks: ''
+      `@requiresParameterAddresses`<!-- -->.
+    remarks: '\[ [API set: CustomFunctionsRuntime 1.3](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

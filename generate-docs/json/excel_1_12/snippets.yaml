@@ -4427,7 +4427,7 @@
       console.log(`Direct precedent cells of ${range.address}:`);
 
       // Use the direct precedents API to loop through precedents of the active cell.
-      for (var i = 0; i < directPrecedents.areas.items.length; i++) {
+      for (let i = 0; i < directPrecedents.areas.items.length; i++) {
         // Highlight and console the address of each precedent cell.
         directPrecedents.areas.items[i].format.fill.color = "Yellow";
         console.log(`  ${directPrecedents.areas.items[i].address}`);
@@ -4673,7 +4673,7 @@
       console.log(`All precedent cells of ${range.address}:`);
 
       // Use the precedents API to loop through precedents of the active cell.
-      for (var i = 0; i < precedents.areas.items.length; i++) {
+      for (let i = 0; i < precedents.areas.items.length; i++) {
         // Highlight and console the address of each precedent cell.
         precedents.areas.items[i].format.fill.color = "Orange";
         console.log(`  ${precedents.areas.items[i].address}`);
@@ -6733,7 +6733,7 @@
         const workbook = context.workbook;
         
         // Set up the insert options.
-        var options = {
+        const options = {
             sheetNamesToInsert: [], // Insert all the worksheets from the source workbook.
             positionType: Excel.WorksheetPositionType.after, // Insert after the `relativeTo` sheet.
             relativeTo: "Sheet1" // The sheet relative to which the other worksheets will be inserted. Used with `positionType`.
@@ -6917,7 +6917,7 @@
       console.log(`Direct precedent cells of ${range.address}:`);
 
       // Use the direct precedents API to loop through precedents of the active cell.
-      for (var i = 0; i < directPrecedents.areas.items.length; i++) {
+      for (let i = 0; i < directPrecedents.areas.items.length; i++) {
         // Highlight and console the address of each precedent cell.
         directPrecedents.areas.items[i].format.fill.color = "Yellow";
         console.log(`  ${directPrecedents.areas.items[i].address}`);
