@@ -183,7 +183,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
-      var start = new Date(); // Represents current date and time.
+      const start = new Date(); // Represents current date and time.
 
       start.setDate(start.getDate() + 2); // Add 2 days to current date.
 
@@ -208,7 +208,7 @@ methods:
           return;
         }
 
-        var end = result.value; // Set end to current start date and time.
+        const end = result.value; // Set end to current start date and time.
         end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
         Office.context.mailbox.item.end.setAsync(end, (result) => {
           if (result.status !== Office.AsyncResultStatus.Succeeded) {

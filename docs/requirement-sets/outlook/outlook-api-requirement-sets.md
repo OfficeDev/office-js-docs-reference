@@ -1,14 +1,18 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 06/09/2022
+ms.date: 07/25/2022
 ms.prod: outlook
 ms.localizationpriority: high
 ---
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require by using the [Requirements](/javascript/api/manifest/requirements) element in their [manifest](/office/dev/add-ins/develop/add-in-manifests). Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you are using the [Teams manifest format (preview)](/office/dev/add-ins/develop/json-manifest-overview) or the [XML manifest format](/office/dev/add-ins/develop/add-in-manifests).
+
+# [XML Manifest](#tab/xmlmanifest)
+
+The API version is specified by the [Requirements](/javascript/api/manifest/requirements) element. Outlook add-ins always include a [Set](/javascript/api/manifest/set) element with a `Name` attribute set to `Mailbox` and a `MinVersion` attribute set to the minimum API requirement set that supports the add-in's scenarios.
 
 For example, the following manifest snippet indicates a minimum requirement set of 1.1.
 
@@ -19,6 +23,29 @@ For example, the following manifest snippet indicates a minimum requirement set 
   </Sets>
 </Requirements>
 ```
+
+# [Teams Manifest (developer preview)](#tab/jsonmanifest)
+
+The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios. 
+
+For example, the following manifest snippet indicates a minimum requirement set of 1.1.
+
+```json
+"extensions": [
+{
+  "requirements": {
+    "capabilities": [
+      {
+        "name": "Mailbox", "minVersion": "1.1"
+      }
+    ]
+  },
+  ...
+}
+```
+
+---
+
 
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 

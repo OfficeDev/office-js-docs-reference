@@ -11,6 +11,28 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
+  Office.context.mailbox.item.sensitivity.setAsync(
+    Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+    function callback(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Successfully set appointment sensitivity.");
+      }
+    }
+  );
+
+  ```
 isPreview: true
 isDeprecated: false
 fields:

@@ -1,13 +1,13 @@
 ---
 title: OfficeTab element in the manifest file
 description: The OfficeTab element defines the ribbon tab where your add-in command appears.
-ms.date: 02/02/2022
+ms.date: 07/22/2022
 ms.localizationpriority: medium
 ---
 
 # OfficeTab element
 
-Defines the ribbon tab on which your add-in command appears. This can either be the default tab (either **Home**, **Message**, or **Meeting**), or a custom tab defined by the add-in. This element is required.
+Defines the ribbon tab on which your add-in command appears. This can either be a built-in Office tab or a custom tab defined by the add-in. This element is required.
 
 **Add-in type:** Task pane, Mail
 
@@ -35,7 +35,7 @@ The following are valid tab `id` values by application. Values in **bold** are s
 
 ### Outlook
 
-- **TabDefault**
+- **TabDefault** (either **Home**, **Message**, or **Meeting**)
 
 ### Word
 

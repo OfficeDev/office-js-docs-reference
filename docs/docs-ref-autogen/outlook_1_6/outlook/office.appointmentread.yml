@@ -81,7 +81,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
 
-      var attachments = Office.context.mailbox.item.attachments;
+      const attachments = Office.context.mailbox.item.attachments;
 
       console.log(attachments);
 
@@ -514,9 +514,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "progressIndicator",
           message: "Progress indicator with id = " + id
@@ -530,9 +530,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Non-persistent informational notification message with id = " + id,
@@ -548,9 +548,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Persistent informational notification message with id = " + id,
@@ -575,7 +575,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
@@ -593,7 +593,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -644,11 +644,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
 
-      var apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
+      const apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
 
       console.log("Optional attendees:");
 
-      for (var i = 0; i < apptOptionalAttendees.length; i++) {
+      for (let i = 0; i < apptOptionalAttendees.length; i++) {
         console.log(
           apptOptionalAttendees[i].displayName +
             " (" +
@@ -689,7 +689,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
 
-      var apptOrganizer = Office.context.mailbox.item.organizer;
+      const apptOrganizer = Office.context.mailbox.item.organizer;
 
       console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
 
@@ -740,11 +740,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
 
-      var apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
+      const apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
       console.log("Required attendees:");
 
-      for (var i = 0; i < apptRequiredAttendees.length; i++) {
+      for (let i = 0; i < apptRequiredAttendees.length; i++) {
         console.log(
           apptRequiredAttendees[i].displayName +
             " (" +
@@ -1175,9 +1175,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
-      var entities = Office.context.mailbox.item.getEntities();
+      const entities = Office.context.mailbox.item.getEntities();
 
-      var entityTypesFound = 0;
+      let entityTypesFound = 0;
 
       if (entities.addresses.length > 0) {
           console.warn("physical addresses: ");
@@ -1581,9 +1581,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
-      var entities = Office.context.mailbox.item.getSelectedEntities();
+      const entities = Office.context.mailbox.item.getSelectedEntities();
 
-      var entityTypesFound = 0;
+      let entityTypesFound = 0;
 
       if (entities.addresses.length > 0) {
           console.warn("physical addresses: ");
@@ -1731,7 +1731,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
-      var matches = Office.context.mailbox.item.getSelectedRegExMatches();
+      const matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
       if (matches) {
           console.log(matches);
@@ -1833,11 +1833,11 @@ methods:
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Loaded following custom properties:");
           customProps = result.value;
-          var dataKey = Object.keys(customProps)[0];
-          var data = customProps[dataKey];
-          for (var propertyName in data)
+          const dataKey = Object.keys(customProps)[0];
+          const data = customProps[dataKey];
+          for (let propertyName in data)
           {
-            var propertyValue = data[propertyName];
+            let propertyValue = data[propertyName];
             console.log(`${propertyName}: ${propertyValue}`);
           }              
         }

@@ -75,9 +75,9 @@ properties:
 
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var msgBcc = asyncResult.value;
+          const msgBcc = asyncResult.value;
           console.log("Message being blind-copied to:");
-          for (var i = 0; i < msgBcc.length; i++) {
+          for (let i = 0; i < msgBcc.length; i++) {
             console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
           }
         } else {
@@ -92,10 +92,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
-      var email = $("#emailBcc")
+      const email = $("#emailBcc")
         .val()
         .toString();
-      var emailArray = [email];
+      const emailArray = [email];
 
       Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -192,7 +192,7 @@ properties:
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var categories = asyncResult.value;
+          const categories = asyncResult.value;
           if (categories && categories.length > 0) {
             console.log("Categories assigned to this item:");
             console.log(JSON.stringify(categories));
@@ -218,10 +218,10 @@ properties:
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var masterCategories = asyncResult.value;
+          const masterCategories = asyncResult.value;
           if (masterCategories && masterCategories.length > 0) {
             // Grab the first category from the master list.
-            var categoryToAdd = [masterCategories[0].displayName];
+            const categoryToAdd = [masterCategories[0].displayName];
             Office.context.mailbox.item.categories.addAsync(categoryToAdd, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                 console.log(`Successfully assigned category '${categoryToAdd}' to item.`);
@@ -246,10 +246,10 @@ properties:
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var categories = asyncResult.value;
+          const categories = asyncResult.value;
           if (categories && categories.length > 0) {
             // Grab the first category assigned to this item.
-            var categoryToRemove = [categories[0].displayName];
+            const categoryToRemove = [categories[0].displayName];
             Office.context.mailbox.item.categories.removeAsync(categoryToRemove, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                 console.log(`Successfully unassigned category '${categoryToRemove}' from this item.`);
@@ -321,9 +321,9 @@ properties:
 
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var msgCc = asyncResult.value;
+          const msgCc = asyncResult.value;
           console.log("Message being copied to:");
-          for (var i = 0; i < msgCc.length; i++) {
+          for (let i = 0; i < msgCc.length; i++) {
             console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
           }
         } else {
@@ -338,10 +338,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
-      var email = $("#emailCc")
+      const email = $("#emailCc")
         .val()
         .toString();
-      var emailArray = [email];
+      const emailArray = [email];
 
       Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -478,7 +478,7 @@ properties:
 
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var msgFrom = asyncResult.value;
+          const msgFrom = asyncResult.value;
           console.log("Message from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
         } else {
           console.error(asyncResult.error);
@@ -611,9 +611,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "progressIndicator",
           message: "Progress indicator with id = " + id
@@ -627,9 +627,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Non-persistent informational notification message with id = " + id,
@@ -645,9 +645,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Persistent informational notification message with id = " + id,
@@ -672,7 +672,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
@@ -690,7 +690,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -745,7 +745,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
 
-      var seriesId = Office.context.mailbox.item.seriesId;
+      const seriesId = Office.context.mailbox.item.seriesId;
 
 
       if (seriesId === undefined) {
@@ -918,9 +918,9 @@ properties:
 
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var msgTo = asyncResult.value;
+          const msgTo = asyncResult.value;
           console.log("Message being sent to:");
-          for (var i = 0; i < msgTo.length; i++) {
+          for (let i = 0; i < msgTo.length; i++) {
             console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
           }
         } else {
@@ -935,10 +935,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
-      var email = $("#emailTo")
+      const email = $("#emailTo")
         .val()
         .toString();
-      var emailArray = [email];
+      const emailArray = [email];
 
       Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1054,7 +1054,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
-      var attachmentUrl = $("#attachmentUrl").val();
+      const attachmentUrl = $("#attachmentUrl").val();
 
       Office.context.mailbox.item.addFileAttachmentAsync(
           attachmentUrl,
@@ -1236,7 +1236,7 @@ methods:
 
       // Set the signature for the current item with inline image.
 
-      var modIcon1Base64 =
+      const modIcon1Base64 =
       "iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpDRDMxMDg1MjBCNDZFMTExODE2MkM1RUI2M0M4MDYxRCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFMTUxQjgyRjQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFMTUxQjgyRTQ2MEQxMUUxODlFMkQwNTYzQ0YwMTUxMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQxMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNEMzEwODUyMEI0NkUxMTE4MTYyQzVFQjYzQzgwNjFEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+uC/WfAAAAehJREFUeNpilCzfwEAEkAbiECA2A2J1IOaHin8E4ptAfBaIVwLxU0IGMRKw0B6IW4DYhoE4cASIK6E0VsCEQ1wUiNcB8QESLGOAqj0MxBuhZhBloS4QnwHiQAbygR/UDF1CFupCXSjHQDmQg5qli8tCUBBsQUoQ1AD8UDNFsVk4n0o+w+bT+egWglKjNymmeGhLkqLcG2oHAwtUoIuQDj5OVgZPLUmwRe5aEmAxqYqNpFgKssOcCeplM0KqdST5GfpDDRm0JfkYrj3/SE7QguyQY4ImYYLgCtAS10kHGMw6dzNsv/qC7OwCClJXYlR++v6b4er3j5QmIFcmaNlIL6AOslCIjhYKMTHQGTBBqxh6gXcgC6/R0cKbIAv30dHCfaAKGJTxHxJSqS3Fz9DkowNmywpyMcgA8fF7b8D8VWcfM6w8+4gYC+VB+RCk8hSh0gaUD4/dewvlvUWRe/z+GzGWgex4BGtiOAHxXhoHpzMoSGHZAhSPW2lo2VZYWkHOh4nEtLrIAE+hZmNUwK+B2BOIv1PRsu9QM1/jatNcBtVZ0IREKXgENesyoVYbzNIdFFi2A5tl+NqlL6BB4QBNzsSCU1A9nlAzMAALAQMOQl0qB23qWwKxIlIrDBQ394H4OBCvISYqAAIMACVibHDqsO7zAAAAAElFTkSuQmCC";
 
       Office.context.mailbox.item.addFileAttachmentFromBase64Async(
@@ -1245,7 +1245,7 @@ methods:
         { isInline: true },
         function(result) {
           if (result.status == Office.AsyncResultStatus.Succeeded) {
-            var signature = $("#signature").val() + "<img src='cid:myImage.png'>";
+            const signature = $("#signature").val() + "<img src='cid:myImage.png'>";
             console.log(`Setting signature to "${signature}".`);
             Office.context.mailbox.item.body.setSignatureAsync(
               signature,
@@ -1555,7 +1555,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
-      var attachmentItemId = $("#attachmentItemId").val();
+      const attachmentItemId = $("#attachmentItemId").val();
 
       Office.context.mailbox.item.addItemAttachmentAsync(
           attachmentItemId,
@@ -1854,16 +1854,16 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
-      var item = Office.context.mailbox.item;
+      const item = Office.context.mailbox.item;
 
-      var options = {asyncContext: {currentItem: item}};
+      const options = {asyncContext: {currentItem: item}};
 
       item.getAttachmentsAsync(options, callback);
 
 
       function callback(result) {
           if (result.value.length > 0) {
-              for (i = 0 ; i < result.value.length ; i++) {
+              for (let i = 0 ; i < result.value.length ; i++) {
                   result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
               }
           }
@@ -2010,8 +2010,8 @@ methods:
               console.error(result.error.message);
           } else {
               if (result.value.length > 0) {
-                  for (var i = 0; i < result.value.length; i++) {
-                      var attachment = result.value[i];
+                  for (let i = 0; i < result.value.length; i++) {
+                      let attachment = result.value[i];
                       console.log(`${attachment.id}. Name: ${attachment.name}, size: ${attachment.size}, isInline: ${attachment.isInline}`);
                   }
               }
@@ -2531,8 +2531,8 @@ methods:
 
       Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var text = asyncResult.value.data;
-          var prop = asyncResult.value.sourceProperty;
+          const text = asyncResult.value.data;
+          const prop = asyncResult.value.sourceProperty;
           console.log("Selected text in " + prop + ": " + text);
         } else {
           console.error(asyncResult.error);
@@ -2647,8 +2647,8 @@ methods:
 
               // Determine if user has the appropriate permission to do the operation.
               if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-                var ewsId = Office.context.mailbox.item.itemId;
-                var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+                const ewsId = Office.context.mailbox.item.itemId;
+                const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
                 let rest_url =
                   sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/messages/" + restId;
 
@@ -2972,11 +2972,11 @@ methods:
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Loaded following custom properties:");
           customProps = result.value;
-          var dataKey = Object.keys(customProps)[0];
-          var data = customProps[dataKey];
-          for (var propertyName in data)
+          const dataKey = Object.keys(customProps)[0];
+          const data = customProps[dataKey];
+          for (let propertyName in data)
           {
-            var propertyValue = data[propertyName];
+            let propertyValue = data[propertyName];
             console.log(`${propertyName}: ${propertyValue}`);
           }              
         }

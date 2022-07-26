@@ -118,19 +118,19 @@ properties:
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
-      var ewsId = Office.context.mailbox.item.itemId;
+      const ewsId = Office.context.mailbox.item.itemId;
 
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
       console.log("REST URL: " + Office.context.mailbox.restUrl);
 
-      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
 
-      var ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("EWS ID (from REST ID): " + ewsId2);
 
@@ -203,7 +203,7 @@ properties:
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var categories = asyncResult.value;
+          const categories = asyncResult.value;
           if (categories && categories.length > 0) {
             console.log("Master categories:");
             console.log(JSON.stringify(categories));
@@ -222,7 +222,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
-      var masterCategoriesToAdd = [
+      const masterCategoriesToAdd = [
         {
           displayName: "TestCategory",
           color: Office.MailboxEnums.CategoryColor.Preset0
@@ -245,7 +245,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
-      var masterCategoriesToRemove = ["TestCategory"];
+      const masterCategoriesToRemove = ["TestCategory"];
 
 
       Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function(asyncResult) {
@@ -309,12 +309,12 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          var ewsId = Office.context.mailbox.item.itemId;
-          var token = result.value;
-          var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          var getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
+          const ewsId = Office.context.mailbox.item.itemId;
+          const token = result.value;
+          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
                   
-          var xhr = new XMLHttpRequest();
+          const xhr = new XMLHttpRequest();
           xhr.open('GET', getMessageUrl);
           xhr.setRequestHeader("Authorization", "Bearer " + token);
           xhr.onload = function (e) {
@@ -332,19 +332,19 @@ properties:
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
-      var ewsId = Office.context.mailbox.item.itemId;
+      const ewsId = Office.context.mailbox.item.itemId;
 
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
       console.log("REST URL: " + Office.context.mailbox.restUrl);
 
-      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
 
-      var ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("EWS ID (from REST ID): " + ewsId2);
 
@@ -541,19 +541,19 @@ methods:
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
-      var ewsId = Office.context.mailbox.item.itemId;
+      const ewsId = Office.context.mailbox.item.itemId;
 
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
       console.log("REST URL: " + Office.context.mailbox.restUrl);
 
-      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
 
-      var ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("EWS ID (from REST ID): " + ewsId2);
 
@@ -648,12 +648,12 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          var ewsId = Office.context.mailbox.item.itemId;
-          var token = result.value;
-          var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          var getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
+          const ewsId = Office.context.mailbox.item.itemId;
+          const token = result.value;
+          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
                   
-          var xhr = new XMLHttpRequest();
+          const xhr = new XMLHttpRequest();
           xhr.open('GET', getMessageUrl);
           xhr.setRequestHeader("Authorization", "Bearer " + token);
           xhr.onload = function (e) {
@@ -671,19 +671,19 @@ methods:
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
-      var ewsId = Office.context.mailbox.item.itemId;
+      const ewsId = Office.context.mailbox.item.itemId;
 
       console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
 
 
       console.log("REST URL: " + Office.context.mailbox.restUrl);
 
-      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("REST item ID: " + restId);
 
 
-      var ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+      const ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 
       console.log("EWS ID (from REST ID): " + ewsId2);
 
@@ -808,7 +808,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
 
-      var itemId = $("#itemId").val();
+      const itemId = $("#itemId").val();
 
       Office.context.mailbox.displayAppointmentForm(itemId);
 
@@ -872,7 +872,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
 
-      var itemId = $("#itemId").val();
+      const itemId = $("#itemId").val();
 
 
       // The async version will return error 9049 if the item is not found.
@@ -1008,7 +1008,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
 
-      var itemId = $("#itemId").val();
+      const itemId = $("#itemId").val();
 
       Office.context.mailbox.displayMessageForm(itemId);
 
@@ -1073,7 +1073,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
 
-      var itemId = $("#itemId").val();
+      const itemId = $("#itemId").val();
 
 
       // The async version will return error 9049 if the item is not found.
@@ -1211,9 +1211,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
 
-      var start = new Date();
+      const start = new Date();
 
-      var end = new Date();
+      const end = new Date();
 
       end.setHours(start.getHours() + 1);
 
@@ -1292,9 +1292,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
 
-      var start = new Date();
+      const start = new Date();
 
-      var end = new Date();
+      const end = new Date();
 
       end.setHours(start.getHours() + 1);
 
@@ -1852,12 +1852,12 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
-          var ewsId = Office.context.mailbox.item.itemId;
-          var token = result.value;
-          var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
-          var getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
+          const ewsId = Office.context.mailbox.item.itemId;
+          const token = result.value;
+          const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+          const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
                   
-          var xhr = new XMLHttpRequest();
+          const xhr = new XMLHttpRequest();
           xhr.open('GET', getMessageUrl);
           xhr.setRequestHeader("Authorization", "Bearer " + token);
           xhr.onload = function (e) {
@@ -2221,7 +2221,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
-      var request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'+

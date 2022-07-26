@@ -18,10 +18,8 @@ properties:
     uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
     package: custom-functions-runtime!
     fullName: setResult
-    summary: >-
-      Set the result for the custom function. May be called more than once. \[ [API set: CustomFunctionsRuntime
-      1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
-    remarks: ''
+    summary: Set the result for the custom function. May be called more than once.
+    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
