@@ -1369,7 +1369,7 @@
         properties.load("key,type,value");
 
         await context.sync();
-        for (var i = 0; i < properties.items.length; i++)
+        for (let i = 0; i < properties.items.length; i++)
             console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
     });
 'Word.Document#changeTrackingMode:member':
@@ -2316,7 +2316,7 @@
 
       await context.sync();
 
-      var list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
+      const list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
       list.load("$none"); // No properties needed.
 
       await context.sync();
@@ -2324,7 +2324,7 @@
       // To add new items to the list use start/end on the insert location parameter.
       list.insertParagraph("New list item on top of the list", "Start");
       let paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
-      paragraph.listItem.level = 4; // Sets up list level for the lsit item.
+      paragraph.listItem.level = 4; // Sets up list level for the list item.
       // To add paragraphs outside the list use before/after:
       list.insertParagraph("New paragraph goes after (not part of the list)", "After");
 
@@ -2555,9 +2555,9 @@
         await context.sync();
 
       if (customerContentControls.items.length === 0) {
-        for (var i = 0; i < results.items.length; i++) { 
+        for (let i = 0; i < results.items.length; i++) { 
             results.items[i].font.bold = true;
-            var cc = results.items[i].insertContentControl();
+            let cc = results.items[i].insertContentControl();
             cc.tag = "customer";  // This value is used in the next step of this sample.
             cc.title = "Customer Name " + i;
         }

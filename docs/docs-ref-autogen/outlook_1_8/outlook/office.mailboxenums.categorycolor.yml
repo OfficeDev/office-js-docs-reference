@@ -16,6 +16,33 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
+
+  const masterCategoriesToAdd = [
+    {
+      displayName: "TestCategory",
+      color: Office.MailboxEnums.CategoryColor.Preset0
+    }
+  ];
+
+
+  Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function(asyncResult) {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+      console.log("Successfully added categories to master list");
+    } else {
+      console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
