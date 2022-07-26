@@ -7969,7 +7969,7 @@ Office.Mailbox,makeEwsRequestAsync(data,Method,Poor,true
 Office.Mailbox,removeHandlerAsync(eventType,Method,Poor,false
 Office.MailboxEnums.ActionType,N/A,Enum,Good,false
 Office.MailboxEnums.ActionType,ShowTaskPane,EnumField,Poor,false
-Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,false
+Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,Confidential,EnumField,Fine,false
 Office.MailboxEnums.AppointmentSensitivityType,Normal,EnumField,Fine,false
 Office.MailboxEnums.AppointmentSensitivityType,Personal,EnumField,Fine,false
