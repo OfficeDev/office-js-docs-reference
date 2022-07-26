@@ -8,7 +8,7 @@ ms.localizationpriority: high
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require in their [manifest](/office/dev/add-ins/develop/add-in-manifests). The markup varies depending on whether you are using the Teams manifest format (preview) or the XML manifest format.
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you are using the [Teams manifest format (preview)](/office/dev/add-ins/develop/json-manifest-overview) or the [XML manifest format](/office/dev/add-ins/develop/add-in-manifests).
 
 # [XML Manifest](#tab/xmlmanifest)
 
