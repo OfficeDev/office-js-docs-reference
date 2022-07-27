@@ -35,6 +35,8 @@ items:
                 uid: 'word!Word.ChangeTrackingMode:enum'
               - name: ChangeTrackingVersion
                 uid: 'word!Word.ChangeTrackingVersion:enum'
+              - name: CommentChangeType
+                uid: 'word!Word.CommentChangeType:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
@@ -43,6 +45,8 @@ items:
                 uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'word!Word.ErrorCodes:enum'
+              - name: EventSource
+                uid: 'word!Word.EventSource:enum'
               - name: EventType
                 uid: 'word!Word.EventType:enum'
               - name: HeaderFooterType
@@ -81,6 +85,10 @@ items:
             uid: 'word!Word.CommentCollection:class'
           - name: CommentContentRange
             uid: 'word!Word.CommentContentRange:class'
+          - name: CommentDetail
+            uid: 'word!Word.CommentDetail:interface'
+          - name: CommentEventArgs
+            uid: 'word!Word.CommentEventArgs:interface'
           - name: CommentReply
             uid: 'word!Word.CommentReply:class'
           - name: CommentReplyCollection

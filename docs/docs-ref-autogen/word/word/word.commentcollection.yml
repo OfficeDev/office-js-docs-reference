@@ -218,10 +218,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -236,9 +238,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -247,4 +249,85 @@ methods:
       return:
         type: '<xref uid="word!Word.CommentCollection:class" />'
         description: ''
+events:
+  - name: onCommentAdded
+    uid: 'word!Word.CommentCollection#onCommentAdded:member'
+    package: word!
+    fullName: onCommentAdded
+    summary: Occurs when new comments are added.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentChanged
+    uid: 'word!Word.CommentCollection#onCommentChanged:member'
+    package: word!
+    fullName: onCommentChanged
+    summary: Occurs when a comment or its reply is changed.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeleted
+    uid: 'word!Word.CommentCollection#onCommentDeleted:member'
+    package: word!
+    fullName: onCommentDeleted
+    summary: Occurs when comments are deleted.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeselected
+    uid: 'word!Word.CommentCollection#onCommentDeselected:member'
+    package: word!
+    fullName: onCommentDeselected
+    summary: Occurs when a comment is deselected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentSelected
+    uid: 'word!Word.CommentCollection#onCommentSelected:member'
+    package: word!
+    fullName: onCommentSelected
+    summary: Occurs when a comment is selected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

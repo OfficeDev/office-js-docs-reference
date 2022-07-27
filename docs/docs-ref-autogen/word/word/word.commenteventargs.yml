@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: Word.CommentEventArgs
+uid: 'word!Word.CommentEventArgs:interface'
+package: word!
+fullName: Word.CommentEventArgs
+summary: Provides information about the comments that raised the comment event.
+remarks: '\[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: changeType
+    uid: 'word!Word.CommentEventArgs#changeType:member'
+    package: word!
+    fullName: changeType
+    summary: Represents how the comment changed event is triggered.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        changeType: Word.CommentChangeType | "none" | "edited" | "resolved" | "reopened" | "replyAdded" | "replyDeleted"
+        | "replyEdited";
+      return:
+        type: >-
+          <xref uid="word!Word.CommentChangeType:enum" /> | "none" | "edited" | "resolved" | "reopened" | "replyAdded" |
+          "replyDeleted" | "replyEdited"
+  - name: commentDetails
+    uid: 'word!Word.CommentEventArgs#commentDetails:member'
+    package: word!
+    fullName: commentDetails
+    summary: Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'commentDetails: Word.CommentDetail[];'
+      return:
+        type: '<xref uid="word!Word.CommentDetail:interface" />[]'
+  - name: source
+    uid: 'word!Word.CommentEventArgs#source:member'
+    package: word!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'word!Word.CommentEventArgs#type:member'
+    package: word!
+    fullName: type
+    summary: The event type. See Word.EventType for details.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged"
+        | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" |
+        "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+          "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" |
+          "CommentAdded"

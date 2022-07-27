@@ -1,6 +1,17 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Body](/javascript/api/word/word.body)|[fields](/javascript/api/word/word.body#word-word-body-fields-member)|Gets the collection of field objects in the body.|
+|[CommentCollection](/javascript/api/word/word.commentcollection)|[onCommentAdded](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentadded-member)|Occurs when new comments are added.|
+||[onCommentChanged](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
+||[onCommentDeleted](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentdeleted-member)|Occurs when comments are deleted.|
+||[onCommentDeselected](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentdeselected-member)|Occurs when a comment is deselected.|
+||[onCommentSelected](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentselected-member)|Occurs when a comment is selected.|
+|[CommentDetail](/javascript/api/word/word.commentdetail)|[id](/javascript/api/word/word.commentdetail#word-word-commentdetail-id-member)|Represents the ID of this comment.|
+||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
+|[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the comment changed event is triggered.|
+||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.|
+||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|The source of the event.|
+||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|The event type.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[fields](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-fields-member)|Gets the collection of field objects in the contentcontrol.|
 ||[onDataChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondatachanged-member)|Occurs when data within the content control are changed.|
 ||[onDeleted](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondeleted-member)|Occurs when the content control is deleted.|
