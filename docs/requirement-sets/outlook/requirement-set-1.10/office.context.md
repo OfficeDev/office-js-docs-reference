@@ -1,7 +1,7 @@
 ---
 title: Office.context - requirement set 1.10
 description: Office.Context object members available for Outlook add-ins using Mailbox API requirement set 1.10.
-ms.date: 04/05/2022
+ms.date: 07/27/2022
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +55,7 @@ Supports [single sign-on (SSO)](/office/dev/add-ins/outlook/authenticate-a-user-
 ```js
 Office.context.auth.getAccessTokenAsync(function(result) {
     if (result.status === "succeeded") {
-        var token = result.value;
+        const token = result.value;
         // ...
     } else {
         console.log("Error obtaining token", result.error);
@@ -89,7 +89,7 @@ The `contentLanguage` value reflects the current **Editing Language** setting sp
 
 ```js
 function sayHelloWithContentLanguage() {
-  var myContentLanguage = Office.context.contentLanguage;
+  const myContentLanguage = Office.context.contentLanguage;
   switch (myContentLanguage) {
     case 'en-US':
       write('Hello!');
@@ -132,7 +132,7 @@ Gets information about the environment in which the add-in is running.
 ##### Example
 
 ```js
-var contextInfo = Office.context.diagnostics;
+const contextInfo = Office.context.diagnostics;
 console.log("Office application: " + contextInfo.host);
 console.log("Office version: " + contextInfo.version);
 console.log("Platform: " + contextInfo.platform);
@@ -164,7 +164,7 @@ The `displayLanguage` value reflects the current **Display Language** setting sp
 
 ```js
 function sayHelloWithDisplayLanguage() {
-  var myDisplayLanguage = Office.context.displayLanguage;
+  const myDisplayLanguage = Office.context.displayLanguage;
   switch (myDisplayLanguage) {
     case 'en-US':
       write('Hello!');

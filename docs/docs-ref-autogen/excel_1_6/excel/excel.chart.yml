@@ -98,7 +98,7 @@ properties:
       ```typescript
       // Set to show legend of Chart1 and make it on top of the chart.
       await Excel.run(async (context) => { 
-          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.legend.visible = true;
           chart.legend.position = "Top"; 
           chart.legend.overlay = false; 
@@ -127,7 +127,7 @@ properties:
       // Rename the chart to new name, resize the chart to 200 points in both height and weight.
       // Move Chart1 to 100 points to the top and left.
       await Excel.run(async (context) => { 
-          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.name = "New Name";
           chart.top = 100;
           chart.left = 100;
@@ -219,7 +219,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.delete();
           await context.sync(); 
       });
@@ -245,8 +245,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-          var image = chart.getImage();
+          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          const image = chart.getImage();
           await context.sync(); 
       });
       ```
@@ -341,7 +341,7 @@ methods:
           ```typescript
           // Get a chart named "Chart1".
           await Excel.run(async (context) => { 
-              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.load('name');
               await context.sync();
 
@@ -488,11 +488,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Charts";
-          var rangeSelection = "A1:B4";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
-          var sourceData = sheetName + "!" + "A1:B4";
-          var chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+          const sheetName = "Charts";
+          const rangeSelection = "A1:B4";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+          const sourceData = sheetName + "!" + "A1:B4";
+          const chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
           chart.width = 500;
           chart.height = 300;
           chart.setPosition("C2", null);

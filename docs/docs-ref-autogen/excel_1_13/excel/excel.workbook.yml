@@ -632,7 +632,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var selectedRange = context.workbook.getSelectedRange();
+          const selectedRange = context.workbook.getSelectedRange();
           selectedRange.load('address');
           await context.sync();
           console.log(selectedRange.address);

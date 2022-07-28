@@ -253,7 +253,7 @@ methods:
           ```typescript
           // Show the series name in data labels and set the position of the data labels to "top".
           await Excel.run(async (context) => {
-              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
               chart.dataLabels.showValue = true;
               chart.dataLabels.position = Excel.ChartDataLabelPosition.top;
               chart.dataLabels.showSeriesName = true;

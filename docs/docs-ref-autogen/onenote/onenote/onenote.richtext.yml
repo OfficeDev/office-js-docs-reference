@@ -143,12 +143,12 @@ methods:
           await OneNote.run(async (context) => {
 
               // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
+              const pageContents = context.application.getActivePage().contents;
 
               // Get the first PageContent on the page, and then get its outline's paragraphs.
-              var outlinePageContents = ;
-              var paragraphs = ;
-              var richTextParagraphs = ;
+              const outlinePageContents = pageContents.getItem(0);
+              let paragraphs = outlinePageContents.outline.paragraphs;
+              const richTextParagraphs = paragraphs.items;
               // Queue a command to load the id and type of each page content in the outline.
               pageContents.load("id,type");
 
@@ -167,7 +167,7 @@ methods:
 
               // Load all rich text paragraphs across outlines.
               $.each(outlinePageContents, function(index, outlinePageContent) {
-                  var outline = outlinePageContent.outline;
+                  const outline = outlinePageContent.outline;
                   paragraphs = paragraphs.concat(outline.paragraphs.items);
               });
               $.each(paragraphs, function(index, paragraph) {
@@ -181,7 +181,7 @@ methods:
 
               // Display all rich text paragraphs to the console.
               $.each(richTextParagraphs, function(index, richTextParagraph) {
-                  var richText = richTextParagraph.richText;
+                  const richText = richTextParagraph.richText;
                   console.log(
                       "Paragraph found with richtext content : " + 
                       richText.text + " and richtext id : " + richText.id);

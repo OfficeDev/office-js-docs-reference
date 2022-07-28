@@ -63,7 +63,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfBccRecipients = asyncResult.value;
+          const arrayOfBccRecipients = asyncResult.value;
       }
 
       ```
@@ -309,7 +309,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfCcRecipients = asyncResult.value;
+          const arrayOfCcRecipients = asyncResult.value;
       }
 
       ```
@@ -430,9 +430,9 @@ properties:
 
       ```javascript
 
-      var date_1 = new Date();
+      const date_1 = new Date();
 
-      var date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+      const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
 
       Office.context.mailbox.item.delayDeliveryTime.setAsync(
           date_2,
@@ -906,7 +906,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfToRecipients = asyncResult.value;
+          const arrayOfToRecipients = asyncResult.value;
       }
 
       ```
@@ -1017,9 +1017,9 @@ methods:
 
       function addAttachment() {
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
-          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          const attachmentURL = "https://contoso.com/rtm/icon.png";
           Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
       }
 
@@ -1394,7 +1394,7 @@ methods:
 
       function myHandlerFunction(eventarg) {
           if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-              var attachment = eventarg.attachmentDetails;
+              const attachment = eventarg.attachmentDetails;
               console.log("Event Fired and Attachment Added!");
               getAttachmentContentAsync(attachment.id, options, callback);
           }
@@ -1540,10 +1540,10 @@ methods:
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
-          var itemId = "AAMkADI1...AAA=";
+          const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
       }
@@ -2217,7 +2217,7 @@ methods:
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                   if (asyncResult.value != null && asyncResult.value.length > 0) {
                       // The value is a string, parse to an object.
-                      var context = JSON.parse(asyncResult.value);
+                      const context = JSON.parse(asyncResult.value);
                       // Do something with context.
                   } else {
                       // Empty context, treat as no context.
@@ -2458,8 +2458,8 @@ methods:
 
 
       function getCallback(asyncResult) {
-          var text = asyncResult.value.data;
-          var prop = asyncResult.value.sourceProperty;
+          const text = asyncResult.value.data;
+          const prop = asyncResult.value.sourceProperty;
 
           console.log("Selected text in " + prop + ": " + text);
       }
@@ -2942,15 +2942,15 @@ methods:
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              var mailbox = Office.context.mailbox;
+              const mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
+          const customProps = asyncResult.value;
+          const myProp = customProps.get("myProp");
 
           customProps.set("otherProp", "value");
           customProps.saveAsync(saveCallback);

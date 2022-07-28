@@ -25,11 +25,11 @@ remarks: >-
 
   ```javascript
 
-  var item = Office.context.mailbox.item;
+  const item = Office.context.mailbox.item;
 
   // Get an array of strings that represent task suggestions in the current item's body.
 
-  var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+  const taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
 
   console.log("There are " + taskSuggestions.length + " task suggestions.")
 

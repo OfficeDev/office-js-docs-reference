@@ -26,11 +26,11 @@ remarks: >-
 
   ```javascript
 
-  var item = Office.context.mailbox.item;
+  const item = Office.context.mailbox.item;
 
   // Get an array of strings that represent contacts in the current item's body.
 
-  var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+  const contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
 
   console.log("There are " + contacts.length + " contacts.")
 

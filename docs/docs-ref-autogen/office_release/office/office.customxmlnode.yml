@@ -30,10 +30,10 @@ properties:
           function showXmlNodeBaseNames() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
+                  const xmlPart = result.value;
                   xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
+                      for (let i = 0; i < nodeResults.value.length; i++) {
+                          const node = nodeResults.value[i];
                           write(node.baseName);
                       }
                   });
@@ -65,10 +65,10 @@ properties:
           function showXmlNamespaceUri() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
+                  const xmlPart = result.value;
                   xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
+                      for (let i = 0; i < nodeResults.value.length; i++) {
+                          const node = nodeResults.value[i];
                           write(node.namespaceUri);
                       }
                   });
@@ -100,10 +100,10 @@ properties:
           function showXmlNodeType() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
+                  const xmlPart = result.value;
                   xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                      for (i = 0; i < nodeResults.value.length; i++) {
-                          var node = nodeResults.value[i];
+                      for (let i = 0; i < nodeResults.value.length; i++) {
+                          const node = nodeResults.value[i];
                           write(node.nodeType);
                       }
                   });
@@ -166,10 +166,10 @@ methods:
       function showXmlChildNodes() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
+              const xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
                       node.getNodesAsync('*', function (nodeResults) {
                           write(nodeResults.value.length + " childNodes");
                       });
@@ -248,10 +248,10 @@ methods:
       function showXmlNodeValues() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
+              const xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
                       node.getNodeValueAsync(function (asyncResult) {
                           write(asyncResult.value);
                       });
@@ -302,7 +302,7 @@ methods:
           "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
           
           // Access the XML part.
-          var xmlPart = getByIdAsyncResult.value;
+          const xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
           xmlPart.namespaceManager.addNamespaceAsync(
@@ -318,7 +318,7 @@ methods:
                   xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
                       
                       // Get the first node returned by using the Xpath expression. 
-                      var node = getNodesAsyncResult.value[0];
+                      const node = getNodesAsyncResult.value[0];
                       
                       // Get the text value of the node and use the asyncContext. This results in a call to Word. 
                       // The results are logged to the browser console.
@@ -414,10 +414,10 @@ methods:
       function showXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
+              const xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
                       node.getXmlAsync(function (asyncResult) {
                           write(asyncResult.value);
                       });
@@ -494,10 +494,10 @@ methods:
       function setXmlNodeValue() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
+              const xmlPart = result.value;
               xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
                       write(node);
                       node.setNodeValueAsync("item number" + i, function (result) { });
                   }
@@ -553,7 +553,7 @@ methods:
           function (getByIdAsyncResult) {
           
           // Access the XML part.
-          var xmlPart = getByIdAsyncResult.value;
+          const xmlPart = getByIdAsyncResult.value;
           
           // Add namespaces to the namespace manager. These two calls result in two calls to Word.
           xmlPart.namespaceManager.addNamespaceAsync(
@@ -570,7 +570,7 @@ methods:
                       
                       // Get the first node returned by using the Xpath expression.
                       // This will be the subject element in this example.
-                      var subjectNode = getNodesAsyncResult.value[0];
+                      const subjectNode = getNodesAsyncResult.value[0];
                       
                       // Set the text value of the subject node and use the asyncContext. 
                       // This results in a call to the host.  The results are logged to the browser console.
@@ -650,10 +650,10 @@ methods:
       function setXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
+              const xmlPart = result.value;
               xmlPart.getNodesAsync('*', function (nodeResults) {
-                  for (i = 0; i < nodeResults.value.length; i++) {
-                      var node = nodeResults.value[i];
+                  for (let i = 0; i < nodeResults.value.length; i++) {
+                      const node = nodeResults.value[i];
                       node.setXmlAsync("<childNode>" + i + "</childNode>");
                   }
               });

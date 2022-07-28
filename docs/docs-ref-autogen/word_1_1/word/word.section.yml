@@ -114,7 +114,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy sectionsCollection object.
-          var mySections = context.document.sections;
+          const mySections = context.document.sections;
           
           // Queue a command to load the sections.
           context.load(mySections, 'body/style');
@@ -125,7 +125,7 @@ methods:
               
           // Create a proxy object the primary footer of the first section.
           // Note that the footer is a body object.
-              var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
+          const myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
           
           // Queue a command to insert text at the end of the footer.
           myFooter.insertText("This is a footer.", Word.InsertLocation.end);
@@ -203,7 +203,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy sectionsCollection object.
-          var mySections = context.document.sections;
+          const mySections = context.document.sections;
           
           // Queue a command to load the sections.
           context.load(mySections, 'body/style');
@@ -214,7 +214,7 @@ methods:
           
           // Create a proxy object the primary header of the first section.
           // Note that the header is a body object.
-          var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+          const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
           
           // Queue a command to insert text at the end of the header.
           myHeader.insertText("This is a header.", Word.InsertLocation.end);

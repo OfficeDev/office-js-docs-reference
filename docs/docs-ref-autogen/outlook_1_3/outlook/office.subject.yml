@@ -95,7 +95,7 @@ methods:
 
 
       function callback(asyncResult) {
-          var subject = asyncResult.value;
+          const subject = asyncResult.value;
       }
 
       ```

@@ -28,11 +28,11 @@ remarks: >-
 
   ```javascript
 
-  var item = Office.context.mailbox.item;
+  const item = Office.context.mailbox.item;
 
   // Get an array of strings that represent meeting suggestions in the current item's body.
 
-  var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+  const meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
 
   console.log("There are " + meetingSuggestions.length + " meeting suggestions.")
 

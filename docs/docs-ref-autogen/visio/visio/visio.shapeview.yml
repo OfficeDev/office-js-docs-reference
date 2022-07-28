@@ -48,8 +48,8 @@ properties:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
+              const activePage = ctx.document.getActivePage();
+              const shape = activePage.shapes.getItem(0);
               shape.view.highlight = { color: "#E7E7E7", width: 100 };
               return ctx.sync();
           }).catch(function(error) {
@@ -104,9 +104,9 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              var overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+              const activePage = ctx.document.getActivePage();
+              const shape = activePage.shapes.getItem(0);
+              const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
               return ctx.sync();
           }).catch(function(error) {
               console.log("Error: " + error);
@@ -246,8 +246,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
+              const activePage = ctx.document.getActivePage();
+              const shape = activePage.shapes.getItem(0);
               shape.view.removeOverlay(1);
               return ctx.sync();
           }).catch(function(error) {

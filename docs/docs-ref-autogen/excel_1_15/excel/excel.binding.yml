@@ -73,8 +73,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var binding = context.workbook.bindings.getItemAt(0);
-          var range = binding.getRange();
+          const binding = context.workbook.bindings.getItemAt(0);
+          const range = binding.getRange();
           range.load('cellCount');
           await context.sync();
 
@@ -100,8 +100,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var binding = context.workbook.bindings.getItemAt(0);
-          var table = binding.getTable();
+          const binding = context.workbook.bindings.getItemAt(0);
+          const table = binding.getTable();
           table.load('name');
           await context.sync();
 
@@ -127,8 +127,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var binding = context.workbook.bindings.getItemAt(0);
-          var text = binding.getText();
+          const binding = context.workbook.bindings.getItemAt(0);
+          const text = binding.getText();
           binding.load('text');
           await context.sync();
 
@@ -186,7 +186,7 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var binding = context.workbook.bindings.getItemAt(0);
+              const binding = context.workbook.bindings.getItemAt(0);
               binding.load('type');
               await context.sync();
 

@@ -63,8 +63,8 @@ properties:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var pages = ctx.document.pages;
-              var pageCount = pages.getCount();
+              const pages = ctx.document.pages;
+              const pageCount = pages.getCount();
               return ctx.sync().then(function () {
                   console.log("Pages Count: " +pageCount.value);
               });
@@ -113,8 +113,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              var activePage = document.getActivePage();
+              const document = ctx.document;
+              const activePage = document.getActivePage();
               activePage.load("name");
               return ctx.sync().then(function () {
                   console.log("pageName: " +activePage.name);
@@ -263,8 +263,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var document = ctx.document;
-              var pageName = "Page-1";
+              const document = ctx.document;
+              const pageName = "Page-1";
               document.setActivePage(pageName);
               return ctx.sync();
           }).catch(function(error) {
@@ -375,7 +375,7 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var document = ctx.document;
+              const document = ctx.document;
               document.startDataRefresh();
               return ctx.sync();
           }).catch(function(error) {

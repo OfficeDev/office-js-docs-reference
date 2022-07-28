@@ -52,9 +52,9 @@ methods:
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var duration = recurrence.seriesTime.getDuration();
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const duration = recurrence.seriesTime.getDuration();
       }
 
       ```
@@ -97,9 +97,9 @@ methods:
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getEndDate();
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getEndDate();
       }
 
       ```
@@ -143,9 +143,9 @@ methods:
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getEndTime();
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getEndTime();
       }
 
       ```
@@ -188,9 +188,9 @@ methods:
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getStartDate();
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getStartDate();
       }
 
       ```
@@ -232,7 +232,7 @@ methods:
 
       // instance in a recurring appointment series.
 
-      var seriesTimeObject = new SeriesTime();
+      const seriesTimeObject = new SeriesTime();
 
       seriesTimeObject.setDuration(120);
 
@@ -278,9 +278,9 @@ methods:
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          var endDate = recurrence.seriesTime.getStartTime();
+          const context = asyncResult.context;
+          const recurrence = asyncResult.value;
+          const endDate = recurrence.seriesTime.getStartTime();
       }
 
       ```
@@ -323,7 +323,7 @@ methods:
 
       // appointment series to November 2, 2017.
 
-      var seriesTimeObject = new SeriesTime();
+      const seriesTimeObject = new SeriesTime();
 
       seriesTimeObject.setEndDate(2017, 10, 2);
 
@@ -377,7 +377,7 @@ methods:
 
       // using ISO 8601 date standard.
 
-      var seriesTimeObject = new SeriesTime()
+      const seriesTimeObject = new SeriesTime()
 
       seriesTimeObject.setEndDate("2017-11-02");
 
@@ -423,7 +423,7 @@ methods:
 
       // appointment series to November 2, 2017.
 
-      var seriesTimeObject = new SeriesTime();
+      const seriesTimeObject = new SeriesTime();
 
       seriesTimeObject.setStartDate(2017, 10, 2);
 
@@ -477,7 +477,7 @@ methods:
 
       // using ISO 8601 date standard.
 
-      var seriesTimeObject = new SeriesTime()
+      const seriesTimeObject = new SeriesTime()
 
       seriesTimeObject.setStartDate("2017-11-02");
 
@@ -525,7 +525,7 @@ methods:
 
       // of a recurring appointment series to 1:30 PM.
 
-      var seriesTimeObject = new SeriesTime();
+      const seriesTimeObject = new SeriesTime();
 
       seriesTimeObject.setStartTime(13, 30);
 
@@ -581,7 +581,7 @@ methods:
 
       // of a recurring appointment series to 11:30 PM.
 
-      var seriesTimeObject = new SeriesTime()
+      const seriesTimeObject = new SeriesTime()
 
       seriesTimeObject.setStartTime("T23:30:00");
 

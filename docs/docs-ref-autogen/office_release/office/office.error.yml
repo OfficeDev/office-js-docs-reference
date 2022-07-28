@@ -36,7 +36,7 @@ properties:
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
                       if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
+                          const error = asyncResult.error;
                       write(error.name + ": " + error.code + " - " + error.message);
                   });
           }
@@ -69,7 +69,7 @@ properties:
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
                       if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
+                          const error = asyncResult.error;
                       write(error.name + ": " + error.message);
                   });
           }
@@ -102,7 +102,7 @@ properties:
               Office.context.document.setSelectedDataAsync("Hello World!",
                   function (asyncResult) {
                       if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
+                          const error = asyncResult.error;
                       write(error.name + ": " + error.message);
                   });
           }

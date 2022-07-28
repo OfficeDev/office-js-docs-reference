@@ -27,7 +27,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to make the current selection bold.
           selection.font.bold = true;
@@ -62,7 +62,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to change the font color of the current selection.
           selection.font.color = 'blue';
@@ -129,7 +129,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to highlight the current selection.
           selection.font.highlightColor = '#FFFF00'; // Yellow
@@ -176,7 +176,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to change the current selection's font name.
           selection.font.name = 'Arial';
@@ -209,7 +209,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to change the current selection's font size.
           selection.font.size = 20;
@@ -244,7 +244,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to strikethrough the font of the current selection.
           selection.font.strikeThrough = true;
@@ -305,7 +305,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a range proxy object for the current selection.
-          var selection = context.document.getSelection();
+          const selection = context.document.getSelection();
 
           // Queue a command to underline the current selection.
           selection.font.underline = Word.UnderlineType.single;

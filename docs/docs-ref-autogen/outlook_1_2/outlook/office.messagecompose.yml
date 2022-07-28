@@ -63,7 +63,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfBccRecipients = asyncResult.value;
+          const arrayOfBccRecipients = asyncResult.value;
       }
 
       ```
@@ -197,7 +197,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfCcRecipients = asyncResult.value;
+          const arrayOfCcRecipients = asyncResult.value;
       }
 
       ```
@@ -425,7 +425,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfToRecipients = asyncResult.value;
+          const arrayOfToRecipients = asyncResult.value;
       }
 
       ```
@@ -536,9 +536,9 @@ methods:
 
       function addAttachment() {
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
-          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          const attachmentURL = "https://contoso.com/rtm/icon.png";
           Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
       }
 
@@ -745,10 +745,10 @@ methods:
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
-          var itemId = "AAMkADI1...AAA=";
+          const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
       }
@@ -904,8 +904,8 @@ methods:
 
 
       function getCallback(asyncResult) {
-          var text = asyncResult.value.data;
-          var prop = asyncResult.value.sourceProperty;
+          const text = asyncResult.value.data;
+          const prop = asyncResult.value.sourceProperty;
 
           console.log("Selected text in " + prop + ": " + text);
       }
@@ -1058,15 +1058,15 @@ methods:
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              var mailbox = Office.context.mailbox;
+              const mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
+          const customProps = asyncResult.value;
+          const myProp = customProps.get("myProp");
 
           customProps.set("otherProp", "value");
           customProps.saveAsync(saveCallback);

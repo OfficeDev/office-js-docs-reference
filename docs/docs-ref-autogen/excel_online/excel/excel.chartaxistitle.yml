@@ -140,7 +140,7 @@ methods:
           ```typescript
           // Add "Values" as the title for the value Axis.
           await Excel.run(async (context) => { 
-              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
               chart.axes.valueAxis.title.text = "Values";
               await context.sync();
               

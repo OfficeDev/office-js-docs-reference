@@ -111,9 +111,9 @@ properties:
 
       // using the `setAsync` method of the `Time` object.
 
-      var endTime = new Date("3/14/2015");
+      const endTime = new Date("3/14/2015");
 
-      var options = {
+      const options = {
           // Pass information that can be used in the callback.
           asyncContext: {verb: "Set"}
       };
@@ -235,14 +235,14 @@ properties:
 
       ```javascript
 
-      var userContext = { value : 1 };
+      const userContext = { value : 1 };
 
       Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var location = asyncResult.value;
+          const context = asyncResult.context;
+          const location = asyncResult.value;
       }
 
       ```
@@ -321,7 +321,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
+          const arrayOfOptionalAttendeesRecipients = asyncResult.value;
       }
 
       ```
@@ -413,7 +413,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+          const arrayOfRequiredAttendeesRecipients = asyncResult.value;
           console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
       }
 
@@ -663,9 +663,9 @@ methods:
 
       function addAttachment() {
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
-          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          const attachmentURL = "https://contoso.com/rtm/icon.png";
           Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
       }
 
@@ -848,10 +848,10 @@ methods:
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
-          var itemId = "AAMkADI1...AAA=";
+          const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
       }
@@ -1015,15 +1015,15 @@ methods:
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              var mailbox = Office.context.mailbox;
+              const mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
+          const customProps = asyncResult.value;
+          const myProp = customProps.get("myProp");
 
           customProps.set("otherProp", "value");
           customProps.saveAsync(saveCallback);

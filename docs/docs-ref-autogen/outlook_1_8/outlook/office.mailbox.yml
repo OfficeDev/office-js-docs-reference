@@ -418,7 +418,7 @@ methods:
 
 
       function loadNewItem(eventArgs) {
-          var item = Office.context.mailbox.item;
+          const item = Office.context.mailbox.item;
 
           // Check that item is not null.
           if (item !== null) {
@@ -730,7 +730,7 @@ methods:
 
       // Represents 3:37 PM PDT on Monday, August 26, 2019.
 
-      var input = {
+      const input = {
           date: 26,
           hours: 15,
           milliseconds: 2,
@@ -744,7 +744,7 @@ methods:
 
       // result should be a Date object.
 
-      var result = Office.context.mailbox.convertToUtcClientTime(input);
+      const result = Office.context.mailbox.convertToUtcClientTime(input);
 
 
       // Output should be "2019-08-26T22:37:02.002Z".
@@ -1474,7 +1474,7 @@ methods:
 
       function getSubjectRequest(id) {
           // Return a GetItem operation request for the subject of the specified item.
-          var request =
+          const request =
               '<?xml version="1.0" encoding="utf-8"?>' +
               '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
               '               xmlns:xsd="http://www.w3.org/2001/XMLSchema"' +
@@ -1508,8 +1508,8 @@ methods:
 
 
       function callback(asyncResult)  {
-          var result = asyncResult.value;
-          var context = asyncResult.asyncContext;
+          const result = asyncResult.value;
+          const context = asyncResult.asyncContext;
 
           // Process the returned response here.
       }

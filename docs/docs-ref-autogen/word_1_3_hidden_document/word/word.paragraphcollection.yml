@@ -123,7 +123,7 @@ methods:
           await Word.run(async (context) => {
 
               // Create a proxy object for the paragraphs collection.
-              var paragraphs = context.document.body.paragraphs;
+              const paragraphs = context.document.body.paragraphs;
 
               // Queue a command to load the text and font properties.
               // It is best practice to always specify the property set. Otherwise, all properties are

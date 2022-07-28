@@ -1,7 +1,7 @@
 'Visio.Application#showBorders:member':
   - |-
     Visio.run(session, function (ctx) {
-        var application = ctx.document.application;
+        const application = ctx.document.application;
         application.showToolbars = false;
         application.showBorders = false;
         return ctx.sync();
@@ -14,15 +14,15 @@
 'Visio.Comment#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shapeName = "Position Belt.41";
-        var shape = activePage.shapes.getItem(shapeName);
-        var shapeComments= shape.comments;
+        const activePage = ctx.document.getActivePage();
+        const shapeName = "Position Belt.41";
+        const shape = activePage.shapes.getItem(shapeName);
+        const shapeComments= shape.comments;
         shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
-            for(var i = 0; i < shapeComments.items.length; i++)
+            for (let i = 0; i < shapeComments.items.length; i++)
             {
-                var comment = shapeComments.items[i];
+                const comment = shapeComments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
@@ -37,15 +37,15 @@
 'Visio.CommentCollection#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shapeName = "Position Belt.41";
-        var shape = activePage.shapes.getItem(shapeName);
-        var shapeComments= shape.comments;
+        const activePage = ctx.document.getActivePage();
+        const shapeName = "Position Belt.41";
+        const shape = activePage.shapes.getItem(shapeName);
+        const shapeComments= shape.comments;
         shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
-            for(var i = 0; i < shapeComments.items.length; i++)
+            for (let i = 0; i < shapeComments.items.length; i++)
             {
-                var comment = shapeComments.items[i];
+                const comment = shapeComments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
@@ -60,7 +60,7 @@
 'Visio.DataRefreshCompleteEventArgs:interface':
   - |-
     Visio.run(session, function (ctx) {
-        var document1 = ctx.document;
+        const document1 = ctx.document;
         eventResult1 = document1.onDataRefreshComplete.add(
             function (args){
                 console.log("Data Refresh Result: "+args.success);
@@ -78,8 +78,8 @@
 'Visio.Document#getActivePage:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var document = ctx.document;
-        var activePage = document.getActivePage();
+        const document = ctx.document;
+        const activePage = document.getActivePage();
         activePage.load("name");
         return ctx.sync().then(function () {
             console.log("pageName: " +activePage.name);
@@ -93,8 +93,8 @@
 'Visio.Document#pages:member':
   - |-
     Visio.run(session, function (ctx) {
-        var pages = ctx.document.pages;
-        var pageCount = pages.getCount();
+        const pages = ctx.document.pages;
+        const pageCount = pages.getCount();
         return ctx.sync().then(function () {
             console.log("Pages Count: " +pageCount.value);
         });
@@ -107,8 +107,8 @@
 'Visio.Document#setActivePage:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var document = ctx.document;
-        var pageName = "Page-1";
+        const document = ctx.document;
+        const pageName = "Page-1";
         document.setActivePage(pageName);
         return ctx.sync();
     }).catch(function(error) {
@@ -120,7 +120,7 @@
 'Visio.Document#startDataRefresh:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var document = ctx.document;
+        const document = ctx.document;
         document.startDataRefresh();
         return ctx.sync();
     }).catch(function(error) {
@@ -132,7 +132,7 @@
 'Visio.DocumentLoadCompleteEventArgs:interface':
   - |-
     Visio.run(session, function (ctx) {
-        var document1 = ctx.document;
+        const document1 = ctx.document;
         eventResult1 = document1.onDocumentLoadComplete.add(
             function (args){
                 console.log("Document Loaded");
@@ -150,7 +150,7 @@
 'Visio.DocumentView#disableHyperlinks:member':
   - |-
     Visio.run(session, function (ctx) {
-        var documentView = ctx.document.view;
+        const documentView = ctx.document.view;
         documentView.disableHyperlinks();
         return ctx.sync();
     }).catch(function(error) {
@@ -162,8 +162,8 @@
 'Visio.Highlight#color:member':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
         shape.view.highlight.color = "#E7E7E7";
         shape.view.highlight.width = 100;
         return ctx.sync();
@@ -176,9 +176,9 @@
 'Visio.Hyperlink#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
-        var hyperlink = shape.hyperlinks.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
+        const hyperlink = shape.hyperlinks.getItem(0);
         hyperlink.load();
         return ctx.sync().then(function() {
             console.log(hyperlink.description);
@@ -195,14 +195,14 @@
 'Visio.HyperlinkCollection#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shapeName = "Manager Belt";
-        var shape = activePage.shapes.getItem(shapeName);
-        var hyperlinks = shape.hyperlinks;
+        const activePage = ctx.document.getActivePage();
+        const shapeName = "Manager Belt";
+        const shape = activePage.shapes.getItem(shapeName);
+        const shapeHyperlinks = shape.hyperlinks;
         shapeHyperlinks.load(["description", "address", "subAddress"]);
             ctx.sync().then(function () {
-                for (var i = 0; i < shapeHyperlinks.items.length; i++) {
-                    var hyperlink = shapeHyperlinks.items[i];
+                for (let i = 0; i < shapeHyperlinks.items.length; i++) {
+                    const hyperlink = shapeHyperlinks.items[i];
                     console.log(
                         "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
                         hyperlink.subAddress);
@@ -217,8 +217,8 @@
 'Visio.PageCollection#getItem:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var pageName = 'Page-1';
-        var page = ctx.document.pages.getItem(pageName);
+        const pageName = 'Page-1';
+        const page = ctx.document.pages.getItem(pageName);
         page.activate();
         return ctx.sync();
     }).catch(function(error) {
@@ -230,7 +230,7 @@
 'Visio.PageLoadCompleteEventArgs:interface':
   - |-
     Visio.run(session, function (ctx) {
-        var document1= ctx.document;
+        const document1= ctx.document;
         eventResult1 = document1.onPageLoadComplete.add(
             function (args){
                 console.log("Page name: "+args.pageName);
@@ -248,8 +248,8 @@
 'Visio.PageView#centerViewportOnShape:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
         activePage.view.centerViewportOnShape(shape.Id);
         return ctx.sync();
     }).catch(function(error) {
@@ -261,7 +261,7 @@
 'Visio.PageView#zoom:member':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
+        const activePage = ctx.document.getActivePage();
         activePage.view.zoom = 300;
         return ctx.sync();
     }).catch(function(error) {
@@ -272,13 +272,13 @@
     });
 'Visio.SelectionChangedEventArgs:interface':
   - >-
-    var eventResult; // Global Variable to store the EventHandlerResult returned
+    let eventResult; // Global variable to store the EventHandlerResult returned
     on attaching handler.
 
 
     function AttachHandler() {
         Visio.run(session, function(ctx) {
-            var doc = ctx.document;
+            const doc = ctx.document;
             eventResult = doc.onSelectionChanged.add(
                 function (args) {
                     console.log("Selected Shape Name: "+args.shapeNames[0]);
@@ -321,9 +321,9 @@
 'Visio.Shape#load:member(2)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shapeName = "Sample Name";
-        var shape = activePage.shapes.getItem(shapeName);
+        const activePage = ctx.document.getActivePage();
+        const shapeName = "Sample Name";
+        const shape = activePage.shapes.getItem(shapeName);
         shape.load(["name", "id", "text", "select"]);
         return ctx.sync().then(function () {
             console.log(shape.name);
@@ -339,8 +339,8 @@
     });
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
@@ -352,8 +352,8 @@
 'Visio.ShapeCollection#getCount:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var numShapesActivePage = activePage.shapes.getCount();
+        const activePage = ctx.document.getActivePage();
+        const numShapesActivePage = activePage.shapes.getCount();
         return ctx.sync().then(function () {
             console.log("Shapes Count: " + numShapesActivePage.value);
         });
@@ -366,9 +366,9 @@
 'Visio.ShapeDataItem#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
-        var shapeDataItem = shape.shapeDataItems.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
+        const shapeDataItem = shape.shapeDataItems.getItem(0);
         shapeDataItem.load(["label", "value"]);
             return ctx.sync().then(function() {
                 console.log(shapeDataItem.label);
@@ -383,12 +383,12 @@
 'Visio.ShapeDataItemCollection#load:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
-        var shapeDataItems = shape.shapeDataItems;
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
+        const shapeDataItems = shape.shapeDataItems;
         shapeDataItems.load(["label", "value"]);
         return ctx.sync().then(function() {
-            for (var i = 0; i < shapeDataItems.items.length; i++) {
+            for (let i = 0; i < shapeDataItems.items.length; i++) {
                 console.log(shapeDataItems.items[i].label);
                 console.log(shapeDataItems.items[i].value);
             }
@@ -402,7 +402,7 @@
 'Visio.ShapeMouseEnterEventArgs:interface':
   - |-
     Visio.run(session, function (ctx) {
-        var document1= ctx.document;
+        const document1= ctx.document;
         eventResult2 = document1.onShapeMouseEnter.add(
         function (args) {            
             console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
@@ -419,7 +419,7 @@
 'Visio.ShapeMouseLeaveEventArgs:interface':
   - |-
     Visio.run(session, function (ctx) {
-        var document1= ctx.document;
+        const document1= ctx.document;
         eventResult2 = document1.onShapeMouseLeave.add(
             function (args){            
                 console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));
@@ -436,9 +436,9 @@
 'Visio.ShapeView#addOverlay:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
-        var overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
+        const overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -449,8 +449,8 @@
 'Visio.ShapeView#highlight:member':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
@@ -462,8 +462,8 @@
 'Visio.ShapeView#removeOverlay:member(1)':
   - |-
     Visio.run(session, function (ctx) {
-        var activePage = ctx.document.getActivePage();
-        var shape = activePage.shapes.getItem(0);
+        const activePage = ctx.document.getActivePage();
+        const shape = activePage.shapes.getItem(0);
         shape.view.removeOverlay(1);
         return ctx.sync();
     }).catch(function(error) {
