@@ -9808,9 +9808,6 @@ Word.ErrorCodes,notImplemented,EnumField,Missing,false
 Word.ErrorCodes,searchDialogIsOpen,EnumField,Missing,false
 Word.ErrorCodes,searchStringInvalidOrTooLong,EnumField,Missing,false
 Word.EventType,N/A,Enum,Good,false
-Word.EventType,annotationAdded,EnumField,Fine,false
-Word.EventType,annotationChanged,EnumField,Fine,false
-Word.EventType,annotationDeleted,EnumField,Fine,false
 Word.EventType,contentControlAdded,EnumField,Fine,false
 Word.EventType,contentControlDataChanged,EnumField,Fine,false
 Word.EventType,contentControlDeleted,EnumField,Fine,false
