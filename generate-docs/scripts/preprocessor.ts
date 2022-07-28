@@ -33,8 +33,8 @@ tryCatch(async () => {
         case "DT":
             forceRebuild = false;
         case "DT+":
-            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/f16109e51300f409524b9a8868057950de25b2b6/types/office-js/index.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/f16109e51300f409524b9a8868057950de25b2b6/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;

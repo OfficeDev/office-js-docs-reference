@@ -2276,7 +2276,6 @@ export declare namespace Word {
     
     
     
-    
     /**
      * Specifies supported content control types and subtypes.
      *

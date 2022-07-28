@@ -6288,33 +6288,6 @@ export declare namespace Word {
         endnote = "Endnote",
     }
     /**
-     * Provides information about the type of a raised event.
-     *
-     * @remarks
-     * [Api set: WordApiOnline 1.1]
-     */
-    enum EventType {
-        /**
-        /**
-         * AnnotationAdded represents the event an annotation has been added to the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationAdded = "AnnotationAdded",
-        /**
-         * AnnotationChanged represents the event an annotation has been updated in the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationChanged = "AnnotationChanged",
-        /**
-         * AnnotationDeleted represents the event an annotation has been deleted from the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationDeleted = "AnnotationDeleted",
-    }
-    /**
      * Specifies supported content control types and subtypes.
      *
      * @remarks
