@@ -111,9 +111,9 @@ properties:
 
       // using the `setAsync` method of the `Time` object.
 
-      var endTime = new Date("3/14/2015");
+      const endTime = new Date("3/14/2015");
 
-      var options = {
+      const options = {
           // Pass information that can be used in the callback.
           asyncContext: {verb: "Set"}
       };
@@ -155,7 +155,7 @@ properties:
           return;
         }
 
-        var end = result.value; // Set end to current start date and time.
+        const end = result.value; // Set end to current start date and time.
         end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
         Office.context.mailbox.item.end.setAsync(end, (result) => {
           if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -235,14 +235,14 @@ properties:
 
       ```javascript
 
-      var userContext = { value : 1 };
+      const userContext = { value : 1 };
 
       Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
 
 
       function callback(asyncResult) {
-          var context = asyncResult.context;
-          var location = asyncResult.value;
+          const context = asyncResult.context;
+          const location = asyncResult.value;
       }
 
       ```
@@ -267,7 +267,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
-      var location = "my office";
+      const location = "my office";
 
       Office.context.mailbox.item.location.setAsync(location, (result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -321,7 +321,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
+          const arrayOfOptionalAttendeesRecipients = asyncResult.value;
       }
 
       ```
@@ -333,8 +333,8 @@ properties:
 
       Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var apptOptionalAttendees = asyncResult.value;
-          for (var i = 0; i < apptOptionalAttendees.length; i++) {
+          const apptOptionalAttendees = asyncResult.value;
+          for (let i = 0; i < apptOptionalAttendees.length; i++) {
             console.log(
               "Optional attendees: " +
                 apptOptionalAttendees[i].displayName +
@@ -356,10 +356,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
-      var email = $("#emailOptional")
+      const email = $("#emailOptional")
         .val()
         .toString();
-      var emailArray = [email];
+      const emailArray = [email];
 
       Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -413,7 +413,7 @@ properties:
 
 
       function callback(asyncResult) {
-          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+          const arrayOfRequiredAttendeesRecipients = asyncResult.value;
           console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
       }
 
@@ -426,8 +426,8 @@ properties:
 
       Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          var apptRequiredAttendees = asyncResult.value;
-          for (var i = 0; i < apptRequiredAttendees.length; i++) {
+          const apptRequiredAttendees = asyncResult.value;
+          for (let i = 0; i < apptRequiredAttendees.length; i++) {
             console.log(
               "Required attendees: " +
                 apptRequiredAttendees[i].displayName +
@@ -449,10 +449,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
-      var email = $("#emailRequired")
+      const email = $("#emailRequired")
         .val()
         .toString();
-      var emailArray = [email];
+      const emailArray = [email];
 
       Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -521,7 +521,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
-      var start = new Date(); // Represents current date and time.
+      const start = new Date(); // Represents current date and time.
 
       start.setDate(start.getDate() + 2); // Add 2 days to current date.
 
@@ -663,9 +663,9 @@ methods:
 
       function addAttachment() {
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
-          var attachmentURL = "https://contoso.com/rtm/icon.png";
+          const attachmentURL = "https://contoso.com/rtm/icon.png";
           Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
       }
 
@@ -676,7 +676,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
-      var attachmentUrl = $("#attachmentUrl").val();
+      const attachmentUrl = $("#attachmentUrl").val();
 
       Office.context.mailbox.item.addFileAttachmentAsync(
           attachmentUrl,
@@ -848,10 +848,10 @@ methods:
 
       function addAttachment() {
           // EWS ID of item to attach (shortened for readability).
-          var itemId = "AAMkADI1...AAA=";
+          const itemId = "AAMkADI1...AAA=";
 
           // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
+          const options = { 'asyncContext': { var1: 1, var2: 2 } };
 
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
       }
@@ -863,7 +863,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
 
-      var attachmentItemId = $("#attachmentItemId").val();
+      const attachmentItemId = $("#attachmentItemId").val();
 
       Office.context.mailbox.item.addItemAttachmentAsync(
           attachmentItemId,
@@ -1015,15 +1015,15 @@ methods:
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              var mailbox = Office.context.mailbox;
+              const mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
+          const customProps = asyncResult.value;
+          const myProp = customProps.get("myProp");
 
           customProps.set("otherProp", "value");
           customProps.saveAsync(saveCallback);
@@ -1045,11 +1045,11 @@ methods:
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Loaded following custom properties:");
           customProps = result.value;
-          var dataKey = Object.keys(customProps)[0];
-          var data = customProps[dataKey];
-          for (var propertyName in data)
+          const dataKey = Object.keys(customProps)[0];
+          const data = customProps[dataKey];
+          for (let propertyName in data)
           {
-            var propertyValue = data[propertyName];
+            let propertyValue = data[propertyName];
             console.log(`${propertyName}: ${propertyValue}`);
           }              
         }

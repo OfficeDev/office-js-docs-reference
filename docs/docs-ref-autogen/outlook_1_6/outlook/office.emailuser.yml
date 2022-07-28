@@ -37,15 +37,15 @@ remarks: >-
   function myGetTaskSuggestions()
 
   {
-      var htmlText = "";
+      let htmlText = "";
 
       // Gets an array of TaskSuggestion objects, each array element 
       // containing an instance of a task suggestion entity from 
       // the current item.
-      var tasksArray = _MyEntities.taskSuggestions;
+      const tasksArray = _MyEntities.taskSuggestions;
 
       // Iterates through each instance of a task suggestion.
-      for (var i = 0; i < tasksArray.length; i++)
+      for (let i = 0; i < tasksArray.length; i++)
       {
           // Gets the string that was identified as a task suggestion.
           htmlText += "TaskString : <span>" + 
@@ -54,8 +54,8 @@ remarks: >-
           // Gets an array of assignees for that instance of a task 
           // suggestion. Each assignee is represented by an 
           // EmailUser object.
-          var assigneesArray = tasksArray[i].assignees;
-          for (var j = 0; j < assigneesArray.length; j++)
+          let assigneesArray = tasksArray[i].assignees;
+          for (let j = 0; j < assigneesArray.length; j++)
           {
               htmlText += "Assignee : ( ";
               // Gets the displayName property of the assignee.

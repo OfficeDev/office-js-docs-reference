@@ -114,11 +114,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "F:G";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
-          var rangeFill = range.format.fill;
+          const sheetName = "Sheet1";
+          const rangeAddress = "F:G";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const rangeFill = range.format.fill;
           rangeFill.clear();
           await context.sync(); 
       });
@@ -174,11 +174,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F:G";
-              var worksheet = context.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var rangeFill = range.format.fill;
+              const sheetName = "Sheet1";
+              const rangeAddress = "F:G";
+              const worksheet = context.workbook.worksheets.getItem(sheetName);
+              const range = worksheet.getRange(rangeAddress);
+              const rangeFill = range.format.fill;
               rangeFill.load('color');
               await context.sync();
               console.log(rangeFill.color);

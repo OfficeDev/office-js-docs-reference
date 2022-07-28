@@ -381,7 +381,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to clear the contents of the proxy range object.
           range.clear();
@@ -432,7 +432,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to delete the range object.
           range.delete();
@@ -544,10 +544,10 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to get the HTML of the current selection.
-          var html = range.getHtml();
+          const html = range.getHtml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -641,10 +641,10 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to get the OOXML of the current selection.
-          var ooxml = range.getOoxml();
+          const ooxml = range.getOoxml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -847,7 +847,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert a page break after the selected text.
           range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
@@ -944,9 +944,9 @@ methods:
           await context.sync();
 
         if (customerContentControls.items.length === 0) {
-          for (var i = 0; i < results.items.length; i++) { 
+          for (let i = 0; i < results.items.length; i++) { 
               results.items[i].font.bold = true;
-              var cc = results.items[i].insertContentControl();
+              let cc = results.items[i].insertContentControl();
               cc.tag = "customer";  // This value is used in the next step of this sample.
               cc.title = "Customer Name " + i;
           }
@@ -995,7 +995,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert base64 encoded .docx at the beginning of the range.
           // You'll need to implement getBase64() to make this work.
@@ -1098,7 +1098,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert HTML in to the beginning of the range.
           range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
@@ -1203,7 +1203,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert OOXML in to the beginning of the range.
           range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -1267,7 +1267,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert the paragraph after the range.
           range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
@@ -1386,7 +1386,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert the paragraph at the end of the range.
           range.insertText('New text inserted into the range.', Word.InsertLocation.end);
@@ -1592,7 +1592,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert HTML in to the beginning of the range.
           range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);

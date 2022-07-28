@@ -15,7 +15,7 @@ remarks: |-
   await Word.run(async (context) => {
 
       // Create a range proxy object for the current selection.
-      var selection = context.document.getSelection();
+      const selection = context.document.getSelection();
 
       // Queue a command to underline the current selection.
       selection.font.underline = Word.UnderlineType.single;

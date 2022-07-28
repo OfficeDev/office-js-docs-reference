@@ -331,10 +331,10 @@ methods:
           ```typescript
           // Select all of the range's format properties.
           await Excel.run(async (context) => { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F:G";
-              var worksheet = context.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
+              const sheetName = "Sheet1";
+              const rangeAddress = "F:G";
+              const worksheet = context.workbook.worksheets.getItem(sheetName);
+              const range = worksheet.getRange(rangeAddress);
               range.load(["format/*", "format/fill", "format/borders", "format/font"]);
               await context.sync();
               

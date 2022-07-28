@@ -61,8 +61,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var numShapesActivePage = activePage.shapes.getCount();
+              const activePage = ctx.document.getActivePage();
+              const numShapesActivePage = activePage.shapes.getCount();
               return ctx.sync().then(function () {
                   console.log("Shapes Count: " + numShapesActivePage.value);
               });

@@ -3,7 +3,7 @@ OneNote.Application#getActiveNotebook:member(1):
     await OneNote.run(async (context) => {
             
         // Get the active notebook.
-        var notebook = context.application.getActiveNotebook();
+        const notebook = context.application.getActiveNotebook();
                 
         // Queue a command to load the notebook.
         // For best performance, request specific properties.
@@ -22,7 +22,7 @@ OneNote.Application#getActiveNotebookOrNull:member(1):
     await OneNote.run(async (context) => {
     
         // Get the active notebook.
-        var notebook = context.application.getActiveNotebookOrNull();
+        const notebook = context.application.getActiveNotebookOrNull();
     
         // Queue a command to load the notebook.
         // For best performance, request specific properties.
@@ -42,7 +42,7 @@ OneNote.Application#getActiveOutline:member(1):
     await OneNote.run(async (context) => {
     
         // get active outline.
-        var outline = context.application.getActiveOutline();
+        const outline = context.application.getActiveOutline();
     
         // Queue a command to load the id of the outline.
         outline.load('id');
@@ -58,7 +58,7 @@ OneNote.Application#getActiveOutlineOrNull:member(1):
     await OneNote.run(async (context) => {
     
         // get active outline.
-        var outline = context.application.getActiveOutlineOrNull();
+        const outline = context.application.getActiveOutlineOrNull();
     
         // Queue a command to load the id of the outline.
         outline.load('id');
@@ -74,7 +74,7 @@ OneNote.Application#getActivePage:member(1):
     await OneNote.run(async (context) => {
             
         // Get the active page.
-        var page = context.application.getActivePage();
+        const page = context.application.getActivePage();
                 
         // Queue a command to load the page.
         // For best performance, request specific properties.
@@ -92,7 +92,7 @@ OneNote.Application#getActivePageOrNull:member(1):
     await OneNote.run(async (context) => {
     
         // Get the active page.
-        var page = context.application.getActivePageOrNull();
+        const page = context.application.getActivePageOrNull();
     
         // Queue a command to load the page.
         // For best performance, request specific properties.
@@ -112,7 +112,7 @@ OneNote.Application#getActiveSection:member(1):
     await OneNote.run(async (context) => {
             
         // Get the active section.
-        var section = context.application.getActiveSection();
+        const section = context.application.getActiveSection();
                 
         // Queue a command to load the section.
         // For best performance, request specific properties.
@@ -130,7 +130,7 @@ OneNote.Application#getActiveSectionOrNull:member(1):
     await OneNote.run(async (context) => {
     
         // Get the active section.
-        var section = context.application.getActiveSectionOrNull();
+        const section = context.application.getActiveSectionOrNull();
     
         // Queue a command to load the section.
         // For best performance, request specific properties.
@@ -149,7 +149,7 @@ OneNote.Application#navigateToPage:member(1):
     await OneNote.run(async (context) => {
             
         // Get the pages in the current section.
-        var pages = context.application.getActiveSection().pages;
+        const pages = context.application.getActiveSection().pages;
                 
         // Queue a command to load the pages.
         // For best performance, request specific properties.
@@ -159,7 +159,7 @@ OneNote.Application#navigateToPage:member(1):
         await context.sync()
                         
         // This example loads the first page in the section.
-        var page = pages.items[0];
+        const page = pages.items[0];
                     
         // Open the page in the application.
         context.application.navigateToPage(page);
@@ -172,7 +172,7 @@ OneNote.Application#navigateToPageWithClientUrl:member(1):
     await OneNote.run(async (context) => {
     
         // Get the pages in the current section.
-        var pages = context.application.getActiveSection().pages;
+        const pages = context.application.getActiveSection().pages;
     
         // Queue a command to load the pages.
         // For best performance, request specific properties.
@@ -182,7 +182,7 @@ OneNote.Application#navigateToPageWithClientUrl:member(1):
         await context.sync()
     
         // This example loads the first page in the section.
-        var page = pages.items[0];
+        const page = pages.items[0];
 
         // Open the page in the application.
         context.application.navigateToPageWithClientUrl(page.clientUrl);
@@ -195,8 +195,8 @@ OneNote.FloatingInk#load:member(2):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var page = context.application.getActivePage();
-        var contents = page.contents;
+        const page = context.application.getActivePage();
+        const contents = page.contents;
         
         // Load page contents and their types.
         page.load('contents/type');
@@ -221,18 +221,18 @@ OneNote.FloatingInk#load:member(2):
     });
 OneNote.Image#getBase64Image:member(1):
   - |-
-    var image = null;
-    var imageString;
+    let image = null;
+    let imageString;
     
     await OneNote.run(async (context) => {
         // Get the current outline.
-        var outline = context.application.getActiveOutline();
+        const outline = context.application.getActiveOutline();
         
         // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
-        for (var i=0; i < outline.paragraphs.items.length; i++) {
-            var paragraph = outline.paragraphs.items[i];
+        for (let i=0; i < outline.paragraphs.items.length; i++) {
+            const paragraph = outline.paragraphs.items[i];
             if (paragraph.type == "Image")
             {
                 image = paragraph.image;
@@ -250,15 +250,15 @@ OneNote.Image#load:member(2):
   - |-
     await OneNote.run(async (context) => {
         // Get the current outline.
-        var outline = context.application.getActiveOutline();
-        var image = null;
+        const outline = context.application.getActiveOutline();
+        let image = null;
         
         // Queue a command to load paragraphs and their types.
         outline.load("paragraphs/type")
         await context.sync();
 
-        for (var i=0; i < outline.paragraphs.items.length; i++) {
-            var paragraph = outline.paragraphs.items[i];
+        for (let i=0; i < outline.paragraphs.items.length; i++) {
+            const paragraph = outline.paragraphs.items[i];
             if (paragraph.type == "Image")
             {
                 image = paragraph.image;
@@ -279,18 +279,18 @@ OneNote.Image#load:member(2):
     });
 OneNote.Image#ocrData:member:
   - |-
-    var image = null;
+    let image = null;
     
     await OneNote.run(async (context) => {
         // Get the current outline.
-        var outline = context.application.getActiveOutline();
+        const outline = context.application.getActiveOutline();
     
         // Queue a command to load paragraphs and their types.
         outline.load("paragraphs")
         await context.sync();
 
-        for (var i=0; i < outline.paragraphs.items.length; i++) {
-            var paragraph = outline.paragraphs.items[i];
+        for (let i=0; i < outline.paragraphs.items.length; i++) {
+            const paragraph = outline.paragraphs.items[i];
             if (paragraph.type == "Image")
             {
                 image = paragraph.image;
@@ -311,10 +311,10 @@ OneNote.Notebook#addSection:member(1):
     await OneNote.run(async (context) => {
     
         // Gets the active notebook.
-        var notebook = context.application.getActiveNotebook();
+        const notebook = context.application.getActiveNotebook();
     
         // Queue a command to add a new section.
-        var section = notebook.addSection("Sample section");
+        const section = notebook.addSection("Sample section");
         
         // Queue a command to load the new section. This example reads the name property later.
         section.load("name");
@@ -328,10 +328,10 @@ OneNote.Notebook#addSectionGroup:member(1):
     await OneNote.run(async (context) => {
     
         // Gets the active notebook.
-        var notebook = context.application.getActiveNotebook();
+        const notebook = context.application.getActiveNotebook();
     
         // Queue a command to add a new section group.
-        var sectionGroup = notebook.addSectionGroup("Sample section group");
+        const sectionGroup = notebook.addSectionGroup("Sample section group");
     
         // Queue a command to load the new section group.
         sectionGroup.load();
@@ -344,8 +344,8 @@ OneNote.Notebook#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
         // Get the current notebook.
-        var notebook = context.application.getActiveNotebook();
-        var restApiId = notebook.getRestApiId();
+        const notebook = context.application.getActiveNotebook();
+        const restApiId = notebook.getRestApiId();
     
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
@@ -360,7 +360,7 @@ OneNote.Notebook#load:member(2):
     await OneNote.run(async (context) => {
             
         // Get the current notebook.
-        var notebook = context.application.getActiveNotebook();
+        const notebook = context.application.getActiveNotebook();
                 
         // Queue a command to load the notebook.
         // For best performance, request specific properties.
@@ -378,7 +378,7 @@ OneNote.NotebookCollection#getByName:member(1):
     await OneNote.run(async (context) => {
     
         // Get the notebooks that are open in the application instance and have the specified name.
-        var notebooks = context.application.notebooks.getByName("Homework");
+        const notebooks = context.application.notebooks.getByName("Homework");
     
         // Queue a command to load the notebooks.
         // For best performance, request specific properties.
@@ -399,7 +399,7 @@ OneNote.NotebookCollection#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the notebooks that are open in the application instance and have the specified name.
-        var notebooks = context.application.notebooks.getByName("Homework");
+        const notebooks = context.application.notebooks.getByName("Homework");
     
         // Queue a command to load the notebooks.
         // For best performance, request specific properties.
@@ -423,10 +423,10 @@ OneNote.Outline#appendHtml:member(1):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var activePage = context.application.getActivePage();
+        const activePage = context.application.getActivePage();
     
         // Get pageContents of the activePage.
-        var pageContents = activePage.contents;
+        const pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
         context.load(pageContents);
@@ -436,7 +436,7 @@ OneNote.Outline#appendHtml:member(1):
         if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
         {
             // First item is an outline.
-            let outline = pageContents.items[0].outline;
+            const outline = pageContents.items[0].outline;
 
             // Queue a command to append a paragraph to the outline.
             outline.appendHtml("<p>new paragraph</p>");
@@ -450,10 +450,10 @@ OneNote.Outline#appendTable:member(1):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var activePage = context.application.getActivePage();
+        const activePage = context.application.getActivePage();
     
         // Get pageContents of the activePage.
-        var pageContents = activePage.contents;
+        const pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
         context.load(pageContents);
@@ -462,7 +462,7 @@ OneNote.Outline#appendTable:member(1):
         await context.sync();
         if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
             // First item is an outline.
-            var outline = pageContents.items[0].outline;
+            const outline = pageContents.items[0].outline;
 
             // Queue a command to append a paragraph to the outline.
             outline.appendTable(2, 2, [["1", "2"],["3", "4"]]);
@@ -476,10 +476,10 @@ OneNote.Page#addOutline:member(1):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var page = context.application.getActivePage();
+        const page = context.application.getActivePage();
     
         // Queue a command to add an outline with given html.
-        var outline = page.addOutline(200, 200,
+        const outline = page.addOutline(200, 200,
     "<p>Images and a table below:</p> \
      <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
      <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
@@ -503,23 +503,23 @@ OneNote.Page#addOutline:member(1):
 OneNote.Page#copyToSection:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
+        const app = context.application;
         
         // Gets the active notebook.
-        var notebook = app.getActiveNotebook();
+        const notebook = app.getActiveNotebook();
         
         // Gets the active page.
-        var page = app.getActivePage();
+        const page = app.getActivePage();
         
         // Queue a command to load sections under the notebook.
         notebook.load('sections');
         
-        var newPage;
+        let newPage;
         
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var section = notebook.sections.items[0];
+        const section = notebook.sections.items[0];
         
         // Copy page to the section.
         newPage = page.copyToSection(section);
@@ -532,8 +532,8 @@ OneNote.Page#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
         // Get the current page.
-        var page = context.application.getActivePage();
-        var restApiId = page.getRestApiId();
+        const page = context.application.getActivePage();
+        const restApiId = page.getRestApiId();
     
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
@@ -548,10 +548,10 @@ OneNote.Page#insertPageAsSibling:member(2):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var activePage = context.application.getActivePage();
+        const activePage = context.application.getActivePage();
     
         // Queue a command to add a new page after the active page.
-        var newPage = activePage.insertPageAsSibling("After", "Next Page");
+        const newPage = activePage.insertPageAsSibling("After", "Next Page");
     
         // Queue a command to load the newPage to access its data.
         context.load(newPage);
@@ -565,18 +565,18 @@ OneNote.Page#load:member(2):
     await OneNote.run(async (context) => {
     
         // Gets the active page.
-        var activePage = context.application.getActivePage();
+        const activePage = context.application.getActivePage();
     
         // Queue a command to add a new page after the active page.
-        var pageContents = activePage.contents;
+        const pageContents = activePage.contents;
     
         // Queue a command to load the pageContents to access its data.
         context.load(pageContents);
     
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync()
-        for(var i=0; i < pageContents.items.length; i++) {
-            var pageContent = pageContents.items[i];
+        for(let i=0; i < pageContents.items.length; i++) {
+            const pageContent = pageContents.items[i];
             if (pageContent.type == "Outline") {
                 console.log("Found an outline");
             } else if (pageContent.type == "Image") {
@@ -591,7 +591,7 @@ OneNote.PageCollection#getByTitle:member(1):
     await OneNote.run(async (context) => {
     
         // Get all the pages in the current section.
-        var allPages = context.application.getActiveSection().pages;
+        const allPages = context.application.getActiveSection().pages;
     
         // Queue a command to load the pages.
         // For best performance, request specific properties.
@@ -601,7 +601,7 @@ OneNote.PageCollection#getByTitle:member(1):
         await context.sync();
     
         // Get the sections with the specified name.
-        var todoPages = allPages.getByTitle("Todo list");
+        const todoPages = allPages.getByTitle("Todo list");
 
         // Queue a command to load the section.
         // For best performance, request specific properties.
@@ -620,7 +620,7 @@ OneNote.PageCollection#load:member(2):
     await OneNote.run(async (context) => {
         
         // Get the pages in the current section.
-        var pages = context.application.getActiveSection().pages;
+        const pages = context.application.getActiveSection().pages;
         
         // Queue a command to load the id and title for each page.
         pages.load('id,title');
@@ -638,10 +638,10 @@ OneNote.PageContent#delete:member(1):
   - |-
     await OneNote.run(async (context) => {
     
-        var page = context.application.getActivePage();
-        var pageContents = page.contents;
+        const page = context.application.getActivePage();
+        const pageContents = page.contents;
     
-        var firstPageContent = pageContents.getItemAt(0);
+        const firstPageContent = pageContents.getItemAt(0);
         firstPageContent.load('type');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -655,9 +655,9 @@ OneNote.PageContentCollection#getItemAt:member(1):
   - |-
     await OneNote.run(async (context) => {
     
-        var page = context.application.getActivePage();
-        var pageContents = page.contents;
-        var firstPageContent = pageContents.getItemAt(0);
+        const page = context.application.getActivePage();
+        const pageContents = page.contents;
+        const firstPageContent = pageContents.getItemAt(0);
         firstPageContent.load('type');
     
         // Run the queued commands, and return a promise to indicate task completion.
@@ -671,7 +671,7 @@ OneNote.PageContentCollection#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Queue a command to load the type of each pageContent.
         pageContents.load("type");
@@ -688,14 +688,14 @@ OneNote.Paragraph#delete:member(1):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
-        var pageContent = pageContents.getItemAt(0);
+        const pageContent = pageContents.getItemAt(0);
         
-        var paragraphs = pageContent.outline.paragraphs;
+        const paragraphs = pageContent.outline.paragraphs;
         
-        var firstParagraph = paragraphs.getItemAt(0);
+        const firstParagraph = paragraphs.getItemAt(0);
         
         // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
@@ -714,13 +714,13 @@ OneNote.Paragraph#insertHtmlAsSibling:member(1):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
-        var pageContent = pageContents.getItemAt(0);
-        var paragraphs = pageContent.outline.paragraphs;
-        var firstParagraph = paragraphs.getItemAt(0);
+        const pageContent = pageContents.getItemAt(0);
+        const paragraphs = pageContent.outline.paragraphs;
+        const firstParagraph = paragraphs.getItemAt(0);
     
         // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
@@ -740,13 +740,13 @@ OneNote.Paragraph#insertImageAsSibling:member(1):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page.
         // Assuming its an outline, get the outline's paragraphs.
-        var pageContent = pageContents.getItemAt(0);
-        var paragraphs = pageContent.outline.paragraphs;
-        var firstParagraph = paragraphs.getItemAt(0);
+        const pageContent = pageContents.getItemAt(0);
+        const paragraphs = pageContent.outline.paragraphs;
+        const firstParagraph = paragraphs.getItemAt(0);
     
         // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
@@ -766,12 +766,12 @@ OneNote.Paragraph#insertRichTextAsSibling:member(1):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page assuming its an outline, get the outline's paragraphs.
-        var pageContent = pageContents.getItemAt(0);
-        var paragraphs = pageContent.outline.paragraphs;
-        var firstParagraph = paragraphs.getItemAt(0);
+        const pageContent = pageContents.getItemAt(0);
+        const paragraphs = pageContent.outline.paragraphs;
+        const firstParagraph = paragraphs.getItemAt(0);
     
         // Queue a command to load the id and type of the first paragraph.
         firstParagraph.load("id,type");
@@ -791,14 +791,14 @@ OneNote.Paragraph#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
         
         // Queue a command to load the outline property of each pageContent.
         pageContents.load("outline");
             
         // Get the first PageContent on the page, and then get its Outline.
-        var pageContent = pageContents._GetItem(0);
-        var paragraphs = pageContent.outline.paragraphs;
+        const pageContent = pageContents._GetItem(0);
+        const paragraphs = pageContent.outline.paragraphs;
                 
         // Queue a command to load the id and type of each paragraph.
         paragraphs.load("id,type");
@@ -816,13 +816,13 @@ OneNote.ParagraphCollection#getItemAt:member(1):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page, and then get its Outline's first paragraph.
-        var pageContent = pageContents.getItemAt(0);
-        var paragraphs = pageContent.outline.paragraphs;
+        const pageContent = pageContents.getItemAt(0);
+        const paragraphs = pageContent.outline.paragraphs;
     
-        var firstParagraph = paragraphs.getItemAt(0);
+        const firstParagraph = paragraphs.getItemAt(0);
     
         // Queue a command to load the id and type properties of this paragraph.
         firstParagraph.load("id,type");
@@ -840,18 +840,18 @@ OneNote.ParagraphCollection#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page, and then get its Outline's first paragraph.
-        var pageContent = pageContents.getItem(0);
-        var paragraphs = pageContent.outline.paragraphs;
+        const pageContent = pageContents.getItem(0);
+        const paragraphs = pageContent.outline.paragraphs;
         
         // Queue a command to load the id and type of each paragraph.
         paragraphs.load("id,type");
     
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        var firstParagraph = paragraphs.items[0];
+        const firstParagraph = paragraphs.items[0];
         // Write text from first paragraph to console.
         console.log(
             "First Paragraph found with id : " + 
@@ -862,12 +862,12 @@ OneNote.RichText#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the collection of pageContent items from the page.
-        var pageContents = context.application.getActivePage().contents;
+        const pageContents = context.application.getActivePage().contents;
     
         // Get the first PageContent on the page, and then get its outline's paragraphs.
-        var outlinePageContents = ;
-        var paragraphs = ;
-        var richTextParagraphs = ;
+        const outlinePageContents = pageContents.getItem(0);
+        let paragraphs = outlinePageContents.outline.paragraphs;
+        const richTextParagraphs = paragraphs.items;
         // Queue a command to load the id and type of each page content in the outline.
         pageContents.load("id,type");
     
@@ -886,7 +886,7 @@ OneNote.RichText#load:member(2):
 
         // Load all rich text paragraphs across outlines.
         $.each(outlinePageContents, function(index, outlinePageContent) {
-            var outline = outlinePageContent.outline;
+            const outline = outlinePageContent.outline;
             paragraphs = paragraphs.concat(outline.paragraphs.items);
         });
         $.each(paragraphs, function(index, paragraph) {
@@ -900,7 +900,7 @@ OneNote.RichText#load:member(2):
 
         // Display all rich text paragraphs to the console.
         $.each(richTextParagraphs, function(index, richTextParagraph) {
-            var richText = richTextParagraph.richText;
+            const richText = richTextParagraph.richText;
             console.log(
                 "Paragraph found with richtext content : " + 
                 richText.text + " and richtext id : " + richText.id);
@@ -912,7 +912,7 @@ OneNote.Section#addPage:member(1):
     await OneNote.run(async (context) => {
                 
         // Queue a command to add a page to the current section.
-        var page = context.application.getActiveSection().addPage("Wish list");
+        const page = context.application.getActiveSection().addPage("Wish list");
                 
         // Queue a command to load the id and title of the new page.
         // This example loads the new page so it can read its properties later.
@@ -928,15 +928,15 @@ OneNote.Section#addPage:member(1):
 OneNote.Section#copyToNotebook:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
+        const app = context.application;
         
         // Gets the active Notebook.
-        var notebook = app.getActiveNotebook();
+        const notebook = app.getActiveNotebook();
         
         // Gets the active Section.
-        var section = app.getActiveSection();
+        const section = app.getActiveSection();
         
-        var newSection;
+        let newSection;
         
         await context.sync();
 
@@ -949,19 +949,19 @@ OneNote.Section#copyToNotebook:member(1):
 OneNote.Section#copyToSectionGroup:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
+        const app = context.application;
         
         // Gets the active Notebook.
-        var notebook = app.getActiveNotebook();
+        const notebook = app.getActiveNotebook();
         
         // Gets the active Section.
-        var section = app.getActiveSection();
+        const section = app.getActiveSection();
         
-        var newSection;
+        let newSection;
         
         await context.sync();
 
-        var firstSectionGroup = notebook.sectionGroups.items[0];
+        const firstSectionGroup = notebook.sectionGroups.items[0];
         newSection = section.copyToSectionGroup(firstSectionGroup);
         newSection.load('id');
         await context.sync();
@@ -973,7 +973,7 @@ OneNote.Section#insertSectionAsSibling:member(2):
     await OneNote.run(async (context) => {
                 
         // Queue a command to insert a section after the current section.
-        var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
+        const section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
                 
         // Queue a command to load the id and name of the new section.
         // This example loads the new section so it can read its properties later.
@@ -990,8 +990,8 @@ OneNote.Section#getRestApiId:member(1):
   - |-
     await OneNote.run(async (context) => {
         // Get the current section.
-        var section = context.application.getActiveSection();
-        var restApiId = section.getRestApiId();
+        const section = context.application.getActiveSection();
+        const restApiId = section.getRestApiId();
     
         await context.sync();
         console.log("The REST API ID is " + restApiId.value);
@@ -1006,7 +1006,7 @@ OneNote.Section#load:member(2):
     await OneNote.run(async (context) => {
             
         // Get the current section.
-        var section = context.application.getActiveSection();
+        const section = context.application.getActiveSection();
                 
         // Queue a command to load the section.
         // For best performance, request specific properties.
@@ -1021,14 +1021,14 @@ OneNote.SectionCollection#getByName:member(1):
     await OneNote.run(async (context) => {
     
         // Get the sections in the current notebook.
-        var sections = context.application.getActiveNotebook().sections;
+        const sections = context.application.getActiveNotebook().sections;
     
         // Queue a command to load the sections.
         // For best performance, request specific properties.
         sections.load("id"); 
         
         // Get the sections with the specified name.
-        var groceriesSections = sections.getByName("Groceries");
+        const groceriesSections = sections.getByName("Groceries");
         
         // Queue a command to load the sections with the specified name.
         groceriesSections.load("id,name");
@@ -1047,7 +1047,7 @@ OneNote.SectionCollection#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the sections in the current notebook.
-        var sections = context.application.getActiveNotebook().sections;
+        const sections = context.application.getActiveNotebook().sections;
     
         // Queue a command to load the sections.
         // For best performance, request specific properties.
@@ -1071,7 +1071,7 @@ OneNote.SectionGroup#addSection:member(1):
     await OneNote.run(async (context) => {
     
         // Get the section groups that are direct children of the current notebook.
-        var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+        const sectionGroups = context.application.getActiveNotebook().sectionGroups;
         
         // Queue a command to load the section groups.
         // For best performance, request specific properties.
@@ -1091,14 +1091,14 @@ OneNote.SectionGroup#addSection:member(1):
 OneNote.SectionGroup#addSectionGroup:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var sectionGroup;
-        var nestedSectionGroup;
+        let sectionGroup;
+        let nestedSectionGroup;
     
         // Gets the active notebook.
-        var notebook = context.application.getActiveNotebook();
+        const notebook = context.application.getActiveNotebook();
     
         // Queue a command to add a new section group.
-        var sectionGroups = notebook.sectionGroups;
+        const sectionGroups = notebook.sectionGroups;
     
         // Queue a command to load the new section group.
         sectionGroups.load();
@@ -1121,7 +1121,7 @@ OneNote.SectionGroup#load:member(2):
     await OneNote.run(async (context) => {
             
         // Get the parent section group that contains the current section.
-        var sectionGroup = context.application.getActiveSection().parentSectionGroup;
+        const sectionGroup = context.application.getActiveSection().parentSectionGroup;
                 
         // Queue a command to load the section group.
         // For best performance, request specific properties.
@@ -1139,14 +1139,14 @@ OneNote.SectionGroupCollection#getByName:member(1):
     await OneNote.run(async (context) => {
     
         // Get the section groups that are direct children of the current notebook.
-        var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+        const sectionGroups = context.application.getActiveNotebook().sectionGroups;
     
         // Queue a command to load the section groups.
         // For best performance, request specific properties.
         sectionGroups.load("id"); 
     
         // Get the section groups with the specified name.
-        var labsSectionGroups = sectionGroups.getByName("Labs");
+        const labsSectionGroups = sectionGroups.getByName("Labs");
     
         // Queue a command to load the section groups with the specified properties.
         labsSectionGroups.load("id,name"); 
@@ -1165,7 +1165,7 @@ OneNote.SectionGroupCollection#load:member(2):
     await OneNote.run(async (context) => {
     
         // Get the section groups that are direct children of the current notebook.
-        var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+        const sectionGroups = context.application.getActiveNotebook().sectionGroups;
     
         // Queue a command to load the section groups.
         // For best performance, request specific properties.
@@ -1184,21 +1184,21 @@ OneNote.SectionGroupCollection#load:member(2):
 OneNote.Table#appendColumn:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, append a column.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
+                const table = paragraph.table;
                 table.appendColumn(["cell0", "cell1"]);
             }
         }
@@ -1207,8 +1207,8 @@ OneNote.Table#appendColumn:member(1):
 OneNote.Table#appendRow:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1216,14 +1216,14 @@ OneNote.Table#appendRow:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, append a column.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var row = table.appendRow(["cell0", "cell1"]);
+                const table = paragraph.table;
+                const row = table.appendRow(["cell0", "cell1"]);
             }
         }
         await context.sync();
@@ -1231,8 +1231,8 @@ OneNote.Table#appendRow:member(1):
 OneNote.Table#getCell:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1240,14 +1240,14 @@ OneNote.Table#getCell:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get a cell in the second row and third column.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
+                const table = paragraph.table;
+                const cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
             }
         }
         await context.sync();
@@ -1255,8 +1255,8 @@ OneNote.Table#getCell:member(1):
 OneNote.Table#insertColumn:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1264,13 +1264,13 @@ OneNote.Table#insertColumn:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, insert a column at index two.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
+                const table = paragraph.table;
                 table.insertColumn(2, ["cell0", "cell1"]);
             }
         }
@@ -1279,8 +1279,8 @@ OneNote.Table#insertColumn:member(1):
 OneNote.Table#insertRow:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1288,14 +1288,14 @@ OneNote.Table#insertRow:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync()
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, insert a row at index two.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var row = table.insertRow(2, ["cell0", "cell1"]);
+                const table = paragraph.table;
+                const row = table.insertRow(2, ["cell0", "cell1"]);
             }
         }
         await context.sync();
@@ -1303,8 +1303,8 @@ OneNote.Table#insertRow:member(1):
 OneNote.Table#load:member(2):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs/type");
@@ -1312,13 +1312,13 @@ OneNote.Table#load:member(2):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, log properties.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
+                const table = paragraph.table;
                 context.load(table);
                 await context.sync();
 
@@ -1332,8 +1332,8 @@ OneNote.Table#load:member(2):
 OneNote.TableCell#appendHtml:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1341,14 +1341,14 @@ OneNote.TableCell#appendHtml:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
         
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get a table cell at row one and column two and add "Hello".
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                const table = paragraph.table;
+                const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                 cell.appendHtml("<p>Hello</p>");
             }
         }
@@ -1357,9 +1357,9 @@ OneNote.TableCell#appendHtml:member(1):
 OneNote.TableCell#appendRichText:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
-        var appendedRichText = null;
+        const app = context.application;
+        const outline = app.getActiveOutline();
+        const appendedRichText = null;
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1367,14 +1367,14 @@ OneNote.TableCell#appendRichText:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get a table cell at row one and column two and add "Hello".
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                const table = paragraph.table;
+                const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                 appendedRichText = cell.appendRichText("Hello");
             }
         }
@@ -1383,22 +1383,22 @@ OneNote.TableCell#appendRichText:member(1):
 OneNote.TableCell#load:member(2):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
         
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get a table cell at row one and column two.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
-                var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                const table = paragraph.table;
+                const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                 
                 // Queue a command to load the table cell.
                 context.load(cell);
@@ -1414,8 +1414,8 @@ OneNote.TableCell#load:member(2):
 OneNote.TableRow#insertRowAsSibling:member(1):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1423,13 +1423,13 @@ OneNote.TableRow#insertRowAsSibling:member(1):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
         
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get table rows.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
+                const table = paragraph.table;
                 
                 // Queue a command to load table.rows.
                 context.load(table, "rows");
@@ -1437,7 +1437,7 @@ OneNote.TableRow#insertRowAsSibling:member(1):
                 // Run the queued commands.
                 await context.sync();
 
-                var rows = table.rows;
+                const rows = table.rows;
                 rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
                 await context.sync();
             }
@@ -1446,8 +1446,8 @@ OneNote.TableRow#insertRowAsSibling:member(1):
 OneNote.TableRow#load:member(2):
   - |-
     await OneNote.run(async (context) => {
-        var app = context.application;
-        var outline = app.getActiveOutline();
+        const app = context.application;
+        const outline = app.getActiveOutline();
         
         // Queue a command to load outline.paragraphs and their types.
         context.load(outline, "paragraphs, paragraphs/type");
@@ -1455,22 +1455,22 @@ OneNote.TableRow#load:member(2):
         // Run the queued commands, and return a promise to indicate task completion.
         await context.sync();
         
-        var paragraphs = outline.paragraphs;
+        const paragraphs = outline.paragraphs;
         
         // For each table, get table rows.
-        for (var i = 0; i < paragraphs.items.length; i++) {
-            var paragraph = paragraphs.items[i];
+        for (let i = 0; i < paragraphs.items.length; i++) {
+            const paragraph = paragraphs.items[i];
             if (paragraph.type == "Table") {
-                var table = paragraph.table;
+                const table = paragraph.table;
                 
                 // Queue a command to load table.rows.
                 context.load(table, "rows");
                 await context.sync();
 
-                var rows = table.rows;
+                const rows = table.rows;
                 
                 // For each table row, log cell count and row index.
-                for (var i = 0; i < rows.items.length; i++) {
+                for (let i = 0; i < rows.items.length; i++) {
                     console.log("Row " + i + " Id: " + rows.items[i].id);
                     console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
                     console.log("Row " + i + " Row Index: " + rows.items[i].rowIndex);

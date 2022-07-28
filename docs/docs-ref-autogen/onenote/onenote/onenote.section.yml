@@ -162,7 +162,7 @@ methods:
       await OneNote.run(async (context) => {
                   
           // Queue a command to add a page to the current section.
-          var page = context.application.getActiveSection().addPage("Wish list");
+          const page = context.application.getActiveSection().addPage("Wish list");
                   
           // Queue a command to load the id and title of the new page.
           // This example loads the new page so it can read its properties later.
@@ -199,15 +199,15 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          var app = context.application;
+          const app = context.application;
           
           // Gets the active Notebook.
-          var notebook = app.getActiveNotebook();
+          const notebook = app.getActiveNotebook();
           
           // Gets the active Section.
-          var section = app.getActiveSection();
+          const section = app.getActiveSection();
           
-          var newSection;
+          let newSection;
           
           await context.sync();
 
@@ -241,19 +241,19 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          var app = context.application;
+          const app = context.application;
           
           // Gets the active Notebook.
-          var notebook = app.getActiveNotebook();
+          const notebook = app.getActiveNotebook();
           
           // Gets the active Section.
-          var section = app.getActiveSection();
+          const section = app.getActiveSection();
           
-          var newSection;
+          let newSection;
           
           await context.sync();
 
-          var firstSectionGroup = notebook.sectionGroups.items[0];
+          const firstSectionGroup = notebook.sectionGroups.items[0];
           newSection = section.copyToSectionGroup(firstSectionGroup);
           newSection.load('id');
           await context.sync();
@@ -285,8 +285,8 @@ methods:
       ```typescript
       await OneNote.run(async (context) => {
           // Get the current section.
-          var section = context.application.getActiveSection();
-          var restApiId = section.getRestApiId();
+          const section = context.application.getActiveSection();
+          const restApiId = section.getRestApiId();
 
           await context.sync();
           console.log("The REST API ID is " + restApiId.value);
@@ -338,7 +338,7 @@ methods:
       await OneNote.run(async (context) => {
                   
           // Queue a command to insert a section after the current section.
-          var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
+          const section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
                   
           // Queue a command to load the id and name of the new section.
           // This example loads the new section so it can read its properties later.
@@ -412,7 +412,7 @@ methods:
           await OneNote.run(async (context) => {
                   
               // Get the current section.
-              var section = context.application.getActiveSection();
+              const section = context.application.getActiveSection();
                       
               // Queue a command to load the section.
               // For best performance, request specific properties.

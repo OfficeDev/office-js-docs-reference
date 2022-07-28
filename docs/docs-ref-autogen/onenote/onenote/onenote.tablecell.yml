@@ -108,8 +108,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          var app = context.application;
-          var outline = app.getActiveOutline();
+          const app = context.application;
+          const outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -117,14 +117,14 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
           
-          var paragraphs = outline.paragraphs;
+          const paragraphs = outline.paragraphs;
           
           // For each table, get a table cell at row one and column two and add "Hello".
-          for (var i = 0; i < paragraphs.items.length; i++) {
-              var paragraph = paragraphs.items[i];
+          for (let i = 0; i < paragraphs.items.length; i++) {
+              const paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  var table = paragraph.table;
-                  var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                  const table = paragraph.table;
+                  const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                   cell.appendHtml("<p>Hello</p>");
               }
           }
@@ -180,9 +180,9 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          var app = context.application;
-          var outline = app.getActiveOutline();
-          var appendedRichText = null;
+          const app = context.application;
+          const outline = app.getActiveOutline();
+          const appendedRichText = null;
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -190,14 +190,14 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          var paragraphs = outline.paragraphs;
+          const paragraphs = outline.paragraphs;
           
           // For each table, get a table cell at row one and column two and add "Hello".
-          for (var i = 0; i < paragraphs.items.length; i++) {
-              var paragraph = paragraphs.items[i];
+          for (let i = 0; i < paragraphs.items.length; i++) {
+              const paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  var table = paragraph.table;
-                  var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                  const table = paragraph.table;
+                  const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                   appendedRichText = cell.appendRichText("Hello");
               }
           }
@@ -295,22 +295,22 @@ methods:
 
           ```typescript
           await OneNote.run(async (context) => {
-              var app = context.application;
-              var outline = app.getActiveOutline();
+              const app = context.application;
+              const outline = app.getActiveOutline();
               
               // Queue a command to load outline.paragraphs and their types.
               context.load(outline, "paragraphs, paragraphs/type");
               
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
-              var paragraphs = outline.paragraphs;
+              const paragraphs = outline.paragraphs;
               
               // For each table, get a table cell at row one and column two.
-              for (var i = 0; i < paragraphs.items.length; i++) {
-                  var paragraph = paragraphs.items[i];
+              for (let i = 0; i < paragraphs.items.length; i++) {
+                  const paragraph = paragraphs.items[i];
                   if (paragraph.type == "Table") {
-                      var table = paragraph.table;
-                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      const table = paragraph.table;
+                      const cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
                       
                       // Queue a command to load the table cell.
                       context.load(cell);

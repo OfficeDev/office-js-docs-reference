@@ -546,7 +546,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the content controls collection.
           contentControls.load('text');
@@ -594,7 +594,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the content controls collection.
           contentControls.load('text');
@@ -686,7 +686,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection that contains a specific tag.
-          var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+          const contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
           
           // Queue a command to load the tag property for all of content controls.
           context.load(contentControlsWithTag, 'tag');
@@ -699,7 +699,7 @@ methods:
           }
           else {
               // Queue a command to get the HTML contents of the first content control.
-              var html = contentControlsWithTag.items[0].getHtml();
+              const html = contentControlsWithTag.items[0].getHtml();
           
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -730,7 +730,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
@@ -743,7 +743,7 @@ methods:
           }
           else {
               // Queue a command to get the OOXML contents of the first content control.
-              var ooxml = contentControls.items[0].getOoxml();
+              const ooxml = contentControls.items[0].getOoxml();
           
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -889,7 +889,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of content controls.
           context.load(contentControls, 'id');
@@ -1011,7 +1011,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
@@ -1136,7 +1136,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
@@ -1214,7 +1214,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
@@ -1351,7 +1351,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');
@@ -1421,7 +1421,7 @@ methods:
           await Word.run(async (context) => {
               
               // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
+              const contentControls = context.document.contentControls;
               
               // Queue a command to load the id property for all of the content controls.
               context.load(contentControls, 'id');
@@ -1535,7 +1535,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
           context.load(contentControls, 'id');

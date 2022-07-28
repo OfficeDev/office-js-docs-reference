@@ -76,10 +76,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active page.
-          var activePage = context.application.getActivePage();
+          const activePage = context.application.getActivePage();
 
           // Get pageContents of the activePage.
-          var pageContents = activePage.contents;
+          const pageContents = activePage.contents;
 
           // Queue a command to load the pageContents to access its data.
           context.load(pageContents);
@@ -89,7 +89,7 @@ methods:
           if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
           {
               // First item is an outline.
-              let outline = pageContents.items[0].outline;
+              const outline = pageContents.items[0].outline;
 
               // Queue a command to append a paragraph to the outline.
               outline.appendHtml("<p>new paragraph</p>");
@@ -167,10 +167,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active page.
-          var activePage = context.application.getActivePage();
+          const activePage = context.application.getActivePage();
 
           // Get pageContents of the activePage.
-          var pageContents = activePage.contents;
+          const pageContents = activePage.contents;
 
           // Queue a command to load the pageContents to access its data.
           context.load(pageContents);
@@ -179,7 +179,7 @@ methods:
           await context.sync();
           if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline") {
               // First item is an outline.
-              var outline = pageContents.items[0].outline;
+              const outline = pageContents.items[0].outline;
 
               // Queue a command to append a paragraph to the outline.
               outline.appendTable(2, 2, [["1", "2"],["3", "4"]]);

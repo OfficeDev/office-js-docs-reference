@@ -54,8 +54,8 @@ properties:
       // This function would be used as an event handler for the Worksheet.onChanged event.
       async function onWorksheetChanged(eventArgs) {
           await Excel.run(async (context) => {
-              var details = eventArgs.details;
-              var address = eventArgs.address;
+              const details = eventArgs.details;
+              const address = eventArgs.address;
 
               // Print the before and after types and values to the console.
               console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`

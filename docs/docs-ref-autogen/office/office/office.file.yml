@@ -104,13 +104,13 @@ methods:
       // The asynchronous operation returns a Promise so it can be awaited.
 
       private getAllSlices(file: any): Promise<any> {
-          var self = this;
-          var isError = false;
+          const self = this;
+          let isError = false;
 
           return new Promise(async (resolve, reject) => {
-              var documentFileData = [];
-              for (var sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
-                  var sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
+              let documentFileData = [];
+              for (let sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
+                  const sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
                       file.getSliceAsync(sliceIndex, (asyncResult) => {
                           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                               documentFileData = documentFileData.concat(asyncResult.value.data);

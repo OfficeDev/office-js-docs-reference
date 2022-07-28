@@ -87,7 +87,7 @@ methods:
 
       Office.context.auth.getAccessTokenAsync(function(result) {
           if (result.status === "succeeded") {
-              var token = result.value;
+              const token = result.value;
               // ...
           } else {
               console.log("Error obtaining token", result.error);

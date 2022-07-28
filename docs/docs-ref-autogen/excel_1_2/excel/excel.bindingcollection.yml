@@ -92,8 +92,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var lastPosition = context.workbook.bindings.count - 1;
-          var binding = context.workbook.bindings.getItemAt(lastPosition);
+          const lastPosition = context.workbook.bindings.count - 1;
+          const binding = context.workbook.bindings.getItemAt(lastPosition);
           binding.load('type')
           await context.sync();
 
@@ -159,11 +159,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var bindings = context.workbook.bindings;
+              const bindings = context.workbook.bindings;
               bindings.load('items');
               await context.sync();
 
-              for (var i = 0; i < bindings.items.length; i++) {
+              for (let i = 0; i < bindings.items.length; i++) {
                   console.log(bindings.items[i].id);
               }
           });

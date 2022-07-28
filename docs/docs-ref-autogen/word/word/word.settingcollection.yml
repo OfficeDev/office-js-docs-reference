@@ -71,11 +71,11 @@ methods:
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
-          var settings = context.document.settings;
+          const settings = context.document.settings;
           settings.add('startMonth', { month: 'March', year: 1998 });
 
           // Queue a command to get the count of settings.
-          var count = settings.getCount();
+          const count = settings.getCount();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -116,11 +116,11 @@ methods:
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
-          var settings = context.document.settings;
+          const settings = context.document.settings;
           settings.add('startMonth', { month: 'March', year: 1998 });
 
           // Queue a command to get the count of settings.
-          var count = settings.getCount();
+          const count = settings.getCount();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -161,11 +161,11 @@ methods:
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
-          var settings = context.document.settings;
+          const settings = context.document.settings;
           settings.add('startMonth', { month: 'March', year: 1998 });
 
           // Queue a command to retrieve a setting.
-          var startMonth = settings.getItem('startMonth');
+          const startMonth = settings.getItem('startMonth');
 
           // Queue a command to load the setting.
           context.load(startMonth);
@@ -202,12 +202,12 @@ methods:
       await Word.run(async (context) => {
 
           // Queue commands add a setting.
-          var settings = context.document.settings;
+          const settings = context.document.settings;
           settings.add('startMonth', { month: 'March', year: 1998 });
           
           // Queue commands to retrieve settings.
-          var startMonth = settings.getItemOrNullObject('startMonth');
-          var endMonth = settings.getItemOrNullObject('endMonth');
+          const startMonth = settings.getItemOrNullObject('startMonth');
+          const endMonth = settings.getItemOrNullObject('endMonth');
 
           // Queue commands to load settings.
           context.load(startMonth);

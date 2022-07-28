@@ -148,12 +148,12 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:C3";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
           conditionalFormat.iconSetOrNullObject.style = Excel.IconSet.fourTrafficLights;
-          var cfCount = range.conditionalFormats.getCount(); 
+          const cfCount = range.conditionalFormats.getCount(); 
 
           await context.sync()
           console.log("Count: " + cfCount.value);
@@ -178,11 +178,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:C3";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          var conditionalFormats = range.conditionalFormats;
-          var conditionalFormat = conditionalFormats.getItemAt(3);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const conditionalFormats = range.conditionalFormats;
+          const conditionalFormat = conditionalFormats.getItemAt(3);
           await context.sync()
 
           console.log("Conditional Format at Item 3 Loaded");

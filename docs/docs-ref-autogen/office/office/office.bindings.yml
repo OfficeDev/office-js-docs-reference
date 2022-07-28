@@ -529,8 +529,8 @@ methods:
 
       function displayAllBindingNames() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
+              let bindingString = '';
+              for (let i in asyncResult.value) {
                   bindingString += asyncResult.value[i].id + '\n';
               }
               write('Existing bindings: ' + bindingString);

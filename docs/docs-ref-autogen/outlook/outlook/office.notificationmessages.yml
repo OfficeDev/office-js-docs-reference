@@ -62,9 +62,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "progressIndicator",
           message: "Progress indicator with id = " + id
@@ -78,9 +78,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Non-persistent informational notification message with id = " + id,
@@ -96,9 +96,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "informationalMessage",
           message: "Persistent informational notification message with id = " + id,
@@ -114,9 +114,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
           type: "errorMessage",
           message: "Error notification message with id = " + id
@@ -341,7 +341,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -445,7 +445,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,

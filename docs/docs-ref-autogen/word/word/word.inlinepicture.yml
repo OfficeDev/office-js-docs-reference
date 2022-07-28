@@ -271,7 +271,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the first inline picture.
-          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+          const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
           // Queue a command to load the alternative text title of the picture.
           context.load(firstPicture, 'altTextTitle');
@@ -309,7 +309,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the first inline picture.
-          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+          const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
           // Queue a command to load the alternative text title of the picture.
           context.load(firstPicture, 'altTextTitle');

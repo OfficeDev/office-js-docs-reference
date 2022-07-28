@@ -69,7 +69,7 @@ properties:
       ```javascript
 
       function sayHelloWithContentLanguage() {
-          var myContentLanguage = Office.context.contentLanguage;
+          const myContentLanguage = Office.context.contentLanguage;
           switch (myContentLanguage) {
               case 'en-US':
                   write('Hello!');
@@ -110,7 +110,7 @@ properties:
 
       ```javascript
 
-      var contextInfo = Office.context.diagnostics;
+      const contextInfo = Office.context.diagnostics;
 
       console.log("Office application: " + contextInfo.host);
 
@@ -167,7 +167,7 @@ properties:
       ```javascript
 
       function sayHelloWithDisplayLanguage() {
-          var myDisplayLanguage = Office.context.displayLanguage;
+          const myDisplayLanguage = Office.context.displayLanguage;
           switch (myDisplayLanguage) {
               case 'en-US':
                   write('Hello!');
@@ -210,7 +210,7 @@ properties:
 
           ```javascript
           // Extension initialization code.
-          var _document;
+          let _document;
 
           // The initialize function is required for all add-ins.
           Office.initialize = function () {
@@ -286,7 +286,7 @@ properties:
 
       // The following line of code access the item object of the JavaScript API for Office.
 
-      var item = Office.context.mailbox.item;
+      const item = Office.context.mailbox.item;
 
       ```
     isPreview: false
@@ -315,10 +315,10 @@ properties:
           ```javascript
           function applyOfficeTheme(){
               // Get office theme colors.
-              var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-              var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-              var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-              var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+              const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+              const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+              const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+              const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
               // Apply body background color to a CSS class.
               $('.body').css('background-color', bodyBackgroundColor);
@@ -381,7 +381,7 @@ properties:
 
       // Get the current value of the 'myKey' setting.
 
-      var value = Office.context.roamingSettings.get('myKey');
+      const value = Office.context.roamingSettings.get('myKey');
 
       // Update the value of the 'myKey' setting.
 

@@ -24,10 +24,10 @@ remarks: |-
       },
       function (result) {
           if (result.status === Office.AsyncResultStatus.Succeeded) {
-              var dataValue = result.value; // Get selected data.
+              const dataValue = result.value; // Get selected data.
               console.log('Selected data is ' + dataValue);
           } else {
-              var err = result.error;
+              const err = result.error;
               console.log(err.name + ": " + err.message);
           }
       });
@@ -36,7 +36,7 @@ remarks: |-
   // When the call to the getSelectedDataAsync method completes, the callback function executes, 
   // and the following line of code accesses the value property of the AsyncResult object to 
   // return the data selected in the document:
-  var dataValue = result.value;
+  // const dataValue = result.value;
   // Note that other lines of code in the function use the result parameter of the callback function 
   // to access the status and error properties of the AsyncResult object.
   ```
@@ -67,7 +67,7 @@ properties:
 
           ```javascript
           function getDataWithContext() {
-              var format = "Your data: ";
+              const format = "Your data: ";
               Office.context.document.getSelectedDataAsync(
                   Office.CoercionType.Text, 
                   { asyncContext: format }, 

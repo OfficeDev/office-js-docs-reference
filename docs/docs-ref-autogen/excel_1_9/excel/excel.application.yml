@@ -184,7 +184,7 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => {
-              var application = context.workbook.application;
+              const application = context.workbook.application;
               application.load('calculationMode');
               await context.sync();
 
