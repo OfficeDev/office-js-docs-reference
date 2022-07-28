@@ -1,7 +1,7 @@
 ---
 title: FunctionFile element in the manifest file
 description: Specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI.
-ms.date: 05/09/2022
+ms.date: 07/27/2022
 ms.localizationpriority: medium
 ---
 
@@ -53,8 +53,8 @@ Office.initialize = function () {
 }
 
 function trackMessage (event) {
-    var buttonId = event.source.id;    
-    var itemId = Office.context.mailbox.item.id;
+    const buttonId = event.source.id;    
+    const itemId = Office.context.mailbox.item.id;
     // save this message
     event.completed();
 }
@@ -79,7 +79,7 @@ function writeText(event) {
 
     Office.context.document.setSelectedDataAsync("ExecuteFunction works. Button ID=" + event.source.id,
         function (asyncResult) {
-            var error = asyncResult.error;
+            const error = asyncResult.error;
             if (asyncResult.status === "failed") {
                 // Show error message.
             }

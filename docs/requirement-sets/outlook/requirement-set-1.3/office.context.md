@@ -1,7 +1,7 @@
 ---
 title: Office.context - requirement set 1.3
 description: Office.Context object members available for Outlook add-ins using Mailbox API requirement set 1.3.
-ms.date: 03/31/2022
+ms.date: 07/27/2022
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +52,7 @@ The `contentLanguage` value reflects the current **Editing Language** setting sp
 
 ```js
 function sayHelloWithContentLanguage() {
-  var myContentLanguage = Office.context.contentLanguage;
+  const myContentLanguage = Office.context.contentLanguage;
   switch (myContentLanguage) {
     case 'en-US':
       write('Hello!');
@@ -95,7 +95,7 @@ The `displayLanguage` value reflects the current **Display Language** setting sp
 
 ```js
 function sayHelloWithDisplayLanguage() {
-  var myDisplayLanguage = Office.context.displayLanguage;
+  const myDisplayLanguage = Office.context.displayLanguage;
   switch (myDisplayLanguage) {
     case 'en-US':
       write('Hello!');

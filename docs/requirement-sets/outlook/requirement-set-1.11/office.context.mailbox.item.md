@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.11
 description: Outlook Mailbox API requirement set 1.11 version of the Item object model.
-ms.date: 11/01/2021
+ms.date: 07/27/2022
 ms.localizationpriority: medium
 ---
 
@@ -195,8 +195,8 @@ Office.initialize = function () {
   // Checks for the DOM to load using the jQuery ready method.
   $(document).ready(function () {
     // After the DOM is loaded, app-specific code can run.
-    var item = Office.context.mailbox.item;
-    var subject = item.subject;
+    const item = Office.context.mailbox.item;
+    const subject = item.subject;
     // Continue with processing the subject of the current item,
     // which can be a message or appointment.
   });
