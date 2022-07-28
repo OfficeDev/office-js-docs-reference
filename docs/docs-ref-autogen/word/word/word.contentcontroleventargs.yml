@@ -51,12 +51,10 @@ properties:
     syntax:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
-        "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" |
-        "CommentAdded";
+        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
+        | "CommentChanged" | "CommentAdded";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
-          "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" |
-          "CommentAdded"
+          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded"

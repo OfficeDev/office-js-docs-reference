@@ -7549,24 +7549,6 @@ export declare namespace Word {
          */
         contentControlAdded = "ContentControlAdded",
         /**
-         * AnnotationAdded represents the event an annotation has been added to the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationAdded = "AnnotationAdded",
-        /**
-         * AnnotationChanged represents the event an annotation has been updated in the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationChanged = "AnnotationChanged",
-        /**
-         * AnnotationDeleted represents the event an annotation has been deleted from the document.
-         * @remarks
-         * [Api set: WordApiOnline 1.1]
-         */
-        annotationDeleted = "AnnotationDeleted",
-        /**
          * Represents that one or more comments were deleted from the comment collection.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
@@ -7646,7 +7628,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
     }
     /**
      * Provides information about the comments that raised the comment event.
@@ -7687,7 +7669,7 @@ export declare namespace Word {
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
     }
     /**
      * A structure for the ID and reply IDs of this comment.

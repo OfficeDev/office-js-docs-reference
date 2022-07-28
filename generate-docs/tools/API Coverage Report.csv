@@ -9827,9 +9827,6 @@ Word.EventSource,N/A,Enum,Good,false
 Word.EventSource,local,EnumField,Fine,false
 Word.EventSource,remote,EnumField,Fine,false
 Word.EventType,N/A,Enum,Good,false
-Word.EventType,annotationAdded,EnumField,Fine,false
-Word.EventType,annotationChanged,EnumField,Fine,false
-Word.EventType,annotationDeleted,EnumField,Fine,false
 Word.EventType,commentAdded,EnumField,Fine,false
 Word.EventType,commentChanged,EnumField,Fine,false
 Word.EventType,commentDeleted,EnumField,Fine,false
