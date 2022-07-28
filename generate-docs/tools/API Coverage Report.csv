@@ -1,6 +1,5 @@
 Class,Field,Type,Description Rating,Has Example?
 CustomFunctions.CancelableInvocation,N/A,Class,Good,false
-CustomFunctions.CancelableInvocation,onCanceled,Property,Good,false
 CustomFunctions.Error,N/A,Class,Good,false
 CustomFunctions.Error,code,Property,Good,false
 CustomFunctions.Error,message,Property,Good,false
