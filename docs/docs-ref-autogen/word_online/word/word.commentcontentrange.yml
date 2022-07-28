@@ -123,7 +123,9 @@ methods:
     uid: 'word!Word.CommentContentRange#insertText:member(1)'
     package: word!
     fullName: 'insertText(text, insertLocation)'
-    summary: Inserts text into at the specified location.
+    summary: >-
+      Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across
+      context turns to empty if any revision to the comment is posted through the UI.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -143,7 +145,9 @@ methods:
     uid: 'word!Word.CommentContentRange#insertText:member(2)'
     package: word!
     fullName: 'insertText(text, insertLocationString)'
-    summary: Inserts text into at the specified location.
+    summary: >-
+      Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across
+      context turns to empty if any revision to the comment is posted through the UI.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -293,10 +297,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -311,9 +317,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

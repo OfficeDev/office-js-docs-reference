@@ -16,7 +16,6 @@ enums:
   - 'word!Word.ContentControlType:enum'
   - 'word!Word.DocumentPropertyType:enum'
   - 'word!Word.ErrorCodes:enum'
-  - 'word!Word.EventType:enum'
   - 'word!Word.HeaderFooterType:enum'
   - 'word!Word.InsertLocation:enum'
   - 'word!Word.ListBullet:enum'
