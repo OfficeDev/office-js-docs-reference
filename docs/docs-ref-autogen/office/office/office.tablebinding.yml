@@ -167,7 +167,7 @@ methods:
       // Add a column to a binding of type table by passing a TableData object.
 
       function addColumns() {
-          var myTable = new Office.TableData();
+          const myTable = new Office.TableData();
           myTable.headers = [["Cities"]];
           myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
 
@@ -187,7 +187,7 @@ methods:
       // Add a column to a binding of type table by passing an array of arrays.
 
       function addColumns() {
-          var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
+          const myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
 
           Office.context.document.bindings.getByIdAsync("myTable", function (result) {
               result.value.addColumnsAsync(myTable);
@@ -300,7 +300,7 @@ methods:
 
       function addRowsToTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              var binding = asyncResult.value;
+              const binding = asyncResult.value;
               binding.addRowsAsync([["6", "k"], ["7", "j"]]);
           });
       }
@@ -444,7 +444,7 @@ methods:
       ```javascript
       function deleteAllRowsFromTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              var binding = asyncResult.value;
+              const binding = asyncResult.value;
               binding.deleteAllDataValuesAsync();
           });
       }
@@ -919,7 +919,7 @@ methods:
       //    with formatting setting as the tableOptions parameter.
 
       function updateTableFormatting(){
-          var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
+          const tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 
           Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
       }

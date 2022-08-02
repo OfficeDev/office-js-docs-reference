@@ -905,7 +905,7 @@ methods:
 
       function writeBoundDataTable() {
           // Create a TableData object.
-          var myTable = new Office.TableData();
+          const myTable = new Office.TableData();
           myTable.headers = ['First Name', 'Last Name', 'Grade'];
           myTable.rows = [['Kim', 'Abercrombie', 'A'], ['Junmin','Hao', 'C'],['Toni','Poe','B']];
 
@@ -924,7 +924,7 @@ methods:
       // Replace last column with different data.
 
       function updateTableData() {
-          var newTable = new Office.TableData();
+          const newTable = new Office.TableData();
           newTable.headers = ["Gender"];
           newTable.rows = [["M"],["M"],["F"]];
           Office.select("bindings#myBinding").setDataAsync(newTable, { coercionType: "table", startColumn:2 }, 

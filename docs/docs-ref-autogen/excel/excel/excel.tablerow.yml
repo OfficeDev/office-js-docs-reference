@@ -103,8 +103,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
+          const tableName = 'Table1';
+          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
           row.delete();
           await context.sync(); 
       });
@@ -128,9 +128,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
-          var rowRange = row.getRange();
+          const tableName = 'Table1';
+          const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+          const rowRange = row.getRange();
           rowRange.load('address');
           await context.sync();
           
@@ -188,8 +188,8 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var tableName = 'Table1';
-              var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+              const tableName = 'Table1';
+              const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
               row.load('index');
               await context.sync();
               

@@ -201,15 +201,15 @@ methods:
           // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              var item = Office.context.mailbox.item;
+              const item = Office.context.mailbox.item;
               item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
+          const customProps = asyncResult.value;
+          const myProp = customProps.get("myProp");
           console.log("myProp: " + myProp); // First run on current item will return `undefined`.
 
           // Set myProp custom property.

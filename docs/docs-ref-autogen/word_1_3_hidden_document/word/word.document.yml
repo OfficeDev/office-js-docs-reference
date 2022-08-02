@@ -126,14 +126,14 @@ methods:
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
-          var textSample = 'This is an example of the insert text method. This is a method ' + 
+          const textSample = 'This is an example of the insert text method. This is a method ' + 
               'which allows users to insert text into a selection. It can insert text into a ' +
               'relative location or it can overwrite the current selection. Since the ' +
               'getSelection method returns a range object, look up the range object documentation ' +
               'for everything you can do with a selection.';
           
           // Create a range proxy object for the current selection.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
           
           // Queue a command to insert text at the end of the selection.
           range.insertText(textSample, Word.InsertLocation.end);
@@ -179,7 +179,7 @@ methods:
           await Word.run(async (context) => {
               
               // Create a proxy object for the document.
-              var thisDocument = context.document;
+              const thisDocument = context.document;
               
               // Queue a command to load content control properties.
               context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
@@ -188,7 +188,7 @@ methods:
               // and return a promise to indicate task completion.
               await context.sync();
               if (thisDocument.contentControls.items.length !== 0) {
-                  for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
+                  for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
                       console.log(thisDocument.contentControls.items[i].id);
                       console.log(thisDocument.contentControls.items[i].text);
                       console.log(thisDocument.contentControls.items[i].tag);
@@ -261,7 +261,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the document.
-          var thisDocument = context.document;
+          const thisDocument = context.document;
 
           // Queue a command to load the document save state (on the saved property).
           context.load(thisDocument, 'saved');    

@@ -81,8 +81,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              var pageName = 'Page-1';
-              var page = ctx.document.pages.getItem(pageName);
+              const pageName = 'Page-1';
+              const page = ctx.document.pages.getItem(pageName);
               page.activate();
               return ctx.sync();
           }).catch(function(error) {

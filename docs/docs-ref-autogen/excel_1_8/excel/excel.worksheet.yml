@@ -138,8 +138,8 @@ properties:
       ```typescript
       // Set worksheet position.
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.position = 2;
           await context.sync(); 
       });
@@ -166,7 +166,7 @@ properties:
       // To remove only a subset of WorksheetProtectionOptions use the 
       // protect() method and set the options you wish to remove to true.
       await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sheet1");
+        const sheet = context.workbook.worksheets.getItem("Sheet1");
         sheet.protection.protect({
           allowInsertRows: false, // Protect row insertion
           allowDeleteRows: true // Unprotect row deletion
@@ -323,8 +323,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.activate();
           await context.sync(); 
       });
@@ -444,8 +444,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.delete();
           await context.sync(); 
       });
@@ -471,10 +471,10 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var cell = worksheet.getCell(0,0);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const cell = worksheet.getCell(0,0);
           cell.load('address');
           await context.sync();
 
@@ -657,10 +657,10 @@ methods:
       ```typescript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
           range.load('cellCount');
           await context.sync();
           
@@ -722,9 +722,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
-          var usedRange = worksheet.getUsedRange();
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const usedRange = worksheet.getUsedRange();
           usedRange.load('address');
           await context.sync();
           
@@ -811,8 +811,8 @@ methods:
           ```typescript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
-              var wSheetName = 'Sheet1';
-              var worksheet = context.workbook.worksheets.getItem(wSheetName);
+              const wSheetName = 'Sheet1';
+              const worksheet = context.workbook.worksheets.getItem(wSheetName);
               worksheet.load('position')
               await context.sync();
               
@@ -920,7 +920,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onActivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The activated worksheet ID is: " + event.worksheetId);
@@ -950,7 +950,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onCalculated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The worksheet has recalculated.");
@@ -1014,7 +1014,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onDeactivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The deactivated worksheet is: " + event.worksheetId);
@@ -1044,7 +1044,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onSelectionChanged.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The selected range has changed to: " + event.address);

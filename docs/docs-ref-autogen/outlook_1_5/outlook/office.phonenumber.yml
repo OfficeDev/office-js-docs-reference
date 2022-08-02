@@ -25,11 +25,11 @@ remarks: >-
 
   ```javascript
 
-  var item = Office.context.mailbox.item;
+  const item = Office.context.mailbox.item;
 
   // Get an array of strings that represent phone numbers in the current item's body.
 
-  var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+  const phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
 
   console.log("There are " + phoneNumbers.length + " phone numbers.")
 

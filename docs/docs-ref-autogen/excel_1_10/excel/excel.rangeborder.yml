@@ -68,9 +68,9 @@ properties:
       ```typescript
       // Add grid borders around the range.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
           range.format.borders.getItem('InsideVertical').style = 'Continuous';
           range.format.borders.getItem('EdgeBottom').style = 'Continuous';

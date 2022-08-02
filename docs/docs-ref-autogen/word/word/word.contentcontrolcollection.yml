@@ -57,7 +57,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
-          var contentControl = context.document.contentControls.getById(30086310);
+          const contentControl = context.document.contentControls.getById(30086310);
 
           // Queue a command to load the text property for a content control.
           context.load(contentControl, 'text');
@@ -96,7 +96,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
-          var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+          const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
           // Queue a command to load the text property for a content control.
           context.load(contentControl, 'text');
@@ -179,7 +179,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content controls collection that contains a specific title.
-          var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
+          const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
           // Queue a command to load the text property for all of content controls with a specific title.
           context.load(contentControlsWithTitle, 'text');
@@ -243,7 +243,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the first content control in the document.
-          var contentControl = context.document.contentControls.getFirstOrNullObject();
+          const contentControl = context.document.contentControls.getFirstOrNullObject();
 
           // Queue a command to load the text property for a content control.
           context.load(contentControl, 'text');
@@ -327,7 +327,7 @@ methods:
           await Word.run(async (context) => {
 
               // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
+              const contentControls = context.document.contentControls;
 
               // Queue a command to load the id property for all of the content controls.
               context.load(contentControls, 'id');

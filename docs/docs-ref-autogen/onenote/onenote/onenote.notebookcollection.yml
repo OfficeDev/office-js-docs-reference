@@ -62,7 +62,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the notebooks that are open in the application instance and have the specified name.
-          var notebooks = context.application.notebooks.getByName("Homework");
+          const notebooks = context.application.notebooks.getByName("Homework");
 
           // Queue a command to load the notebooks.
           // For best performance, request specific properties.
@@ -174,7 +174,7 @@ methods:
           await OneNote.run(async (context) => {
 
               // Get the notebooks that are open in the application instance and have the specified name.
-              var notebooks = context.application.notebooks.getByName("Homework");
+              const notebooks = context.application.notebooks.getByName("Homework");
 
               // Queue a command to load the notebooks.
               // For best performance, request specific properties.

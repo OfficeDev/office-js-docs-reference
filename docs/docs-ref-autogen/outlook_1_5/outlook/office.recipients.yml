@@ -80,7 +80,7 @@ methods:
 
       // and adds them to the To recipients of the message.
 
-      var newRecipients = [
+      const newRecipients = [
           {
               "displayName": "Allie Bellew",
               "emailAddress": "allieb@contoso.com"
@@ -600,7 +600,7 @@ methods:
 
       // replaces the CC recipients of the message with the array.
 
-      var newRecipients = [
+      const newRecipients = [
           {
               "displayName": "Allie Bellew",
               "emailAddress": "allieb@contoso.com"

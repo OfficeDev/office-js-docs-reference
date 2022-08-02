@@ -122,10 +122,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active notebook.
-          var notebook = context.application.getActiveNotebook();
+          const notebook = context.application.getActiveNotebook();
 
           // Queue a command to add a new section.
-          var section = notebook.addSection("Sample section");
+          const section = notebook.addSection("Sample section");
           
           // Queue a command to load the new section. This example reads the name property later.
           section.load("name");
@@ -160,10 +160,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active notebook.
-          var notebook = context.application.getActiveNotebook();
+          const notebook = context.application.getActiveNotebook();
 
           // Queue a command to add a new section group.
-          var sectionGroup = notebook.addSectionGroup("Sample section group");
+          const sectionGroup = notebook.addSectionGroup("Sample section group");
 
           // Queue a command to load the new section group.
           sectionGroup.load();
@@ -197,8 +197,8 @@ methods:
       ```typescript
       await OneNote.run(async (context) => {
           // Get the current notebook.
-          var notebook = context.application.getActiveNotebook();
-          var restApiId = notebook.getRestApiId();
+          const notebook = context.application.getActiveNotebook();
+          const restApiId = notebook.getRestApiId();
 
           await context.sync();
           console.log("The REST API ID is " + restApiId.value);
@@ -262,7 +262,7 @@ methods:
           await OneNote.run(async (context) => {
                   
               // Get the current notebook.
-              var notebook = context.application.getActiveNotebook();
+              const notebook = context.application.getActiveNotebook();
                       
               // Queue a command to load the notebook.
               // For best performance, request specific properties.

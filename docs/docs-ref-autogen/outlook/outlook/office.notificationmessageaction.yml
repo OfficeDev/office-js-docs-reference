@@ -58,7 +58,7 @@ remarks: >-
       console.log(asyncResult);
 
       // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
-      var contextData = JSON.parse(asyncResult.value);
+      const contextData = JSON.parse(asyncResult.value);
       console.log("a:")
       console.log(contextData.a);
   });

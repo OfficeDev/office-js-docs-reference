@@ -89,8 +89,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
+          const tableName = 'Table1';
+          const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
           column.delete();
           await context.sync(); 
       });
@@ -114,9 +114,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var dataBodyRange = column.getDataBodyRange();
+          const tableName = 'Table1';
+          const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          const dataBodyRange = column.getDataBodyRange();
           dataBodyRange.load('address');
           await context.sync();
           
@@ -142,9 +142,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var headerRowRange = columns.getHeaderRowRange();
+          const tableName = 'Table1';
+          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          const headerRowRange = columns.getHeaderRowRange();
           headerRowRange.load('address');
           await context.sync();
           
@@ -170,9 +170,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var columnRange = columns.getRange();
+          const tableName = 'Table1';
+          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          const columnRange = columns.getRange();
           columnRange.load('address');
           await context.sync();
           
@@ -198,9 +198,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-          var totalRowRange = columns.getTotalRowRange();
+          const tableName = 'Table1';
+          const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+          const totalRowRange = columns.getTotalRowRange();
           totalRowRange.load('address');
           await context.sync();
           
@@ -258,8 +258,8 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var tableName = 'Table1';
-              var column = context.workbook.tables.getItem(tableName).columns.getItem(0);
+              const tableName = 'Table1';
+              const column = context.workbook.tables.getItem(tableName).columns.getItem(0);
               column.load('index');
               await context.sync();
               

@@ -51,7 +51,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to load font and style information for the document body.
           context.load(body, 'font/size, font/name, font/color, style');
@@ -62,7 +62,7 @@ properties:
           
           // Show the results of the load method.
           // Here we show the property values on the body object.
-          var results = 'Font size: ' + body.font.size +
+          const results = 'Font size: ' + body.font.size +
                           '; Font name: ' + body.font.name +
                           '; Font color: ' + body.font.color +
                           '; Body style: ' + body.style;
@@ -372,7 +372,7 @@ properties:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to load the text in document body.
           context.load(body, 'text');
@@ -421,7 +421,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to clear the contents of the body.
           body.clear();
@@ -463,10 +463,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to get the HTML contents of the body.
-          var bodyHTML = body.getHtml();
+          const bodyHTML = body.getHtml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -496,10 +496,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to get the OOXML contents of the body.
-          var bodyOOXML = body.getOoxml();
+          const bodyOOXML = body.getOoxml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -563,7 +563,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert a page break at the start of the document body.
           body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
@@ -625,7 +625,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to wrap the body in a content control.
           body.insertContentControl();
@@ -658,7 +658,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert base64 encoded .docx at the beginning of the content body.
           // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
@@ -721,7 +721,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert HTML in to the beginning of the body.
           body.insertHtml(
@@ -782,7 +782,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert OOXML in to the beginning of the body.
           body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -896,7 +896,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert the paragraph at the end of the document body.
           body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
@@ -1075,7 +1075,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert text in to the beginning of the body.
           body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
@@ -1344,7 +1344,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to select the document body.
           // The Word UI will move to the selected document body.

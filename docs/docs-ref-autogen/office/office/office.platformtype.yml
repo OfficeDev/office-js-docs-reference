@@ -10,7 +10,7 @@ remarks: |-
   #### Examples
 
   ```javascript
-  var contextInfo = Office.context.diagnostics;
+  const contextInfo = Office.context.diagnostics;
   console.log("Platform: " + contextInfo.platform);
   ```
 isPreview: false
