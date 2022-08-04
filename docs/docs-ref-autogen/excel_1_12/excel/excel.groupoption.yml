@@ -4,7 +4,33 @@ uid: 'excel!Excel.GroupOption:enum'
 package: excel!
 fullName: Excel.GroupOption
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
+  Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+      
+      // Group the larger, main level. Note that the outline controls
+      // will be on row 10, meaning 4-9 will collapse and expand.
+      sheet.getRange("4:9").group(Excel.GroupOption.byRows);
+
+      // Group the smaller, sublevels. Note that the outline controls
+      // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
+      sheet.getRange("4:5").group(Excel.GroupOption.byRows);
+      sheet.getRange("7:8").group(Excel.GroupOption.byRows);
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

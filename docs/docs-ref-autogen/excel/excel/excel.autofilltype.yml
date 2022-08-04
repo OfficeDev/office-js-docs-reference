@@ -4,7 +4,29 @@ uid: 'excel!Excel.AutoFillType:enum'
 package: excel!
 fullName: Excel.AutoFillType
 summary: The behavior types when AutoFill is used on a range in the workbook.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+    const sumCell = sheet.getRange("K4");
+
+    // Copy only the formatting, not the values and formulas.
+    sumCell.autoFill("K4:K7", Excel.AutoFillType.fillFormats);
+    sumCell.format.autofitColumns();
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

@@ -105,6 +105,8 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+      // Get the footnotes in the document body.
+
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
         footnotes.load("length");
@@ -166,7 +168,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -505,8 +507,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Get the comments in the document body.
+
       await Word.run(async (context) => {
-        let comments = context.document.body.getComments();
+        const comments = context.document.body.getComments();
 
         // Load objects for display in Script Lab console.
         comments.load();
@@ -1061,7 +1065,7 @@ methods:
 
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        let secondSentence = context.document.body.insertParagraph(
+        const secondSentence = context.document.body.insertParagraph(
           "This is the first text with a custom style.",
           "End"
         );
@@ -1112,11 +1116,11 @@ methods:
 
       await Word.run(async (context) => {
         // Use a two-dimensional array to hold the initial table values.
-        let data = [
+        const data = [
           ["Tokyo", "Beijing", "Seattle"],
           ["Apple", "Orange", "Pineapple"]
         ];
-        let table = context.document.body.insertTable(2, 3, "Start", data);
+        const table = context.document.body.insertTable(2, 3, "Start", data);
         table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
         table.styleFirstColumn = false;
 
@@ -1321,7 +1325,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
       await Word.run(async (context) => {
-        let results = context.document.body.search("Online");
+        const results = context.document.body.search("Online");
         results.load("length");
 
         await context.sync();
@@ -1344,7 +1348,7 @@ methods:
       await Word.run(async (context) => {
         // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
         // (i.e. use wildcards).
-        let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();
@@ -1366,7 +1370,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 

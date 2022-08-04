@@ -1,3 +1,20 @@
+'Excel.AggregationFunction:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+    async function genericFunctionSwitch(functionType:
+    Excel.AggregationFunction) {
+        await Excel.run(async (context) => {
+            const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+            pivotTable.dataHierarchies.load("no-properties-needed");
+            await context.sync();
+
+            pivotTable.dataHierarchies.items[0].summarizeBy = functionType;
+            pivotTable.dataHierarchies.items[1].summarizeBy = functionType;
+            await context.sync();
+        });
+    }
 'Excel.Application#calculate:member(1)':
   - >-
     // Link to full sample:
@@ -82,6 +99,74 @@
       await context.sync();
 
       console.log(`Ending. Adding ${ROW_COUNT * COLUMN_COUNT} cells took ${Date.now() - startTime} milliseconds`);
+    });
+'Excel.ArrowheadLength:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.getItem("StraightLine").line;
+        line.beginArrowheadLength = Excel.ArrowheadLength.long;
+        line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+        line.endArrowheadLength = Excel.ArrowheadLength.long;
+        line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+        await context.sync();
+    });
+'Excel.ArrowheadStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.getItem("StraightLine").line;
+        line.beginArrowheadLength = Excel.ArrowheadLength.long;
+        line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+        line.endArrowheadLength = Excel.ArrowheadLength.long;
+        line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+        await context.sync();
+    });
+'Excel.ArrowheadWidth:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.getItem("StraightLine").line;
+        line.beginArrowheadLength = Excel.ArrowheadLength.long;
+        line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+        line.endArrowheadLength = Excel.ArrowheadLength.long;
+        line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+        line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+        await context.sync();
+    });
+'Excel.AutoFillType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+      const sumCell = sheet.getRange("K4");
+
+      // Copy only the formatting, not the values and formulas.
+      sumCell.autoFill("K4:K7", Excel.AutoFillType.fillFormats);
+      sumCell.format.autofitColumns();
+      await context.sync();
     });
 'Excel.AutoFilter#apply:member(1)':
   - >-
@@ -236,6 +321,197 @@
         for (let i = 0; i < bindings.items.length; i++) {
             console.log(bindings.items[i].id);
         }
+    });
+'Excel.BindingType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-disable-events.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const sumRange = sheet.getRange("B20:P20");
+        sumRange.load("columnCount");
+        await context.sync();
+
+        // add an event handler to each cell in the sum range
+        for (let i = 0; i < sumRange.columnCount; i++) {
+            let sumBinding = context.workbook.bindings.add(sumRange.getCell(0,i), Excel.BindingType.range, "SumBinding" + i);
+            sumBinding.onDataChanged.add(onSumChanged);
+        }
+        await context.sync();
+    });
+'Excel.BorderLineStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Creating the SettableCellProperties objects to use for the range.
+        // In your add-in, these should be created once, outside the function.
+        const topHeaderProps: Excel.SettableCellProperties = {
+            // The style property takes a string matching the name of an Excel style.
+            // Built-in style names are listed in the `BuiltInStyle` enum.
+            // Note that a style will overwrite any formatting,
+            // so do not use the format property with the style property.
+            style: "Heading1"
+        };
+
+        const headerProps: Excel.SettableCellProperties = {
+            // Any subproperties of format that are not set will not be changed when these cell properties are set.
+            format: {
+                fill: {
+                    color: "Blue"
+                },
+                font: {
+                    color: "White",
+                    bold: true
+                }
+            }
+        };
+
+        const nonApplicableProps: Excel.SettableCellProperties = {
+            format: {
+                fill: {
+                    pattern: Excel.FillPattern.gray25
+                },
+                font: {
+                    color: "Gray",
+                    italic: true
+                }
+            }
+        };
+
+        const matchupScoreProps: Excel.SettableCellProperties = {
+            format: {
+                borders: {
+                    bottom: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    left: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    right: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    top: {
+                        style: Excel.BorderLineStyle.continuous
+                    }
+                }
+            }
+        };
+
+        const range = sheet.getRange("A1:E5");
+
+        // You can use empty JSON objects to avoid changing a cell's properties.
+        range.setCellProperties([
+            [topHeaderProps, {}, {}, {}, {}],
+            [{}, {}, headerProps, headerProps, headerProps],
+            [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+        ]);
+
+        sheet.getUsedRange().format.autofitColumns();
+        await context.sync();
+    });
+'Excel.BuiltInStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Creating the SettableCellProperties objects to use for the range.
+        // In your add-in, these should be created once, outside the function.
+        const topHeaderProps: Excel.SettableCellProperties = {
+            // The style property takes a string matching the name of an Excel style.
+            // Built-in style names are listed in the `BuiltInStyle` enum.
+            // Note that a style will overwrite any formatting,
+            // so do not use the format property with the style property.
+            style: "Heading1"
+        };
+
+        const headerProps: Excel.SettableCellProperties = {
+            // Any subproperties of format that are not set will not be changed when these cell properties are set.
+            format: {
+                fill: {
+                    color: "Blue"
+                },
+                font: {
+                    color: "White",
+                    bold: true
+                }
+            }
+        };
+
+        const nonApplicableProps: Excel.SettableCellProperties = {
+            format: {
+                fill: {
+                    pattern: Excel.FillPattern.gray25
+                },
+                font: {
+                    color: "Gray",
+                    italic: true
+                }
+            }
+        };
+
+        const matchupScoreProps: Excel.SettableCellProperties = {
+            format: {
+                borders: {
+                    bottom: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    left: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    right: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    top: {
+                        style: Excel.BorderLineStyle.continuous
+                    }
+                }
+            }
+        };
+
+        const range = sheet.getRange("A1:E5");
+
+        // You can use empty JSON objects to avoid changing a cell's properties.
+        range.setCellProperties([
+            [topHeaderProps, {}, {}, {}, {}],
+            [{}, {}, headerProps, headerProps, headerProps],
+            [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+        ]);
+
+        sheet.getUsedRange().format.autofitColumns();
+        await context.sync();
+    });
+'Excel.CalculationMode:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
+
+    await Excel.run(async (context) => {
+      context.application.calculationMode = Excel.CalculationMode.manual;
+      context.application.load("calculationMode");
+      await context.sync();
+
+      console.log("Current calculation mode: " + context.application.calculationMode);
+    });
+'Excel.CalculationType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
+
+    await Excel.run(async (context) => {
+      context.application.calculate(Excel.CalculationType.recalculate);
+      await context.sync();
     });
 'Excel.CellPropertiesFill#color:member':
   - >-
@@ -1562,6 +1838,45 @@
 
       await context.sync();
     });
+'Excel.ChartSeriesBy:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
+
+    await Excel.run(async (context) => {
+      // Create a new worksheet called "Sample" and activate it.
+      context.workbook.worksheets.getItemOrNullObject("Sample").delete();
+      const sheet = context.workbook.worksheets.add("Sample");
+      
+      // Create an a table named SalesTable on the Sample worksheet.
+      let expensesTable = sheet.tables.add("A1:E1", true);
+      expensesTable.name = "SalesTable";
+
+      expensesTable.getHeaderRowRange().values = [["Product", "Qtr1", "Qtr2", "Qtr3", "Qtr4"]];        
+      expensesTable.rows.add(null, [
+        ["Frames", 5000, 7000, 6544, 4377],
+        ["Saddles", 400, 323, 276, 651],
+        ["Brake levers", 12000, 8766, 8456, 9812],
+        ["Chains", 1550, 1088, 692, 853],
+        ["Mirrors", 225, 600, 923, 544],
+        ["Spokes", 6005, 7634, 4589, 8765]
+      ]);
+      
+      sheet.getUsedRange().format.autofitColumns();
+      sheet.getUsedRange().format.autofitRows();
+      sheet.activate();
+
+      // Create a line chart based on data from SalesTable.
+      let dataRange = sheet.getRange("A1:E7");
+      let chart = sheet.charts.add("Line", dataRange, Excel.ChartSeriesBy.rows);
+
+      // Position and style the chart.
+      chart.setPosition("A15", "E30");
+      chart.legend.position = "Right";
+      chart.legend.format.fill.setSolidColor("white");
+
+      await context.sync();
+    });
 'Excel.ChartSeriesCollection#getItemAt:member(1)':
   - |-
     // Get the name of the first series in the series collection.
@@ -1581,6 +1896,31 @@
         await context.sync();
 
         console.log("series: Count= " + seriesCollection.count);
+    });
+'Excel.ChartSeriesDimension:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
+
+    await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+
+      // The sample chart is of type `Excel.ChartType.bubble`.
+      const bubbleChart = sheet.charts.getItem("Product Chart");
+
+      // Get the first series in the chart.
+      const firstSeries = bubbleChart.series.getItemAt(0);
+
+      // Get the values for the dimensions we're interested in.
+      const bubbleSize = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.bubbleSizes);
+      const xValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.xvalues);
+      const yValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.yvalues);
+      const category = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.categories);
+
+      await context.sync();
+
+      // Log the information.
+      console.log(`Series ${category.value} - X:${xValues.value},Y:${yValues.value},Bubble:${bubbleSize.value}`);
     });
 'Excel.ChartTitle#getSubstring:member(1)':
   - >-
@@ -1712,6 +2052,42 @@
       chart.title.text = "Bicycle Parts Quarterly Sales";
 
       await context.sync();
+    });
+'Excel.ClearApplyTo:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Orders");
+
+        const productsRange = sheet.getRange("A3:A11");
+        productsRange.load("values");
+
+        await context.sync();
+
+        // Clear all hyperlinks.
+        for (let i = 0; i < productsRange.values.length; i++) {
+            let cellRange = productsRange.getCell(i, 0);
+
+            // Clear the hyperlink.
+            // This eliminates the hyperlink but does not update text format.
+            cellRange.clear(Excel.ClearApplyTo.hyperlinks);
+
+            // Update text format.
+            cellRange.format.font.underline = Excel.RangeUnderlineStyle.none;
+            cellRange.format.font.color = "#000000";
+        }
+
+        await context.sync();
+    });
+'Excel.CloseBehavior:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+    await Excel.run(async (context) => {
+        context.workbook.close(Excel.CloseBehavior.skipSave);
     });
 'Excel.ColorScaleConditionalFormat#criteria:member':
   - >-
@@ -1988,6 +2364,20 @@
             .add(Excel.ConditionalFormatType.cellValue);
         conditionalFormat.cellValue.format.font.color = "red";
         conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+        await context.sync();
+    });
+'Excel.ConditionalDataBarDirection:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B8:E13");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.dataBar);
+        conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
 
         await context.sync();
     });
@@ -2274,6 +2664,106 @@
             console.log("No conditional formats applied.");
         }
     });
+'Excel.ConditionalFormatColorCriterionType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B2:M5");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.colorScale);
+        const criteria = {
+            minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+            midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+            maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+        };
+        conditionalFormat.colorScale.criteria = criteria;
+
+        await context.sync();
+    });
+'Excel.ConditionalFormatIconRuleType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B8:E13");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.iconSet);
+        const iconSetCF = conditionalFormat.iconSet;
+        iconSetCF.style = Excel.IconSet.threeTriangles;
+
+        /*
+            The iconSetCF.criteria array is automatically prepopulated with
+            criterion elements whose properties have been given default settings.
+            You can't write to each property of a criterion directly. Instead,
+            replace the whole criteria object.
+
+            With a "three*" icon set style, such as "threeTriangles", the third
+            element in the criteria array (criteria[2]) defines the "top" icon;
+            e.g., a green triangle. The second (criteria[1]) defines the "middle"
+            icon. The first (criteria[0]) defines the "low" icon, but it
+            can often be left empty as the following object shows, because every
+            cell that does not match the other two criteria always gets the low
+            icon.            
+        */
+        iconSetCF.criteria = [
+            {} as any,
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=700"
+            },
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=1000",
+            }
+        ];
+
+        await context.sync();
+    });
+'Excel.ConditionalFormatPresetCriterion:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        queueCommandsToClearAllConditionalFormats(sheet);
+
+        const temperatureDataRange = sheet.tables.getItem("TemperatureTable").getDataBodyRange();
+
+        /* When the priority property of ConditionalFormat objects 
+           is not explicitly set, they are prioritized in the order
+           that they are added, with zero-based numbering: 0, 1, ...
+           Contradictions are resolved in favor of the format with
+           the lower priority number. In the example below, negative
+           numbers will get a green background, but NOT a blue font,
+           because priority goes to the format that gives them a red font.
+        */
+
+        // Set low numbers to bold, dark red font. This format will
+        // get priority 0.
+        const presetFormat = temperatureDataRange.conditionalFormats
+            .add(Excel.ConditionalFormatType.presetCriteria);
+        presetFormat.preset.format.font.color = "red";
+        presetFormat.preset.format.font.bold = true;
+        presetFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage };
+
+         // Set negative numbers to blue font with green background. 
+         // This format will get priority 1.
+        const cellValueFormat = temperatureDataRange.conditionalFormats
+            .add(Excel.ConditionalFormatType.cellValue);
+        cellValueFormat.cellValue.format.font.color = "blue";
+        cellValueFormat.cellValue.format.fill.color = "lightgreen";
+        cellValueFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+        await context.sync();
+    });
 'Excel.ConditionalFormatRule#formula:member':
   - >-
     // Link to full sample:
@@ -2285,6 +2775,44 @@
         const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
         conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
         conditionalFormat.custom.format.font.color = "green";
+
+        await context.sync();
+    });
+'Excel.ConditionalFormatType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        queueCommandsToClearAllConditionalFormats(sheet);
+
+        const temperatureDataRange = sheet.tables.getItem("TemperatureTable").getDataBodyRange();
+
+        /* When the priority property of ConditionalFormat objects 
+           is not explicitly set, they are prioritized in the order
+           that they are added, with zero-based numbering: 0, 1, ...
+           Contradictions are resolved in favor of the format with
+           the lower priority number. In the example below, negative
+           numbers will get a green background, but NOT a blue font,
+           because priority goes to the format that gives them a red font.
+        */
+
+        // Set low numbers to bold, dark red font. This format will
+        // get priority 0.
+        const presetFormat = temperatureDataRange.conditionalFormats
+            .add(Excel.ConditionalFormatType.presetCriteria);
+        presetFormat.preset.format.font.color = "red";
+        presetFormat.preset.format.font.bold = true;
+        presetFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage };
+
+         // Set negative numbers to blue font with green background. 
+         // This format will get priority 1.
+        const cellValueFormat = temperatureDataRange.conditionalFormats
+            .add(Excel.ConditionalFormatType.cellValue);
+        cellValueFormat.cellValue.format.font.color = "blue";
+        cellValueFormat.cellValue.format.fill.color = "lightgreen";
+        cellValueFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
 
         await context.sync();
     });
@@ -2431,6 +2959,49 @@
 
         await context.sync();
     });
+'Excel.ConditionalIconCriterionOperator:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B8:E13");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.iconSet);
+        const iconSetCF = conditionalFormat.iconSet;
+        iconSetCF.style = Excel.IconSet.threeTriangles;
+
+        /*
+            The iconSetCF.criteria array is automatically prepopulated with
+            criterion elements whose properties have been given default settings.
+            You can't write to each property of a criterion directly. Instead,
+            replace the whole criteria object.
+
+            With a "three*" icon set style, such as "threeTriangles", the third
+            element in the criteria array (criteria[2]) defines the "top" icon;
+            e.g., a green triangle. The second (criteria[1]) defines the "middle"
+            icon. The first (criteria[0]) defines the "low" icon, but it
+            can often be left empty as the following object shows, because every
+            cell that does not match the other two criteria always gets the low
+            icon.            
+        */
+        iconSetCF.criteria = [
+            {} as any,
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=700"
+            },
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=1000",
+            }
+        ];
+
+        await context.sync();
+    });
 'Excel.ConditionalPresetCriteriaRule#criterion:member':
   - >-
     // Link to full sample:
@@ -2459,6 +3030,56 @@
         conditionalFormat.textComparison.format.font.color = "red";
         conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
+        await context.sync();
+    });
+'Excel.ConditionalTextOperator:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B16:D18");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.containsText);
+        conditionalFormat.textComparison.format.font.color = "red";
+        conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
+
+        await context.sync();
+    });
+'Excel.ConnectorType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+        line.name = "StraightLine";
+        await context.sync();
+    });
+'Excel.ContentType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-mentions.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Comments");
+        const mention = {
+            email: "kakri@contoso.com",
+            id: 0,
+            name: "Kate Kristensen"
+        };
+
+        // This will tag the mention's name using the '@' syntax.
+        // They will be notified via email.
+        const commentBody = {
+            mentions: [mention],
+            richContent: '<at id="0">' + mention.name + "</at> -  Can you take a look?"
+        };
+
+        // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+        sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
         await context.sync();
     });
 'Excel.CultureInfo#datetimeFormat:member':
@@ -2975,6 +3596,42 @@
 
         await context.sync();
     });
+'Excel.DataValidationOperator:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/22-data-validation/data-validation.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Decision");
+        const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+        // When you are developing, it is a good practice to
+        // clear the dataValidation object with each run of your code.
+        rankingRange.dataValidation.clear();
+
+        let greaterThanZeroRule = {
+            wholeNumber: {
+                formula1: 0,
+                operator: Excel.DataValidationOperator.greaterThan
+            }
+        };
+        rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+        rankingRange.dataValidation.prompt = {
+            message: "Please enter a positive number.",
+            showPrompt: true,
+            title: "Positive numbers only."
+        };
+
+        rankingRange.dataValidation.errorAlert = {
+            message: "Sorry, only positive numbers are allowed",
+            showAlert: true,
+            style: "Stop",
+            title: "Negative Number Entered"
+        };
+
+        await context.sync();
+    });
 'Excel.DataValidationRule#list:member':
   - >-
     // Link to full sample:
@@ -3037,6 +3694,51 @@
 
         await context.sync();
     });
+'Excel.DateFilterCondition:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+    await Excel.run(async (context) => {
+      // Add a date-based PivotFilter.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
+      // If it's not already there, add "Date Updated" to the hierarchies.
+      let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
+      await context.sync();
+      if (dateHierarchy.isNullObject) {
+        dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
+      }
+
+      // Apply a date filter to filter out anything logged before August.
+      const filterField = dateHierarchy.fields.getItem("Date Updated");
+      const dateFilter = {
+        condition: Excel.DateFilterCondition.afterOrEqualTo,
+        comparator: {
+          date: "2020-08-01",
+          specificity: Excel.FilterDatetimeSpecificity.month
+        }
+      };
+      filterField.applyFilter({ dateFilter: dateFilter });
+
+      await context.sync();
+    });
+'Excel.DeleteShiftDirection:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+    // This function deletes data from a range and sets the delete shift
+    direction to "up".
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("A5:F5");
+        range.delete(Excel.DeleteShiftDirection.up);
+    });
 'Excel.DocumentProperties#custom:member':
   - >-
     // Link to full sample:
@@ -3054,6 +3756,30 @@
         console.log(`${property.key}:${property.value}`);
       });
     });
+'Excel.DynamicFilterCriteria:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/filter-data.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        const expensesTable = sheet.tables.getItem("ExpensesTable");
+
+        let filter = expensesTable.columns.getItem("Amount").filter;
+        filter.apply({
+            filterOn: Excel.FilterOn.dynamic,
+            dynamicCriteria: Excel.DynamicFilterCriteria.belowAverage
+        });
+
+        filter = expensesTable.columns.getItem("Category").filter;
+        filter.apply({
+                filterOn: Excel.FilterOn.values,
+                values: ["Restaurant", "Groceries"]
+        });
+
+        await context.sync();
+       });
 'Excel.ErrorCellValue:type':
   - >-
     // Link to full sample:
@@ -3100,6 +3826,82 @@
       range.valuesAsJson = [[error]];
       await context.sync();
     });
+'Excel.FillPattern:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // Creating the SettableCellProperties objects to use for the range.
+        // In your add-in, these should be created once, outside the function.
+        const topHeaderProps: Excel.SettableCellProperties = {
+            // The style property takes a string matching the name of an Excel style.
+            // Built-in style names are listed in the `BuiltInStyle` enum.
+            // Note that a style will overwrite any formatting,
+            // so do not use the format property with the style property.
+            style: "Heading1"
+        };
+
+        const headerProps: Excel.SettableCellProperties = {
+            // Any subproperties of format that are not set will not be changed when these cell properties are set.
+            format: {
+                fill: {
+                    color: "Blue"
+                },
+                font: {
+                    color: "White",
+                    bold: true
+                }
+            }
+        };
+
+        const nonApplicableProps: Excel.SettableCellProperties = {
+            format: {
+                fill: {
+                    pattern: Excel.FillPattern.gray25
+                },
+                font: {
+                    color: "Gray",
+                    italic: true
+                }
+            }
+        };
+
+        const matchupScoreProps: Excel.SettableCellProperties = {
+            format: {
+                borders: {
+                    bottom: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    left: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    right: {
+                        style: Excel.BorderLineStyle.continuous
+                    },
+                    top: {
+                        style: Excel.BorderLineStyle.continuous
+                    }
+                }
+            }
+        };
+
+        const range = sheet.getRange("A1:E5");
+
+        // You can use empty JSON objects to avoid changing a cell's properties.
+        range.setCellProperties([
+            [topHeaderProps, {}, {}, {}, {}],
+            [{}, {}, headerProps, headerProps, headerProps],
+            [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+            [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+        ]);
+
+        sheet.getUsedRange().format.autofitColumns();
+        await context.sync();
+    });
 'Excel.FilterCriteria#filterOn:member':
   - >-
     // Link to full sample:
@@ -3121,6 +3923,38 @@
         });
 
         await context.sync();
+    });
+'Excel.FilterDatetimeSpecificity:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+    await Excel.run(async (context) => {
+      // Add a date-based PivotFilter.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
+      // If it's not already there, add "Date Updated" to the hierarchies.
+      let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
+      await context.sync();
+      if (dateHierarchy.isNullObject) {
+        dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
+      }
+
+      // Apply a date filter to filter out anything logged before August.
+      const filterField = dateHierarchy.fields.getItem("Date Updated");
+      const dateFilter = {
+        condition: Excel.DateFilterCondition.afterOrEqualTo,
+        comparator: {
+          date: "2020-08-01",
+          specificity: Excel.FilterDatetimeSpecificity.month
+        }
+      };
+      filterField.applyFilter({ dateFilter: dateFilter });
+
+      await context.sync();
     });
 'Excel.FilterOn:enum':
   - |-
@@ -3191,6 +4025,100 @@
         ]
       ];
       await context.sync();
+    });
+'Excel.GeometricShapeType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Shapes");
+        const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+        shape.left = 5;
+        shape.top = 5;
+        shape.height = 175;
+        shape.width = 200;
+        await context.sync();
+    });
+'Excel.GroupOption:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
+
+    Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        
+        // Group the larger, main level. Note that the outline controls
+        // will be on row 10, meaning 4-9 will collapse and expand.
+        sheet.getRange("4:9").group(Excel.GroupOption.byRows);
+
+        // Group the smaller, sublevels. Note that the outline controls
+        // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
+        sheet.getRange("4:5").group(Excel.GroupOption.byRows);
+        sheet.getRange("7:8").group(Excel.GroupOption.byRows);
+        await context.sync();
+    });
+'Excel.HorizontalAlignment:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
+
+    await Excel.run(async (context) => {
+      // Retrieve the worksheet and the table in that worksheet.
+      const sheet = context.workbook.worksheets.getActiveWorksheet();
+      const tableRange = sheet.getRange("B2:E6");
+
+      // Create a merged range in the first row of the table.
+      const chartTitle = tableRange.getRow(0);
+      chartTitle.merge(true);
+
+      // Format the merged range.
+      chartTitle.format.horizontalAlignment = "Center";
+
+      await context.sync();
+    });
+'Excel.IconSet:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B8:E13");
+        const conditionalFormat = range.conditionalFormats
+            .add(Excel.ConditionalFormatType.iconSet);
+        const iconSetCF = conditionalFormat.iconSet;
+        iconSetCF.style = Excel.IconSet.threeTriangles;
+
+        /*
+            The iconSetCF.criteria array is automatically prepopulated with
+            criterion elements whose properties have been given default settings.
+            You can't write to each property of a criterion directly. Instead,
+            replace the whole criteria object.
+
+            With a "three*" icon set style, such as "threeTriangles", the third
+            element in the criteria array (criteria[2]) defines the "top" icon;
+            e.g., a green triangle. The second (criteria[1]) defines the "middle"
+            icon. The first (criteria[0]) defines the "low" icon, but it
+            can often be left empty as the following object shows, because every
+            cell that does not match the other two criteria always gets the low
+            icon.            
+        */
+        iconSetCF.criteria = [
+            {} as any,
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=700"
+            },
+            {
+                type: Excel.ConditionalFormatIconRuleType.number,
+                operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                formula: "=1000",
+            }
+        ];
+
+        await context.sync();
     });
 'Excel.IconSetConditionalFormat#criteria:member':
   - >-
@@ -3291,6 +4219,70 @@
 
         console.log("The image's format is: " + image.format);
         await context.sync();
+    });
+'Excel.InsertShiftDirection:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/insert-delete-clear-range.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const range = sheet.getRange("B4:E4");
+
+        range.insert(Excel.InsertShiftDirection.down);
+        
+        await context.sync();
+    });
+'Excel.KeyboardDirection:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-get-range-edge.yaml
+
+    await Excel.run(async (context) => {
+      // Get the selected range.
+      const range = context.workbook.getSelectedRange();
+
+      // Specify the direction with the `KeyboardDirection` enum.
+      const direction = Excel.KeyboardDirection.up;
+
+      // Get the active cell in the workbook.
+      const activeCell = context.workbook.getActiveCell();
+
+      // Get the top-most cell of the current used range.
+      // This method acts like the Ctrl+Arrow key keyboard shortcut while a range is selected.
+      const rangeEdge = range.getRangeEdge(
+        direction,
+        activeCell // If the selected range contains more than one cell, the active cell must be defined.
+      );
+      rangeEdge.select();
+
+      await context.sync();
+    });
+'Excel.LabelFilterCondition:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+    await Excel.run(async (context) => {
+      // Add a PivotFilter to filter based on the strings of item labels.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // Get the "Type" field.
+      const field = pivotTable.hierarchies.getItem("Type").fields.getItem("Type");
+
+      // Filter out any types that start with "L" ("Lemons" and "Limes" in this case).
+      const filter: Excel.PivotLabelFilter = {
+        condition: Excel.LabelFilterCondition.beginsWith,
+        substring: "L",
+        exclusive: true
+      };
+
+      // Apply the label filter to the field.
+      field.applyFilter({ labelFilter: filter });
+
+      await context.sync();
     });
 'Excel.Line#connectBeginShape:member(1)':
   - >-
@@ -3581,6 +4573,31 @@
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.zoom = { scale: 200 };
         await context.sync();
+    });
+'Excel.PageOrientation:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
+    await Excel.run(async (context) => {
+        const farmSheet = context.workbook.worksheets.getItem("Print");
+        farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
+        await context.sync();
+    });
+'Excel.PictureFormat:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Shapes");
+        const shape = sheet.shapes.getItem("Image");
+        const result = shape.getAsImage(Excel.PictureFormat.png);
+        await context.sync();
+
+        const imageString = result.value;
+        // Your add-in would save this string as a .png file.
+        console.log("The image's base64-encoded string: " + imageString);
     });
 'Excel.PivotField#clearAllFilters:member(1)':
   - >-
@@ -5310,6 +6327,21 @@
             console.log(borders.items[i].sideIndex);
         }
     });
+'Excel.RangeCopyType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        // Place a label in front of the copied data.
+        sheet.getRange("F2").values = [["Copied Formula"]];
+
+        // Copy a range preserving the formulas.
+        // Note: non-formula values are copied over as is.
+        sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
+        await context.sync();
+    });
 'Excel.RangeFill#clear:member(1)':
   - |-
     await Excel.run(async (context) => { 
@@ -5491,6 +6523,54 @@
 
         await context.sync();
     });
+'Excel.RangeUnderlineStyle:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Orders");
+
+        const productsRange = sheet.getRange("A3:A11");
+        productsRange.load("values");
+
+        await context.sync();
+
+        // Clear all hyperlinks.
+        for (let i = 0; i < productsRange.values.length; i++) {
+            let cellRange = productsRange.getCell(i, 0);
+
+            // Clear the hyperlink.
+            // This eliminates the hyperlink but does not update text format.
+            cellRange.clear(Excel.ClearApplyTo.hyperlinks);
+
+            // Update text format.
+            cellRange.format.font.underline = Excel.RangeUnderlineStyle.none;
+            cellRange.format.font.color = "#000000";
+        }
+
+        await context.sync();
+    });
+'Excel.ReadingOrder:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+    await Excel.run(async (context) => {
+        let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
+        style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
+
+        await context.sync();
+
+        console.log("Orientation: " + style.textOrientation);
+        console.log("Horizontal alignment: " + style.horizontalAlignment);
+        console.log("Add indent: " + style.autoIndent);
+        console.log("Reading order: " + style.readingOrder);
+        console.log("Wrap text: " + style.wrapText);
+        console.log("Include protection: " + style.includeProtection);
+        console.log("Shrink to fit: " + style.shrinkToFit);
+        console.log("Style locked: " + style.locked);
+    });
 'Excel.RemoveDuplicatesResult#uniqueRemaining:member':
   - >-
     // Link to full sample:
@@ -5527,6 +6607,24 @@
 
         await context.sync();
     });
+'Excel.SaveBehavior:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+    await Excel.run(async (context) => {
+        context.workbook.save(Excel.SaveBehavior.prompt);
+    });
+'Excel.SearchDirection:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
+
+    searchDirectionToggle = searchDirectionToggle ===
+    Excel.SearchDirection.forward ? Excel.SearchDirection.backwards :
+    Excel.SearchDirection.forward;
+
+    console.log("Search direction = " + searchDirectionToggle);
 'Excel.SettableCellProperties#style:member':
   - >-
     // Link to full sample:
@@ -5833,6 +6931,17 @@
         shape.setZOrder(Excel.ShapeZOrder.sendBackward);
         await context.sync();
     });
+'Excel.ShapeAutoSize:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const textbox = shapes.getItem("Textbox");
+        textbox.textFrame.autoSizeSetting = Excel.ShapeAutoSize.autoSizeShapeToFitText;
+        await context.sync();
+    });
 'Excel.ShapeCollection#addGeometricShape:member(1)':
   - >-
     // Link to full sample:
@@ -5927,6 +7036,86 @@
         shapeGroup.ungroup();
         console.log("Shapes ungrouped");
 
+        await context.sync();
+    });
+'Excel.ShapeScaleType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Shapes");
+        const shape = sheet.shapes.getItem("Octagon")
+        shape.lockAspectRatio = true;
+        shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+        await context.sync();
+    });
+'Excel.ShapeTextHorizontalAlignment:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const textbox = shapes.getItem("Textbox");
+        textbox.textFrame.horizontalAlignment = Excel.ShapeTextHorizontalAlignment.center;
+        await context.sync();
+    });
+'Excel.ShapeZOrder:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
+
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Shapes");
+        const shape = sheet.shapes.getItem("Octagon")
+        shape.setZOrder(Excel.ShapeZOrder.sendBackward);
+        await context.sync();
+    });
+'Excel.SheetVisibility:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-visibility.yaml
+
+    await Excel.run(async (context) => {
+
+        const visibleSheets = await filterWorksheetsByVisibility(context, Excel.SheetVisibility.visible);
+
+        if (visibleSheets.length > 1) {
+            console.log(`Hiding worksheet named "${visibleSheets[0].name}"...`);
+
+            visibleSheets[0].visibility = Excel.SheetVisibility.hidden;
+
+            await context.sync();
+
+        } else {
+            console.log("Cannot hide the only visible worksheet");
+        }
+    });
+'Excel.ShowAsCalculation:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
+
+    await Excel.run(async (context) => {
+        const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+        const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
+        const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+        farmDataHierarchy.load("showAs");
+        wholesaleDataHierarchy.load("showAs");
+        await context.sync();
+
+        // Show the crates of each fruit type sold at the farm as a percentage of the column's total.
+        let farmShowAs = farmDataHierarchy.showAs;
+        farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+        farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+        farmDataHierarchy.showAs = farmShowAs;
+
+        let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+        wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+        wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+        wholesaleDataHierarchy.showAs = wholesaleShowAs;
         await context.sync();
     });
 'Excel.ShowAsRule#baseItem:member':
@@ -6026,6 +7215,64 @@
         slicer.width = 150;
         await context.sync();
     });
+'Excel.SortOn:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
+    async function sortTopToBottom(criteria: string) {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const range = sheet.getRange("A1:E5");
+
+            // Find the column header that provides the sort criteria.
+            const header = range.find(criteria, {});
+            header.load("columnIndex");
+            await context.sync();
+
+            range.sort.apply(
+                [
+                    {
+                        key: header.columnIndex,
+                        sortOn: Excel.SortOn.value
+                    }
+                ],
+                false /*matchCase*/,
+                true /*hasHeaders*/,
+                Excel.SortOrientation.rows
+            );
+            await context.sync();
+        });
+    }
+'Excel.SortOrientation:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
+
+    async function sortLeftToRight(criteria: string) {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const range = sheet.getRange("A1:E5");
+
+            // Find the row header that provides the sort criteria.
+            const header = range.find(criteria, {});
+            header.load("rowIndex");
+            await context.sync();
+
+            range.sort.apply(
+                [
+                    {
+                        key: header.rowIndex,
+                        sortOn: Excel.SortOn.value
+                    }
+                ],
+                false /*matchCase*/,
+                true /*hasHeaders*/,
+                Excel.SortOrientation.columns
+            );
+            await context.sync();
+        });
+    }
 'Excel.Style#delete:member(1)':
   - >-
     // Link to full sample:
@@ -6594,6 +7841,46 @@
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const textbox = shapes.getItem("Textbox");
         textbox.textFrame.deleteText();
+        await context.sync();
+    });
+'Excel.ValueFilterCondition:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+    await Excel.run(async (context) => {
+      // Add a PivotFilter to filter on the values correlated with a row.
+
+      // Get the PivotTable.
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+      // Get the "Farm" field.
+      const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
+
+      // Filter to only include rows with more than 500 wholesale crates sold.
+      const filter: Excel.PivotValueFilter = {
+        condition: Excel.ValueFilterCondition.greaterThan,
+        comparator: 500,
+        value: "Sum of Crates Sold Wholesale"
+      };
+
+      // Apply the value filter to the field.
+      field.applyFilter({ valueFilter: filter });
+
+      await context.sync();
+    });
+'Excel.VerticalAlignment:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+    await Excel.run(async (context) => {
+        let worksheet = context.workbook.worksheets.getItem("Sample");
+        let range = worksheet.getRange("A1:E1");
+        // Apply new style.
+        range.style = ("Diagonal Orientation Style");
+        range.format.verticalAlignment = "Justify";
+
         await context.sync();
     });
 'Excel.WebImageCellValue#address:member':
@@ -7748,6 +9035,26 @@
         const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.freezePanes.unfreeze();
 
+        await context.sync();
+    });
+'Excel.WorksheetPositionType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
+
+    await Excel.run(async (context) => {
+        // Retrieve the source workbook.
+        const workbook = context.workbook;
+        
+        // Set up the insert options.
+        const options = {
+            sheetNamesToInsert: [], // Insert all the worksheets from the source workbook.
+            positionType: Excel.WorksheetPositionType.after, // Insert after the `relativeTo` sheet.
+            relativeTo: "Sheet1" // The sheet relative to which the other worksheets will be inserted. Used with `positionType`.
+        };
+        
+        // Insert the new worksheets.
+        workbook.insertWorksheetsFromBase64(externalWorkbook, options);
         await context.sync();
     });
 'Excel.WorksheetProtection#protect:member(1)':

@@ -16,13 +16,15 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+  // Get the referenced note's type, which is footnote.
+
   await Word.run(async (context) => {
     const footnotes = context.document.body.footnotes;
     footnotes.load("items/type");
     await context.sync();
 
     const referenceNumber = $("#input-reference").val();
-    let mark = (referenceNumber as number) - 1;
+    const mark = (referenceNumber as number) - 1;
     const itemType = footnotes.items[mark].type;
     console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
   });

@@ -50,11 +50,13 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Edit the first comment in the selected content.
+
       await Word.run(async (context) => {
-        let text = $("#edit-comment-text")
+        const text = $("#edit-comment-text")
           .val()
           .toString();
-        let comment = context.document
+        const comment = context.document
           .getSelection()
           .getComments()
           .getFirst();
@@ -156,8 +158,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Toggle Resolved status of the first comment in the selected content.
+
       await Word.run(async (context) => {
-        let comment = context.document
+        const comment = context.document
           .getSelection()
           .getComments()
           .getFirst();
@@ -167,7 +171,7 @@ properties:
         // Toggle resolved status.
         // If the comment is active, set as resolved.
         // If it's resolved, set resolved to false.
-        let toggleResolved: boolean = comment.resolved;
+        const toggleResolved: boolean = comment.resolved;
         comment.resolved = !toggleResolved;
         comment.load();
         await context.sync();
@@ -200,6 +204,8 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+      // Delete the first comment in the selected content.
 
       await Word.run(async (context) => {
         context.document
@@ -237,8 +243,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Get the range of the first comment in the selected content.
+
       await Word.run(async (context) => {
-        let range = context.document
+        const range = context.document
           .getSelection()
           .getComments()
           .getFirst()
@@ -341,16 +349,18 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Reply to the first active comment in the selected content.
+
       await Word.run(async (context) => {
-        let text = $("#reply-text")
+        const text = $("#reply-text")
           .val()
           .toString();
-        let comments = context.document.getSelection().getComments();
+        const comments = context.document.getSelection().getComments();
         comments.load("items");
         await context.sync();
-        let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+        const firstActiveComment = comments.items.find((item) => item.resolved !== true);
         if (firstActiveComment) {
-          let reply = firstActiveComment.reply(text);
+          const reply = firstActiveComment.reply(text);
           console.log("Reply added");
         } else {
           console.log("No active comment was found in the selection so couldn't reply.");

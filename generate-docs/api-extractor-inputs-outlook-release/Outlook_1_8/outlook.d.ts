@@ -1506,6 +1506,11 @@ export declare namespace Office {
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * 
          * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties.
@@ -1544,6 +1549,11 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
+         * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          * 
          * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5756,6 +5766,11 @@ export declare namespace Office {
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * 
          * @param base64File - The base64-encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties.
@@ -5791,6 +5806,11 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
+         * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          * 
          * @param base64File - The base64-encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.

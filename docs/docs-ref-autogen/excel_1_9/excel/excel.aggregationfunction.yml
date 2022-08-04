@@ -4,7 +4,31 @@ uid: 'excel!Excel.AggregationFunction:enum'
 package: excel!
 fullName: Excel.AggregationFunction
 summary: Aggregation function for the DataPivotField.
-remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+  async function genericFunctionSwitch(functionType: Excel.AggregationFunction) {
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+          pivotTable.dataHierarchies.load("no-properties-needed");
+          await context.sync();
+
+          pivotTable.dataHierarchies.items[0].summarizeBy = functionType;
+          pivotTable.dataHierarchies.items[1].summarizeBy = functionType;
+          await context.sync();
+      });
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

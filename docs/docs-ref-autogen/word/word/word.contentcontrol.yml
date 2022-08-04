@@ -625,7 +625,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
       await Word.run(async (context) => {
-        let contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 
@@ -1836,7 +1836,7 @@ events:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
       await Word.run(async (context) => {
-        let contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 

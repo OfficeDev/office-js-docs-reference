@@ -110,7 +110,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -660,7 +660,7 @@ methods:
 
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        let secondSentence = context.document.body.insertParagraph(
+        const secondSentence = context.document.body.insertParagraph(
           "This is the first text with a custom style.",
           "End"
         );
@@ -839,7 +839,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
       await Word.run(async (context) => {
-        let results = context.document.body.search("Online");
+        const results = context.document.body.search("Online");
         results.load("length");
 
         await context.sync();
@@ -862,7 +862,7 @@ methods:
       await Word.run(async (context) => {
         // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
         // (i.e. use wildcards).
-        let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();
@@ -884,7 +884,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
