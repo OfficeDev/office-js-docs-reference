@@ -1391,6 +1391,15 @@ methods:
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
 
 
+      **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must
+      first get the current item body using the
+      [Office.context.mailbox.item.body.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image will not
+      render in the body once it's inserted. For further guidance, see [Attach a
+      file](https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      -->.
+
+
       #### Examples
 
 
@@ -1517,6 +1526,15 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
+
+
+      **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must
+      first get the current item body using the
+      [Office.context.mailbox.item.body.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image will not
+      render in the body once it's inserted. For further guidance, see [Attach a
+      file](https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      -->.
     isPreview: false
     isDeprecated: false
     syntax:

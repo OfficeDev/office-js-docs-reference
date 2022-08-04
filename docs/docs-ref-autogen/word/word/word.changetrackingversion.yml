@@ -16,10 +16,12 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+  // Get the reviewed text.
+
   await Word.run(async (context) => {
     const range = context.document.getSelection();
-    let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-    let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+    const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+    const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
     await context.sync();
 

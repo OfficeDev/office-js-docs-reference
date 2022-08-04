@@ -310,7 +310,7 @@ properties:
 
       await Word.run(async (context) => {
         // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-        let paragraph = context.document.getSelection().paragraphs.getFirst();
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
         paragraph.load("text");
 
         await context.sync();
@@ -915,7 +915,7 @@ methods:
 
       await Word.run(async (context) => {
         // Replace the last paragraph.
-        let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+        const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
         range.font.highlightColor = "black";
         range.font.color = "white";
 

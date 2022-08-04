@@ -71,7 +71,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
       await Word.run(async (context) => {
-          let builtInProperties = context.document.properties;
+          const builtInProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
 
           await context.sync();

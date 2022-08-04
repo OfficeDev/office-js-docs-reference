@@ -42,6 +42,8 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+      // Get the current change tracking mode.
+
       await Word.run(async (context) => {
         const document = context.document;
         document.load("changeTrackingMode");
@@ -109,7 +111,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
       await Word.run(async (context) => {
-          let builtInProperties = context.document.properties;
+          const builtInProperties = context.document.properties;
           builtInProperties.load("*"); // Let's get all!
 
           await context.sync();

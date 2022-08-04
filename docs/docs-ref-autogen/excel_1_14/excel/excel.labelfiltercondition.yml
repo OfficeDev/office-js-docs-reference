@@ -7,7 +7,41 @@ summary: >-
   Enum representing all accepted conditions by which a label filter can be applied. Used to configure the type of
   PivotFilter that is applied to the field. `PivotFilter.criteria.exclusive` can be set to `true` to invert many of
   these conditions.
-remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+  await Excel.run(async (context) => {
+    // Add a PivotFilter to filter based on the strings of item labels.
+
+    // Get the PivotTable.
+    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+    // Get the "Type" field.
+    const field = pivotTable.hierarchies.getItem("Type").fields.getItem("Type");
+
+    // Filter out any types that start with "L" ("Lemons" and "Limes" in this case).
+    const filter: Excel.PivotLabelFilter = {
+      condition: Excel.LabelFilterCondition.beginsWith,
+      substring: "L",
+      exclusive: true
+    };
+
+    // Apply the label filter to the field.
+    field.applyFilter({ labelFilter: filter });
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
