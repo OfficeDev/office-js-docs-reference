@@ -4,7 +4,29 @@ uid: 'excel!Excel.GeometricShapeType:enum'
 package: excel!
 fullName: Excel.GeometricShapeType
 summary: Specifies the shape type for a `GeometricShape` object.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Shapes");
+      const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+      shape.left = 5;
+      shape.top = 5;
+      shape.height = 175;
+      shape.width = 200;
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

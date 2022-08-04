@@ -4,7 +4,30 @@ uid: 'excel!Excel.PictureFormat:enum'
 package: excel!
 fullName: Excel.PictureFormat
 summary: The format of the image.
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Shapes");
+      const shape = sheet.shapes.getItem("Image");
+      const result = shape.getAsImage(Excel.PictureFormat.png);
+      await context.sync();
+
+      const imageString = result.value;
+      // Your add-in would save this string as a .png file.
+      console.log("The image's base64-encoded string: " + imageString);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

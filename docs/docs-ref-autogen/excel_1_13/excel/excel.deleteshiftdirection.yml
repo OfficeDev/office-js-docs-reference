@@ -4,7 +4,27 @@ uid: 'excel!Excel.DeleteShiftDirection:enum'
 package: excel!
 fullName: Excel.DeleteShiftDirection
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
+
+  // This function deletes data from a range and sets the delete shift direction to "up".
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("A5:F5");
+      range.delete(Excel.DeleteShiftDirection.up);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

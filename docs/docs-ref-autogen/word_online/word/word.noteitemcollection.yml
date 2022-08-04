@@ -53,8 +53,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+      // Get the first footnote in the document body and select its reference mark.
+
       await Word.run(async (context) => {
-        let reference = context.document.body.footnotes.getFirst().reference;
+        const reference = context.document.body.footnotes.getFirst().reference;
         reference.select();
         console.log("The first footnote is selected.");
       });

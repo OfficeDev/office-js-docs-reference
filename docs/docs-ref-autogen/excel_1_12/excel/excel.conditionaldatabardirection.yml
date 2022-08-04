@@ -4,7 +4,29 @@ uid: 'excel!Excel.ConditionalDataBarDirection:enum'
 package: excel!
 fullName: Excel.ConditionalDataBarDirection
 summary: Represents the data bar direction within a cell.
-remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B8:E13");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.dataBar);
+      conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
