@@ -9537,7 +9537,7 @@ Word.CommentReplyCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.CommentReplyCollection,toJSON(),Method,Poor,false
 Word.CommentReplyCollection,track(),Method,Poor,false
 Word.CommentReplyCollection,untrack(),Method,Poor,false
-Word.ContentControl,N/A,Class,Good,false
+Word.ContentControl,N/A,Class,Good,true
 Word.ContentControl,appearance,Property,Good,false
 Word.ContentControl,cannotDelete,Property,Good,false
 Word.ContentControl,cannotEdit,Property,Good,false
@@ -9624,7 +9624,7 @@ Word.ContentControlCollection,untrack(),Method,Poor,false
 Word.ContentControlEventArgs,N/A,Class,Good,false
 Word.ContentControlEventArgs,contentControl,Property,Good,true
 Word.ContentControlEventArgs,eventType,Property,Good,false
-Word.ContentControlType,N/A,Enum,Good,false
+Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,buildingBlockGallery,EnumField,Fine,false
 Word.ContentControlType,checkBox,EnumField,Fine,false
 Word.ContentControlType,comboBox,EnumField,Fine,false

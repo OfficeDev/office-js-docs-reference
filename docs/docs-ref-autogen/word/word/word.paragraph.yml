@@ -642,7 +642,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -682,7 +682,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the text property for all of the paragraphs.
-          context.load(paragraphs, 'text');
+          paragraphs.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -752,7 +752,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -818,7 +818,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for the top 2 paragraphs.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -871,7 +871,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the text property for all of the paragraphs.
-          context.load(paragraphs, 'text');
+          paragraphs.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -882,7 +882,7 @@ methods:
           const precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
 
           // Queue a command to load the text of the preceding paragraph.
-          context.load(precedingParagraph, 'text');
+          precedingParagraph.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -1088,7 +1088,7 @@ methods:
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -1141,7 +1141,7 @@ methods:
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -1227,7 +1227,7 @@ methods:
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -1297,7 +1297,7 @@ methods:
           const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.

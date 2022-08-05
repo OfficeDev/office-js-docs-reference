@@ -117,7 +117,7 @@ methods:
           const mySections = context.document.sections;
           
           // Queue a command to load the sections.
-          context.load(mySections, 'body/style');
+          mySections.load('body/style');
           
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -206,7 +206,7 @@ methods:
           const mySections = context.document.sections;
           
           // Queue a command to load the sections.
-          context.load(mySections, 'body/style');
+          mySections.load('body/style');
           
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
