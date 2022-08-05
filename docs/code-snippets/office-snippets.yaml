@@ -3456,7 +3456,7 @@ OfficeExtension.LoadOption:interface:
         // Create a proxy object for the paragraphs collection.
         const paragraphs = context.document.body.paragraphs;
 
-        // Queue a commmand to load the text and font properties.
+        // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set.
         // Otherwise, all properties are returned on the object.
         context.load(paragraphs, 'text, font/size');

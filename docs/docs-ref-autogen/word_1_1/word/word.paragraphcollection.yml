@@ -76,13 +76,13 @@ methods:
               // Queue a command to load the text and font properties.
               // It is best practice to always specify the property set. Otherwise, all properties are
               // returned in on the object.
-              context.load(paragraphs, 'text, font/size');
+              paragraphs.load('text, font/size');
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.
               await context.sync();
 
-              // Insert code that works with the paragraphs loaded by context.load().
+              // Insert code that works with the paragraphs loaded by paragraphs.load().
           });
           ```
   - name: load(propertyNames)

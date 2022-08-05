@@ -74,7 +74,7 @@
         const body = context.document.body;
 
         // Queue a command to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
+        body.load('font/size, font/name, font/color, style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -487,7 +487,7 @@
         const body = context.document.body;
 
         // Queue a command to load the text in document body.
-        context.load(body, 'text');
+        body.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -771,7 +771,7 @@
         const contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
         
         // Queue a command to load the tag property for all of content controls.
-        context.load(contentControlsWithTag, 'tag');
+        contentControlsWithTag.load('tag');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -798,7 +798,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -825,7 +825,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -853,7 +853,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -883,7 +883,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -917,7 +917,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -944,7 +944,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -975,7 +975,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1063,7 +1063,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1147,6 +1147,62 @@
 
       await context.sync();
     });
+'Word.ContentControl:class':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.ContentControlAppearance:enum':
   - >-
     // Link to full sample:
@@ -1195,7 +1251,7 @@
         const contentControl = context.document.contentControls.getById(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1211,7 +1267,7 @@
         const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1249,7 +1305,7 @@
         const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
         // Queue a command to load the text property for all of content controls with a specific title.
-        context.load(contentControlsWithTitle, 'text');
+        contentControlsWithTitle.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1278,7 +1334,7 @@
         const contentControl = context.document.contentControls.getFirstOrNullObject();
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1298,7 +1354,7 @@
         const contentControls = context.document.contentControls;
 
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1360,6 +1416,62 @@
         console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
+'Word.ContentControlType:enum':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.CustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
@@ -1445,7 +1557,7 @@
         const thisDocument = context.document;
         
         // Queue a command to load content control properties.
-        context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+        thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1481,7 +1593,7 @@
         const thisDocument = context.document;
 
         // Queue a command to load the document save state (on the saved property).
-        context.load(thisDocument, 'saved');    
+        thisDocument.load('saved');    
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1764,7 +1876,7 @@
         const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1788,7 +1900,7 @@
         const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1959,7 +2071,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1982,7 +2094,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2005,7 +2117,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2028,7 +2140,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2051,7 +2163,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2062,7 +2174,7 @@
         const precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
 
         // Queue a command to load the text of the preceding paragraph.
-        context.load(precedingParagraph, 'text');
+        precedingParagraph.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2124,7 +2236,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2151,7 +2263,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2178,7 +2290,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2204,7 +2316,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2398,13 +2510,13 @@
         // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set. Otherwise, all properties are
         // returned in on the object.
-        context.load(paragraphs, 'text, font/size');
+        paragraphs.load('text, font/size');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Insert code that works with the paragraphs loaded by context.load().
+        // Insert code that works with the paragraphs loaded by paragraphs.load().
     });
 'Word.Range#clear:member(1)':
   - |-
@@ -2783,7 +2895,7 @@
         const searchResults = context.document.body.search('video you', {ignorePunct: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2810,7 +2922,7 @@
         const searchResults = context.document.body.search('vid', {matchPrefix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2836,7 +2948,7 @@
         const searchResults = context.document.body.search('ly', {matchSuffix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2864,7 +2976,7 @@
         const searchResults = context.document.body.search('to*n', {matchWildcards: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2904,7 +3016,7 @@
         const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2947,7 +3059,7 @@
         const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3106,7 +3218,7 @@
         const startMonth = settings.getItem('startMonth');
 
         // Queue a command to load the setting.
-        context.load(startMonth);
+        startMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3127,8 +3239,8 @@
         const endMonth = settings.getItemOrNullObject('endMonth');
 
         // Queue commands to load settings.
-        context.load(startMonth);
-        context.load(endMonth);
+        startMonth.load();
+        endMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
