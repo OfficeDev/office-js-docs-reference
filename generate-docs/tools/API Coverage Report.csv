@@ -9603,7 +9603,7 @@ Word.ContentControlCollection,track(),Method,Poor,false
 Word.ContentControlCollection,untrack(),Method,Poor,false
 Word.ContentControlEventArgs,N/A,Class,Good,false
 Word.ContentControlEventArgs,contentControl,Property,Good,true
-Word.ContentControlEventArgs,eventType,Property,Good,false
+Word.ContentControlEventArgs,eventType,Property,Good,true
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,buildingBlockGallery,EnumField,Fine,false
 Word.ContentControlType,checkBox,EnumField,Fine,false
@@ -9787,7 +9787,7 @@ Word.ErrorCodes,itemNotFound,EnumField,Missing,false
 Word.ErrorCodes,notImplemented,EnumField,Missing,false
 Word.ErrorCodes,searchDialogIsOpen,EnumField,Missing,false
 Word.ErrorCodes,searchStringInvalidOrTooLong,EnumField,Missing,false
-Word.EventType,N/A,Enum,Good,false
+Word.EventType,N/A,Enum,Good,true
 Word.EventType,contentControlAdded,EnumField,Fine,false
 Word.EventType,contentControlDataChanged,EnumField,Fine,false
 Word.EventType,contentControlDeleted,EnumField,Fine,false
