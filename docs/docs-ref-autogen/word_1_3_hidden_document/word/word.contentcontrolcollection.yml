@@ -60,7 +60,7 @@ methods:
           const contentControl = context.document.contentControls.getById(30086310);
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -99,7 +99,7 @@ methods:
           const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -182,7 +182,7 @@ methods:
           const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
           // Queue a command to load the text property for all of content controls with a specific title.
-          context.load(contentControlsWithTitle, 'text');
+          contentControlsWithTitle.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -246,7 +246,7 @@ methods:
           const contentControl = context.document.contentControls.getFirstOrNullObject();
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -330,7 +330,7 @@ methods:
               const contentControls = context.document.contentControls;
 
               // Queue a command to load the id property for all of the content controls.
-              context.load(contentControls, 'id');
+              contentControls.load('id');
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.

@@ -323,7 +323,7 @@ methods:
               const thisDocument = context.document;
               
               // Queue a command to load content control properties.
-              context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+              thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -405,7 +405,7 @@ methods:
           const thisDocument = context.document;
 
           // Queue a command to load the document save state (on the saved property).
-          context.load(thisDocument, 'saved');    
+          thisDocument.load('saved');    
           
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
