@@ -65,9 +65,9 @@ methods:
       ```typescript
 
       await Excel.run(async (context) => { 
-          const tables = context.workbook.tables;
-          const values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
-          const column = tables.getItem("Table1").columns.add(null, values);
+          var tables = context.workbook.tables;
+          var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
+          var column = tables.getItem("Table1").columns.add(null, values);
           column.load('name');
           await context.sync();
           
@@ -90,33 +90,6 @@ methods:
         - id: values
           description: Optional. A 2D array of unformatted values of the table column.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
-        - id: name
-          description: 'Optional. Specifies the name of the new column. If `null`<!-- -->, the default name will be used.'
-          type: string
-      return:
-        type: '<xref uid="excel!Excel.TableColumn:class" />'
-        description: ''
-  - name: 'addAsJson(index, values, name)'
-    uid: 'excel!Excel.TableColumnCollection#addAsJson:member(1)'
-    package: excel!
-    fullName: 'addAsJson(index, values, name)'
-    summary: >-
-      Adds a new column to the table. Unlike `add()`<!-- -->, `addAsJson()` takes any type of cell value, such as image
-      or entity data types.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'addAsJson(index?: number, values?: CellValue[][], name?: string): Excel.TableColumn;'
-      parameters:
-        - id: index
-          description: >-
-            Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end.
-            Columns with a higher index will be shifted to the side. Zero-indexed.
-          type: number
-        - id: values
-          description: Optional. A 2D array of cell values of the table column.
-          type: '<xref uid="excel!Excel.CellValue:type" />[][]'
         - id: name
           description: 'Optional. Specifies the name of the new column. If `null`<!-- -->, the default name will be used.'
           type: string
@@ -148,7 +121,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
+          var tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
           tableColumn.load('name');
           await context.sync();
           console.log(tableColumn.name);
@@ -177,7 +150,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+          var tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
           tableColumn.load('name');
           await context.sync();
           console.log(tableColumn.name);
@@ -263,12 +236,12 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const tableColumns = context.workbook.tables.getItem('Table1').columns;
+              var tableColumns = context.workbook.tables.getItem('Table1').columns;
               tableColumns.load('items');
               await context.sync();
               
               console.log("tableColumns Count: " + tableColumns.count);
-              for (let i = 0; i < tableColumns.items.length; i++) {
+              for (var i = 0; i < tableColumns.items.length; i++) {
                   console.log(tableColumns.items[i].name);
               }
           });

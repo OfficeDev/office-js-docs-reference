@@ -29,11 +29,10 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      // This function adds a percentage AutoFilter to the active worksheet 
-
-      // and applies the filter to a column of the used range.
-
       await Excel.run(async (context) => {
+          // This method adds a percentage AutoFilter to the active worksheet 
+          // and applies the filter to a column of the used range.
+
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           const farmData = sheet.getUsedRange();
@@ -218,8 +217,8 @@ properties:
       ```typescript
       // Set worksheet position.
       await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
+          var wSheetName = 'Sheet1';
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.position = 2;
           await context.sync(); 
       });
@@ -246,7 +245,7 @@ properties:
       // To remove only a subset of WorksheetProtectionOptions use the 
       // protect() method and set the options you wish to remove to true.
       await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sheet1");
+        var sheet = context.workbook.worksheets.getItem("Sheet1");
         sheet.protection.protect({
           allowInsertRows: false, // Protect row insertion
           allowDeleteRows: true // Unprotect row deletion
@@ -427,8 +426,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
+          var wSheetName = 'Sheet1';
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.activate();
           await context.sync(); 
       });
@@ -548,8 +547,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
+          var wSheetName = 'Sheet1';
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.delete();
           await context.sync(); 
       });
@@ -658,10 +657,10 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const cell = worksheet.getCell(0,0);
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
+          var cell = worksheet.getCell(0,0);
           cell.load('address');
           await context.sync();
 
@@ -844,10 +843,10 @@ methods:
       ```typescript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
-          const sheetName = "Sheet1";
-          const rangeAddress = "A1:F8";
-          const worksheet = context.workbook.worksheets.getItem(sheetName);
-          const range = worksheet.getRange(rangeAddress);
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = context.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
           range.load('cellCount');
           await context.sync();
           
@@ -952,9 +951,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const wSheetName = 'Sheet1';
-          const worksheet = context.workbook.worksheets.getItem(wSheetName);
-          const usedRange = worksheet.getUsedRange();
+          var wSheetName = 'Sheet1';
+          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          var usedRange = worksheet.getUsedRange();
           usedRange.load('address');
           await context.sync();
           
@@ -1041,8 +1040,8 @@ methods:
           ```typescript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
-              const wSheetName = 'Sheet1';
-              const worksheet = context.workbook.worksheets.getItem(wSheetName);
+              var wSheetName = 'Sheet1';
+              var worksheet = context.workbook.worksheets.getItem(wSheetName);
               worksheet.load('position')
               await context.sync();
               
@@ -1175,7 +1174,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          var sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onActivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The activated worksheet ID is: " + event.worksheetId);
@@ -1205,7 +1204,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          var sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onCalculated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The worksheet has recalculated.");
@@ -1269,7 +1268,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          var sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onDeactivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The deactivated worksheet is: " + event.worksheetId);
@@ -1313,7 +1312,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
+          var sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onSelectionChanged.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The selected range has changed to: " + event.address);

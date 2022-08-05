@@ -119,8 +119,8 @@ methods:
           ```typescript
           // Get the position of Chart Legend from Chart1.
           await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              const legend = chart.legend;
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              var legend = chart.legend;
               legend.load('position');
               await context.sync();
 

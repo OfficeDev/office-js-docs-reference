@@ -47,23 +47,7 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: >-
-      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
-
-      await Excel.run(async (context) => {
-        context.application.calculate(Excel.CalculationType.full);
-      });
-
-      ```
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +130,7 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => {
-              const application = context.workbook.application;
+              var application = context.workbook.application;
               application.load('calculationMode');
               await context.sync();
 

@@ -4,23 +4,7 @@ uid: 'excel!Excel.SaveBehavior:enum'
 package: excel!
 fullName: Excel.SaveBehavior
 summary: Specifies the save behavior for `Workbook.save`<!-- -->.
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
-
-  await Excel.run(async (context) => {
-      context.workbook.save(Excel.SaveBehavior.prompt);
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

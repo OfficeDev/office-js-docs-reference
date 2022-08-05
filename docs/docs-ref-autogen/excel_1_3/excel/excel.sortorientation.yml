@@ -4,44 +4,7 @@ uid: 'excel!Excel.SortOrientation:enum'
 package: excel!
 fullName: Excel.SortOrientation
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
-
-  async function sortLeftToRight(criteria: string) {
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getActiveWorksheet();
-          const range = sheet.getRange("A1:E5");
-
-          // Find the row header that provides the sort criteria.
-          const header = range.find(criteria, {});
-          header.load("rowIndex");
-          await context.sync();
-
-          range.sort.apply(
-              [
-                  {
-                      key: header.rowIndex,
-                      sortOn: Excel.SortOn.value
-                  }
-              ],
-              false /*matchCase*/,
-              true /*hasHeaders*/,
-              Excel.SortOrientation.columns
-          );
-          await context.sync();
-      });
-  }
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

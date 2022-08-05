@@ -54,7 +54,7 @@ methods:
       await OneNote.run(async (context) => {
               
           // Get the active notebook.
-          const notebook = context.application.getActiveNotebook();
+          var notebook = context.application.getActiveNotebook();
                   
           // Queue a command to load the notebook.
           // For best performance, request specific properties.
@@ -90,7 +90,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the active notebook.
-          const notebook = context.application.getActiveNotebookOrNull();
+          var notebook = context.application.getActiveNotebookOrNull();
 
           // Queue a command to load the notebook.
           // For best performance, request specific properties.
@@ -127,7 +127,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // get active outline.
-          const outline = context.application.getActiveOutline();
+          var outline = context.application.getActiveOutline();
 
           // Queue a command to load the id of the outline.
           outline.load('id');
@@ -160,7 +160,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // get active outline.
-          const outline = context.application.getActiveOutlineOrNull();
+          var outline = context.application.getActiveOutlineOrNull();
 
           // Queue a command to load the id of the outline.
           outline.load('id');
@@ -193,7 +193,7 @@ methods:
       await OneNote.run(async (context) => {
               
           // Get the active page.
-          const page = context.application.getActivePage();
+          var page = context.application.getActivePage();
                   
           // Queue a command to load the page.
           // For best performance, request specific properties.
@@ -228,7 +228,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the active page.
-          const page = context.application.getActivePageOrNull();
+          var page = context.application.getActivePageOrNull();
 
           // Queue a command to load the page.
           // For best performance, request specific properties.
@@ -291,7 +291,7 @@ methods:
       await OneNote.run(async (context) => {
               
           // Get the active section.
-          const section = context.application.getActiveSection();
+          var section = context.application.getActiveSection();
                   
           // Queue a command to load the section.
           // For best performance, request specific properties.
@@ -326,7 +326,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the active section.
-          const section = context.application.getActiveSectionOrNull();
+          var section = context.application.getActiveSectionOrNull();
 
           // Queue a command to load the section.
           // For best performance, request specific properties.
@@ -485,7 +485,7 @@ methods:
       await OneNote.run(async (context) => {
               
           // Get the pages in the current section.
-          const pages = context.application.getActiveSection().pages;
+          var pages = context.application.getActiveSection().pages;
                   
           // Queue a command to load the pages.
           // For best performance, request specific properties.
@@ -495,7 +495,7 @@ methods:
           await context.sync()
                           
           // This example loads the first page in the section.
-          const page = pages.items[0];
+          var page = pages.items[0];
                       
           // Open the page in the application.
           context.application.navigateToPage(page);
@@ -531,7 +531,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the pages in the current section.
-          const pages = context.application.getActiveSection().pages;
+          var pages = context.application.getActiveSection().pages;
 
           // Queue a command to load the pages.
           // For best performance, request specific properties.
@@ -541,7 +541,7 @@ methods:
           await context.sync()
 
           // This example loads the first page in the section.
-          const page = pages.items[0];
+          var page = pages.items[0];
 
           // Open the page in the application.
           context.application.navigateToPageWithClientUrl(page.clientUrl);

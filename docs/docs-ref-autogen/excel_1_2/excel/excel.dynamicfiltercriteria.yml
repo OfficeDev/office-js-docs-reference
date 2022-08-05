@@ -4,38 +4,7 @@ uid: 'excel!Excel.DynamicFilterCriteria:enum'
 package: excel!
 fullName: Excel.DynamicFilterCriteria
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/filter-data.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-
-      const expensesTable = sheet.tables.getItem("ExpensesTable");
-
-      let filter = expensesTable.columns.getItem("Amount").filter;
-      filter.apply({
-          filterOn: Excel.FilterOn.dynamic,
-          dynamicCriteria: Excel.DynamicFilterCriteria.belowAverage
-      });
-
-      filter = expensesTable.columns.getItem("Category").filter;
-      filter.apply({
-              filterOn: Excel.FilterOn.values,
-              values: ["Restaurant", "Groceries"]
-      });
-
-      await context.sync();
-     });
-  ```
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

@@ -48,7 +48,7 @@ properties:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const application = ctx.document.application;
+              var application = ctx.document.application;
               application.showToolbars = false;
               application.showBorders = false;
               return ctx.sync();

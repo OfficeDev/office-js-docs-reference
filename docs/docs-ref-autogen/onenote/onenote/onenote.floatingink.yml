@@ -106,8 +106,8 @@ methods:
           await OneNote.run(async (context) => {
 
               // Gets the active page.
-              const page = context.application.getActivePage();
-              const contents = page.contents;
+              var page = context.application.getActivePage();
+              var contents = page.contents;
               
               // Load page contents and their types.
               page.load('contents/type');

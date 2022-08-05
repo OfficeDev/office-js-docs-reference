@@ -4,35 +4,7 @@ uid: 'excel!Excel.WorksheetPositionType:enum'
 package: excel!
 fullName: Excel.WorksheetPositionType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
-
-  await Excel.run(async (context) => {
-      // Retrieve the source workbook.
-      const workbook = context.workbook;
-      
-      // Set up the insert options.
-      const options = {
-          sheetNamesToInsert: [], // Insert all the worksheets from the source workbook.
-          positionType: Excel.WorksheetPositionType.after, // Insert after the `relativeTo` sheet.
-          relativeTo: "Sheet1" // The sheet relative to which the other worksheets will be inserted. Used with `positionType`.
-      };
-      
-      // Insert the new worksheets.
-      workbook.insertWorksheetsFromBase64(externalWorkbook, options);
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

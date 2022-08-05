@@ -23,9 +23,9 @@ remarks: >-
 
   ```javascript
 
-  const date_1 = new Date();
+  var date_1 = new Date();
 
-  const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+  var date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
 
   Office.context.mailbox.item.delayDeliveryTime.setAsync(
       date_2,
@@ -64,7 +64,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties: `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -134,7 +134,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-

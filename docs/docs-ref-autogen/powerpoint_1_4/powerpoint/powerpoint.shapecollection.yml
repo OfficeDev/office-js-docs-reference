@@ -51,17 +51,11 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-      // This function gets the collection of shapes on the first slide,
-
-      // and adds a hexagon shape to the collection, while specifying its
-
-      // location and size. Then it names the shape.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
-        const hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
+        var hexagon = shapes.addGeometricShape(PowerPoint.GeometricShapeType.hexagon, 
             {
               left: 100,
               top: 100,
@@ -191,20 +185,14 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-      // This function gets the collection of shapes on the first slide,
-
-      // and adds a line to the collection, while specifying its
-
-      // start and end points. Then it names the shape.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
 
         // For a line, left and top are the coordinates of the start point,
         // while height and width are the coordinates of the end point.
-        const line = shapes.addLine(PowerPoint.ConnectorType.straight, 
+        var line = shapes.addLine(PowerPoint.ConnectorType.straight, 
             { 
               left: 400, 
               top: 200, 
@@ -278,17 +266,11 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/shapes.yaml
-
-      // This function gets the collection of shapes on the first slide,
-
-      // and adds a text box to the collection, while specifying its text,
-
-      // location, and size. Then it names the text box.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/shapes.yaml
 
       await PowerPoint.run(async (context) => {
-        const shapes = context.presentation.slides.getItemAt(0).shapes;
-        const textbox = shapes.addTextBox("Hello!", 
+        var shapes = context.presentation.slides.getItemAt(0).shapes;
+        var textbox = shapes.addTextBox("Hello!", 
             { 
               left: 100, 
               top: 300, 
@@ -360,7 +342,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/preview-apis/tags.yaml
 
       await PowerPoint.run(async function(context) {
         const slide = context.presentation.slides.getItemAt(0);

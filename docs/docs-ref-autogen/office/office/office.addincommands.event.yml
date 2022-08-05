@@ -85,7 +85,7 @@ properties:
           // The event object implements the Event interface.
 
           // This value will be "eventTestButton".
-          const buttonId = event.source.id;
+          var buttonId = event.source.id;
 
           // Signal to the host app that processing is complete.
           event.completed();
@@ -101,7 +101,7 @@ properties:
 
       function multiButton (event) {
           // Check which button was clicked.
-          const buttonId = event.source.id;
+          var buttonId = event.source.id;
 
           if (buttonId === 'button1') {
               doButton1Action();
@@ -182,14 +182,14 @@ methods:
 
       function checkMessage(event) {
           // Get the item being sent.
-          const outgoingMsg = Office.context.mailbox.item;
+          var outgoingMsg = Office.context.mailbox.item;
 
           // Check if subject contains "BLOCK".
           outgoingMsg.subject.getAsync(function (result) {
               // Subject is in `result.value`.
               // If search term "BLOCK" is found, don't send message.
               const notFound = -1;
-              const allowEvent = (result.value.indexOf('BLOCK') === notFound);
+              var allowEvent = (result.value.indexOf('BLOCK') === notFound);
               event.completed({allowEvent: allowEvent});
           });
       }

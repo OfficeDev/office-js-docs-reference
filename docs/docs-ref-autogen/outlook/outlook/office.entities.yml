@@ -61,8 +61,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
+          var item = Office.context.mailbox.item;
+          var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
           ```
   - name: contacts
     uid: 'outlook!Office.Entities#contacts:member'
@@ -82,8 +82,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+          var item = Office.context.mailbox.item;
+          var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
           ```
   - name: emailAddresses
     uid: 'outlook!Office.Entities#emailAddresses:member'
@@ -103,8 +103,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
+          var item = Office.context.mailbox.item;
+          var emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
           ```
   - name: meetingSuggestions
     uid: 'outlook!Office.Entities#meetingSuggestions:member'
@@ -124,8 +124,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+          var item = Office.context.mailbox.item;
+          var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
           ```
   - name: phoneNumbers
     uid: 'outlook!Office.Entities#phoneNumbers:member'
@@ -145,8 +145,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+          var item = Office.context.mailbox.item;
+          var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
           ```
   - name: taskSuggestions
     uid: 'outlook!Office.Entities#taskSuggestions:member'
@@ -166,8 +166,8 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+          var item = Office.context.mailbox.item;
+          var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
           ```
   - name: urls
     uid: 'outlook!Office.Entities#urls:member'
@@ -187,6 +187,6 @@ properties:
           #### Examples
 
           ```javascript
-          const item = Office.context.mailbox.item;
-          const urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+          var item = Office.context.mailbox.item;
+          var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
           ```

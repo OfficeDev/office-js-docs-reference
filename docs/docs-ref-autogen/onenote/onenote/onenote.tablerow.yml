@@ -109,8 +109,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -118,13 +118,13 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
           
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, get table rows.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
+                  var table = paragraph.table;
                   
                   // Queue a command to load table.rows.
                   context.load(table, "rows");
@@ -132,7 +132,7 @@ methods:
                   // Run the queued commands.
                   await context.sync();
 
-                  const rows = table.rows;
+                  var rows = table.rows;
                   rows.items[1].insertRowAsSibling("Before", ["cell0", "cell1"]);
                   await context.sync();
               }
@@ -221,8 +221,8 @@ methods:
 
           ```typescript
           await OneNote.run(async (context) => {
-              const app = context.application;
-              const outline = app.getActiveOutline();
+              var app = context.application;
+              var outline = app.getActiveOutline();
               
               // Queue a command to load outline.paragraphs and their types.
               context.load(outline, "paragraphs, paragraphs/type");
@@ -230,22 +230,22 @@ methods:
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
               
-              const paragraphs = outline.paragraphs;
+              var paragraphs = outline.paragraphs;
               
               // For each table, get table rows.
-              for (let i = 0; i < paragraphs.items.length; i++) {
-                  const paragraph = paragraphs.items[i];
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
                   if (paragraph.type == "Table") {
-                      const table = paragraph.table;
+                      var table = paragraph.table;
                       
                       // Queue a command to load table.rows.
                       context.load(table, "rows");
                       await context.sync();
 
-                      const rows = table.rows;
+                      var rows = table.rows;
                       
                       // For each table row, log cell count and row index.
-                      for (let i = 0; i < rows.items.length; i++) {
+                      for (var i = 0; i < rows.items.length; i++) {
                           console.log("Row " + i + " Id: " + rows.items[i].id);
                           console.log("Row " + i + " Cell Count: " + rows.items[i].cellCount);
                           console.log("Row " + i + " Row Index: " + rows.items[i].rowIndex);

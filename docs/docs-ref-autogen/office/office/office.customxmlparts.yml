@@ -119,7 +119,7 @@ methods:
       function showXMLPartInnerXML() {
           Office.context.document.customXmlParts.getByIdAsync(
               "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              const xmlPart = result.value;
+              var xmlPart = result.value;
               xmlPart.getXmlAsync({}, function (eventArgs) {
                   write(eventArgs.value);
               });

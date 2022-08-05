@@ -110,21 +110,21 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
           
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, append a column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
+                  var table = paragraph.table;
                   table.appendColumn(["cell0", "cell1"]);
               }
           }
@@ -156,8 +156,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -165,14 +165,14 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, append a column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const row = table.appendRow(["cell0", "cell1"]);
+                  var table = paragraph.table;
+                  var row = table.appendRow(["cell0", "cell1"]);
               }
           }
           await context.sync();
@@ -216,8 +216,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -225,14 +225,14 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, get a cell in the second row and third column.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
+                  var table = paragraph.table;
+                  var cell = table.getCell(2 /*Row Index*/, 3 /*Column Index*/);
               }
           }
           await context.sync();
@@ -266,8 +266,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -275,13 +275,13 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, insert a column at index two.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
+                  var table = paragraph.table;
                   table.insertColumn(2, ["cell0", "cell1"]);
               }
           }
@@ -318,8 +318,8 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
-          const outline = app.getActiveOutline();
+          var app = context.application;
+          var outline = app.getActiveOutline();
           
           // Queue a command to load outline.paragraphs and their types.
           context.load(outline, "paragraphs, paragraphs/type");
@@ -327,14 +327,14 @@ methods:
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync()
 
-          const paragraphs = outline.paragraphs;
+          var paragraphs = outline.paragraphs;
           
           // For each table, insert a row at index two.
-          for (let i = 0; i < paragraphs.items.length; i++) {
-              const paragraph = paragraphs.items[i];
+          for (var i = 0; i < paragraphs.items.length; i++) {
+              var paragraph = paragraphs.items[i];
               if (paragraph.type == "Table") {
-                  const table = paragraph.table;
-                  const row = table.insertRow(2, ["cell0", "cell1"]);
+                  var table = paragraph.table;
+                  var row = table.insertRow(2, ["cell0", "cell1"]);
               }
           }
           await context.sync();
@@ -400,8 +400,8 @@ methods:
 
           ```typescript
           await OneNote.run(async (context) => {
-              const app = context.application;
-              const outline = app.getActiveOutline();
+              var app = context.application;
+              var outline = app.getActiveOutline();
               
               // Queue a command to load outline.paragraphs and their types.
               context.load(outline, "paragraphs/type");
@@ -409,13 +409,13 @@ methods:
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
 
-              const paragraphs = outline.paragraphs;
+              var paragraphs = outline.paragraphs;
               
               // For each table, log properties.
-              for (let i = 0; i < paragraphs.items.length; i++) {
-                  const paragraph = paragraphs.items[i];
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
                   if (paragraph.type == "Table") {
-                      const table = paragraph.table;
+                      var table = paragraph.table;
                       context.load(table);
                       await context.sync();
 

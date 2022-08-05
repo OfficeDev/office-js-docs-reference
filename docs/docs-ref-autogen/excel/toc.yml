@@ -218,8 +218,6 @@ items:
                 uid: 'excel!Excel.EventTriggerSource:enum'
               - name: EventType
                 uid: 'excel!Excel.EventType:enum'
-              - name: ExternalErrorCellValueSubType
-                uid: 'excel!Excel.ExternalErrorCellValueSubType:enum'
               - name: FieldErrorCellValueSubType
                 uid: 'excel!Excel.FieldErrorCellValueSubType:enum'
               - name: FillPattern
@@ -260,8 +258,6 @@ items:
                 uid: 'excel!Excel.NamedItemType:enum'
               - name: NumberFormatCategory
                 uid: 'excel!Excel.NumberFormatCategory:enum'
-              - name: NumErrorCellValueSubType
-                uid: 'excel!Excel.NumErrorCellValueSubType:enum'
               - name: PageOrientation
                 uid: 'excel!Excel.PageOrientation:enum'
               - name: PaperType
@@ -743,8 +739,6 @@ items:
             uid: 'excel!Excel.EntityViewLayouts:interface'
           - name: ErrorCellValue
             uid: 'excel!Excel.ErrorCellValue:type'
-          - name: ExternalErrorCellValue
-            uid: 'excel!Excel.ExternalErrorCellValue:interface'
           - name: FieldErrorCellValue
             uid: 'excel!Excel.FieldErrorCellValue:interface'
           - name: Filter

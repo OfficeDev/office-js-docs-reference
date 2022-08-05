@@ -109,7 +109,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The desired
             format for the data to be appended. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
@@ -253,7 +253,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties: `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -353,7 +353,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -469,7 +469,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The desired
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
@@ -631,7 +631,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The desired
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
@@ -777,7 +777,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
+            can provide any object they wish to access in the callback method. `coercionType`<!-- -->: The desired
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
             <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref

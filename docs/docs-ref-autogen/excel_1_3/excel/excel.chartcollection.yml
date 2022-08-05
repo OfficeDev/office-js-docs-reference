@@ -60,12 +60,12 @@ methods:
 
       ```typescript
       // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-      // with sourceData from range "A1:B4" and seriesBy set to "auto".
+      // with sourceData from range "A1:B4" and seriresBy set to "auto".
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sheet1");
-          const rangeSelection = "A1:B4";
-          const range = sheet.getRange(rangeSelection);
-          const chart = sheet.charts.add(
+          var rangeSelection = "A1:B4";
+          var range = sheet.getRange(rangeSelection);
+          var chart = sheet.charts.add(
           Excel.ChartType.columnClustered, 
           range, 
           Excel.ChartSeriesBy.auto);
@@ -161,7 +161,7 @@ methods:
       ```typescript
       // Get the number of charts.
       await Excel.run(async (context) => { 
-          const charts = context.workbook.worksheets.getItem("Sheet1").charts;
+          var charts = context.workbook.worksheets.getItem("Sheet1").charts;
           charts.load('count');
           await context.sync();
           
@@ -191,8 +191,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+          var lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
           await context.sync();
 
           console.log(chart.name);
@@ -257,11 +257,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const charts = context.workbook.worksheets.getItem("Sheet1").charts;
+              var charts = context.workbook.worksheets.getItem("Sheet1").charts;
               charts.load('items');
               await context.sync();
               
-              for (let i = 0; i < charts.items.length; i++) {
+              for (var i = 0; i < charts.items.length; i++) {
                   console.log(charts.items[i].name);
               }
           });

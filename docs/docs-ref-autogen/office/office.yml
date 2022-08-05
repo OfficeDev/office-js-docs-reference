@@ -136,8 +136,8 @@ functions:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
@@ -167,7 +167,7 @@ functions:
       // to display how the task pane or content add-in was initialized.
 
       Office.initialize = function (reason) {
-          // Checks for the DOM to load using the jQuery ready method.
+          // Checks for the DOM to load using the jQuery ready function.
           $(document).ready(function () {
           // After the DOM is loaded, code specific to the add-in can run.
           // Display initialization reason.
@@ -236,8 +236,8 @@ functions:
       parameters:
         - id: callback
           description: >-
-            An optional callback function, that will receive the host and platform info. Alternatively, rather than use
-            a callback, an add-in may simply wait for the Promise returned by the function to resolve.
+            An optional callback method, that will receive the host and platform info. Alternatively, rather than use a
+            callback, an add-in may simply wait for the Promise returned by the function to resolve.
           type: >-
             (info: { host: <xref uid="office!Office.HostType:enum" />, platform: <xref
             uid="office!Office.PlatformType:enum" /> }) =&gt; any
@@ -249,13 +249,13 @@ functions:
   - name: 'Office.select(expression, callback)'
     uid: 'office!Office.select:function(1)'
     package: office!
-    summary: Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
+    summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     remarks: >-
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
@@ -272,7 +272,7 @@ functions:
 
       ```javascript
 
-      // The following code example uses the select function to retrieve a binding with the id "cities" from
+      // The following code example uses the select method to retrieve a binding with the id "cities" from
 
       // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
 
@@ -312,8 +312,8 @@ functions:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this method.
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office

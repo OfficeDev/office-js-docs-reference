@@ -146,10 +146,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active page.
-          const page = context.application.getActivePage();
+          var page = context.application.getActivePage();
 
           // Queue a command to add an outline with given html.
-          const outline = page.addOutline(200, 200,
+          var outline = page.addOutline(200, 200,
       "<p>Images and a table below:</p> \
        <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
        <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
@@ -233,23 +233,23 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          const app = context.application;
+          var app = context.application;
           
           // Gets the active notebook.
-          const notebook = app.getActiveNotebook();
+          var notebook = app.getActiveNotebook();
           
           // Gets the active page.
-          const page = app.getActivePage();
+          var page = app.getActivePage();
           
           // Queue a command to load sections under the notebook.
           notebook.load('sections');
           
-          let newPage;
+          var newPage;
           
           // Run the queued commands, and return a promise to indicate task completion.
           await context.sync();
 
-          const section = notebook.sections.items[0];
+          var section = notebook.sections.items[0];
           
           // Copy page to the section.
           newPage = page.copyToSection(section);
@@ -300,8 +300,8 @@ methods:
       ```typescript
       await OneNote.run(async (context) => {
           // Get the current page.
-          const page = context.application.getActivePage();
-          const restApiId = page.getRestApiId();
+          var page = context.application.getActivePage();
+          var restApiId = page.getRestApiId();
 
           await context.sync();
           console.log("The REST API ID is " + restApiId.value);
@@ -366,10 +366,10 @@ methods:
       await OneNote.run(async (context) => {
 
           // Gets the active page.
-          const activePage = context.application.getActivePage();
+          var activePage = context.application.getActivePage();
 
           // Queue a command to add a new page after the active page.
-          const newPage = activePage.insertPageAsSibling("After", "Next Page");
+          var newPage = activePage.insertPageAsSibling("After", "Next Page");
 
           // Queue a command to load the newPage to access its data.
           context.load(newPage);
@@ -439,18 +439,18 @@ methods:
           await OneNote.run(async (context) => {
 
               // Gets the active page.
-              const activePage = context.application.getActivePage();
+              var activePage = context.application.getActivePage();
 
               // Queue a command to add a new page after the active page.
-              const pageContents = activePage.contents;
+              var pageContents = activePage.contents;
 
               // Queue a command to load the pageContents to access its data.
               context.load(pageContents);
 
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync()
-              for(let i=0; i < pageContents.items.length; i++) {
-                  const pageContent = pageContents.items[i];
+              for(var i=0; i < pageContents.items.length; i++) {
+                  var pageContent = pageContents.items[i];
                   if (pageContent.type == "Outline") {
                       console.log("Found an outline");
                   } else if (pageContent.type == "Image") {

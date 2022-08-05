@@ -3,7 +3,7 @@ name: OfficeRuntime.ApiInformation
 uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
 package: office-runtime!
 fullName: OfficeRuntime.ApiInformation
-summary: Interface that contains methods for checking API requirement-set support.
+summary: Interface that contains functions for checking API requirement-set support.
 remarks: ''
 isPreview: false
 isDeprecated: false

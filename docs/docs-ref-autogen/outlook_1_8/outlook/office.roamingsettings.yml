@@ -68,9 +68,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
-      const settingName = $("#settingName").val();
+      var settingName = $("#settingName").val();
 
-      const settingValue = Office.context.roamingSettings.get(settingName);
+      var settingValue = Office.context.roamingSettings.get(settingName);
 
       $("#settingValue").val(settingValue);
 
@@ -184,7 +184,7 @@ methods:
       A maximum of 32KB is available for the settings of each add-in.
 
 
-      Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method
+      Any changes made to settings using the set function will not be saved to the server until the `saveAsync` function
       is called.
     remarks: >-
       **[Minimum permission
@@ -205,9 +205,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
-      const settingName = $("#settingName").val();
+      var settingName = $("#settingName").val();
 
-      const settingValue = $("#settingValue").val();
+      var settingValue = $("#settingValue").val();
 
       Office.context.roamingSettings.set(settingName, settingValue);
 

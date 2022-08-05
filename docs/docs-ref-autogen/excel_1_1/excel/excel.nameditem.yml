@@ -95,8 +95,8 @@ methods:
       // Returns `null` if the name is not of type Range.
       // Note: This API currently supports only the Workbook scoped items.
       await Excel.run(async (context) => { 
-          const names = context.workbook.names;
-          const range = names.getItem('MyRange').getRange();
+          var names = context.workbook.names;
+          var range = names.getItem('MyRange').getRange();
           range.load('address');
           await context.sync();
 
@@ -154,8 +154,8 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const names = context.workbook.names;
-              const namedItem = names.getItem('MyRange');
+              var names = context.workbook.names;
+              var namedItem = names.getItem('MyRange');
               namedItem.load('type');
               await context.sync();
               

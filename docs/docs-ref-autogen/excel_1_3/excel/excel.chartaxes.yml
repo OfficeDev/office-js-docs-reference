@@ -60,7 +60,7 @@ properties:
       ```typescript
       // Set the maximum, minimum, majorUnit, minorUnit of valueAxis.
       await Excel.run(async (context) => { 
-          const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.axes.valueAxis.maximum = 5;
           chart.axes.valueAxis.minimum = 0;
           chart.axes.valueAxis.majorUnit = 1;

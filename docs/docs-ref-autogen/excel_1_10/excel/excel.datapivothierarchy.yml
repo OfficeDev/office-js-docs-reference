@@ -131,7 +131,7 @@ properties:
           wholesaleDataHierarchy.load("showAs");
           await context.sync();
 
-          // Show the crates of each fruit type sold at the farm as a percentage of the column's total.
+          // show the crates of each fruit type sold at the farm as a percentage of the column's total
           let farmShowAs = farmDataHierarchy.showAs;
           farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
           farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");

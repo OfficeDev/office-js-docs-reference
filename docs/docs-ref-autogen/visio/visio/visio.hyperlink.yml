@@ -112,9 +112,9 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              const hyperlink = shape.hyperlinks.getItem(0);
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              var hyperlink = shape.hyperlinks.getItem(0);
               hyperlink.load();
               return ctx.sync().then(function() {
                   console.log(hyperlink.description);

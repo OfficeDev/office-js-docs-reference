@@ -93,7 +93,7 @@ methods:
           ```typescript
           // Set the value axis of Chart1 to show the major gridlines.
           await Excel.run(async (context) => { 
-              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.axes.valueAxis.majorGridlines.visible = true;
               await context.sync();
               

@@ -87,7 +87,7 @@ methods:
 
       Office.context.auth.getAccessTokenAsync(function(result) {
           if (result.status === "succeeded") {
-              const token = result.value;
+              var token = result.value;
               // ...
           } else {
               console.log("Error obtaining token", result.error);
@@ -106,7 +106,7 @@ methods:
           type: '<xref uid="office!Office.AuthOptions:interface" />'
         - id: callback
           description: >-
-            Optional. Accepts a callback function that can parse the token for the user's ID or use the token in the "on
+            Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on
             behalf of" flow to get access to Microsoft Graph. If `AsyncResult.status` is "succeeded", then
             `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
           type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
@@ -148,7 +148,7 @@ methods:
       parameters:
         - id: callback
           description: >-
-            Optional. Accepts a callback function that can parse the token for the user's ID or use the token in the "on
+            Optional. Accepts a callback method that can parse the token for the user's ID or use the token in the "on
             behalf of" flow to get access to Microsoft Graph. If `AsyncResult.status` is "succeeded", then
             `AsyncResult.value` is the raw AAD v. 2.0-formatted access token.
           type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'

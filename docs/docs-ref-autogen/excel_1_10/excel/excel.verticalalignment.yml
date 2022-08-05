@@ -4,29 +4,7 @@ uid: 'excel!Excel.VerticalAlignment:enum'
 package: excel!
 fullName: Excel.VerticalAlignment
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
-
-  await Excel.run(async (context) => {
-      let worksheet = context.workbook.worksheets.getItem("Sample");
-      let range = worksheet.getRange("A1:E1");
-      // Apply new style.
-      range.style = ("Diagonal Orientation Style");
-      range.format.verticalAlignment = "Justify";
-
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

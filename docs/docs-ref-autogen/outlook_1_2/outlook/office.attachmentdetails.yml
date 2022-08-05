@@ -29,14 +29,14 @@ remarks: >-
 
   // of all attachments on the current item.
 
-  const item = Office.context.mailbox.item;
+  var item = Office.context.mailbox.item;
 
-  let outputString = "";
+  var outputString = "";
 
 
   if (item.attachments.length > 0) {
-      for (let i = 0 ; i < item.attachments.length ; i++) {
-          const attachment = item.attachments[i];
+      for (i = 0 ; i < item.attachments.length ; i++) {
+          var attachment = item.attachments[i];
           outputString += "<BR>" + i + ". Name: ";
           outputString += attachment.name;
           outputString += "<BR>ID: " + attachment.id;

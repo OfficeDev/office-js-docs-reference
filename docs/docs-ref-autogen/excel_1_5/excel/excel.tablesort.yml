@@ -72,8 +72,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const tableName = 'Table1';
-          const table = context.workbook.tables.getItem(tableName);
+          var tableName = 'Table1';
+          var table = context.workbook.tables.getItem(tableName);
           table.sort.apply([ 
                   {
                       key: 2,

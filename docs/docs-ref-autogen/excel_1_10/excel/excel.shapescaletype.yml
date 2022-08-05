@@ -4,27 +4,7 @@ uid: 'excel!Excel.ShapeScaleType:enum'
 package: excel!
 fullName: Excel.ShapeScaleType
 summary: Specifies whether the shape is scaled relative to its original or current size.
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Shapes");
-      const shape = sheet.shapes.getItem("Octagon")
-      shape.lockAspectRatio = true;
-      shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

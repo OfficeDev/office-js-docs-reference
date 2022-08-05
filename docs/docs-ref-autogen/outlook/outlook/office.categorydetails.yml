@@ -23,7 +23,7 @@ remarks: >-
 
   ```javascript
 
-  const categories = [
+  var categories = [
       {
           "displayName": "Urgent!",
           "color": Office.MailboxEnums.CategoryColor.Preset0

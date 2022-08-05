@@ -17,13 +17,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
-events:
+properties:
   - name: onCanceled
     uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
     package: custom-functions-runtime!
     fullName: onCanceled
-    summary: Event handler called when the custom function is canceled.
-    remarks: '\[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
+    summary: >-
+      Event handler called when the custom function is canceled. \[ [API set: CustomFunctionsRuntime
+      1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

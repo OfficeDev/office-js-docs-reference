@@ -138,7 +138,7 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the section groups that are direct children of the current notebook.
-          const sectionGroups = context.application.getActiveNotebook().sectionGroups;
+          var sectionGroups = context.application.getActiveNotebook().sectionGroups;
           
           // Queue a command to load the section groups.
           // For best performance, request specific properties.
@@ -179,14 +179,14 @@ methods:
 
       ```typescript
       await OneNote.run(async (context) => {
-          let sectionGroup;
-          let nestedSectionGroup;
+          var sectionGroup;
+          var nestedSectionGroup;
 
           // Gets the active notebook.
-          const notebook = context.application.getActiveNotebook();
+          var notebook = context.application.getActiveNotebook();
 
           // Queue a command to add a new section group.
-          const sectionGroups = notebook.sectionGroups;
+          var sectionGroups = notebook.sectionGroups;
 
           // Queue a command to load the new section group.
           sectionGroups.load();
@@ -275,7 +275,7 @@ methods:
           await OneNote.run(async (context) => {
                   
               // Get the parent section group that contains the current section.
-              const sectionGroup = context.application.getActiveSection().parentSectionGroup;
+              var sectionGroup = context.application.getActiveSection().parentSectionGroup;
                       
               // Queue a command to load the section group.
               // For best performance, request specific properties.

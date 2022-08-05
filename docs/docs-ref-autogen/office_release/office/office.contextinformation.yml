@@ -31,7 +31,7 @@ properties:
           #### Examples
 
           ```javascript
-          const contextInfo = Office.context.diagnostics;
+          var contextInfo = Office.context.diagnostics;
           console.log("Office application: " + contextInfo.host);
           ```
   - name: platform
@@ -52,7 +52,7 @@ properties:
           #### Examples
 
           ```javascript
-          const contextInfo = Office.context.diagnostics;
+          var contextInfo = Office.context.diagnostics;
           console.log("Platform: " + contextInfo.platform);
           ```
   - name: version
@@ -73,6 +73,6 @@ properties:
           #### Examples
 
           ```javascript
-          const contextInfo = Office.context.diagnostics;
+          var contextInfo = Office.context.diagnostics;
           console.log("Office version: " + contextInfo.version);
           ```

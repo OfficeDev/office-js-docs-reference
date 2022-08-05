@@ -4,34 +4,7 @@ uid: 'excel!Excel.HorizontalAlignment:enum'
 package: excel!
 fullName: Excel.HorizontalAlignment
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
-
-  await Excel.run(async (context) => {
-    // Retrieve the worksheet and the table in that worksheet.
-    const sheet = context.workbook.worksheets.getActiveWorksheet();
-    const tableRange = sheet.getRange("B2:E6");
-
-    // Create a merged range in the first row of the table.
-    const chartTitle = tableRange.getRow(0);
-    chartTitle.merge(true);
-
-    // Format the merged range.
-    chartTitle.format.horizontalAlignment = "Center";
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

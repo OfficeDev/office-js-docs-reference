@@ -4,30 +4,7 @@ uid: 'excel!Excel.RangeCopyType:enum'
 package: excel!
 fullName: Excel.RangeCopyType
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-      // Place a label in front of the copied data.
-      sheet.getRange("F2").values = [["Copied Formula"]];
-
-      // Copy a range preserving the formulas.
-      // Note: non-formula values are copied over as is.
-      sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

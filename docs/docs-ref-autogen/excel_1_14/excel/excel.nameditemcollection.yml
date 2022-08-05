@@ -131,8 +131,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          const sheetName = 'Sheet1';
-          const nameditem = context.workbook.names.getItem(sheetName);
+          var sheetName = 'Sheet1';
+          var nameditem = context.workbook.names.getItem(sheetName);
           nameditem.load('type');
           await context.sync();
           
@@ -219,11 +219,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const nameditems = context.workbook.names;
+              var nameditems = context.workbook.names;
               nameditems.load('items');
               await context.sync();
 
-              for (let i = 0; i < nameditems.items.length; i++) {
+              for (var i = 0; i < nameditems.items.length; i++) {
                   console.log(nameditems.items[i].name);
               }
           });

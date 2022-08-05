@@ -66,7 +66,7 @@ properties:
       // The following example creates a single-column table with a header and three rows.
 
       function createTableData() {
-          const tableData = new Office.TableData();
+          var tableData = new Office.TableData();
           tableData.headers = [['header1']];
           tableData.rows = [['row1'], ['row2'], ['row3']];
           return tableData;
@@ -110,7 +110,7 @@ properties:
       // The following example creates a single-column table with a header and three rows.
 
       function createTableData() {
-          const tableData = new Office.TableData();
+          var tableData = new Office.TableData();
           tableData.headers = [['header1']];
           tableData.rows = [['row1'], ['row2'], ['row3']];
           return tableData;

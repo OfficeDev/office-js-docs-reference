@@ -4,26 +4,7 @@ uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
 package: excel!
 fullName: Excel.ShapeTextHorizontalAlignment
 summary: Specifies the horizontal alignment for the text frame in a shape.
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
-
-  await Excel.run(async (context) => {
-      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-      const textbox = shapes.getItem("Textbox");
-      textbox.textFrame.horizontalAlignment = Excel.ShapeTextHorizontalAlignment.center;
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

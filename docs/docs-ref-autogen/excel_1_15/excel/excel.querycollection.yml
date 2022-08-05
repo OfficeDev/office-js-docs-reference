@@ -41,10 +41,10 @@ properties:
           #### Examples
 
           ```typescript
-          // This function retrieves the query collection in a workbook, 
-          // loads the query items in that collection, and then
-          // logs the name of each query to the console.
           await Excel.run(async (context) => {
+              // This method retrieves the query collection in a workbook, 
+              // loads the query items in that collection, and then 
+              // logs the name of each query to the console.
               const queries = context.workbook.queries; 
               queries.load("items"); 
               await context.sync(); 
@@ -65,9 +65,9 @@ methods:
       #### Examples
 
       ```typescript
-      // This function retrieves the query collection in a workbook and then 
-      // logs the number of queries in the collection to the console.
       await Excel.run(async (context) => { 
+        // This method retrieves the query collection in a workbook and then 
+        // logs the number of queries in the collection to the console.
         const queries = context.workbook.queries; 
         const count = queries.getCount();
         await context.sync();

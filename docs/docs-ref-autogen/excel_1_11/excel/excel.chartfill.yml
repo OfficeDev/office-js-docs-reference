@@ -37,7 +37,7 @@ methods:
       ```typescript
       // Clear the line format of the major gridlines on the value axis of the chart named "Chart1".
       await Excel.run(async (context) => { 
-          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
           gridlines.format.line.clear();
           await context.sync();
           

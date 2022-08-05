@@ -4,43 +4,7 @@ uid: 'excel!Excel.RangeUnderlineStyle:enum'
 package: excel!
 fullName: Excel.RangeUnderlineStyle
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Orders");
-
-      const productsRange = sheet.getRange("A3:A11");
-      productsRange.load("values");
-
-      await context.sync();
-
-      // Clear all hyperlinks.
-      for (let i = 0; i < productsRange.values.length; i++) {
-          let cellRange = productsRange.getCell(i, 0);
-
-          // Clear the hyperlink.
-          // This eliminates the hyperlink but does not update text format.
-          cellRange.clear(Excel.ClearApplyTo.hyperlinks);
-
-          // Update text format.
-          cellRange.format.font.underline = Excel.RangeUnderlineStyle.none;
-          cellRange.format.font.color = "#000000";
-      }
-
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

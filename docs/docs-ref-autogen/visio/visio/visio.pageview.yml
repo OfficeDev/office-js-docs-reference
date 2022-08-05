@@ -48,7 +48,7 @@ properties:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
+              var activePage = ctx.document.getActivePage();
               activePage.view.zoom = 300;
               return ctx.sync();
           }).catch(function(error) {
@@ -85,8 +85,8 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
               activePage.view.centerViewportOnShape(shape.Id);
               return ctx.sync();
           }).catch(function(error) {

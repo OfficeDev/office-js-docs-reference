@@ -53,14 +53,14 @@ properties:
 
       // The following code builds an HTML string with details of all attachments on the current item.
 
-      const item = Office.context.mailbox.item;
+      var item = Office.context.mailbox.item;
 
-      let outputString = "";
+      var outputString = "";
 
 
       if (item.attachments.length > 0) {
-          for (let i = 0 ; i < item.attachments.length ; i++) {
-              const attachment = item.attachments[i];
+          for (i = 0 ; i < item.attachments.length ; i++) {
+              var attachment = item.attachments[i];
               outputString += "<BR>" + i + ". Name: ";
               outputString += attachment.name;
               outputString += "<BR>ID: " + attachment.id;
@@ -81,7 +81,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachments-read.yaml
 
-      const attachments = Office.context.mailbox.item.attachments;
+      var attachments = Office.context.mailbox.item.attachments;
 
       console.log(attachments);
 
@@ -169,7 +169,7 @@ properties:
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
+          var categories = asyncResult.value;
           if (categories && categories.length > 0) {
             console.log("Categories assigned to this item:");
             console.log(JSON.stringify(categories));
@@ -195,10 +195,10 @@ properties:
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const masterCategories = asyncResult.value;
+          var masterCategories = asyncResult.value;
           if (masterCategories && masterCategories.length > 0) {
             // Grab the first category from the master list.
-            const categoryToAdd = [masterCategories[0].displayName];
+            var categoryToAdd = [masterCategories[0].displayName];
             Office.context.mailbox.item.categories.addAsync(categoryToAdd, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                 console.log(`Successfully assigned category '${categoryToAdd}' to item.`);
@@ -223,10 +223,10 @@ properties:
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
+          var categories = asyncResult.value;
           if (categories && categories.length > 0) {
             // Grab the first category assigned to this item.
-            const categoryToRemove = [categories[0].displayName];
+            var categoryToRemove = [categories[0].displayName];
             Office.context.mailbox.item.categories.removeAsync(categoryToRemove, function(asyncResult) {
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                 console.log(`Successfully unassigned category '${categoryToRemove}' from this item.`);
@@ -398,7 +398,7 @@ properties:
           console.error(`Failed to get locations. Error message: ${result.error.message}`);
           return;
         }
-        const places = result.value;
+        var places = result.value;
         if (places && places.length > 0) {
           result.value.forEach(function(place) {
             console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
@@ -442,7 +442,7 @@ properties:
 
       ```javascript
 
-      const isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
+      var isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
 
       console.log("Is this an all-day event? " + isAllDayEvent);
 
@@ -553,7 +553,7 @@ properties:
 
       // so you can't get the `itemId` in Compose mode in earlier sets.
 
-      let itemId = Office.context.mailbox.item.itemId;
+      var itemId = Office.context.mailbox.item.itemId;
 
       if (itemId === null || itemId == undefined) {
           Office.context.mailbox.item.saveAsync(function(result) {
@@ -630,7 +630,7 @@ properties:
 
       ```javascript
 
-      const location = Office.context.mailbox.item.location;
+      var location = Office.context.mailbox.item.location;
 
       console.log("location: " + location);
 
@@ -716,9 +716,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      const id = $("#notificationId").val();
+      var id = $("#notificationId").val();
 
-      const details =
+      var details =
         {
           type: "progressIndicator",
           message: "Progress indicator with id = " + id
@@ -732,9 +732,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      const id = $("#notificationId").val();
+      var id = $("#notificationId").val();
 
-      const details =
+      var details =
         {
           type: "informationalMessage",
           message: "Non-persistent informational notification message with id = " + id,
@@ -750,9 +750,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      const id = $("#notificationId").val();
+      var id = $("#notificationId").val();
 
-      const details =
+      var details =
         {
           type: "informationalMessage",
           message: "Persistent informational notification message with id = " + id,
@@ -777,7 +777,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      const id = $("#notificationId").val();
+      var id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
@@ -795,7 +795,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      const id = $("#notificationId").val();
+      var id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -846,11 +846,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
 
-      const apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
+      var apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
 
       console.log("Optional attendees:");
 
-      for (let i = 0; i < apptOptionalAttendees.length; i++) {
+      for (var i = 0; i < apptOptionalAttendees.length; i++) {
         console.log(
           apptOptionalAttendees[i].displayName +
             " (" +
@@ -891,7 +891,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
 
-      const apptOrganizer = Office.context.mailbox.item.organizer;
+      var apptOrganizer = Office.context.mailbox.item.organizer;
 
       console.log("Organizer: " + apptOrganizer.displayName + " (" + apptOrganizer.emailAddress + ")");
 
@@ -942,7 +942,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-recurrence-read.yaml
 
-      const recurrence = Office.context.mailbox.item.recurrence;
+      var recurrence = Office.context.mailbox.item.recurrence;
 
 
       if (recurrence === undefined) {
@@ -1000,11 +1000,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
 
-      const apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
+      var apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
       console.log("Required attendees:");
 
-      for (let i = 0; i < apptRequiredAttendees.length; i++) {
+      for (var i = 0; i < apptRequiredAttendees.length; i++) {
         console.log(
           apptRequiredAttendees[i].displayName +
             " (" +
@@ -1045,7 +1045,7 @@ properties:
 
       ```javascript
 
-      const sensitivity = Office.context.mailbox.item.sensitivity;
+      var sensitivity = Office.context.mailbox.item.sensitivity;
 
       console.log("Sensitivity: " + sensitivity);
 
@@ -1100,7 +1100,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-series-id.yaml
 
-      const seriesId = Office.context.mailbox.item.seriesId;
+      var seriesId = Office.context.mailbox.item.seriesId;
 
 
       if (seriesId === undefined) {
@@ -1230,7 +1230,7 @@ methods:
 
       function myHandlerFunction(eventarg) {
           if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
-              const attachment = eventarg.attachmentDetails;
+              var attachment = eventarg.attachmentDetails;
               console.log("Event Fired and Attachment Added!");
               getAttachmentContentAsync(attachment.id, options, callback);
           }
@@ -1259,7 +1259,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1354,7 +1354,7 @@ methods:
 
       ```javascript
 
-      // The following code passes a string to the `displayReplyAllForm` method.
+      // The following code passes a string to the `displayReplyAllForm` function.
 
       Office.context.mailbox.item.displayReplyAllForm('hello there');
 
@@ -1527,7 +1527,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1630,7 +1630,7 @@ methods:
 
       ```javascript
 
-      // The following code passes a string to the `displayReplyForm` method.
+      // The following code passes a string to the `displayReplyForm` function.
 
       Office.context.mailbox.item.displayReplyForm('hello there');
 
@@ -1846,7 +1846,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -1957,16 +1957,16 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
-      const item = Office.context.mailbox.item;
+      var item = Office.context.mailbox.item;
 
-      const options = {asyncContext: {currentItem: item}};
+      var options = {asyncContext: {currentItem: item}};
 
       item.getAttachmentsAsync(options, callback);
 
 
       function callback(result) {
           if (result.value.length > 0) {
-              for (let i = 0 ; i < result.value.length ; i++) {
+              for (i = 0 ; i < result.value.length ; i++) {
                   result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
               }
           }
@@ -2011,7 +2011,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2108,9 +2108,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
-      const entities = Office.context.mailbox.item.getEntities();
+      var entities = Office.context.mailbox.item.getEntities();
 
-      let entityTypesFound = 0;
+      var entityTypesFound = 0;
 
       if (entities.addresses.length > 0) {
           console.warn("physical addresses: ");
@@ -2325,7 +2325,7 @@ methods:
               if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                   if (asyncResult.value != null && asyncResult.value.length > 0) {
                       // The value is a string, parse to an object.
-                      const context = JSON.parse(asyncResult.value);
+                      var context = JSON.parse(asyncResult.value);
                       // Do something with context.
                   } else {
                       // Empty context, treat as no context.
@@ -2352,7 +2352,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -2477,11 +2477,11 @@ methods:
 
       // and `veggies`, which are specified in the manifest.
 
-      const allMatches = Office.context.mailbox.item.getRegExMatches();
+      var allMatches = Office.context.mailbox.item.getRegExMatches();
 
-      const fruits = allMatches.fruits;
+      var fruits = allMatches.fruits;
 
-      const veggies = allMatches.veggies;
+      var veggies = allMatches.veggies;
 
       ```
 
@@ -2571,9 +2571,9 @@ methods:
       //}
 
 
-      const fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
+      var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
 
-      const veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
+      var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
 
       ```
 
@@ -2630,9 +2630,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
-      const entities = Office.context.mailbox.item.getSelectedEntities();
+      var entities = Office.context.mailbox.item.getSelectedEntities();
 
-      let entityTypesFound = 0;
+      var entityTypesFound = 0;
 
       if (entities.addresses.length > 0) {
           console.warn("physical addresses: ");
@@ -2767,11 +2767,11 @@ methods:
 
       // specified in the manifest.
 
-      const selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
+      var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
 
-      const fruits = selectedMatches.fruits;
+      var fruits = selectedMatches.fruits;
 
-      const veggies = selectedMatches.veggies;
+      var veggies = selectedMatches.veggies;
 
       ```
 
@@ -2780,7 +2780,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
-      const matches = Office.context.mailbox.item.getSelectedRegExMatches();
+      var matches = Office.context.mailbox.item.getSelectedRegExMatches();
 
       if (matches) {
           console.log(matches);
@@ -2855,8 +2855,8 @@ methods:
 
               // Determine if user has the appropriate permission to do the operation.
               if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
-                const ewsId = Office.context.mailbox.item.itemId;
-                const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+                var ewsId = Office.context.mailbox.item.itemId;
+                var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
                 let rest_url =
                   sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/events/" + restId;
 
@@ -2888,7 +2888,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -3011,18 +3011,18 @@ methods:
       // the custom properties.
 
       Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready method.
+          // Checks for the DOM to load using the jQuery ready function.
           $(document).ready(function () {
               // After the DOM is loaded, add-in-specific code can run.
-              const mailbox = Office.context.mailbox;
+              var mailbox = Office.context.mailbox;
               mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
           });
       };
 
 
       function customPropsCallback(asyncResult) {
-          const customProps = asyncResult.value;
-          const myProp = customProps.get("myProp");
+          var customProps = asyncResult.value;
+          var myProp = customProps.get("myProp");
 
           customProps.set("otherProp", "value");
           customProps.saveAsync(saveCallback);
@@ -3044,11 +3044,11 @@ methods:
         if (result.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Loaded following custom properties:");
           customProps = result.value;
-          const dataKey = Object.keys(customProps)[0];
-          const data = customProps[dataKey];
-          for (let propertyName in data)
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
           {
-            let propertyValue = data[propertyName];
+            var propertyValue = data[propertyName];
             console.log(`${propertyName}: ${propertyValue}`);
           }              
         }
@@ -3117,7 +3117,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-

@@ -4,33 +4,7 @@ uid: 'excel!Excel.ArrowheadWidth:enum'
 package: excel!
 fullName: Excel.ArrowheadWidth
 summary: ''
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
-
-  await Excel.run(async (context) => {
-      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-      const line = shapes.getItem("StraightLine").line;
-      line.beginArrowheadLength = Excel.ArrowheadLength.long;
-      line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
-      line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
-
-      line.endArrowheadLength = Excel.ArrowheadLength.long;
-      line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
-      line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
-
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

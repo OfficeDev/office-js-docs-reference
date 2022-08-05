@@ -118,7 +118,7 @@ properties:
           await Word.run(async (context) => {
 
               // Create a proxy object for the document body.
-              const body = context.document.body;
+              var body = context.document.body;
 
               // Queue a command to insert the paragraph at the end of the document body.
               // Start a batch of commands.

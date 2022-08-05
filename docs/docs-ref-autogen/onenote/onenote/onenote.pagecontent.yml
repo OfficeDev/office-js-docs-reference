@@ -135,10 +135,10 @@ methods:
       ```typescript
       await OneNote.run(async (context) => {
 
-          const page = context.application.getActivePage();
-          const pageContents = page.contents;
+          var page = context.application.getActivePage();
+          var pageContents = page.contents;
 
-          const firstPageContent = pageContents.getItemAt(0);
+          var firstPageContent = pageContents.getItemAt(0);
           firstPageContent.load('type');
 
           // Run the queued commands, and return a promise to indicate task completion.

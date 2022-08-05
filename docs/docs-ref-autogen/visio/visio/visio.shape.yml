@@ -224,9 +224,9 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shapeName = "Sample Name";
-              const shape = activePage.shapes.getItem(shapeName);
+              var activePage = ctx.document.getActivePage();
+              var shapeName = "Sample Name";
+              var shape = activePage.shapes.getItem(shapeName);
               shape.load(["name", "id", "text", "select"]);
               return ctx.sync().then(function () {
                   console.log(shape.name);
@@ -243,8 +243,8 @@ methods:
           ```
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
               shape.view.highlight = { color: "#E7E7E7", width: 100 };
               return ctx.sync();
           }).catch(function(error) {

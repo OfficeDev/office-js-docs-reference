@@ -29,8 +29,8 @@ remarks: >-
 
 
   function callback(asyncResult) {
-      const context = asyncResult.context;
-      const recurrence = asyncResult.value;
+      var context = asyncResult.context;
+      var recurrence = asyncResult.value;
       if (!recurrence) {
           console.log("One-time appointment or meeting");
       } else {

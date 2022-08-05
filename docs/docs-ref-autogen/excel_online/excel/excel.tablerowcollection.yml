@@ -76,9 +76,9 @@ methods:
       ```typescript
 
       await Excel.run(async (context) => { 
-          const tables = context.workbook.tables;
-          const values = [["Sample", "Values", "For", "New", "Row"]];
-          const row = tables.getItem("Table1").rows.add(null, values);
+          var tables = context.workbook.tables;
+          var values = [["Sample", "Values", "For", "New", "Row"]];
+          var row = tables.getItem("Table1").rows.add(null, values);
           row.load('index');
           await context.sync();
           
@@ -186,7 +186,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
+          var tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
           tablerow.load('values');
           await context.sync();
           console.log(tablerow.values);
@@ -251,12 +251,12 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const tablerows = context.workbook.tables.getItem('Table1').rows;
+              var tablerows = context.workbook.tables.getItem('Table1').rows;
               tablerows.load('items');
               await context.sync();
               
               console.log("tablerows Count: " + tablerows.count);
-              for (let i = 0; i < tablerows.items.length; i++) {
+              for (var i = 0; i < tablerows.items.length; i++) {
                   console.log(tablerows.items[i].index);
               }
           });

@@ -255,15 +255,39 @@ methods:
       await Excel.run(async (context) => {
           const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
 
-          // The layout controls the ranges used by the PivotTable.
+          // the layout controls the ranges used by the PivotTable
           const range = pivotTable.layout.getDataBodyRange();
 
-          // Get all the data hierarchy totals.
+          // get all the data hierarchy totals
           const grandTotalRange = range.getLastRow();
           grandTotalRange.load("address");
           await context.sync();
           
-          // Use the wholesale and farm sale totals to make a final sum.
+          // use the wholesale and farm sale totals to make a final sum
+          const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
+          masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
+          await context.sync();
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+          // the layout controls the ranges used by the PivotTable
+          const range = pivotTable.layout.getDataBodyRange();
+
+          // get all the data hierarchy totals
+          const grandTotalRange = range.getLastRow();
+          grandTotalRange.load("address");
+          await context.sync();
+          
+          // use the wholesale and farm sale totals to make a final sum
           const masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
           masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
           await context.sync();

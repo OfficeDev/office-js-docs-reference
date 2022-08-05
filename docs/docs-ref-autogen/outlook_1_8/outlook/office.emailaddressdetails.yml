@@ -40,7 +40,7 @@ properties:
           ```javascript
           // The following sample provides the responses from required attendees.
           // Note that this sample needs the add-in to be in Appointment Read (Attendee) mode.
-          const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+          var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
           console.log("There are " + requiredAttendees.length + " required attendees.")
           requiredAttendees.forEach(function (requiredAttendee) {
               console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
@@ -64,7 +64,7 @@ properties:
           #### Examples
 
           ```javascript
-          const organizerName = Office.context.mailbox.item.organizer.displayName;
+          var organizerName = Office.context.mailbox.item.organizer.displayName;
           console.log("Organizer: " + organizerName);
           ```
   - name: emailAddress
@@ -85,7 +85,7 @@ properties:
           #### Examples
 
           ```javascript
-          const organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+          var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
           console.log("Organizer's email address: " + organizerAddress);
           ```
   - name: recipientType
@@ -106,7 +106,7 @@ properties:
 
       ```javascript
 
-      const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+      var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
       console.log("There are " + requiredAttendees.length + " required attendees.")
 

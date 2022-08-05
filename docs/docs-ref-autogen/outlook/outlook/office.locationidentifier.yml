@@ -23,7 +23,7 @@ remarks: >-
 
   ```javascript
 
-  const locations = [
+  var locations = [
       {
           "id": "Contoso",
           "type": Office.MailboxEnums.LocationType.Custom

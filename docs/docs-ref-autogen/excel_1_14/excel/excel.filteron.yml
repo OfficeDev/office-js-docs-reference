@@ -10,9 +10,10 @@ remarks: |-
   #### Examples
 
   ```typescript
-  // This function adds a custom AutoFilter to the active worksheet 
-  // and applies the filter to a column of the used range.
   await Excel.run(async (context) => {
+      // This method adds a custom AutoFilter to the active worksheet 
+      // and applies the filter to a column of the used range.
+
       // Retrieve the active worksheet and the used range on that worksheet.
       const sheet = context.workbook.worksheets.getActiveWorksheet();
       const farmData = sheet.getUsedRange();

@@ -6,47 +6,7 @@ fullName: Excel.DateFilterCondition
 summary: >-
   Enum representing all accepted conditions by which a date filter can be applied. Used to configure the type of
   PivotFilter that is applied to the field.
-remarks: >-
-  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
-
-  await Excel.run(async (context) => {
-    // Add a date-based PivotFilter.
-
-    // Get the PivotTable.
-    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-    // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
-    // If it's not already there, add "Date Updated" to the hierarchies.
-    let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
-    await context.sync();
-    if (dateHierarchy.isNullObject) {
-      dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
-    }
-
-    // Apply a date filter to filter out anything logged before August.
-    const filterField = dateHierarchy.fields.getItem("Date Updated");
-    const dateFilter = {
-      condition: Excel.DateFilterCondition.afterOrEqualTo,
-      comparator: {
-        date: "2020-08-01",
-        specificity: Excel.FilterDatetimeSpecificity.month
-      }
-    };
-    filterField.applyFilter({ dateFilter: dateFilter });
-
-    await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

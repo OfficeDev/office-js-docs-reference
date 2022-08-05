@@ -201,11 +201,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              const sheetName = "Sheet1";
-              const rangeAddress = "F:G";
-              const worksheet = context.workbook.worksheets.getItem(sheetName);
-              const range = worksheet.getRange(rangeAddress);
-              const rangeFont = range.format.font;
+              var sheetName = "Sheet1";
+              var rangeAddress = "F:G";
+              var worksheet = context.workbook.worksheets.getItem(sheetName);
+              var range = worksheet.getRange(rangeAddress);
+              var rangeFont = range.format.font;
               rangeFont.load('name');
               await context.sync();
               console.log(rangeFont.name);

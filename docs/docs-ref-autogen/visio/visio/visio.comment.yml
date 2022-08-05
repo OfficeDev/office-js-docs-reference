@@ -97,15 +97,15 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shapeName = "Position Belt.41";
-              const shape = activePage.shapes.getItem(shapeName);
-              const shapeComments= shape.comments;
+              var activePage = ctx.document.getActivePage();
+              var shapeName = "Position Belt.41";
+              var shape = activePage.shapes.getItem(shapeName);
+              var shapeComments= shape.comments;
               shapeComments.load(["author", "text"]);
               return ctx.sync().then(function () {
-                  for (let i = 0; i < shapeComments.items.length; i++)
+                  for(var i = 0; i < shapeComments.items.length; i++)
                   {
-                      const comment = shapeComments.items[i];
+                      var comment = shapeComments.items[i];
                       console.log("comment Author: " + comment.author);
                       console.log("Comment Text: " + comment.text);
                       console.log("Date " + comment.date);

@@ -104,12 +104,12 @@ methods:
 
           ```javascript
           Visio.run(session, function (ctx) {
-              const activePage = ctx.document.getActivePage();
-              const shape = activePage.shapes.getItem(0);
-              const shapeDataItems = shape.shapeDataItems;
+              var activePage = ctx.document.getActivePage();
+              var shape = activePage.shapes.getItem(0);
+              var shapeDataItems = shape.shapeDataItems;
               shapeDataItems.load(["label", "value"]);
               return ctx.sync().then(function() {
-                  for (let i = 0; i < shapeDataItems.items.length; i++) {
+                  for (var i = 0; i < shapeDataItems.items.length; i++) {
                       console.log(shapeDataItems.items[i].label);
                       console.log(shapeDataItems.items[i].value);
                   }

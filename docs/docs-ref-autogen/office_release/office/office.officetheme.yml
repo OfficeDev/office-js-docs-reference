@@ -20,10 +20,10 @@ remarks: |-
   ```javascript
   function applyOfficeTheme(){
       // Get office theme colors.
-      const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-      const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-      const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-      const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+      var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+      var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+      var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+      var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
       // Apply body background color to a CSS class.
       $('.body').css('background-color', bodyBackgroundColor);

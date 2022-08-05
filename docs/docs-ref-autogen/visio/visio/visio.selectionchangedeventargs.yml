@@ -13,11 +13,11 @@ remarks: |-
   #### Examples
 
   ```javascript
-  let eventResult; // Global variable to store the EventHandlerResult returned on attaching handler.
+  var eventResult; // Global Variable to store the EventHandlerResult returned on attaching handler.
 
   function AttachHandler() {
       Visio.run(session, function(ctx) {
-          const doc = ctx.document;
+          var doc = ctx.document;
           eventResult = doc.onSelectionChanged.add(
               function (args) {
                   console.log("Selected Shape Name: "+args.shapeNames[0]);

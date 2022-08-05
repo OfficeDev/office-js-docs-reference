@@ -67,7 +67,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
-      const masterCategoriesToAdd = [
+      var masterCategoriesToAdd = [
         {
           displayName: "TestCategory",
           color: Office.MailboxEnums.CategoryColor.Preset0
@@ -97,7 +97,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -178,7 +178,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -220,7 +220,7 @@ methods:
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-          const categories = asyncResult.value;
+          var categories = asyncResult.value;
           if (categories && categories.length > 0) {
             console.log("Master categories:");
             console.log(JSON.stringify(categories));
@@ -281,7 +281,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
 
-      const masterCategoriesToRemove = ["TestCategory"];
+      var masterCategoriesToRemove = ["TestCategory"];
 
 
       Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function(asyncResult) {
@@ -306,7 +306,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback function.
+            can provide any object they wish to access in the callback method.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-

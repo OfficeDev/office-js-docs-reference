@@ -52,7 +52,7 @@ properties:
               // The event object implements the Event interface.
 
               // This value will be "eventTestButton".
-              const buttonId = event.source.id;
+              var buttonId = event.source.id;
 
               // Signal to the host app that processing is complete.
               event.completed();
@@ -63,7 +63,7 @@ properties:
           // button1 and button2
           function multiButton (event) {
               // Check which button was clicked.
-              const buttonId = event.source.id;
+              var buttonId = event.source.id;
 
               if (buttonId === 'button1') {
                   doButton1Action();

@@ -74,7 +74,7 @@ methods:
       ```typescript
       // Get the name of the first series in the series collection.
       await Excel.run(async (context) => { 
-          const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
           seriesCollection.load('items');
           await context.sync();
           
@@ -141,7 +141,7 @@ methods:
           ```typescript
           // Get the number of chart series in the collection.
           await Excel.run(async (context) => { 
-              const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+              var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
               seriesCollection.load('count');
               await context.sync();
 

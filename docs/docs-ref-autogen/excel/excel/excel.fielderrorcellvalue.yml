@@ -62,18 +62,6 @@ properties:
       content: 'errorType?: ErrorCellValueType.field | "Field";'
       return:
         type: '<xref uid="excel!Excel.ErrorCellValueType.field:member" /> | "Field"'
-  - name: fieldName
-    uid: 'excel!Excel.FieldErrorCellValue#fieldName:member'
-    package: excel!
-    fullName: fieldName
-    summary: Represents the field which was not found by FIELDVALUE.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'fieldName?: string;'
-      return:
-        type: string
   - name: type
     uid: 'excel!Excel.FieldErrorCellValue#type:member'
     package: excel!

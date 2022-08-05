@@ -50,28 +50,6 @@ fields:
 
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LambdaInCell"'
-  - name: textOverflow
-    uid: 'excel!Excel.CalcErrorCellValueSubType.textOverflow:member'
-    package: excel!
-    summary: >-
-      An error caused by a cell's formula returning a string that exceeds the maximum of 32767 characters. Displays as
-      error type \#CALC! in Excel. Some characters, like emoji, may appear to be one character in the Excel UI but are
-      actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum
-      character limit.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"TextOverflow"'
-  - name: tooDeeplyNested
-    uid: 'excel!Excel.CalcErrorCellValueSubType.tooDeeplyNested:member'
-    package: excel!
-    summary: >-
-      An error caused by a `CellValue` object that is too deeply nested within another `CellValue`<!-- -->. Displays as
-      error type \#CALC! in Excel.
-
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"TooDeeplyNested"'
   - name: tooManyCells
     uid: 'excel!Excel.CalcErrorCellValueSubType.tooManyCells:member'
     package: excel!

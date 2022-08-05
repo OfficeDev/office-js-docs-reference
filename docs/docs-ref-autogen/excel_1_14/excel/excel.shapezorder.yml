@@ -4,26 +4,7 @@ uid: 'excel!Excel.ShapeZOrder:enum'
 package: excel!
 fullName: Excel.ShapeZOrder
 summary: Specifies where in the z-order a shape should be moved relative to other shapes.
-remarks: >-
-  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-move-and-order.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Shapes");
-      const shape = sheet.shapes.getItem("Octagon")
-      shape.setZOrder(Excel.ShapeZOrder.sendBackward);
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:

@@ -4,30 +4,7 @@ uid: 'excel!Excel.ConditionalTextOperator:enum'
 package: excel!
 fullName: Excel.ConditionalTextOperator
 summary: Represents the operator of the text conditional format type.
-remarks: >-
-  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-  #### Examples
-
-
-  ```typescript
-
-  // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-  await Excel.run(async (context) => {
-      const sheet = context.workbook.worksheets.getItem("Sample");
-      const range = sheet.getRange("B16:D18");
-      const conditionalFormat = range.conditionalFormats
-          .add(Excel.ConditionalFormatType.containsText);
-      conditionalFormat.textComparison.format.font.color = "red";
-      conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
-
-      await context.sync();
-  });
-
-  ```
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
