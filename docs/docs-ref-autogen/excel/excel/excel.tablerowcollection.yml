@@ -76,9 +76,9 @@ methods:
       ```typescript
 
       await Excel.run(async (context) => { 
-          var tables = context.workbook.tables;
-          var values = [["Sample", "Values", "For", "New", "Row"]];
-          var row = tables.getItem("Table1").rows.add(null, values);
+          const tables = context.workbook.tables;
+          const values = [["Sample", "Values", "For", "New", "Row"]];
+          const row = tables.getItem("Table1").rows.add(null, values);
           row.load('index');
           await context.sync();
           
@@ -101,6 +101,41 @@ methods:
         - id: values
           description: Optional. A 2D array of unformatted values of the table row.
           type: Array&lt;Array&lt;boolean | string | number&gt;&gt; | boolean | string | number
+        - id: alwaysInsert
+          description: >-
+            Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If
+            `true`<!-- -->, the new rows will be inserted into the table. If `false`<!-- -->, the new rows will be added
+            below the table. Default is `true`<!-- -->.
+          type: boolean
+      return:
+        type: '<xref uid="excel!Excel.TableRow:class" />'
+        description: ''
+  - name: 'addAsJson(index, values, alwaysInsert)'
+    uid: 'excel!Excel.TableRowCollection#addAsJson:member(1)'
+    package: excel!
+    fullName: 'addAsJson(index, values, alwaysInsert)'
+    summary: >-
+      Adds one or more rows to the table. The returned object will be the top row of the newly added row or rows. Unlike
+      `add()`<!-- -->, `addAsJson()` takes any type of cell value, such as image or entity data types.
+
+
+      Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
+      object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
+      new rows are added, a table row will continue to point at the index for which it was created.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'addAsJson(index?: number, values?: CellValue[][], alwaysInsert?: boolean): Excel.TableRow;'
+      parameters:
+        - id: index
+          description: >-
+            Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end.
+            Any rows below the inserted row are shifted downwards. Zero-indexed.
+          type: number
+        - id: values
+          description: Optional. A 2D array of cell values of the table row.
+          type: '<xref uid="excel!Excel.CellValue:type" />[][]'
         - id: alwaysInsert
           description: >-
             Optional. Specifies whether the new rows will be inserted into the table when new rows are added. If
@@ -186,7 +221,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
+          const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
           tablerow.load('values');
           await context.sync();
           console.log(tablerow.values);
@@ -251,12 +286,12 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var tablerows = context.workbook.tables.getItem('Table1').rows;
+              const tablerows = context.workbook.tables.getItem('Table1').rows;
               tablerows.load('items');
               await context.sync();
               
               console.log("tablerows Count: " + tablerows.count);
-              for (var i = 0; i < tablerows.items.length; i++) {
+              for (let i = 0; i < tablerows.items.length; i++) {
                   console.log(tablerows.items[i].index);
               }
           });

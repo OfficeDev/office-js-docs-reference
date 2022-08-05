@@ -29,10 +29,11 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method adds a percentage AutoFilter to the active worksheet 
-          // and applies the filter to a column of the used range.
+      // This function adds a percentage AutoFilter to the active worksheet 
 
+      // and applies the filter to a column of the used range.
+
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           const farmData = sheet.getUsedRange();
@@ -278,8 +279,8 @@ properties:
       ```typescript
       // Set worksheet position.
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.position = 2;
           await context.sync(); 
       });
@@ -306,7 +307,7 @@ properties:
       // To remove only a subset of WorksheetProtectionOptions use the 
       // protect() method and set the options you wish to remove to true.
       await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sheet1");
+        const sheet = context.workbook.worksheets.getItem("Sheet1");
         sheet.protection.protect({
           allowInsertRows: false, // Protect row insertion
           allowDeleteRows: true // Unprotect row deletion
@@ -478,36 +479,7 @@ properties:
       Returns a value representing this worksheet that can be read by Open Office XML. This is an integer value, which
       is different from `worksheet.id` (which returns a globally unique identifier) and `worksheet.name` (which returns
       a value such as "Sheet1").
-    remarks: >-
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-tab-id.yaml
-
-      await Excel.run(async (context) => {
-        // This method retrieves two existing worksheets from the workbook and then prints their names and tab IDs.
-        const firstWorksheet = context.workbook.worksheets.getItem("Sample");
-        const secondWorksheet = context.workbook.worksheets.getItem("Sample2");
-        
-        // Load the worksheet names and tab IDs. 
-        firstWorksheet.load(["name", "tabId"]);
-        secondWorksheet.load(["name", "tabId"]);
-
-        await context.sync();
-        
-        // Print the name and tab ID values to the console.
-        console.log(`You added the following worksheets:`);
-        console.log(`   Name: ` + firstWorksheet.name + `. Tab ID: ` + firstWorksheet.tabId +`.`);
-        console.log(`   Name: ` + secondWorksheet.name + `. Tab ID: ` + secondWorksheet.tabId +`.`);
-      });
-
-      ```
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,8 +537,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.activate();
           await context.sync(); 
       });
@@ -686,8 +658,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
           worksheet.delete();
           await context.sync(); 
       });
@@ -796,10 +768,10 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var cell = worksheet.getCell(0,0);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const cell = worksheet.getCell(0,0);
           cell.load('address');
           await context.sync();
 
@@ -982,10 +954,10 @@ methods:
       ```typescript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
           range.load('cellCount');
           await context.sync();
           
@@ -1090,9 +1062,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sheet1';
-          var worksheet = context.workbook.worksheets.getItem(wSheetName);
-          var usedRange = worksheet.getUsedRange();
+          const wSheetName = 'Sheet1';
+          const worksheet = context.workbook.worksheets.getItem(wSheetName);
+          const usedRange = worksheet.getUsedRange();
           usedRange.load('address');
           await context.sync();
           
@@ -1179,8 +1151,8 @@ methods:
           ```typescript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
-              var wSheetName = 'Sheet1';
-              var worksheet = context.workbook.worksheets.getItem(wSheetName);
+              const wSheetName = 'Sheet1';
+              const worksheet = context.workbook.worksheets.getItem(wSheetName);
               worksheet.load('position')
               await context.sync();
               
@@ -1372,7 +1344,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onActivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The activated worksheet ID is: " + event.worksheetId);
@@ -1402,7 +1374,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onCalculated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The worksheet has recalculated.");
@@ -1513,7 +1485,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onDeactivated.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The deactivated worksheet is: " + event.worksheetId);
@@ -1626,7 +1598,53 @@ events:
     package: excel!
     fullName: onProtectionChanged
     summary: Occurs when the worksheet protection state is changed.
-    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
+      // This function registers an event handler for the onProtectionChanged event of a worksheet.
+
+      await Excel.run(async (context) => {
+          // Set "Sample" as the active worksheet.
+          context.workbook.worksheets.getItemOrNullObject("Sample").delete();
+          const sheet = context.workbook.worksheets.add("Sample");
+          sheet.activate();
+
+          // Register the onProtectionChanged event handler.
+          sheet.onProtectionChanged.add(checkProtection);
+          await context.sync();
+          console.log("Added a worksheet protection change event handler.");
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
+
+      async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
+          await Excel.run(async (context) => {
+              const protectionStatus = event.isProtected;
+              const worksheetId = event.worksheetId;
+              const source = event.source;
+              console.log("Protection status changed. Protection status is now: " + protectionStatus + ".");
+              console.log("    ID of changed worksheet: " + worksheetId + ".");
+              console.log("    Source of change event: " + source + ".");
+          });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1724,7 +1742,7 @@ events:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheet = context.workbook.worksheets.getItem("Sample");
+          const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onSelectionChanged.add(function (event) {
               return Excel.run(async (context) => {
                   console.log("The selected range has changed to: " + event.address);

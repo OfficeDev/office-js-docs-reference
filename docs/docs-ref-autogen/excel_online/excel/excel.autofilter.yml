@@ -79,10 +79,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method adds a percentage AutoFilter to the active worksheet 
-          // and applies the filter to a column of the used range.
+      // This function adds a percentage AutoFilter to the active worksheet 
 
+      // and applies the filter to a column of the used range.
+
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet and the used range on that worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
           const farmData = sheet.getUsedRange();
@@ -131,9 +132,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method clears the AutoFilter setting from one column.
+      // This function clears the AutoFilter setting from one column.
 
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -285,9 +286,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method refreshes the AutoFilter to ensure that changes are captured.
+      // This function refreshes the AutoFilter to ensure that changes are captured.
 
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -321,9 +322,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
-      await Excel.run(async (context) => {
-          // This method removes all AutoFilters from the active worksheet.
+      // This function removes all AutoFilters from the active worksheet.
 
+      await Excel.run(async (context) => {
           // Retrieve the active worksheet.
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 

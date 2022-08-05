@@ -291,12 +291,12 @@ properties:
       ```typescript
       // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "F5:G7";
-          var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
-          var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
-          var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "F5:G7";
+          const numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+          const values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+          const formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.numberFormat = numberFormat;
           range.values = values;
           range.formulas= formulas;
@@ -626,9 +626,9 @@ methods:
       ```typescript
       // Clear the format and contents of the range.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "D:F";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "D:F";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.clear();
           await context.sync(); 
       });
@@ -795,9 +795,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "D:F";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "D:F";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.delete("Left");
           await context.sync(); 
       });
@@ -856,7 +856,7 @@ methods:
 
           // NOTE: If no match is found, an ItemNotFound error
           // is thrown when Range.find is evaluated.
-          const foundRange = searchRange.find($("#searchText").text(), {
+          const foundRange = searchRange.find($("#searchText").val().toString(), {
               completeMatch: isCompleteMatchToggle,
               matchCase: isMatchCaseToggle,
               searchDirection: searchDirectionToggle
@@ -913,7 +913,7 @@ methods:
           const sheet = context.workbook.worksheets.getItem("Sample");
           const table = sheet.tables.getItem("ExpensesTable");
           const searchRange = table.getRange();
-          const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
+          const foundRange = searchRange.findOrNullObject($("#searchText").val().toString(), {
               completeMatch: isCompleteMatchToggle,
               matchCase: isMatchCaseToggle,
               searchDirection: searchDirectionToggle
@@ -997,10 +997,10 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "D4:G6";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          var range = range.getBoundingRect("G4:H8");
+          const sheetName = "Sheet1";
+          const rangeAddress = "D4:G6";
+          let range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range = range.getBoundingRect("G4:H8");
           range.load('address');
           await context.sync();
           
@@ -1033,11 +1033,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
-          var cell = range.getCell(0,0);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const cell = range.getCell(0,0);
           cell.load('address');
           await context.sync();
           
@@ -1127,9 +1127,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet19";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+          const sheetName = "Sheet19";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
           range.load('address');
           await context.sync();
 
@@ -1227,10 +1227,10 @@ methods:
       // Note: the grid properties of the Range (values, numberFormat, formulas) 
       // contains null since the Range in question is unbounded.
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "D:F";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          var rangeEC = range.getEntireColumn();
+          const sheetName = "Sheet1";
+          const rangeAddress = "D:F";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const rangeEC = range.getEntireColumn();
           rangeEC.load('address');
           await context.sync();
           
@@ -1261,10 +1261,10 @@ methods:
       // (for example, if the current range represents cells "B4:E11", 
       // its GetEntireRow is a range that represents rows "4:11").
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "D:F"; 
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-          var rangeER = range.getEntireRow();
+          const sheetName = "Sheet1";
+          const rangeAddress = "D:F"; 
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const rangeER = range.getEntireRow();
           rangeER.load('address');
           await context.sync();
           
@@ -1305,9 +1305,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = 
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = 
               context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
           range.load('address');
           await context.sync();
@@ -1373,7 +1373,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -1387,7 +1387,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {
@@ -1427,9 +1427,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
           range.load('address');
           await context.sync();
           
@@ -1455,9 +1455,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
           range.load('address');
           await context.sync();
           
@@ -1483,9 +1483,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
           range.load('address');
           await context.sync();
           
@@ -1514,9 +1514,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "D4:F6";
-          var range = 
+          const sheetName = "Sheet1";
+          const rangeAddress = "D4:F6";
+          const range = 
               context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
           range.load('address');
           await context.sync();
@@ -1580,9 +1580,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
           range.load('address');
           await context.sync();
           
@@ -1893,7 +1893,7 @@ methods:
           await context.sync();
 
           if (asianContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("Asian");
           } else {
@@ -1907,7 +1907,7 @@ methods:
           }
 
           if (europeanContestRange.isNullObject) {
-              // See the declaration of this method for how to
+              // See the declaration of this function for how to
               // test this code path.
               reportMissingData("European");
           } else {
@@ -2029,9 +2029,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "F5:F10";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "F5:F10";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.insert(Excel.InsertShiftDirection.down);
           await context.sync();
       });
@@ -2111,10 +2111,10 @@ methods:
           ```typescript
           // Use the range address to get the range object.
           await Excel.run(async (context) => {
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8"; 
-              var worksheet = context.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
+              const sheetName = "Sheet1";
+              const rangeAddress = "A1:F8"; 
+              const worksheet = context.workbook.worksheets.getItem(sheetName);
+              const range = worksheet.getRange(rangeAddress);
               range.load('cellCount');
               await context.sync();
               
@@ -2165,9 +2165,9 @@ methods:
       ```typescript
 
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:C3";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.merge(true);
           await context.sync(); 
       });
@@ -2291,9 +2291,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "F5:F10"; 
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "F5:F10"; 
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.select();
           await context.sync(); 
       });
@@ -2613,9 +2613,9 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:C3";
-          var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:C3";
+          const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
           range.unmerge();
           await context.sync(); 
       });
@@ -2656,7 +2656,7 @@ methods:
 
               for (let i = 0; i < largeRange.rowCount; i++) {
                   for (let j = 0; j < largeRange.columnCount; j++) {
-                      let cell = largeRange.getCell(i, j);
+                      const cell = largeRange.getCell(i, j);
                       cell.values = [[i *j]];
 
                       // Call untrack() to release the range from memory.

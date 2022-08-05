@@ -11,6 +11,41 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
+
+  function handleAttachmentsCallback(result) {
+      // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+      switch (result.value.format) {
+          case Office.MailboxEnums.AttachmentContentFormat.Base64:
+              // Handle file attachment.
+              console.log(result.value.content);
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.Eml:
+              // Handle email item attachment.
+              console.log("Attachment is a message.");
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+              // Handle .icalender attachment.
+              console.log("Attachment is a calendar item.");
+              break;
+          case Office.MailboxEnums.AttachmentContentFormat.Url:
+              // Handle cloud attachment.
+              console.log("Attachment is a cloud attachment.");
+              break;
+          default:
+              // Handle attachment formats that are not supported.
+      }
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

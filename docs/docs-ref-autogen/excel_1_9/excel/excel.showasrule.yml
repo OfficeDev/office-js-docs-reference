@@ -51,8 +51,8 @@ properties:
           wholesaleDataHierarchy.load("showAs");
           await context.sync();
 
-          // show the difference between crate sales of the "A Farms" and the other farms
-          // this difference is both aggregated and shown for individual fruit types (where applicable)
+          // Show the difference between crate sales of the "A Farms" and the other farms.
+          // This difference is both aggregated and shown for individual fruit types (where applicable).
           let farmShowAs = farmDataHierarchy.showAs;
           farmShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
           farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");

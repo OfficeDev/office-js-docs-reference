@@ -835,7 +835,40 @@ methods:
     summary: >-
       Gets the string representation of the data source of the chart series. The string representation could be
       information such as a cell address.
-    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
+
+      // This function retrieves the data source information of a chart series in the Sample worksheet.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        // Get the first chart series from the first chart on the worksheet.
+        const seriesCollection = sheet.charts.getItemAt(0).series;
+        const series = seriesCollection.getItemAt(0);
+
+        // Get the series data source string and type values. 
+        const dataSourceString = series.getDimensionDataSourceString("Values");
+        const dataSourceType = series.getDimensionDataSourceType("Values");
+
+        series.load("name");
+        await context.sync();
+        
+        // Log the data source information to the console.
+        console.log(series.name + " data source string: " + dataSourceString.value);
+        console.log(series.name + " data source type: " + dataSourceType.value);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -873,7 +906,40 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceType(dimension)
     summary: Gets the data source type of the chart series.
-    remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-source.yaml
+
+      // This function retrieves the data source information of a chart series in the Sample worksheet.
+
+      await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+
+        // Get the first chart series from the first chart on the worksheet.
+        const seriesCollection = sheet.charts.getItemAt(0).series;
+        const series = seriesCollection.getItemAt(0);
+
+        // Get the series data source string and type values. 
+        const dataSourceString = series.getDimensionDataSourceString("Values");
+        const dataSourceType = series.getDimensionDataSourceType("Values");
+
+        series.load("name");
+        await context.sync();
+        
+        // Log the data source information to the console.
+        console.log(series.name + " data source string: " + dataSourceString.value);
+        console.log(series.name + " data source type: " + dataSourceType.value);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1028,7 +1094,7 @@ methods:
           ```typescript
           // Rename the 1st series of Chart1 to "New Series Name".
           await Excel.run(async (context) => { 
-              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
               chart.series.getItemAt(0).name = "New Series Name";
               await context.sync();
 

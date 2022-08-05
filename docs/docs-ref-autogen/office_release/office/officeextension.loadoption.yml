@@ -45,9 +45,9 @@ remarks: >-
 
   Word.run(function (context) {
       // Create a proxy object for the paragraphs collection.
-      var paragraphs = context.document.body.paragraphs;
+      const paragraphs = context.document.body.paragraphs;
 
-      // Queue a commmand to load the text and font properties.
+      // Queue a command to load the text and font properties.
       // It is best practice to always specify the property set.
       // Otherwise, all properties are returned on the object.
       context.load(paragraphs, 'text, font/size');
@@ -134,7 +134,7 @@ properties:
           // of the top five pages in the current section.
           OneNote.run(function (context) {
               // Get the pages in the current section.
-              var pages = context.application.getActiveSection().pages;
+              const pages = context.application.getActiveSection().pages;
 
               // Queue a command to load the pages.           
               pages.load({ "select":"title,pageLevel", "top":5, "skip":0 });

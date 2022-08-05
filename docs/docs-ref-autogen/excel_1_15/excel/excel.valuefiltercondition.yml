@@ -7,7 +7,41 @@ summary: >-
   Enum representing all accepted conditions by which a value filter can be applied. Used to configure the type of
   PivotFilter that is applied to the field. `PivotFilter.exclusive` can be set to `true` to invert many of these
   conditions.
-remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+  await Excel.run(async (context) => {
+    // Add a PivotFilter to filter on the values correlated with a row.
+
+    // Get the PivotTable.
+    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+    // Get the "Farm" field.
+    const field = pivotTable.hierarchies.getItem("Farm").fields.getItem("Farm");
+
+    // Filter to only include rows with more than 500 wholesale crates sold.
+    const filter: Excel.PivotValueFilter = {
+      condition: Excel.ValueFilterCondition.greaterThan,
+      comparator: 500,
+      value: "Sum of Crates Sold Wholesale"
+    };
+
+    // Apply the value filter to the field.
+    field.applyFilter({ valueFilter: filter });
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

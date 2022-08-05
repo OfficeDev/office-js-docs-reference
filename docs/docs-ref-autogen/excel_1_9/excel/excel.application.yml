@@ -85,7 +85,23 @@ methods:
     package: excel!
     fullName: calculate(calculationType)
     summary: Recalculate all currently opened workbooks in Excel.
-    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
+
+      await Excel.run(async (context) => {
+        context.application.calculate(Excel.CalculationType.full);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +184,7 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => {
-              var application = context.workbook.application;
+              const application = context.workbook.application;
               application.load('calculationMode');
               await context.sync();
 
@@ -283,32 +299,33 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/performance-optimization.yaml
 
       await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getActiveWorksheet();
-          const rowCount = 500;
-          const columnCount = 20;
+        // Recreate the data in the worksheet with random data.
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-          const startTime = Date.now();
-          console.log("Starting...");
+        const startTime = Date.now();
+        console.log("Starting...");
 
-          if (pauseScreenPainting) {
-              // Note: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop).
-              // Repeated calls will cause the Excel window to flicker. 
-              context.application.suspendScreenUpdatingUntilNextSync();
+        // If other parts of the sample have toggled screen painting off, this will stop screen updating until context.sync is called.
+        if (pauseScreenPainting) {
+          context.application.suspendScreenUpdatingUntilNextSync();
+        }
+
+        for (let i = 1; i < ROW_COUNT; i++) {
+          for (let j = 1; j < COLUMN_COUNT; j++) {
+            let cell = sheet.getCell(i, j);
+            cell.values = [[i * j * Math.random()]];
+
+            // If other parts of the sample have toggled tracking off, we will avoid tracking this range and having to manage the proxy objects.
+            // For more information, see https://docs.microsoft.com/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#untrack-unneeded-proxy-objects
+            if (untrack) {
+              cell.untrack();
+            }
           }
+        }
 
-          for (let i = 0; i < rowCount; i++) {
-              for (let j = 0; j < columnCount; j++) {
-                  let cell = sheet.getCell(i, j);
-                  cell.values = [[i * j * Math.random()]];
-                  if (untrack) {
-                      cell.untrack();
-                  }
-              }
-          }
+        await context.sync();
 
-          await context.sync();
-
-          console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
+        console.log(`Ending. Adding ${ROW_COUNT * COLUMN_COUNT} cells took ${Date.now() - startTime} milliseconds`);
       });
 
       ```

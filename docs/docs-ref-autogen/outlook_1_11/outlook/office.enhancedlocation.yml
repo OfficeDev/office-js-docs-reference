@@ -53,7 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
-      var locations = [
+      const locations = [
         {
           id: "Contoso",
           type: Office.MailboxEnums.LocationType.Custom
@@ -86,7 +86,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -171,7 +171,7 @@ methods:
           console.error(`Failed to get locations. Error message: ${result.error.message}`);
           return;
         }
-        var places = result.value;
+        const places = result.value;
         if (places && places.length > 0) {
           result.value.forEach(function(place) {
             console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
@@ -195,7 +195,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
@@ -271,7 +271,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
-      var locations = [
+      const locations = [
         {
           id: "Contoso",
           type: Office.MailboxEnums.LocationType.Custom
@@ -304,7 +304,7 @@ methods:
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
-            can provide any object they wish to access in the callback method.
+            can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-

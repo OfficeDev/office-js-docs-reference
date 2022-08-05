@@ -4,7 +4,36 @@ uid: 'excel!Excel.ChartType:enum'
 package: excel!
 fullName: Excel.ChartType
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-create-several-charts.yaml
+
+  await Excel.run(async (context) => {
+    let sheet = context.workbook.worksheets.getItem("Sample");
+    let salesTable = sheet.tables.getItem("SalesTable");
+
+    let dataRange = sheet.getRange("A1:E7");
+    let chart = sheet.charts.add(Excel.ChartType.line, dataRange, "Auto");
+
+    chart.setPosition("A22", "F35");
+    chart.legend.position = "Right";
+    chart.legend.format.fill.setSolidColor("white");
+    chart.dataLabels.format.font.size = 15;
+    chart.dataLabels.format.font.color = "black";
+    chart.title.text = "Bicycle Parts Quarterly Sales";
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

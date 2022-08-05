@@ -77,7 +77,7 @@ methods:
       ```typescript
       // Clear the format of the major gridlines on Chart1. 
       await Excel.run(async (context) => { 
-          var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+          const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
           gridlines.format.line.clear();
           await context.sync();
           
@@ -136,7 +136,7 @@ methods:
           ```typescript
           // Set chart major gridlines on value axis to be red.
           await Excel.run(async (context) => {
-              var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+              const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
               gridlines.format.line.color = "#FF0000";
               await context.sync()
               

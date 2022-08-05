@@ -173,8 +173,8 @@ methods:
           ```typescript
           // Get the maximum of Chart Axis from Chart1.
           await Excel.run(async (context) => { 
-              var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var axis = chart.axes.valueAxis;
+              const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+              const axis = chart.axes.valueAxis;
               axis.load('maximum');
               await context.sync();
 
