@@ -245,7 +245,7 @@ export declare namespace Office {
             Preset24
         }
         /**
-         * Compose type.
+         * Specifies a message's compose type.
          *
          * @remarks
          * [Api set: Mailbox 1.10]

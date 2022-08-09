@@ -159,7 +159,7 @@ methods:
               const searchResults = context.document.body.search('video you', {ignorePunct: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -187,7 +187,7 @@ methods:
               const searchResults = context.document.body.search('vid', {matchPrefix: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -214,7 +214,7 @@ methods:
               const searchResults = context.document.body.search('ly', {matchSuffix: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -243,7 +243,7 @@ methods:
               const searchResults = context.document.body.search('to*n', {matchWildcards: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.

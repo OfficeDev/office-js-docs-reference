@@ -54,7 +54,7 @@ properties:
           const body = context.document.body;
 
           // Queue a command to load font and style information for the document body.
-          context.load(body, 'font/size, font/name, font/color, style');
+          body.load('font/size, font/name, font/color, style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -208,7 +208,7 @@ properties:
           const body = context.document.body;
 
           // Queue a command to load the text in document body.
-          context.load(body, 'text');
+          body.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.

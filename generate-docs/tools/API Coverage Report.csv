@@ -1,9 +1,9 @@
 Class,Field,Type,Description Rating,Has Example?
 CustomFunctions.CancelableInvocation,N/A,Class,Good,false
-CustomFunctions.Error,N/A,Class,Good,false
+CustomFunctions.Error,N/A,Class,Good,true
 CustomFunctions.Error,code,Property,Good,false
 CustomFunctions.Error,message,Property,Good,false
-CustomFunctions.ErrorCode,N/A,Enum,Good,false
+CustomFunctions.ErrorCode,N/A,Enum,Good,true
 CustomFunctions.ErrorCode,divisionByZero,EnumField,Good,false
 CustomFunctions.ErrorCode,invalidName,EnumField,Good,false
 CustomFunctions.ErrorCode,invalidNumber,EnumField,Good,false
@@ -8013,11 +8013,11 @@ Office.MailboxEnums.CategoryColor,Preset6,EnumField,Poor,false
 Office.MailboxEnums.CategoryColor,Preset7,EnumField,Poor,false
 Office.MailboxEnums.CategoryColor,Preset8,EnumField,Poor,false
 Office.MailboxEnums.CategoryColor,Preset9,EnumField,Poor,false
-Office.MailboxEnums.ComposeType,N/A,Enum,Good,false
+Office.MailboxEnums.ComposeType,N/A,Enum,Good,true
 Office.MailboxEnums.ComposeType,Forward,EnumField,Poor,false
 Office.MailboxEnums.ComposeType,NewMail,EnumField,Poor,false
 Office.MailboxEnums.ComposeType,Reply,EnumField,Poor,false
-Office.MailboxEnums.Days,N/A,Enum,Good,false
+Office.MailboxEnums.Days,N/A,Enum,Good,true
 Office.MailboxEnums.Days,Day,EnumField,Poor,false
 Office.MailboxEnums.Days,Fri,EnumField,Poor,false
 Office.MailboxEnums.Days,Mon,EnumField,Poor,false
@@ -8050,7 +8050,7 @@ Office.MailboxEnums.InfobarType,Error,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Informational,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Insight,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,ProgressIndicator,EnumField,Fine,false
-Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Good,false
+Office.MailboxEnums.ItemNotificationMessageType,N/A,Enum,Good,true
 Office.MailboxEnums.ItemNotificationMessageType,ErrorMessage,EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,InformationalMessage,EnumField,Fine,false
 Office.MailboxEnums.ItemNotificationMessageType,InsightMessage,EnumField,Fine,false
@@ -8078,12 +8078,12 @@ Office.MailboxEnums.OWAView,N/A,Enum,Fine,false
 Office.MailboxEnums.OWAView,OneColumn,EnumField,Good,false
 Office.MailboxEnums.OWAView,ThreeColumns,EnumField,Good,false
 Office.MailboxEnums.OWAView,TwoColumns,EnumField,Good,false
-Office.MailboxEnums.RecipientType,N/A,Enum,Good,false
+Office.MailboxEnums.RecipientType,N/A,Enum,Good,true
 Office.MailboxEnums.RecipientType,DistributionList,EnumField,Fine,false
 Office.MailboxEnums.RecipientType,ExternalUser,EnumField,Fine,false
 Office.MailboxEnums.RecipientType,Other,EnumField,Fine,false
 Office.MailboxEnums.RecipientType,User,EnumField,Fine,false
-Office.MailboxEnums.RecurrenceTimeZone,N/A,Enum,Good,false
+Office.MailboxEnums.RecurrenceTimeZone,N/A,Enum,Good,true
 Office.MailboxEnums.RecurrenceTimeZone,AfghanistanStandardTime,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceTimeZone,AlaskanStandardTime,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceTimeZone,AleutianStandardTime,EnumField,Poor,false
@@ -8220,7 +8220,7 @@ Office.MailboxEnums.RecurrenceTimeZone,WestAsiaStandardTime,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceTimeZone,WestBankStandardTime,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceTimeZone,WestPacificStandardTime,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceTimeZone,YakutskStandardTime,EnumField,Poor,false
-Office.MailboxEnums.RecurrenceType,N/A,Enum,Good,false
+Office.MailboxEnums.RecurrenceType,N/A,Enum,Good,true
 Office.MailboxEnums.RecurrenceType,Daily,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceType,Monthly,EnumField,Poor,false
 Office.MailboxEnums.RecurrenceType,Weekday,EnumField,Poor,false
@@ -9537,7 +9537,7 @@ Word.CommentReplyCollection,load(propertyNamesAndPaths),Method,Poor,false
 Word.CommentReplyCollection,toJSON(),Method,Poor,false
 Word.CommentReplyCollection,track(),Method,Poor,false
 Word.CommentReplyCollection,untrack(),Method,Poor,false
-Word.ContentControl,N/A,Class,Good,false
+Word.ContentControl,N/A,Class,Good,true
 Word.ContentControl,appearance,Property,Good,false
 Word.ContentControl,cannotDelete,Property,Good,false
 Word.ContentControl,cannotEdit,Property,Good,false
@@ -9623,8 +9623,8 @@ Word.ContentControlCollection,track(),Method,Poor,false
 Word.ContentControlCollection,untrack(),Method,Poor,false
 Word.ContentControlEventArgs,N/A,Class,Good,false
 Word.ContentControlEventArgs,contentControl,Property,Good,true
-Word.ContentControlEventArgs,eventType,Property,Good,false
-Word.ContentControlType,N/A,Enum,Good,false
+Word.ContentControlEventArgs,eventType,Property,Good,true
+Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,buildingBlockGallery,EnumField,Fine,false
 Word.ContentControlType,checkBox,EnumField,Fine,false
 Word.ContentControlType,comboBox,EnumField,Fine,false
@@ -9807,7 +9807,7 @@ Word.ErrorCodes,itemNotFound,EnumField,Missing,false
 Word.ErrorCodes,notImplemented,EnumField,Missing,false
 Word.ErrorCodes,searchDialogIsOpen,EnumField,Missing,false
 Word.ErrorCodes,searchStringInvalidOrTooLong,EnumField,Missing,false
-Word.EventType,N/A,Enum,Good,false
+Word.EventType,N/A,Enum,Good,true
 Word.EventType,contentControlAdded,EnumField,Fine,false
 Word.EventType,contentControlDataChanged,EnumField,Fine,false
 Word.EventType,contentControlDeleted,EnumField,Fine,false

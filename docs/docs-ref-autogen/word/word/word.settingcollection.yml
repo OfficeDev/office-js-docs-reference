@@ -168,7 +168,7 @@ methods:
           const startMonth = settings.getItem('startMonth');
 
           // Queue a command to load the setting.
-          context.load(startMonth);
+          startMonth.load();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -210,8 +210,8 @@ methods:
           const endMonth = settings.getItemOrNullObject('endMonth');
 
           // Queue commands to load settings.
-          context.load(startMonth);
-          context.load(endMonth);
+          startMonth.load();
+          endMonth.load();
 
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.

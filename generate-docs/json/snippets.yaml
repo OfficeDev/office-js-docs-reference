@@ -1,3 +1,55 @@
+'CustomFunctions.Error:class':
+  - |-
+    /**
+     * Returns the #NUM! error as part of a 2-dimensional array.
+     * @customfunction
+     * @param {number} first First parameter.
+     * @param {number} second Second parameter.
+     * @param {number} third Third parameter.
+     * @returns {number[][]} Three results, as a 2-dimensional array.
+     */
+    function returnInvalidNumberError(first, second, third) {
+      // Use the `CustomFunctions.Error` object to retrieve an invalid number error.
+      const error = new CustomFunctions.Error(
+        CustomFunctions.ErrorCode.invalidNumber, // Corresponds to the #NUM! error in the Excel UI.
+      );
+
+      // Enter logic that processes the first, second, and third input parameters.
+      // Imagine that the second calculation results in an invalid number error.
+      const firstResult = first;
+      const secondResult = error;
+      const thirdResult = third;
+
+      // Return the results of the first and third parameter calculations
+      // and a #NUM! error in place of the second result.
+      return [[firstResult], [secondResult], [thirdResult]];
+    };
+'CustomFunctions.ErrorCode:enum':
+  - |-
+    /**
+     * Returns the #NUM! error as part of a 2-dimensional array.
+     * @customfunction
+     * @param {number} first First parameter.
+     * @param {number} second Second parameter.
+     * @param {number} third Third parameter.
+     * @returns {number[][]} Three results, as a 2-dimensional array.
+     */
+    function returnInvalidNumberError(first, second, third) {
+      // Use the `CustomFunctions.Error` object to retrieve an invalid number error.
+      const error = new CustomFunctions.Error(
+        CustomFunctions.ErrorCode.invalidNumber, // Corresponds to the #NUM! error in the Excel UI.
+      );
+
+      // Enter logic that processes the first, second, and third input parameters.
+      // Imagine that the second calculation results in an invalid number error.
+      const firstResult = first;
+      const secondResult = error;
+      const thirdResult = third;
+
+      // Return the results of the first and third parameter calculations
+      // and a #NUM! error in place of the second result.
+      return [[firstResult], [secondResult], [thirdResult]];
+      };
 'Excel.AggregationFunction:enum':
   - >-
     // Link to full sample:
@@ -10107,7 +10159,7 @@
 
     const details =
       {
-        type: "progressIndicator",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -10120,7 +10172,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Non-persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: false
@@ -10135,7 +10187,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: true
@@ -10156,7 +10208,7 @@
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Notification message with id = " + id + " has been replaced with an informational message.",
         icon: "icon2",
         persistent: false
@@ -10291,9 +10343,9 @@
 
     let pattern : Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: "weekly",
-      recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
-      recurrenceTimeZone: { name: "Pacific Standard Time" }
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
+      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
 
@@ -11447,7 +11499,7 @@
 
     const details =
       {
-        type: "progressIndicator",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -11460,7 +11512,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Non-persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: false
@@ -11475,7 +11527,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: true
@@ -11496,7 +11548,7 @@
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Notification message with id = " + id + " has been replaced with an informational message.",
         icon: "icon2",
         persistent: false
@@ -16373,6 +16425,77 @@
         console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
       }
     });
+'Office.MailboxEnums.ComposeType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+    // Get the compose type of the current message.
+
+    Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(
+          "getComposeTypeAsync succeeded with composeType: " +
+            asyncResult.value.composeType +
+            " and coercionType: " +
+            asyncResult.value.coercionType
+        );
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
+'Office.MailboxEnums.Days:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject : Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDay() + 1
+    );
+
+    // Set series end date to 1 month from now.
+
+    seriesTimeObject.setEndDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      currentDate.getDay()
+    );
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    let pattern : Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
+      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+    });
 'Office.MailboxEnums.DelegatePermissions:enum':
   - >-
     // Link to full sample:
@@ -16425,6 +16548,20 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+'Office.MailboxEnums.ItemNotificationMessageType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    const id = $("#notificationId").val();
+
+    const details =
+      {
+        type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
+        message: "Error notification message with id = " + id
+      };
+    Office.context.mailbox.item.notificationMessages.addAsync(id, details,
+    handleResult);
 'Office.MailboxEnums.LocationType:enum':
   - >-
     // Link to full sample:
@@ -16448,6 +16585,164 @@
       } else {
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
+    });
+'Office.MailboxEnums.RecipientType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
+
+    const msgTo = Office.context.mailbox.item.to;
+
+    const distributionLists = [];
+
+    const externalRecipients = [];
+
+    const internalRecipients = [];
+
+    const otherRecipients = [];
+
+    for (let i = 0; i < msgTo.length; i++) {
+        switch (msgTo[i].recipientType) {
+        case Office.MailboxEnums.RecipientType.DistributionList:
+            distributionLists.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.ExternalUser:
+            externalRecipients.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.User:
+            internalRecipients.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.Other:
+            otherRecipients.push(msgTo[i]);
+        }
+    }
+
+
+    if (distributionLists.length > 0) {
+        console.log("Distribution Lists:");
+        distributionLists.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (externalRecipients.length > 0) {
+        console.log("External Recipients:");
+        externalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (internalRecipients.length > 0) {
+        console.log("Internal Recipients:");
+        internalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (otherRecipients.length > 0) {
+        console.log("Other Recipients:");
+        otherRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+'Office.MailboxEnums.RecurrenceTimeZone:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject : Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDay() + 1
+    );
+
+    // Set series end date to 1 month from now.
+
+    seriesTimeObject.setEndDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      currentDate.getDay()
+    );
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    let pattern : Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
+      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+    });
+'Office.MailboxEnums.RecurrenceType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject : Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDay() + 1
+    );
+
+    // Set series end date to 1 month from now.
+
+    seriesTimeObject.setEndDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      currentDate.getDay()
+    );
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    let pattern : Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
+      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
     });
 'Office.MailboxEnums.RestVersion:enum':
   - >-
@@ -17001,7 +17296,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
 
-    // Get the compose type of the current item (mail only).
+    // Get the compose type of the current message.
 
     Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -17247,7 +17542,7 @@
 
     const details =
       {
-        type: "progressIndicator",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -17260,7 +17555,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Non-persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: false
@@ -17275,7 +17570,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: true
@@ -17296,7 +17591,7 @@
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Notification message with id = " + id + " has been replaced with an informational message.",
         icon: "icon2",
         persistent: false
@@ -18408,7 +18703,7 @@
 
     const details =
       {
-        type: "progressIndicator",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -18421,7 +18716,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Non-persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: false
@@ -18436,7 +18731,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: true
@@ -18457,7 +18752,7 @@
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Notification message with id = " + id + " has been replaced with an informational message.",
         icon: "icon2",
         persistent: false
@@ -18529,10 +18824,52 @@
 
     const msgTo = Office.context.mailbox.item.to;
 
-    console.log("Message sent to:");
+    const distributionLists = [];
+
+    const externalRecipients = [];
+
+    const internalRecipients = [];
+
+    const otherRecipients = [];
 
     for (let i = 0; i < msgTo.length; i++) {
-      console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
+        switch (msgTo[i].recipientType) {
+        case Office.MailboxEnums.RecipientType.DistributionList:
+            distributionLists.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.ExternalUser:
+            externalRecipients.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.User:
+            internalRecipients.push(msgTo[i]);
+            break;
+        case Office.MailboxEnums.RecipientType.Other:
+            otherRecipients.push(msgTo[i]);
+        }
+    }
+
+
+    if (distributionLists.length > 0) {
+        console.log("Distribution Lists:");
+        distributionLists.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (externalRecipients.length > 0) {
+        console.log("External Recipients:");
+        externalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (internalRecipients.length > 0) {
+        console.log("Internal Recipients:");
+        internalRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
+    }
+
+
+    if (otherRecipients.length > 0) {
+        console.log("Other Recipients:");
+        otherRecipients.forEach((recipient) => console.log(`${recipient.displayName}, ${recipient.emailAddress}`));
     }
 'Office.NotificationMessageAction:interface':
   - >-
@@ -18584,7 +18921,7 @@
 
     const details =
       {
-        type: "progressIndicator",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -18597,7 +18934,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Non-persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: false
@@ -18612,7 +18949,7 @@
 
     const details =
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Persistent informational notification message with id = " + id,
         icon: "icon1",
         persistent: true
@@ -18627,7 +18964,7 @@
 
     const details =
       {
-        type: "errorMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
         message: "Error notification message with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
@@ -18679,7 +19016,7 @@
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
-        type: "informationalMessage",
+        type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: "Notification message with id = " + id + " has been replaced with an informational message.",
         icon: "icon2",
         persistent: false
@@ -19003,9 +19340,9 @@
 
     let pattern : Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: "weekly",
-      recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
-      recurrenceTimeZone: { name: "Pacific Standard Time" }
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
+      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
 
@@ -19866,7 +20203,7 @@
         // Create a proxy object for the paragraphs collection.
         const paragraphs = context.document.body.paragraphs;
 
-        // Queue a commmand to load the text and font properties.
+        // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set.
         // Otherwise, all properties are returned on the object.
         context.load(paragraphs, 'text, font/size');
@@ -22158,7 +22495,7 @@
         const body = context.document.body;
 
         // Queue a command to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
+        body.load('font/size, font/name, font/color, style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -22571,7 +22908,7 @@
         const body = context.document.body;
 
         // Queue a command to load the text in document body.
-        context.load(body, 'text');
+        body.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -22855,7 +23192,7 @@
         const contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
         
         // Queue a command to load the tag property for all of content controls.
-        context.load(contentControlsWithTag, 'tag');
+        contentControlsWithTag.load('tag');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -22882,7 +23219,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -22909,7 +23246,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -22937,7 +23274,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -22967,7 +23304,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23001,7 +23338,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23028,7 +23365,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23059,7 +23396,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23135,7 +23472,7 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.ContentControl#search:member(1)':
@@ -23147,7 +23484,7 @@
         const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23231,6 +23568,62 @@
 
       await context.sync();
     });
+'Word.ContentControl:class':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.ContentControlAppearance:enum':
   - >-
     // Link to full sample:
@@ -23279,7 +23672,7 @@
         const contentControl = context.document.contentControls.getById(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23295,7 +23688,7 @@
         const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23333,7 +23726,7 @@
         const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
         // Queue a command to load the text property for all of content controls with a specific title.
-        context.load(contentControlsWithTitle, 'text');
+        contentControlsWithTitle.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23362,7 +23755,7 @@
         const contentControl = context.document.contentControls.getFirstOrNullObject();
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23382,7 +23775,7 @@
         const contentControls = context.document.contentControls;
 
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23441,9 +23834,76 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
+'Word.ContentControlEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
+'Word.ContentControlType:enum':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.CustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
@@ -23529,7 +23989,7 @@
         const thisDocument = context.document;
         
         // Queue a command to load content control properties.
-        context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+        thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23565,7 +24025,7 @@
         const thisDocument = context.document;
 
         // Queue a command to load the document save state (on the saved property).
-        context.load(thisDocument, 'saved');    
+        thisDocument.load('saved');    
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -23583,6 +24043,17 @@
             console.log('The document has not changed since the last save.');
         }
         });
+'Word.EventType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
 'Word.Field#code:member':
   - >-
     // Link to full sample:
@@ -23848,7 +24319,7 @@
         const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -23872,7 +24343,7 @@
         const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24043,7 +24514,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24066,7 +24537,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24089,7 +24560,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24112,7 +24583,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24135,7 +24606,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24146,7 +24617,7 @@
         const precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
 
         // Queue a command to load the text of the preceding paragraph.
-        context.load(precedingParagraph, 'text');
+        precedingParagraph.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24208,7 +24679,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24235,7 +24706,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24262,7 +24733,7 @@
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24288,7 +24759,7 @@
         const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -24482,13 +24953,13 @@
         // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set. Otherwise, all properties are
         // returned in on the object.
-        context.load(paragraphs, 'text, font/size');
+        paragraphs.load('text, font/size');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Insert code that works with the paragraphs loaded by context.load().
+        // Insert code that works with the paragraphs loaded by paragraphs.load().
     });
 'Word.Range#clear:member(1)':
   - |-
@@ -24867,7 +25338,7 @@
         const searchResults = context.document.body.search('video you', {ignorePunct: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -24894,7 +25365,7 @@
         const searchResults = context.document.body.search('vid', {matchPrefix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -24920,7 +25391,7 @@
         const searchResults = context.document.body.search('ly', {matchSuffix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -24948,7 +25419,7 @@
         const searchResults = context.document.body.search('to*n', {matchWildcards: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -24988,7 +25459,7 @@
         const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -25031,7 +25502,7 @@
         const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -25190,7 +25661,7 @@
         const startMonth = settings.getItem('startMonth');
 
         // Queue a command to load the setting.
-        context.load(startMonth);
+        startMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -25211,8 +25682,8 @@
         const endMonth = settings.getItemOrNullObject('endMonth');
 
         // Queue commands to load settings.
-        context.load(startMonth);
-        context.load(endMonth);
+        startMonth.load();
+        endMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.

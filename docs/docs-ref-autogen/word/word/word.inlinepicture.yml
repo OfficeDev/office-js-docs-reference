@@ -276,7 +276,7 @@ methods:
           const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
           // Queue a command to load the alternative text title of the picture.
-          context.load(firstPicture, 'altTextTitle');
+          firstPicture.load('altTextTitle');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -314,7 +314,7 @@ methods:
           const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
           // Queue a command to load the alternative text title of the picture.
-          context.load(firstPicture, 'altTextTitle');
+          firstPicture.load('altTextTitle');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.

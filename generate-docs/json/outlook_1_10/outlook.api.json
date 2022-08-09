@@ -13752,7 +13752,7 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.ComposeType:enum",
-                  "docComment": "/**\n * Compose type.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.10]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+                  "docComment": "/**\n * Specifies a message's compose type.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.10]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
