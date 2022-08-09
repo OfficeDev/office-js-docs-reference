@@ -1,9 +1,9 @@
 Class,Field,Type,Description Rating,Has Example?
 CustomFunctions.CancelableInvocation,N/A,Class,Good,false
-CustomFunctions.Error,N/A,Class,Good,false
+CustomFunctions.Error,N/A,Class,Good,true
 CustomFunctions.Error,code,Property,Good,false
 CustomFunctions.Error,message,Property,Good,false
-CustomFunctions.ErrorCode,N/A,Enum,Good,false
+CustomFunctions.ErrorCode,N/A,Enum,Good,true
 CustomFunctions.ErrorCode,divisionByZero,EnumField,Good,false
 CustomFunctions.ErrorCode,invalidName,EnumField,Good,false
 CustomFunctions.ErrorCode,invalidNumber,EnumField,Good,false

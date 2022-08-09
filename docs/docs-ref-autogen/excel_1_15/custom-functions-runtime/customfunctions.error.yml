@@ -4,7 +4,37 @@ uid: 'custom-functions-runtime!CustomFunctions.Error:class'
 package: custom-functions-runtime!
 fullName: CustomFunctions.Error
 summary: Use this class to handle errors and write custom error messages.
-remarks: '\[ [API set: CustomFunctionsRuntime 1.2](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]'
+remarks: |-
+  \[ [API set: CustomFunctionsRuntime 1.2](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
+
+  #### Examples
+
+  ```javascript
+  /**
+   * Returns the #NUM! error as part of a 2-dimensional array.
+   * @customfunction
+   * @param {number} first First parameter.
+   * @param {number} second Second parameter.
+   * @param {number} third Third parameter.
+   * @returns {number[][]} Three results, as a 2-dimensional array.
+   */
+  function returnInvalidNumberError(first, second, third) {
+    // Use the `CustomFunctions.Error` object to retrieve an invalid number error.
+    const error = new CustomFunctions.Error(
+      CustomFunctions.ErrorCode.invalidNumber, // Corresponds to the #NUM! error in the Excel UI.
+    );
+
+    // Enter logic that processes the first, second, and third input parameters.
+    // Imagine that the second calculation results in an invalid number error.
+    const firstResult = first;
+    const secondResult = error;
+    const thirdResult = third;
+
+    // Return the results of the first and third parameter calculations
+    // and a #NUM! error in place of the second result.
+    return [[firstResult], [secondResult], [thirdResult]];
+  };
+  ```
 isPreview: false
 isDeprecated: false
 type: class
