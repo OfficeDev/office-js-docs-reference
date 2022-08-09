@@ -3,7 +3,7 @@ name: Office.MailboxEnums.ComposeType
 uid: 'outlook!Office.MailboxEnums.ComposeType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ComposeType
-summary: Compose type.
+summary: Specifies a message's compose type.
 remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
