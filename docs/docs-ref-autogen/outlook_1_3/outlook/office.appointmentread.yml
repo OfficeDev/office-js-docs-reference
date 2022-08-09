@@ -518,7 +518,7 @@ properties:
 
       const details =
         {
-          type: "progressIndicator",
+          type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
@@ -534,7 +534,7 @@ properties:
 
       const details =
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Non-persistent informational notification message with id = " + id,
           icon: "icon1",
           persistent: false
@@ -552,7 +552,7 @@ properties:
 
       const details =
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Persistent informational notification message with id = " + id,
           icon: "icon1",
           persistent: true
@@ -580,7 +580,7 @@ properties:
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Notification message with id = " + id + " has been replaced with an informational message.",
           icon: "icon2",
           persistent: false

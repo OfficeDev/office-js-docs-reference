@@ -11,6 +11,32 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+  // Get the compose type of the current message.
+
+  Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+      console.log(
+        "getComposeTypeAsync succeeded with composeType: " +
+          asyncResult.value.composeType +
+          " and coercionType: " +
+          asyncResult.value.coercionType
+      );
+    } else {
+      console.error(asyncResult.error);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
