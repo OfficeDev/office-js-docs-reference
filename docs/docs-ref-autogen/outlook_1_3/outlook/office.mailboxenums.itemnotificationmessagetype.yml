@@ -11,6 +11,26 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+  const id = $("#notificationId").val();
+
+  const details =
+    {
+      type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
+      message: "Error notification message with id = " + id
+    };
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
