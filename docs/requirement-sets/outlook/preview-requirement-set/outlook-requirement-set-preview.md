@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 07/11/2022
+ms.date: 08/09/2022
 ms.localizationpriority: medium
 ---
 
@@ -24,18 +24,6 @@ The preview requirement set includes all of the features of [requirement set 1.1
 ## Features in preview
 
 The following features are in preview.
-
-### Add-in activation on items protected by Information Rights Management (IRM)
-
-Add-ins can now activate on IRM-protected items. To turn on this capability, a tenant administrator needs to enable the `OBJMODEL` usage right by setting the **Allow programmatic access** custom policy option in Office. See [Usage rights and descriptions](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) for more information.
-
-**Available in**: Outlook on Windows, starting with build 13229.10000 (connected to a Microsoft 365 subscription)
-
-<br>
-
----
-
----
 
 ### Additional calendar properties
 
