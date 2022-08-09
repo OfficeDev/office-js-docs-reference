@@ -23135,7 +23135,7 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.ContentControl#search:member(1)':
@@ -23497,7 +23497,18 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
+'Word.ContentControlEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.ContentControlType:enum':
@@ -23695,6 +23706,17 @@
             console.log('The document has not changed since the last save.');
         }
         });
+'Word.EventType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
 'Word.Field#code:member':
   - >-
     // Link to full sample:
