@@ -141,6 +141,7 @@ A custom function written in JavaScript or TypeScript for Excel.
 - [Module](#module) (Can only be used in the [DesktopFormFactor](desktopformfactor.md).)
 - [MobileMessageReadCommandSurface](#mobilemessagereadcommandsurface)
 - [MobileOnlineMeetingCommandSurface](#mobileonlinemeetingcommandsurface)
+- [MobileLogEventAppointmentAttendee](#mobilelogeventappointmentattendee)
 - [LaunchEvent](#launchevent)
 - [Events](#events)
 - [DetectedEntity](#detectedentity)
@@ -350,6 +351,51 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
     </Icon>
     <Action xsi:type="ExecuteFunction">
       <FunctionName>insertContosoMeeting</FunctionName>
+    </Action>
+  </Control>
+</ExtensionPoint>
+```
+
+### MobileLogEventAppointmentAttendee
+
+This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and UI-less commands. To learn more about this scenario, refer to the [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments) article.
+
+> [!NOTE]
+> This extension point is only supported on Android with a Microsoft 365 subscription.
+>
+> Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+
+#### Child elements
+
+|  Element |  Description  |
+|:-----|:-----|
+|  [Control](control.md) |  Adds a button to the command surface.  |
+
+`ExtensionPoint` elements of this type can only have one child element: a `Control` element.
+
+The `Control` element contained in this extension point must have the `xsi:type` attribute set to `MobileButton`.
+
+The `Icon` images should be in grayscale using hex code `#919191` or its equivalent in [other color formats](https://convertingcolors.com/hex-color-919191.html).
+
+#### Example
+
+```xml
+<ExtensionPoint xsi:type="MobileLogEventAppointmentAttendee">
+  <Control xsi:type="MobileButton" id="appointmentReadFunctionButton">
+    <Label resid="LogButtonLabel" />
+    <Icon>
+      <bt:Image resid="Icon.16x16" size="25" scale="1" />
+      <bt:Image resid="Icon.16x16" size="25" scale="2" />
+      <bt:Image resid="Icon.16x16" size="25" scale="3" />
+      <bt:Image resid="Icon.32x32" size="32" scale="1" />
+      <bt:Image resid="Icon.32x32" size="32" scale="2" />
+      <bt:Image resid="Icon.32x32" size="32" scale="3" />
+      <bt:Image resid="Icon.80x80" size="48" scale="1" />
+      <bt:Image resid="Icon.80x80" size="48" scale="2" />
+      <bt:Image resid="Icon.80x80" size="48" scale="3" />
+    </Icon>
+    <Action xsi:type="ExecuteFunction">
+      <FunctionName>logToCRM</FunctionName>
     </Action>
   </Control>
 </ExtensionPoint>
