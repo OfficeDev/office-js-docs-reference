@@ -50,7 +50,7 @@
       // and a #NUM! error in place of the second result.
       return [[firstResult], [secondResult], [thirdResult]];
       };
-'CustomFunctions.StreamingInvocation#setResult:member(1)':
+'CustomFunctions.StreamingInvocation#setResult:member':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/16-custom-functions/streaming-function.yaml
