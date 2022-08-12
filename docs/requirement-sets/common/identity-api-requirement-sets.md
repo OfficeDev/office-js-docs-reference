@@ -10,13 +10,15 @@ ms.localizationpriority: medium
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-Office Add-ins run across multiple versions of Office. The following table lists the Identity API requirement sets, the Office client applications that support that requirement set, and the build or version numbers for the Office application.
+Office Add-ins run across multiple versions of Office. The following table lists the Identity API requirement sets, the Office client applications that support that requirement set, and the minimum build or version numbers for the Office application.
 
-|  Requirement set  | Office 2021 (volume licensed) or later on Windows | Office (subscription),<br>Office 2016 (retail) or later on Windows |  Office (subscription) on iPad  |  Office (subscription),<br>Office 2019 (retail) or later on Mac   | Office on the web  |
-|:-----|:-----|:-----|:-----|:-----|:-----|
-| IdentityAPI 1.3  | Build 16.0.14326.20454 or later | Version 2008 (build 13127.20000) or later | Not supported | 16.40 or later | Microsoft SharePoint Online and OneDrive\* |
+|  Requirement set  | Office on Windows\* |  Office on iPad  |  Office on Mac   | Office on the web  |
+|:-----|:-----|:-----|:-----|:-----|
+| IdentityAPI 1.3  |  | - Version 2008 (build 13127.20000): Microsoft 365 subscription and Office 2021 (retail perpetual) or later<br><br>- Build 16.0.14326.20454: Office 2021 (volume-licensed perpetual) or later | Not supported | 16.40 | Microsoft SharePoint Online and OneDrive\* |
 
-\* Currently, the requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
+\* Windows: New requirement sets usually get deployed with feature updates to Office (subscription) and Office 2016 (retail perpetual) or later and so are available to users who adopt updated builds. Typically, new requirement sets don't get deployed to Office 2016 (volume-licensed perpetual) or later, nor to Office 2013.
+
+\*\* Currently, the requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 
 ## Outlook and Identity API requirement sets
 

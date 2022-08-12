@@ -12,13 +12,13 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 The OpenBrowserWindow API set enables add-ins to open a browser to accomplish tasks that cannot always be done in the sandboxed webview control within the add-in itself; for example, downloading a PDF file when the webview control is provided by Microsoft Edge.
 
-Office Add-ins run across multiple versions of Office. The following table lists the OpenBrowserWindow API requirement sets, the Office host applications that support that requirement set, and the build or version numbers for the Office application.
+Office Add-ins run across multiple versions of Office. The following table lists the OpenBrowserWindow API requirement sets, the Office host applications that support that requirement set, and the minimum build or version numbers for the Office application. For Windows, new requirement sets usually get deployed with feature updates to Office (subscription) and Office 2016 (retail perpetual) or later and so are available to users who adopt updated builds. Typically, new requirement sets don't get deployed to Office 2016 (volume-licensed perpetual) or later, nor to Office 2013.
 
-|  Requirement set  | Office 2021 or later on Windows<br>(one-time purchase) | Office on Windows<br>(connected to Microsoft 365 subscription) |  Office on iPad<br>(connected to Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |  Office Online Server  |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| OpenBrowserWindowApi 1.1  | Build 16.0.14326.20454 or later | Version 1810 (Build 16.0.11001.20074) or later | 16.0.0.0 or later | 16.0.0.0 or later | N/A | N/A|
+| Requirement set | Office on Windows | Office on iPad | Office on Mac | Office on the web | Office Online Server |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| OpenBrowserWindowApi 1.1  | - Microsoft 365 subscription; Office 2016 (retail perpetual) or later: Version 1810 (Build 16.0.11001.20074)<br><br>- Office 2021 (volume-licensed perpetual) or later: Build 16.0.14326.20454 | 16.0.0.0 | 16.0.0.0 | Not supported | Not supported |
 
-> [!NOTE]
+> [!IMPORTANT]
 > The OpenBrowserWindowApi requirement set is only available as follows:
 >
 > - Excel, PowerPoint, Word: Windows, Mac, iPad
