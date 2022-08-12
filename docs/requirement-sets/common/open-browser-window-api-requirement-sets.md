@@ -16,7 +16,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on Windows | Office on iPad | Office on Mac | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| OpenBrowserWindowApi 1.1  | - Microsoft 365 subscription; Office 2016 (retail perpetual) or later: Version 1810 (Build 16.0.11001.20074)<br><br>- Office 2021 (volume-licensed perpetual) or later: Build 16.0.14326.20454 | 16.0.0.0 | 16.0.0.0 | Not supported | Not supported |
+| OpenBrowserWindowApi 1.1  | - Microsoft 365 subscription; Office 2016 (retail perpetual) or later: Version 1810 (Build 11001.20074)<br><br>- Office 2021 (volume-licensed perpetual) or later: Build 16.0.14326.20454 | 16.0.0.0 | 16.0.0.0 | Not supported | Not supported |
 
 > [!IMPORTANT]
 > The OpenBrowserWindowApi requirement set is only available as follows:

@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 |  Requirement set  | Office on Windows\* |  Office on iPad  |  Office on Mac   | Office on the web  |
 |:-----|:-----|:-----|:-----|:-----|
-| IdentityAPI 1.3  | - Version 2008 (build 13127.20000): Microsoft 365 subscription and Office 2021 (retail perpetual) or later<br><br>- Build 16.0.14326.20454: Office 2021 (volume-licensed perpetual) or later | Not supported | 16.40 | Microsoft SharePoint Online and OneDrive\*\* |
+| IdentityAPI 1.3  | - Version 2008 (Build 13127.20000): Microsoft 365 subscription and Office 2021 (retail perpetual) or later<br><br>- Build 16.0.14326.20454: Office 2021 (volume-licensed perpetual) or later | Not supported | 16.40 | Microsoft SharePoint Online and OneDrive\*\* |
 
 \* Windows: New requirement sets usually get deployed with feature updates to Office (subscription) and Office 2016 (retail perpetual) or later and so are available to users who adopt updated builds. Typically, new requirement sets don't get deployed to Office 2016 (volume-licensed perpetual) or later, nor to Office 2013.
 
