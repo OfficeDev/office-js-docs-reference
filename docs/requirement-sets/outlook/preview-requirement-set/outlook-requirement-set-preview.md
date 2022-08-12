@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 07/20/2022
+ms.date: 08/12/2022
 ms.localizationpriority: medium
 ---
 
@@ -24,18 +24,6 @@ The preview requirement set includes all of the features of [requirement set 1.1
 ## Features in preview
 
 The following features are in preview.
-
-### Add-in activation on items protected by Information Rights Management (IRM)
-
-Add-ins can now activate on IRM-protected items. To turn on this capability, a tenant administrator needs to enable the `OBJMODEL` usage right by setting the **Allow programmatic access** custom policy option in Office. See [Usage rights and descriptions](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) for more information.
-
-**Available in**: Outlook on Windows, starting with build 13229.10000 (connected to a Microsoft 365 subscription)
-
-<br>
-
----
-
----
 
 ### Additional calendar properties
 
@@ -88,18 +76,6 @@ Added a new property that returns an object that allows you to manage the delive
 Added a new object that allows you to manage the delivery date and time of a message in Compose mode.
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Event-based activation
-
-This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md), with support for the `OnMessageSend` and `OnAppointmentSend` events released in [requirement set 1.12](../requirement-set-1.12/outlook-requirement-set-1.12.md). To learn more about additional events in preview, see [Supported events](/office/dev/add-ins/outlook/autolaunch#supported-events).
-
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
