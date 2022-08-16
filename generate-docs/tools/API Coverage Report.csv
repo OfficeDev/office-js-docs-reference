@@ -2665,7 +2665,6 @@ Excel.ExternalErrorCellValue,errorSubType,Property,Good,false
 Excel.ExternalErrorCellValue,errorType,Property,Good,false
 Excel.ExternalErrorCellValue,type,Property,Good,false
 Excel.ExternalErrorCellValueSubType,N/A,Enum,Good,false
-Excel.ExternalErrorCellValueSubType,pythonError,EnumField,Good,false
 Excel.ExternalErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.FieldErrorCellValue,N/A,Class,Good,false
 Excel.FieldErrorCellValue,basicType,Property,Good,false
