@@ -16,7 +16,7 @@ CustomFunctions.Invocation,address,Property,Good,false
 CustomFunctions.Invocation,functionName,Property,Good,false
 CustomFunctions.Invocation,parameterAddresses,Property,Good,false
 CustomFunctions.StreamingInvocation,N/A,Class,Good,false
-CustomFunctions.StreamingInvocation,setResult,Property,Good,false
+CustomFunctions.StreamingInvocation,setResult,Property,Good,true
 Excel.AggregationFunction,N/A,Enum,Good,true
 Excel.AggregationFunction,automatic,EnumField,Fine,false
 Excel.AggregationFunction,average,EnumField,Fine,false
@@ -2665,7 +2665,6 @@ Excel.ExternalErrorCellValue,errorSubType,Property,Good,false
 Excel.ExternalErrorCellValue,errorType,Property,Good,false
 Excel.ExternalErrorCellValue,type,Property,Good,false
 Excel.ExternalErrorCellValueSubType,N/A,Enum,Good,false
-Excel.ExternalErrorCellValueSubType,pythonError,EnumField,Good,false
 Excel.ExternalErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.FieldErrorCellValue,N/A,Class,Good,false
 Excel.FieldErrorCellValue,basicType,Property,Good,false
