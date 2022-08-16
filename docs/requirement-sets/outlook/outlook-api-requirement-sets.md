@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 07/20/2022
+ms.date: 08/16/2022
 ms.prod: outlook
 ms.localizationpriority: high
 ---
@@ -106,7 +106,7 @@ Add-ins are supported in Outlook on the following platforms.
 || classic Outlook UI when connected to<br>Exchange on-premises | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
 
 > [!NOTE]
-> <sup>1</sup> Support for **1.8** in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase is available from version 1910 (build 12130.20272). Support for **1.9** in Outlook on Windows with a Microsoft 365 subscription is available from version 2008 (build 13127.20296). Support for **1.10** in Outlook on Windows with a Microsoft 365 subscription is available from version 2104 (build 13929.20296). Support for **1.11** in Outlook on Windows with a Microsoft 365 subscription is available from version 2110 (build 14527.20226). For more details according to your version, see the update history page for [Office 2019](/officeupdates/update-history-office-2019) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
+> <sup>1</sup> Support for **1.8** in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase is available from version 1910 (build 12130.20272). Support for **1.9** in Outlook on Windows with a Microsoft 365 subscription is available from version 2008 (build 13127.20296). Support for **1.10** in Outlook on Windows with a Microsoft 365 subscription is available from version 2104 (build 13929.20296). Support for **1.11** in Outlook on Windows with a Microsoft 365 subscription is available from version 2110 (build 14527.20226). Support for **1.12** in Outlook on Windows with a Microsoft 365 subscription is available from version 2206 (build 15330.20196). For more details according to your version, see the update history page for [Office 2021](/officeupdates/update-history-office-2021) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 >
 > <sup>2</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 >
