@@ -1699,15 +1699,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        unknown = "Unknown",
-        /**
-        * An error returned by the Python interpreter as a result of running the Python code. Displays as error type #EXTERNAL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        pythonError = "PythonError"
+        unknown = "Unknown"
     }
     /**
     * Represents the value of a cell containing an #EXTERNAL! error.
@@ -1758,7 +1750,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: ExternalErrorCellValueSubType | "Unknown" | "PythonError";
+        errorSubType?: ExternalErrorCellValueSubType | "Unknown";
     }
     /**
     * Represents types of #FIELD! errors.
