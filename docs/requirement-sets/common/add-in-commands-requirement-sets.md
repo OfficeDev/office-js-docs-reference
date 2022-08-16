@@ -17,7 +17,7 @@ Add-in commands are UI elements that extend the Office UI and start actions in y
 
 The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the minimum build versions or number for those applications.  
 
-| Release | Office on Windows<br>(subscription, and<br>2016 or later retail perpetual)   |  Office on Windows<br>(volume-licensed perpetual) |  Office on Mac  |  Office on iPad  | Office on the web  |
+| Release | Office on Windows<br>(subscription, or<br>Office 2016 or later retail perpetual)   |  Office on Windows<br>(volume-licensed perpetual) |  Office on Mac  |  Office on iPad  | Office on the web  |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Add-in commands (initial release, no requirement set) | Version 1603 (Build 6769.0000) | Office 2019: Version 1809 (Build 10827.20150) | 15.33 | Not supported | January 2016 |
 
