@@ -28,7 +28,11 @@ methods:
     uid: 'excel!Excel.DataConnectionCollection#refreshAll:member(1)'
     package: excel!
     fullName: refreshAll()
-    summary: Refreshes all the data connections in the collection.
+    summary: >-
+      Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to
+      a table or range in the same workbook. Data connections unsupported by this method are: Power Query connections,
+      data connections outside the original workbook (except Power BI connections), and connections to data protected by
+      a firewall.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -27,7 +27,7 @@ properties:
     uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: 'For EACH ITEM in the collection: Gets the name of the table style.'
+    summary: 'For EACH ITEM in the collection: Specifies the name of the table style.'
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
