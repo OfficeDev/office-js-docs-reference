@@ -14,8 +14,8 @@ properties:
     package: excel!
     fullName: assignee
     summary: >-
-      Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task
-      for an `unassign` change record type.
+      Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for
+      an `unassign` change action.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -27,7 +27,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#changedBy:member'
     package: excel!
     fullName: changedBy
-    summary: Represents the user who created or changed the task.
+    summary: Represents the identity of the user who made the task change.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -64,8 +64,8 @@ properties:
     package: excel!
     fullName: dueDateTime
     summary: >-
-      Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-      Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid
+      Represents the task's due date and time. It is used for the `setSchedule` change action. It is in UTC time zone.
+      It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid
       conflicts.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
@@ -78,7 +78,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#id:member'
     package: excel!
     fullName: id
-    summary: ID for the task change record.
+    summary: The unique GUID of the task change.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -91,7 +91,7 @@ properties:
     package: excel!
     fullName: percentComplete
     summary: >-
-      Represents the task's completion percentage. It is used for the `setPercentComplete` change record type. This is a
+      Represents the task's completion percentage. It is used for the `setPercentComplete` change action. This is a
       value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the
       associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -106,8 +106,8 @@ properties:
     package: excel!
     fullName: priority
     summary: >-
-      Represents the task's priority. It is used for the `setPriority` change record type. This is a value between 0 and
-      10, with 5 being the default priority if not set, and where 0 represents the highest priority.
+      Represents the task's priority. It is used for the `setPriority` change action. This is a value between 0 and 10,
+      with 5 being the default priority if not set, and where 0 represents the highest priority.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -120,8 +120,8 @@ properties:
     package: excel!
     fullName: startDateTime
     summary: >-
-      Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-      Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid
+      Represents the task's start date and time. It is used for the `setSchedule` change action. It is in UTC time zone.
+      It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid
       conflicts.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
@@ -134,7 +134,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#title:member'
     package: excel!
     fullName: title
-    summary: Represents the task's title. It is used for the `setTitle` change record type.
+    summary: Represents the task's title. It is used for the `setTitle` change action.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -161,15 +161,15 @@ properties:
           <xref uid="excel!Excel.DocumentTaskChangeAction:enum" /> | "unknown" | "create" | "assign" | "unassign" |
           "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" |
           "undo"
-  - name: undoHistoryId
-    uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#undoHistoryId:member'
+  - name: undoChangeId
+    uid: 'excel!Excel.Interfaces.DocumentTaskChangeData#undoChangeId:member'
     package: excel!
-    fullName: undoHistoryId
-    summary: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
+    fullName: undoChangeId
+    summary: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'undoHistoryId?: string;'
+      content: 'undoChangeId?: string;'
       return:
         type: string

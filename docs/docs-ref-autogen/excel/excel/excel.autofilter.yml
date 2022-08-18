@@ -152,8 +152,8 @@ methods:
         - id: columnIndex
           description: >-
             The zero-based column index, which represents which column filter needs to be cleared. If the index value is
-            not supported(for example, if the value is a negative number, or if the value is greater than the number of
-            available columns in the range), then an `InvalidArgument` exception will be thrown.
+            not supported (for example, if the value is a negative number, or if the value is greater than the number of
+            available columns in the range), then an `InvalidArgument` error will be thrown.
           type: number
       return:
         type: void

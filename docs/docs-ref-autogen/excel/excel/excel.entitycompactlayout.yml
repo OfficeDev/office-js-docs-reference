@@ -18,6 +18,6 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'icon?: string;'
+      content: 'icon?: string | EntityCompactLayoutIcons;'
       return:
-        type: string
+        type: 'string | <xref uid="excel!Excel.EntityCompactLayoutIcons:enum" />'

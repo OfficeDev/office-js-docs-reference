@@ -385,6 +385,12 @@ items:
                 uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
               - name: ThreeTrianglesSet
                 uid: 'excel!Excel.ThreeTrianglesSet:interface'
+          - name: AllowEditRange
+            uid: 'excel!Excel.AllowEditRange:class'
+          - name: AllowEditRangeCollection
+            uid: 'excel!Excel.AllowEditRangeCollection:class'
+          - name: AllowEditRangeOptions
+            uid: 'excel!Excel.AllowEditRangeOptions:interface'
           - name: Application
             uid: 'excel!Excel.Application:class'
           - name: AutoFilter

@@ -208,6 +208,8 @@ items:
                 uid: 'excel!Excel.DocumentTaskChangeAction:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
+              - name: EntityCompactLayoutIcons
+                uid: 'excel!Excel.EntityCompactLayoutIcons:enum'
               - name: ErrorCellValueType
                 uid: 'excel!Excel.ErrorCellValueType:enum'
               - name: ErrorCodes
@@ -723,8 +725,6 @@ items:
             uid: 'excel!Excel.DocumentTaskChangeCollection:class'
           - name: DocumentTaskCollection
             uid: 'excel!Excel.DocumentTaskCollection:class'
-          - name: DocumentTaskSchedule
-            uid: 'excel!Excel.DocumentTaskSchedule:interface'
           - name: DoubleCellValue
             uid: 'excel!Excel.DoubleCellValue:interface'
           - name: EmptyCellValue
@@ -783,10 +783,6 @@ items:
             uid: 'excel!Excel.IconSetConditionalFormat:class'
           - name: Identity
             uid: 'excel!Excel.Identity:interface'
-          - name: IdentityCollection
-            uid: 'excel!Excel.IdentityCollection:class'
-          - name: IdentityEntity
-            uid: 'excel!Excel.IdentityEntity:class'
           - name: Image
             uid: 'excel!Excel.Image:class'
           - name: InsertWorksheetOptions

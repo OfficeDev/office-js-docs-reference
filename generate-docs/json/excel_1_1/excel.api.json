@@ -15047,7 +15047,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "excel!Excel.ClearApplyTo:enum",
-              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -15782,6 +15782,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.unsupportedFillType:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "unsupportedFillType = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"UnsupportedFillType\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "unsupportedFillType",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.unsupportedOperation:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -16137,6 +16158,130 @@
               "releaseTag": "Public",
               "name": "Interfaces",
               "members": [
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `allowEditRangeCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface AllowEditRangeCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "AllowEditRangeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.AllowEditRangeData",
+                          "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the AllowEditRangeCollection object, for use in `allowEditRangeCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface AllowEditRangeCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "AllowEditRangeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.AllowEditRangeData",
+                          "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `allowEditRange.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface AllowEditRangeData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "AllowEditRangeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.AllowEditRangeUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface AllowEditRangeUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "AllowEditRangeUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ApplicationData:interface",
@@ -29682,7 +29827,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeData#numberFormat:member",
-                      "docComment": "/**\n * Represents Excel's number format code for the given range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31373,7 +31518,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member",
-                      "docComment": "/**\n * Represents Excel's number format code for the given range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31651,7 +31796,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeUpdateData#numberFormat:member",
-                      "docComment": "/**\n * Represents Excel's number format code for the given range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -38559,7 +38704,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#numberFormat:member",
-                  "docComment": "/**\n * Represents Excel's number format code for the given range.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38837,7 +38982,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38867,7 +39012,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Range#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41432,7 +41577,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "excel!Excel.RangeValueType:enum",
-              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]\n */\n",
+              "docComment": "/**\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
