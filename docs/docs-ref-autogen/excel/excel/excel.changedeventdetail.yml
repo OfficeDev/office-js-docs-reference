@@ -23,6 +23,34 @@ properties:
       content: 'valueAfter: any;'
       return:
         type: any
+  - name: valueAsJsonAfter
+    uid: 'excel!Excel.ChangedEventDetail#valueAsJsonAfter:member'
+    package: excel!
+    fullName: valueAsJsonAfter
+    summary: >-
+      Represents the type of value after the change. Unlike `valueAfter`<!-- -->, `valueAsJsonAfter` can represent all
+      cell values, such as formatted number, web image, and entity data types.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valueAsJsonAfter: CellValue;'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />'
+  - name: valueAsJsonBefore
+    uid: 'excel!Excel.ChangedEventDetail#valueAsJsonBefore:member'
+    package: excel!
+    fullName: valueAsJsonBefore
+    summary: >-
+      Represents the type of value before the change. Unlike `valueBefore`<!-- -->, `valueAsJsonBefore` can represent
+      all cell values, such as formatted number, web image, and entity data types.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'valueAsJsonBefore: CellValue;'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />'
   - name: valueBefore
     uid: 'excel!Excel.ChangedEventDetail#valueBefore:member'
     package: excel!

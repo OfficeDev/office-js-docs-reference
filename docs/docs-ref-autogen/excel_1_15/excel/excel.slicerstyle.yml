@@ -27,7 +27,7 @@ properties:
     uid: 'excel!Excel.SlicerStyle#name:member'
     package: excel!
     fullName: name
-    summary: Gets the name of the slicer style.
+    summary: Specifies the name of the slicer style.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

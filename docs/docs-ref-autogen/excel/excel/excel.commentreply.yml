@@ -170,7 +170,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assignTask(assignee: Identity): Excel.DocumentTask;'
+      content: 'assignTask(assignee: Excel.Identity): Excel.DocumentTask;'
       parameters:
         - id: assignee
           description: The assignee's user identity information.

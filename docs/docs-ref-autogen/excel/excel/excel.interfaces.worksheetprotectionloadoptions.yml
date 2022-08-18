@@ -28,8 +28,8 @@ properties:
     package: excel!
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'canPauseProtection?: boolean;'
@@ -40,8 +40,8 @@ properties:
     package: excel!
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isPasswordProtected?: boolean;'
@@ -52,8 +52,8 @@ properties:
     package: excel!
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isPaused?: boolean;'
@@ -88,10 +88,10 @@ properties:
     package: excel!
     fullName: savedOptions
     summary: >-
-      Specifies the protection options settings saved in the worksheet. This will return the same
-      `WorksheetProtectionOptions` object regardless of the worksheet protection state.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+      Specifies the protection options saved in the worksheet. This will return the same `WorksheetProtectionOptions`
+      object regardless of the worksheet protection state.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'savedOptions?: boolean;'
