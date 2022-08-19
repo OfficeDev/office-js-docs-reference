@@ -947,6 +947,32 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
 
         // Process the returned response here.
     }
+Office.MailboxEnums.ActionType:enum:
+  - |-
+    // Define an insight notification message.
+    const insightMessage = {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "Icon.80x80",
+        actions: [{
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: JSON.stringify({a: "aValue", b: "bValue"})
+        }]
+    };
+Office.MailboxEnums.AttachmentStatus:enum:
+  - |-
+    // Get an attachment that was just added to a message or appointment.
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 Office.MeetingSuggestion:interface:
   - |-
     const item = Office.context.mailbox.item;

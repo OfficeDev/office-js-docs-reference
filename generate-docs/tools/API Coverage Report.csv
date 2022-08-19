@@ -8002,7 +8002,7 @@ Office.Mailbox,getCallbackTokenAsync(callback,Method,Fine,true
 Office.Mailbox,getUserIdentityTokenAsync(callback,Method,Fine,true
 Office.Mailbox,makeEwsRequestAsync(data,Method,Poor,true
 Office.Mailbox,removeHandlerAsync(eventType,Method,Poor,false
-Office.MailboxEnums.ActionType,N/A,Enum,Good,false
+Office.MailboxEnums.ActionType,N/A,Enum,Good,true
 Office.MailboxEnums.ActionType,ShowTaskPane,EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,Confidential,EnumField,Fine,false
@@ -8014,7 +8014,7 @@ Office.MailboxEnums.AttachmentContentFormat,Base64,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,Eml,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,ICalendar,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,Url,EnumField,Fine,false
-Office.MailboxEnums.AttachmentStatus,N/A,Enum,Good,false
+Office.MailboxEnums.AttachmentStatus,N/A,Enum,Good,true
 Office.MailboxEnums.AttachmentStatus,Added,EnumField,Fine,false
 Office.MailboxEnums.AttachmentStatus,Removed,EnumField,Fine,false
 Office.MailboxEnums.AttachmentType,N/A,Enum,Good,false
