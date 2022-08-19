@@ -1,7 +1,7 @@
 ---
 title: Dialog API requirement sets
 description: Learn more about the Dialog API requirement sets.
-ms.date: 02/15/2022
+ms.date: 08/18/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -10,7 +10,16 @@ ms.localizationpriority: medium
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-Office Add-ins run across multiple versions of Office. The following table lists the Dialog API requirement sets, the Office client applications that support that requirement set, and the build or version numbers for the Office application.
+Office Add-ins run across multiple versions of Office. The following table lists the Dialog API requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those application.
+
+*Draft prospect*
+
+|  Requirement set  |  Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual)  | Office on Windows<br>(volume-licensed perpetual)  |  Office on Mac  |  Office on iPad  | Office on the web  | Office Online Server |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| DialogApi 1.2  | See support<br>section below | Version 2005 (Build 12827.20268) | Office 2021: Version 2108 (Build 14326.20454) | 16.37 | 2.37 | Supported | Not supported |
+| DialogApi 1.1  | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2013: Build 15.0.4855.1000 | 15.20 | 1.22 | Supported | Version 1608 (Build 7601.6800) |
+
+*Live version*
 
 | Requirement set | Office 2013 on Windows\*<br>(one-time purchase) | Office 2016 on Windows\*<br>(one-time purchase) | Office 2019 on Windows\*<br>(one-time purchase) | Office 2021 or later on Windows\*<br>(one-time purchase) | Office on Windows<br>(subscription) | Office on iPad<br>(subscription) |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later) | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

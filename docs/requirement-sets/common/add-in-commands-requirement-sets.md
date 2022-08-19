@@ -19,7 +19,7 @@ The initial release of add-in commands doesn't have a corresponding requirement 
 
 |  Requirement set  |  Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual)  | Office on Windows<br>(volume-licensed perpetual)  |  Office on Mac  |  Office on iPad  | Office on the web  |  
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| Add-in commands (initial release, no requirement set) | Version 1603 (Build 6769.0000) | Version 1603 (Build 6769.0000) | Office 2019: Version 1809 (Build 10827.20150) | 15.33 | Not supported | Supported |
+| Add-in commands (initial release, no requirement set) | Version 1603 (Build 6769.0000) | Version 1603 (Build 6769.0000) | Office 2021: Version 2108 (Build 14326.20454) | 15.33 | Not supported | Supported |
 
 The add-in commands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](/office/dev/add-ins/develop/automatically-open-a-task-pane-with-a-document).
 
@@ -30,7 +30,7 @@ The following table lists the add-in commands requirement sets, the Office clien
 |  Requirement set  |  Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual)  | Office on Windows<br>(volume-licensed perpetual)  |  Office on Mac  |  Office on iPad  | Office on the web  |  
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | AddinCommands 1.3  | Version 2204 (Build 14827.10000) | Version 2204 (Build 14827.10000) | Not supported | 16.57.105.0 | Not supported | Supported |
-| AddinCommands 1.1  | Version 1705 (Build 8121.1000)&dagger; | Version 1705 (Build 8121.1000)&dagger; | Office 2019: Version 1809 (Build 10827.20150)&dagger; | 15.34&dagger;\* | Not supported | Supported |
+| AddinCommands 1.1  | Version 1705 (Build 8121.1000)&dagger; | Version 1705 (Build 8121.1000)&dagger; | Office 2021: Version 2108 (Build 14326.20454)&dagger; | 15.34&dagger;\* | Not supported | Supported |
 
 \* The [Office.context.requirements.isSetSupported](/javascript/api/office/office.requirementsetsupport#office-office-requirementsetsupport-issetsupported-member(1)) method will erroneously return `false` for versions 16.9 &ndash; 16.14 (inclusive), but the requirement set *is* supported on these versions.
 

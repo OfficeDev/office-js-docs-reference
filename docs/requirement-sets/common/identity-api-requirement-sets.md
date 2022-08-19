@@ -1,7 +1,7 @@
 ---
 title: Identity API requirement sets
 description: Identity API requirement set information for Office Add-ins.
-ms.date: 08/15/2022
+ms.date: 08/19/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 |  Requirement set  |  Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual)  | Office on Windows<br>(volume-licensed perpetual)  |  Office on Mac  |  Office on iPad  | Office on the web  |  
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| IdentityAPI 1.3  | Version 2008 (Build 13127.20000) | Version 2008 (Build 13127.20000) | Office 2021: Version 2008 (Build 14326.20454) | 16.40 | Not supported | Microsoft SharePoint Online and OneDrive\* |
+| IdentityAPI 1.3  | Version 2008 (Build 13127.20000) | Version 2008 (Build 13127.20000) | Office 2021: Version 2108 (Build 14326.20454) | 16.40 | Not supported | Microsoft SharePoint Online and OneDrive\* |
 
 \* Currently, the IdentityAPI 1.3 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 
