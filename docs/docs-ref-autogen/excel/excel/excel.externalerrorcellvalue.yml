@@ -45,9 +45,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'errorSubType?: ExternalErrorCellValueSubType | "Unknown" | "PythonError";'
+      content: 'errorSubType?: ExternalErrorCellValueSubType | "Unknown";'
       return:
-        type: '<xref uid="excel!Excel.ExternalErrorCellValueSubType:enum" /> | "Unknown" | "PythonError"'
+        type: '<xref uid="excel!Excel.ExternalErrorCellValueSubType:enum" /> | "Unknown"'
   - name: errorType
     uid: 'excel!Excel.ExternalErrorCellValue#errorType:member'
     package: excel!

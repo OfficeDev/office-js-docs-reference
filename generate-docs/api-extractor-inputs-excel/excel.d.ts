@@ -613,7 +613,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        icon?: string;
+        icon?: string | EntityCompactLayoutIcons;
     }
     /**
     * Represents the layout used when there is limited space to represent the entity.
@@ -623,6 +623,455 @@ export declare namespace Excel {
     * @beta
     */
     export type CompactLayout = EntityCompactLayout;
+    /**
+    * The list of icons available for `EntityCompactLayout`. An icon displays in the Excel UI, either to the left of the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity card. Selecting the icon opens the entity card.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum EntityCompactLayoutIcons {
+        /**
+        * The default icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        generic = "Generic",
+        /**
+        * Airplane icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        airplane = "Airplane",
+        /**
+        * Animal icon. Displays as a pawprint.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        animal = "Animal",
+        /**
+        * Apple icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        apple = "Apple",
+        /**
+        * Art icon. Displays as a paint palette.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        art = "Art",
+        /**
+        * Atom icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        atom = "Atom",
+        /**
+        * Bank icon. Displays as a building with pillars and a triangular roof.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        bank = "Bank",
+        /**
+        * Basketball icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        basketball = "Basketball",
+        /**
+        * Beaker icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        beaker = "Beaker",
+        /**
+        * Bird icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        bird = "Bird",
+        /**
+        * Book icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        book = "Book",
+        /**
+        * Bridge icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        bridge = "Bridge",
+        /**
+        * Briefcase icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        briefcase = "Briefcase",
+        /**
+        * Car icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        car = "Car",
+        /**
+        * Cat icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cat = "Cat",
+        /**
+        * City icon. Displays as multiple tall buildings.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        city = "City",
+        /**
+        * Cloud icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cloud = "Cloud",
+        /**
+        * Constellation icon. Displays dots in the shape of Ursa Major.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        constellation = "Constellation",
+        /**
+        * Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        dinosaur = "Dinosaur",
+        /**
+        * Disaster icon. Displays as a house sinking in a flood.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        disaster = "Disaster",
+        /**
+        * DNA icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        dNA = "DNA",
+        /**
+        * Dog icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        dog = "Dog",
+        /**
+        * Drama icon. Displays as a pair of theatre masks.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        drama = "Drama",
+        /**
+        * First aid icon. Displays as a briefcase with a medical cross symbol.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        firstAid = "FirstAid",
+        /**
+        * Galaxy icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        galaxy = "Galaxy",
+        /**
+        * Graduation hat icon. Displays as a hat with a tassel.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        hatGraduation = "HatGraduation",
+        /**
+        * Human heart icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        heartHuman = "HeartHuman",
+        /**
+        * Justice icon. Displays as the scales of justice.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        justice = "Justice",
+        /**
+        * Languages icon. Displays as a document and a globe.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        languages = "Languages",
+        /**
+        * Leaf icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        leaf = "Leaf",
+        /**
+        * Location icon. Displays as a map marker.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        location = "Location",
+        /**
+        * Map icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        map = "Map",
+        /**
+        * Map pin icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mapPin = "MapPin",
+        /**
+        * Microscope icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        microscope = "Microscope",
+        /**
+        * Money icon. Displays as paper money and coins.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        money = "Money",
+        /**
+        * Mountain icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        mountain = "Mountain",
+        /**
+        * Movie camera icon. Displays as a video camera.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        movieCamera = "MovieCamera",
+        /**
+        * Music note icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        musicNote = "MusicNote",
+        /**
+        * N by one icon. Displays as a three by one grid.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        nByOne = "NByOne",
+        /**
+        * N by N icon. Displays as a three by three grid.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        nByN = "NByN",
+        /**
+        * Notable people icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        notablePeople = "NotablePeople",
+        /**
+        * Notebook icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        notebook = "Notebook",
+        /**
+        * One by one icon. Displays as a one by one grid.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        oneByOne = "OneByOne",
+        /**
+        * One by N icon. Displays as a one by three grid.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        oneByN = "OneByN",
+        /**
+        * Partly sunny weather icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        partlySunnyWeather = "PartlySunnyWeather",
+        /**
+        * Person icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        person = "Person",
+        /**
+        * Pilates icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pilates = "Pilates",
+        /**
+        * Planet icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        planet = "Planet",
+        /**
+        * Point scan icon. Displays as a target focus symbol.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        pointScan = "PointScan",
+        /**
+        * Running icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        running = "Running",
+        /**
+        * Satellite icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        satellite = "Satellite",
+        /**
+        * Syringe icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        syringe = "Syringe",
+        /**
+        * Violin icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        violin = "Violin",
+        /**
+        * Wand icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        wand = "Wand",
+        /**
+        * Yoga icon.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        yoga = "Yoga"
+    }
     /**
     * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
     *
@@ -1699,15 +2148,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        unknown = "Unknown",
-        /**
-        * An error returned by the Python interpreter as a result of running the Python code. Displays as error type #EXTERNAL! in Excel.
-        *
-        * @remarks
-        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-        * @beta
-        */
-        pythonError = "PythonError"
+        unknown = "Unknown"
     }
     /**
     * Represents the value of a cell containing an #EXTERNAL! error.
@@ -1758,7 +2199,7 @@ export declare namespace Excel {
         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
         * @beta
         */
-        errorSubType?: ExternalErrorCellValueSubType | "Unknown" | "PythonError";
+        errorSubType?: ExternalErrorCellValueSubType | "Unknown";
     }
     /**
     * Represents types of #FIELD! errors.
@@ -3592,8 +4033,7 @@ export declare namespace Excel {
                 When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export class AllowEditRange extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3604,16 +4044,14 @@ export declare namespace Excel {
                     If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         address: string;
         /**
-         * Specifies if the `AllowEditRange` is password protected.
+         * Specifies if the object is password protected.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly isPasswordProtected: boolean;
         /**
@@ -3623,8 +4061,7 @@ export declare namespace Excel {
                     If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         title: string;
         /**
@@ -3636,37 +4073,35 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.AllowEditRange): void;
         /**
-         * Deletes this object from the `AllowEditRangeCollection`.
+         * Deletes the object from the `AllowEditRangeCollection`.
                     Worksheet protection must be disabled or paused for this method to work properly.
                     If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails the delete operation.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         delete(): void;
         /**
-         * Pauses worksheet protection for the given `AllowEditRange` object for the user in a given session.
-                    This method only pauses protection for the `AllowEditRange` object if worksheet protection is enabled and not paused.
-                    If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the range.
-                    If the password is incorrect, then this method throws an `InvalidArgument` error and fails to pause protection for the range.
+         * Pauses worksheet protection for the object for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is already paused.
+                    If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the object.
+                    If the password is incorrect, then this method throws a `BadPassword` error and fails to pause protection for the object.
+                    If a password is supplied but the object does not require a password, the inputted password will be ignored and the operation will succeed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param password - The password associated with the `AllowEditRange` object.
          */
         pauseProtection(password?: string): void;
         /**
-         * Changes the password associated with the `AllowEditRange`.
-                    Setting the password string as empty ("") or `null` will remove password protection from the `AllowEditRange`.
+         * Changes the password associated with the object.
+                    Setting the password string as empty ("") or `null` will remove password protection from the object.
                     Worksheet protection must be disabled or paused for this method to work properly.
                     If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the set operation fails.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param password - The password associated with the `AllowEditRange` object.
          */
@@ -3703,8 +4138,7 @@ export declare namespace Excel {
                 When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export class AllowEditRangeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3712,13 +4146,12 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.AllowEditRange[];
         /**
-         * Adds an `AllowEditRange` object to the collection.
+         * Adds an `AllowEditRange` object to the worksheet.
                     Worksheet protection must be disabled or paused for this method to work properly.
                     If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the add operation fails.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param title - The title string of the `AllowEditRange` object to be added.
          * @param rangeAddress - The range address of the `AllowEditRange` object to be added.
@@ -3729,16 +4162,14 @@ export declare namespace Excel {
          * Returns the number of `AllowEditRange` objects in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets the `AllowEditRange` object by its title.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param key - The title of the `AllowEditRange`.
          * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then an `ItemNotFound` error is thrown.
@@ -3748,8 +4179,7 @@ export declare namespace Excel {
          * Returns an `AllowEditRange` object by its index in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param index - The index of the `AllowEditRange` object in the collection.
          * @returns The `AllowEditRange` at the given index.
@@ -3759,22 +4189,20 @@ export declare namespace Excel {
          * Gets the `AllowEditRange` object by its title.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param key - The title of the `AllowEditRange`.
          * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          */
         getItemOrNullObject(key: string): Excel.AllowEditRange;
         /**
-         * Pauses worksheet protection for all `AllowEditRange` objects in the collection that have the given password for the user in a given session.
-                    This method only pauses protection for the `AllowEditRange` objects if worksheet protection is enabled and not paused.
+         * Pauses worksheet protection for all `AllowEditRange` objects found in this worksheet that have the given password for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is paused.
                     If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the range.
                     If the password does not match any `AllowEditRange` objects in the collection, then this method throws a `BadPassword` error and fails to pause protection for any range in the collection.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param password - The password to pause protection on the `AllowEditRange` objects.
          */
@@ -3807,16 +4235,14 @@ export declare namespace Excel {
      * The interface used to construct optional fields of the `AllowEditRange` object.
      *
      * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export interface AllowEditRangeOptions {
         /**
          * The password associated with the `AllowEditRange`.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         password?: string;
     }
@@ -4323,310 +4749,6 @@ export declare namespace Excel {
         automatic = "Automatic"
     }
     /**
-     * Represents information about a task's schedule.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface DocumentTaskSchedule {
-        /**
-         * Gets the date and time that the task is due. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dueDateTime: Date;
-        /**
-         * Gets the date and time that the task should start. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        startDateTime: Date;
-    }
-    /**
-     * Represents a collection of user identities.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class IdentityCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.IdentityEntity[];
-        /**
-         * Adds a user identity to the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The identity to add to the collection.
-         */
-        add(assignee: Identity): void;
-        /**
-         * Removes all user identities from the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        clear(): void;
-        /**
-         * Gets the number of items in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a document user identity by using its index in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The items in the document user identity collection do not have a particular order.
-         * @returns The document user identity at the given index.
-         */
-        getItemAt(index: number): Excel.IdentityEntity;
-        /**
-         * Removes a user identity from the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param assignee - The identity to remove from the collection.
-         */
-        remove(assignee: Identity): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.IdentityCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.IdentityCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.IdentityCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.IdentityCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.IdentityCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IdentityCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.IdentityCollectionData;
-    }
-    /**
-     * Represents a recorded change to the task.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTaskChange extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task for an `unassign` change record type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        assignee: Excel.Identity;
-        /**
-         * Represents the user who created or changed the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        changedBy: Excel.Identity;
-        /**
-         * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        commentId: string;
-        /**
-         * Represents the creation date and time of the task change record. All dates are in UTC.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        createdDateTime: Date;
-        /**
-         * Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                    Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dueDateTime: Date;
-        /**
-         * ID for the task change record.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-        /**
-         * Represents the task's completion percentage. It is used for the `setPercentComplete` change record type.
-                    This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        percentComplete: number;
-        /**
-         * Represents the task's priority. It is used for the `setPriority` change record type.
-                    This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        priority: number;
-        /**
-         * Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                    Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        startDateTime: Date;
-        /**
-         * Represents the task's title. It is used for the `setTitle` change record type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        title: string;
-        /**
-         * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
-        /**
-         * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        undoHistoryId: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskChangeLoadOptions): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DocumentTaskChange;
-        /**
-         * Create a new instance of Excel.DocumentTaskChange object
-         */
-        static newObject(context: OfficeExtension.ClientRequestContext): Excel.DocumentTaskChange;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.DocumentTaskChange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskChangeData;
-    }
-    /**
-     * Represents a collection of change records for a task.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class DocumentTaskChangeCollection extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /** Gets the loaded child items in this collection. */
-        readonly items: Excel.DocumentTaskChange[];
-        /**
-         * Gets the number of change records in the collection for the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         * Gets a task change record by using its index in the collection.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         *
-         * @param index - The records are stored in chronological order from when the changes were recorded by Excel and are not necessarily ordered by `CreatedDateTime`. The `create` record is always at index 0.
-         * @returns The change record with the given index.
-         */
-        getItemAt(index: number): Excel.DocumentTaskChange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskChangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.DocumentTaskChangeCollection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskChangeCollection;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original `Excel.DocumentTaskChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-        */
-        toJSON(): Excel.Interfaces.DocumentTaskChangeCollectionData;
-    }
-    /**
      * Represents the type of change recorded in the task change record.
      *
      * @remarks
@@ -4720,6 +4842,202 @@ export declare namespace Excel {
         undo = "undo"
     }
     /**
+     * Represents a recorded change to the task.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class DocumentTaskChange extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly assignee: Excel.Identity;
+        /**
+         * Represents the identity of the user who made the task change.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly changedBy: Excel.Identity;
+        /**
+         * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly commentId: string;
+        /**
+         * Represents the creation date and time of the task change record. All dates are in UTC.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly createdDateTime: Date;
+        /**
+         * Represents the task's due date and time. It is used for the `setSchedule` change action.
+                    It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly dueDateTime: Date;
+        /**
+         * The unique GUID of the task change.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
+                    This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly percentComplete: number;
+        /**
+         * Represents the task's priority. It is used for the `setPriority` change action.
+                    This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly priority: number;
+        /**
+         * Represents the task's start date and time. It is used for the `setSchedule` change action.
+                    It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly startDateTime: Date;
+        /**
+         * Represents the task's title. It is used for the `setTitle` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly title: string;
+        /**
+         * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
+        /**
+         * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly undoChangeId: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.DocumentTaskChangeLoadOptions): Excel.DocumentTaskChange;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DocumentTaskChange;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.DocumentTaskChange;
+        /**
+         * Create a new instance of Excel.DocumentTaskChange object
+         */
+        static newObject(context: OfficeExtension.ClientRequestContext): Excel.DocumentTaskChange;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.DocumentTaskChange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.DocumentTaskChangeData;
+    }
+    /**
+     * Represents a collection of change records for a task.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class DocumentTaskChangeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.DocumentTaskChange[];
+        /**
+         * Gets the number of change records in the collection for the task.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a task change record by using its index in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - The records are stored in chronological order from when the changes were recorded by Excel and are not necessarily ordered by `CreatedDateTime`. The `create` record is always at index 0.
+         * @returns The change record with the given index.
+         */
+        getItemAt(index: number): Excel.DocumentTaskChange;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DocumentTaskChangeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DocumentTaskChangeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.DocumentTaskChangeCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.DocumentTaskChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.DocumentTaskChangeCollectionData;
+    }
+    /**
      * Represents information about a user's identity.
      *
      * @remarks
@@ -4736,14 +5054,6 @@ export declare namespace Excel {
          */
         displayName?: string;
         /**
-         * Represents the user's email address.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        email?: string;
-        /**
          * Represents the user's unique ID.
          *
          * @remarks
@@ -4751,71 +5061,6 @@ export declare namespace Excel {
          * @beta
          */
         id: string;
-    }
-    /**
-     * Represents information about a user's identity.
-     *
-     * @remarks
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export class IdentityEntity extends OfficeExtension.ClientObject {
-        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext;
-        /**
-         * Represents the user's display name.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        displayName: string;
-        /**
-         * Represents the user's email address.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        email: string;
-        /**
-         * Represents the user's unique ID.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        id: string;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param options - Provides options for which properties of the object to load.
-         */
-        load(options?: Excel.Interfaces.IdentityEntityLoadOptions): Excel.IdentityEntity;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
-         */
-        load(propertyNames?: string | string[]): Excel.IdentityEntity;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         *
-         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: {
-            select?: string;
-            expand?: string;
-        }): Excel.IdentityEntity;
-        /**
-         * Create a new instance of Excel.IdentityEntity object
-         */
-        static newObject(context: OfficeExtension.ClientRequestContext): Excel.IdentityEntity;
-        /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Excel.IdentityEntity object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IdentityEntityData`) that contains shallow copies of any loaded child properties from the original object.
-        */
-        toJSON(): Excel.Interfaces.IdentityEntityData;
     }
     /**
      * Represents a task.
@@ -4827,14 +5072,6 @@ export declare namespace Excel {
     export class DocumentTask extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
-        /**
-         * Returns a collection of assignees of the task.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        readonly assignees: Excel.IdentityCollection;
         /**
          * Gets the change records of the task.
          *
@@ -4851,6 +5088,14 @@ export declare namespace Excel {
          * @beta
          */
         readonly comment: Excel.Comment;
+        /**
+         * Returns a collection of assignees of the task.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly assignees: Excel.Identity[];
         /**
          * Gets the most recent user to have completed the task.
          *
@@ -4884,6 +5129,15 @@ export declare namespace Excel {
          */
         readonly createdDateTime: Date;
         /**
+         * Gets or sets the date and time the task is due.
+                    To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dueDateTime: Date;
+        /**
          * Gets the ID of the task.
          *
          * @remarks
@@ -4908,13 +5162,14 @@ export declare namespace Excel {
          */
         priority: number;
         /**
-         * Gets or sets the date and time the task should start and is due.
+         * Gets or sets the date and time the task starts.
+                    To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        startAndDueDateTime: Excel.DocumentTaskSchedule;
+        startDateTime: Date;
         /**
          * Specifies title of the task.
          *
@@ -4924,16 +5179,33 @@ export declare namespace Excel {
          */
         title: string;
         /**
-         * Changes the start and the due dates of the task.
+         * Adds the given user to the list of assignees attached to the task.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param startDateTime - Represents the start date and time of the task in UTC time zone. Can be set to `null` to remove the start date and time.
-         * @param dueDateTime - Represents the due date and time of the task in UTC time zone. Can be set to `null` to remove the due date and time.
+         * @param assignee - The identity of the user to add to the assignee list.
          */
-        setStartAndDueDateTime(startDateTime: Date, dueDateTime: Date): void;
+        assign(assignee: Excel.Identity): void;
+        /**
+         * Removes the given user from the list of assignees attached to the task.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param assignee - The identity of the user to remove from the assignee list.
+         */
+        unassign(assignee: Excel.Identity): void;
+        /**
+         * Removes all users from the list of assignees attached to the task.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unassignAll(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -7141,6 +7413,24 @@ export declare namespace Excel {
          */
         valueAfter: any;
         /**
+         * Represents the type of value after the change.
+                    Unlike `valueAfter`, `valueAsJsonAfter` can represent all cell values, such as formatted number, web image, and entity data types.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valueAsJsonAfter: CellValue;
+        /**
+         * Represents the type of value before the change.
+                    Unlike `valueBefore`, `valueAsJsonBefore` can represent all cell values, such as formatted number, web image, and entity data types.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        valueAsJsonBefore: CellValue;
+        /**
          * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
          *
          * @remarks
@@ -7475,8 +7765,7 @@ export declare namespace Excel {
          * Specifies if any of the `AllowEditRange` objects have changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         allowEditRangesChanged: boolean;
         /**
@@ -7490,16 +7779,14 @@ export declare namespace Excel {
          * Specifies if the `WorksheetProtectionOptions` have changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         protectionOptionsChanged: boolean;
         /**
          * Specifies if the worksheet password has changed.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         sheetPasswordChanged: boolean;
         /**
@@ -9954,32 +10241,28 @@ export declare namespace Excel {
                     When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly allowEditRanges: Excel.AllowEditRangeCollection;
         /**
          * Specifies if protection can be paused for this worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly canPauseProtection: boolean;
         /**
          * Specifies if the sheet is password protected.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly isPasswordProtected: boolean;
         /**
          * Specifies if worksheet protection is paused.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly isPaused: boolean;
         /**
@@ -9997,34 +10280,33 @@ export declare namespace Excel {
          */
         readonly protected: boolean;
         /**
-         * Specifies the protection options settings saved in the worksheet.
+         * Specifies the protection options saved in the worksheet.
                     This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         readonly savedOptions: Excel.WorksheetProtectionOptions;
         /**
          * Specifies if the password can be used to unlock worksheet protection.
-                    This method does not change the worksheet protection state.
+                    This method doesn't change the worksheet protection state.
+                    If a password is input but no password is required to unlock worksheet protection, this method will return false.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
-         * @param password - The password associated with the protected worksheet.
+         * @param password - The password to check against the protected worksheet.
          * @returns Returns `true` if the password can be used to unlock worksheet protection. Otherwise, returns `false`.
          */
         checkPassword(password?: string): OfficeExtension.ClientResult<boolean>;
         /**
-         * Pauses worksheet protection for the given worksheet object for the user in a given session.
-                    If the password is incorrect, then this method throws an `UnsupportedOperation` error and fails to pause protection.
+         * Pauses worksheet protection for the given worksheet object for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is already paused.
+                    If the password is incorrect, then this method throws an `InvalidArgument` error and fails to pause protection.
                     This method does not change the protection state if worksheet protection is not enabled or already paused.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param password - The password associated with the protected worksheet.
          */
@@ -10044,8 +10326,7 @@ export declare namespace Excel {
                     Worksheet protection must be paused for this method to work. If worksheet protection is not paused, then this method will not change the protection state of the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         resumeProtection(): void;
         /**
@@ -10056,8 +10337,7 @@ export declare namespace Excel {
                     If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the password.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param password - The password associated with the `WorksheetProtection` object.
          */
@@ -10072,13 +10352,12 @@ export declare namespace Excel {
          */
         unprotect(password?: string): void;
         /**
-         * Change the worksheet protection options associated to the `WorksheetProtection` object.
+         * Change the worksheet protection options associated with the `WorksheetProtection` object.
                     Worksheet protection must be disabled or paused for this method to work properly.
                     If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the worksheet protection options.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param options - The options interface associated with the `WorksheetProtection` object.
          */
@@ -10480,7 +10759,7 @@ export declare namespace Excel {
          */
         readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];
         /**
-         * Represents Excel's number format code for the given range.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -11368,11 +11647,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
@@ -11748,11 +12027,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.RangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.RangeAreas;
         /**
@@ -11832,11 +12111,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorkbookRangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.WorkbookRangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.WorkbookRangeAreas;
         /**
@@ -16181,7 +16460,7 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
+         * Gets the string representation of the data source of the chart series. The string representation could be information such as a cell address.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -16190,7 +16469,7 @@ export declare namespace Excel {
          */
         getDimensionDataSourceString(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the string representation of the data source of the chart series.The string representation could be information such as a cell address.
+         * Gets the string representation of the data source of the chart series. The string representation could be information such as a cell address.
          *
          * @remarks
          * [Api set: ExcelApi 1.15]
@@ -20211,8 +20490,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.14]
          *
          * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
-                     If the index value is not supported(for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
-                     then an `InvalidArgument` exception will be thrown.
+                     If the index value is not supported (for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
+                     then an `InvalidArgument` error will be thrown.
          */
         clearColumnCriteria(columnIndex: number): void;
         /**
@@ -24393,7 +24672,8 @@ export declare namespace Excel {
          */
         readonly font: Excel.ConditionalRangeFont;
         /**
-         * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                    Cleared if `null` is passed in.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -25133,7 +25413,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the table style.
+         * Specifies the name of the table style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -25297,7 +25577,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the PivotTable style.
+         * Specifies the name of the PivotTable style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -25461,7 +25741,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the slicer style.
+         * Specifies the name of the slicer style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -25625,7 +25905,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the timeline style.
+         * Specifies the name of the timeline style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -26362,7 +26642,8 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Refreshes all the data connections in the collection.
+         * Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.
+                    Data connections unsupported by this method are: Power Query connections, data connections outside the original workbook (except Power BI connections), and connections to data protected by a firewall.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -26761,7 +27042,7 @@ export declare namespace Excel {
          *
          * @param assignee - The assignee's user identity information.
          */
-        assignTask(assignee: Identity): Excel.DocumentTask;
+        assignTask(assignee: Excel.Identity): Excel.DocumentTask;
         /**
          * Deletes the comment and all the connected replies.
          *
@@ -27009,7 +27290,7 @@ export declare namespace Excel {
          *
          * @param assignee - The assignee's user identity information.
          */
-        assignTask(assignee: Identity): Excel.DocumentTask;
+        assignTask(assignee: Excel.Identity): Excel.DocumentTask;
         /**
          * Deletes the comment reply.
          *
@@ -31551,7 +31832,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
+     * [Api set: ExcelApi 1.1]
      */
     enum ClearApplyTo {
         /**
@@ -32953,7 +33234,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     * [Api set: ExcelApi 1.1]
      */
     enum RangeValueType {
         /**
@@ -33205,7 +33486,7 @@ export declare namespace Excel {
         /**
          * `Unknown` indicates that the type of data change is not one of the listed types.
          * @remarks
-         * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
+         * [Api set: ExcelApi 1.8. The name of this value was 'Others' in ExcelApi 1.7]
          */
         unknown = "Unknown",
         /**
@@ -40234,6 +40515,7 @@ export declare namespace Excel {
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
         unsupportedFeature = "UnsupportedFeature",
+        unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
@@ -40260,8 +40542,7 @@ export declare namespace Excel {
                         If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             address?: string;
             /**
@@ -40271,8 +40552,7 @@ export declare namespace Excel {
                         If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             title?: string;
         }
@@ -40295,146 +40575,21 @@ export declare namespace Excel {
             workbookLinksRefreshMode?: Excel.WorkbookLinksRefreshMode | "Manual" | "Automatic";
             items?: Excel.Interfaces.LinkedWorkbookData[];
         }
-        /** An interface for updating data on the IdentityCollection object, for use in `identityCollection.set({ ... })`. */
-        export interface IdentityCollectionUpdateData {
-            items?: Excel.Interfaces.IdentityEntityData[];
+        /** An interface for updating data on the DocumentTaskChangeCollection object, for use in `documentTaskChangeCollection.set({ ... })`. */
+        export interface DocumentTaskChangeCollectionUpdateData {
+            items?: Excel.Interfaces.DocumentTaskChangeData[];
         }
-        /** An interface for updating data on the DocumentTaskChange object, for use in `documentTaskChange.set({ ... })`. */
-        export interface DocumentTaskChangeUpdateData {
+        /** An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`. */
+        export interface DocumentTaskUpdateData {
             /**
-             * Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task for an `unassign` change record type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            assignee?: Excel.Identity;
-            /**
-             * Represents the user who created or changed the task.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            changedBy?: Excel.Identity;
-            /**
-             * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            commentId?: string;
-            /**
-             * Represents the creation date and time of the task change record. All dates are in UTC.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            createdDateTime?: Date;
-            /**
-             * Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+             * Gets or sets the date and time the task is due.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
             dueDateTime?: Date;
-            /**
-             * ID for the task change record.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-            /**
-             * Represents the task's completion percentage. It is used for the `setPercentComplete` change record type.
-                        This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            percentComplete?: number;
-            /**
-             * Represents the task's priority. It is used for the `setPriority` change record type.
-                        This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            priority?: number;
-            /**
-             * Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            startDateTime?: Date;
-            /**
-             * Represents the task's title. It is used for the `setTitle` change record type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            title?: string;
-            /**
-             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            type?: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
-            /**
-             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            undoHistoryId?: string;
-        }
-        /** An interface for updating data on the DocumentTaskChangeCollection object, for use in `documentTaskChangeCollection.set({ ... })`. */
-        export interface DocumentTaskChangeCollectionUpdateData {
-            items?: Excel.Interfaces.DocumentTaskChangeData[];
-        }
-        /** An interface for updating data on the IdentityEntity object, for use in `identityEntity.set({ ... })`. */
-        export interface IdentityEntityUpdateData {
-            /**
-             * Represents the user's display name.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: string;
-            /**
-             * Represents the user's email address.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            email?: string;
-            /**
-             * Represents the user's unique ID.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-        }
-        /** An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`. */
-        export interface DocumentTaskUpdateData {
             /**
              * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
              *
@@ -40452,13 +40607,14 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Gets or sets the date and time the task starts.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startAndDueDateTime?: Excel.DocumentTaskSchedule;
+            startDateTime?: Date;
             /**
              * Specifies title of the task.
              *
@@ -40701,7 +40857,7 @@ export declare namespace Excel {
              */
             hyperlink?: Excel.RangeHyperlink;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -44260,7 +44416,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontUpdateData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -44525,7 +44682,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44539,7 +44696,7 @@ export declare namespace Excel {
         /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
         export interface PivotTableStyleUpdateData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44553,7 +44710,7 @@ export declare namespace Excel {
         /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
         export interface SlicerStyleUpdateData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44567,7 +44724,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
         export interface TimelineStyleUpdateData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -45370,16 +45527,14 @@ export declare namespace Excel {
                         If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             address?: string;
             /**
-             * Specifies if the `AllowEditRange` is password protected.
+             * Specifies if the object is password protected.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPasswordProtected?: boolean;
             /**
@@ -45389,8 +45544,7 @@ export declare namespace Excel {
                         If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             title?: string;
         }
@@ -45463,14 +45617,10 @@ export declare namespace Excel {
         export interface LinkedWorkbookCollectionData {
             items?: Excel.Interfaces.LinkedWorkbookData[];
         }
-        /** An interface describing the data returned by calling `identityCollection.toJSON()`. */
-        export interface IdentityCollectionData {
-            items?: Excel.Interfaces.IdentityEntityData[];
-        }
         /** An interface describing the data returned by calling `documentTaskChange.toJSON()`. */
         export interface DocumentTaskChangeData {
             /**
-             * Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task for an `unassign` change record type.
+             * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45478,7 +45628,7 @@ export declare namespace Excel {
              */
             assignee?: Excel.Identity;
             /**
-             * Represents the user who created or changed the task.
+             * Represents the identity of the user who made the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45502,8 +45652,8 @@ export declare namespace Excel {
              */
             createdDateTime?: Date;
             /**
-             * Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+             * Represents the task's due date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45511,7 +45661,7 @@ export declare namespace Excel {
              */
             dueDateTime?: Date;
             /**
-             * ID for the task change record.
+             * The unique GUID of the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45519,7 +45669,7 @@ export declare namespace Excel {
              */
             id?: string;
             /**
-             * Represents the task's completion percentage. It is used for the `setPercentComplete` change record type.
+             * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
                         This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
              *
              * @remarks
@@ -45528,7 +45678,7 @@ export declare namespace Excel {
              */
             percentComplete?: number;
             /**
-             * Represents the task's priority. It is used for the `setPriority` change record type.
+             * Represents the task's priority. It is used for the `setPriority` change action.
                         This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
              *
              * @remarks
@@ -45537,8 +45687,8 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+             * Represents the task's start date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45546,7 +45696,7 @@ export declare namespace Excel {
              */
             startDateTime?: Date;
             /**
-             * Represents the task's title. It is used for the `setTitle` change record type.
+             * Represents the task's title. It is used for the `setTitle` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45562,47 +45712,28 @@ export declare namespace Excel {
              */
             type?: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
             /**
-             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
+             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            undoHistoryId?: string;
+            undoChangeId?: string;
         }
         /** An interface describing the data returned by calling `documentTaskChangeCollection.toJSON()`. */
         export interface DocumentTaskChangeCollectionData {
             items?: Excel.Interfaces.DocumentTaskChangeData[];
         }
-        /** An interface describing the data returned by calling `identityEntity.toJSON()`. */
-        export interface IdentityEntityData {
-            /**
-             * Represents the user's display name.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: string;
-            /**
-             * Represents the user's email address.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            email?: string;
-            /**
-             * Represents the user's unique ID.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: string;
-        }
         /** An interface describing the data returned by calling `documentTask.toJSON()`. */
         export interface DocumentTaskData {
+            /**
+             * Returns a collection of assignees of the task.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            assignees?: Excel.Identity[];
             /**
              * Gets the most recent user to have completed the task.
              *
@@ -45636,6 +45767,15 @@ export declare namespace Excel {
              */
             createdDateTime?: Date;
             /**
+             * Gets or sets the date and time the task is due.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dueDateTime?: Date;
+            /**
              * Gets the ID of the task.
              *
              * @remarks
@@ -45660,13 +45800,14 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Gets or sets the date and time the task starts.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startAndDueDateTime?: Excel.DocumentTaskSchedule;
+            startDateTime?: Date;
             /**
              * Specifies title of the task.
              *
@@ -46165,32 +46306,28 @@ export declare namespace Excel {
             When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
             *
             * @remarks
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApiOnline 1.1]
             */
             allowEditRanges?: Excel.Interfaces.AllowEditRangeData[];
             /**
              * Specifies if protection can be paused for this worksheet.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             canPauseProtection?: boolean;
             /**
              * Specifies if the sheet is password protected.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPasswordProtected?: boolean;
             /**
              * Specifies if worksheet protection is paused.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPaused?: boolean;
             /**
@@ -46208,12 +46345,11 @@ export declare namespace Excel {
              */
             protected?: boolean;
             /**
-             * Specifies the protection options settings saved in the worksheet.
+             * Specifies the protection options saved in the worksheet.
                         This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             savedOptions?: Excel.WorksheetProtectionOptions;
         }
@@ -46362,7 +46498,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: Excel.LinkedDataTypeState[][];
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -50830,7 +50966,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -51088,7 +51225,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
         export interface TableStyleData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51109,7 +51246,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `pivotTableStyle.toJSON()`. */
         export interface PivotTableStyleData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51130,7 +51267,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
         export interface SlicerStyleData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51151,7 +51288,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `timelineStyle.toJSON()`. */
         export interface TimelineStyleData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -52343,8 +52480,7 @@ export declare namespace Excel {
                     When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         export interface AllowEditRangeLoadOptions {
             /**
@@ -52357,16 +52493,14 @@ export declare namespace Excel {
                         If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             address?: boolean;
             /**
-             * Specifies if the `AllowEditRange` is password protected.
+             * Specifies if the object is password protected.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPasswordProtected?: boolean;
             /**
@@ -52376,8 +52510,7 @@ export declare namespace Excel {
                         If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             title?: boolean;
         }
@@ -52386,8 +52519,7 @@ export declare namespace Excel {
                     When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         export interface AllowEditRangeCollectionLoadOptions {
             /**
@@ -52400,16 +52532,14 @@ export declare namespace Excel {
                         If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             address?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies if the `AllowEditRange` is password protected.
+             * For EACH ITEM in the collection: Specifies if the object is password protected.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPasswordProtected?: boolean;
             /**
@@ -52419,8 +52549,7 @@ export declare namespace Excel {
                         If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             title?: boolean;
         }
@@ -52577,43 +52706,6 @@ export declare namespace Excel {
             id?: boolean;
         }
         /**
-         * Represents a collection of user identities.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface IdentityCollectionLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the user's display name.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the user's email address.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            email?: boolean;
-            /**
-             * For EACH ITEM in the collection: Represents the user's unique ID.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
-        }
-        /**
          * Represents a recorded change to the task.
          *
          * @remarks
@@ -52626,7 +52718,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task for an `unassign` change record type.
+             * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52634,7 +52726,7 @@ export declare namespace Excel {
              */
             assignee?: boolean;
             /**
-             * Represents the user who created or changed the task.
+             * Represents the identity of the user who made the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52642,7 +52734,7 @@ export declare namespace Excel {
              */
             changedBy?: boolean;
             /**
-             * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+             * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52658,8 +52750,8 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
-             * Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+             * Represents the task's due date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52667,7 +52759,7 @@ export declare namespace Excel {
              */
             dueDateTime?: boolean;
             /**
-             * ID for the task change record.
+             * The unique GUID of the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52675,7 +52767,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * Represents the task's completion percentage. It is used for the `setPercentComplete` change record type.
+             * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
                         This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
              *
              * @remarks
@@ -52684,7 +52776,7 @@ export declare namespace Excel {
              */
             percentComplete?: boolean;
             /**
-             * Represents the task's priority. It is used for the `setPriority` change record type.
+             * Represents the task's priority. It is used for the `setPriority` change action.
                         This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
              *
              * @remarks
@@ -52693,8 +52785,8 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+             * Represents the task's start date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52702,7 +52794,7 @@ export declare namespace Excel {
              */
             startDateTime?: boolean;
             /**
-             * Represents the task's title. It is used for the `setTitle` change record type.
+             * Represents the task's title. It is used for the `setTitle` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52710,7 +52802,7 @@ export declare namespace Excel {
              */
             title?: boolean;
             /**
-             * Represents the action type of the task change record. Some examples of action types are `assign`, `undo`, and `setPriority`.
+             * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52718,13 +52810,13 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
+             * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            undoHistoryId?: boolean;
+            undoChangeId?: boolean;
         }
         /**
          * Represents a collection of change records for a task.
@@ -52739,7 +52831,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the user assigned to the task for an `assign` change record type, or the user unassigned from the task for an `unassign` change record type.
+             * For EACH ITEM in the collection: Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52747,7 +52839,7 @@ export declare namespace Excel {
              */
             assignee?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the user who created or changed the task.
+             * For EACH ITEM in the collection: Represents the identity of the user who made the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52755,7 +52847,7 @@ export declare namespace Excel {
              */
             changedBy?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+             * For EACH ITEM in the collection: Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52771,8 +52863,8 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the task's due date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+             * For EACH ITEM in the collection: Represents the task's due date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52780,7 +52872,7 @@ export declare namespace Excel {
              */
             dueDateTime?: boolean;
             /**
-             * For EACH ITEM in the collection: ID for the task change record.
+             * For EACH ITEM in the collection: The unique GUID of the task change.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52788,7 +52880,7 @@ export declare namespace Excel {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the task's completion percentage. It is used for the `setPercentComplete` change record type.
+             * For EACH ITEM in the collection: Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
                         This is a value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
              *
              * @remarks
@@ -52797,7 +52889,7 @@ export declare namespace Excel {
              */
             percentComplete?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the task's priority. It is used for the `setPriority` change record type.
+             * For EACH ITEM in the collection: Represents the task's priority. It is used for the `setPriority` change action.
                         This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
              *
              * @remarks
@@ -52806,8 +52898,8 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the task's start date and time, in UTC time zone. It is used for the `setSchedule` change record type.
-                        Can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+             * For EACH ITEM in the collection: Represents the task's start date and time. It is used for the `setSchedule` change action.
+                        It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52815,7 +52907,7 @@ export declare namespace Excel {
              */
             startDateTime?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the task's title. It is used for the `setTitle` change record type.
+             * For EACH ITEM in the collection: Represents the task's title. It is used for the `setTitle` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52831,50 +52923,13 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change record type.
+             * For EACH ITEM in the collection: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            undoHistoryId?: boolean;
-        }
-        /**
-         * Represents information about a user's identity.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        export interface IdentityEntityLoadOptions {
-            /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
-             */
-            $all?: boolean;
-            /**
-             * Represents the user's display name.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            displayName?: boolean;
-            /**
-             * Represents the user's email address.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            email?: boolean;
-            /**
-             * Represents the user's unique ID.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            id?: boolean;
+            undoChangeId?: boolean;
         }
         /**
          * Represents a task.
@@ -52896,6 +52951,14 @@ export declare namespace Excel {
             * @beta
             */
             comment?: Excel.Interfaces.CommentLoadOptions;
+            /**
+             * Returns a collection of assignees of the task.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            assignees?: boolean;
             /**
              * Gets the most recent user to have completed the task.
              *
@@ -52929,6 +52992,15 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
+             * Gets or sets the date and time the task is due.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dueDateTime?: boolean;
+            /**
              * Gets the ID of the task.
              *
              * @remarks
@@ -52953,13 +53025,14 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * Gets or sets the date and time the task should start and is due.
+             * Gets or sets the date and time the task starts.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startAndDueDateTime?: boolean;
+            startDateTime?: boolean;
             /**
              * Specifies title of the task.
              *
@@ -52989,6 +53062,14 @@ export declare namespace Excel {
             * @beta
             */
             comment?: Excel.Interfaces.CommentLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Returns a collection of assignees of the task.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            assignees?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the most recent user to have completed the task.
              *
@@ -53022,6 +53103,15 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
+             * For EACH ITEM in the collection: Gets or sets the date and time the task is due.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            dueDateTime?: boolean;
+            /**
              * For EACH ITEM in the collection: Gets the ID of the task.
              *
              * @remarks
@@ -53046,13 +53136,14 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the date and time the task should start and is due.
+             * For EACH ITEM in the collection: Gets or sets the date and time the task starts.
+                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startAndDueDateTime?: boolean;
+            startDateTime?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies title of the task.
              *
@@ -53606,24 +53697,21 @@ export declare namespace Excel {
              * Specifies if protection can be paused for this worksheet.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             canPauseProtection?: boolean;
             /**
              * Specifies if the sheet is password protected.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPasswordProtected?: boolean;
             /**
              * Specifies if worksheet protection is paused.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             isPaused?: boolean;
             /**
@@ -53641,12 +53729,11 @@ export declare namespace Excel {
              */
             protected?: boolean;
             /**
-             * Specifies the protection options settings saved in the worksheet.
+             * Specifies the protection options saved in the worksheet.
                         This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             savedOptions?: boolean;
         }
@@ -53805,7 +53892,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -60963,7 +61050,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -61460,7 +61548,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the table style.
+             * For EACH ITEM in the collection: Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61486,7 +61574,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61512,7 +61600,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the PivotTable style.
+             * For EACH ITEM in the collection: Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61538,7 +61626,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61564,7 +61652,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the slicer style.
+             * For EACH ITEM in the collection: Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61590,7 +61678,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61616,7 +61704,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the timeline style.
+             * For EACH ITEM in the collection: Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -61642,7 +61730,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -62126,7 +62214,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents Excel's number format code for the given range.
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

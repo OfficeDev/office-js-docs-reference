@@ -833,7 +833,7 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceString(dimension)
     summary: >-
-      Gets the string representation of the data source of the chart series.The string representation could be
+      Gets the string representation of the data source of the chart series. The string representation could be
       information such as a cell address.
     remarks: >-
       \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
@@ -885,7 +885,7 @@ methods:
     package: excel!
     fullName: getDimensionDataSourceString(dimensionString)
     summary: >-
-      Gets the string representation of the data source of the chart series.The string representation could be
+      Gets the string representation of the data source of the chart series. The string representation could be
       information such as a cell address.
     remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

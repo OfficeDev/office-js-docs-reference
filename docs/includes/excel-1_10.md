@@ -31,7 +31,7 @@
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[enableFieldList](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-enablefieldlist-member)|Specifies if the field list can be shown in the UI.|
 |[PivotTableStyle](/javascript/api/excel/excel.pivottablestyle)|[delete()](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-delete-member(1))|Deletes the PivotTable style.|
 ||[duplicate()](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-duplicate-member(1))|Creates a duplicate of this PivotTable style with copies of all the style elements.|
-||[name](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-name-member)|Gets the name of the PivotTable style.|
+||[name](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-name-member)|Specifies the name of the PivotTable style.|
 ||[readOnly](/javascript/api/excel/excel.pivottablestyle#excel-excel-pivottablestyle-readonly-member)|Specifies if this `PivotTableStyle` object is read-only.|
 |[PivotTableStyleCollection](/javascript/api/excel/excel.pivottablestylecollection)|[add(name: string, makeUniqueName?: boolean)](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-add-member(1))|Creates a blank `PivotTableStyle` with the specified name.|
 ||[getCount()](/javascript/api/excel/excel.pivottablestylecollection#excel-excel-pivottablestylecollection-getcount-member(1))|Gets the number of PivotTable styles in the collection.|
@@ -83,7 +83,7 @@
 ||[items](/javascript/api/excel/excel.sliceritemcollection#excel-excel-sliceritemcollection-items-member)|Gets the loaded child items in this collection.|
 |[SlicerStyle](/javascript/api/excel/excel.slicerstyle)|[delete()](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-delete-member(1))|Deletes the slicer style.|
 ||[duplicate()](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-duplicate-member(1))|Creates a duplicate of this slicer style with copies of all the style elements.|
-||[name](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-name-member)|Gets the name of the slicer style.|
+||[name](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-name-member)|Specifies the name of the slicer style.|
 ||[readOnly](/javascript/api/excel/excel.slicerstyle#excel-excel-slicerstyle-readonly-member)|Specifies if this `SlicerStyle` object is read-only.|
 |[SlicerStyleCollection](/javascript/api/excel/excel.slicerstylecollection)|[add(name: string, makeUniqueName?: boolean)](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-add-member(1))|Creates a blank slicer style with the specified name.|
 ||[getCount()](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-getcount-member(1))|Gets the number of slicer styles in the collection.|
@@ -94,7 +94,7 @@
 ||[setDefault(newDefaultStyle: SlicerStyle \| string)](/javascript/api/excel/excel.slicerstylecollection#excel-excel-slicerstylecollection-setdefault-member(1))|Sets the default slicer style for use in the parent object's scope.|
 |[TableStyle](/javascript/api/excel/excel.tablestyle)|[delete()](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-delete-member(1))|Deletes the table style.|
 ||[duplicate()](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-duplicate-member(1))|Creates a duplicate of this table style with copies of all the style elements.|
-||[name](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-name-member)|Gets the name of the table style.|
+||[name](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-name-member)|Specifies the name of the table style.|
 ||[readOnly](/javascript/api/excel/excel.tablestyle#excel-excel-tablestyle-readonly-member)|Specifies if this `TableStyle` object is read-only.|
 |[TableStyleCollection](/javascript/api/excel/excel.tablestylecollection)|[add(name: string, makeUniqueName?: boolean)](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-add-member(1))|Creates a blank `TableStyle` with the specified name.|
 ||[getCount()](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-getcount-member(1))|Gets the number of table styles in the collection.|
@@ -105,7 +105,7 @@
 ||[setDefault(newDefaultStyle: TableStyle \| string)](/javascript/api/excel/excel.tablestylecollection#excel-excel-tablestylecollection-setdefault-member(1))|Sets the default table style for use in the parent object's scope.|
 |[TimelineStyle](/javascript/api/excel/excel.timelinestyle)|[delete()](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-delete-member(1))|Deletes the table style.|
 ||[duplicate()](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-duplicate-member(1))|Creates a duplicate of this timeline style with copies of all the style elements.|
-||[name](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-name-member)|Gets the name of the timeline style.|
+||[name](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-name-member)|Specifies the name of the timeline style.|
 ||[readOnly](/javascript/api/excel/excel.timelinestyle#excel-excel-timelinestyle-readonly-member)|Specifies if this `TimelineStyle` object is read-only.|
 |[TimelineStyleCollection](/javascript/api/excel/excel.timelinestylecollection)|[add(name: string, makeUniqueName?: boolean)](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-add-member(1))|Creates a blank `TimelineStyle` with the specified name.|
 ||[getCount()](/javascript/api/excel/excel.timelinestylecollection#excel-excel-timelinestylecollection-getcount-member(1))|Gets the number of timeline styles in the collection.|

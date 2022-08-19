@@ -23,6 +23,18 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: assignees
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#assignees:member'
+    package: excel!
+    fullName: assignees
+    summary: 'For EACH ITEM in the collection: Returns a collection of assignees of the task.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assignees?: boolean;'
+      return:
+        type: boolean
   - name: comment
     uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#comment:member'
     package: excel!
@@ -83,6 +95,21 @@ properties:
       content: 'createdDateTime?: boolean;'
       return:
         type: boolean
+  - name: dueDateTime
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#dueDateTime:member'
+    package: excel!
+    fullName: dueDateTime
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the date and time the task is due. To ensure that calls to
+      `dueDateTime` always occur after calls to `startDateTime`<!-- -->, the DispatchId for `dueDateTime` should be
+      greater than the DispatchId for `startDateTime`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dueDateTime?: boolean;'
+      return:
+        type: boolean
   - name: id
     uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#id:member'
     package: excel!
@@ -123,16 +150,19 @@ properties:
       content: 'priority?: boolean;'
       return:
         type: boolean
-  - name: startAndDueDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#startAndDueDateTime:member'
+  - name: startDateTime
+    uid: 'excel!Excel.Interfaces.DocumentTaskCollectionLoadOptions#startDateTime:member'
     package: excel!
-    fullName: startAndDueDateTime
-    summary: 'For EACH ITEM in the collection: Gets or sets the date and time the task should start and is due.'
+    fullName: startDateTime
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the date and time the task starts. To ensure that calls to
+      `dueDateTime` always occur after calls to `startDateTime`<!-- -->, the DispatchId for `dueDateTime` should be
+      greater than the DispatchId for `startDateTime`<!-- -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startAndDueDateTime?: boolean;'
+      content: 'startDateTime?: boolean;'
       return:
         type: boolean
   - name: title

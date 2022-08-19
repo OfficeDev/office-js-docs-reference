@@ -750,6 +750,9 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
     /**
      * Enum representing all accepted conditions by which a date filter can be applied.
                 Used to configure the type of PivotFilter that is applied to the field.
@@ -4038,6 +4041,10 @@ export declare namespace Excel {
     export class WorksheetProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
         /**
          * Specifies the protection options for the worksheet.
          *
@@ -4052,6 +4059,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly protected: boolean;
+        
+        
+        
         /**
          * Protects a worksheet. Fails if the worksheet has already been protected.
          *
@@ -4062,6 +4072,8 @@ export declare namespace Excel {
          * @param password - Optional. Sheet protection password.
          */
         protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
+        
+        
         /**
          * Unprotects a worksheet.
          *
@@ -4071,6 +4083,7 @@ export declare namespace Excel {
          * @param password - Sheet protection password.
          */
         unprotect(password?: string): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4440,7 +4453,7 @@ export declare namespace Excel {
          */
         readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];
         /**
-         * Represents Excel's number format code for the given range.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -5247,11 +5260,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
@@ -5627,11 +5640,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.RangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.RangeAreas;
         /**
@@ -5711,11 +5724,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorkbookRangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.WorkbookRangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.WorkbookRangeAreas;
         /**
@@ -17685,7 +17698,8 @@ export declare namespace Excel {
          */
         readonly font: Excel.ConditionalRangeFont;
         /**
-         * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                    Cleared if `null` is passed in.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -18415,7 +18429,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the table style.
+         * Specifies the name of the table style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -18579,7 +18593,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the PivotTable style.
+         * Specifies the name of the PivotTable style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -18743,7 +18757,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the slicer style.
+         * Specifies the name of the slicer style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -18907,7 +18921,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the timeline style.
+         * Specifies the name of the timeline style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -19644,7 +19658,8 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Refreshes all the data connections in the collection.
+         * Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.
+                    Data connections unsupported by this method are: Power Query connections, data connections outside the original workbook (except Power BI connections), and connections to data protected by a firewall.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -24292,7 +24307,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
+     * [Api set: ExcelApi 1.1]
      */
     enum ClearApplyTo {
         /**
@@ -25677,7 +25692,7 @@ export declare namespace Excel {
     
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     * [Api set: ExcelApi 1.1]
      */
     enum RangeValueType {
         /**
@@ -25904,7 +25919,7 @@ export declare namespace Excel {
         /**
          * `Unknown` indicates that the type of data change is not one of the listed types.
          * @remarks
-         * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
+         * [Api set: ExcelApi 1.8. The name of this value was 'Others' in ExcelApi 1.7]
          */
         unknown = "Unknown",
         /**
@@ -32746,6 +32761,7 @@ export declare namespace Excel {
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
         unsupportedFeature = "UnsupportedFeature",
+        unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
@@ -32763,6 +32779,15 @@ export declare namespace Excel {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
+        export interface AllowEditRangeUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the AllowEditRangeCollection object, for use in `allowEditRangeCollection.set({ ... })`. */
+        export interface AllowEditRangeCollectionUpdateData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
         }
         /** An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
@@ -32986,7 +33011,7 @@ export declare namespace Excel {
              */
             hyperlink?: Excel.RangeHyperlink;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -36354,7 +36379,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontUpdateData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -36619,7 +36645,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -36633,7 +36659,7 @@ export declare namespace Excel {
         /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
         export interface PivotTableStyleUpdateData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -36647,7 +36673,7 @@ export declare namespace Excel {
         /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
         export interface SlicerStyleUpdateData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -36661,7 +36687,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
         export interface TimelineStyleUpdateData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -37429,6 +37455,16 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
+        export interface AllowEditRangeData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `allowEditRangeCollection.toJSON()`. */
+        export interface AllowEditRangeCollectionData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
+        }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
             
@@ -37908,6 +37944,10 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
+            
+            
+            
+            
             /**
              * Specifies the protection options for the worksheet.
              *
@@ -37922,6 +37962,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -38068,7 +38109,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: Excel.LinkedDataTypeState[][];
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -42305,7 +42346,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -42563,7 +42605,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
         export interface TableStyleData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -42584,7 +42626,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `pivotTableStyle.toJSON()`. */
         export interface PivotTableStyleData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -42605,7 +42647,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
         export interface SlicerStyleData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -42626,7 +42668,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `timelineStyle.toJSON()`. */
         export interface TimelineStyleData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -43722,6 +43764,8 @@ export declare namespace Excel {
         
         
         
+        
+        
         /**
          * Represents the Excel Runtime class.
          *
@@ -44228,6 +44272,9 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
             /**
              * Specifies the protection options for the worksheet.
              *
@@ -44242,6 +44289,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            
         }
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
@@ -44398,7 +44446,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -51187,7 +51235,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -51684,7 +51733,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the table style.
+             * For EACH ITEM in the collection: Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51710,7 +51759,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51736,7 +51785,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the PivotTable style.
+             * For EACH ITEM in the collection: Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51762,7 +51811,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51788,7 +51837,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the slicer style.
+             * For EACH ITEM in the collection: Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51814,7 +51863,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51840,7 +51889,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the timeline style.
+             * For EACH ITEM in the collection: Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -51866,7 +51915,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -52350,7 +52399,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents Excel's number format code for the given range.
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

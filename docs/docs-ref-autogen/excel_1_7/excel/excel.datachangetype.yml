@@ -64,13 +64,3 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RowInserted"'
-  - name: unknown
-    uid: 'excel!Excel.DataChangeType.unknown:member'
-    package: excel!
-    summary: >-
-      `Unknown` indicates that the type of data change is not one of the listed types.
-
-
-      * \[ [API set: ExcelApi The name of this value was 'Others' in ExcelApi
-      1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"Unknown"'

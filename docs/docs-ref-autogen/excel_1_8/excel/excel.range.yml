@@ -270,7 +270,10 @@ properties:
     uid: 'excel!Excel.Range#numberFormat:member'
     package: excel!
     fullName: numberFormat
-    summary: Represents Excel's number format code for the given range.
+    summary: >-
+      Represents Excel's number format code for the given range. For more information about Excel number formatting, see
+      [Number format
+      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1732,10 +1735,11 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1776,9 +1780,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

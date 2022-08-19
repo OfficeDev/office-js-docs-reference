@@ -148,6 +148,11 @@ fields:
     package: excel!
     summary: ''
     value: '"UnsupportedFeature"'
+  - name: unsupportedFillType
+    uid: 'excel!Excel.ErrorCodes.unsupportedFillType:member'
+    package: excel!
+    summary: ''
+    value: '"UnsupportedFillType"'
   - name: unsupportedOperation
     uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
     package: excel!

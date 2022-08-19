@@ -21,18 +21,6 @@ properties:
       content: 'displayName?: string;'
       return:
         type: string
-  - name: email
-    uid: 'excel!Excel.Identity#email:member'
-    package: excel!
-    fullName: email
-    summary: Represents the user's email address.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'email?: string;'
-      return:
-        type: string
   - name: id
     uid: 'excel!Excel.Identity#id:member'
     package: excel!
