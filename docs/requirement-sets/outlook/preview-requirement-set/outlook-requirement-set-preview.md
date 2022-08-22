@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/09/2022
+ms.date: 08/22/2022
 ms.localizationpriority: medium
 ---
 
@@ -94,20 +94,6 @@ This feature was released in [requirement set 1.10](../requirement-set-1.10/outl
 Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
-### Integration with actionable messages
-
-#### [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#methods)
-
-Added a new method that returns initialization data passed when the add-in is [activated by an actionable message](/outlook/actionable-messages/invoke-add-in-from-actionable-message).
-
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
