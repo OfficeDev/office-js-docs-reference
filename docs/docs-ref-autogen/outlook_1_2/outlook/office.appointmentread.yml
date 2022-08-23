@@ -552,7 +552,7 @@ properties:
     uid: 'outlook!Office.AppointmentRead#organizer:member'
     package: outlook!
     fullName: organizer
-    summary: Gets the email address of the meeting organizer for a specified meeting.
+    summary: Gets the meeting organizer's email properties.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
