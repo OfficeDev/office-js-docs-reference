@@ -3656,6 +3656,82 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+'Office.MailboxEnums.InfobarActionType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler prints the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Print the custom action type. Currently, "Dismiss" is the only custom action supported by the InfobarClicked event.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Print the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+'Office.MailboxEnums.InfobarType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler prints the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Print the custom action type. Currently, "Dismiss" is the only custom action supported by the InfobarClicked event.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Print the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
 'Office.MailboxEnums.ItemNotificationMessageType:enum':
   - >-
     // Link to full sample:

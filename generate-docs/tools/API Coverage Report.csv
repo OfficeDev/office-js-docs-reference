@@ -8078,9 +8078,9 @@ Office.MailboxEnums.EntityType,MeetingSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,PhoneNumber,EnumField,Fine,false
 Office.MailboxEnums.EntityType,TaskSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,Url,EnumField,Fine,false
-Office.MailboxEnums.InfobarActionType,N/A,Enum,Good,false
+Office.MailboxEnums.InfobarActionType,N/A,Enum,Good,true
 Office.MailboxEnums.InfobarActionType,Dismiss,EnumField,Fine,false
-Office.MailboxEnums.InfobarType,N/A,Enum,Good,false
+Office.MailboxEnums.InfobarType,N/A,Enum,Good,true
 Office.MailboxEnums.InfobarType,Error,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Informational,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Insight,EnumField,Fine,false
