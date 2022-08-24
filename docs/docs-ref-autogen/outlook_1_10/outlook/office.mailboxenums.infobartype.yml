@@ -14,17 +14,17 @@ remarks: |-
   ```javascript
   /*
   * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-  * The event handler prints the custom action and notification type to the console.
+  * The event handler logs the custom action and notification type to the console.
   */
   Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
 
   function eventHandler(event) {
       const infobarDetails = event.infobarDetails;
 
-      // Print the custom action type. Currently, "Dismiss" is the only custom action supported by the InfobarClicked event.
+      // Log the custom action type.
       console.log(`Custom action type: ${infobarDetails.actionType}`);
 
-      // Print the notification type.
+      // Log the notification type.
       switch (infobarDetails.infobarType) {
           case Office.MailboxEnums.InfobarType.Error:
               console.log("Notification type: Error message");
