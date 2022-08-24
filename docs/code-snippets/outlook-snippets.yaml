@@ -977,7 +977,7 @@ Office.MailboxEnums.InfobarActionType:enum:
   - |-
     /*
     * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
-    * The event handler prints the custom action and notification type to the console.
+    * The event handler logs the custom action and notification type to the console.
     */
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
 
