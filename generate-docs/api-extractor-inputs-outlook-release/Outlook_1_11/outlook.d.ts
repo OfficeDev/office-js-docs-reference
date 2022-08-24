@@ -2756,7 +2756,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
