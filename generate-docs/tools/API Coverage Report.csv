@@ -8002,7 +8002,7 @@ Office.Mailbox,getCallbackTokenAsync(callback,Method,Fine,true
 Office.Mailbox,getUserIdentityTokenAsync(callback,Method,Fine,true
 Office.Mailbox,makeEwsRequestAsync(data,Method,Poor,true
 Office.Mailbox,removeHandlerAsync(eventType,Method,Poor,false
-Office.MailboxEnums.ActionType,N/A,Enum,Good,false
+Office.MailboxEnums.ActionType,N/A,Enum,Good,true
 Office.MailboxEnums.ActionType,ShowTaskPane,EnumField,Poor,false
 Office.MailboxEnums.AppointmentSensitivityType,N/A,Enum,Good,true
 Office.MailboxEnums.AppointmentSensitivityType,Confidential,EnumField,Fine,false
@@ -8014,7 +8014,7 @@ Office.MailboxEnums.AttachmentContentFormat,Base64,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,Eml,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,ICalendar,EnumField,Fine,false
 Office.MailboxEnums.AttachmentContentFormat,Url,EnumField,Fine,false
-Office.MailboxEnums.AttachmentStatus,N/A,Enum,Good,false
+Office.MailboxEnums.AttachmentStatus,N/A,Enum,Good,true
 Office.MailboxEnums.AttachmentStatus,Added,EnumField,Fine,false
 Office.MailboxEnums.AttachmentStatus,Removed,EnumField,Fine,false
 Office.MailboxEnums.AttachmentType,N/A,Enum,Good,false
@@ -8078,9 +8078,9 @@ Office.MailboxEnums.EntityType,MeetingSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,PhoneNumber,EnumField,Fine,false
 Office.MailboxEnums.EntityType,TaskSuggestion,EnumField,Fine,false
 Office.MailboxEnums.EntityType,Url,EnumField,Fine,false
-Office.MailboxEnums.InfobarActionType,N/A,Enum,Good,false
+Office.MailboxEnums.InfobarActionType,N/A,Enum,Good,true
 Office.MailboxEnums.InfobarActionType,Dismiss,EnumField,Fine,false
-Office.MailboxEnums.InfobarType,N/A,Enum,Good,false
+Office.MailboxEnums.InfobarType,N/A,Enum,Good,true
 Office.MailboxEnums.InfobarType,Error,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Informational,EnumField,Fine,false
 Office.MailboxEnums.InfobarType,Insight,EnumField,Fine,false

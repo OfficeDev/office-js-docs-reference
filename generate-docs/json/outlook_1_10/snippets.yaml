@@ -3440,6 +3440,20 @@
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
+'Office.MailboxEnums.ActionType:enum':
+  - |-
+    // Define an insight notification message.
+    const insightMessage = {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "Icon.80x80",
+        actions: [{
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: JSON.stringify({a: "aValue", b: "bValue"})
+        }]
+    };
 'Office.MailboxEnums.AppointmentSensitivityType:enum':
   - >-
     // Link to full sample:
@@ -3483,6 +3497,21 @@
                 // Handle attachment formats that are not supported.
         }
     }
+'Office.MailboxEnums.AttachmentStatus:enum':
+  - >-
+    // Get the attachment that was just added to a message or appointment.
+
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
 'Office.MailboxEnums.CategoryColor:enum':
   - >-
     // Link to full sample:
@@ -3627,6 +3656,82 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+'Office.MailboxEnums.InfobarActionType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler logs the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+'Office.MailboxEnums.InfobarType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler logs the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
 'Office.MailboxEnums.ItemNotificationMessageType:enum':
   - >-
     // Link to full sample:
