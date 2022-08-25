@@ -401,8 +401,22 @@
         } else {
             if (result.value.length > 0) {
                 for (let i = 0; i < result.value.length; i++) {
-                    let attachment = result.value[i];
-                    console.log(`${attachment.id}. Name: ${attachment.name}, size: ${attachment.size}, isInline: ${attachment.isInline}`);
+                    const attachment = result.value[i];
+                    console.log("ID: " + attachment.id + "\n" +
+                        "Name: " + attachment.name + "\n" +
+                        "Size: " + attachment.size + "\n" +
+                        "isInline: " + attachment.isInline);
+                    switch (attachment.attachmentType) {
+                        case Office.MailboxEnums.AttachmentType.Cloud:
+                            console.log("Attachment type: Attachment is stored in a cloud location.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.File:
+                            console.log("Attachment type: Attachment is a file.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.Item:
+                            console.log("Attachment type: Attachment is an Exchange item.");
+                            break;
+                    }
                 }
             }
             else {
@@ -577,7 +591,16 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+    const itemType = Office.context.mailbox.item.itemType;
+
+    switch (itemType) {
+        case Office.MailboxEnums.ItemType.Appointment:
+            console.log(`Current item is an ${itemType}.`);
+            break;
+        case Office.MailboxEnums.ItemType.Message:
+            console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+            break;
+    }
 'Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -842,23 +865,17 @@
 
     const currentDate = new Date();
 
-    let seriesTimeObject : Office.SeriesTime;
+    let seriesTimeObject: Office.SeriesTime;
 
     // Set series start date to tomorrow.
 
-    seriesTimeObject.setStartDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      currentDate.getDay() + 1
-    );
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
 
-    // Set series end date to 1 month from now.
+    // Set series end date to one year from now.
 
-    seriesTimeObject.setEndDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth() + 1,
-      currentDate.getDay()
-    );
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
 
     // Set start time to 1:30 PM.
 
@@ -869,10 +886,15 @@
     seriesTimeObject.setDuration(30);
 
 
-    let pattern : Office.Recurrence = {
+    const pattern: Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
-      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
       recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
@@ -1936,7 +1958,16 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+    const itemType = Office.context.mailbox.item.itemType;
+
+    switch (itemType) {
+        case Office.MailboxEnums.ItemType.Appointment:
+            console.log(`Current item is an ${itemType}.`);
+            break;
+        case Office.MailboxEnums.ItemType.Message:
+            console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+            break;
+    }
 'Office.AppointmentRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -3440,6 +3471,20 @@
     Office.MailboxEnums.RestVersion.v2_0);
 
     console.log("EWS ID (from REST ID): " + ewsId2);
+'Office.MailboxEnums.ActionType:enum':
+  - |-
+    // Define an insight notification message.
+    const insightMessage = {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "Icon.80x80",
+        actions: [{
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: JSON.stringify({a: "aValue", b: "bValue"})
+        }]
+    };
 'Office.MailboxEnums.AppointmentSensitivityType:enum':
   - >-
     // Link to full sample:
@@ -3483,6 +3528,55 @@
                 // Handle attachment formats that are not supported.
         }
     }
+'Office.MailboxEnums.AttachmentStatus:enum':
+  - >-
+    // Get the attachment that was just added to a message or appointment.
+
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
+'Office.MailboxEnums.AttachmentType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+    Office.context.mailbox.item.getAttachmentsAsync(function (result) {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+            console.error(result.error.message);
+        } else {
+            if (result.value.length > 0) {
+                for (let i = 0; i < result.value.length; i++) {
+                    const attachment = result.value[i];
+                    console.log("ID: " + attachment.id + "\n" +
+                        "Name: " + attachment.name + "\n" +
+                        "Size: " + attachment.size + "\n" +
+                        "isInline: " + attachment.isInline);
+                    switch (attachment.attachmentType) {
+                        case Office.MailboxEnums.AttachmentType.Cloud:
+                            console.log("Attachment type: Attachment is stored in a cloud location.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.File:
+                            console.log("Attachment type: Attachment is a file.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.Item:
+                            console.log("Attachment type: Attachment is an Exchange item.");
+                            break;
+                    }
+                }
+            }
+            else {
+                console.log("No attachments on this message.");
+            }
+        }
+    });
 'Office.MailboxEnums.CategoryColor:enum':
   - >-
     // Link to full sample:
@@ -3533,23 +3627,17 @@
 
     const currentDate = new Date();
 
-    let seriesTimeObject : Office.SeriesTime;
+    let seriesTimeObject: Office.SeriesTime;
 
     // Set series start date to tomorrow.
 
-    seriesTimeObject.setStartDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      currentDate.getDay() + 1
-    );
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
 
-    // Set series end date to 1 month from now.
+    // Set series end date to one year from now.
 
-    seriesTimeObject.setEndDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth() + 1,
-      currentDate.getDay()
-    );
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
 
     // Set start time to 1:30 PM.
 
@@ -3560,10 +3648,15 @@
     seriesTimeObject.setDuration(30);
 
 
-    let pattern : Office.Recurrence = {
+    const pattern: Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
-      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
       recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
@@ -3627,6 +3720,82 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+'Office.MailboxEnums.InfobarActionType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler logs the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+'Office.MailboxEnums.InfobarType:enum':
+  - >-
+    /*
+
+    * This snippet activates when a notification message is dismissed from an
+    Outlook message or appointment.
+
+    * The event handler logs the custom action and notification type to the
+    console.
+
+    */
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked,
+    eventHandler, callback);
+
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
 'Office.MailboxEnums.ItemNotificationMessageType:enum':
   - >-
     // Link to full sample:
@@ -3641,6 +3810,21 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
+'Office.MailboxEnums.ItemType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+    const itemType = Office.context.mailbox.item.itemType;
+
+    switch (itemType) {
+        case Office.MailboxEnums.ItemType.Appointment:
+            console.log(`Current item is an ${itemType}.`);
+            break;
+        case Office.MailboxEnums.ItemType.Message:
+            console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+            break;
+    }
 'Office.MailboxEnums.LocationType:enum':
   - >-
     // Link to full sample:
@@ -3665,6 +3849,86 @@
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
     });
+'Office.MailboxEnums.Month:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject: Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
+
+    // Set series end date to one year from now.
+
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    const pattern: Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+    });
+'Office.MailboxEnums.OWAView:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+    // This snippet gets a mailbox's diagnostic information, such as host
+    application and version, and prints it to the console. 
+
+    const diagnostics = Office.context.mailbox.diagnostics;
+
+    console.log(`Host application: ${diagnostics.hostName}`);
+
+    console.log(`Host version: ${diagnostics.hostVersion}`);
+
+
+    switch (diagnostics.OWAView) {
+      case undefined:
+        console.log("Current view (Outlook on the web only): Not applicable. Host application is an Outlook desktop client.");
+        break;
+      case Office.MailboxEnums.OWAView.OneColumn:
+        console.log("Current view (Outlook on the web only): Viewed from a mobile phone");
+        break;
+      case Office.MailboxEnums.OWAView.TwoColumns:
+        console.log("Current view (Outlook on the web only): Viewed from a tablet");
+        break;
+      case Office.MailboxEnums.OWAView.ThreeColumns:
+        console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+        break;
+    }
 'Office.MailboxEnums.RecipientType:enum':
   - >-
     // Link to full sample:
@@ -3729,23 +3993,17 @@
 
     const currentDate = new Date();
 
-    let seriesTimeObject : Office.SeriesTime;
+    let seriesTimeObject: Office.SeriesTime;
 
     // Set series start date to tomorrow.
 
-    seriesTimeObject.setStartDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      currentDate.getDay() + 1
-    );
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
 
-    // Set series end date to 1 month from now.
+    // Set series end date to one year from now.
 
-    seriesTimeObject.setEndDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth() + 1,
-      currentDate.getDay()
-    );
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
 
     // Set start time to 1:30 PM.
 
@@ -3756,10 +4014,15 @@
     seriesTimeObject.setDuration(30);
 
 
-    let pattern : Office.Recurrence = {
+    const pattern: Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
-      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
       recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
@@ -3781,23 +4044,17 @@
 
     const currentDate = new Date();
 
-    let seriesTimeObject : Office.SeriesTime;
+    let seriesTimeObject: Office.SeriesTime;
 
     // Set series start date to tomorrow.
 
-    seriesTimeObject.setStartDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      currentDate.getDay() + 1
-    );
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
 
-    // Set series end date to 1 month from now.
+    // Set series end date to one year from now.
 
-    seriesTimeObject.setEndDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth() + 1,
-      currentDate.getDay()
-    );
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
 
     // Set start time to 1:30 PM.
 
@@ -3808,10 +4065,15 @@
     seriesTimeObject.setDuration(30);
 
 
-    let pattern : Office.Recurrence = {
+    const pattern: Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
-      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
       recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
@@ -3823,6 +4085,46 @@
       }
       console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
     });
+'Office.MailboxEnums.ResponseType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml
+
+    function organizeByResponse(attendees) {
+      const accepted = [];
+      const declined = [];
+      const noResponse = [];
+      const tentative = [];
+      attendees.forEach(attendee => {
+        switch (attendee.appointmentResponse) {
+          case Office.MailboxEnums.ResponseType.Accepted:
+            accepted.push(attendee);
+            break;
+          case Office.MailboxEnums.ResponseType.Declined:
+            declined.push(attendee);
+            break;
+          case Office.MailboxEnums.ResponseType.None:
+            noResponse.push(attendee);
+            break;
+          case Office.MailboxEnums.ResponseType.Tentative:
+            tentative.push(attendee);
+            break;
+          case Office.MailboxEnums.ResponseType.Organizer:
+            console.log(`Organizer: ${attendee.displayName}, ${attendee.emailAddress}`);
+            break;
+        } 
+      });
+
+      // List attendees by their response.
+      console.log("Accepted: ");
+      printAttendees(accepted);
+      console.log("Declined: ");
+      printAttendees(declined);
+      console.log("Tentative: ");
+      printAttendees(tentative);
+      console.log("No response: ");
+      printAttendees(noResponse);
+    }
 'Office.MailboxEnums.RestVersion:enum':
   - >-
     // Link to full sample:
@@ -3842,6 +4144,72 @@
             console.log(this.response);
         }
         xhr.send();
+    });
+'Office.MailboxEnums.SourceProperty:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-selected-data.yaml
+
+    Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
+    function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        const text = asyncResult.value.data;
+        const prop = asyncResult.value.sourceProperty;
+        console.log("Selected text in " + prop + ": " + text);
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
+'Office.MailboxEnums.WeekNumber:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+
+    const currentDate = new Date();
+
+    let seriesTimeObject: Office.SeriesTime;
+
+    // Set series start date to tomorrow.
+
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
+
+    // Set series end date to one year from now.
+
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
+
+    // Set start time to 1:30 PM.
+
+    seriesTimeObject.setStartTime(13, 30);
+
+    // Set duration to 30 minutes.
+
+    seriesTimeObject.setDuration(30);
+
+
+    const pattern: Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
+      recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
+    };
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
     });
 'Office.MasterCategories#addAsync:member(1)':
   - >-
@@ -4339,8 +4707,22 @@
         } else {
             if (result.value.length > 0) {
                 for (let i = 0; i < result.value.length; i++) {
-                    let attachment = result.value[i];
-                    console.log(`${attachment.id}. Name: ${attachment.name}, size: ${attachment.size}, isInline: ${attachment.isInline}`);
+                    const attachment = result.value[i];
+                    console.log("ID: " + attachment.id + "\n" +
+                        "Name: " + attachment.name + "\n" +
+                        "Size: " + attachment.size + "\n" +
+                        "isInline: " + attachment.isInline);
+                    switch (attachment.attachmentType) {
+                        case Office.MailboxEnums.AttachmentType.Cloud:
+                            console.log("Attachment type: Attachment is stored in a cloud location.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.File:
+                            console.log("Attachment type: Attachment is a file.");
+                            break;
+                        case Office.MailboxEnums.AttachmentType.Item:
+                            console.log("Attachment type: Attachment is an Exchange item.");
+                            break;
+                    }
                 }
             }
             else {
@@ -4525,7 +4907,16 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+    const itemType = Office.context.mailbox.item.itemType;
+
+    switch (itemType) {
+        case Office.MailboxEnums.ItemType.Appointment:
+            console.log(`Current item is an ${itemType}.`);
+            break;
+        case Office.MailboxEnums.ItemType.Message:
+            console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+            break;
+    }
 'Office.MessageCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -5672,7 +6063,16 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+    const itemType = Office.context.mailbox.item.itemType;
+
+    switch (itemType) {
+        case Office.MailboxEnums.ItemType.Appointment:
+            console.log(`Current item is an ${itemType}.`);
+            break;
+        case Office.MailboxEnums.ItemType.Message:
+            console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+            break;
+    }
 'Office.MessageRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -6352,23 +6752,17 @@
 
     const currentDate = new Date();
 
-    let seriesTimeObject : Office.SeriesTime;
+    let seriesTimeObject: Office.SeriesTime;
 
     // Set series start date to tomorrow.
 
-    seriesTimeObject.setStartDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      currentDate.getDay() + 1
-    );
+    seriesTimeObject.setStartDate(currentDate.getFullYear(),
+    currentDate.getMonth(), currentDate.getDay() + 1);
 
-    // Set series end date to 1 month from now.
+    // Set series end date to one year from now.
 
-    seriesTimeObject.setEndDate(
-      currentDate.getFullYear(),
-      currentDate.getMonth() + 1,
-      currentDate.getDay()
-    );
+    seriesTimeObject.setEndDate(currentDate.getFullYear() + 1,
+    currentDate.getMonth() + 1, currentDate.getDay());
 
     // Set start time to 1:30 PM.
 
@@ -6379,10 +6773,15 @@
     seriesTimeObject.setDuration(30);
 
 
-    let pattern : Office.Recurrence = {
+    const pattern: Office.Recurrence = {
       seriesTime: seriesTimeObject,
-      recurrenceType: Office.MailboxEnums.RecurrenceType.Weekly,
-      recurrenceProperties: { interval: 1, days: [Office.MailboxEnums.Days.Tue, Office.MailboxEnums.Days.Thu], firstDayOfWeek: Office.MailboxEnums.Days.Sun },
+      recurrenceType: Office.MailboxEnums.RecurrenceType.Yearly,
+      recurrenceProperties: {
+        interval: 1,
+        dayOfWeek: Office.MailboxEnums.Days.Tue,
+        weekNumber: Office.MailboxEnums.WeekNumber.Second,
+        month: Office.MailboxEnums.Month.Sep
+      },
       recurrenceTimeZone: { name: Office.MailboxEnums.RecurrenceTimeZone.PacificStandardTime }
     };
 
