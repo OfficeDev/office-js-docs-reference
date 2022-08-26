@@ -35,10 +35,10 @@ The following is an example of the **\<FunctionFile\>** element.
 <DesktopFormFactor>
   <FunctionFile resid="residDesktopFuncUrl" />
   <ExtensionPoint xsi:type="PrimaryCommandSurface">
-    <!-- Information about this extension point -->
+    <!-- Information about this extension point. -->
   </ExtensionPoint>
 
-  <!-- You can define more than one ExtensionPoint element as needed -->
+  <!-- You can define more than one ExtensionPoint element as needed. -->
 </DesktopFormFactor>
 
 ...
@@ -48,7 +48,7 @@ The following is an example of the **\<FunctionFile\>** element.
         <bt:Url id="residDesktopFuncUrl" DefaultValue="https://www.contoso.com/Pages/Home.aspx" />
     </bt:Urls>
 
-    <!-- Define other resources as needed -->
+    <!-- Define other resources as needed. -->
 </Resources>
 ```
 
