@@ -604,15 +604,6 @@ Office.Body#getAsync:member(1):
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body#getTypeAsync:member(1):
-  - |-
-    Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        } else {
-            console.log("Body type: " + asyncResult.value);
-        }
-    });
 Office.Body#prependAsync:member(1):
   - |-
     // When including links in HTML markup, you can disable online link preview
