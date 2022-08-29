@@ -593,14 +593,6 @@ Office.Body#getAsync:member(1):
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body#prependAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.prependAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 Office.Body#setAsync:member(1):
   - |-
     // When including links in HTML markup, you can disable online link preview
@@ -622,14 +614,6 @@ Office.Body#setAsync:member(1):
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body#setSelectedDataAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setSelectedDataAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 Office.CategoryDetails:interface:
   - |-
     const categories = [
