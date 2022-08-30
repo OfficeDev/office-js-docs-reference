@@ -99,10 +99,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#dueDateTime:member'
     package: excel!
     fullName: dueDateTime
-    summary: >-
-      Gets or sets the date and time the task is due. To ensure that calls to `dueDateTime` always occur after calls to
-      `startDateTime`<!-- -->, the DispatchId for `dueDateTime` should be greater than the DispatchId for
-      `startDateTime`<!-- -->.
+    summary: Gets or sets the date and time the task is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -152,10 +149,7 @@ properties:
     uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#startDateTime:member'
     package: excel!
     fullName: startDateTime
-    summary: >-
-      Gets or sets the date and time the task starts. To ensure that calls to `dueDateTime` always occur after calls to
-      `startDateTime`<!-- -->, the DispatchId for `dueDateTime` should be greater than the DispatchId for
-      `startDateTime`<!-- -->.
+    summary: Gets or sets the date and time the task starts.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

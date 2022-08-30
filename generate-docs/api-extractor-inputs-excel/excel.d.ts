@@ -5130,7 +5130,6 @@ export declare namespace Excel {
         readonly createdDateTime: Date;
         /**
          * Gets or sets the date and time the task is due.
-                    To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -5163,7 +5162,6 @@ export declare namespace Excel {
         priority: number;
         /**
          * Gets or sets the date and time the task starts.
-                    To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -40583,7 +40581,6 @@ export declare namespace Excel {
         export interface DocumentTaskUpdateData {
             /**
              * Gets or sets the date and time the task is due.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -40608,7 +40605,6 @@ export declare namespace Excel {
             priority?: number;
             /**
              * Gets or sets the date and time the task starts.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45768,7 +45764,6 @@ export declare namespace Excel {
             createdDateTime?: Date;
             /**
              * Gets or sets the date and time the task is due.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -45801,7 +45796,6 @@ export declare namespace Excel {
             priority?: number;
             /**
              * Gets or sets the date and time the task starts.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -52993,7 +52987,6 @@ export declare namespace Excel {
             createdDateTime?: boolean;
             /**
              * Gets or sets the date and time the task is due.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -53026,7 +53019,6 @@ export declare namespace Excel {
             priority?: boolean;
             /**
              * Gets or sets the date and time the task starts.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -53104,7 +53096,6 @@ export declare namespace Excel {
             createdDateTime?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the date and time the task is due.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -53137,7 +53128,6 @@ export declare namespace Excel {
             priority?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets the date and time the task starts.
-                        To ensure that calls to `dueDateTime` always occur after calls to `startDateTime`, the DispatchId for `dueDateTime` should be greater than the DispatchId for `startDateTime`.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]

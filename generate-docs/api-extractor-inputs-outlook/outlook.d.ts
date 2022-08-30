@@ -8891,8 +8891,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Only one notification of type `InsightMessage` is allowed per add-in.
-         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
@@ -8920,8 +8920,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Only one notification of type `InsightMessage` is allowed per add-in.
-         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
