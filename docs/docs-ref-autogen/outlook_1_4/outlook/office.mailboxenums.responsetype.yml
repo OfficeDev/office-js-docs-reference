@@ -8,6 +8,53 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml
+
+  function organizeByResponse(attendees) {
+    const accepted = [];
+    const declined = [];
+    const noResponse = [];
+    const tentative = [];
+    attendees.forEach(attendee => {
+      switch (attendee.appointmentResponse) {
+        case Office.MailboxEnums.ResponseType.Accepted:
+          accepted.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Declined:
+          declined.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.None:
+          noResponse.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Tentative:
+          tentative.push(attendee);
+          break;
+        case Office.MailboxEnums.ResponseType.Organizer:
+          console.log(`Organizer: ${attendee.displayName}, ${attendee.emailAddress}`);
+          break;
+      } 
+    });
+
+    // List attendees by their response.
+    console.log("Accepted: ");
+    printAttendees(accepted);
+    console.log("Declined: ");
+    printAttendees(declined);
+    console.log("Tentative: ");
+    printAttendees(tentative);
+    console.log("No response: ");
+    printAttendees(noResponse);
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
