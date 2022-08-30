@@ -47,22 +47,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Body type: " + asyncResult.value);
-          }
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,22 +144,6 @@ methods:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // When including links in HTML markup, you can disable online link preview
-
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-
-      Office.context.mailbox.item.body.prependAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,22 +270,6 @@ methods:
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
       message body is in plain text.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // When including links in HTML markup, you can disable online link preview
-
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-
-      Office.context.mailbox.item.body.setSelectedDataAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      ```
     isPreview: false
     isDeprecated: false
     syntax:

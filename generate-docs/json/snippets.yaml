@@ -12460,17 +12460,6 @@
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
-'Office.Body#appendOnSendAsync:member(1)':
-  - |-
-    Office.context.mailbox.item.body.appendOnSendAsync(
-        "P.S. This text was appended on send.",
-        {coercionType: Office.CoercionType.Html},
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-        }
-    );
 'Office.Body#getAsync:member(1)':
   - >-
     // This example gets the body of the item as plain text.
@@ -12490,23 +12479,6 @@
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-'Office.Body#getTypeAsync:member(1)':
-  - |-
-    Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        } else {
-            console.log("Body type: " + asyncResult.value);
-        }
-    });
-'Office.Body#prependAsync:member(1)':
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.prependAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 'Office.Body#setAsync:member(1)':
   - >-
     // When including links in HTML markup, you can disable online link preview
@@ -12533,14 +12505,6 @@
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-'Office.Body#setSelectedDataAsync:member(1)':
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setSelectedDataAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 'Office.Body#setSignatureAsync:member(1)':
   - >-
     // Link to full sample:
