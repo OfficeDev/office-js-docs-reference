@@ -7874,7 +7874,7 @@ Office.AttachmentsChangedEventArgs,attachmentStatus,Property,Good,false
 Office.AttachmentsChangedEventArgs,type,Property,Good,false
 Office.Body,N/A,Class,Good,false
 Office.Body,appendOnSendAsync(data,Method,Fine,false
-Office.Body,getAsync(coercionType,Method,Poor,false
+Office.Body,getAsync(coercionType,Method,Poor,true
 Office.Body,getTypeAsync(options,Method,Fine,true
 Office.Body,getTypeAsync(callback),Method,Poor,false
 Office.Body,prependAsync(data,Method,Fine,false
