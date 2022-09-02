@@ -21,7 +21,14 @@ while (indexOfApiSetTag >= 0) {
     declarationString = wholeDTS.substring(commentEnd, wholeDTS.indexOf("\n", commentEnd));
     let endPosition = commentEnd + declarationString.length;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
-        endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
+        let nextStartBrace = wholeDTS.indexOf("{", endPosition);
+        let nextEndBrace = wholeDTS.indexOf("}", endPosition);
+        // Discount internal bracket pairs.
+        while (nextStartBrace < nextEndBrace && nextStartBrace >= 0) {
+            nextStartBrace = wholeDTS.indexOf("{", nextStartBrace + 1);
+            nextEndBrace = wholeDTS.indexOf("}", nextEndBrace + 1);
+        }
+        endPosition = wholeDTS.indexOf("}", nextEndBrace - 1);
     } else {
         endPosition = getDeclarationEnd(wholeDTS, commentEnd);
     }
@@ -45,10 +52,10 @@ fsx.writeFileSync(process.argv[4], wholeDTS);
 
 
 function getDeclarationEnd(wholeDts: string, startIndex: number): number {
-    let nextSemicolon = wholeDTS.indexOf(";", startIndex);
-    let nextNewLine = wholeDTS.indexOf("\n", startIndex);
-    let nextStartBrace = wholeDTS.indexOf("{", startIndex);
-    let nextEndBrace = wholeDTS.indexOf("}", startIndex);
+    let nextSemicolon = wholeDts.indexOf(";", startIndex);
+    let nextNewLine = wholeDts.indexOf("\n", startIndex);
+    let nextStartBrace = wholeDts.indexOf("{", startIndex);
+    let nextEndBrace = wholeDts.indexOf("}", startIndex);
     
     // Figure out if the declaration has an internal class.
     if (nextSemicolon < nextNewLine) {
@@ -58,7 +65,7 @@ function getDeclarationEnd(wholeDts: string, startIndex: number): number {
         return nextNewLine;
     } else {
         // The declaration is on multiple lines, likely due to an internal class.
-        wholeDTS.substring(startIndex, wholeDTS.indexOf(";", nextEndBrace));        
-        return wholeDTS.indexOf(";", nextEndBrace);
+        wholeDts.substring(startIndex, wholeDts.indexOf(";", nextEndBrace));        
+        return wholeDts.indexOf(";", nextEndBrace);
     }
 }
