@@ -7,48 +7,48 @@ if (process.argv.length !== 5 || process.argv.find((x: string) => {return x === 
 }
 
 console.log("Version Remover - Creating " + process.argv[4]);
-let wholeDTS = fsx.readFileSync(process.argv[2]).toString();
+let wholeDts = fsx.readFileSync(process.argv[2]).toString();
 let declarationString;
 // find the API tag
-let indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
+let indexOfApiSetTag = wholeDts.indexOf("Api set: " + process.argv[3]);
 while (indexOfApiSetTag >= 0) {
     // find the comment block around the API tag
-    let commentStart = wholeDTS.lastIndexOf("/**", indexOfApiSetTag);
-    let commentEnd = wholeDTS.indexOf("*/", indexOfApiSetTag);
-    commentEnd =  wholeDTS.indexOf("\n", commentEnd) + 1; // Account for newline and ending characters.
+    let commentStart = wholeDts.lastIndexOf("/**", indexOfApiSetTag);
+    let commentEnd = wholeDts.indexOf("*/", indexOfApiSetTag);
+    commentEnd =  wholeDts.indexOf("\n", commentEnd) + 1; // Account for newline and ending characters.
 
     // the declaration string is the line following the comment
-    declarationString = wholeDTS.substring(commentEnd, wholeDTS.indexOf("\n", commentEnd));
+    declarationString = wholeDts.substring(commentEnd, wholeDts.indexOf("\n", commentEnd));
     let endPosition = commentEnd + declarationString.length;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
-        let nextStartBrace = wholeDTS.indexOf("{", endPosition);
-        let nextEndBrace = wholeDTS.indexOf("}", endPosition);
+        let nextStartBrace = wholeDts.indexOf("{", endPosition);
+        let nextEndBrace = wholeDts.indexOf("}", endPosition);
         // Discount internal bracket pairs.
         while (nextStartBrace < nextEndBrace && nextStartBrace >= 0) {
-            nextStartBrace = wholeDTS.indexOf("{", nextStartBrace + 1);
-            nextEndBrace = wholeDTS.indexOf("}", nextEndBrace + 1);
+            nextStartBrace = wholeDts.indexOf("{", nextStartBrace + 1);
+            nextEndBrace = wholeDts.indexOf("}", nextEndBrace + 1);
         }
-        endPosition = wholeDTS.indexOf("}", nextEndBrace - 1);
+        endPosition = wholeDts.indexOf("}", nextEndBrace - 1);
     } else {
-        endPosition = getDeclarationEnd(wholeDTS, commentEnd);
+        endPosition = getDeclarationEnd(wholeDts, commentEnd);
     }
 
     if (endPosition === -1) {
         endPosition = commentEnd;
     }
-    wholeDTS = wholeDTS.substring(0, commentStart) + wholeDTS.substring(endPosition + 1);
-    indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
+    wholeDts = wholeDts.substring(0, commentStart) + wholeDts.substring(endPosition + 1);
+    indexOfApiSetTag = wholeDts.indexOf("Api set: " + process.argv[3]);
 }
 
 /* Add necessary custom logic here*/
 
 if (process.argv[3] === "ExcelApi 1.11") {
     console.log("Address CommentRichContent reference for when removing ExcelApi 1.11");
-    wholeDTS = wholeDTS.replace(/add\(content: CommentRichContent \| string,/g, "add(content: string,").
+    wholeDts = wholeDts.replace(/add\(content: CommentRichContent \| string,/g, "add(content: string,").
                 replace(/add\(cellAddress: Range \| string, content: CommentRichContent \| string,/g, "add(cellAddress: Range | string, content: string,");
 }
 
-fsx.writeFileSync(process.argv[4], wholeDTS);
+fsx.writeFileSync(process.argv[4], wholeDts);
 
 
 function getDeclarationEnd(wholeDts: string, startIndex: number): number {
