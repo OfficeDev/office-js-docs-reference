@@ -1824,9 +1824,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -1855,9 +1855,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -3037,9 +3037,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -3068,9 +3068,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -6740,9 +6740,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
@@ -6771,9 +6771,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
@@ -7925,9 +7925,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -7956,9 +7956,9 @@ export declare namespace Office {
          /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
