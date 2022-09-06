@@ -1813,6 +1813,9 @@ export declare namespace Office {
         urls: string[];
     }
     
+    
+    
+    
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment. 
      * You can determine the type of the item by using the `itemType` property.
@@ -3297,15 +3300,34 @@ export declare namespace Office {
         
         
         
-        
-        
-        
-        
-        
-        
+        /**
+         * Asynchronously loads custom properties for this add-in on the selected item.
+         *
+         * Custom properties are stored as key/value pairs on a per-app, per-item basis. 
+         * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
+         * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+         *
+         * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
+         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+         *
+         * @remarks
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
+         *                 type `Office.AsyncResult`.
+         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. 
+         *                    This object can be accessed by the `asyncResult.asyncContext` property in the callback function.
+         */
+        loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
         
         
     }
+    
+    
+    
     
     /**
      * Represents a phone number identified in an item. Read mode only.
@@ -3580,6 +3602,7 @@ export declare namespace Office {
          */
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+     
     
     
     

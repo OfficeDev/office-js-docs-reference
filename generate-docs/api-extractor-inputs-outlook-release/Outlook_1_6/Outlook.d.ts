@@ -2237,6 +2237,9 @@ export declare namespace Office {
         urls: string[];
     }
     
+    
+    
+    
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment. 
      * You can determine the type of the item by using the `itemType` property.
@@ -4742,6 +4745,7 @@ export declare namespace Office {
          */
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+     
     
     
     

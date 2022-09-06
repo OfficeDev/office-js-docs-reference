@@ -7,48 +7,55 @@ if (process.argv.length !== 5 || process.argv.find((x: string) => {return x === 
 }
 
 console.log("Version Remover - Creating " + process.argv[4]);
-let wholeDTS = fsx.readFileSync(process.argv[2]).toString();
+let wholeDts = fsx.readFileSync(process.argv[2]).toString();
 let declarationString;
 // find the API tag
-let indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
+let indexOfApiSetTag = wholeDts.indexOf("Api set: " + process.argv[3]);
 while (indexOfApiSetTag >= 0) {
     // find the comment block around the API tag
-    let commentStart = wholeDTS.lastIndexOf("/**", indexOfApiSetTag);
-    let commentEnd = wholeDTS.indexOf("*/", indexOfApiSetTag);
-    commentEnd =  wholeDTS.indexOf("\n", commentEnd) + 1; // Account for newline and ending characters.
+    let commentStart = wholeDts.lastIndexOf("/**", indexOfApiSetTag);
+    let commentEnd = wholeDts.indexOf("*/", indexOfApiSetTag);
+    commentEnd =  wholeDts.indexOf("\n", commentEnd) + 1; // Account for newline and ending characters.
 
     // the declaration string is the line following the comment
-    declarationString = wholeDTS.substring(commentEnd, wholeDTS.indexOf("\n", commentEnd));
+    declarationString = wholeDts.substring(commentEnd, wholeDts.indexOf("\n", commentEnd));
     let endPosition = commentEnd + declarationString.length;
     if (declarationString.indexOf("class") >= 0 || declarationString.indexOf("enum") >= 0 || declarationString.indexOf("interface") >= 0) {
-        endPosition = Math.max(wholeDTS.indexOf("}\r\n", commentEnd), wholeDTS.indexOf("}\n", commentEnd));
+        let nextStartBrace = wholeDts.indexOf("{", endPosition);
+        let nextEndBrace = wholeDts.indexOf("}", endPosition);
+        // Discount internal bracket pairs.
+        while (nextStartBrace < nextEndBrace && nextStartBrace >= 0) {
+            nextStartBrace = wholeDts.indexOf("{", nextStartBrace + 1);
+            nextEndBrace = wholeDts.indexOf("}", nextEndBrace + 1);
+        }
+        endPosition = wholeDts.indexOf("}", nextEndBrace - 1);
     } else {
-        endPosition = getDeclarationEnd(wholeDTS, commentEnd);
+        endPosition = getDeclarationEnd(wholeDts, commentEnd);
     }
 
     if (endPosition === -1) {
         endPosition = commentEnd;
     }
-    wholeDTS = wholeDTS.substring(0, commentStart) + wholeDTS.substring(endPosition + 1);
-    indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
+    wholeDts = wholeDts.substring(0, commentStart) + wholeDts.substring(endPosition + 1);
+    indexOfApiSetTag = wholeDts.indexOf("Api set: " + process.argv[3]);
 }
 
 /* Add necessary custom logic here*/
 
 if (process.argv[3] === "ExcelApi 1.11") {
     console.log("Address CommentRichContent reference for when removing ExcelApi 1.11");
-    wholeDTS = wholeDTS.replace(/add\(content: CommentRichContent \| string,/g, "add(content: string,").
+    wholeDts = wholeDts.replace(/add\(content: CommentRichContent \| string,/g, "add(content: string,").
                 replace(/add\(cellAddress: Range \| string, content: CommentRichContent \| string,/g, "add(cellAddress: Range | string, content: string,");
 }
 
-fsx.writeFileSync(process.argv[4], wholeDTS);
+fsx.writeFileSync(process.argv[4], wholeDts);
 
 
 function getDeclarationEnd(wholeDts: string, startIndex: number): number {
-    let nextSemicolon = wholeDTS.indexOf(";", startIndex);
-    let nextNewLine = wholeDTS.indexOf("\n", startIndex);
-    let nextStartBrace = wholeDTS.indexOf("{", startIndex);
-    let nextEndBrace = wholeDTS.indexOf("}", startIndex);
+    let nextSemicolon = wholeDts.indexOf(";", startIndex);
+    let nextNewLine = wholeDts.indexOf("\n", startIndex);
+    let nextStartBrace = wholeDts.indexOf("{", startIndex);
+    let nextEndBrace = wholeDts.indexOf("}", startIndex);
     
     // Figure out if the declaration has an internal class.
     if (nextSemicolon < nextNewLine) {
@@ -58,7 +65,7 @@ function getDeclarationEnd(wholeDts: string, startIndex: number): number {
         return nextNewLine;
     } else {
         // The declaration is on multiple lines, likely due to an internal class.
-        wholeDTS.substring(startIndex, wholeDTS.indexOf(";", nextEndBrace));        
-        return wholeDTS.indexOf(";", nextEndBrace);
+        wholeDts.substring(startIndex, wholeDts.indexOf(";", nextEndBrace));        
+        return wholeDts.indexOf(";", nextEndBrace);
     }
 }
