@@ -40,6 +40,24 @@ methods:
       [OfficeRuntime.auth.getAccessToken](https://docs.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1))
       instead. For more information, see [Enable single sign-on (SSO) in Outlook add-ins that use event-based
       activation](https://docs.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!-- -->.
+
+
+      #### Examples
+
+
+      ```typescript
+
+      try{
+          const accessToken = await Office.auth.getAccessToken({
+              allowSignInPrompt: true,
+              allowConsentPrompt: true,
+              forMSGraphAccess: true,
+          });
+      } catch (error) {
+          console.log("Error obtaining token", error);
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
