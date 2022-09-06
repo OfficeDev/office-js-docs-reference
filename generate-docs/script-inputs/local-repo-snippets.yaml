@@ -1745,7 +1745,7 @@ Office.AsyncResult#value:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Auth#getAccessToken:
+Office.Auth#getAccessToken:member(1):
   - |-
     try{
         const accessToken = await Office.auth.getAccessToken({

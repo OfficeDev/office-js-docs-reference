@@ -6026,7 +6026,7 @@ Office.AsyncResultStatus,N/A,Enum,Good,false
 Office.AsyncResultStatus,Failed,EnumField,Fine,false
 Office.AsyncResultStatus,Succeeded,EnumField,Poor,false
 Office.Auth,N/A,Class,Good,false
-Office.Auth,getAccessToken(options),Method,Fine,false
+Office.Auth,getAccessToken(options),Method,Fine,true
 Office.Auth,getAccessTokenAsync(options,Method,Fine,true
 Office.Auth,getAccessTokenAsync(callback),Method,Poor,false
 Office.AuthOptions,N/A,Class,Good,false

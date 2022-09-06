@@ -320,7 +320,7 @@
     the callback function 
 
     // to access the status and error properties of the AsyncResult object.
-'Office.Auth#getAccessToken':
+'Office.Auth#getAccessToken:member(1)':
   - |-
     try{
         const accessToken = await Office.auth.getAccessToken({
