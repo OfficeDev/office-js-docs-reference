@@ -86,7 +86,7 @@ methods:
       ```javascript
 
       Office.context.auth.getAccessTokenAsync(function(result) {
-          if (result.status === "succeeded") {
+          if (result.status === Office.AsyncResultStatus.Succeeded) {
               const token = result.value;
               // ...
           } else {
