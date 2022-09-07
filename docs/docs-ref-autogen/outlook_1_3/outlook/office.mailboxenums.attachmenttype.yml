@@ -8,6 +8,47 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
+
+  Office.context.mailbox.item.getAttachmentsAsync(function (result) {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(result.error.message);
+      } else {
+          if (result.value.length > 0) {
+              for (let i = 0; i < result.value.length; i++) {
+                  const attachment = result.value[i];
+                  console.log("ID: " + attachment.id + "\n" +
+                      "Name: " + attachment.name + "\n" +
+                      "Size: " + attachment.size + "\n" +
+                      "isInline: " + attachment.isInline);
+                  switch (attachment.attachmentType) {
+                      case Office.MailboxEnums.AttachmentType.Cloud:
+                          console.log("Attachment type: Attachment is stored in a cloud location.");
+                          break;
+                      case Office.MailboxEnums.AttachmentType.File:
+                          console.log("Attachment type: Attachment is a file.");
+                          break;
+                      case Office.MailboxEnums.AttachmentType.Item:
+                          console.log("Attachment type: Attachment is an Exchange item.");
+                          break;
+                  }
+              }
+          }
+          else {
+              console.log("No attachments on this message.");
+          }
+      }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

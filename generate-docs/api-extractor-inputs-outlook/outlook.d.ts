@@ -1901,9 +1901,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -1932,9 +1932,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -2883,7 +2883,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
@@ -3189,9 +3189,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -3220,9 +3220,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -3790,14 +3790,17 @@ export declare namespace Office {
         /**
          * Appends on send the specified content to the end of the item body, after any signature.
          *
-         * If the user is running add-ins that implement the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature using `ItemSend` in the manifest},
-         * append-on-send runs before on-send functionality.
+         * To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission. To learn more
+         * about append-on-send and its configuration, see
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
+         * 
+         * **Important**: If the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature}
+         * is implemented with append-on-send, the following apply.
+         * 
+         * - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
          *
-         * **Important**: If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
-         * the `appendOnSendAsync` call returns an error as this scenario is not supported.
-         *
-         * **Important**: To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission.
+         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
+         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
          *
          * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
@@ -3827,14 +3830,17 @@ export declare namespace Office {
         /**
          * Appends on send the specified content to the end of the item body, after any signature.
          *
-         * If the user is running add-ins that implement the
-         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature using `ItemSend` in the manifest},
-         * append-on-send runs before on-send functionality.
+         * To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission. To learn more
+         * about append-on-send and its configuration, see
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
+         * 
+         * **Important**: If the {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature}
+         * is implemented with append-on-send, the following apply.
+         * 
+         * - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest, append-on-send runs before on-send functionality.
          *
-         * **Important**: If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
-         * the `appendOnSendAsync` call returns an error as this scenario is not supported.
-         *
-         * **Important**: To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission.
+         * - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler,
+         * the `appendOnSendAsync` call returns an error as this scenario isn't supported.
          *
          * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
          *
@@ -5050,7 +5056,11 @@ export declare namespace Office {
      *
      * Apply the following guidelines when you create internet headers in your add-in.
      *
-     * - Create the minimum number of headers required.
+     * - Create the minimum number of headers required. The header quota is based on the total size of headers applied to a message. In Exchange Online,
+     * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+     * For further information on header limits, see 
+     * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+     * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
      *
      * - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner
      * (for example, based on user input, timestamp, etc.).
@@ -5141,6 +5151,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5164,6 +5180,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -7028,9 +7050,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -7059,9 +7081,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -8283,9 +8305,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -8314,9 +8336,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          *
@@ -8891,8 +8913,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Only one notification of type `InsightMessage` is allowed per add-in.
-         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
@@ -8920,8 +8942,8 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - Only one notification of type `InsightMessage` is allowed per add-in.
-         * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *

@@ -202,7 +202,16 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-      console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+      const itemType = Office.context.mailbox.item.itemType;
+
+      switch (itemType) {
+          case Office.MailboxEnums.ItemType.Appointment:
+              console.log(`Current item is an ${itemType}.`);
+              break;
+          case Office.MailboxEnums.ItemType.Message:
+              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+              break;
+      }
 
       ```
     isPreview: false
@@ -1774,7 +1783,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/set-selected-data.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
 
       Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {

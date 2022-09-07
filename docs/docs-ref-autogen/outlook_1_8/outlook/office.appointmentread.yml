@@ -562,7 +562,16 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-      console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+      const itemType = Office.context.mailbox.item.itemType;
+
+      switch (itemType) {
+          case Office.MailboxEnums.ItemType.Appointment:
+              console.log(`Current item is an ${itemType}.`);
+              break;
+          case Office.MailboxEnums.ItemType.Message:
+              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+              break;
+      }
 
       ```
     isPreview: false
@@ -836,7 +845,7 @@ properties:
     uid: 'outlook!Office.AppointmentRead#organizer:member'
     package: outlook!
     fullName: organizer
-    summary: Gets the email address of the meeting organizer for a specified meeting.
+    summary: Gets the meeting organizer's email properties.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1562,10 +1571,11 @@ methods:
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      practice, you should get the attachment's identifier from an
+      [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
+      that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1599,44 +1609,21 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
-      const item = Office.context.mailbox.item;
+      // Gets the attachments of the current message or appointment in read mode.
 
-      const options = {asyncContext: {currentItem: item}};
+      // The item.attachments call can only be used in read mode.
 
-      item.getAttachmentsAsync(options, callback);
+      const attachments = item.attachments;
 
-
-      function callback(result) {
-          if (result.value.length > 0) {
-              for (let i = 0 ; i < result.value.length ; i++) {
-                  result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-              }
-          }
+      if (attachments.length <= 0) {
+        console.log("Mail item has no attachments.");
+        return;
       }
 
 
-      function handleAttachmentsCallback(result) {
-          // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-          switch (result.value.format) {
-              case Office.MailboxEnums.AttachmentContentFormat.Base64:
-                  // Handle file attachment.
-                  console.log(result.value.content);
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Eml:
-                  // Handle email item attachment.
-                  console.log("Attachment is a message.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-                  // Handle .icalender attachment.
-                  console.log("Attachment is a calendar item.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Url:
-                  // Handle cloud attachment.
-                  console.log("Attachment is a cloud attachment.");
-                  break;
-              default:
-                  // Handle attachment formats that are not supported.
-          }
+      for (let i = 0; i < attachments.length; i++) {
+        // Log the attachment type and its contents to the console.
+        item.getAttachmentContentAsync(attachments[i].id, handleAttachmentsCallback);
       }
 
       ```
@@ -1675,10 +1662,11 @@ methods:
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      practice, you should get the attachment's identifier from an
+      [item.attachments](xref:outlook!Office.AppointmentRead%23attachments:member) call, then in the same session, use
+      that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is
+      valid only within the same session. A session is over when the user closes the app, or if the user starts
+      composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
