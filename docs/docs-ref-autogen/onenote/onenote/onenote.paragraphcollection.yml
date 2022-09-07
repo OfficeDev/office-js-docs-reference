@@ -79,13 +79,13 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the collection of pageContent items from the page.
-          var pageContents = context.application.getActivePage().contents;
+          const pageContents = context.application.getActivePage().contents;
 
           // Get the first PageContent on the page, and then get its Outline's first paragraph.
-          var pageContent = pageContents.getItemAt(0);
-          var paragraphs = pageContent.outline.paragraphs;
+          const pageContent = pageContents.getItemAt(0);
+          const paragraphs = pageContent.outline.paragraphs;
 
-          var firstParagraph = paragraphs.getItemAt(0);
+          const firstParagraph = paragraphs.getItemAt(0);
 
           // Queue a command to load the id and type properties of this paragraph.
           firstParagraph.load("id,type");
@@ -160,18 +160,18 @@ methods:
           await OneNote.run(async (context) => {
 
               // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
+              const pageContents = context.application.getActivePage().contents;
 
               // Get the first PageContent on the page, and then get its Outline's first paragraph.
-              var pageContent = pageContents.getItem(0);
-              var paragraphs = pageContent.outline.paragraphs;
+              const pageContent = pageContents.getItem(0);
+              const paragraphs = pageContent.outline.paragraphs;
               
               // Queue a command to load the id and type of each paragraph.
               paragraphs.load("id,type");
 
               // Run the queued commands, and return a promise to indicate task completion.
               await context.sync();
-              var firstParagraph = paragraphs.items[0];
+              const firstParagraph = paragraphs.items[0];
               // Write text from first paragraph to console.
               console.log(
                   "First Paragraph found with id : " + 

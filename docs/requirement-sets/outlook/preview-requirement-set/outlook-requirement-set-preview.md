@@ -87,7 +87,7 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 #### [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#methods)
 
-Added a new function that returns initialization data passed when the add-in is [activated by an actionable message](/outlook/actionable-messages/invoke-add-in-from-actionable-message).
+Added a new method that returns initialization data passed when the add-in is [activated by an actionable message](/outlook/actionable-messages/invoke-add-in-from-actionable-message).
 
 **Available in**: Outlook on Windows (connected to a Microsoft 365 subscription), Outlook on the web (modern)
 

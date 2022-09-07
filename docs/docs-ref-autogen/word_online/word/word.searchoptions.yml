@@ -156,10 +156,10 @@ methods:
           await Word.run(async (context) => {
               
               // Queue a command to search the document and ignore punctuation.
-              var searchResults = context.document.body.search('video you', {ignorePunct: true});
+              const searchResults = context.document.body.search('video you', {ignorePunct: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -167,7 +167,7 @@ methods:
               console.log('Found count: ' + searchResults.items.length);
 
               // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
+              for (let i = 0; i < searchResults.items.length; i++) {
                   searchResults.items[i].font.color = 'purple';
                   searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
                   searchResults.items[i].font.bold = true;
@@ -184,17 +184,17 @@ methods:
           await Word.run(async (context) => {
               
               // Queue a command to search the document based on a prefix.
-              var searchResults = context.document.body.search('vid', {matchPrefix: true});
+              const searchResults = context.document.body.search('vid', {matchPrefix: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
               await context.sync();
 
               // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
+              for (let i = 0; i < searchResults.items.length; i++) {
                   searchResults.items[i].font.color = 'purple';
                   searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
                   searchResults.items[i].font.bold = true;
@@ -211,10 +211,10 @@ methods:
           await Word.run(async (context) => {
 
               // Queue a command to search the document for any string of characters after 'ly'.
-              var searchResults = context.document.body.search('ly', {matchSuffix: true});
+              const searchResults = context.document.body.search('ly', {matchSuffix: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -222,7 +222,7 @@ methods:
               console.log('Found count: ' + searchResults.items.length);
 
               // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
+              for (let i = 0; i < searchResults.items.length; i++) {
                   searchResults.items[i].font.color = 'orange';
                   searchResults.items[i].font.highlightColor = 'black';
                   searchResults.items[i].font.bold = true;
@@ -240,10 +240,10 @@ methods:
               
               // Queue a command to search the document with a wildcard
               // for any string of characters that starts with 'to' and ends with 'n'.
-              var searchResults = context.document.body.search('to*n', {matchWildcards: true});
+              const searchResults = context.document.body.search('to*n', {matchWildcards: true});
 
               // Queue a command to load the search results and get the font property values.
-              context.load(searchResults, 'font');
+              searchResults.load('font');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -251,7 +251,7 @@ methods:
               console.log('Found count: ' + searchResults.items.length);
 
               // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
+              for (let i = 0; i < searchResults.items.length; i++) {
                   searchResults.items[i].font.color = 'purple';
                   searchResults.items[i].font.highlightColor = 'pink';
                   searchResults.items[i].font.bold = true;

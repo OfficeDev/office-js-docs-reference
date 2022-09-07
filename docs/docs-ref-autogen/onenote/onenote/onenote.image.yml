@@ -82,18 +82,18 @@ properties:
       #### Examples
 
       ```typescript
-      var image = null;
+      let image = null;
 
       await OneNote.run(async (context) => {
           // Get the current outline.
-          var outline = context.application.getActiveOutline();
+          const outline = context.application.getActiveOutline();
 
           // Queue a command to load paragraphs and their types.
           outline.load("paragraphs")
           await context.sync();
 
-          for (var i=0; i < outline.paragraphs.items.length; i++) {
-              var paragraph = outline.paragraphs.items[i];
+          for (let i=0; i < outline.paragraphs.items.length; i++) {
+              const paragraph = outline.paragraphs.items[i];
               if (paragraph.type == "Image")
               {
                   image = paragraph.image;
@@ -170,18 +170,18 @@ methods:
       #### Examples
 
       ```typescript
-      var image = null;
-      var imageString;
+      let image = null;
+      let imageString;
 
       await OneNote.run(async (context) => {
           // Get the current outline.
-          var outline = context.application.getActiveOutline();
+          const outline = context.application.getActiveOutline();
           
           // Queue a command to load paragraphs and their types.
           outline.load("paragraphs/type")
           await context.sync();
-          for (var i=0; i < outline.paragraphs.items.length; i++) {
-              var paragraph = outline.paragraphs.items[i];
+          for (let i=0; i < outline.paragraphs.items.length; i++) {
+              const paragraph = outline.paragraphs.items[i];
               if (paragraph.type == "Image")
               {
                   image = paragraph.image;
@@ -248,15 +248,15 @@ methods:
           ```typescript
           await OneNote.run(async (context) => {
               // Get the current outline.
-              var outline = context.application.getActiveOutline();
-              var image = null;
+              const outline = context.application.getActiveOutline();
+              let image = null;
               
               // Queue a command to load paragraphs and their types.
               outline.load("paragraphs/type")
               await context.sync();
 
-              for (var i=0; i < outline.paragraphs.items.length; i++) {
-                  var paragraph = outline.paragraphs.items[i];
+              for (let i=0; i < outline.paragraphs.items.length; i++) {
+                  const paragraph = outline.paragraphs.items[i];
                   if (paragraph.type == "Image")
                   {
                       image = paragraph.image;

@@ -75,11 +75,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
-          var border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
           border.load('style');
           await context.sync();
 
@@ -130,11 +130,11 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var sheetName = "Sheet1";
-          var rangeAddress = "A1:F8";
-          var worksheet = context.workbook.worksheets.getItem(sheetName);
-          var range = worksheet.getRange(rangeAddress);
-          var border = range.format.borders.getItemAt(0);
+          const sheetName = "Sheet1";
+          const rangeAddress = "A1:F8";
+          const worksheet = context.workbook.worksheets.getItem(sheetName);
+          const range = worksheet.getRange(rangeAddress);
+          const border = range.format.borders.getItemAt(0);
           border.load('sideIndex');
           await context.sync();
           
@@ -200,16 +200,16 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = context.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var borders = range.format.borders;
+              const sheetName = "Sheet1";
+              const rangeAddress = "A1:F8";
+              const worksheet = context.workbook.worksheets.getItem(sheetName);
+              const range = worksheet.getRange(rangeAddress);
+              const borders = range.format.borders;
               borders.load('items');
               await context.sync();
               
               console.log(borders.count);
-              for (var i = 0; i < borders.items.length; i++) {
+              for (let i = 0; i < borders.items.length; i++) {
                   console.log(borders.items[i].sideIndex);
               }
           });

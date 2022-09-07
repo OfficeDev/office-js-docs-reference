@@ -39,8 +39,6 @@ items:
                 uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'word!Word.ErrorCodes:enum'
-              - name: EventType
-                uid: 'word!Word.EventType:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: InsertLocation

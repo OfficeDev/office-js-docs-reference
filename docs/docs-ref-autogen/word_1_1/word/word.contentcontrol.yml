@@ -7,7 +7,67 @@ summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
   paragraphs of formatted text. Currently, only rich text content controls are supported.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```typescript
+  // Run a batch operation against the Word object model.
+  await Word.run(async (context) => {
+
+      // Create a proxy object for the content controls collection.
+      const contentControls = context.document.contentControls;
+
+      // Queue a command to load the id property for all of the content controls.
+      contentControls.load('id');
+
+      // Synchronize the document state by executing the queued commands,
+      // and return a promise to indicate task completion.
+      await context.sync();
+      if (contentControls.items.length === 0) {
+          console.log('No content control found.');
+      }
+      else {
+          // Queue a command to load the properties on the first content control.
+          contentControls.items[0].load(  'appearance,' +
+                                          'cannotDelete,' +
+                                          'cannotEdit,' +
+                                          'color,' +
+                                          'id,' +
+                                          'placeHolderText,' +
+                                          'removeWhenEdited,' +
+                                          'title,' +
+                                          'text,' +
+                                          'type,' +
+                                          'style,' +
+                                          'tag,' +
+                                          'font/size,' +
+                                          'font/name,' +
+                                          'font/color');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Property values of the first content control:' +
+              '   ----- appearance: ' + contentControls.items[0].appearance +
+              '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+              '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+              '   ----- color: ' + contentControls.items[0].color +
+              '   ----- id: ' + contentControls.items[0].id +
+              '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+              '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+              '   ----- title: ' + contentControls.items[0].title +
+              '   ----- text: ' + contentControls.items[0].text +
+              '   ----- type: ' + contentControls.items[0].type +
+              '   ----- style: ' + contentControls.items[0].style +
+              '   ----- tag: ' + contentControls.items[0].tag +
+              '   ----- font size: ' + contentControls.items[0].font.size +
+              '   ----- font name: ' + contentControls.items[0].font.name +
+              '   ----- font color: ' + contentControls.items[0].font.color);
+      }
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -305,7 +365,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the content controls collection.
           contentControls.load('text');
@@ -353,7 +413,7 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the content controls collection.
           contentControls.load('text');
@@ -384,7 +444,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
       await Word.run(async (context) => {
-        let contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 
@@ -432,10 +492,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection that contains a specific tag.
-          var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+          const contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
           
           // Queue a command to load the tag property for all of content controls.
-          context.load(contentControlsWithTag, 'tag');
+          contentControlsWithTag.load('tag');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -445,7 +505,7 @@ methods:
           }
           else {
               // Queue a command to get the HTML contents of the first content control.
-              var html = contentControlsWithTag.items[0].getHtml();
+              const html = contentControlsWithTag.items[0].getHtml();
           
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -476,10 +536,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -489,7 +549,7 @@ methods:
           }
           else {
               // Queue a command to get the OOXML contents of the first content control.
-              var ooxml = contentControls.items[0].getOoxml();
+              const ooxml = contentControls.items[0].getOoxml();
           
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -544,10 +604,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
           
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -666,10 +726,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -743,10 +803,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -821,10 +881,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -898,10 +958,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -968,10 +1028,10 @@ methods:
           await Word.run(async (context) => {
               
               // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
+              const contentControls = context.document.contentControls;
               
               // Queue a command to load the id property for all of the content controls.
-              context.load(contentControls, 'id');
+              contentControls.load('id');
                
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
@@ -1082,10 +1142,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
+          const contentControls = context.document.contentControls;
           
           // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
+          contentControls.load('id');
            
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -1280,10 +1340,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1298,9 +1360,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

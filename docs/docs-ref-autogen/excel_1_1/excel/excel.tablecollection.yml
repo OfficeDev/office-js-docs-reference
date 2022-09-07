@@ -63,7 +63,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var table = context.workbook.tables.add('Sheet1!A1:E7', true);
+          const table = context.workbook.tables.add('Sheet1!A1:E7', true);
           table.load('name');
           await context.sync();
           
@@ -103,8 +103,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var tableName = 'Table1';
-          var table = context.workbook.tables.getItem(tableName);
+          const tableName = 'Table1';
+          const table = context.workbook.tables.getItem(tableName);
           table.load('name');
           await context.sync();
           
@@ -134,7 +134,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var table = context.workbook.tables.getItemAt(0);
+          const table = context.workbook.tables.getItemAt(0);
           table.load('name');
           await context.sync();
           
@@ -201,7 +201,7 @@ methods:
           ```typescript
           // Get the number of tables.
           await Excel.run(async (context) => { 
-              var tables = context.workbook.tables;
+              const tables = context.workbook.tables;
               tables.load('count');
               await context.sync();
               

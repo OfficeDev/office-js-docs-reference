@@ -1506,6 +1506,11 @@ export declare namespace Office {
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * 
          * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties.
@@ -1544,6 +1549,11 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
+         * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          * 
          * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -1688,9 +1698,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -1719,9 +1729,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -2570,7 +2580,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
@@ -2761,9 +2771,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -2792,9 +2802,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.AppointmentRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -4300,7 +4310,11 @@ export declare namespace Office {
      * 
      * Apply the following guidelines when you create internet headers in your add-in.
      * 
-     * - Create the minimum number of headers required.
+     * - Create the minimum number of headers required. The header quota is based on the total size of headers applied to a message. In Exchange Online,
+     * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+     * For further information on header limits, see 
+     * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+     * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
      * 
      * - Name headers so that you can reuse and update their values later. As such, avoid naming headers in a variable manner
      * (for example, based on user input, timestamp, etc.).
@@ -4391,6 +4405,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -4414,6 +4434,12 @@ export declare namespace Office {
          * the new value.
          *
          * **Note**: This method is intended to set the values of your custom headers.
+         * 
+         * **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
+         * the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by your organization's administrator.
+         * For further information on header limits, see 
+         * {@link https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits | Exchange Online message limits}
+         * and {@link https://docs.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits | Exchange Server message limits}.
          *
          * @remarks
          * [Api set: Mailbox 1.8]
@@ -5756,6 +5782,11 @@ export declare namespace Office {
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
          * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
+         * 
          * @param base64File - The base64-encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
          * @param options - An object literal that contains one or more of the following properties.
@@ -5791,6 +5822,11 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.
          * 
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
+         * 
+         * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted.
+         * For further guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          * 
          * @param base64File - The base64-encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5931,9 +5967,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
@@ -5962,9 +5998,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use
-         * the identifier to retrieve an attachment in the same session that the attachment IDs were retrieved with the `getAttachmentsAsync` or
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from a `getAttachmentsAsync` call, then in the same session, use that identifier to retrieve the attachment.
+         * In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to
          * continue in a separate window.
          * 
@@ -6938,9 +6974,9 @@ export declare namespace Office {
         /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -6969,9 +7005,9 @@ export declare namespace Office {
          /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          * 
-         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
-         * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
-         * `item.attachments` call. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session. 
+         * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
+         * the attachment's identifier from an {@link Office.MessageRead.attachments | item.attachments} call, then in the same session, use that identifier
+         * to retrieve the attachment. In Outlook on the web and mobile devices, the attachment identifier is valid only within the same session.
          * A session is over when the user closes the app, or if the user starts composing an inline form then subsequently pops out the form to 
          * continue in a separate window.
          * 
@@ -7354,6 +7390,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * **Important**:
+         *
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
+         *
+         * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+         * 
          * @remarks
          * [Api set: Mailbox 1.3]
          * 
@@ -7376,6 +7419,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * **Important**:
+         *
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
+         *
+         * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+         * 
          * @remarks
          * [Api set: Mailbox 1.3]
          * 

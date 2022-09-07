@@ -410,19 +410,15 @@ if [ ! -d "json/word_1_1" ]; then
     popd
 fi
 
-if [ ! -f "json/custom-functions-runtime.api.json" ]; then
-    echo Running API Extractor for Custom Functions.
-    pushd api-extractor-inputs-custom-functions-runtime
-    ../node_modules/.bin/api-extractor run
-    popd
-fi
+echo Running API Extractor for Custom Functions.
+pushd api-extractor-inputs-custom-functions-runtime
+../node_modules/.bin/api-extractor run
+popd
 
-if [ ! -f "json/office-runtime.api.json" ]; then
-    echo Running API Extractor for Office Runtime.
-    pushd api-extractor-inputs-office-runtime
-    ../node_modules/.bin/api-extractor run
-    popd
-fi
+echo Running API Extractor for Office Runtime.
+pushd api-extractor-inputs-office-runtime
+../node_modules/.bin/api-extractor run
+popd
 
 pushd scripts
 node midprocessor.js

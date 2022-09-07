@@ -1,0 +1,453 @@
+### YamlMime:TSEnum
+name: Excel.EntityCompactLayoutIcons
+uid: 'excel!Excel.EntityCompactLayoutIcons:enum'
+package: excel!
+fullName: Excel.EntityCompactLayoutIcons
+summary: >-
+  The list of icons available for `EntityCompactLayout`<!-- -->. An icon displays in the Excel UI, either to the left of
+  the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity
+  card. Selecting the icon opens the entity card.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: airplane
+    uid: 'excel!Excel.EntityCompactLayoutIcons.airplane:member'
+    package: excel!
+    summary: |-
+      Airplane icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Airplane"'
+  - name: animal
+    uid: 'excel!Excel.EntityCompactLayoutIcons.animal:member'
+    package: excel!
+    summary: |-
+      Animal icon. Displays as a pawprint.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Animal"'
+  - name: apple
+    uid: 'excel!Excel.EntityCompactLayoutIcons.apple:member'
+    package: excel!
+    summary: |-
+      Apple icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Apple"'
+  - name: art
+    uid: 'excel!Excel.EntityCompactLayoutIcons.art:member'
+    package: excel!
+    summary: |-
+      Art icon. Displays as a paint palette.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Art"'
+  - name: atom
+    uid: 'excel!Excel.EntityCompactLayoutIcons.atom:member'
+    package: excel!
+    summary: |-
+      Atom icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Atom"'
+  - name: bank
+    uid: 'excel!Excel.EntityCompactLayoutIcons.bank:member'
+    package: excel!
+    summary: |-
+      Bank icon. Displays as a building with pillars and a triangular roof.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Bank"'
+  - name: basketball
+    uid: 'excel!Excel.EntityCompactLayoutIcons.basketball:member'
+    package: excel!
+    summary: |-
+      Basketball icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Basketball"'
+  - name: beaker
+    uid: 'excel!Excel.EntityCompactLayoutIcons.beaker:member'
+    package: excel!
+    summary: |-
+      Beaker icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Beaker"'
+  - name: bird
+    uid: 'excel!Excel.EntityCompactLayoutIcons.bird:member'
+    package: excel!
+    summary: |-
+      Bird icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Bird"'
+  - name: book
+    uid: 'excel!Excel.EntityCompactLayoutIcons.book:member'
+    package: excel!
+    summary: |-
+      Book icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Book"'
+  - name: bridge
+    uid: 'excel!Excel.EntityCompactLayoutIcons.bridge:member'
+    package: excel!
+    summary: |-
+      Bridge icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Bridge"'
+  - name: briefcase
+    uid: 'excel!Excel.EntityCompactLayoutIcons.briefcase:member'
+    package: excel!
+    summary: |-
+      Briefcase icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Briefcase"'
+  - name: car
+    uid: 'excel!Excel.EntityCompactLayoutIcons.car:member'
+    package: excel!
+    summary: |-
+      Car icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Car"'
+  - name: cat
+    uid: 'excel!Excel.EntityCompactLayoutIcons.cat:member'
+    package: excel!
+    summary: |-
+      Cat icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Cat"'
+  - name: city
+    uid: 'excel!Excel.EntityCompactLayoutIcons.city:member'
+    package: excel!
+    summary: |-
+      City icon. Displays as multiple tall buildings.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"City"'
+  - name: cloud
+    uid: 'excel!Excel.EntityCompactLayoutIcons.cloud:member'
+    package: excel!
+    summary: |-
+      Cloud icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Cloud"'
+  - name: constellation
+    uid: 'excel!Excel.EntityCompactLayoutIcons.constellation:member'
+    package: excel!
+    summary: |-
+      Constellation icon. Displays dots in the shape of Ursa Major.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Constellation"'
+  - name: dinosaur
+    uid: 'excel!Excel.EntityCompactLayoutIcons.dinosaur:member'
+    package: excel!
+    summary: |-
+      Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Dinosaur"'
+  - name: disaster
+    uid: 'excel!Excel.EntityCompactLayoutIcons.disaster:member'
+    package: excel!
+    summary: |-
+      Disaster icon. Displays as a house sinking in a flood.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Disaster"'
+  - name: dNA
+    uid: 'excel!Excel.EntityCompactLayoutIcons.dNA:member'
+    package: excel!
+    summary: |-
+      DNA icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"DNA"'
+  - name: dog
+    uid: 'excel!Excel.EntityCompactLayoutIcons.dog:member'
+    package: excel!
+    summary: |-
+      Dog icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Dog"'
+  - name: drama
+    uid: 'excel!Excel.EntityCompactLayoutIcons.drama:member'
+    package: excel!
+    summary: |-
+      Drama icon. Displays as a pair of theatre masks.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Drama"'
+  - name: firstAid
+    uid: 'excel!Excel.EntityCompactLayoutIcons.firstAid:member'
+    package: excel!
+    summary: |-
+      First aid icon. Displays as a briefcase with a medical cross symbol.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"FirstAid"'
+  - name: galaxy
+    uid: 'excel!Excel.EntityCompactLayoutIcons.galaxy:member'
+    package: excel!
+    summary: |-
+      Galaxy icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Galaxy"'
+  - name: generic
+    uid: 'excel!Excel.EntityCompactLayoutIcons.generic:member'
+    package: excel!
+    summary: |-
+      The default icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Generic"'
+  - name: hatGraduation
+    uid: 'excel!Excel.EntityCompactLayoutIcons.hatGraduation:member'
+    package: excel!
+    summary: |-
+      Graduation hat icon. Displays as a hat with a tassel.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"HatGraduation"'
+  - name: heartHuman
+    uid: 'excel!Excel.EntityCompactLayoutIcons.heartHuman:member'
+    package: excel!
+    summary: |-
+      Human heart icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"HeartHuman"'
+  - name: justice
+    uid: 'excel!Excel.EntityCompactLayoutIcons.justice:member'
+    package: excel!
+    summary: |-
+      Justice icon. Displays as the scales of justice.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Justice"'
+  - name: languages
+    uid: 'excel!Excel.EntityCompactLayoutIcons.languages:member'
+    package: excel!
+    summary: |-
+      Languages icon. Displays as a document and a globe.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Languages"'
+  - name: leaf
+    uid: 'excel!Excel.EntityCompactLayoutIcons.leaf:member'
+    package: excel!
+    summary: |-
+      Leaf icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Leaf"'
+  - name: location
+    uid: 'excel!Excel.EntityCompactLayoutIcons.location:member'
+    package: excel!
+    summary: |-
+      Location icon. Displays as a map marker.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Location"'
+  - name: map
+    uid: 'excel!Excel.EntityCompactLayoutIcons.map:member'
+    package: excel!
+    summary: |-
+      Map icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Map"'
+  - name: mapPin
+    uid: 'excel!Excel.EntityCompactLayoutIcons.mapPin:member'
+    package: excel!
+    summary: |-
+      Map pin icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"MapPin"'
+  - name: microscope
+    uid: 'excel!Excel.EntityCompactLayoutIcons.microscope:member'
+    package: excel!
+    summary: |-
+      Microscope icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Microscope"'
+  - name: money
+    uid: 'excel!Excel.EntityCompactLayoutIcons.money:member'
+    package: excel!
+    summary: |-
+      Money icon. Displays as paper money and coins.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Money"'
+  - name: mountain
+    uid: 'excel!Excel.EntityCompactLayoutIcons.mountain:member'
+    package: excel!
+    summary: |-
+      Mountain icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Mountain"'
+  - name: movieCamera
+    uid: 'excel!Excel.EntityCompactLayoutIcons.movieCamera:member'
+    package: excel!
+    summary: |-
+      Movie camera icon. Displays as a video camera.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"MovieCamera"'
+  - name: musicNote
+    uid: 'excel!Excel.EntityCompactLayoutIcons.musicNote:member'
+    package: excel!
+    summary: |-
+      Music note icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"MusicNote"'
+  - name: nByN
+    uid: 'excel!Excel.EntityCompactLayoutIcons.nByN:member'
+    package: excel!
+    summary: |-
+      N by N icon. Displays as a three by three grid.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"NByN"'
+  - name: nByOne
+    uid: 'excel!Excel.EntityCompactLayoutIcons.nByOne:member'
+    package: excel!
+    summary: |-
+      N by one icon. Displays as a three by one grid.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"NByOne"'
+  - name: notablePeople
+    uid: 'excel!Excel.EntityCompactLayoutIcons.notablePeople:member'
+    package: excel!
+    summary: |-
+      Notable people icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"NotablePeople"'
+  - name: notebook
+    uid: 'excel!Excel.EntityCompactLayoutIcons.notebook:member'
+    package: excel!
+    summary: |-
+      Notebook icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Notebook"'
+  - name: oneByN
+    uid: 'excel!Excel.EntityCompactLayoutIcons.oneByN:member'
+    package: excel!
+    summary: |-
+      One by N icon. Displays as a one by three grid.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"OneByN"'
+  - name: oneByOne
+    uid: 'excel!Excel.EntityCompactLayoutIcons.oneByOne:member'
+    package: excel!
+    summary: |-
+      One by one icon. Displays as a one by one grid.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"OneByOne"'
+  - name: partlySunnyWeather
+    uid: 'excel!Excel.EntityCompactLayoutIcons.partlySunnyWeather:member'
+    package: excel!
+    summary: |-
+      Partly sunny weather icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"PartlySunnyWeather"'
+  - name: person
+    uid: 'excel!Excel.EntityCompactLayoutIcons.person:member'
+    package: excel!
+    summary: |-
+      Person icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Person"'
+  - name: pilates
+    uid: 'excel!Excel.EntityCompactLayoutIcons.pilates:member'
+    package: excel!
+    summary: |-
+      Pilates icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Pilates"'
+  - name: planet
+    uid: 'excel!Excel.EntityCompactLayoutIcons.planet:member'
+    package: excel!
+    summary: |-
+      Planet icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Planet"'
+  - name: pointScan
+    uid: 'excel!Excel.EntityCompactLayoutIcons.pointScan:member'
+    package: excel!
+    summary: |-
+      Point scan icon. Displays as a target focus symbol.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"PointScan"'
+  - name: running
+    uid: 'excel!Excel.EntityCompactLayoutIcons.running:member'
+    package: excel!
+    summary: |-
+      Running icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Running"'
+  - name: satellite
+    uid: 'excel!Excel.EntityCompactLayoutIcons.satellite:member'
+    package: excel!
+    summary: |-
+      Satellite icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Satellite"'
+  - name: syringe
+    uid: 'excel!Excel.EntityCompactLayoutIcons.syringe:member'
+    package: excel!
+    summary: |-
+      Syringe icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Syringe"'
+  - name: violin
+    uid: 'excel!Excel.EntityCompactLayoutIcons.violin:member'
+    package: excel!
+    summary: |-
+      Violin icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Violin"'
+  - name: wand
+    uid: 'excel!Excel.EntityCompactLayoutIcons.wand:member'
+    package: excel!
+    summary: |-
+      Wand icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Wand"'
+  - name: yoga
+    uid: 'excel!Excel.EntityCompactLayoutIcons.yoga:member'
+    package: excel!
+    summary: |-
+      Yoga icon.
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Yoga"'

@@ -78,6 +78,8 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+      // Get the footnotes in the selected document range.
+
       await Word.run(async (context) => {
         const footnotes = context.document.getSelection().footnotes;
         footnotes.load("length");
@@ -381,7 +383,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to clear the contents of the proxy range object.
           range.clear();
@@ -432,7 +434,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to delete the range object.
           range.delete();
@@ -505,8 +507,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Get the comments in the selected content.
+
       await Word.run(async (context) => {
-        let comments = context.document.getSelection().getComments();
+        const comments = context.document.getSelection().getComments();
 
         // Load objects for display in Script Lab console.
         comments.load();
@@ -544,10 +548,10 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to get the HTML of the current selection.
-          var html = range.getHtml();
+          const html = range.getHtml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -641,10 +645,10 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to get the OOXML of the current selection.
-          var ooxml = range.getOoxml();
+          const ooxml = range.getOoxml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -710,10 +714,12 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+      // Get the reviewed text.
+
       await Word.run(async (context) => {
         const range = context.document.getSelection();
-        let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-        let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+        const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+        const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
         await context.sync();
 
@@ -769,14 +775,14 @@ methods:
 
       await Word.run(async (context) => {
         // Gets the complete sentence (as range) associated with the insertion point.
-        let sentences = context.document
+        const sentences = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
         // Expands the range to the end of the paragraph to get all the complete sentences.
-        let sentencesToTheEndOfParagraph = sentences.items[0]
+        const sentencesToTheEndOfParagraph = sentences.items[0]
           .getRange()
           .expandTo(
             context.document
@@ -847,7 +853,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert a page break after the selected text.
           range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
@@ -891,11 +897,13 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Set a comment on the selected content.
+
       await Word.run(async (context) => {
-        let text = $("#comment-text")
+        const text = $("#comment-text")
           .val()
           .toString();
-        let comment = context.document.getSelection().insertComment(text);
+        const comment = context.document.getSelection().insertComment(text);
 
         // Load object for display in Script Lab console.
         comment.load();
@@ -935,18 +943,18 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
       await Word.run(async (context) => {
-          let results = context.document.body.search("Contractor");
+          const results = context.document.body.search("Contractor");
           results.load("font/bold");
 
           // Check to make sure these content controls haven't been added yet.
-          let customerContentControls = context.document.contentControls.getByTag("customer");
+          const customerContentControls = context.document.contentControls.getByTag("customer");
           customerContentControls.load("text");
           await context.sync();
 
         if (customerContentControls.items.length === 0) {
-          for (var i = 0; i < results.items.length; i++) { 
+          for (let i = 0; i < results.items.length; i++) { 
               results.items[i].font.bold = true;
-              var cc = results.items[i].insertContentControl();
+              let cc = results.items[i].insertContentControl();
               cc.tag = "customer";  // This value is used in the next step of this sample.
               cc.title = "Customer Name " + i;
           }
@@ -995,7 +1003,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert base64 encoded .docx at the beginning of the range.
           // You'll need to implement getBase64() to make this work.
@@ -1060,6 +1068,8 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+      // Set a footnote on the selected content.
+
       await Word.run(async (context) => {
         const text = $("#input-footnote")
           .val()
@@ -1098,7 +1108,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert HTML in to the beginning of the range.
           range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
@@ -1203,7 +1213,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert OOXML in to the beginning of the range.
           range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -1267,7 +1277,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert the paragraph after the range.
           range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
@@ -1386,7 +1396,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert the paragraph at the end of the range.
           range.insertText('New text inserted into the range.', Word.InsertLocation.end);
@@ -1592,7 +1602,7 @@ methods:
 
           // Queue a command to get the current selection and then
           // create a proxy range object with the results.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
 
           // Queue a command to insert HTML in to the beginning of the range.
           range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
@@ -1734,10 +1744,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1752,9 +1764,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

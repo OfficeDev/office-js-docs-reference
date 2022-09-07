@@ -1,7 +1,7 @@
 ---
 title: FunctionFile element in the manifest file
 description: Specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI.
-ms.date: 05/09/2022
+ms.date: 08/26/2022
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ Specifies the source code file for operations that an add-in exposes in one of t
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
-The **\<FunctionFile\>** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **\<FunctionFile\>** element can be no more than 32 characters and is set to the value of the `id` attribute of a **\<Url\>** element in the **\<Resources\>** element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by UI-less add-in command buttons, as defined by the [Control element](control.md).
+The **\<FunctionFile\>** element is a child element of [DesktopFormFactor](desktopformfactor.md) or [MobileFormFactor](mobileformfactor.md). The `resid` attribute of the **\<FunctionFile\>** element can be no more than 32 characters and is set to the value of the `id` attribute of a **\<Url\>** element in the [Resources](resources.md) element that contains the URL to an HTML file that contains or loads all the JavaScript functions used by [function command](/office/dev/add-ins/design/add-in-commands) buttons, as defined by the [Control element](control.md).
 
 > [!NOTE]
 > When the add-in is configured to use a [shared runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime), the functions in the code file run in the same JavaScript runtime (and share a common global namespace) as the JavaScript in the add-in's task pane (if any).
@@ -35,15 +35,24 @@ The following is an example of the **\<FunctionFile\>** element.
 <DesktopFormFactor>
   <FunctionFile resid="residDesktopFuncUrl" />
   <ExtensionPoint xsi:type="PrimaryCommandSurface">
-    <!-- information about this extension point -->
+    <!-- Information about this extension point. -->
   </ExtensionPoint>
 
-  <!-- You can define more than one ExtensionPoint element as needed -->
-
+  <!-- You can define more than one ExtensionPoint element as needed. -->
 </DesktopFormFactor>
+
+...
+
+<Resources>
+    <bt:Urls>
+        <bt:Url id="residDesktopFuncUrl" DefaultValue="https://www.contoso.com/Pages/Home.aspx" />
+    </bt:Urls>
+
+    <!-- Define other resources as needed. -->
+</Resources>
 ```
 
-The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for UI-less buttons.
+The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for function command buttons.
 
 The following is an example of the contents of a `<script>` tag in an HTML file. The code defines and registers a `trackMessage` function.
 
@@ -53,8 +62,8 @@ Office.initialize = function () {
 }
 
 function trackMessage (event) {
-    var buttonId = event.source.id;    
-    var itemId = Office.context.mailbox.item.id;
+    const buttonId = event.source.id;    
+    const itemId = Office.context.mailbox.item.id;
     // save this message
     event.completed();
 }
@@ -79,7 +88,7 @@ function writeText(event) {
 
     Office.context.document.setSelectedDataAsync("ExecuteFunction works. Button ID=" + event.source.id,
         function (asyncResult) {
-            var error = asyncResult.error;
+            const error = asyncResult.error;
             if (asyncResult.status === "failed") {
                 // Show error message.
             }
@@ -96,4 +105,4 @@ Office.actions.associate("writeText", writeText);
 ```
 
 > [!IMPORTANT]
-> The call to `event.completed` signals that you have successfully handled the event. When a function is called multiple times, such as multiple clicks on the same add-in command, all events are automatically queued. The first event runs automatically, while the other events remain on the queue. When your function calls `event.completed`, the next queued call to that function runs. You must call `event.completed`; otherwise your function will not run.
+> The call to `event.completed` signals that you've successfully handled the event. When a function is called multiple times, such as multiple clicks on the same add-in command, all events are automatically queued. The first event runs automatically, while the other events remain on the queue. When your function calls `event.completed`, the next queued call to that function runs. You must call `event.completed`; otherwise your function will not run.

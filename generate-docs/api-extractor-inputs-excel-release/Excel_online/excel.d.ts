@@ -740,6 +740,224 @@ export declare namespace Excel {
     export function postprocessBindingDescriptor(response: any): any;
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
+     * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+                When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApiOnline 1.1]
+     */
+    export class AllowEditRange extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Specifies the range associated with the object.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        address: string;
+        /**
+         * Specifies if the object is password protected.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly isPasswordProtected: boolean;
+        /**
+         * Specifies the title of the object.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title.
+                    If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        title: string;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.AllowEditRangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.AllowEditRange): void;
+        /**
+         * Deletes the object from the `AllowEditRangeCollection`.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails the delete operation.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        delete(): void;
+        /**
+         * Pauses worksheet protection for the object for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is already paused.
+                    If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the object.
+                    If the password is incorrect, then this method throws a `BadPassword` error and fails to pause protection for the object.
+                    If a password is supplied but the object does not require a password, the inputted password will be ignored and the operation will succeed.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password associated with the `AllowEditRange` object.
+         */
+        pauseProtection(password?: string): void;
+        /**
+         * Changes the password associated with the object.
+                    Setting the password string as empty ("") or `null` will remove password protection from the object.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the set operation fails.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password associated with the `AllowEditRange` object.
+         */
+        setPassword(password?: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.AllowEditRangeLoadOptions): Excel.AllowEditRange;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.AllowEditRange;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.AllowEditRange;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Excel.AllowEditRange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Excel.Interfaces.AllowEditRangeData;
+    }
+    /**
+     * Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet protection properties.
+                When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+     *
+     * @remarks
+     * [Api set: ExcelApiOnline 1.1]
+     */
+    export class AllowEditRangeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Excel.AllowEditRange[];
+        /**
+         * Adds an `AllowEditRange` object to the worksheet.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and the add operation fails.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param title - The title string of the `AllowEditRange` object to be added.
+         * @param rangeAddress - The range address of the `AllowEditRange` object to be added.
+         * @param options - Additional options to be added to the `AllowEditRange` object, such as the password.
+         */
+        add(title: string, rangeAddress: string, options?: Excel.AllowEditRangeOptions): void;
+        /**
+         * Returns the number of `AllowEditRange` objects in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets the `AllowEditRange` object by its title.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param key - The title of the `AllowEditRange`.
+         * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then an `ItemNotFound` error is thrown.
+         */
+        getItem(key: string): Excel.AllowEditRange;
+        /**
+         * Returns an `AllowEditRange` object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param index - The index of the `AllowEditRange` object in the collection.
+         * @returns The `AllowEditRange` at the given index.
+         */
+        getItemAt(index: number): Excel.AllowEditRange;
+        /**
+         * Gets the `AllowEditRange` object by its title.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param key - The title of the `AllowEditRange`.
+         * @returns The `AllowEditRange` with the title. If there is no `AllowEditRange` with the given title, then this method returns an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         */
+        getItemOrNullObject(key: string): Excel.AllowEditRange;
+        /**
+         * Pauses worksheet protection for all `AllowEditRange` objects found in this worksheet that have the given password for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is paused.
+                    If worksheet protection cannot be paused, this method throws an `UnsupportedOperation` error and fails to pause protection for the range.
+                    If the password does not match any `AllowEditRange` objects in the collection, then this method throws a `BadPassword` error and fails to pause protection for any range in the collection.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password to pause protection on the `AllowEditRange` objects.
+         */
+        pauseProtection(password: string): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Excel.Interfaces.AllowEditRangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.AllowEditRangeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.AllowEditRangeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.AllowEditRangeCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Excel.AllowEditRangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Excel.Interfaces.AllowEditRangeCollectionData;
+    }
+    /**
+     * The interface used to construct optional fields of the `AllowEditRange` object.
+     *
+     * @remarks
+     * [Api set: ExcelApiOnline 1.1]
+     */
+    export interface AllowEditRangeOptions {
+        /**
+         * The password associated with the `AllowEditRange`.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        password?: string;
+    }
+    /**
      * Notifies when a worksheet is moved within a workbook.
                 
                 If a worksheet is moved from one position within the workbook to another
@@ -2520,12 +2738,33 @@ export declare namespace Excel {
      */
     export interface WorksheetProtectionChangedEventArgs {
         /**
+         * Specifies if any of the `AllowEditRange` objects have changed.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        allowEditRangesChanged: boolean;
+        /**
          * Gets the current protection status of the worksheet.
          *
          * @remarks
          * [Api set: ExcelApi 1.14]
          */
         isProtected: boolean;
+        /**
+         * Specifies if the `WorksheetProtectionOptions` have changed.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        protectionOptionsChanged: boolean;
+        /**
+         * Specifies if the worksheet password has changed.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        sheetPasswordChanged: boolean;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
@@ -4814,6 +5053,35 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange` objects, which work with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly allowEditRanges: Excel.AllowEditRangeCollection;
+        /**
+         * Specifies if protection can be paused for this worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly canPauseProtection: boolean;
+        /**
+         * Specifies if the sheet is password protected.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly isPasswordProtected: boolean;
+        /**
+         * Specifies if worksheet protection is paused.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly isPaused: boolean;
+        /**
          * Specifies the protection options for the worksheet.
          *
          * @remarks
@@ -4828,6 +5096,38 @@ export declare namespace Excel {
          */
         readonly protected: boolean;
         /**
+         * Specifies the protection options saved in the worksheet.
+                    This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        readonly savedOptions: Excel.WorksheetProtectionOptions;
+        /**
+         * Specifies if the password can be used to unlock worksheet protection.
+                    This method doesn't change the worksheet protection state.
+                    If a password is inputted but no password is required to unlock worksheet protection, this method will return false.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password to check against the protected worksheet.
+         * @returns Returns `true` if the password can be used to unlock worksheet protection. Otherwise, returns `false`.
+         */
+        checkPassword(password?: string): OfficeExtension.ClientResult<boolean>;
+        /**
+         * Pauses worksheet protection for the given worksheet object for the user in the current session.
+                    This method does nothing if worksheet protection isn't enabled or is already paused.
+                    If the password is incorrect, then this method throws an `InvalidArgument` error and fails to pause protection.
+                    This method does not change the protection state if worksheet protection is not enabled or already paused.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password associated with the protected worksheet.
+         */
+        pauseProtection(password?: string): void;
+        /**
          * Protects a worksheet. Fails if the worksheet has already been protected.
          *
          * @remarks
@@ -4838,6 +5138,27 @@ export declare namespace Excel {
          */
         protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
         /**
+         * Resumes worksheet protection for the given worksheet object for the user in a given session.
+                    Worksheet protection must be paused for this method to work. If worksheet protection is not paused, then this method will not change the protection state of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        resumeProtection(): void;
+        /**
+         * Changes the password associated with the `WorksheetProtection` object.
+                    Setting the password as an empty string ("") or as `null` will remove password protection from the `WorksheetProtection` object.
+                    Worksheet protection must be enabled and paused for this method to work properly.
+                    If worksheet protection is disabled, this method throws an `InvalidOperation` error and fails to change the password.
+                    If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the password.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param password - The password associated with the `WorksheetProtection` object.
+         */
+        setPassword(password?: string): void;
+        /**
          * Unprotects a worksheet.
          *
          * @remarks
@@ -4846,6 +5167,17 @@ export declare namespace Excel {
          * @param password - Sheet protection password.
          */
         unprotect(password?: string): void;
+        /**
+         * Change the worksheet protection options associated with the `WorksheetProtection` object.
+                    Worksheet protection must be disabled or paused for this method to work properly.
+                    If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to change the worksheet protection options.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param options - The options interface associated with the `WorksheetProtection` object.
+         */
+        updateOptions(options: Excel.WorksheetProtectionOptions): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -5243,7 +5575,7 @@ export declare namespace Excel {
          */
         readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];
         /**
-         * Represents Excel's number format code for the given range.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -6111,11 +6443,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
@@ -6491,11 +6823,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.RangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.RangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.RangeAreas;
         /**
@@ -6575,11 +6907,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.WorkbookRangeAreas;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.WorkbookRangeAreas;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.WorkbookRangeAreas;
         /**
@@ -14784,8 +15116,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.14]
          *
          * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
-                     If the index value is not supported(for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
-                     then an `InvalidArgument` exception will be thrown.
+                     If the index value is not supported (for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
+                     then an `InvalidArgument` error will be thrown.
          */
         clearColumnCriteria(columnIndex: number): void;
         /**
@@ -18886,7 +19218,8 @@ export declare namespace Excel {
          */
         readonly font: Excel.ConditionalRangeFont;
         /**
-         * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                    Cleared if `null` is passed in.
          *
          * @remarks
          * [Api set: ExcelApi 1.6]
@@ -19626,7 +19959,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the table style.
+         * Specifies the name of the table style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -19790,7 +20123,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the PivotTable style.
+         * Specifies the name of the PivotTable style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -19954,7 +20287,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the slicer style.
+         * Specifies the name of the slicer style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -20118,7 +20451,7 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the name of the timeline style.
+         * Specifies the name of the timeline style.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -20855,7 +21188,8 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Refreshes all the data connections in the collection.
+         * Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.
+                    Data connections unsupported by this method are: Power Query connections, data connections outside the original workbook (except Power BI connections), and connections to data protected by a firewall.
          *
          * @remarks
          * [Api set: ExcelApi 1.7]
@@ -25582,7 +25916,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
+     * [Api set: ExcelApi 1.1]
      */
     enum ClearApplyTo {
         /**
@@ -26984,7 +27318,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     * [Api set: ExcelApi 1.1]
      */
     enum RangeValueType {
         /**
@@ -27236,7 +27570,7 @@ export declare namespace Excel {
         /**
          * `Unknown` indicates that the type of data change is not one of the listed types.
          * @remarks
-         * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
+         * [Api set: ExcelApi 1.8. The name of this value was 'Others' in ExcelApi 1.7]
          */
         unknown = "Unknown",
         /**
@@ -34244,6 +34578,7 @@ export declare namespace Excel {
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
         unsupportedFeature = "UnsupportedFeature",
+        unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
@@ -34261,6 +34596,32 @@ export declare namespace Excel {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
+        export interface AllowEditRangeUpdateData {
+            /**
+             * Specifies the range associated with the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            address?: string;
+            /**
+             * Specifies the title of the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title.
+                        If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            title?: string;
+        }
+        /** An interface for updating data on the AllowEditRangeCollection object, for use in `allowEditRangeCollection.set({ ... })`. */
+        export interface AllowEditRangeCollectionUpdateData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
         }
         /** An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
@@ -34490,7 +34851,7 @@ export declare namespace Excel {
              */
             hyperlink?: Excel.RangeHyperlink;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -37953,7 +38314,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontUpdateData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -38218,7 +38580,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -38232,7 +38594,7 @@ export declare namespace Excel {
         /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
         export interface PivotTableStyleUpdateData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -38246,7 +38608,7 @@ export declare namespace Excel {
         /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
         export interface SlicerStyleUpdateData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -38260,7 +38622,7 @@ export declare namespace Excel {
         /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
         export interface TimelineStyleUpdateData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -39035,6 +39397,39 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
+        export interface AllowEditRangeData {
+            /**
+             * Specifies the range associated with the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            address?: string;
+            /**
+             * Specifies if the object is password protected.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPasswordProtected?: boolean;
+            /**
+             * Specifies the title of the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title.
+                        If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            title?: string;
+        }
+        /** An interface describing the data returned by calling `allowEditRangeCollection.toJSON()`. */
+        export interface AllowEditRangeCollectionData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
+        }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
             /**
@@ -39565,6 +39960,35 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
             /**
+            * Specifies the `AllowEditRangeCollection` object found in this worksheet. This is a collection of `AllowEditRange` objects, which work with worksheet protection properties.
+            When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+            *
+            * @remarks
+            * [Api set: ExcelApiOnline 1.1]
+            */
+            allowEditRanges?: Excel.Interfaces.AllowEditRangeData[];
+            /**
+             * Specifies if protection can be paused for this worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            canPauseProtection?: boolean;
+            /**
+             * Specifies if the sheet is password protected.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPasswordProtected?: boolean;
+            /**
+             * Specifies if worksheet protection is paused.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPaused?: boolean;
+            /**
              * Specifies the protection options for the worksheet.
              *
              * @remarks
@@ -39578,6 +40002,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            /**
+             * Specifies the protection options saved in the worksheet.
+                        This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            savedOptions?: Excel.WorksheetProtectionOptions;
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -39724,7 +40156,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: Excel.LinkedDataTypeState[][];
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -44056,7 +44488,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontData;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -44314,7 +44747,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
         export interface TableStyleData {
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44335,7 +44768,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `pivotTableStyle.toJSON()`. */
         export interface PivotTableStyleData {
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44356,7 +44789,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
         export interface SlicerStyleData {
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -44377,7 +44810,7 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `timelineStyle.toJSON()`. */
         export interface TimelineStyleData {
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -45485,6 +45918,84 @@ export declare namespace Excel {
             value?: T;
         }
         /**
+         * Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        export interface AllowEditRangeLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Specifies the range associated with the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            address?: boolean;
+            /**
+             * Specifies if the object is password protected.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPasswordProtected?: boolean;
+            /**
+             * Specifies the title of the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title.
+                        If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            title?: boolean;
+        }
+        /**
+         * Represents the set of `AllowEditRange` objects found in a worksheet. `AllowEditRange` objects work with worksheet protection properties.
+                    When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest of the worksheet.
+         *
+         * @remarks
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        export interface AllowEditRangeCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the range associated with the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the range.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            address?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies if the object is password protected.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPasswordProtected?: boolean;
+            /**
+             * For EACH ITEM in the collection: Specifies the title of the object.
+                        Worksheet protection must be disabled or paused for this method to work properly.
+                        If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails to set the title.
+                        If there is already an existing `AllowEditRange` with the same string, or if the string is `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            title?: boolean;
+        }
+        /**
          * Represents a Power Query query.
          *
          * @remarks
@@ -46161,6 +46672,27 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
+             * Specifies if protection can be paused for this worksheet.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            canPauseProtection?: boolean;
+            /**
+             * Specifies if the sheet is password protected.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPasswordProtected?: boolean;
+            /**
+             * Specifies if worksheet protection is paused.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            isPaused?: boolean;
+            /**
              * Specifies the protection options for the worksheet.
              *
              * @remarks
@@ -46174,6 +46706,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            /**
+             * Specifies the protection options saved in the worksheet.
+                        This will return the same `WorksheetProtectionOptions` object regardless of the worksheet protection state.
+             *
+             * @remarks
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            savedOptions?: boolean;
         }
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
@@ -46330,7 +46870,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -53256,7 +53796,8 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
             /**
-             * Represents Excel's number format code for the given range. Cleared if `null` is passed in.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+                        Cleared if `null` is passed in.
              *
              * @remarks
              * [Api set: ExcelApi 1.6]
@@ -53753,7 +54294,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the table style.
+             * For EACH ITEM in the collection: Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53779,7 +54320,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the table style.
+             * Specifies the name of the table style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53805,7 +54346,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the PivotTable style.
+             * For EACH ITEM in the collection: Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53831,7 +54372,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the PivotTable style.
+             * Specifies the name of the PivotTable style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53857,7 +54398,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the slicer style.
+             * For EACH ITEM in the collection: Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53883,7 +54424,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the slicer style.
+             * Specifies the name of the slicer style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53909,7 +54450,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the name of the timeline style.
+             * For EACH ITEM in the collection: Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -53935,7 +54476,7 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
-             * Gets the name of the timeline style.
+             * Specifies the name of the timeline style.
              *
              * @remarks
              * [Api set: ExcelApi 1.10]
@@ -54419,7 +54960,7 @@ export declare namespace Excel {
              */
             linkedDataTypeState?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents Excel's number format code for the given range.
+             * For EACH ITEM in the collection: Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

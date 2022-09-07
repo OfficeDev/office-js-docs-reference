@@ -4,7 +4,58 @@ uid: 'excel!Excel.IconSet:enum'
 package: excel!
 fullName: Excel.IconSet
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B8:E13");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.iconSet);
+      const iconSetCF = conditionalFormat.iconSet;
+      iconSetCF.style = Excel.IconSet.threeTriangles;
+
+      /*
+          The iconSetCF.criteria array is automatically prepopulated with
+          criterion elements whose properties have been given default settings.
+          You can't write to each property of a criterion directly. Instead,
+          replace the whole criteria object.
+
+          With a "three*" icon set style, such as "threeTriangles", the third
+          element in the criteria array (criteria[2]) defines the "top" icon;
+          e.g., a green triangle. The second (criteria[1]) defines the "middle"
+          icon. The first (criteria[0]) defines the "low" icon, but it
+          can often be left empty as the following object shows, because every
+          cell that does not match the other two criteria always gets the low
+          icon.            
+      */
+      iconSetCF.criteria = [
+          {} as any,
+          {
+              type: Excel.ConditionalFormatIconRuleType.number,
+              operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+              formula: "=700"
+          },
+          {
+              type: Excel.ConditionalFormatIconRuleType.number,
+              operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+              formula: "=1000",
+          }
+      ];
+
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

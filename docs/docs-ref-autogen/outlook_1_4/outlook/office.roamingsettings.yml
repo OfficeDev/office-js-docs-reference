@@ -68,9 +68,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
-      var settingName = $("#settingName").val();
+      const settingName = $("#settingName").val();
 
-      var settingValue = Office.context.roamingSettings.get(settingName);
+      const settingValue = Office.context.roamingSettings.get(settingName);
 
       $("#settingValue").val(settingValue);
 
@@ -205,9 +205,9 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
-      var settingName = $("#settingName").val();
+      const settingName = $("#settingName").val();
 
-      var settingValue = $("#settingValue").val();
+      const settingValue = $("#settingValue").val();
 
       Office.context.roamingSettings.set(settingName, settingValue);
 

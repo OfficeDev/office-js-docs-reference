@@ -4,7 +4,26 @@ uid: 'excel!Excel.ConnectorType:enum'
 package: excel!
 fullName: Excel.ConnectorType
 summary: ''
-remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+  await Excel.run(async (context) => {
+      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+      const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+      line.name = "StraightLine";
+      await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

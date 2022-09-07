@@ -11,6 +11,18 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: allowEditRangesChanged
+    uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#allowEditRangesChanged:member'
+    package: excel!
+    fullName: allowEditRangesChanged
+    summary: Specifies if any of the `AllowEditRange` objects have changed.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditRangesChanged: boolean;'
+      return:
+        type: boolean
   - name: isProtected
     uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#isProtected:member'
     package: excel!
@@ -29,8 +41,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
@@ -45,6 +58,30 @@ properties:
     isDeprecated: false
     syntax:
       content: 'isProtected: boolean;'
+      return:
+        type: boolean
+  - name: protectionOptionsChanged
+    uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#protectionOptionsChanged:member'
+    package: excel!
+    fullName: protectionOptionsChanged
+    summary: Specifies if the `WorksheetProtectionOptions` have changed.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protectionOptionsChanged: boolean;'
+      return:
+        type: boolean
+  - name: sheetPasswordChanged
+    uid: 'excel!Excel.WorksheetProtectionChangedEventArgs#sheetPasswordChanged:member'
+    package: excel!
+    fullName: sheetPasswordChanged
+    summary: Specifies if the worksheet password has changed.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sheetPasswordChanged: boolean;'
       return:
         type: boolean
   - name: source
@@ -65,8 +102,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
@@ -113,8 +151,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;

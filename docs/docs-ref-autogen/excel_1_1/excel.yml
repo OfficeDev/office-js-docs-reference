@@ -73,6 +73,10 @@ enums:
   - 'excel!Excel.SheetVisibility:enum'
   - 'excel!Excel.VerticalAlignment:enum'
 interfaces:
+  - 'excel!Excel.Interfaces.AllowEditRangeCollectionData:interface'
+  - 'excel!Excel.Interfaces.AllowEditRangeCollectionUpdateData:interface'
+  - 'excel!Excel.Interfaces.AllowEditRangeData:interface'
+  - 'excel!Excel.Interfaces.AllowEditRangeUpdateData:interface'
   - 'excel!Excel.Interfaces.ApplicationData:interface'
   - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
   - 'excel!Excel.Interfaces.ApplicationUpdateData:interface'

@@ -18,10 +18,41 @@ properties:
     uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
     package: custom-functions-runtime!
     fullName: setResult
-    summary: >-
-      Set the result for the custom function. May be called more than once. \[ [API set: CustomFunctionsRuntime
-      1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
-    remarks: ''
+    summary: Set the result for the custom function. May be called more than once.
+    remarks: >-
+      \[ [API set: CustomFunctionsRuntime 1.1](/javascript/api/requirement-sets/excel/custom-functions-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/16-custom-functions/streaming-function.yaml
+
+      /** @CustomFunction 
+       * @description Increments the cell with a given amount at a specified interval in milliseconds.
+       * @param {number} amount - The amount to add to the cell value on each increment.
+       * @param {number} interval - The time in milliseconds to wait before the next increment on the cell.
+       * @param {CustomFunctions.StreamingInvocation<number>} invocation - Parameter to send results to Excel
+       *     or respond to the user canceling the function.
+       * @returns An incrementing value.
+       */
+      function increment(amount: number, interval: number, invocation: CustomFunctions.StreamingInvocation<number>):
+      void {
+        let result = 0;
+        const timer = setInterval(() => {
+          result += amount;
+          invocation.setResult(result);
+        }, interval);
+
+        invocation.onCanceled = () => {
+          clearInterval(timer);
+        }
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

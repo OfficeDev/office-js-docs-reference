@@ -16,8 +16,8 @@ properties:
     package: excel!
     fullName: allowEditRangesChanged
     summary: Specifies if any of the `AllowEditRange` objects have changed.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'allowEditRangesChanged: boolean;'
@@ -41,8 +41,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
@@ -64,8 +65,8 @@ properties:
     package: excel!
     fullName: protectionOptionsChanged
     summary: Specifies if the `WorksheetProtectionOptions` have changed.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'protectionOptionsChanged: boolean;'
@@ -76,8 +77,8 @@ properties:
     package: excel!
     fullName: sheetPasswordChanged
     summary: Specifies if the worksheet password has changed.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sheetPasswordChanged: boolean;'
@@ -101,8 +102,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;
@@ -149,8 +151,9 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
+          // This function is an event handler that returns the protection status of a worksheet
+          // and information about the changed worksheet.
           await Excel.run(async (context) => {
-              // This method is an event handler that returns the protection status of a worksheet and information about the changed worksheet.
               const protectionStatus = event.isProtected;
               const worksheetId = event.worksheetId;
               const source = event.source;

@@ -11,6 +11,32 @@ remarks: >-
   **[Applicable Outlook
   mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
+  Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
+      const ewsId = Office.context.mailbox.item.itemId;
+      const token = result.value;
+      const restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+      const getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
+              
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', getMessageUrl);
+      xhr.setRequestHeader("Authorization", "Bearer " + token);
+      xhr.onload = function (e) {
+          console.log(this.response);
+      }
+      xhr.send();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

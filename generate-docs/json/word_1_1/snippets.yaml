@@ -25,7 +25,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to clear the contents of the body.
         body.clear();
@@ -71,10 +71,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
+        body.load('font/size, font/name, font/color, style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -82,7 +82,7 @@
         
         // Show the results of the load method.
         // Here we show the property values on the body object.
-        var results = 'Font size: ' + body.font.size +
+        const results = 'Font size: ' + body.font.size +
                         '; Font name: ' + body.font.name +
                         '; Font color: ' + body.font.color +
                         '; Body style: ' + body.style;
@@ -93,6 +93,8 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    // Get the footnotes in the document body.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -106,8 +108,10 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Get the comments in the document body.
+
     await Word.run(async (context) => {
-      let comments = context.document.body.getComments();
+      const comments = context.document.body.getComments();
 
       // Load objects for display in Script Lab console.
       comments.load();
@@ -122,10 +126,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to get the HTML contents of the body.
-        var bodyHTML = body.getHtml();
+        const bodyHTML = body.getHtml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -138,10 +142,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to get the OOXML contents of the body.
-        var bodyOOXML = body.getOoxml();
+        const bodyOOXML = body.getOoxml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -154,7 +158,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert a page break at the start of the document body.
         body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
@@ -170,7 +174,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to wrap the body in a content control.
         body.insertContentControl();
@@ -186,7 +190,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert base64 encoded .docx at the beginning of the content body.
         // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
@@ -203,7 +207,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert HTML in to the beginning of the body.
         body.insertHtml(
@@ -221,7 +225,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert OOXML in to the beginning of the body.
         body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -251,7 +255,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert the paragraph at the end of the document body.
         body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
@@ -274,7 +278,7 @@
 
     await Word.run(async (context) => {
       // Second sentence, let's insert it as a paragraph after the previously inserted one.
-      let secondSentence = context.document.body.insertParagraph(
+      const secondSentence = context.document.body.insertParagraph(
         "This is the first text with a custom style.",
         "End"
       );
@@ -295,11 +299,11 @@
 
     await Word.run(async (context) => {
       // Use a two-dimensional array to hold the initial table values.
-      let data = [
+      const data = [
         ["Tokyo", "Beijing", "Seattle"],
         ["Apple", "Orange", "Pineapple"]
       ];
-      let table = context.document.body.insertTable(2, 3, "Start", data);
+      const table = context.document.body.insertTable(2, 3, "Start", data);
       table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
       table.styleFirstColumn = false;
 
@@ -311,7 +315,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert text in to the beginning of the body.
         body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
@@ -327,7 +331,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
-      let paragraphs = context.document.body.paragraphs;
+      const paragraphs = context.document.body.paragraphs;
       paragraphs.load("text");
       await context.sync();
 
@@ -376,7 +380,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
     await Word.run(async (context) => {
-      let results = context.document.body.search("Online");
+      const results = context.document.body.search("Online");
       results.load("length");
 
       await context.sync();
@@ -395,7 +399,7 @@
     await Word.run(async (context) => {
       // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
       // (i.e. use wildcards).
-      let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+      const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
       results.load("length");
 
       await context.sync();
@@ -413,7 +417,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
-      let paragraphs = context.document.body.paragraphs;
+      const paragraphs = context.document.body.paragraphs;
       paragraphs.load("text");
       await context.sync();
 
@@ -462,7 +466,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to select the document body.
         // The Word UI will move to the selected document body.
@@ -480,10 +484,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to load the text in document body.
-        context.load(body, 'text');
+        body.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -506,6 +510,8 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+    // Get the current change tracking mode.
+
     await Word.run(async (context) => {
       const document = context.document;
       document.load("changeTrackingMode");
@@ -524,10 +530,12 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+    // Get the reviewed text.
+
     await Word.run(async (context) => {
       const range = context.document.getSelection();
-      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+      const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
       await context.sync();
 
@@ -539,11 +547,13 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Edit the first comment in the selected content.
+
     await Word.run(async (context) => {
-      let text = $("#edit-comment-text")
+      const text = $("#edit-comment-text")
         .val()
         .toString();
-      let comment = context.document
+      const comment = context.document
         .getSelection()
         .getComments()
         .getFirst();
@@ -561,6 +571,8 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Delete the first comment in the selected content.
+
     await Word.run(async (context) => {
       context.document
         .getSelection()
@@ -576,8 +588,10 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Get the range of the first comment in the selected content.
+
     await Word.run(async (context) => {
-      let range = context.document
+      const range = context.document
         .getSelection()
         .getComments()
         .getFirst()
@@ -592,16 +606,18 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Reply to the first active comment in the selected content.
+
     await Word.run(async (context) => {
-      let text = $("#reply-text")
+      const text = $("#reply-text")
         .val()
         .toString();
-      let comments = context.document.getSelection().getComments();
+      const comments = context.document.getSelection().getComments();
       comments.load("items");
       await context.sync();
-      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      const firstActiveComment = comments.items.find((item) => item.resolved !== true);
       if (firstActiveComment) {
-        let reply = firstActiveComment.reply(text);
+        const reply = firstActiveComment.reply(text);
         console.log("Reply added");
       } else {
         console.log("No active comment was found in the selection so couldn't reply.");
@@ -612,8 +628,10 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Toggle Resolved status of the first comment in the selected content.
+
     await Word.run(async (context) => {
-      let comment = context.document
+      const comment = context.document
         .getSelection()
         .getComments()
         .getFirst();
@@ -623,7 +641,7 @@
       // Toggle resolved status.
       // If the comment is active, set as resolved.
       // If it's resolved, set resolved to false.
-      let toggleResolved: boolean = comment.resolved;
+      const toggleResolved: boolean = comment.resolved;
       comment.resolved = !toggleResolved;
       comment.load();
       await context.sync();
@@ -636,8 +654,10 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Get the range of the first comment in the selected content.
+
     await Word.run(async (context) => {
-      let range = context.document
+      const range = context.document
         .getSelection()
         .getComments()
         .getFirst()
@@ -652,16 +672,18 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Reply to the first active comment in the selected content.
+
     await Word.run(async (context) => {
-      let text = $("#reply-text")
+      const text = $("#reply-text")
         .val()
         .toString();
-      let comments = context.document.getSelection().getComments();
+      const comments = context.document.getSelection().getComments();
       comments.load("items");
       await context.sync();
-      let firstActiveComment = comments.items.find((item) => item.resolved !== true);
+      const firstActiveComment = comments.items.find((item) => item.resolved !== true);
       if (firstActiveComment) {
-        let reply = firstActiveComment.reply(text);
+        const reply = firstActiveComment.reply(text);
         console.log("Reply added");
       } else {
         console.log("No active comment was found in the selection so couldn't reply.");
@@ -673,7 +695,7 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the content controls collection.
         contentControls.load('text');
@@ -700,7 +722,7 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the content controls collection.
         contentControls.load('text');
@@ -727,7 +749,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
     await Word.run(async (context) => {
-      let contentControls = context.document.contentControls.getByTag("forTesting");
+      const contentControls = context.document.contentControls.getByTag("forTesting");
       contentControls.load("items");
       await context.sync();
 
@@ -746,10 +768,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection that contains a specific tag.
-        var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
+        const contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
         
         // Queue a command to load the tag property for all of content controls.
-        context.load(contentControlsWithTag, 'tag');
+        contentControlsWithTag.load('tag');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -759,7 +781,7 @@
         }
         else {
             // Queue a command to get the HTML contents of the first content control.
-            var html = contentControlsWithTag.items[0].getHtml();
+            const html = contentControlsWithTag.items[0].getHtml();
         
             // Synchronize the document state by executing the queued commands, 
             // and return a promise to indicate task completion.
@@ -773,10 +795,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -786,7 +808,7 @@
         }
         else {
             // Queue a command to get the OOXML contents of the first content control.
-            var ooxml = contentControls.items[0].getOoxml();
+            const ooxml = contentControls.items[0].getOoxml();
         
             // Synchronize the document state by executing the queued commands, 
             // and return a promise to indicate task completion.
@@ -800,10 +822,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -828,10 +850,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -858,10 +880,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -892,10 +914,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -919,10 +941,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -950,10 +972,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1004,7 +1026,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
     await Word.run(async (context) => {
-      let contentControls = context.document.contentControls;
+      const contentControls = context.document.contentControls;
       contentControls.load("items");
       await context.sync();
 
@@ -1029,7 +1051,7 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
 'Word.ContentControl#search:member(1)':
@@ -1038,10 +1060,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
         
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
          
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1125,6 +1147,62 @@
 
       await context.sync();
     });
+'Word.ContentControl:class':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.ContentControlAppearance:enum':
   - >-
     // Link to full sample:
@@ -1170,10 +1248,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the content control that contains a specific id.
-        var contentControl = context.document.contentControls.getById(30086310);
+        const contentControl = context.document.contentControls.getById(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1186,10 +1264,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the content control that contains a specific id.
-        var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+        const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1206,7 +1284,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
-        let contentControls = context.document.contentControls.getByTag("customer");
+        const contentControls = context.document.contentControls.getByTag("customer");
         contentControls.load("text");
 
         await context.sync();
@@ -1224,10 +1302,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the content controls collection that contains a specific title.
-        var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
+        const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
         // Queue a command to load the text property for all of content controls with a specific title.
-        context.load(contentControlsWithTitle, 'text');
+        contentControlsWithTitle.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1253,10 +1331,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the first content control in the document.
-        var contentControl = context.document.contentControls.getFirstOrNullObject();
+        const contentControl = context.document.contentControls.getFirstOrNullObject();
 
         // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
+        contentControl.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1273,10 +1351,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
+        const contentControls = context.document.contentControls;
 
         // Queue a command to load the id property for all of the content controls.
-        context.load(contentControls, 'id');
+        contentControls.load('id');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1335,9 +1413,76 @@
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
         // Display the deleted content control's ID.
-        console.log(`Event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
       });
     }
+'Word.ContentControlEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
+'Word.ContentControlType:enum':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the content controls collection.
+        const contentControls = context.document.contentControls;
+
+        // Queue a command to load the id property for all of the content controls.
+        contentControls.load('id');
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        if (contentControls.items.length === 0) {
+            console.log('No content control found.');
+        }
+        else {
+            // Queue a command to load the properties on the first content control.
+            contentControls.items[0].load(  'appearance,' +
+                                            'cannotDelete,' +
+                                            'cannotEdit,' +
+                                            'color,' +
+                                            'id,' +
+                                            'placeHolderText,' +
+                                            'removeWhenEdited,' +
+                                            'title,' +
+                                            'text,' +
+                                            'type,' +
+                                            'style,' +
+                                            'tag,' +
+                                            'font/size,' +
+                                            'font/name,' +
+                                            'font/color');
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+            console.log('Property values of the first content control:' +
+                '   ----- appearance: ' + contentControls.items[0].appearance +
+                '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
+                '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
+                '   ----- color: ' + contentControls.items[0].color +
+                '   ----- id: ' + contentControls.items[0].id +
+                '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
+                '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
+                '   ----- title: ' + contentControls.items[0].title +
+                '   ----- text: ' + contentControls.items[0].text +
+                '   ----- type: ' + contentControls.items[0].type +
+                '   ----- style: ' + contentControls.items[0].style +
+                '   ----- tag: ' + contentControls.items[0].tag +
+                '   ----- font size: ' + contentControls.items[0].font.size +
+                '   ----- font name: ' + contentControls.items[0].font.name +
+                '   ----- font color: ' + contentControls.items[0].font.color);
+        }
+    });
 'Word.CustomPropertyCollection#add:member(1)':
   - >-
     // Link to full sample:
@@ -1365,17 +1510,19 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
-        let properties = context.document.properties.customProperties;
+        const properties = context.document.properties.customProperties;
         properties.load("key,type,value");
 
         await context.sync();
-        for (var i = 0; i < properties.items.length; i++)
+        for (let i = 0; i < properties.items.length; i++)
             console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
     });
 'Word.Document#changeTrackingMode:member':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+    // Get the current change tracking mode.
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -1395,14 +1542,14 @@
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
         
-        var textSample = 'This is an example of the insert text method. This is a method ' + 
+        const textSample = 'This is an example of the insert text method. This is a method ' + 
             'which allows users to insert text into a selection. It can insert text into a ' +
             'relative location or it can overwrite the current selection. Since the ' +
             'getSelection method returns a range object, look up the range object documentation ' +
             'for everything you can do with a selection.';
         
         // Create a range proxy object for the current selection.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
         
         // Queue a command to insert text at the end of the selection.
         range.insertText(textSample, Word.InsertLocation.end);
@@ -1418,16 +1565,16 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the document.
-        var thisDocument = context.document;
+        const thisDocument = context.document;
         
         // Queue a command to load content control properties.
-        context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+        thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
         await context.sync();
         if (thisDocument.contentControls.items.length !== 0) {
-            for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
+            for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
                 console.log(thisDocument.contentControls.items[i].id);
                 console.log(thisDocument.contentControls.items[i].text);
                 console.log(thisDocument.contentControls.items[i].tag);
@@ -1442,7 +1589,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
     await Word.run(async (context) => {
-        let builtInProperties = context.document.properties;
+        const builtInProperties = context.document.properties;
         builtInProperties.load("*"); // Let's get all!
 
         await context.sync();
@@ -1454,10 +1601,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the document.
-        var thisDocument = context.document;
+        const thisDocument = context.document;
 
         // Queue a command to load the document save state (on the saved property).
-        context.load(thisDocument, 'saved');    
+        thisDocument.load('saved');    
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -1475,6 +1622,17 @@
             console.log('The document has not changed since the last save.');
         }
         });
+'Word.EventType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      await Word.run(async (context) => {
+        // Display the deleted content control's ID.
+        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      });
+    }
 'Word.Field#code:member':
   - >-
     // Link to full sample:
@@ -1583,7 +1741,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to make the current selection bold.
         selection.font.bold = true;
@@ -1600,7 +1758,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to change the font color of the current selection.
         selection.font.color = 'blue';
@@ -1617,7 +1775,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to highlight the current selection.
         selection.font.highlightColor = '#FFFF00'; // Yellow
@@ -1634,7 +1792,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to change the current selection's font name.
         selection.font.name = 'Arial';
@@ -1651,7 +1809,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to change the current selection's font size.
         selection.font.size = 20;
@@ -1668,7 +1826,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to strikethrough the font of the current selection.
         selection.font.strikeThrough = true;
@@ -1685,7 +1843,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to underline the current selection.
         selection.font.underline = Word.UnderlineType.single;
@@ -1713,6 +1871,8 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
+    // Get the first image in the document.
+
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
       firstPicture.load("width, height");
@@ -1735,10 +1895,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the first inline picture.
-        var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+        const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1759,10 +1919,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy object for the first inline picture.
-        var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+        const firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
 
         // Queue a command to load the alternative text title of the picture.
-        context.load(firstPicture, 'altTextTitle');
+        firstPicture.load('altTextTitle');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1781,7 +1941,7 @@
     // Inserts a section without an associated page break.
 
     await Word.run(async (context) => {
-      let body = context.document.body;
+      const body = context.document.body;
       body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
 
       await context.sync();
@@ -1793,14 +1953,16 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Get the text of the referenced footnote.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items/body");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
-      let footnoteBody = footnotes.items[mark].body.getRange();
+      const mark = (referenceNumber as number) - 1;
+      const footnoteBody = footnotes.items[mark].body.getRange();
       footnoteBody.load("text");
       await context.sync();
 
@@ -1811,13 +1973,15 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Delete this referenced footnote.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
+      const mark = (referenceNumber as number) - 1;
       footnotes.items[mark].delete();
       await context.sync();
 
@@ -1828,13 +1992,15 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Select the next footnote in the document body.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items/reference");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
+      const mark = (referenceNumber as number) - 1;
       const reference = footnotes.items[mark].getNext().reference;
       reference.select();
       console.log("Selected is the next footnote: " + (mark + 2));
@@ -1844,15 +2010,17 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Select the footnote's reference mark in the document body.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items/reference");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
+      const mark = (referenceNumber as number) - 1;
       const item = footnotes.items[mark];
-      let reference = item.reference;
+      const reference = item.reference;
       reference.select();
       await context.sync();
 
@@ -1863,13 +2031,15 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Get the referenced note's type, which is footnote.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items/type");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
+      const mark = (referenceNumber as number) - 1;
       const itemType = footnotes.items[mark].type;
       console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
     });
@@ -1878,8 +2048,11 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Get the first footnote in the document body and select its reference
+    mark.
+
     await Word.run(async (context) => {
-      let reference = context.document.body.footnotes.getFirst().reference;
+      const reference = context.document.body.footnotes.getFirst().reference;
       reference.select();
       console.log("The first footnote is selected.");
     });
@@ -1888,13 +2061,15 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Get the referenced note's type, which is footnote.
+
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
       footnotes.load("items/type");
       await context.sync();
 
       const referenceNumber = $("#input-reference").val();
-      let mark = (referenceNumber as number) - 1;
+      const mark = (referenceNumber as number) - 1;
       const itemType = footnotes.items[mark].type;
       console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
     });
@@ -1915,10 +2090,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1938,10 +2113,10 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1961,17 +2136,17 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a set of commands to get the HTML of the first paragraph.
-        var html = paragraphs.items[0].getHtml();
+        const html = paragraphs.items[0].getHtml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -1984,17 +2159,17 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a set of commands to get the OOXML of the first paragraph.
-        var ooxml = paragraphs.items[0].getOoxml();
+        const ooxml = paragraphs.items[0].getOoxml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2007,21 +2182,21 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
+        paragraphs.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue commands to create a proxy object for the next-to-last paragraph.
-        var indexOfLastParagraph = paragraphs.items.length - 1;
-        var precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
+        const indexOfLastParagraph = paragraphs.items.length - 1;
+        const precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
 
         // Queue a command to load the text of the preceding paragraph.
-        context.load(precedingParagraph, 'text');
+        precedingParagraph.load('text');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2039,14 +2214,14 @@
 
     await Word.run(async (context) => {
       // Gets the complete sentence (as range) associated with the insertion point.
-      let sentences = context.document
+      const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
       // Expands the range to the end of the paragraph to get all the complete sentences.
-      let sentencesToTheEndOfParagraph = sentences.items[0]
+      const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
           context.document
@@ -2079,18 +2254,18 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a command to get the first paragraph.
-        var paragraph = paragraphs.items[0];
+        const paragraph = paragraphs.items[0];
 
         // Queue a command to insert a page break after the first paragraph.
         paragraph.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
@@ -2106,18 +2281,18 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a command to get the first paragraph.
-        var paragraph = paragraphs.items[0];
+        const paragraph = paragraphs.items[0];
 
         // Queue a command to wrap the first paragraph in a rich text content control.
         paragraph.insertContentControl();
@@ -2133,18 +2308,18 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
+        paragraphs.load({select: 'style', top: 2} );
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a command to get the first paragraph.
-        var paragraph = paragraphs.items[0];
+        const paragraph = paragraphs.items[0];
 
         // Queue a command to insert HTML content at the end of the first paragraph.
         paragraph.insertHtml('<strong>Inserted HTML.</strong>', Word.InsertLocation.end);
@@ -2160,19 +2335,19 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
+        paragraphs.load('style');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a command to get the first paragraph.
-        var paragraph = paragraphs.items[0];
+        const paragraph = paragraphs.items[0];
 
-        var b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
+        const b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
 
         // Queue a command to insert a base64 encoded image at the beginning of the first paragraph.
         paragraph.insertInlinePictureFromBase64(b64encodedImg, Word.InsertLocation.start);
@@ -2189,7 +2364,7 @@
 
     await Word.run(async (context) => {
       // Replace the last paragraph.
-      let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+      const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
       range.font.highlightColor = "black";
       range.font.color = "white";
 
@@ -2287,8 +2462,8 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
     await Word.run(async (context) => {
-      let paragraph = context.document.body.paragraphs.getFirst();
-      let words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+      const paragraph = context.document.body.paragraphs.getFirst();
+      const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
       words.load("text");
 
       await context.sync();
@@ -2311,20 +2486,20 @@
     // This example starts a new list stating with the second paragraph.
 
     await Word.run(async (context) => {
-      let paragraphs = context.document.body.paragraphs;
+      const paragraphs = context.document.body.paragraphs;
       paragraphs.load("$none"); // No properties needed.
 
       await context.sync();
 
-      var list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
+      const list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
       list.load("$none"); // No properties needed.
 
       await context.sync();
 
       // To add new items to the list use start/end on the insert location parameter.
       list.insertParagraph("New list item on top of the list", "Start");
-      let paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
-      paragraph.listItem.level = 4; // Sets up list level for the lsit item.
+      const paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
+      paragraph.listItem.level = 4; // Sets up list level for the list item.
       // To add paragraphs outside the list use before/after:
       list.insertParagraph("New paragraph goes after (not part of the list)", "After");
 
@@ -2337,7 +2512,7 @@
 
     await Word.run(async (context) => {
       // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-      let paragraph = context.document.getSelection().paragraphs.getFirst();
+      const paragraph = context.document.getSelection().paragraphs.getFirst();
       paragraph.load("text");
 
       await context.sync();
@@ -2352,18 +2527,18 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
         // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set. Otherwise, all properties are
         // returned in on the object.
-        context.load(paragraphs, 'text, font/size');
+        paragraphs.load('text, font/size');
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         await context.sync();
 
-        // Insert code that works with the paragraphs loaded by context.load().
+        // Insert code that works with the paragraphs loaded by paragraphs.load().
     });
 'Word.Range#clear:member(1)':
   - |-
@@ -2372,7 +2547,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to clear the contents of the proxy range object.
         range.clear();
@@ -2389,7 +2564,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to delete the range object.
         range.delete();
@@ -2404,6 +2579,8 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
+    // Get the footnotes in the selected document range.
+
     await Word.run(async (context) => {
       const footnotes = context.document.getSelection().footnotes;
       footnotes.load("length");
@@ -2416,8 +2593,10 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Get the comments in the selected content.
+
     await Word.run(async (context) => {
-      let comments = context.document.getSelection().getComments();
+      const comments = context.document.getSelection().getComments();
 
       // Load objects for display in Script Lab console.
       comments.load();
@@ -2433,10 +2612,10 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to get the HTML of the current selection.
-        var html = range.getHtml();
+        const html = range.getHtml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2450,10 +2629,10 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to get the OOXML of the current selection.
-        var ooxml = range.getOoxml();
+        const ooxml = range.getOoxml();
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
@@ -2465,10 +2644,12 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
+    // Get the reviewed text.
+
     await Word.run(async (context) => {
       const range = context.document.getSelection();
-      let before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-      let after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+      const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+      const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
       await context.sync();
 
@@ -2482,14 +2663,14 @@
 
     await Word.run(async (context) => {
       // Gets the complete sentence (as range) associated with the insertion point.
-      let sentences = context.document
+      const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
       // Expands the range to the end of the paragraph to get all the complete sentences.
-      let sentencesToTheEndOfParagraph = sentences.items[0]
+      const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
           context.document
@@ -2512,7 +2693,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert a page break after the selected text.
         range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
@@ -2527,11 +2708,13 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+    // Set a comment on the selected content.
+
     await Word.run(async (context) => {
-      let text = $("#comment-text")
+      const text = $("#comment-text")
         .val()
         .toString();
-      let comment = context.document.getSelection().insertComment(text);
+      const comment = context.document.getSelection().insertComment(text);
 
       // Load object for display in Script Lab console.
       comment.load();
@@ -2546,18 +2729,18 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
-        let results = context.document.body.search("Contractor");
+        const results = context.document.body.search("Contractor");
         results.load("font/bold");
 
         // Check to make sure these content controls haven't been added yet.
-        let customerContentControls = context.document.contentControls.getByTag("customer");
+        const customerContentControls = context.document.contentControls.getByTag("customer");
         customerContentControls.load("text");
         await context.sync();
 
       if (customerContentControls.items.length === 0) {
-        for (var i = 0; i < results.items.length; i++) { 
+        for (let i = 0; i < results.items.length; i++) { 
             results.items[i].font.bold = true;
-            var cc = results.items[i].insertContentControl();
+            let cc = results.items[i].insertContentControl();
             cc.tag = "customer";  // This value is used in the next step of this sample.
             cc.title = "Customer Name " + i;
         }
@@ -2571,7 +2754,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert base64 encoded .docx at the beginning of the range.
         // You'll need to implement getBase64() to make this work.
@@ -2586,6 +2769,8 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+    // Set a footnote on the selected content.
 
     await Word.run(async (context) => {
       const text = $("#input-footnote")
@@ -2603,7 +2788,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert HTML in to the beginning of the range.
         range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
@@ -2621,7 +2806,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert OOXML in to the beginning of the range.
         range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -2645,7 +2830,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert the paragraph after the range.
         range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
@@ -2662,7 +2847,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert the paragraph at the end of the range.
         range.insertText('New text inserted into the range.', Word.InsertLocation.end);
@@ -2679,7 +2864,7 @@
 
         // Queue a command to get the current selection and then
         // create a proxy range object with the results.
-        var range = context.document.getSelection();
+        const range = context.document.getSelection();
 
         // Queue a command to insert HTML in to the beginning of the range.
         range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
@@ -2699,14 +2884,14 @@
 
     await Word.run(async (context) => {
       // Gets the complete sentence (as range) associated with the insertion point.
-      let sentences = context.document
+      const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
       // Expands the range to the end of the paragraph to get all the complete sentences.
-      let sentencesToTheEndOfParagraph = sentences.items[0]
+      const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
           context.document
@@ -2729,10 +2914,10 @@
     await Word.run(async (context) => {
         
         // Queue a command to search the document and ignore punctuation.
-        var searchResults = context.document.body.search('video you', {ignorePunct: true});
+        const searchResults = context.document.body.search('video you', {ignorePunct: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2740,7 +2925,7 @@
         console.log('Found count: ' + searchResults.items.length);
 
         // Queue a set of commands to change the font for each found item.
-        for (var i = 0; i < searchResults.items.length; i++) {
+        for (let i = 0; i < searchResults.items.length; i++) {
             searchResults.items[i].font.color = 'purple';
             searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
             searchResults.items[i].font.bold = true;
@@ -2756,17 +2941,17 @@
     await Word.run(async (context) => {
         
         // Queue a command to search the document based on a prefix.
-        var searchResults = context.document.body.search('vid', {matchPrefix: true});
+        const searchResults = context.document.body.search('vid', {matchPrefix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
         await context.sync();
 
         // Queue a set of commands to change the font for each found item.
-        for (var i = 0; i < searchResults.items.length; i++) {
+        for (let i = 0; i < searchResults.items.length; i++) {
             searchResults.items[i].font.color = 'purple';
             searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
             searchResults.items[i].font.bold = true;
@@ -2782,10 +2967,10 @@
     await Word.run(async (context) => {
 
         // Queue a command to search the document for any string of characters after 'ly'.
-        var searchResults = context.document.body.search('ly', {matchSuffix: true});
+        const searchResults = context.document.body.search('ly', {matchSuffix: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2793,7 +2978,7 @@
         console.log('Found count: ' + searchResults.items.length);
 
         // Queue a set of commands to change the font for each found item.
-        for (var i = 0; i < searchResults.items.length; i++) {
+        for (let i = 0; i < searchResults.items.length; i++) {
             searchResults.items[i].font.color = 'orange';
             searchResults.items[i].font.highlightColor = 'black';
             searchResults.items[i].font.bold = true;
@@ -2810,10 +2995,10 @@
         
         // Queue a command to search the document with a wildcard
         // for any string of characters that starts with 'to' and ends with 'n'.
-        var searchResults = context.document.body.search('to*n', {matchWildcards: true});
+        const searchResults = context.document.body.search('to*n', {matchWildcards: true});
 
         // Queue a command to load the search results and get the font property values.
-        context.load(searchResults, 'font');
+        searchResults.load('font');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2821,7 +3006,7 @@
         console.log('Found count: ' + searchResults.items.length);
 
         // Queue a set of commands to change the font for each found item.
-        for (var i = 0; i < searchResults.items.length; i++) {
+        for (let i = 0; i < searchResults.items.length; i++) {
             searchResults.items[i].font.color = 'purple';
             searchResults.items[i].font.highlightColor = 'pink';
             searchResults.items[i].font.bold = true;
@@ -2850,10 +3035,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy sectionsCollection object.
-        var mySections = context.document.sections;
+        const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2861,7 +3046,7 @@
             
         // Create a proxy object the primary footer of the first section.
         // Note that the footer is a body object.
-            var myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
+        const myFooter = mySections.items[0].getFooter(Word.HeaderFooterType.primary);
         
         // Queue a command to insert text at the end of the footer.
         myFooter.insertText("This is a footer.", Word.InsertLocation.end);
@@ -2893,10 +3078,10 @@
     await Word.run(async (context) => {
         
         // Create a proxy sectionsCollection object.
-        var mySections = context.document.sections;
+        const mySections = context.document.sections;
         
         // Queue a command to load the sections.
-        context.load(mySections, 'body/style');
+        mySections.load('body/style');
         
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2904,7 +3089,7 @@
         
         // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
-        var myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+        const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
         
         // Queue a command to insert text at the end of the header.
         myHeader.insertText("This is a header.", Word.InsertLocation.end);
@@ -2925,7 +3110,7 @@
     // Inserts a section break on the next page.
 
     await Word.run(async (context) => {
-      let body = context.document.body;
+      const body = context.document.body;
       body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
 
       await context.sync();
@@ -2940,7 +3125,7 @@
     // Inserts a section break on the next even page.
 
     await Word.run(async (context) => {
-      let body = context.document.body;
+      const body = context.document.body;
       body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
 
       await context.sync();
@@ -2964,11 +3149,11 @@
     await Word.run(async (context) => {
 
         // Queue commands add a setting.
-        var settings = context.document.settings;
-        var startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
+        const settings = context.document.settings;
+        const startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
 
         // Queue a command to get the count of settings.
-        var count = settings.getCount();
+        const count = settings.getCount();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -2992,11 +3177,11 @@
     await Word.run(async (context) => {
 
         // Queue commands add a setting.
-        var settings = context.document.settings;
+        const settings = context.document.settings;
         settings.add('startMonth', { month: 'March', year: 1998 });
 
         // Queue a command to get the count of settings.
-        var count = settings.getCount();
+        const count = settings.getCount();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3020,11 +3205,11 @@
     await Word.run(async (context) => {
 
         // Queue commands add a setting.
-        var settings = context.document.settings;
+        const settings = context.document.settings;
         settings.add('startMonth', { month: 'March', year: 1998 });
 
         // Queue a command to get the count of settings.
-        var count = settings.getCount();
+        const count = settings.getCount();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3048,14 +3233,14 @@
     await Word.run(async (context) => {
 
         // Queue commands add a setting.
-        var settings = context.document.settings;
+        const settings = context.document.settings;
         settings.add('startMonth', { month: 'March', year: 1998 });
 
         // Queue a command to retrieve a setting.
-        var startMonth = settings.getItem('startMonth');
+        const startMonth = settings.getItem('startMonth');
 
         // Queue a command to load the setting.
-        context.load(startMonth);
+        startMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3068,16 +3253,16 @@
     await Word.run(async (context) => {
 
         // Queue commands add a setting.
-        var settings = context.document.settings;
+        const settings = context.document.settings;
         settings.add('startMonth', { month: 'March', year: 1998 });
         
         // Queue commands to retrieve settings.
-        var startMonth = settings.getItemOrNullObject('startMonth');
-        var endMonth = settings.getItemOrNullObject('endMonth');
+        const startMonth = settings.getItemOrNullObject('startMonth');
+        const endMonth = settings.getItemOrNullObject('endMonth');
 
         // Queue commands to load settings.
-        context.load(startMonth);
-        context.load(endMonth);
+        startMonth.load();
+        endMonth.load();
 
         // Synchronize the document state by executing the queued commands, 
         // and return a promise to indicate task completion.
@@ -3101,7 +3286,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
     await Word.run(async (context) => {
-      let sentence = context.document.body.insertParagraph(
+      const sentence = context.document.body.insertParagraph(
         "To be or not to be",
         "End"
       );
@@ -3117,7 +3302,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
-      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
       firstCell.load("text");
 
       await context.sync();
@@ -3129,7 +3314,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
-      let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+      const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
       firstCell.load("text");
 
       await context.sync();
@@ -3142,7 +3327,7 @@
     await Word.run(async (context) => {
 
         // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
+        const selection = context.document.getSelection();
 
         // Queue a command to underline the current selection.
         selection.font.underline = Word.UnderlineType.single;

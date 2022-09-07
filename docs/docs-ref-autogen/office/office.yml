@@ -167,7 +167,7 @@ functions:
       // to display how the task pane or content add-in was initialized.
 
       Office.initialize = function (reason) {
-          // Checks for the DOM to load using the jQuery ready function.
+          // Checks for the DOM to load using the jQuery ready method.
           $(document).ready(function () {
           // After the DOM is loaded, code specific to the add-in can run.
           // Display initialization reason.
@@ -272,7 +272,7 @@ functions:
 
       ```javascript
 
-      // The following code example uses the select method to retrieve a binding with the id "cities" from
+      // The following code example uses the select function to retrieve a binding with the id "cities" from
 
       // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
 

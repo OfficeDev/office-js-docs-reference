@@ -25,7 +25,7 @@ Excel.Application#calculate:member(2):
 Excel.Application#load:member(2):
   - |-
     await Excel.run(async (context) => {
-        var application = context.workbook.application;
+        const application = context.workbook.application;
         application.load('calculationMode');
         await context.sync();
 
@@ -34,8 +34,8 @@ Excel.Application#load:member(2):
 Excel.Binding#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var binding = context.workbook.bindings.getItemAt(0);
-        var range = binding.getRange();
+        const binding = context.workbook.bindings.getItemAt(0);
+        const range = binding.getRange();
         range.load('cellCount');
         await context.sync();
 
@@ -44,8 +44,8 @@ Excel.Binding#getRange:member(1):
 Excel.Binding#getTable:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var binding = context.workbook.bindings.getItemAt(0);
-        var table = binding.getTable();
+        const binding = context.workbook.bindings.getItemAt(0);
+        const table = binding.getTable();
         table.load('name');
         await context.sync();
 
@@ -54,8 +54,8 @@ Excel.Binding#getTable:member(1):
 Excel.Binding#getText:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var binding = context.workbook.bindings.getItemAt(0);
-        var text = binding.getText();
+        const binding = context.workbook.bindings.getItemAt(0);
+        const text = binding.getText();
         binding.load('text');
         await context.sync();
 
@@ -64,7 +64,7 @@ Excel.Binding#getText:member(1):
 Excel.Binding#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var binding = context.workbook.bindings.getItemAt(0);
+        const binding = context.workbook.bindings.getItemAt(0);
         binding.load('type');
         await context.sync();
 
@@ -84,8 +84,8 @@ Excel.BindingCollection#getItem:member(1):
 Excel.BindingCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var lastPosition = context.workbook.bindings.count - 1;
-        var binding = context.workbook.bindings.getItemAt(lastPosition);
+        const lastPosition = context.workbook.bindings.count - 1;
+        const binding = context.workbook.bindings.getItemAt(lastPosition);
         binding.load('type')
         await context.sync();
 
@@ -94,33 +94,33 @@ Excel.BindingCollection#getItemAt:member(1):
 Excel.BindingCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var bindings = context.workbook.bindings;
+        const bindings = context.workbook.bindings;
         bindings.load('items');
         await context.sync();
 
-        for (var i = 0; i < bindings.items.length; i++) {
+        for (let i = 0; i < bindings.items.length; i++) {
             console.log(bindings.items[i].id);
         }
     });
 Excel.Chart#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.delete();
         await context.sync(); 
     });
 Excel.Chart#getImage:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var image = chart.getImage();
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const image = chart.getImage();
         await context.sync(); 
     });
 Excel.Chart#legend:member:
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.legend.visible = true;
         chart.legend.position = "Top"; 
         chart.legend.overlay = false; 
@@ -133,7 +133,7 @@ Excel.Chart#name:member:
     // Rename the chart to new name, resize the chart to 200 points in both height and weight.
     // Move Chart1 to 100 points to the top and left.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.name = "New Name";
         chart.top = 100;
         chart.left = 100;
@@ -154,11 +154,11 @@ Excel.Chart#setData:member(1):
 Excel.Chart#setPosition:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Charts";
-        var rangeSelection = "A1:B4";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
-        var sourceData = sheetName + "!" + "A1:B4";
-        var chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+        const sheetName = "Charts";
+        const rangeSelection = "A1:B4";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+        const sourceData = sheetName + "!" + "A1:B4";
+        const chart = context.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
         chart.width = 500;
         chart.height = 300;
         chart.setPosition("C2", null);
@@ -168,7 +168,7 @@ Excel.Chart#load:member(2):
   - |-
     // Get a chart named "Chart1".
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.load('name');
         await context.sync();
 
@@ -178,7 +178,7 @@ Excel.ChartAxes#valueAxis:member:
   - |-
     // Set the maximum, minimum, majorUnit, minorUnit of valueAxis.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.maximum = 5;
         chart.axes.valueAxis.minimum = 0;
         chart.axes.valueAxis.majorUnit = 1;
@@ -191,8 +191,8 @@ Excel.ChartAxis#load:member(2):
   - |-
     // Get the maximum of Chart Axis from Chart1.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var axis = chart.axes.valueAxis;
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const axis = chart.axes.valueAxis;
         axis.load('maximum');
         await context.sync();
 
@@ -202,7 +202,7 @@ Excel.ChartAxisTitle#load:member(2):
   - |-
     // Add "Values" as the title for the value Axis.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
         chart.axes.valueAxis.title.text = "Values";
         await context.sync();
         
@@ -228,12 +228,12 @@ Excel.ChartAxisTitle#textOrientation:member:
 Excel.ChartCollection#add:member(1):
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-    // with sourceData from range "A1:B4" and seriresBy set to "auto".
+    // with sourceData from range "A1:B4" and seriesBy set to "auto".
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sheet1");
-        var rangeSelection = "A1:B4";
-        var range = sheet.getRange(rangeSelection);
-        var chart = sheet.charts.add(
+        const rangeSelection = "A1:B4";
+        const range = sheet.getRange(rangeSelection);
+        const chart = sheet.charts.add(
         Excel.ChartType.columnClustered, 
         range, 
         Excel.ChartSeriesBy.auto);
@@ -245,7 +245,7 @@ Excel.ChartCollection#getItem:member(1):
   - |-
     // Get the number of charts.
     await Excel.run(async (context) => { 
-        var charts = context.workbook.worksheets.getItem("Sheet1").charts;
+        const charts = context.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('count');
         await context.sync();
         
@@ -254,8 +254,8 @@ Excel.ChartCollection#getItem:member(1):
 Excel.ChartCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+        const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
         await context.sync();
 
         console.log(chart.name);
@@ -263,11 +263,11 @@ Excel.ChartCollection#getItemAt:member(1):
 Excel.ChartCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var charts = context.workbook.worksheets.getItem("Sheet1").charts;
+        const charts = context.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('items');
         await context.sync();
         
-        for (var i = 0; i < charts.items.length; i++) {
+        for (let i = 0; i < charts.items.length; i++) {
             console.log(charts.items[i].name);
         }
     });
@@ -299,7 +299,7 @@ Excel.ChartDataLabels#load:member(2):
   - |-
     // Show the series name in data labels and set the position of the data labels to "top".
     await Excel.run(async (context) => {
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
         chart.dataLabels.showValue = true;
         chart.dataLabels.position = Excel.ChartDataLabelPosition.top;
         chart.dataLabels.showSeriesName = true;
@@ -311,7 +311,7 @@ Excel.ChartFill#clear:member(1):
   - |-
     // Clear the line format of the major gridlines on the value axis of the chart named "Chart1".
     await Excel.run(async (context) => { 
-        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+        const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         await context.sync();
         
@@ -321,7 +321,7 @@ Excel.ChartFont:class:
   - |-
     // Set the chart title font to Calibri, size 10, bold, and the color red.
     await Excel.run(async (context) => { 
-        var title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+        const title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
         title.format.font.name = "Calibri";
         title.format.font.size = 12;
         title.format.font.color = "#FF0000";
@@ -334,7 +334,7 @@ Excel.ChartGridlines#load:member(2):
   - |-
     // Set the value axis of Chart1 to show the major gridlines.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.majorGridlines.visible = true;
         await context.sync();
         
@@ -344,8 +344,8 @@ Excel.ChartLegend#load:member(2):
   - |-
     // Get the position of Chart Legend from Chart1.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var legend = chart.legend;
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const legend = chart.legend;
         legend.load('position');
         await context.sync();
 
@@ -355,7 +355,7 @@ Excel.ChartLineFormat#clear:member(1):
   - |-
     // Clear the format of the major gridlines on Chart1. 
     await Excel.run(async (context) => { 
-        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+        const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.clear();
         await context.sync();
         
@@ -365,7 +365,7 @@ Excel.ChartLineFormat#load:member(2):
   - |-
     // Set chart major gridlines on value axis to be red.
     await Excel.run(async (context) => {
-        var gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+        const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.color = "#FF0000";
         await context.sync()
         
@@ -375,7 +375,7 @@ Excel.ChartPointsCollection#getItemAt:member(1):
   - |-
     // Set the border color for the first points in the points collection.
     await Excel.run(async (context) => { 
-        var points = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        const points = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
         await context.sync();
         
@@ -385,7 +385,7 @@ Excel.ChartPointsCollection#load:member(2):
   - |-
     // Get the number of points.
     await Excel.run(async (context) => { 
-        var pointsCollection = 
+        const pointsCollection = 
             context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('count');
         await context.sync();
@@ -395,7 +395,7 @@ Excel.ChartSeries#load:member(2):
   - |-
     // Rename the 1st series of Chart1 to "New Series Name".
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.series.getItemAt(0).name = "New Series Name";
         await context.sync();
 
@@ -405,7 +405,7 @@ Excel.ChartSeriesCollection#getItemAt:member(1):
   - |-
     // Get the name of the first series in the series collection.
     await Excel.run(async (context) => { 
-        var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+        const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('items');
         await context.sync();
         
@@ -415,7 +415,7 @@ Excel.ChartSeriesCollection#load:member(2):
   - |-
     // Get the number of chart series in the collection.
     await Excel.run(async (context) => { 
-        var seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+        const seriesCollection = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('count');
         await context.sync();
 
@@ -425,7 +425,7 @@ Excel.ChartTitle#load:member(2):
   - |-
     // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
     await Excel.run(async (context) => { 
-        var chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         
         chart.title.text= "My Chart"; 
         chart.title.visible=true;
@@ -437,12 +437,12 @@ Excel.ChartTitle#load:member(2):
 Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:C3";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
         conditionalFormat.iconSetOrNullObject.style = Excel.IconSet.fourTrafficLights;
-        var cfCount = range.conditionalFormats.getCount(); 
+        const cfCount = range.conditionalFormats.getCount(); 
 
         await context.sync()
         console.log("Count: " + cfCount.value);
@@ -450,11 +450,11 @@ Excel.ConditionalFormatCollection#getCount:member(1):
 Excel.ConditionalFormatCollection#getItem:member(1):
   - |-
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var conditionalFormats = range.conditionalFormats;
-        var conditionalFormat = conditionalFormats.getItemAt(3);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:C3";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const conditionalFormats = range.conditionalFormats;
+        const conditionalFormat = conditionalFormats.getItemAt(3);
         await context.sync()
 
         console.log("Conditional Format at Item 3 Loaded");
@@ -462,11 +462,11 @@ Excel.ConditionalFormatCollection#getItem:member(1):
 Excel.CustomConditionalFormat#rule:member:
   - |-
     await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getActiveWorksheet();
-        var range = sheet.getRange("A1:A5");
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const range = sheet.getRange("A1:A5");
         range.values = [[1], [20], [""], [5], ["test"]];
-        var cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-        var cfCustom = cf.customOrNullObject;
+        const cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+        const cfCustom = cf.customOrNullObject;
         cfCustom.rule.formula = "=ISBLANK(A1)";
         cfCustom.format.fill.color = "#00FF00";
         await context.sync()
@@ -475,10 +475,9 @@ Excel.CustomConditionalFormat#rule:member:
     });
 Excel.FilterOn:enum:
   - |-
+    // This function adds a custom AutoFilter to the active worksheet 
+    // and applies the filter to a column of the used range.
     await Excel.run(async (context) => {
-        // This method adds a custom AutoFilter to the active worksheet 
-        // and applies the filter to a column of the used range.
-
         // Retrieve the active worksheet and the used range on that worksheet.
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
@@ -497,8 +496,8 @@ Excel.NamedItem#getRange:member(1):
     // Returns `null` if the name is not of type Range.
     // Note: This API currently supports only the Workbook scoped items.
     await Excel.run(async (context) => { 
-        var names = context.workbook.names;
-        var range = names.getItem('MyRange').getRange();
+        const names = context.workbook.names;
+        const range = names.getItem('MyRange').getRange();
         range.load('address');
         await context.sync();
 
@@ -507,8 +506,8 @@ Excel.NamedItem#getRange:member(1):
 Excel.NamedItem#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var names = context.workbook.names;
-        var namedItem = names.getItem('MyRange');
+        const names = context.workbook.names;
+        const namedItem = names.getItem('MyRange');
         namedItem.load('type');
         await context.sync();
         
@@ -517,8 +516,8 @@ Excel.NamedItem#load:member(2):
 Excel.NamedItemCollection#getItem:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = 'Sheet1';
-        var nameditem = context.workbook.names.getItem(sheetName);
+        const sheetName = 'Sheet1';
+        const nameditem = context.workbook.names.getItem(sheetName);
         nameditem.load('type');
         await context.sync();
         
@@ -527,20 +526,20 @@ Excel.NamedItemCollection#getItem:member(1):
 Excel.NamedItemCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var nameditems = context.workbook.names;
+        const nameditems = context.workbook.names;
         nameditems.load('items');
         await context.sync();
 
-        for (var i = 0; i < nameditems.items.length; i++) {
+        for (let i = 0; i < nameditems.items.length; i++) {
             console.log(nameditems.items[i].name);
         }
     });
 Excel.Query#name:member:
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -550,10 +549,10 @@ Excel.Query#name:member:
     });
 Excel.Query#refreshDate:member:
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the last refresh date of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the last refresh date of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -563,10 +562,10 @@ Excel.Query#refreshDate:member:
     });       
 Excel.Query#rowsLoadedCount:member:
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the number of rows loaded in each query.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the number of rows loaded in each query.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -576,10 +575,10 @@ Excel.Query#rowsLoadedCount:member:
     });
 Excel.QueryCollection#items:member:
   - |-
+    // This function retrieves the query collection in a workbook, 
+    // loads the query items in that collection, and then
+    // logs the name of each query to the console.
     await Excel.run(async (context) => {
-        // This method retrieves the query collection in a workbook, 
-        // loads the query items in that collection, and then 
-        // logs the name of each query to the console.
         const queries = context.workbook.queries; 
         queries.load("items"); 
         await context.sync(); 
@@ -589,9 +588,9 @@ Excel.QueryCollection#items:member:
     });
 Excel.QueryCollection#getCount:member(1):
   - |-
+    // This function retrieves the query collection in a workbook and then 
+    // logs the number of queries in the collection to the console.
     await Excel.run(async (context) => { 
-      // This method retrieves the query collection in a workbook and then 
-      // logs the number of queries in the collection to the console.
       const queries = context.workbook.queries; 
       const count = queries.getCount();
       await context.sync();
@@ -602,28 +601,28 @@ Excel.Range#clear:member(1):
   - |-
     // Clear the format and contents of the range.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "D:F";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "D:F";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.clear();
         await context.sync(); 
     });
 Excel.Range#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "D:F";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "D:F";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.delete("Left");
         await context.sync(); 
     });
 Excel.Range#getBoundingRect:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "D4:G6";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var range = range.getBoundingRect("G4:H8");
+        const sheetName = "Sheet1";
+        const rangeAddress = "D4:G6";
+        let range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range = range.getBoundingRect("G4:H8");
         range.load('address');
         await context.sync();
         
@@ -632,11 +631,11 @@ Excel.Range#getBoundingRect:member(1):
 Excel.Range#getCell:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var cell = range.getCell(0,0);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const cell = range.getCell(0,0);
         cell.load('address');
         await context.sync();
         
@@ -645,9 +644,9 @@ Excel.Range#getCell:member(1):
 Excel.Range#getColumn:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet19";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+        const sheetName = "Sheet19";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
         range.load('address');
         await context.sync();
 
@@ -658,10 +657,10 @@ Excel.Range#getEntireColumn:member(1):
     // Note: the grid properties of the Range (values, numberFormat, formulas) 
     // contains null since the Range in question is unbounded.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "D:F";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var rangeEC = range.getEntireColumn();
+        const sheetName = "Sheet1";
+        const rangeAddress = "D:F";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const rangeEC = range.getEntireColumn();
         rangeEC.load('address');
         await context.sync();
         
@@ -673,10 +672,10 @@ Excel.Range#getEntireRow:member(1):
     // (for example, if the current range represents cells "B4:E11", 
     // its GetEntireRow is a range that represents rows "4:11").
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "D:F"; 
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var rangeER = range.getEntireRow();
+        const sheetName = "Sheet1";
+        const rangeAddress = "D:F"; 
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const rangeER = range.getEntireRow();
         rangeER.load('address');
         await context.sync();
         
@@ -685,9 +684,9 @@ Excel.Range#getEntireRow:member(1):
 Excel.Range#getIntersection:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = 
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = 
             context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
         range.load('address');
         await context.sync();
@@ -697,9 +696,9 @@ Excel.Range#getIntersection:member(1):
 Excel.Range#getLastCell:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
         range.load('address');
         await context.sync();
         
@@ -708,9 +707,9 @@ Excel.Range#getLastCell:member(1):
 Excel.Range#getLastColumn:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
         range.load('address');
         await context.sync();
         
@@ -719,9 +718,9 @@ Excel.Range#getLastColumn:member(1):
 Excel.Range#getLastRow:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
         range.load('address');
         await context.sync();
         
@@ -730,9 +729,9 @@ Excel.Range#getLastRow:member(1):
 Excel.Range#getOffsetRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "D4:F6";
-        var range = 
+        const sheetName = "Sheet1";
+        const rangeAddress = "D4:F6";
+        const range = 
             context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
         range.load('address');
         await context.sync();
@@ -742,9 +741,9 @@ Excel.Range#getOffsetRange:member(1):
 Excel.Range#getRow:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
         range.load('address');
         await context.sync();
         
@@ -754,12 +753,12 @@ Excel.Range#numberFormat:member:
   - |-
     // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F5:G7";
-        var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
-        var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
-        var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "F5:G7";
+        const numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+        const values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+        const formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.numberFormat = numberFormat;
         range.values = values;
         range.formulas= formulas;
@@ -771,36 +770,36 @@ Excel.Range#numberFormat:member:
 Excel.Range#insert:member(1):
   - |-
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "F5:F10";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "F5:F10";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.insert(Excel.InsertShiftDirection.down);
         await context.sync();
     });
 Excel.Range#merge:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:C3";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.merge(true);
         await context.sync(); 
     });
 Excel.Range#select:member(1):
   - |-
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "F5:F10"; 
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "F5:F10"; 
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.select();
         await context.sync(); 
     });
 Excel.Range#unmerge:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:C3";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.unmerge();
         await context.sync(); 
     });
@@ -813,7 +812,7 @@ Excel.Range#untrack:member(1):
 
         for (let i = 0; i < largeRange.rowCount; i++) {
             for (let j = 0; j < largeRange.columnCount; j++) {
-                let cell = largeRange.getCell(i, j);
+                const cell = largeRange.getCell(i, j);
                 cell.values = [[i *j]];
 
                 // Call untrack() to release the range from memory.
@@ -827,10 +826,10 @@ Excel.Range#load:member(2):
   - |-
     // Use the range address to get the range object.
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8"; 
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8"; 
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
         range.load('cellCount');
         await context.sync();
         
@@ -840,9 +839,9 @@ Excel.RangeBorder#style:member:
   - |-
     // Add grid borders around the range.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const range = context.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
         range.format.borders.getItem('InsideVertical').style = 'Continuous';
         range.format.borders.getItem('EdgeBottom').style = 'Continuous';
@@ -854,11 +853,11 @@ Excel.RangeBorder#style:member:
 Excel.RangeBorderCollection#getItem:member(1):
   - |-
     await Excel.run(async (context) => {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const border = range.format.borders.getItem(Excel.BorderIndex.edgeTop);
         border.load('style');
         await context.sync();
 
@@ -867,11 +866,11 @@ Excel.RangeBorderCollection#getItem:member(1):
 Excel.RangeBorderCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var border = range.format.borders.getItemAt(0);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const border = range.format.borders.getItemAt(0);
         border.load('sideIndex');
         await context.sync();
         
@@ -880,38 +879,38 @@ Excel.RangeBorderCollection#getItemAt:member(1):
 Excel.RangeBorderCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var borders = range.format.borders;
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const borders = range.format.borders;
         borders.load('items');
         await context.sync();
         
         console.log(borders.count);
-        for (var i = 0; i < borders.items.length; i++) {
+        for (let i = 0; i < borders.items.length; i++) {
             console.log(borders.items[i].sideIndex);
         }
     });
 Excel.RangeFill#clear:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var rangeFill = range.format.fill;
+        const sheetName = "Sheet1";
+        const rangeAddress = "F:G";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const rangeFill = range.format.fill;
         rangeFill.clear();
         await context.sync(); 
     });
 Excel.RangeFill#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var rangeFill = range.format.fill;
+        const sheetName = "Sheet1";
+        const rangeAddress = "F:G";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const rangeFill = range.format.fill;
         rangeFill.load('color');
         await context.sync();
         console.log(rangeFill.color);
@@ -919,11 +918,11 @@ Excel.RangeFill#load:member(2):
 Excel.RangeFont#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var rangeFont = range.format.font;
+        const sheetName = "Sheet1";
+        const rangeAddress = "F:G";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
+        const rangeFont = range.format.font;
         rangeFont.load('name');
         await context.sync();
         console.log(rangeFont.name);
@@ -932,10 +931,10 @@ Excel.RangeFormat#load:member(2):
   - |-
     // Select all of the range's format properties.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F:G";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "F:G";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
         range.load(["format/*", "format/fill", "format/borders", "format/font"]);
         await context.sync();
         
@@ -946,25 +945,25 @@ Excel.RangeFormat#load:member(2):
 Excel.Table#convertToRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.convertToRange();
         await context.sync(); 
     });
 Excel.Table#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.delete();
         await context.sync(); 
     });
 Excel.Table#getDataBodyRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
-        var tableDataRange = table.getDataBodyRange();
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
+        const tableDataRange = table.getDataBodyRange();
         tableDataRange.load('address')
         await context.sync();
         
@@ -973,9 +972,9 @@ Excel.Table#getDataBodyRange:member(1):
 Excel.Table#getHeaderRowRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
-        var tableHeaderRange = table.getHeaderRowRange();
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
+        const tableHeaderRange = table.getHeaderRowRange();
         tableHeaderRange.load('address');
         await context.sync();
 
@@ -984,9 +983,9 @@ Excel.Table#getHeaderRowRange:member(1):
 Excel.Table#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
-        var tableRange = table.getRange();
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
+        const tableRange = table.getRange();
         tableRange.load('address');    
         await context.sync();
         
@@ -995,9 +994,9 @@ Excel.Table#getRange:member(1):
 Excel.Table#getTotalRowRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
-        var tableTotalsRange = table.getTotalRowRange();
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
+        const tableTotalsRange = table.getTotalRowRange();
         tableTotalsRange.load('address');    
         await context.sync();
         
@@ -1007,8 +1006,8 @@ Excel.Table#load:member(2):
   - |-
     // Get a table by name.
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.load('id')
         await context.sync();
         
@@ -1018,8 +1017,8 @@ Excel.Table#style:member:
   - |-
     // Set table style.
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.name = 'Table1-Renamed';
         table.showTotals = false;
         table.style = 'TableStyleMedium2';
@@ -1031,7 +1030,7 @@ Excel.Table#style:member:
 Excel.TableCollection#add:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var table = context.workbook.tables.add('Sheet1!A1:E7', true);
+        const table = context.workbook.tables.add('Sheet1!A1:E7', true);
         table.load('name');
         await context.sync();
         
@@ -1040,8 +1039,8 @@ Excel.TableCollection#add:member(1):
 Excel.TableCollection#getItem:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.load('name');
         await context.sync();
         
@@ -1050,7 +1049,7 @@ Excel.TableCollection#getItem:member(1):
 Excel.TableCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var table = context.workbook.tables.getItemAt(0);
+        const table = context.workbook.tables.getItemAt(0);
         table.load('name');
         await context.sync();
         
@@ -1060,7 +1059,7 @@ Excel.TableCollection#load:member(2):
   - |-
     // Get the number of tables.
     await Excel.run(async (context) => { 
-        var tables = context.workbook.tables;
+        const tables = context.workbook.tables;
         tables.load('count');
         await context.sync();
         
@@ -1069,17 +1068,17 @@ Excel.TableCollection#load:member(2):
 Excel.TableColumn#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
+        const tableName = 'Table1';
+        const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
         column.delete();
         await context.sync(); 
     });
 Excel.TableColumn#getDataBodyRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        var dataBodyRange = column.getDataBodyRange();
+        const tableName = 'Table1';
+        const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        const dataBodyRange = column.getDataBodyRange();
         dataBodyRange.load('address');
         await context.sync();
         
@@ -1088,9 +1087,9 @@ Excel.TableColumn#getDataBodyRange:member(1):
 Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        var headerRowRange = columns.getHeaderRowRange();
+        const tableName = 'Table1';
+        const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        const headerRowRange = columns.getHeaderRowRange();
         headerRowRange.load('address');
         await context.sync();
         
@@ -1099,9 +1098,9 @@ Excel.TableColumn#getHeaderRowRange:member(1):
 Excel.TableColumn#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        var columnRange = columns.getRange();
+        const tableName = 'Table1';
+        const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        const columnRange = columns.getRange();
         columnRange.load('address');
         await context.sync();
         
@@ -1110,9 +1109,9 @@ Excel.TableColumn#getRange:member(1):
 Excel.TableColumn#getTotalRowRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
-        var totalRowRange = columns.getTotalRowRange();
+        const tableName = 'Table1';
+        const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        const totalRowRange = columns.getTotalRowRange();
         totalRowRange.load('address');
         await context.sync();
         
@@ -1121,8 +1120,8 @@ Excel.TableColumn#getTotalRowRange:member(1):
 Excel.TableColumn#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var column = context.workbook.tables.getItem(tableName).columns.getItem(0);
+        const tableName = 'Table1';
+        const column = context.workbook.tables.getItem(tableName).columns.getItem(0);
         column.load('index');
         await context.sync();
         
@@ -1131,9 +1130,9 @@ Excel.TableColumn#load:member(2):
 Excel.TableColumnCollection#add:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tables = context.workbook.tables;
-        var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
-        var column = tables.getItem("Table1").columns.add(null, values);
+        const tables = context.workbook.tables;
+        const values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
+        const column = tables.getItem("Table1").columns.add(null, values);
         column.load('name');
         await context.sync();
         
@@ -1142,7 +1141,7 @@ Excel.TableColumnCollection#add:member(1):
 Excel.TableColumnCollection#getItem:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
+        const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
         tableColumn.load('name');
         await context.sync();
         console.log(tableColumn.name);
@@ -1150,7 +1149,7 @@ Excel.TableColumnCollection#getItem:member(1):
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+        const tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
         tableColumn.load('name');
         await context.sync();
         console.log(tableColumn.name);
@@ -1158,29 +1157,29 @@ Excel.TableColumnCollection#getItemAt:member(1):
 Excel.TableColumnCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var tableColumns = context.workbook.tables.getItem('Table1').columns;
+        const tableColumns = context.workbook.tables.getItem('Table1').columns;
         tableColumns.load('items');
         await context.sync();
         
         console.log("tableColumns Count: " + tableColumns.count);
-        for (var i = 0; i < tableColumns.items.length; i++) {
+        for (let i = 0; i < tableColumns.items.length; i++) {
             console.log(tableColumns.items[i].name);
         }
     });
 Excel.TableRow#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
+        const tableName = 'Table1';
+        const row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
         row.delete();
         await context.sync(); 
     });
 Excel.TableRow#getRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
-        var rowRange = row.getRange();
+        const tableName = 'Table1';
+        const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+        const rowRange = row.getRange();
         rowRange.load('address');
         await context.sync();
         
@@ -1189,8 +1188,8 @@ Excel.TableRow#getRange:member(1):
 Excel.TableRow#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
+        const tableName = 'Table1';
+        const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
         row.load('index');
         await context.sync();
         
@@ -1199,9 +1198,9 @@ Excel.TableRow#load:member(2):
 Excel.TableRowCollection#add:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tables = context.workbook.tables;
-        var values = [["Sample", "Values", "For", "New", "Row"]];
-        var row = tables.getItem("Table1").rows.add(null, values);
+        const tables = context.workbook.tables;
+        const values = [["Sample", "Values", "For", "New", "Row"]];
+        const row = tables.getItem("Table1").rows.add(null, values);
         row.load('index');
         await context.sync();
         
@@ -1210,7 +1209,7 @@ Excel.TableRowCollection#add:member(1):
 Excel.TableRowCollection#getItemAt:member(1):
   - |-
     await Excel.run(async (context) => {
-        var tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
+        const tablerow = context.workbook.tables.getItem('Table1').rows.getItemAt(0);
         tablerow.load('values');
         await context.sync();
         console.log(tablerow.values);
@@ -1218,20 +1217,20 @@ Excel.TableRowCollection#getItemAt:member(1):
 Excel.TableRowCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var tablerows = context.workbook.tables.getItem('Table1').rows;
+        const tablerows = context.workbook.tables.getItem('Table1').rows;
         tablerows.load('items');
         await context.sync();
         
         console.log("tablerows Count: " + tablerows.count);
-        for (var i = 0; i < tablerows.items.length; i++) {
+        for (let i = 0; i < tablerows.items.length; i++) {
             console.log(tablerows.items[i].index);
         }
     });
 Excel.TableSort#apply:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var tableName = 'Table1';
-        var table = context.workbook.tables.getItem(tableName);
+        const tableName = 'Table1';
+        const table = context.workbook.tables.getItem(tableName);
         table.sort.apply([ 
                 {
                     key: 2,
@@ -1243,7 +1242,7 @@ Excel.TableSort#apply:member(1):
 Excel.Workbook#getSelectedRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var selectedRange = context.workbook.getSelectedRange();
+        const selectedRange = context.workbook.getSelectedRange();
         selectedRange.load('address');
         await context.sync();
         console.log(selectedRange.address);
@@ -1251,26 +1250,26 @@ Excel.Workbook#getSelectedRange:member(1):
 Excel.Worksheet#activate:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sheet1';
-        var worksheet = context.workbook.worksheets.getItem(wSheetName);
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.activate();
         await context.sync(); 
     });
 Excel.Worksheet#delete:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sheet1';
-        var worksheet = context.workbook.worksheets.getItem(wSheetName);
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.delete();
         await context.sync(); 
     });
 Excel.Worksheet#getCell:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var cell = worksheet.getCell(0,0);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const cell = worksheet.getCell(0,0);
         cell.load('address');
         await context.sync();
 
@@ -1280,10 +1279,10 @@ Excel.Worksheet#getRange:member(1):
   - |-
     // Use the range address to get the range object.
     await Excel.run(async (context) => { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = context.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
+        const sheetName = "Sheet1";
+        const rangeAddress = "A1:F8";
+        const worksheet = context.workbook.worksheets.getItem(sheetName);
+        const range = worksheet.getRange(rangeAddress);
         range.load('cellCount');
         await context.sync();
         
@@ -1292,9 +1291,9 @@ Excel.Worksheet#getRange:member(1):
 Excel.Worksheet#getUsedRange:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sheet1';
-        var worksheet = context.workbook.worksheets.getItem(wSheetName);
-        var usedRange = worksheet.getUsedRange();
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
+        const usedRange = worksheet.getUsedRange();
         usedRange.load('address');
         await context.sync();
         
@@ -1304,8 +1303,8 @@ Excel.Worksheet#load:member(2):
   - |-
     // Get worksheet properties based on sheet name.
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sheet1';
-        var worksheet = context.workbook.worksheets.getItem(wSheetName);
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.load('position')
         await context.sync();
         
@@ -1314,7 +1313,7 @@ Excel.Worksheet#load:member(2):
 Excel.Worksheet#onActivated:member:
   - |-
     await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sample");
+        const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onActivated.add(function (event) {
             return Excel.run(async (context) => {
                 console.log("The activated worksheet ID is: " + event.worksheetId);
@@ -1326,7 +1325,7 @@ Excel.Worksheet#onActivated:member:
 Excel.Worksheet#onCalculated:member:
   - |-
     await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sample");
+        const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onCalculated.add(function (event) {
             return Excel.run(async (context) => {
                 console.log("The worksheet has recalculated.");
@@ -1338,7 +1337,7 @@ Excel.Worksheet#onCalculated:member:
 Excel.Worksheet#onDeactivated:member:
   - |-
     await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sample");
+        const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onDeactivated.add(function (event) {
             return Excel.run(async (context) => {
                 console.log("The deactivated worksheet is: " + event.worksheetId);
@@ -1362,7 +1361,7 @@ Excel.Worksheet#onRowHiddenChanged:member:
 Excel.Worksheet#onSelectionChanged:member:
   - |-
     await Excel.run(async (context) => {
-        var sheet = context.workbook.worksheets.getItem("Sample");
+        const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onSelectionChanged.add(function (event) {
             return Excel.run(async (context) => {
                 console.log("The selected range has changed to: " + event.address);
@@ -1375,8 +1374,8 @@ Excel.Worksheet#position:member:
   - |-
     // Set worksheet position.
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sheet1';
-        var worksheet = context.workbook.worksheets.getItem(wSheetName);
+        const wSheetName = 'Sheet1';
+        const worksheet = context.workbook.worksheets.getItem(wSheetName);
         worksheet.position = 2;
         await context.sync(); 
     });
@@ -1385,8 +1384,8 @@ Excel.WorksheetChangedEventArgs#details:member:
     // This function would be used as an event handler for the Worksheet.onChanged event.
     async function onWorksheetChanged(eventArgs) {
         await Excel.run(async (context) => {
-            var details = eventArgs.details;
-            var address = eventArgs.address;
+            const details = eventArgs.details;
+            const address = eventArgs.address;
 
             // Print the before and after types and values to the console.
             console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
@@ -1397,8 +1396,8 @@ Excel.WorksheetChangedEventArgs#details:member:
 Excel.WorksheetCollection#add:member(1):
   - |-
     await Excel.run(async (context) => { 
-        var wSheetName = 'Sample Name';
-        var worksheet = context.workbook.worksheets.add(wSheetName);
+        const wSheetName = 'Sample Name';
+        const worksheet = context.workbook.worksheets.add(wSheetName);
         worksheet.load('name');
         await context.sync();
         
@@ -1407,7 +1406,7 @@ Excel.WorksheetCollection#add:member(1):
 Excel.WorksheetCollection#getActiveWorksheet:member(1):
   - |-
     await Excel.run(async (context) => {  
-        var activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
+        const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
         activeWorksheet.load('name');
         await context.sync();
         console.log(activeWorksheet.name);
@@ -1415,11 +1414,11 @@ Excel.WorksheetCollection#getActiveWorksheet:member(1):
 Excel.WorksheetCollection#load:member(2):
   - |-
     await Excel.run(async (context) => { 
-        var worksheets = context.workbook.worksheets;
+        const worksheets = context.workbook.worksheets;
         worksheets.load('items');
         await context.sync();
         
-        for (var i = 0; i < worksheets.items.length; i++) {
+        for (let i = 0; i < worksheets.items.length; i++) {
             console.log(worksheets.items[i].name);
         }
     });
@@ -1430,7 +1429,7 @@ Excel.Worksheet#protection:member:
     // To remove only a subset of WorksheetProtectionOptions use the 
     // protect() method and set the options you wish to remove to true.
     await Excel.run(async (context) => {
-      var sheet = context.workbook.worksheets.getItem("Sheet1");
+      const sheet = context.workbook.worksheets.getItem("Sheet1");
       sheet.protection.protect({
         allowInsertRows: false, // Protect row insertion
         allowDeleteRows: true // Unprotect row deletion

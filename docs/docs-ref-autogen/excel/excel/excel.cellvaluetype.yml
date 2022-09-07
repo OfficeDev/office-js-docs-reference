@@ -16,9 +16,9 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/data-types-error-values.yaml
 
-  await Excel.run(async (context) => {
-    // This method sets the value of cell A1 to a #BUSY! error using data types.
+  // This function sets the value of cell A1 to a #BUSY! error using data types.
 
+  await Excel.run(async (context) => {
     // Retrieve the Sample worksheet and cell A1 on that sheet.
     const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
     const range = sheet.getRange("A1");

@@ -28,9 +28,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/data-types-web-image.yaml
 
-      await Excel.run(async (context) => {
-        // This method retrieves the image URL from the selected cell and opens that image in a new browser tab.
+      // This function retrieves the image URL from the selected cell and opens that image in a new browser tab.
 
+      await Excel.run(async (context) => {
         // Load the active cell information.
         const activeCell = context.workbook.getActiveCell();
         activeCell.load("valuesAsJson");
@@ -151,9 +151,9 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/data-types-web-image.yaml
 
-      await Excel.run(async (context) => {
-        // This method inserts a web image into the currently selected cell.
+      // This function inserts a web image into the currently selected cell.
 
+      await Excel.run(async (context) => {
         // Retrieve image data from the task pane and then clear the input fields.
         const imageUrl = $("#url").val() as string;
         const imageAltText = $("#alt-text").val() as string;

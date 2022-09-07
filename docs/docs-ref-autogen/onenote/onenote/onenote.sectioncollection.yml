@@ -62,14 +62,14 @@ methods:
       await OneNote.run(async (context) => {
 
           // Get the sections in the current notebook.
-          var sections = context.application.getActiveNotebook().sections;
+          const sections = context.application.getActiveNotebook().sections;
 
           // Queue a command to load the sections.
           // For best performance, request specific properties.
           sections.load("id"); 
           
           // Get the sections with the specified name.
-          var groceriesSections = sections.getByName("Groceries");
+          const groceriesSections = sections.getByName("Groceries");
           
           // Queue a command to load the sections with the specified name.
           groceriesSections.load("id,name");
@@ -179,7 +179,7 @@ methods:
           await OneNote.run(async (context) => {
 
               // Get the sections in the current notebook.
-              var sections = context.application.getActiveNotebook().sections;
+              const sections = context.application.getActiveNotebook().sections;
 
               // Queue a command to load the sections.
               // For best performance, request specific properties.

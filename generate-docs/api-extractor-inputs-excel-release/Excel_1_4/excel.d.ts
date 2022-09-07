@@ -273,6 +273,9 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
     /**
      * Provides information about the selection that raised the selection changed event.
                 
@@ -940,6 +943,10 @@ export declare namespace Excel {
     export class WorksheetProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
+        
+        
+        
         /**
          * Specifies the protection options for the worksheet.
          *
@@ -954,6 +961,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly protected: boolean;
+        
+        
+        
         /**
          * Protects a worksheet. Fails if the worksheet has already been protected.
          *
@@ -964,6 +974,9 @@ export declare namespace Excel {
          * @param password - Optional. Sheet protection password.
          */
         protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
+        
+        
+        
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -1193,7 +1206,7 @@ export declare namespace Excel {
         
         
         /**
-         * Represents Excel's number format code for the given range.
+         * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -1579,11 +1592,11 @@ export declare namespace Excel {
             expand?: string;
         }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
@@ -6962,7 +6975,7 @@ export declare namespace Excel {
     }
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for All, Formats, and Contents. 1.7 for Hyperlinks and RemoveHyperlinks.]
+     * [Api set: ExcelApi 1.1]
      */
     enum ClearApplyTo {
         /**
@@ -7607,7 +7620,7 @@ export declare namespace Excel {
     
     /**
      * @remarks
-     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     * [Api set: ExcelApi 1.1]
      */
     enum RangeValueType {
         /**
@@ -11629,6 +11642,7 @@ export declare namespace Excel {
         requestAborted = "RequestAborted",
         responsePayloadSizeLimitExceeded = "ResponsePayloadSizeLimitExceeded",
         unsupportedFeature = "UnsupportedFeature",
+        unsupportedFillType = "UnsupportedFillType",
         unsupportedOperation = "UnsupportedOperation",
         unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
@@ -11646,6 +11660,15 @@ export declare namespace Excel {
             * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
             */
             $skip?: number;
+        }
+        /** An interface for updating data on the AllowEditRange object, for use in `allowEditRange.set({ ... })`. */
+        export interface AllowEditRangeUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the AllowEditRangeCollection object, for use in `allowEditRangeCollection.set({ ... })`. */
+        export interface AllowEditRangeCollectionUpdateData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
         }
         /** An interface for updating data on the QueryCollection object, for use in `queryCollection.set({ ... })`. */
         export interface QueryCollectionUpdateData {
@@ -11758,7 +11781,7 @@ export declare namespace Excel {
             formulasR1C1?: any[][];
             
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -13444,6 +13467,16 @@ export declare namespace Excel {
         export interface NamedSheetViewCollectionUpdateData {
             items?: Excel.Interfaces.NamedSheetViewData[];
         }
+        /** An interface describing the data returned by calling `allowEditRange.toJSON()`. */
+        export interface AllowEditRangeData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `allowEditRangeCollection.toJSON()`. */
+        export interface AllowEditRangeCollectionData {
+            items?: Excel.Interfaces.AllowEditRangeData[];
+        }
         /** An interface describing the data returned by calling `query.toJSON()`. */
         export interface QueryData {
             
@@ -13649,6 +13682,10 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
+            
+            
+            
+            
             /**
              * Specifies the protection options for the worksheet.
              *
@@ -13663,6 +13700,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -13753,7 +13791,7 @@ export declare namespace Excel {
             
             
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -15874,6 +15912,8 @@ export declare namespace Excel {
         
         
         
+        
+        
         /**
          * Represents the Excel application that manages the workbook.
          *
@@ -16099,6 +16139,9 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
+            
+            
             /**
              * Specifies the protection options for the worksheet.
              *
@@ -16113,6 +16156,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             protected?: boolean;
+            
         }
         /**
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells.
@@ -16219,7 +16263,7 @@ export declare namespace Excel {
             
             
             /**
-             * Represents Excel's number format code for the given range.
+             * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

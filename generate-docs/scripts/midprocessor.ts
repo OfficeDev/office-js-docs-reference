@@ -104,7 +104,7 @@ tryCatch(async () => {
     let wordSnippetKeys = [];
     let commonText = fsx.readFileSync(path.resolve("../json/office/office.api.json"));
     for (const key of Object.keys(allSnippets)) {
-        if (key.startsWith("Excel")) {
+        if (key.startsWith("Excel") || key.startsWith("CustomFunctions")) {
             excelSnippetKeys.push(key);
         } else if (key.startsWith("OneNote")) {
             onenoteSnippetKeys.push(key);
@@ -294,7 +294,7 @@ function writeSnippetFileAndClearYamlIfNew(snippetsFilePath: string, snippetsCon
 
     let existingSnippets = "";
     if (fsx.existsSync(snippetsFilePath)) {
-        existingSnippets =  fsx.readFileSync(snippetsFilePath).toString();
+        existingSnippets = fsx.readFileSync(snippetsFilePath).toString();
     }
 
     if (existingSnippets !== snippetsContent) {

@@ -50,8 +50,8 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => { 
-          var wSheetName = 'Sample Name';
-          var worksheet = context.workbook.worksheets.add(wSheetName);
+          const wSheetName = 'Sample Name';
+          const worksheet = context.workbook.worksheets.add(wSheetName);
           worksheet.load('name');
           await context.sync();
           
@@ -163,7 +163,7 @@ methods:
 
       ```typescript
       await Excel.run(async (context) => {  
-          var activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
+          const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
           activeWorksheet.load('name');
           await context.sync();
           console.log(activeWorksheet.name);
@@ -387,11 +387,11 @@ methods:
 
           ```typescript
           await Excel.run(async (context) => { 
-              var worksheets = context.workbook.worksheets;
+              const worksheets = context.workbook.worksheets;
               worksheets.load('items');
               await context.sync();
               
-              for (var i = 0; i < worksheets.items.length; i++) {
+              for (let i = 0; i < worksheets.items.length; i++) {
                   console.log(worksheets.items[i].name);
               }
           });

@@ -26,8 +26,8 @@ properties:
 
       function displayAllBindings() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
+              let bindingString = '';
+              for (let i in asyncResult.value) {
                   bindingString += asyncResult.value[i].id + '\n';
               }
               write('Existing bindings: ' + bindingString);
@@ -128,7 +128,7 @@ properties:
 
               // Get the document mode and the URL of the active project.
               function showDocumentProperties() {
-                  var output = String.format(
+                  const output = String.format(
                       'The document mode is {0}.<br/>The URL of the active project is {1}.',
                       Office.context.document.mode,
                       Office.context.document.url);
@@ -405,7 +405,7 @@ methods:
                           onError(result.error);
                       }
                       else {
-                          var output = String.format(
+                          const output = String.format(
                               'View name: {0}<br/>View type: {1}',
                               result.value.viewName, result.value.viewType);
                           $('#message').html(output);
@@ -479,7 +479,7 @@ methods:
                           onError(result.error);
                       }
                       else {
-                          var viewType = result.value.viewType;
+                          const viewType = result.value.viewType;
                           if (viewType == 6 ||   // ResourceForm
                               viewType == 7 ||   // ResourceSheet
                               viewType == 8 ||   // ResourceGraph
@@ -489,7 +489,7 @@ methods:
                           else {
                               $('#get-info').attr('disabled', 'disabled');
                           }
-                          var output = String.format(
+                          const output = String.format(
                               'View name: {0}<br/>View type: {1}',
                               result.value.viewName, viewType);
                           $('#message').html(output);
@@ -692,9 +692,10 @@ methods:
                   if (result.status == "succeeded") {
                       // If the getFileAsync call succeeded, then
                       // result.value will return a valid File Object.
-                      var myFile = result.value;
-                      var sliceCount = myFile.sliceCount;
-                      var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                      const myFile = result.value;
+                      const sliceCount = myFile.sliceCount;
+                      const docdataSlices = [];
+                      let slicesReceived = 0, gotAllSlices = true;
                       app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                       // Get the file slices.
@@ -737,13 +738,13 @@ methods:
 
 
       function onGotAllSlices(docdataSlices) {
-          var docdata = [];
-          for (var i = 0; i < docdataSlices.length; i++) {
+          let docdata = [];
+          for (let i = 0; i < docdataSlices.length; i++) {
               docdata = docdata.concat(docdataSlices[i]);
           }
 
-          var fileContent = new String();
-          for (var j = 0; j < docdata.length; j++) {
+          let fileContent = new String();
+          for (let j = 0; j < docdata.length; j++) {
               fileContent += String.fromCharCode(docdata[j]);
           }
 
@@ -757,11 +758,12 @@ methods:
       Office.context.document.getFileAsync(Office.FileType.Pdf,
           function(result) {
               if (result.status == "succeeded") {
-                  var myFile = result.value;
-                  var sliceCount = myFile.sliceCount;
+                  const myFile = result.value;
+                  const sliceCount = myFile.sliceCount;
                   app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
                   // Get the file slices.
-                  var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                  const docdataSlices = [];
+                  let slicesReceived = 0, gotAllSlices = true;
                   getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                   
                   myFile.closeAsync();
@@ -922,7 +924,7 @@ methods:
       function getFileUrl() {
           // Get the URL of the current file.
           Office.context.document.getFilePropertiesAsync(function (asyncResult) {
-              var fileUrl = asyncResult.value.url;
+              const fileUrl = asyncResult.value.url;
               if (fileUrl == "") {
                   showMessage("The file hasn't been saved yet. Save the file and try again");
               }
@@ -1014,7 +1016,7 @@ methods:
 
           (function () {
               "use strict";
-              var resourceGuids = ;
+              const resourceGuids = [];
 
               // The initialize function must be run each time a new page is loaded.
               Office.initialize = function (reason) {
@@ -1037,7 +1039,7 @@ methods:
 
               // Get the maximum index of the resources for the current project.
               function getMaxResourceIndex() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getMaxResourceIndexAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1054,8 +1056,8 @@ methods:
               // Get each resource GUID, and then display the GUIDs in the add-in.
               // There is no 0 index for resources, so start with index 1.
               function getResourceGuids(maxResourceIndex) {
-                  var defer = $.Deferred();
-                  for (var i = 1; i <= maxResourceIndex; i++) {
+                  const defer = $.Deferred();
+                  for (let i = 1; i <= maxResourceIndex; i++) {
                       getResourceGuid(i);
                   }
                   return defer.promise();
@@ -1147,7 +1149,7 @@ methods:
 
           (function () {
               "use strict";
-              var taskGuids = ;
+              const taskGuids = [];
 
               // The initialize function must be run each time a new page is loaded.
               Office.initialize = function (reason) {
@@ -1170,7 +1172,7 @@ methods:
 
               // Get the maximum index of the tasks for the current project.
               function getMaxTaskIndex() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getMaxTaskIndexAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1186,8 +1188,8 @@ methods:
 
               // Get each task GUID, and then display the GUIDs in the add-in.
               function getTaskGuids(maxTaskIndex) {
-                  var defer = $.Deferred();
-                  for (var i = 0; i <= maxTaskIndex; i++) {
+                  const defer = $.Deferred();
+                  for (let i = 0; i <= maxTaskIndex; i++) {
                       getTaskGuid(i);
                   }
                   return defer.promise();
@@ -1291,19 +1293,19 @@ methods:
 
               // Get the specified fields for the active project.
               function getProjectInformation() {
-                  var fields =
+                  const fields =
                       [Office.ProjectProjectFields.Start, 
                        Office.ProjectProjectFields.Finish, 
                        Office.ProjectProjectFields.GUID];
-                  var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
-                  var index = 0; 
+                  const fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
+                  let index = 0; 
                   getField();
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
                       if (index == fields.length) {
-                          var output = '';
-                          for (var i = 0; i < fieldValues.length; i++) {
+                          let output = '';
+                          for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
                           }
                           $('#message').html(output);
@@ -1412,7 +1414,7 @@ methods:
 
           (function () {
               "use strict";
-              var resourceGuids = ;
+              const resourceGuids = [];
 
               // The initialize function must be run each time a new page is loaded.
               Office.initialize = function (reason) {
@@ -1435,7 +1437,7 @@ methods:
 
               // Get the maximum index of the resources for the current project.
               function getMaxResourceIndex() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getMaxResourceIndexAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1452,8 +1454,8 @@ methods:
               // Get each resource GUID, and then display the GUIDs in the add-in.
               // There is no 0 index for resources, so start with index 1.
               function getResourceGuids(maxResourceIndex) {
-                  var defer = $.Deferred();
-                  for (var i = 1; i <= maxResourceIndex; i++) {
+                  const defer = $.Deferred();
+                  for (let i = 1; i <= maxResourceIndex; i++) {
                       getResourceGuid(i);
                   }
                   return defer.promise();
@@ -1575,7 +1577,7 @@ methods:
 
               // Get the GUID of the selected resource.
               function getResourceGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedResourceAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1591,19 +1593,19 @@ methods:
 
               // Get the specified fields for the selected resource.
               function getResourceFields(resourceGuid) {
-                  var targetFields =
+                  const targetFields =
                       [Office.ProjectResourceFields.Name,
                        Office.ProjectResourceFields.Units, 
                        Office.ProjectResourceFields.BaseCalendar];
-                  var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-                  var index = 0; 
+                  const fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+                  let index = 0; 
                   getField();
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
                       if (index == targetFields.length) {
-                          var output = '';
-                          for (var i = 0; i < fieldValues.length; i++) {
+                          let output = '';
+                          for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
                           }
                           $('#message').html(output);
@@ -1715,8 +1717,7 @@ methods:
               {valueFormat: "unformatted",   // valueFormat
               filterType: "all"},            // filterType
               function (result) {            // callback
-                  var dataValue; 
-                  dataValue = result.value;
+                  const dataValue = result.value;
                   write('Selected data is: ' + dataValue);
               });
       }
@@ -1747,13 +1748,13 @@ methods:
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
               { valueFormat: "unformatted", filterType: "all" },
               function (asyncResult) {
-                  var error = asyncResult.error;
+                  const error = asyncResult.error;
                   if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                       write(error.name + ": " + error.message);
                   } 
                   else {
                       // Get selected data.
-                      var dataValue = asyncResult.value; 
+                      const dataValue = asyncResult.value; 
                       write('Selected data is ' + dataValue);
                   }            
               });
@@ -1805,7 +1806,7 @@ methods:
                           onError(result.error);
                       }
                       else {
-                          var output = String.format(
+                          const output = String.format(
                               'Selected text: {0}<br/>Passed info: {1}',
                               result.value, result.asyncContext);
                           $('#message').html(output);
@@ -2014,7 +2015,7 @@ methods:
 
               // Get the GUID of the selected resource.
               function getResourceGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedResourceAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2030,19 +2031,19 @@ methods:
 
               // Get the specified fields for the selected resource.
               function getResourceFields(resourceGuid) {
-                  var targetFields =
+                  const targetFields =
                       [Office.ProjectResourceFields.Name,
                        Office.ProjectResourceFields.Units, 
                        Office.ProjectResourceFields.BaseCalendar];
-                  var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-                  var index = 0; 
+                  const fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+                  let index = 0; 
                   getField();
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
                       if (index == targetFields.length) {
-                          var output = '';
-                          for (var i = 0; i < fieldValues.length; i++) {
+                          let output = '';
+                          for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
                           }
                           $('#message').html(output);
@@ -2153,7 +2154,7 @@ methods:
 
               // Get the GUID of the selected task.
               function getTaskGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedTaskAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2176,8 +2177,8 @@ methods:
                               onError(result.error);
                           }
                           else {
-                              var taskInfo = result.value;
-                              var output = String.format(
+                              const taskInfo = result.value;
+                              const output = String.format(
                                   'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
                                   taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
                               $('#message').html(output);
@@ -2270,7 +2271,7 @@ methods:
                               onError(result.error);
                           }
                           else {
-                              var output = String.format(
+                              const output = String.format(
                                   'View name: {0}<br/>View type: {1}',
                                   result.value.viewName, viewType);
                               $('#message').html(output);
@@ -2377,7 +2378,7 @@ methods:
 
               // Get the GUID of the selected task.
               function getTaskGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedTaskAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2400,8 +2401,8 @@ methods:
                               onError(result.error);
                           }
                           else {
-                              var taskInfo = result.value;
-                              var output = String.format(
+                              const taskInfo = result.value;
+                              const output = String.format(
                                   'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
                                   taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
                               $('#message').html(output);
@@ -2488,7 +2489,7 @@ methods:
 
           (function () {
               "use strict";
-              var taskGuids = ;
+              const taskGuids = [];
 
               // The initialize function must be run each time a new page is loaded.
               Office.initialize = function (reason) {
@@ -2511,7 +2512,7 @@ methods:
 
               // Get the maximum index of the tasks for the current project.
               function getMaxTaskIndex() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getMaxTaskIndexAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2527,8 +2528,8 @@ methods:
 
               // Get each task GUID, and then display the GUIDs in the add-in.
               function getTaskGuids(maxTaskIndex) {
-                  var defer = $.Deferred();
-                  for (var i = 0; i <= maxTaskIndex; i++) {
+                  const defer = $.Deferred();
+                  for (let i = 0; i <= maxTaskIndex; i++) {
                       getTaskGuid(i);
                   }
                   return defer.promise();
@@ -2646,7 +2647,7 @@ methods:
 
               // Get the GUID of the selected task.
               function getTaskGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedTaskAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2662,16 +2663,16 @@ methods:
 
               // Get the specified fields for the selected task.
               function getTaskFields(taskGuid) {
-                  var output = '';
-                  var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
-                  var fieldValues = ['Priority: ', '% Complete: '];
-                  var index = 0;
+                  let output = '';
+                  const targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
+                  const fieldValues = ['Priority: ', '% Complete: '];
+                  let index = 0;
                   getField();
 
                   // Get each field, and then display the field values in the add-in.
                   function getField() {
                       if (index == targetFields.length) {
-                          for (var i = 0; i < fieldValues.length; i++) {
+                          for (let i = 0; i < fieldValues.length; i++) {
                               output += fieldValues[i] + '<br />';
                           }
                           $('#message').html(output);
@@ -2911,7 +2912,7 @@ methods:
 
       //    which contains information about the selected slides, on the add-in's page.
 
-      var firstSlideId = 0;
+      let firstSlideId = 0;
 
       function gotoSelectedSlide() {
           //Get currently selected slide's id
@@ -2949,10 +2950,10 @@ methods:
       // 3. Display the value on the add-in's page.
 
       function goToSlideByIndex() {
-          var goToFirst = Office.Index.First;
-          var goToLast = Office.Index.Last;
-          var goToPrevious = Office.Index.Previous;
-          var goToNext = Office.Index.Next;
+          const goToFirst = Office.Index.First;
+          const goToLast = Office.Index.Last;
+          const goToPrevious = Office.Index.Previous;
+          const goToNext = Office.Index.Next;
 
           Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
               if (asyncResult.status == "failed") {
@@ -3239,7 +3240,7 @@ methods:
 
               // Get the GUID of the selected resource.
               function getResourceGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedResourceAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -3255,11 +3256,11 @@ methods:
 
               // Set the specified fields for the selected resource.
               function setResourceFields(resourceGuid) {
-                  var targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
-                  var fieldValues = [.28, 'Notes for the resource.'];
+                  const targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
+                  const fieldValues = [.28, 'Notes for the resource.'];
 
                   // Set the field value. If the call is successful, set the next field.
-                  for (var i = 0; i < targetFields.length; i++) {
+                  for (let i = 0; i < targetFields.length; i++) {
                       Office.context.document.setResourceFieldAsync(
                           resourceGuid,
                           targetFields[i],
@@ -3411,7 +3412,7 @@ methods:
       function writeText() {
           Office.context.document.setSelectedDataAsync("Hello World!",
               function (asyncResult) {
-                  var error = asyncResult.error;
+                  const error = asyncResult.error;
                   if (asyncResult.status === Office.AsyncResultStatus.Failed){
                       write(error.name + ": " + error.message);
                   }
@@ -3439,7 +3440,7 @@ methods:
               [["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]],
               {coercionType: Office.CoercionType.Matrix}
               function (asyncResult) {
-                  var error = asyncResult.error;
+                  const error = asyncResult.error;
                   if (asyncResult.status === Office.AsyncResultStatus.Failed){
                       write(error.name + ": " + error.message);
                   }
@@ -3462,14 +3463,14 @@ methods:
 
       function writeTable() {
           // Build table.
-          var myTable = new Office.TableData();
+          const myTable = new Office.TableData();
           myTable.headers = [["Cities"]];
           myTable.rows = [['Berlin'], ['Roma'], ['Tokyo'], ['Seattle']];
 
           // Write table.
           Office.context.document.setSelectedDataAsync(myTable, {coercionType: Office.CoercionType.Table},
               function (result) {
-                  var error = result.error
+                  const error = result.error
                   if (result.status === Office.AsyncResultStatus.Failed) {
                       write(error.name + ": " + error.message);
                   }
@@ -3882,7 +3883,7 @@ methods:
 
               // Get the GUID of the selected task.
               function getTaskGuid() {
-                  var defer = $.Deferred();
+                  const defer = $.Deferred();
                   Office.context.document.getSelectedTaskAsync(
                       function (result) {
                           if (result.status === Office.AsyncResultStatus.Failed) {
@@ -3898,11 +3899,11 @@ methods:
 
               // Set the specified fields for the selected task.
               function setTaskFields(taskGuid) {
-                  var targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
-                  var fieldValues = [true, 'Notes for the task.'];
+                  const targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
+                  const fieldValues = [true, 'Notes for the task.'];
 
                   // Set the field value. If the call is successful, set the next field.
-                  for (var i = 0; i < targetFields.length; i++) {
+                  for (let i = 0; i < targetFields.length; i++) {
                       Office.context.document.setTaskFieldAsync(
                           taskGuid,
                           targetFields[i],

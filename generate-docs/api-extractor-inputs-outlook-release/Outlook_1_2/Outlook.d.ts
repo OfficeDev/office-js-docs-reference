@@ -1073,7 +1073,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
@@ -3828,6 +3828,7 @@ export declare namespace Office {
          */
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+     
     
     
     

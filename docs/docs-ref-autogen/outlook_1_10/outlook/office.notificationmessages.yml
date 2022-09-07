@@ -30,6 +30,17 @@ methods:
 
       There are a maximum of 5 notifications per message. Setting more will return a
       `NumberOfNotificationMessagesExceeded` error.
+
+
+      **Important**:
+
+
+      - Only one notification of type
+      [InsightMessage](https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
+      is allowed per add-in. Attempting to add more will throw an error.
+
+
+      - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -52,11 +63,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
-          type: "progressIndicator",
+          type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
@@ -68,11 +79,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Non-persistent informational notification message with id = " + id,
           icon: "icon1",
           persistent: false
@@ -86,11 +97,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Persistent informational notification message with id = " + id,
           icon: "icon1",
           persistent: true
@@ -104,11 +115,11 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
-      var details =
+      const details =
         {
-          type: "errorMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
           message: "Error notification message with id = " + id
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
@@ -154,6 +165,17 @@ methods:
 
       There are a maximum of 5 notifications per message. Setting more will return a
       `NumberOfNotificationMessagesExceeded` error.
+
+
+      **Important**:
+
+
+      - Only one notification of type
+      [InsightMessage](https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields)
+      is allowed per add-in. Attempting to add more will throw an error.
+
+
+      - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -321,7 +343,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -425,12 +447,12 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
-      var id = $("#notificationId").val();
+      const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
         {
-          type: "informationalMessage",
+          type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
           message: "Notification message with id = " + id + " has been replaced with an informational message.",
           icon: "icon2",
           persistent: false

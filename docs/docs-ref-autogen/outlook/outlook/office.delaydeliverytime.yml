@@ -23,9 +23,9 @@ remarks: >-
 
   ```javascript
 
-  var date_1 = new Date();
+  const date_1 = new Date();
 
-  var date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+  const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
 
   Office.context.mailbox.item.delayDeliveryTime.setAsync(
       date_2,

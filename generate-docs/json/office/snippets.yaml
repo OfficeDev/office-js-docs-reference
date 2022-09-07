@@ -17,14 +17,14 @@
     // registered as an event handler for ItemSend.
     function checkMessage(event) {
         // Get the item being sent.
-        var outgoingMsg = Office.context.mailbox.item;
+        const outgoingMsg = Office.context.mailbox.item;
 
         // Check if subject contains "BLOCK".
         outgoingMsg.subject.getAsync(function (result) {
             // Subject is in `result.value`.
             // If search term "BLOCK" is found, don't send message.
             const notFound = -1;
-            var allowEvent = (result.value.indexOf('BLOCK') === notFound);
+            const allowEvent = (result.value.indexOf('BLOCK') === notFound);
             event.completed({allowEvent: allowEvent});
         });
     }
@@ -76,7 +76,7 @@
         // The event object implements the Event interface.
 
         // This value will be "eventTestButton".
-        var buttonId = event.source.id;
+        const buttonId = event.source.id;
 
         // Signal to the host app that processing is complete.
         event.completed();
@@ -86,7 +86,7 @@
     // button1 and button2
     function multiButton (event) {
         // Check which button was clicked.
-        var buttonId = event.source.id;
+        const buttonId = event.source.id;
 
         if (buttonId === 'button1') {
             doButton1Action();
@@ -195,7 +195,7 @@
         // The event object implements the Event interface.
 
         // This value will be "eventTestButton".
-        var buttonId = event.source.id;
+        const buttonId = event.source.id;
 
         // Signal to the host app that processing is complete.
         event.completed();
@@ -205,7 +205,7 @@
     // button1 and button2
     function multiButton (event) {
         // Check which button was clicked.
-        var buttonId = event.source.id;
+        const buttonId = event.source.id;
 
         if (buttonId === 'button1') {
             doButton1Action();
@@ -218,7 +218,7 @@
 'Office.AsyncResult#asyncContext:member':
   - |-
     function getDataWithContext() {
-        var format = "Your data: ";
+        const format = "Your data: ";
         Office.context.document.getSelectedDataAsync(
             Office.CoercionType.Text, 
             { asyncContext: format }, 
@@ -293,10 +293,10 @@
         },
         function (result) {
             if (result.status === Office.AsyncResultStatus.Succeeded) {
-                var dataValue = result.value; // Get selected data.
+                const dataValue = result.value; // Get selected data.
                 console.log('Selected data is ' + dataValue);
             } else {
-                var err = result.error;
+                const err = result.error;
                 console.log(err.name + ": " + err.message);
             }
         });
@@ -314,17 +314,28 @@
 
     // return the data selected in the document:
 
-    var dataValue = result.value;
+    // const dataValue = result.value;
 
     // Note that other lines of code in the function use the result parameter of
     the callback function 
 
     // to access the status and error properties of the AsyncResult object.
+'Office.Auth#getAccessToken:member(1)':
+  - |-
+    try{
+        const accessToken = await Office.auth.getAccessToken({
+            allowSignInPrompt: true,
+            allowConsentPrompt: true,
+            forMSGraphAccess: true,
+        });
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 'Office.Auth#getAccessTokenAsync:member(1)':
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
-        if (result.status === "succeeded") {
-            var token = result.value;
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+            const token = result.value;
             // ...
         } else {
             console.log("Error obtaining token", result.error);
@@ -353,8 +364,8 @@
     });    
 'Office.Binding#addHandlerAsync:member(2)':
   - >-
-    // The following code sample calls the select method of the Office object to
-    access the binding
+    // The following code sample calls the select function of the Office object
+    to access the binding
 
     // with ID "MyBinding", and then calls the addHandlerAsync method to add a
     handler function 
@@ -601,7 +612,7 @@
 
     function writeBoundDataTable() {
         // Create a TableData object.
-        var myTable = new Office.TableData();
+        const myTable = new Office.TableData();
         myTable.headers = ['First Name', 'Last Name', 'Grade'];
         myTable.rows = [['Kim', 'Abercrombie', 'A'], ['Junmin','Hao', 'C'],['Toni','Poe','B']];
 
@@ -620,7 +631,7 @@
     // Replace last column with different data.
 
     function updateTableData() {
-        var newTable = new Office.TableData();
+        const newTable = new Office.TableData();
         newTable.headers = ["Gender"];
         newTable.rows = [["M"],["M"],["F"]];
         Office.select("bindings#myBinding").setDataAsync(newTable, { coercionType: "table", startColumn:2 }, 
@@ -878,8 +889,8 @@
   - |-
     function displayAllBindingNames() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
-            var bindingString = '';
-            for (var i in asyncResult.value) {
+            let bindingString = '';
+            for (let i in asyncResult.value) {
                 bindingString += asyncResult.value[i].id + '\n';
             }
             write('Existing bindings: ' + bindingString);
@@ -915,7 +926,7 @@
 'Office.Context#contentLanguage:member':
   - |-
     function sayHelloWithContentLanguage() {
-        var myContentLanguage = Office.context.contentLanguage;
+        const myContentLanguage = Office.context.contentLanguage;
         switch (myContentLanguage) {
             case 'en-US':
                 write('Hello!');
@@ -931,14 +942,14 @@
     }
 'Office.Context#diagnostics:member':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Office application: " + contextInfo.host);
     console.log("Office version: " + contextInfo.version);
     console.log("Platform: " + contextInfo.platform);
 'Office.Context#displayLanguage:member':
   - |-
     function sayHelloWithDisplayLanguage() {
-        var myDisplayLanguage = Office.context.displayLanguage;
+        const myDisplayLanguage = Office.context.displayLanguage;
         switch (myDisplayLanguage) {
             case 'en-US':
                 write('Hello!');
@@ -955,11 +966,11 @@
 'Office.Context#document:member':
   - |-
     // Extension initialization code.
-    var _document;
+    let _document;
 
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Initialize instance variables to access API objects.
@@ -971,15 +982,15 @@
     // The following line of code access the item object of the JavaScript API
     for Office.
 
-    var item = Office.context.mailbox.item;
+    const item = Office.context.mailbox.item;
 'Office.Context#officeTheme:member':
   - |-
     function applyOfficeTheme(){
         // Get office theme colors.
-        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+        const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+        const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
@@ -987,32 +998,32 @@
 'Office.Context#roamingSettings:member':
   - |-
     // Get the current value of the 'myKey' setting.
-    var value = Office.context.roamingSettings.get('myKey');
+    const value = Office.context.roamingSettings.get('myKey');
     // Update the value of the 'myKey' setting.
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
 'Office.ContextInformation#host:member':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Office application: " + contextInfo.host);
 'Office.ContextInformation#platform:member':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Platform: " + contextInfo.platform);
 'Office.ContextInformation#version:member':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Office version: " + contextInfo.version);
 'Office.CustomXmlNode#baseName:member':
   - |-
     function showXmlNodeBaseNames() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     write(node.baseName);
                 }
             });
@@ -1027,10 +1038,10 @@
     function showXmlNodeValues() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     node.getNodeValueAsync(function (asyncResult) {
                         write(asyncResult.value);
                     });
@@ -1047,10 +1058,10 @@
     function showXmlChildNodes() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     node.getNodesAsync('*', function (nodeResults) {
                         write(nodeResults.value.length + " childNodes");
                     });
@@ -1071,7 +1082,7 @@
         "{6C3C8BC8-F283-45AE-878A-BAB7291924A1}", function (getByIdAsyncResult) {
         
         // Access the XML part.
-        var xmlPart = getByIdAsyncResult.value;
+        const xmlPart = getByIdAsyncResult.value;
         
         // Add namespaces to the namespace manager. These two calls result in two calls to Word.
         xmlPart.namespaceManager.addNamespaceAsync(
@@ -1087,7 +1098,7 @@
                 xmlPart.getNodesAsync("/cp:coreProperties/dc:title", function (getNodesAsyncResult) {
                     
                     // Get the first node returned by using the Xpath expression. 
-                    var node = getNodesAsyncResult.value[0];
+                    const node = getNodesAsyncResult.value[0];
                     
                     // Get the text value of the node and use the asyncContext. This results in a call to Word. 
                     // The results are logged to the browser console.
@@ -1104,10 +1115,10 @@
     function showXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     node.getXmlAsync(function (asyncResult) {
                         write(asyncResult.value);
                     });
@@ -1124,10 +1135,10 @@
     function showXmlNamespaceUri() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     write(node.namespaceUri);
                 }
             });
@@ -1142,10 +1153,10 @@
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     write(node.nodeType);
                 }
             });
@@ -1160,10 +1171,10 @@
     function setXmlNodeValue() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     write(node);
                     node.setNodeValueAsync("item number" + i, function (result) { });
                 }
@@ -1188,7 +1199,7 @@
         function (getByIdAsyncResult) {
         
         // Access the XML part.
-        var xmlPart = getByIdAsyncResult.value;
+        const xmlPart = getByIdAsyncResult.value;
         
         // Add namespaces to the namespace manager. These two calls result in two calls to Word.
         xmlPart.namespaceManager.addNamespaceAsync(
@@ -1205,7 +1216,7 @@
                     
                     // Get the first node returned by using the Xpath expression.
                     // This will be the subject element in this example.
-                    var subjectNode = getNodesAsyncResult.value[0];
+                    const subjectNode = getNodesAsyncResult.value[0];
                     
                     // Set the text value of the subject node and use the asyncContext. 
                     // This results in a call to the host.  The results are logged to the browser console.
@@ -1225,10 +1236,10 @@
     function setXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     node.setXmlAsync("<childNode>" + i + "</childNode>");
                 }
             });
@@ -1242,7 +1253,7 @@
     function addNodeDeletedEvent() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
                 write("A node has been deleted.");
             });
@@ -1261,7 +1272,7 @@
     function addNodeInsertedEvent() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
                 write("A node has been inserted.");
             });
@@ -1280,7 +1291,7 @@
     function addNodeReplacedEvent() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
                 write("A node has been replaced.");
             });
@@ -1297,7 +1308,7 @@
     function showXMLPartBuiltIn() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             write(xmlPart.builtIn);
         });
     }
@@ -1311,7 +1322,7 @@
     function deleteXMLPart() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.deleteAsync(function (eventArgs) {
                 write("The XML Part has been deleted.");
             });
@@ -1326,10 +1337,10 @@
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getNodesAsync('*/*', function (nodeResults) {
-                for (i = 0; i < nodeResults.value.length; i++) {
-                    var node = nodeResults.value[i];
+                for (let i = 0; i < nodeResults.value.length; i++) {
+                    const node = nodeResults.value[i];
                     write(node.nodeType);
                 }
             });
@@ -1344,7 +1355,7 @@
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getXmlAsync(function (eventArgs) {
                 write(eventArgs.value);
             });
@@ -1359,7 +1370,7 @@
     function showXMLPartBuiltId() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             write(xmlPart.id);
         });
     }
@@ -1372,7 +1383,7 @@
     function setXMLPartNamespaceManagerNamespace() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
         });
     }
@@ -1382,7 +1393,7 @@
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}",
             function (result) {
-                var xmlPart = result.value;
+                const xmlPart = result.value;
                 xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
         });
     }
@@ -1414,7 +1425,7 @@
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
+            const xmlPart = result.value;
             xmlPart.getXmlAsync({}, function (eventArgs) {
                 write(eventArgs.value);
             });
@@ -1605,7 +1616,7 @@
                         onError(result.error);
                     }
                     else {
-                        var output = String.format(
+                        const output = String.format(
                             'View name: {0}<br/>View type: {1}',
                             result.value.viewName, result.value.viewType);
                         $('#message').html(output);
@@ -1682,7 +1693,7 @@
                         onError(result.error);
                     }
                     else {
-                        var viewType = result.value.viewType;
+                        const viewType = result.value.viewType;
                         if (viewType == 6 ||   // ResourceForm
                             viewType == 7 ||   // ResourceSheet
                             viewType == 8 ||   // ResourceGraph
@@ -1692,7 +1703,7 @@
                         else {
                             $('#get-info').attr('disabled', 'disabled');
                         }
-                        var output = String.format(
+                        const output = String.format(
                             'View name: {0}<br/>View type: {1}',
                             result.value.viewName, viewType);
                         $('#message').html(output);
@@ -1733,8 +1744,8 @@
   - |-
     function displayAllBindings() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
-            var bindingString = '';
-            for (var i in asyncResult.value) {
+            let bindingString = '';
+            for (let i in asyncResult.value) {
                 bindingString += asyncResult.value[i].id + '\n';
             }
             write('Existing bindings: ' + bindingString);
@@ -1784,9 +1795,10 @@
                 if (result.status == "succeeded") {
                     // If the getFileAsync call succeeded, then
                     // result.value will return a valid File Object.
-                    var myFile = result.value;
-                    var sliceCount = myFile.sliceCount;
-                    var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                    const myFile = result.value;
+                    const sliceCount = myFile.sliceCount;
+                    const docdataSlices = [];
+                    let slicesReceived = 0, gotAllSlices = true;
                     app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
                     // Get the file slices.
@@ -1830,13 +1842,13 @@
 
 
     function onGotAllSlices(docdataSlices) {
-        var docdata = [];
-        for (var i = 0; i < docdataSlices.length; i++) {
+        let docdata = [];
+        for (let i = 0; i < docdataSlices.length; i++) {
             docdata = docdata.concat(docdataSlices[i]);
         }
 
-        var fileContent = new String();
-        for (var j = 0; j < docdata.length; j++) {
+        let fileContent = new String();
+        for (let j = 0; j < docdata.length; j++) {
             fileContent += String.fromCharCode(docdata[j]);
         }
 
@@ -1850,11 +1862,12 @@
     Office.context.document.getFileAsync(Office.FileType.Pdf,
         function(result) {
             if (result.status == "succeeded") {
-                var myFile = result.value;
-                var sliceCount = myFile.sliceCount;
+                const myFile = result.value;
+                const sliceCount = myFile.sliceCount;
                 app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
                 // Get the file slices.
-                var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                const docdataSlices = [];
+                let slicesReceived = 0, gotAllSlices = true;
                 getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                 
                 myFile.closeAsync();
@@ -1882,7 +1895,7 @@
     function getFileUrl() {
         // Get the URL of the current file.
         Office.context.document.getFilePropertiesAsync(function (asyncResult) {
-            var fileUrl = asyncResult.value.url;
+            const fileUrl = asyncResult.value.url;
             if (fileUrl == "") {
                 showMessage("The file hasn't been saved yet. Save the file and try again");
             }
@@ -1912,7 +1925,7 @@
 
     (function () {
         "use strict";
-        var resourceGuids = ;
+        const resourceGuids = [];
 
         // The initialize function must be run each time a new page is loaded.
         Office.initialize = function (reason) {
@@ -1935,7 +1948,7 @@
 
         // Get the maximum index of the resources for the current project.
         function getMaxResourceIndex() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getMaxResourceIndexAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -1952,8 +1965,8 @@
         // Get each resource GUID, and then display the GUIDs in the add-in.
         // There is no 0 index for resources, so start with index 1.
         function getResourceGuids(maxResourceIndex) {
-            var defer = $.Deferred();
-            for (var i = 1; i <= maxResourceIndex; i++) {
+            const defer = $.Deferred();
+            for (let i = 1; i <= maxResourceIndex; i++) {
                 getResourceGuid(i);
             }
             return defer.promise();
@@ -2000,7 +2013,7 @@
 
     (function () {
         "use strict";
-        var taskGuids = ;
+        const taskGuids = [];
 
         // The initialize function must be run each time a new page is loaded.
         Office.initialize = function (reason) {
@@ -2023,7 +2036,7 @@
 
         // Get the maximum index of the tasks for the current project.
         function getMaxTaskIndex() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getMaxTaskIndexAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2039,8 +2052,8 @@
 
         // Get each task GUID, and then display the GUIDs in the add-in.
         function getTaskGuids(maxTaskIndex) {
-            var defer = $.Deferred();
-            for (var i = 0; i <= maxTaskIndex; i++) {
+            const defer = $.Deferred();
+            for (let i = 0; i <= maxTaskIndex; i++) {
                 getTaskGuid(i);
             }
             return defer.promise();
@@ -2099,19 +2112,19 @@
 
         // Get the specified fields for the active project.
         function getProjectInformation() {
-            var fields =
+            const fields =
                 [Office.ProjectProjectFields.Start, 
                  Office.ProjectProjectFields.Finish, 
                  Office.ProjectProjectFields.GUID];
-            var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
-            var index = 0; 
+            const fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
+            let index = 0; 
             getField();
 
             // Get each field, and then display the field values in the add-in.
             function getField() {
                 if (index == fields.length) {
-                    var output = '';
-                    for (var i = 0; i < fieldValues.length; i++) {
+                    let output = '';
+                    for (let i = 0; i < fieldValues.length; i++) {
                         output += fieldValues[i] + '<br />';
                     }
                     $('#message').html(output);
@@ -2159,7 +2172,7 @@
 
     (function () {
         "use strict";
-        var resourceGuids = ;
+        const resourceGuids = [];
 
         // The initialize function must be run each time a new page is loaded.
         Office.initialize = function (reason) {
@@ -2182,7 +2195,7 @@
 
         // Get the maximum index of the resources for the current project.
         function getMaxResourceIndex() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getMaxResourceIndexAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2199,8 +2212,8 @@
         // Get each resource GUID, and then display the GUIDs in the add-in.
         // There is no 0 index for resources, so start with index 1.
         function getResourceGuids(maxResourceIndex) {
-            var defer = $.Deferred();
-            for (var i = 1; i <= maxResourceIndex; i++) {
+            const defer = $.Deferred();
+            for (let i = 1; i <= maxResourceIndex; i++) {
                 getResourceGuid(i);
             }
             return defer.promise();
@@ -2268,7 +2281,7 @@
 
         // Get the GUID of the selected resource.
         function getResourceGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedResourceAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2284,19 +2297,19 @@
 
         // Get the specified fields for the selected resource.
         function getResourceFields(resourceGuid) {
-            var targetFields =
+            const targetFields =
                 [Office.ProjectResourceFields.Name,
                  Office.ProjectResourceFields.Units, 
                  Office.ProjectResourceFields.BaseCalendar];
-            var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-            var index = 0; 
+            const fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+            let index = 0; 
             getField();
 
             // Get each field, and then display the field values in the add-in.
             function getField() {
                 if (index == targetFields.length) {
-                    var output = '';
-                    for (var i = 0; i < fieldValues.length; i++) {
+                    let output = '';
+                    for (let i = 0; i < fieldValues.length; i++) {
                         output += fieldValues[i] + '<br />';
                     }
                     $('#message').html(output);
@@ -2342,8 +2355,7 @@
             {valueFormat: "unformatted",   // valueFormat
             filterType: "all"},            // filterType
             function (result) {            // callback
-                var dataValue; 
-                dataValue = result.value;
+                const dataValue = result.value;
                 write('Selected data is: ' + dataValue);
             });
     }
@@ -2372,13 +2384,13 @@
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
             { valueFormat: "unformatted", filterType: "all" },
             function (asyncResult) {
-                var error = asyncResult.error;
+                const error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                     write(error.name + ": " + error.message);
                 } 
                 else {
                     // Get selected data.
-                    var dataValue = asyncResult.value; 
+                    const dataValue = asyncResult.value; 
                     write('Selected data is ' + dataValue);
                 }            
             });
@@ -2428,7 +2440,7 @@
                         onError(result.error);
                     }
                     else {
-                        var output = String.format(
+                        const output = String.format(
                             'Selected text: {0}<br/>Passed info: {1}',
                             result.value, result.asyncContext);
                         $('#message').html(output);
@@ -2484,7 +2496,7 @@
 
         // Get the GUID of the selected resource.
         function getResourceGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedResourceAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2500,19 +2512,19 @@
 
         // Get the specified fields for the selected resource.
         function getResourceFields(resourceGuid) {
-            var targetFields =
+            const targetFields =
                 [Office.ProjectResourceFields.Name,
                  Office.ProjectResourceFields.Units, 
                  Office.ProjectResourceFields.BaseCalendar];
-            var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-            var index = 0; 
+            const fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+            let index = 0; 
             getField();
 
             // Get each field, and then display the field values in the add-in.
             function getField() {
                 if (index == targetFields.length) {
-                    var output = '';
-                    for (var i = 0; i < fieldValues.length; i++) {
+                    let output = '';
+                    for (let i = 0; i < fieldValues.length; i++) {
                         output += fieldValues[i] + '<br />';
                     }
                     $('#message').html(output);
@@ -2582,7 +2594,7 @@
 
         // Get the GUID of the selected task.
         function getTaskGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedTaskAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2605,8 +2617,8 @@
                         onError(result.error);
                     }
                     else {
-                        var taskInfo = result.value;
-                        var output = String.format(
+                        const taskInfo = result.value;
+                        const output = String.format(
                             'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
                             taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
                         $('#message').html(output);
@@ -2659,7 +2671,7 @@
                         onError(result.error);
                     }
                     else {
-                        var output = String.format(
+                        const output = String.format(
                             'View name: {0}<br/>View type: {1}',
                             result.value.viewName, viewType);
                         $('#message').html(output);
@@ -2715,7 +2727,7 @@
 
         // Get the GUID of the selected task.
         function getTaskGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedTaskAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2738,8 +2750,8 @@
                         onError(result.error);
                     }
                     else {
-                        var taskInfo = result.value;
-                        var output = String.format(
+                        const taskInfo = result.value;
+                        const output = String.format(
                             'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
                             taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
                         $('#message').html(output);
@@ -2765,7 +2777,7 @@
 
     (function () {
         "use strict";
-        var taskGuids = ;
+        const taskGuids = [];
 
         // The initialize function must be run each time a new page is loaded.
         Office.initialize = function (reason) {
@@ -2788,7 +2800,7 @@
 
         // Get the maximum index of the tasks for the current project.
         function getMaxTaskIndex() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getMaxTaskIndexAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2804,8 +2816,8 @@
 
         // Get each task GUID, and then display the GUIDs in the add-in.
         function getTaskGuids(maxTaskIndex) {
-            var defer = $.Deferred();
-            for (var i = 0; i <= maxTaskIndex; i++) {
+            const defer = $.Deferred();
+            for (let i = 0; i <= maxTaskIndex; i++) {
                 getTaskGuid(i);
             }
             return defer.promise();
@@ -2871,7 +2883,7 @@
 
         // Get the GUID of the selected task.
         function getTaskGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedTaskAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -2887,16 +2899,16 @@
 
         // Get the specified fields for the selected task.
         function getTaskFields(taskGuid) {
-            var output = '';
-            var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
-            var fieldValues = ['Priority: ', '% Complete: '];
-            var index = 0;
+            let output = '';
+            const targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
+            const fieldValues = ['Priority: ', '% Complete: '];
+            let index = 0;
             getField();
 
             // Get each field, and then display the field values in the add-in.
             function getField() {
                 if (index == targetFields.length) {
-                    for (var i = 0; i < fieldValues.length; i++) {
+                    for (let i = 0; i < fieldValues.length; i++) {
                         output += fieldValues[i] + '<br />';
                     }
                     $('#message').html(output);
@@ -3011,7 +3023,7 @@
     //    which contains information about the selected slides, on the add-in's
     page.
 
-    var firstSlideId = 0;
+    let firstSlideId = 0;
 
     function gotoSelectedSlide() {
         //Get currently selected slide's id
@@ -3051,10 +3063,10 @@
     // 3. Display the value on the add-in's page.
 
     function goToSlideByIndex() {
-        var goToFirst = Office.Index.First;
-        var goToLast = Office.Index.Last;
-        var goToPrevious = Office.Index.Previous;
-        var goToNext = Office.Index.Next;
+        const goToFirst = Office.Index.First;
+        const goToLast = Office.Index.Last;
+        const goToPrevious = Office.Index.Previous;
+        const goToNext = Office.Index.Next;
 
         Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
             if (asyncResult.status == "failed") {
@@ -3111,7 +3123,7 @@
 
         // Get the document mode and the URL of the active project.
         function showDocumentProperties() {
-            var output = String.format(
+            const output = String.format(
                 'The document mode is {0}.<br/>The URL of the active project is {1}.',
                 Office.context.document.mode,
                 Office.context.document.url);
@@ -3254,7 +3266,7 @@
 
         // Get the GUID of the selected resource.
         function getResourceGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedResourceAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -3270,11 +3282,11 @@
 
         // Set the specified fields for the selected resource.
         function setResourceFields(resourceGuid) {
-            var targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
-            var fieldValues = [.28, 'Notes for the resource.'];
+            const targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
+            const fieldValues = [.28, 'Notes for the resource.'];
 
             // Set the field value. If the call is successful, set the next field.
-            for (var i = 0; i < targetFields.length; i++) {
+            for (let i = 0; i < targetFields.length; i++) {
                 Office.context.document.setResourceFieldAsync(
                     resourceGuid,
                     targetFields[i],
@@ -3305,7 +3317,7 @@
     function writeText() {
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
-                var error = asyncResult.error;
+                const error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed){
                     write(error.name + ": " + error.message);
                 }
@@ -3336,7 +3348,7 @@
             [["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]],
             {coercionType: Office.CoercionType.Matrix}
             function (asyncResult) {
-                var error = asyncResult.error;
+                const error = asyncResult.error;
                 if (asyncResult.status === Office.AsyncResultStatus.Failed){
                     write(error.name + ": " + error.message);
                 }
@@ -3361,14 +3373,14 @@
 
     function writeTable() {
         // Build table.
-        var myTable = new Office.TableData();
+        const myTable = new Office.TableData();
         myTable.headers = [["Cities"]];
         myTable.rows = [['Berlin'], ['Roma'], ['Tokyo'], ['Seattle']];
 
         // Write table.
         Office.context.document.setSelectedDataAsync(myTable, {coercionType: Office.CoercionType.Table},
             function (result) {
-                var error = result.error
+                const error = result.error
                 if (result.status === Office.AsyncResultStatus.Failed) {
                     write(error.name + ": " + error.message);
                 }
@@ -3501,7 +3513,7 @@
 
         // Get the GUID of the selected task.
         function getTaskGuid() {
-            var defer = $.Deferred();
+            const defer = $.Deferred();
             Office.context.document.getSelectedTaskAsync(
                 function (result) {
                     if (result.status === Office.AsyncResultStatus.Failed) {
@@ -3517,11 +3529,11 @@
 
         // Set the specified fields for the selected task.
         function setTaskFields(taskGuid) {
-            var targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
-            var fieldValues = [true, 'Notes for the task.'];
+            const targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
+            const fieldValues = [true, 'Notes for the task.'];
 
             // Set the field value. If the call is successful, set the next field.
-            for (var i = 0; i < targetFields.length; i++) {
+            for (let i = 0; i < targetFields.length; i++) {
                 Office.context.document.setTaskFieldAsync(
                     taskGuid,
                     targetFields[i],
@@ -3562,7 +3574,7 @@
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
                 if (asyncResult.status === "failed")
-                    var error = asyncResult.error;
+                    const error = asyncResult.error;
                 write(error.name + ": " + error.code + " - " + error.message);
             });
     }
@@ -3582,7 +3594,7 @@
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
                 if (asyncResult.status === "failed")
-                    var error = asyncResult.error;
+                    const error = asyncResult.error;
                 write(error.name + ": " + error.message);
             });
     }
@@ -3602,7 +3614,7 @@
         Office.context.document.setSelectedDataAsync("Hello World!",
             function (asyncResult) {
                 if (asyncResult.status === "failed")
-                    var error = asyncResult.error;
+                    const error = asyncResult.error;
                 write(error.name + ": " + error.message);
             });
     }
@@ -3618,13 +3630,13 @@
     // This sample shows how to get all the slices of a file. 
     // The asynchronous operation returns a Promise so it can be awaited.
     private getAllSlices(file: any): Promise<any> {
-        var self = this;
-        var isError = false;
+        const self = this;
+        let isError = false;
 
         return new Promise(async (resolve, reject) => {
-            var documentFileData = [];
-            for (var sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
-                var sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
+            let documentFileData = [];
+            for (let sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
+                const sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
                     file.getSliceAsync(sliceIndex, (asyncResult) => {
                         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                             documentFileData = documentFileData.concat(asyncResult.value.data);
@@ -3661,7 +3673,7 @@
     }
 'Office.HostType:enum':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Office application: " + contextInfo.host);
 'Office.MatrixBinding#columnCount:member':
   - |-
@@ -3689,17 +3701,17 @@
   - |-
     function applyOfficeTheme(){
         // Get office theme colors.
-        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+        const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
+        const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
 'Office.PlatformType:enum':
   - |-
-    var contextInfo = Office.context.diagnostics;
+    const contextInfo = Office.context.diagnostics;
     console.log("Platform: " + contextInfo.platform);
 'Office.Settings#addHandlerAsync:member(2)':
   - |-
@@ -3786,7 +3798,7 @@
     // Add a column to a binding of type table by passing a TableData object.
 
     function addColumns() {
-        var myTable = new Office.TableData();
+        const myTable = new Office.TableData();
         myTable.headers = [["Cities"]];
         myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
 
@@ -3808,7 +3820,7 @@
     // Add a column to a binding of type table by passing an array of arrays.
 
     function addColumns() {
-        var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
+        const myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
 
         Office.context.document.bindings.getByIdAsync("myTable", function (result) {
             result.value.addColumnsAsync(myTable);
@@ -3818,7 +3830,7 @@
   - |-
     function addRowsToTable() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            var binding = asyncResult.value;
+            const binding = asyncResult.value;
             binding.addRowsAsync([["6", "k"], ["7", "j"]]);
         });
     }
@@ -3843,7 +3855,7 @@
   - |-
     function deleteAllRowsFromTable() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            var binding = asyncResult.value;
+            const binding = asyncResult.value;
             binding.deleteAllDataValuesAsync();
         });
     }
@@ -3929,7 +3941,7 @@
     //    with formatting setting as the tableOptions parameter.
 
     function updateTableFormatting(){
-        var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
+        const tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 
         Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
     }
@@ -3939,7 +3951,7 @@
     three rows.
 
     function createTableData() {
-        var tableData = new Office.TableData();
+        const tableData = new Office.TableData();
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
@@ -3950,7 +3962,7 @@
     three rows.
 
     function createTableData() {
-        var tableData = new Office.TableData();
+        const tableData = new Office.TableData();
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
@@ -3969,7 +3981,7 @@
     // to display how the task pane or content add-in was initialized.
 
     Office.initialize = function (reason) {
-        // Checks for the DOM to load using the jQuery ready function.
+        // Checks for the DOM to load using the jQuery ready method.
         $(document).ready(function () {
         // After the DOM is loaded, code specific to the add-in can run.
         // Display initialization reason.
@@ -3989,7 +4001,7 @@
     }
 'Office.select:function(1)':
   - >-
-    // The following code example uses the select method to retrieve a binding
+    // The following code example uses the select function to retrieve a binding
     with the id "cities" from
 
     // the Bindings collection, and then calls the addHandlerAsync method to add
@@ -4055,7 +4067,7 @@
     await Word.run(async (context) => {
 
         // Create a proxy object for the document body.
-        var body = context.document.body;
+        const body = context.document.body;
 
         // Queue a command to insert the paragraph at the end of the document body.
         // Start a batch of commands.
@@ -4103,7 +4115,7 @@
 
     OneNote.run(function (context) {
         // Get the pages in the current section.
-        var pages = context.application.getActiveSection().pages;
+        const pages = context.application.getActiveSection().pages;
 
         // Queue a command to load the pages.           
         pages.load({ "select":"title,pageLevel", "top":5, "skip":0 });
@@ -4130,9 +4142,9 @@
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
 
-        // Queue a commmand to load the text and font properties.
+        // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set.
         // Otherwise, all properties are returned on the object.
         context.load(paragraphs, 'text, font/size');

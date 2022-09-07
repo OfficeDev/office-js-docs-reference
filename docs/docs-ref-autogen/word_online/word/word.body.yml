@@ -63,10 +63,10 @@ properties:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to load font and style information for the document body.
-          context.load(body, 'font/size, font/name, font/color, style');
+          body.load('font/size, font/name, font/color, style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -74,7 +74,7 @@ properties:
           
           // Show the results of the load method.
           // Here we show the property values on the body object.
-          var results = 'Font size: ' + body.font.size +
+          const results = 'Font size: ' + body.font.size +
                           '; Font name: ' + body.font.name +
                           '; Font color: ' + body.font.color +
                           '; Body style: ' + body.style;
@@ -104,6 +104,8 @@ properties:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+      // Get the footnotes in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -166,7 +168,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -416,10 +418,10 @@ properties:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to load the text in document body.
-          context.load(body, 'text');
+          body.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -465,7 +467,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to clear the contents of the body.
           body.clear();
@@ -505,8 +507,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
+      // Get the comments in the document body.
+
       await Word.run(async (context) => {
-        let comments = context.document.body.getComments();
+        const comments = context.document.body.getComments();
 
         // Load objects for display in Script Lab console.
         comments.load();
@@ -543,10 +547,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to get the HTML contents of the body.
-          var bodyHTML = body.getHtml();
+          const bodyHTML = body.getHtml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -576,10 +580,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to get the OOXML contents of the body.
-          var bodyOOXML = body.getOoxml();
+          const bodyOOXML = body.getOoxml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -677,7 +681,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert a page break at the start of the document body.
           body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
@@ -739,7 +743,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to wrap the body in a content control.
           body.insertContentControl();
@@ -772,7 +776,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert base64 encoded .docx at the beginning of the content body.
           // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
@@ -835,7 +839,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert HTML in to the beginning of the body.
           body.insertHtml(
@@ -896,7 +900,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert OOXML in to the beginning of the body.
           body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
@@ -1010,7 +1014,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert the paragraph at the end of the document body.
           body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
@@ -1061,7 +1065,7 @@ methods:
 
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        let secondSentence = context.document.body.insertParagraph(
+        const secondSentence = context.document.body.insertParagraph(
           "This is the first text with a custom style.",
           "End"
         );
@@ -1112,11 +1116,11 @@ methods:
 
       await Word.run(async (context) => {
         // Use a two-dimensional array to hold the initial table values.
-        let data = [
+        const data = [
           ["Tokyo", "Beijing", "Seattle"],
           ["Apple", "Orange", "Pineapple"]
         ];
-        let table = context.document.body.insertTable(2, 3, "Start", data);
+        const table = context.document.body.insertTable(2, 3, "Start", data);
         table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
         table.styleFirstColumn = false;
 
@@ -1189,7 +1193,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to insert text in to the beginning of the body.
           body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
@@ -1321,7 +1325,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
       await Word.run(async (context) => {
-        let results = context.document.body.search("Online");
+        const results = context.document.body.search("Online");
         results.load("length");
 
         await context.sync();
@@ -1344,7 +1348,7 @@ methods:
       await Word.run(async (context) => {
         // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
         // (i.e. use wildcards).
-        let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();
@@ -1366,7 +1370,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -1458,7 +1462,7 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the document body.
-          var body = context.document.body;
+          const body = context.document.body;
 
           // Queue a command to select the document body.
           // The Word UI will move to the selected document body.
@@ -1563,10 +1567,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1581,9 +1587,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

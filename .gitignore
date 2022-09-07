@@ -7,3 +7,4 @@ _repo.*/
 _dependentPackages/
 .openpublishing.buildcore.ps1
 .vscode/
+*.DS_Store

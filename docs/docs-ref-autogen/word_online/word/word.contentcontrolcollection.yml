@@ -57,10 +57,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
-          var contentControl = context.document.contentControls.getById(30086310);
+          const contentControl = context.document.contentControls.getById(30086310);
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -96,10 +96,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content control that contains a specific id.
-          var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
+          const contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -140,7 +140,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
       await Word.run(async (context) => {
-          let contentControls = context.document.contentControls.getByTag("customer");
+          const contentControls = context.document.contentControls.getByTag("customer");
           contentControls.load("text");
 
           await context.sync();
@@ -179,10 +179,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the content controls collection that contains a specific title.
-          var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
+          const contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
 
           // Queue a command to load the text property for all of content controls with a specific title.
-          context.load(contentControlsWithTitle, 'text');
+          contentControlsWithTitle.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -243,10 +243,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the first content control in the document.
-          var contentControl = context.document.contentControls.getFirstOrNullObject();
+          const contentControl = context.document.contentControls.getFirstOrNullObject();
 
           // Queue a command to load the text property for a content control.
-          context.load(contentControl, 'text');
+          contentControl.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -327,10 +327,10 @@ methods:
           await Word.run(async (context) => {
 
               // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
+              const contentControls = context.document.contentControls;
 
               // Queue a command to load the id property for all of the content controls.
-              context.load(contentControls, 'id');
+              contentControls.load('id');
 
               // Synchronize the document state by executing the queued commands,
               // and return a promise to indicate task completion.
@@ -446,10 +446,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -464,9 +466,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

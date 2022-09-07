@@ -573,7 +573,7 @@ properties:
 
       await Word.run(async (context) => {
         // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-        let paragraph = context.document.getSelection().paragraphs.getFirst();
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
         paragraph.load("text");
 
         await context.sync();
@@ -625,10 +625,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -665,10 +665,10 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the text property for all of the paragraphs.
-          context.load(paragraphs, 'text');
+          paragraphs.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -735,17 +735,17 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a set of commands to get the HTML of the first paragraph.
-          var html = paragraphs.items[0].getHtml();
+          const html = paragraphs.items[0].getHtml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -801,17 +801,17 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for the top 2 paragraphs.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a set of commands to get the OOXML of the first paragraph.
-          var ooxml = paragraphs.items[0].getOoxml();
+          const ooxml = paragraphs.items[0].getOoxml();
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -854,21 +854,21 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the text property for all of the paragraphs.
-          context.load(paragraphs, 'text');
+          paragraphs.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue commands to create a proxy object for the next-to-last paragraph.
-          var indexOfLastParagraph = paragraphs.items.length - 1;
-          var precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
+          const indexOfLastParagraph = paragraphs.items.length - 1;
+          const precedingParagraph = paragraphs.items[indexOfLastParagraph].getPreviousOrNullObject();
 
           // Queue a command to load the text of the preceding paragraph.
-          context.load(precedingParagraph, 'text');
+          precedingParagraph.load('text');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
@@ -906,14 +906,14 @@ methods:
 
       await Word.run(async (context) => {
         // Gets the complete sentence (as range) associated with the insertion point.
-        let sentences = context.document
+        const sentences = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
         // Expands the range to the end of the paragraph to get all the complete sentences.
-        let sentencesToTheEndOfParagraph = sentences.items[0]
+        const sentencesToTheEndOfParagraph = sentences.items[0]
           .getRange()
           .expandTo(
             context.document
@@ -1070,18 +1070,18 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a command to get the first paragraph.
-          var paragraph = paragraphs.items[0];
+          const paragraph = paragraphs.items[0];
 
           // Queue a command to insert a page break after the first paragraph.
           paragraph.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
@@ -1123,18 +1123,18 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a command to get the first paragraph.
-          var paragraph = paragraphs.items[0];
+          const paragraph = paragraphs.items[0];
 
           // Queue a command to wrap the first paragraph in a rich text content control.
           paragraph.insertContentControl();
@@ -1209,18 +1209,18 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for the top 2 paragraphs.
           // We never perform an empty load. We always must request a property.
-          context.load(paragraphs, {select: 'style', top: 2} );
+          paragraphs.load({select: 'style', top: 2} );
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a command to get the first paragraph.
-          var paragraph = paragraphs.items[0];
+          const paragraph = paragraphs.items[0];
 
           // Queue a command to insert HTML content at the end of the first paragraph.
           paragraph.insertHtml('<strong>Inserted HTML.</strong>', Word.InsertLocation.end);
@@ -1280,19 +1280,19 @@ methods:
       await Word.run(async (context) => {
 
           // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
+          const paragraphs = context.document.body.paragraphs;
 
           // Queue a command to load the style property for all of the paragraphs.
-          context.load(paragraphs, 'style');
+          paragraphs.load('style');
 
           // Synchronize the document state by executing the queued commands,
           // and return a promise to indicate task completion.
           await context.sync();
 
           // Queue a command to get the first paragraph.
-          var paragraph = paragraphs.items[0];
+          const paragraph = paragraphs.items[0];
 
-          var b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
+          const b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
 
           // Queue a command to insert a base64 encoded image at the beginning of the first paragraph.
           paragraph.insertInlinePictureFromBase64(b64encodedImg, Word.InsertLocation.start);
@@ -1498,7 +1498,7 @@ methods:
 
       await Word.run(async (context) => {
         // Replace the last paragraph.
-        let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+        const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
         range.font.highlightColor = "black";
         range.font.color = "white";
 
@@ -1816,8 +1816,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
       await Word.run(async (context) => {
-        let paragraph = context.document.body.paragraphs.getFirst();
-        let words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+        const paragraph = context.document.body.paragraphs.getFirst();
+        const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
         words.load("text");
 
         await context.sync();
@@ -1876,20 +1876,20 @@ methods:
       // This example starts a new list stating with the second paragraph.
 
       await Word.run(async (context) => {
-        let paragraphs = context.document.body.paragraphs;
+        const paragraphs = context.document.body.paragraphs;
         paragraphs.load("$none"); // No properties needed.
 
         await context.sync();
 
-        var list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
+        const list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
         list.load("$none"); // No properties needed.
 
         await context.sync();
 
         // To add new items to the list use start/end on the insert location parameter.
         list.insertParagraph("New list item on top of the list", "Start");
-        let paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
-        paragraph.listItem.level = 4; // Sets up list level for the lsit item.
+        const paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
+        paragraph.listItem.level = 4; // Sets up list level for the list item.
         // To add paragraphs outside the list use before/after:
         list.insertParagraph("New paragraph goes after (not part of the list)", "After");
 
@@ -1928,10 +1928,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -1946,9 +1948,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

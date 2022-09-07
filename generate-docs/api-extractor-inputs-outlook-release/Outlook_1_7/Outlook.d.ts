@@ -2070,7 +2070,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
@@ -5587,6 +5587,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * **Important**:
+         *
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
+         *
+         * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+         * 
          * @remarks
          * [Api set: Mailbox 1.3]
          * 
@@ -5609,6 +5616,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * **Important**:
+         *
+         * - Only one notification of type {@link https://docs.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
+         * is allowed per add-in. Attempting to add more will throw an error.
+         *
+         * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
+         * 
          * @remarks
          * [Api set: Mailbox 1.3]
          * 

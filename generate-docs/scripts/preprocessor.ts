@@ -27,19 +27,18 @@ tryCatch(async () => {
     let urlToCopyPreviewOfficeJsFrom = "";
     let urlToCopyCustomFunctionsRuntimeFrom = "";
     let urlToCopyOfficeRuntimeFrom = "";
-    let forceRebuild = false;
+    let forceRebuild = true;
 
     switch (sourceChoice) {
-        case "DT+":
-            forceRebuild = true;
         case "DT":
+            forceRebuild = false;
+        case "DT+":
             urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts";
             urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
         case "CDN":
-            forceRebuild = true;
             urlToCopyOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts";
             urlToCopyPreviewOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";

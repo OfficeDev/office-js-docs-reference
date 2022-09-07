@@ -94,14 +94,14 @@ methods:
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
-          var textSample = 'This is an example of the insert text method. This is a method ' + 
+          const textSample = 'This is an example of the insert text method. This is a method ' + 
               'which allows users to insert text into a selection. It can insert text into a ' +
               'relative location or it can overwrite the current selection. Since the ' +
               'getSelection method returns a range object, look up the range object documentation ' +
               'for everything you can do with a selection.';
           
           // Create a range proxy object for the current selection.
-          var range = context.document.getSelection();
+          const range = context.document.getSelection();
           
           // Queue a command to insert text at the end of the selection.
           range.insertText(textSample, Word.InsertLocation.end);
@@ -147,16 +147,16 @@ methods:
           await Word.run(async (context) => {
               
               // Create a proxy object for the document.
-              var thisDocument = context.document;
+              const thisDocument = context.document;
               
               // Queue a command to load content control properties.
-              context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
+              thisDocument.load('contentControls/id, contentControls/text, contentControls/tag');
               
               // Synchronize the document state by executing the queued commands, 
               // and return a promise to indicate task completion.
               await context.sync();
               if (thisDocument.contentControls.items.length !== 0) {
-                  for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
+                  for (let i = 0; i < thisDocument.contentControls.items.length; i++) {
                       console.log(thisDocument.contentControls.items[i].id);
                       console.log(thisDocument.contentControls.items[i].text);
                       console.log(thisDocument.contentControls.items[i].tag);
@@ -229,10 +229,10 @@ methods:
       await Word.run(async (context) => {
           
           // Create a proxy object for the document.
-          var thisDocument = context.document;
+          const thisDocument = context.document;
 
           // Queue a command to load the document save state (on the saved property).
-          context.load(thisDocument, 'saved');    
+          thisDocument.load('saved');    
           
           // Synchronize the document state by executing the queued commands, 
           // and return a promise to indicate task completion.
@@ -323,10 +323,12 @@ methods:
     fullName: track()
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
-      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
-      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
-      object was first created.
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -341,9 +343,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
-      so please remember to free any objects you add, once you're done using them. You will need to call
-      `context.sync()` before the memory release takes effect.
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false
