@@ -16,14 +16,14 @@ Office Add-ins run across multiple versions of Office. The following table lists
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | IdentityAPI 1.3  | Version 2008 (Build 13127.20000) | Version 2008 (Build 13127.20000) | Office 2021: Version 2108 (Build 14326.20454) | 16.40 | Not supported | Microsoft SharePoint Online and OneDrive\* |
 
-\* Currently, the IdentityAPI 1.3 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
+> \* Currently, the IdentityAPI 1.3 requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 
 ## Outlook and Identity API requirement sets
 
 [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 
 > [!NOTE]
-> In an Outlook add-in using event-based activation, the [OfficeRuntime.Auth interface](/javascript/api/office-runtime/officeruntime.auth) is supported from Outlook version 2108 (build 14326.20258) on Windows. The [Office.Auth interface](/javascript/api/office/office.auth) is supported from Version 2111 (Build 14701.20000). For more details according to your version, see the update history page for [Office 2021](/officeupdates/update-history-office-2021) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
+> In an Outlook add-in using event-based activation, the [OfficeRuntime.Auth interface](/javascript/api/office-runtime/officeruntime.auth) is supported in Outlook from Version 2108 (Build 14326.20258) on Windows. The [Office.Auth interface](/javascript/api/office/office.auth) is supported from Version 2111 (Build 14701.20000). For more details according to your version, see the update history page for [Office 2021](/officeupdates/update-history-office-2021) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 
 ## Office versions and build numbers
 

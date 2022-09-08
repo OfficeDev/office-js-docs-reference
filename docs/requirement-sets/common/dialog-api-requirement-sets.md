@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Dialog API requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those application.
 
-| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on Windows<br>(subscription) | Office on Windows\*<br>(retail perpetual Office 2016 or later) | Office on Windows\*<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | DialogApi 1.2 | See [support](#office-on-windows-subscription-support)<br>[section](#office-on-windows-subscription-support) | Version 2005 (Build 12827.20268) | Office 2021: Version 2108 (Build 14326.20454) | 16.37 | 2.37 | Supported | Not supported |
 | DialogApi 1.1 | Version 1602 (Build 6741.0000) | Version 1602 (Build 6741.0000) | Office 2013: Build 15.0.4855.1000 | 15.20 | 1.22 | Supported | Version 1608 (Build 7601.6800) |
@@ -23,7 +23,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 The DialogApi 1.2 requirement set is supported in the Consumer Channel from Version 2005 (Build 12827.20268). That requirement set is also supported in the Semi-Annual Channel and Monthly Enterprise Channel builds available from June 9, 2020. The **minimum** supported builds for each channel are as follows:  
 
-| Channel | Version | Build |
+| Channel | Minimum version | Minimum build |
 |:-----|:-----|:-----|
 | Current Channel | 2005 | 12827.20160 |
 | Monthly Enterprise Channel | 2004 | 12730.20430 |
