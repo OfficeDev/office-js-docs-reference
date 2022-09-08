@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Dialog Origin requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those applications.
 
-| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | DialogOrigin 1.1 | Supported | Supported | Office 2013: Build 15.0.5371.1000 | 16.52 | 2.52 | Supported | Version 2108<br>(Build 10377.1000) |
 

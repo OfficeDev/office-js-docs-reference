@@ -14,9 +14,9 @@ Parts of an Office Add-in that run JavaScript code, such as task panes, function
 
 The following table lists the SharedRuntime 1.1 requirement set, the Office client applications that support that requirement set, and the **minimum** builds or versions for those applications.
 
-| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.1  | Excel: Version 2002 (Build 12527.20092)<br>Word: Version 2205 (Build 15202.10000)<br>PowerPoint: Version 2102 (Build 13722.10000) | Excel: Version 2002 (Build 12527.20092)<br>Word: Version 2205 (Build 15202.10000)<br>PowerPoint: Version 2102 (Build 13722.10000) | Excel 2021: Version 2108 (Build 12527.20092)<br>PowerPoint 2021: Version 2108 (13722.10000) | Excel: 16.35<br>Word: 16.61.401.0<br>PowerPoint: 16.46.120.0 | Not supported | Excel, Word, PowerPoint: Supported | Not supported |
+| SharedRuntime 1.1  | Excel: Version 2002 (Build 12527.20092)<br><br>PowerPoint: Version 2102 (Build 13722.10000)<br><br>Word: Version 2205 (Build 15202.10000) | Excel: Version 2002 (Build 12527.20092)<br><br>PowerPoint: Version 2102 (Build 13722.10000)<br><br>Word: Version 2205 (Build 15202.10000) | Excel 2021: Version 2108 (Build 12527.20092)<br><br>PowerPoint 2021: Version 2108 (13722.10000) | Excel: 16.35<br><br>PowerPoint: 16.46.120.0<br><br>Word: 16.61.401.0 | Not supported | Excel, PowerPoint, Word: Supported | Not supported |
 
 > [!IMPORTANT]
 > At this time, the shared JavaScript runtime is not supported on iPad or in one-time purchase versions of Office 2019 or earlier. For additional support details, see the following sections.
