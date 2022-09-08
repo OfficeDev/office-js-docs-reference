@@ -11832,10 +11832,21 @@
     }
 
     console.log(outputString);
+'Office.Auth#getAccessToken:member(1)':
+  - |-
+    try{
+        const accessToken = await Office.auth.getAccessToken({
+            allowSignInPrompt: true,
+            allowConsentPrompt: true,
+            forMSGraphAccess: true,
+        });
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 'Office.Auth#getAccessTokenAsync:member(1)':
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
-        if (result.status === "succeeded") {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             // ...
         } else {
