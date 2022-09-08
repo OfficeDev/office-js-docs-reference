@@ -26,7 +26,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 # [Teams Manifest (developer preview)](#tab/jsonmanifest)
 
-The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios. 
+The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios.
 
 For example, the following manifest snippet indicates a minimum requirement set of 1.1.
 
@@ -46,10 +46,9 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 ---
 
-
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
-Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client does not support the minimum requirement set, it does not load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
+Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client doen't support the minimum requirement set, it does not load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
 
 > [!NOTE]
 > To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
@@ -58,7 +57,7 @@ Setting a minimum requirement set version in the manifest controls which Outlook
 
 ## Using APIs from later requirement sets
 
-Setting a requirement set does not limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set "Mailbox 1.1", but it is running in an Outlook client which supports "Mailbox 1.3", the add-in can use APIs from requirement set "Mailbox 1.3".
+Setting a requirement set doesn't limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set "Mailbox 1.1", but it's running in an Outlook client which supports "Mailbox 1.3", the add-in can use APIs from requirement set "Mailbox 1.3".
 
 To use a newer API, developers can check if a particular application supports the requirement set by doing the following:
 
@@ -72,7 +71,7 @@ else {
 ```
 
 > [!IMPORTANT]
-> There is currently a bug where `isSetSupported('Mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, refer to [Requirement sets supported by Exchange servers and Outlook clients](#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
+> There is currently a bug where `isSetSupported('Mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, see [Requirement sets supported by Exchange servers and Outlook clients](#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
 
 Alternatively, developers can check for the existence of a newer API by using standard JavaScript technique.
 
@@ -163,6 +162,6 @@ Add-ins are supported in Outlook on the following platforms.
 New Outlook JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired. To provide feedback about a preview API, please use the feedback mechanism at the end of the web page where the API is documented.
 
 > [!NOTE]
-> Preview APIs are subject to change and are not intended for use in a production environment.
+> Preview APIs are subject to change and aren't intended for use in a production environment.
 
 For more details about the preview APIs, see [Outlook API preview requirement set](preview-requirement-set/outlook-requirement-set-preview.md).
