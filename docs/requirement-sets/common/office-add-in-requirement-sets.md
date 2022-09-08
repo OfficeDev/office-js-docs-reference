@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 11/22/2021
+ms.date: 09/08/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -47,7 +47,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Binding.addHandlerAsync<br>Binding.removeHandlerAsync|
+| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Binding.addHandlerAsync<br>Binding.removeHandlerAsync|
 
 ---
 
@@ -55,7 +55,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel 2016 and later on Windows<br>Excel on the web<br>Excel 2016 and later on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method.|
+| Excel 2016 and later on Windows<br>Excel on the web<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports output to Office Open XML (OOXML) format as a byte array<br>(Office.FileType.Compressed) when using the Document.getFileAsync method.|
 
 ---
 
@@ -63,7 +63,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|CustomXmlNode.getNodesAsync<br>CustomXmlNode.getNodeValueAsync<br>CustomXmlNode.getTextAsync<br>CustomXmlNode.getXmlAsync<br>CustomXmlNode.setNodeValueAsync<br>CustomXmlNode.setTextAsync<br>CustomXmlNode.setXmlAsync<br>CustomXmlPart.addHandlerAsync<br>CustomXmlPart.deleteAsync<br>CustomXmlPart.getNodesAsync<br>CustomXmlPart.getXmlAsync<br>CustomXmlPart.removeHandlerAsync<br>CustomXmlParts.addAsync<br>CustomXmlParts.getByIdAsync<br>CustomXmlParts.getByNamespaceAsync<br>CustomXmlPrefixMappings.addNamespaceAsync<br>CustomXmlPrefixMappings.getNamespaceAsync<br>CustomXmlPrefixMappings.getPrefixAsync|
+| Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|CustomXmlNode.getNodesAsync<br>CustomXmlNode.getNodeValueAsync<br>CustomXmlNode.getTextAsync<br>CustomXmlNode.getXmlAsync<br>CustomXmlNode.setNodeValueAsync<br>CustomXmlNode.setTextAsync<br>CustomXmlNode.setXmlAsync<br>CustomXmlPart.addHandlerAsync<br>CustomXmlPart.deleteAsync<br>CustomXmlPart.getNodesAsync<br>CustomXmlPart.getXmlAsync<br>CustomXmlPart.removeHandlerAsync<br>CustomXmlParts.addAsync<br>CustomXmlParts.getByIdAsync<br>CustomXmlParts.getByNamespaceAsync<br>CustomXmlPrefixMappings.addNamespaceAsync<br>CustomXmlPrefixMappings.getNamespaceAsync<br>CustomXmlPrefixMappings.getPrefixAsync|
 
 ---
 
@@ -87,7 +87,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Document.addHandlerAsync<br>Document.removeHandlerAsync|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Document.addHandlerAsync<br>Document.removeHandlerAsync|
 
 ---
 
@@ -95,7 +95,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Document.getFileAsync<br>File.closeAsync<br>File.getSliceAsync|
 
 ---
 
@@ -103,7 +103,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| OneNote on the web<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+| OneNote on the web<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports coercion to HTML (Office.CoercionType.Html) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 
 ---
 
@@ -151,7 +151,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 
 ---
 
@@ -159,7 +159,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+| Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports coercion to Open Office XML (OOXML) format (Office.CoercionType.Ooxml) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 
 ---
 
@@ -183,7 +183,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports output to PDF format (Office.FileType.Pdf)<br>when using the Document.getFileAsync method.|
+| Excel on Windows<br>Excel on the web<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports output to PDF format (Office.FileType.Pdf)<br>when using the Document.getFileAsync method.|
 
 ---
 
@@ -199,7 +199,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Project on Windows<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Document.getSelectedDataAsync<br>Document.setSelectedDataAsync|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Project on Windows<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Document.getSelectedDataAsync<br>Document.setSelectedDataAsync|
 
 ---
 
@@ -207,7 +207,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Settings.get<br>Settings.remove<br>Settings.saveAsync<br>Settings.set|
+| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Settings.get<br>Settings.remove<br>Settings.saveAsync<br>Settings.set|
 
 ---
 
@@ -223,7 +223,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsync<br>Binding.addColumnsAsync<br>Binding.addRowsAsync<br>Binding.deleteAllDataValuesAsync<br>Binding.getDataAsync<br>Binding.setDataAsync|
+| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsync<br>Binding.addColumnsAsync<br>Binding.addRowsAsync<br>Binding.deleteAllDataValuesAsync<br>Binding.getDataAsync<br>Binding.setDataAsync|
 
 ---
 
@@ -231,7 +231,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+| Access Web Apps<br>Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports coercion to the "table" data structure (Office.CoercionType.Table) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 
 ---
 
@@ -239,7 +239,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word 2013 and later and Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsync<br>Binding.getDataAsync<br>Binding.setDataAsync|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>Excel on Mac<br>Word and Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Bindings.addFromNamedItemAsync<br>Bindings.addFromSelectionAsync<br>Bindings.getAllAsync<br>Bindings.getByIdAsync<br>Bindings.releaseByIdAsync<br>Binding.getDataAsync<br>Binding.setDataAsync|
 
 ---
 
@@ -247,7 +247,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Project on Windows<br>Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
+| Excel on Windows<br>Excel on the web<br>Excel on iPad<br>OneNote on the web<br>PowerPoint on Windows<br>PowerPoint on the web<br>PowerPoint on iPad<br>PowerPoint on Mac<br>Project on Windows<br>Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods.|
 
 ---
 
@@ -255,7 +255,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 |**Office applications**|**Methods in set**|
 |:-----|:-----|
-| Word 2013 and later on Windows<br>Word 2016 and later on Mac<br>Word on the web<br>Word on iPad|Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method.|
+| Word on Windows<br>Word on Mac<br>Word on the web<br>Word on iPad|Supports output to text format (Office.FileType.Text) when using the Document.getFileAsync method.|
 
 ---
 

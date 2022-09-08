@@ -1,7 +1,7 @@
 ---
 title: Ribbon API requirement sets
 description: Specifies which Office platforms and builds support the dynamic ribbon APIs.
-ms.date: 06/17/2022
+ms.date: 09/08/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -12,12 +12,12 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 The Ribbon API set supports programmatic control of when custom add-in commands (that is, custom ribbon buttons and menu items) are enabled and disabled and when contextual tabs appear on the ribbon.
 
-Office Add-ins run across multiple versions of Office. The following table lists the Ribbon API requirement sets, the Office client applications that support that requirement set, and the build or version numbers for the Office application.
+Office Add-ins run across multiple versions of Office. The following table lists the Ribbon API requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those applications.
 
-|  Requirement set  | Office 2021 or later on Windows<br>(one-time purchase) | Office on Windows<br>(connected to a Microsoft 365 subscription) |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |  Office Online Server  |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| RibbonApi 1.2  | Build 16.0.14326.20454 or later | 2102 (Build 13801.20294) | N/A | 16.53.806.0 | May, 2021 | N/A|
-| RibbonApi 1.1  | Build 16.0.14326.20454 or later | See support<br>section below | N/A | 16.38 | November, 2020 | N/A|
+| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(Office 2016 or later retail perpetual) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| RibbonApi 1.2  | Version 2102 (Build 13801.20294) | Version 2102 (Build 13801.20294) | Office 2021: Version 2108 (Build 14326.20454) | 16.53.806.0 | Not supported | Supported | Not supported |
+| RibbonApi 1.1  | See [support](#support-for-version-11-on-office-on-windows-subscription)<br>[section](#support-for-version-11-on-office-on-windows-subscription) | Version 2006 (Build 20266.20266) | Office 2021: Version 2108 (Build 14326.20454) | 16.38 | Not supported | Supported | Not supported |
 
 > [!IMPORTANT]
 >
@@ -27,14 +27,14 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 ## Support for version 1.1 on Office on Windows (subscription)
 
-The 1.1 version of the RibbonApi requirement set is supported in the Consumer Channel version 2006 (build 13001.20498 or greater). For Office on Windows the feature is also supported in the Semi-Annual Channel and Monthly Enterprise Channel builds available July 14th, 2020 or later. The minimum supported builds for each channel are as follows:  
+The 1.1 version of the RibbonApi requirement set is supported in the Consumer Channel version 2006 (build 13001.20498 or greater). For Office on Windows, the feature is also supported in the Semi-Annual Channel and Monthly Enterprise Channel builds available July 14, 2020 or later. The **minimum** supported builds for each channel are as follows:  
 
-|Channel | Version | Build|
+| Channel | Version | Build |
 |:-----|:-----|:-----|
-|Current Channel | 2006 or greater | 20266.20266 or greater|
-|Monthly Enterprise Channel | 2005 or greater | 12827.20538 or greater|
-|Monthly Enterprise Channel | 2004 | 12730.20602 or greater|
-|Semi-Annual Enterprise Channel | 2002 or greater | 12527.20880 or greater|
+| Current Channel | 2006 | 20266.20266 |
+| Monthly Enterprise Channel | 2005 | 12827.20538 |
+| Monthly Enterprise Channel | 2004 | 12730.20602 |
+| Semi-Annual Enterprise Channel | 2002 | 12527.20880 |
 
 ## More information
 
