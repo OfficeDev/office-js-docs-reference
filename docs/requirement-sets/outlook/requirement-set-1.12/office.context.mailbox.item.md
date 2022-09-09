@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.12
 description: Outlook Mailbox API requirement set 1.12 version of the Item object model.
-ms.date: 09/08/2022
+ms.date: 09/09/2022
 ms.localizationpriority: medium
 ---
 

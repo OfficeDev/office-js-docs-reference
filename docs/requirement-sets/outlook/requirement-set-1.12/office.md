@@ -1,7 +1,7 @@
 ---
 title: Office namespace - requirement set 1.12
 description: Office namespace members available for Outlook add-ins using Mailbox API requirement set 1.12.
-ms.date: 07/20/2022
+ms.date: 09/09/2022
 ms.localizationpriority: medium
 ---
 

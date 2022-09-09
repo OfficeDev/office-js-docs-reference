@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.12
 description: Requirement set 1.12 for Outlook add-in API.
-ms.date: 07/20/2022
+ms.date: 09/09/2022
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +14,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 Requirement set 1.12 includes all of the features of [requirement set 1.11](../requirement-set-1.11/outlook-requirement-set-1.11.md). It added the following features.
 
 - Added new events for [event-based activation](/office/dev/add-ins/outlook/autolaunch#supported-events).
-- Added send mode options for add-ins that use the `OnMessageSend` or `OnAppointmentSend` event.
+- Added [send mode options](../../../manifest/launchevent.md#available-sendmode-options) for add-ins that use the `OnMessageSend` or `OnAppointmentSend` event.
 - Added support to display an error message to the user in [event-based activation](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough) add-ins.
 
 ### Change log
