@@ -1,14 +1,14 @@
 ---
 title: Open Browser Window requirement sets
 description: Specifies which Office platforms and builds support the openBrowserWindow API.
-ms.date: 09/08/2022
+ms.date: 09/09/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
 
 # Open Browser Window API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office host supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 The OpenBrowserWindow API set enables add-ins to open a browser to accomplish tasks that cannot always be done in the sandboxed webview control within the add-in itself; for example, downloading a PDF file when the webview control is provided by Microsoft Edge.
 

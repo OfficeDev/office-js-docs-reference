@@ -1,7 +1,7 @@
 ---
 title: Add-in commands requirement sets
 description: Overview of Office Add-in commands requirement sets.
-ms.date: 09/08/2022
+ms.date: 09/09/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -32,9 +32,9 @@ The following table lists the add-in commands requirement sets, the Office clien
 | AddinCommands 1.3 | Version 2204 (Build 14827.10000) | Version 2204 (Build 14827.10000) | Not supported | 16.57.105.0 | Not supported | Supported |
 | AddinCommands 1.1 | Version 1705 (Build 8121.1000)&dagger; | Version 1705 (Build 8121.1000)&dagger; | Office 2021: Version 2108 (Build 14326.20454)&dagger; | 15.34&dagger;\* | Not supported | Supported |
 
-\* The [Office.context.requirements.isSetSupported](/javascript/api/office/office.requirementsetsupport#office-office-requirementsetsupport-issetsupported-member(1)) method will erroneously return `false` for versions 16.9 &ndash; 16.14 (inclusive), but the requirement set *is* supported on these versions.
-
-&dagger; OneNote is supported only in Office on the web.
+> \* The [Office.context.requirements.isSetSupported](/javascript/api/office/office.requirementsetsupport#office-office-requirementsetsupport-issetsupported-member(1)) method will erroneously return `false` for versions 16.9 &ndash; 16.14 (inclusive), but the requirement set *is* supported on these versions.
+>
+> &dagger; OneNote is supported only in Office on the web.
 
 ## Office versions and build numbers
 
