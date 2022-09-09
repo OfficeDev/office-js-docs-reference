@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 07/20/2022
+ms.date: 09/09/2022
 ---
 
 # Office Add-ins JavaScript API reference

@@ -1,7 +1,7 @@
 ---
 title: LaunchEvent in the manifest file
 description: The LaunchEvent element configures your add-in to activate based on supported events.
-ms.date: 07/21/2022
+ms.date: 09/09/2022
 ms.localizationpriority: medium
 ---
 

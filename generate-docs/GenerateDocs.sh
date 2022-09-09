@@ -104,7 +104,7 @@ node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts 
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ../../docs/includes/excel-1_2
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../../docs/includes/excel-1_1
 
-node whats-new outlook ../api-extractor-inputs-outlook/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../../docs/includes/outlook-preview
+node whats-new outlook ../api-extractor-inputs-outlook/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../../docs/includes/outlook-preview
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../../docs/includes/outlook-1_12
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../../docs/includes/outlook-1_11
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_9/outlook.d.ts ../../docs/includes/outlook-1_10
