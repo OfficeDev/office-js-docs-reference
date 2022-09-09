@@ -33,7 +33,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Office applications | Methods in set |
 |:-----|:-----|
-| - PowerPoint on Windows<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac | Document.getActiveViewAsync |
+| - PowerPoint on Windows<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac | - Document.getActiveViewAsync |
 
 ---
 
@@ -111,7 +111,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Office applications | Methods in set |
 |:-----|:-----|
-| See [Identity API requirement sets](identity-api-requirement-sets.md). | Auth.getAccessToken |
+| See [Identity API requirement sets](identity-api-requirement-sets.md). | - Auth.getAccessToken |
 
 ---
 
@@ -119,7 +119,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Office applications | Methods in set |
 |:-----|:-----|
-| See [Image Coercion requirement sets](image-coercion-requirement-sets.md). | Document.setSelectedDataAsync |
+| See [Image Coercion requirement sets](image-coercion-requirement-sets.md). | - Document.setSelectedDataAsync |
 
 ---
 
@@ -167,7 +167,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Office applications | Methods in set |
 |:-----|:-----|
-| See [Open Browser Window API requirement sets](open-browser-window-api-requirement-sets.md). | Office.context.ui.openBrowserWindow |
+| See [Open Browser Window API requirement sets](open-browser-window-api-requirement-sets.md). | - Office.context.ui.openBrowserWindow |
 
 ---
 
@@ -191,7 +191,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Office applications | Methods in set |
 |:-----|:-----|
-| See [Ribbon API requirement sets](ribbon-api-requirement-sets.md). | Office.ribbon.requestUpdate |
+| See [Ribbon API requirement sets](ribbon-api-requirement-sets.md). | - Office.ribbon.requestUpdate |
 
 ---
 
