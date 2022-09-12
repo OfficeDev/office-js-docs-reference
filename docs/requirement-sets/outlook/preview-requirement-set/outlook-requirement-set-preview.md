@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 08/09/2022
+ms.date: 09/09/2022
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +19,7 @@ The Outlook add-in API subset of the Office JavaScript API includes objects, met
 >
 > For other features, you may be able to request access to preview bits for Outlook on the web using your Microsoft 365 account by completing and submitting [this form](https://aka.ms/OWAPreview). "Request preview access" is noted on those features.
 
-The preview requirement set includes all of the features of [requirement set 1.11](../requirement-set-1.11/outlook-requirement-set-1.11.md).
+The preview requirement set includes all of the features of [requirement set 1.12](../requirement-set-1.12/outlook-requirement-set-1.12.md).
 
 ## Features in preview
 
@@ -83,24 +83,6 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 ---
 
-### Event-based activation
-
-This feature was released in [requirement set 1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md). However, additional events are now available in preview. To learn more, refer to [Supported events](/office/dev/add-ins/outlook/autolaunch#supported-events).
-
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
-
-#### [Office.AddinCommands.EventCompletedOptions.errorMessage](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true#office-office-addincommands-eventcompletedoptions-errormessage-member)
-
-Added a new property to display an error message to the user if the handled event can't continue to execute. For an example, refer to the [Smart Alerts walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
-
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
 ### Integration with actionable messages
 
 #### [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#methods)
@@ -137,7 +119,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ### Shared mailboxes
 
-Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, refer to [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
+Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, see [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
 
 **Available in**: Outlook on Windows (Exchange Online or on-premises Exchange environment (in preview)), Outlook on Mac
 

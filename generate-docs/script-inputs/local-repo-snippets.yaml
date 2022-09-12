@@ -1499,19 +1499,26 @@ Office.AddinCommands.Event#completed:member(1):
         event.completed();
     }
   - |-
-    // For the following example, the checkMessage function was
-    // registered as an event handler for ItemSend.
-    function checkMessage(event) {
-        // Get the item being sent.
-        const outgoingMsg = Office.context.mailbox.item;
+    // In this example, the function is registered as an event handler for the OnAppointmentSend event.
+    // It checks whether a location is specified in an appointment before it's sent.
+    function onAppointmentSendHandler(event) {
+        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                return;
+            }
 
-        // Check if subject contains "BLOCK".
-        outgoingMsg.subject.getAsync(function (result) {
-            // Subject is in `result.value`.
-            // If search term "BLOCK" is found, don't send message.
-            const notFound = -1;
-            const allowEvent = (result.value.indexOf('BLOCK') === notFound);
-            event.completed({allowEvent: allowEvent});
+            if (asyncResult.value === "") {
+                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
+                return;
+            } else {
+                // If a location is specified, the appointment is sent.
+                event.completed({ allowEvent: true });
+            }
         });
     }
 Office.AddinCommands.Event#source:member:

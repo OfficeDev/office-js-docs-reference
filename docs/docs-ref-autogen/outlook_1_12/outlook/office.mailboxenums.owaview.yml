@@ -1,0 +1,65 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.OWAView
+uid: 'outlook!Office.MailboxEnums.OWAView:enum'
+package: outlook!
+fullName: Office.MailboxEnums.OWAView
+summary: Represents the current view of Outlook on the web.
+remarks: >-
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-diagnostic-information.yaml
+
+  // This snippet gets a mailbox's diagnostic information, such as host application and version, and prints it to the
+  console. 
+
+  const diagnostics = Office.context.mailbox.diagnostics;
+
+  console.log(`Host application: ${diagnostics.hostName}`);
+
+  console.log(`Host version: ${diagnostics.hostVersion}`);
+
+
+  switch (diagnostics.OWAView) {
+    case undefined:
+      console.log("Current view (Outlook on the web only): Not applicable. Host application is an Outlook desktop client.");
+      break;
+    case Office.MailboxEnums.OWAView.OneColumn:
+      console.log("Current view (Outlook on the web only): Viewed from a mobile phone");
+      break;
+    case Office.MailboxEnums.OWAView.TwoColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a tablet");
+      break;
+    case Office.MailboxEnums.OWAView.ThreeColumns:
+      console.log("Current view (Outlook on the web only): Viewed from a desktop computer");
+      break;
+  }
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: OneColumn
+    uid: 'outlook!Office.MailboxEnums.OWAView.OneColumn:member'
+    package: outlook!
+    summary: >-
+      One-column view. Displayed when the screen is narrow. Outlook on the web uses this single-column layout on the
+      entire screen of a smartphone.
+    value: '"OneColumn"'
+  - name: ThreeColumns
+    uid: 'outlook!Office.MailboxEnums.OWAView.ThreeColumns:member'
+    package: outlook!
+    summary: >-
+      Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full
+      screen window on a desktop computer.
+    value: '"ThreeColumns"'
+  - name: TwoColumns
+    uid: 'outlook!Office.MailboxEnums.OWAView.TwoColumns:member'
+    package: outlook!
+    summary: Two-column view. Displayed when the screen is wider. Outlook on the web uses this view on most tablets.
+    value: '"TwoColumns"'

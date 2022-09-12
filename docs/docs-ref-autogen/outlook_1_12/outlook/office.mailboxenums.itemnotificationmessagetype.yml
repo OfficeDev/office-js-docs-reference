@@ -1,0 +1,59 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ItemNotificationMessageType
+uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+package: outlook!
+fullName: Office.MailboxEnums.ItemNotificationMessageType
+summary: Specifies the notification message type for an appointment or message.
+remarks: >-
+  \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+  const id = $("#notificationId").val();
+
+  const details =
+    {
+      type: Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage,
+      message: "Error notification message with id = " + id
+    };
+  Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ErrorMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
+    package: outlook!
+    summary: The notification message is an error message.
+    value: '"errorMessage"'
+  - name: InformationalMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
+    package: outlook!
+    summary: The notification message is an informational message.
+    value: '"informationalMessage"'
+  - name: InsightMessage
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member'
+    package: outlook!
+    summary: |-
+      The notification message is an informational message with actions.
+
+      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+    value: '"insightMessage"'
+  - name: ProgressIndicator
+    uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
+    package: outlook!
+    summary: The notification message is a progress indicator.
+    value: '"progressIndicator"'

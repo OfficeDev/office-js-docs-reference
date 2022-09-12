@@ -5154,7 +5154,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>office365</td>
-         *     <td>The mailbox is associated with an Office 365 work or school account.</td>
+         *     <td>The mailbox is associated with a Microsoft 365 work or school account.</td>
          *   </tr>
          *   <tr>
          *     <td>outlookCom</td>
