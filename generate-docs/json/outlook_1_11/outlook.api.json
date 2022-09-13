@@ -15078,7 +15078,7 @@
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.RecipientType:enum",
-                  "docComment": "/**\n * Specifies the type of recipient for an appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Important**: A `recipientType` property value isn't returned by the {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.\n */\n",
+                  "docComment": "/**\n * Specifies the type of recipient of a message or appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Important**: A `recipientType` property value isn't returned by the {@link https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} and {@link https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15091,7 +15091,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.DistributionList:member",
-                      "docComment": "/**\n * Specifies that the recipient is a distribution list containing a list of email addresses.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient is a distribution list containing a list of email addresses.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15112,7 +15112,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.ExternalUser:member",
-                      "docComment": "/**\n * Specifies that the recipient is an SMTP email address that is not on the Exchange server.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient is an SMTP email address that isn't on the Exchange server.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15133,7 +15133,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.Other:member",
-                      "docComment": "/**\n * Specifies that the recipient is not one of the other recipient types.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book, and is therefore treated as an external SMTP address.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15154,7 +15154,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.User:member",
-                      "docComment": "/**\n * Specifies that the recipient is an SMTP email address that is on the Exchange server.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient is an SMTP email address on the Exchange server.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -29844,7 +29844,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.UserProfile#accountType:member",
-                  "docComment": "/**\n * Gets the account type of the user associated with the mailbox.\n *\n * **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.6]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * The possible account types are listed in the following table.\n *\n * <table> <tr> <th>Value</th> <th>Description</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com account.</td> </tr> </table>\n *\n * **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted. If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's hosted on Exchange Online, the account type value is **office365**.\n */\n",
+                  "docComment": "/**\n * Gets the account type of the user associated with the mailbox.\n *\n * **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.6]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * The possible account types are listed in the following table.\n *\n * <table> <tr> <th>Value</th> <th>Description</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with a Microsoft 365 work or school account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com account.</td> </tr> </table>\n *\n * **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is hosted. If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's hosted on Exchange Online, the account type value is **office365**.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

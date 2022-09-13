@@ -458,38 +458,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;'
+      content: >-
+        addColumns(insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End", columnCount:
+        number, values?: string[][]): void;
       parameters:
         - id: insertLocation
           description: 'Required. It must be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-        - id: columnCount
-          description: Required. Number of columns to add.
-          type: number
-        - id: values
-          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
-          type: 'string[][]'
-      return:
-        type: void
-        description: ''
-  - name: 'addColumns(insertLocationString, columnCount, values)'
-    uid: 'word!Word.Table#addColumns:member(2)'
-    package: word!
-    fullName: 'addColumns(insertLocationString, columnCount, values)'
-    summary: >-
-      Adds columns to the start or end of the table, using the first or last existing column as a template. This is
-      applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        addColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?:
-        string[][]): void;
-      parameters:
-        - id: insertLocationString
-          description: 'Required. It must be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            "Start" | "End"
         - id: columnCount
           description: Required. Number of columns to add.
           type: number
@@ -510,38 +487,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'addRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
+      content: >-
+        addRows(insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End", rowCount: number,
+        values?: string[][]): Word.TableRowCollection;
       parameters:
         - id: insertLocation
           description: Required. It must be 'Start' or 'End'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-        - id: rowCount
-          description: Required. Number of rows to add.
-          type: number
-        - id: values
-          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
-          type: 'string[][]'
-      return:
-        type: '<xref uid="word!Word.TableRowCollection:class" />'
-        description: ''
-  - name: 'addRows(insertLocationString, rowCount, values)'
-    uid: 'word!Word.Table#addRows:member(2)'
-    package: word!
-    fullName: 'addRows(insertLocationString, rowCount, values)'
-    summary: >-
-      Adds rows to the start or end of the table, using the first or last existing row as a template. The string values,
-      if specified, are set in the newly inserted rows.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        addRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
-        string[][]): Word.TableRowCollection;
-      parameters:
-        - id: insertLocationString
-          description: Required. It must be 'Start' or 'End'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            "Start" | "End"
         - id: rowCount
           description: Required. Number of rows to add.
           type: number
@@ -864,28 +818,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
+      content: >-
+        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end |
+        Word.RangeLocation.after | "Whole" | "Start" | "End" | "After"): Word.Range;
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location must be ''Whole'', ''Start'', ''End'', or ''After''.'
-          type: '<xref uid="word!Word.RangeLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: getRange(rangeLocationString)
-    uid: 'word!Word.Table#getRange:member(2)'
-    package: word!
-    fullName: getRange(rangeLocationString)
-    summary: 'Gets the range that contains this table, or the range at the start or end of the table.'
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
-      parameters:
-        - id: rangeLocationString
-          description: 'Optional. The range location must be ''Whole'', ''Start'', ''End'', or ''After''.'
-          type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
+          type: >-
+            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> |
+            <xref uid="word!Word.RangeLocation.end:member" /> | <xref uid="word!Word.RangeLocation.after:member" /> |
+            "Whole" | "Start" | "End" | "After"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -911,36 +853,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after |
+        "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: 'insertParagraph(paragraphText, insertLocationString)'
-    uid: 'word!Word.Table#insertParagraph:member(2)'
-    package: word!
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.Paragraph;
-      parameters:
-        - id: paragraphText
-          description: Required. The paragraph text to be inserted.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -954,8 +878,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]):
-        Word.Table;
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before |
+        Word.InsertLocation.after | "Before" | "After", values?: string[][]): Word.Table;
       parameters:
         - id: rowCount
           description: Required. The number of rows in the table.
@@ -965,35 +889,9 @@ methods:
           type: number
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-        - id: values
-          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
-          type: 'string[][]'
-      return:
-        type: '<xref uid="word!Word.Table:class" />'
-        description: ''
-  - name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
-    uid: 'word!Word.Table#insertTable:member(2)'
-    package: word!
-    fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
-    summary: Inserts a table with the specified number of rows and columns.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" |
-        "Replace", values?: string[][]): Word.Table;
-      parameters:
-        - id: rowCount
-          description: Required. The number of rows in the table.
-          type: number
-        - id: columnCount
-          description: Required. The number of columns in the table.
-          type: number
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type: 'string[][]'
