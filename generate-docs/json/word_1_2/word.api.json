@@ -570,12 +570,29 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", insertLocation: "
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -593,8 +610,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 9,
+                    "endIndex": 10
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -603,77 +620,15 @@
                       "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 2
+                        "endIndex": 3
                       },
                       "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertBreak"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value must be 'Start' or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertBreak(breakTypeString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocation: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "breakTypeString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocation",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "startIndex": 4,
+                        "endIndex": 8
                       },
                       "isOptional": false
                     }
@@ -729,8 +684,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -749,8 +726,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -767,70 +744,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertFileFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertFileFromBase64(base64File: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64File",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -856,8 +770,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -876,8 +812,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -894,70 +830,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertHtml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertHtml(html: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "html",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -983,8 +856,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -1003,8 +889,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1021,70 +907,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertInlinePictureFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocationString - Required. The value must be 'Start' or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertInlinePictureFromBase64(base64EncodedImage: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.InlinePicture",
-                      "canonicalReference": "word!Word.InlinePicture:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64EncodedImage",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -1110,8 +933,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -1130,8 +975,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1148,70 +993,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertOoxml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertOoxml(ooxml: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "ooxml",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -1237,8 +1019,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -1257,8 +1052,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1275,70 +1070,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertParagraph"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Start' or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertParagraph(paragraphText: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Paragraph",
-                      "canonicalReference": "word!Word.Paragraph:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "paragraphText",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -1364,8 +1096,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -1384,8 +1138,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1402,70 +1156,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertText"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Body#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertText(text: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "text",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -2688,12 +2379,47 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", insertLocation: "
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Start\" | \"End\" | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -2711,8 +2437,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 13,
+                    "endIndex": 14
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -2721,77 +2447,15 @@
                       "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 2
+                        "endIndex": 3
                       },
                       "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertBreak"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. Type of break.\n *\n * @param insertLocation - Required. The value must be 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertBreak(breakTypeString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocation: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "breakTypeString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocation",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "startIndex": 4,
+                        "endIndex": 12
                       },
                       "isOptional": false
                     }
@@ -2817,8 +2481,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -2837,8 +2523,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -2855,70 +2541,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertFileFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertFileFromBase64(base64File: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64File",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -2944,8 +2567,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -2964,8 +2609,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -2982,70 +2627,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertHtml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertHtml(html: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "html",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -3071,8 +2653,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -3091,8 +2695,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -3109,70 +2713,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertInlinePictureFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertInlinePictureFromBase64(base64EncodedImage: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.InlinePicture",
-                      "canonicalReference": "word!Word.InlinePicture:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64EncodedImage",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -3198,8 +2739,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -3218,8 +2781,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -3236,70 +2799,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertOoxml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertOoxml(ooxml: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "ooxml",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -3325,8 +2825,39 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Start\" | \"End\" | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -3345,8 +2876,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 12,
+                    "endIndex": 13
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -3363,70 +2894,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertParagraph"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertParagraph(paragraphText: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Paragraph",
-                      "canonicalReference": "word!Word.Paragraph:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "paragraphText",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 11
                       },
                       "isOptional": false
                     }
@@ -3452,8 +2920,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -3472,8 +2962,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -3490,70 +2980,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertText"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.ContentControl#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertText(text: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "text",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -4593,11 +4020,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a content control by its index in the collection.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param index - The index.\n */\n",
+                  "docComment": "/**\n * Gets a content control by its ID.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param id - The content control's ID.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "getItem(index: "
+                      "text": "getItem(id: "
                     },
                     {
                       "kind": "Content",
@@ -4627,7 +4054,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "index",
+                      "parameterName": "id",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -7039,12 +6466,29 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", insertLocation: "
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7062,8 +6506,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 9,
+                    "endIndex": 10
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7072,77 +6516,15 @@
                       "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 2
+                        "endIndex": 3
                       },
                       "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertBreak"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertBreak(breakTypeString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocation: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "breakTypeString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocation",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "startIndex": 4,
+                        "endIndex": 8
                       },
                       "isOptional": false
                     }
@@ -7198,8 +6580,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7218,8 +6613,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7236,70 +6631,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertFileFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertFileFromBase64(base64File: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64File",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -7325,8 +6657,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7345,8 +6690,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7363,70 +6708,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertHtml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertHtml(html: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "html",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -7452,8 +6734,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7472,8 +6776,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7490,70 +6794,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertInlinePictureFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertInlinePictureFromBase64(base64EncodedImage: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.InlinePicture",
-                      "canonicalReference": "word!Word.InlinePicture:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64EncodedImage",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -7579,8 +6820,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7599,8 +6853,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7617,70 +6871,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertOoxml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertOoxml(ooxml: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "ooxml",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -7706,8 +6897,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7726,8 +6930,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7744,70 +6948,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertParagraph"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertParagraph(paragraphText: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Paragraph",
-                      "canonicalReference": "word!Word.Paragraph:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "paragraphText",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -7833,8 +6974,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -7853,8 +7007,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7871,70 +7025,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertText"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.InlinePicture#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertText(text: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "text",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -17856,12 +16947,29 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", insertLocation: "
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -17879,8 +16987,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 9,
+                    "endIndex": 10
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -17889,77 +16997,15 @@
                       "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 2
+                        "endIndex": 3
                       },
                       "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertBreak"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertBreak(breakTypeString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocation: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "breakTypeString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocation",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "startIndex": 4,
+                        "endIndex": 8
                       },
                       "isOptional": false
                     }
@@ -18015,8 +17061,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -18035,8 +17103,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18053,70 +17121,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertFileFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertFileFromBase64(base64File: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64File",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -18142,8 +17147,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -18162,8 +17189,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18180,70 +17207,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertHtml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertHtml(html: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "html",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -18269,8 +17233,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -18289,8 +17275,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18307,70 +17293,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertInlinePictureFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertInlinePictureFromBase64(base64EncodedImage: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.InlinePicture",
-                      "canonicalReference": "word!Word.InlinePicture:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64EncodedImage",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -18396,8 +17319,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -18416,8 +17361,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18434,70 +17379,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertOoxml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertOoxml(ooxml: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "ooxml",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -18523,8 +17405,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -18543,8 +17438,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18561,70 +17456,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertParagraph"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertParagraph(paragraphText: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Paragraph",
-                      "canonicalReference": "word!Word.Paragraph:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "paragraphText",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -18650,8 +17482,30 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.replace",
+                      "canonicalReference": "word!Word.InsertLocation.replace:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.start",
+                      "canonicalReference": "word!Word.InsertLocation.start:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.end",
+                      "canonicalReference": "word!Word.InsertLocation.end:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\""
                     },
                     {
                       "kind": "Content",
@@ -18670,8 +17524,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -18688,70 +17542,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertText"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Paragraph#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertText(text: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "text",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 9
                       },
                       "isOptional": false
                     }
@@ -20174,12 +18965,29 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", insertLocation: "
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -20197,8 +19005,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 9,
+                    "endIndex": 10
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20207,77 +19015,15 @@
                       "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 2
+                        "endIndex": 3
                       },
                       "isOptional": false
                     },
                     {
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertBreak"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertBreak(breakTypeString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Page\" | \"Next\" | \"SectionNext\" | \"SectionContinuous\" | \"SectionEven\" | \"SectionOdd\" | \"Line\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocation: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "breakTypeString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocation",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "startIndex": 4,
+                        "endIndex": 8
                       },
                       "isOptional": false
                     }
@@ -20338,6 +19084,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\" | \"Before\" | \"After\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20353,8 +19103,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20371,70 +19121,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertFileFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertFileFromBase64(base64File: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64File",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 5
                       },
                       "isOptional": false
                     }
@@ -20465,6 +19152,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\" | \"Before\" | \"After\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20480,8 +19171,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20498,70 +19189,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertHtml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertHtml(html: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "html",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 5
                       },
                       "isOptional": false
                     }
@@ -20592,6 +19220,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\" | \"Before\" | \"After\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20607,8 +19239,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20625,70 +19257,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertInlinePictureFromBase64"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertInlinePictureFromBase64(base64EncodedImage: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.InlinePicture",
-                      "canonicalReference": "word!Word.InlinePicture:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "base64EncodedImage",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 5
                       },
                       "isOptional": false
                     }
@@ -20719,6 +19288,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\" | \"Before\" | \"After\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20734,8 +19307,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20752,70 +19325,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertOoxml"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertOoxml(ooxml: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "ooxml",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 5
                       },
                       "isOptional": false
                     }
@@ -20841,8 +19351,21 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.InsertLocation",
-                      "canonicalReference": "word!Word.InsertLocation:enum"
+                      "text": "Word.InsertLocation.before",
+                      "canonicalReference": "word!Word.InsertLocation.before:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.InsertLocation.after",
+                      "canonicalReference": "word!Word.InsertLocation.after:member"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Before\" | \"After\""
                     },
                     {
                       "kind": "Content",
@@ -20861,8 +19384,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20879,70 +19402,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertParagraph"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Before' or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertParagraph(paragraphText: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Paragraph",
-                      "canonicalReference": "word!Word.Paragraph:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "paragraphText",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 7
                       },
                       "isOptional": false
                     }
@@ -20973,6 +19433,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | \"Replace\" | \"Start\" | \"End\" | \"Before\" | \"After\""
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20988,8 +19452,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -21006,70 +19470,7 @@
                       "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 3,
-                        "endIndex": 4
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "insertText"
-                },
-                {
-                  "kind": "Method",
-                  "canonicalReference": "word!Word.Range#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "insertText(text: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ", insertLocationString: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "\"Before\" | \"After\" | \"Start\" | \"End\" | \"Replace\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.Range",
-                      "canonicalReference": "word!Word.Range:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "isStatic": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
-                  "overloadIndex": 2,
-                  "parameters": [
-                    {
-                      "parameterName": "text",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "insertLocationString",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 4
+                        "endIndex": 5
                       },
                       "isOptional": false
                     }
