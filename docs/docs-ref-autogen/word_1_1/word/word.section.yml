@@ -14,17 +14,15 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
-  // Inserts a section break on the next page.
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
   await Word.run(async (context) => {
-    const body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
+    context.document.sections
+      .getFirst()
+      .getHeader(Word.HeaderFooterType.primary)
+      .insertParagraph("This is a primary header.", "End");
 
     await context.sync();
-
-    console.log("Inserted section break on next page");
   });
 
   ```
@@ -36,9 +34,7 @@ properties:
     uid: 'word!Word.Section#body:member'
     package: word!
     fullName: body
-    summary: >-
-      Gets the body object of the section. This does not include the header/footer and other section metadata.
-      Read-only.
+    summary: Gets the body object of the section. This does not include the header/footer and other section metadata.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -76,15 +72,17 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+      // Inserts a section break on the next even page.
 
       await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getFooter("Primary")
-          .insertParagraph("This is a primary footer.", "End");
+        const body = context.document.body;
+        body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
 
         await context.sync();
+
+        console.log("Inserted section break on next even page");
       });
 
       ```
@@ -170,8 +168,8 @@ methods:
       await Word.run(async (context) => {
         context.document.sections
           .getFirst()
-          .getHeader(Word.HeaderFooterType.primary)
-          .insertParagraph("This is a primary header.", "End");
+          .getFooter("Primary")
+          .insertParagraph("This is a primary footer.", "End");
 
         await context.sync();
       });

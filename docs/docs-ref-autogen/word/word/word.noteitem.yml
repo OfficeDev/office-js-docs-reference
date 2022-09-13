@@ -26,20 +26,21 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the text of the referenced footnote.
+      // Select the footnote's reference mark in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/body");
+        footnotes.load("items/reference");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const footnoteBody = footnotes.items[mark].body.getRange();
-        footnoteBody.load("text");
+        const item = footnotes.items[mark];
+        const reference = item.reference;
+        reference.select();
         await context.sync();
 
-        console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+        console.log(`Reference ${referenceNumber} is selected.`);
       });
 
       ```
@@ -80,21 +81,17 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Select the footnote's reference mark in the document body.
+      // Get the referenced note's type, which is footnote.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/reference");
+        footnotes.load("items/type");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
-        const reference = item.reference;
-        reference.select();
-        await context.sync();
-
-        console.log(`Reference ${referenceNumber} is selected.`);
+        const itemType = footnotes.items[mark].type;
+        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
       });
 
       ```
@@ -121,17 +118,12 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the referenced note's type, which is footnote.
+      // Get the first footnote in the document body and select its reference mark.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
-        footnotes.load("items/type");
-        await context.sync();
-
-        const referenceNumber = $("#input-reference").val();
-        const mark = (referenceNumber as number) - 1;
-        const itemType = footnotes.items[mark].type;
-        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
+        const reference = context.document.body.footnotes.getFirst().reference;
+        reference.select();
+        console.log("The first footnote is selected.");
       });
 
       ```
@@ -147,46 +139,6 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the note item.
-    remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
-
-      // Delete this referenced footnote.
-
-      await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
-        footnotes.load("items");
-        await context.sync();
-
-        const referenceNumber = $("#input-reference").val();
-        const mark = (referenceNumber as number) - 1;
-        footnotes.items[mark].delete();
-        await context.sync();
-
-        console.log("Footnote deleted.");
-      });
-
-      ```
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getNext()
-    uid: 'word!Word.NoteItem#getNext:member(1)'
-    package: word!
-    fullName: getNext()
-    summary: Gets the next note item of the same type. Throws an error if this note item is the last one.
     remarks: >-
       \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -217,6 +169,47 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getNext()
+    uid: 'word!Word.NoteItem#getNext:member(1)'
+    package: word!
+    fullName: getNext()
+    summary: Gets the next note item of the same type. Throws an `ItemNotFound` error if this note item is the last one.
+    remarks: >-
+      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
+
+      // Get the text of the referenced footnote.
+
+      await Word.run(async (context) => {
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/body");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        const mark = (referenceNumber as number) - 1;
+        const footnoteBody = footnotes.items[mark].body.getRange();
+        footnoteBody.load("text");
+        await context.sync();
+
+        console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
       content: 'getNext(): Word.NoteItem;'
       return:
         type: '<xref uid="word!Word.NoteItem:class" />'
@@ -225,7 +218,12 @@ methods:
     uid: 'word!Word.NoteItem#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next note item of the same type. Returns a null object if this note item is the last one.
+    summary: >-
+      Gets the next note item of the same type. If this note item is the last one, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -1,0 +1,45 @@
+### YamlMime:TSType
+name: Word.SettingCustom
+uid: 'word!Word.SettingCustom:class'
+package: word!
+fullName: Word.SettingCustom
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: replaceDateWithStringDate(value)
+    uid: 'word!Word.SettingCustom.replaceDateWithStringDate:member(1)'
+    package: word!
+    fullName: replaceDateWithStringDate(value)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static replaceDateWithStringDate(value: any): any;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: any
+        description: ''
+  - name: replaceStringDateWithDate(value)
+    uid: 'word!Word.SettingCustom.replaceStringDateWithDate:member(1)'
+    package: word!
+    fullName: replaceStringDateWithDate(value)
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static replaceStringDateWithDate(value: any): any;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: any
+        description: ''

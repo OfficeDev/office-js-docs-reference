@@ -27,10 +27,10 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Centers last paragraph alignment.
-        context.document.body.paragraphs.getLast().alignment = "Centered";
+        // Indents the first paragraph.
+        context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
-        await context.sync();
+        return context.sync();
       });
 
       ```
@@ -44,7 +44,7 @@ properties:
     uid: 'word!Word.Paragraph#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the paragraph. Read-only.
+    summary: Gets the collection of content control objects in the paragraph.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -84,9 +84,7 @@ properties:
     uid: 'word!Word.Paragraph#font:member'
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-      Read-only.
+    summary: 'Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -98,9 +96,7 @@ properties:
     uid: 'word!Word.Paragraph#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: >-
-      Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
-      Read-only.
+    summary: Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -126,10 +122,10 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Indents the first paragraph.
-        context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
+        // Adjusts line spacing.
+        context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
-        return context.sync();
+        await context.sync();
       });
 
       ```
@@ -159,8 +155,8 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Adjusts line spacing.
-        context.document.body.paragraphs.getFirst().lineSpacing = 20;
+        // Adjust space between paragraphs.
+        context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
         await context.sync();
       });
@@ -213,8 +209,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -249,13 +245,15 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
-        // Adjust space between paragraphs.
-        context.document.body.paragraphs.getFirst().spaceAfter = 20;
+        // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+        const paragraph = context.document.getSelection().paragraphs.getFirst();
+        paragraph.load("text");
 
         await context.sync();
+        console.log(paragraph.text);
       });
 
       ```
@@ -295,7 +293,7 @@ properties:
     uid: 'word!Word.Paragraph#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the paragraph. Read-only.
+    summary: Gets the text of the paragraph.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -306,15 +304,19 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+      // Get the comments in the selected content.
 
       await Word.run(async (context) => {
-        // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
-        paragraph.load("text");
+        const comments = context.document.getSelection().getComments();
 
+        // Load objects for display in Script Lab console.
+        comments.load();
         await context.sync();
-        console.log(paragraph.text);
+
+        console.log("Comments:");
+        console.log(comments);
       });
 
       ```
@@ -504,13 +506,15 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
 
-      Word.run(async (context) => {
-        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+      await Word.run(async (context) => {
+        // Replace the last paragraph.
+        const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+        range.font.highlightColor = "black";
+        range.font.color = "white";
 
         await context.sync();
-        console.log("success");
       });
 
       ```
@@ -579,10 +583,10 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation)'
+  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     uid: 'word!Word.Paragraph#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     summary: Inserts a document into the paragraph at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -590,7 +594,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
-        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -600,6 +604,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
+            the base64 content is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -714,10 +723,10 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation)'
+  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     uid: 'word!Word.Paragraph#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML into the paragraph at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -725,7 +734,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
-        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted in the paragraph.
@@ -735,6 +744,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
+            OOXML is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -777,13 +791,11 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-in-different-locations.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
       await Word.run(async (context) => {
-        // Replace the last paragraph.
-        const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
-        range.font.highlightColor = "black";
-        range.font.color = "white";
+        // If select is called with no parameters, it selects the object.
+        context.document.body.paragraphs.getLast().select();
 
         await context.sync();
       });
@@ -932,8 +944,8 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
 
       await Word.run(async (context) => {
-        // If select is called with no parameters, it selects the object.
-        context.document.body.paragraphs.getLast().select();
+        // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+        context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
 
         await context.sync();
       });
@@ -943,13 +955,24 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
       await Word.run(async (context) => {
-        // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-        context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+        const paragraph = context.document.body.paragraphs.getFirst();
+        const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+        words.load("text");
 
         await context.sync();
+
+        for (let i = 0; i < words.items.length; i++) {
+          if (i >= 1) {
+            words.items[i - 1].font.highlightColor = "#FFFFFF";
+          }
+          words.items[i].font.highlightColor = "#FFFF00";
+
+          await context.sync();
+          await pause(200);
+        }
       });
 
       ```
@@ -1016,14 +1039,13 @@ methods:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
 
           await Word.run(async (context) => {
-            const paragraph = context.document.body.paragraphs.getFirst();
-            paragraph.set({
-              leftIndent: 30,
-              font: {
-                bold: true,
-                color: "red"
-              }
-            });
+            const firstParagraph = context.document.body.paragraphs.getFirst();
+            const secondParagraph = firstParagraph.getNext();
+            firstParagraph.load("text, font/color, font/bold, leftIndent");
+
+            await context.sync();
+
+            secondParagraph.set(firstParagraph);
 
             await context.sync();
           });
@@ -1033,16 +1055,11 @@ methods:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
           await Word.run(async (context) => {
-            const firstParagraph = context.document.body.paragraphs.getFirst();
-            const secondParagraph = firstParagraph.getNext();
-            firstParagraph.load("text, font/color, font/bold, leftIndent");
-
-            await context.sync();
-
-            secondParagraph.set(firstParagraph);
+            // Centers last paragraph alignment.
+            context.document.body.paragraphs.getLast().alignment = "Centered";
 
             await context.sync();
           });

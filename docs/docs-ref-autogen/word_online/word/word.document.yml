@@ -17,7 +17,7 @@ properties:
     fullName: body
     summary: >-
       Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
-      textboxes, etc. Read-only.
+      textboxes, etc.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -31,75 +31,7 @@ properties:
     fullName: changeTrackingMode
     summary: Gets or sets the ChangeTracking mode.
     remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-      // Get the current change tracking mode.
-
-      await Word.run(async (context) => {
-        const document = context.document;
-        document.load("changeTrackingMode");
-        await context.sync();
-
-        if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-          console.log("Only my changes are being tracked.");
-        } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-          console.log("Everyone's changes are being tracked.");
-        } else {
-          console.log("No changes are being tracked.");
-        }
-      });
-
-      ```
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
-      return:
-        type: '<xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
-  - name: contentControls
-    uid: 'word!Word.Document#contentControls:member'
-    package: word!
-    fullName: contentControls
-    summary: >-
-      Gets the collection of content control objects in the document. This includes content controls in the body of the
-      document, headers, footers, textboxes, etc. Read-only.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'readonly contentControls: Word.ContentControlCollection;'
-      return:
-        type: '<xref uid="word!Word.ContentControlCollection:class" />'
-  - name: context
-    uid: 'word!Word.Document#context:member'
-    package: word!
-    fullName: context
-    summary: >-
-      The request context associated with the object. This connects the add-in's process to the Office host
-      application's process.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'context: RequestContext;'
-      return:
-        type: '<xref uid="word!Word.RequestContext:class" />'
-  - name: properties
-    uid: 'word!Word.Document#properties:member'
-    package: word!
-    fullName: properties
-    summary: Gets the properties of the document. Read-only.
-    remarks: >-
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -122,6 +54,77 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
+      content: 'changeTrackingMode: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      return:
+        type: '<xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
+  - name: contentControls
+    uid: 'word!Word.Document#contentControls:member'
+    package: word!
+    fullName: contentControls
+    summary: >-
+      Gets the collection of content control objects in the document. This includes content controls in the body of the
+      document, headers, footers, textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly contentControls: Word.ContentControlCollection;'
+      return:
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+  - name: context
+    uid: 'word!Word.Document#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: customXmlParts
+    uid: 'word!Word.Document#customXmlParts:member'
+    package: word!
+    fullName: customXmlParts
+    summary: Gets the custom XML parts in the document.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
+      return:
+        type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
+  - name: properties
+    uid: 'word!Word.Document#properties:member'
+    package: word!
+    fullName: properties
+    summary: Gets the properties of the document.
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type: '<xref uid="word!Word.DocumentProperties:class" />'
@@ -131,7 +134,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
+      changed since it was saved.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -143,7 +146,7 @@ properties:
     uid: 'word!Word.Document#sections:member'
     package: word!
     fullName: sections
-    summary: Gets the collection of section objects in the document. Read-only.
+    summary: Gets the collection of section objects in the document.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -151,12 +154,79 @@ properties:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type: '<xref uid="word!Word.SectionCollection:class" />'
+  - name: settings
+    uid: 'word!Word.Document#settings:member'
+    package: word!
+    fullName: settings
+    summary: Gets the add-in's settings in the document.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly settings: Word.SettingCollection;'
+      return:
+        type: '<xref uid="word!Word.SettingCollection:class" />'
 methods:
+  - name: deleteBookmark(name)
+    uid: 'word!Word.Document#deleteBookmark:member(1)'
+    package: word!
+    fullName: deleteBookmark(name)
+    summary: 'Deletes a bookmark, if it exists, from the document.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteBookmark(name: string): void;'
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: getBookmarkRange(name)
+    uid: 'word!Word.Document#getBookmarkRange:member(1)'
+    package: word!
+    fullName: getBookmarkRange(name)
+    summary: Gets a bookmark's range. Throws an `ItemNotFound` error if the bookmark does not exist.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBookmarkRange(name: string): Word.Range;'
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type: string
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+        description: ''
+  - name: getBookmarkRangeOrNullObject(name)
+    uid: 'word!Word.Document#getBookmarkRangeOrNullObject:member(1)'
+    package: word!
+    fullName: getBookmarkRangeOrNullObject(name)
+    summary: >-
+      Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type: string
+      return:
+        type: '<xref uid="word!Word.Range:class" />'
+        description: ''
   - name: getEndnoteBody()
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
-    summary: Gets the document's endnotes in a single body. Read-only. Not implemented in Word on the web.
+    summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -169,7 +239,7 @@ methods:
     uid: 'word!Word.Document#getFootnoteBody:member(1)'
     package: word!
     fullName: getFootnoteBody()
-    summary: Gets the document's footnotes in a single body. Read-only. Not implemented in Word on the web.
+    summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

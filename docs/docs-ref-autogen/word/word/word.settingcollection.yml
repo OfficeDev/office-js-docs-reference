@@ -4,8 +4,8 @@ uid: 'word!Word.SettingCollection:class'
 package: word!
 fullName: Word.SettingCollection
 summary: 'Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.'
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -17,7 +17,7 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'context: RequestContext;'
@@ -29,7 +29,7 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly items: Word.Setting[];'
@@ -41,8 +41,8 @@ methods:
     package: word!
     fullName: 'add(key, value)'
     summary: Creates a new setting or sets an existing setting.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'add(key: string, value: any): Word.Setting;'
@@ -62,7 +62,7 @@ methods:
     fullName: deleteAll()
     summary: Deletes all settings in this add-in.
     remarks: |-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -94,7 +94,7 @@ methods:
           console.log(count.value);
       });
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'deleteAll(): void;'
@@ -107,7 +107,7 @@ methods:
     fullName: getCount()
     summary: Gets the count of settings.
     remarks: |-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -139,7 +139,7 @@ methods:
           console.log(count.value);
       });
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
@@ -150,9 +150,11 @@ methods:
     uid: 'word!Word.SettingCollection#getItem:member(1)'
     package: word!
     fullName: getItem(key)
-    summary: 'Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.'
+    summary: >-
+      Gets a setting object by its key, which is case-sensitive. Throws an `ItemNotFound` error if the setting does not
+      exist.
     remarks: |-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -176,7 +178,7 @@ methods:
           console.log(JSON.stringify(startMonth.value));
       });
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItem(key: string): Word.Setting;'
@@ -191,9 +193,14 @@ methods:
     uid: 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
     package: word!
     fullName: getItemOrNullObject(key)
-    summary: 'Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.'
+    summary: >-
+      Gets a setting object by its key, which is case-sensitive. If the setting does not exist, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: |-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
@@ -230,7 +237,7 @@ methods:
               }
       });
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getItemOrNullObject(key: string): Word.Setting;'
@@ -249,7 +256,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -272,7 +279,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNames?: string | string[]): Word.SettingCollection;'
@@ -291,7 +298,7 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.SettingCollection;'
@@ -315,7 +322,7 @@ methods:
       a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toJSON(): Word.Interfaces.SettingCollectionData;'
@@ -335,7 +342,7 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'track(): Word.SettingCollection;'
@@ -352,7 +359,7 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'untrack(): Word.SettingCollection;'

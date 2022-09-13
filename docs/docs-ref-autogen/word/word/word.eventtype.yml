@@ -14,19 +14,78 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-  async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-    await Word.run(async (context) => {
-      // Display the deleted content control's ID.
-      console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-    });
-  }
+  // Gets the first field in the document body.
+
+  await Word.run(async (context) => {
+    const field = context.document.body.fields.getFirstOrNullObject();
+    field.load(["code", "result"]);
+
+    await context.sync();
+
+    if (field.isNullObject) {
+      console.log("There are no fields in this document.");
+    } else {
+      console.log("Code of first field: " + field.code);
+      console.log("Result of first field: " + field.result);
+    }
+  });
 
   ```
 isPreview: false
 isDeprecated: false
 fields:
+  - name: commentAdded
+    uid: 'word!Word.EventType.commentAdded:member'
+    package: word!
+    summary: >-
+      Represents that one or more new comments were added to the comment collection.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"CommentAdded"'
+  - name: commentChanged
+    uid: 'word!Word.EventType.commentChanged:member'
+    package: word!
+    summary: >-
+      Represents that a comment or its reply was changed in the comment collection.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"CommentChanged"'
+  - name: commentDeleted
+    uid: 'word!Word.EventType.commentDeleted:member'
+    package: word!
+    summary: >-
+      Represents that one or more comments were deleted from the comment collection.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"CommentDeleted"'
+  - name: commentDeselected
+    uid: 'word!Word.EventType.commentDeselected:member'
+    package: word!
+    summary: >-
+      Represents that a comment was deselected in the comment collection.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"CommentDeselected"'
+  - name: commentSelected
+    uid: 'word!Word.EventType.commentSelected:member'
+    package: word!
+    summary: >-
+      Represents that a comment was selected in the comment collection.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"CommentSelected"'
   - name: contentControlAdded
     uid: 'word!Word.EventType.contentControlAdded:member'
     package: word!

@@ -45,15 +45,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of rich text content control objects in the body. Read-only.
+         * Gets the collection of rich text content control objects in the body.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+         * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -61,70 +62,70 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
-         * Gets the collection of list objects in the body. Read-only.
+         * Gets the collection of list objects in the body.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
-         * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+         * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
-         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.
+         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an `ItemNotFound` error if there isn't a parent body.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
-         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
+         * Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a parent body, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBodyOrNullObject: Word.Body;
         /**
-         * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the body. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.
+         * Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentSection: Word.Section;
         /**
-         * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+         * Gets the parent section of the body. If there isn't a parent section, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentSectionOrNullObject: Word.Section;
         /**
-         * Gets the collection of table objects in the body. Read-only.
+         * Gets the collection of table objects in the body.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -145,14 +146,14 @@ export declare namespace Word {
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
-         * Gets the text of the body. Use the insertText method to insert text. Read-only.
+         * Gets the text of the body. Use the insertText method to insert text.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly text: string;
         /**
-         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -224,8 +225,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -254,8 +256,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -374,15 +377,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the content control. Read-only.
+         * Gets the collection of content control objects in the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -390,77 +394,77 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
-         * Gets the collection of list objects in the content control. Read-only.
+         * Gets the collection of list objects in the content control.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
-         * Gets the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
-         * Gets the parent body of the content control. Read-only.
+         * Gets the parent body of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
-         * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
+         * Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
-         * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the content control. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
-         * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
+         * Gets the table that contains the content control. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of table objects in the content control. Read-only.
+         * Gets the collection of table objects in the content control.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -495,15 +499,14 @@ export declare namespace Word {
          */
         color: string;
         /**
-         * Gets an integer that represents the content control identifier. Read-only.
+         * Gets an integer that represents the content control identifier.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly id: number;
         /**
-         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-         * **Note**: The set operation for this property is not supported in Word on the web.
+         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -531,7 +534,7 @@ export declare namespace Word {
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
-         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -545,7 +548,7 @@ export declare namespace Word {
          */
         tag: string;
         /**
-         * Gets the text of the content control. Read-only.
+         * Gets the text of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -559,7 +562,7 @@ export declare namespace Word {
          */
         title: string;
         /**
-         * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+         * Gets the content control type. Only rich text content controls are supported currently.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -643,8 +646,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML into the content control at the specified location.
          *
@@ -673,8 +677,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -802,7 +807,7 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
         /**
-         * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
+         * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -811,7 +816,7 @@ export declare namespace Word {
          */
         getById(id: number): Word.ContentControl;
         /**
-         * Gets a content control by its identifier. Returns a null object if there isn't a content control with the identifier in this collection.
+         * Gets a content control by its identifier. If there isn't a content control with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -847,14 +852,14 @@ export declare namespace Word {
          */
         getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;
         /**
-         * Gets the first content control in this collection. Throws an error if this collection is empty.
+         * Gets the first content control in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.ContentControl;
         /**
-         * Gets the first content control in this collection. Returns a null object if this collection is empty.
+         * Gets the first content control in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -911,14 +916,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the key of the custom property. Read only.
+         * Gets the key of the custom property.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly key: string;
         /**
-         * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+         * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1017,7 +1022,7 @@ export declare namespace Word {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
+         * Gets a custom property object by its key, which is case-insensitive. Throws an `ItemNotFound` error if the custom property does not exist.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1026,7 +1031,7 @@ export declare namespace Word {
          */
         getItem(key: string): Word.CustomProperty;
         /**
-         * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
+         * Gets a custom property object by its key, which is case-insensitive. If the custom property does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1066,6 +1071,9 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.CustomPropertyCollectionData;
     }
+    
+    
+    
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
@@ -1076,36 +1084,38 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
-         * Gets the properties of the document. Read-only.
+         * Gets the properties of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly properties: Word.DocumentProperties;
         /**
-         * Gets the collection of section objects in the document. Read-only.
+         * Gets the collection of section objects in the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
         
+        
         /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1119,6 +1129,9 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        
+        
+        
         
         
         /**
@@ -1181,35 +1194,37 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly body: Word.Body;
         /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly contentControls: Word.ContentControlCollection;
+        
         /**
-         * Gets the properties of the document. Read-only.
+         * Gets the properties of the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly properties: Word.DocumentProperties;
         /**
-         * Gets the collection of section objects in the document. Read-only.
+         * Gets the collection of section objects in the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          */
         readonly sections: Word.SectionCollection;
+        
         /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
@@ -1223,6 +1238,9 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentCreatedUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.DocumentCreated): void;
+        
+        
+        
         /**
          * Opens the document.
          *
@@ -1282,14 +1300,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of custom properties of the document. Read only.
+         * Gets the collection of custom properties of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly customProperties: Word.CustomPropertyCollection;
         /**
-         * Gets the application name of the document. Read only.
+         * Gets the application name of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1324,7 +1342,7 @@ export declare namespace Word {
          */
         company: string;
         /**
-         * Gets the creation date of the document. Read only.
+         * Gets the creation date of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1345,21 +1363,21 @@ export declare namespace Word {
          */
         keywords: string;
         /**
-         * Gets the last author of the document. Read only.
+         * Gets the last author of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly lastAuthor: string;
         /**
-         * Gets the last print date of the document. Read only.
+         * Gets the last print date of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly lastPrintDate: Date;
         /**
-         * Gets the last save time of the document. Read only.
+         * Gets the last save time of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1373,14 +1391,14 @@ export declare namespace Word {
          */
         manager: string;
         /**
-         * Gets the revision number of the document. Read only.
+         * Gets the revision number of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly revisionNumber: string;
         /**
-         * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
+         * Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read-only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1394,7 +1412,7 @@ export declare namespace Word {
          */
         subject: string;
         /**
-         * Gets the template of the document. Read only.
+         * Gets the template of the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1450,6 +1468,8 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.DocumentPropertiesData;
     }
+    
+    
     /**
      * Represents a font.
      *
@@ -1481,8 +1501,7 @@ export declare namespace Word {
          */
         doubleStrikeThrough: boolean;
         /**
-         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                    **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1590,49 +1609,49 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the parent paragraph that contains the inline image. Read-only.
+         * Gets the parent paragraph that contains the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.2]
          */
         readonly paragraph: Word.Paragraph;
         /**
-         * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.
+         * Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
-         * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
-         * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+         * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1703,14 +1722,14 @@ export declare namespace Word {
          */
         getBase64ImageSrc(): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the next inline image. Throws an error if this inline image is the last one.
+         * Gets the next inline image. Throws an `ItemNotFound` error if this inline image is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.InlinePicture;
         /**
-         * Gets the next inline image. Returns a null object if this inline image is the last one.
+         * Gets the next inline image. If this inline image is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1750,8 +1769,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -1780,8 +1800,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1867,14 +1888,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.InlinePicture[];
         /**
-         * Gets the first inline image in this collection. Throws an error if this collection is empty.
+         * Gets the first inline image in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.InlinePicture;
         /**
-         * Gets the first inline image in this collection. Returns a null object if this collection is empty.
+         * Gets the first inline image in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1936,14 +1957,14 @@ export declare namespace Word {
          */
         readonly id: number;
         /**
-         * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+         * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly levelExistences: boolean[];
         /**
-         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+         * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2111,7 +2132,7 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.List[];
         /**
-         * Gets a list by its identifier. Throws an error if there isn't a list with the identifier in this collection.
+         * Gets a list by its identifier. Throws an `ItemNotFound` error if there isn't a list with the identifier in this collection.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2120,7 +2141,7 @@ export declare namespace Word {
          */
         getById(id: number): Word.List;
         /**
-         * Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
+         * Gets a list by its identifier. If there isn't a list with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2129,14 +2150,14 @@ export declare namespace Word {
          */
         getByIdOrNullObject(id: number): Word.List;
         /**
-         * Gets the first list in this collection. Throws an error if this collection is empty.
+         * Gets the first list in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.List;
         /**
-         * Gets the first list in this collection. Returns a null object if this collection is empty.
+         * Gets the first list in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2200,14 +2221,14 @@ export declare namespace Word {
          */
         level: number;
         /**
-         * Gets the list item bullet, number, or picture as a string. Read-only.
+         * Gets the list item bullet, number, or picture as a string.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly listString: string;
         /**
-         * Gets the list item order number in relation to its siblings. Read-only.
+         * Gets the list item order number in relation to its siblings.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2222,7 +2243,7 @@ export declare namespace Word {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.ListItem): void;
         /**
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item has no ancestor.
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an `ItemNotFound` error if the list item has no ancestor.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2231,7 +2252,7 @@ export declare namespace Word {
          */
         getAncestor(parentOnly?: boolean): Word.Paragraph;
         /**
-         * Gets the list item parent, or the closest ancestor if the parent does not exist. Returns a null object if the list item has no ancestor.
+         * Gets the list item parent, or the closest ancestor if the parent does not exist. If the list item has no ancestor, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2295,15 +2316,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the paragraph. Read-only.
+         * Gets the collection of content control objects in the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2311,84 +2333,84 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
-         * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
+         * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly list: Word.List;
         /**
-         * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
+         * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly listItem: Word.ListItem;
         /**
-         * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+         * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly listItemOrNullObject: Word.ListItem;
         /**
-         * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
+         * Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly listOrNullObject: Word.List;
         /**
-         * Gets the parent body of the paragraph. Read-only.
+         * Gets the parent body of the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
-         * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
+         * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
-         * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
-         * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
+         * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2409,14 +2431,14 @@ export declare namespace Word {
          */
         firstLineIndent: number;
         /**
-         * Indicates the paragraph is the last one inside its parent body. Read-only.
+         * Indicates the paragraph is the last one inside its parent body.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly isLastParagraph: boolean;
         /**
-         * Checks whether the paragraph is a list item. Read-only.
+         * Checks whether the paragraph is a list item.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2493,14 +2515,14 @@ export declare namespace Word {
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
-         * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+         * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly tableNestingLevel: number;
         /**
-         * Gets the text of the paragraph. Read-only.
+         * Gets the text of the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2554,14 +2576,14 @@ export declare namespace Word {
          */
         getHtml(): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the next paragraph. Throws an error if the paragraph is the last one.
+         * Gets the next paragraph. Throws an `ItemNotFound` error if the paragraph is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.Paragraph;
         /**
-         * Gets the next paragraph. Returns a null object if the paragraph is the last one.
+         * Gets the next paragraph. If the paragraph is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2575,14 +2597,14 @@ export declare namespace Word {
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
         /**
-         * Gets the previous paragraph. Throws an error if the paragraph is the first one.
+         * Gets the previous paragraph. Throws an `ItemNotFound` error if the paragraph is the first one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getPrevious(): Word.Paragraph;
         /**
-         * Gets the previous paragraph. Returns a null object if the paragraph is the first one.
+         * Gets the previous paragraph. If the paragraph is the first one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2634,8 +2656,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -2664,8 +2687,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -2799,28 +2823,28 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Paragraph[];
         /**
-         * Gets the first paragraph in this collection. Throws an error if the collection is empty.
+         * Gets the first paragraph in this collection. Throws an `ItemNotFound` error if the collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Paragraph;
         /**
-         * Gets the first paragraph in this collection. Returns a null object if the collection is empty.
+         * Gets the first paragraph in this collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirstOrNullObject(): Word.Paragraph;
         /**
-         * Gets the last paragraph in this collection. Throws an error if the collection is empty.
+         * Gets the last paragraph in this collection. Throws an `ItemNotFound` error if the collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getLast(): Word.Paragraph;
         /**
-         * Gets the last paragraph in this collection. Returns a null object if the collection is empty.
+         * Gets the last paragraph in this collection. If the collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2868,15 +2892,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the range. Read-only.
+         * Gets the collection of content control objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2884,77 +2909,77 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of inline picture objects in the range. Read-only.
+         * Gets the collection of inline picture objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.2]
          */
         readonly inlinePictures: Word.InlinePictureCollection;
         /**
-         * Gets the collection of list objects in the range. Read-only.
+         * Gets the collection of list objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly lists: Word.ListCollection;
         /**
-         * Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly paragraphs: Word.ParagraphCollection;
         /**
-         * Gets the parent body of the range. Read-only.
+         * Gets the parent body of the range.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
-         * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
+         * Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
-         * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
-         * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+         * Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets the collection of table objects in the range. Read-only.
+         * Gets the collection of table objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2968,7 +2993,7 @@ export declare namespace Word {
          */
         hyperlink: string;
         /**
-         * Checks whether the range length is zero. Read-only.
+         * Checks whether the range length is zero.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -2989,7 +3014,7 @@ export declare namespace Word {
          */
         styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
-         * Gets the text of the range. Read-only.
+         * Gets the text of the range.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3027,7 +3052,7 @@ export declare namespace Word {
          */
         delete(): void;
         /**
-         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an error if the two ranges do not have a union.
+         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3036,7 +3061,7 @@ export declare namespace Word {
          */
         expandTo(range: Word.Range): Word.Range;
         /**
-         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Returns a null object if the two ranges do not have a union.
+         * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3044,6 +3069,7 @@ export declare namespace Word {
          * @param range - Required. Another range.
          */
         expandToOrNullObject(range: Word.Range): Word.Range;
+        
         
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
@@ -3060,7 +3086,7 @@ export declare namespace Word {
          */
         getHyperlinkRanges(): Word.RangeCollection;
         /**
-         * Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range is the last one.
+         * Gets the next text range by using punctuation marks and/or other ending marks. Throws an `ItemNotFound` error if this text range is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3070,7 +3096,7 @@ export declare namespace Word {
          */
         getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;
         /**
-         * Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text range is the last one.
+         * Gets the next text range by using punctuation marks and/or other ending marks. If this text range is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3107,6 +3133,7 @@ export declare namespace Word {
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
+        
         /**
          * Inserts a break at the specified location in the main document.
          *
@@ -3134,8 +3161,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         
         /**
          * Inserts HTML at the specified location.
@@ -3165,8 +3193,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -3200,7 +3229,7 @@ export declare namespace Word {
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
         /**
-         * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an error if the two ranges are not overlapped or adjacent.
+         * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an `ItemNotFound` error if the two ranges are not overlapped or adjacent.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3209,7 +3238,7 @@ export declare namespace Word {
          */
         intersectWith(range: Word.Range): Word.Range;
         /**
-         * Returns a new range as the intersection of this range with another range. This range is not changed. Returns a null object if the two ranges are not overlapped or adjacent.
+         * Returns a new range as the intersection of this range with another range. This range is not changed. If the two ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3312,14 +3341,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Range[];
         /**
-         * Gets the first range in this collection. Throws an error if this collection is empty.
+         * Gets the first range in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Range;
         /**
-         * Gets the first range in this collection. Returns a null object if this collection is empty.
+         * Gets the first range in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3359,8 +3388,7 @@ export declare namespace Word {
     }
     /**
      * Specifies the options to be included in a search operation.
-     *
-     * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
+                To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -3466,7 +3494,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+         * Gets the body object of the section. This does not include the header/footer and other section metadata.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3517,14 +3545,14 @@ export declare namespace Word {
          */
         getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;
         /**
-         * Gets the next section. Throws an error if this section is the last one.
+         * Gets the next section. Throws an `ItemNotFound` error if this section is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.Section;
         /**
-         * Gets the next section. Returns a null object if this section is the last one.
+         * Gets the next section. If this section is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3577,14 +3605,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Section[];
         /**
-         * Gets the first section in this collection. Throws an error if this collection is empty.
+         * Gets the first section in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Section;
         /**
-         * Gets the first section in this collection. Returns a null object if this collection is empty.
+         * Gets the first section in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3622,6 +3650,16 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
+    
+    export class SettingCustom {
+        private static DateJSONPrefix;
+        private static DateJSONSuffix;
+        static replaceStringDateWithDate(value: any): any;
+        static replaceDateWithStringDate(value: any): any;
+    }
+    export interface Setting extends OfficeExtension.ClientObject, SettingCustom {
+    }
+    
     /**
      * Represents a table in a Word document.
      *
@@ -3632,8 +3670,9 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         
+        
         /**
-         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the font. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3641,63 +3680,63 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the parent body of the table. Read-only.
+         * Gets the parent body of the table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentBody: Word.Body;
         /**
-         * Gets the content control that contains the table. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControl: Word.ContentControl;
         /**
-         * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the table. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentContentControlOrNullObject: Word.ContentControl;
         /**
-         * Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.
+         * Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCell: Word.TableCell;
         /**
-         * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
+         * Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableCellOrNullObject: Word.TableCell;
         /**
-         * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
+         * Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
-         * Gets all of the table rows. Read-only.
+         * Gets all of the table rows.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly rows: Word.TableRowCollection;
         /**
-         * Gets the child tables nested one level deeper. Read-only.
+         * Gets the child tables nested one level deeper.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3725,21 +3764,21 @@ export declare namespace Word {
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
-         * Indicates whether all of the table rows are uniform. Read-only.
+         * Indicates whether all of the table rows are uniform.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly isUniform: boolean;
         /**
-         * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+         * Gets the nesting level of the table. Top-level tables have level 1.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly nestingLevel: number;
         /**
-         * Gets the number of rows in the table. Read-only.
+         * Gets the number of rows in the table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3919,7 +3958,7 @@ export declare namespace Word {
          */
         getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"): Word.TableBorder;
         /**
-         * Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.
+         * Gets the table cell at a specified row and column. Throws an `ItemNotFound` error if the specified table cell does not exist.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3929,7 +3968,7 @@ export declare namespace Word {
          */
         getCell(rowIndex: number, cellIndex: number): Word.TableCell;
         /**
-         * Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not exist.
+         * Gets the table cell at a specified row and column. If the specified table cell does not exist, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3957,42 +3996,42 @@ export declare namespace Word {
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the next table. Throws an error if this table is the last one.
+         * Gets the next table. Throws an `ItemNotFound` error if this table is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.Table;
         /**
-         * Gets the next table. Returns a null object if this table is the last one.
+         * Gets the next table. If this table is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNextOrNullObject(): Word.Table;
         /**
-         * Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.
+         * Gets the paragraph after the table. Throws an `ItemNotFound` error if there isn't a paragraph after the table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getParagraphAfter(): Word.Paragraph;
         /**
-         * Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table.
+         * Gets the paragraph after the table. If there isn't a paragraph after the table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getParagraphAfterOrNullObject(): Word.Paragraph;
         /**
-         * Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.
+         * Gets the paragraph before the table. Throws an `ItemNotFound` error if there isn't a paragraph before the table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getParagraphBefore(): Word.Paragraph;
         /**
-         * Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table.
+         * Gets the paragraph before the table. If there isn't a paragraph before the table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4036,6 +4075,7 @@ export declare namespace Word {
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", values?: string[][]): Word.Table;
+        
         /**
          * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects.
          *
@@ -4139,14 +4179,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Table[];
         /**
-         * Gets the first table in this collection. Throws an error if this collection is empty.
+         * Gets the first table in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.Table;
         /**
-         * Gets the first table in this collection. Returns a null object if this collection is empty.
+         * Gets the first table in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4201,8 +4241,9 @@ export declare namespace Word {
          */
         readonly cells: Word.TableCellCollection;
         
+        
         /**
-         * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the font. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4210,14 +4251,14 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets parent table. Read-only.
+         * Gets parent table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the number of cells in the row. Read-only.
+         * Gets the number of cells in the row.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4231,7 +4272,7 @@ export declare namespace Word {
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
-         * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+         * Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4245,7 +4286,7 @@ export declare namespace Word {
          */
         preferredHeight: number;
         /**
-         * Gets the index of the row in its parent table. Read-only.
+         * Gets the index of the row in its parent table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4331,14 +4372,14 @@ export declare namespace Word {
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the next row. Throws an error if this row is the last one.
+         * Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.TableRow;
         /**
-         * Gets the next row. Returns a null object if this row is the last one.
+         * Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4355,6 +4396,7 @@ export declare namespace Word {
          * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
         insertRows(insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", rowCount: number, values?: string[][]): Word.TableRowCollection;
+        
         /**
          * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
          *
@@ -4458,14 +4500,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.TableRow[];
         /**
-         * Gets the first row in this collection. Throws an error if this collection is empty.
+         * Gets the first row in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.TableRow;
         /**
-         * Gets the first row in this collection. Returns a null object if this collection is empty.
+         * Gets the first row in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4513,28 +4555,28 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the cell. Read-only.
+         * Gets the body object of the cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly body: Word.Body;
         /**
-         * Gets the parent row of the cell. Read-only.
+         * Gets the parent row of the cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentRow: Word.TableRow;
         /**
-         * Gets the parent table of the cell. Read-only.
+         * Gets the parent table of the cell.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         readonly parentTable: Word.Table;
         /**
-         * Gets the index of the cell in its row. Read-only.
+         * Gets the index of the cell in its row.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4555,7 +4597,7 @@ export declare namespace Word {
          */
         horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
-         * Gets the index of the cell's row in the table. Read-only.
+         * Gets the index of the cell's row in the table.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4583,7 +4625,7 @@ export declare namespace Word {
          */
         verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         /**
-         * Gets the width of the cell in points. Read-only.
+         * Gets the width of the cell in points.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4648,14 +4690,14 @@ export declare namespace Word {
          */
         getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;
         /**
-         * Gets the next cell. Throws an error if this cell is the last one.
+         * Gets the next cell. Throws an `ItemNotFound` error if this cell is the last one.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getNext(): Word.TableCell;
         /**
-         * Gets the next cell. Returns a null object if this cell is the last one.
+         * Gets the next cell. If this cell is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4703,6 +4745,7 @@ export declare namespace Word {
          * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -4750,14 +4793,14 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.TableCell[];
         /**
-         * Gets the first table cell in this collection. Throws an error if this collection is empty.
+         * Gets the first table cell in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          */
         getFirst(): Word.TableCell;
         /**
-         * Gets the first table cell in this collection. Returns a null object if this collection is empty.
+         * Gets the first table cell in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4974,7 +5017,7 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.1]
      *
-     * Content control appearance options are bounding box, tags, or hidden.
+     * Content control appearance options are BoundingBox, Tags, or Hidden.
      */
     enum ContentControlAppearance {
         /**
@@ -5015,17 +5058,15 @@ export declare namespace Word {
          */
         none = "None",
         /**
-         * **Warning**: `hidden` has been deprecated.
-         *
-         * @deprecated `hidden` is no longer supported.
+         * @deprecated Hidden is no longer supported.
+         * Warning: hidden has been deprecated.
          * @remarks
          * [Api set: WordApi 1.1]
          */
         hidden = "Hidden",
         /**
-         * **Warning**: `dotLine` has been deprecated.
-         *
-         * @deprecated `dotLine` is no longer supported.
+         * @deprecated DotLine is no longer supported.
+         * Warning: dotLine has been deprecated.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -5139,9 +5180,8 @@ export declare namespace Word {
          */
         page = "Page",
         /**
-         * **Warning**: `next` has been deprecated. Use `sectionNext` instead.
-         *
          * @deprecated Use sectionNext instead.
+         * Warning: next has been deprecated. Use sectionNext instead.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -6702,8 +6742,7 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -6762,6 +6801,14 @@ export declare namespace Word {
         /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
+        }
+        /** An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ... })`. */
+        export interface CustomXmlPartCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        export interface CustomXmlPartScopedCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
         }
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
@@ -6864,6 +6911,14 @@ export declare namespace Word {
              */
             title?: string;
         }
+        /** An interface for updating data on the Field object, for use in `field.set({ ... })`. */
+        export interface FieldUpdateData {
+            
+        }
+        /** An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`. */
+        export interface FieldCollectionUpdateData {
+            items?: Word.Interfaces.FieldData[];
+        }
         /** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
@@ -6888,8 +6943,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7027,14 +7081,14 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
-            * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemUpdateData;
             /**
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -7229,6 +7283,14 @@ export declare namespace Word {
         /** An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`. */
         export interface SectionCollectionUpdateData {
             items?: Word.Interfaces.SectionData[];
+        }
+        /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
+        export interface SettingUpdateData {
+            
+        }
+        /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
+        export interface SettingCollectionUpdateData {
+            items?: Word.Interfaces.SettingData[];
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -7467,42 +7529,43 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-            * Gets the collection of rich text content control objects in the body. Read-only.
+            * Gets the collection of rich text content control objects in the body.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the collection of list objects in the body. Read-only.
+            * Gets the collection of list objects in the body.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             lists?: Word.Interfaces.ListData[];
             /**
-            * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+            * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-            * Gets the collection of table objects in the body. Read-only.
+            * Gets the collection of table objects in the body.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -7523,14 +7586,14 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             * Gets the text of the body. Use the insertText method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             text?: string;
             /**
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7579,42 +7642,43 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
-            * Gets the collection of content control objects in the content control. Read-only.
+            * Gets the collection of content control objects in the content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the collection of list objects in the content control. Read-only.
+            * Gets the collection of list objects in the content control.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             lists?: Word.Interfaces.ListData[];
             /**
-            * Get the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+            * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-            * Gets the collection of table objects in the content control. Read-only.
+            * Gets the collection of table objects in the content control.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -7649,15 +7713,14 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Gets an integer that represents the content control identifier. Read-only.
+             * Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: number;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7685,7 +7748,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7699,7 +7762,7 @@ export declare namespace Word {
              */
             tag?: string;
             /**
-             * Gets the text of the content control. Read-only.
+             * Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7713,7 +7776,7 @@ export declare namespace Word {
              */
             title?: string;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7727,14 +7790,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
             /**
-             * Gets the key of the custom property. Read only.
+             * Gets the key of the custom property.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             key?: string;
             /**
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7752,39 +7815,54 @@ export declare namespace Word {
         export interface CustomPropertyCollectionData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
+        export interface CustomXmlPartData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
+        export interface CustomXmlPartCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
+        export interface CustomXmlPartScopedCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the properties of the document. Read-only.
+            * Gets the properties of the document.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
-            * Gets the collection of section objects in the document. Read-only.
+            * Gets the collection of section objects in the document.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
             
+            
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -7794,35 +7872,37 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
             /**
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApiHiddenDocument 1.3]
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApiHiddenDocument 1.3]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the properties of the document. Read-only.
+            * Gets the properties of the document.
             *
             * @remarks
             * [Api set: WordApiHiddenDocument 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
-            * Gets the collection of section objects in the document. Read-only.
+            * Gets the collection of section objects in the document.
             *
             * @remarks
             * [Api set: WordApiHiddenDocument 1.3]
             */
             sections?: Word.Interfaces.SectionData[];
+            
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApiHiddenDocument 1.3]
@@ -7832,14 +7912,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
             /**
-            * Gets the collection of custom properties of the document. Read only.
+            * Gets the collection of custom properties of the document.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             customProperties?: Word.Interfaces.CustomPropertyData[];
             /**
-             * Gets the application name of the document. Read only.
+             * Gets the application name of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7874,7 +7954,7 @@ export declare namespace Word {
              */
             company?: string;
             /**
-             * Gets the creation date of the document. Read only.
+             * Gets the creation date of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7895,21 +7975,21 @@ export declare namespace Word {
              */
             keywords?: string;
             /**
-             * Gets the last author of the document. Read only.
+             * Gets the last author of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             lastAuthor?: string;
             /**
-             * Gets the last print date of the document. Read only.
+             * Gets the last print date of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             lastPrintDate?: Date;
             /**
-             * Gets the last save time of the document. Read only.
+             * Gets the last save time of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7923,14 +8003,14 @@ export declare namespace Word {
              */
             manager?: string;
             /**
-             * Gets the revision number of the document. Read only.
+             * Gets the revision number of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             revisionNumber?: string;
             /**
-             * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
+             * Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read-only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7944,7 +8024,7 @@ export declare namespace Word {
              */
             subject?: string;
             /**
-             * Gets the template of the document. Read only.
+             * Gets the template of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -7957,6 +8037,15 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             title?: string;
+        }
+        /** An interface describing the data returned by calling `field.toJSON()`. */
+        export interface FieldData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
+        export interface FieldCollectionData {
+            items?: Word.Interfaces.FieldData[];
         }
         /** An interface describing the data returned by calling `font.toJSON()`. */
         export interface FontData {
@@ -7982,8 +8071,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -8105,14 +8193,14 @@ export declare namespace Word {
              */
             id?: number;
             /**
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean[];
             /**
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8133,14 +8221,14 @@ export declare namespace Word {
              */
             level?: number;
             /**
-             * Gets the list item bullet, number, or picture as a string. Read-only.
+             * Gets the list item bullet, number, or picture as a string.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             listString?: string;
             /**
-             * Gets the list item order number in relation to its siblings. Read-only.
+             * Gets the list item order number in relation to its siblings.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8159,29 +8247,30 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
+            
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-            * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
+            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemData;
             /**
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
+            * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -8202,14 +8291,14 @@ export declare namespace Word {
              */
             firstLineIndent?: number;
             /**
-             * Indicates the paragraph is the last one inside its parent body. Read-only.
+             * Indicates the paragraph is the last one inside its parent body.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
-             * Checks whether the paragraph is a list item. Read-only.
+             * Checks whether the paragraph is a list item.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8286,14 +8375,14 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: number;
             /**
-             * Gets the text of the paragraph. Read-only.
+             * Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -8306,15 +8395,16 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
+            
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range. Read-only.
+            * Gets the collection of inline picture objects in the range.
             *
             * @remarks
             * [Api set: WordApi 1.2]
@@ -8328,7 +8418,7 @@ export declare namespace Word {
              */
             hyperlink?: string;
             /**
-             * Checks whether the range length is zero. Read-only.
+             * Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8349,7 +8439,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the text of the range. Read-only.
+             * Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -8415,7 +8505,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+            * Gets the body object of the section. This does not include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -8426,24 +8516,34 @@ export declare namespace Word {
         export interface SectionCollectionData {
             items?: Word.Interfaces.SectionData[];
         }
+        /** An interface describing the data returned by calling `setting.toJSON()`. */
+        export interface SettingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
+        export interface SettingCollectionData {
+            items?: Word.Interfaces.SettingData[];
+        }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
+            
             /**
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets all of the table rows. Read-only.
+            * Gets all of the table rows.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             rows?: Word.Interfaces.TableRowData[];
             /**
-            * Gets the child tables nested one level deeper. Read-only.
+            * Gets the child tables nested one level deeper.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -8471,21 +8571,21 @@ export declare namespace Word {
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
-             * Indicates whether all of the table rows are uniform. Read-only.
+             * Indicates whether all of the table rows are uniform.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             * Gets the nesting level of the table. Top-level tables have level 1.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             nestingLevel?: number;
             /**
-             * Gets the number of rows in the table. Read-only.
+             * Gets the number of rows in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8582,15 +8682,16 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             cells?: Word.Interfaces.TableCellData[];
+            
             /**
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the font. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             font?: Word.Interfaces.FontData;
             /**
-             * Gets the number of cells in the row. Read-only.
+             * Gets the number of cells in the row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8604,7 +8705,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             * Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8618,7 +8719,7 @@ export declare namespace Word {
              */
             preferredHeight?: number;
             /**
-             * Gets the index of the row in its parent table. Read-only.
+             * Gets the index of the row in its parent table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8653,14 +8754,14 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableCell.toJSON()`. */
         export interface TableCellData {
             /**
-            * Gets the body object of the cell. Read-only.
+            * Gets the body object of the cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             body?: Word.Interfaces.BodyData;
             /**
-             * Gets the index of the cell in its row. Read-only.
+             * Gets the index of the cell in its row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8681,7 +8782,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
-             * Gets the index of the cell's row in the table. Read-only.
+             * Gets the index of the cell's row in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8709,7 +8810,7 @@ export declare namespace Word {
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
             /**
-             * Gets the width of the cell in points. Read-only.
+             * Gets the width of the cell in points.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8763,42 +8864,42 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body.
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an `ItemNotFound` error if there isn't a parent body.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body.
+            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a parent body, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the body. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the parent section of the body. Throws an error if there isn't a parent section.
+            * Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentSection?: Word.Interfaces.SectionLoadOptions;
             /**
-            * Gets the parent section of the body. Returns a null object if there isn't a parent section.
+            * Gets the parent section of the body. If there isn't a parent section, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -8819,14 +8920,14 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             * Gets the text of the body. Use the insertText method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             text?: boolean;
             /**
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8864,42 +8965,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the table that contains the content control. Throws an error if it is not contained in a table.
+            * Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
+            * Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            * Gets the table cell that contains the content control. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            * Gets the table that contains the content control. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -8934,15 +9035,14 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * Gets an integer that represents the content control identifier. Read-only.
+             * Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -8970,7 +9070,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -8984,7 +9084,7 @@ export declare namespace Word {
              */
             tag?: boolean;
             /**
-             * Gets the text of the content control. Read-only.
+             * Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -8998,7 +9098,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9031,42 +9131,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an error if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the content control. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -9101,15 +9201,14 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9137,7 +9236,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9151,7 +9250,7 @@ export declare namespace Word {
              */
             tag?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9165,7 +9264,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9184,14 +9283,14 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets the key of the custom property. Read only.
+             * Gets the key of the custom property.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             key?: boolean;
             /**
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9217,14 +9316,14 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             * For EACH ITEM in the collection: Gets the key of the custom property.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             key?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9238,6 +9337,9 @@ export declare namespace Word {
              */
             value?: boolean;
         }
+        
+        
+        
         /**
          * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
          *
@@ -9265,7 +9367,7 @@ export declare namespace Word {
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9298,7 +9400,7 @@ export declare namespace Word {
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApiHiddenDocument 1.3]
@@ -9317,7 +9419,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets the application name of the document. Read only.
+             * Gets the application name of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9352,7 +9454,7 @@ export declare namespace Word {
              */
             company?: boolean;
             /**
-             * Gets the creation date of the document. Read only.
+             * Gets the creation date of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9373,21 +9475,21 @@ export declare namespace Word {
              */
             keywords?: boolean;
             /**
-             * Gets the last author of the document. Read only.
+             * Gets the last author of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             lastAuthor?: boolean;
             /**
-             * Gets the last print date of the document. Read only.
+             * Gets the last print date of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             lastPrintDate?: boolean;
             /**
-             * Gets the last save time of the document. Read only.
+             * Gets the last save time of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9401,14 +9503,14 @@ export declare namespace Word {
              */
             manager?: boolean;
             /**
-             * Gets the revision number of the document. Read only.
+             * Gets the revision number of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             revisionNumber?: boolean;
             /**
-             * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
+             * Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read-only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9422,7 +9524,7 @@ export declare namespace Word {
              */
             subject?: boolean;
             /**
-             * Gets the template of the document. Read only.
+             * Gets the template of the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9436,6 +9538,8 @@ export declare namespace Word {
              */
             title?: boolean;
         }
+        
+        
         /**
          * Represents a font.
          *
@@ -9469,8 +9573,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -9545,42 +9648,42 @@ export declare namespace Word {
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the table that contains the inline image. Throws an error if it is not contained in a table.
+            * Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.
+            * Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            * Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            * Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -9648,42 +9751,42 @@ export declare namespace Word {
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an error if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -9751,14 +9854,14 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean;
             /**
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9784,14 +9887,14 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
+             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             levelExistences?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9817,14 +9920,14 @@ export declare namespace Word {
              */
             level?: boolean;
             /**
-             * Gets the list item bullet, number, or picture as a string. Read-only.
+             * Gets the list item bullet, number, or picture as a string.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             listString?: boolean;
             /**
-             * Gets the list item order number in relation to its siblings. Read-only.
+             * Gets the list item order number in relation to its siblings.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -9852,28 +9955,28 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.
+            * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             list?: Word.Interfaces.ListLoadOptions;
             /**
-            * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemLoadOptions;
             /**
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
             /**
-            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            * Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -9887,42 +9990,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the table that contains the paragraph. Throws an error if it is not contained in a table.
+            * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
+            * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -9943,14 +10046,14 @@ export declare namespace Word {
              */
             firstLineIndent?: boolean;
             /**
-             * Indicates the paragraph is the last one inside its parent body. Read-only.
+             * Indicates the paragraph is the last one inside its parent body.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
-             * Checks whether the paragraph is a list item. Read-only.
+             * Checks whether the paragraph is a list item.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10027,14 +10130,14 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: boolean;
             /**
-             * Gets the text of the paragraph. Read-only.
+             * Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10060,28 +10163,28 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             list?: Word.Interfaces.ListLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItem?: Word.Interfaces.ListItemLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
+            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10095,42 +10198,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an error if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10151,14 +10254,14 @@ export declare namespace Word {
              */
             firstLineIndent?: boolean;
             /**
-             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
+             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isLastParagraph?: boolean;
             /**
-             * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
+             * For EACH ITEM in the collection: Checks whether the paragraph is a list item.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10235,14 +10338,14 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
+             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             tableNestingLevel?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10275,42 +10378,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the content control that contains the range. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the table that contains the range. Throws an error if it is not contained in a table.
+            * Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell.
+            * Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            * Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            * Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10324,7 +10427,7 @@ export declare namespace Word {
              */
             hyperlink?: boolean;
             /**
-             * Checks whether the range length is zero. Read-only.
+             * Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10345,7 +10448,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the text of the range. Read-only.
+             * Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10378,42 +10481,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the range. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the range. Throws an error if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an error if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains the range. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10427,7 +10530,7 @@ export declare namespace Word {
              */
             hyperlink?: boolean;
             /**
-             * For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.
+             * For EACH ITEM in the collection: Checks whether the range length is zero.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10448,7 +10551,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10457,6 +10560,7 @@ export declare namespace Word {
         }
         /**
          * Specifies the options to be included in a search operation.
+                    To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -10554,6 +10658,8 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
+        
+        
         /**
          * Represents a table in a Word document.
          *
@@ -10580,42 +10686,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * Gets the content control that contains the table. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            * Gets the content control that contains the table. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * Gets the table that contains this table. Throws an error if it is not contained in a table.
+            * Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
+            * Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            * Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            * Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10643,21 +10749,21 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * Indicates whether all of the table rows are uniform. Read-only.
+             * Indicates whether all of the table rows are uniform.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             * Gets the nesting level of the table. Top-level tables have level 1.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             nestingLevel?: boolean;
             /**
-             * Gets the number of rows in the table. Read-only.
+             * Gets the number of rows in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10767,42 +10873,42 @@ export declare namespace Word {
             */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the table. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains this table. Throws an error if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table cell.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+            * For EACH ITEM in the collection: Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
             */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not contained in a table.
+            * For EACH ITEM in the collection: Gets the table that contains this table. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -10830,21 +10936,21 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only.
+             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             isUniform?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1.
              *
              * @remarks
              * [Api set: WordApi 1.3]
              */
             nestingLevel?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.
+             * For EACH ITEM in the collection: Gets the number of rows in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10954,7 +11060,7 @@ export declare namespace Word {
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * Gets the number of cells in the row. Read-only.
+             * Gets the number of cells in the row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10968,7 +11074,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             * Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10982,7 +11088,7 @@ export declare namespace Word {
              */
             preferredHeight?: boolean;
             /**
-             * Gets the index of the row in its parent table. Read-only.
+             * Gets the index of the row in its parent table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11036,7 +11142,7 @@ export declare namespace Word {
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
+             * For EACH ITEM in the collection: Gets the number of cells in the row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11050,7 +11156,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
+             * For EACH ITEM in the collection: Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table object.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11064,7 +11170,7 @@ export declare namespace Word {
              */
             preferredHeight?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
+             * For EACH ITEM in the collection: Gets the index of the row in its parent table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11125,7 +11231,7 @@ export declare namespace Word {
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * Gets the index of the cell in its row. Read-only.
+             * Gets the index of the cell in its row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11146,7 +11252,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * Gets the index of the cell's row in the table. Read-only.
+             * Gets the index of the cell's row in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11174,7 +11280,7 @@ export declare namespace Word {
              */
             verticalAlignment?: boolean;
             /**
-             * Gets the width of the cell in points. Read-only.
+             * Gets the width of the cell in points.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11214,7 +11320,7 @@ export declare namespace Word {
             */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
+             * For EACH ITEM in the collection: Gets the index of the cell in its row.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11235,7 +11341,7 @@ export declare namespace Word {
              */
             horizontalAlignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
+             * For EACH ITEM in the collection: Gets the index of the cell's row in the table.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11263,7 +11369,7 @@ export declare namespace Word {
              */
             verticalAlignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
+             * For EACH ITEM in the collection: Gets the width of the cell in points.
              *
              * @remarks
              * [Api set: WordApi 1.3]

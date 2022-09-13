@@ -16,15 +16,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of rich text content control objects in the body. Read-only.
+         * Gets the collection of rich text content control objects in the body.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+         * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -32,7 +33,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -40,7 +41,7 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+         * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -49,7 +50,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -68,7 +69,7 @@ export declare namespace Word {
         style: string;
         
         /**
-         * Gets the text of the body. Use the insertText method to insert text. Read-only.
+         * Gets the text of the body. Use the insertText method to insert text.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -133,8 +134,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -163,8 +165,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -272,15 +275,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the content control. Read-only.
+         * Gets the collection of content control objects in the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -288,7 +292,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -296,7 +300,7 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Gets the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -304,7 +308,7 @@ export declare namespace Word {
         readonly paragraphs: Word.ParagraphCollection;
         
         /**
-         * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -345,15 +349,14 @@ export declare namespace Word {
          */
         color: string;
         /**
-         * Gets an integer that represents the content control identifier. Read-only.
+         * Gets an integer that represents the content control identifier.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly id: number;
         /**
-         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-         * **Note**: The set operation for this property is not supported in Word on the web.
+         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -383,7 +386,7 @@ export declare namespace Word {
          */
         tag: string;
         /**
-         * Gets the text of the content control. Read-only.
+         * Gets the text of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -397,7 +400,7 @@ export declare namespace Word {
          */
         title: string;
         /**
-         * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+         * Gets the content control type. Only rich text content controls are supported currently.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -464,8 +467,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML into the content control at the specified location.
          *
@@ -494,8 +498,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted in to the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -601,7 +606,7 @@ export declare namespace Word {
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
         /**
-         * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
+         * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -674,6 +679,9 @@ export declare namespace Word {
     }
     
     
+    
+    
+    
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
@@ -684,30 +692,32 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+         * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly body: Word.Body;
         /**
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the collection of section objects in the document. Read-only.
+         * Gets the collection of section objects in the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
         
+        
         /**
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -721,6 +731,9 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        
+        
+        
         
         
         /**
@@ -775,6 +788,8 @@ export declare namespace Word {
     }
     
     
+    
+    
     /**
      * Represents a font.
      *
@@ -806,8 +821,7 @@ export declare namespace Word {
          */
         doubleStrikeThrough: boolean;
         /**
-         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                    **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -915,14 +929,14 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the parent paragraph that contains the inline image. Read-only.
+         * Gets the parent paragraph that contains the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.2]
          */
         readonly paragraph: Word.Paragraph;
         /**
-         * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1025,8 +1039,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML at the specified location.
          *
@@ -1055,8 +1070,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1190,15 +1206,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the paragraph. Read-only.
+         * Gets the collection of content control objects in the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1206,7 +1223,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+         * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1218,7 +1235,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1311,7 +1328,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets the text of the paragraph. Read-only.
+         * Gets the text of the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1389,8 +1406,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts HTML into the paragraph at the specified location.
          *
@@ -1419,8 +1437,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted in the paragraph.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1572,15 +1591,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the collection of content control objects in the range. Read-only.
+         * Gets the collection of content control objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         readonly contentControls: Word.ContentControlCollection;
         
+        
         /**
-         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+         * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1588,7 +1608,7 @@ export declare namespace Word {
         readonly font: Word.Font;
         
         /**
-         * Gets the collection of inline picture objects in the range. Read-only.
+         * Gets the collection of inline picture objects in the range.
          *
          * @remarks
          * [Api set: WordApi 1.2]
@@ -1596,7 +1616,7 @@ export declare namespace Word {
         readonly inlinePictures: Word.InlinePictureCollection;
         
         /**
-         * Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+         * Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1604,7 +1624,7 @@ export declare namespace Word {
         readonly paragraphs: Word.ParagraphCollection;
         
         /**
-         * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1627,7 +1647,7 @@ export declare namespace Word {
         style: string;
         
         /**
-         * Gets the text of the range. Read-only.
+         * Gets the text of the range.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1659,6 +1679,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1676,6 +1697,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getOoxml(): OfficeExtension.ClientResult<string>;
+        
         
         
         
@@ -1707,8 +1729,9 @@ export declare namespace Word {
          *
          * @param base64File - Required. The base64 encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
          */
-        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         
         /**
          * Inserts HTML at the specified location.
@@ -1738,8 +1761,9 @@ export declare namespace Word {
          *
          * @param ooxml - Required. The OOXML to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
          */
-        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", asNewParagraph?: boolean): Word.Range;
         /**
          * Inserts a paragraph at the specified location.
          *
@@ -1882,8 +1906,7 @@ export declare namespace Word {
     }
     /**
      * Specifies the options to be included in a search operation.
-     *
-     * To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
+                To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -1989,7 +2012,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+         * Gets the body object of the section. This does not include the header/footer and other section metadata.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2122,6 +2145,16 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     
+    export class SettingCustom {
+        private static DateJSONPrefix;
+        private static DateJSONSuffix;
+        static replaceStringDateWithDate(value: any): any;
+        static replaceDateWithStringDate(value: any): any;
+    }
+    export interface Setting extends OfficeExtension.ClientObject, SettingCustom {
+    }
+    
+    
     
     
     
@@ -2234,7 +2267,7 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.1]
      *
-     * Content control appearance options are bounding box, tags, or hidden.
+     * Content control appearance options are BoundingBox, Tags, or Hidden.
      */
     enum ContentControlAppearance {
         /**
@@ -2275,17 +2308,15 @@ export declare namespace Word {
          */
         none = "None",
         /**
-         * **Warning**: `hidden` has been deprecated.
-         *
-         * @deprecated `hidden` is no longer supported.
+         * @deprecated Hidden is no longer supported.
+         * Warning: hidden has been deprecated.
          * @remarks
          * [Api set: WordApi 1.1]
          */
         hidden = "Hidden",
         /**
-         * **Warning**: `dotLine` has been deprecated.
-         *
-         * @deprecated `dotLine` is no longer supported.
+         * @deprecated DotLine is no longer supported.
+         * Warning: dotLine has been deprecated.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -2399,9 +2430,8 @@ export declare namespace Word {
          */
         page = "Page",
         /**
-         * **Warning**: `next` has been deprecated. Use `sectionNext` instead.
-         *
          * @deprecated Use sectionNext instead.
+         * Warning: next has been deprecated. Use sectionNext instead.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -2689,8 +2719,7 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2738,6 +2767,14 @@ export declare namespace Word {
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ... })`. */
+        export interface CustomXmlPartCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        export interface CustomXmlPartScopedCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
         /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
@@ -2767,6 +2804,14 @@ export declare namespace Word {
             
             
         }
+        /** An interface for updating data on the Field object, for use in `field.set({ ... })`. */
+        export interface FieldUpdateData {
+            
+        }
+        /** An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`. */
+        export interface FieldCollectionUpdateData {
+            items?: Word.Interfaces.FieldData[];
+        }
         /** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
@@ -2791,8 +2836,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3097,6 +3141,14 @@ export declare namespace Word {
         export interface SectionCollectionUpdateData {
             items?: Word.Interfaces.SectionData[];
         }
+        /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
+        export interface SettingUpdateData {
+            
+        }
+        /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
+        export interface SettingCollectionUpdateData {
+            items?: Word.Interfaces.SettingData[];
+        }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             
@@ -3154,21 +3206,22 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-            * Gets the collection of rich text content control objects in the body. Read-only.
+            * Gets the collection of rich text content control objects in the body.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3176,7 +3229,7 @@ export declare namespace Word {
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Gets the collection of paragraph objects in the body. Read-only. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+            * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3192,7 +3245,7 @@ export declare namespace Word {
             style?: string;
             
             /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             * Gets the text of the body. Use the insertText method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3242,21 +3295,22 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
-            * Gets the collection of content control objects in the content control. Read-only.
+            * Gets the collection of content control objects in the content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            
             /**
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the content control. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3264,7 +3318,7 @@ export declare namespace Word {
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             
             /**
-            * Get the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
+            * Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3300,15 +3354,14 @@ export declare namespace Word {
              */
             color?: string;
             /**
-             * Gets an integer that represents the content control identifier. Read-only.
+             * Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: number;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3338,7 +3391,7 @@ export declare namespace Word {
              */
             tag?: string;
             /**
-             * Gets the text of the content control. Read-only.
+             * Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3352,7 +3405,7 @@ export declare namespace Word {
              */
             title?: string;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3373,33 +3426,48 @@ export declare namespace Word {
         export interface CustomPropertyCollectionData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
+        export interface CustomXmlPartData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
+        export interface CustomXmlPartCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
+        export interface CustomXmlPartScopedCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
         /** An interface describing the data returned by calling `document.toJSON()`. */
         export interface DocumentData {
             /**
-            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
+            * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyData;
             /**
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
+            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             
+            
             /**
-            * Gets the collection of section objects in the document. Read-only.
+            * Gets the collection of section objects in the document.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
             
+            
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3408,6 +3476,8 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `documentCreated.toJSON()`. */
         export interface DocumentCreatedData {
+            
+            
             
             
             
@@ -3435,6 +3505,15 @@ export declare namespace Word {
             
             
         }
+        /** An interface describing the data returned by calling `field.toJSON()`. */
+        export interface FieldData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
+        export interface FieldCollectionData {
+            items?: Word.Interfaces.FieldData[];
+        }
         /** An interface describing the data returned by calling `font.toJSON()`. */
         export interface FontData {
             /**
@@ -3459,8 +3538,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3594,15 +3672,16 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `paragraph.toJSON()`. */
         export interface ParagraphData {
+            
             /**
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
+            * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3692,7 +3771,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets the text of the paragraph. Read-only.
+             * Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3705,15 +3784,16 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
+            
             /**
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
+            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
             *
             * @remarks
             * [Api set: WordApi 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
-            * Gets the collection of inline picture objects in the range. Read-only.
+            * Gets the collection of inline picture objects in the range.
             *
             * @remarks
             * [Api set: WordApi 1.2]
@@ -3730,7 +3810,7 @@ export declare namespace Word {
             style?: string;
             
             /**
-             * Gets the text of the range. Read-only.
+             * Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3796,7 +3876,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `section.toJSON()`. */
         export interface SectionData {
             /**
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
+            * Gets the body object of the section. This does not include the header/footer and other section metadata.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3807,8 +3887,18 @@ export declare namespace Word {
         export interface SectionCollectionData {
             items?: Word.Interfaces.SectionData[];
         }
+        /** An interface describing the data returned by calling `setting.toJSON()`. */
+        export interface SettingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
+        export interface SettingCollectionData {
+            items?: Word.Interfaces.SettingData[];
+        }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
+            
             
             
             
@@ -3836,6 +3926,7 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
+            
             
             
             
@@ -3894,7 +3985,7 @@ export declare namespace Word {
             
             
             /**
-            * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3912,7 +4003,7 @@ export declare namespace Word {
             style?: boolean;
             
             /**
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
+             * Gets the text of the body. Use the insertText method to insert text.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3945,7 +4036,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -3985,15 +4076,14 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * Gets an integer that represents the content control identifier. Read-only.
+             * Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4023,7 +4113,7 @@ export declare namespace Word {
              */
             tag?: boolean;
             /**
-             * Gets the text of the content control. Read-only.
+             * Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4037,7 +4127,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4064,7 +4154,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4104,15 +4194,14 @@ export declare namespace Word {
              */
             color?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
+             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             * **Note**: The set operation for this property is not supported in Word on the web.
+             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4142,7 +4231,7 @@ export declare namespace Word {
              */
             tag?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4156,13 +4245,16 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             type?: boolean;
         }
+        
+        
+        
         
         
         /**
@@ -4186,13 +4278,15 @@ export declare namespace Word {
             
             
             /**
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
+             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             saved?: boolean;
         }
+        
+        
         
         
         /**
@@ -4228,8 +4322,7 @@ export declare namespace Word {
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
-                        **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4304,7 +4397,7 @@ export declare namespace Word {
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4377,7 +4470,7 @@ export declare namespace Word {
             */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4460,7 +4553,7 @@ export declare namespace Word {
             
             
             /**
-            * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4553,7 +4646,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets the text of the paragraph. Read-only.
+             * Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4584,7 +4677,7 @@ export declare namespace Word {
             
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4677,7 +4770,7 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4704,7 +4797,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * Gets the content control that contains the range. Throws an error if there isn't a parent content control.
+            * Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4726,7 +4819,7 @@ export declare namespace Word {
             style?: boolean;
             
             /**
-             * Gets the text of the range. Read-only.
+             * Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4753,7 +4846,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontLoadOptions;
             
             /**
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content control.
             *
             * @remarks
             * [Api set: WordApi 1.1]
@@ -4775,7 +4868,7 @@ export declare namespace Word {
             style?: boolean;
             
             /**
-             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
+             * For EACH ITEM in the collection: Gets the text of the range.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4784,6 +4877,7 @@ export declare namespace Word {
         }
         /**
          * Specifies the options to be included in a search operation.
+                    To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4881,6 +4975,8 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
+        
+        
         
         
         

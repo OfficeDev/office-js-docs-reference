@@ -55,14 +55,14 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-        await Word.run(async (context) => {
-          // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-        });
-      }
+      await Word.run(async (context) => {
+          context.document.properties.customProperties.add("Numeric Property", 1234);
+
+          await context.sync();
+          console.log("Property added");
+      });
 
       ```
     isPreview: true
@@ -70,8 +70,10 @@ properties:
     syntax:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded";
+        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
+        | "CommentChanged" | "CommentAdded";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-          "ContentControlDataChanged" | "ContentControlAdded"
+          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded"

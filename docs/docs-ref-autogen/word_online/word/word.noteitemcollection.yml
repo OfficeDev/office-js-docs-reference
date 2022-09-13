@@ -40,7 +40,7 @@ methods:
     uid: 'word!Word.NoteItemCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: Gets the first note item in this collection. Throws an error if this collection is empty.
+    summary: Gets the first note item in this collection. Throws an `ItemNotFound` error if this collection is empty.
     remarks: >-
       \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -53,12 +53,17 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the first footnote in the document body and select its reference mark.
+      // Get the referenced note's type, which is footnote.
 
       await Word.run(async (context) => {
-        const reference = context.document.body.footnotes.getFirst().reference;
-        reference.select();
-        console.log("The first footnote is selected.");
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/type");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        const mark = (referenceNumber as number) - 1;
+        const itemType = footnotes.items[mark].type;
+        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
       });
 
       ```
@@ -73,7 +78,11 @@ methods:
     uid: 'word!Word.NoteItemCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first note item in this collection. Returns a null object if this collection is empty.
+    summary: >-
+      Gets the first note item in this collection. If this collection is empty, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

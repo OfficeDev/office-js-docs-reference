@@ -45,8 +45,8 @@ methods:
     package: word!
     fullName: getById(id)
     summary: >-
-      Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in
-      this collection.
+      Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the
+      identifier in this collection.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -94,20 +94,14 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
-      await Word.run(async (context) => {
-          const contentControls = context.document.contentControls.getByTag("customer");
-          contentControls.load("text");
-
-          await context.sync();
-
-          for (let i = 0; i < contentControls.items.length; i++) {
-            contentControls.items[i].insertText("Fabrikam", "Replace");
-          }
-
-          await context.sync();
-      });
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
 
       ```
     isPreview: false

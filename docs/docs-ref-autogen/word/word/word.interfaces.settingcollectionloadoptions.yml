@@ -4,8 +4,8 @@ uid: 'word!Word.Interfaces.SettingCollectionLoadOptions:interface'
 package: word!
 fullName: Word.Interfaces.SettingCollectionLoadOptions
 summary: 'Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.'
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,7 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: '$all?: boolean;'
@@ -27,9 +27,9 @@ properties:
     uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
     package: word!
     fullName: key
-    summary: 'For EACH ITEM in the collection: Gets the key of the setting. Read only.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: 'For EACH ITEM in the collection: Gets the key of the setting.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'key?: boolean;'
@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: value
     summary: 'For EACH ITEM in the collection: Gets or sets the value of the setting.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'value?: boolean;'

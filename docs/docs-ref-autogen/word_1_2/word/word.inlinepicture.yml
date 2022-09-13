@@ -87,7 +87,7 @@ properties:
     uid: 'word!Word.InlinePicture#paragraph:member'
     package: word!
     fullName: paragraph
-    summary: Gets the parent paragraph that contains the inline image. Read-only.
+    summary: Gets the parent paragraph that contains the inline image.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -100,8 +100,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -150,21 +150,17 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
-      // Get the first image in the document.
+      // Inserts a section without an associated page break.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
-        firstPicture.load("width, height");
+        const body = context.document.body;
+        body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
 
         await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        // Get the image encoded as base64.
-        const base64 = firstPicture.getBase64ImageSrc();
 
-        await context.sync();
-        console.log(base64.value);
+        console.log("Inserted section without an associated page break");
       });
 
       ```
@@ -215,10 +211,10 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation)'
+  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     uid: 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     summary: Inserts a document at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -226,7 +222,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after
-        | "Before" | "After"): Word.Range;
+        | "Before" | "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -236,6 +232,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
             | "Before" | "After"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
+            the base64 content is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -287,10 +288,10 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation)'
+  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     uid: 'word!Word.InlinePicture#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -298,7 +299,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Range;
+        "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
@@ -308,6 +309,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
             | "Before" | "After"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
+            OOXML is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''

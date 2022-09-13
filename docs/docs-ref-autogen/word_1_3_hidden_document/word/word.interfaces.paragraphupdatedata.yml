@@ -101,7 +101,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#listItem:member'
     package: word!
     fullName: listItem
-    summary: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.
+    summary: Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -113,7 +113,12 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#listItemOrNullObject:member'
     package: word!
     fullName: listItemOrNullObject
-    summary: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
+    summary: >-
+      Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

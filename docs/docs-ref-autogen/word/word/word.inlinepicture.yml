@@ -75,7 +75,7 @@ properties:
     uid: 'word!Word.InlinePicture#imageFormat:member'
     package: word!
     fullName: imageFormat
-    summary: Gets the format of the inline image. Read-only.
+    summary: Gets the format of the inline image.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -103,7 +103,7 @@ properties:
     uid: 'word!Word.InlinePicture#paragraph:member'
     package: word!
     fullName: paragraph
-    summary: Gets the parent paragraph that contains the inline image. Read-only.
+    summary: Gets the parent paragraph that contains the inline image.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -116,8 +116,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -130,8 +130,11 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
-      control. Read-only.
+      Gets the content control that contains the inline image. If there isn't a parent content control, then this method
+      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -143,7 +146,7 @@ properties:
     uid: 'word!Word.InlinePicture#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.
+    summary: Gets the table that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -156,8 +159,8 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: >-
-      Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.
-      Read-only.
+      Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it is not contained in a
+      table cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -170,8 +173,11 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
-      Read-only.
+      Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -183,7 +189,12 @@ properties:
     uid: 'word!Word.InlinePicture#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
-    summary: Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+    summary: >-
+      Gets the table that contains the inline image. If it is not contained in a table, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -232,21 +243,17 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
 
-      // Get the first image in the document.
+      // Inserts a section without an associated page break.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
-        firstPicture.load("width, height");
+        const body = context.document.body;
+        body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
 
         await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        // Get the image encoded as base64.
-        const base64 = firstPicture.getBase64ImageSrc();
 
-        await context.sync();
-        console.log(base64.value);
+        console.log("Inserted section without an associated page break");
       });
 
       ```
@@ -261,7 +268,7 @@ methods:
     uid: 'word!Word.InlinePicture#getNext:member(1)'
     package: word!
     fullName: getNext()
-    summary: Gets the next inline image. Throws an error if this inline image is the last one.
+    summary: Gets the next inline image. Throws an `ItemNotFound` error if this inline image is the last one.
     remarks: |-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -299,7 +306,11 @@ methods:
     uid: 'word!Word.InlinePicture#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next inline image. Returns a null object if this inline image is the last one.
+    summary: >-
+      Gets the next inline image. If this inline image is the last one, then this method will return an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: |-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -394,10 +405,10 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation)'
+  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     uid: 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     summary: Inserts a document at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -405,7 +416,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after
-        | "Before" | "After"): Word.Range;
+        | "Before" | "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -415,6 +426,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
             | "Before" | "After"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
+            the base64 content is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -466,10 +482,10 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation)'
+  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     uid: 'word!Word.InlinePicture#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML at the specified location.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -477,7 +493,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
-        "After"): Word.Range;
+        "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
@@ -487,6 +503,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
             | "Before" | "After"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
+            OOXML is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''

@@ -19,17 +19,21 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-  // Inserts a section without an associated page break.
+  // Delete this referenced footnote.
 
   await Word.run(async (context) => {
-    const body = context.document.body;
-    body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
-
+    const footnotes = context.document.body.footnotes;
+    footnotes.load("items");
     await context.sync();
 
-    console.log("Inserted section without an associated page break");
+    const referenceNumber = $("#input-reference").val();
+    const mark = (referenceNumber as number) - 1;
+    footnotes.items[mark].delete();
+    await context.sync();
+
+    console.log("Footnote deleted.");
   });
 
   ```

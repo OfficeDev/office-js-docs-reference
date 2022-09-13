@@ -61,7 +61,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#imageFormat:member'
     package: word!
     fullName: imageFormat
-    summary: Gets the format of the inline image. Read-only.
+    summary: Gets the format of the inline image.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

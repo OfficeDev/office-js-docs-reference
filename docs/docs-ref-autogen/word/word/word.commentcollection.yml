@@ -4,7 +4,7 @@ uid: 'word!Word.CommentCollection:class'
 package: word!
 fullName: Word.CommentCollection
 summary: 'Contains a collection of [Word.Comment](xref:word!Word.Comment:class) objects.'
-remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -44,23 +44,20 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-          // Reply to the first active comment in the selected content.
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
           await Word.run(async (context) => {
-            const text = $("#reply-text")
-              .val()
-              .toString();
-            const comments = context.document.getSelection().getComments();
-            comments.load("items");
+            const contentControls = context.document.contentControls.getByTag("forTesting");
+            contentControls.load("items");
             await context.sync();
-            const firstActiveComment = comments.items.find((item) => item.resolved !== true);
-            if (firstActiveComment) {
-              const reply = firstActiveComment.reply(text);
-              console.log("Reply added");
+
+            if (contentControls.items.length === 0) {
+              console.log("There are no content controls in this document.");
             } else {
-              console.log("No active comment was found in the selection so couldn't reply.");
+              console.log("Control to be deleted:");
+              console.log(contentControls.items[0]);
+              contentControls.items[0].delete(false);
+              await context.sync();
             }
           });
 
@@ -70,9 +67,9 @@ methods:
     uid: 'word!Word.CommentCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: Gets the first comment in the collection. Throws an error if this collection is empty.
+    summary: Gets the first comment in the collection. Throws an `ItemNotFound` error if this collection is empty.
     remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -83,18 +80,22 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the range of the first comment in the selected content.
+      // Reply to the first active comment in the selected content.
 
       await Word.run(async (context) => {
-        const range = context.document
-          .getSelection()
-          .getComments()
-          .getFirst()
-          .getRange();
-        range.load("text");
+        const text = $("#reply-text")
+          .val()
+          .toString();
+        const comments = context.document.getSelection().getComments();
+        comments.load("items");
         await context.sync();
-
-        console.log(`Comment location: ${range.text}`);
+        const firstActiveComment = comments.items.find((item) => item.resolved !== true);
+        if (firstActiveComment) {
+          const reply = firstActiveComment.reply(text);
+          console.log("Reply added");
+        } else {
+          console.log("No active comment was found in the selection so couldn't reply.");
+        }
       });
 
       ```
@@ -109,8 +110,12 @@ methods:
     uid: 'word!Word.CommentCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: 'Gets the first comment in the collection. If the collection is empty, returns a null object.'
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets the first comment in the collection. If the collection is empty, then this method will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -236,4 +241,85 @@ methods:
       return:
         type: '<xref uid="word!Word.CommentCollection:class" />'
         description: ''
+events:
+  - name: onCommentAdded
+    uid: 'word!Word.CommentCollection#onCommentAdded:member'
+    package: word!
+    fullName: onCommentAdded
+    summary: Occurs when new comments are added.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentChanged
+    uid: 'word!Word.CommentCollection#onCommentChanged:member'
+    package: word!
+    fullName: onCommentChanged
+    summary: Occurs when a comment or its reply is changed.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeleted
+    uid: 'word!Word.CommentCollection#onCommentDeleted:member'
+    package: word!
+    fullName: onCommentDeleted
+    summary: Occurs when comments are deleted.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeselected
+    uid: 'word!Word.CommentCollection#onCommentDeselected:member'
+    package: word!
+    fullName: onCommentDeselected
+    summary: Occurs when a comment is deselected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentSelected
+    uid: 'word!Word.CommentCollection#onCommentSelected:member'
+    package: word!
+    fullName: onCommentSelected
+    summary: Occurs when a comment is selected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

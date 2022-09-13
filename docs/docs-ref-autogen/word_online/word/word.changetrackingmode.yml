@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ChangeTrackingMode
 summary: ChangeTracking mode.
 remarks: >-
-  \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -16,20 +16,17 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-  // Get the current change tracking mode.
+  // Get the reviewed text.
 
   await Word.run(async (context) => {
-    const document = context.document;
-    document.load("changeTrackingMode");
+    const range = context.document.getSelection();
+    const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+    const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
     await context.sync();
 
-    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-      console.log("Only my changes are being tracked.");
-    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-      console.log("Everyone's changes are being tracked.");
-    } else {
-      console.log("No changes are being tracked.");
-    }
+    console.log(`Reviewed text (before):\n${before.value}`);
+    console.log(`Reviewed text (after):\n${after.value}`);
   });
 
   ```
@@ -42,7 +39,7 @@ fields:
     summary: |-
       ChangeTracking is turned off.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: 'word!Word.ChangeTrackingMode.trackAll:member'
@@ -50,7 +47,7 @@ fields:
     summary: |-
       ChangeTracking is turned on for everyone.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
@@ -58,5 +55,5 @@ fields:
     summary: |-
       Tracking is turned on for my changes only.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

@@ -14,15 +14,21 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+  // Get the first image in the document.
 
   await Word.run(async (context) => {
-    context.document.sections
-      .getFirst()
-      .getHeader(Word.HeaderFooterType.primary)
-      .insertParagraph("This is a primary header.", "End");
+    const firstPicture = context.document.body.inlinePictures.getFirst();
+    firstPicture.load("width, height");
 
     await context.sync();
+    console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+    // Get the image encoded as base64.
+    const base64 = firstPicture.getBase64ImageSrc();
+
+    await context.sync();
+    console.log(base64.value);
   });
 
   ```
