@@ -8116,7 +8116,7 @@ Office.MailboxEnums.OWAView,TwoColumns,EnumField,Good,false
 Office.MailboxEnums.RecipientType,N/A,Enum,Good,true
 Office.MailboxEnums.RecipientType,DistributionList,EnumField,Fine,false
 Office.MailboxEnums.RecipientType,ExternalUser,EnumField,Fine,false
-Office.MailboxEnums.RecipientType,Other,EnumField,Fine,false
+Office.MailboxEnums.RecipientType,Other,EnumField,Good,false
 Office.MailboxEnums.RecipientType,User,EnumField,Fine,false
 Office.MailboxEnums.RecurrenceTimeZone,N/A,Enum,Good,true
 Office.MailboxEnums.RecurrenceTimeZone,AfghanistanStandardTime,EnumField,Poor,false

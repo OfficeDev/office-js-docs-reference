@@ -3,7 +3,7 @@ name: Office.MailboxEnums.RecipientType
 uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.RecipientType
-summary: Specifies the type of recipient for an appointment.
+summary: Specifies the type of recipient of a message or appointment.
 remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -85,20 +85,22 @@ fields:
   - name: DistributionList
     uid: 'outlook!Office.MailboxEnums.RecipientType.DistributionList:member'
     package: outlook!
-    summary: Specifies that the recipient is a distribution list containing a list of email addresses.
+    summary: Specifies the recipient is a distribution list containing a list of email addresses.
     value: '"distributionList"'
   - name: ExternalUser
     uid: 'outlook!Office.MailboxEnums.RecipientType.ExternalUser:member'
     package: outlook!
-    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    summary: Specifies the recipient is an SMTP email address that isn't on the Exchange server.
     value: '"externalUser"'
   - name: Other
     uid: 'outlook!Office.MailboxEnums.RecipientType.Other:member'
     package: outlook!
-    summary: Specifies that the recipient is not one of the other recipient types.
+    summary: >-
+      Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved
+      against the Exchange address book, and is therefore treated as an external SMTP address.
     value: '"other"'
   - name: User
     uid: 'outlook!Office.MailboxEnums.RecipientType.User:member'
     package: outlook!
-    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    summary: Specifies the recipient is an SMTP email address on the Exchange server.
     value: '"user"'
