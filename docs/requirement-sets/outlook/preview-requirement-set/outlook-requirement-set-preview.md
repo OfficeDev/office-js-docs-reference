@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 09/09/2022
+ms.date: 09/12/2022
 ms.localizationpriority: medium
 ---
 
@@ -121,7 +121,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, see [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
 
-**Available in**: Outlook on Windows (Exchange Online or on-premises Exchange environment (in preview)), Outlook on Mac
+**Available in**: Outlook on Windows (Exchange Online or on-premises Exchange environment), Outlook on Mac
 
 ## See also
 
