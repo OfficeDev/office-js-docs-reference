@@ -99,7 +99,7 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 
 *&ast; Added with post-release updates.*
 
-## OneNote.
+## OneNote
 
 |Platform|Extension points|API requirement sets|[Common APIs](common/office-add-in-requirement-sets.md)|
 |---|---|---|---|
