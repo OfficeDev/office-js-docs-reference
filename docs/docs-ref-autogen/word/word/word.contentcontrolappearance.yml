@@ -3,7 +3,7 @@ name: Word.ContentControlAppearance
 uid: 'word!Word.ContentControlAppearance:enum'
 package: word!
 fullName: Word.ContentControlAppearance
-summary: ContentControl appearance
+summary: ContentControl appearance.
 remarks: >-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

@@ -326,28 +326,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
+      content: >-
+        getRange(rangeLocation?: Word.RangeLocation.whole | Word.RangeLocation.start | Word.RangeLocation.end | "Whole"
+        | "Start" | "End"): Word.Range;
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location must be ''Whole'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.RangeLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: getRange(rangeLocationString)
-    uid: 'word!Word.InlinePicture#getRange:member(2)'
-    package: word!
-    fullName: getRange(rangeLocationString)
-    summary: 'Gets the picture, or the starting or ending point of the picture, as a range.'
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
-      parameters:
-        - id: rangeLocationString
-          description: 'Optional. The range location must be ''Whole'', ''Start'', or ''End''.'
-          type: '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
+          type: >-
+            <xref uid="word!Word.RangeLocation.whole:member" /> | <xref uid="word!Word.RangeLocation.start:member" /> |
+            <xref uid="word!Word.RangeLocation.end:member" /> | "Whole" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -360,36 +347,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      content: >-
+        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
+        "After"): void;
       parameters:
         - id: breakType
           description: Required. The break type to add.
-          type: '<xref uid="word!Word.BreakType:enum" />'
+          type: >-
+            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
+            "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'insertBreak(breakTypeString, insertLocation)'
-    uid: 'word!Word.InlinePicture#insertBreak:member(2)'
-    package: word!
-    fullName: 'insertBreak(breakTypeString, insertLocation)'
-    summary: Inserts a break at the specified location in the main document.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
-        "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-      parameters:
-        - id: breakTypeString
-          description: Required. The break type to add.
-          type: '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
-        - id: insertLocation
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: void
         description: ''
@@ -415,36 +387,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after
+        | "Before" | "After"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertFileFromBase64:member(2)'
-    package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocationString)'
-    summary: Inserts a document at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" |
-        "Replace"): Word.Range;
-      parameters:
-        - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -457,34 +411,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertHtml(html: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
+        "After"): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertHtml(html, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertHtml:member(2)'
-    package: word!
-    fullName: 'insertHtml(html, insertLocationString)'
-    summary: Inserts HTML at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: html
-          description: Required. The HTML to be inserted.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -498,37 +436,17 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
-        Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
           description: Required. The base64 encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Before'', or ''After''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.InlinePicture:class" />'
-        description: ''
-  - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)'
-    package: word!
-    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    summary: Inserts an inline picture at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" |
-        "End" | "Replace"): Word.InlinePicture;
-      parameters:
-        - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Replace'', ''Before'', or ''After''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.before:member"
+            /> | <xref uid="word!Word.InsertLocation.after:member" /> | "Replace" | "Before" | "After"
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
@@ -541,34 +459,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
+        "After"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertOoxml(ooxml, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertOoxml:member(2)'
-    package: word!
-    fullName: 'insertOoxml(ooxml, insertLocationString)'
-    summary: Inserts OOXML at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: ooxml
-          description: Required. The OOXML to be inserted.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -581,36 +483,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after |
+        "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: 'insertParagraph(paragraphText, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertParagraph:member(2)'
-    package: word!
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.Paragraph;
-      parameters:
-        - id: paragraphText
-          description: Required. The paragraph text to be inserted.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -623,34 +507,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" |
+        "After"): Word.Range;
       parameters:
         - id: text
           description: Required. Text to be inserted.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertText(text, insertLocationString)'
-    uid: 'word!Word.InlinePicture#insertText:member(2)'
-    package: word!
-    fullName: 'insertText(text, insertLocationString)'
-    summary: Inserts text at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: text
-          description: Required. Text to be inserted.
-          type: string
-        - id: insertLocationString
-          description: Required. The value must be 'Before' or 'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
