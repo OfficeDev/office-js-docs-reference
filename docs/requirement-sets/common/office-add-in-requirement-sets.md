@@ -247,7 +247,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| - Excel on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- OneNote on the web<br>- PowerPoint on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Project on Windows<br>-- subscription<br>-- volume-licensed perpetual Office 2013<br>- Word on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+| - Excel on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- Excel on the web<br>- Excel on iPad<br>- OneNote on the web<br>- PowerPoint on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- PowerPoint on the web<br>- PowerPoint on iPad<br>- PowerPoint on Mac<br>- Project on Windows<br>-- volume-licensed perpetual Office 2013<br>- Word on Windows<br>-- subscription<br>-- perpetual Office 2013<br>- Word on Mac<br>- Word on the web<br>- Word on iPad | Supports coercion to text format (Office.CoercionType.Text) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
 
 ---
 
