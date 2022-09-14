@@ -78,7 +78,7 @@ function write(message){
 
 Gets the locale (language) in RFC 1766 Language tag format specified by the user for the UI of the Office client application.
 
-The `displayLanguage` value reflects the current **Display Language** setting specified with **File > Options > Language** in the Office client application.
+The `displayLanguage` value reflects the current **Display Language** setting specified with **File** > **Options** > **Language** in the Office client application.
 
 ##### Type
 
