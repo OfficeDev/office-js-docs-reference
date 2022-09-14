@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Custom Functions](/office/dev/add-ins/excel/custom-functions-overview) use separate requirement sets from the core Excel JavaScript APIs. The following table lists the Custom Functions requirement sets, the supported Office client applications, and the build versions or number for those applications.
 
-|  Requirement set  |  Office 2021 or later on Windows<br>(one-time purchase)  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2021 and later)  | Office on the web |
+|  Requirement set  |  Office 2021 or later on Windows<br>(one-time purchase)  |  Office on Windows<br>(subscription)  |  Office on iPad<br>(subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2021 and later)  | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | CustomFunctionsRuntime 1.3 | 16.0.14326.20454 or later | 16.0.13127.20296 or later | Not supported | 16.40.20081000 or later | July 2020 |
 | CustomFunctionsRuntime 1.2 | 16.0.14326.20454 or later | 16.0.12527.20194 or later | Not supported | 16.34.20020900 or later | January 2020 |

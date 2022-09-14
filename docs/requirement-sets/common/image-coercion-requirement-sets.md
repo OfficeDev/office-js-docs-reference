@@ -1,7 +1,7 @@
 ---
 title: Image Coercion requirement sets
 description: Support for Image Coercion requirement sets with Office Add-ins across Excel, OneNote, PowerPoint, and Word.
-ms.date: 09/09/2022
+ms.date: 09/14/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -15,14 +15,20 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 ImageCoercion 1.1 enables conversion to an image (`Office.CoercionType.Image`) when writing data using the [`Document.setSelectedDataAsync`](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1)) method. The following applications are supported.
 
 - Excel on Windows
+  - subscription
+  - perpetual Office 2013 and later
 - Excel on Mac
 - Excel on iPad
 - OneNote on the web
 - PowerPoint on Windows
+  - subscription
+  - perpetual Office 2013 and later
 - PowerPoint on Mac
 - PowerPoint on the web
 - PowerPoint on iPad
 - Word on Windows
+  - subscription
+  - perpetual Office 2013 and later
 - Word on Mac
 - Word on the web
 - Word on iPad
@@ -31,12 +37,21 @@ ImageCoercion 1.1 enables conversion to an image (`Office.CoercionType.Image`) w
 
 ImageCoercion 1.2 enables conversion to SVG format (`Office.CoercionType.XmlSvg`) when writing data using the [`Document.setSelectedDataAsync`](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1)) method. The following applications are supported.
 
-- Excel 2021 and later on Windows
+- Excel on Windows
+  - subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
 - Excel on Mac
-- PowerPoint 2021 and later on Windows
+- PowerPoint on Windows
+  - subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
 - PowerPoint on Mac
 - PowerPoint on the web
-- Word 2021 and later on Windows
+- Word 2021 on Windows
+  - subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
 - Word on Mac
 
 ## Office Common API requirement sets

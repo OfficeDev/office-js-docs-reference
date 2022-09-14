@@ -19,7 +19,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
-|  Requirement set  |   Office on Windows\*<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web  |
+|  Requirement set  |   Office on Windows\*<br>(subscription)  |  Office on iPad<br>(subscription)  |  Office on Mac<br>(subscription)  | Office on the web  |
 |:-----|-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Office Insider program](https://insider.office.com)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Not available | Not available | Not available | Latest (see [requirement set page](word-api-online-requirement-set.md)) |

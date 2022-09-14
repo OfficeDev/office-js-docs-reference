@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 The following table lists the PowerPoint requirement sets, the Office client applications that support those requirement sets, and the build versions or availability date.
 
-|  Requirement set  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web |
+|  Requirement set  |  Office on Windows<br>(subscription)  |  Office on iPad<br>(subscription)  |  Office on Mac<br>(subscription)  | Office on the web |
 |:-----|-----|:-----|:-----|:-----|:-----|
 | [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md)  | Version 2207 (Build 15330.20122) or later| not yet<br>supported | 16.62 or later | May 2022 |
 | [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md)  | Version 2111 (Build 14701.20060) or later| not yet<br>supported | 16.55 or later | December 2021 |
