@@ -129,8 +129,8 @@ node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_
 
 node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-init.d.ts ../../docs/includes/word-preview
 node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../../docs/includes/word-online
-node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts ../../docs/includes/word-word-1_4_hidden_document
-node whats-new word ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-word-1_3_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts ../../docs/includes/word-1_4_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_3_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_4
 node whats-new word ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../api-extractor-inputs-word-release/word_1_2/word.d.ts ../../docs/includes/word-1_3
 node whats-new word ../api-extractor-inputs-word-release/word_1_2/word.d.ts ../api-extractor-inputs-word-release/word_1_1/word.d.ts ../../docs/includes/word-1_2
