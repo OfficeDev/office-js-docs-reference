@@ -612,6 +612,30 @@ methods:
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 
       ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+      await Word.run(async (context) => {
+        // Second sentence, let's insert it as a paragraph after the previously inserted one.
+        const secondSentence = context.document.body.insertParagraph(
+          "This is the first text with a custom style.",
+          "End"
+        );
+        secondSentence.font.set({
+          bold: false,
+          italic: true,
+          name: "Berlin Sans FB",
+          color: "blue",
+          size: 30
+        });
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

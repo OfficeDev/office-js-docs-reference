@@ -76,6 +76,19 @@ properties:
       return:
         type: any
 methods:
+  - name: clearFormat()
+    uid: 'excel!Excel.ConditionalRangeFormat#clearFormat:member(1)'
+    package: excel!
+    fullName: clearFormat()
+    summary: Remove the format properties from a conditional format rule. This creates a rule with no format settings.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clearFormat(): void;'
+      return:
+        type: void
+        description: ''
   - name: load(options)
     uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
     package: excel!

@@ -817,7 +817,39 @@ methods:
     summary: >-
       Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
       'RichTextTableRow' and 'RichTextTableCell' content controls.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the content controls collection.
+          const contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of content controls.
+          contentControls.load('id');
+          
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          // We now will have access to the content control collection.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to insert a page break after the first content control.
+              contentControls.items[0].insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+              
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted a page break after the first content control.');    
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -871,7 +903,40 @@ methods:
     package: word!
     fullName: 'insertHtml(html, insertLocation)'
     summary: Inserts HTML into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the content controls collection.
+          const contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls.
+          contentControls.load('id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to put HTML into the contents of the first content control.
+              contentControls.items[0].insertHtml(
+                  '<strong>HTML content inserted into the content control.</strong>',
+                  'Start');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted HTML in the first content control.');
+          }
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -923,7 +988,41 @@ methods:
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation)'
     summary: Inserts OOXML into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the content controls collection.
+          const contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls.
+          contentControls.load('id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to put OOXML into the contents of the first content control.
+              contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted OOXML in the first content control.');
+          }
+      });  
+
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -949,7 +1048,38 @@ methods:
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
     summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the content controls collection.
+          const contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls.
+          contentControls.load('id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to insert a paragraph after the first content control.
+              contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Inserted a paragraph after the first content control.');
+          }
+      });  
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1010,7 +1140,41 @@ methods:
     package: word!
     fullName: 'insertText(text, insertLocation)'
     summary: Inserts text into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+          
+          // Create a proxy object for the content controls collection.
+          const contentControls = context.document.contentControls;
+          
+          // Queue a command to load the id property for all of the content controls.
+          contentControls.load('id');
+           
+          // Synchronize the document state by executing the queued commands, 
+          // and return a promise to indicate task completion.
+          await context.sync();
+          if (contentControls.items.length === 0) {
+              console.log('No content control found.');
+          }
+          else {
+              // Queue a command to replace text in the first content control.
+              contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
+          
+              // Synchronize the document state by executing the queued commands, 
+              // and return a promise to indicate task completion.
+              await context.sync();
+              console.log('Replaced text in the first content control.');
+          }
+      });  
+
+      // The Silly stories add-in sample shows how to use the insertText method.
+      // https://aka.ms/sillystorywordaddin
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
