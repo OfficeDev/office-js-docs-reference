@@ -510,19 +510,19 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the reviewed text.
+      // Get the comments in the selected content.
 
       await Word.run(async (context) => {
-        const range = context.document.getSelection();
-        const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-        const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+        const comments = context.document.getSelection().getComments();
 
+        // Load objects for display in Script Lab console.
+        comments.load();
         await context.sync();
 
-        console.log(`Reviewed text (before):\n${before.value}`);
-        console.log(`Reviewed text (after):\n${after.value}`);
+        console.log("Comments:");
+        console.log(comments);
       });
 
       ```
@@ -709,32 +709,19 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
+
+      // Get the reviewed text.
 
       await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
-        const sentences = context.document
-          .getSelection()
-          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
-        sentences.load("$none");
+        const range = context.document.getSelection();
+        const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
+        const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
+
         await context.sync();
 
-        // Expands the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph = sentences.items[0]
-          .getRange()
-          .expandTo(
-            context.document
-              .getSelection()
-              .paragraphs.getFirst()
-              .getRange(Word.RangeLocation.end)
-          )
-          .getTextRanges(["."], false /* Don't trim spaces*/);
-        sentencesToTheEndOfParagraph.load("text");
-        await context.sync();
-
-        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
-          console.log(sentencesToTheEndOfParagraph.items[i].text);
-        }
+        console.log(`Reviewed text (before):\n${before.value}`);
+        console.log(`Reviewed text (after):\n${after.value}`);
       });
 
       ```
@@ -781,22 +768,32 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
-
-      // Set a comment on the selected content.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
-        const text = $("#comment-text")
-          .val()
-          .toString();
-        const comment = context.document.getSelection().insertComment(text);
-
-        // Load object for display in Script Lab console.
-        comment.load();
+        // Gets the complete sentence (as range) associated with the insertion point.
+        const sentences = context.document
+          .getSelection()
+          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        sentences.load("$none");
         await context.sync();
 
-        console.log("Comment inserted:");
-        console.log(comment);
+        // Expands the range to the end of the paragraph to get all the complete sentences.
+        const sentencesToTheEndOfParagraph = sentences.items[0]
+          .getRange()
+          .expandTo(
+            context.document
+              .getSelection()
+              .paragraphs.getFirst()
+              .getRange(Word.RangeLocation.end)
+          )
+          .getTextRanges(["."], false /* Don't trim spaces*/);
+        sentencesToTheEndOfParagraph.load("text");
+        await context.sync();
+
+        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+          console.log(sentencesToTheEndOfParagraph.items[i].text);
+        }
       });
 
       ```
@@ -841,7 +838,28 @@ methods:
     package: word!
     fullName: 'insertBreak(breakType, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert a page break after the selected text.
+          range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Inserted a page break after the selected text.');
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -878,26 +896,22 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+      // Set a comment on the selected content.
 
       await Word.run(async (context) => {
-          const results = context.document.body.search("Contractor");
-          results.load("font/bold");
+        const text = $("#comment-text")
+          .val()
+          .toString();
+        const comment = context.document.getSelection().insertComment(text);
 
-          // Check to make sure these content controls haven't been added yet.
-          const customerContentControls = context.document.contentControls.getByTag("customer");
-          customerContentControls.load("text");
-          await context.sync();
+        // Load object for display in Script Lab console.
+        comment.load();
+        await context.sync();
 
-        if (customerContentControls.items.length === 0) {
-          for (let i = 0; i < results.items.length; i++) { 
-              results.items[i].font.bold = true;
-              let cc = results.items[i].insertContentControl();
-              cc.tag = "customer";  // This value is used in the next step of this sample.
-              cc.title = "Customer Name " + i;
-          }
-        }
-          await context.sync();
+        console.log("Comment inserted:");
+        console.log(comment);
       });
 
       ```
@@ -927,18 +941,26 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
-
-      // Set a footnote on the selected content.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
       await Word.run(async (context) => {
-        const text = $("#input-footnote")
-          .val()
-          .toString();
-        const footnote = context.document.getSelection().insertFootnote(text);
-        await context.sync();
+          const results = context.document.body.search("Contractor");
+          results.load("font/bold");
 
-        console.log("Inserted footnote.");
+          // Check to make sure these content controls haven't been added yet.
+          const customerContentControls = context.document.contentControls.getByTag("customer");
+          customerContentControls.load("text");
+          await context.sync();
+
+        if (customerContentControls.items.length === 0) {
+          for (let i = 0; i < results.items.length; i++) { 
+              results.items[i].font.bold = true;
+              let cc = results.items[i].insertContentControl();
+              cc.tag = "customer";  // This value is used in the next step of this sample.
+              cc.title = "Customer Name " + i;
+          }
+        }
+          await context.sync();
       });
 
       ```

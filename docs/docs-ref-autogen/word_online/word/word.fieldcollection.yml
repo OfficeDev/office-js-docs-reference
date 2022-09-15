@@ -44,15 +44,23 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+          // Gets all fields in the document body.
 
           await Word.run(async (context) => {
-            context.document.sections
-              .getFirst()
-              .getHeader(Word.HeaderFooterType.primary)
-              .insertParagraph("This is a primary header.", "End");
+            const fields = context.document.body.fields.load("items");
 
             await context.sync();
+
+            if (fields.items.length === 0) {
+              console.log("No fields in this document.");
+            } else {
+              for (let i = 0; i < fields.items.length; i++) {
+                console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
+                console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+              }
+            }
           });
 
           ```
@@ -91,20 +99,19 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets all fields in the document body.
+      // Gets the first field in the document body.
 
       await Word.run(async (context) => {
-        const fields = context.document.body.fields.load("items");
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
 
         await context.sync();
 
-        if (fields.items.length === 0) {
-          console.log("No fields in this document.");
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
         } else {
-          for (let i = 0; i < fields.items.length; i++) {
-            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
-            console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
-          }
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + field.result);
         }
       });
 

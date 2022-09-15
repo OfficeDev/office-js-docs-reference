@@ -14,15 +14,17 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+  // Inserts a section break on the next page.
 
   await Word.run(async (context) => {
-    context.document.sections
-      .getFirst()
-      .getHeader(Word.HeaderFooterType.primary)
-      .insertParagraph("This is a primary header.", "End");
+    const body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionNext, Word.InsertLocation.end);
 
     await context.sync();
+
+    console.log("Inserted section break on next page");
   });
 
   ```
@@ -72,17 +74,15 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
-
-      // Inserts a section break on the next even page.
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
+        context.document.sections
+          .getFirst()
+          .getFooter("Primary")
+          .insertParagraph("This is a primary footer.", "End");
 
         await context.sync();
-
-        console.log("Inserted section break on next even page");
       });
 
       ```
@@ -168,8 +168,8 @@ methods:
       await Word.run(async (context) => {
         context.document.sections
           .getFirst()
-          .getFooter("Primary")
-          .insertParagraph("This is a primary footer.", "End");
+          .getHeader(Word.HeaderFooterType.primary)
+          .insertParagraph("This is a primary header.", "End");
 
         await context.sync();
       });

@@ -26,19 +26,19 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets the parent body of the first field in the document.
+      // Gets the first field in the document body.
 
       await Word.run(async (context) => {
         const field = context.document.body.fields.getFirstOrNullObject();
-        field.load("parentBody/text");
+        field.load(["code", "result"]);
 
         await context.sync();
 
         if (field.isNullObject) {
-          console.log("This document has no fields.");
+          console.log("There are no fields in this document.");
         } else {
-          const parentBody = field.parentBody;
-          console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + field.result);
         }
       });
 
@@ -80,19 +80,19 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets the first field in the document body.
+      // Gets the parent body of the first field in the document.
 
       await Word.run(async (context) => {
         const field = context.document.body.fields.getFirstOrNullObject();
-        field.load(["code", "result"]);
+        field.load("parentBody/text");
 
         await context.sync();
 
         if (field.isNullObject) {
-          console.log("There are no fields in this document.");
+          console.log("This document has no fields.");
         } else {
-          console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + field.result);
+          const parentBody = field.parentBody;
+          console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
         }
       });
 

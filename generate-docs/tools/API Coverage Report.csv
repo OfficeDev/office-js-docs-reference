@@ -9625,14 +9625,14 @@ Word.ContentControl,getRange(rangeLocation),Method,Poor,false
 Word.ContentControl,getReviewedText(changeTrackingVersion),Method,Poor,false
 Word.ContentControl,getReviewedText(changeTrackingVersionString),Method,Poor,false
 Word.ContentControl,getTextRanges(endingMarks,Method,Fine,false
-Word.ContentControl,insertBreak(breakType,Method,Poor,false
+Word.ContentControl,insertBreak(breakType,Method,Poor,true
 Word.ContentControl,insertFileFromBase64(base64File,Method,Fine,false
-Word.ContentControl,insertHtml(html,Method,Fine,false
+Word.ContentControl,insertHtml(html,Method,Fine,true
 Word.ContentControl,insertInlinePictureFromBase64(base64EncodedImage,Method,Fine,false
-Word.ContentControl,insertOoxml(ooxml,Method,Fine,false
-Word.ContentControl,insertParagraph(paragraphText,Method,Fine,false
+Word.ContentControl,insertOoxml(ooxml,Method,Fine,true
+Word.ContentControl,insertParagraph(paragraphText,Method,Fine,true
 Word.ContentControl,insertTable(rowCount,Method,Fine,false
-Word.ContentControl,insertText(text,Method,Fine,false
+Word.ContentControl,insertText(text,Method,Fine,true
 Word.ContentControl,load(options),Method,Fine,true
 Word.ContentControl,load(propertyNames),Method,Poor,false
 Word.ContentControl,load(propertyNamesAndPaths),Method,Poor,false
@@ -10237,7 +10237,7 @@ Word.Range,getReviewedText(changeTrackingVersion),Method,Poor,true
 Word.Range,getReviewedText(changeTrackingVersionString),Method,Poor,false
 Word.Range,getTextRanges(endingMarks,Method,Fine,true
 Word.Range,insertBookmark(name),Method,Poor,false
-Word.Range,insertBreak(breakType,Method,Fine,false
+Word.Range,insertBreak(breakType,Method,Fine,true
 Word.Range,insertComment(commentText),Method,Fine,true
 Word.Range,insertContentControl(),Method,Poor,true
 Word.Range,insertEndnote(insertText),Method,Poor,false
@@ -10591,7 +10591,7 @@ Word.TableBorder,set(properties),Method,Poor,false
 Word.TableBorder,toJSON(),Method,Poor,false
 Word.TableBorder,track(),Method,Poor,false
 Word.TableBorder,untrack(),Method,Poor,false
-Word.TableCell,N/A,Class,Good,false
+Word.TableCell,N/A,Class,Good,true
 Word.TableCell,body,Property,Good,false
 Word.TableCell,cellIndex,Property,Good,false
 Word.TableCell,columnWidth,Property,Good,false

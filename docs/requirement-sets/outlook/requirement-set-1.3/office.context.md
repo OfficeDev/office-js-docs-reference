@@ -35,7 +35,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 
 Gets the locale (language) specified by the user for editing the item.
 
-The `contentLanguage` value reflects the current **Editing Language** setting specified with **File > Options > Language** in the Office client application.
+The `contentLanguage` value reflects the current **Editing Language** setting specified with **File** > **Options** > **Language** in the Office client application.
 
 ##### Type
 

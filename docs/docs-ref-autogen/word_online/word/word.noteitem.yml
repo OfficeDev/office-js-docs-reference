@@ -26,21 +26,20 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Select the footnote's reference mark in the document body.
+      // Get the text of the referenced footnote.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/reference");
+        footnotes.load("items/body");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
-        const reference = item.reference;
-        reference.select();
+        const footnoteBody = footnotes.items[mark].body.getRange();
+        footnoteBody.load("text");
         await context.sync();
 
-        console.log(`Reference ${referenceNumber} is selected.`);
+        console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
       });
 
       ```
@@ -81,17 +80,21 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the referenced note's type, which is footnote.
+      // Select the footnote's reference mark in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/type");
+        footnotes.load("items/reference");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const itemType = footnotes.items[mark].type;
-        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
+        const item = footnotes.items[mark];
+        const reference = item.reference;
+        reference.select();
+        await context.sync();
+
+        console.log(`Reference ${referenceNumber} is selected.`);
       });
 
       ```
@@ -118,12 +121,17 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the first footnote in the document body and select its reference mark.
+      // Get the referenced note's type, which is footnote.
 
       await Word.run(async (context) => {
-        const reference = context.document.body.footnotes.getFirst().reference;
-        reference.select();
-        console.log("The first footnote is selected.");
+        const footnotes = context.document.body.footnotes;
+        footnotes.load("items/type");
+        await context.sync();
+
+        const referenceNumber = $("#input-reference").val();
+        const mark = (referenceNumber as number) - 1;
+        const itemType = footnotes.items[mark].type;
+        console.log(`Note type of footnote ${referenceNumber}: ${itemType}`);
       });
 
       ```
@@ -151,18 +159,19 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Select the next footnote in the document body.
+      // Delete this referenced footnote.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/reference");
+        footnotes.load("items");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const reference = footnotes.items[mark].getNext().reference;
-        reference.select();
-        console.log("Selected is the next footnote: " + (mark + 2));
+        footnotes.items[mark].delete();
+        await context.sync();
+
+        console.log("Footnote deleted.");
       });
 
       ```
@@ -190,20 +199,18 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the text of the referenced footnote.
+      // Select the next footnote in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
-        footnotes.load("items/body");
+        footnotes.load("items/reference");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const footnoteBody = footnotes.items[mark].body.getRange();
-        footnoteBody.load("text");
-        await context.sync();
-
-        console.log(`Text of footnote ${referenceNumber}: ${footnoteBody.text}`);
+        const reference = footnotes.items[mark].getNext().reference;
+        reference.select();
+        console.log("Selected is the next footnote: " + (mark + 2));
       });
 
       ```

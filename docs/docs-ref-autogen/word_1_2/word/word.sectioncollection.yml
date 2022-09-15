@@ -14,13 +14,17 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+  // Inserts a section break on the next even page.
 
   await Word.run(async (context) => {
-    // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-    context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+    const body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionEven, Word.InsertLocation.end);
 
     await context.sync();
+
+    console.log("Inserted section break on next even page");
   });
 
   ```

@@ -105,13 +105,51 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
       await Word.run(async (context) => {
-        context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+        const paragraphs = context.document.body.paragraphs;
+        paragraphs.load("text");
+        await context.sync();
+
+        let text = [];
+        paragraphs.items.forEach((item) => {
+          let paragraph = item.text.trim();
+          if (paragraph) {
+            paragraph.split(" ").forEach((term) => {
+              let currentTerm = term.trim();
+              if (currentTerm) {
+                text.push(currentTerm);
+              }
+            });
+          }
+        });
+
+        let makeTextDistinct = new Set(text);
+        let distinctText = Array.from(makeTextDistinct);
+        let allSearchResults = [];
+
+        for (let i = 0; i < distinctText.length; i++) {
+          let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+          results.load("text");
+
+          // Map search term with its results.
+          let correlatedResults = {
+            searchTerm: distinctText[i],
+            hits: results
+          };
+
+          allSearchResults.push(correlatedResults);
+        }
 
         await context.sync();
-        console.log("success");
+
+        // Display counts.
+        allSearchResults.forEach((result) => {
+          let length = result.hits.items.length;
+
+          console.log("Search term: " + result.searchTerm + " => Count: " + length);
+        });
       });
 
       ```
@@ -530,6 +568,30 @@ methods:
       document.
 
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+
+      await Word.run(async (context) => {
+        // Second sentence, let's insert it as a paragraph after the previously inserted one.
+        const secondSentence = context.document.body.insertParagraph(
+          "This is the first text with a custom style.",
+          "End"
+        );
+        secondSentence.font.set({
+          bold: false,
+          italic: true,
+          name: "Berlin Sans FB",
+          color: "blue",
+          size: 30
+        });
+
+        await context.sync();
+      });
 
       ```
     isPreview: false

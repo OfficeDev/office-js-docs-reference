@@ -44,20 +44,23 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+          // Reply to the first active comment in the selected content.
 
           await Word.run(async (context) => {
-            const contentControls = context.document.contentControls.getByTag("forTesting");
-            contentControls.load("items");
+            const text = $("#reply-text")
+              .val()
+              .toString();
+            const comments = context.document.getSelection().getComments();
+            comments.load("items");
             await context.sync();
-
-            if (contentControls.items.length === 0) {
-              console.log("There are no content controls in this document.");
+            const firstActiveComment = comments.items.find((item) => item.resolved !== true);
+            if (firstActiveComment) {
+              const reply = firstActiveComment.reply(text);
+              console.log("Reply added");
             } else {
-              console.log("Control to be deleted:");
-              console.log(contentControls.items[0]);
-              contentControls.items[0].delete(false);
-              await context.sync();
+              console.log("No active comment was found in the selection so couldn't reply.");
             }
           });
 
@@ -80,22 +83,18 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Reply to the first active comment in the selected content.
+      // Get the range of the first comment in the selected content.
 
       await Word.run(async (context) => {
-        const text = $("#reply-text")
-          .val()
-          .toString();
-        const comments = context.document.getSelection().getComments();
-        comments.load("items");
+        const range = context.document
+          .getSelection()
+          .getComments()
+          .getFirst()
+          .getRange();
+        range.load("text");
         await context.sync();
-        const firstActiveComment = comments.items.find((item) => item.resolved !== true);
-        if (firstActiveComment) {
-          const reply = firstActiveComment.reply(text);
-          console.log("Reply added");
-        } else {
-          console.log("No active comment was found in the selection so couldn't reply.");
-        }
+
+        console.log(`Comment location: ${range.text}`);
       });
 
       ```

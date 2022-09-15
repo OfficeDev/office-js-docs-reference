@@ -150,17 +150,21 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-      // Inserts a section without an associated page break.
+      // Get the first image in the document.
 
       await Word.run(async (context) => {
-        const body = context.document.body;
-        body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
+        const firstPicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height");
 
         await context.sync();
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+        // Get the image encoded as base64.
+        const base64 = firstPicture.getBase64ImageSrc();
 
-        console.log("Inserted section without an associated page break");
+        await context.sync();
+        console.log(base64.value);
       });
 
       ```

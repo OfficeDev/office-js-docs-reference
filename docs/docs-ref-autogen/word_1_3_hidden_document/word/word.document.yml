@@ -68,14 +68,15 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
 
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-        await Word.run(async (context) => {
-          // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-        });
-      }
+      await Word.run(async (context) => {
+          const builtInProperties = context.document.properties;
+          builtInProperties.load("*"); // Let's get all!
+
+          await context.sync();
+          console.log(JSON.stringify(builtInProperties, null, 4));
+      });
 
       ```
     isPreview: false

@@ -14,23 +14,14 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
 
-  // Gets the first field in the document body.
-
-  await Word.run(async (context) => {
-    const field = context.document.body.fields.getFirstOrNullObject();
-    field.load(["code", "result"]);
-
-    await context.sync();
-
-    if (field.isNullObject) {
-      console.log("There are no fields in this document.");
-    } else {
-      console.log("Code of first field: " + field.code);
-      console.log("Result of first field: " + field.result);
-    }
-  });
+  async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    await Word.run(async (context) => {
+      // Display the deleted content control's ID.
+      console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+    });
+  }
 
   ```
 isPreview: false

@@ -44,22 +44,15 @@ properties:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-          // Get the current change tracking mode.
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
           await Word.run(async (context) => {
-            const document = context.document;
-            document.load("changeTrackingMode");
-            await context.sync();
+              const properties = context.document.properties.customProperties;
+              properties.load("key,type,value");
 
-            if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-              console.log("Only my changes are being tracked.");
-            } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-              console.log("Everyone's changes are being tracked.");
-            } else {
-              console.log("No changes are being tracked.");
-            }
+              await context.sync();
+              for (let i = 0; i < properties.items.length; i++)
+                  console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
           });
 
           ```
@@ -82,7 +75,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
       await Word.run(async (context) => {
-          context.document.properties.customProperties.add("String Property", "Hello World!");
+          context.document.properties.customProperties.add("Numeric Property", 1234);
 
           await context.sync();
           console.log("Property added");
@@ -96,12 +89,10 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
 
       await Word.run(async (context) => {
-          const properties = context.document.properties.customProperties;
-          properties.load("key,type,value");
+          context.document.properties.customProperties.add("String Property", "Hello World!");
 
           await context.sync();
-          for (let i = 0; i < properties.items.length; i++)
-              console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+          console.log("Property added");
       });
 
       ```

@@ -17,19 +17,40 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+  // Adds title and colors to odd and even content controls and changes their appearance.
 
   await Word.run(async (context) => {
-      const contentControls = context.document.contentControls.getByTag("customer");
-      contentControls.load("text");
+    // Gets the complete sentence (as range) associated with the insertion point.
+    let evenContentControls = context.document.contentControls.getByTag("even");
+    let oddContentControls = context.document.contentControls.getByTag("odd");
+    evenContentControls.load("length");
+    oddContentControls.load("length");
 
-      await context.sync();
+    await context.sync();
 
-      for (let i = 0; i < contentControls.items.length; i++) {
-        contentControls.items[i].insertText("Fabrikam", "Replace");
-      }
+    for (let i = 0; i < evenContentControls.items.length; i++) {
+      // Change a few properties and append a paragraph
+      evenContentControls.items[i].set({
+        color: "red",
+        title: "Odd ContentControl #" + (i + 1),
+        appearance: Word.ContentControlAppearance.tags
+      });
+      evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+    }
 
-      await context.sync();
+    for (let j = 0; j < oddContentControls.items.length; j++) {
+      // Change a few properties and append a paragraph
+      oddContentControls.items[j].set({
+        color: "green",
+        title: "Even ContentControl #" + (j + 1),
+        appearance: "Tags"
+      });
+      oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+    }
+
+    await context.sync();
   });
 
   ```

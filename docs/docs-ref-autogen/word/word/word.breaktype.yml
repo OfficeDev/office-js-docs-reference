@@ -14,22 +14,13 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
-
-  // Get the current change tracking mode.
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
   await Word.run(async (context) => {
-    const document = context.document;
-    document.load("changeTrackingMode");
-    await context.sync();
+    context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
 
-    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
-      console.log("Only my changes are being tracked.");
-    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
-      console.log("Everyone's changes are being tracked.");
-    } else {
-      console.log("No changes are being tracked.");
-    }
+    await context.sync();
+    console.log("success");
   });
 
   ```

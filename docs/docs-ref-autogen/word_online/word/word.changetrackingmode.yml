@@ -16,17 +16,20 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-  // Get the reviewed text.
+  // Get the current change tracking mode.
 
   await Word.run(async (context) => {
-    const range = context.document.getSelection();
-    const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
-    const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
-
+    const document = context.document;
+    document.load("changeTrackingMode");
     await context.sync();
 
-    console.log(`Reviewed text (before):\n${before.value}`);
-    console.log(`Reviewed text (after):\n${after.value}`);
+    if (document.changeTrackingMode === Word.ChangeTrackingMode.trackMineOnly) {
+      console.log("Only my changes are being tracked.");
+    } else if (document.changeTrackingMode === Word.ChangeTrackingMode.trackAll) {
+      console.log("Everyone's changes are being tracked.");
+    } else {
+      console.log("No changes are being tracked.");
+    }
   });
 
   ```

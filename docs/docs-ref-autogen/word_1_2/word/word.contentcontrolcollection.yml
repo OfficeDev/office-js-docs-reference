@@ -94,14 +94,20 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
 
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-        await Word.run(async (context) => {
-          // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-        });
-      }
+      await Word.run(async (context) => {
+          const contentControls = context.document.contentControls.getByTag("customer");
+          contentControls.load("text");
+
+          await context.sync();
+
+          for (let i = 0; i < contentControls.items.length; i++) {
+            contentControls.items[i].insertText("Fabrikam", "Replace");
+          }
+
+          await context.sync();
+      });
 
       ```
     isPreview: false
