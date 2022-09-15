@@ -18946,6 +18946,14 @@ export declare namespace Excel {
          */
         clear(): void;
         /**
+         * Gets the uniform color fill formatting of a chart element.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getSolidColor(): OfficeExtension.ClientResult<string>;
+        /**
          * Sets the fill formatting of a chart element to a uniform color.
          *
          * @remarks
@@ -23653,6 +23661,80 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalFormat): void;
         /**
+         * Change the conditional format rule type to cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param properties - The properties to set for the cell value conditional format rule.
+         */
+        changeRuleToCellValue(properties: Excel.ConditionalCellValueRule): void;
+        /**
+         * Change the conditional format rule type to color scale.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changeRuleToColorScale(): void;
+        /**
+         * Change the conditional format rule type to text comparison.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param properties - The properties to set for the text comparison conditional format rule.
+         */
+        changeRuleToContainsText(properties: Excel.ConditionalTextComparisonRule): void;
+        /**
+         * Change the conditional format rule type to custom.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param formula - The formula to set for the custom conditional format rule.
+         */
+        changeRuleToCustom(formula: string): void;
+        /**
+         * Change the conditional format rule type to data bar.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changeRuleToDataBar(): void;
+        /**
+         * Change the conditional format rule type to icon set.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changeRuleToIconSet(): void;
+        /**
+         * Change the conditional format rule type to preset criteria.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param properties - The properties to set for the preset criteria conditional format rule.
+         */
+        changeRuleToPresetCriteria(properties: Excel.ConditionalPresetCriteriaRule): void;
+        /**
+         * Change the conditional format rule type to top/bottom.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param properties - The properties to set for the top/bottom conditional format rule.
+         */
+        changeRuleToTopBottom(properties: Excel.ConditionalTopBottomRule): void;
+        /**
          * Deletes this conditional format.
          *
          * @remarks
@@ -23681,6 +23763,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getRanges(): Excel.RangeAreas;
+        /**
+         * Set the ranges that the conditonal format rule is applied to.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param ranges - Collection of one or more ranges for this rule to be applied to.
+         */
+        setRanges(ranges: Range | RangeAreas | string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -24685,6 +24777,14 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalRangeFormat): void;
+        /**
+         * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        clearFormat(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
