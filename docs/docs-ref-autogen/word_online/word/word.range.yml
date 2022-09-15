@@ -811,7 +811,28 @@ methods:
     package: word!
     fullName: 'insertBreak(breakType, insertLocation)'
     summary: Inserts a break at the specified location in the main document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+
+          // Queue a command to get the current selection and then
+          // create a proxy range object with the results.
+          const range = context.document.getSelection();
+
+          // Queue a command to insert a page break after the selected text.
+          range.insertBreak(Word.BreakType.page, Word.InsertLocation.after);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('Inserted a page break after the selected text.');
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
