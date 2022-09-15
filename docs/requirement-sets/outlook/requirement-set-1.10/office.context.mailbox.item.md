@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.10
 description: Outlook Mailbox API requirement set 1.10 version of the Item object model.
-ms.date: 07/27/2022
+ms.date: 09/14/2022
 ms.localizationpriority: medium
 ---
 
@@ -180,6 +180,7 @@ You can subscribe to and unsubscribe from the following events using `addHandler
 |`AppointmentTimeChanged`| The date or time of the selected appointment or series has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 |`AttachmentsChanged`| An attachment has been added to or removed from the item. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 |`EnhancedLocationsChanged`| The location of the selected appointment has changed. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+|`InfobarClicked`| An action has been selected from a notification message. | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
 |`RecipientsChanged`| The recipient list of the selected item or appointment location has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 |`RecurrenceChanged`| The recurrence pattern of the selected series has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 
