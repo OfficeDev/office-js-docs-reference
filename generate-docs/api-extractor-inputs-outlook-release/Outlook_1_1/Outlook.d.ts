@@ -502,6 +502,8 @@ export declare namespace Office {
         
         
         
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -1161,6 +1163,8 @@ export declare namespace Office {
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        
+        
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
@@ -2695,6 +2699,8 @@ export declare namespace Office {
         
         
         
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -3246,6 +3252,8 @@ export declare namespace Office {
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        
+        
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *

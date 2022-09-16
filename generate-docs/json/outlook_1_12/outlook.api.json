@@ -1597,6 +1597,131 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#getInitializationContextAsync:member(1)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#getInitializationContextAsync:member(2)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getItemIdAsync:member(1)",
                   "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback function.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
@@ -4675,6 +4800,131 @@
                     }
                   ],
                   "name": "getFilteredEntitiesByName"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.AppointmentRead#getInitializationContextAsync:member(2)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
                 },
                 {
                   "kind": "MethodSignature",
@@ -20795,6 +21045,131 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#getInitializationContextAsync:member(1)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#getInitializationContextAsync:member(2)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getItemIdAsync:member(1)",
                   "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback function.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
@@ -23663,6 +24038,131 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageRead#getInitializationContextAsync:member(1)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageRead#getInitializationContextAsync:member(2)",
+                  "docComment": "/**\n * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the initialization context data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getInitializationContextAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "getInitializationContextAsync"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#getRegExMatches:member(1)",
                   "docComment": "/**\n * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.\n *\n * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.\n *\n * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the `Body.getAsync` method to retrieve the entire body.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @returns An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.\n */\n",
                   "excerptTokens": [
@@ -24635,6 +25135,32 @@
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "commandId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.NotificationMessageAction#contextData:member",
+                  "docComment": "/**\n * Any JSON data the action button needs to pass on. This data can be retrieved by calling `item.getInitializationContextAsync`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "contextData: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "contextData",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2

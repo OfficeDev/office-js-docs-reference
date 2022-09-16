@@ -6433,9 +6433,6 @@
 
     // Retrieve contextData.
 
-    // IMPORTANT: At present, this property is in preview and only works in
-    Outlook on Windows.
-
     Office.context.mailbox.item.getInitializationContextAsync(function
     (asyncResult) {
         console.log("Initialization context:");
