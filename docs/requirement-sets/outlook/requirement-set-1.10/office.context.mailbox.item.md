@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - requirement set 1.10
 description: Outlook Mailbox API requirement set 1.10 version of the Item object model.
-ms.date: 07/27/2022
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 ---
 
@@ -135,6 +135,10 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.10&preserve-view=true#outlook-office-messageread-getentitiesbytype-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | getFilteredEntitiesByName(name) | ReadItem | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.10&preserve-view=true#outlook-office-appointmentread-getfilteredentitiesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.10&preserve-view=true#outlook-office-messageread-getfilteredentitiesbyname-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| getInitializationContextAsync([options], [callback]) | ReadItem | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.10&preserve-view=true#outlook-office-appointmentcompose-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+| | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.10&preserve-view=true#outlook-office-appointmentread-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.10&preserve-view=true#outlook-office-messagecompose-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+| | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-1.10&preserve-view=true#outlook-office-messageread-getinitializationcontextasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | getItemIdAsync([options], callback) | ReadItem | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-1.10&preserve-view=true#outlook-office-appointmentcompose-getitemidasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-1.10&preserve-view=true#outlook-office-messagecompose-getitemidasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | getRegExMatches() | ReadItem | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-1.10&preserve-view=true#outlook-office-appointmentread-getregexmatches-member(1)) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
