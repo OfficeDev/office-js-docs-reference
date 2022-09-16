@@ -64,7 +64,7 @@ To work as expected, your Office Add-in might depend on a specific Office applic
 >
 > <sup>4</sup> Added with post-release updates.
 >
-> <sup>5</sup> Support for the new Mac UI is available from Outlook version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac#add-in-support-in-outlook-on-new-mac-ui) section.
+> <sup>5</sup> Support for the new Mac UI is available from Outlook Version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac#add-in-support-in-outlook-on-new-mac-ui) section.
 
 > [!IMPORTANT]
 > Client support for a requirement set may be restricted by Exchange server support. See [Outlook JavaScript API requirement sets](outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients) for details about the range of requirement sets supported by Exchange server and Outlook clients.
