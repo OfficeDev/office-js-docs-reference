@@ -515,6 +515,130 @@ properties:
           <xref uid="excel!Excel.ConditionalFormatType:enum" /> | "Custom" | "DataBar" | "ColorScale" | "IconSet" |
           "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"
 methods:
+  - name: changeRuleToCellValue(properties)
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToCellValue:member(1)'
+    package: excel!
+    fullName: changeRuleToCellValue(properties)
+    summary: Change the conditional format rule type to cell value.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToCellValue(properties: Excel.ConditionalCellValueRule): void;'
+      parameters:
+        - id: properties
+          description: The properties to set for the cell value conditional format rule.
+          type: '<xref uid="excel!Excel.ConditionalCellValueRule:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToColorScale()
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToColorScale:member(1)'
+    package: excel!
+    fullName: changeRuleToColorScale()
+    summary: Change the conditional format rule type to color scale.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToColorScale(): void;'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToContainsText(properties)
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToContainsText:member(1)'
+    package: excel!
+    fullName: changeRuleToContainsText(properties)
+    summary: Change the conditional format rule type to text comparison.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToContainsText(properties: Excel.ConditionalTextComparisonRule): void;'
+      parameters:
+        - id: properties
+          description: The properties to set for the text comparison conditional format rule.
+          type: '<xref uid="excel!Excel.ConditionalTextComparisonRule:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToCustom(formula)
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToCustom:member(1)'
+    package: excel!
+    fullName: changeRuleToCustom(formula)
+    summary: Change the conditional format rule type to custom.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToCustom(formula: string): void;'
+      parameters:
+        - id: formula
+          description: The formula to set for the custom conditional format rule.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToDataBar()
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToDataBar:member(1)'
+    package: excel!
+    fullName: changeRuleToDataBar()
+    summary: Change the conditional format rule type to data bar.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToDataBar(): void;'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToIconSet()
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToIconSet:member(1)'
+    package: excel!
+    fullName: changeRuleToIconSet()
+    summary: Change the conditional format rule type to icon set.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToIconSet(): void;'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToPresetCriteria(properties)
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToPresetCriteria:member(1)'
+    package: excel!
+    fullName: changeRuleToPresetCriteria(properties)
+    summary: Change the conditional format rule type to preset criteria.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToPresetCriteria(properties: Excel.ConditionalPresetCriteriaRule): void;'
+      parameters:
+        - id: properties
+          description: The properties to set for the preset criteria conditional format rule.
+          type: '<xref uid="excel!Excel.ConditionalPresetCriteriaRule:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: changeRuleToTopBottom(properties)
+    uid: 'excel!Excel.ConditionalFormat#changeRuleToTopBottom:member(1)'
+    package: excel!
+    fullName: changeRuleToTopBottom(properties)
+    summary: Change the conditional format rule type to top/bottom.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changeRuleToTopBottom(properties: Excel.ConditionalTopBottomRule): void;'
+      parameters:
+        - id: properties
+          description: The properties to set for the top/bottom conditional format rule.
+          type: '<xref uid="excel!Excel.ConditionalTopBottomRule:interface" />'
+      return:
+        type: void
+        description: ''
   - name: delete()
     uid: 'excel!Excel.ConditionalFormat#delete:member(1)'
     package: excel!
@@ -719,6 +843,23 @@ methods:
         - id: properties
           description: ''
           type: '<xref uid="excel!Excel.ConditionalFormat:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setRanges(ranges)
+    uid: 'excel!Excel.ConditionalFormat#setRanges:member(1)'
+    package: excel!
+    fullName: setRanges(ranges)
+    summary: Set the ranges that the conditonal format rule is applied to.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setRanges(ranges: Range | RangeAreas | string): void;'
+      parameters:
+        - id: ranges
+          description: Collection of one or more ranges for this rule to be applied to.
+          type: '<xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeAreas:class" /> | string'
       return:
         type: void
         description: ''

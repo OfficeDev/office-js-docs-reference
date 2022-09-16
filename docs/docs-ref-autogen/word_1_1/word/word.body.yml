@@ -360,36 +360,21 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      content: >-
+        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"):
+        void;
       parameters:
         - id: breakType
           description: Required. The break type to add to the body.
-          type: '<xref uid="word!Word.BreakType:enum" />'
+          type: >-
+            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
+            "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: Required. The value must be 'Start' or 'End'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'insertBreak(breakTypeString, insertLocation)'
-    uid: 'word!Word.Body#insertBreak:member(2)'
-    package: word!
-    fullName: 'insertBreak(breakTypeString, insertLocation)'
-    summary: Inserts a break at the specified location in the main document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
-        "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
-      parameters:
-        - id: breakTypeString
-          description: Required. The break type to add to the body.
-          type: '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
-        - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            "Start" | "End"
       return:
         type: void
         description: ''
@@ -456,36 +441,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
+        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocationString)'
-    uid: 'word!Word.Body#insertFileFromBase64:member(2)'
-    package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocationString)'
-    summary: Inserts a document into the body at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" |
-        "Replace"): Word.Range;
-      parameters:
-        - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -519,34 +486,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted in the document.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertHtml(html, insertLocationString)'
-    uid: 'word!Word.Body#insertHtml:member(2)'
-    package: word!
-    fullName: 'insertHtml(html, insertLocationString)'
-    summary: Inserts HTML at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: html
-          description: Required. The HTML to be inserted in the document.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -559,34 +510,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertOoxml(ooxml, insertLocationString)'
-    uid: 'word!Word.Body#insertOoxml:member(2)'
-    package: word!
-    fullName: 'insertOoxml(ooxml, insertLocationString)'
-    summary: Inserts OOXML at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: ooxml
-          description: Required. The OOXML to be inserted.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -627,31 +562,6 @@ methods:
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 
       ```
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
-      parameters:
-        - id: paragraphText
-          description: Required. The paragraph text to be inserted.
-          type: string
-        - id: insertLocation
-          description: Required. The value must be 'Start' or 'End'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: 'insertParagraph(paragraphText, insertLocationString)'
-    uid: 'word!Word.Body#insertParagraph:member(2)'
-    package: word!
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: Inserts a paragraph at the specified location.
-    remarks: >-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
 
       ```typescript
 
@@ -680,15 +590,17 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        "Start" | "End"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
-        - id: insertLocationString
+        - id: insertLocation
           description: Required. The value must be 'Start' or 'End'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            "Start" | "End"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -721,34 +633,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: text
           description: Required. Text to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertText(text, insertLocationString)'
-    uid: 'word!Word.Body#insertText:member(2)'
-    package: word!
-    fullName: 'insertText(text, insertLocationString)'
-    summary: Inserts text into the body at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
-      parameters:
-        - id: text
-          description: Required. Text to be inserted.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''

@@ -540,7 +540,7 @@ export declare namespace Office {
             ThreeColumns = "ThreeColumns"
         }
         /**
-         * Specifies the type of recipient for an appointment.
+         * Specifies the type of recipient of a message or appointment.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -554,19 +554,20 @@ export declare namespace Office {
          */
         enum RecipientType {
             /**
-             * Specifies that the recipient is a distribution list containing a list of email addresses.
+             * Specifies the recipient is a distribution list containing a list of email addresses.
              */
             DistributionList = "distributionList",
             /**
-             * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+             * Specifies the recipient is an SMTP email address on the Exchange server.
              */
             User = "user",
             /**
-             * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+             * Specifies the recipient is an SMTP email address that isn't on the Exchange server.
              */
             ExternalUser = "externalUser",
             /**
-             * Specifies that the recipient is not one of the other recipient types.
+             * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
+             * and is therefore treated as an external SMTP address.
              */
             Other = "other"
         }
@@ -1268,7 +1269,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -1283,7 +1284,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -1668,7 +1669,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1690,7 +1691,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -1925,6 +1926,42 @@ export declare namespace Office {
          *                 the failure.
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -2192,7 +2229,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2212,7 +2249,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2537,7 +2574,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -2857,7 +2894,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -2879,7 +2916,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3205,6 +3242,42 @@ export declare namespace Office {
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
          * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
@@ -3368,7 +3441,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -3388,7 +3461,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -4935,7 +5008,7 @@ export declare namespace Office {
      * You can determine the type of the item by using the `itemType` property.
      *
      * To see the full member list, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
@@ -4960,7 +5033,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -4975,7 +5048,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -5296,7 +5369,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -5317,7 +5390,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -6020,7 +6093,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -6039,7 +6112,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          *
          * For supported events, refer to the Mailbox object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox#events | events section}.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -6231,7 +6304,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Child interfaces:
      *
@@ -6246,7 +6319,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -6598,7 +6671,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6620,7 +6693,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -6893,6 +6966,42 @@ export declare namespace Office {
          * An object with `ComposeType` and `CoercionType` enum values for the message item.
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -7180,7 +7289,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7200,7 +7309,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7344,7 +7453,7 @@ export declare namespace Office {
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of `Office.context.mailbox.item`. For more information, refer to the
-     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item | Object Model} page.
+     * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item | Object Model} page.
      * 
      * Parent interfaces:
      *
@@ -7715,7 +7824,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -7737,7 +7846,7 @@ export declare namespace Office {
          * Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8106,6 +8215,42 @@ export declare namespace Office {
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
          * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
@@ -8266,7 +8411,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8286,7 +8431,7 @@ export declare namespace Office {
          * Removes the event handlers for a supported event type. **Note**: Events are only available with task pane implementation.
          * 
          * For supported events, refer to the Item object model
-         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item#events | events section}.
+         * {@link https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.12/office.context.mailbox.item#events | events section}.
          * 
          * @remarks
          * [Api set: Mailbox 1.7]
@@ -8327,6 +8472,11 @@ export declare namespace Office {
          * The button defined in the manifest based on the item type.
          */
         commandId: string;
+        /**
+         * Any JSON data the action button needs to pass on.
+         * This data can be retrieved by calling `item.getInitializationContextAsync`.
+         */
+        contextData: any;
     }
     /**
      * An array of `NotificationMessageDetails` objects are returned by the `NotificationMessages.getAllAsync` method.
@@ -9973,7 +10123,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>office365</td>
-         *     <td>The mailbox is associated with an Office 365 work or school account.</td>
+         *     <td>The mailbox is associated with a Microsoft 365 work or school account.</td>
          *   </tr>
          *   <tr>
          *     <td>outlookCom</td>

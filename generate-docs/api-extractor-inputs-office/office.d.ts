@@ -1032,14 +1032,14 @@ export declare namespace Office {
     }
     export namespace AddinCommands {
         /**
-         * The `Event` object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify
+         * The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows the add-in to identify
          * which button was clicked and to signal the host that it has completed its processing.
          *
          * @remarks
          *
          * See {@link https://docs.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: Restricted
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1056,18 +1056,20 @@ export declare namespace Office {
             /**
              * Indicates that the add-in has completed processing and will automatically be closed.
              *
-             * This method must be called at the end of a function which was invoked by the following.
+             * This method must be called at the end of a function which was invoked by the following:
              *
-             * - A UI-less button (i.e., an add-in command defined with an `Action` element where the `xsi:type` attribute is set to `ExecuteFunction`)
+             * - A function command button (that is, an add-in command defined with an `Action` element, where the `xsi:type` attribute is set to `ExecuteFunction`).
              *
+             * - An event defined in the {@link https://docs.microsoft.com/javascript/api/manifest/extensionpoint#launchevent | LaunchEvent extension point}.
+             * For example, an `OnMessageSend` event. 
+             * 
              * - An {@link https://docs.microsoft.com/javascript/api/manifest/event | event} defined in the
-             * {@link https://docs.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point},
-             * e.g., an `ItemSend` event
-             *
-             * [Api set: Mailbox 1.3]
+             * {@link https://docs.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point}. For example, an `ItemSend` event.
              *
              * @remarks
              *
+             * [Api set: Mailbox 1.3]
+             * 
              * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
              *
              * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -1084,20 +1086,35 @@ export declare namespace Office {
          */
         export interface EventCompletedOptions {
             /**
-             * When the completed method is used to signal completion of an event handler,
-             * this value indicates if the handled event should continue execution or be canceled.
-             * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
+             * When the {@link https://docs.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled.
+             * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the
+             * sending of an item. For a complete sample, see the
+             * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+             * 
+             * @remarks
+             *
+             * [Api set: Mailbox 1.8]
+             * 
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
+             *
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
             allowEvent: boolean;
 
             /**
-             * When the completed method is used to signal completion of an event handler and if the `allowEvent` option is set to `false`,
-             * this value sets the error message that will be displayed to the user. For an example, refer to the 
+             * When the {@link https://docs.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * is used to signal completion of an event handler and if the `allowEvent` option is set to `false`, this value sets the error message
+             * that will be displayed to the user. For an example, see the  
              * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
-             * 
-             * [Api set: Mailbox preview]
              *
-             * @beta
+             * @remarks
+             * 
+             * [Api set: Mailbox 1.12]
+             * 
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
+             *
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
             errorMessage?: string;
         }
@@ -1583,8 +1600,14 @@ export declare namespace Office {
         asyncContext?: any;
         /**
          * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`.
-         * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development.
+         * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin.
          * Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.
+         *
+         * @remarks
+         *
+         * **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the `forMSGraphAccess` option before sideloading the add-in for testing.
+         * Otherwise, you'll receive {@link https://docs.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012 | error 13012}. For additional guidance, see
+         * {@link https://docs.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
          */
         forMSGraphAccess?: boolean;
     }

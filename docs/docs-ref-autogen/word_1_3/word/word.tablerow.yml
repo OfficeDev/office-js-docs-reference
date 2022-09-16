@@ -293,42 +293,17 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
+      content: >-
+        insertRows(insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After",
+        rowCount: number, values?: string[][]): Word.TableRowCollection;
       parameters:
         - id: insertLocation
           description: >-
             Required. Where the new rows should be inserted, relative to the current row. It must be 'Before' or
             'After'.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-        - id: rowCount
-          description: Required. Number of rows to add
-          type: number
-        - id: values
-          description: >-
-            Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must
-            not exceed the number of cells in the existing row.
-          type: 'string[][]'
-      return:
-        type: '<xref uid="word!Word.TableRowCollection:class" />'
-        description: ''
-  - name: 'insertRows(insertLocationString, rowCount, values)'
-    uid: 'word!Word.TableRow#insertRows:member(2)'
-    package: word!
-    fullName: 'insertRows(insertLocationString, rowCount, values)'
-    summary: 'Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.'
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
-        string[][]): Word.TableRowCollection;
-      parameters:
-        - id: insertLocationString
-          description: >-
-            Required. Where the new rows should be inserted, relative to the current row. It must be 'Before' or
-            'After'.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Before" | "After"
         - id: rowCount
           description: Required. Number of rows to add
           type: number

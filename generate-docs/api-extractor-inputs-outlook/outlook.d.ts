@@ -579,7 +579,7 @@ export declare namespace Office {
             ThreeColumns = "ThreeColumns"
         }
         /**
-         * Specifies the type of recipient for an appointment.
+         * Specifies the type of recipient of a message or appointment.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -593,19 +593,20 @@ export declare namespace Office {
          */
         enum RecipientType {
             /**
-             * Specifies that the recipient is a distribution list containing a list of email addresses.
+             * Specifies the recipient is a distribution list containing a list of email addresses.
              */
             DistributionList = "distributionList",
             /**
-             * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+             * Specifies the recipient is an SMTP email address on the Exchange server.
              */
             User = "user",
             /**
-             * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+             * Specifies the recipient is an SMTP email address that isn't on the Exchange server.
              */
             ExternalUser = "externalUser",
             /**
-             * Specifies that the recipient is not one of the other recipient types.
+             * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
+             * and is therefore treated as an external SMTP address.
              */
             Other = "other"
         }
@@ -1991,19 +1992,14 @@ export declare namespace Office {
          */
         getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is activated by an actionable message.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-         *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -2012,32 +2008,23 @@ export declare namespace Office {
          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
          *                 If there is no initialization context, the `asyncResult` object will contain
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
          */
         getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is activated by an actionable message.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-         *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
          *                 If there is no initialization context, the `asyncResult` object will contain
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
          */
         getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -3247,52 +3234,6 @@ export declare namespace Office {
          */
         getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
-         *
-         * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * @param options - An object literal that contains one or more of the following properties.
-         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
-         */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-        /**
-         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
-         *
-         * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-         *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
-         */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-        /**
          * Gets the entities found in the selected item's body.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
@@ -3390,6 +3331,42 @@ export declare namespace Office {
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+         /**
+          * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+          *
+          * @remarks
+          * [Api set: Mailbox 1.8]
+          *
+          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+          *
+          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+          *
+          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+          *                             of type `Office.AsyncResult`.
+          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+          *                 If there is no initialization context, the `asyncResult` object will contain
+          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+          */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
@@ -7180,19 +7157,14 @@ export declare namespace Office {
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is activated by an actionable message.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7201,32 +7173,23 @@ export declare namespace Office {
          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
          *                 If there is no initialization context, the `asyncResult` object will contain
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
          */
         getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is activated by an actionable message.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
          * @remarks
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.8]
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
          *                 If there is no initialization context, the `asyncResult` object will contain
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
          */
         getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -8363,54 +8326,6 @@ export declare namespace Office {
          */
         getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentContent>) => void): void;
         /**
-         * Gets initialization data passed when the add-in is
-         * {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
-         *
-         * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-         *
-         * @param options - An object literal that contains one or more of the following properties.
-         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
-         */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-        /**
-         * Gets initialization data passed when the add-in is
-         * {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
-         *
-         * **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than 16.0.8413.1000)
-         * and Outlook on the web for Microsoft 365.
-         *
-         * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-         *
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-         *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-         *
-         * @beta
-         */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-        /**
          * Gets the entities found in the selected item's body.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
@@ -8509,6 +8424,42 @@ export declare namespace Office {
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
         getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
+        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
@@ -8800,7 +8751,6 @@ export declare namespace Office {
      *
      * **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
      *
-     *
      * @remarks
      * [Api set: Mailbox 1.10]
      *
@@ -8823,15 +8773,8 @@ export declare namespace Office {
          */
         commandId: string;
         /**
-         * Any JSON data the button needs to pass on.
+         * Any JSON data the action button needs to pass on.
          * This data can be retrieved by calling `item.getInitializationContextAsync`.
-         *
-         * **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
-         *
-         * @remarks
-         * [Api set: Mailbox preview]
-         *
-         * @beta
          */
         contextData: any;
     }

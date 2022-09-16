@@ -130,38 +130,16 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.CommentContentRange;'
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" |
+        "After"): Word.CommentContentRange;
       parameters:
         - id: text
           description: Required. The text to be inserted in to the CommentContentRange.
           type: string
         - id: insertLocation
-          description: 'Required. The value must be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.CommentContentRange:class" />'
-        description: ''
-  - name: 'insertText(text, insertLocationString)'
-    uid: 'word!Word.CommentContentRange#insertText:member(2)'
-    package: word!
-    fullName: 'insertText(text, insertLocationString)'
-    summary: >-
-      Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across
-      context turns to empty if any revision to the comment is posted through the UI.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.CommentContentRange;
-      parameters:
-        - id: text
-          description: Required. The text to be inserted in to the CommentContentRange.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''After'', ''Before'', ''Replace'', ''Start'', or ''End''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
+          type: '<xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"'
       return:
         type: '<xref uid="word!Word.CommentContentRange:class" />'
         description: ''

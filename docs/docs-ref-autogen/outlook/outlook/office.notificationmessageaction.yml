@@ -109,13 +109,10 @@ properties:
     package: outlook!
     fullName: contextData
     summary: >-
-      Any JSON data the button needs to pass on. This data can be retrieved by calling
+      Any JSON data the action button needs to pass on. This data can be retrieved by calling
       `item.getInitializationContextAsync`<!-- -->.
-
-
-      **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
-    remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    isPreview: true
+    remarks: ''
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contextData: any;'

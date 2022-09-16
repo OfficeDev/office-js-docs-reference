@@ -168,19 +168,19 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
-  - name: getItem(index)
+  - name: getItem(id)
     uid: 'word!Word.ContentControlCollection#getItem:member(1)'
     package: word!
-    fullName: getItem(index)
-    summary: Gets a content control by its index in the collection.
+    fullName: getItem(id)
+    summary: Gets a content control by its ID.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getItem(index: number): Word.ContentControl;'
+      content: 'getItem(id: number): Word.ContentControl;'
       parameters:
-        - id: index
-          description: The index.
+        - id: id
+          description: The content control's ID.
           type: number
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
