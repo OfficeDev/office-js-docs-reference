@@ -6440,7 +6440,7 @@
 
         // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
         const contextData = JSON.parse(asyncResult.value);
-        console.log("a:")
+        console.log("a:");
         console.log(contextData.a);
     });
 'Office.NotificationMessages#addAsync:member(1)':
