@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.8
 description: Requirement set 1.8 for Outlook add-in API.
-ms.date: 05/17/2021
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 ---
 
@@ -40,6 +40,7 @@ Requirement set 1.8 includes all of the features of [requirement set 1.7](../req
 - Added [Office.context.mailbox.item.getAllInternetHeadersAsync](office.context.mailbox.item.md#methods): Adds a new method that gets all the internet headers for a message item. Read mode only.
 - Added [Office.context.mailbox.item.getAttachmentContentAsync](office.context.mailbox.item.md#methods): Adds a new method to get the content of a specific attachment.
 - Added [Office.context.mailbox.item.getAttachmentsAsync](office.context.mailbox.item.md#methods): Adds a new method that gets an item's attachments in compose mode.
+- Added [Office.context.mailbox.item.getInitializationContextAsync](office.context.mailbox.item.md#methods): Adds a new method to get initialization data when an actionable message is activated.
 - Added [Office.context.mailbox.item.getItemIdAsync](office.context.mailbox.item.md#methods): Adds a new method that gets the ID of a saved appointment or message item.
 - Added [Office.context.mailbox.item.getSharedPropertiesAsync](office.context.mailbox.item.md#methods): Adds a new method that gets an object which represents the sharedProperties of an appointment or message item.
 - Added [Office.context.mailbox.item.internetHeaders](office.context.mailbox.item.md#properties): Adds a new property that represents the custom internet headers on a message item. Compose mode only.

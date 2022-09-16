@@ -2209,13 +2209,10 @@ methods:
     package: outlook!
     fullName: 'getInitializationContextAsync(options, callback)'
     summary: >-
-      Gets initialization data passed when the add-in is activated by an actionable message.
-
-
-      **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than
-      16.0.8413.1000) and Outlook on the web for Microsoft 365.
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2226,10 +2223,6 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-
-
-      More information on [actionable
-      messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
       #### Examples
@@ -2261,7 +2254,7 @@ methods:
       );
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2289,13 +2282,10 @@ methods:
     package: outlook!
     fullName: getInitializationContextAsync(callback)
     summary: >-
-      Gets initialization data passed when the add-in is activated by an actionable message.
-
-
-      **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than
-      16.0.8413.1000) and Outlook on the web for Microsoft 365.
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2306,11 +2296,7 @@ methods:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-
-
-      More information on [actionable
-      messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
