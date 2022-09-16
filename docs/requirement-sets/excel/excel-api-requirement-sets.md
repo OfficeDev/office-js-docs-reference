@@ -22,7 +22,7 @@ Excel add-ins run across multiple versions of Office, including Office 2016 or l
 | Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](excel-preview-apis.md)  | Please use the latest Office version to try preview APIs (you may need to join the [Office Insider program](https://insider.office.com)). |
-| [ExcelApiOnline](excel-api-online-requirement-set.md) | N/A | N/A | N/A | N/A | N/A | Latest (see [requirement set page](excel-api-online-requirement-set.md)) |
+| [ExcelApiOnline](excel-api-online-requirement-set.md) | Not applicable | Not applicable | Not applicable | Not applicable | Not applicable | Latest (see [requirement set page](excel-api-online-requirement-set.md)) |
 | [ExcelApi 1.15](excel-api-1-15-requirement-set.md) | Version 2202 (Build 14931.20132) | Version 2202 (Build 14931.20132) | Not available | 16.58 | 16.59 | Supported |
 | [ExcelApi 1.14](excel-api-1-14-requirement-set.md) | Version 2108 (Build 14326.20508) | Version 2108 (Build 14326.20508) | Office 2021: Version 2108 (Build 14326.20508) | 16.52 | 16.53 | Supported |
 | [ExcelApi 1.13](excel-api-1-13-requirement-set.md) | Version 2102 (Build 13801.20738) | Version 2102 (Build 13801.20738) | Office 2021: Version 2102 (Build 13801.20738) | 16.50 | 16.50 | Supported |
