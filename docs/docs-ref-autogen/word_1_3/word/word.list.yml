@@ -117,36 +117,19 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      content: >-
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: 'insertParagraph(paragraphText, insertLocationString)'
-    uid: 'word!Word.List#insertParagraph:member(2)'
-    package: word!
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
-    summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.Paragraph;
-      parameters:
-        - id: paragraphText
-          description: Required. The paragraph text to be inserted.
-          type: string
-        - id: insertLocationString
-          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''

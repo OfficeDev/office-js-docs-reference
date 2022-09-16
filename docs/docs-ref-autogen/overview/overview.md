@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 06/24/2022
+ms.date: 09/09/2022
 ---
 
 # Office Add-ins JavaScript API reference
@@ -70,6 +70,7 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
             <h3>Outlook APIs</h3>
             <ul>
                 <li><a href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.12">Mailbox 1.12</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.11">Mailbox 1.11</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.10">Mailbox 1.10</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.9">Mailbox 1.9</a></li>

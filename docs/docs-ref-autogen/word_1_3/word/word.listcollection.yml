@@ -96,19 +96,19 @@ methods:
       return:
         type: '<xref uid="word!Word.List:class" />'
         description: ''
-  - name: getItem(index)
+  - name: getItem(id)
     uid: 'word!Word.ListCollection#getItem:member(1)'
     package: word!
-    fullName: getItem(index)
-    summary: Gets a list object by its index in the collection.
+    fullName: getItem(id)
+    summary: Gets a list object by its ID.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getItem(index: number): Word.List;'
+      content: 'getItem(id: number): Word.List;'
       parameters:
-        - id: index
-          description: A number that identifies the index location of a list object.
+        - id: id
+          description: The list's ID.
           type: number
       return:
         type: '<xref uid="word!Word.List:class" />'

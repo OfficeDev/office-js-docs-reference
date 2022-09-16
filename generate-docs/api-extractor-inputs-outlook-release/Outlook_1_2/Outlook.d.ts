@@ -117,7 +117,7 @@ export declare namespace Office {
             ThreeColumns = "ThreeColumns"
         }
         /**
-         * Specifies the type of recipient for an appointment.
+         * Specifies the type of recipient of a message or appointment.
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -131,19 +131,20 @@ export declare namespace Office {
          */
         enum RecipientType {
             /**
-             * Specifies that the recipient is a distribution list containing a list of email addresses.
+             * Specifies the recipient is a distribution list containing a list of email addresses.
              */
             DistributionList = "distributionList",
             /**
-             * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+             * Specifies the recipient is an SMTP email address on the Exchange server.
              */
             User = "user",
             /**
-             * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+             * Specifies the recipient is an SMTP email address that isn't on the Exchange server.
              */
             ExternalUser = "externalUser",
             /**
-             * Specifies that the recipient is not one of the other recipient types.
+             * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
+             * and is therefore treated as an external SMTP address.
              */
             Other = "other"
         }
@@ -1073,7 +1074,7 @@ export declare namespace Office {
          */
         optionalAttendees: EmailAddressDetails[];
         /**
-         * Gets the email address of the meeting organizer for a specified meeting.
+         * Gets the meeting organizer's email properties.
          *
          * @remarks
          *
@@ -3828,6 +3829,7 @@ export declare namespace Office {
          */
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+     
     
     
     

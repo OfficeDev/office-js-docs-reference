@@ -1499,19 +1499,26 @@ Office.AddinCommands.Event#completed:member(1):
         event.completed();
     }
   - |-
-    // For the following example, the checkMessage function was
-    // registered as an event handler for ItemSend.
-    function checkMessage(event) {
-        // Get the item being sent.
-        const outgoingMsg = Office.context.mailbox.item;
+    // In this example, the function is registered as an event handler for the OnAppointmentSend event.
+    // It checks whether a location is specified in an appointment before it's sent.
+    function onAppointmentSendHandler(event) {
+        Office.context.mailbox.item.location.getAsync({ asyncContext: event }, asyncResult => {
+            let event = asyncResult.asyncContext;
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(asyncResult.error.message);
+                // If the add-in is unable to retrieve the appointment's location, the appointment isn't sent.
+                event.completed({ allowEvent: false, errorMessage: "Failed to get the appointment's location." });
+                return;
+            }
 
-        // Check if subject contains "BLOCK".
-        outgoingMsg.subject.getAsync(function (result) {
-            // Subject is in `result.value`.
-            // If search term "BLOCK" is found, don't send message.
-            const notFound = -1;
-            const allowEvent = (result.value.indexOf('BLOCK') === notFound);
-            event.completed({allowEvent: allowEvent});
+            if (asyncResult.value === "") {
+                // If no location is specified, the appointment isn't sent and the user is alerted to include a location.
+                event.completed({ allowEvent: false, errorMessage: "Don't forget to add a meeting location." });
+                return;
+            } else {
+                // If a location is specified, the appointment is sent.
+                event.completed({ allowEvent: true });
+            }
         });
     }
 Office.AddinCommands.Event#source:member:
@@ -1745,10 +1752,21 @@ Office.AsyncResult#value:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Auth#getAccessToken:member(1):
+  - |-
+    try{
+        const accessToken = await Office.auth.getAccessToken({
+            allowSignInPrompt: true,
+            allowConsentPrompt: true,
+            forMSGraphAccess: true,
+        });
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessTokenAsync:member(1):
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
-        if (result.status === "succeeded") {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
             const token = result.value;
             // ...
         } else {
@@ -7050,17 +7068,6 @@ Office.AttachmentDetails:interface:
     }
 
     console.log(outputString);
-Office.Body#appendOnSendAsync:member(1):
-  - |-
-    Office.context.mailbox.item.body.appendOnSendAsync(
-        "P.S. This text was appended on send.",
-        {coercionType: Office.CoercionType.Html},
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-        }
-    );
 Office.Body#getAsync:member(1):
   - |-
     // This example gets the body of the item as plain text.
@@ -7077,23 +7084,6 @@ Office.Body#getAsync:member(1):
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body#getTypeAsync:member(1):
-  - |-
-    Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        } else {
-            console.log("Body type: " + asyncResult.value);
-        }
-    });
-Office.Body#prependAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.prependAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 Office.Body#setAsync:member(1):
   - |-
     // When including links in HTML markup, you can disable online link preview
@@ -7115,14 +7105,6 @@ Office.Body#setAsync:member(1):
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.Body#setSelectedDataAsync:member(1):
-  - |-
-    // When including links in HTML markup, you can disable online link preview
-    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-    Office.context.mailbox.item.body.setSelectedDataAsync(
-        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-        {coercionType: Office.CoercionType.Html},
-        callback);
 Office.CategoryDetails:interface:
   - |-
     const categories = [
@@ -7419,6 +7401,92 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
         const context = asyncResult.asyncContext;
 
         // Process the returned response here.
+    }
+Office.MailboxEnums.ActionType:enum:
+  - |-
+    // Define an insight notification message.
+    const insightMessage = {
+        type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+        message: "This is an insight notification",
+        icon: "Icon.80x80",
+        actions: [{
+            actionText: "Open insight",
+            actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+            commandId: "msgComposeOpenPaneButton",
+            contextData: JSON.stringify({a: "aValue", b: "bValue"})
+        }]
+    };
+Office.MailboxEnums.AttachmentStatus:enum:
+  - |-
+    // Get the attachment that was just added to a message or appointment.
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            const attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.MailboxEnums.InfobarActionType:enum:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
+    }
+Office.MailboxEnums.InfobarType:enum:
+  - |-
+    /*
+    * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
+    * The event handler logs the custom action and notification type to the console.
+    */
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.InfobarClicked, eventHandler, callback);
+
+    function eventHandler(event) {
+        const infobarDetails = event.infobarDetails;
+
+        // Log the custom action type.
+        console.log(`Custom action type: ${infobarDetails.actionType}`);
+
+        // Log the notification type.
+        switch (infobarDetails.infobarType) {
+            case Office.MailboxEnums.InfobarType.Error:
+                console.log("Notification type: Error message");
+                break;
+            case Office.MailboxEnums.InfobarType.Informational:
+                console.log("Notification type: Informational message");
+                break;
+            case Office.MailboxEnums.InfobarType.Insight:
+                console.log("Notification type: Informational message with available actions from the task pane");
+                break;
+            case Office.MailboxEnums.InfobarType.ProgressIndicator:
+                console.log("Notification type: Progress indicator");
+                break;
+        }
     }
 Office.MeetingSuggestion:interface:
   - |-
@@ -9158,7 +9226,7 @@ Word.ContentControl#getOoxml:member(1):
             console.log('Content control OOXML: ' + ooxml.value);
         }
     });
-Word.ContentControl#insertBreak:member(2):
+Word.ContentControl#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9186,7 +9254,7 @@ Word.ContentControl#insertBreak:member(2):
             console.log('Inserted a page break after the first content control.');    
         }
     });
-Word.ContentControl#insertHtml:member(2):
+Word.ContentControl#insertHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9215,7 +9283,7 @@ Word.ContentControl#insertHtml:member(2):
             console.log('Inserted HTML in the first content control.');
         }
     });
-Word.ContentControl#insertOoxml:member(2):
+Word.ContentControl#insertOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9245,7 +9313,7 @@ Word.ContentControl#insertOoxml:member(2):
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl#insertParagraph:member(2):
+Word.ContentControl#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9272,7 +9340,7 @@ Word.ContentControl#insertParagraph:member(2):
             console.log('Inserted a paragraph after the first content control.');
         }
     });  
-Word.ContentControl#insertText:member(2):
+Word.ContentControl#insertText:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9939,7 +10007,7 @@ Word.Paragraph#getPreviousOrNullObject:member(1):
             console.log('The preceding paragraph is: ' + precedingParagraph.text);
         }
     });
-Word.Paragraph#insertBreak:member(2):
+Word.Paragraph#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -10138,7 +10206,7 @@ Word.Range#getOoxml:member(1):
         await context.sync();
         console.log('The OOXML read from the document was:  ' + ooxml.value);
     });
-Word.Range#insertBreak:member(2):
+Word.Range#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {

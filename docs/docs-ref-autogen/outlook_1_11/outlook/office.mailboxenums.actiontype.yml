@@ -4,7 +4,25 @@ uid: 'outlook!Office.MailboxEnums.ActionType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.ActionType
 summary: Specifies the type of custom action in a notification message.
-remarks: '\[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+  #### Examples
+
+  ```javascript
+  // Define an insight notification message.
+  const insightMessage = {
+      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+      message: "This is an insight notification",
+      icon: "Icon.80x80",
+      actions: [{
+          actionText: "Open insight",
+          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+          commandId: "msgComposeOpenPaneButton",
+          contextData: JSON.stringify({a: "aValue", b: "bValue"})
+      }]
+  };
+  ```
 isPreview: false
 isDeprecated: false
 fields:

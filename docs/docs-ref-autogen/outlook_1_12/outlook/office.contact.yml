@@ -1,0 +1,148 @@
+### YamlMime:TSType
+name: Office.Contact
+uid: 'outlook!Office.Contact:interface'
+package: outlook!
+fullName: Office.Contact
+summary: >-
+  Represents the details about a contact (similar to what's on a physical contact or business card) extracted from the
+  item's body. Read mode only.
+
+
+  The list of contacts extracted from the body of an email message or appointment is returned in the `contacts` property
+  of the [Entities](xref:outlook!Office.Entities:interface) object returned by the `getEntities` or `getEntitiesByType`
+  method of the current item.
+remarks: >-
+  **[Minimum permission
+  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  `Restricted`
+
+
+  **[Applicable Outlook
+  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**: Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  const item = Office.context.mailbox.item;
+
+  // Get an array of strings that represent contacts in the current item's body.
+
+  const contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+
+  console.log("There are " + contacts.length + " contacts.")
+
+  contacts.forEach(function (contact) {
+      console.log("Person name: " + JSON.stringify(contact.personName));
+      console.log("Business name: " + JSON.stringify(contact.businessName));
+      console.log("Addresses: " + JSON.stringify(contact.addresses));
+      console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+      console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+      console.log("Urls: " + JSON.stringify(contact.urls));
+  });
+
+
+  /* Example email that includes contact details of sender, John Smith:
+
+  Hi there,
+
+  I have received the package.
+
+
+  Thanks.
+
+  John Smith
+
+  Account Manager
+
+  Contoso Corporation
+
+  1 Contoso Way, Redmond, WA 98052
+
+  john.smith@contoso.com
+
+  111-111-1111
+
+  https://contoso.com/john.smith
+
+  */
+
+  ```
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: addresses
+    uid: 'outlook!Office.Contact#addresses:member'
+    package: outlook!
+    fullName: addresses
+    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addresses: string[];'
+      return:
+        type: 'string[]'
+  - name: businessName
+    uid: 'outlook!Office.Contact#businessName:member'
+    package: outlook!
+    fullName: businessName
+    summary: A string containing the name of the business associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'businessName: string;'
+      return:
+        type: string
+  - name: emailAddresses
+    uid: 'outlook!Office.Contact#emailAddresses:member'
+    package: outlook!
+    fullName: emailAddresses
+    summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'emailAddresses: string[];'
+      return:
+        type: 'string[]'
+  - name: personName
+    uid: 'outlook!Office.Contact#personName:member'
+    package: outlook!
+    fullName: personName
+    summary: A string containing the name of the person associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'personName: string;'
+      return:
+        type: string
+  - name: phoneNumbers
+    uid: 'outlook!Office.Contact#phoneNumbers:member'
+    package: outlook!
+    fullName: phoneNumbers
+    summary: An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'phoneNumbers: PhoneNumber[];'
+      return:
+        type: '<xref uid="outlook!Office.PhoneNumber:interface" />[]'
+  - name: urls
+    uid: 'outlook!Office.Contact#urls:member'
+    package: outlook!
+    fullName: urls
+    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'urls: string[];'
+      return:
+        type: 'string[]'

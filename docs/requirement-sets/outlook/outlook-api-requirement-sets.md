@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 07/25/2022
+ms.date: 09/09/2022
 ms.prod: outlook
 ms.localizationpriority: high
 ---
@@ -26,7 +26,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 # [Teams Manifest (developer preview)](#tab/jsonmanifest)
 
-The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios. 
+The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios.
 
 For example, the following manifest snippet indicates a minimum requirement set of 1.1.
 
@@ -46,10 +46,9 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 ---
 
-
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
-Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client does not support the minimum requirement set, it does not load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
+Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client doen't support the minimum requirement set, it does not load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
 
 > [!NOTE]
 > To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
@@ -58,7 +57,7 @@ Setting a minimum requirement set version in the manifest controls which Outlook
 
 ## Using APIs from later requirement sets
 
-Setting a requirement set does not limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set "Mailbox 1.1", but it is running in an Outlook client which supports "Mailbox 1.3", the add-in can use APIs from requirement set "Mailbox 1.3".
+Setting a requirement set doesn't limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set "Mailbox 1.1", but it's running in an Outlook client which supports "Mailbox 1.3", the add-in can use APIs from requirement set "Mailbox 1.3".
 
 To use a newer API, developers can check if a particular application supports the requirement set by doing the following:
 
@@ -72,7 +71,7 @@ else {
 ```
 
 > [!IMPORTANT]
-> There is currently a bug where `isSetSupported('Mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, refer to [Requirement sets supported by Exchange servers and Outlook clients](#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
+> There is currently a bug where `isSetSupported('Mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, see [Requirement sets supported by Exchange servers and Outlook clients](#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
 
 Alternatively, developers can check for the existence of a newer API by using standard JavaScript technique.
 
@@ -102,7 +101,7 @@ The following servers support Outlook add-ins.
 
 | Product | Major Exchange version | Supported API requirement sets |
 |---|---|---|
-| Exchange Online | Latest build | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)\* |
+| Exchange Online | Latest build | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)\* |
 | Exchange on-premises | 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2016 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2013 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md) |
@@ -116,7 +115,7 @@ Add-ins are supported in Outlook on the following platforms.
 
 | Platform | Major Office/Outlook version | Supported API requirement sets |
 |---|---|---|
-| Windows | Microsoft 365 subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup>, [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md)<sup>1</sup>, [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md)<sup>1</sup>, [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md)<sup>1</sup><br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
+| Windows | Microsoft 365 subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup>, [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md)<sup>1</sup>, [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md)<sup>1</sup>, [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md)<sup>1</sup>, [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md)<sup>1</sup><br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || 2021 one-time purchase | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup>, [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md)<sup>1</sup><br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || 2019 one-time purchase (retail) | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<sup>1</sup> |
 || 2019 one-time purchase (volume-licensed) | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
@@ -129,11 +128,19 @@ Add-ins are supported in Outlook on the following platforms.
 || 2016 one-time purchase | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
 | iOS<sup>5 6</sup> | Microsoft 365 subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | Android<sup>5 6</sup> | Microsoft 365 subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
-| Web browser<sup>5 7</sup> | modern Outlook UI when connected to<br>Exchange Online: Microsoft 365 subscription, Outlook.com | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
+| Web browser<sup>5 7</sup> | modern Outlook UI when connected to<br>Exchange Online: Microsoft 365 subscription, Outlook.com | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || classic Outlook UI when connected to<br>Exchange on-premises | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
 
 > [!NOTE]
-> <sup>1</sup> Support for **1.8** in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase is available from version 1910 (build 12130.20272). Support for **1.9** in Outlook on Windows with a Microsoft 365 subscription is available from version 2008 (build 13127.20296). Support for **1.10** in Outlook on Windows with a Microsoft 365 subscription is available from version 2104 (build 13929.20296). Support for **1.11** in Outlook on Windows with a Microsoft 365 subscription is available from version 2110 (build 14527.20226). For more details according to your version, see the update history page for [Office 2019](/officeupdates/update-history-office-2019) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
+> <sup>1</sup> Version support for more recent requirement sets in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase as follows:
+>
+> - Support for **1.8** is available from version 1910 (build 12130.20272).
+> - Support for **1.9** is available from version 2008 (build 13127.20296).
+> - Support for **1.10** is available from version 2104 (build 13929.20296).
+> - Support for **1.11** is available from version 2110 (build 14527.20226).
+> - Support for **1.12** is available from version 2206 (build 15330.20196).
+>
+> For more details according to your version, see the update history page for [Office 2021](/officeupdates/update-history-office-2021) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 >
 > <sup>2</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 >
@@ -152,17 +159,17 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > **modern**
 >
-> ![Partial screenshot of the modern Outlook toolbar.](/office/dev/add-ins/images/outlook-on-the-web-new-toolbar.png)
+> ![The modern Outlook toolbar.](/office/dev/add-ins/images/outlook-on-the-web-new-toolbar.png)
 >
 > **classic**
 >
-> ![Partial screenshot of the classic Outlook toolbar.](/office/dev/add-ins/images/outlook-on-the-web-classic-toolbar.png)
+> ![The classic Outlook toolbar.](/office/dev/add-ins/images/outlook-on-the-web-classic-toolbar.png)
 
 ## Using preview APIs
 
 New Outlook JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired. To provide feedback about a preview API, please use the feedback mechanism at the end of the web page where the API is documented.
 
 > [!NOTE]
-> Preview APIs are subject to change and are not intended for use in a production environment.
+> Preview APIs are subject to change and aren't intended for use in a production environment.
 
 For more details about the preview APIs, see [Outlook API preview requirement set](preview-requirement-set/outlook-requirement-set-preview.md).

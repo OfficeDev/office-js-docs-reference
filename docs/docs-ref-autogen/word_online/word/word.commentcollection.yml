@@ -118,23 +118,6 @@ methods:
       return:
         type: '<xref uid="word!Word.Comment:class" />'
         description: ''
-  - name: getItem(index)
-    uid: 'word!Word.CommentCollection#getItem:member(1)'
-    package: word!
-    fullName: getItem(index)
-    summary: Gets a comment object by its index in the collection.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItem(index: number): Word.Comment;'
-      parameters:
-        - id: index
-          description: A number that identifies the index location of a comment object.
-          type: number
-      return:
-        type: '<xref uid="word!Word.Comment:class" />'
-        description: ''
   - name: load(options)
     uid: 'word!Word.CommentCollection#load:member(1)'
     package: word!

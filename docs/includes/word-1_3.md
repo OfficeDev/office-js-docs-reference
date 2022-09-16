@@ -1,8 +1,8 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[Application](/javascript/api/word/word.application)|[createDocument(base64File?: string)](/javascript/api/word/word.application#word-word-application-createdocument-member(1))|Creates a new document by using an optional base64 encoded .docx file.|
-|[Body](/javascript/api/word/word.body)|[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.body#word-word-body-getrange-member(1))|Gets the whole body, or the starting or ending point of the body, as a range.|
-||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.body#word-word-body-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
+|[Body](/javascript/api/word/word.body)|[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.body#word-word-body-getrange-member(1))|Gets the whole body, or the starting or ending point of the body, as a range.|
+||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", values?: string[][])](/javascript/api/word/word.body#word-word-body-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[lists](/javascript/api/word/word.body#word-word-body-lists-member)|Gets the collection of list objects in the body.|
 ||[parentBody](/javascript/api/word/word.body#word-word-body-parentbody-member)|Gets the parent body of the body.|
 ||[parentBodyOrNullObject](/javascript/api/word/word.body#word-word-body-parentbodyornullobject-member)|Gets the parent body of the body.|
@@ -12,9 +12,9 @@
 ||[styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)|Gets or sets the built-in style name for the body.|
 ||[tables](/javascript/api/word/word.body#word-word-body-tables-member)|Gets the collection of table objects in the body.|
 ||[type](/javascript/api/word/word.body#word-word-body-type-member)|Gets the type of the body.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))|Gets the whole content control, or the starting or ending point of the content control, as a range.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[getRange(rangeLocation?: Word.RangeLocation \| "Whole" \| "Start" \| "End" \| "Before" \| "After" \| "Content")](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getrange-member(1))|Gets the whole content control, or the starting or ending point of the content control, as a range.|
 ||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-gettextranges-member(1))|Gets the text ranges in the content control by using punctuation marks and/or other ending marks.|
-||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1))|Inserts a table with the specified number of rows and columns into, or next to, a content control.|
+||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| Word.InsertLocation.before \| Word.InsertLocation.after \| "Start" \| "End" \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-inserttable-member(1))|Inserts a table with the specified number of rows and columns into, or next to, a content control.|
 ||[lists](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-lists-member)|Gets the collection of list objects in the content control.|
 ||[parentBody](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentbody-member)|Gets the parent body of the content control.|
 ||[parentContentControlOrNullObject](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-parentcontentcontrolornullobject-member)|Gets the content control that contains the content control.|
@@ -62,7 +62,7 @@
 ||[title](/javascript/api/word/word.documentproperties#word-word-documentproperties-title-member)|Gets or sets the title of the document.|
 |[InlinePicture](/javascript/api/word/word.inlinepicture)|[getNext()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getnext-member(1))|Gets the next inline image.|
 ||[getNextOrNullObject()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getnextornullobject-member(1))|Gets the next inline image.|
-||[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getrange-member(1))|Gets the picture, or the starting or ending point of the picture, as a range.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| "Whole" \| "Start" \| "End")](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getrange-member(1))|Gets the picture, or the starting or ending point of the picture, as a range.|
 ||[parentContentControlOrNullObject](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parentcontentcontrolornullobject-member)|Gets the content control that contains the inline image.|
 ||[parentTable](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttable-member)|Gets the table that contains the inline image.|
 ||[parentTableCell](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-parenttablecell-member)|Gets the table cell that contains the inline image.|
@@ -73,7 +73,7 @@
 |[List](/javascript/api/word/word.list)|[getLevelParagraphs(level: number)](/javascript/api/word/word.list#word-word-list-getlevelparagraphs-member(1))|Gets the paragraphs that occur at the specified level in the list.|
 ||[getLevelString(level: number)](/javascript/api/word/word.list#word-word-list-getlevelstring-member(1))|Gets the bullet, number, or picture at the specified level as a string.|
 ||[id](/javascript/api/word/word.list#word-word-list-id-member)|Gets the list's id.|
-||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation)](/javascript/api/word/word.list#word-word-list-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
+||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| Word.InsertLocation.before \| Word.InsertLocation.after \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.list#word-word-list-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
 ||[levelExistences](/javascript/api/word/word.list#word-word-list-levelexistences-member)|Checks whether each of the 9 levels exists in the list.|
 ||[levelTypes](/javascript/api/word/word.list#word-word-list-leveltypes-member)|Gets all 9 level types in the list.|
 ||[paragraphs](/javascript/api/word/word.list#word-word-list-paragraphs-member)|Gets paragraphs in the list.|
@@ -86,7 +86,7 @@
 ||[getByIdOrNullObject(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getbyidornullobject-member(1))|Gets a list by its identifier.|
 ||[getFirst()](/javascript/api/word/word.listcollection#word-word-listcollection-getfirst-member(1))|Gets the first list in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.listcollection#word-word-listcollection-getfirstornullobject-member(1))|Gets the first list in this collection.|
-||[getItem(index: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))|Gets a list object by its index in the collection.|
+||[getItem(id: number)](/javascript/api/word/word.listcollection#word-word-listcollection-getitem-member(1))|Gets a list object by its ID.|
 ||[items](/javascript/api/word/word.listcollection#word-word-listcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListItem](/javascript/api/word/word.listitem)|[getAncestor(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestor-member(1))|Gets the list item parent, or the closest ancestor if the parent does not exist.|
 ||[getAncestorOrNullObject(parentOnly?: boolean)](/javascript/api/word/word.listitem#word-word-listitem-getancestorornullobject-member(1))|Gets the list item parent, or the closest ancestor if the parent does not exist.|
@@ -100,9 +100,9 @@
 ||[getNextOrNullObject()](/javascript/api/word/word.paragraph#word-word-paragraph-getnextornullobject-member(1))|Gets the next paragraph.|
 ||[getPrevious()](/javascript/api/word/word.paragraph#word-word-paragraph-getprevious-member(1))|Gets the previous paragraph.|
 ||[getPreviousOrNullObject()](/javascript/api/word/word.paragraph#word-word-paragraph-getpreviousornullobject-member(1))|Gets the previous paragraph.|
-||[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.paragraph#word-word-paragraph-getrange-member(1))|Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.paragraph#word-word-paragraph-getrange-member(1))|Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.|
 ||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.paragraph#word-word-paragraph-gettextranges-member(1))|Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.|
-||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
+||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.paragraph#word-word-paragraph-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[isLastParagraph](/javascript/api/word/word.paragraph#word-word-paragraph-islastparagraph-member)|Indicates the paragraph is the last one inside its parent body.|
 ||[isListItem](/javascript/api/word/word.paragraph#word-word-paragraph-islistitem-member)|Checks whether the paragraph is a list item.|
 ||[list](/javascript/api/word/word.paragraph#word-word-paragraph-list-member)|Gets the List to which this paragraph belongs.|
@@ -129,10 +129,10 @@
 ||[getHyperlinkRanges()](/javascript/api/word/word.range#word-word-range-gethyperlinkranges-member(1))|Gets hyperlink child ranges within the range.|
 ||[getNextTextRange(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrange-member(1))|Gets the next text range by using punctuation marks and/or other ending marks.|
 ||[getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-getnexttextrangeornullobject-member(1))|Gets the next text range by using punctuation marks and/or other ending marks.|
-||[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.range#word-word-range-getrange-member(1))|Clones the range, or gets the starting or ending point of the range as a new range.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.range#word-word-range-getrange-member(1))|Clones the range, or gets the starting or ending point of the range as a new range.|
 ||[getTextRanges(endingMarks: string[], trimSpacing?: boolean)](/javascript/api/word/word.range#word-word-range-gettextranges-member(1))|Gets the text child ranges in the range by using punctuation marks and/or other ending marks.|
 ||[hyperlink](/javascript/api/word/word.range#word-word-range-hyperlink-member)|Gets the first hyperlink in the range, or sets a hyperlink on the range.|
-||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.range#word-word-range-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
+||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.range#word-word-range-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[intersectWith(range: Word.Range)](/javascript/api/word/word.range#word-word-range-intersectwith-member(1))|Returns a new range as the intersection of this range with another range.|
 ||[intersectWithOrNullObject(range: Word.Range)](/javascript/api/word/word.range#word-word-range-intersectwithornullobject-member(1))|Returns a new range as the intersection of this range with another range.|
 ||[isEmpty](/javascript/api/word/word.range#word-word-range-isempty-member)|Checks whether the range length is zero.|
@@ -153,8 +153,8 @@
 ||[getNextOrNullObject()](/javascript/api/word/word.section#word-word-section-getnextornullobject-member(1))|Gets the next section.|
 |[SectionCollection](/javascript/api/word/word.sectioncollection)|[getFirst()](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1))|Gets the first section in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1))|Gets the first section in this collection.|
-|[Table](/javascript/api/word/word.table)|[addColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addcolumns-member(1))|Adds columns to the start or end of the table, using the first or last existing column as a template.|
-||[addRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addrows-member(1))|Adds rows to the start or end of the table, using the first or last existing row as a template.|
+|[Table](/javascript/api/word/word.table)|[addColumns(insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", columnCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addcolumns-member(1))|Adds columns to the start or end of the table, using the first or last existing column as a template.|
+||[addRows(insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", rowCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addrows-member(1))|Adds rows to the start or end of the table, using the first or last existing row as a template.|
 ||[alignment](/javascript/api/word/word.table#word-word-table-alignment-member)|Gets or sets the alignment of the table against the page column.|
 ||[autoFitWindow()](/javascript/api/word/word.table#word-word-table-autofitwindow-member(1))|Autofits the table columns to the width of the window.|
 ||[clear()](/javascript/api/word/word.table#word-word-table-clear-member(1))|Clears the contents of the table.|
@@ -173,12 +173,12 @@
 ||[getParagraphAfterOrNullObject()](/javascript/api/word/word.table#word-word-table-getparagraphafterornullobject-member(1))|Gets the paragraph after the table.|
 ||[getParagraphBefore()](/javascript/api/word/word.table#word-word-table-getparagraphbefore-member(1))|Gets the paragraph before the table.|
 ||[getParagraphBeforeOrNullObject()](/javascript/api/word/word.table#word-word-table-getparagraphbeforeornullobject-member(1))|Gets the paragraph before the table.|
-||[getRange(rangeLocation?: Word.RangeLocation)](/javascript/api/word/word.table#word-word-table-getrange-member(1))|Gets the range that contains this table, or the range at the start or end of the table.|
+||[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| "Whole" \| "Start" \| "End" \| "After")](/javascript/api/word/word.table#word-word-table-getrange-member(1))|Gets the range that contains this table, or the range at the start or end of the table.|
 ||[headerRowCount](/javascript/api/word/word.table#word-word-table-headerrowcount-member)|Gets and sets the number of header rows.|
 ||[horizontalAlignment](/javascript/api/word/word.table#word-word-table-horizontalalignment-member)|Gets and sets the horizontal alignment of every cell in the table.|
 ||[insertContentControl()](/javascript/api/word/word.table#word-word-table-insertcontentcontrol-member(1))|Inserts a content control on the table.|
-||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation)](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
-||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][])](/javascript/api/word/word.table#word-word-table-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
+||[insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After")](/javascript/api/word/word.table#word-word-table-insertparagraph-member(1))|Inserts a paragraph at the specified location.|
+||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", values?: string[][])](/javascript/api/word/word.table#word-word-table-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[isUniform](/javascript/api/word/word.table#word-word-table-isuniform-member)|Indicates whether all of the table rows are uniform.|
 ||[nestingLevel](/javascript/api/word/word.table#word-word-table-nestinglevel-member)|Gets the nesting level of the table.|
 ||[parentBody](/javascript/api/word/word.table#word-word-table-parentbody-member)|Gets the parent body of the table.|
@@ -218,8 +218,8 @@
 ||[getNext()](/javascript/api/word/word.tablecell#word-word-tablecell-getnext-member(1))|Gets the next cell.|
 ||[getNextOrNullObject()](/javascript/api/word/word.tablecell#word-word-tablecell-getnextornullobject-member(1))|Gets the next cell.|
 ||[horizontalAlignment](/javascript/api/word/word.tablecell#word-word-tablecell-horizontalalignment-member)|Gets and sets the horizontal alignment of the cell.|
-||[insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][])](/javascript/api/word/word.tablecell#word-word-tablecell-insertcolumns-member(1))|Adds columns to the left or right of the cell, using the cell's column as a template.|
-||[insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][])](/javascript/api/word/word.tablecell#word-word-tablecell-insertrows-member(1))|Inserts rows above or below the cell, using the cell's row as a template.|
+||[insertColumns(insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", columnCount: number, values?: string[][])](/javascript/api/word/word.tablecell#word-word-tablecell-insertcolumns-member(1))|Adds columns to the left or right of the cell, using the cell's column as a template.|
+||[insertRows(insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", rowCount: number, values?: string[][])](/javascript/api/word/word.tablecell#word-word-tablecell-insertrows-member(1))|Inserts rows above or below the cell, using the cell's row as a template.|
 ||[parentRow](/javascript/api/word/word.tablecell#word-word-tablecell-parentrow-member)|Gets the parent row of the cell.|
 ||[parentTable](/javascript/api/word/word.tablecell#word-word-tablecell-parenttable-member)|Gets the parent table of the cell.|
 ||[rowIndex](/javascript/api/word/word.tablecell#word-word-tablecell-rowindex-member)|Gets the index of the cell's row in the table.|
@@ -244,7 +244,7 @@
 ||[getNext()](/javascript/api/word/word.tablerow#word-word-tablerow-getnext-member(1))|Gets the next row.|
 ||[getNextOrNullObject()](/javascript/api/word/word.tablerow#word-word-tablerow-getnextornullobject-member(1))|Gets the next row.|
 ||[horizontalAlignment](/javascript/api/word/word.tablerow#word-word-tablerow-horizontalalignment-member)|Gets and sets the horizontal alignment of every cell in the row.|
-||[insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][])](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))|Inserts rows using this row as a template.|
+||[insertRows(insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After", rowCount: number, values?: string[][])](/javascript/api/word/word.tablerow#word-word-tablerow-insertrows-member(1))|Inserts rows using this row as a template.|
 ||[isHeader](/javascript/api/word/word.tablerow#word-word-tablerow-isheader-member)|Checks whether the row is a header row.|
 ||[parentTable](/javascript/api/word/word.tablerow#word-word-tablerow-parenttable-member)|Gets parent table.|
 ||[preferredHeight](/javascript/api/word/word.tablerow#word-word-tablerow-preferredheight-member)|Gets and sets the preferred height of the row in points.|

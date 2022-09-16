@@ -542,7 +542,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#forMSGraphAccess:member",
-                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n */\n",
+                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n *\n * @remarks\n *\n * **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the `forMSGraphAccess` option before sideloading the add-in for testing. Otherwise, you'll receive {@link https://docs.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012 | error 13012}. For additional guidance, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -571,7 +571,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface",
-              "docComment": "/**\n * Object representing the dialog box.\n */\n",
+              "docComment": "/**\n * Object representing the dialog box.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -584,7 +584,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Dialog#close:member(1)",
-                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -620,7 +620,7 @@
             {
               "kind": "Function",
               "canonicalReference": "office-runtime!OfficeRuntime.displayWebDialog:function(1)",
-              "docComment": "/**\n * Function that enables a pop up web dialog box.\n *\n * [Api set: SharedRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
+              "docComment": "/**\n * Function that enables a pop up web dialog box.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -695,7 +695,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface",
-              "docComment": "/**\n * Provides display options and actions a dialog box may take.\n */\n",
+              "docComment": "/**\n * Provides display options and actions a dialog box may take.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -708,7 +708,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member",
-                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -734,7 +734,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member",
-                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -760,7 +760,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -786,7 +786,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -821,7 +821,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -865,7 +865,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member",
-                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: SharedRuntime 1.1]\n */\n",
+                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n *\n * @remarks\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

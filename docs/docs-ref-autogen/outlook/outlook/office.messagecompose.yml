@@ -575,7 +575,16 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
 
-      console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
+      const itemType = Office.context.mailbox.item.itemType;
+
+      switch (itemType) {
+          case Office.MailboxEnums.ItemType.Appointment:
+              console.log(`Current item is an ${itemType}.`);
+              break;
+          case Office.MailboxEnums.ItemType.Message:
+              console.log(`Current item is a ${itemType}. A message could be an email, meeting request, meeting response, or meeting cancellation.`);
+              break;
+      }
 
       ```
     isPreview: false
@@ -1835,10 +1844,10 @@ methods:
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachment IDs were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
+      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1872,44 +1881,30 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
-      const item = Office.context.mailbox.item;
+      // Gets the attachments of the current message or appointment in compose mode.
 
-      const options = {asyncContext: {currentItem: item}};
+      const options = { asyncContext: { currentItem: item } };
+
+      // The getAttachmentsAsync call can only be used in compose mode.
 
       item.getAttachmentsAsync(options, callback);
 
 
       function callback(result) {
-          if (result.value.length > 0) {
-              for (let i = 0 ; i < result.value.length ; i++) {
-                  result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-              }
-          }
-      }
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          console.log(result.error.message);
+          return;
+        }
 
+        if (result.value.length <= 0) {
+          console.log("Mail item has no attachments.");
+          return;
+        }
 
-      function handleAttachmentsCallback(result) {
-          // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-          switch (result.value.format) {
-              case Office.MailboxEnums.AttachmentContentFormat.Base64:
-                  // Handle file attachment.
-                  console.log(result.value.content);
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Eml:
-                  // Handle email item attachment.
-                  console.log("Attachment is a message.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-                  // Handle .icalender attachment.
-                  console.log("Attachment is a calendar item.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Url:
-                  // Handle cloud attachment.
-                  console.log("Attachment is a cloud attachment.");
-                  break;
-              default:
-                  // Handle attachment formats that are not supported.
-          }
+        for (let i = 0; i < result.value.length; i++) {
+          // Log the attachment type and its contents to the console.
+          result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+        }
       }
 
       ```
@@ -1948,10 +1943,10 @@ methods:
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
-      practice, you should use the identifier to retrieve an attachment in the same session that the attachment IDs were
-      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
-      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
-      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+      practice, you should get the attachment's identifier from a `getAttachmentsAsync` call, then in the same session,
+      use that identifier to retrieve the attachment. In Outlook on the web and mobile devices, the attachment
+      identifier is valid only within the same session. A session is over when the user closes the app, or if the user
+      starts composing an inline form then subsequently pops out the form to continue in a separate window.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2029,8 +2024,22 @@ methods:
           } else {
               if (result.value.length > 0) {
                   for (let i = 0; i < result.value.length; i++) {
-                      let attachment = result.value[i];
-                      console.log(`${attachment.id}. Name: ${attachment.name}, size: ${attachment.size}, isInline: ${attachment.isInline}`);
+                      const attachment = result.value[i];
+                      console.log("ID: " + attachment.id + "\n" +
+                          "Name: " + attachment.name + "\n" +
+                          "Size: " + attachment.size + "\n" +
+                          "isInline: " + attachment.isInline);
+                      switch (attachment.attachmentType) {
+                          case Office.MailboxEnums.AttachmentType.Cloud:
+                              console.log("Attachment type: Attachment is stored in a cloud location.");
+                              break;
+                          case Office.MailboxEnums.AttachmentType.File:
+                              console.log("Attachment type: Attachment is a file.");
+                              break;
+                          case Office.MailboxEnums.AttachmentType.Item:
+                              console.log("Attachment type: Attachment is an Exchange item.");
+                              break;
+                      }
                   }
               }
               else {
@@ -3461,7 +3470,7 @@ methods:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/set-selected-data.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/set-selected-data.yaml
 
       Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {

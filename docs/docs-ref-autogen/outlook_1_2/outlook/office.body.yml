@@ -54,12 +54,18 @@ methods:
 
       ```javascript
 
-      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Body type: " + asyncResult.value);
-          }
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/get-body-format.yaml
+
+      // Get the mail item's body format (plain text or HTML) and log it to the console.
+
+      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+
+        console.log("Body format: " + asyncResult.value);
       });
 
       ```
@@ -167,14 +173,37 @@ methods:
 
       ```javascript
 
-      // When including links in HTML markup, you can disable online link preview
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-to-item-body.yaml
 
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
+      /* This snippet adds text to the beginning of the message or appointment's body. 
+        
+        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+      */
 
-      Office.context.mailbox.item.body.prependAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
+      const text = $("#text-field").val();
+
+
+      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
+      prependAsync call.
+
+      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+
+        const bodyFormat = asyncResult.value;
+        Office.context.mailbox.item.body.prependAsync(text, { coercionType: bodyFormat }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+            return;
+          }
+
+          console.log(`"${text}" prepended to the body.`);
+        });
+      });
+
       ```
     isPreview: false
     isDeprecated: false
@@ -309,14 +338,37 @@ methods:
 
       ```javascript
 
-      // When including links in HTML markup, you can disable online link preview
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/replace-selected-text.yaml
 
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
+      /* This snippet replaces selected text in a message or appointment's body with specified text.
+        
+        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+      */
 
-      Office.context.mailbox.item.body.setSelectedDataAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
+      const text = $("#text-field").val();
+
+
+      // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
+      prependAsync call.
+
+      Office.context.mailbox.item.body.getTypeAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Action failed with error: " + asyncResult.error.message);
+          return;
+        }
+
+        const bodyFormat = asyncResult.value;
+        Office.context.mailbox.item.body.setSelectedDataAsync(text, { coercionType: bodyFormat }, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+            return;
+          }
+
+          console.log(`Replaced selected text with "${text}".`);
+        });
+      });
+
       ```
     isPreview: false
     isDeprecated: false

@@ -572,28 +572,6 @@ methods:
     summary: >-
       Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
       'RichTextTableRow' and 'RichTextTableCell' content controls.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
-      parameters:
-        - id: breakType
-          description: Required. Type of break.
-          type: '<xref uid="word!Word.BreakType:enum" />'
-        - id: insertLocation
-          description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: 'insertBreak(breakTypeString, insertLocation)'
-    uid: 'word!Word.ContentControl#insertBreak:member(2)'
-    package: word!
-    fullName: 'insertBreak(breakTypeString, insertLocation)'
-    summary: >-
-      Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
-      'RichTextTableRow' and 'RichTextTableCell' content controls.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -631,15 +609,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
-        "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+        insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): void;
       parameters:
-        - id: breakTypeString
+        - id: breakType
           description: Required. Type of break.
-          type: '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
+          type: >-
+            <xref uid="word!Word.BreakType:enum" /> | "Page" | "Next" | "SectionNext" | "SectionContinuous" |
+            "SectionEven" | "SectionOdd" | "Line"
         - id: insertLocation
           description: 'Required. The value must be ''Start'', ''End'', ''Before'', or ''After''.'
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: void
         description: ''
@@ -652,7 +636,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
+        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -661,31 +647,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertFileFromBase64:member(2)'
-    package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocationString)'
-    summary: Inserts a document into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" |
-        "Replace"): Word.Range;
-      parameters:
-        - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
-          type: string
-        - id: insertLocationString
-          description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
-            'RichTextTableRow' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -693,28 +657,6 @@ methods:
     uid: 'word!Word.ContentControl#insertHtml:member(1)'
     package: word!
     fullName: 'insertHtml(html, insertLocation)'
-    summary: Inserts HTML into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
-      parameters:
-        - id: html
-          description: Required. The HTML to be inserted in to the content control.
-          type: string
-        - id: insertLocation
-          description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
-            'RichTextTableRow' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertHtml(html, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertHtml:member(2)'
-    package: word!
-    fullName: 'insertHtml(html, insertLocationString)'
     summary: Inserts HTML into the content control at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -753,16 +695,20 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      content: >-
+        insertHtml(html: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: html
           description: Required. The HTML to be inserted in to the content control.
           type: string
-        - id: insertLocationString
+        - id: insertLocation
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -776,8 +722,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
-        Word.InlinePicture;
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace |
+        Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
           description: Required. The base64 encoded image to be inserted in the content control.
@@ -786,31 +732,9 @@ methods:
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.InlinePicture:class" />'
-        description: ''
-  - name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
-    package: word!
-    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
-    summary: Inserts an inline picture into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" |
-        "End" | "Replace"): Word.InlinePicture;
-      parameters:
-        - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted in the content control.
-          type: string
-        - id: insertLocationString
-          description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
-            'RichTextTableRow' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
@@ -818,28 +742,6 @@ methods:
     uid: 'word!Word.ContentControl#insertOoxml:member(1)'
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation)'
-    summary: Inserts OOXML into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
-      parameters:
-        - id: ooxml
-          description: Required. The OOXML to be inserted in to the content control.
-          type: string
-        - id: insertLocation
-          description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
-            'RichTextTableRow' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertOoxml(ooxml, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertOoxml:member(2)'
-    package: word!
-    fullName: 'insertOoxml(ooxml, insertLocationString)'
     summary: Inserts OOXML into the content control at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -879,16 +781,20 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      content: >-
+        insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted in to the content control.
           type: string
-        - id: insertLocationString
+        - id: insertLocation
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -896,28 +802,6 @@ methods:
     uid: 'word!Word.ContentControl#insertParagraph:member(1)'
     package: word!
     fullName: 'insertParagraph(paragraphText, insertLocation)'
-    summary: Inserts a paragraph at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
-      parameters:
-        - id: paragraphText
-          description: Required. The paragraph text to be inserted.
-          type: string
-        - id: insertLocation
-          description: >-
-            Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
-            'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Paragraph:class" />'
-        description: ''
-  - name: 'insertParagraph(paragraphText, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertParagraph:member(2)'
-    package: word!
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
     summary: Inserts a paragraph at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -955,17 +839,20 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
-        Word.Paragraph;
+        insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end |
+        Word.InsertLocation.before | Word.InsertLocation.after | "Start" | "End" | "Before" | "After"): Word.Paragraph;
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
           type: string
-        - id: insertLocationString
+        - id: insertLocation
           description: >-
             Required. The value must be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.start:member" /> | <xref uid="word!Word.InsertLocation.end:member" /> |
+            <xref uid="word!Word.InsertLocation.before:member" /> | <xref uid="word!Word.InsertLocation.after:member" />
+            | "Start" | "End" | "Before" | "After"
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
@@ -973,28 +860,6 @@ methods:
     uid: 'word!Word.ContentControl#insertText:member(1)'
     package: word!
     fullName: 'insertText(text, insertLocation)'
-    summary: Inserts text into the content control at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
-      parameters:
-        - id: text
-          description: Required. The text to be inserted in to the content control.
-          type: string
-        - id: insertLocation
-          description: >-
-            Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
-            'RichTextTableRow' content controls.
-          type: '<xref uid="word!Word.InsertLocation:enum" />'
-      return:
-        type: '<xref uid="word!Word.Range:class" />'
-        description: ''
-  - name: 'insertText(text, insertLocationString)'
-    uid: 'word!Word.ContentControl#insertText:member(2)'
-    package: word!
-    fullName: 'insertText(text, insertLocationString)'
     summary: Inserts text into the content control at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1034,16 +899,20 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      content: >-
+        insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
+        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: text
           description: Required. The text to be inserted in to the content control.
           type: string
-        - id: insertLocationString
+        - id: insertLocation
           description: >-
             Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
-          type: '"Before" | "After" | "Start" | "End" | "Replace"'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
