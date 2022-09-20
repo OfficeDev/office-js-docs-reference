@@ -9,41 +9,41 @@ remarks: >-
 
 
   -
-  [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
+  [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
   -->, (when using `Office.CoercionType.Html`<!-- -->)
 
 
   - [ImageCoercion
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (when using
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (when using
   `Office.CoercionType.Image`<!-- -->)
 
 
   -
-  [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+  [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
   (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
   -
-  [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+  [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
   (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
   -
-  [Selection](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+  [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
 
 
   -
-  [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+  [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
   (when using `Office.CoercionType.Table`<!-- -->)
 
 
   -
-  [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+  [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
   (when using `Office.CoercionType.Text`<!-- -->)
 
 
   - [ImageCoercion
-  1.2](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
+  1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
   (when using `Office.CoercionType.XmlSvg`<!-- -->)
 isPreview: false
 isDeprecated: false

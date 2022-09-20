@@ -17,7 +17,7 @@ properties:
     fullName: code
     summary: >-
       Gets the numeric code of the error. For a list of error codes, see [JavaScript API for Office error
-      codes](https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
+      codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
     remarks: ''
     isPreview: false
     isDeprecated: false

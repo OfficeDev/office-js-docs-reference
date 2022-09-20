@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.MailboxEnums.InfobarType
 summary: >-
   Type of notification allowed by
-  [Office.EventType.InfobarClicked](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+  [Office.EventType.InfobarClicked](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
 remarks: |-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

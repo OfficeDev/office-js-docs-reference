@@ -379,7 +379,7 @@ methods:
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
-      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
+      Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
 
 
@@ -416,7 +416,7 @@ methods:
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
-      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
+      Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
     isPreview: false
     isDeprecated: false
@@ -697,7 +697,7 @@ methods:
 
 
       For more details and examples, see [How to format tables in add-ins for
-      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+      Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
 
 
       #### Examples
@@ -864,7 +864,7 @@ methods:
 
 
       For more details and examples, see [How to format tables in add-ins for
-      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+      Excel](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -890,7 +890,7 @@ methods:
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
@@ -953,7 +953,7 @@ methods:
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
