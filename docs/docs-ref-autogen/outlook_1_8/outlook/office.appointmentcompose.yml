@@ -9,7 +9,7 @@ summary: >-
 
   **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
   this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
-  Model](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item)
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item)
   page.
 
 
@@ -35,12 +35,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -83,12 +83,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -202,12 +202,12 @@ properties:
       **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -295,12 +295,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -401,12 +401,12 @@ properties:
       instance is a message or an appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -446,12 +446,12 @@ properties:
       location of the appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -519,12 +519,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -641,12 +641,12 @@ properties:
       for more details.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -733,12 +733,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -789,12 +789,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -893,12 +893,12 @@ properties:
       for more details.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -988,7 +988,7 @@ properties:
       identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
       making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
       -->. For more details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
       The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
@@ -998,12 +998,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1053,12 +1053,12 @@ properties:
       **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1116,12 +1116,12 @@ properties:
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1190,12 +1190,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1306,12 +1306,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1376,12 +1376,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1399,10 +1399,10 @@ methods:
 
       **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must
       first get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
       method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image will not
       render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
       -->.
 
 
@@ -1513,12 +1513,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1536,10 +1536,10 @@ methods:
 
       **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must
       first get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
       method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image will not
       render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://docs.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
       -->.
     isPreview: false
     isDeprecated: false
@@ -1575,19 +1575,19 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1646,19 +1646,19 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
     isPreview: false
     isDeprecated: false
@@ -1709,12 +1709,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1822,12 +1822,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1883,12 +1883,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -1928,12 +1928,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2027,12 +2027,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2076,12 +2076,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2157,12 +2157,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
     isPreview: false
     isDeprecated: false
@@ -2177,6 +2177,114 @@ methods:
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.AttachmentDetailsCompose:interface" />[]&gt;) =&gt; void
+      return:
+        type: void
+        description: ''
+  - name: 'getInitializationContextAsync(options, callback)'
+    uid: 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(1)'
+    package: outlook!
+    fullName: 'getInitializationContextAsync(options, callback)'
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the initialization context (if present).
+
+      Office.context.mailbox.item.getInitializationContextAsync(
+          function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                  if (asyncResult.value != null && asyncResult.value.length > 0) {
+                      // The value is a string, parse to an object.
+                      const context = JSON.parse(asyncResult.value);
+                      // Do something with context.
+                  } else {
+                      // Empty context, treat as no context.
+                  }
+              } else {
+                  if (asyncResult.error.code == 9020) {
+                      // GenericResponseError returned when there is no context.
+                      // Treat as no context.
+                  } else {
+                      // Handle the error.
+                  }
+              }
+          }
+      );
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        getInitializationContextAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided in
+            the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult`
+            object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to
+            `GenericResponseError`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getInitializationContextAsync(callback)
+    uid: 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(2)'
+    package: outlook!
+    fullName: getInitializationContextAsync(callback)
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Organizer
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided in
+            the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult`
+            object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to
+            `GenericResponseError`<!-- -->.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2199,12 +2307,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2251,12 +2359,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2317,12 +2425,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2393,12 +2501,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2451,7 +2559,7 @@ methods:
 
 
       For more information around using this API, see the [delegate
-      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+      access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
@@ -2460,12 +2568,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2551,7 +2659,7 @@ methods:
 
 
       For more information around using this API, see the [delegate
-      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+      access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
@@ -2560,12 +2668,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2623,12 +2731,12 @@ methods:
       back to the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2739,12 +2847,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2835,12 +2943,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -2879,19 +2987,19 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
     isPreview: false
     isDeprecated: false
@@ -2926,19 +3034,19 @@ methods:
 
 
       For supported events, refer to the Item object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.8/office.context.mailbox.item#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.7](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
     isPreview: false
     isDeprecated: false
@@ -2989,19 +3097,19 @@ methods:
       **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync`
       method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft
       in Outlook for Mac by using Office JS
-      API](https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
+      API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -3080,19 +3188,19 @@ methods:
       **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync`
       method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting as a draft
       in Outlook for Mac by using Office JS
-      API](https://docs.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
+      API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -3157,12 +3265,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 
@@ -3250,12 +3358,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Appointment Organizer
 
 

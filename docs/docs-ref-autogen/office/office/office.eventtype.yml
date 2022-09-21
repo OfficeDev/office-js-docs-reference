@@ -30,7 +30,7 @@ fields:
 
       To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item`
       object. The event handler receives an argument of type
-      [Office.AppointmentTimeChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!--
+      [Office.AppointmentTimeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7)<!--
       -->.
 
 
@@ -45,7 +45,7 @@ fields:
 
       To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
-      [Office.AttachmentsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!--
+      [Office.AttachmentsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8)<!--
       -->.
 
 
@@ -91,7 +91,7 @@ fields:
 
       To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item`
       object. The event handler receives an argument of type
-      [Office.EnhancedLocationsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!--
+      [Office.EnhancedLocationsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8)<!--
       -->.
 
 
@@ -101,7 +101,7 @@ fields:
     package: office!
     summary: >-
       Occurs in Outlook when an action is selected on a notification message with a defined [custom
-      action](https://docs.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->.
+      action](https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions)<!-- -->.
       Currently, "Dismiss" is the only supported action that fires this event.
 
 
@@ -110,7 +110,7 @@ fields:
 
       To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object. The
       event handler receives an argument of type
-      [Office.InfobarClickedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!--
+      [Office.InfobarClickedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.infobarclickedeventargs?view=outlook-js-1.10)<!--
       -->.
 
 
@@ -148,7 +148,7 @@ fields:
 
       To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox`
       object. The event handler receives an argument of type
-      [Office.OfficeThemeChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview)<!--
+      [Office.OfficeThemeChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview)<!--
       -->.
 
 
@@ -163,7 +163,7 @@ fields:
 
       To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
-      [Office.RecipientsChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!--
+      [Office.RecipientsChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7)<!--
       -->.
 
 
@@ -178,7 +178,7 @@ fields:
 
       To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
       The event handler receives an argument of type
-      [Office.RecurrenceChangedEventArgs](https://docs.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!--
+      [Office.RecurrenceChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7)<!--
       -->.
 
 

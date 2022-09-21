@@ -15,12 +15,12 @@ summary: |-
   - `userProfile`<!-- -->: Provides information about the user in an Outlook add-in.
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `Restricted`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -58,17 +58,17 @@ properties:
       More information is under [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
       Starting with Mailbox requirement set 1.5, you can also use the
-      [Office.context.diagnostics](https://docs.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
+      [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
       property to get similar information.
     isPreview: false
     isDeprecated: false
@@ -94,18 +94,18 @@ properties:
       **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
       The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
       create a remote service to [get attachments from the selected
-      item](https://docs.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
+      item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
 
       #### Examples
@@ -158,7 +158,7 @@ properties:
 
       **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
       [Implement a pinnable task pane in
-      Outlook](https://docs.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
+      Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''
     isPreview: false
@@ -184,12 +184,12 @@ properties:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -281,22 +281,22 @@ properties:
       However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
       [SharedProperties](xref:outlook!Office.SharedProperties:interface) object (introduced in requirement set 1.8). For
       more information, see the [shared folders and shared
-      mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
-      The `restUrl` value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's
+      The `restUrl` value can be used to make [REST API](https://learn.microsoft.com/outlook/rest/) calls to the user's
       mailbox.
 
 
@@ -382,19 +382,19 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -465,19 +465,19 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false
@@ -522,12 +522,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -592,12 +592,12 @@ methods:
       zone specified in the EAC.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false
@@ -623,18 +623,18 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
       Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs
       (such as the [Outlook Mail
-      API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
+      API](https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
       the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The `convertToRestId` method converts an EWS-formatted
       ID into the proper format for REST.
 
@@ -714,12 +714,12 @@ methods:
       the correct values for the local date and time.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -791,12 +791,12 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -855,12 +855,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -938,12 +938,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false
@@ -991,12 +991,12 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -1056,12 +1056,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -1140,12 +1140,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false
@@ -1194,12 +1194,12 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
 
 
@@ -1275,12 +1275,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
 
 
@@ -1377,12 +1377,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
     isPreview: false
     isDeprecated: false
@@ -1421,12 +1421,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
 
 
@@ -1533,12 +1533,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
 
 
@@ -1666,12 +1666,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
     isPreview: false
     isDeprecated: false
@@ -1763,7 +1763,7 @@ methods:
 
 
       **Important**: For guidance on delegate or shared scenarios, see the [shared folders and shared
-      mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       *REST Tokens*
@@ -1806,11 +1806,11 @@ methods:
 
       You can pass both the token and either an attachment identifier or item identifier to an external system. That
       system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
-      [GetAttachment](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
+      [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
       operation or
-      [GetItem](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation
+      [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation) operation
       to return an attachment or item. For example, you can create a remote service to [get attachments from the
-      selected item](https://docs.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
+      selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
 
       **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
@@ -1819,12 +1819,12 @@ methods:
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -1907,10 +1907,10 @@ methods:
 
       You can pass both the token and either an attachment identifier or item identifier to an external system. That
       system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
-      [GetAttachment](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
-      or [GetItem](https://docs.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation)
+      [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
+      or [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation)
       operation to return an attachment or item. For example, you can create a remote service to [get attachments from
-      the selected item](https://docs.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
+      the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
       -->.
 
 
@@ -1922,19 +1922,19 @@ methods:
 
 
       **Important**: For guidance on delegate or shared scenarios, see the [shared folders and shared
-      mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
     remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -1998,17 +1998,17 @@ methods:
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
       The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
-      and user with an external system](https://docs.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
+      and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
 
 
       **Errors**:
@@ -2087,7 +2087,7 @@ methods:
       Your add-in must have the `ReadWriteMailbox` permission to use the `makeEwsRequestAsync` method. For information
       about using the `ReadWriteMailbox` permission and the EWS operations that you can call with the
       `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
-      mailbox](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
 
 
       The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds
@@ -2123,12 +2123,12 @@ methods:
       property.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteMailbox`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -2279,19 +2279,19 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false
@@ -2324,19 +2324,19 @@ methods:
 
 
       For supported events, refer to the Mailbox object model [events
-      section](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
+      section](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox#events)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
     isPreview: false
     isDeprecated: false

@@ -27,7 +27,7 @@ properties:
     fullName: type
     summary: >-
       Gets the type of the event. For details, refer to
-      [Office.EventType](https://docs.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

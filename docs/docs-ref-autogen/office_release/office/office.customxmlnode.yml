@@ -122,7 +122,7 @@ methods:
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +155,7 @@ methods:
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -212,7 +212,7 @@ methods:
     summary: Gets the node value.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +237,7 @@ methods:
     summary: Gets the node value.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -288,7 +288,7 @@ methods:
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -356,7 +356,7 @@ methods:
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -378,7 +378,7 @@ methods:
     summary: Gets the node's XML.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -403,7 +403,7 @@ methods:
     summary: Gets the node's XML.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -454,7 +454,7 @@ methods:
     summary: Sets the node value.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -483,7 +483,7 @@ methods:
     summary: Sets the node value.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -535,7 +535,7 @@ methods:
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -615,7 +615,7 @@ methods:
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -639,7 +639,7 @@ methods:
     summary: Sets the node XML.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -689,7 +689,7 @@ methods:
     summary: Sets the node XML.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
