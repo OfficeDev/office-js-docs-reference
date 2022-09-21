@@ -1081,6 +1081,7 @@ Excel.ChartErrorBarsType,stError,EnumField,Fine,false
 Excel.ChartFill,N/A,Class,Good,false
 Excel.ChartFill,context,Property,Good,false
 Excel.ChartFill,clear(),Method,Poor,true
+Excel.ChartFill,getSolidColor(),Method,Poor,false
 Excel.ChartFill,setSolidColor(color),Method,Poor,true
 Excel.ChartFont,N/A,Class,Good,true
 Excel.ChartFont,bold,Property,Good,false
@@ -1879,6 +1880,14 @@ Excel.ConditionalFormat,textComparisonOrNullObject,Property,Good,false
 Excel.ConditionalFormat,topBottom,Property,Good,false
 Excel.ConditionalFormat,topBottomOrNullObject,Property,Good,false
 Excel.ConditionalFormat,type,Property,Good,true
+Excel.ConditionalFormat,changeRuleToCellValue(properties),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToColorScale(),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToContainsText(properties),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToCustom(formula),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToDataBar(),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToIconSet(),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToPresetCriteria(properties),Method,Poor,false
+Excel.ConditionalFormat,changeRuleToTopBottom(properties),Method,Poor,false
 Excel.ConditionalFormat,delete(),Method,Poor,false
 Excel.ConditionalFormat,getRange(),Method,Poor,true
 Excel.ConditionalFormat,getRangeOrNullObject(),Method,Poor,false
@@ -1888,6 +1897,7 @@ Excel.ConditionalFormat,load(propertyNames),Method,Poor,false
 Excel.ConditionalFormat,load(propertyNamesAndPaths),Method,Poor,false
 Excel.ConditionalFormat,set(properties,Method,Poor,false
 Excel.ConditionalFormat,set(properties),Method,Poor,false
+Excel.ConditionalFormat,setRanges(ranges),Method,Poor,false
 Excel.ConditionalFormat,toJSON(),Method,Poor,false
 Excel.ConditionalFormatCollection,N/A,Class,Good,false
 Excel.ConditionalFormatCollection,context,Property,Good,false
@@ -2060,6 +2070,7 @@ Excel.ConditionalRangeFormat,context,Property,Good,false
 Excel.ConditionalRangeFormat,fill,Property,Good,false
 Excel.ConditionalRangeFormat,font,Property,Good,false
 Excel.ConditionalRangeFormat,numberFormat,Property,Good,false
+Excel.ConditionalRangeFormat,clearFormat(),Method,Poor,false
 Excel.ConditionalRangeFormat,load(options),Method,Poor,false
 Excel.ConditionalRangeFormat,load(propertyNames),Method,Poor,false
 Excel.ConditionalRangeFormat,load(propertyNamesAndPaths),Method,Poor,false

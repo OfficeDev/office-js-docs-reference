@@ -63,7 +63,6 @@ classes:
   - 'word!Word.SectionCollection:class'
   - 'word!Word.Setting:class'
   - 'word!Word.SettingCollection:class'
-  - 'word!Word.SettingCustom:class'
   - 'word!Word.Table:class'
   - 'word!Word.TableBorder:class'
   - 'word!Word.TableCell:class'
@@ -195,7 +194,6 @@ interfaces:
   - 'word!Word.Interfaces.TableRowLoadOptions:interface'
   - 'word!Word.Interfaces.TableRowUpdateData:interface'
   - 'word!Word.Interfaces.TableUpdateData:interface'
-  - 'word!Word.Setting:interface'
 functions:
   - name: 'Word.run(objects, batch)'
     uid: 'word!Word.run:function(1)'

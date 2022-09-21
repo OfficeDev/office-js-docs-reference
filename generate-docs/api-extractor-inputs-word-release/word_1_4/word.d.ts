@@ -4953,14 +4953,6 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.SettingData;
     }
-    export class SettingCustom {
-        private static DateJSONPrefix;
-        private static DateJSONSuffix;
-        static replaceStringDateWithDate(value: any): any;
-        static replaceDateWithStringDate(value: any): any;
-    }
-    export interface Setting extends OfficeExtension.ClientObject, SettingCustom {
-    }
     /**
      * Contains the collection of {@link Word.Setting} objects.
      *

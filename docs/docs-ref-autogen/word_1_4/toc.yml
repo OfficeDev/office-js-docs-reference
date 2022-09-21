@@ -131,14 +131,10 @@ items:
             uid: 'word!Word.Section:class'
           - name: SectionCollection
             uid: 'word!Word.SectionCollection:class'
-          - name: Setting (Class)
+          - name: Setting
             uid: 'word!Word.Setting:class'
-          - name: Setting (Interface)
-            uid: 'word!Word.Setting:interface'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
-          - name: SettingCustom
-            uid: 'word!Word.SettingCustom:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder

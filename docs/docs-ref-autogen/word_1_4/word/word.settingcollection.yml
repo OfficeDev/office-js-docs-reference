@@ -3,7 +3,7 @@ name: Word.SettingCollection
 uid: 'word!Word.SettingCollection:class'
 package: word!
 fullName: Word.SettingCollection
-summary: Contains the collection of  objects.
+summary: 'Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.'
 remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

@@ -29,7 +29,6 @@ classes:
   - 'word!Word.SearchOptions:class'
   - 'word!Word.Section:class'
   - 'word!Word.SectionCollection:class'
-  - 'word!Word.SettingCustom:class'
 interfaces:
   - 'word!Word.Interfaces.BodyData:interface'
   - 'word!Word.Interfaces.BodyLoadOptions:interface'
@@ -128,7 +127,6 @@ interfaces:
   - 'word!Word.Interfaces.TableRowData:interface'
   - 'word!Word.Interfaces.TableRowUpdateData:interface'
   - 'word!Word.Interfaces.TableUpdateData:interface'
-  - 'word!Word.Setting:interface'
 functions:
   - name: 'Word.run(objects, batch)'
     uid: 'word!Word.run:function(1)'

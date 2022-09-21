@@ -107,10 +107,6 @@ items:
             uid: 'word!Word.Section:class'
           - name: SectionCollection
             uid: 'word!Word.SectionCollection:class'
-          - name: Setting
-            uid: 'word!Word.Setting:interface'
-          - name: SettingCustom
-            uid: 'word!Word.SettingCustom:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder

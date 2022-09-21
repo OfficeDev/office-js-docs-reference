@@ -38,7 +38,7 @@ properties:
           console.log("There are no fields in this document.");
         } else {
           console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + field.result);
+          console.log("Result of first field: " + JSON.stringify(field.result));
         }
       });
 
@@ -222,7 +222,7 @@ properties:
           console.log("There are no fields in this document.");
         } else {
           console.log("Code of first field: " + field.code);
-          console.log("Result of first field: " + field.result);
+          console.log("Result of first field: " + JSON.stringify(field.result));
         }
       });
 

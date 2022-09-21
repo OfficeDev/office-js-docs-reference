@@ -3615,14 +3615,6 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     
-    export class SettingCustom {
-        private static DateJSONPrefix;
-        private static DateJSONSuffix;
-        static replaceStringDateWithDate(value: any): any;
-        static replaceDateWithStringDate(value: any): any;
-    }
-    export interface Setting extends OfficeExtension.ClientObject, SettingCustom {
-    }
     
     /**
      * Represents a table in a Word document.
