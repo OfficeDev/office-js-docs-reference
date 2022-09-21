@@ -5,7 +5,7 @@ package: office!
 fullName: OfficeExtension.TrackedObjects
 summary: >-
   Collection of tracked objects, contained within a request context. See
-  [context.trackedObjects](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
+  [context.trackedObjects](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
   for more information.
 remarks: ''
 isPreview: false

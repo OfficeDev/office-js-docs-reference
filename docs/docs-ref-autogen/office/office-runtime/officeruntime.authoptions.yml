@@ -121,9 +121,9 @@ properties:
     remarks: >-
       **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the
       `forMSGraphAccess` option before sideloading the add-in for testing. Otherwise, you'll receive [error
-      13012](https://docs.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012)<!-- -->.
+      13012](https://learn.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012)<!-- -->.
       For additional guidance, see [Details on SSO with an Outlook
-      add-in](https://docs.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in)<!--
+      add-in](https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in)<!--
       -->.
     isPreview: false
     isDeprecated: false

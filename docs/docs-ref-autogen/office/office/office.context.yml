@@ -63,7 +63,7 @@ properties:
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
@@ -113,7 +113,7 @@ properties:
     remarks: >-
       **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
       requirement sets, you can use the
-      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
 
 
@@ -161,7 +161,7 @@ properties:
 
 
       For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+      Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
       *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
@@ -243,7 +243,7 @@ properties:
       **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
-      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
     isPreview: false
     isDeprecated: false
@@ -270,12 +270,12 @@ properties:
     summary: Provides access to the Microsoft Outlook add-in object model.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
@@ -345,7 +345,7 @@ properties:
       **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
-      [Office.context.mailbox.diagnostics](https://docs.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
+      [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
     isPreview: false
     isDeprecated: false
@@ -377,12 +377,12 @@ properties:
       so it's available to that add-in when it is running from any host client application used to access that mailbox.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
 
 
