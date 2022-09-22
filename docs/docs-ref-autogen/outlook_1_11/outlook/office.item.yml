@@ -9,7 +9,7 @@ summary: >-
 
 
   To see the full member list, refer to the [Object
-  Model](https://docs.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item)
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.11/office.context.mailbox.item)
   page.
 
 
@@ -28,12 +28,12 @@ summary: >-
   - [MessageRead](xref:outlook!Office.MessageRead:interface)
 remarks: >-
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `Restricted`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Appointment Organizer, Appointment Attendee, Message Compose, Message Read
 isPreview: false
 isDeprecated: false

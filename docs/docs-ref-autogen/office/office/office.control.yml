@@ -8,11 +8,11 @@ summary: >-
 
 
   For code samples showing how to use a `Control` object and its properties, see [Enable and Disable Add-in
-  Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
-  tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+  Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
+  tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 remarks: >-
   **Requirement set**: [RibbonAPI
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
