@@ -1139,7 +1139,7 @@ methods:
       });
 
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+      // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
     isPreview: false
     isDeprecated: false

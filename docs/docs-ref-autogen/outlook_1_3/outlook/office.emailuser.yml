@@ -30,7 +30,7 @@ remarks: >-
   // The following example is an excerpt from a larger sample.
 
   // For the full sample, visit
-  https://docs.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
+  https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
 
 
   // Gets instances of the task suggestion entity on the item.
