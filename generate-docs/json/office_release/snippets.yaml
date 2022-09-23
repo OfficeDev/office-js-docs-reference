@@ -1538,7 +1538,7 @@
     // for Project 2013 by using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example adds a handler for the TaskSelectionChanged
     event.
@@ -1651,7 +1651,7 @@
     // using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the ViewSelectionChanged event.
@@ -1750,7 +1750,7 @@
     editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 'Office.Document#bindings:member':
   - |-
     function displayAllBindings() {

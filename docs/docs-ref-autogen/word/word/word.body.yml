@@ -894,7 +894,7 @@ methods:
       });
 
       // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+      // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 
       // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
