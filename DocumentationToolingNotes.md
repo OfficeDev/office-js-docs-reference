@@ -13,21 +13,21 @@ The type definition files on [Definitely Typed](https://github.com/DefinitelyTyp
 There are four relevant d.ts files that provide source content for different subsections of the docs.
 
 - [office-js/index.d.ts](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts) (The Release definitions.)
-  - [Excel (Release)](https://docs.microsoft.com/javascript/api/excel_release)
-  - [OneNote](https://docs.microsoft.com/javascript/api/onenote)
-  - [PowerPoint](https://docs.microsoft.com/javascript/api/powerpoint)
-  - [Visio](https://docs.microsoft.com/javascript/api/visio)
-  - [Word (Release)](https://docs.microsoft.com/javascript/api/word_release)
-  - [OfficeExtensions subsection of the Common API](https://docs.microsoft.com/javascript/api/office)
+  - [Excel (Release)](https://learn.microsoft.com/javascript/api/excel_release)
+  - [OneNote](https://learn.microsoft.com/javascript/api/onenote)
+  - [PowerPoint](https://learn.microsoft.com/javascript/api/powerpoint)
+  - [Visio](https://learn.microsoft.com/javascript/api/visio)
+  - [Word (Release)](https://learn.microsoft.com/javascript/api/word_release)
+  - [OfficeExtensions subsection of the Common API](https://learn.microsoft.com/javascript/api/office)
 - [office-js-preview/index.d.ts](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts) (The Preview definitions.)
-  - [Excel (Preview)](https://docs.microsoft.com/javascript/api/excel)
-  - [Outlook (Preview)](https://docs.microsoft.com/javascript/api/outlook)
-  - [Word (Preview)](https://docs.microsoft.com/javascript/api/word)
-  - [Common API](https://docs.microsoft.com/javascript/api/office)
+  - [Excel (Preview)](https://learn.microsoft.com/javascript/api/excel)
+  - [Outlook (Preview)](https://learn.microsoft.com/javascript/api/outlook)
+  - [Word (Preview)](https://learn.microsoft.com/javascript/api/word)
+  - [Common API](https://learn.microsoft.com/javascript/api/office)
 - [custom-functions-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts) (The Excel Custom Functions runtime definitions.)
-  - [Custom Functions](https://docs.microsoft.com/javascript/api/custom-functions-runtime)
+  - [Custom Functions](https://learn.microsoft.com/javascript/api/custom-functions-runtime)
 - [office-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts) (The office runtime definitions for the Custom Functions platform.)
-  - [Office Runtime](https://docs.microsoft.com/javascript/api/office-runtime)
+  - [Office Runtime](https://learn.microsoft.com/javascript/api/office-runtime)
 
 Older versions of the APIs have their own d.ts files. These are preserved when a new API requirement set is released. They can also be generated using the [Version Remover tool](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/tools/VersionRemover.ts). These old d.ts files are maintained so that in the event APIs are patched or altered, the original behavior is still documented. This is useful if you have to target an older version of the API.
 
@@ -35,7 +35,7 @@ Older versions of the APIs have their own d.ts files. These are preserved when a
 
 Any documentation changes for the Office JavaScript API are done by editing the four d.ts files mentioned above. However, you can test a change before submitting a PR to DefinitelyTyped (if you need to, for example, test how your formatting will translate into markdown) by editing the corresponding file in [generate-docs/script-inputs](https://github.com/OfficeDev/office-js-docs-reference/tree/master/generate-docs/script-inputs) and running [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd). When prompted, select the "Local files" option.
 
-Pushing changes to a remote branch of this repo causes the docs.microsoft.com platform to build a test branch. This branch is rendered on review.docs.microsoft.com, which is only accessible by internal Microsoft personnel. Anyone reviewing your PR will check the review site for accuracy.
+Pushing changes to a remote branch of this repo causes the learn.microsoft.com platform to build a test branch. This branch is rendered on review.learn.microsoft.com, which is only accessible by internal Microsoft personnel. Anyone reviewing your PR will check the review site for accuracy.
 
 ### Code snippets
 
@@ -66,7 +66,7 @@ API Extractor converts the d.ts files into JSON data. This tokenizes all the typ
 
 The midprocessor retrieves the code snippets and pairs them with the proper hosts, and cleans up the crosslinking between Outlook and Common API objects.
 
-API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to docs.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
+API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to learn.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
 
 The postprocessor cleans up the table of contents and moves the .yml files into the [publishing folder](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/docs-ref-autogen).
 

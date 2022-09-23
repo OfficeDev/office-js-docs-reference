@@ -13540,7 +13540,7 @@
     // for Project 2013 by using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example adds a handler for the TaskSelectionChanged
     event.
@@ -13653,7 +13653,7 @@
     // using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the ViewSelectionChanged event.
@@ -13752,7 +13752,7 @@
     editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 'Office.Document#bindings:member':
   - |-
     function displayAllBindings() {
@@ -15616,7 +15616,7 @@
     // The following example is an excerpt from a larger sample.
 
     // For the full sample, visit
-    https://docs.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
+    https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
 
 
     // Gets instances of the task suggestion entity on the item.
@@ -21095,7 +21095,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Notebook#load:member(2)':
   - |-
@@ -21113,7 +21113,7 @@
         console.log("Base url: " + notebook.baseUrl);
         // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
         // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.NotebookCollection#getByName:member(1)':
   - |-
@@ -21283,7 +21283,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Page#insertPageAsSibling:member(2)':
   - |-
@@ -21723,7 +21723,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
         // OneNote REST API according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Section#insertSectionAsSibling:member(2)':
   - |-
@@ -23185,7 +23185,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
@@ -23850,7 +23850,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 'Word.ContentControl#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -25767,7 +25767,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 'Word.Range#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.
