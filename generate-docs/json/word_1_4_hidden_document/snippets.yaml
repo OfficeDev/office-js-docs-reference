@@ -244,7 +244,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
@@ -909,7 +909,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 'Word.ContentControl#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -2826,7 +2826,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 'Word.Range#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.
