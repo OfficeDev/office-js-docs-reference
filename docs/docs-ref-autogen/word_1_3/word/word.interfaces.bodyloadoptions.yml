@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: parentBody
     summary: >-
-      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error
-      if there isn't a parent body.
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an
+      `ItemNotFound` error if there isn't a parent body.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -54,8 +54,11 @@ properties:
     package: word!
     fullName: parentBodyOrNullObject
     summary: >-
-      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
-      object if there isn't a parent body.
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a
+      parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
+      further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -67,7 +70,9 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -79,7 +84,12 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member'
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the body. If there isn't a parent content control, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -91,7 +101,7 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentSection:member'
     package: word!
     fullName: parentSection
-    summary: Gets the parent section of the body. Throws an error if there isn't a parent section.
+    summary: Gets the parent section of the body. Throws an `ItemNotFound` error if there isn't a parent section.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -103,7 +113,11 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member'
     package: word!
     fullName: parentSectionOrNullObject
-    summary: Gets the parent section of the body. Returns a null object if there isn't a parent section.
+    summary: >-
+      Gets the parent section of the body. If there isn't a parent section, then this method will return an object with
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -143,7 +157,7 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the body. Use the insertText method to insert text. Read-only.
+    summary: Gets the text of the body. Use the insertText method to insert text.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -155,7 +169,7 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: 'Gets the type of the body. The type can be ''MainDoc'', ''Section'', ''Header'', ''Footer'', or ''TableCell''. Read-only.'
+    summary: 'Gets the type of the body. The type can be ''MainDoc'', ''Section'', ''Header'', ''Footer'', or ''TableCell''.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

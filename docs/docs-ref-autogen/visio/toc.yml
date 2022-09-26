@@ -625,6 +625,9 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApi 1.4 requirement set
+            href: ../../requirement-sets/word/word-api-1-4-requirement-set.md
+            displayName: Word
           - name: WordApi 1.3 requirement set
             href: ../../requirement-sets/word/word-api-1-3-requirement-set.md
             displayName: Word

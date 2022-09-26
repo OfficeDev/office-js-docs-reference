@@ -39,7 +39,9 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the body. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -65,7 +67,7 @@ properties:
     uid: 'word!Word.Interfaces.BodyLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the body. Use the insertText method to insert text. Read-only.
+    summary: Gets the text of the body. Use the insertText method to insert text.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

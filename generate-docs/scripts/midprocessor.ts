@@ -7,7 +7,7 @@ import * as colors from 'colors';
 const CURRENT_EXCEL_RELEASE = 15;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 12;
-const CURRENT_WORD_RELEASE = 3;
+const CURRENT_WORD_RELEASE = 4;
 const CURRENT_POWERPOINT_RELEASE = 4;
 
 tryCatch(async () => {
@@ -48,8 +48,8 @@ tryCatch(async () => {
 
     console.log("\nCreating snippets file...");
 
-    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml");
-    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/snippet-extractor-output/snippets.yaml", "text"));
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/bdcdf633d51dc727fef0320d1fc3da5eceaf5b1c/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/bdcdf633d51dc727fef0320d1fc3da5eceaf5b1c/snippet-extractor-output/snippets.yaml", "text"));
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
@@ -187,6 +187,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_1_4_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_3_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
         writeSnippetFileAndClearYamlIfNew(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets), "word");
@@ -247,7 +248,12 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
-        // Handle WordApiHiddenDocument corner case.
+        // Handle WordApiHiddenDocument 1.4 case.
+        console.log(`\nStarting ${host}_1_4_hidden_document...`);
+        json = fsx.readFileSync(`${jsonPath}_1_4_hidden_document/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_1_4_hidden_document/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_1_4_hidden_document`);
+        // Handle WordApiHiddenDocument 1.3 case.
         console.log(`\nStarting ${host}_1_3_hidden_document...`);
         json = fsx.readFileSync(`${jsonPath}_1_3_hidden_document/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_1_3_hidden_document/${fileName}`, cleanUpRichApiJson(json));

@@ -13,8 +13,7 @@ The `WordApiHiddenDocument 1.3` requirement set is a special requirement set tha
 When APIs in the `WordApiHiddenDocument` requirement set are supported across all platforms, they will be added to a subsequent released requirement set (`WordApi 1.[FUTURE]`) and no longer tagged as `WordApiHiddenDocument`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
->
-> - `WordApiHiddenDocument 1.3` is a superset of the WordApi 1.3 requirement set and is a desktop-only requirement set.
+> `WordApiHiddenDocument 1.3` is a superset of the WordApi 1.3 requirement set and is a desktop-only requirement set.
 
 ## Recommended usage
 

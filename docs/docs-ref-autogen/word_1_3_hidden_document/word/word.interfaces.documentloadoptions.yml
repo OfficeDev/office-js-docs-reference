@@ -57,7 +57,7 @@ properties:
     fullName: saved
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
-      changed since it was saved. Read-only.
+      changed since it was saved.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

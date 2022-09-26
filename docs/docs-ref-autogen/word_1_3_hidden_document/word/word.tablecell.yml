@@ -33,7 +33,7 @@ properties:
     uid: 'word!Word.TableCell#body:member'
     package: word!
     fullName: body
-    summary: Gets the body object of the cell. Read-only.
+    summary: Gets the body object of the cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -45,7 +45,7 @@ properties:
     uid: 'word!Word.TableCell#cellIndex:member'
     package: word!
     fullName: cellIndex
-    summary: Gets the index of the cell in its row. Read-only.
+    summary: Gets the index of the cell in its row.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -95,7 +95,7 @@ properties:
     uid: 'word!Word.TableCell#parentRow:member'
     package: word!
     fullName: parentRow
-    summary: Gets the parent row of the cell. Read-only.
+    summary: Gets the parent row of the cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -107,7 +107,7 @@ properties:
     uid: 'word!Word.TableCell#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the parent table of the cell. Read-only.
+    summary: Gets the parent table of the cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -119,7 +119,7 @@ properties:
     uid: 'word!Word.TableCell#rowIndex:member'
     package: word!
     fullName: rowIndex
-    summary: Gets the index of the cell's row in the table. Read-only.
+    summary: Gets the index of the cell's row in the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -167,7 +167,7 @@ properties:
     uid: 'word!Word.TableCell#width:member'
     package: word!
     fullName: width
-    summary: Gets the width of the cell in points. Read-only.
+    summary: Gets the width of the cell in points.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -278,7 +278,7 @@ methods:
     uid: 'word!Word.TableCell#getNext:member(1)'
     package: word!
     fullName: getNext()
-    summary: Gets the next cell. Throws an error if this cell is the last one.
+    summary: Gets the next cell. Throws an `ItemNotFound` error if this cell is the last one.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -291,7 +291,11 @@ methods:
     uid: 'word!Word.TableCell#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next cell. Returns a null object if this cell is the last one.
+    summary: >-
+      Gets the next cell. If this cell is the last one, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

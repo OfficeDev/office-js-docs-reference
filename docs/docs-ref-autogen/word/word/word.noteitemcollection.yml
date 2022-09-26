@@ -40,7 +40,7 @@ methods:
     uid: 'word!Word.NoteItemCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: Gets the first note item in this collection. Throws an error if this collection is empty.
+    summary: Gets the first note item in this collection. Throws an `ItemNotFound` error if this collection is empty.
     remarks: >-
       \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -73,7 +73,11 @@ methods:
     uid: 'word!Word.NoteItemCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: Gets the first note item in this collection. Returns a null object if this collection is empty.
+    summary: >-
+      Gets the first note item in this collection. If this collection is empty, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

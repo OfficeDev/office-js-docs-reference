@@ -92,7 +92,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlLoadOptions#id:member'
     package: word!
     fullName: id
-    summary: Gets an integer that represents the content control identifier. Read-only.
+    summary: Gets an integer that represents the content control identifier.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -105,8 +105,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the content control. Throws an error if there isn't a parent content
-      control.
+      Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -172,7 +172,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the content control. Read-only.
+    summary: Gets the text of the content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -196,7 +196,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlLoadOptions#type:member'
     package: word!
     fullName: type
-    summary: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    summary: Gets the content control type. Only rich text content controls are supported currently.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

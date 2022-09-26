@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 09/14/2022
+ms.date: 09/26/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -285,5 +285,5 @@ The following methods in the Office JavaScript API aren't part of a requirement 
 ## See also
 
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
-- [Specify Minimum Office application support and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
+- [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
 - [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
