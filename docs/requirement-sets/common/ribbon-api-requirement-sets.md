@@ -27,7 +27,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 ## Support for version 1.1 in Office on Windows (subscription)
 
-The 1.1 version of the RibbonApi requirement set is supported in the Consumer Channel from Version 2006 (Build 13001.20498). That requirement set is also supported in the Semi-Annual Channel and Monthly Enterprise Channel builds available from July 14, 2020. The **minimum** supported builds for each channel are as follows:  
+The 1.1 version of the RibbonApi requirement set is supported in the Consumer Channel from Version 2006 (Build 13001.20498). That requirement set is also supported in the Semi-Annual Channel and Monthly Enterprise Channel builds available since July 14, 2020. The **minimum** supported builds for each channel are as follows:  
 
 | Channel | Minimum version | Minimum build |
 |:-----|:-----|:-----|
