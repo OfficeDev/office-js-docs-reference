@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 10/10/2022
+ms.date: 09/26/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---

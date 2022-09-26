@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement set 1.4
 description: Details about the WordApi 1.4 requirement set.
-ms.date: 10/10/2022
+ms.date: 09/26/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---
