@@ -126,7 +126,7 @@ properties:
     uid: 'word!Word.ContentControl#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the content control. Read-only.
+    summary: Gets the collection of content control objects in the content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -152,7 +152,7 @@ properties:
     uid: 'word!Word.ContentControl#endnotes:member'
     package: word!
     fullName: endnotes
-    summary: Gets the collection of endnotes in the contentcontrol. Read-only.
+    summary: Gets the collection of endnotes in the content control.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -164,11 +164,9 @@ properties:
     uid: 'word!Word.ContentControl#fields:member'
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the contentcontrol. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    summary: Gets the collection of field objects in the content control.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fields: Word.FieldCollection;'
@@ -178,9 +176,7 @@ properties:
     uid: 'word!Word.ContentControl#font:member'
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-      Read-only.
+    summary: 'Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -192,7 +188,7 @@ properties:
     uid: 'word!Word.ContentControl#footnotes:member'
     package: word!
     fullName: footnotes
-    summary: Gets the collection of footnotes in the contentcontrol. Read-only.
+    summary: Gets the collection of footnotes in the content control.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -204,7 +200,7 @@ properties:
     uid: 'word!Word.ContentControl#id:member'
     package: word!
     fullName: id
-    summary: Gets an integer that represents the content control identifier. Read-only.
+    summary: Gets an integer that represents the content control identifier.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -217,8 +213,8 @@ properties:
     package: word!
     fullName: inlinePictures
     summary: >-
-      Gets the collection of inlinePicture objects in the content control. The collection does not include floating
-      images. Read-only.
+      Gets the collection of InlinePicture objects in the content control. The collection does not include floating
+      images.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -230,7 +226,7 @@ properties:
     uid: 'word!Word.ContentControl#lists:member'
     package: word!
     fullName: lists
-    summary: Gets the collection of list objects in the content control. Read-only.
+    summary: Gets the collection of list objects in the content control.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -243,9 +239,9 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the content control. Read-only. **Important**: For requirement sets
-      1.1 and 1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement
-      set 1.3, paragraphs in such tables are also returned.
+      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2,
+      paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
+      paragraphs in such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -257,7 +253,7 @@ properties:
     uid: 'word!Word.ContentControl#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: Gets the parent body of the content control. Read-only.
+    summary: Gets the parent body of the content control.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -270,8 +266,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the content control. Throws an error if there isn't a parent content
-      control. Read-only.
+      Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -284,8 +280,11 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      Gets the content control that contains the content control. Returns a null object if there isn't a parent content
-      control. Read-only.
+      Gets the content control that contains the content control. If there isn't a parent content control, then this
+      method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -297,7 +296,9 @@ properties:
     uid: 'word!Word.ContentControl#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.
+    summary: >-
+      Gets the table that contains the content control. Throws an `ItemNotFound` error if it is not contained in a
+      table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -310,8 +311,8 @@ properties:
     package: word!
     fullName: parentTableCell
     summary: >-
-      Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.
-      Read-only.
+      Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it is not contained in a
+      table cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -324,8 +325,11 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
-      cell. Read-only.
+      Gets the table cell that contains the content control. If it is not contained in a table cell, then this method
+      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -338,8 +342,11 @@ properties:
     package: word!
     fullName: parentTableOrNullObject
     summary: >-
-      Gets the table that contains the content control. Returns a null object if it is not contained in a table.
-      Read-only.
+      Gets the table that contains the content control. If it is not contained in a table, then this method will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -472,7 +479,7 @@ properties:
     fullName: subtype
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
-      'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
+      'RichTextTableRow' and 'RichTextTable' for rich text content controls.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -492,7 +499,7 @@ properties:
     uid: 'word!Word.ContentControl#tables:member'
     package: word!
     fullName: tables
-    summary: Gets the collection of table objects in the content control. Read-only.
+    summary: Gets the collection of table objects in the content control.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -550,7 +557,7 @@ properties:
     uid: 'word!Word.ContentControl#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the content control. Read-only.
+    summary: Gets the text of the content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -574,7 +581,7 @@ properties:
     uid: 'word!Word.ContentControl#type:member'
     package: word!
     fullName: type
-    summary: Gets the content control type. Only rich text content controls are supported currently. Read-only.
+    summary: Gets the content control type. Only rich text content controls are supported currently.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -718,7 +725,7 @@ methods:
     package: word!
     fullName: getComments()
     summary: Gets comments associated with the content control.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -843,7 +850,7 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersion)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -860,7 +867,7 @@ methods:
     package: word!
     fullName: getReviewedText(changeTrackingVersionString)
     summary: Gets reviewed text based on ChangeTrackingVersion selection.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -957,10 +964,10 @@ methods:
       return:
         type: void
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation)'
+  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     uid: 'word!Word.ContentControl#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     summary: Inserts a document into the content control at the specified location.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -968,7 +975,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
-        | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        | Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -980,6 +987,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
+            the base64 content is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1068,10 +1080,10 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation)'
+  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     uid: 'word!Word.ContentControl#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML into the content control at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -1113,7 +1125,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start |
-        Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        Word.InsertLocation.end | "Replace" | "Start" | "End", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted in to the content control.
@@ -1125,6 +1137,11 @@ methods:
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
+            OOXML is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''

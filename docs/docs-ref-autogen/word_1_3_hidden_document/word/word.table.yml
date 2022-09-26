@@ -39,7 +39,7 @@ properties:
     uid: 'word!Word.Table#font:member'
     package: word!
     fullName: font
-    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.'
+    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.Table#isUniform:member'
     package: word!
     fullName: isUniform
-    summary: Indicates whether all of the table rows are uniform. Read-only.
+    summary: Indicates whether all of the table rows are uniform.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +89,7 @@ properties:
     uid: 'word!Word.Table#nestingLevel:member'
     package: word!
     fullName: nestingLevel
-    summary: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    summary: Gets the nesting level of the table. Top-level tables have level 1.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     uid: 'word!Word.Table#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: Gets the parent body of the table. Read-only.
+    summary: Gets the parent body of the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -114,8 +114,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the table. Throws an error if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -128,8 +128,11 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the table. If there isn't a parent content control, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -141,7 +144,7 @@ properties:
     uid: 'word!Word.Table#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.
+    summary: Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -153,7 +156,9 @@ properties:
     uid: 'word!Word.Table#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.
+    summary: >-
+      Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table
+      cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -166,8 +171,11 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
-      Read-only.
+      Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -179,7 +187,11 @@ properties:
     uid: 'word!Word.Table#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
-    summary: Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
+    summary: >-
+      Gets the table that contains this table. If it is not contained in a table, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -191,7 +203,7 @@ properties:
     uid: 'word!Word.Table#rowCount:member'
     package: word!
     fullName: rowCount
-    summary: Gets the number of rows in the table. Read-only.
+    summary: Gets the number of rows in the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -203,7 +215,7 @@ properties:
     uid: 'word!Word.Table#rows:member'
     package: word!
     fullName: rows
-    summary: Gets all of the table rows. Read-only.
+    summary: Gets all of the table rows.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -378,7 +390,7 @@ properties:
     uid: 'word!Word.Table#tables:member'
     package: word!
     fullName: tables
-    summary: Gets the child tables nested one level deeper. Read-only.
+    summary: Gets the child tables nested one level deeper.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -613,7 +625,9 @@ methods:
     uid: 'word!Word.Table#getCell:member(1)'
     package: word!
     fullName: 'getCell(rowIndex, cellIndex)'
-    summary: Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.
+    summary: >-
+      Gets the table cell at a specified row and column. Throws an `ItemNotFound` error if the specified table cell does
+      not exist.
     remarks: >-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -654,8 +668,11 @@ methods:
     package: word!
     fullName: 'getCellOrNullObject(rowIndex, cellIndex)'
     summary: >-
-      Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not
-      exist.
+      Gets the table cell at a specified row and column. If the specified table cell does not exist, then this method
+      will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -711,7 +728,7 @@ methods:
     uid: 'word!Word.Table#getNext:member(1)'
     package: word!
     fullName: getNext()
-    summary: Gets the next table. Throws an error if this table is the last one.
+    summary: Gets the next table. Throws an `ItemNotFound` error if this table is the last one.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -724,7 +741,11 @@ methods:
     uid: 'word!Word.Table#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next table. Returns a null object if this table is the last one.
+    summary: >-
+      Gets the next table. If this table is the last one, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -737,7 +758,7 @@ methods:
     uid: 'word!Word.Table#getParagraphAfter:member(1)'
     package: word!
     fullName: getParagraphAfter()
-    summary: Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.
+    summary: Gets the paragraph after the table. Throws an `ItemNotFound` error if there isn't a paragraph after the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -750,7 +771,12 @@ methods:
     uid: 'word!Word.Table#getParagraphAfterOrNullObject:member(1)'
     package: word!
     fullName: getParagraphAfterOrNullObject()
-    summary: Gets the paragraph after the table. Returns a null object if there isn't a paragraph after the table.
+    summary: >-
+      Gets the paragraph after the table. If there isn't a paragraph after the table, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -763,7 +789,7 @@ methods:
     uid: 'word!Word.Table#getParagraphBefore:member(1)'
     package: word!
     fullName: getParagraphBefore()
-    summary: Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.
+    summary: Gets the paragraph before the table. Throws an `ItemNotFound` error if there isn't a paragraph before the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -776,7 +802,12 @@ methods:
     uid: 'word!Word.Table#getParagraphBeforeOrNullObject:member(1)'
     package: word!
     fullName: getParagraphBeforeOrNullObject()
-    summary: Gets the paragraph before the table. Returns a null object if there isn't a paragraph before the table.
+    summary: >-
+      Gets the paragraph before the table. If there isn't a paragraph before the table, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

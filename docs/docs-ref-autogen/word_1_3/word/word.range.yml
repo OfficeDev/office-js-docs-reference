@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Range#contentControls:member'
     package: word!
     fullName: contentControls
-    summary: Gets the collection of content control objects in the range. Read-only.
+    summary: Gets the collection of content control objects in the range.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -39,9 +39,7 @@ properties:
     uid: 'word!Word.Range#font:member'
     package: word!
     fullName: font
-    summary: >-
-      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-      Read-only.
+    summary: 'Gets the text format of the range. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -68,7 +66,7 @@ properties:
     uid: 'word!Word.Range#inlinePictures:member'
     package: word!
     fullName: inlinePictures
-    summary: Gets the collection of inline picture objects in the range. Read-only.
+    summary: Gets the collection of inline picture objects in the range.
     remarks: '\[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -80,7 +78,7 @@ properties:
     uid: 'word!Word.Range#isEmpty:member'
     package: word!
     fullName: isEmpty
-    summary: Checks whether the range length is zero. Read-only.
+    summary: Checks whether the range length is zero.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -92,7 +90,7 @@ properties:
     uid: 'word!Word.Range#lists:member'
     package: word!
     fullName: lists
-    summary: Gets the collection of list objects in the range. Read-only.
+    summary: Gets the collection of list objects in the range.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -105,9 +103,9 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the range. Read-only. **Important**: For requirement sets 1.1 and 1.2,
-      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
-      such tables are also returned.
+      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs
+      in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables
+      are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -119,7 +117,7 @@ properties:
     uid: 'word!Word.Range#parentBody:member'
     package: word!
     fullName: parentBody
-    summary: Gets the parent body of the range. Read-only.
+    summary: Gets the parent body of the range.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -132,8 +130,8 @@ properties:
     package: word!
     fullName: parentContentControl
     summary: >-
-      Gets the content control that contains the range. Throws an error if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the range. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -146,8 +144,11 @@ properties:
     package: word!
     fullName: parentContentControlOrNullObject
     summary: >-
-      Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the range. If there isn't a parent content control, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -159,7 +160,7 @@ properties:
     uid: 'word!Word.Range#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.
+    summary: Gets the table that contains the range. Throws an `ItemNotFound` error if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -171,7 +172,9 @@ properties:
     uid: 'word!Word.Range#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.
+    summary: >-
+      Gets the table cell that contains the range. Throws an `ItemNotFound` error if it is not contained in a table
+      cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -184,8 +187,11 @@ properties:
     package: word!
     fullName: parentTableCellOrNullObject
     summary: >-
-      Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
-      Read-only.
+      Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -197,7 +203,11 @@ properties:
     uid: 'word!Word.Range#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
-    summary: Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
+    summary: >-
+      Gets the table that contains the range. If it is not contained in a table, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -300,7 +310,7 @@ properties:
     uid: 'word!Word.Range#tables:member'
     package: word!
     fullName: tables
-    summary: Gets the collection of table objects in the range. Read-only.
+    summary: Gets the collection of table objects in the range.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -312,7 +322,7 @@ properties:
     uid: 'word!Word.Range#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the range. Read-only.
+    summary: Gets the text of the range.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -412,7 +422,7 @@ methods:
     fullName: expandTo(range)
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
-      changed. Throws an error if the two ranges do not have a union.
+      changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -431,7 +441,10 @@ methods:
     fullName: expandToOrNullObject(range)
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
-      changed. Returns a null object if the two ranges do not have a union.
+      changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -500,8 +513,8 @@ methods:
     package: word!
     fullName: 'getNextTextRange(endingMarks, trimSpacing)'
     summary: >-
-      Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range
-      is the last one.
+      Gets the next text range by using punctuation marks and/or other ending marks. Throws an `ItemNotFound` error if
+      this text range is the last one.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -525,8 +538,11 @@ methods:
     package: word!
     fullName: 'getNextTextRangeOrNullObject(endingMarks, trimSpacing)'
     summary: >-
-      Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text
-      range is the last one.
+      Gets the next text range by using punctuation marks and/or other ending marks. If this text range is the last one,
+      then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further
+      information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -756,10 +772,10 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation)'
+  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     uid: 'word!Word.Range#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
     summary: Inserts a document at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -789,7 +805,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" |
-        "Before" | "After"): Word.Range;
+        "Before" | "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -797,6 +813,11 @@ methods:
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"'
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
+            the base64 content is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -865,10 +886,10 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation)'
+  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     uid: 'word!Word.Range#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -900,7 +921,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" |
-        "After"): Word.Range;
+        "After", asNewParagraph?: boolean): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
@@ -908,6 +929,11 @@ methods:
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"'
+        - id: asNewParagraph
+          description: >-
+            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
+            OOXML is merged as inline text into the existing paragraph.
+          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -1035,7 +1061,7 @@ methods:
     fullName: intersectWith(range)
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Throws an
-      error if the two ranges are not overlapped or adjacent.
+      `ItemNotFound` error if the two ranges are not overlapped or adjacent.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -1053,8 +1079,11 @@ methods:
     package: word!
     fullName: intersectWithOrNullObject(range)
     summary: >-
-      Returns a new range as the intersection of this range with another range. This range is not changed. Returns a
-      null object if the two ranges are not overlapped or adjacent.
+      Returns a new range as the intersection of this range with another range. This range is not changed. If the two
+      ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set
+      to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -45,8 +45,8 @@ methods:
     package: word!
     fullName: getById(id)
     summary: >-
-      Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in
-      this collection.
+      Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the
+      identifier in this collection.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

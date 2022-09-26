@@ -5,7 +5,7 @@ package: word!
 fullName: Word.ChangeTrackingMode
 summary: ChangeTracking mode.
 remarks: >-
-  \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -42,7 +42,7 @@ fields:
     summary: |-
       ChangeTracking is turned off.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: 'word!Word.ChangeTrackingMode.trackAll:member'
@@ -50,7 +50,7 @@ fields:
     summary: |-
       ChangeTracking is turned on for everyone.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
@@ -58,5 +58,5 @@ fields:
     summary: |-
       Tracking is turned on for my changes only.
 
-      * \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

@@ -186,7 +186,7 @@ methods:
     uid: 'word!Word.NoteItem#getNext:member(1)'
     package: word!
     fullName: getNext()
-    summary: Gets the next note item of the same type. Throws an error if this note item is the last one.
+    summary: Gets the next note item of the same type. Throws an `ItemNotFound` error if this note item is the last one.
     remarks: >-
       \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -225,7 +225,12 @@ methods:
     uid: 'word!Word.NoteItem#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next note item of the same type. Returns a null object if this note item is the last one.
+    summary: >-
+      Gets the next note item of the same type. If this note item is the last one, then this method will return an
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
