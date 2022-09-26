@@ -1,7 +1,7 @@
 ---
 title: Custom Functions requirement sets
 description: Details about the Custom Functions requirement sets for Excel JavaScript API.
-ms.date: 09/14/2022
+ms.date: 09/26/2022
 ms.prod: excel
 ms.localizationpriority: medium
 ---
@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 [Custom Functions](/office/dev/add-ins/excel/custom-functions-overview) use separate requirement sets from the core Excel JavaScript APIs. The following table lists the Custom Functions requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications.
 
-| Requirement set | Office on Windows<br>(subscription) | Office on Windows<br>(retail perpetual Office 2016 or later) | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| CustomFunctionsRuntime 1.3 | Version 2008 (13127.20296) | Version 2008 (13127.20296) | Office 2021: Version 2008 (13127.20296) | 16.40.20081000 | Not supported | Supported |
-| CustomFunctionsRuntime 1.2 | Version 2109 (Build 14326.20454) | Version 2109 (Build 14326.20454) | Not supported | 16.34.20020900 | Not supported | Supported |
-| CustomFunctionsRuntime 1.1 | Version 2002 (Build 12527.20092) | Version 2002 (Build 12527.20092) | Office 2021: Version 2002 (Build 12527.20092) | 16.34 | Not supported | Supported |
+| Requirement set | Office on Windows<br>- subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| CustomFunctionsRuntime 1.3 | Version 2008 (Build 13127.20296) | Office 2021: Version 2008 (Build 13127.20296) | 16.40.20081000 | Not supported | Supported |
+| CustomFunctionsRuntime 1.2 | Version 2109 (Build 14326.20454) | Not supported | 16.34.20020900 | Not supported | Supported |
+| CustomFunctionsRuntime 1.1 | Version 2002 (Build 12527.20092) | Office 2021: Version 2002 (Build 12527.20092) | 16.34 | Not supported | Supported |
 
 ## CustomFunctionsRuntime 1.1, 1.2, and 1.3
 
