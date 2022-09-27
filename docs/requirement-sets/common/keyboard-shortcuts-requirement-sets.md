@@ -1,7 +1,7 @@
 ---
 title: Keyboard Shortcuts requirement sets
 description: Keyboard Shortcuts requirement set information for Office Add-ins.
-ms.date: 09/26/2022
+ms.date: 09/27/2022
 ms.prod: non-product-specific
 localization_priority: Normal
 ---
@@ -12,7 +12,7 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Office Add-ins run across multiple versions of Office. The following table lists the Keyboard Shortcuts requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those applications.
 
-| Requirement set | Office on Windows<br>- subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | KeyboardShortcuts 1.1 | Version 2111 (Build 14701.10000) | Not available | 16.55 | Not supported | Supported |
 
