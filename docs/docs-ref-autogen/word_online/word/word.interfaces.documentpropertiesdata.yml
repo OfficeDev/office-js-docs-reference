@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#applicationName:member'
     package: word!
     fullName: applicationName
-    summary: Gets the application name of the document. Read only.
+    summary: Gets the application name of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#creationDate:member'
     package: word!
     fullName: creationDate
-    summary: Gets the creation date of the document. Read only.
+    summary: Gets the creation date of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -85,7 +85,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#customProperties:member'
     package: word!
     fullName: customProperties
-    summary: Gets the collection of custom properties of the document. Read only.
+    summary: Gets the collection of custom properties of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -121,7 +121,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#lastAuthor:member'
     package: word!
     fullName: lastAuthor
-    summary: Gets the last author of the document. Read only.
+    summary: Gets the last author of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -133,7 +133,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#lastPrintDate:member'
     package: word!
     fullName: lastPrintDate
-    summary: Gets the last print date of the document. Read only.
+    summary: Gets the last print date of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -145,7 +145,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#lastSaveTime:member'
     package: word!
     fullName: lastSaveTime
-    summary: Gets the last save time of the document. Read only.
+    summary: Gets the last save time of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -169,7 +169,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#revisionNumber:member'
     package: word!
     fullName: revisionNumber
-    summary: Gets the revision number of the document. Read only.
+    summary: Gets the revision number of the document.
     remarks: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]'
     isPreview: false
     isDeprecated: false
@@ -182,13 +182,13 @@ properties:
     package: word!
     fullName: security
     summary: >-
-      Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are
-      Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File
-      is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect
-      Document: Both \#1 and \#2; 4 = File on disk is read only; 5 = Both \#1 and \#4; 6 = Both \#2 and \#4; 7 = All of
-      \#1, \#2, and \#4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both \#1 and \#8; 10 = Both \#2 and \#8;
-      11 = All of \#1, \#2, and \#8; 12 = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4, and
-      \#8; 15 = All of \#1, \#2, \#4, and \#8.
+      Gets security settings of the document. Some are access restrictions on the file on disk. Others are Document
+      Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is
+      encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document:
+      Both \#1 and \#2; 4 = File on disk is read-only; 5 = Both \#1 and \#4; 6 = Both \#2 and \#4; 7 = All of \#1, \#2,
+      and \#4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both \#1 and \#8; 10 = Both \#2 and \#8; 11 = All
+      of \#1, \#2, and \#8; 12 = Both \#4 and \#8; 13 = All of \#1, \#4, and \#8; 14 = All of \#2, \#4, and \#8; 15 =
+      All of \#1, \#2, \#4, and \#8.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -212,7 +212,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentPropertiesData#template:member'
     package: word!
     fullName: template
-    summary: Gets the template of the document. Read only.
+    summary: Gets the template of the document.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

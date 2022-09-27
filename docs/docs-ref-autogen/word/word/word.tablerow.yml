@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.TableRow#cellCount:member'
     package: word!
     fullName: cellCount
-    summary: Gets the number of cells in the row. Read-only.
+    summary: Gets the number of cells in the row.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.TableRow#endnotes:member'
     package: word!
     fullName: endnotes
-    summary: Gets the collection of endnotes in the table row. Read-only.
+    summary: Gets the collection of endnotes in the table row.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,11 +63,9 @@ properties:
     uid: 'word!Word.TableRow#fields:member'
     package: word!
     fullName: fields
-    summary: Gets the collection of field objects in the table row. Read-only.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
-    isPreview: true
+    summary: Gets the collection of field objects in the table row.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly fields: Word.FieldCollection;'
@@ -77,7 +75,7 @@ properties:
     uid: 'word!Word.TableRow#font:member'
     package: word!
     fullName: font
-    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.'
+    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +87,7 @@ properties:
     uid: 'word!Word.TableRow#footnotes:member'
     package: word!
     fullName: footnotes
-    summary: Gets the collection of footnotes in the table row. Read-only.
+    summary: Gets the collection of footnotes in the table row.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -116,8 +114,8 @@ properties:
     package: word!
     fullName: isHeader
     summary: >-
-      Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
-      Table object.
+      Checks whether the row is a header row. To set the number of header rows, use `headerRowCount` on the Table
+      object.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -129,7 +127,7 @@ properties:
     uid: 'word!Word.TableRow#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets parent table. Read-only.
+    summary: Gets parent table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -153,7 +151,7 @@ properties:
     uid: 'word!Word.TableRow#rowIndex:member'
     package: word!
     fullName: rowIndex
-    summary: Gets the index of the row in its parent table. Read-only.
+    summary: Gets the index of the row in its parent table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -300,7 +298,7 @@ methods:
     uid: 'word!Word.TableRow#getNext:member(1)'
     package: word!
     fullName: getNext()
-    summary: Gets the next row. Throws an error if this row is the last one.
+    summary: Gets the next row. Throws an `ItemNotFound` error if this row is the last one.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -313,7 +311,11 @@ methods:
     uid: 'word!Word.TableRow#getNextOrNullObject:member(1)'
     package: word!
     fullName: getNextOrNullObject()
-    summary: Gets the next row. Returns a null object if this row is the last one.
+    summary: >-
+      Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -438,8 +440,8 @@ methods:
     package: word!
     fullName: merge()
     summary: Merges the row into one cell.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'merge(): Word.TableCell;'

@@ -6,7 +6,7 @@ fullName: Word.CommentReplyCollection
 summary: >-
   Contains a collection of [Word.CommentReply](xref:word!Word.CommentReply:class) objects. Represents all comment
   replies in one comment thread.
-remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: class
@@ -42,8 +42,8 @@ methods:
     uid: 'word!Word.CommentReplyCollection#getFirst:member(1)'
     package: word!
     fullName: getFirst()
-    summary: Gets the first comment reply in the collection. Throws an error if this collection is empty.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the first comment reply in the collection. Throws an `ItemNotFound` error if this collection is empty.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,8 +55,12 @@ methods:
     uid: 'word!Word.CommentReplyCollection#getFirstOrNullObject:member(1)'
     package: word!
     fullName: getFirstOrNullObject()
-    summary: 'Gets the first comment reply in the collection. If the collection is empty, returns a null object.'
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: >-
+      Gets the first comment reply in the collection. If the collection is empty, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

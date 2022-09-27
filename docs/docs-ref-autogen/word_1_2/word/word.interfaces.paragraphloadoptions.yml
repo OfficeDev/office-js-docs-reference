@@ -127,7 +127,9 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent
+      content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -189,7 +191,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphLoadOptions#text:member'
     package: word!
     fullName: text
-    summary: Gets the text of the paragraph. Read-only.
+    summary: Gets the text of the paragraph.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

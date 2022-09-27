@@ -36,7 +36,7 @@ methods:
 
 
       **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from
-      version 2111 (build 14701.20000). To retrieve an access token in older builds, use
+      Version 2111 (Build 14701.20000). To retrieve an access token in older builds, use
       [OfficeRuntime.auth.getAccessToken](https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1))
       instead. For more information, see [Enable single sign-on (SSO) in Outlook add-ins that use event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!-- -->.
