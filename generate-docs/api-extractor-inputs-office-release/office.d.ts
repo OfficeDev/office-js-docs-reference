@@ -1475,7 +1475,7 @@ export declare namespace Office {
          * 
          * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
          * 
-         * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from version 2111 (build 14701.20000).
+         * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
          * To retrieve an access token in older builds, use 
          * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js#office-runtime-officeruntime-auth-getaccesstoken-member(1) | 
          * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
