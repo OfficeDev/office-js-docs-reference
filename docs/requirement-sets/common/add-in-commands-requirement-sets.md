@@ -1,7 +1,7 @@
 ---
 title: Add-in commands requirement sets
 description: Overview of Office Add-in commands requirement sets.
-ms.date: 09/27/2022
+ms.date: 09/28/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ Add-in commands are UI elements that extend the Office UI and start actions in y
 > [!NOTE]
 > Outlook add-ins support add-in commands, but the APIs and manifest elements that enable add-in commands in Outlook are in the [Mailbox 1.3](../outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) requirement set. The AddinCommands requirement sets are not applicable to Outlook.
 
-The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the **minimum** builds or versions for those applications.  
+The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the **minimum** builds or versions for those applications where applicable.  
 
 | Release | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -25,7 +25,7 @@ The add-in commands **1.1** requirement set introduces the ability to [autoopen 
 
 The add-in commands **1.3** requirement set introduces manifest markup that enables an add-in to customize the placement of a custom tab on the Office ribbon and to insert built-in Office ribbon controls into custom control groups.
 
-The following table lists the add-in commands requirement sets, the Office client applications that support that requirement set, and the **minimum** builds or versions for those applications.
+The following table lists the add-in commands requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|

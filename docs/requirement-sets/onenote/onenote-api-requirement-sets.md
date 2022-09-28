@@ -1,7 +1,7 @@
 ---
 title: OneNote JavaScript API requirement sets
 description: Learn more about the OneNote JavaScript API requirement sets.
-ms.date: 08/24/2020
+ms.date: 09/28/2022
 ms.prod: onenote
 ms.localizationpriority: high
 ---
@@ -10,11 +10,11 @@ ms.localizationpriority: high
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-The following table lists the OneNote requirement sets, the Office client applications that support those requirement sets, and the build versions or availability date.
+The following table lists the OneNote requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-|  Requirement set  |  Office on the web |
+| Requirement set | Office on the web |
 |:-----|:-----|
-| [OneNoteApi 1.1](/javascript/api/onenote?view=onenote-js-1.1&preserve-view=true)  | September 2016 |  
+| [OneNoteApi 1.1](/javascript/api/onenote?view=onenote-js-1.1&preserve-view=true) | Supported |
 
 ## OneNote JavaScript API 1.1
 
