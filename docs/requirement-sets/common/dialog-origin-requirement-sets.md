@@ -1,7 +1,7 @@
 ---
 title: Dialog Origin requirement sets
 description: Learn more about the Dialog Origin requirement sets.
-ms.date: 09/27/2022
+ms.date: 09/28/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,10 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| DialogOrigin 1.1 | Supported | Office 2013: Build 15.0.5371.1000 | 16.52 | 2.52 | Supported | Version 2108 (Build 10377.1000) |
+| DialogOrigin 1.1\* | Supported | Office 2013: Build 15.0.5371.1000 | 16.52 | 2.52 | Supported | Version 2108 (Build 10377.1000) |
+
+> [!NOTE]
+> \* Retail perpetual Office 2013 on Windows also supports DialogOrigin 1.1.
 
 ## Office versions and build numbers
 
