@@ -19,7 +19,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 \* Currently, the requirement set is supported in Office on the web only for documents that are opened from Microsoft SharePoint Online and OneDrive.
 
 > [!IMPORTANT]
-> In Outlook, the Identity API requirement set is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+> In Outlook, the Identity API requirement set isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 ## Outlook and Identity API requirement sets
 
