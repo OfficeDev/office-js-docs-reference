@@ -1416,7 +1416,7 @@ export declare namespace Office {
          * Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the
          * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
          *
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
          *
          * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
          *
@@ -1441,7 +1441,7 @@ export declare namespace Office {
          * Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the
          * {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
          *
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
          *
          * **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
          *
@@ -1467,7 +1467,7 @@ export declare namespace Office {
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign in with Organizational
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
          *
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
          * 
          * @remarks
          *
