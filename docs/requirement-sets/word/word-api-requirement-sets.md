@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
-ms.date: 09/26/2022
+ms.date: 09/28/2022
 ms.prod: word
 ms.localizationpriority: high
 ---
@@ -12,29 +12,23 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 ## Requirement set availability
 
-Word add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, iPad, and Mac. The following table lists the Word requirement sets, the Office client applications that support that requirement set, and the build or version numbers for those applications.
+Word add-ins run across multiple versions of Office, including Office 2016 or later on Windows, and Office on the web, iPad, and Mac. The following table lists the Word requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 > [!NOTE]
 > To use APIs in any of the numbered requirement sets, `WordApiOnline`, or `WordApiHiddenDocument`, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
 >
 > For information about using preview APIs, see the [Word JavaScript preview APIs](word-preview-apis.md) article.
 
-|  Requirement set  |   Office on Windows\*<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web  |
-|:-----|-----|:-----|:-----|:-----|
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+|:-----|:-----|:-----|:-----|:-----|:-----|
 | [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Office Insider program](https://insider.office.com)) |
-| [WordApiOnline 1.1](word-api-online-requirement-set.md) | Not available | Not available | Not available | Latest (see [requirement set page](word-api-online-requirement-set.md)) |
-| [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Version 2208 (Build 15601.20148) or later| Not available | September 2022, 16.64 | Not available |
-| [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Version 1612 (Build 7668.1000) or later| Not available | March 2017, 15.32 or later| Not available |
-| [WordApi 1.4](word-api-1-4-requirement-set.md) | Version 2208 (Build 15601.20148) or later| September 2022, 16.64 or later | September 2022, 16.64 or later| September 2022 |
-| [WordApi 1.3](word-api-1-3-requirement-set.md) | Version 1612 (Build 7668.1000) or later| March 2017, 2.22 or later | March 2017, 15.32 or later| March 2017 |
-| [WordApi 1.2](word-api-1-2-requirement-set.md) | December 2015 update, Version 1601 (Build 6568.1000) or later | January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 |
-| [WordApi 1.1](word-api-1-1-requirement-set.md) | Version 1509 (Build 4266.1001) or later| January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 |
-
-> [!NOTE]
-> Non-subscription versions of Office support requirement sets as follows:
->
-> - Office 2019 and Office 2021 support WordApiHiddenDocument 1.3 (Desktop only) along with WordApi 1.3 and earlier.
-> - Office 2016 only supports the WordApi 1.1 requirement set.
+| [WordApiOnline 1.1](word-api-online-requirement-set.md) | Not applicable | Not applicable | Not applicable | Not applicable | Latest (see [requirement set page](word-api-online-requirement-set.md)) |
+| [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Version 2208 (Build 15601.20148) | Not available | 16.64 | Not applicable | Not applicable |
+| [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | Not applicable | Not applicable |
+| [WordApi 1.4](word-api-1-4-requirement-set.md) | Version 2208 (Build 15601.20148) | Not available | 16.64 | 16.64 | Supported |
+| [WordApi 1.3](word-api-1-3-requirement-set.md) | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | 2.22 | Supported |
+| [WordApi 1.2](word-api-1-2-requirement-set.md) | Version 1601 (Build 6568.1000) | Office 2019: Version 1601 (Build 6568.1000) | 15.19 | 1.18 | Supported |
+| [WordApi 1.1](word-api-1-1-requirement-set.md) | Version 1509 (Build 4266.1001) | Office 2016: Version 1509 (Build 4266.1001) | 15.19 | 1.18 | Supported |
 
 ## Office versions and build numbers
 

@@ -1,7 +1,7 @@
 ---
 title: Image Coercion requirement sets
-description: Support for Image Coercion requirement sets with Office Add-ins across Excel, PowerPoint, and Word.
-ms.date: 09/08/2021
+description: Support for Image Coercion requirement sets with Office Add-ins across Excel, OneNote, PowerPoint, and Word.
+ms.date: 09/27/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -14,16 +14,22 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 ImageCoercion 1.1 enables conversion to an image (`Office.CoercionType.Image`) when writing data using the [`Document.setSelectedDataAsync`](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1)) method. The following applications are supported.
 
-- Excel 2013 and later on Windows
-- Excel 2016 and later on Mac
+- Excel on Windows
+  - Microsoft 365 subscription
+  - perpetual Office 2013 and later
+- Excel on Mac
 - Excel on iPad
 - OneNote on the web
-- PowerPoint 2013 and later on Windows
-- PowerPoint 2016 and later on Mac
+- PowerPoint on Windows
+  - Microsoft 365 subscription
+  - perpetual Office 2013 and later
+- PowerPoint on Mac
 - PowerPoint on the web
 - PowerPoint on iPad
-- Word 2013 and later on Windows
-- Word 2016 and later on Mac
+- Word on Windows
+  - Microsoft 365 subscription
+  - perpetual Office 2013 and later
+- Word on Mac
 - Word on the web
 - Word on iPad
 
@@ -31,13 +37,22 @@ ImageCoercion 1.1 enables conversion to an image (`Office.CoercionType.Image`) w
 
 ImageCoercion 1.2 enables conversion to SVG format (`Office.CoercionType.XmlSvg`) when writing data using the [`Document.setSelectedDataAsync`](/javascript/api/office/office.document#office-office-document-getselecteddataasync-member(1)) method. The following applications are supported.
 
-- Excel 2021 and later on Windows
-- Excel 2021 and later on Mac
-- PowerPoint 2021 and later on Windows
-- PowerPoint 2021 and later on Mac
+- Excel on Windows
+  - Microsoft 365 subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
+- Excel on Mac
+- PowerPoint on Windows
+  - Microsoft 365 subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
+- PowerPoint on Mac
 - PowerPoint on the web
-- Word 2021 and later on Windows
-- Word 2021 and later on Mac
+- Word 2021 on Windows
+  - Microsoft 365 subscription
+  - retail perpetual Office 2016 and later
+  - volume-licensed perpetual Office 2021 and later
+- Word on Mac
 
 ## Office Common API requirement sets
 

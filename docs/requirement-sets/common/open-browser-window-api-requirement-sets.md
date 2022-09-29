@@ -1,34 +1,32 @@
 ---
 title: Open Browser Window requirement sets
 description: Specifies which Office platforms and builds support the openBrowserWindow API.
-ms.date: 02/15/2022
+ms.date: 09/28/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
 
 # Open Browser Window API requirement sets
 
-Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office host supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
+Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
 The OpenBrowserWindow API set enables add-ins to open a browser to accomplish tasks that cannot always be done in the sandboxed webview control within the add-in itself; for example, downloading a PDF file when the webview control is provided by Microsoft Edge.
 
-Office Add-ins run across multiple versions of Office. The following table lists the OpenBrowserWindow API requirement sets, the Office host applications that support that requirement set, and the build or version numbers for the Office application.
+Office Add-ins run across multiple versions of Office. The following table lists the OpenBrowserWindow API requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-|  Requirement set  | Office 2021 or later on Windows<br>(one-time purchase) | Office on Windows<br>(connected to Microsoft 365 subscription) |  Office on iPad<br>(connected to Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |  Office Online Server  |
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| OpenBrowserWindowApi 1.1  | Build 16.0.14326.20454 or later | Version 1810 (Build 16.0.11001.20074) or later | 16.0.0.0 or later | 16.0.0.0 or later | N/A | N/A|
+| OpenBrowserWindowApi 1.1 | Version 1810 (Build 11001.20074) | Office 2021: Version 2108 (Build 14326.20454) | 16.0.0.0 | 16.0.0.0 | Not supported | Not supported |
 
-> [!NOTE]
-> The OpenBrowserWindowApi requirement set is only available as follows:
+> [!IMPORTANT]
+> The OpenBrowserWindowApi 1.1 requirement set is only available as follows:
 >
 > - Excel, PowerPoint, Word: Windows, Mac, iPad
 > - Outlook: Windows, Mac
 
 To find out more about versions, build numbers, and Office Online Server, see:
 
-- [Version and build numbers of update channel releases for Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date)
-- [What version of Office am I using?](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19)
-- [Where you can find the version and build number for an Office client application](/officeupdates/update-history-microsoft365-apps-by-date)
+[!INCLUDE [Links to get Office versions and how to find Office client version](../../includes/links-get-office-versions-builds.md)]
 - [Office Online Server overview](/officeonlineserver/office-online-server-overview)
 
 ## Office Common API requirement sets
