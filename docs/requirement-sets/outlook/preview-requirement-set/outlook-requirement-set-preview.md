@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 09/15/2022
+ms.date: 09/27/2022
 ms.localizationpriority: medium
 ---
 
@@ -31,31 +31,31 @@ The following features are in preview.
 
 Added a new object that represents the all-day event property of an appointment in Compose mode.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Sensitivity](/javascript/api/outlook/office.sensitivity?view=outlook-js-preview&preserve-view=true)
 
 Added a new object that represents the sensitivity of an appointment in Compose mode.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.context.mailbox.item.isAllDayEvent](office.context.mailbox.item.md#properties)
 
 Added a new property that represents if an appointment is an all-day event.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.context.mailbox.item.sensitivity](office.context.mailbox.item.md#properties)
 
 Added a new property that represents the sensitivity of an appointment.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true)
 
 Added a new enum `AppointmentSensitivityType` that represents the sensitivity options available on an appointment.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
@@ -69,13 +69,13 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 Added a new property that returns an object that allows you to manage the delivery date and time of a message in Compose mode.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true)
 
 Added a new object that allows you to manage the delivery date and time of a message in Compose mode.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
@@ -89,13 +89,13 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 Added ability to get Office theme.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.EventType.OfficeThemeChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
 
 Added `OfficeThemeChanged` event to `Mailbox`.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 

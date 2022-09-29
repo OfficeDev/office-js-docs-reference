@@ -1,7 +1,7 @@
 ---
 title: Add-in commands requirement sets
 description: Overview of Office Add-in commands requirement sets.
-ms.date: 03/12/2022
+ms.date: 09/28/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -15,26 +15,26 @@ Add-in commands are UI elements that extend the Office UI and start actions in y
 > [!NOTE]
 > Outlook add-ins support add-in commands, but the APIs and manifest elements that enable add-in commands in Outlook are in the [Mailbox 1.3](../outlook/requirement-set-1.3/outlook-requirement-set-1.3.md) requirement set. The AddinCommands requirement sets are not applicable to Outlook.
 
-The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the build versions or number for those applications.  
+The initial release of add-in commands doesn't have a corresponding requirement set (that is, there isn't an AddinCommands 1.0 requirement set). The following table lists the Office client applications that support the initial release version, and the **minimum** builds or versions for those applications where applicable.  
 
-| Release   |  Office 2013 on Windows<br>(one-time purchase) | Office 2016 on Windows<br>(one-time purchase) | Office 2019 on Windows<br>(one-time purchase) | Office 2021 on Windows<br>(one-time purchase) | Office on Windows<br>(subscription)   |  Office on iPad<br>(subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| Add-in commands (initial release, no requirement set) | N/A | N/A | Version 1809 (Build 10827.20150) or later| 16.0.14326.20454 or later |Version 1603 (Build 6769.0000) or later | N/A | 15.33 or later| January 2016 |
+| Release | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| Add-in commands (initial release, no requirement set) | Version 1603 (Build 6769.0000) | Office 2021: Version 1809 (Build 10827.20150) | 15.33 | Not supported | Supported |
 
 The add-in commands **1.1** requirement set introduces the ability to [autoopen a task pane with documents](/office/dev/add-ins/develop/automatically-open-a-task-pane-with-a-document).
 
 The add-in commands **1.3** requirement set introduces manifest markup that enables an add-in to customize the placement of a custom tab on the Office ribbon and to insert built-in Office ribbon controls into custom control groups.
 
-The following table lists the add-in commands requirement sets, the Office client applications that support that requirement set, and the build or version numbers for the Office application.
+The following table lists the add-in commands requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-|  Requirement set  |  Office 2013 on Windows<br>(one-time purchase) | Office 2016 on Windows<br>(one-time purchase) | Office 2019 on Windows<br>(one-time purchase) |  Office 2021 on Windows<br>(one-time purchase) | Office on Windows<br>(subscription)   |  Office on iPad<br>(subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2019 and later)   | Office on the web  |  
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| AddinCommands 1.3  | N/A | N/A | N/A | N/A | Version 2204 (Build 14827.10000) or later | N/A | 16.57.105.0 or later | November 2020 |
-| AddinCommands 1.1  | N/A | N/A  | Version 1809 (Build 10827.20150) or later&dagger; | 16.0.14326.20454 or later&dagger; | Version 1705 (Build 8121.1000) or later&dagger; | N/A | 15.34 or later&dagger;\*| May 2017 |
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| AddinCommands 1.3 | Version 2204 (Build 14827.10000) | Not supported | 16.57.105.0 | Not supported | Supported |
+| AddinCommands 1.1 | Version 1705 (Build 8121.1000)&dagger; | Office 2021: Version 1809 (Build 10827.20150)&dagger; | 15.34&dagger;\* | Not supported | Supported |
 
-\* The [Office.context.requirements.isSetSupported](/javascript/api/office/office.requirementsetsupport#office-office-requirementsetsupport-issetsupported-member(1)) method will erroneously return `false` for versions 16.9 &ndash; 16.14 (inclusive), but the requirement set *is* supported on these versions.
-
-&dagger; OneNote is supported only in Office on the web.
+> \* The [Office.context.requirements.isSetSupported](/javascript/api/office/office.requirementsetsupport#office-office-requirementsetsupport-issetsupported-member(1)) method will erroneously return `false` for versions 16.9 &ndash; 16.14 (inclusive), but the requirement set *is* supported on these versions.
+>
+> &dagger; OneNote is supported only in Office on the web.
 
 ## Office versions and build numbers
 
