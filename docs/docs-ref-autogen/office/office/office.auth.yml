@@ -42,6 +42,9 @@ methods:
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!-- -->.
 
 
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+
+
       #### Examples
 
 
@@ -81,7 +84,7 @@ methods:
       -->.
 
 
-      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
@@ -143,7 +146,7 @@ methods:
       -->.
 
 
-      **Important**: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
