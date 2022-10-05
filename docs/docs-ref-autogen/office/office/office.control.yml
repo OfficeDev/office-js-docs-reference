@@ -3,14 +3,13 @@ name: Office.Control
 uid: 'office!Office.Control:interface'
 package: office!
 fullName: Office.Control
-summary: >-
-  Represents an individual control or command and the state it should have.
-
-
+summary: Represents an individual control or command and the state it should have.
+remarks: >-
   For code samples showing how to use a `Control` object and its properties, see [Enable and Disable Add-in
   Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
-remarks: >-
+
+
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false

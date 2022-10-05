@@ -42,7 +42,7 @@ properties:
 
 
       **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, refer to [Blocked attachments in
+      returned. For more information, see [Blocked attachments in
       Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
 
 
@@ -278,10 +278,10 @@ properties:
 
       <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
       <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-      <td>IPM.Appointment,IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
+      <td>IPM.Appointment, IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
       messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
-      use IPM.Schedule.Meeting as the base message class.</td>
-      <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+      use IPM.Schedule.Meeting as the base message class.</td> <td>IPM.Note, IPM.Schedule.Meeting.Request,
+      IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
 
 

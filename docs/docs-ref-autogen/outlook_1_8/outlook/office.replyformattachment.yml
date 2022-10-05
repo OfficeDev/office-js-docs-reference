@@ -27,7 +27,7 @@ properties:
     uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
     package: outlook!
     fullName: itemId
-    summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+    summary: Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
     remarks: ''
     isPreview: false
     isDeprecated: false

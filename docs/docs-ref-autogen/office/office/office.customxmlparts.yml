@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlParts:interface'
 package: office!
 fullName: Office.CustomXmlParts
 summary: Represents a collection of CustomXmlPart objects.
-remarks: '**Hosts**: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -105,7 +105,7 @@ methods:
     uid: 'office!Office.CustomXmlParts#getByIdAsync:member(1)'
     package: office!
     fullName: 'getByIdAsync(id, options, callback)'
-    summary: Asynchronously gets the specified custom XML part by its id.
+    summary: Asynchronously gets the specified custom XML part by its ID.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
@@ -151,7 +151,7 @@ methods:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
             is a CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with
-            the specified id, the method returns null.
+            the specified ID, the method returns null.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
@@ -162,7 +162,7 @@ methods:
     uid: 'office!Office.CustomXmlParts#getByIdAsync:member(2)'
     package: office!
     fullName: 'getByIdAsync(id, callback)'
-    summary: Asynchronously gets the specified custom XML part by its id.
+    summary: Asynchronously gets the specified custom XML part by its ID.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
@@ -179,7 +179,7 @@ methods:
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
             is a CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with
-            the specified id, the method returns null.
+            the specified ID, the method returns null.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="office!Office.CustomXmlPart:interface" />&gt;) =&gt; void
@@ -190,7 +190,7 @@ methods:
     uid: 'office!Office.CustomXmlParts#getByNamespaceAsync:member(1)'
     package: office!
     fullName: 'getByNamespaceAsync(ns, options, callback)'
-    summary: Asynchronously gets the specified custom XML part(s) by its namespace.
+    summary: Asynchronously gets the specified custom XML parts by its namespace.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
@@ -222,7 +222,7 @@ methods:
     uid: 'office!Office.CustomXmlParts#getByNamespaceAsync:member(2)'
     package: office!
     fullName: 'getByNamespaceAsync(ns, callback)'
-    summary: Asynchronously gets the specified custom XML part(s) by its namespace.
+    summary: Asynchronously gets the specified custom XML parts by its namespace.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)

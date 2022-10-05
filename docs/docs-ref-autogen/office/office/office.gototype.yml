@@ -12,16 +12,16 @@ fields:
     uid: 'office!Office.GoToType.Binding:member'
     package: office!
     summary: |-
-      Goes to a binding object using the specified binding id.
+      Goes to a binding object using the specified binding ID.
 
-      Supported hosts: Excel, Word
+      Supported applications: Excel, Word
   - name: Index
     uid: 'office!Office.GoToType.Index:member'
     package: office!
     summary: |-
       Goes to the specified index by slide number or [Office.Index](xref:office!Office.Index:enum)<!-- -->.
 
-      Supported hosts: PowerPoint
+      Supported applications: PowerPoint
   - name: NamedItem
     uid: 'office!Office.GoToType.NamedItem:member'
     package: office!
@@ -30,11 +30,11 @@ fields:
       table: "Worksheet2!Table1"
 
 
-      Supported hosts: Excel
+      Supported applications: Excel
   - name: Slide
     uid: 'office!Office.GoToType.Slide:member'
     package: office!
     summary: |-
-      Goes to a slide using the specified id.
+      Goes to a slide using the specified ID.
 
-      Supported hosts: PowerPoint
+      Supported applications: PowerPoint

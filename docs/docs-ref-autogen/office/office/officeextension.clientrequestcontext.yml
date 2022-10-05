@@ -4,8 +4,8 @@ uid: 'office!OfficeExtension.ClientRequestContext:class'
 package: office!
 fullName: OfficeExtension.ClientRequestContext
 summary: >-
-  An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run` and
-  `Word.run` methods provide a request context.
+  An abstract RequestContext object that facilitates requests to the Office application. The `Excel.run` and `Word.run`
+  methods provide a request context.
 remarks: ''
 isPreview: false
 isDeprecated: false

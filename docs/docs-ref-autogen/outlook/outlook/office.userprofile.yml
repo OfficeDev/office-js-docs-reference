@@ -44,7 +44,7 @@ properties:
       The possible account types are listed in the following table.
 
 
-      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      <table> <tr> <th>Value</th> <th>Description</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
       on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
       account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with a Microsoft 365 work or school
       account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com

@@ -6,7 +6,7 @@ fullName: Office.CustomXmlPart
 summary: >-
   Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
   collection.
-remarks: '**Hosts**: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface

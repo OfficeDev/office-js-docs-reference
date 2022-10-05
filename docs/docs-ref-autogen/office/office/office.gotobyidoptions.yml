@@ -5,7 +5,8 @@ package: office!
 fullName: Office.GoToByIdOptions
 summary: Provides options for whether to select the location that is navigated to.
 remarks: >-
-  The behavior caused by the [options.selectionMode](xref:office!Office.SelectionMode:enum) option varies by host:
+  The behavior caused by the [options.selectionMode](xref:office!Office.SelectionMode:enum) option varies by Office
+  application:
 
 
   In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
@@ -43,7 +44,7 @@ properties:
     package: office!
     fullName: selectionMode
     summary: >-
-      Specifies whether the location specified by the id parameter is selected (highlighted). Use
+      Specifies whether the location specified by the `id` parameter is selected (highlighted). Use
       [Office.SelectionMode](xref:office!Office.SelectionMode:enum) or string equivalent. See the Remarks for more
       information.
     remarks: ''

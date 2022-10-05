@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlNode:interface'
 package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
-remarks: '**Hosts**: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface

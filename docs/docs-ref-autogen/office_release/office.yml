@@ -123,7 +123,7 @@ functions:
 
 
       - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of
-      the ribbon in the Office host application, or from Insert add-in dialog box.
+      the ribbon in the Office application, or from Insert add-in dialog box.
 
 
       - The user opened a document that already contains the add-in.
@@ -135,15 +135,15 @@ functions:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this function is supported in the corresponding Office
+      application. An empty cell indicates that the Office application doesn't support this function.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
       </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
       Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
@@ -200,7 +200,7 @@ functions:
   - name: 'Office.isSetSupported(name, minVersion)'
     uid: 'office!Office.isSetSupported:function(1)'
     package: office!
-    summary: Checks if the specified requirement set is supported by the host Office application.
+    summary: Checks if the specified requirement set is supported by the Office application.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -221,10 +221,10 @@ functions:
     package: office!
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized
-      yet, the callback or promise will wait until the Office host is ready to accept API calls. Note that though this
-      API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case, once
-      Office.js determines that it is running outside of an Office host application, it will call the callback and
-      resolve the promise with "null" for both the host and platform.
+      yet, the callback or promise will wait until the Office application is ready to accept API calls. Note that though
+      this API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case,
+      once Office.js determines that it is running outside of an Office application, it will call the callback and
+      resolve the promise with "null" for both the application and platform.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -235,8 +235,8 @@ functions:
       parameters:
         - id: callback
           description: >-
-            An optional callback function, that will receive the host and platform info. Alternatively, rather than use
-            a callback, an add-in may simply wait for the Promise returned by the function to resolve.
+            An optional callback function, that will receive the application and platform info. Alternatively, rather
+            than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
           type: >-
             (info: { host: <xref uid="office!Office.HostType:enum" />, platform: <xref
             uid="office!Office.PlatformType:enum" /> }) =&gt; any
@@ -244,7 +244,7 @@ functions:
         type: >-
           Promise&lt;{ host: <xref uid="office!Office.HostType:enum" />, platform: <xref
           uid="office!Office.PlatformType:enum" /> }&gt;
-        description: 'A Promise that contains the host and platform info, once initialization is completed.'
+        description: 'A Promise that contains the application and platform info, once initialization is completed.'
   - name: 'Office.select(expression, callback)'
     uid: 'office!Office.select:function(1)'
     package: office!
@@ -253,15 +253,15 @@ functions:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this function is supported in the corresponding Office
+      application. An empty cell indicates that the Office application doesn't support this function.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
       </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr>
       <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
 
@@ -311,15 +311,15 @@ functions:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this function is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this function.
+      A capital Y in the following matrix indicates that this function is supported in the corresponding Office
+      application. An empty cell indicates that the Office application doesn't support this function.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
       </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
       Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint

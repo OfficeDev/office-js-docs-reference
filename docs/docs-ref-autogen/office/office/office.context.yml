@@ -6,7 +6,7 @@ fullName: Office.Context
 summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
   exists as a property of Office. It is accessed using `Office.context`<!-- -->.
-remarks: '**Hosts**: Excel, Outlook, PowerPoint, Project, Word'
+remarks: '**Applications**: Excel, Outlook, PowerPoint, Project, Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,7 +29,7 @@ properties:
     fullName: commerceAllowed
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
-      **Hosts**: Excel, Word
+      **Applications**: Excel, Word
 
 
       `commerceAllowed` is only supported in Office on iPad.
@@ -51,22 +51,22 @@ properties:
     fullName: contentLanguage
     summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
-      The `contentLanguage` value reflects the **Editing Language** setting specified with **File &gt; Options &gt;
-      Language** in the Office host application.
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt; **Options**
+      &gt; **Language** in the Office application.
 
 
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office
+      application. An empty cell indicates that the Office application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
       </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
       Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
@@ -141,13 +141,13 @@ properties:
     uid: 'office!Office.Context#displayLanguage:member'
     package: office!
     fullName: displayLanguage
-    summary: Gets the locale (language) specified by the user for the UI of the Office host application.
+    summary: Gets the locale (language) specified by the user for the UI of the Office application.
     remarks: >-
       The returned value is a string in the RFC 1766 Language tag format, such as en-US.
 
 
-      The `displayLanguage` value reflects the current **Display Language** setting specified with **File &gt; Options
-      &gt; Language** in the Office host application.
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File** &gt;
+      **Options** &gt; **Language** in the Office application.
 
 
       When using in Outlook, the applicable modes are Compose or Read.
@@ -156,15 +156,15 @@ properties:
       **Support details**
 
 
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office
+      application. An empty cell indicates that the Office application doesn't support this property.
 
 
-      For more information about Office host application and server requirements, see [Requirements for running Office
+      For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
       </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
       Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> Y </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
@@ -238,10 +238,10 @@ properties:
     uid: 'office!Office.Context#host:member'
     package: office!
     fullName: host
-    summary: Contains the Office application host in which the add-in is running.
+    summary: Contains the Office application in which the add-in is running.
     remarks: >-
       **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
-      `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all Mailbox
+      `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
@@ -357,7 +357,9 @@ properties:
     uid: 'office!Office.Context#requirements:member'
     package: office!
     fullName: requirements
-    summary: Provides a method for determining what requirement sets are supported on the current host and platform.
+    summary: >-
+      Provides a method for determining what requirement sets are supported on the current Office application and
+      platform.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -374,7 +376,7 @@ properties:
 
 
       The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox,
-      so it's available to that add-in when it is running from any host client application used to access that mailbox.
+      so it's available to that add-in when it is running from any client application used to access that mailbox.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -418,7 +420,7 @@ properties:
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
       device, such as an iPad; false otherwise.
     remarks: >-
-      **Hosts**: Excel, PowerPoint, Word
+      **Applications**: Excel, PowerPoint, Word
 
 
       `touchEnabled` is only supported in Office on iPad.
