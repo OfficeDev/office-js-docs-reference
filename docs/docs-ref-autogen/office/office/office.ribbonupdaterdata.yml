@@ -6,7 +6,7 @@ fullName: Office.RibbonUpdaterData
 summary: 'Specifies changes to the ribbon, such as the enabled or disabled status of a button.'
 remarks: >-
   **Requirement set**: [RibbonAPI
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface

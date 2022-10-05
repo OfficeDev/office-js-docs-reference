@@ -284,7 +284,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.Auth:interface",
-              "docComment": "/**\n * Interface that contains authorization related APIs.\n *\n * @remarks\n *\n * The methods in this interface are equivalent to those in the {@link https://docs.microsoft.com/javascript/api/office/office.auth | Office.auth interface}. If new authentication types are added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples throughout the documentation use `Office.auth`.\n */\n",
+              "docComment": "/**\n * Interface that contains authorization related APIs.\n *\n * @remarks\n *\n * The methods in this interface are equivalent to those in the {@link https://learn.microsoft.com/javascript/api/office/office.auth | Office.auth interface}. If new authentication types are added in the future, they will only be added to the `Office.auth` interface. For simplicity, the code examples throughout the documentation use `Office.auth`.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -297,7 +297,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Auth#getAccessToken:member(1)",
-                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook, PowerPoint, Word\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
+                  "docComment": "/**\n * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables add-ins to identify users. Server-side code can use this token to access Microsoft Graph for the add-in's web application by using the {@link https://learn.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | \"on behalf of\" OAuth flow}. This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.\n *\n * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.\n *\n * @remarks\n *\n * **Hosts**: Excel, Outlook, PowerPoint, Word\n *\n * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.\n *\n * @returns Promise to the access token.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -542,7 +542,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.AuthOptions#forMSGraphAccess:member",
-                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n */\n",
+                  "docComment": "/**\n * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`. Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.\n *\n * @remarks\n *\n * **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the `forMSGraphAccess` option before sideloading the add-in for testing. Otherwise, you'll receive {@link https://learn.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012 | error 13012}. For additional guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -894,7 +894,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface",
-              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -907,7 +907,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItem:member(1)",
-                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
+                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -957,7 +957,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItems:member(1)",
-                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1007,7 +1007,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getKeys:member(1)",
-                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n */\n",
+                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1040,7 +1040,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItem:member(1)",
-                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
+                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1090,7 +1090,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItems:member(1)",
-                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1140,7 +1140,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItem:member(1)",
-                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
+                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1206,7 +1206,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItems:member(1)",
-                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
+                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @remarks\n *\n * [Api set: SharedRuntime 1.1, Mailbox 1.10]\n *\n * **Important**: In Outlook, support is only available with {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

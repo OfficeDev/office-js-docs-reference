@@ -21,11 +21,23 @@ properties:
       content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type: '<xref uid="word!Word.Alignment:enum" /> | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - name: fields
+    uid: 'word!Word.Interfaces.TableData#fields:member'
+    package: word!
+    fullName: fields
+    summary: Gets the collection of field objects in the table.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Word.Interfaces.FieldData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FieldData:interface" />[]'
   - name: font
     uid: 'word!Word.Interfaces.TableData#font:member'
     package: word!
     fullName: font
-    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.'
+    summary: 'Gets the font. Use this to get and set font name, size, color, and other properties.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +75,7 @@ properties:
     uid: 'word!Word.Interfaces.TableData#isUniform:member'
     package: word!
     fullName: isUniform
-    summary: Indicates whether all of the table rows are uniform. Read-only.
+    summary: Indicates whether all of the table rows are uniform.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -75,7 +87,7 @@ properties:
     uid: 'word!Word.Interfaces.TableData#nestingLevel:member'
     package: word!
     fullName: nestingLevel
-    summary: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    summary: Gets the nesting level of the table. Top-level tables have level 1.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -87,7 +99,7 @@ properties:
     uid: 'word!Word.Interfaces.TableData#rowCount:member'
     package: word!
     fullName: rowCount
-    summary: Gets the number of rows in the table. Read-only.
+    summary: Gets the number of rows in the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -99,7 +111,7 @@ properties:
     uid: 'word!Word.Interfaces.TableData#rows:member'
     package: word!
     fullName: rows
-    summary: Gets all of the table rows. Read-only.
+    summary: Gets all of the table rows.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -274,7 +286,7 @@ properties:
     uid: 'word!Word.Interfaces.TableData#tables:member'
     package: word!
     fullName: tables
-    summary: Gets the child tables nested one level deeper. Read-only.
+    summary: Gets the child tables nested one level deeper.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

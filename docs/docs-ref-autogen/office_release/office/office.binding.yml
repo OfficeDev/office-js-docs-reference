@@ -20,22 +20,22 @@ summary: >-
   counting the number of rows and columns.
 remarks: >-
   **Hosts**: Word, Excel (deprecated, use
-  [Excel.Binding](https://docs.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview) instead)
+  [Excel.Binding](https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview) instead)
 
 
   **Requirement sets**:
 
 
   -
-  [MatrixBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+  [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
   -
-  [TableBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+  [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
   -
-  [TextBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+  [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -134,7 +134,7 @@ methods:
       `Office.EventType.BindingSelectionChanged`<!-- -->.
     remarks: >-
       **Requirement set**:
-      [BindingEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -179,7 +179,7 @@ methods:
       `Office.EventType.BindingSelectionChanged`<!-- -->.
     remarks: >-
       **Requirement set**:
-      [BindingEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -278,39 +278,39 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [TableBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
@@ -345,39 +345,39 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [TableBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
@@ -492,7 +492,7 @@ methods:
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: >-
       **Requirement set**:
-      [BindingEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -523,7 +523,7 @@ methods:
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: >-
       **Requirement set**:
-      [BindingEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
+      [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
       #### Examples
@@ -565,39 +565,39 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [TableBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
@@ -717,39 +717,39 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
+      [MatrixBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixbindings)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [TableBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
+      [TableBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablebindings)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextBindings](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
+      [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 

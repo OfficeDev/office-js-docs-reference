@@ -1,20 +1,20 @@
 ---
 title: Custom Functions requirement sets
 description: Details about the Custom Functions requirement sets for Excel JavaScript API.
-ms.date: 02/15/2022
+ms.date: 09/28/2022
 ms.prod: excel
 ms.localizationpriority: medium
 ---
 
 # Custom Functions requirement sets
 
-[Custom Functions](/office/dev/add-ins/excel/custom-functions-overview) use separate requirement sets from the core Excel JavaScript APIs. The following table lists the Custom Functions requirement sets, the supported Office client applications, and the build versions or number for those applications.
+[Custom Functions](/office/dev/add-ins/excel/custom-functions-overview) use separate requirement sets from the core Excel JavaScript APIs. The following table lists the Custom Functions requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-|  Requirement set  |  Office 2021 or later on Windows<br>(one-time purchase)  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(both subscription<br> and one-time purchase Office on Mac 2021 and later)  | Office on the web |
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| CustomFunctionsRuntime 1.3 | 16.0.14326.20454 or later | 16.0.13127.20296 or later | Not supported | 16.40.20081000 or later | July 2020 |
-| CustomFunctionsRuntime 1.2 | 16.0.14326.20454 or later | 16.0.12527.20194 or later | Not supported | 16.34.20020900 or later | January 2020 |
-| CustomFunctionsRuntime 1.1 | 16.0.14326.20454 or later | 16.0.12527.20092 or later | Not supported | 16.34 or later | May 2019 |
+| CustomFunctionsRuntime 1.3 | Version 2008 (Build 13127.20296) | Office 2021: Version 2008 (Build 13127.20296) | 16.40.20081000 | Not supported | Supported |
+| CustomFunctionsRuntime 1.2 | Version 1909 (Build 11929.20934) | Office 2021: Version 1909 (Build 11929.20934) | 16.34.20020900 | Not supported | Supported |
+| CustomFunctionsRuntime 1.1 | Version 1903 (Build 11425.20156) | Office 2021: Version 1903 (Build 11425.20156) | 16.34 | Not supported | Supported |
 
 ## CustomFunctionsRuntime 1.1, 1.2, and 1.3
 

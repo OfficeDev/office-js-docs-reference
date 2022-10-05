@@ -16,7 +16,7 @@ methods:
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +48,7 @@ methods:
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -108,7 +108,7 @@ methods:
     summary: Asynchronously gets the specified custom XML part by its id.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
@@ -165,7 +165,7 @@ methods:
     summary: Asynchronously gets the specified custom XML part by its id.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -193,7 +193,7 @@ methods:
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -225,7 +225,7 @@ methods:
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     remarks: >-
       **Requirement set**:
-      [CustomXmlParts](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
+      [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples

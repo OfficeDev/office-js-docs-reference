@@ -12,12 +12,12 @@ remarks: >-
 
 
   **[Minimum permission
-  level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -51,15 +51,13 @@ remarks: >-
 
   // Retrieve contextData.
 
-  // IMPORTANT: At present, this property is in preview and only works in Outlook on Windows.
-
   Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
       console.log("Initialization context:");
       console.log(asyncResult);
 
       // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
       const contextData = JSON.parse(asyncResult.value);
-      console.log("a:")
+      console.log("a:");
       console.log(contextData.a);
   });
 
@@ -109,13 +107,10 @@ properties:
     package: outlook!
     fullName: contextData
     summary: >-
-      Any JSON data the button needs to pass on. This data can be retrieved by calling
+      Any JSON data the action button needs to pass on. This data can be retrieved by calling
       `item.getInitializationContextAsync`<!-- -->.
-
-
-      **Important**: In Outlook on the web, the ability to retrieve `contextData` is not yet available.
-    remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
-    isPreview: true
+    remarks: ''
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contextData: any;'

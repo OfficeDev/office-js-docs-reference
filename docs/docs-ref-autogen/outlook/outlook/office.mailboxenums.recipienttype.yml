@@ -9,14 +9,14 @@ remarks: >-
 
 
   **[Applicable Outlook
-  mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
   **Important**: A `recipientType` property value isn't returned by the
-  [Office.context.mailbox.item.from.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1))
+  [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1))
   and
-  [Office.context.mailbox.item.organizer.getAsync](https://docs.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1))
+  [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1))
   methods. The email sender or appointment organizer is always a user whose email address is on the Exchange server.
 
 

@@ -166,7 +166,7 @@
           cell.values = [[i * j * Math.random()]];
 
           // If other parts of the sample have toggled tracking off, we will avoid tracking this range and having to manage the proxy objects.
-          // For more information, see https://docs.microsoft.com/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#untrack-unneeded-proxy-objects
+          // For more information, see https://learn.microsoft.com/office/dev/add-ins/concepts/resource-limits-and-performance-optimization#untrack-unneeded-proxy-objects
           if (untrack) {
             cell.untrack();
           }
@@ -13540,7 +13540,7 @@
     // for Project 2013 by using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example adds a handler for the TaskSelectionChanged
     event.
@@ -13653,7 +13653,7 @@
     // using a text editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the ViewSelectionChanged event.
@@ -13752,7 +13752,7 @@
     editor."
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 'Office.Document#bindings:member':
   - |-
     function displayAllBindings() {
@@ -15616,7 +15616,7 @@
     // The following example is an excerpt from a larger sample.
 
     // For the full sample, visit
-    https://docs.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
+    https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
 
 
     // Gets instances of the task suggestion entity on the item.
@@ -19423,9 +19423,6 @@
 
     // Retrieve contextData.
 
-    // IMPORTANT: At present, this property is in preview and only works in
-    Outlook on Windows.
-
     Office.context.mailbox.item.getInitializationContextAsync(function
     (asyncResult) {
         console.log("Initialization context:");
@@ -19433,7 +19430,7 @@
 
         // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
         const contextData = JSON.parse(asyncResult.value);
-        console.log("a:")
+        console.log("a:");
         console.log(contextData.a);
     });
 'Office.NotificationMessages#addAsync:member(1)':
@@ -21098,7 +21095,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Notebook#load:member(2)':
   - |-
@@ -21116,7 +21113,7 @@
         console.log("Base url: " + notebook.baseUrl);
         // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
         // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.NotebookCollection#getByName:member(1)':
   - |-
@@ -21286,7 +21283,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Page#insertPageAsSibling:member(2)':
   - |-
@@ -21726,7 +21723,7 @@
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
         // OneNote REST API according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 'OneNote.Section#insertSectionAsSibling:member(2)':
   - |-
@@ -22987,7 +22984,7 @@
 'Word.Body#fields:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets all fields in the document body.
 
@@ -22999,9 +22996,12 @@
       if (fields.items.length === 0) {
         console.log("No fields in this document.");
       } else {
+        fields.load(["code", "result"]);
+        await context.sync();
+
         for (let i = 0; i < fields.items.length; i++) {
           console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
-          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+          console.log(`Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
         }
       }
     });
@@ -23185,7 +23185,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
@@ -23215,7 +23215,6 @@
     insertParagraph method to assemble a document.
 
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-'Word.Body#insertParagraph:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
@@ -23760,7 +23759,7 @@
             console.log('Content control OOXML: ' + ooxml.value);
         }
     });
-'Word.ContentControl#insertBreak:member(2)':
+'Word.ContentControl#insertBreak:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -23788,7 +23787,7 @@
             console.log('Inserted a page break after the first content control.');    
         }
     });
-'Word.ContentControl#insertHtml:member(2)':
+'Word.ContentControl#insertHtml:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -23817,7 +23816,7 @@
             console.log('Inserted HTML in the first content control.');
         }
     });
-'Word.ContentControl#insertOoxml:member(2)':
+'Word.ContentControl#insertOoxml:member(1)':
   - >-
     // Run a batch operation against the Word object model.
 
@@ -23851,8 +23850,8 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-'Word.ContentControl#insertParagraph:member(2)':
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+'Word.ContentControl#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -23879,7 +23878,7 @@
             console.log('Inserted a paragraph after the first content control.');
         }
     });  
-'Word.ContentControl#insertText:member(2)':
+'Word.ContentControl#insertText:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -24580,7 +24579,7 @@
 'Word.Field#code:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets the first field in the document body.
 
@@ -24594,13 +24593,13 @@
         console.log("There are no fields in this document.");
       } else {
         console.log("Code of first field: " + field.code);
-        console.log("Result of first field: " + field.result);
+        console.log("Result of first field: " + JSON.stringify(field.result));
       }
     });
 'Word.Field#parentBody:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets the parent body of the first field in the document.
 
@@ -24620,7 +24619,7 @@
 'Word.Field#result:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets the first field in the document body.
 
@@ -24634,13 +24633,13 @@
         console.log("There are no fields in this document.");
       } else {
         console.log("Code of first field: " + field.code);
-        console.log("Result of first field: " + field.result);
+        console.log("Result of first field: " + JSON.stringify(field.result));
       }
     });
 'Word.FieldCollection#getFirstOrNullObject:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets the first field in the document body.
 
@@ -24654,13 +24653,13 @@
         console.log("There are no fields in this document.");
       } else {
         console.log("Code of first field: " + field.code);
-        console.log("Result of first field: " + field.result);
+        console.log("Result of first field: " + JSON.stringify(field.result));
       }
     });
 'Word.FieldCollection#items:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
     // Gets all fields in the document body.
 
@@ -24672,9 +24671,12 @@
       if (fields.items.length === 0) {
         console.log("No fields in this document.");
       } else {
+        fields.load(["code", "result"]);
+        await context.sync();
+
         for (let i = 0; i < fields.items.length; i++) {
           console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
-          console.log(`Field ${i + 1}'s result: ${fields.items[i].result}`);
+          console.log(`Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
         }
       }
     });
@@ -25182,17 +25184,6 @@
       }
     });
 'Word.Paragraph#insertBreak:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
-
-    Word.run(async (context) => {
-      context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
-
-      await context.sync();
-      console.log("success");
-    });
-'Word.Paragraph#insertBreak:member(2)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -25218,6 +25209,16 @@
         // and return a promise to indicate task completion.
         await context.sync();
         console.log('Inserted a page break after the paragraph.');
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+
+    Word.run(async (context) => {
+      context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+
+      await context.sync();
+      console.log("success");
     });
 'Word.Paragraph#insertContentControl:member(1)':
   - |-
@@ -25630,7 +25631,7 @@
         console.log(sentencesToTheEndOfParagraph.items[i].text);
       }
     });
-'Word.Range#insertBreak:member(2)':
+'Word.Range#insertBreak:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -25766,7 +25767,7 @@
     on working with OOXML.
 
     //
-    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 'Word.Range#insertParagraph:member(1)':
   - |-
     // Run a batch operation against the Word object model.

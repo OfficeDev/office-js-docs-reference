@@ -6,7 +6,7 @@ fullName: Office.Ribbon
 summary: An interface that contains all the functionality provided to manage the state of the Office ribbon.
 remarks: >-
   **Requirement set**: [RibbonAPI
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,13 +18,13 @@ methods:
     summary: Registers a custom contextual tab with Office and defines the tab's controls.
     remarks: >-
       **Requirement set**: [RibbonAPI
-      1.2](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
       This method only requests that the tab be registered. The actual registration is controlled by the Office
       application and may not be complete when the returned `Promise` object is resolved. For more information and code
       examples, see [Create custom contextual
-      tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+      tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +46,7 @@ methods:
     summary: Sends a request to Office to update the ribbon.
     remarks: >-
       **Requirement set**: [RibbonAPI
-      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 
 
       Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office
@@ -55,8 +55,8 @@ methods:
 
 
       For code examples, see [Enable and Disable Add-in
-      Commands](https://docs.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
-      contextual tabs](https://docs.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
+      Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
+      contextual tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:

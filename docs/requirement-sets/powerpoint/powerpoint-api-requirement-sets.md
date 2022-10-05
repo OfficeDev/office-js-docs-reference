@@ -1,7 +1,7 @@
 ---
 title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
-ms.date: 06/13/2022
+ms.date: 09/28/2022
 ms.prod: powerpoint
 ms.localizationpriority: high
 ---
@@ -10,14 +10,14 @@ ms.localizationpriority: high
 
 Requirement sets are named groups of API members. Office Add-ins use requirement sets specified in the manifest or use a runtime check to determine whether an Office application supports APIs that an add-in needs. For more information, see [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 
-The following table lists the PowerPoint requirement sets, the Office client applications that support those requirement sets, and the build versions or availability date.
+The following table lists the PowerPoint requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
-|  Requirement set  |  Office on Windows<br>(connected to a Microsoft 365 subscription)  |  Office on iPad<br>(connected to a Microsoft 365 subscription)  |  Office on Mac<br>(connected to a Microsoft 365 subscription)  | Office on the web |
-|:-----|-----|:-----|:-----|:-----|:-----|
-| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md)  | Version 2207 (Build 15330.20122) or later| not yet<br>supported | 16.62 or later | May 2022 |
-| [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md)  | Version 2111 (Build 14701.20060) or later| not yet<br>supported | 16.55 or later | December 2021 |
-| [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md)  | Version 2011 (Build 13426.20184) or later| not yet<br>supported | 16.43 or later | October 2020 |
-| [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Version 1810 (Build 11001.20074) or later | 2.17 or later | 16.19 or later | October 2018 |
+| Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+| [PowerPointApi 1.4](powerpoint-api-1-4-requirement-set.md) | Version 2207 (Build 15330.20122) | Not available | 16.62 | Not available | Supported |
+| [PowerPointApi 1.3](powerpoint-api-1-3-requirement-set.md) | Version 2111 (Build 14701.20060) | Not available | 16.55 | Not available | Supported |
+| [PowerPointApi 1.2](powerpoint-api-1-2-requirement-set.md) | Version 2011 (Build 13426.20184) | Office 2021: Version 2011 (Build 13426.20184) | 16.43 | Not available | Supported |
+| [PowerPointApi 1.1](powerpoint-api-1-1-requirement-set.md) | Version 1810 (Build 11001.20074) | Office 2021: Version 1810 (Build 11001.20074) | 16.19 | 2.17 | Supported |
 
 ## Office versions and build numbers
 

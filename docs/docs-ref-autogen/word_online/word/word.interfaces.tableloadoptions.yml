@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#isUniform:member'
     package: word!
     fullName: isUniform
-    summary: Indicates whether all of the table rows are uniform. Read-only.
+    summary: Indicates whether all of the table rows are uniform.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +89,7 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#nestingLevel:member'
     package: word!
     fullName: nestingLevel
-    summary: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
+    summary: Gets the nesting level of the table. Top-level tables have level 1.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -113,7 +113,9 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentContentControl:member'
     package: word!
     fullName: parentContentControl
-    summary: Gets the content control that contains the table. Throws an error if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the table. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -125,7 +127,12 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentContentControlOrNullObject:member'
     package: word!
     fullName: parentContentControlOrNullObject
-    summary: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the table. If there isn't a parent content control, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -137,7 +144,7 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentTable:member'
     package: word!
     fullName: parentTable
-    summary: Gets the table that contains this table. Throws an error if it is not contained in a table.
+    summary: Gets the table that contains this table. Throws an `ItemNotFound` error if it is not contained in a table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -149,7 +156,9 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCell:member'
     package: word!
     fullName: parentTableCell
-    summary: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
+    summary: >-
+      Gets the table cell that contains this table. Throws an `ItemNotFound` error if it is not contained in a table
+      cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -161,7 +170,12 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentTableCellOrNullObject:member'
     package: word!
     fullName: parentTableCellOrNullObject
-    summary: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
+    summary: >-
+      Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -173,7 +187,11 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#parentTableOrNullObject:member'
     package: word!
     fullName: parentTableOrNullObject
-    summary: Gets the table that contains this table. Returns a null object if it is not contained in a table.
+    summary: >-
+      Gets the table that contains this table. If it is not contained in a table, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -185,7 +203,7 @@ properties:
     uid: 'word!Word.Interfaces.TableLoadOptions#rowCount:member'
     package: word!
     fullName: rowCount
-    summary: Gets the number of rows in the table. Read-only.
+    summary: Gets the number of rows in the table.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

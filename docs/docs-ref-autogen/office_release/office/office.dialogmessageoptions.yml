@@ -6,7 +6,7 @@ fullName: Office.DialogMessageOptions
 summary: 'Provides options for how to send messages, in either direction, between a dialog and its parent.'
 remarks: >-
   **Requirement set**: [DialogOrigin
-  1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
+  1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets)
 isPreview: false
 isDeprecated: false
 type: interface

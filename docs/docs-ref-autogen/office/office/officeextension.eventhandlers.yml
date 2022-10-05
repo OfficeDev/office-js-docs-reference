@@ -60,7 +60,7 @@ methods:
 
       **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
       handler was added in must be used when removing the handler. More information can be found in [Remove an event
-      handler](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
+      handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
       -->.
     remarks: ''
     isPreview: false

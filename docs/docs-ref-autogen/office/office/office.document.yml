@@ -185,7 +185,7 @@ methods:
     summary: Adds an event handler for a Document object event.
     remarks: >-
       **Requirement set**:
-      [DocumentEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
+      [DocumentEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -227,7 +227,7 @@ methods:
     summary: Adds an event handler for a Document object event.
     remarks: >-
       **Requirement set**:
-      [DocumentEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
+      [DocumentEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -314,7 +314,7 @@ methods:
       // for Project 2013 by using a text editor."
 
       //
-      https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+      https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
 
@@ -427,7 +427,7 @@ methods:
       // using a text editor."
 
       //
-      https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+      https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
 
@@ -523,7 +523,7 @@ methods:
       // see "Create your first task pane add-in for Project by using a text editor."
 
       //
-      https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+      https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
     isPreview: false
@@ -560,7 +560,7 @@ methods:
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
       **Requirement set**:
-      [ActiveView](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview)
+      [ActiveView](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview)
 
 
       Can trigger an event when the view changes.
@@ -592,7 +592,7 @@ methods:
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
       **Requirement set**:
-      [ActiveView](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview)
+      [ActiveView](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#activeview)
 
 
       Can trigger an event when the view changes.
@@ -645,15 +645,15 @@ methods:
 
 
       -
-      [CompressedFile](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile)
+      [CompressedFile](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile)
       (when using `Office.FileType.Compressed`<!-- -->)
 
 
-      - [File](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
+      - [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
       -
-      [TextFile](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile)
+      [TextFile](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile)
       (when using `Office.FileType.Text`<!-- -->)
 
 
@@ -813,15 +813,15 @@ methods:
 
 
       -
-      [CompressedFile](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile)
+      [CompressedFile](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#compressedfile)
       (when using `Office.FileType.Compressed`<!-- -->)
 
 
-      - [File](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
+      - [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
       -
-      [TextFile](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile)
+      [TextFile](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile)
       (when using `Office.FileType.Text`<!-- -->)
 
 
@@ -868,7 +868,7 @@ methods:
     summary: Gets file properties of the current document.
     remarks: >-
       **Requirement sets**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
@@ -900,7 +900,7 @@ methods:
     summary: Gets file properties of the current document.
     remarks: >-
       **Requirement sets**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
@@ -1645,31 +1645,31 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [Selection](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+      [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
@@ -1854,31 +1854,31 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [Selection](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+      [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
@@ -2754,7 +2754,7 @@ methods:
     summary: Goes to the specified object or location in the document.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -2807,7 +2807,7 @@ methods:
     summary: Goes to the specified object or location in the document.
     remarks: >-
       **Requirement set**: [Not in a
-      set](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -2993,7 +2993,7 @@ methods:
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
-      [DocumentEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
+      [DocumentEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3022,7 +3022,7 @@ methods:
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
-      [DocumentEvents](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
+      [DocumentEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
 
 
       #### Examples
@@ -3293,41 +3293,41 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
       -->, (when using `Office.CoercionType.Html`<!-- -->)
 
 
       - [ImageCoercion
-      1.1](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (when
+      1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets) (when
       using `Office.CoercionType.Image`<!-- -->)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [Selection](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+      [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
       - [ImageCoercion
-      1.2](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
       (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
@@ -3616,41 +3616,41 @@ methods:
 
 
       -
-      [HtmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
+      [HtmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#htmlcoercion)<!--
       -->, (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
-      [ImageCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets)
+      [ImageCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets)
       (when using `Office.CoercionType.Image`<!-- -->)
 
 
       -
-      [MatrixCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
+      [MatrixCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#matrixcoercion)
       (when using `Office.CoercionType.Matrix`<!-- -->)
 
 
       -
-      [OoxmlCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
+      [OoxmlCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#ooxmlcoercion)
       (when using `Office.CoercionType.Ooxml`<!-- -->)
 
 
       -
-      [Selection](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
+      [Selection](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#selection)
 
 
       -
-      [TableCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
+      [TableCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#tablecoercion)
       (when using `Office.CoercionType.Table`<!-- -->)
 
 
       -
-      [TextCoercion](https://docs.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
+      [TextCoercion](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
 
       - [ImageCoercion
-      1.2](https://docs.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/image-coercion-requirement-sets#imagecoercion-12)
       (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 

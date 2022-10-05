@@ -15,23 +15,23 @@ properties:
     fullName: allowEvent
     summary: >-
       When the [completed
-      method](https://docs.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
       is used to signal completion of an event handler, this value indicates if the handled event should continue
       execution or be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can
       set `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts
-      walkthrough](https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission level
-      (Outlook)](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
 
 
@@ -76,22 +76,22 @@ properties:
     fullName: errorMessage
     summary: >-
       When the [completed
-      method](https://docs.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
       is used to signal completion of an event handler and if the `allowEvent` option is set to `false`<!-- -->, this
       value sets the error message that will be displayed to the user. For an example, see the [Smart Alerts
-      walkthrough](https://docs.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
+      walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
     remarks: >-
       \[ [API set: Mailbox 1.12](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
       **[Minimum permission level
-      (Outlook)](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: `Restricted`
 
 
       **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
 
 

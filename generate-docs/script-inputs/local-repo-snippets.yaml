@@ -2773,7 +2773,7 @@ Office.Document#addHandlerAsync:member(2):
     // For a complete code sample that shows how to use a ResourceSelectionChanged
     // event handler in a Project add-in, see "Create your first task pane add-in
     // for Project 2013 by using a text editor."
-    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
     // When the task selection changes in the document, it gets the GUID of the
@@ -2862,7 +2862,7 @@ Office.Document#addHandlerAsync:member(2):
     // For an example that shows how to use a ViewSelectionChanged event handler in a
     // Project add-in, see "Create your first task pane add-in for Project 2013 by
     // using a text editor."
-    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
     // When the active view changes, the handler checks the view type. It enables a button if the view is a resource
@@ -2942,7 +2942,7 @@ Office.Document#addHandlerAsync:member(2):
 
     // For a complete code sample that shows how to use a ViewSelectionChanged event handler in a Project add-in,
     // see "Create your first task pane add-in for Project by using a text editor."
-    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+    // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.Document#bindings:member:
   - |-
     function displayAllBindings() {
@@ -5362,7 +5362,7 @@ OneNote.Notebook#getRestApiId:member(1):
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 OneNote.Notebook#load:member(2):
   - |-
@@ -5380,7 +5380,7 @@ OneNote.Notebook#load:member(2):
         console.log("Base url: " + notebook.baseUrl);
         // This is only required for SharePoint notebooks, and will be null for OneDrive notebooks.
         // This baseUrl should be used to talk to OneNote REST APIs according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 OneNote.NotebookCollection#getByName:member(1):
   - |-
@@ -5550,7 +5550,7 @@ OneNote.Page#getRestApiId:member(1):
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
         // according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 OneNote.Page#insertPageAsSibling:member(2):
   - |-
@@ -6008,7 +6008,7 @@ OneNote.Section#getRestApiId:member(1):
         // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
         // For SharePoint notebooks, the notebook baseUrl should be used to talk to the 
         // OneNote REST API according to the OneNote Development Blog.
-        // https://docs.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
+        // https://learn.microsoft.com/archive/blogs/onenotedev/and-sharepoint-makes-three
     });
 OneNote.Section#load:member(2):
   - |-
@@ -7216,7 +7216,7 @@ Office.EmailAddressDetails#recipientType:member:
 Office.EmailUser:interface:
   - |-
     // The following example is an excerpt from a larger sample.
-    // For the full sample, visit https://docs.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
+    // For the full sample, visit https://learn.microsoft.com/office/dev/add-ins/outlook/extract-entity-strings-from-an-item.
 
     // Gets instances of the task suggestion entity on the item.
     function myGetTaskSuggestions()
@@ -8047,14 +8047,13 @@ Office.NotificationMessageAction:interface:
     });
 
     // Retrieve contextData.
-    // IMPORTANT: At present, this property is in preview and only works in Outlook on Windows.
     Office.context.mailbox.item.getInitializationContextAsync(function (asyncResult) {
         console.log("Initialization context:");
         console.log(asyncResult);
 
         // Note: Use JSON.parse(asyncResult.value) to read the result. Example:
         const contextData = JSON.parse(asyncResult.value);
-        console.log("a:")
+        console.log("a:");
         console.log(contextData.a);
     });
 Office.NotificationMessages#getAllAsync:member(1):
@@ -8987,7 +8986,7 @@ Word.Body#insertInlinePictureFromBase64:member(1):
     });
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
@@ -9226,7 +9225,7 @@ Word.ContentControl#getOoxml:member(1):
             console.log('Content control OOXML: ' + ooxml.value);
         }
     });
-Word.ContentControl#insertBreak:member(2):
+Word.ContentControl#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9254,7 +9253,7 @@ Word.ContentControl#insertBreak:member(2):
             console.log('Inserted a page break after the first content control.');    
         }
     });
-Word.ContentControl#insertHtml:member(2):
+Word.ContentControl#insertHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9283,7 +9282,7 @@ Word.ContentControl#insertHtml:member(2):
             console.log('Inserted HTML in the first content control.');
         }
     });
-Word.ContentControl#insertOoxml:member(2):
+Word.ContentControl#insertOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9312,8 +9311,8 @@ Word.ContentControl#insertOoxml:member(2):
     });  
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl#insertParagraph:member(2):
+    // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+Word.ContentControl#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -9340,7 +9339,7 @@ Word.ContentControl#insertParagraph:member(2):
             console.log('Inserted a paragraph after the first content control.');
         }
     });  
-Word.ContentControl#insertText:member(2):
+Word.ContentControl#insertText:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -10007,7 +10006,7 @@ Word.Paragraph#getPreviousOrNullObject:member(1):
             console.log('The preceding paragraph is: ' + precedingParagraph.text);
         }
     });
-Word.Paragraph#insertBreak:member(2):
+Word.Paragraph#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -10206,7 +10205,7 @@ Word.Range#getOoxml:member(1):
         await context.sync();
         console.log('The OOXML read from the document was:  ' + ooxml.value);
     });
-Word.Range#insertBreak:member(2):
+Word.Range#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -10277,7 +10276,7 @@ Word.Range#insertOoxml:member(1):
     });
     
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.Range#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
