@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 09/16/2022
+ms.date: 10/05/2022
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +38,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  [TaskpaneId](#taskpaneid) | Specifies the ID of the task pane container. Not supported in Outlook add-ins.|
 |  [Title](#title) | Specifies the custom title for the task pane. Not supported in Outlook add-ins.|
 |  [SupportsPinning](#supportspinning) | Specifies that a task pane supports pinning, which keeps the task pane open when the user changes the selection.|
-|  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected mail items. |
+|  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected messages. |
 
 ## xsi:type
 
@@ -200,7 +200,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 ## SupportsMultiselect (preview)
 
-Optional element in Outlook add-ins. Include a value of `true` to allow an add-in to activate and perform a specific operation on multiple selected mail items. Because item multi-select only applies to messages, the [ExtensionPoint element's `xsi:type` attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface` or `MessageComposeCommandSurface`. To learn more about item multi-select, see //TODO.
+Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate and perform specific operations on multiple selected messages. Because item multi-select only applies to messages, the [ExtensionPoint element's `xsi:type` attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface` or `MessageComposeCommandSurface`. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages (preview)](/office/dev/add-ins/outlook/item-multi-select).
 
 **Add-in type:** Mail
 
