@@ -28,7 +28,7 @@ methods:
     fullName: areShortcutsInUse(shortcuts)
     summary: >-
       Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the
-      host Office application.
+      Office application.
     remarks: >-
       **Requirement sets**:
 

@@ -609,7 +609,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body, and should not be displayed in the attachment
             list.
@@ -794,7 +794,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -935,7 +935,7 @@ methods:
           type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1030,7 +1030,7 @@ methods:
       as secure storage.
 
 
-      The custom properties are provided as a `CustomProperties` object in the asyncResult.value property. This object
+      The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. This object
       can be used to get, set, and remove custom properties from the item and save changes to the custom property set
       back to the server.
     remarks: >-
@@ -1217,7 +1217,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1355,7 +1355,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
             current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the
             text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't),

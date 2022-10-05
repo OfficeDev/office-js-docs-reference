@@ -120,7 +120,7 @@ properties:
     package: outlook!
     fullName: optionalAttendees
     summary: >-
-      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      Provides access to the optional attendees of an event. The type of object and level of access depend on the mode
       of the current item.
 
 

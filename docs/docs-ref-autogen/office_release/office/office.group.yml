@@ -20,7 +20,7 @@ properties:
     fullName: controls
     summary: 'Specifies one or more of the controls in the group, such as menu items, buttons, etc.'
     remarks: >-
-      When the `Group` object is part of a [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
+      When the `Group` object is part of an [Office.RibbonUpdaterData](xref:office!Office.RibbonUpdaterData:interface)
       object passed to the `requestUpdate` method of [Office.Ribbon](xref:office!Office.Ribbon:interface)<!-- -->, the
       `controls` properties of the various [Office.Group](xref:office!Office.Group:interface) objects specify which
       controls have their enabled status changed; the `controls` property of the `Group` object's parent `Tab` object is

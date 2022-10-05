@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlPrefixMappings:interface'
 package: office!
 fullName: Office.CustomXmlPrefixMappings
 summary: Represents a collection of CustomXmlPart objects.
-remarks: '**Hosts**: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface

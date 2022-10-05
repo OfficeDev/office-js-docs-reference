@@ -480,10 +480,10 @@ properties:
 
       <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
       <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-      <td>IPM.Appointment,IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
+      <td>IPM.Appointment, IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email
       messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
-      use IPM.Schedule.Meeting as the base message class.</td>
-      <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+      use IPM.Schedule.Meeting as the base message class.</td> <td>IPM.Note, IPM.Schedule.Meeting.Request,
+      IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
 
 
@@ -1267,7 +1267,7 @@ methods:
           type: any
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1535,7 +1535,7 @@ methods:
           type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1854,7 +1854,7 @@ methods:
           type: 'string | <xref uid="outlook!Office.ReplyFormData:interface" />'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1997,7 +1997,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2335,7 +2335,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2688,7 +2688,7 @@ methods:
       If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
       expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the `Body.getAsync` method to retrieve the entire body
+      use the `Body.getAsync` method to retrieve the entire body.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
@@ -2867,7 +2867,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -3096,7 +3096,7 @@ methods:
           type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback

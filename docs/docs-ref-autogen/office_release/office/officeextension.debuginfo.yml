@@ -66,7 +66,7 @@ properties:
     uid: 'office!OfficeExtension.DebugInfo#message:member'
     package: office!
     fullName: message
-    summary: The error message passed through from the host Office application.
+    summary: The error message passed through from the Office application.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -82,7 +82,7 @@ properties:
       The statement that caused the error, if available.
 
 
-      This statement will never contain any potentially-sensitive data and may not match the code exactly as written,
+      This statement will never contain any potentially sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     remarks: ''
     isPreview: false
@@ -99,7 +99,7 @@ properties:
       The statements that closely precede and follow the statement that caused the error, if available.
 
 
-      These statements will never contain any potentially-sensitive data and may not match the code exactly as written,
+      These statements will never contain any potentially sensitive data and may not match the code exactly as written,
       but will be a close approximation.
     remarks: ''
     isPreview: false

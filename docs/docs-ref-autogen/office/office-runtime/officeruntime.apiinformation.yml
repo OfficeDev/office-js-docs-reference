@@ -13,7 +13,7 @@ methods:
     uid: 'office-runtime!OfficeRuntime.ApiInformation#isSetSupported:member(1)'
     package: office-runtime!
     fullName: 'isSetSupported(name, minVersion)'
-    summary: Check if the specified requirement set is supported by the host Office application.
+    summary: Check if the specified requirement set is supported by the Office application.
     remarks: ''
     isPreview: false
     isDeprecated: false

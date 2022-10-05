@@ -6,7 +6,7 @@ fullName: Office.CustomXmlPart
 summary: >-
   Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
   collection.
-remarks: '**Hosts**: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -361,7 +361,7 @@ methods:
     uid: 'office!Office.CustomXmlPart#getNodesAsync:member(2)'
     package: office!
     fullName: 'getNodesAsync(xPath, callback)'
-    summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
+    summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath. / *
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)

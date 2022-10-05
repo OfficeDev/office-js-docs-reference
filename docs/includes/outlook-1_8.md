@@ -30,7 +30,7 @@
 ||[name](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-name-member)|Gets the name of the attachment.|
 ||[size](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-size-member)|Gets the size of the attachment in bytes.|
 ||[url](/javascript/api/outlook/office.attachmentdetailscompose#outlook-office-attachmentdetailscompose-url-member)|Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.|
-|[AttachmentsChangedEventArgs](/javascript/api/outlook/office.attachmentschangedeventargs)|[attachmentDetails](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentdetails-member)||
+|[AttachmentsChangedEventArgs](/javascript/api/outlook/office.attachmentschangedeventargs)|[attachmentDetails](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentdetails-member)|Represents the set of attachments that were added or removed.|
 ||[attachmentStatus](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-attachmentstatus-member)|Gets whether the attachments were added or removed.|
 ||[type](/javascript/api/outlook/office.attachmentschangedeventargs#outlook-office-attachmentschangedeventargs-type-member)|Gets the type of the event.|
 |[Categories](/javascript/api/outlook/office.categories)|[addAsync(categories: string[], callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.categories#outlook-office-categories-addasync-member(1))|Adds categories to an item.|
