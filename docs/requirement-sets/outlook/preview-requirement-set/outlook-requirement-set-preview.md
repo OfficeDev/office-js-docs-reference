@@ -89,13 +89,13 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 Added a new method that retrieves currently selected messages. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages (preview)](/office/dev/add-ins/outlook/item-multi-select).
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.EventType.SelectedItemsChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
 
 Added `SelectedItemsChanged` event to `Mailbox`. This event occurs when one or more messages are selected or deselected.
 
-**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
