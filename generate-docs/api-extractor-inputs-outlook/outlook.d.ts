@@ -1505,7 +1505,7 @@ export declare namespace Office {
          */
         sensitivity: Sensitivity;
         /**
-         * Gets the id of the series that an instance belongs to.
+         * Gets the ID of the series that an instance belongs to.
          *
          * In Outlook on the web and desktop clients, the `seriesId` property returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the parent item.
@@ -1600,7 +1600,7 @@ export declare namespace Office {
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline in the message body,
          *                    and should not be displayed in the attachment list.
@@ -1679,7 +1679,7 @@ export declare namespace Office {
          *
          * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline in the message body
          *                    and should not be displayed in the attachment list.
@@ -1746,7 +1746,7 @@ export declare namespace Office {
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
          *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -1798,7 +1798,7 @@ export declare namespace Office {
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of
          *                             type `Office.AsyncResult`.
@@ -1874,7 +1874,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -1923,7 +1923,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param attachmentId - The identifier of the attachment you want to get.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -1969,7 +1969,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
@@ -2001,7 +2001,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -2045,9 +2045,9 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+         * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                   of type `Office.AsyncResult`.
@@ -2071,7 +2071,7 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+         * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                   of type `Office.AsyncResult`.
@@ -2098,13 +2098,13 @@ export declare namespace Office {
          *
          * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present.
          *                     If `HTML`, the method returns the selected text, whether it is plaintext or HTML.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                  of type `Office.AsyncResult`.
+         *                   of type `Office.AsyncResult`.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
-         /**
+        /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
          * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data.
@@ -2144,7 +2144,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -2186,7 +2186,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
@@ -2256,7 +2256,7 @@ export declare namespace Office {
          *
          * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId`
          *                       is 200 characters in Outlook on the web and on Windows.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                             type `Office.AsyncResult`.
@@ -2304,7 +2304,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
          * @param eventType - The event that should revoke the handler.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -2361,7 +2361,7 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
@@ -2423,7 +2423,7 @@ export declare namespace Office {
          *
          * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters.
          *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: If text, the current style is applied in Outlook on the web and Windows.
          *                      If the field is an HTML editor, only the text data is inserted, even if the data is HTML.
@@ -2523,9 +2523,9 @@ export declare namespace Office {
         *
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
         */
-        location: Location | string;
-        /**
-        * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
+       location: Location | string;
+       /**
+        * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
         *
         * *Read mode*
         *
@@ -2551,7 +2551,7 @@ export declare namespace Office {
         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
         */
        optionalAttendees: Recipients[] | EmailAddressDetails[];
-        /**
+       /**
         * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
         *
         * @remarks
@@ -2770,12 +2770,12 @@ export declare namespace Office {
          *   <tr>
          *     <td>Appointment items</td>
          *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
+         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
          *   </tr>
          *   <tr>
          *     <td>Message items</td>
          *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
          *   </tr>
          * </table>
          *
@@ -2856,11 +2856,11 @@ export declare namespace Office {
          * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each optional attendee to the meeting. Collection size limits:
          *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * - New Mac UI, web browser, Android: No limit
+         * - Windows: 500 members
+         *
+         * - Classic Mac UI: 100 members
+         *
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -2904,11 +2904,11 @@ export declare namespace Office {
          * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
          * each required attendee to the meeting. Collection size limits:
          *
-        * - Windows: 500 members
-        *
-        * - Classic Mac UI: 100 members
-        *
-        * - New Mac UI, web browser, Android: No limit
+         * - Windows: 500 members
+         *
+         * - Classic Mac UI: 100 members
+         *
+         * - New Mac UI, web browser, Android: No limit
          *
          * @remarks
          *
@@ -2996,7 +2996,7 @@ export declare namespace Office {
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
          *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -3067,7 +3067,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -3142,7 +3142,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -3197,7 +3197,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param attachmentId - The identifier of the attachment you want to get.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -3341,7 +3341,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -3350,22 +3350,22 @@ export declare namespace Office {
          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
          */
         getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-         /**
-          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
-          *
-          * @remarks
-          * [Api set: Mailbox 1.8]
-          *
-          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-          *
-          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
-          *
-          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-          *                             of type `Office.AsyncResult`.
-          *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-          *                 If there is no initialization context, the `asyncResult` object will contain
-          *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
-          */
+        /**
+         * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                             of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
+         *                 If there is no initialization context, the `asyncResult` object will contain
+         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         */
         getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -3445,10 +3445,9 @@ export declare namespace Office {
          * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
          * and should not attempt to return the entire body of the item.
          * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-         * Instead, use the `Body.getAsync` method to retrieve the entire body
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
@@ -3478,7 +3477,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -3542,7 +3541,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
          * @param eventType - The event that should revoke the handler.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -3797,7 +3796,7 @@ export declare namespace Office {
          * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the message body is in plain text.
          *
          * @param data - The string to be added to the end of the body. The string is limited to 5,000 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: The desired format for the data to be appended. The string in the `data` parameter will be converted to this format.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -3858,7 +3857,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param coercionType - The format for the returned body.
-         * @param options - An object literal that contains one or more of the following properties:
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type Office.AsyncResult. The body is provided in the requested format in the `asyncResult.value` property.
@@ -3895,7 +3894,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -3944,7 +3943,7 @@ export declare namespace Office {
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
          *
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -4010,7 +4009,7 @@ export declare namespace Office {
          * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -4056,7 +4055,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
+         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
          * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
@@ -4075,7 +4074,7 @@ export declare namespace Office {
          * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -4089,7 +4088,7 @@ export declare namespace Office {
          * the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the
          * UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (\<a\>) to "LPNoLP"
+         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
          * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
@@ -4138,7 +4137,7 @@ export declare namespace Office {
          * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
          *
          * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: The format the signature should be set to. If Text, the method sets the signature to plain text,
          *                        removing any HTML tags present. If Html, the method sets the signature to HTML.
@@ -4212,7 +4211,7 @@ export declare namespace Office {
          * - `InvalidCategory`: Invalid categories were provided.
          *
          * @param categories - The categories to be added to the item.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -4257,7 +4256,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If getting categories fails, the `asyncResult.error` property will contain an error code.
@@ -4297,7 +4296,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param categories - The categories to be removed from the item.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
@@ -4528,7 +4527,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties:
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -4563,7 +4562,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param datetime - The future date and time when the message should be sent.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
@@ -4599,12 +4598,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
      * 
      * Starting with Mailbox requirement set 1.5, you can also use the 
-     * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics} 
+     * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics}
      * property to get similar information.
      */
     export interface Diagnostics {
         /**
-         * Gets a string that represents the name of the host application.
+         * Gets a string that represents the name of the Office application.
          *
          * A string that can be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
          *
@@ -4618,9 +4617,9 @@ export declare namespace Office {
          */
         hostName: string;
         /**
-         * Gets a string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
+         * Gets a string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
          *
-         * If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the version of the host
+         * If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the version of the
          * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
          *
          * @remarks
@@ -4635,7 +4634,7 @@ export declare namespace Office {
          *
          * The returned string can be one of the following values: `OneColumn`, `TwoColumns`, or `ThreeColumns`.
          *
-         * If the host application is not Outlook on the web, then accessing this property results in undefined.
+         * If the application is not Outlook on the web, then accessing this property results in undefined.
          *
          * Outlook on the web has three views that correspond to the width of the screen and the window, and the number of columns that can be displayed:
          *
@@ -4684,7 +4683,7 @@ export declare namespace Office {
          * 
          * @remarks
          * **Important**: A `recipientType` property value isn't returned by the 
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync}
          * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
          * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
          */
@@ -4739,7 +4738,7 @@ export declare namespace Office {
          * - `InvalidFormatError`: The format of the specified data object is not valid.
          *
          * @param locationIdentifiers - The locations to be added to the current list of locations.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. Check the `status` property of `asyncResult` to determine if the call succeeded.
@@ -4774,7 +4773,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -4807,7 +4806,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param locationIdentifiers - The locations to be removed from the current list of locations.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. Check the `status` property of `asyncResult` to determine if the call succeeded.
@@ -4939,8 +4938,8 @@ export declare namespace Office {
          *
          * **Important**: A `recipientType` property value isn't returned by the getAsync method.
          * The email sender is always a user whose email address is on the Exchange server.
-         *  
-         * @param options - An object literal that contains one or more of the following properties.
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                             `asyncResult`, which is an `Office.AsyncResult` object.
@@ -4961,7 +4960,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Important**: A `recipientType` property value isn't returned by the getAsync methods.
+         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -5061,7 +5060,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param names - The names of the internet headers to be returned.
-         * @param options - An object literal that contains one or more of the following properties:
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -5084,8 +5083,8 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-         getAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
-         /**
+        getAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        /**
          * Given an array of internet header names, this method removes the specified headers from the internet header collection.
          *
          * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
@@ -5098,13 +5097,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param names - The names of the internet headers to be removed.
-         * @param options - An object literal that contains one or more of the following properties:
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
         removeAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
-         /**
+        /**
          * Given an array of internet header names, this method removes the specified headers from the internet header collection.
          *
          * **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
@@ -5144,7 +5143,7 @@ export declare namespace Office {
          *
          * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the
          *                internet headers and values being the values of the internet headers.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
@@ -5300,7 +5299,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -5341,7 +5340,7 @@ export declare namespace Office {
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
          *
          * @param location - The location of the appointment. The string is limited to 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.
@@ -5439,23 +5438,23 @@ export declare namespace Office {
         /**
          * Provides diagnostic information to an Outlook add-in.
          *
-         * Contains the following members:
+         * Contains the following members.
          *
-         *  - `hostName` (string): A string that represents the name of the host application.
+         *  - `hostName` (string): A string that represents the name of the Office application.
          * It should be one of the following values: `Outlook`, `OutlookWebApp`, `OutlookIOS`, or `OutlookAndroid`.
          * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
          *
-         *  - `hostVersion` (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
+         *  - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange Server (e.g., "15.0.468.0").
          * If the mail add-in is running in Outlook on desktop or mobile clients, the `hostVersion` property returns the version of the
-         * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
+         * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
          *
          *  - `OWAView` (`MailboxEnums.OWAView` or string): An enum (or string literal) that represents the current view of Outlook on the web.
-         * If the host application is not Outlook on the web, then accessing this property results in undefined.
+         * If the application is not Outlook on the web, then accessing this property results in undefined.
          * Outlook on the web has three views (`OneColumn` - displayed when the screen is narrow, `TwoColumns` - displayed when the screen is wider,
          * and `ThreeColumns` - displayed when the screen is wide) that correspond to the width of the screen and the window, and the number of columns
          * that can be displayed.
          *
-         *  More information is under {@link Office.Diagnostics}.
+         * More information is under {@link Office.Diagnostics}.
          *
          * @remarks
          *
@@ -5464,7 +5463,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          * 
          * Starting with Mailbox requirement set 1.5, you can also use the 
-         * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics} 
+         * {@link https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member | Office.context.diagnostics}
          * property to get similar information.
          */
         diagnostics: Diagnostics;
@@ -5710,13 +5709,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-         displayAppointmentFormAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-         /**
+        displayAppointmentFormAsync(itemId: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
          * Displays an existing calendar appointment.
          *
          * The `displayAppointmentFormAsync` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on
@@ -5793,7 +5792,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -5880,7 +5879,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
          *
          * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -5959,7 +5958,7 @@ export declare namespace Office {
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
          *        message body, and should not be displayed in the attachment list.
          *
-         *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+         *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
          *        This is a string up to 100 characters.
          */
         displayNewMessageForm(parameters: any): void;
@@ -6006,9 +6005,9 @@ export declare namespace Office {
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
          *        message body, and should not be displayed in the attachment list.
          *
-         *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+         *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
          *        This is a string up to 100 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -6057,7 +6056,7 @@ export declare namespace Office {
          *        `attachments.isInline`: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the
          *        message body, and should not be displayed in the attachment list.
          *
-         *        `attachments.itemId`: Only used if type is set to item. The EWS item id of the existing e-mail you want to attach to the new message.
+         *        `attachments.itemId`: Only used if type is set to item. The EWS item ID of the existing e-mail you want to attach to the new message.
          *        This is a string up to 100 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -6089,7 +6088,7 @@ export declare namespace Office {
          *
          * The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
          *
-         * This API works for the following scopes:
+         * This API works for the following scopes.
          *
          * - `Mail.ReadWrite`
          *
@@ -6130,7 +6129,7 @@ export declare namespace Office {
          *
          * - `NetworkError`: The user is no longer connected to the network. Please check your network connection and try again.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `isRest`: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`.
          *        `asyncContext`: Any state data that is passed to the asynchronous method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
@@ -6229,7 +6228,7 @@ export declare namespace Office {
          * The XML result of the EWS call is provided as a string in the `asyncResult.value` property.
          * If the result exceeds 1 MB in size, an error message is returned instead.
          *
-         * **Note**: This method is not supported in the following scenarios:
+         * **Note**: This method is not supported in the following scenarios.
          *
          * - In Outlook on iOS or Android.
          *
@@ -6334,7 +6333,7 @@ export declare namespace Office {
          * - `PermissionDenied`: The user does not have permission to perform this action.
          *
          * @param categories - The categories to be added to the master list on the mailbox.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -6371,7 +6370,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If adding categories fails, the `asyncResult.error` property will contain an error code.
@@ -6406,7 +6405,7 @@ export declare namespace Office {
          * - `PermissionDenied`: The user does not have permission to perform this action.
          *
          * @param categories - The categories to be removed from the master list on the mailbox.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If removing categories fails, the `asyncResult.error` property will contain an error code.
@@ -6543,7 +6542,6 @@ export declare namespace Office {
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the
          * current item.
-         *
          *
          * The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
          * **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients
@@ -6734,7 +6732,7 @@ export declare namespace Office {
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the
          *        attachment list.
@@ -6811,7 +6809,7 @@ export declare namespace Office {
          *
          * @param base64File - The base64-encoded content of an image or file to be added to an email or event.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -6873,7 +6871,7 @@ export declare namespace Office {
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
          *                The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -6925,7 +6923,7 @@ export declare namespace Office {
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property.
@@ -6999,7 +6997,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -7048,7 +7046,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param attachmentId - The identifier of the attachment you want to get.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -7094,7 +7092,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If the call fails, the `asyncResult.error` property will contain an error code with the reason for
@@ -7127,7 +7125,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
@@ -7166,7 +7164,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -7210,9 +7208,9 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+         * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                   of type `Office.AsyncResult`.
@@ -7236,7 +7234,7 @@ export declare namespace Office {
          *
          * **Errors**:
          *
-         * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+         * - `ItemNotSaved`: The ID can't be retrieved until the item is saved.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                   of type `Office.AsyncResult`.
@@ -7263,7 +7261,7 @@ export declare namespace Office {
          *
          * @param coercionType - Requests a format for the data. If `Text`, the method returns the plain text as a string, removing any HTML tags present.
          *                     If `Html`, the method returns the selected text, whether it is plaintext or HTML.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -7330,7 +7328,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
@@ -7391,7 +7389,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
@@ -7461,7 +7459,7 @@ export declare namespace Office {
          *
          * @param attachmentId - The identifier of the attachment to remove. The maximum string length of the `attachmentId`
          *                       is 200 characters in Outlook on the web and on Windows.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If removing the attachment fails, the `asyncResult.error` property will contain an error code
@@ -7509,7 +7507,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * @param eventType - The event that should revoke the handler.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -7562,7 +7560,7 @@ export declare namespace Office {
          *
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -7571,7 +7569,7 @@ export declare namespace Office {
         /**
          * Asynchronously saves an item.
          *
-         * When invoked, this method saves the current message as a draft and returns the item id via the callback function.
+         * When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
          * In Outlook on the web or Outlook in online mode, the item is saved to the server.
          * In Outlook in cached mode, the item is saved to the local cache.
          *
@@ -7621,7 +7619,7 @@ export declare namespace Office {
          *
          * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters.
          *             If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          *        `coercionType`: If text, the current style is applied in Outlook on the web and desktop clients.
          *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML.
@@ -7841,12 +7839,12 @@ export declare namespace Office {
          *   <tr>
          *     <td>Appointment items</td>
          *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
-         *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
+         *     <td>IPM.Appointment, IPM.Appointment.Occurrence</td>
          *   </tr>
          *   <tr>
          *     <td>Message items</td>
          *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
-         *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+         *     <td>IPM.Note, IPM.Schedule.Meeting.Request, IPM.Schedule.Meeting.Neg, IPM.Schedule.Meeting.Pos, IPM.Schedule.Meeting.Tent, IPM.Schedule.Meeting.Canceled</td>
          *   </tr>
          * </table>
          *
@@ -7944,7 +7942,7 @@ export declare namespace Office {
          */
         recurrence: Recurrence;
         /**
-         * Gets the id of the series that an instance belongs to.
+         * Gets the ID of the series that an instance belongs to.
          *
          * In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item
          * that this item belongs to. However, on iOS and Android, the `seriesId` returns the REST ID of the parent item.
@@ -8046,7 +8044,7 @@ export declare namespace Office {
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal.
          *                The `type` property on the parameter will match the eventType `parameter` passed to `addHandlerAsync`.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8117,7 +8115,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8192,7 +8190,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8236,7 +8234,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8289,7 +8287,7 @@ export declare namespace Office {
          * - `InvalidAttachmentId`: The attachment identifier does not exist.
          *
          * @param attachmentId - The identifier of the attachment you want to get.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. If the call fails, the `asyncResult.error` property will contain
@@ -8434,7 +8432,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -8570,7 +8568,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
@@ -8631,7 +8629,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
          * @param eventType - The event that should revoke the handler.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8679,7 +8677,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -8717,7 +8715,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param isAllDayEvent - boolean value to set the all day event status.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -8872,7 +8870,7 @@ export declare namespace Office {
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.
          * @param JSONmessage - A JSON object that contains the notification message to be added to the item.
          *                    It contains a `NotificationMessageDetails` object.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`.
@@ -8915,7 +8913,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `NotificationMessageDetails` objects.
@@ -8946,7 +8944,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param key - The key for the notification message to remove.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`.
@@ -8982,7 +8980,7 @@ export declare namespace Office {
          * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
          * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message.
          *                    It contains a `NotificationMessageDetails` object.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`.
@@ -9062,7 +9060,7 @@ export declare namespace Office {
          * **Important**: A `recipientType` property value isn't returned by the getAsync method.
          * The appointment organizer is always a user whose email address is on the Exchange server.
          * 
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                  `asyncResult`, which is an `AsyncResult` object. The `value` property of the result is the appointment's organizer value,
@@ -9159,7 +9157,7 @@ export declare namespace Office {
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
          * @param recipients - The recipients to add to the recipients list.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
@@ -9236,7 +9234,7 @@ export declare namespace Office {
          * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
          * the auto-complete list.
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
@@ -9258,7 +9256,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
          * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
          * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
          * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
@@ -9315,7 +9313,7 @@ export declare namespace Office {
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
          * @param recipients - The recipients to add to the recipients list.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
@@ -9546,7 +9544,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object. The `value` property of the result is a `Recurrence` object.
@@ -9585,7 +9583,7 @@ export declare namespace Office {
          * - `InvalidEndTime`: The appointment end time is before its start time.
          *
          * @param recurrencePattern - A recurrence object.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -9722,7 +9720,7 @@ export declare namespace Office {
          */
         inLine?: boolean;
         /**
-         * Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+         * Only used if type is set to item. The EWS item ID of the attachment. This is a string up to 100 characters.
          */
         itemId?: string;
     }
@@ -9744,7 +9742,7 @@ export declare namespace Office {
          */
         callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;
         /**
-         * An object literal that contains the following property.
+         * An object literal that contains the following property:-
          * `asyncContext`: Developers can provide any object they wish to access in the callback function.
          */
         options?: CommonAPI.AsyncContextOptions;
@@ -9865,7 +9863,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -9900,7 +9898,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param sensitivity - The sensitivity value as enum or string.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -10122,7 +10120,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -10182,7 +10180,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param name - The session data key.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -10217,7 +10215,7 @@ export declare namespace Office {
 
          * @param name - The session data key.
          * @param value - The session data value as a string.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`.
@@ -10304,7 +10302,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. The `value` property of the result is the subject of the item.
@@ -10344,7 +10342,7 @@ export declare namespace Office {
          * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.
          *
          * @param subject - The subject of the appointment or message. The string is limited to 255 characters.
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. If setting the subject fails, the `asyncResult.error` property will contain an error code.
@@ -10419,7 +10417,7 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                  of type `Office.AsyncResult`. The `value` property of the result is a `Date` object.
@@ -10464,7 +10462,7 @@ export declare namespace Office {
          * - `InvalidEndTime`: The appointment end time is before the appointment start time.
          *
          * @param dateTime - A date-time object in Coordinated Universal Time (UTC).
-         * @param options - An object literal that contains one or more of the following properties.
+         * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *               type `Office.AsyncResult`. If setting the date and time fails, the `asyncResult.error` property will contain an error code.
@@ -10524,7 +10522,7 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Value</th>
-         *     <th>Description?</th>
+         *     <th>Description</th>
          *   </tr>
          *   <tr>
          *     <td>enterprise</td>

@@ -1000,7 +1000,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body, and should not be displayed in the attachment
             list.
@@ -1207,7 +1207,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body and should not be displayed in the attachment
             list.
@@ -1359,7 +1359,7 @@ methods:
           type: any
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1517,7 +1517,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1728,7 +1728,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1866,7 +1866,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -1972,7 +1972,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2052,7 +2052,7 @@ methods:
       **Errors**:
 
 
-      - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+      - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2062,7 +2062,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2104,7 +2104,7 @@ methods:
       **Errors**:
 
 
-      - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+      - `ItemNotSaved`<!-- -->: The ID can't be retrieved until the item is saved.
 
 
       #### Examples
@@ -2202,7 +2202,7 @@ methods:
           type: '<xref uid="office!Office.CoercionType:enum" /> | string'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2386,7 +2386,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2493,7 +2493,7 @@ methods:
       as secure storage.
 
 
-      The custom properties are provided as a `CustomProperties` object in the asyncResult.value property. This object
+      The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. This object
       can be used to get, set, and remove custom properties from the item and save changes to the custom property set
       back to the server.
     remarks: >-
@@ -2680,7 +2680,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2780,7 +2780,7 @@ methods:
           type: '<xref uid="office!Office.EventType:enum" /> | string'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2886,7 +2886,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -2905,7 +2905,7 @@ methods:
       Asynchronously saves an item.
 
 
-      When invoked, this method saves the current message as a draft and returns the item id via the callback function.
+      When invoked, this method saves the current message as a draft and returns the item ID via the callback function.
       In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the
       item is saved to the local cache.
 
@@ -3056,7 +3056,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: If text, the
             current style is applied in Outlook on the web and desktop clients. If the field is an HTML editor, only the
             text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't),

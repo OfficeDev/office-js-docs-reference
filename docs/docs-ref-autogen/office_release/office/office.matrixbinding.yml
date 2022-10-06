@@ -5,7 +5,7 @@ package: office!
 fullName: Office.MatrixBinding
 summary: Represents a binding in two dimensions of rows and columns.
 remarks: >-
-  The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
+  The MatrixBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from
   the Binding object.
 isPreview: false
 isDeprecated: false

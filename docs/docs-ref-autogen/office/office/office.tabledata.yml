@@ -49,7 +49,7 @@ properties:
 
 
       If you specify null for the headers property (or leaving the property empty when you construct a TableData
-      object), the following results occur when your code executes:
+      object), the following results occur when your code executes.
 
 
       - If you insert a new table, the default column headers for the table are created.
@@ -93,7 +93,7 @@ properties:
 
 
       If you specify null for the rows property (or leave the property empty when you construct a TableData object), the
-      following results occur when your code executes:
+      following results occur when your code executes.
 
 
       - If you insert a new table, a blank row will be inserted.

@@ -51,7 +51,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -70,7 +70,7 @@ methods:
       Gets the subject of an appointment or message.
 
 
-      The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or
       message.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -167,7 +167,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback

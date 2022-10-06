@@ -58,7 +58,7 @@ properties:
     package: outlook!
     fullName: options
     summary: >-
-      An object literal that contains the following property. `asyncContext`<!-- -->: Developers can provide any object
+      An object literal that contains the following property:- `asyncContext`<!-- -->: Developers can provide any object
       they wish to access in the callback function.
     remarks: ''
     isPreview: false

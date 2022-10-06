@@ -78,7 +78,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -119,7 +119,7 @@ methods:
       Compose
 
 
-      **Important**: A `recipientType` property value isn't returned by the getAsync methods. The email sender is always
+      **Important**: A `recipientType` property value isn't returned by the getAsync method. The email sender is always
       a user whose email address is on the Exchange server.
     isPreview: false
     isDeprecated: false

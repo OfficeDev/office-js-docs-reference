@@ -78,7 +78,7 @@ methods:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
@@ -217,7 +217,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
@@ -304,8 +304,8 @@ methods:
       insertion, the cursor is placed at the end of the inserted content.
 
 
-      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
@@ -382,7 +382,7 @@ methods:
           type: string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The desired
             format for the body. The string in the `data` parameter will be converted to this format.
           type: >-
@@ -411,8 +411,8 @@ methods:
       insertion, the cursor is placed at the end of the inserted content.
 
 
-      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
       **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.

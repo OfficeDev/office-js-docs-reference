@@ -62,7 +62,7 @@ methods:
     fullName: remove(object)
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
-      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      objects slows down the Office application, so please remember to free any objects you add, once you're done using
       them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
@@ -82,7 +82,7 @@ methods:
     fullName: remove(objects)
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
-      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      objects slows down the Office application, so please remember to free any objects you add, once you're done using
       them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false

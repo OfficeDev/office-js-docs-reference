@@ -223,13 +223,13 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-     * An empty cell indicates that the Office host application doesn't support this enumeration.
+     * A capital Y in the following matrix indicates that this object is supported in the corresponding Office application.
+     * An empty cell indicates that the Office application doesn't support this object.
      *
-     * For more information about Office host application and server requirements, see
+     * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
-     * *Supported hosts, by platform*
+     * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
@@ -247,7 +247,7 @@ export declare namespace Office {
      * initialization occurred. A task pane or content add-in can be initialized in two ways:
      *
      *  - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office
-     * host application, or from Insert add-in dialog box.
+     * application, or from Insert add-in dialog box.
      *
      *  - The user opened a document that already contains the add-in.
      *
@@ -258,13 +258,13 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-     * An empty cell indicates that the Office host application doesn't support this function.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+     * An empty cell indicates that the Office application doesn't support this function.
      *
-     * For more information about Office host application and server requirements, see
+     * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
-     * *Supported hosts, by platform*
+     * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
@@ -279,13 +279,13 @@ export declare namespace Office {
     export function initialize(reason: InitializationReason): void;
     /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise
-    * will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
-    * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call
-    * the callback and resolve the promise with "null" for both the host and platform.
+    * will wait until the Office application is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can
+    * also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office application, it will call
+    * the callback and resolve the promise with "null" for both the application and platform.
     *
-    * @param callback - An optional callback function, that will receive the host and platform info.
+    * @param callback - An optional callback function, that will receive the application and platform info.
     *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
-    * @returns A Promise that contains the host and platform info, once initialization is completed.
+    * @returns A Promise that contains the application and platform info, once initialization is completed.
     */
     export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
@@ -295,13 +295,13 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-     * An empty cell indicates that the Office host application doesn't support this function.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+     * An empty cell indicates that the Office application doesn't support this function.
      *
-     * For more information about Office host application and server requirements, see
+     * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
-     * *Supported hosts, by platform*
+     * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -331,7 +331,7 @@ export declare namespace Office {
      */
     const ribbon: Ribbon;
     /**
-     * Checks if the specified requirement set is supported by the host Office application.
+     * Checks if the specified requirement set is supported by the Office application.
      * @param name - Set name; e.g., "MatrixBindings".
      * @param minVersion - The minimum required version; e.g., "1.4".
      */
@@ -394,38 +394,38 @@ export declare namespace Office {
         DocumentOpened
     }
     /**
-     * Specifies the host Office application in which the add-in is running.
+     * Specifies the Office application in which the add-in is running.
      * 
      * @remarks
      * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
      */
     enum HostType {
         /**
-         * The Office host is Microsoft Word.
+         * The Office application is Microsoft Word.
          */
         Word,
         /**
-         * The Office host is Microsoft Excel.
+         * The Office application is Microsoft Excel.
          */
         Excel,
         /**
-         * The Office host is Microsoft PowerPoint.
+         * The Office application is Microsoft PowerPoint.
          */
         PowerPoint,
         /**
-         * The Office host is Microsoft Outlook.
+         * The Office application is Microsoft Outlook.
          */
         Outlook,
         /**
-         * The Office host is Microsoft OneNote.
+         * The Office application is Microsoft OneNote.
          */
         OneNote,
         /**
-         * The Office host is Microsoft Project.
+         * The Office application is Microsoft Project.
          */
         Project,
         /**
-         * The Office host is Microsoft Access.
+         * The Office application is Microsoft Access.
          *
          * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
          * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
@@ -434,7 +434,7 @@ export declare namespace Office {
         Access
     }
     /**
-     * Specifies the OS or other platform on which the Office host application is running.
+     * Specifies the OS or other platform on which the Office application is running.
      * 
      * @remarks
      * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
@@ -467,56 +467,56 @@ export declare namespace Office {
     }
     // Objects
         /**
-        * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
-        *
-        * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
-        * from the `callback` function's only parameter.
-        */
+         * An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
+         *
+         * When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult object that you can access
+         * from the `callback` function's only parameter.
+         */
         export interface AsyncResult<T> {
         /**
-        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in.
-        * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
-        * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
-        */
+         * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in.
+         * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
+         * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+         */
         asyncContext: any;
         /**
-        * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
-        *
-        * @remarks
-        *
-        * This property returns additional information if the following errors occur with these supported APIs.
-        *
-        * *Supported APIs*
-        *
-        * `Office.context.mailbox.item.getCallbackTokenAsync`, `Office.context.mailbox.item.getUserIdentityTokenAsync`
-        *
-        * *Supported errors*
-        * <table>
-        *   <tr><th>`AsyncResult.error.name`            </th><th>`AsyncResult.error.message`                                                                       </th><th>Description of diagnostics object returned                                                                                          </th></tr>
-        *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., `{"HTTPCode":"401"}`                                                                     </td></tr>
-        *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
-        * </table>
-        */
+         * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
+         *
+         * @remarks
+         *
+         * This property returns additional information if the following errors occur with these supported APIs.
+         *
+         * *Supported APIs*
+         *
+         * `Office.context.mailbox.item.getCallbackTokenAsync`, `Office.context.mailbox.item.getUserIdentityTokenAsync`
+         *
+         * *Supported errors*
+         * <table>
+         *   <tr><th><code>AsyncResult.error.name</code> </th><th><code>AsyncResult.error.message</code>                                                            </th><th>Description of diagnostics object returned                                                                                                     </th></tr>
+         *   <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object for the HTTP error code.            </td><td>The HTTP error code in a JSON object e.g., <code>{"HTTPCode":"401"}</code>                                                                     </td></tr>
+         *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., <code>{"ErrorText": "The mailbox database is temporarily unavailable"}</code></td></tr>
+         * </table>
+         */
         diagnostics: any;
         /**
-        * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
-        */
+         * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
+         */
         error: Office.Error;
         /**
-        * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
-        */
+         * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
+         */
         status: AsyncResultStatus;
         /**
-        * Gets the payload or content of this asynchronous operation, if any.
-        *
-        * @remarks
-        *
-        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the
-        * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
-        *
-        * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method.
-        * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
-        */
+         * Gets the payload or content of this asynchronous operation, if any.
+         *
+         * @remarks
+         *
+         * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the
+         * `getSelectedDataAsync` and `setSelectedDataAsync` methods of the {@link Office.Document | Document} object.
+         *
+         * **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method.
+         * To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic.
+         */
         value: T;
     }
     /**
@@ -524,7 +524,7 @@ export declare namespace Office {
      */
     export interface Actions {
         /**
-         * Associates the ID or name of an action with a function. 
+         * Associates the ID or name of an action with a function.
          * 
          * @param actionId - The ID of an action that is defined in an extended manifest or the name of the function as specified in a **FunctionName** element in the manifest.
          * @param actionFunction - The function that is run when the action is invoked. 
@@ -546,7 +546,7 @@ export declare namespace Office {
          * @returns A promise that resolves when every custom shortcut assignment in `shortcuts` has been registered. Even if there is a conflict with existing shortcuts, the customized shortcut will be registered.
          * Otherwise, the promise will be rejected with error code and error message. An "InvalidOperation" error code is returned if any action ID in `shortcuts` does not exist, or if shortcut combination is invalid.
          */
-        replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;   
+        replaceShortcuts(shortcuts: {[actionId: string]: string}): Promise<void>;
         /**
          * Gets the existing shortcuts for the add-in. The set always includes (1) the shortcuts defined in the add-in's extended manifest for keyboard shortcuts and (2) the current user's custom shortcuts if those exist.
          * The shortcut can be `null` if it conflicts with the shortcut of another add-in or with the Office application. Specifically, it would be `null` if, when prompted to choose which shortcut to use, the user didn't choose the action of the current add-in. For more information about conflicts with shortcuts, see  {@link https://learn.microsoft.com/office/dev/add-ins/design/keyboard-shortcuts#avoid-key-combinations-in-use-by-other-add-ins | Avoid key combinations in use by other add-ins}.
@@ -554,16 +554,16 @@ export declare namespace Office {
          * @remarks
          *
          * **Requirement sets**:
-         * 
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/keyboard-shortcuts-requirement-sets | KeyboardShortcuts 1.1}
-         * 
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.1}
-         * 
+         *
          * @returns A promise that resolves to an object of shortcuts, with keys being the IDs of the actions (as defined in an extended manifest) and values being the shortcut combinations. For example, `{"SetItalic": "Ctrl+1", "SetBold": "Ctrl+2", "SetUnderline": null}`.
          */
-        getShortcuts(): Promise<{[actionId: string]: string|null}>;   
+        getShortcuts(): Promise<{[actionId: string]: string|null}>;
         /**
-         * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the host Office application.
+         * Checks if a set of shortcut combinations are currently in use for the user, as defined by another add-in or by the Office application.
          *
          * @remarks
          *
@@ -577,7 +577,7 @@ export declare namespace Office {
          * @returns A promise that resolves to an array of objects. Each object consists of a shortcut combination and Boolean value. The value is `true` if the shortcut combination conflicts with a shortcut of another add-in or with a shortcut of the Office application; otherwise, `false`. For example, `[{shortcut:"Ctrl+1", inUse:true},{shortcut:"Ctrl+2", inUse:false}]`.
          */
         areShortcutsInUse(shortcuts: string[]): Promise<{shortcut: string, inUse: boolean}[]>;
-     }
+    }
     /**
      * Message used in the `onVisibilityModeChanged` invocation.
      */
@@ -641,7 +641,7 @@ export declare namespace Office {
         /**
          * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
          * This API is only supported in Excel.
-         * 
+         *
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
          * @beta
@@ -652,17 +652,17 @@ export declare namespace Office {
      * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
      * The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document.
      * This API is only supported in Excel.
-     * 
+     *
      * @remarks
      * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
      * @beta
-    */
+     */
     export interface BeforeDocumentCloseNotification {
         /**
          * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds.
          * This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document.
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
-         * 
+         *
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
          * @beta
@@ -672,7 +672,7 @@ export declare namespace Office {
         /**
          * Prevents the notification dialog from appearing when the user attempts to close a document.
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
-         * 
+         *
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
          * @beta
@@ -681,20 +681,23 @@ export declare namespace Office {
 
         /**
          * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. 
-         * This event handler will be triggered if one of the following conditions is met:
+         * This event handler will be triggered if one of the following conditions is met.
+         *
          * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
+         *
          * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         *
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * @param handler - The event handler that is called when the dialog is cancelled.
          * @returns A promise that resolves when the event handler is added.
-         * 
+         *
          * @remarks
          * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
          * @beta
         */
         onCloseActionCancelled(
             handler: () => void
-        ): Promise<() => Promise<void>>;     
+        ): Promise<() => Promise<void>>;
     }
     /**
      * An interface that contains all the functionality provided to manage the state of the Office ribbon.
@@ -762,7 +765,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * When the `Tab` object is part of a {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, this property specifies the IDs of the controls whose enabled status is to be changed. However, if there is a `groups` property on the tab, then this property is ignored and the `controls` properties of the specified groups must be used to change enabled status.
+         * When the `Tab` object is part of an {@link Office.RibbonUpdaterData} object passed to the `requestUpdate` method of {@link Office.Ribbon}, this property specifies the IDs of the controls whose enabled status is to be changed. However, if there is a `groups` property on the tab, then this property is ignored and the `controls` properties of the specified groups must be used to change enabled status.
          */
         controls?: Control[];
         /**
@@ -806,10 +809,10 @@ export declare namespace Office {
     }
     /**
      * Represents an individual control or command and the state it should have.
-     * 
-     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * @remarks
+     *
+     * For code samples showing how to use a `Control` object and its properties, see {@link https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands | Enable and Disable Add-in Commands} and {@link https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs | Create custom contextual tabs}.
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets | RibbonApi 1.1}
      */
@@ -829,7 +832,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
+     * **Applications**: Excel, Outlook, PowerPoint, Project, Word
      */
     export interface Context {
         /**
@@ -839,105 +842,105 @@ export declare namespace Office {
          */
         auth: Auth;
         /**
-        * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
-        *
-        * @remarks
-        *
-        * **Hosts**: Excel, Word
-        *
-        * `commerceAllowed` is only supported in Office on iPad.
-        *
-        * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running in
-        * Office on the Windows desktop or in the browser do allow such links. If you want the UI of your add-in to provide a link to an
-        * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
-        */
+         * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
+         *
+         * @remarks
+         *
+         * **Applications**: Excel, Word
+         *
+         * `commerceAllowed` is only supported in Office on iPad.
+         *
+         * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running in
+         * Office on the Windows desktop or in the browser do allow such links. If you want the UI of your add-in to provide a link to an
+         * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
+         */
         commerceAllowed: boolean;
         /**
-        * Gets the locale (language) specified by the user for editing the document or item.
-        *
-        * @remarks
-        *
-        * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host
-        * application.
-        *
-        * **Support details**
-        *
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-        * An empty cell indicates that the Office host application doesn't support this enumeration.
-        *
-        * For more information about Office host application and server requirements, see
-        * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-        *
-        * *Supported hosts, by platform*
-        *  <table>
-        *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-        *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-        *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-        *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-        *  </table>
-        */
+         * Gets the locale (language) specified by the user for editing the document or item.
+         *
+         * @remarks
+         *
+         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * application.
+         *
+         * **Support details**
+         *
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
+         * An empty cell indicates that the Office application doesn't support this property.
+         *
+         * For more information about Office application and server requirements, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         *
+         * *Supported applications, by platform*
+         *  <table>
+         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+         *  </table>
+         */
         contentLanguage: string;
         /**
-        * Gets information about the environment in which the add-in is running.
-        * 
-        * @remarks
-        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.  
-        * For all Mailbox requirement sets, you can use the 
-        * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
-        * property to get similar information.
-        */
+         * Gets information about the environment in which the add-in is running.
+         * 
+         * @remarks
+         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5.
+         * For all Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+         * property to get similar information.
+         */
         diagnostics: ContextInformation;
         /**
-        * Gets the locale (language) specified by the user for the UI of the Office host application.
-        *
-        * @remarks
-        *
-        * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
-        *
-        * The `displayLanguage` value reflects the current **Display Language** setting specified with **File \> Options \> Language** in the Office
-        * host application.
-        *
-        * When using in Outlook, the applicable modes are Compose or Read.
-        *
-        * **Support details**
-        *
-        * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application.
-        * An empty cell indicates that the Office host application doesn't support this enumeration.
-        *
-        * For more information about Office host application and server requirements, see
-        * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-        *
-        * *Supported hosts, by platform*
-        *  <table>
-        *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-        *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-        *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-        *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-        *  </table>
-        */
+         * Gets the locale (language) specified by the user for the UI of the Office application.
+         *
+         * @remarks
+         *
+         * The returned value is a string in the RFC 1766 Language tag format, such as en-US.
+         *
+         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File** \> **Options** \> **Language** in the Office
+         * application.
+         *
+         * When using in Outlook, the applicable modes are Compose or Read.
+         *
+         * **Support details**
+         *
+         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
+         * An empty cell indicates that the Office application doesn't support this property.
+         *
+         * For more information about Office application and server requirements, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+         *
+         * *Supported applications, by platform*
+         *  <table>
+         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+         *  </table>
+         */
         displayLanguage: string;
         /**
-        * Gets an object that represents the document the content or task pane add-in is interacting with.
-        */
+         * Gets an object that represents the document the content or task pane add-in is interacting with.
+         */
         document: Office.Document;
         /**
-        * Contains the Office application host in which the add-in is running.
-        *
-        * @remarks
-        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
-        * `Office.context.diagnostics` property to get the host starting with requirement set 1.5. For all
-        * Mailbox requirement sets, you can use the 
-        * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
-        * property to get similar information.
-        */
+         * Contains the Office application in which the add-in is running.
+         *
+         * @remarks
+         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all
+         * Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+         * property to get similar information.
+         */
         host: HostType;
         /**
-        * Gets the license information for the user's Office installation.
-        */
+         * Gets the license information for the user's Office installation.
+         */
         license: string;
         /**
          * Provides access to the Microsoft Outlook add-in object model.
@@ -958,29 +961,29 @@ export declare namespace Office {
          */
         mailbox: Outlook.Mailbox;
         /**
-        * Provides access to the properties for Office theme colors.
-        */
+         * Provides access to the properties for Office theme colors.
+         */
         officeTheme: OfficeTheme;
         /**
-        * Provides the platform on which the add-in is running.
-        *
-        * @remarks
-        * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
-        * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
-        * Mailbox requirement sets, you can use the 
-        * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
-        * property to get similar information.
-        */
+         * Provides the platform on which the add-in is running.
+         *
+         * @remarks
+         * **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+         * `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all
+         * Mailbox requirement sets, you can use the 
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+         * property to get similar information.
+         */
         platform: PlatformType;
         /**
-        * Provides a method for determining what requirement sets are supported on the current host and platform.
-        */
+         * Provides a method for determining what requirement sets are supported on the current Office application and platform.
+         */
         requirements: RequirementSetSupport;
         /**
          * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
          *
          * The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox, so it's available to
-         * that add-in when it is running from any host client application used to access that mailbox.
+         * that add-in when it is running from any client application used to access that mailbox.
          *
          * @remarks
          *
@@ -990,22 +993,22 @@ export declare namespace Office {
          */
         roamingSettings: Outlook.RoamingSettings;
         /**
-        * Specifies whether the platform and device allows touch interaction.
-        * True if the add-in is running on a touch device, such as an iPad; false otherwise.
-        *
-        * @remarks
-        *
-        * **Hosts**: Excel, PowerPoint, Word
-        *
-        * `touchEnabled` is only supported in Office on iPad.
-        *
-        * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and
-        * size and spacing of elements in your add-in's UI to accommodate touch interactions.
-        */
+         * Specifies whether the platform and device allows touch interaction.
+         * True if the add-in is running on a touch device, such as an iPad; false otherwise.
+         *
+         * @remarks
+         *
+         * **Applications**: Excel, PowerPoint, Word
+         *
+         * `touchEnabled` is only supported in Office on iPad.
+         *
+         * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and
+         * size and spacing of elements in your add-in's UI to accommodate touch interactions.
+         */
         touchEnabled: boolean;
         /**
-        * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
-        */
+         * Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.
+         */
         ui: UI;
     }
     /**
@@ -1033,7 +1036,7 @@ export declare namespace Office {
     export namespace AddinCommands {
         /**
          * The `Event` object is passed as a parameter to add-in functions invoked by function command buttons. The object allows the add-in to identify
-         * which button was clicked and to signal the host that it has completed its processing.
+         * which button was clicked and to signal the Office application that it has completed its processing.
          *
          * @remarks
          *
@@ -1153,219 +1156,219 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, options: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-          * Adds an event handler to the object using the specified event type.
-          *
-          * @remarks
-          *
-          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
-          *
-          * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
-          *
-          * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
-          * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
-          * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
-          */
+         * Adds an event handler to the object using the specified event type.
+         *
+         * @remarks
+         *
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi 1.2}
+         *
+         * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.
+         *
+         * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.
+         * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.
+         * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.
+         */
         addHandlerAsync(eventType: Office.EventType, handler: (result: DialogParentMessageReceivedEventArgs) => void, callback?: (result: AsyncResult<void>) => void): void;
         /**
-        * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        *
-        * @remarks
-        *
-        * **Hosts**: Excel, Outlook, PowerPoint, Word
-        *
-        * **Requirement sets**:
-        *
-        * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-        *
-        * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
-        *
-        * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
-        * for Outlook. For more on how to specify a requirement set in your manifest, see
-        * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
-        *
-        * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
-        * other domains.
-        *
-        * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
-        *
-        * **Design considerations**:
-        *
-        * The following design considerations apply to dialog boxes:
-        *
-        * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
-        * Commands (custom ribbon buttons or menu items).
-        *
-        * - Every dialog box can be moved and resized by the user.
-        *
-        * - Every dialog box is centered on the screen when opened.
-        *
-        * - Dialog boxes appear on top of the host application and in the order in which they were created.
-        *
-        * Use a dialog box to:
-        *
-        * - Display authentication pages to collect user credentials.
-        *
-        * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
-        *
-        * - Temporarily increase the surface area that a user has available to complete a task.
-        *
-        * Do not use a dialog box to interact with a document. Use a task pane instead.
-        *
-        * **displayDialogAsync Errors**:
-        *
-        * <table>
-        *   <tr>
-        *     <th>Code number</th>
-        *     <th>Meaning</th>
-        *   </tr>
-        *   <tr>
-        *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12005</td>
-        *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12007</td>
-        *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12009</td>
-        *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
-        *   </tr>
-        * </table>
-        *
-        * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
-        * following information.
-        *
-        * <table>
-        *   <tr>
-        *     <th>Property</th>
-        *     <th>Use to</th>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.value</td>
-        *     <td>Access the Dialog object.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.status</td>
-        *     <td>Determine the success or failure of the operation.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.error</td>
-        *     <td>Access an Error object that provides error information if the operation failed.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.asyncContext</td>
-        *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
-        *   </tr>
-        * </table>
-        *
-        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
-        * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
-        * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
-        */
+         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
+         *
+         * @remarks
+         *
+         * **Applications**: Excel, Outlook, PowerPoint, Word
+         *
+         * **Requirement sets**:
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
+         *
+         * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
+         * for Outlook. For more on how to specify a requirement set in your manifest, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
+         *
+         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
+         * other domains.
+         *
+         * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
+         *
+         * **Design considerations**:
+         *
+         * The following design considerations apply to dialog boxes.
+         *
+         * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
+         * Commands (custom ribbon buttons or menu items).
+         *
+         * - Every dialog box can be moved and resized by the user.
+         *
+         * - Every dialog box is centered on the screen when opened.
+         *
+         * - Dialog boxes appear on top of the application and in the order in which they were created.
+         *
+         * Use a dialog box to:
+         *
+         * - Display authentication pages to collect user credentials.
+         *
+         * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
+         *
+         * - Temporarily increase the surface area that a user has available to complete a task.
+         *
+         * Do not use a dialog box to interact with a document. Use a task pane instead.
+         *
+         * **displayDialogAsync Errors**
+         *
+         * <table>
+         *   <tr>
+         *     <th>Code number</th>
+         *     <th>Meaning</th>
+         *   </tr>
+         *   <tr>
+         *     <td>12004</td>
+         *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12005</td>
+         *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12007</td>
+         *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12009</td>
+         *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
+         *   </tr>
+         * </table>
+         *
+         * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
+         * following information.
+         *
+         * <table>
+         *   <tr>
+         *     <th>Property</th>
+         *     <th>Use</th>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Access the Dialog object</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
+         *   </tr>
+         * </table>
+         *
+         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+         * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
+         * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
+         */
         displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
-        * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        *
-        * @remarks
-        *
-        * **Hosts**: Excel, Outlook, PowerPoint, Word
-        *
-        * **Requirement sets**:
-        *
-        * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-        *
-        * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
-        *
-        * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
-        * for Outlook. For more on how to specify a requirement set in your manifest, see
-        * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office hosts and API requirements}.
-        *
-        * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
-        * other domains.
-        *
-        * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
-        *
-        * **Design considerations**:
-        *
-        * The following design considerations apply to dialog boxes:
-        *
-        * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
-        * Commands (custom ribbon buttons or menu items).
-        *
-        * - Every dialog box can be moved and resized by the user.
-        *
-        * - Every dialog box is centered on the screen when opened.
-        *
-        * - Dialog boxes appear on top of the host application and in the order in which they were created.
-        *
-        * Use a dialog box to:
-        *
-        * - Display authentication pages to collect user credentials.
-        *
-        * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
-        *
-        * - Temporarily increase the surface area that a user has available to complete a task.
-        *
-        * Do not use a dialog box to interact with a document. Use a task pane instead.
-        *
-        * **displayDialogAsync Errors**:
-        *
-        * <table>
-        *   <tr>
-        *     <th>Code number</th>
-        *     <th>Meaning</th>
-        *   </tr>
-        *   <tr>
-        *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12005</td>
-        *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12007</td>
-        *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>12009</td>
-        *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
-        *   </tr>
-        * </table>
-        *
-        * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
-        * following information.
-        *
-        * <table>
-        *   <tr>
-        *     <th>Property</th>
-        *     <th>Use to</th>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.value</td>
-        *     <td>Access the Dialog object.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.status</td>
-        *     <td>Determine the success or failure of the operation.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.error</td>
-        *     <td>Access an Error object that provides error information if the operation failed.</td>
-        *   </tr>
-        *   <tr>
-        *     <td>AsyncResult.asyncContext</td>
-        *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td>
-        *   </tr>
-        * </table>
-        *
-        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
-        * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
-        */
+         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
+         *
+         * @remarks
+         *
+         * **Applications**: Excel, Outlook, PowerPoint, Word
+         *
+         * **Requirement sets**:
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
+         *
+         * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.4}
+         *
+         * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
+         * for Outlook. For more on how to specify a requirement set in your manifest, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
+         *
+         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
+         * other domains.
+         *
+         * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
+         *
+         * **Design considerations**:
+         *
+         * The following design considerations apply to dialog boxes.
+         *
+         * - An Office Add-in task pane can have only one dialog box open at any time. Multiple dialogs can be open at the same time from Add-in
+         * Commands (custom ribbon buttons or menu items).
+         *
+         * - Every dialog box can be moved and resized by the user.
+         *
+         * - Every dialog box is centered on the screen when opened.
+         *
+         * - Dialog boxes appear on top of the application and in the order in which they were created.
+         *
+         * Use a dialog box to:
+         *
+         * - Display authentication pages to collect user credentials.
+         *
+         * - Display an error/progress/input screen from a ShowTaskpane or ExecuteAction command.
+         *
+         * - Temporarily increase the surface area that a user has available to complete a task.
+         *
+         * Do not use a dialog box to interact with a document. Use a task pane instead.
+         *
+         * **displayDialogAsync Errors**
+         *
+         * <table>
+         *   <tr>
+         *     <th>Code number</th>
+         *     <th>Meaning</th>
+         *   </tr>
+         *   <tr>
+         *     <td>12004</td>
+         *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <code>AppDomains</code> section of the add-in manifest.</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12005</td>
+         *     <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12007</td>
+         *     <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td>
+         *   </tr>
+         *   <tr>
+         *     <td>12009</td>
+         *     <td>The user chose to ignore the dialog box. This error can occur in online versions of Office, where users may choose not to allow an add-in to present a dialog.</td>
+         *   </tr>
+         * </table>
+         *
+         * In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the
+         * following information.
+         *
+         * <table>
+         *   <tr>
+         *     <th>Property</th>
+         *     <th>Use</th>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Access the Dialog object</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Access your user-defined object or value, if you passed one as the asyncContext parameter</td>
+         *   </tr>
+         * </table>
+         *
+         * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
+         * @param callback - Optional. Accepts a callback function to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
+         */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
         /**
          * Delivers a message from the dialog box to its parent/opener page. 
@@ -1387,12 +1390,12 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
+         * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
          *
-         * **Requirement sets**: 
-         * 
+         * **Requirement sets**:
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
-         * 
+         *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | Mailbox 1.5}
          *
          * The behavior of this method is specified by the following:
@@ -1422,14 +1425,14 @@ export declare namespace Office {
      */
     export interface RequirementSetSupport {
        /**
-        * Check if the specified requirement set is supported by the host Office application.
+        * Check if the specified requirement set is supported by the Office application.
         * @param name - The requirement set name (e.g., "ExcelApi").
         * @param minVersion - The minimum required version (e.g., "1.4").
         */
        isSetSupported(name: string, minVersion?: string): boolean;
 
        /**
-        * Check if the specified requirement set is supported by the host Office application.
+        * Check if the specified requirement set is supported by the Office application.
         *
         * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use the string overload of `isSetSupported` instead.
         *
@@ -1490,7 +1493,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          *
@@ -1515,7 +1518,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          *
@@ -1535,7 +1538,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+         * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
          * 
@@ -1543,12 +1546,10 @@ export declare namespace Office {
          * 
          * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
          * To retrieve an access token in older builds, use 
-         * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) | 
+         * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
          * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation | Enable single sign-on (SSO) in Outlook add-ins that use event-based activation}.
          *
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-         * 
          * @param options - Optional. Accepts an `AuthOptions` object to define sign-on behaviors.
          * @returns Promise to the access token.
          */
@@ -1629,21 +1630,21 @@ export declare namespace Office {
      * @remarks
      * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
      * For all Mailbox requirement sets, you can use the 
-     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+     * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics}
      * property to get similar information.
      */
     export interface ContextInformation {
         /**
-        * Gets the Office application host in which the add-in is running.
-        */
+         * Gets the Office application in which the add-in is running.
+         */
         host: Office.HostType;
         /**
-        * Gets the platform on which the add-in is running.
-        */
+         * Gets the platform on which the add-in is running.
+         */
         platform: Office.PlatformType;
         /**
-        * Gets the version of Office on which the add-in is running.
-        */
+         * Gets the version of Office on which the add-in is running.
+         */
         version: string;
     }
     /**
@@ -1664,33 +1665,33 @@ export declare namespace Office {
          */
         valueFormat?: Office.ValueFormat | string
         /**
-        * For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding. Default is first row.
-        */
+         * For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding. Default is first row.
+         */
         startRow?: number
         /**
-        * For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding. Default is first column.
-        */
+         * For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding. Default is first column.
+         */
         startColumn?: number
         /**
-        * For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent rows.
-        */
+         * For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent rows.
+         */
         rowCount?: number
         /**
-        * For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all subsequent columns.
-        */
+         * For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all subsequent columns.
+         */
         columnCount?: number
         /**
-        * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data.
-        * Use Office.FilterType or text value.
-        */
+         * Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering data.
+         * Use Office.FilterType or text value.
+         */
         filterType?: Office.FilterType | string
         /**
-        * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-        *
-        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-        * to build no-code business solutions for web and mobile devices.
-        */
+         * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+         *
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
+         */
         rows?: string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -1717,35 +1718,35 @@ export declare namespace Office {
          */
         coercionType?: Office.CoercionType | string
         /**
-        * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
-        *
-        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-        * to build no-code business solutions for web and mobile devices.
-        */
+         * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
+         *
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
+         */
         columns?: string[]
         /**
-        * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-        *
-        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
-        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
-        * to build no-code business solutions for web and mobile devices.
-        */
+         * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+         *
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
+         */
         rows?: string
         /**
-        * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set
-        * starting in the first row.
-        */
+         * Specifies the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If omitted, data is set
+         * starting in the first row.
+         */
         startRow?: number
         /**
-        * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in
-        * the first column.
-        */
+         * Specifies the zero-based starting column for a subset of the data. Only for table or matrix bindings. If omitted, data is set starting in
+         * the first column.
+         */
         startColumn?: number
         /**
-        * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows.
-        * Example: `{bandedRows: true,  filterButton: false}`
-        */
+         * For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows.
+         * Example: `{bandedRows: true,  filterButton: false}`
+         */
         tableOptions?: object
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -1787,7 +1788,7 @@ export declare namespace Office {
         /**
          * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed.
          */
-        handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any;
+        handler?: (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
@@ -1888,7 +1889,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * The behavior caused by the {@link Office.SelectionMode | options.selectionMode} option varies by host:
+     * The behavior caused by the {@link Office.SelectionMode | options.selectionMode} option varies by Office application:
      *
      * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. `Office.SelectionMode.None` for text bindings,
      * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
@@ -1901,7 +1902,7 @@ export declare namespace Office {
      */
     export interface GoToByIdOptions {
         /**
-         * Specifies whether the location specified by the id parameter is selected (highlighted).
+         * Specifies whether the location specified by the `id` parameter is selected (highlighted).
          * Use {@link Office.SelectionMode} or string equivalent. See the Remarks for more information.
          */
         selectionMode?: Office.SelectionMode | string
@@ -1931,26 +1932,26 @@ export declare namespace Office {
          */
         tableOptions?: object
         /**
-        * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its
-        * relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
-        */
+         * This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide for PowerPoint, and its
+         * relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+         */
         imageTop?: number
         /**
-        * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image
-        * will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly.
-        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
-        */
+         * This option is applicable for inserting images. Indicates the image width. If this option is provided without the imageHeight, the image
+         * will scale to match the value of the image width. If both image width and image height are provided, the image will be resized accordingly.
+         * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+         */
         imageWidth?: number
         /**
-        * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and
-        * its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
-        */
+         * This option is applicable for inserting images. Indicates the insert location in relation to the left side of the slide for PowerPoint, and
+         * its relation to the currently selected cell in Excel. This value is ignored for Word. This value is in points.
+         */
         imageLeft?: number
         /**
-        * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image
-        * will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly.
-        * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
-        */
+         * This option is applicable for inserting images. Indicates the image height. If this option is provided without the imageWidth, the image
+         * will scale to match the value of the image height. If both image width and image height are provided, the image will be resized accordingly.
+         * If neither the image height or width is provided, the default image size and aspect ratio will be used. This value is in points.
+         */
         imageHeight?: number
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -1975,13 +1976,13 @@ export declare namespace Office {
     /**
      * Provides access to the properties for Office theme colors.
      *
-     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File \>
-     * Office Account \> Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and
+     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with **File** \>
+     * **Office Account** \> **Office Theme UI**, which is applied across all Office applications. Using Office theme colors is appropriate for mail and
      * task pane add-ins.
      *
      * @remarks
      *
-     * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
+     * **Applications**: Excel, Outlook (in preview), PowerPoint, Word
      *
      * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
      */
@@ -2010,7 +2011,7 @@ export declare namespace Office {
      *
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets | DialogApi}
      */
-     export interface Dialog {
+    export interface Dialog {
         /**
          * Called from a parent page to close the corresponding dialog box. 
          * 
@@ -2033,7 +2034,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
+         * **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
          *
          * **Requirement sets**:
          *
@@ -2063,13 +2064,13 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office host application.
-     * An empty cell indicates that the Office host application doesn't support this function.
+     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
+     * An empty cell indicates that the Office application doesn't support this function.
      *
-     * For more information about Office host application and server requirements, see
+     * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
-     * *Supported hosts, by platform*
+     * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
      *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
@@ -2085,11 +2086,11 @@ export declare namespace Office {
      */
     enum ActiveView {
         /**
-         * The active view of the host application only lets the user read the content in the document.
+         * The active view of the Office application only lets the user read the content in the document.
          */
         Read,
         /**
-         * The active view of the host application lets the user edit the content in the document.
+         * The active view of the Office application lets the user edit the content in the document.
          */
         Edit
     }
@@ -2166,7 +2167,7 @@ export declare namespace Office {
          */
         Ooxml,
         /**
-         * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
+         * Return a JSON object that contains an array of the IDs, titles, and indexes of the selected slides. For example,
          * `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of two slides.
          *
          * **Note**: Only applies to data in PowerPoint when calling the {@link Office.Document | Document}.getSelectedData method to get the current
@@ -2174,9 +2175,9 @@ export declare namespace Office {
          */
         SlideRange,
         /**
-        * Data is returned or set as an image stream.
-        * **Note**: Only applies to data in Excel, Word, and PowerPoint.
-        */
+         * Data is returned or set as an image stream.
+         * **Note**: Only applies to data in Excel, Word, and PowerPoint.
+         */
         Image,
         /**
          * Data is returned or set as XML data containing an SVG image.
@@ -2244,7 +2245,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
+     * **`BindingDataChanged` and `BindingSelectionChanged` applications**: Excel, Word.
      *
      */
     enum EventType {
@@ -2253,7 +2254,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: PowerPoint
+         * **Applications**: PowerPoint
          */
         ActiveViewChanged,
         /**
@@ -2284,7 +2285,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, Word
+         * **Applications**: Excel, Word
          */
         BindingDataChanged,
         /**
@@ -2293,7 +2294,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, Word
+         * **Applications**: Excel, Word
          */
         BindingSelectionChanged,
         /**
@@ -2313,7 +2314,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, Word
+         * **Applications**: Excel, Word
          */
         DocumentSelectionChanged,
         /**
@@ -2404,7 +2405,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **Hosts**: Excel, PowerPoint, Word
+         * **Applications**: Excel, PowerPoint, Word
          */
         SettingsChanged,
         /**
@@ -2431,22 +2432,22 @@ export declare namespace Office {
          * In Excel on Windows, the file slices from the `getFileAsync` method include the VBA signature files for .xslm file types. The VBA signature files are vbaProjectSignature.bin, vbaProbjectSignatureAgile.bin, and vbaProjectSignatureV3.bin. 
          * In Excel on Mac, the file slices from the `getFileAsync` method don't include the VBA signature files, because this platform doesn't support the VBA signature feature.
          */
-         Compressed,
+        Compressed,
         /**
          * Returns the entire document in PDF format as a byte array.
          */
         Pdf
     }
     /**
-     * Specifies whether filtering from the host application is applied when the data is retrieved.
+     * Specifies whether filtering from the Office application is applied when the data is retrieved.
      */
     enum FilterType {
         /**
-         * Return all data (not filtered by the host application).
+         * Return all data (not filtered by the Office application).
          */
         All,
         /**
-         * Return only the visible data (as filtered by the host application).
+         * Return only the visible data (as filtered by the Office application).
          */
         OnlyVisible
     }
@@ -2455,28 +2456,28 @@ export declare namespace Office {
      */
     enum GoToType {
         /**
-         * Goes to a binding object using the specified binding id.
+         * Goes to a binding object using the specified binding ID.
          *
-         * Supported hosts: Excel, Word
+         * Supported applications: Excel, Word
          */
         Binding,
         /**
          * Goes to a named item using that item's name.
          * In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"
          *
-         * Supported hosts: Excel
+         * Supported applications: Excel
          */
         NamedItem,
         /**
-         * Goes to a slide using the specified id.
+         * Goes to a slide using the specified ID.
          *
-         * Supported hosts: PowerPoint
+         * Supported applications: PowerPoint
          */
         Slide,
         /**
          * Goes to the specified index by slide number or {@link Office.Index}.
          *
-         * Supported hosts: PowerPoint
+         * Supported applications: PowerPoint
          */
         Index
     }
@@ -2521,7 +2522,7 @@ export declare namespace Office {
      * @remarks
      *
      * For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date formatted as mm/dd/yy in the
-     * host application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its
+     * Office application will have its formatting preserved. If the valueFormat parameter is specified as "unformatted", a date will be returned in its
      * underlying sequential serial number form.
      */
     enum ValueFormat {
@@ -2542,13 +2543,13 @@ export declare namespace Office {
     *
     * The Binding object is never called directly. It is the abstract parent class of the objects that represent each type of binding:
     * {@link Office.MatrixBinding}, {@link Office.TableBinding}, or {@link Office.TextBinding}. All three of these objects inherit the getDataAsync
-    * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the id and type
+    * and setDataAsync methods from the Binding object that enable to you interact with the data in the binding. They also inherit the ID and type
     * properties for querying those property values. Additionally, the MatrixBinding and TableBinding objects expose additional methods for matrix-
     * and table-specific features, such as counting the number of rows and columns.
     *
     * @remarks
     *
-    * **Hosts**: Word, Excel (deprecated, use {@link https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview | Excel.Binding} instead)
+    * **Applications**: Word, Excel (deprecated, use {@link https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview | Excel.Binding} instead)
     *
     * **Requirement sets**:
     *
@@ -2560,16 +2561,16 @@ export declare namespace Office {
     */
     export interface Binding {
         /**
-        * Get the Document object associated with the binding.
-        */
+         * Get the Document object associated with the binding.
+         */
         document: Office.Document;
         /**
          * A string that uniquely identifies this binding among the bindings in the same {@link Office.Document} object.
          */
         id: string;
         /**
-        * Gets the type of the binding.
-        */
+         * Gets the type of the binding.
+         */
         type: Office.BindingType;
         /**
          * Adds an event handler to the object for the specified {@link Office.EventType}. Supported EventTypes are
@@ -2716,7 +2717,7 @@ export declare namespace Office {
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
@@ -2725,20 +2726,20 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>An array of arrays ("matrix")</td>
-         *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`.</td>
+         *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: <code>[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]</code>. To write a single column of three rows, pass an array like this: <code>[["R1C1"], ["R2C1"], ["R3C1"]]</code>.</td>
          *   </tr>
          *    <tr>
-         *     <td>A `TableData` object</td>
+         *     <td>A <code>TableData</code> object</td>
          *     <td>A table with headers will be written.</td>
          *   </tr>
          * </table>
          *
          * Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the
-         * binding as follows:
+         * binding as follows.
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
@@ -2746,7 +2747,7 @@ export declare namespace Office {
          *     <td>The specified text is written.</td>
          *   </tr>
          *   <tr>
-         *     <td>An array of arrays ("matrix") or a `TableData` object</td>
+         *     <td>An array of arrays ("matrix") or a <code>TableData</code> object</td>
          *     <td>A Word table is written.</td>
          *   </tr>
          *   <tr>
@@ -2759,24 +2760,24 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * For Excel, the specified data is written to the binding as follows:
+         * For Excel, the specified data is written to the binding as follows.
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
          *     <td>A string</td>
-         *     <td>The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting  data to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Binding.getDataAsync method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
+         *     <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
          *   </tr>
          *   <tr>
          *     <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td>
-         *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting  data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data displayed in the bound cells.</td>
+         *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting data to <code>[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]</code> will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td>
          *   </tr>
          *   <tr>
-         *     <td>A `TableData` object, and the shape of the table matches the bound table.</td>
-         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+         *     <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td>
+         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
          *   </tr>
          * </table>
          *
@@ -2798,27 +2799,27 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
-         * @param data - The data to be set in the current selection. Possible data types by host:
+         * @param data - The data to be set in the current selection. Possible data types by Office application:
          *
          *        string: Excel on the web and Windows, and Word on the web and Windows only
          *
@@ -2863,7 +2864,7 @@ export declare namespace Office {
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
@@ -2872,20 +2873,20 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>An array of arrays ("matrix")</td>
-         *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`. To write a single column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`.</td>
+         *     <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: <code>[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]</code>. To write a single column of three rows, pass an array like this: <code>[["R1C1"], ["R2C1"], ["R3C1"]]</code>.</td>
          *   </tr>
          *    <tr>
-         *     <td>A `TableData` object</td>
+         *     <td>A <code>TableData</code> object</td>
          *     <td>A table with headers will be written.</td>
          *   </tr>
          * </table>
          *
          * Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the
-         * binding as follows:
+         * binding as follows.
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
@@ -2893,7 +2894,7 @@ export declare namespace Office {
          *     <td>The specified text is written.</td>
          *   </tr>
          *   <tr>
-         *     <td>An array of arrays ("matrix") or a `TableData` object</td>
+         *     <td>An array of arrays ("matrix") or a <code>TableData</code> object</td>
          *     <td>A Word table is written.</td>
          *   </tr>
          *   <tr>
@@ -2906,24 +2907,24 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * For Excel, the specified data is written to the binding as follows:
+         * For Excel, the specified data is written to the binding as follows.
          *
          * <table>
          *   <tr>
-         *     <th>`data` value</th>
+         *     <th><code>data</code> value</th>
          *     <th>Data written</th>
          *   </tr>
          *   <tr>
          *     <td>A string</td>
-         *     <td>The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting  data to `"=SUM(A1:A5)"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Binding.getDataAsync method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
+         *     <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
          *   </tr>
          *   <tr>
          *     <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td>
-         *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting  data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data displayed in the bound cells.</td>
+         *     <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting  data to <code>[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]</code> will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td>
          *   </tr>
          *   <tr>
-         *     <td>A `TableData` object, and the shape of the table matches the bound table.</td>
-         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+         *     <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td>
+         *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
          *   </tr>
          * </table>
          *
@@ -2945,27 +2946,27 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
-         * @param data - The data to be set in the current selection. Possible data types by host:
+         * @param data - The data to be set in the current selection. Possible data types by Office application:
          *
          *        string: Excel on the web and Windows, and Word on the web and Windows only
          *
@@ -3052,8 +3053,8 @@ export declare namespace Office {
     }
 
     /**
-    * Represents the bindings the add-in has within the document.
-    */
+     * Represents the bindings the add-in has within the document.
+     */
     export interface Bindings {
         /**
          * Gets an {@link Office.Document} object that represents the document associated with this set of bindings.
@@ -3137,7 +3138,7 @@ export declare namespace Office {
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id.
+         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied ID.
          * The method fails if the specified selection cannot be bound.
          *
          * @param bindingType - Specifies the type of the binding object to create. Required.
@@ -3154,7 +3155,7 @@ export declare namespace Office {
          *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
          *
-         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id.
+         * Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied ID.
          * The method fails if the specified selection cannot be bound.
          *
          * @param bindingType - Specifies the type of the binding object to create. Required.
@@ -3180,7 +3181,7 @@ export declare namespace Office {
          *
          * Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that
          * binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter.
-         * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
+         * If you need to use an existing ID and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
          * then call the addFromSelectionAsync method to reestablish the binding with a new type.
          *
          * @param bindingType - Specifies the type of the binding object to create. Required.
@@ -3207,7 +3208,7 @@ export declare namespace Office {
          *
          * Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that
          * binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter.
-         * If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
+         * If you need to use an existing ID and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and
          * then call the addFromSelectionAsync method to reestablish the binding with a new type.
          *
          * @param bindingType - Specifies the type of the binding object to create. Required.
@@ -3264,12 +3265,12 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
-         * Fails if the specified id does not exist.
+         * Fails if the specified ID does not exist.
          *
          * @param id - Specifies the unique name of the binding object. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-         *                  The `value` property of the result is the Binding object specified by the id in the call.
+         *                  The `value` property of the result is the Binding object specified by the ID in the call.
          */
         getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
@@ -3285,11 +3286,11 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
-         * Fails if the specified id does not exist.
+         * Fails if the specified ID does not exist.
          *
          * @param id - Specifies the unique name of the binding object. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-         *                  The `value` property of the result is the Binding object specified by the id in the call.
+         *                  The `value` property of the result is the Binding object specified by the ID in the call.
          */
         getByIdAsync(id: string, callback?: (result: AsyncResult<Binding>) => void): void;
         /**
@@ -3305,7 +3306,7 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
-         * Fails if the specified id does not exist.
+         * Fails if the specified ID does not exist.
          *
          * @param id - Specifies the unique name to be used to identify the binding object. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -3325,7 +3326,7 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings | TextBindings}
          *
-         * Fails if the specified id does not exist.
+         * Fails if the specified ID does not exist.
          *
          * @param id - Specifies the unique name to be used to identify the binding object. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3337,7 +3338,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Word
+     * **Applications**: Word
      */
     export interface CustomXmlNode {
         /**
@@ -3521,7 +3522,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Word
+     * **Applications**: Word
      */
     export interface CustomXmlPart {
         /**
@@ -3732,7 +3733,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Word
+     * **Applications**: Word
      */
     export interface CustomXmlParts {
         /**
@@ -3761,7 +3762,7 @@ export declare namespace Office {
          */
         addAsync(xml: string, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;
         /**
-         * Asynchronously gets the specified custom XML part by its id.
+         * Asynchronously gets the specified custom XML part by its ID.
          *
          * @remarks
          *
@@ -3771,11 +3772,11 @@ export declare namespace Office {
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part.
-         *                  If there is no custom XML part with the specified id, the method returns null.
+         *                  If there is no custom XML part with the specified ID, the method returns null.
          */
         getByIdAsync(id: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;
         /**
-         * Asynchronously gets the specified custom XML part by its id.
+         * Asynchronously gets the specified custom XML part by its ID.
          *
          * @remarks
          *
@@ -3784,11 +3785,11 @@ export declare namespace Office {
          * @param id - The GUID of the custom XML part, including opening and closing braces.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is a CustomXmlPart object that represents the specified custom XML part.
-         *                  If there is no custom XML part with the specified id, the method returns null.
+         *                  If there is no custom XML part with the specified ID, the method returns null.
          */
         getByIdAsync(id: string, callback?: (result: AsyncResult<CustomXmlPart>) => void): void;
         /**
-         * Asynchronously gets the specified custom XML part(s) by its namespace.
+         * Asynchronously gets the specified custom XML parts by its namespace.
          *
          * @remarks
          *
@@ -3801,7 +3802,7 @@ export declare namespace Office {
         */
         getByNamespaceAsync(ns: string, options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<CustomXmlPart[]>) => void): void;
         /**
-         * Asynchronously gets the specified custom XML part(s) by its namespace.
+         * Asynchronously gets the specified custom XML parts by its namespace.
          *
          * @remarks
          *
@@ -3818,7 +3819,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Word
+     * **Applications**: Word
      */
     export interface CustomXmlPrefixMappings {
         /**
@@ -3918,7 +3919,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Excel, PowerPoint, Project, Word
+     * **Applications**: Excel, PowerPoint, Project, Word
      */
     export interface Document {
         /**
@@ -3943,7 +3944,7 @@ export declare namespace Office {
          */
         settings: Settings;
         /**
-         * Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
+         * Gets the URL of the document that the Office application currently has open. Returns null if the URL is unavailable.
          */
         url: string;
         /**
@@ -4022,19 +4023,19 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          *
-         * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
+         * For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
          * to 4194304 bytes (4 MB). For add-ins running in Office apps on iPad, the `getFileAsync` method supports getting files in slices of up to
          * 65536 (64 KB).
          *
          * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with
-         * the host:
+         * the application.
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows           </th><th> Office on the web           </th><th> Office on iPad      </th><th> Office on Mac               </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`         </td><td>                     </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`         </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
+         *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -4057,19 +4058,19 @@ export declare namespace Office {
          *
          * - {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          *
-         * For add-ins running in Office host applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
+         * For add-ins running in Office applications other than Office on iPad, the `getFileAsync` method supports getting files in slices of up
          * to 4194304 bytes (4 MB). For add-ins running in Office on iPad apps, the `getFileAsync` method supports getting files in slices of up to
          * 65536 (64 KB).
          *
          * The `fileType` parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with
-         * the host:
+         * the application.
          *
          * *Supported FileTypes, by platform*
          *  <table>
-         *   <tr><th>                             </th><th> Office on Windows           </th><th> Office on the web           </th><th> Office on iPad      </th><th> Office on Mac               </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`         </td><td>                     </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf`         </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`         </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf`, `Text` </td><td> `Compressed`, `Pdf` </td><td> `Compressed`, `Pdf`, `Text` </td></tr>
+         *   <tr><th>                             </th><th> Office on Windows                                          </th><th> Office on the web                                          </th><th> Office on iPad                          </th><th> Office on Mac                                              </th></tr>
+         *   <tr><td><strong> Excel      </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td>                                         </td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code>                   </td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>                   </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>, <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr>
          *  </table>
          *
          * @param fileType - The format in which the file will be returned
@@ -4129,64 +4130,64 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
-         * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
          *
          * <table>
          *   <tr>
-         *     <th>Host</th>
-         *     <th>Supported coercionType</th>
+         *     <th><code>CoercionType</code></th>
+         *     <th>Supported applications</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, PowerPoint, Project, and Word</td>
-         *     <td>`Office.CoercionType.Text` (string)</td>
+         *     <td><code>Office.CoercionType.Html</code></td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Html`</td>
+         *     <td><code>Office.CoercionType.SlideRange</code></td>
+         *     <td>- PowerPoint on the web and on Windows</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint on the web and Windows</td>
-         *     <td>`Office.CoercionType.SlideRange`</td>
+         *     <td><code>Office.CoercionType.Text</code> (string)</td>
+         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
+         *     <td><code>Office.CoercionType.XmlSvg</code></td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
          *   </tr>
          * </table>
          *
-         * @param coercionType - The type of data structure to return. See the remarks section for each host's supported coercion types.
+         * @param coercionType - The type of data structure to return. See the Remarks section for each application's supported coercion types.
          *
          * @param options - Provides options for customizing what data is returned and how it is formatted.
          *
@@ -4221,64 +4222,64 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
-         * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
          *
          * <table>
          *   <tr>
-         *     <th>Host</th>
-         *     <th>Supported coercionType</th>
+         *     <th><code>CoercionType</code></th>
+         *     <th>Supported applications</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, PowerPoint, Project, and Word</td>
-         *     <td>`Office.CoercionType.Text` (string)</td>
+         *     <td><code>Office.CoercionType.Html</code></td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Html`</td>
+         *     <td><code>Office.CoercionType.SlideRange</code></td>
+         *     <td>- PowerPoint on the web and on Windows</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint on the web and Windows</td>
-         *     <td>`Office.CoercionType.SlideRange`</td>
+         *     <td><code>Office.CoercionType.Text</code> (string)</td>
+         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
+         *     <td><code>Office.CoercionType.XmlSvg</code></td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
          *   </tr>
          * </table>
          *
-         * @param coercionType - The type of data structure to return. See the remarks section for each host's supported coercion types.
+         * @param coercionType - The type of data structure to return. See the Remarks section for each application's supported coercion types.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The `value` property of the result is the data in the current selection.
          *                  This is returned in the data structure or format you specified with the coercionType parameter.
@@ -4294,7 +4295,7 @@ export declare namespace Office {
          *
          * PowerPoint doesn't support the goToByIdAsync method in Master Views.
          *
-         * The behavior caused by the selectionMode option varies by host:
+         * The behavior caused by the selectionMode option varies by Office application:
          *
          * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings,
          * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
@@ -4321,7 +4322,7 @@ export declare namespace Office {
          *
          * PowerPoint doesn't support the goToByIdAsync method in Master Views.
          *
-         * The behavior caused by the selectionMode option varies by host:
+         * The behavior caused by the selectionMode option varies by Office application:
          *
          * In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item. Office.SelectionMode.None for text bindings,
          * selects the cell; for matrix bindings, table bindings, and named items, selects the first data cell (not first cell in header row for tables).
@@ -4391,33 +4392,33 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <td>Word</td>
-         *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
-         *     <td>If `data` is a string, the specified text is inserted.</td>
+         *     <td>If there is no selection and the insertion point is at a valid location, the specified <code>data</code> is inserted at the insertion point</td>
+         *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+         *     <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+         *     <td>If </code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+         *     <td>If <code>data</code> is Office Open XML, the specified XML is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td>
+         *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>If there is a selection</td>
-         *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+         *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -4428,32 +4429,32 @@ export declare namespace Office {
          *   <tr>
          *     <td>Excel</td>
          *     <td>If a single cell is selected</td>
-         *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+         *     <td>If <code>data</code> is a string, the specified text is inserted as the value of the current cell.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+         *     <td>If <code>data</code> is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+         *     <td>If <code>data</code> is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>If multiple cells are selected</td>
-         *     <td>If the shape does not match the shape of `data`, an error is returned.</td>
+         *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+         *     <td>If the shape of the selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on the values in <code>data</code>.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>Insert images</td>
-         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cells. Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -4464,12 +4465,12 @@ export declare namespace Office {
          *   <tr>
          *     <td>Excel on the web</td>
          *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
-         *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+         *     <td>The total number of cells you can write to a worksheet with the <code>data</code> parameter can't exceed 20,000 in a single call to this method.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+         *     <td>The number of formatting groups passed to the <code>cellFormat</code> parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
          *   </tr>
          *
          *   <tr>
@@ -4479,45 +4480,44 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * **Hosts**
+         * **Applications**
          *
-         * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
          *
          * <table>
          *   <tr>
-         *     <th>Host</th>
-         *     <th>Supported coercionType</th>
+         *     <th><code>CoercionType</code></th>
+         *     <th>Supported applications</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, PowerPoint, Project, and Word</td>
-         *     <td>`Office.CoercionType.Text` (string)</td>
+         *     <td><code>Office.CoercionType.Html</code></td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Html`</td>
+         *     <td><code>Office.CoercionType.SlideRange</code></td>
+         *     <td>- PowerPoint on the web and Windows</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint on the web and Windows</td>
-         *     <td>`Office.CoercionType.SlideRange`</td>
+         *     <td><code>Office.CoercionType.Text</code> (string)</td>
+         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
+         *     <td><code>Office.CoercionType.XmlSvg</code></td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
          *   </tr>
          * </table>
-         *
          *
          * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
          *
@@ -4548,7 +4548,7 @@ export declare namespace Office {
          *
          * @param options - Provides options for how to insert data to the selection.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-         *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
+         *                  The AsyncResult.value property always returns `undefined` because there is no object or data to retrieve.
          */
         setSelectedDataAsync(data: string | TableData | any[][], options?: SetSelectedDataOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
@@ -4582,32 +4582,32 @@ export declare namespace Office {
          *   <tr>
          *     <td>Word</td>
          *     <td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td>
-         *     <td>If `data` is a string, the specified text is inserted.</td>
+         *     <td>If <code>data</code> is a string, the specified text is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
+         *     <td>If <code>data</code> is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
+         *     <td>If <code>data</code> is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is Office Open XML, the specified XML is inserted.</td>
+         *     <td>If <code>data</code> is Office Open XML, the specified XML is inserted.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td>
+         *     <td>If <code>data</code> is a base64 encoded image stream, the specified image is inserted.</td></tr></td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>If there is a selection</td>
-         *     <td>It will be replaced with the specified `data` following the same rules as above.</td>
+         *     <td>It will be replaced with the specified <code>data</code> following the same rules as above.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -4618,31 +4618,32 @@ export declare namespace Office {
          *   <tr>
          *     <td>Excel</td>
          *     <td>If a single cell is selected</td>
-         *     <td>If `data` is a string, the specified text is inserted as the value of the current cell.</td>
+         *     <td>If <code>data</code> is a string, the specified text is inserted as the value of the current cell.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
+         *     <td>If <code>data</code> is an array of arrays ("matrix"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
+         *     <td>If <code>data</code> is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
-         *     <td>If multiple cells are selected</td><td>If the shape does not match the shape of `data`, an error is returned.</td>
+         *     <td>If multiple cells are selected</td>
+         *     <td>If the shape does not match the shape of <code>data</code>, an error is returned.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>If the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`.</td>
+         *     <td>If the shape of the selection exactly matches the shape of <code>data</code>, the values of the selected cells are updated based on the values in <code>data</code>.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td>Insert images</td>
-         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
+         *     <td>Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cells. Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
@@ -4653,12 +4654,12 @@ export declare namespace Office {
          *   <tr>
          *     <td>Excel on the web</td>
          *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
-         *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
+         *     <td>The total number of cells you can write to a worksheet with the <code>data</code> parameter can't exceed 20,000 in a single call to this method.</td>
          *   </tr>
          *   <tr>
          *     <td></td>
          *     <td></td>
-         *     <td>The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
+         *     <td>The number of formatting groups passed to the <code>cellFormat</code> parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells.</td>
          *   </tr>
          *
          *   <tr>
@@ -4668,45 +4669,44 @@ export declare namespace Office {
          *   </tr>
          * </table>
          *
-         * **Hosts**
+         * **Applications**
          *
-         * The possible values for the {@link Office.CoercionType} parameter vary by the host.
+         * The possible values for the {@link Office.CoercionType} parameter vary by the Office application.
          *
          * <table>
          *   <tr>
-         *     <th>Host</th>
-         *     <th>Supported coercionType</th>
+         *     <th><code>CoercionType</code></th>
+         *     <th>Supported applications</th>
          *   </tr>
          *   <tr>
-         *     <td>Excel, PowerPoint, Project, and Word</td>
-         *     <td>`Office.CoercionType.Text` (string)</td>
+         *     <td><code>Office.CoercionType.Html</code></td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
+         *     <td><code>Office.CoercionType.Matrix</code> (array of arrays)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel and Word</td>
-         *     <td>`Office.CoercionType.Table` (TableData object)</td>
+         *     <td><code>Office.CoercionType.Ooxml</code> (Office Open XML)</td>
+         *     <td>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Html`</td>
+         *     <td><code>Office.CoercionType.SlideRange</code></td>
+         *     <td>- PowerPoint on the web and on Windows</td>
          *   </tr>
          *   <tr>
-         *     <td>Word</td>
-         *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
+         *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
+         *     <td>- Excel<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint on the web and Windows</td>
-         *     <td>`Office.CoercionType.SlideRange`</td>
+         *     <td><code>Office.CoercionType.Text</code> (string)</td>
+         *     <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
          *   </tr>
          *   <tr>
-         *     <td>Excel on Windows and Mac, PowerPoint on Windows, Mac, and the web, and Word on Windows and Mac</td>
-         *     <td>`Office.CoercionType.XmlSvg`</td>
+         *     <td><code>Office.CoercionType.XmlSvg</code></td>
+         *     <td>- Excel on Windows and on Mac<br>- PowerPoint on Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td>
          *   </tr>
          * </table>
-         *
          *
          * @param data - The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
          *
@@ -4736,7 +4736,7 @@ export declare namespace Office {
          * different formulas in the column.
          *
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
-         *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.
+         *                  The AsyncResult.value property always returns `undefined` because there is no object or data to retrieve.
          */
         setSelectedDataAsync(data: string | TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;
         /**
@@ -5069,23 +5069,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -5105,23 +5105,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Access the Slice object.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Access the Slice object</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -5142,16 +5142,16 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object.
+     * The MatrixBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the Binding object.
      */
     export interface MatrixBinding extends Binding {
         /**
-        * Gets the number of columns in the matrix data structure, as an integer value.
-        */
+         * Gets the number of columns in the matrix data structure, as an integer value.
+         */
         columnCount: number;
         /**
-        * Gets the number of rows in the matrix data structure, as an integer value.
-        */
+         * Gets the number of rows in the matrix data structure, as an integer value.
+         */
         rowCount: number;
     }
     /**
@@ -5159,7 +5159,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Hosts**: Excel, PowerPoint, Word
+     * **Applications**: Excel, PowerPoint, Word
      *
      * The settings created by using the methods of the Settings object are saved per add-in and per document.
      * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -5193,23 +5193,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when adding an event handler</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          */
@@ -5234,23 +5234,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when adding an event handler</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          */
@@ -5285,23 +5285,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Access a Settings object with the refreshed values.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Access a Settings object with the refreshed values</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -5341,6 +5341,29 @@ export declare namespace Office {
          * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the
          * following information.
          *
+         * <table>
+         *   <tr>
+         *     <th>Property</th>
+         *     <th>Use</th>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *   </tr>
+         * </table>
+         *
          * @param eventType - Specifies the type of event to remove. Required.
          * @param options - Provides options to determine which event handler or handlers are removed.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5361,6 +5384,29 @@ export declare namespace Office {
          *
          * In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the
          * following information.
+         *
+         * <table>
+         *   <tr>
+         *     <th>Property</th>
+         *     <th>Use</th>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
+         *   </tr>
+         *   <tr>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
+         *   </tr>
+         * </table>
          *
          * @param eventType - Specifies the type of event to remove. Required.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -5385,23 +5431,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -5428,23 +5474,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no object or data to retrieve.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no object or data to retrieve</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -5507,7 +5553,7 @@ export declare namespace Office {
      * 
      * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}
      */
-     export interface DialogMessageOptions {
+    export interface DialogMessageOptions {
         /**
          * Specifies the intended recipient domain for a message sent, in either direction, between a dialog and its parent. For example, `https://resources.contoso.com`.
          */
@@ -5520,7 +5566,7 @@ export declare namespace Office {
      * {@link Office.UI} object.
      *
      */
-     export interface DialogParentMessageReceivedEventArgs {
+    export interface DialogParentMessageReceivedEventArgs {
         /**
          * Gets the content of the message sent from the parent page, which can be any string or stringified data.
          */
@@ -5574,30 +5620,30 @@ export declare namespace Office {
      */
     export interface TableBinding extends Binding {
         /**
-        * Gets the number of columns in the TableBinding, as an integer value.
-        */
+         * Gets the number of columns in the TableBinding, as an integer value.
+         */
         columnCount: number;
         /**
-        * True, if the table has headers; otherwise false.
-        */
+         * True, if the table has headers; otherwise false.
+         */
         hasHeaders: boolean;
          /**
-        * Gets the number of rows in the TableBinding, as an integer value.
-        *
-        * @remarks
-        *
-        * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host
-        * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this
-        * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the
-        * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
-        *
-        * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
-        *
-        * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
-        *
-        * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty
-        * strings.
-        */
+         * Gets the number of rows in the TableBinding, as an integer value.
+         *
+         * @remarks
+         *
+         * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office
+         * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this
+         * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the
+         * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
+         *
+         * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+         *
+         * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
+         *
+         * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty
+         * strings.
+         */
         rowCount: number;
         /**
          * Adds the specified data to the table as additional columns.
@@ -5613,7 +5659,7 @@ export declare namespace Office {
          *  - Each row in the array you pass as the data argument must have the same number of rows as the table being updated. If not, the entire
          * operation will fail.
          *
-         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s). If any row or cell
+         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added columns. If any row or cell
          * fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -5640,7 +5686,7 @@ export declare namespace Office {
          *  - Each row in the array you pass as the data argument must have the same number of rows as the table being updated. If not, the entire
          * operation will fail.
          *
-         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s). If any row or cell
+         *  - Each row and cell in the array must successfully add that row or cell to the table in the newly added columns. If any row or cell
          * fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -5663,7 +5709,7 @@ export declare namespace Office {
          *  - Each row in the array you pass as the data argument must have the same number of columns as the table being updated. If not, the entire
          * operation will fail.
          *
-         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows(s). If any column or
+         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows. If any column or
          * cell fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -5687,7 +5733,7 @@ export declare namespace Office {
          *  - Each row in the array you pass as the data argument must have the same number of columns as the table being updated. If not, the entire
          * operation will fail.
          *
-         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows(s). If any column or
+         *  - Each column and cell in the array must successfully add that column or cell to the table in the newly added rows. If any column or
          * cell fails to be set for any reason, the entire operation will fail.
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
@@ -5700,7 +5746,7 @@ export declare namespace Office {
          */
         addRowsAsync(rows: TableData | any[][], callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Deletes all non-header rows and their values in the table, shifting appropriately for the host application.
+         * Deletes all non-header rows and their values in the table, shifting appropriately for the Office application.
          *
          * @remarks
          *
@@ -5711,7 +5757,7 @@ export declare namespace Office {
          */
         deleteAllDataValuesAsync(options?: Office.AsyncContextOptions, callback?: (result: AsyncResult<void>) => void): void;
         /**
-         * Deletes all non-header rows and their values in the table, shifting appropriately for the host application.
+         * Deletes all non-header rows and their values in the table, shifting appropriately for the Office application.
          *
          * @remarks
          *
@@ -5750,43 +5796,43 @@ export declare namespace Office {
          *
          * Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
          *
-         * The `cells:` property specifies the range you want format using one of the following values:
+         * The `cells:` property specifies the range you want format using one of the following values.
          *
          * **Supported ranges in cells property**
          *
          * <table>
          *   <tr>
-         *     <th>cells range settings</th>
+         *     <th><code>cells</code> range settings</th>
          *     <th>Description</th>
          *   </tr>
          *   <tr>
-         *     <td>`{row: n}`</td>
+         *     <td><code>{row: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{column: n}`</td>
+         *     <td><code>{column: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{row: i, column: j}`</td>
+         *     <td><code>{row: i, column: j}</code></td>
          *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.All`</td>
+         *     <td><code>Office.Table.All</code></td>
          *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Data`</td>
+         *     <td><code>Office.Table.Data</code></td>
          *     <td>Specifies only the data in the table (no headers and totals).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Headers`</td>
+         *     <td><code>Office.Table.Headers</code></td>
          *     <td>Specifies only the header row.</td>
          *   </tr>
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+         * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -5804,43 +5850,43 @@ export declare namespace Office {
          *
          * Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
          *
-         * The `cells:` property specifies the range you want format using one of the following values:
+         * The `cells:` property specifies the range you want format using one of the following values.
          *
          * **Supported ranges in cells property**
          *
          * <table>
          *   <tr>
-         *     <th>cells range settings</th>
+         *     <th><code>cells</code> range settings</th>
          *     <th>Description</th>
          *   </tr>
          *   <tr>
-         *     <td>`{row: n}`</td>
+         *     <td><code>{row: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{column: n}`</td>
+         *     <td><code>{column: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{row: i, column: j}`</td>
+         *     <td><code>{row: i, column: j}</code></td>
          *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.All`</td>
+         *     <td><code>Office.Table.All</code></td>
          *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Data`</td>
+         *     <td><code>Office.Table.Data</code></td>
          *     <td>Specifies only the data in the table (no headers and totals).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Headers`</td>
+         *     <td><code>Office.Table.Headers</code></td>
          *     <td>Specifies only the header row.</td>
          *   </tr>
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+         * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
          *
          * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
          * @param formats - An array specifying the format properties to get.
@@ -5861,43 +5907,43 @@ export declare namespace Office {
          *
          * Each JavaScript object in the cellFormat array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
          *
-         * The `cells:` property specifies the range you want format using one of the following values:
+         * The `cells:` property specifies the range you want format using one of the following values.
          *
          * **Supported ranges in cells property**
          *
          * <table>
          *   <tr>
-         *     <th>cells range settings</th>
+         *     <th><code>cells</code> range settings</th>
          *     <th>Description</th>
          *   </tr>
          *   <tr>
-         *     <td>`{row: n}`</td>
+         *     <td><code>{row: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{column: n}`</td>
+         *     <td><code>{column: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{row: i, column: j}`</td>
+         *     <td><code>{row: i, column: j}</code></td>
          *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.All`</td>
+         *     <td><code>Office.Table.All</code></td>
          *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Data`</td>
+         *     <td><code>Office.Table.Data</code></td>
          *     <td>Specifies only the data in the table (no headers and totals).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Headers`</td>
+         *     <td><code>Office.Table.Headers</code></td>
          *     <td>Specifies only the header row.</td>
          *   </tr>
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+         * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -5931,7 +5977,7 @@ export declare namespace Office {
          *
          * Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and `TableBinding.setDataAsync` methods only works
          * to set formatting when writing data the first time.
-         * To make formatting changes after writing data, use the following methods:
+         * To make formatting changes after writing data, use the following methods.
          *
          *  - To update cell formatting, such as font color and style, use the `TableBinding.setFormatsAsync` method (this method).
          *
@@ -5960,43 +6006,43 @@ export declare namespace Office {
          *
          * Each JavaScript object in the cellFormat array has this form: `{cells:{ cell_range }, format:{ format_definition }}`
          *
-         * The `cells:` property specifies the range you want format using one of the following values:
+         * The `cells:` property specifies the range you want format using one of the following values.
          *
          * **Supported ranges in cells property**
          *
          * <table>
          *   <tr>
-         *     <th>cells range settings</th>
+         *     <th><code>cells</code> range settings</th>
          *     <th>Description</th>
          *   </tr>
          *   <tr>
-         *     <td>`{row: n}`</td>
+         *     <td><code>{row: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth row of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{column: n}`</td>
+         *     <td><code>{column: n}</code></td>
          *     <td>Specifies the range that is the zero-based nth column of data in the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`{row: i, column: j}`</td>
+         *     <td><code>{row: i, column: j}</code></td>
          *     <td>Specifies the single cell that is the ith row and jth column of the table.</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.All`</td>
+         *     <td><code>Office.Table.All</code></td>
          *     <td>Specifies the entire table, including column headers, data, and totals (if any).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Data`</td>
+         *     <td><code>Office.Table.Data</code></td>
          *     <td>Specifies only the data in the table (no headers and totals).</td>
          *   </tr>
          *   <tr>
-         *     <td>`Office.Table.Headers`</td>
+         *     <td><code>Office.Table.Headers</code></td>
          *     <td>Specifies only the header row.</td>
          *   </tr>
          * </table>
          *
          * The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells dialog box in Excel
-         * (Right-click \> Format Cells or Home \> Format \> Format Cells).
+         * (Right-click then select **Format Cells**, or **Home** \> **Format** \> **Format Cells**).
          *
          * You specify the value of the `format:` property as a list of one or more property name - value pairs in a JavaScript object literal. The
          * property name specifies the name of the formatting property to set, and value specifies the property value.
@@ -6030,7 +6076,7 @@ export declare namespace Office {
          *
          * Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and `TableBinding.setDataAsync` methods only works
          * to set formatting when writing data the first time.
-         * To make formatting changes after writing data, use the following methods:
+         * To make formatting changes after writing data, use the following methods.
          *
          *  - To update cell formatting, such as font color and style, use the `TableBinding.setFormatsAsync` method (this method).
          *
@@ -6057,23 +6103,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no data or object to retrieve when setting formats.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -6095,23 +6141,23 @@ export declare namespace Office {
          * <table>
          *   <tr>
          *     <th>Property</th>
-         *     <th>Use to...</th>
+         *     <th>Use</th>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.value</td>
-         *     <td>Always returns undefined because there is no data or object to retrieve when setting formats.</td>
+         *     <td><code>AsyncResult.value</code></td>
+         *     <td>Always returns <code>undefined</code> because there is no data or object to retrieve when setting formats</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.status</td>
-         *     <td>Determine the success or failure of the operation.</td>
+         *     <td><code>AsyncResult.status</code></td>
+         *     <td>Determine the success or failure of the operation</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.error</td>
-         *     <td>Access an Error object that provides error information if the operation failed.</td>
+         *     <td><code>AsyncResult.error</code></td>
+         *     <td>Access an Error object that provides error information if the operation failed</td>
          *   </tr>
          *   <tr>
-         *     <td>AsyncResult.asyncContext</td>
-         *     <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td>
+         *     <td><code>AsyncResult.asyncContext</code></td>
+         *     <td>Define an item of any type that is returned in the AsyncResult object without being altered</td>
          *   </tr>
          * </table>
          *
@@ -6136,7 +6182,7 @@ export declare namespace Office {
          * for a two-column table you would set the header property to [['header1', 'header2']].
          *
          * If you specify null for the headers property (or leaving the property empty when you construct a TableData object), the following results
-         * occur when your code executes:
+         * occur when your code executes.
          *
          * - If you insert a new table, the default column headers for the table are created.
          *
@@ -6153,7 +6199,7 @@ export declare namespace Office {
          * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
          *
          * If you specify null for the rows property (or leave the property empty when you construct a TableData object), the following results occur
-         * when your code executes:
+         * when your code executes.
          *
          * - If you insert a new table, a blank row will be inserted.
          *
@@ -6182,7 +6228,7 @@ export declare namespace Office {
     /**
      * Represents a bound text selection in the document.
      *
-     * The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding}
+     * The TextBinding object inherits the `id` property, type property, getDataAsync method, and setDataAsync method from the {@link Office.Binding}
      * object. It does not implement any additional properties or methods of its own.
      */
     export interface TextBinding extends Binding { }
@@ -7713,8 +7759,8 @@ export declare namespace Office {
         BudgetFixedCost,
         BudgetFixedWork,
         /**
-        * The budget work for the task, in hours.
-        */
+         * The budget work for the task, in hours.
+         */
         BudgetWork,
         /**
          * The GUID of the task calendar.
@@ -8298,15 +8344,15 @@ export declare namespace Office {
 
 export declare namespace OfficeExtension {
     /**
-     * An abstract proxy object that represents an object in an Office document. 
-     * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the 
+     * An abstract proxy object that represents an object in an Office document.
+     * You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
      * proxy object state with the document by calling `context.sync()`.
      */
     export class ClientObject {
         /** The request context associated with the object */
         context: ClientRequestContext;
         /**
-         *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+         *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the
          * isNullObject property.
          */
         isNullObject: boolean;
@@ -8315,23 +8361,23 @@ export declare namespace OfficeExtension {
     /**
      * Specifies which properties of an object should be loaded. This load happens when the sync() method is executed.
      * This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
-     * 
+     *
      * @remarks
-     * 
-     * For Word, the preferred method for specifying the properties and paging information is by using a string literal. 
+     *
+     * For Word, the preferred method for specifying the properties and paging information is by using a string literal.
      * The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:
-     * 
+     *
      * `context.load(paragraphs, 'text, font/size');`
-     * 
+     *
      * `paragraphs.load('text, font/size');`
-     * 
+     *
      * Here is a similar example using object notation (includes paging):
-     * 
+     *
      * `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
-     * 
+     *
      * `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
-     * 
-     * Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would 
+     *
+     * Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would
      * indicate that all of the font properties are loaded.
      */
     export interface LoadOption {
@@ -8348,7 +8394,7 @@ export declare namespace OfficeExtension {
          */
         top?: number;
         /**
-         * Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. 
+         * Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result.
          * If top is specified, the result set will start after skipping the specified number of items.
          */
         skip?: number;
@@ -8371,10 +8417,10 @@ export declare namespace OfficeExtension {
          * The URL of the remote workbook and the request headers to be sent.
          */
         session?: RequestUrlAndHeaderInfo | T;
-    
+
         /**
-         *  A previously-created context, or API object, or array of objects. 
-         * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up 
+         *  A previously-created context, or API object, or array of objects.
+         * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up
          * by `context.sync()`.
          */
         previousObjects?: ClientObject | ClientObject[] | ClientRequestContext;
@@ -8383,7 +8429,7 @@ export declare namespace OfficeExtension {
     /** Contains debug information about the request context. */
     export interface RequestContextDebugInfo {
         /**
-         * The statements to be executed in the host.
+         * The statements to be executed in the Office application.
          *
          * These statements may not match the code exactly as written, but will be a close approximation.
          */
@@ -8391,7 +8437,7 @@ export declare namespace OfficeExtension {
     }
 
     /**
-     * An abstract RequestContext object that facilitates requests to the host Office application. 
+     * An abstract RequestContext object that facilitates requests to the Office application.
      * The `Excel.run` and `Word.run` methods provide a request context.
      */
     export class ClientRequestContext {
@@ -8404,36 +8450,36 @@ export declare namespace OfficeExtension {
         requestHeaders: { [name: string]: string };
 
         /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties. 
-         * 
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param object - The object whose properties are loaded.
-         * @param option - A comma-delimited string, or array of strings, that specifies the properties to load, or an 
+         * @param option - A comma-delimited string, or array of strings, that specifies the properties to load, or an
          * {@link OfficeExtension.LoadOption} object.
          */
         load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
         /**
         * Queues up a command to recursively load the specified properties of the object and its navigation properties.
-        * 
+        *
         * You must call `context.sync()` before reading the properties.
         *
         * @param object - The object to be loaded.
-        * @param options - The key-value pairing of load options for the types, such as 
+        * @param options - The key-value pairing of load options for the types, such as
         *                `{ "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }`
         * @param maxDepth - The maximum recursive depth.
         */
         loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
         /**
-         * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages" 
-         * array to the OfficeExtension.Error object, containing all trace messages that were executed. 
-         * These messages can help you monitor the program execution sequence and detect the cause of the error. 
+         * Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a ".traceMessages"
+         * array to the OfficeExtension.Error object, containing all trace messages that were executed.
+         * These messages can help you monitor the program execution sequence and detect the cause of the error.
          */
         trace(message: string): void;
 
         /**
-         * Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context 
-         * and retrieving properties of loaded Office objects for use in your code. 
+         * Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context
+         * and retrieving properties of loaded Office objects for use in your code.
          * This method returns a promise, which is resolved when the synchronization is complete.
          */
         sync<T>(passThroughValue?: T): Promise<T>;
@@ -8467,12 +8513,12 @@ export declare namespace OfficeExtension {
         /**
          * Determines whether to log additional error information upon failure.
          *
-         * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the 
+         * When this property is set to true, the error object will include a `debugInfo.fullStatements` property that lists all statements in the
          * batch request, including all statements that precede and follow the point of failure.
          *
-         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements 
+         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements
          * that may contain potentially-sensitive data.
-         * It is recommended that you only set this property to true during debugging and that you never log the value of 
+         * It is recommended that you only set this property to true during debugging and that you never log the value of
          * error.debugInfo.fullStatements to an external database or analytics service.
          */
         extendedErrorLogging: boolean;
@@ -8483,7 +8529,7 @@ export declare namespace OfficeExtension {
     export interface DebugInfo {
         /** Error code string, such as "InvalidArgument". */
         code: string;
-        /** The error message passed through from the host Office application. */
+        /** The error message passed through from the Office application. */
         message: string;
         /** Inner error, if applicable. */
         innerError?: DebugInfo | string;
@@ -8492,14 +8538,14 @@ export declare namespace OfficeExtension {
         /**
          * The statement that caused the error, if available.
          *
-         * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
+         * This statement will never contain any potentially sensitive data and may not match the code exactly as written,
          * but will be a close approximation.
          */
         statement?: string;
         /**
          * The statements that closely precede and follow the statement that caused the error, if available.
          *
-         * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, 
+         * These statements will never contain any potentially sensitive data and may not match the code exactly as written,
          * but will be a close approximation.
          */
         surroundingStatements?: string[];
@@ -8515,15 +8561,15 @@ export declare namespace OfficeExtension {
     export class Error {
         /** Error name: "OfficeExtension.Error".*/
         name: string;
-        /** The error message passed through from the host Office application. */
+        /** The error message passed through from the Office application. */
         message: string;
         /** Stack trace, if applicable. */
         stack: string;
         /** Error code string, such as "InvalidArgument". */
         code: string;
         /**
-         * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. 
-         * If there was an error, this contains all trace messages that were executed before the error occurred. 
+         * Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`.
+         * If there was an error, this contains all trace messages that were executed before the error occurred.
          * These messages can help you monitor the program execution sequence and detect the case of the error.
          */
         traceMessages: string[];
@@ -8549,10 +8595,10 @@ export declare namespace OfficeExtension {
     }
 
     /**
-     * A Promise object that represents a deferred interaction with the host Office application. 
-     * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. 
-     * Promises can be chained via ".then", and errors can be caught via ".catch". 
-     * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. 
+     * A Promise object that represents a deferred interaction with the Office application.
+     * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2.
+     * Promises can be chained via ".then", and errors can be caught via ".catch".
+     * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain.
      * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
      */
     const Promise: Office.IPromiseConstructor;
@@ -8564,31 +8610,31 @@ export declare namespace OfficeExtension {
      * for more information.
      */
     export class TrackedObjects {
-        /** 
-         * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
-         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
-         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
+        /**
+         * Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this.
+         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch,
+         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object
          * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
          * the parent collection.
          */
         add(object: ClientObject): void;
         /**
-         * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this. 
-         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, 
-         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object 
+         * Track a set of objects  for automatic adjustment based on surrounding changes in the document. Only some object types require this.
+         * If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch,
+         * and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object
          * to the tracked object collection when the object was first created. If this object is part of a collection in Word, you should also track
          * the parent collection.
          */
         add(objects: ClientObject[]): void;
-        /** 
-         * Release the memory associated with an object that was previously added to this collection. 
-         * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
+        /**
+         * Release the memory associated with an object that was previously added to this collection.
+         * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
          * You will need to call `context.sync()` before the memory release takes effect.
          */
         remove(object: ClientObject): void;
         /**
-         * Release the memory associated with an object that was previously added to this collection. 
-         * Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. 
+         * Release the memory associated with an object that was previously added to this collection.
+         * Having many tracked objects slows down the Office application, so please remember to free any objects you add, once you're done using them.
          * You will need to call `context.sync()` before the memory release takes effect.
          */
         remove(objects: ClientObject[]): void;
@@ -8602,12 +8648,12 @@ export declare namespace OfficeExtension {
          */
         add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;
         /**
-         * Removes the specified function from the event handler list so that it will not be called on subsequent events. 
-         * 
-         * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. 
-         * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}. 
-         * 
-         * @param handler - A reference to a function previously provided to the `add` method as an event handler. 
+         * Removes the specified function from the event handler list so that it will not be called on subsequent events.
+         *
+         * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+         * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+         *
+         * @param handler - A reference to a function previously provided to the `add` method as an event handler.
          */
         remove(handler: (args: T) => Promise<any>): void;
     }

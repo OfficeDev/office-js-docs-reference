@@ -11,8 +11,8 @@ fields:
   - name: Edit
     uid: 'office!Office.ActiveView.Edit:member'
     package: office!
-    summary: The active view of the host application lets the user edit the content in the document.
+    summary: The active view of the Office application lets the user edit the content in the document.
   - name: Read
     uid: 'office!Office.ActiveView.Read:member'
     package: office!
-    summary: The active view of the host application only lets the user read the content in the document.
+    summary: The active view of the Office application only lets the user read the content in the document.

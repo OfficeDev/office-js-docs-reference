@@ -251,7 +251,7 @@ methods:
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
-      id. The method fails if the specified selection cannot be bound.
+      ID. The method fails if the specified selection cannot be bound.
 
 
       #### Examples
@@ -312,7 +312,7 @@ methods:
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
-      id. The method fails if the specified selection cannot be bound.
+      ID. The method fails if the specified selection cannot be bound.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -361,7 +361,7 @@ methods:
 
       Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
       Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
-      bindingType parameter. If you need to use an existing id and change the bindingType, call the
+      bindingType parameter. If you need to use an existing ID and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
 
@@ -439,7 +439,7 @@ methods:
 
       Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the
       Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the
-      bindingType parameter. If you need to use an existing id and change the bindingType, call the
+      bindingType parameter. If you need to use an existing ID and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
     isPreview: false
@@ -581,7 +581,7 @@ methods:
       [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
-      Fails if the specified id does not exist.
+      Fails if the specified ID does not exist.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -599,7 +599,7 @@ methods:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
-            is the Binding object specified by the id in the call.
+            is the Binding object specified by the ID in the call.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Binding:interface"
             />&gt;) =&gt; void
@@ -627,7 +627,7 @@ methods:
       [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
-      Fails if the specified id does not exist.
+      Fails if the specified ID does not exist.
 
 
       #### Examples
@@ -660,7 +660,7 @@ methods:
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
-            is the Binding object specified by the id in the call.
+            is the Binding object specified by the ID in the call.
           type: >-
             (result: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref uid="office!Office.Binding:interface"
             />&gt;) =&gt; void
@@ -688,7 +688,7 @@ methods:
       [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
-      Fails if the specified id does not exist.
+      Fails if the specified ID does not exist.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -731,7 +731,7 @@ methods:
       [TextBindings](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#textbindings)
 
 
-      Fails if the specified id does not exist.
+      Fails if the specified ID does not exist.
 
 
       #### Examples

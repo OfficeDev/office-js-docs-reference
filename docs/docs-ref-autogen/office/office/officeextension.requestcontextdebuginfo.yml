@@ -14,7 +14,7 @@ properties:
     package: office!
     fullName: pendingStatements
     summary: |-
-      The statements to be executed in the host.
+      The statements to be executed in the Office application.
 
       These statements may not match the code exactly as written, but will be a close approximation.
     remarks: ''

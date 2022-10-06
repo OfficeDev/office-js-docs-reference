@@ -25,7 +25,7 @@ methods:
       users sign in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for
       both user account types to access resources in the Microsoft Graph.
     remarks: >-
-      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+      **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
 
       **Requirement set**: [IdentityAPI
@@ -40,9 +40,6 @@ methods:
       [OfficeRuntime.auth.getAccessToken](https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1))
       instead. For more information, see [Enable single sign-on (SSO) in Outlook add-ins that use event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!-- -->.
-
-
-      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
 
 
       #### Examples
@@ -89,7 +86,7 @@ methods:
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
     remarks: >-
-      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+      **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
 
       **Requirement set**: [IdentityAPI
@@ -151,7 +148,7 @@ methods:
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
     remarks: >-
-      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+      **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
 
 
       **Requirement set**: [IdentityAPI

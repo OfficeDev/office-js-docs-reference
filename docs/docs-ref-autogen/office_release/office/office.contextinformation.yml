@@ -17,7 +17,7 @@ properties:
     uid: 'office!Office.ContextInformation#host:member'
     package: office!
     fullName: host
-    summary: Gets the Office application host in which the add-in is running.
+    summary: Gets the Office application in which the add-in is running.
     remarks: ''
     isPreview: false
     isDeprecated: false

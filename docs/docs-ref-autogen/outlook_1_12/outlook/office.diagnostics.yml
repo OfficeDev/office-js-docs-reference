@@ -27,7 +27,7 @@ properties:
     package: outlook!
     fullName: hostName
     summary: >-
-      Gets a string that represents the name of the host application.
+      Gets a string that represents the name of the Office application.
 
 
       A string that can be one of the following values: `Outlook`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!--
@@ -55,12 +55,12 @@ properties:
     package: outlook!
     fullName: hostVersion
     summary: >-
-      Gets a string that represents the version of either the host application or the Exchange Server (e.g.,
+      Gets a string that represents the version of either the Office application or the Exchange Server (e.g.,
       "15.0.468.0").
 
 
       If the mail add-in is running in Outlook on a desktop or mobile client, the `hostVersion` property returns the
-      version of the host application, Outlook. In Outlook on the web, the property returns the version of the Exchange
+      version of the application, Outlook. In Outlook on the web, the property returns the version of the Exchange
       Server.
     remarks: >-
       **[Minimum permission
@@ -89,7 +89,7 @@ properties:
       `ThreeColumns`<!-- -->.
 
 
-      If the host application is not Outlook on the web, then accessing this property results in undefined.
+      If the application is not Outlook on the web, then accessing this property results in undefined.
 
 
       Outlook on the web has three views that correspond to the width of the screen and the window, and the number of

@@ -5,7 +5,7 @@ package: office!
 fullName: Office.Settings
 summary: Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
 remarks: >-
-  **Hosts**: Excel, PowerPoint, Word
+  **Applications**: Excel, PowerPoint, Word
 
 
   The settings created by using the methods of the Settings object are saved per add-in and per document. That is, they
@@ -68,12 +68,13 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
 
 
-            <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-            undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr>
-            <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
-            <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
-            failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is
-            returned in the AsyncResult object without being altered.</td> </tr> </table>
+            <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always
+            returns <code>undefined</code> because there is no data or object to retrieve when adding an event
+            handler</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
+            operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides
+            error information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td>
+            <td>Define an item of any type that is returned in the AsyncResult object without being altered</td> </tr>
+            </table>
           type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
@@ -143,12 +144,13 @@ methods:
             [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
 
 
-            <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-            undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr>
-            <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
-            <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
-            failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is
-            returned in the AsyncResult object without being altered.</td> </tr> </table>
+            <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always
+            returns <code>undefined</code> because there is no data or object to retrieve when adding an event
+            handler</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the
+            operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides
+            error information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td>
+            <td>Define an item of any type that is returned in the AsyncResult object without being altered</td> </tr>
+            </table>
           type: '(result: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
@@ -214,11 +216,12 @@ methods:
       to return the following information.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access a Settings
-      object with the refreshed values.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure
-      of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error
-      information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of
-      any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Access a
+      Settings object with the refreshed values</td> </tr> <tr> <td><code>AsyncResult.status</code></td> <td>Determine
+      the success or failure of the operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an
+      Error object that provides error information if the operation failed</td> </tr> <tr>
+      <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type that is returned in the AsyncResult
+      object without being altered</td> </tr> </table>
 
 
       #### Examples
@@ -316,6 +319,14 @@ methods:
 
       In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult
       object to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
+      <code>undefined</code> because there is no data or object to retrieve when setting formats</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
+      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that is returned in the AsyncResult object without being altered</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -357,6 +368,14 @@ methods:
 
       In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult
       object to return the following information.
+
+
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
+      <code>undefined</code> because there is no data or object to retrieve when setting formats</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
+      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that is returned in the AsyncResult object without being altered</td> </tr> </table>
 
 
       #### Examples
@@ -420,12 +439,12 @@ methods:
       add-in might change the settings and those changes should be made available to all instances.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
-      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
-      Error object that provides error information if the operation failed.</td> </tr> <tr>
-      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
-      without being altered.</td> </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
+      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
+      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that is returned in the AsyncResult object without being altered</td> </tr> </table>
     isPreview: false
     isDeprecated: false
     syntax:
@@ -464,12 +483,12 @@ methods:
       add-in might change the settings and those changes should be made available to all instances.
 
 
-      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
-      undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td>
-      <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an
-      Error object that provides error information if the operation failed.</td> </tr> <tr>
-      <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
-      without being altered.</td> </tr> </table>
+      <table> <tr> <th>Property</th> <th>Use</th> </tr> <tr> <td><code>AsyncResult.value</code></td> <td>Always returns
+      <code>undefined</code> because there is no object or data to retrieve</td> </tr> <tr>
+      <td><code>AsyncResult.status</code></td> <td>Determine the success or failure of the operation</td> </tr> <tr>
+      <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
+      operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
+      that is returned in the AsyncResult object without being altered</td> </tr> </table>
 
 
       #### Examples
