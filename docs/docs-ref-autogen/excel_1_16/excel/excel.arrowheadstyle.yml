@@ -1,0 +1,66 @@
+### YamlMime:TSEnum
+name: Excel.ArrowheadStyle
+uid: 'excel!Excel.ArrowheadStyle:enum'
+package: excel!
+fullName: Excel.ArrowheadStyle
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+  await Excel.run(async (context) => {
+      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+      const line = shapes.getItem("StraightLine").line;
+      line.beginArrowheadLength = Excel.ArrowheadLength.long;
+      line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+      line.endArrowheadLength = Excel.ArrowheadLength.long;
+      line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+      await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: diamond
+    uid: 'excel!Excel.ArrowheadStyle.diamond:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Diamond"'
+  - name: none
+    uid: 'excel!Excel.ArrowheadStyle.none:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"None"'
+  - name: open
+    uid: 'excel!Excel.ArrowheadStyle.open:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Open"'
+  - name: oval
+    uid: 'excel!Excel.ArrowheadStyle.oval:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Oval"'
+  - name: stealth
+    uid: 'excel!Excel.ArrowheadStyle.stealth:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Stealth"'
+  - name: triangle
+    uid: 'excel!Excel.ArrowheadStyle.triangle:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Triangle"'

@@ -8,6 +8,6365 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 export declare namespace Excel {
     /**
+    * Represents a 2D array of cell values.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ArrayCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.array | ReferenceValueType.array | "Array";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the elements of the array. May not directly contain an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        elements: CellValue[][];
+        /**
+        * Represents the cell values which are referenced within `ArrayCellValue.elements`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        referencedValues?: ReferencedValue[];
+    }
+    /**
+    * Represents types of #BLOCKED! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum BlockedErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a service not supporting a linked data type. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTypeRestrictedDomain = "DataTypeRestrictedDomain",
+        /**
+        * An error caused by privacy settings. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTypePrivacySetting = "DataTypePrivacySetting",
+        /**
+        * An error caused by an unsupported data type. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTypeUnsupportedApp = "DataTypeUnsupportedApp",
+        /**
+        * An error caused by external links. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksGeneric = "ExternalLinksGeneric",
+        /**
+        * An error caused by disabled rich data links. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        richDataLinkDisabled = "RichDataLinkDisabled",
+        /**
+        * An error caused by sign in failure. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        signInError = "SignInError",
+        /**
+        * An error caused by a license verification failure. Displays as error type #BLOCKED! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        noLicense = "NoLicense"
+    }
+    /**
+    * Represents the value of a cell containing a #BLOCKED! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface BlockedErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#BLOCKED!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.blocked | "Blocked";
+        /**
+        * Represents the type of `BlockedErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: BlockedErrorCellValueSubType | "Unknown" | "DataTypeRestrictedDomain" | "DataTypePrivacySetting" | "DataTypeUnsupportedApp" | "ExternalLinksGeneric" | "RichDataLinkDisabled" | "SignInError" | "NoLicense";
+    }
+    /**
+    * Represents the value of a cell containing a boolean.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface BooleanCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.boolean | "Boolean";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue: boolean;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.boolean | "Boolean";
+    }
+    /**
+    * Represents types of #BUSY! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum BusyErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #BUSY! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by external links. Displays as error type #BUSY! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksGeneric = "ExternalLinksGeneric",
+        /**
+        * An error that displays while an image is loading. Displays as error type #BUSY! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        loadingImage = "LoadingImage"
+    }
+    /**
+    * Represents the value of a cell containing a #BUSY! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface BusyErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#BUSY!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.busy | "Busy";
+        /**
+        * Represents the type of `BusyErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: BusyErrorCellValueSubType | "Unknown" | "ExternalLinksGeneric" | "LoadingImage";
+    }
+    /**
+    * Represents types of #CALC! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum CalcErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by including an array in an array. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        arrayOfArrays = "ArrayOfArrays",
+        /**
+        * An error caused by including a range in an array. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        arrayOfRanges = "ArrayOfRanges",
+        /**
+        * An error caused by an empty array. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emptyArray = "EmptyArray",
+        /**
+        * An error caused by attempting to lift an unsupported formula (such as a Dynamic UDF) over an array. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unsupportedLifting = "UnsupportedLifting",
+        /**
+        * An error caused by a data table referencing a pending formula. The pending formula is likely asynchronous. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTableReferencedPendingFormula = "DataTableReferencedPendingFormula",
+        /**
+        * An error caused by a function referencing too many cells. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tooManyCells = "TooManyCells",
+        /**
+        * An error caused by a cell's formula evaluating to a lambda value. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lambdaInCell = "LambdaInCell",
+        /**
+        * An error caused by a `CellValue` object that is too deeply nested within another `CellValue`. Displays as error type #CALC! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tooDeeplyNested = "TooDeeplyNested",
+        /**
+        * An error caused by a cell's formula returning a string that exceeds the maximum of 32767 characters. Displays as error type #CALC! in Excel.
+        * Some characters, like emoji, may appear to be one character in the Excel UI but are actually processed as surrogate characters. A surrogate character counts as multiple characters toward the maximum character limit.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        textOverflow = "TextOverflow"
+    }
+    /**
+    * Represents the value of a cell containing a #CALC! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CalcErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#CALC!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.calc | "Calc";
+        /**
+        * Represents the type of `CalcErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: CalcErrorCellValueSubType | "Unknown" | "ArrayOfArrays" | "ArrayOfRanges" | "EmptyArray" | "UnsupportedLifting" | "DataTableReferencedPendingFormula" | "TooManyCells" | "LambdaInCell" | "TooDeeplyNested" | "TextOverflow";
+        /**
+        * Represents the name of the function causing the error.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        functionName?: string;
+    }
+    /**
+    * Represents a reference to a property used by the card layout.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CardLayoutPropertyReference {
+        /**
+        * Represents the name of the property referenced by the card layout.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        property: string;
+    }
+    /**
+    * Properties of a card layout relevant to most card layouts.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CardLayoutSectionStandardProperties {
+        /**
+        * Represents the title of this section of the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        title?: string;
+        /**
+        * Represents whether this section of the card is collapsible.
+        * If the card section has a title, the default value is `true`.
+        * If the card section doesn't have a title, the default value is `false`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        collapsible?: boolean;
+        /**
+        * Represents whether this section of the card is initially collapsed.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        collapsed?: boolean;
+        /**
+        * Represents the names of the properties in this section.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        properties: string[];
+    }
+    /**
+    * Represents a section of a card that is arranged as a list in card view.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CardLayoutListSection extends CardLayoutSectionStandardProperties {
+        /**
+        * Represents the type of layout for this section.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        layout: "List";
+    }
+    /**
+    * Represents a section of a card that is arranged as a table in card view.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CardLayoutTableSection extends CardLayoutSectionStandardProperties {
+        /**
+        * Represents the type of layout for this section.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        layout: "Table";
+    }
+    /**
+    * Represents the layout of a section of a card in card view.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type CardLayoutSection = CardLayoutListSection | CardLayoutTableSection;
+    /**
+    * Properties of a card layout relevant to most card layouts.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CardLayoutStandardProperties {
+        /**
+        * Specifies a property which will be used as the main image of the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mainImage?: CardLayoutPropertyReference;
+        /**
+        * Represents the title of the card or the specification of which property contains the title of the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        title?: string | CardLayoutPropertyReference;
+        /**
+        * Represents a specification of which property contains the subtitle of the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        subTitle?: CardLayoutPropertyReference;
+        /**
+        * Represents the sections of the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sections?: CardLayoutSection[];
+    }
+    /**
+    * Represents the layout of a card in card view.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type CardLayout = EntityCardLayout;
+    /**
+    * The compact layout properties for an entity.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EntityCompactLayout {
+        /**
+        * Specifies the name of the icon which is used to open the card.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        icon?: string | EntityCompactLayoutIcons;
+    }
+    /**
+    * Represents the layout used when there is limited space to represent the entity.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type CompactLayout = EntityCompactLayout;
+    /**
+    * The list of icons available for `EntityCompactLayout`. An icon displays in the Excel UI, either to the left of the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity card. Selecting the icon opens the entity card.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum EntityCompactLayoutIcons {
+        /**
+        * The default icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        generic = "Generic",
+        /**
+        * Accessibility icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        accessibility = "Accessibility",
+        /**
+        * Airplane icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        airplane = "Airplane",
+        /**
+        * Airplane taking off icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        airplaneTakeOff = "AirplaneTakeOff",
+        /**
+        * Album icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        album = "Album",
+        /**
+        * Alert icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        alert = "Alert",
+        /**
+        * Alert urgent icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        alertUrgent = "AlertUrgent",
+        /**
+        * Animal icon. Displays as a pawprint.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        animal = "Animal",
+        /**
+        * Animal cat icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        animalCat = "AnimalCat",
+        /**
+        * Animal dog icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        animalDog = "AnimalDog",
+        /**
+        * Animal rabbit icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        animalRabbit = "AnimalRabbit",
+        /**
+        * Animal turtle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        animalTurtle = "AnimalTurtle",
+        /**
+        * App folder icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        appFolder = "AppFolder",
+        /**
+        * App generic icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        appGeneric = "AppGeneric",
+        /**
+        * Apple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        apple = "Apple",
+        /**
+        * Approvals app icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        approvalsApp = "ApprovalsApp",
+        /**
+        * Archive icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        archive = "Archive",
+        /**
+        * Archive multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        archiveMultiple = "ArchiveMultiple",
+        /**
+        * Arrow trending lines icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        arrowTrendingLines = "ArrowTrendingLines",
+        /**
+        * Art icon. Displays as a paint palette.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        art = "Art",
+        /**
+        * Atom icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        atom = "Atom",
+        /**
+        * Attach icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        attach = "Attach",
+        /**
+        * Automobile icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        automobile = "Automobile",
+        /**
+        * Autosum icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        autosum = "Autosum",
+        /**
+        * Backpack icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        backpack = "Backpack",
+        /**
+        * Badge icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        badge = "Badge",
+        /**
+        * Balloon icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        balloon = "Balloon",
+        /**
+        * Bank icon. Displays as a building with pillars and a triangular roof.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bank = "Bank",
+        /**
+        * Barcode scanner icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        barcodeScanner = "BarcodeScanner",
+        /**
+        * Basketball icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basketball = "Basketball",
+        /**
+        * Battery empty icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        battery0 = "Battery0",
+        /**
+        * Battery full icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        battery10 = "Battery10",
+        /**
+        * Beach icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        beach = "Beach",
+        /**
+        * Beaker icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        beaker = "Beaker",
+        /**
+        * Bed icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bed = "Bed",
+        /**
+        * Bin full icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        binFull = "BinFull",
+        /**
+        * Bird icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bird = "Bird",
+        /**
+        * Bluetooth icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bluetooth = "Bluetooth",
+        /**
+        * Board icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        board = "Board",
+        /**
+        * Board games icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        boardGames = "BoardGames",
+        /**
+        * Book icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        book = "Book",
+        /**
+        * Bookmark icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bookmark = "Bookmark",
+        /**
+        * Bookmark multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bookmarkMultiple = "BookmarkMultiple",
+        /**
+        * Bot icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bot = "Bot",
+        /**
+        * Bowl chopsticks icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bowlChopsticks = "BowlChopsticks",
+        /**
+        * Box icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        box = "Box",
+        /**
+        * Box multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        boxMultiple = "BoxMultiple",
+        /**
+        * Brain circuit icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        brainCircuit = "BrainCircuit",
+        /**
+        * Branch icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        branch = "Branch",
+        /**
+        * Branch fork icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        branchFork = "BranchFork",
+        /**
+        * Branch request icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        branchRequest = "BranchRequest",
+        /**
+        * Bridge icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bridge = "Bridge",
+        /**
+        * Briefcase icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        briefcase = "Briefcase",
+        /**
+        * Briefcase medical icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        briefcaseMedical = "BriefcaseMedical",
+        /**
+        * Broad activity feed icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        broadActivityFeed = "BroadActivityFeed",
+        /**
+        * Broom icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        broom = "Broom",
+        /**
+        * Bug icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        bug = "Bug",
+        /**
+        * Building icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        building = "Building",
+        /**
+        * Building bank icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingBank = "BuildingBank",
+        /**
+        * Building factory icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingFactory = "BuildingFactory",
+        /**
+        * Building government icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingGovernment = "BuildingGovernment",
+        /**
+        * Building home icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingHome = "BuildingHome",
+        /**
+        * Building lighthouse icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingLighthouse = "BuildingLighthouse",
+        /**
+        * Building multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingMultiple = "BuildingMultiple",
+        /**
+        * Building retail icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingRetail = "BuildingRetail",
+        /**
+        * Building retail more icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingRetailMore = "BuildingRetailMore",
+        /**
+        * Building retail toolbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingRetailToolbox = "BuildingRetailToolbox",
+        /**
+        * Building shop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingShop = "BuildingShop",
+        /**
+        * Building skyscraper icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        buildingSkyscraper = "BuildingSkyscraper",
+        /**
+        * Calculator icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calculator = "Calculator",
+        /**
+        * Calendar left to right icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calendarLtr = "CalendarLtr",
+        /**
+        * Calendar right to left icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calendarRtl = "CalendarRtl",
+        /**
+        * Call icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        call = "Call",
+        /**
+        * Calligraphy pen icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calligraphyPen = "CalligraphyPen",
+        /**
+        * Camera icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        camera = "Camera",
+        /**
+        * Camera dome icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cameraDome = "CameraDome",
+        /**
+        * Car icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        car = "Car",
+        /**
+        * Cart icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cart = "Cart",
+        /**
+        * Cat icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cat = "Cat",
+        /**
+        * Certificate icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        certificate = "Certificate",
+        /**
+        * Chart multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        chartMultiple = "ChartMultiple",
+        /**
+        * Chat icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        chat = "Chat",
+        /**
+        * Chat multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        chatMultiple = "ChatMultiple",
+        /**
+        * Chat video icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        chatVideo = "ChatVideo",
+        /**
+        * Check icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        check = "Check",
+        /**
+        * Checkbox checked icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        checkboxChecked = "CheckboxChecked",
+        /**
+        * Checkbox unchecked icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        checkboxUnchecked = "CheckboxUnchecked",
+        /**
+        * Checkmark icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        checkmark = "Checkmark",
+        /**
+        * Chess icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        chess = "Chess",
+        /**
+        * City icon. Displays as multiple tall buildings.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        city = "City",
+        /**
+        * Class icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        export class = "Class",
+        /**
+        * Classification icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        classification = "Classification",
+        /**
+        * Clipboard icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clipboard = "Clipboard",
+        /**
+        * Clipboard data bar icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clipboardDataBar = "ClipboardDataBar",
+        /**
+        * Clipboard pulse icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clipboardPulse = "ClipboardPulse",
+        /**
+        * Clipboard task icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clipboardTask = "ClipboardTask",
+        /**
+        * Clock icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clock = "Clock",
+        /**
+        * Clock alarm icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        clockAlarm = "ClockAlarm",
+        /**
+        * Cloud icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cloud = "Cloud",
+        /**
+        * Cloud words icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cloudWords = "CloudWords",
+        /**
+        * Code icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        code = "Code",
+        /**
+        * Collections icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        collections = "Collections",
+        /**
+        * Comment icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        comment = "Comment",
+        /**
+        * Comment multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        commentMultiple = "CommentMultiple",
+        /**
+        * Communication icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        communication = "Communication",
+        /**
+        * Compass northwest icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        compassNorthwest = "CompassNorthwest",
+        /**
+        * Conference room icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        conferenceRoom = "ConferenceRoom",
+        /**
+        * Connector icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        connector = "Connector",
+        /**
+        * Constellation icon. Displays dots in the shape of Ursa Major.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        constellation = "Constellation",
+        /**
+        * Contact card icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        contactCard = "ContactCard",
+        /**
+        * Cookies icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cookies = "Cookies",
+        /**
+        * Couch icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        couch = "Couch",
+        /**
+        * Credit card person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        creditCardPerson = "CreditCardPerson",
+        /**
+        * Credit card toolbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        creditCardToolbox = "CreditCardToolbox",
+        /**
+        * Cube icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cube = "Cube",
+        /**
+        * Cube multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cubeMultiple = "CubeMultiple",
+        /**
+        * Cube tree icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cubeTree = "CubeTree",
+        /**
+        * Currency dollar euro icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        currencyDollarEuro = "CurrencyDollarEuro",
+        /**
+        * Currency dollar rupee icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        currencyDollarRupee = "CurrencyDollarRupee",
+        /**
+        * Data area icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataArea = "DataArea",
+        /**
+        * Database icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        database = "Database",
+        /**
+        * Database multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        databaseMultiple = "DatabaseMultiple",
+        /**
+        * Data funnel icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataFunnel = "DataFunnel",
+        /**
+        * Data histogram icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataHistogram = "DataHistogram",
+        /**
+        * Data line icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataLine = "DataLine",
+        /**
+        * Data pie icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataPie = "DataPie",
+        /**
+        * Data scatter icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataScatter = "DataScatter",
+        /**
+        * Data sunburst icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataSunburst = "DataSunburst",
+        /**
+        * Data treemap icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTreemap = "DataTreemap",
+        /**
+        * Data waterfall icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataWaterfall = "DataWaterfall",
+        /**
+        * Data whisker icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataWhisker = "DataWhisker",
+        /**
+        * Dentist icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dentist = "Dentist",
+        /**
+        * Design ideas icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        designIdeas = "DesignIdeas",
+        /**
+        * Desktop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        desktop = "Desktop",
+        /**
+        * Desktop Mac icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        desktopMac = "DesktopMac",
+        /**
+        * Developer board icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        developerBoard = "DeveloperBoard",
+        /**
+        * Device meeting room icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        deviceMeetingRoom = "DeviceMeetingRoom",
+        /**
+        * Diagram icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        diagram = "Diagram",
+        /**
+        * Dialpad icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dialpad = "Dialpad",
+        /**
+        * Diamond icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        diamond = "Diamond",
+        /**
+        * Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dinosaur = "Dinosaur",
+        /**
+        * Directions icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        directions = "Directions",
+        /**
+        * Disaster icon. Displays as a house sinking in a flood.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        disaster = "Disaster",
+        /**
+        * Diversity icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        diversity = "Diversity",
+        /**
+        * DNA icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dNA = "DNA",
+        /**
+        * Doctor icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        doctor = "Doctor",
+        /**
+        * Document icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        document = "Document",
+        /**
+        * Document data icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentData = "DocumentData",
+        /**
+        * Document landscape icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentLandscape = "DocumentLandscape",
+        /**
+        * Document multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentMultiple = "DocumentMultiple",
+        /**
+        * Document PDF icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentPdf = "DocumentPdf",
+        /**
+        * Document queue icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentQueue = "DocumentQueue",
+        /**
+        * Document text icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        documentText = "DocumentText",
+        /**
+        * Dog icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dog = "Dog",
+        /**
+        * Door icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        door = "Door",
+        /**
+        * Door tag icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        doorTag = "DoorTag",
+        /**
+        * Drafts icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drafts = "Drafts",
+        /**
+        * Drama icon. Displays as a pair of theatre masks.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drama = "Drama",
+        /**
+        * Drink beer icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drinkBeer = "DrinkBeer",
+        /**
+        * Drink coffee icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drinkCoffee = "DrinkCoffee",
+        /**
+        * Drink margarita icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drinkMargarita = "DrinkMargarita",
+        /**
+        * Drink to go icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drinkToGo = "DrinkToGo",
+        /**
+        * Drink wine icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drinkWine = "DrinkWine",
+        /**
+        * Drive train icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        driveTrain = "DriveTrain",
+        /**
+        * Drop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        drop = "Drop",
+        /**
+        * Dual screen icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dualScreen = "DualScreen",
+        /**
+        * Dumbbell icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dumbbell = "Dumbbell",
+        /**
+        * Earth icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        earth = "Earth",
+        /**
+        * Emoji icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emoji = "Emoji",
+        /**
+        * Emoji angry icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiAngry = "EmojiAngry",
+        /**
+        * Emoji hand icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiHand = "EmojiHand",
+        /**
+        * Emoji laugh icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiLaugh = "EmojiLaugh",
+        /**
+        * Emoji meh icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiMeh = "EmojiMeh",
+        /**
+        * Emoji multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiMultiple = "EmojiMultiple",
+        /**
+        * Emoji sad icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiSad = "EmojiSad",
+        /**
+        * Emoji sad slight icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiSadSlight = "EmojiSadSlight",
+        /**
+        * Emoji smile slight icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiSmileSlight = "EmojiSmileSlight",
+        /**
+        * Emoji sparkle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiSparkle = "EmojiSparkle",
+        /**
+        * Emoji surprise icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        emojiSurprise = "EmojiSurprise",
+        /**
+        * Engine icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        engine = "Engine",
+        /**
+        * Eraser icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        eraser = "Eraser",
+        /**
+        * Eye icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        eye = "Eye",
+        /**
+        * Eyedropper icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        eyedropper = "Eyedropper",
+        /**
+        * Fax icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        fax = "Fax",
+        /**
+        * Fingerprint icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        fingerprint = "Fingerprint",
+        /**
+        * First aid icon. Displays as a briefcase with a medical cross symbol.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        firstAid = "FirstAid",
+        /**
+        * Flag icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        flag = "Flag",
+        /**
+        * Flash icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        flash = "Flash",
+        /**
+        * Flashlight icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        flashlight = "Flashlight",
+        /**
+        * Flow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        flow = "Flow",
+        /**
+        * Flowchart icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        flowchart = "Flowchart",
+        /**
+        * Folder icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        folder = "Folder",
+        /**
+        * Folder open icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        folderOpen = "FolderOpen",
+        /**
+        * Folder open vertical icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        folderOpenVertical = "FolderOpenVertical",
+        /**
+        * Folder person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        folderPerson = "FolderPerson",
+        /**
+        * Folder zip icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        folderZip = "FolderZip",
+        /**
+        * Food icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        food = "Food",
+        /**
+        * Food apple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodApple = "FoodApple",
+        /**
+        * Food cake icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodCake = "FoodCake",
+        /**
+        * Food egg icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodEgg = "FoodEgg",
+        /**
+        * Food grains icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodGrains = "FoodGrains",
+        /**
+        * Food pizza icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodPizza = "FoodPizza",
+        /**
+        * Food toast icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        foodToast = "FoodToast",
+        /**
+        * Galaxy icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        galaxy = "Galaxy",
+        /**
+        * Games icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        games = "Games",
+        /**
+        * Gantt chart icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ganttChart = "GanttChart",
+        /**
+        * Gas icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gas = "Gas",
+        /**
+        * Gas pump icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gasPump = "GasPump",
+        /**
+        * Gauge icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gauge = "Gauge",
+        /**
+        * Gavel icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gavel = "Gavel",
+        /**
+        * Gift icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gift = "Gift",
+        /**
+        * Gift card icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        giftCard = "GiftCard",
+        /**
+        * Glasses icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        glasses = "Glasses",
+        /**
+        * Globe icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        globe = "Globe",
+        /**
+        * Globe surface icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        globeSurface = "GlobeSurface",
+        /**
+        * Grid icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        grid = "Grid",
+        /**
+        * Grid dots icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gridDots = "GridDots",
+        /**
+        * Grid Kanban icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gridKanban = "GridKanban",
+        /**
+        * Guardian icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        guardian = "Guardian",
+        /**
+        * Guest icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        guest = "Guest",
+        /**
+        * Guitar icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        guitar = "Guitar",
+        /**
+        * Hand left icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        handLeft = "HandLeft",
+        /**
+        * Hand right icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        handRight = "HandRight",
+        /**
+        * Handshake icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        handshake = "Handshake",
+        /**
+        * Hard drive icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        hardDrive = "HardDrive",
+        /**
+        * Graduation hat icon. Displays as a hat with a tassel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        hatGraduation = "HatGraduation",
+        /**
+        * Headphones icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        headphones = "Headphones",
+        /**
+        * Headphones sound wave icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        headphonesSoundWave = "HeadphonesSoundWave",
+        /**
+        * Headset icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        headset = "Headset",
+        /**
+        * Headset VR icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        headsetVr = "HeadsetVr",
+        /**
+        * Heart icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        heart = "Heart",
+        /**
+        * Heart broken icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        heartBroken = "HeartBroken",
+        /**
+        * Heart circle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        heartCircle = "HeartCircle",
+        /**
+        * Human heart icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        heartHuman = "HeartHuman",
+        /**
+        * Heart pulse icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        heartPulse = "HeartPulse",
+        /**
+        * History icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        history = "History",
+        /**
+        * Home icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        home = "Home",
+        /**
+        * Home more icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        homeMore = "HomeMore",
+        /**
+        * Home person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        homePerson = "HomePerson",
+        /**
+        * Icons icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        icons = "Icons",
+        /**
+        * Image icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        image = "Image",
+        /**
+        * Image globe icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        imageGlobe = "ImageGlobe",
+        /**
+        * Image multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        imageMultiple = "ImageMultiple",
+        /**
+        * IoT icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        iot = "Iot",
+        /**
+        * Joystick icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        joystick = "Joystick",
+        /**
+        * Justice icon. Displays as the scales of justice.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        justice = "Justice",
+        /**
+        * Key icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        key = "Key",
+        /**
+        * Keyboard icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        keyboard = "Keyboard",
+        /**
+        * Keyboard layout split icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        keyboardLayoutSplit = "KeyboardLayoutSplit",
+        /**
+        * Key multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        keyMultiple = "KeyMultiple",
+        /**
+        * Languages icon. Displays as a document and a globe.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        languages = "Languages",
+        /**
+        * Laptop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        laptop = "Laptop",
+        /**
+        * Lasso icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lasso = "Lasso",
+        /**
+        * Launcher settings icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        launcherSettings = "LauncherSettings",
+        /**
+        * Layer icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        layer = "Layer",
+        /**
+        * Leaf icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        leaf = "Leaf",
+        /**
+        * Leaf one icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        leafOne = "LeafOne",
+        /**
+        * Leaf three icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        leafThree = "LeafThree",
+        /**
+        * Leaf two icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        leafTwo = "LeafTwo",
+        /**
+        * Library icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        library = "Library",
+        /**
+        * Lightbulb icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lightbulb = "Lightbulb",
+        /**
+        * Lightbulb filament icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lightbulbFilament = "LightbulbFilament",
+        /**
+        * Likert icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        likert = "Likert",
+        /**
+        * Link icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        link = "Link",
+        /**
+        * Local language icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        localLanguage = "LocalLanguage",
+        /**
+        * Location icon. Displays as a map marker.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        location = "Location",
+        /**
+        * Lock closed icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lockClosed = "LockClosed",
+        /**
+        * Lock multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lockMultiple = "LockMultiple",
+        /**
+        * Lock open icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lockOpen = "LockOpen",
+        /**
+        * Lottery icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lottery = "Lottery",
+        /**
+        * Luggage icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        luggage = "Luggage",
+        /**
+        * Mail icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mail = "Mail",
+        /**
+        * Mail inbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mailInbox = "MailInbox",
+        /**
+        * Mail multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mailMultiple = "MailMultiple",
+        /**
+        * Map icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        map = "Map",
+        /**
+        * Map pin icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mapPin = "MapPin",
+        /**
+        * Markdown icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        markdown = "Markdown",
+        /**
+        * Math formula icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mathFormula = "MathFormula",
+        /**
+        * Math symbols icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mathSymbols = "MathSymbols",
+        /**
+        * Max icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        max = "Max",
+        /**
+        * Megaphone icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        megaphone = "Megaphone",
+        /**
+        * Megaphone loud icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        megaphoneLoud = "MegaphoneLoud",
+        /**
+        * Mention icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mention = "Mention",
+        /**
+        * Mic icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mic = "Mic",
+        /**
+        * Microscope icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        microscope = "Microscope",
+        /**
+        * Midi icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        midi = "Midi",
+        /**
+        * Molecule icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        molecule = "Molecule",
+        /**
+        * Money icon. Displays as paper money and coins.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        money = "Money",
+        /**
+        * Money hand icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        moneyHand = "MoneyHand",
+        /**
+        * Mountain icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mountain = "Mountain",
+        /**
+        * Movie camera icon. Displays as a video camera.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        movieCamera = "MovieCamera",
+        /**
+        * Movies and TV icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        moviesAndTv = "MoviesAndTv",
+        /**
+        * Music note icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        musicNote = "MusicNote",
+        /**
+        * Music note icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        musicNote1 = "MusicNote1",
+        /**
+        * Music double note icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        musicNote2 = "MusicNote2",
+        /**
+        * My location icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        myLocation = "MyLocation",
+        /**
+        * N by N icon. Displays as a three by three grid.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        nByN = "NByN",
+        /**
+        * N by one icon. Displays as a three by one grid.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        nByOne = "NByOne",
+        /**
+        * News icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        news = "News",
+        /**
+        * Notable people icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notablePeople = "NotablePeople",
+        /**
+        * Note icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        note = "Note",
+        /**
+        * Notebook icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notebook = "Notebook",
+        /**
+        * Notepad icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notepad = "Notepad",
+        /**
+        * Notepad person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notepadPerson = "NotepadPerson",
+        /**
+        * One by N icon. Displays as a one by three grid.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        oneByN = "OneByN",
+        /**
+        * One by one icon. Displays as a one by one grid.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        oneByOne = "OneByOne",
+        /**
+        * Options icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        options = "Options",
+        /**
+        * Organization icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        organization = "Organization",
+        /**
+        * Organization horizontal icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        organizationHorizontal = "OrganizationHorizontal",
+        /**
+        * Oval icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        oval = "Oval",
+        /**
+        * Paint brush icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        paintBrush = "PaintBrush",
+        /**
+        * Paint bucket icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        paintBucket = "PaintBucket",
+        /**
+        * Partly sunny weather icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        partlySunnyWeather = "PartlySunnyWeather",
+        /**
+        * Password icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        password = "Password",
+        /**
+        * Patch icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        patch = "Patch",
+        /**
+        * Patient icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        patient = "Patient",
+        /**
+        * Payment icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        payment = "Payment",
+        /**
+        * Pen icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pen = "Pen",
+        /**
+        * Pentagon icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pentagon = "Pentagon",
+        /**
+        * People icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        people = "People",
+        /**
+        * People audience icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleAudience = "PeopleAudience",
+        /**
+        * People call icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleCall = "PeopleCall",
+        /**
+        * People community icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleCommunity = "PeopleCommunity",
+        /**
+        * People money icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleMoney = "PeopleMoney",
+        /**
+        * People queue icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleQueue = "PeopleQueue",
+        /**
+        * People team icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleTeam = "PeopleTeam",
+        /**
+        * People toolbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        peopleToolbox = "PeopleToolbox",
+        /**
+        * Person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        person = "Person",
+        /**
+        * Person board icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personBoard = "PersonBoard",
+        /**
+        * Person call icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personCall = "PersonCall",
+        /**
+        * Person chat icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personChat = "PersonChat",
+        /**
+        * Person feedback icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personFeedback = "PersonFeedback",
+        /**
+        * Person support icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personSupport = "PersonSupport",
+        /**
+        * Person voice icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        personVoice = "PersonVoice",
+        /**
+        * Phone icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phone = "Phone",
+        /**
+        * Phone desktop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phoneDesktop = "PhoneDesktop",
+        /**
+        * Phone laptop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phoneLaptop = "PhoneLaptop",
+        /**
+        * Phone shake icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phoneShake = "PhoneShake",
+        /**
+        * Phone tablet icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phoneTablet = "PhoneTablet",
+        /**
+        * Phone vibrate icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        phoneVibrate = "PhoneVibrate",
+        /**
+        * Photo filter icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        photoFilter = "PhotoFilter",
+        /**
+        * Pi icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pi = "Pi",
+        /**
+        * Picture in picture icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pictureInPicture = "PictureInPicture",
+        /**
+        * Pilates icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pilates = "Pilates",
+        /**
+        * Pill icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pill = "Pill",
+        /**
+        * Pin icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pin = "Pin",
+        /**
+        * Pipeline icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pipeline = "Pipeline",
+        /**
+        * Planet icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        planet = "Planet",
+        /**
+        * Playing cards icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        playingCards = "PlayingCards",
+        /**
+        * Plug connected icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        plugConnected = "PlugConnected",
+        /**
+        * Plug disconnected icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        plugDisconnected = "PlugDisconnected",
+        /**
+        * Point scan icon. Displays as a target focus symbol.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pointScan = "PointScan",
+        /**
+        * Poll icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        poll = "Poll",
+        /**
+        * Power icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        power = "Power",
+        /**
+        * Predictions icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        predictions = "Predictions",
+        /**
+        * Premium icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        premium = "Premium",
+        /**
+        * Presenter icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        presenter = "Presenter",
+        /**
+        * Preview link icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        previewLink = "PreviewLink",
+        /**
+        * Print icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        print = "Print",
+        /**
+        * Production icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        production = "Production",
+        /**
+        * Prohibited icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        prohibited = "Prohibited",
+        /**
+        * Projection screen icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        projectionScreen = "ProjectionScreen",
+        /**
+        * Protocol handler icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        protocolHandler = "ProtocolHandler",
+        /**
+        * Pulse icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pulse = "Pulse",
+        /**
+        * Pulse square icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        pulseSquare = "PulseSquare",
+        /**
+        * Puzzle piece icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        puzzlePiece = "PuzzlePiece",
+        /**
+        * QR code icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        qrCode = "QrCode",
+        /**
+        * Radar icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        radar = "Radar",
+        /**
+        * Ram icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ram = "Ram",
+        /**
+        * Reading list icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        readingList = "ReadingList",
+        /**
+        * Real estate icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        realEstate = "RealEstate",
+        /**
+        * Receipt icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        receipt = "Receipt",
+        /**
+        * Reward icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        reward = "Reward",
+        /**
+        * Rhombus icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        rhombus = "Rhombus",
+        /**
+        * Ribbon icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ribbon = "Ribbon",
+        /**
+        * Ribbon star icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ribbonStar = "RibbonStar",
+        /**
+        * Road cone icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        roadCone = "RoadCone",
+        /**
+        * Rocket icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        rocket = "Rocket",
+        /**
+        * Router icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        router = "Router",
+        /**
+        * RSS icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        rss = "Rss",
+        /**
+        * Ruler icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ruler = "Ruler",
+        /**
+        * Run icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        run = "Run",
+        /**
+        * Running icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        running = "Running",
+        /**
+        * Satellite icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        satellite = "Satellite",
+        /**
+        * Save icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        save = "Save",
+        /**
+        * Savings icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        savings = "Savings",
+        /**
+        * Scales icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        scales = "Scales",
+        /**
+        * Scan icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        scan = "Scan",
+        /**
+        * Scratchpad icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        scratchpad = "Scratchpad",
+        /**
+        * Screen person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        screenPerson = "ScreenPerson",
+        /**
+        * Screenshot icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        screenshot = "Screenshot",
+        /**
+        * Search icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        search = "Search",
+        /**
+        * Serial port icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        serialPort = "SerialPort",
+        /**
+        * Server icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        server = "Server",
+        /**
+        * Server multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        serverMultiple = "ServerMultiple",
+        /**
+        * Service bell icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        serviceBell = "ServiceBell",
+        /**
+        * Settings icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        settings = "Settings",
+        /**
+        * Shapes icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        shapes = "Shapes",
+        /**
+        * Shield icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        shield = "Shield",
+        /**
+        * Shield task icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        shieldTask = "ShieldTask",
+        /**
+        * Shopping bag icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        shoppingBag = "ShoppingBag",
+        /**
+        * Signature icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        signature = "Signature",
+        /**
+        * Sim icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sim = "Sim",
+        /**
+        * Sleep icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sleep = "Sleep",
+        /**
+        * Smartwatch icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        smartwatch = "Smartwatch",
+        /**
+        * Sound source icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        soundSource = "SoundSource",
+        /**
+        * Sound wave circle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        soundWaveCircle = "SoundWaveCircle",
+        /**
+        * Sparkle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sparkle = "Sparkle",
+        /**
+        * Speaker icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        speaker0 = "Speaker0",
+        /**
+        * Speaker with sound wave icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        speaker2 = "Speaker2",
+        /**
+        * Sport icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sport = "Sport",
+        /**
+        * Sport american football icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sportAmericanFootball = "SportAmericanFootball",
+        /**
+        * Sport baseball icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sportBaseball = "SportBaseball",
+        /**
+        * Sport basketball icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sportBasketball = "SportBasketball",
+        /**
+        * Sport hockey icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sportHockey = "SportHockey",
+        /**
+        * Sport soccer icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sportSoccer = "SportSoccer",
+        /**
+        * Square multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        squareMultiple = "SquareMultiple",
+        /**
+        * Square shadow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        squareShadow = "SquareShadow",
+        /**
+        * Squares nested icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        squaresNested = "SquaresNested",
+        /**
+        * Stack icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stack = "Stack",
+        /**
+        * Stack star icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stackStar = "StackStar",
+        /**
+        * Star icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        star = "Star",
+        /**
+        * Star filled icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        starFilled = "StarFilled",
+        /**
+        * Star half icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        starHalf = "StarHalf",
+        /**
+        * Star with 3 horizontal lines icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        starLineHorizontal3 = "StarLineHorizontal3",
+        /**
+        * Star one quarter icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        starOneQuarter = "StarOneQuarter",
+        /**
+        * Star three quarter icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        starThreeQuarter = "StarThreeQuarter",
+        /**
+        * Status icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        status = "Status",
+        /**
+        * Steps icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        steps = "Steps",
+        /**
+        * Stethoscope icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stethoscope = "Stethoscope",
+        /**
+        * Sticker icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sticker = "Sticker",
+        /**
+        * Storage icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        storage = "Storage",
+        /**
+        * Stream icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stream = "Stream",
+        /**
+        * Stream input icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        streamInput = "StreamInput",
+        /**
+        * Stream input output icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        streamInputOutput = "StreamInputOutput",
+        /**
+        * Stream output icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        streamOutput = "StreamOutput",
+        /**
+        * Style guide icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        styleGuide = "StyleGuide",
+        /**
+        * Sub grid icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        subGrid = "SubGrid",
+        /**
+        * Subtitles icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        subtitles = "Subtitles",
+        /**
+        * Surface earbuds icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        surfaceEarbuds = "SurfaceEarbuds",
+        /**
+        * Surface hub icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        surfaceHub = "SurfaceHub",
+        /**
+        * Symbols icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        symbols = "Symbols",
+        /**
+        * Syringe icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        syringe = "Syringe",
+        /**
+        * System icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        system = "System",
+        /**
+        * Tab desktop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tabDesktop = "TabDesktop",
+        /**
+        * Tab InPrivate account icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tabInprivateAccount = "TabInprivateAccount",
+        /**
+        * Table icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        table = "Table",
+        /**
+        * Table image icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tableImage = "TableImage",
+        /**
+        * Table multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tableMultiple = "TableMultiple",
+        /**
+        * Tablet icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tablet = "Tablet",
+        /**
+        * Tabs icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tabs = "Tabs",
+        /**
+        * Tag icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tag = "Tag",
+        /**
+        * Tag circle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tagCircle = "TagCircle",
+        /**
+        * Tag multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tagMultiple = "TagMultiple",
+        /**
+        * Target icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        target = "Target",
+        /**
+        * Target arrow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        targetArrow = "TargetArrow",
+        /**
+        * Teddy icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        teddy = "Teddy",
+        /**
+        * Temperature icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        temperature = "Temperature",
+        /**
+        * Tent icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tent = "Tent",
+        /**
+        * Tetris app icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tetrisApp = "TetrisApp",
+        /**
+        * Textbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        textbox = "Textbox",
+        /**
+        * Text quote icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        textQuote = "TextQuote",
+        /**
+        * Thinking icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        thinking = "Thinking",
+        /**
+        * Thumb dislike icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        thumbDislike = "ThumbDislike",
+        /**
+        * Thumb like icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        thumbLike = "ThumbLike",
+        /**
+        * Ticket diagonal icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ticketDiagonal = "TicketDiagonal",
+        /**
+        * Ticket horizontal icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ticketHorizontal = "TicketHorizontal",
+        /**
+        * Time and weather icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        timeAndWeather = "TimeAndWeather",
+        /**
+        * Timeline icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        timeline = "Timeline",
+        /**
+        * Timer icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        timer = "Timer",
+        /**
+        * Toolbox icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        toolbox = "Toolbox",
+        /**
+        * Top speed icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        topSpeed = "TopSpeed",
+        /**
+        * Translate icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        translate = "Translate",
+        /**
+        * Transmission icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        transmission = "Transmission",
+        /**
+        * Tree deciduous icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        treeDeciduous = "TreeDeciduous",
+        /**
+        * Tree evergreen icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        treeEvergreen = "TreeEvergreen",
+        /**
+        * Trophy icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        trophy = "Trophy",
+        /**
+        * TV icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tv = "Tv",
+        /**
+        * TV USB icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        tvUsb = "TvUsb",
+        /**
+        * Umbrella icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        umbrella = "Umbrella",
+        /**
+        * USB plug icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        usbPlug = "UsbPlug",
+        /**
+        * USB stick icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        usbStick = "UsbStick",
+        /**
+        * Vault icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vault = "Vault",
+        /**
+        * Vehicle bicycle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleBicycle = "VehicleBicycle",
+        /**
+        * Vehicle bus icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleBus = "VehicleBus",
+        /**
+        * Vehicle cab icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleCab = "VehicleCab",
+        /**
+        * Vehicle car icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleCar = "VehicleCar",
+        /**
+        * Vehicle car collision icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleCarCollision = "VehicleCarCollision",
+        /**
+        * Vehicle car profile left-to-right icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleCarProfileLtr = "VehicleCarProfileLtr",
+        /**
+        * Vehicle car profile right-to-left icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleCarProfileRtl = "VehicleCarProfileRtl",
+        /**
+        * Vehicle ship icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleShip = "VehicleShip",
+        /**
+        * Vehicle subway icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleSubway = "VehicleSubway",
+        /**
+        * Vehicle truck icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleTruck = "VehicleTruck",
+        /**
+        * Vehicle truck bag icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleTruckBag = "VehicleTruckBag",
+        /**
+        * Vehicle truck cube icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleTruckCube = "VehicleTruckCube",
+        /**
+        * Vehicle truck profile icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vehicleTruckProfile = "VehicleTruckProfile",
+        /**
+        * Video icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        video = "Video",
+        /**
+        * Video 360 icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        video360 = "Video360",
+        /**
+        * Video chat icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoChat = "VideoChat",
+        /**
+        * Video clip icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoClip = "VideoClip",
+        /**
+        * Video clip multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoClipMultiple = "VideoClipMultiple",
+        /**
+        * Video person icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoPerson = "VideoPerson",
+        /**
+        * Video recording icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoRecording = "VideoRecording",
+        /**
+        * Video security icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        videoSecurity = "VideoSecurity",
+        /**
+        * View desktop icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        viewDesktop = "ViewDesktop",
+        /**
+        * View desktop mobile icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        viewDesktopMobile = "ViewDesktopMobile",
+        /**
+        * Violin icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        violin = "Violin",
+        /**
+        * Virtual network icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        virtualNetwork = "VirtualNetwork",
+        /**
+        * Voicemail icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        voicemail = "Voicemail",
+        /**
+        * Vote icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vote = "Vote",
+        /**
+        * Walkie talkie icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        walkieTalkie = "WalkieTalkie",
+        /**
+        * Wallet icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wallet = "Wallet",
+        /**
+        * Wallet credit card icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        walletCreditCard = "WalletCreditCard",
+        /**
+        * Wallpaper icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wallpaper = "Wallpaper",
+        /**
+        * Wand icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wand = "Wand",
+        /**
+        * Warning icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        warning = "Warning",
+        /**
+        * Weather blowing snow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherBlowingSnow = "WeatherBlowingSnow",
+        /**
+        * Weather cloudy icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherCloudy = "WeatherCloudy",
+        /**
+        * Weather drizzle icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherDrizzle = "WeatherDrizzle",
+        /**
+        * Weather duststorm icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherDuststorm = "WeatherDuststorm",
+        /**
+        * Weather fog icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherFog = "WeatherFog",
+        /**
+        * Weather hail day icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherHailDay = "WeatherHailDay",
+        /**
+        * Weather hail night icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherHailNight = "WeatherHailNight",
+        /**
+        * Weather haze icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherHaze = "WeatherHaze",
+        /**
+        * Weather moon icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherMoon = "WeatherMoon",
+        /**
+        * Weather partly cloudy day icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherPartlyCloudyDay = "WeatherPartlyCloudyDay",
+        /**
+        * Weather partly cloudy night icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherPartlyCloudyNight = "WeatherPartlyCloudyNight",
+        /**
+        * Weather rain icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherRain = "WeatherRain",
+        /**
+        * Weather rain showers day icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherRainShowersDay = "WeatherRainShowersDay",
+        /**
+        * Weather rain showers night icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherRainShowersNight = "WeatherRainShowersNight",
+        /**
+        * Weather rain snow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherRainSnow = "WeatherRainSnow",
+        /**
+        * Weather snow icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSnow = "WeatherSnow",
+        /**
+        * Weather snowflake icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSnowflake = "WeatherSnowflake",
+        /**
+        * Weather snow shower day icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSnowShowerDay = "WeatherSnowShowerDay",
+        /**
+        * Weather snow shower night icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSnowShowerNight = "WeatherSnowShowerNight",
+        /**
+        * Weather squalls icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSqualls = "WeatherSqualls",
+        /**
+        * Weather sunny high icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSunnyHigh = "WeatherSunnyHigh",
+        /**
+        * Weather sunny low icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherSunnyLow = "WeatherSunnyLow",
+        /**
+        * Weather thunderstorm icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        weatherThunderstorm = "WeatherThunderstorm",
+        /**
+        * Web asset icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        webAsset = "WebAsset",
+        /**
+        * Whiteboard icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        whiteboard = "Whiteboard",
+        /**
+        * Wifi signal with 3 bars icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wifi1 = "Wifi1",
+        /**
+        * Wifi signal with 2 bars icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wifi2 = "Wifi2",
+        /**
+        * Window icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        window = "Window",
+        /**
+        * Window multiple icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        windowMultiple = "WindowMultiple",
+        /**
+        * Window wrench icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        windowWrench = "WindowWrench",
+        /**
+        * Wrench icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wrench = "Wrench",
+        /**
+        * Wrench screwdriver icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        wrenchScrewdriver = "WrenchScrewdriver",
+        /**
+        * X-ray icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        xray = "Xray",
+        /**
+        * Yoga icon.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        yoga = "Yoga"
+    }
+    /**
+    * Represents a reference into `referencedValues`. One scenario for using this reference is to avoid duplicating cell value objects (such as an `EntityCellValue`). Define a cell value object once in `referencedValues`, and then refer to that cell value from many places by using a `ReferenceCellValue` where the duplicated value would have appeared.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ReferenceCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.reference | "Reference";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: boolean | number | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+        /**
+        * Represents the index into the `referencedValues` properties of cell values such as `EntityCellValue` and `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        reference: number;
+    }
+    /**
+    * Represents a reference to the value which contains `referencedValues`.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface RootReferenceCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: ReferenceValueType.root | "Root";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: boolean | number | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+    }
+    /**
+    * Represents the types of the `ReferenceValue` object.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum ReferenceValueType {
+        /**
+        * Represents an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        array = "Array",
+        /**
+        * Represents an `EntityCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        entity = "Entity",
+        /**
+        * Represents a `RootReferenceCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        root = "Root"
+    }
+    /**
+    * Represents the value in a cell.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;
+    /**
+    * Represents the types of the `CellValue` object.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum CellValueType {
+        /**
+        * Represents an `ArrayCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        array = "Array",
+        /**
+        * Represents a `BooleanCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        boolean = "Boolean",
+        /**
+        * Represents a `DoubleCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        double = "Double",
+        /**
+        * Represents an `EntityCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        entity = "Entity",
+        /**
+        * Represents an `EmptyCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        empty = "Empty",
+        /**
+        * Represents an `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        error = "Error",
+        /**
+        * Represents a `FormattedNumberCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        formattedNumber = "FormattedNumber",
+        /**
+        * Represents a `LinkedEntityCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        linkedEntity = "LinkedEntity",
+        /**
+        * Represents a `ReferenceCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        reference = "Reference",
+        /**
+        * Represents a `StringCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        string = "String",
+        /**
+        * Represents a `ValueTypeNotAvailableCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notAvailable = "NotAvailable",
+        /**
+        * Represents a `WebImageCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        webImage = "WebImage"
+    }
+    /**
+    * Represents the value in a cell.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
+    /**
+    * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CellValueExtraProperties {
+        /**
+        * Represents whether this `CellValue` will be used to overwrite a cell.
+        * When false, APIs which would use this `CellValue` to overwrite a cell will instead ignore this value without throwing an error.
+        * The default value is true.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        writable?: boolean;
+        /**
+        * Represents an explanation about why `CellValue.writable` is specified as false.
+        * Note: This string is only available if `writable` is specified as false.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        writableNote?: string;
+    }
+    /**
+    * Represents the value and metadata of a property. The metadata applies to the property (and not the value), but it is combined with the value in this type.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type CellValueAndPropertyMetadata = (CellValue) & EntityPropertyExtraProperties;
+    /**
+    * The attribution attributes object represents the set of details that can be used to describe where information came from, if the information comes from a public source.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CellValueAttributionAttributes {
+        /**
+        * Represents a URL to the source of the `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sourceAddress?: string;
+        /**
+        * Represents a name for the source of the `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sourceText?: string;
+        /**
+        * Represents a URL to a license or source that describes how this property can be used.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        licenseAddress?: string;
+        /**
+        * Represents a name for the license that governs this property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        licenseText?: string;
+    }
+    /**
+    * Represents the value of a cell containing a #BUSY! error.
+    * This type of error is used as a placeholder while the value of a cell is downloaded.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface PlaceholderErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#BUSY!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.placeholder | "Placeholder";
+        /**
+        * `PlaceholderErrorCellValue` is used during processing, while data is downloaded. The `target` property represents the data that is downloading, the data for which the `PlaceholderErrorCellValue` object is a placeholder.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        target: LinkedEntityCellValue | WebImageCellValue;
+    }
+    /**
+    * The provider attributes object represents the set of details used in card view to provide specified branding information for a `CellValue` type that supports provider attributes.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CellValueProviderAttributes {
+        /**
+        * Represents the provider description property that is used in card view if no logo is specified.
+        * If a logo is specified, this will be used as tooltip text.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        description?: string;
+        /**
+        * Represents a URL used to download an image that will be used as a logo in card view.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        logoSourceAddress?: string;
+        /**
+        * Represents a URL that is the navigation target if the user clicks on the logo element in card view.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        logoTargetAddress?: string;
+    }
+    /**
+    * Metadata about a property in `EntityCellValue.properties`.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CellValuePropertyMetadata {
+        /**
+        * Represents which features this property is excluded from.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        excludeFrom?: CellValuePropertyMetadataExclusions;
+        /**
+        * Represents the sublabel for this property shown in card view.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        sublabel?: string;
+        /**
+        * Represents attribution information to describe the source and license requirements for using this property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        attribution?: CellValueAttributionAttributes[];
+    }
+    /**
+    * Represents the exclusion of a property in `EntityCellValue.properties` from features of Excel.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface CellValuePropertyMetadataExclusions {
+        /**
+        * True represents that the property is excluded from the properties shown by card view. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cardView?: boolean;
+        /**
+        * True represents that the property is excluded from the properties shown by auto complete. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        autoComplete?: boolean;
+        /**
+        * True represents that the property is excluded from the properties used to compare cell values during recalc. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calcCompare?: boolean;
+        /**
+        * True represents that the property is excluded from the properties which can be accessed via the FIELDVALUE function. False and undefined represent the default behavior of including the property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dotNotation?: boolean;
+    }
+    /**
+    * Represents types of #CONNECT! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum ConnectErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a problem with the service. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        serviceError = "ServiceError",
+        /**
+        * An error caused by an issue with the external links. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinks = "ExternalLinks",
+        /**
+        * An error caused by an external link to a non-cloud location, such as a link to an Excel file that is saved to a local computer instead of to a cloud location. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksNonCloudLocation = "ExternalLinksNonCloudLocation",
+        /**
+        * An error caused by no service connection for linked data types. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTypeNoConnection = "DataTypeNoConnection",
+        /**
+        * An error caused by an issue in the service for linked data types. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataTypeServiceError = "DataTypeServiceError",
+        /**
+        * An error caused by missing content. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        missingContent = "MissingContent",
+        /**
+        * An error caused by request throttling. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        requestThrottle = "RequestThrottle",
+        /**
+        * An error caused by external links failing to refresh. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksFailedToRefresh = "ExternalLinksFailedToRefresh",
+        /**
+        * An error caused by a failure to access external links. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksAccessFailed = "ExternalLinksAccessFailed",
+        /**
+        * An error caused by a server error while resolving an external link. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksServerError = "ExternalLinksServerError",
+        /**
+        * An error caused by an invalid request while resolving an external link. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksInvalidRequest = "ExternalLinksInvalidRequest",
+        /**
+        * An error caused by a lack of authentication for external links. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksUnAuthenticated = "ExternalLinksUnAuthenticated",
+        /**
+        * An error caused by throttling from an external link host. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksThrottledByHost = "ExternalLinksThrottledByHost",
+        /**
+        * An error caused by an external link to a file which exceeds file size capacity. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksFileTooLarge = "ExternalLinksFileTooLarge",
+        /**
+        * An error caused by an outdated linked entity. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        outdatedLinkedEntity = "OutdatedLinkedEntity",
+        /**
+        * An error caused by an error returned from the server. Displays as error type #CONNECT! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        genericServerError = "GenericServerError"
+    }
+    /**
+    * Represents the value of a cell containing a #CONNECT! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ConnectErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#CONNECT!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.connect | "Connect";
+        /**
+        * Represents the type of `ConnectErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: ConnectErrorCellValueSubType | "Unknown" | "ServiceError" | "ExternalLinks" | "ExternalLinksNonCloudLocation" | "DataTypeNoConnection" | "DataTypeServiceError" | "MissingContent" | "RequestThrottle" | "ExternalLinksFailedToRefresh" | "ExternalLinksAccessFailed" | "ExternalLinksServerError" | "ExternalLinksInvalidRequest" | "ExternalLinksUnAuthenticated" | "ExternalLinksThrottledByHost" | "ExternalLinksFileTooLarge" | "OutdatedLinkedEntity" | "GenericServerError";
+    }
+    /**
+    * Represents the value of a cell containing a #DIV/0! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface Div0ErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#DIV/0!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.div0 | "Div0";
+    }
+    /**
+    * Represents the value of a cell containing a double.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface DoubleCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.double | "Double";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue: number;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.double | "Double";
+    }
+    /**
+    * Represents the value of a cell that's empty and has no formulas or data.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EmptyCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.empty | "Empty";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "";
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.empty | "Empty";
+    }
+    /**
+    * Represents the value of a property.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type EntityPropertyType = CellValueAndPropertyMetadata | CellValue;
+    /**
+    * Properties used by `CellValueAndPropertyMetadata`. These properties refer to the metadata and not to a `CellValue`.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EntityPropertyExtraProperties {
+        /**
+        * Represents metadata about the property.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        propertyMetadata?: CellValuePropertyMetadata;
+    }
+    /**
+    * Represents a set of properties without a schema or defined structure.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EntityCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.entity | ReferenceValueType.entity | "Entity";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the text shown when a cell with this value is rendered.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        text?: string;
+        /**
+        * Represents the properties of this entity and their metadata.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        properties?: {
+            [key: string]: EntityPropertyType;
+        };
+        /**
+        * Represents layout information for views of this entity.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        layouts?: EntityViewLayouts;
+        /**
+        * Represents information that describes the service that provided the data in this `EntityCellValue`.
+        * This information can be used for branding in entity cards.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        provider?: CellValueProviderAttributes;
+        /**
+        * Represents the cell values which are referenced within `EntityCellValue.properties`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        referencedValues?: ReferencedValue[];
+    }
+    /**
+    * Represents layout information for various views of the entity.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EntityViewLayouts {
+        /**
+        * Represents the layout of this entity in card view.
+        * If the `CardLayout` object does not have a layout property, it is assumed to be "Entity".
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        card?: CardLayout;
+        /**
+        * Represents the layout used when there is limited space to represent the entity.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        compact?: CompactLayout;
+    }
+    /**
+    * Represents a card layout best used for an entity.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface EntityCardLayout extends CardLayoutStandardProperties {
+        /**
+        * Represents the type of this layout.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        layout?: "Entity";
+    }
+    /**
+    * Represents the types of the `ErrorCellValue` object.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum ErrorCellValueType {
+        /**
+        * Represents a `BlockedErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        blocked = "Blocked",
+        /**
+        * Represents a `BusyErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        busy = "Busy",
+        /**
+        * Represents a `CalcErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        calc = "Calc",
+        /**
+        * Represents a `ConnectErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        connect = "Connect",
+        /**
+        * Represents a `Div0ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        div0 = "Div0",
+        /**
+        * Represents an `ExternalErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        external = "External",
+        /**
+        * Represents a `FieldErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        field = "Field",
+        /**
+        * Represents a `GettingDataErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        gettingData = "GettingData",
+        /**
+        * Represents a `NotAvailableErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        notAvailable = "NotAvailable",
+        /**
+        * Represents a `NameErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        name = "Name",
+        /**
+        * Represents a `NullErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        null = "Null",
+        /**
+        * Represents a `NumErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        num = "Num",
+        /**
+        * Represents a `PlaceholderErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        placeholder = "Placeholder",
+        /**
+        * Represents a `RefErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        ref = "Ref",
+        /**
+        * Represents a `SpillErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        spill = "Spill",
+        /**
+        * Represents a `ValueErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        value = "Value"
+    }
+    /**
+    * Represents a cell value which contains an error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export type ErrorCellValue = BlockedErrorCellValue | BusyErrorCellValue | CalcErrorCellValue | ConnectErrorCellValue | Div0ErrorCellValue | ExternalErrorCellValue | FieldErrorCellValue | GettingDataErrorCellValue | NotAvailableErrorCellValue | NameErrorCellValue | NullErrorCellValue | NumErrorCellValue | PlaceholderErrorCellValue | RefErrorCellValue | SpillErrorCellValue | ValueErrorCellValue;
+    /**
+    * Represents types of #EXTERNAL! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum ExternalErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #EXTERNAL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown"
+    }
+    /**
+    * Represents the value of a cell containing an #EXTERNAL! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ExternalErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#EXTERNAL!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.external | "External";
+        /**
+        * Represents the type of `ExternalErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: ExternalErrorCellValueSubType | "Unknown";
+    }
+    /**
+    * Represents types of #FIELD! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum FieldErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a missing file. In this case, the RichValueWebImageValue.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        webImageMissingFilePart = "WebImageMissingFilePart",
+        /**
+        * An error caused by an error from a data provider. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        dataProviderError = "DataProviderError"
+    }
+    /**
+    * Represents the value of a cell containing a #FIELD! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface FieldErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#FIELD!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.field | "Field";
+        /**
+        * Represents the type of `FieldErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
+        /**
+        * Represents the field which was not found by FIELDVALUE.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        fieldName?: string;
+    }
+    /**
+    * Represents the value of a cell containing a number with a format string. Number format strings must conform to Excel guidelines. To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5  | Review guidelines for customizing a number format}.
+    * In this scenario, the format is applied to the value and not to the cell, so the value retains its format string throughout calculation.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface FormattedNumberCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.formattedNumber | "FormattedNumber";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue: number;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.double | "Double";
+        /**
+        * Returns the number format string that is used to display this value.
+        * When accessed through a `valuesAsJson` property, this number format string is in the en-US locale.  When accessed through a `valuesAsJsonLocal` property, this number format is in the user's display locale.
+        * Number format strings must conform to Excel guidelines.
+        * To learn more, see {@link https://support.microsoft.com/office/review-guidelines-for-customizing-a-number-format-c0a1d1fa-d3f4-4018-96b7-9c9354dd99f5 | Review guidelines for customizing a number format}.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        numberFormat: string;
+    }
+    /**
+    * Represents the value of a cell containing a #GETTING_DATA error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface GettingDataErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#GETTING_DATA" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.gettingData | "GettingData";
+    }
+    /**
+    * The linked entity ID object represents a set of properties that describes a service and culture for locating this service defined value.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface LinkedEntityId {
+        /**
+        * Represents which service was used to create the `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        serviceId: number;
+        /**
+        * Represents a domain specific to a service used to create the `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        domainId?: string;
+        /**
+        * Represents an identifier specific to a service used to create the `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        entityId: string;
+        /**
+        * Represents which language culture was used to create this `CellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        culture: string;
+    }
+    /**
+    * Represents a value whose properties derive from a service.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface LinkedEntityCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.linkedEntity | "LinkedEntity";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the service source that provided the information in this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        id: LinkedEntityId;
+        /**
+        * Represents the text shown when a cell with this value is rendered.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        text?: string;
+        /**
+        * Represents the properties of this linked entity and their metadata.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        properties?: {
+            [key: string]: CellValue & {
+                propertyMetadata?: CellValuePropertyMetadata;
+            };
+        };
+        /**
+        * Represents the layout of this linked entity in card view.
+        * If the `CardLayout` object doesn't have a layout property, it default value is "Entity".
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        cardLayout?: CardLayout;
+        /**
+        * Represents information that describes the service that provided data in this `LinkedEntityCellValue`.
+        * This information can be used for branding in entity cards.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        provider?: CellValueProviderAttributes;
+    }
+    /**
+    * Represents the value of a cell containing a #N/A! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface NotAvailableErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#N/A!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.notAvailable | "NotAvailable";
+    }
+    /**
+    * Represents the value of a cell containing a #NAME? error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface NameErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#NAME?" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.name | "Name";
+    }
+    /**
+    * Represents the value of a cell containing a #NULL! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface NullErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#NULL!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.null | "Null";
+    }
+    /**
+    * Represents types of #NUM! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum NumErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #NUM! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a cell's formula having an array parameter with too many rows or columns. The maximum number of rows and columns in an array parameter is 1048576. Displays as error type #NUM! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        arrayTooLarge = "ArrayTooLarge"
+    }
+    /**
+    * Represents the value of a cell containing a #NUM! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface NumErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#NUM!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.num | "Num";
+        /**
+        * Represents the type of `NumErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: NumErrorCellValueSubType | "Unknown" | "ArrayTooLarge";
+        /**
+        * Represents the name of the function causing the error.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        functionName?: string;
+    }
+    /**
+    * Represents types of #REF! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum RefErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #REF! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by structured references from the linked workbook. Displays as error type #REF! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksStructuredRef = "ExternalLinksStructuredRef",
+        /**
+        * An error caused by dynamic array references from the linked workbook. Displays as error type #REF! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        externalLinksCalculatedRef = "ExternalLinksCalculatedRef"
+    }
+    /**
+    * Represents the value of a cell containing a #REF! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface RefErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#REF!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.ref | "Ref";
+        /**
+        * Represents the type of `RefErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: RefErrorCellValueSubType | "Unknown" | "ExternalLinksStructuredRef" | "ExternalLinksCalculatedRef";
+    }
+    /**
+    * Represents types of #SPILL! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum SpillErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a dynamic array attempting to spill data into a cell that isn't empty. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        collision = "Collision",
+        /**
+        * An error caused by a dynamic array formula that can't be evaluated in a single calculation. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        indeterminateSize = "IndeterminateSize",
+        /**
+        * An error caused by a dynamic array attempting to spill over the edge of the worksheet. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        worksheetEdge = "WorksheetEdge",
+        /**
+        * An error caused by insufficient memory when attempting to calculate a dynamic array formula. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        outOfMemoryWhileCalc = "OutOfMemoryWhileCalc",
+        /**
+        * An error caused by entering a dynamic array formula in a table. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        table = "Table",
+        /**
+        * An error caused by a merged cell blocking a dynamic array. Displays as error type #SPILL! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        mergedCell = "MergedCell"
+    }
+    /**
+    * Represents the value of a cell containing a #SPILL! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface SpillErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#SPILL!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.spill | "Spill";
+        /**
+        * Represents the type of `SpillErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: SpillErrorCellValueSubType | "Unknown" | "Collision" | "IndeterminateSize" | "WorksheetEdge" | "OutOfMemoryWhileCalc" | "Table" | "MergedCell";
+        /**
+        * Represents the number of rows that would spill if there were no #SPILL! error.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        rowCount?: number;
+        /**
+        * Represents the number of columns that would spill if there were no #SPILL! error.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        columnCount?: number;
+    }
+    /**
+    * Represents the value of a cell containing a string.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface StringCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.string | "String";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue: string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.string | "String";
+    }
+    /**
+    * Represents types of #VALUE! errors.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    enum ValueErrorCellValueSubType {
+        /**
+        * An unknown type of error. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        unknown = "Unknown",
+        /**
+        * An error caused by a column_index_num parameter of VLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vlookupColumnIndexLessThanOne = "VlookupColumnIndexLessThanOne",
+        /**
+        * An error caused by VLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        vlookupResultNotFound = "VlookupResultNotFound",
+        /**
+        * An error caused by a row_index_num parameter of HLOOKUP of less than 1. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        hlookupRowIndexLessThanOne = "HlookupRowIndexLessThanOne",
+        /**
+        * An error caused by HLOOKUP not finding its lookup_value parameter. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        hlookupResultNotFound = "HlookupResultNotFound",
+        /**
+        * An error caused by encountering a string where a number was expected, and that string not being coercible to a number. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        coerceStringToNumberInvalid = "CoerceStringToNumberInvalid",
+        /**
+        * An error caused by encountering a string where a boolean was expected, and that string not being coercible to a boolean. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        coerceStringToBoolInvalid = "CoerceStringToBoolInvalid",
+        /**
+        * An error caused by conversion of a string to a type other than a boolean or number. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        coerceStringToInvalidType = "CoerceStringToInvalidType",
+        /**
+        * An error caused by SUBARRAY missing a start row. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        subArrayStartRowMissingEndRowNot = "SubArrayStartRowMissingEndRowNot",
+        /**
+        * An error caused by SUBARRAY missing a start column. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        subArrayStartColumnMissingEndColumnNot = "SubArrayStartColumnMissingEndColumnNot",
+        /**
+        * An error caused by a `WebImageValue` with an invalid URL. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        invalidImageUrl = "InvalidImageUrl",
+        /**
+        * An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryNonTradingDays = "StockHistoryNonTradingDays",
+        /**
+        * An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryNotAStock = "StockHistoryNotAStock",
+        /**
+        * An error caused by passing an invalid date to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryInvalidDate = "StockHistoryInvalidDate",
+        /**
+        * An error caused by passing an end_date parameter that precedes the start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryEndBeforeStart = "StockHistoryEndBeforeStart",
+        /**
+        * An error caused by passing a future start_date parameter to STOCKHISTORY. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryStartInFuture = "StockHistoryStartInFuture",
+        /**
+        * An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryInvalidEnum = "StockHistoryInvalidEnum",
+        /**
+        * An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryOnlyDateRequested = "StockHistoryOnlyDateRequested",
+        /**
+        * An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        stockHistoryNotFound = "StockHistoryNotFound",
+        /**
+        * An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type #VALUE! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        lambdaWrongParamCount = "LambdaWrongParamCount"
+    }
+    /**
+    * Represents the value of a cell containing a #VALUE! error.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ValueErrorCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.error | "Error";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the type of `ErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorType?: ErrorCellValueType.value | "Value";
+        /**
+        * Represents the type of `ValueErrorCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        errorSubType?: ValueErrorCellValueSubType | "Unknown" | "VlookupColumnIndexLessThanOne" | "VlookupResultNotFound" | "HlookupRowIndexLessThanOne" | "HlookupResultNotFound" | "CoerceStringToNumberInvalid" | "CoerceStringToBoolInvalid" | "CoerceStringToInvalidType" | "SubArrayStartRowMissingEndRowNot" | "SubArrayStartColumnMissingEndColumnNot" | "InvalidImageUrl" | "StockHistoryNonTradingDays" | "StockHistoryNotAStock" | "StockHistoryInvalidDate" | "StockHistoryEndBeforeStart" | "StockHistoryStartInFuture" | "StockHistoryInvalidEnum" | "StockHistoryOnlyDateRequested" | "StockHistoryNotFound" | "LambdaWrongParamCount";
+    }
+    /**
+    * Represents the value of a cell containing a type of value which cannot be serialized.
+    * For example, an #UNKNOWN! error which represents a type of rich value not known to this version of Excel.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface ValueTypeNotAvailableCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.notAvailable | "NotAvailable";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue: boolean | number | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType: RangeValueType | "Boolean" | "Double" | "Error" | "Empty" | "String";
+    }
+    /**
+    * Represents the value of a cell containing an image downloaded from the internet.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+    export interface WebImageCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        type: CellValueType.webImage | "WebImage";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the URL from which the image will be downloaded.
+        * This image must be hosted on a server that supports HTTPS.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        address: string;
+        /**
+        * Represents the alternate text that can be used in accessibility scenarios to describe what the image represents.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        altText?: string;
+        /**
+        * Represents the URL of a webpage with images that are considered related to this `WebImageCellValue`.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        relatedImagesAddress?: string;
+        /**
+        * Represents attribution information to describe the source and license requirements for using this image.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        attribution?: CellValueAttributionAttributes[];
+        /**
+        * Represents information that describes the entity or individual who provided the image.
+        * This information can be used for branding in image cards.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        provider?: CellValueProviderAttributes;
+    }
+    /**
      *
      * Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
      *
@@ -885,6 +7244,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         valueAfter: any;
+        
+        
         /**
          * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
          *
@@ -2168,6 +8529,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;
+        
         /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
@@ -3508,6 +9870,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -5139,6 +11503,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -5535,6 +11901,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly value: any;
+        
+        
         /**
          * Specifies if the object is visible.
          *
@@ -5622,6 +11990,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly values: any[][];
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -6328,6 +12698,7 @@ export declare namespace Excel {
          * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
+        
         /**
          * Gets the number of columns in the table.
          *
@@ -6432,6 +12803,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -6543,6 +12916,7 @@ export declare namespace Excel {
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
         
+        
         /**
          * Gets the number of rows in the table.
          *
@@ -6617,6 +12991,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -10949,6 +17325,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         clear(): void;
+        
         /**
          * Sets the fill formatting of a chart element to a uniform color.
          *
@@ -31083,6 +37460,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -31147,6 +37526,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -31295,6 +37676,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -31310,6 +37693,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -36155,6 +42540,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -36337,6 +42724,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -36418,6 +42807,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: any;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -36442,6 +42833,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -36624,6 +43017,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -36646,6 +43041,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
@@ -42295,6 +48692,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -42477,6 +48876,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of `RangeView` objects.
@@ -42566,6 +48967,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
@@ -42694,6 +49097,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Specifies if the object is visible.
              *
@@ -42777,6 +49182,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -42810,6 +49217,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents an Office.js binding that is defined in the workbook.
@@ -43289,6 +49698,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a column in a table.
@@ -43337,6 +49748,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of all the rows that are part of the table.
@@ -43369,6 +49782,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a row in a table.
@@ -43401,6 +49816,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents the data validation applied to the current range.
@@ -49976,6 +56393,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
