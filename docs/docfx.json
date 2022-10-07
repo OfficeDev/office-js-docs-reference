@@ -785,6 +785,10 @@
         "dest": "excel-js-1.15",
         "moniker_range": "excel-js-1.15"
       },
+      "excel-js-1.16": {
+        "dest": "excel-js-1.16",
+        "moniker_range": "excel-js-1.16"
+      },
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
