@@ -42,6 +42,7 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
             <ul>
                 <li><a href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
+                <li><a href="/javascript/api/excel?view=excel-js-1.16">ExcelApi 1.16</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.15">ExcelApi 1.15</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.14">ExcelApi 1.14</a></li>
                 <li><a href="/javascript/api/excel?view=excel-js-1.13">ExcelApi 1.13</a></li>
