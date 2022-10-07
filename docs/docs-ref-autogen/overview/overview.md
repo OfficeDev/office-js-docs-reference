@@ -7,7 +7,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 09/26/2022
+ms.date: 10/07/2022
 ---
 
 # Office Add-ins JavaScript API reference
@@ -15,15 +15,6 @@ ms.date: 09/26/2022
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
 The following is a list of APIs for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). Common API links include all APIs not attributed to a particular host (as detailed in [Office Common API requirement set](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets)). Other items link to a version of the API reference documentation for that host based on a requirement set. The reference documentation will be versioned to include all APIs up to and including that requirement set (for example, ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs).
-
-## Special requirement sets
-
-Online-only and desktop-only requirement sets are special requirement sets. An online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). A desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Word). APIs in these requirement sets aren't fully supported across all platforms. For more information, see one of the following as applicable.
-
-- `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
-- `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
-- `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1.4-hidden-document-requirement-set)
-- `WordApiHiddenDocument 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-1.3-hidden-document-requirement-set)
 
 > [!TIP]
 > You can change the version of a reference page by using the filter selection drop-down menu above the table of contents at any time. If the page doesn't exist in that particular version, you'll be returned to the current version.
@@ -167,6 +158,15 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
         </div>
     </li>
 </ul>
+
+## Special requirement sets
+
+Online-only and desktop-only requirement sets are special requirement sets. An online-only requirement set contains the latest APIs for the web version of the supporting applications (currently Excel and Word). A desktop-only requirement set contains the latest APIs for the Windows and Mac versions of the supporting applications (currently Word). APIs in these requirement sets aren't fully supported across all platforms. For more information, see one of the following as applicable.
+
+- `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
+- `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
+- `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1.4-hidden-document-requirement-set)
+- `WordApiHiddenDocument 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-1.3-hidden-document-requirement-set)
 
 > [!NOTE]
 > If you're looking for the JavaScript APIs for developing Office Scripts, visit the [Office Scripts API reference](/javascript/api/office-scripts/overview).
