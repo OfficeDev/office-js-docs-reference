@@ -19,6 +19,71 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /** [Api set: ExcelApi 1.2] */
 	export interface ThreeArrowsSet {
         [index: number]: Icon;
@@ -548,6 +613,7 @@ export declare namespace Excel {
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
+        
         
         
         
@@ -1198,6 +1264,8 @@ export declare namespace Excel {
          */
         values: any[][];
         
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -1635,6 +1703,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly value: any;
+        
+        
         /**
          * Specifies if the object is visible.
          *
@@ -2129,6 +2199,7 @@ export declare namespace Excel {
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         
+        
         /**
          * Gets a column object by name or ID.
          *
@@ -2217,6 +2288,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -2329,6 +2402,7 @@ export declare namespace Excel {
         
         
         
+        
         /**
          * Gets a row based on its position in the collection.
                     
@@ -2396,6 +2470,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -4655,6 +4731,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         clear(): void;
+        
         /**
          * Sets the fill formatting of a chart element to a uniform color.
          *
@@ -10977,6 +11054,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -10986,6 +11065,8 @@ export declare namespace Excel {
         }
         /** An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`. */
         export interface RangeViewUpdateData {
+            
+            
             
             
             
@@ -11091,6 +11172,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -11106,6 +11189,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -12917,6 +13002,8 @@ export declare namespace Excel {
              */
             values?: any[][];
             
+            
+            
         }
         /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
         export interface RangeAreasData {
@@ -12940,6 +13027,8 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `rangeView.toJSON()`. */
         export interface RangeViewData {
+            
+            
             
             
             
@@ -12997,6 +13086,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: any;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -13007,6 +13098,8 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `namedItemArrayValues.toJSON()`. */
         export interface NamedItemArrayValuesData {
+            
+            
             
             
         }
@@ -13149,6 +13242,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -13171,6 +13266,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
@@ -15257,6 +15354,8 @@ export declare namespace Excel {
              */
             values?: boolean;
             
+            
+            
         }
         
         
@@ -15302,6 +15401,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Specifies if the object is visible.
              *
@@ -15348,6 +15449,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -15626,6 +15729,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a column in a table.
@@ -15674,6 +15779,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of all the rows that are part of the table.
@@ -15706,6 +15813,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a row in a table.
@@ -15738,6 +15847,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         
         

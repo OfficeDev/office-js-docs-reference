@@ -1,0 +1,72 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatColorCriterionType
+uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
+package: excel!
+fullName: Excel.ConditionalFormatColorCriterionType
+summary: Represents the types of color criterion for conditional formatting.
+remarks: >-
+  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B2:M5");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.colorScale);
+      const criteria = {
+          minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+          midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+          maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+      };
+      conditionalFormat.colorScale.criteria = criteria;
+
+      await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: formula
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.formula:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Formula"'
+  - name: highestValue
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.highestValue:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"HighestValue"'
+  - name: invalid
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.invalid:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Invalid"'
+  - name: lowestValue
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"LowestValue"'
+  - name: number
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.number:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Number"'
+  - name: percent
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.percent:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Percent"'
+  - name: percentile
+    uid: 'excel!Excel.ConditionalFormatColorCriterionType.percentile:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Percentile"'

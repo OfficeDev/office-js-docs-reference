@@ -47,6 +47,40 @@ properties:
       content: 'readonly values: any[][];'
       return:
         type: 'any[][]'
+  - name: valuesAsJson
+    uid: 'excel!Excel.NamedItemArrayValues#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in this named item array. Unlike `NamedItemArrayValues.values`<!-- -->,
+      `NamedItemArrayValues.valuesAsJson` supports all data types which can be in a cell. Examples include formatted
+      number values and web images, in addition to the standard boolean, number, and string values. Data returned from
+      this API always aligns with the en-US locale. To retrieve data in the user's display locale, use
+      `NamedItemArrayValues.valuesAsJsonLocal`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly valuesAsJson: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+  - name: valuesAsJsonLocal
+    uid: 'excel!Excel.NamedItemArrayValues#valuesAsJsonLocal:member'
+    package: excel!
+    fullName: valuesAsJsonLocal
+    summary: >-
+      A JSON representation of the values in this named item array. Unlike `NamedItemArrayValues.values`<!-- -->,
+      `NamedItemArrayValues.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include
+      formatted number values and web images, in addition to the standard boolean, number, and string values. Data
+      returned from this API always aligns with the user's display locale. To retrieve data independent of locale, use
+      `NamedItemArrayValues.valuesAsJson`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly valuesAsJsonLocal: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
 methods:
   - name: load(options)
     uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'

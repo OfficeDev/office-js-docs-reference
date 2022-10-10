@@ -122,8 +122,8 @@ methods:
       Note that unlike ranges or columns, which will adjust if new rows or columns are added before them, a `TableRow`
       object represents the physical location of the table row, but not the data. That is, if the data is sorted or if
       new rows are added, a table row will continue to point at the index for which it was created.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'addAsJson(index?: number, values?: CellValue[][], alwaysInsert?: boolean): Excel.TableRow;'
