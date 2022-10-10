@@ -5,7 +5,7 @@ package: excel!
 fullName: Excel.ErrorCellValue
 summary: Represents a cell value which contains an error.
 remarks: >-
-  \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
 
   #### Examples

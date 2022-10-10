@@ -4,7 +4,7 @@ uid: 'excel!Excel.LinkedEntityCellValue:interface'
 package: excel!
 fullName: Excel.LinkedEntityCellValue
 summary: Represents a value whose properties derive from a service.
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -14,7 +14,7 @@ properties:
     package: excel!
     fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ properties:
       Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
       `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
       `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,7 +43,7 @@ properties:
     summary: >-
       Represents the layout of this linked entity in card view. If the `CardLayout` object doesn't have a layout
       property, it default value is "Entity".
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +55,7 @@ properties:
     package: excel!
     fullName: id
     summary: Represents the service source that provided the information in this value.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +67,7 @@ properties:
     package: excel!
     fullName: properties
     summary: Represents the properties of this linked entity and their metadata.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +91,7 @@ properties:
     summary: >-
       Represents information that describes the service that provided data in this `LinkedEntityCellValue`<!-- -->. This
       information can be used for branding in entity cards.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +103,7 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the text shown when a cell with this value is rendered.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +115,7 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

@@ -11,24 +11,16 @@ items:
             items:
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
-              - name: BlockedErrorCellValueSubType
-                uid: 'excel!Excel.BlockedErrorCellValueSubType:enum'
               - name: BorderIndex
                 uid: 'excel!Excel.BorderIndex:enum'
               - name: BorderLineStyle
                 uid: 'excel!Excel.BorderLineStyle:enum'
               - name: BorderWeight
                 uid: 'excel!Excel.BorderWeight:enum'
-              - name: BusyErrorCellValueSubType
-                uid: 'excel!Excel.BusyErrorCellValueSubType:enum'
-              - name: CalcErrorCellValueSubType
-                uid: 'excel!Excel.CalcErrorCellValueSubType:enum'
               - name: CalculationMode
                 uid: 'excel!Excel.CalculationMode:enum'
               - name: CalculationType
                 uid: 'excel!Excel.CalculationType:enum'
-              - name: CellValueType
-                uid: 'excel!Excel.CellValueType:enum'
               - name: ChartDataLabelPosition
                 uid: 'excel!Excel.ChartDataLabelPosition:enum'
               - name: ChartLegendPosition
@@ -41,22 +33,12 @@ items:
                 uid: 'excel!Excel.ChartUnderlineStyle:enum'
               - name: ClearApplyTo
                 uid: 'excel!Excel.ClearApplyTo:enum'
-              - name: ConnectErrorCellValueSubType
-                uid: 'excel!Excel.ConnectErrorCellValueSubType:enum'
               - name: DeleteShiftDirection
                 uid: 'excel!Excel.DeleteShiftDirection:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
-              - name: EntityCompactLayoutIcons
-                uid: 'excel!Excel.EntityCompactLayoutIcons:enum'
-              - name: ErrorCellValueType
-                uid: 'excel!Excel.ErrorCellValueType:enum'
               - name: ErrorCodes
                 uid: 'excel!Excel.ErrorCodes:enum'
-              - name: ExternalErrorCellValueSubType
-                uid: 'excel!Excel.ExternalErrorCellValueSubType:enum'
-              - name: FieldErrorCellValueSubType
-                uid: 'excel!Excel.FieldErrorCellValueSubType:enum'
               - name: FilterDatetimeSpecificity
                 uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
               - name: FilterOn
@@ -73,16 +55,10 @@ items:
                 uid: 'excel!Excel.InsertShiftDirection:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
-              - name: NumErrorCellValueSubType
-                uid: 'excel!Excel.NumErrorCellValueSubType:enum'
               - name: RangeUnderlineStyle
                 uid: 'excel!Excel.RangeUnderlineStyle:enum'
               - name: RangeValueType
                 uid: 'excel!Excel.RangeValueType:enum'
-              - name: ReferenceValueType
-                uid: 'excel!Excel.ReferenceValueType:enum'
-              - name: RefErrorCellValueSubType
-                uid: 'excel!Excel.RefErrorCellValueSubType:enum'
               - name: SheetVisibility
                 uid: 'excel!Excel.SheetVisibility:enum'
               - name: SortDataOption
@@ -93,10 +69,6 @@ items:
                 uid: 'excel!Excel.SortOn:enum'
               - name: SortOrientation
                 uid: 'excel!Excel.SortOrientation:enum'
-              - name: SpillErrorCellValueSubType
-                uid: 'excel!Excel.SpillErrorCellValueSubType:enum'
-              - name: ValueErrorCellValueSubType
-                uid: 'excel!Excel.ValueErrorCellValueSubType:enum'
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
           - name: Icon Sets
@@ -146,8 +118,6 @@ items:
                 uid: 'excel!Excel.ThreeTrianglesSet:interface'
           - name: Application
             uid: 'excel!Excel.Application:class'
-          - name: ArrayCellValue
-            uid: 'excel!Excel.ArrayCellValue:interface'
           - name: Binding
             uid: 'excel!Excel.Binding:class'
           - name: BindingCollection
@@ -156,42 +126,6 @@ items:
             uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
           - name: BindingSelectionChangedEventArgs
             uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
-          - name: BlockedErrorCellValue
-            uid: 'excel!Excel.BlockedErrorCellValue:interface'
-          - name: BooleanCellValue
-            uid: 'excel!Excel.BooleanCellValue:interface'
-          - name: BusyErrorCellValue
-            uid: 'excel!Excel.BusyErrorCellValue:interface'
-          - name: CalcErrorCellValue
-            uid: 'excel!Excel.CalcErrorCellValue:interface'
-          - name: CardLayout
-            uid: 'excel!Excel.CardLayout:type'
-          - name: CardLayoutListSection
-            uid: 'excel!Excel.CardLayoutListSection:interface'
-          - name: CardLayoutPropertyReference
-            uid: 'excel!Excel.CardLayoutPropertyReference:interface'
-          - name: CardLayoutSection
-            uid: 'excel!Excel.CardLayoutSection:type'
-          - name: CardLayoutSectionStandardProperties
-            uid: 'excel!Excel.CardLayoutSectionStandardProperties:interface'
-          - name: CardLayoutStandardProperties
-            uid: 'excel!Excel.CardLayoutStandardProperties:interface'
-          - name: CardLayoutTableSection
-            uid: 'excel!Excel.CardLayoutTableSection:interface'
-          - name: CellValue
-            uid: 'excel!Excel.CellValue:type'
-          - name: CellValueAndPropertyMetadata
-            uid: 'excel!Excel.CellValueAndPropertyMetadata:type'
-          - name: CellValueAttributionAttributes
-            uid: 'excel!Excel.CellValueAttributionAttributes:interface'
-          - name: CellValueExtraProperties
-            uid: 'excel!Excel.CellValueExtraProperties:interface'
-          - name: CellValuePropertyMetadata
-            uid: 'excel!Excel.CellValuePropertyMetadata:interface'
-          - name: CellValuePropertyMetadataExclusions
-            uid: 'excel!Excel.CellValuePropertyMetadataExclusions:interface'
-          - name: CellValueProviderAttributes
-            uid: 'excel!Excel.CellValueProviderAttributes:interface'
           - name: Chart
             uid: 'excel!Excel.Chart:class'
           - name: ChartAreaFormat
@@ -242,34 +176,6 @@ items:
             uid: 'excel!Excel.ChartTitle:class'
           - name: ChartTitleFormat
             uid: 'excel!Excel.ChartTitleFormat:class'
-          - name: CompactLayout
-            uid: 'excel!Excel.CompactLayout:type'
-          - name: ConnectErrorCellValue
-            uid: 'excel!Excel.ConnectErrorCellValue:interface'
-          - name: Div0ErrorCellValue
-            uid: 'excel!Excel.Div0ErrorCellValue:interface'
-          - name: DoubleCellValue
-            uid: 'excel!Excel.DoubleCellValue:interface'
-          - name: EmptyCellValue
-            uid: 'excel!Excel.EmptyCellValue:interface'
-          - name: EntityCardLayout
-            uid: 'excel!Excel.EntityCardLayout:interface'
-          - name: EntityCellValue
-            uid: 'excel!Excel.EntityCellValue:interface'
-          - name: EntityCompactLayout
-            uid: 'excel!Excel.EntityCompactLayout:interface'
-          - name: EntityPropertyExtraProperties
-            uid: 'excel!Excel.EntityPropertyExtraProperties:interface'
-          - name: EntityPropertyType
-            uid: 'excel!Excel.EntityPropertyType:type'
-          - name: EntityViewLayouts
-            uid: 'excel!Excel.EntityViewLayouts:interface'
-          - name: ErrorCellValue
-            uid: 'excel!Excel.ErrorCellValue:type'
-          - name: ExternalErrorCellValue
-            uid: 'excel!Excel.ExternalErrorCellValue:interface'
-          - name: FieldErrorCellValue
-            uid: 'excel!Excel.FieldErrorCellValue:interface'
           - name: Filter
             uid: 'excel!Excel.Filter:class'
           - name: FilterCriteria
@@ -278,38 +184,20 @@ items:
             uid: 'excel!Excel.FilterDatetime:interface'
           - name: FormatProtection
             uid: 'excel!Excel.FormatProtection:class'
-          - name: FormattedNumberCellValue
-            uid: 'excel!Excel.FormattedNumberCellValue:interface'
           - name: FunctionResult
             uid: 'excel!Excel.FunctionResult:class'
           - name: Functions
             uid: 'excel!Excel.Functions:class'
-          - name: GettingDataErrorCellValue
-            uid: 'excel!Excel.GettingDataErrorCellValue:interface'
           - name: Icon
             uid: 'excel!Excel.Icon:interface'
-          - name: LinkedEntityCellValue
-            uid: 'excel!Excel.LinkedEntityCellValue:interface'
-          - name: LinkedEntityId
-            uid: 'excel!Excel.LinkedEntityId:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:class'
-          - name: NameErrorCellValue
-            uid: 'excel!Excel.NameErrorCellValue:interface'
-          - name: NotAvailableErrorCellValue
-            uid: 'excel!Excel.NotAvailableErrorCellValue:interface'
-          - name: NullErrorCellValue
-            uid: 'excel!Excel.NullErrorCellValue:interface'
-          - name: NumErrorCellValue
-            uid: 'excel!Excel.NumErrorCellValue:interface'
           - name: PivotTable
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:class'
-          - name: PlaceholderErrorCellValue
-            uid: 'excel!Excel.PlaceholderErrorCellValue:interface'
           - name: Range
             uid: 'excel!Excel.Range:class'
           - name: RangeBorder
@@ -330,16 +218,8 @@ items:
             uid: 'excel!Excel.RangeView:class'
           - name: RangeViewCollection
             uid: 'excel!Excel.RangeViewCollection:class'
-          - name: ReferenceCellValue
-            uid: 'excel!Excel.ReferenceCellValue:interface'
-          - name: ReferencedValue
-            uid: 'excel!Excel.ReferencedValue:type'
-          - name: RefErrorCellValue
-            uid: 'excel!Excel.RefErrorCellValue:interface'
           - name: RequestContext
             uid: 'excel!Excel.RequestContext:class'
-          - name: RootReferenceCellValue
-            uid: 'excel!Excel.RootReferenceCellValue:interface'
           - name: RunOptions
             uid: 'excel!Excel.RunOptions:interface'
           - name: SelectionChangedEventArgs
@@ -348,10 +228,6 @@ items:
             uid: 'excel!Excel.Session:interface'
           - name: SortField
             uid: 'excel!Excel.SortField:interface'
-          - name: SpillErrorCellValue
-            uid: 'excel!Excel.SpillErrorCellValue:interface'
-          - name: StringCellValue
-            uid: 'excel!Excel.StringCellValue:interface'
           - name: Table
             uid: 'excel!Excel.Table:class'
           - name: TableCollection
@@ -366,12 +242,6 @@ items:
             uid: 'excel!Excel.TableRowCollection:class'
           - name: TableSort
             uid: 'excel!Excel.TableSort:class'
-          - name: ValueErrorCellValue
-            uid: 'excel!Excel.ValueErrorCellValue:interface'
-          - name: ValueTypeNotAvailableCellValue
-            uid: 'excel!Excel.ValueTypeNotAvailableCellValue:interface'
-          - name: WebImageCellValue
-            uid: 'excel!Excel.WebImageCellValue:interface'
           - name: Workbook
             uid: 'excel!Excel.Workbook:class'
           - name: Worksheet

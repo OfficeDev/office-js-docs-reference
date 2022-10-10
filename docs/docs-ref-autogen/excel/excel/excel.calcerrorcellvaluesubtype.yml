@@ -4,7 +4,7 @@ uid: 'excel!Excel.CalcErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.CalcErrorCellValueSubType
 summary: 'Represents types of \#CALC! errors.'
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
@@ -14,7 +14,7 @@ fields:
     summary: |-
       An error caused by including an array in an array. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ArrayOfArrays"'
   - name: arrayOfRanges
     uid: 'excel!Excel.CalcErrorCellValueSubType.arrayOfRanges:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       An error caused by including a range in an array. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ArrayOfRanges"'
   - name: dataTableReferencedPendingFormula
     uid: 'excel!Excel.CalcErrorCellValueSubType.dataTableReferencedPendingFormula:member'
@@ -32,7 +32,7 @@ fields:
       Displays as error type \#CALC! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataTableReferencedPendingFormula"'
   - name: emptyArray
     uid: 'excel!Excel.CalcErrorCellValueSubType.emptyArray:member'
@@ -40,7 +40,7 @@ fields:
     summary: |-
       An error caused by an empty array. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"EmptyArray"'
   - name: lambdaInCell
     uid: 'excel!Excel.CalcErrorCellValueSubType.lambdaInCell:member'
@@ -48,7 +48,7 @@ fields:
     summary: |-
       An error caused by a cell's formula evaluating to a lambda value. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LambdaInCell"'
   - name: textOverflow
     uid: 'excel!Excel.CalcErrorCellValueSubType.textOverflow:member'
@@ -60,7 +60,7 @@ fields:
       character limit.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TextOverflow"'
   - name: tooDeeplyNested
     uid: 'excel!Excel.CalcErrorCellValueSubType.tooDeeplyNested:member'
@@ -70,7 +70,7 @@ fields:
       error type \#CALC! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TooDeeplyNested"'
   - name: tooManyCells
     uid: 'excel!Excel.CalcErrorCellValueSubType.tooManyCells:member'
@@ -78,7 +78,7 @@ fields:
     summary: |-
       An error caused by a function referencing too many cells. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TooManyCells"'
   - name: unknown
     uid: 'excel!Excel.CalcErrorCellValueSubType.unknown:member'
@@ -86,7 +86,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#CALC! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'
   - name: unsupportedLifting
     uid: 'excel!Excel.CalcErrorCellValueSubType.unsupportedLifting:member'
@@ -96,5 +96,5 @@ fields:
       error type \#CALC! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"UnsupportedLifting"'

@@ -4,7 +4,7 @@ uid: 'excel!Excel.RefErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.RefErrorCellValueSubType
 summary: 'Represents types of \#REF! errors.'
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
@@ -14,7 +14,7 @@ fields:
     summary: |-
       An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ExternalLinksCalculatedRef"'
   - name: externalLinksStructuredRef
     uid: 'excel!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ExternalLinksStructuredRef"'
   - name: unknown
     uid: 'excel!Excel.RefErrorCellValueSubType.unknown:member'
@@ -30,5 +30,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#REF! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

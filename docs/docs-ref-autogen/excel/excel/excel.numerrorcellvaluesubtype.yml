@@ -4,7 +4,7 @@ uid: 'excel!Excel.NumErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.NumErrorCellValueSubType
 summary: 'Represents types of \#NUM! errors.'
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
@@ -16,7 +16,7 @@ fields:
       rows and columns in an array parameter is 1048576. Displays as error type \#NUM! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ArrayTooLarge"'
   - name: unknown
     uid: 'excel!Excel.NumErrorCellValueSubType.unknown:member'
@@ -24,5 +24,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#NUM! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

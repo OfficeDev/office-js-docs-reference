@@ -4,7 +4,7 @@ uid: 'excel!Excel.ExternalErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.ExternalErrorCellValueSubType
 summary: 'Represents types of \#EXTERNAL! errors.'
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
@@ -14,5 +14,5 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#EXTERNAL! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

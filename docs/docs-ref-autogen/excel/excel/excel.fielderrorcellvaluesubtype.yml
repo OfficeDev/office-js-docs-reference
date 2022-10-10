@@ -4,7 +4,7 @@ uid: 'excel!Excel.FieldErrorCellValueSubType:enum'
 package: excel!
 fullName: Excel.FieldErrorCellValueSubType
 summary: 'Represents types of \#FIELD! errors.'
-remarks: '\[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
 fields:
@@ -14,7 +14,7 @@ fields:
     summary: |-
       An error caused by an error from a data provider. Displays as error type \#FIELD! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataProviderError"'
   - name: unknown
     uid: 'excel!Excel.FieldErrorCellValueSubType.unknown:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       An unknown type of error. Displays as error type \#FIELD! in Excel.
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'
   - name: webImageMissingFilePart
     uid: 'excel!Excel.FieldErrorCellValueSubType.webImageMissingFilePart:member'
@@ -32,5 +32,5 @@ fields:
       package. Displays as error type \#FIELD! in Excel.
 
 
-      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WebImageMissingFilePart"'
