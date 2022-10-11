@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Mailbox object model.
-ms.date: 10/05/2022
+ms.date: 10/10/2022
 ms.localizationpriority: medium
 ---
 

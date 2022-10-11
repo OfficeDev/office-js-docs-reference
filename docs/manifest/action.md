@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 10/05/2022
+ms.date: 10/10/2022
 ms.localizationpriority: medium
 ---
 
