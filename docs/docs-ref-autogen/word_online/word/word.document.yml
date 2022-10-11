@@ -168,7 +168,36 @@ properties:
     package: word!
     fullName: settings
     summary: Gets the add-in's settings in the document.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+      // Get all custom settings this add-in set on this document.
+
+      await Word.run(async (context) => {
+        const settings = context.document.settings;
+        settings.load("items");
+        await context.sync();
+
+        if (settings.items.length == 0) {
+          console.log("There are no settings");
+        } else {
+          console.log("All settings:");
+          for (let i = 0; i < settings.items.length; i++) {
+            console.log(settings.items[i]);
+          }
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

@@ -4,7 +4,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 15;
+const CURRENT_EXCEL_RELEASE = 16;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 12;
 const CURRENT_WORD_RELEASE = 4;

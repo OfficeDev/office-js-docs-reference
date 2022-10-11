@@ -93,7 +93,7 @@ tryCatch(async () => {
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 16}, /*not including online*/
+    const hostVersionMap = [{host: "excel", versions: 17}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 13},
                             {host: "powerpoint", versions: 5},

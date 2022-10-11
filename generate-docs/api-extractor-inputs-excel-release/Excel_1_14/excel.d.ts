@@ -7,6 +7,71 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 
 
 export declare namespace Excel {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *
      * Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
@@ -1878,6 +1943,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         valueAfter: any;
+        
+        
         /**
          * Represents the value before the change. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
          *
@@ -3498,6 +3565,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;
+        
         /**
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
@@ -4984,6 +5052,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
          *
@@ -6805,6 +6875,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -7201,6 +7273,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly value: any;
+        
+        
         /**
          * Specifies if the object is visible.
          *
@@ -7288,6 +7362,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly values: any[][];
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -8012,6 +8088,7 @@ export declare namespace Excel {
          * @param name - Optional. Specifies the name of the new column. If `null`, the default name will be used.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
+        
         /**
          * Gets the number of columns in the table.
          *
@@ -8116,6 +8193,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -8227,6 +8306,7 @@ export declare namespace Excel {
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, alwaysInsert?: boolean): Excel.TableRow;
         
         
+        
         /**
          * Gets the number of rows in the table.
          *
@@ -8301,6 +8381,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
+        
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -12827,6 +12909,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         clear(): void;
+        
         /**
          * Sets the fill formatting of a chart element to a uniform color.
          *
@@ -33902,6 +33985,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
@@ -33966,6 +34051,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
@@ -34114,6 +34201,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
@@ -34129,6 +34218,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
@@ -39190,6 +39281,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -39390,6 +39483,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
@@ -39471,6 +39566,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: any;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -39495,6 +39592,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
@@ -39677,6 +39776,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
@@ -39699,6 +39800,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
+            
         }
         /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
@@ -45744,6 +45847,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
             /**
              * Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *
@@ -45944,6 +46049,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of `RangeView` objects.
@@ -46033,6 +46140,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.3]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
@@ -46161,6 +46270,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Specifies if the object is visible.
              *
@@ -46244,6 +46355,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
+            
+            
             /**
              * Specifies if the object is visible.
              *
@@ -46277,6 +46390,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents an Office.js binding that is defined in the workbook.
@@ -46756,6 +46871,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a column in a table.
@@ -46804,6 +46921,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a collection of all the rows that are part of the table.
@@ -46836,6 +46955,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents a row in a table.
@@ -46868,6 +46989,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
         }
         /**
          * Represents the data validation applied to the current range.
@@ -53834,6 +53957,8 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
+            
             /**
              * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from the left edge of the range to the right edge of the range.
              *

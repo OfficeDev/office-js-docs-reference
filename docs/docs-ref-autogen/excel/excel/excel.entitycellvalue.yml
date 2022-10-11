@@ -4,8 +4,8 @@ uid: 'excel!Excel.EntityCellValue:interface'
 package: excel!
 fullName: Excel.EntityCellValue
 summary: Represents an schemaless set of properties.
-remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,8 +14,8 @@ properties:
     package: excel!
     fullName: basicType
     summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'basicType?: RangeValueType.error | "Error";'
@@ -29,8 +29,8 @@ properties:
       Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
       `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
       `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'basicValue?: "#VALUE!" | string;'
@@ -41,8 +41,8 @@ properties:
     package: excel!
     fullName: layouts
     summary: Represents layout information for views of this entity.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'layouts?: EntityViewLayouts;'
@@ -53,8 +53,8 @@ properties:
     package: excel!
     fullName: properties
     summary: Represents the properties of this entity and their metadata.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: |-
@@ -73,8 +73,8 @@ properties:
     summary: >-
       Represents information that describes the service that provided the data in this `EntityCellValue`<!-- -->. This
       information can be used for branding in entity cards.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'provider?: CellValueProviderAttributes;'
@@ -85,8 +85,8 @@ properties:
     package: excel!
     fullName: referencedValues
     summary: Represents the cell values which are referenced within `EntityCellValue.properties`<!-- -->.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'referencedValues?: ReferencedValue[];'
@@ -97,8 +97,8 @@ properties:
     package: excel!
     fullName: text
     summary: Represents the text shown when a cell with this value is rendered.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'text?: string;'
@@ -109,8 +109,8 @@ properties:
     package: excel!
     fullName: type
     summary: Represents the type of this cell value.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: CellValueType.entity | ReferenceValueType.entity | "Entity";'

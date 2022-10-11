@@ -564,6 +564,73 @@ properties:
       content: 'values: any[][];'
       return:
         type: 'any[][]'
+  - name: valuesAsJson
+    uid: 'excel!Excel.Range#valuesAsJson:member'
+    package: excel!
+    fullName: valuesAsJson
+    summary: >-
+      A JSON representation of the values in the cells in this range. Unlike `Range.values`<!-- -->,
+      `Range.valuesAsJson` supports all data types which can be in a cell. Examples include formatted number values and
+      web images, in addition to the standard boolean, number, and string values. Data returned from this API always
+      aligns with the en-US locale. To retrieve data in the user's display locale, use `Range.valuesAsJsonLocal`<!--
+      -->.
+    remarks: >-
+      \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
+
+      // This function creates a formatted number data type,
+
+      // and sets the format of this data type as a date.
+
+      await Excel.run(async (context) => {
+        // Get the Sample worksheet and a range on that sheet.
+        const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+        const dateRange = sheet.getRange("A1");
+
+        // Write a number formatted as a date to cell A1.
+        dateRange.valuesAsJson = [
+          [
+            {
+              type: Excel.CellValueType.formattedNumber,
+              basicValue: 32889.0,
+              numberFormat: "m/d/yyyy"
+            }
+          ]
+        ];
+        await context.sync();
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJson: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
+  - name: valuesAsJsonLocal
+    uid: 'excel!Excel.Range#valuesAsJsonLocal:member'
+    package: excel!
+    fullName: valuesAsJsonLocal
+    summary: >-
+      A JSON representation of the values in the cells in this range. Unlike `Range.values`<!-- -->,
+      `Range.valuesAsJsonLocal` supports all data types which can be in a cell. Examples include formatted number values
+      and web images, in addition to the standard boolean, number, and string values. Data returned from this API always
+      aligns with the user's display locale. To retrieve data independent of locale, use `Range.valuesAsJson`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valuesAsJsonLocal: CellValue[][];'
+      return:
+        type: '<xref uid="excel!Excel.CellValue:type" />[][]'
   - name: valueTypes
     uid: 'excel!Excel.Range#valueTypes:member'
     package: excel!

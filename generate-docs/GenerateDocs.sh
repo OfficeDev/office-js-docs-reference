@@ -31,7 +31,8 @@ pushd tools
 mkdir tool-inputs
 npm install
 npm run build
-node version-remover ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts "ExcelApiOnline 1.1" ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts
+node version-remover ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts "ExcelApiOnline 1.1" ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts
+node version-remover ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts "ExcelApi 1.16" ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts "ExcelApi 1.15" ../api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts "ExcelApi 1.14" ../api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts "ExcelApi 1.13" ../api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts
@@ -90,7 +91,8 @@ node version-remover ../api-extractor-inputs-word-release/word_1_1/word.d.ts "Wo
 
 
 node whats-new excel ../api-extractor-inputs-excel/excel.d.ts ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../../docs/includes/excel-preview
-node whats-new excel ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../../docs/includes/excel-online
+node whats-new excel ../api-extractor-inputs-excel-release/Excel_online/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../../docs/includes/excel-online
+node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_16/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../../docs/includes/excel-1_16
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_15/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts ../../docs/includes/excel-1_15
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_14/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts ../../docs/includes/excel-1_14
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_13/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_12/excel.d.ts ../../docs/includes/excel-1_13
@@ -160,6 +162,12 @@ fi
 if [ ! -d "json/excel_online" ]; then
     echo Running API Extractor for Excel online.
     pushd api-extractor-inputs-excel-release/excel_online
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/excel_1_16" ]; then
+    echo Running API Extractor for Excel 1.16.
+    pushd api-extractor-inputs-excel-release/excel_1_16
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -496,6 +504,9 @@ if [ ! -d "yaml/excel_1_14" ]; then
 fi
 if [ ! -d "yaml/excel_1_15" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_15 --output-folder ./yaml/excel_1_15 --office 2>/dev/null
+fi
+if [ ! -d "yaml/excel_1_16" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_1_16 --output-folder ./yaml/excel_1_16 --office 2>/dev/null
 fi
 if [ ! -d "yaml/excel_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/excel_online --output-folder ./yaml/excel_online --office 2>/dev/null

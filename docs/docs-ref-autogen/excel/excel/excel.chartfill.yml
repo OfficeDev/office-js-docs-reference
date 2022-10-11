@@ -56,8 +56,8 @@ methods:
     package: excel!
     fullName: getSolidColor()
     summary: Gets the uniform color fill formatting of a chart element.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSolidColor(): OfficeExtension.ClientResult<string>;'

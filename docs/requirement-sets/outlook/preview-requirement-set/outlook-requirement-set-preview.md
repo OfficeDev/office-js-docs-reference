@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 09/27/2022
+ms.date: 10/10/2022
 ms.localizationpriority: medium
 ---
 
@@ -74,6 +74,26 @@ Added a new property that returns an object that allows you to manage the delive
 #### [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true)
 
 Added a new object that allows you to manage the delivery date and time of a message in Compose mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Item multi-select
+
+#### [Office.context.mailbox.getSelectedItemsAsync](office.context.mailbox.md#methods)
+
+Added a new method that retrieves currently selected messages. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages (preview)](/office/dev/add-ins/outlook/item-multi-select).
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.EventType.SelectedItemsChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
+
+Added `SelectedItemsChanged` event to `Mailbox`. This event occurs when one or more messages are selected or deselected.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
