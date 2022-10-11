@@ -1994,8 +1994,8 @@ methods:
     fullName: 'getSelectedItemsAsync(options, callback)'
     summary: >-
       Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on
-      a maximum of 100 messages at a time. To learn more about item multi-select, see \[Activate your Outlook add-in on
-      multiple messages (preview)\](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+      a maximum of 100 messages at a time. To learn more about item multi-select, see [Activate your Outlook add-in on
+      multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -2040,8 +2040,8 @@ methods:
     fullName: getSelectedItemsAsync(callback)
     summary: >-
       Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on
-      a maximum of 100 messages at a time. To learn more about item multi-select, see \[Activate your Outlook add-in on
-      multiple messages (preview)\](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+      a maximum of 100 messages at a time. To learn more about item multi-select, see [Activate your Outlook add-in on
+      multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

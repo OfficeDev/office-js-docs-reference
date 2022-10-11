@@ -6184,7 +6184,7 @@ export declare namespace Office {
         /**
          * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
          * To learn more about item multi-select, see
-         * [Activate your Outlook add-in on multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
          *
          * @remarks
          * [Api set: Mailbox preview]
@@ -6208,7 +6208,7 @@ export declare namespace Office {
         /**
          * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
          * To learn more about item multi-select, see
-         * [Activate your Outlook add-in on multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.
          *
          * @remarks
          * [Api set: Mailbox preview]
