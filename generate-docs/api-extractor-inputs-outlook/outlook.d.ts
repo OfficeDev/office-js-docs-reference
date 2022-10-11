@@ -5914,8 +5914,8 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-         displayNewAppointmentFormAsync(parameters: AppointmentForm, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-         /**
+        displayNewAppointmentFormAsync(parameters: AppointmentForm, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
          * Displays a form for creating a new message.
          *
          * The `displayNewMessageForm` method opens a form that enables the user to create a new message. If parameters are specified, the message form
@@ -6181,6 +6181,54 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        /**
+         * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+         * To learn more about item multi-select, see
+         * [Activate your Outlook add-in on multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+         * 
+         * **Important**: This method only applies to messages.
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
+         *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
+         *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+         * 
+         * @beta
+         */
+        getSelectedItemsAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<object[]>) => void): void;
+        /**
+         * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
+         * To learn more about item multi-select, see
+         * [Activate your Outlook add-in on multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select).
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
+         * 
+         * **Important**: This method only applies to messages.
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
+         *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
+         *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+         * 
+         * @beta
+         */
+        getSelectedItemsAsync(callback: (asyncResult: CommonAPI.AsyncResult<object[]>) => void): void;
         /**
          * Gets a token identifying the user and the Office Add-in.
          *

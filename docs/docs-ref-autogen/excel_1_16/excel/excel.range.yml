@@ -584,7 +584,7 @@ properties:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/85-preview-apis/data-types-formatted-number.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-formatted-number.yaml
 
       // This function creates a formatted number data type,
 

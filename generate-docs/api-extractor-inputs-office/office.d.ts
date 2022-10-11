@@ -2259,7 +2259,7 @@ export declare namespace Office {
         ActiveViewChanged,
         /**
          * Occurs when any date or time of the selected appointment or series is changed in Outlook.
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2269,7 +2269,7 @@ export declare namespace Office {
          */
         AppointmentTimeChanged,
         /**
-         * Occurs when an attachment is added to or removed from an item. **Important**: Only available with task pane implementation.
+         * Occurs when an attachment is added to or removed from an item. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2318,7 +2318,7 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
-         * Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane implementation.
+         * Occurs when the appointment location is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2332,7 +2332,7 @@ export declare namespace Office {
          * {@link https://learn.microsoft.com/javascript/api/outlook/office.notificationmessagedetails#actions | custom action}.
          * Currently, "Dismiss" is the only supported action that fires this event.
          *
-         * **Important**: This event is only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2343,7 +2343,7 @@ export declare namespace Office {
         InfobarClicked,
         /**
          * Occurs when a different Outlook item is selected for viewing while the task pane is pinned.
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          *
@@ -2363,7 +2363,7 @@ export declare namespace Office {
          */
         NodeReplaced,
         /**
-         * Occurs when the OfficeTheme is changed in Outlook. **Important**: Only available with task pane implementation.
+         * Occurs when the OfficeTheme is changed in Outlook. **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          * The event handler receives an argument of type
@@ -2376,7 +2376,7 @@ export declare namespace Office {
         OfficeThemeChanged,
         /**
          * Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2387,7 +2387,7 @@ export declare namespace Office {
         RecipientsChanged,
         /**
          * Occurs when the recurrence pattern of the selected series is changed in Outlook.
-         * **Important**: Only available with task pane implementation.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
          *
          * To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
@@ -2400,6 +2400,15 @@ export declare namespace Office {
          * Triggers when a Resource selection happens in Project.
          */
         ResourceSelectionChanged,
+        /**
+         * Occurs in Outlook when one or more messages are selected or deselected.
+         * **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
+         * 
+         * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
+         * 
+         * [Api set: Mailbox preview]
+         */
+        SelectedItemsChanged,
         /**
          * A Settings.settingsChanged event was raised.
          *

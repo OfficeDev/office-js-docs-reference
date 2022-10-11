@@ -24,8 +24,8 @@ fields:
     uid: 'office!Office.EventType.AppointmentTimeChanged:member'
     package: office!
     summary: >-
-      Occurs when any date or time of the selected appointment or series is changed in Outlook. **Important**: Only
-      available with task pane implementation.
+      Occurs when any date or time of the selected appointment or series is changed in Outlook. **Important**: This
+      event can only be handled in a task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `AppointmentTimeChanged` event, use the `addHandlerAsync` method of the `Item`
@@ -39,8 +39,8 @@ fields:
     uid: 'office!Office.EventType.AttachmentsChanged:member'
     package: office!
     summary: >-
-      Occurs when an attachment is added to or removed from an item. **Important**: Only available with task pane
-      implementation.
+      Occurs when an attachment is added to or removed from an item. **Important**: This event can only be handled in a
+      task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `AttachmentsChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -85,8 +85,8 @@ fields:
     uid: 'office!Office.EventType.EnhancedLocationsChanged:member'
     package: office!
     summary: >-
-      Occurs when the appointment location is changed in Outlook. **Important**: Only available with task pane
-      implementation.
+      Occurs when the appointment location is changed in Outlook. **Important**: This event can only be handled in a
+      task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `EnhancedLocationsChanged` event, use the `addHandlerAsync` method of the `Item`
@@ -105,7 +105,7 @@ fields:
       Currently, "Dismiss" is the only supported action that fires this event.
 
 
-      **Important**: This event is only available with task pane implementation.
+      **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `InfobarClicked` event, use the `addHandlerAsync` method of the `Item` object. The
@@ -119,8 +119,8 @@ fields:
     uid: 'office!Office.EventType.ItemChanged:member'
     package: office!
     summary: >-
-      Occurs when a different Outlook item is selected for viewing while the task pane is pinned. **Important**: Only
-      available with task pane implementation.
+      Occurs when a different Outlook item is selected for viewing while the task pane is pinned. **Important**: This
+      event can only be handled in a task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
@@ -143,7 +143,8 @@ fields:
     uid: 'office!Office.EventType.OfficeThemeChanged:member'
     package: office!
     summary: >-
-      Occurs when the OfficeTheme is changed in Outlook. **Important**: Only available with task pane implementation.
+      Occurs when the OfficeTheme is changed in Outlook. **Important**: This event can only be handled in a task pane.
+      It isn't supported in function commands.
 
 
       To add an event handler for the `OfficeThemeChanged` event, use the `addHandlerAsync` method of the `Mailbox`
@@ -158,7 +159,7 @@ fields:
     package: office!
     summary: >-
       Occurs when the recipient list of the selected item or the appointment location is changed in Outlook.
-      **Important**: Only available with task pane implementation.
+      **Important**: This event can only be handled in a task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `RecipientsChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -172,8 +173,8 @@ fields:
     uid: 'office!Office.EventType.RecurrenceChanged:member'
     package: office!
     summary: >-
-      Occurs when the recurrence pattern of the selected series is changed in Outlook. **Important**: Only available
-      with task pane implementation.
+      Occurs when the recurrence pattern of the selected series is changed in Outlook. **Important**: This event can
+      only be handled in a task pane. It isn't supported in function commands.
 
 
       To add an event handler for the `RecurrenceChanged` event, use the `addHandlerAsync` method of the `Item` object.
@@ -187,6 +188,19 @@ fields:
     uid: 'office!Office.EventType.ResourceSelectionChanged:member'
     package: office!
     summary: Triggers when a Resource selection happens in Project.
+  - name: SelectedItemsChanged
+    uid: 'office!Office.EventType.SelectedItemsChanged:member'
+    package: office!
+    summary: >-
+      Occurs in Outlook when one or more messages are selected or deselected. **Important**: This event can only be
+      handled in a task pane. It isn't supported in function commands.
+
+
+      To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox`
+      object.
+
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SettingsChanged
     uid: 'office!Office.EventType.SettingsChanged:member'
     package: office!

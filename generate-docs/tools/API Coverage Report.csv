@@ -6736,6 +6736,7 @@ Office.EventType,OfficeThemeChanged,EnumField,Good,false
 Office.EventType,RecipientsChanged,EnumField,Good,false
 Office.EventType,RecurrenceChanged,EnumField,Good,false
 Office.EventType,ResourceSelectionChanged,EnumField,Fine,false
+Office.EventType,SelectedItemsChanged,EnumField,Good,false
 Office.EventType,SettingsChanged,EnumField,Poor,false
 Office.EventType,TaskSelectionChanged,EnumField,Fine,false
 Office.EventType,ViewSelectionChanged,EnumField,Fine,false
@@ -8506,6 +8507,8 @@ Office.Mailbox,displayNewMessageForm(parameters),Method,Poor,true
 Office.Mailbox,displayNewMessageFormAsync(parameters,Method,Fine,false
 Office.Mailbox,getCallbackTokenAsync(options,Method,Fine,true
 Office.Mailbox,getCallbackTokenAsync(callback,Method,Fine,true
+Office.Mailbox,getSelectedItemsAsync(options,Method,Poor,false
+Office.Mailbox,getSelectedItemsAsync(callback),Method,Poor,false
 Office.Mailbox,getUserIdentityTokenAsync(callback,Method,Fine,true
 Office.Mailbox,makeEwsRequestAsync(data,Method,Poor,true
 Office.Mailbox,removeHandlerAsync(eventType,Method,Poor,false
@@ -10279,7 +10282,7 @@ Word.Document,customXmlParts,Property,Good,false
 Word.Document,properties,Property,Good,true
 Word.Document,saved,Property,Good,false
 Word.Document,sections,Property,Good,false
-Word.Document,settings,Property,Good,false
+Word.Document,settings,Property,Good,true
 Word.Document,deleteBookmark(name),Method,Poor,false
 Word.Document,getBookmarkRange(name),Method,Poor,false
 Word.Document,getBookmarkRangeOrNullObject(name),Method,Poor,false
@@ -10852,10 +10855,10 @@ Word.Setting,set(properties),Method,Poor,false
 Word.Setting,toJSON(),Method,Poor,false
 Word.Setting,track(),Method,Poor,false
 Word.Setting,untrack(),Method,Poor,false
-Word.SettingCollection,N/A,Class,Good,false
+Word.SettingCollection,N/A,Class,Good,true
 Word.SettingCollection,context,Property,Good,false
-Word.SettingCollection,items,Property,Fine,false
-Word.SettingCollection,add(key,Method,Poor,false
+Word.SettingCollection,items,Property,Fine,true
+Word.SettingCollection,add(key,Method,Poor,true
 Word.SettingCollection,deleteAll(),Method,Poor,true
 Word.SettingCollection,getCount(),Method,Poor,true
 Word.SettingCollection,getItem(key),Method,Poor,true
