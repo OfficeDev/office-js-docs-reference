@@ -8508,7 +8508,7 @@ Office.Mailbox,displayNewMessageFormAsync(parameters,Method,Fine,false
 Office.Mailbox,getCallbackTokenAsync(options,Method,Fine,true
 Office.Mailbox,getCallbackTokenAsync(callback,Method,Fine,true
 Office.Mailbox,getSelectedItemsAsync(options,Method,Poor,false
-Office.Mailbox,getSelectedItemsAsync(callback),Method,Poor,false
+Office.Mailbox,getSelectedItemsAsync(callback),Method,Poor,true
 Office.Mailbox,getUserIdentityTokenAsync(callback,Method,Fine,true
 Office.Mailbox,makeEwsRequestAsync(data,Method,Poor,true
 Office.Mailbox,removeHandlerAsync(eventType,Method,Poor,false
