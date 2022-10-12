@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript API online-only requirement set
 description: Details about the WordApiOnline requirement set.
-ms.date: 05/20/2022
+ms.date: 10/12/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---
@@ -22,9 +22,7 @@ The following table provides a concise summary of the APIs, while the subsequent
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-| Comments | Manage comments and replies. | [Comment](/javascript/api/word/word.comment), [CommentCollection](/javascript/api/word/word.commentcollection) |
 | Footnotes and endnotes | Get footnotes and endnotes. | [NoteItem](/javascript/api/word/word.noteitem), [NoteItemCollection](/javascript/api/word/word.noteitemcollection) |
-| Track changes | Manage settings for reviewing changes. | [ChangeTrackingMode](/javascript/api/word/word.changetrackingmode) |
 
 ## Recommended usage
 
