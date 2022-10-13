@@ -103,16 +103,23 @@ export declare namespace Office {
          */
         enum OWAView {
             /**
-             * One-column view. Displayed when the screen is narrow. Outlook on the web uses this single-column layout on the entire screen of a smartphone.
+             * Narrow one-column view. Displayed when the screen width is less than 436 pixels.
+             * For example, Outlook on the web uses this view on the entire screen of older smartphones.
+             */
+            OneColumnNarrow = "OneColumnNarrow",
+            /**
+             * One-column view. Displayed when the screen width is greater than or equal to 436 pixels,
+             * but less than 536 pixels. For example, Outlook on the web uses this view on the entire screen of newer smartphones.
              */
             OneColumn = "OneColumn",
             /**
-             * Two-column view. Displayed when the screen is wider. Outlook on the web uses this view on most tablets.
+             * Two-column view. Displayed when the screen width is greater than or equal to 536 pixels,
+             * but less than 780 pixels. For example, Outlook on the web uses this view on most tablets.
              */
             TwoColumns = "TwoColumns",
             /**
-             Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a desktop
-             computer.
+             * Three-column view. Displayed when the screen width is greater than or equal to 780 pixels.
+             * For example, Outlook on the web uses this view in a full screen window on a desktop computer.
              */
             ThreeColumns = "ThreeColumns"
         }
