@@ -14411,7 +14411,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.OWAView.OneColumn:member",
-                      "docComment": "/**\n * One-column view. Displayed when the screen is narrow. Outlook on the web uses this single-column layout on the entire screen of a smartphone.\n */\n",
+                      "docComment": "/**\n * One-column view. Displayed when the screen width is greater than or equal to 436 pixels, but less than 536 pixels. For example, Outlook on the web uses this view on the entire screen of newer smartphones.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14431,8 +14431,29 @@
                     },
                     {
                       "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.OWAView.OneColumnNarrow:member",
+                      "docComment": "/**\n * Narrow one-column view. Displayed when the screen width is less than 436 pixels. For example, Outlook on the web uses this view on the entire screen of older smartphones.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "OneColumnNarrow = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"OneColumnNarrow\""
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "OneColumnNarrow",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.OWAView.ThreeColumns:member",
-                      "docComment": "/**\n * Three-column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full screen window on a desktop computer.\n */\n",
+                      "docComment": "/**\n * Three-column view. Displayed when the screen width is greater than or equal to 780 pixels. For example, Outlook on the web uses this view in a full screen window on a desktop computer.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14453,7 +14474,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.OWAView.TwoColumns:member",
-                      "docComment": "/**\n * Two-column view. Displayed when the screen is wider. Outlook on the web uses this view on most tablets.\n */\n",
+                      "docComment": "/**\n * Two-column view. Displayed when the screen width is greater than or equal to 536 pixels, but less than 780 pixels. For example, Outlook on the web uses this view on most tablets.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

@@ -171,7 +171,7 @@ export declare namespace Word {
          */
         readonly text: string;
         /**
-         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+         * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -9994,7 +9994,7 @@ export declare namespace Word {
              */
             text?: string;
             /**
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -11582,7 +11582,7 @@ export declare namespace Word {
              */
             text?: boolean;
             /**
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'.
+             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Additional types ‘Footnote’, ‘Endnote’, and ‘NoteItem’ are supported in WordApiOnline 1.1 and later.
              *
              * @remarks
              * [Api set: WordApi 1.3]

@@ -8621,6 +8621,7 @@ Office.MailboxEnums.Month,Oct,EnumField,Poor,false
 Office.MailboxEnums.Month,Sep,EnumField,Poor,false
 Office.MailboxEnums.OWAView,N/A,Enum,Fine,true
 Office.MailboxEnums.OWAView,OneColumn,EnumField,Good,false
+Office.MailboxEnums.OWAView,OneColumnNarrow,EnumField,Good,false
 Office.MailboxEnums.OWAView,ThreeColumns,EnumField,Good,false
 Office.MailboxEnums.OWAView,TwoColumns,EnumField,Good,false
 Office.MailboxEnums.RecipientType,N/A,Enum,Good,true
