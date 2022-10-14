@@ -1,16 +1,16 @@
 ---
 title: Event element in the manifest file
 description: Defines an event handler in an add-in.
-ms.date: 01/11/2022
+ms.date: 10/17/2022
 ms.localizationpriority: medium
 ---
 
 # Event element
 
-Defines an event handler in an add-in.
+Defines an event handler in an add-in. For information about support and usage, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
 
 > [!NOTE]
-> For information about support and usage, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
+> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), the new alternative to the on-send feature, uses the [LaunchEvents element](launchevents.md) to configure an add-in for event-based activation. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature).
 
 **Add-in type:** Mail
 

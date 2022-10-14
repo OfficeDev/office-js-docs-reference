@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 08/11/2022
+ms.date: 10/17/2022
 ms.localizationpriority: medium
 ---
 
@@ -434,6 +434,9 @@ This extension point adds an event handler for a specified event. For more infor
 
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
+
+> [!NOTE]
+> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), the new alternative to the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature).
 
 | Element | Description  |
 |:-----|:-----|
