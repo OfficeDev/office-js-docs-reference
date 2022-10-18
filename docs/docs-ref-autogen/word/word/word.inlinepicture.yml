@@ -4,7 +4,30 @@ uid: 'word!Word.InlinePicture:class'
 package: word!
 fullName: Word.InlinePicture
 summary: Represents an inline picture.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+  // Inserts an image anchored to the last paragraph.
+
+  await Word.run(async (context) => {
+    context.document.body.paragraphs
+      .getLast()
+      .insertParagraph("", "After")
+      .insertInlinePictureFromBase64(base64Image, "End");
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -76,7 +99,34 @@ properties:
     package: word!
     fullName: imageFormat
     summary: Gets the format of the inline image.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+
+      // Get the first image in the document.
+
+      await Word.run(async (context) => {
+        const firstPicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height");
+
+        await context.sync();
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+        // Get the image encoded as base64.
+        const base64 = firstPicture.getBase64ImageSrc();
+
+        await context.sync();
+        console.log(base64.value);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
