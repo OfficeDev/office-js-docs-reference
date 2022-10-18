@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 Defines an event handler in an add-in. For information about support and usage, see [On-send feature for Outlook add-ins](/office/dev/add-ins/outlook/outlook-on-send-addins).
 
 > [!NOTE]
-> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), which is a newer version of the on-send feature, uses the [LaunchEvents element](launchevents.md) to configure an add-in for event-based activation. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature).
+> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), which is a newer version of the on-send feature, uses the [LaunchEvents element](launchevents.md) to configure an add-in for event-based activation. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature). We invite you to [try out Smart Alerts by completing the walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 **Add-in type:** Mail
 

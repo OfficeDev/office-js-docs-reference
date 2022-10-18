@@ -82,7 +82,7 @@ The following example shows how to use the **\<ExtensionPoint\>** element with *
 A context menu is a shortcut menu that appears when you right-click in the Office UI.
 
 #### Child elements
- 
+
 |Element|Description|
 |:-----|:-----|
 |[OfficeMenu](officemenu.md)|Required if you're adding add-in commands to a default context menu (using **ContextMenu**). The **id** attribute must be set to one of the following strings: <br/> - **ContextMenuText** if the context menu should open when a user right-clicks on the selected text. <br/> - **ContextMenuCell** if the context menu should open when the user right-clicks on a cell on an Excel spreadsheet.|
@@ -179,7 +179,7 @@ This extension point puts buttons in the command surface for the mail read view.
 
 ### MessageComposeCommandSurface
 
-This extension point puts buttons on the ribbon for add-ins using mail compose form. 
+This extension point puts buttons on the ribbon for add-ins using mail compose form.
 
 #### Child elements
 
@@ -210,7 +210,7 @@ This extension point puts buttons on the ribbon for add-ins using mail compose f
 
 ### AppointmentOrganizerCommandSurface
 
-This extension point puts buttons on the ribbon for the form that's displayed to the organizer of the meeting. 
+This extension point puts buttons on the ribbon for the form that's displayed to the organizer of the meeting.
 
 #### Child elements
 
@@ -436,7 +436,7 @@ This extension point adds an event handler for a specified event. For more infor
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
 > [!NOTE]
-> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), which is a newer version of the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature).
+> [Smart Alerts](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough), which is a newer version of the on-send feature, uses the [LaunchEvent extension point](#launchevent) to enable event activation in an add-in. To learn more about the key differences between Smart Alerts and the on-send feature, see [Differences between Smart Alerts and the on-send feature](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough#differences-between-smart-alerts-and-the-on-send-feature). We invite you to [try out Smart Alerts by completing the walkthrough](/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough).
 
 | Element | Description  |
 |:-----|:-----|
