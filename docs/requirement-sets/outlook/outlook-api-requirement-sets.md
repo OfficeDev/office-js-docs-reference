@@ -128,7 +128,7 @@ Add-ins are supported in Outlook on the following platforms.
 || classic Outlook UI when connected to<br>Exchange on-premises | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
 
 > [!NOTE]
-> <sup>1</sup> Version support for more recent requirement sets in Outlook on Windows with a Microsoft 365 subscription or a retail one-time purchase as follows:
+> <sup>1</sup> Version support for more recent requirement sets in Outlook on Windows with a Microsoft 365 subscription or a retail perpetual license as follows:
 >
 > - Support for **1.8** is available from Version 1910 (Build 12130.20272).
 > - Support for **1.9** is available from Version 2008 (Build 13127.20296).
@@ -140,7 +140,7 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>2</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 >
-> <sup>3</sup> Support for 1.3 in Outlook 2013 was added as part of the [December 8, 2015, update for Outlook 2013 (KB3114349)](https://support.microsoft.com/kb/3114349). Support for 1.4 in Outlook 2013 was added as part of the [September 13, 2016, update for Outlook 2013 (KB3118280)](https://support.microsoft.com/help/3118280). Support for 1.4 in Outlook 2016 (one-time purchase) was added as part of the [July 3, 2018, update for Office 2016 (KB4022223)](https://support.microsoft.com/help/4022223).
+> <sup>3</sup> Support for 1.3 in Outlook 2013 was added as part of the [December 8, 2015, update for Outlook 2013 (KB3114349)](https://support.microsoft.com/kb/3114349). Support for 1.4 in Outlook 2013 was added as part of the [September 13, 2016, update for Outlook 2013 (KB3118280)](https://support.microsoft.com/help/3118280). Support for 1.4 in volume-licensed perpetual Outlook 2016 was added as part of the [July 3, 2018, update for Office 2016 (KB4022223)](https://support.microsoft.com/help/4022223).
 >
 > <sup>4</sup> Support for the new Mac UI is available from Outlook Version 16.38.506. For more information, see the [Add-in support in Outlook on new Mac UI](/office/dev/add-ins/outlook/compare-outlook-add-in-support-in-outlook-for-mac#add-in-support-in-outlook-on-new-mac-ui) section.
 >
