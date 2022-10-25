@@ -35,6 +35,45 @@ properties:
       content: 'readonly items: Word.Paragraph[];'
       return:
         type: '<xref uid="word!Word.Paragraph:class" />[]'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
+
+          // This example starts a new list with the second paragraph.
+
+          await Word.run(async (context) => {
+            const paragraphs = context.document.body.paragraphs;
+            paragraphs.load("$none");
+
+            await context.sync();
+
+            // Start new list using the second paragraph.
+            const list = paragraphs.items[1].startNewList();
+            list.load("$none");
+
+            await context.sync();
+
+            // To add new items to the list, use Start or End on the insertLocation parameter.
+            list.insertParagraph("New list item at the start of the list", "Start");
+            const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
+
+            // Sets up list level for the list item.
+            paragraph.listItem.level = 4;
+
+            // To add paragraphs outside the list, use Before or After.
+            list.insertParagraph("New paragraph goes after (not part of the list)", "After");
+
+            await context.sync();
+          });
+
+          ```
 methods:
   - name: load(options)
     uid: 'word!Word.ParagraphCollection#load:member(1)'

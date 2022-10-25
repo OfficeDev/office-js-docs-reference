@@ -2837,7 +2837,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td>A string</td>
-         *     <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting  data to <code>"=SUM(A1:A5)"`</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
+         *     <td>The specified text is inserted as the value of the first bound cell. You can also specify a valid formula to add that formula to the bound cell. For example, setting  data to <code>"=SUM(A1:A5)"</code> will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the <code>Binding.getDataAsync</code> method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td>
          *   </tr>
          *   <tr>
          *     <td>An array of arrays ("matrix"), and the shape exactly matches the shape of the binding specified</td>
