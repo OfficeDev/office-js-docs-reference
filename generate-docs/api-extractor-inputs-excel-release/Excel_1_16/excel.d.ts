@@ -1193,7 +1193,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        export class = "Class",
+        class = "Class",
         /**
         * Classification icon.
         *
