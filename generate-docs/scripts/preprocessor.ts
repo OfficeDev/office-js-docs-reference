@@ -246,12 +246,12 @@ function cleanUpDts(localDtsPath: string): string {
 function applyRegularExpressions (definitionsIn) {
     return definitionsIn.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(type)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(namespace)(\s+)(?!=)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(class)(\s+)(?!=)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(interface)(\s+)(?!=)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(module)(\s+)(?!=)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(function)(\s+)(?!=)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(type)(\s+)(?!=)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 }
