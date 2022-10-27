@@ -3,7 +3,13 @@ name: OfficeExtension.ErrorCodes
 uid: 'office!OfficeExtension.ErrorCodes:class'
 package: office!
 fullName: OfficeExtension.ErrorCodes
-summary: ''
+summary: >-
+  Represents the error code that can be returned by
+  [OfficeExtension.Error.code](xref:office!OfficeExtension.Error:class)<!-- -->.
+
+
+  To learn more about the error codes, see [Office Common API error
+  codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
