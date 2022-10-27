@@ -8500,6 +8500,12 @@ export declare namespace OfficeExtension {
         innerError: Error;
     }
 
+    /**
+     * Represents the error code that can be returned by {@link OfficeExtension.Error | OfficeExtension.Error.code}.
+     * 
+     * To learn more about the error codes, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | Office Common API error codes}.
+     */
     export class ErrorCodes {
         public static accessDenied: string;
         public static generalException: string;

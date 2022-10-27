@@ -2654,7 +2654,7 @@ Excel.EntityCompactLayoutIcons,checkboxUnchecked,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,checkmark,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,chess,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,city,EnumField,Good,false
-Excel.EntityCompactLayoutIcons,class,EnumField,Missing,false
+Excel.EntityCompactLayoutIcons,class,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,classification,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,clipboard,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,clipboardDataBar,EnumField,Fine,false
@@ -2745,7 +2745,6 @@ Excel.EntityCompactLayoutIcons,emojiSparkle,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,emojiSurprise,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,engine,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,eraser,EnumField,Fine,false
-Excel.EntityCompactLayoutIcons,export,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,eye,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,eyedropper,EnumField,Fine,false
 Excel.EntityCompactLayoutIcons,fax,EnumField,Fine,false
@@ -7485,7 +7484,7 @@ OfficeExtension.Error,message,Property,Fine,false
 OfficeExtension.Error,name,Property,Poor,false
 OfficeExtension.Error,stack,Property,Poor,false
 OfficeExtension.Error,traceMessages,Property,Good,true
-OfficeExtension.ErrorCodes,N/A,Class,Missing,false
+OfficeExtension.ErrorCodes,N/A,Class,Fine,false
 OfficeExtension.ErrorCodes,accessDenied,Property,Missing,false
 OfficeExtension.ErrorCodes,activityLimitReached,Property,Missing,false
 OfficeExtension.ErrorCodes,apiNotFound,Property,Missing,false
@@ -8626,7 +8625,7 @@ Office.MailboxEnums.OWAView,ThreeColumns,EnumField,Good,false
 Office.MailboxEnums.OWAView,TwoColumns,EnumField,Good,false
 Office.MailboxEnums.RecipientType,N/A,Enum,Good,true
 Office.MailboxEnums.RecipientType,DistributionList,EnumField,Fine,false
-Office.MailboxEnums.RecipientType,ExternalUser,EnumField,Fine,false
+Office.MailboxEnums.RecipientType,ExternalUser,EnumField,Good,false
 Office.MailboxEnums.RecipientType,Other,EnumField,Good,false
 Office.MailboxEnums.RecipientType,User,EnumField,Fine,false
 Office.MailboxEnums.RecurrenceTimeZone,N/A,Enum,Good,true

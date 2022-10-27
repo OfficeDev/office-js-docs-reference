@@ -726,7 +726,10 @@ fields:
   - name: class
     uid: 'excel!Excel.EntityCompactLayoutIcons.class:member'
     package: excel!
-    summary: ''
+    summary: |-
+      Class icon.
+
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Class"'
   - name: classification
     uid: 'excel!Excel.EntityCompactLayoutIcons.classification:member'
@@ -1448,13 +1451,6 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Eraser"'
-  - name: export
-    uid: 'excel!Excel.EntityCompactLayoutIcons.export:member'
-    package: excel!
-    summary: |-
-      Class icon.
-
-      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
   - name: eye
     uid: 'excel!Excel.EntityCompactLayoutIcons.eye:member'
     package: excel!
