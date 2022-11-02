@@ -1,7 +1,7 @@
 ---
 title: OfficeTab element in the manifest file
 description: The OfficeTab element defines the ribbon tab where your add-in command appears.
-ms.date: 07/22/2022
+ms.date: 11/02/2022
 ms.localizationpriority: medium
 ---
 
@@ -41,14 +41,14 @@ The following are valid tab `id` values by application. Values in **bold** are s
 
 - **TabHome**
 - **TabInsert**
-- TabWordDesign
+- **TabWordDesign**
 - **TabPageLayoutWord**
-- TabReferences
-- TabMailings
-- TabReviewWord
+- **TabReferences**
+- **TabMailings**
+- **TabReviewWord**
 - **TabView**
-- TabDeveloper
-- TabAddIns
+- **TabDeveloper**
+- **TabAddIns**
 - TabBlogPost
 - TabBlogInsert
 - TabPrintPreview
@@ -61,13 +61,13 @@ The following are valid tab `id` values by application. Values in **bold** are s
 
 - **TabHome**
 - **TabInsert**
-- TabPageLayoutExcel
-- TabFormulas
+- **TabPageLayoutExcel**
+- **TabFormulas**
 - **TabData**
 - **TabReview**
 - **TabView**
-- TabDeveloper
-- TabAddIns
+- **TabDeveloper**
+- **TabAddIns**
 - TabPrintPreview
 - TabBackgroundRemoval
 
@@ -78,11 +78,11 @@ The following are valid tab `id` values by application. Values in **bold** are s
 - **TabDesign**
 - **TabTransitions**
 - **TabAnimations**
-- TabSlideShow
-- TabReview
+- **TabSlideShow**
+- **TabReview**
 - **TabView**
-- TabDeveloper
-- TabAddIns
+- **TabDeveloper**
+- **TabAddIns**
 - TabPrintPreview
 - TabMerge
 - TabGrayscale
