@@ -8709,7 +8709,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.EnhancedLocation#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the set of locations associated with the appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Gets the set of locations associated with the appointment.\n *\n * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups} added as appointment locations aren't returned by this method.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8789,7 +8789,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.EnhancedLocation#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the set of locations associated with the appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Gets the set of locations associated with the appointment.\n *\n * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups} added as appointment locations aren't returned by this method.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14087,7 +14087,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.LocationType.Custom:member",
-                      "docComment": "/**\n * A custom location.\n */\n",
+                      "docComment": "/**\n * A custom location. Custom locations don't have an SMTP address.\n *\n * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups} added as appointment locations aren't returned by the {@link https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1) | EnhancedLocation.getAsync} method.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14108,7 +14108,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.LocationType.Room:member",
-                      "docComment": "/**\n * A conference room or similar resource.\n */\n",
+                      "docComment": "/**\n * A conference room or similar resource that has an SMTP address.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

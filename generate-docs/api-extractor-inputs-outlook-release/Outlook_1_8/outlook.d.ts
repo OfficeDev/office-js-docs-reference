@@ -367,11 +367,15 @@ export declare namespace Office {
          */
         enum LocationType {
             /**
-             * A custom location.
+             * A custom location. Custom locations don't have an SMTP address.
+             * 
+             * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+             * added as appointment locations aren't returned by the
+             * {@link https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1) | EnhancedLocation.getAsync} method.
              */
             Custom = "custom",
             /**
-             * A conference room or similar resource.
+             * A conference room or similar resource that has an SMTP address.
              */
             Room = "room"
         }
@@ -4169,6 +4173,9 @@ export declare namespace Office {
         /**
          * Gets the set of locations associated with the appointment.
          *
+         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+         * added as appointment locations aren't returned by this method.
+         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
@@ -4184,6 +4191,9 @@ export declare namespace Office {
         getAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
         /**
          * Gets the set of locations associated with the appointment.
+         *
+         * **Note**: {@link https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023 | Personal contact groups}
+         * added as appointment locations aren't returned by this method.
          *
          * @remarks
          * [Api set: Mailbox 1.8]

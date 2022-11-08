@@ -68,7 +68,10 @@ fields:
   - name: dotLine
     uid: 'word!Word.UnderlineType.dotLine:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: |-
+      Warning: dotLine has been deprecated.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"DotLine"'
   - name: dotted
     uid: 'word!Word.UnderlineType.dotted:member'
@@ -94,7 +97,10 @@ fields:
   - name: hidden
     uid: 'word!Word.UnderlineType.hidden:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: |-
+      Warning: hidden has been deprecated.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: mixed
     uid: 'word!Word.UnderlineType.mixed:member'
