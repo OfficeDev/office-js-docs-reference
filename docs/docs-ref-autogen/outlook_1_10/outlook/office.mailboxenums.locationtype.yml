@@ -47,10 +47,17 @@ fields:
   - name: Custom
     uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
     package: outlook!
-    summary: A custom location.
+    summary: >-
+      A custom location. Custom locations don't have an SMTP address.
+
+
+      **Note**: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      added as appointment locations aren't returned by the
+      [EnhancedLocation.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
+      method.
     value: '"custom"'
   - name: Room
     uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
     package: outlook!
-    summary: A conference room or similar resource.
+    summary: A conference room or similar resource that has an SMTP address.
     value: '"room"'

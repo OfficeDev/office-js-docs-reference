@@ -4180,7 +4180,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.SlideRange</code></td>
-         *     <td>- PowerPoint on the web and on Windows</td>
+         *     <td>- PowerPoint</td>
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.Table</code> (TableData object)</td>
