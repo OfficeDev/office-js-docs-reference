@@ -5014,15 +5014,15 @@ export declare namespace Word {
          */
         none = "None",
         /**
-         * @deprecated Hidden is no longer supported.
          * Warning: hidden has been deprecated.
+         * @deprecated Hidden is no longer supported.
          * @remarks
          * [Api set: WordApi 1.1]
          */
         hidden = "Hidden",
         /**
-         * @deprecated DotLine is no longer supported.
          * Warning: dotLine has been deprecated.
+         * @deprecated DotLine is no longer supported.
          * @remarks
          * [Api set: WordApi 1.1]
          */
@@ -5136,8 +5136,8 @@ export declare namespace Word {
          */
         page = "Page",
         /**
-         * @deprecated Use sectionNext instead.
          * Warning: next has been deprecated. Use sectionNext instead.
+         * @deprecated Use sectionNext instead.
          * @remarks
          * [Api set: WordApi 1.1]
          */

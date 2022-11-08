@@ -38,7 +38,10 @@ fields:
   - name: next
     uid: 'word!Word.BreakType.next:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: |-
+      Warning: next has been deprecated. Use sectionNext instead.
+
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Next"'
   - name: page
     uid: 'word!Word.BreakType.page:member'

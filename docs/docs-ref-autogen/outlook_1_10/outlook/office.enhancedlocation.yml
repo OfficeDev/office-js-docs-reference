@@ -143,7 +143,12 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: Gets the set of locations associated with the appointment.
+    summary: >-
+      Gets the set of locations associated with the appointment.
+
+
+      **Note**: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      added as appointment locations aren't returned by this method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -211,7 +216,12 @@ methods:
     uid: 'outlook!Office.EnhancedLocation#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: Gets the set of locations associated with the appointment.
+    summary: >-
+      Gets the set of locations associated with the appointment.
+
+
+      **Note**: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      added as appointment locations aren't returned by this method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 

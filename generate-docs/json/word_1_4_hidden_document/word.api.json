@@ -3516,7 +3516,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.BreakType.next:member",
-                  "docComment": "/**\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * Use sectionNext instead. Warning: next has been deprecated. Use sectionNext instead.\n */\n",
+                  "docComment": "/**\n * Warning: next has been deprecated. Use sectionNext instead.\n *\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * Use sectionNext instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -66725,7 +66725,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.UnderlineType.dotLine:member",
-                  "docComment": "/**\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * DotLine is no longer supported. Warning: dotLine has been deprecated.\n */\n",
+                  "docComment": "/**\n * Warning: dotLine has been deprecated.\n *\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * DotLine is no longer supported.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -66809,7 +66809,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.UnderlineType.hidden:member",
-                  "docComment": "/**\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * Hidden is no longer supported. Warning: hidden has been deprecated.\n */\n",
+                  "docComment": "/**\n * Warning: hidden has been deprecated.\n *\n *  *\n * [Api set: WordApi 1.1]\n *\n * @deprecated\n *\n * Hidden is no longer supported.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

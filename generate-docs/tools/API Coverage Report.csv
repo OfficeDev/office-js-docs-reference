@@ -8603,7 +8603,7 @@ Office.MailboxEnums.ItemType,N/A,Enum,Good,true
 Office.MailboxEnums.ItemType,Appointment,EnumField,Poor,false
 Office.MailboxEnums.ItemType,Message,EnumField,Fine,false
 Office.MailboxEnums.LocationType,N/A,Enum,Good,true
-Office.MailboxEnums.LocationType,Custom,EnumField,Poor,false
+Office.MailboxEnums.LocationType,Custom,EnumField,Good,false
 Office.MailboxEnums.LocationType,Room,EnumField,Fine,false
 Office.MailboxEnums.Month,N/A,Enum,Good,true
 Office.MailboxEnums.Month,Apr,EnumField,Poor,false
@@ -9981,7 +9981,7 @@ Word.BorderType,triple,EnumField,Fine,false
 Word.BorderType,wave,EnumField,Fine,false
 Word.BreakType,N/A,Enum,Good,true
 Word.BreakType,line,EnumField,Fine,false
-Word.BreakType,next,EnumField,Fine,false
+Word.BreakType,next,EnumField,Good,false
 Word.BreakType,page,EnumField,Fine,false
 Word.BreakType,sectionContinuous,EnumField,Fine,false
 Word.BreakType,sectionEven,EnumField,Good,false
