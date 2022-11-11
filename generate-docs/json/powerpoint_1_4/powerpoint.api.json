@@ -7533,6 +7533,405 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeScopedCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeScopedCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeScopedCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface",
+                  "docComment": "/**\n * Represents a collection of shapes.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeScopedCollectionLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeScopedCollectionLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#fill:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the fill formatting of this shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "fill?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeFillLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeFillLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "fill",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#height:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "height?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "height",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#id:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#left:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "left?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "left",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#lineFormat:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the line formatting of this shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "lineFormat?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeLineFormatLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "lineFormat",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#name:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the name of this shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "name?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "name",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#textFrame:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the text frame object of this shape.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "textFrame?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.TextFrameLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.TextFrameLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "textFrame",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#top:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "top?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "top",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#type:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns the type of this shape. See {@link PowerPoint.ShapeType} for details.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "type?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "type",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions#width:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative value.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.4]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "width?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "width",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeScopedCollection object, for use in `shapeScopedCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeScopedCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeScopedCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface",
                   "docComment": "/**\n * An interface for updating data on the Shape object, for use in `shape.set({ ... })`.\n */\n",
                   "excerptTokens": [
@@ -8752,6 +9151,222 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideScopedCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideScopedCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideScopedCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface",
+                  "docComment": "/**\n * Represents a collection of slides in the presentation.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideScopedCollectionLoadOptions "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideScopedCollectionLoadOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#$all:member",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "$all?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "$all",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#id:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the unique ID of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "id?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "id",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#layout:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the layout of the slide.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "layout?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideLayoutLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "layout",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions#slideMaster:member",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "slideMaster?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideMasterLoadOptions",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "slideMaster",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideScopedCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideScopedCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
                       }
                     }
                   ],
