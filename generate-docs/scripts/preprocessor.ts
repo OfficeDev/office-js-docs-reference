@@ -146,7 +146,7 @@ tryCatch(async () => {
 
     console.log("create file: powerpoint.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_4/powerpoint.d.ts',
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_5/powerpoint.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
         "powerpoint",
         forceRebuild

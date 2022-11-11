@@ -553,6 +553,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "powerpoint-js-1.5",
+        "src": "docs-ref-autogen/powerpoint_1_5",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "powerpoint-js-1.5",
+        "src": "docs-ref-autogen/powerpoint_1_5",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "visio-js-1.1",
         "src": "docs-ref-autogen/visio",
         "dest": "api/office-js-docs-reference"
@@ -817,6 +829,10 @@
         "dest": "powerpoint-js-1.4",
         "moniker_range": "powerpoint-js-1.4"
       },
+      "powerpoint-js-1.5": {
+        "dest": "powerpoint-js-1.5",
+        "moniker_range": "powerpoint-js-1.5"
+      },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
         "moniker_range": "visio-js-1.1"
@@ -991,6 +1007,8 @@
         "docs-ref-autogen/powerpoint_1_3/powerpoint/**": ["powerpoint 1.3"],
         "docs-ref-autogen/powerpoint_1_4/**": ["powerpoint 1.4"],
         "docs-ref-autogen/powerpoint_1_4/powerpoint/**": ["powerpoint 1.4"],
+        "docs-ref-autogen/powerpoint_1_5/**": ["powerpoint 1.5"],
+        "docs-ref-autogen/powerpoint_1_5/powerpoint/**": ["powerpoint 1.5"],
         "docs-ref-autogen/visio/**": ["visio"],
         "docs-ref-autogen/visio/visio/**": ["visio"],
         "docs-ref-autogen/word/**": ["word preview"],
@@ -1092,6 +1110,8 @@
         "docs-ref-autogen/powerpoint_1_3/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_4/**": "powerpoint",
         "docs-ref-autogen/powerpoint_1_4/powerpoint/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_5/**": "powerpoint",
+        "docs-ref-autogen/powerpoint_1_5/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/visio/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
