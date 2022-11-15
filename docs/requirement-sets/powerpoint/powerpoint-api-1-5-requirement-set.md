@@ -1,5 +1,5 @@
 ---
-title: PowerPoint JavaScript API requirement set 1.4
+title: PowerPoint JavaScript API requirement set 1.5
 description: Details about the PowerPointApi 1.5 requirement set.
 ms.date: 11/11/2022
 ms.prod: powerpoint
@@ -8,13 +8,7 @@ ms.localizationpriority: medium
 
 # What's new in PowerPoint JavaScript API 1.5
 
-PowerPointApi 1.4 added additional support for management of shapes.
-
-The first table provides a concise summary of the APIs, while the subsequent table gives a detailed list.
-
-| Feature area | Description | Relevant objects |
-|:--- |:--- |:--- |
-| [Shape management](/office/dev/add-ins/powerpoint/shapes) | Adds support for adding, moving, sizing, formatting, and removing shapes. | [ShapeFill](/javascript/api/powerpoint/powerpoint.shapefill)<br>[ShapeFont](/javascript/api/powerpoint/powerpoint.shapefont)<br>[ShapeLineFormat](/javascript/api/powerpoint/powerpoint.shapelineformat)|
+PowerPointApi 1.5 added APIs to select slides, text ranges, and shapes within presentations. Prior to this release, selecting slides and shapes required a complicated series of steps. These selection APIs enable developers to directly select slides, text ranges, and shapes, creating a more efficient and intuitive add-in development process.
 
 ## API list
 
