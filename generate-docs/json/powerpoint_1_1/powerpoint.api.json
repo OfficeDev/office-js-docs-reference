@@ -853,6 +853,100 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `shapeScopedCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeScopedCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeScopedCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the ShapeScopedCollection object, for use in `shapeScopedCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface ShapeScopedCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeScopedCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.ShapeData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface",
                   "docComment": "/**\n * An interface for updating data on the Shape object, for use in `shape.set({ ... })`.\n */\n",
                   "excerptTokens": [
@@ -1191,6 +1285,100 @@
                   "releaseTag": "Public",
                   "name": "SlideMasterData",
                   "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slideScopedCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideScopedCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideScopedCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlideScopedCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlideScopedCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PowerPoint.Interfaces.SlideData",
+                          "canonicalReference": "powerpoint!PowerPoint.Interfaces.SlideData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "isOptional": true,
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
                   "extendsTokenRanges": []
                 },
                 {

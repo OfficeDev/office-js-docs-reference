@@ -36,6 +36,11 @@ export declare namespace PowerPoint {
         
         readonly title: string;
         
+        
+        
+        
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -63,6 +68,8 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.PresentationData;
     }
+    
+    
     
     
     
@@ -161,6 +168,8 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             
+            
+            
         }
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
@@ -180,8 +189,16 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface for updating data on the ShapeScopedCollection object, for use in `shapeScopedCollection.set({ ... })`. */
+        export interface ShapeScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ... })`. */
+        export interface SlideScopedCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
         /** An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`. */
@@ -258,6 +275,8 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
             
+            
+            
         }
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
@@ -280,8 +299,16 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
+        export interface ShapeScopedCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface describing the data returned by calling `slideScopedCollection.toJSON()`. */
+        export interface SlideScopedCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
         /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
@@ -299,6 +326,8 @@ export declare namespace PowerPoint {
             $all?: boolean;
             title?: boolean;
         }
+        
+        
         
         
         

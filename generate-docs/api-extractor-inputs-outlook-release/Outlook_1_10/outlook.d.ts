@@ -4851,7 +4851,7 @@ export declare namespace Office {
      * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
      * and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
      *
-     * Internet headers are stored as key/value pairs on a per-item basis.
+     * Internet headers are stored as string key-value pairs on a per-item basis.
      *
      * **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers | Get and set internet headers on a message in an Outlook add-in}.
@@ -4881,8 +4881,8 @@ export declare namespace Office {
      */
     export interface InternetHeaders {
         /**
-         * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values.
-         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results.
+         * Given an array of internet header names, this method returns a record containing those internet headers and their values.
+         * If the add-in requests an x-header that isn't available, that x-header will not be returned in the results.
          *
          * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
          *
@@ -4896,13 +4896,14 @@ export declare namespace Office {
          * @param names - The names of the internet headers to be returned.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, of type `Office.AsyncResult`. The string key-value pairs of internet headers are returned in the
+         *                `asyncResult.value` property. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        getAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        getAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<Record<string, string>>) => void): void;
         /**
-         * Given an array of internet header names, this method returns a dictionary containing those internet headers and their values.
-         * If the add-in requests an x-header that is not available, that x-header will not be returned in the results.
+         * Given an array of internet header names, this method returns a record containing those internet headers and their values.
+         * If the add-in requests an x-header that isn't available, that x-header will not be returned in the results.
          *
          * **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
          *
@@ -4914,10 +4915,11 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
          * @param names - The names of the internet headers to be returned.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                `asyncResult`, of type `Office.AsyncResult`. The string key-value pairs of internet headers are returned in the
+         *                `asyncResult.value` property. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        getAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        getAsync(names: string[], callback: (asyncResult: CommonAPI.AsyncResult<Record<string, string>>) => void): void;
         /**
          * Given an array of internet header names, this method removes the specified headers from the internet header collection.
          *
@@ -4934,9 +4936,9 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *                `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        removeAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        removeAsync(names: string[], options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Given an array of internet header names, this method removes the specified headers from the internet header collection.
          *
@@ -4951,9 +4953,9 @@ export declare namespace Office {
          *
          * @param names - The names of the internet headers to be removed.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
+         *                `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        removeAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<InternetHeaders>) => void): void;
+        removeAsync(names: string[], callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Sets the specified internet headers to the specified values.
          *
@@ -4975,14 +4977,14 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the
-         *                internet headers and values being the values of the internet headers.
+         * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
+         *                and values being the corresponding header value strings.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                 `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        setAsync(headers: Object, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(headers: Record<string, string>, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Sets the specified internet headers to the specified values.
          *
@@ -5004,12 +5006,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the
-         *                internet headers and values being the values of the internet headers.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
+         * @param headers - The names and corresponding values of the headers to be set. This should be a record object with its keys being internet header names
+         *                and values being the corresponding header value strings.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+         *                 `asyncResult`, of type `Office.AsyncResult`. Any errors encountered are provided in the `asyncResult.error` property.
          */
-        setAsync(headers: Object, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(headers: Record<string, string>, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment.
