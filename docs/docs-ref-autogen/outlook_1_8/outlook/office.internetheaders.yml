@@ -8,7 +8,7 @@ summary: >-
   Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
 
 
-  Internet headers are stored as key/value pairs on a per-item basis.
+  Internet headers are stored as string key-value pairs on a per-item basis.
 
 
   **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see
@@ -60,8 +60,8 @@ methods:
     package: outlook!
     fullName: 'getAsync(names, options, callback)'
     summary: >-
-      Given an array of internet header names, this method returns a dictionary containing those internet headers and
-      their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
+      Given an array of internet header names, this method returns a record containing those internet headers and their
+      values. If the add-in requests an x-header that isn't available, that x-header will not be returned in the
       results.
 
 
@@ -104,8 +104,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(names: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<InternetHeaders>) => void): void;
+        getAsync(names: string[], options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<Record<string, string>>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
@@ -117,11 +117,13 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The string key-value pairs of
+            internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in
+            the `asyncResult.error` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt;
+            void
       return:
         type: void
         description: ''
@@ -130,8 +132,8 @@ methods:
     package: outlook!
     fullName: 'getAsync(names, callback)'
     summary: >-
-      Given an array of internet header names, this method returns a dictionary containing those internet headers and
-      their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
+      Given an array of internet header names, this method returns a record containing those internet headers and their
+      values. If the add-in requests an x-header that isn't available, that x-header will not be returned in the
       results.
 
 
@@ -151,18 +153,20 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getAsync(names: string[], callback?: (asyncResult: Office.AsyncResult<InternetHeaders>) => void): void;'
+      content: 'getAsync(names: string[], callback: (asyncResult: Office.AsyncResult<Record<string, string>>) => void): void;'
       parameters:
         - id: names
           description: The names of the internet headers to be returned.
           type: 'string[]'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The string key-value pairs of
+            internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in
+            the `asyncResult.error` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt;
+            void
       return:
         type: void
         description: ''
@@ -215,7 +219,7 @@ methods:
     syntax:
       content: >-
         removeAsync(names: string[], options: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<InternetHeaders>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
@@ -228,10 +232,9 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
+            in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -260,7 +263,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'removeAsync(names: string[], callback?: (asyncResult: Office.AsyncResult<InternetHeaders>) => void): void;'
+      content: 'removeAsync(names: string[], callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: names
           description: The names of the internet headers to be removed.
@@ -268,10 +271,9 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
-            uid="outlook!Office.InternetHeaders:interface" />&gt;) =&gt; void
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
+            in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -336,14 +338,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        setAsync(headers: Object, options: Office.AsyncContextOptions, callback?: (asyncResult:
+        setAsync(headers: Record<string, string>, options: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: headers
           description: >-
-            The names and corresponding values of the headers to be set. Should be a dictionary object with keys being
-            the names of the internet headers and values being the values of the internet headers.
-          type: Object
+            The names and corresponding values of the headers to be set. This should be a record object with its keys
+            being internet header names and values being the corresponding header value strings.
+          type: 'Record&lt;string, string&gt;'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
@@ -352,8 +354,8 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
+            in the `asyncResult.error` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
@@ -395,18 +397,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setAsync(headers: Object, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setAsync(headers: Record<string, string>, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       parameters:
         - id: headers
           description: >-
-            The names and corresponding values of the headers to be set. Should be a dictionary object with keys being
-            the names of the internet headers and values being the values of the internet headers.
-          type: Object
+            The names and corresponding values of the headers to be set. This should be a record object with its keys
+            being internet header names and values being the corresponding header value strings.
+          type: 'Record&lt;string, string&gt;'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
+            in the `asyncResult.error` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
