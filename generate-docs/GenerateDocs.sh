@@ -73,6 +73,7 @@ node version-remover ../api-extractor-inputs-outlook-release/outlook_1_2/outlook
 node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts Outlook 1.1
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Mailbox 1.1" ./tool-inputs/outlook-base.d.ts
 
+node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts "PowerPointApi 1.5" ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts "PowerPointApi 1.4" ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts "PowerPointApi 1.3" ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts "PowerPointApi 1.2" ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts
@@ -123,7 +124,8 @@ node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_3/outlo
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../../docs/includes/outlook-1_2
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../../docs/includes/outlook-1_1
 
-node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../../docs/includes/powerpoint-1_5
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../../docs/includes/powerpoint-1_4
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../../docs/includes/powerpoint-1_3
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ../../docs/includes/powerpoint-1_2
@@ -354,6 +356,12 @@ if [ ! -d "json/powerpoint" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
+if [ ! -d "json/powerpoint_1_5" ]; then
+    echo Running API Extractor for PowerPoint 1.5.
+    pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_5
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
 if [ ! -d "json/powerpoint_1_4" ]; then
     echo Running API Extractor for PowerPoint 1.4.
     pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_4
@@ -567,6 +575,9 @@ if [ ! -d "yaml/powerpoint_1_3" ]; then
 fi
 if [ ! -d "yaml/powerpoint_1_4" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_4 --output-folder ./yaml/powerpoint_1_4 --office 2>/dev/null
+fi
+if [ ! -d "yaml/powerpoint_1_5" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_5 --output-folder ./yaml/powerpoint_1_5 --office 2>/dev/null
 fi
 if [ ! -d "yaml/visio" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/visio --output-folder ./yaml/visio --office

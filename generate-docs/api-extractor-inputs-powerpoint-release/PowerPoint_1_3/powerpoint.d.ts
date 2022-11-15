@@ -53,6 +53,10 @@ export declare namespace PowerPoint {
          */
         readonly tags: PowerPoint.TagCollection;
         readonly title: string;
+        
+        
+        
+        
         /**
          * Inserts the specified slides from a presentation into the current presentation.
          *
@@ -63,6 +67,7 @@ export declare namespace PowerPoint {
          * @param options - The options that define which slides will be inserted, where the new slides will go, and which presentation's formatting will be used.
          */
         insertSlidesFromBase64(base64File: string, options?: PowerPoint.InsertSlideOptions): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -644,6 +649,7 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.2]
          */
         delete(): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -722,6 +728,12 @@ export declare namespace PowerPoint {
          * [Api set: PowerPointApi 1.3]
          */
         delete(): void;
+        
+        
+        
+        
+        
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -749,6 +761,7 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.ShapeData;
     }
+    
     /**
      * Represents the collection of slides in the presentation.
      *
@@ -834,6 +847,7 @@ export declare namespace PowerPoint {
         */
         toJSON(): PowerPoint.Interfaces.SlideCollectionData;
     }
+    
     /**
      * Represents the collection of Slide Masters in the presentation.
      *
@@ -981,6 +995,8 @@ export declare namespace PowerPoint {
         /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             
+            
+            
         }
         /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
@@ -1000,8 +1016,16 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface for updating data on the ShapeScopedCollection object, for use in `shapeScopedCollection.set({ ... })`. */
+        export interface ShapeScopedCollectionUpdateData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface for updating data on the SlideCollection object, for use in `slideCollection.set({ ... })`. */
         export interface SlideCollectionUpdateData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ... })`. */
+        export interface SlideScopedCollectionUpdateData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
         /** An interface for updating data on the SlideMasterCollection object, for use in `slideMasterCollection.set({ ... })`. */
@@ -1120,6 +1144,8 @@ export declare namespace PowerPoint {
         /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
             
+            
+            
         }
         /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
@@ -1148,8 +1174,16 @@ export declare namespace PowerPoint {
             
             
         }
+        /** An interface describing the data returned by calling `shapeScopedCollection.toJSON()`. */
+        export interface ShapeScopedCollectionData {
+            items?: PowerPoint.Interfaces.ShapeData[];
+        }
         /** An interface describing the data returned by calling `slideCollection.toJSON()`. */
         export interface SlideCollectionData {
+            items?: PowerPoint.Interfaces.SlideData[];
+        }
+        /** An interface describing the data returned by calling `slideScopedCollection.toJSON()`. */
+        export interface SlideScopedCollectionData {
             items?: PowerPoint.Interfaces.SlideData[];
         }
         /** An interface describing the data returned by calling `slideMasterCollection.toJSON()`. */
@@ -1394,12 +1428,73 @@ export declare namespace PowerPoint {
             
         }
         /**
+         * Represents a collection of shapes.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.3]
+         */
+        export interface ShapeScopedCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            
+            
+            
+            
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the shape.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.3]
+             */
+            id?: boolean;
+            
+            
+            
+            
+            
+        }
+        /**
          * Represents the collection of slides in the presentation.
          *
          * @remarks
          * [Api set: PowerPointApi 1.2]
          */
         export interface SlideCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Gets the layout of the slide.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
+            */
+            layout?: PowerPoint.Interfaces.SlideLayoutLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Gets the `SlideMaster` object that represents the slide's default content.
+            *
+            * @remarks
+            * [Api set: PowerPointApi 1.3]
+            */
+            slideMaster?: PowerPoint.Interfaces.SlideMasterLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the unique ID of the slide.
+             *
+             * @remarks
+             * [Api set: PowerPointApi 1.2]
+             */
+            id?: boolean;
+        }
+        /**
+         * Represents a collection of slides in the presentation.
+         *
+         * @remarks
+         * [Api set: PowerPointApi 1.2]
+         */
+        export interface SlideScopedCollectionLoadOptions {
             /**
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */

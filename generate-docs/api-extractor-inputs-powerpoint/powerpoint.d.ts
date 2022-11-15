@@ -58,8 +58,7 @@ export declare namespace PowerPoint {
                     If no shapes are selected, an empty collection is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getSelectedShapes(): PowerPoint.ShapeScopedCollection;
         /**
@@ -68,8 +67,7 @@ export declare namespace PowerPoint {
                     If no slides are selected, an empty collection is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getSelectedSlides(): PowerPoint.SlideScopedCollection;
         /**
@@ -77,8 +75,7 @@ export declare namespace PowerPoint {
                     Throws an exception if no text is selected.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getSelectedTextRange(): PowerPoint.TextRange;
         /**
@@ -86,8 +83,7 @@ export declare namespace PowerPoint {
                     If no text is selected, an object with an `isNullObject` property set to `true` is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getSelectedTextRangeOrNullObject(): PowerPoint.TextRange;
         /**
@@ -104,8 +100,7 @@ export declare namespace PowerPoint {
          * Selects the slides in the current view of the presentation. Existing slide selection is replaced with the new selection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param slideIds - List of slide IDs to select in the presentation. If the list is empty, selection is cleared.
          */
@@ -2020,8 +2015,7 @@ export declare namespace PowerPoint {
          * Selects the specified shapes. Existing shape selection is replaced with the new selection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param shapeIds - List of shape IDs to select in the slide. If the list is empty, the selection is cleared.
          */
@@ -2698,8 +2692,7 @@ export declare namespace PowerPoint {
                     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         length: number;
         /**
@@ -2707,8 +2700,7 @@ export declare namespace PowerPoint {
                     Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         start: number;
         /**
@@ -2722,8 +2714,7 @@ export declare namespace PowerPoint {
          * Returns the parent {@link PowerPoint.TextFrame} object that holds this `TextRange`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentTextFrame(): PowerPoint.TextFrame;
         /**
@@ -2740,8 +2731,7 @@ export declare namespace PowerPoint {
          * Selects this `TextRange` in the current view.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         setSelected(): void;
         /**
@@ -2854,8 +2844,7 @@ export declare namespace PowerPoint {
          * Returns the parent {@link PowerPoint.Shape} object that holds this `TextFrame`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentShape(): PowerPoint.Shape;
         /**
@@ -2982,48 +2971,42 @@ export declare namespace PowerPoint {
          * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. Throws an exception if this shape does not belong to a `Slide`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlide(): PowerPoint.Slide;
         /**
          * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideLayout`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlideLayout(): PowerPoint.SlideLayout;
         /**
          * Returns the parent {@link PowerPoint.SlideLayout} object that holds this `Shape`. If this shape does not belong to a `SlideLayout`, an object with an `isNullObject` property set to `true` is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlideLayoutOrNullObject(): PowerPoint.SlideLayout;
         /**
          * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. Throws an exception if this shape does not belong to a `SlideMaster`.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlideMaster(): PowerPoint.SlideMaster;
         /**
          * Returns the parent {@link PowerPoint.SlideMaster} object that holds this `Shape`. If this shape does not belong to a `SlideMaster`, an object with an `isNullObject` property set to `true` is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlideMasterOrNullObject(): PowerPoint.SlideMaster;
         /**
          * Returns the parent {@link PowerPoint.Slide} object that holds this `Shape`. If this shape does not belong to a `Slide`, an object with an `isNullObject` property set to `true` is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          */
         getParentSlideOrNullObject(): PowerPoint.Slide;
         /**
@@ -3057,8 +3040,7 @@ export declare namespace PowerPoint {
      * Represents a collection of shapes.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.5]
      */
     export class ShapeScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3069,8 +3051,7 @@ export declare namespace PowerPoint {
          * Gets the number of shapes in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          * @returns The number of shapes in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -3078,8 +3059,7 @@ export declare namespace PowerPoint {
          * Gets a shape using its unique ID. An error is thrown if the shape does not exist.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param key - The ID of the shape.
          * @returns The shape with the unique ID. If such a shape does not exist, an error is thrown.
@@ -3089,8 +3069,7 @@ export declare namespace PowerPoint {
          * Gets a shape using its zero-based index in the collection. An error is thrown if the index is out of range.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param index - The index of the shape in the collection.
          * @returns The shape at the given index. An error is thrown if index is out of range.
@@ -3100,8 +3079,7 @@ export declare namespace PowerPoint {
          * Gets a shape using its unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param id - The ID of the shape.
          * @returns The shape with the unique ID. If such a shape does not exist, an object with an `isNullObject` property set to true is returned.
@@ -3220,8 +3198,7 @@ export declare namespace PowerPoint {
      * Represents a collection of slides in the presentation.
      *
      * @remarks
-     * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: PowerPointApi 1.5]
      */
     export class SlideScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -3232,8 +3209,7 @@ export declare namespace PowerPoint {
          * Gets the number of slides in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          * @returns The number of slides in the collection.
          */
         getCount(): OfficeExtension.ClientResult<number>;
@@ -3241,8 +3217,7 @@ export declare namespace PowerPoint {
          * Gets a slide using its unique ID.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param key - The ID of the slide.
          * @returns The slide with the unique ID. If such a slide does not exist, an error is thrown.
@@ -3252,8 +3227,7 @@ export declare namespace PowerPoint {
          * Gets a slide using its zero-based index in the collection.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param index - The index of the slide in the collection.
          * @returns The slide at the given index. An error is thrown if index is out of range.
@@ -3265,8 +3239,7 @@ export declare namespace PowerPoint {
                     and properties}.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.5]
          *
          * @param id - The ID of the slide.
          * @returns The slide with the unique ID.
@@ -3543,8 +3516,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             length?: number;
             /**
@@ -3552,8 +3524,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             start?: number;
             /**
@@ -3888,8 +3859,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             length?: number;
             /**
@@ -3897,8 +3867,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             start?: number;
             /**
@@ -4508,8 +4477,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the available text from the starting point.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             length?: boolean;
             /**
@@ -4517,8 +4485,7 @@ export declare namespace PowerPoint {
                         Throws an `InvalidArgument` exception when set with a negative value or if the value is greater than the length of the text.
              *
              * @remarks
-             * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: PowerPointApi 1.5]
              */
             start?: boolean;
             /**
@@ -4690,8 +4657,7 @@ export declare namespace PowerPoint {
          * Represents a collection of shapes.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.3]
          */
         export interface ShapeScopedCollectionLoadOptions {
             /**
@@ -4806,8 +4772,7 @@ export declare namespace PowerPoint {
          * Represents a collection of slides in the presentation.
          *
          * @remarks
-         * [Api set: PowerPointApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: PowerPointApi 1.2]
          */
         export interface SlideScopedCollectionLoadOptions {
             /**
