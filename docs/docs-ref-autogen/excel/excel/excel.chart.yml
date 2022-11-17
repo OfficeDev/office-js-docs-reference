@@ -420,6 +420,38 @@ methods:
       return:
         type: void
         description: ''
+  - name: getDataRange()
+    uid: 'excel!Excel.Chart#getDataRange:member(1)'
+    package: excel!
+    fullName: getDataRange()
+    summary: >-
+      Gets the data source of the whole chart. If the data range is empty, this method will return the
+      `EmptyChartSeries` error.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDataRange(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
+  - name: getDataRangeOrNullObject()
+    uid: 'excel!Excel.Chart#getDataRangeOrNullObject:member(1)'
+    package: excel!
+    fullName: getDataRangeOrNullObject()
+    summary: >-
+      Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getDataRangeOrNullObject(): OfficeExtension.ClientResult<string>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
   - name: getDataTable()
     uid: 'excel!Excel.Chart#getDataTable:member(1)'
     package: excel!
