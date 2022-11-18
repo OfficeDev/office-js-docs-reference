@@ -670,6 +670,8 @@ Excel.Chart,width,Property,Good,false
 Excel.Chart,worksheet,Property,Good,false
 Excel.Chart,activate(),Method,Poor,false
 Excel.Chart,delete(),Method,Poor,true
+Excel.Chart,getDataRange(),Method,Poor,false
+Excel.Chart,getDataRangeOrNullObject(),Method,Poor,false
 Excel.Chart,getDataTable(),Method,Poor,false
 Excel.Chart,getDataTableOrNullObject(),Method,Poor,true
 Excel.Chart,getImage(width,Method,Fine,false
