@@ -1,5 +1,7 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
+||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.Identity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#excel-excel-comment-gettask-member(1))|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#excel-excel-comment-gettaskornullobject-member(1))|Gets the task associated with this comment.|
