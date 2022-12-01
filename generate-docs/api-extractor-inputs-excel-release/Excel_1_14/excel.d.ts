@@ -7267,7 +7267,8 @@ export declare namespace Excel {
          */
         readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
         /**
-         * Represents the value computed by the name's formula. For a named range, will return the range address.
+         * Represents the value computed by the name's formula. For a named range it will return the range address.
+         * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
          *
          * @remarks
          * [Api set: ExcelApi 1.1]
@@ -39560,7 +39561,8 @@ export declare namespace Excel {
              */
             type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
             /**
-             * Represents the value computed by the name's formula. For a named range, will return the range address.
+             * Represents the value computed by the name's formula. For a named range it will return the range address.
+             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -46264,7 +46266,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address.
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range it will return the range address.
+             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]
@@ -46349,7 +46352,8 @@ export declare namespace Excel {
              */
             type?: boolean;
             /**
-             * Represents the value computed by the name's formula. For a named range, will return the range address.
+             * Represents the value computed by the name's formula. For a named range it will return the range address.
+             * Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.
              *
              * @remarks
              * [Api set: ExcelApi 1.1]

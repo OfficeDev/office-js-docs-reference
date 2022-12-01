@@ -6574,26 +6574,19 @@ Office.AppointmentCompose#end:member:
 Office.AppointmentCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
-    Office.context.mailbox.item.getInitializationContextAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (asyncResult.value != null && asyncResult.value.length > 0) {
-                    // The value is a string, parse to an object.
-                    const context = JSON.parse(asyncResult.value);
-                    // Do something with context.
-                } else {
-                    // Empty context, treat as no context.
-                }
+    Office.context.mailbox.item.getInitializationContextAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            if (asyncResult.value.length > 0) {
+                // The value is a string, parse to an object.
+                const context = JSON.parse(asyncResult.value);
+                // Do something with context.
             } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
+                // Empty context, treat as no context.
             }
+        } else {
+            // Handle the error.
         }
-    );
+    });
 Office.AppointmentCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
@@ -6875,26 +6868,19 @@ Office.AppointmentRead#displayReplyForm:member(1):
 Office.AppointmentRead#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
-    Office.context.mailbox.item.getInitializationContextAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (asyncResult.value != null && asyncResult.value.length > 0) {
-                    // The value is a string, parse to an object.
-                    const context = JSON.parse(asyncResult.value);
-                    // Do something with context.
-                } else {
-                    // Empty context, treat as no context.
-                }
+    Office.context.mailbox.item.getInitializationContextAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            if (asyncResult.value.length > 0) {
+                // The value is a string, parse to an object.
+                const context = JSON.parse(asyncResult.value);
+                // Do something with context.
             } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
+                // Empty context, treat as no context.
             }
+        } else {
+            // Handle the error.
         }
-    );
+    });
 Office.AppointmentRead#getRegExMatches:member(1):
   - |-
     // Consider an add-in manifest has the following `Rule` element:
@@ -7646,26 +7632,19 @@ Office.MessageCompose#delayDeliveryTime:member:
 Office.MessageCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
-    Office.context.mailbox.item.getInitializationContextAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (asyncResult.value != null && asyncResult.value.length > 0) {
-                    // The value is a string, parse to an object.
-                    const context = JSON.parse(asyncResult.value);
-                    // Do something with context.
-                } else {
-                    // Empty context, treat as no context.
-                }
+    Office.context.mailbox.item.getInitializationContextAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            if (asyncResult.value.length > 0) {
+                // The value is a string, parse to an object.
+                const context = JSON.parse(asyncResult.value);
+                // Do something with context.
             } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
+                // Empty context, treat as no context.
             }
+        } else {
+            // Handle the error.
         }
-    );
+    });
 Office.MessageCompose#getSelectedDataAsync:member(1):
   - |-
     // Get selected data.
@@ -7928,26 +7907,19 @@ Office.MessageRead#displayReplyForm:member(1):
 Office.MessageRead#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
-    Office.context.mailbox.item.getInitializationContextAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                if (asyncResult.value != null && asyncResult.value.length > 0) {
-                    // The value is a string, parse to an object.
-                    const context = JSON.parse(asyncResult.value);
-                    // Do something with context.
-                } else {
-                    // Empty context, treat as no context.
-                }
+    Office.context.mailbox.item.getInitializationContextAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            if (asyncResult.value.length > 0) {
+                // The value is a string, parse to an object.
+                const context = JSON.parse(asyncResult.value);
+                // Do something with context.
             } else {
-                if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context.
-                    // Treat as no context.
-                } else {
-                    // Handle the error.
-                }
+                // Empty context, treat as no context.
             }
+        } else {
+            // Handle the error.
         }
-    );
+    });
 Office.MessageRead#getRegExMatches:member(1):
   - |-
     // Consider an add-in manifest has the following `Rule` element:

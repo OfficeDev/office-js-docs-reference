@@ -121,6 +121,27 @@ methods:
       });
 
       ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Deletes the selected slides.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slides = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        slides.items.map((slide) => {
+          slide.delete();
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,7 +221,53 @@ methods:
     package: powerpoint!
     fullName: setSelectedShapes(shapeIds)
     summary: Selects the specified shapes. Existing shape selection is replaced with the new selection.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Selects the first two shapes on slide 1.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slide1 = context.presentation.slides.getItemAt(0);
+        slide1.load("shapes");
+        await context.sync();
+        const shapes = slide1.shapes;
+        const shape1 = shapes.getItemAt(0);
+        const shape2 = shapes.getItemAt(1);
+        shape1.load("id");
+        shape2.load("id");
+        await context.sync();
+        slide1.setSelectedShapes([shape1.id, shape2.id]);
+        await context.sync();
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Reselects shapes that were saved previously.
+
+      await PowerPoint.run(async (context) => {
+        const slide1 = context.presentation.slides.getItem(savedSlideSelection[0]);
+        await context.sync();
+        slide1.setSelectedShapes(savedShapeSelection);
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

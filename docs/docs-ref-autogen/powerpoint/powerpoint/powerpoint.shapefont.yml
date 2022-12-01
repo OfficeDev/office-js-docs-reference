@@ -30,7 +30,27 @@ properties:
     summary: >-
       HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
       `TextRange` includes text fragments with different colors.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+      // Sets the color of the selected text range to green.
+
+      await PowerPoint.run(async (context) => {
+        const textRange = context.presentation.getSelectedTextRange();
+        textRange.font.color = "green";
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
