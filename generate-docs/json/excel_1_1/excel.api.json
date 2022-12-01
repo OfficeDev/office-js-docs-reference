@@ -27186,7 +27186,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemCollectionLoadOptions#value:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range it will return the range address. Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27358,7 +27358,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemData#value:member",
-                      "docComment": "/**\n * Represents the value computed by the name's formula. For a named range, will return the range address.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the value computed by the name's formula. For a named range it will return the range address. Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -27504,7 +27504,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.NamedItemLoadOptions#value:member",
-                      "docComment": "/**\n * Represents the value computed by the name's formula. For a named range, will return the range address.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Represents the value computed by the name's formula. For a named range it will return the range address. Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -36976,7 +36976,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.NamedItem#value:member",
-                  "docComment": "/**\n * Represents the value computed by the name's formula. For a named range, will return the range address.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents the value computed by the name's formula. For a named range it will return the range address. Note: This API returns the #VALUE! error in the Excel UI if it refers to a custom function.\n *\n * @remarks\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

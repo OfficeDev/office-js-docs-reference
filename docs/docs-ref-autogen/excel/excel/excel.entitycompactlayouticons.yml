@@ -7,7 +7,43 @@ summary: >-
   The list of icons available for `EntityCompactLayout`<!-- -->. An icon displays in the Excel UI, either to the left of
   the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity
   card. Selecting the icon opens the entity card.
-remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-icons.yaml
+
+  function createEntitiesWithIcons(icons): Excel.EntityCellValue[][] {
+    /* This method creates an entity data type for each
+     * icon in the `EntityCompactLayoutIcons` enum,
+     * and then displays the icon name with its icon.
+     */
+    let entities = [];
+    icons.forEach(function(iconName, index, array) {
+      let icon = iconNames[iconName];
+      entities.push([
+        {
+          type: "Entity",
+          text: iconName,
+          properties: {},
+          layouts: {
+            compact: {
+              icon
+            }
+          }
+        }
+      ]);
+    });
+    return entities;
+  }
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
