@@ -2187,7 +2187,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getInitializationContextAsync(options: Office.AsyncContextOptions, callback?: (asyncResult:
+        getInitializationContextAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
         Office.AsyncResult<string>) => void): void;
       parameters:
         - id: options
@@ -2197,11 +2197,9 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided in
-            the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult`
-            object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to
-            `GenericResponseError`<!-- -->.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
+            (or an empty string if there's no initialization context) in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
@@ -2228,15 +2226,13 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      content: 'getInitializationContextAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided in
-            the `asyncResult.value` property as a string. If there is no initialization context, the `asyncResult`
-            object will contain an `Error` object with its `code` property set to 9020 and its `name` property set to
-            `GenericResponseError`<!-- -->.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
+            (or an empty string if there's no initialization context) in the `asyncResult.value` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void

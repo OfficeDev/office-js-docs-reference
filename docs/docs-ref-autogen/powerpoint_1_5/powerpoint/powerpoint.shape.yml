@@ -28,7 +28,32 @@ properties:
     package: powerpoint!
     fullName: fill
     summary: Returns the fill formatting of this shape.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Changes the selected shapes fill color to red.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.fill.setSolidColor("red");
+        });
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +67,42 @@ properties:
     summary: >-
       Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
       value.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +126,42 @@ properties:
     package: powerpoint!
     fullName: left
     summary: 'The distance, in points, from the left side of the shape to the left side of the slide.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +221,42 @@ properties:
     package: powerpoint!
     fullName: top
     summary: 'The distance, in points, from the top edge of the shape to the top edge of the slide.'
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -154,7 +284,42 @@ properties:
     summary: >-
       Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
       value.
-    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

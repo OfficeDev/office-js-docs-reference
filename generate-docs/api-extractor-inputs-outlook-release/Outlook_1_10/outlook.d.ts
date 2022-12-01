@@ -1941,13 +1941,12 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -1958,13 +1957,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -3255,13 +3253,12 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -3272,13 +3269,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
@@ -6976,13 +6972,12 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -6993,13 +6988,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously gets the ID of a saved item.
          *
@@ -8224,13 +8218,12 @@ export declare namespace Office {
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets initialization data passed when the add-in is {@link https://learn.microsoft.com/outlook/actionable-messages/invoke-add-in | activated by an actionable message}.
          *
@@ -8241,13 +8234,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                             of type `Office.AsyncResult`.
-         *                 On success, the initialization context data is provided in the `asyncResult.value` property as a string.
-         *                 If there is no initialization context, the `asyncResult` object will contain
-         *                 an `Error` object with its `code` property set to 9020 and its `name` property set to `GenericResponseError`.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
+         *                 of type `Office.AsyncResult`.
+         *                 On success, the initialization context data is provided as a string (or an empty string if there's no initialization context)
+         *                 in the `asyncResult.value` property.
          */
-        getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
          *
