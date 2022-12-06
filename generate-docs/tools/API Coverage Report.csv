@@ -8481,7 +8481,7 @@ Office.Location,getAsync(callback),Method,Poor,true
 Office.Location,setAsync(location,Method,Fine,false
 Office.LocationDetails,N/A,Class,Good,true
 Office.LocationDetails,displayName,Property,Poor,false
-Office.LocationDetails,emailAddress,Property,Fine,false
+Office.LocationDetails,emailAddress,Property,Good,false
 Office.LocationDetails,locationIdentifier,Property,Poor,false
 Office.LocationIdentifier,N/A,Class,Good,true
 Office.LocationIdentifier,id,Property,Fine,false
@@ -9921,7 +9921,7 @@ Word.Body,insertContentControl(),Method,Poor,true
 Word.Body,insertFileFromBase64(base64File,Method,Fine,true
 Word.Body,insertHtml(html,Method,Fine,true
 Word.Body,insertInlinePictureFromBase64(base64EncodedImage,Method,Fine,true
-Word.Body,insertOoxml(ooxml,Method,Fine,false
+Word.Body,insertOoxml(ooxml,Method,Fine,true
 Word.Body,insertParagraph(paragraphText,Method,Fine,true
 Word.Body,insertTable(rowCount,Method,Fine,true
 Word.Body,insertText(text,Method,Poor,true

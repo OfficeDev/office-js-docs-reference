@@ -2863,7 +2863,10 @@ export declare namespace Office {
          * attachment or item. For example, you can create a remote service to
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+         * **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token is always returned in Outlook
+         * mobile clients even if `options.isRest` is set to `false`.
+         *
+         * **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -2910,6 +2913,8 @@ export declare namespace Office {
          *
          * **Important**: For guidance on delegate or shared scenarios, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         *
+         * **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins running on Outlook mobile clients.
          *
          * @remarks
          * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]

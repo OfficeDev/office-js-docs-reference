@@ -2390,6 +2390,8 @@ export declare namespace Office {
          * **Important**: For guidance on delegate or shared scenarios, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
          *
+         * **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins running on Outlook mobile clients.
+         *
          * @remarks
          * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
          *
