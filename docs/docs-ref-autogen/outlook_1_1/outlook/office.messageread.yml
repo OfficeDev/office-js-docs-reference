@@ -1360,7 +1360,13 @@ methods:
     package: outlook!
     fullName: getFilteredEntitiesByName(name)
     summary: >-
-      Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+      Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+
+
+      **Note**: This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the
@@ -1417,7 +1423,13 @@ methods:
     package: outlook!
     fullName: getRegExMatches()
     summary: >-
-      Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+      Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+
+
+      **Note**: This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       The `getRegExMatches` method returns the strings that match the regular expression defined in each
@@ -1518,8 +1530,14 @@ methods:
     package: outlook!
     fullName: getRegExMatchesByName(name)
     summary: >-
-      Returns string values in the selected item that match the named regular expression defined in the manifest XML
+      Returns string values in the selected item that match the named regular expression defined in an XML manifest
       file.
+
+
+      **Note**: This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the
