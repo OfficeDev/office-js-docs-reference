@@ -23734,6 +23734,24 @@
         console.log('HTML added to the beginning of the document body.');
     });
 'Word.Body#insertInlinePictureFromBase64:member(1)':
+  - |-
+    // Run a batch operation against the Word object model.
+    await Word.run(async (context) => {
+
+        // Create a proxy object for the document body.
+        const body = context.document.body;
+
+        const b64encodedImg = "iVBORw0KGgoAAAANSUhEUgAAAB4AAAANCAIAAAAxEEnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACFSURBVDhPtY1BEoQwDMP6/0+XgIMTBAeYoTqso9Rkx1zG+tNj1H94jgGzeNSjteO5vtQQuG2seO0av8LzGbe3anzRoJ4ybm/VeKEerAEbAUpW4aWQCmrGFWykRzGBCnYy2ha3oAIq2MloW9yCCqhgJ6NtcQsqoIKdjLbFLaiACnYyf2fODbrjZcXfr2F4AAAAAElFTkSuQmCC";
+
+        // Queue a command to insert a base64 encoded image at the beginning of the first paragraph.
+        body.insertInlinePictureFromBase64(b64encodedImg, Word.InsertLocation.start);
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        await context.sync();
+        console.log('Added an image to the body.');
+    });
+'Word.Body#insertOoxml:member(1)':
   - >-
     // Run a batch operation against the Word object model.
 

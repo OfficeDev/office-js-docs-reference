@@ -57,7 +57,7 @@ properties:
     uid: 'outlook!Office.LocationDetails#emailAddress:member'
     package: outlook!
     fullName: emailAddress
-    summary: The email address associated with the location.
+    summary: The email address associated with the location. Only locations of type `Room` have an email address.
     remarks: ''
     isPreview: false
     isDeprecated: false
