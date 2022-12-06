@@ -2350,7 +2350,9 @@ export declare namespace Office {
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
-         * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+         * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the `ItemHasKnownEntity` rule element
          * in the manifest XML file with the specified `FilterName` element value.
@@ -2374,7 +2376,9 @@ export declare namespace Office {
         
         
         /**
-         * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+         * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
          * `ItemHasKnownEntity` rule element in the manifest XML file.
@@ -2401,7 +2405,9 @@ export declare namespace Office {
          */
         getRegExMatches(): any;
         /**
-         * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
+         * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule
          * element in the manifest XML file with the specified `RegExName` element value.
@@ -2426,6 +2432,8 @@ export declare namespace Office {
         getRegExMatchesByName(name: string): string[];
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -2440,8 +2448,10 @@ export declare namespace Office {
          */
         getSelectedEntities(): Entities;
         /**
-         * Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
+         * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
          * Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
          * `ItemHasKnownEntity` rule element in the manifest XML file.
@@ -3907,7 +3917,10 @@ export declare namespace Office {
          * attachment or item. For example, you can create a remote service to
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+         * **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token is always returned in Outlook
+         * mobile clients even if `options.isRest` is set to `false`.
+         *
+         * **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
          *
          * @remarks
          * [Api set: Mailbox 1.5]
@@ -3954,6 +3967,8 @@ export declare namespace Office {
          *
          * **Important**: For guidance on delegate or shared scenarios, see the
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         *
+         * **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins running on Outlook mobile clients.
          *
          * @remarks
          * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
@@ -5361,7 +5376,9 @@ export declare namespace Office {
          */
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
-         * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+         * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the `ItemHasKnownEntity` rule element
          * in the manifest XML file with the specified `FilterName` element value.
@@ -5385,7 +5402,9 @@ export declare namespace Office {
         
         
         /**
-         * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+         * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
          * `ItemHasKnownEntity` rule element in the manifest XML file.
@@ -5412,7 +5431,9 @@ export declare namespace Office {
          */
         getRegExMatches(): any;
         /**
-         * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
+         * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the
          * `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element value.
@@ -5437,6 +5458,8 @@ export declare namespace Office {
         getRegExMatchesByName(name: string): string[];
         /**
          * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -5451,8 +5474,10 @@ export declare namespace Office {
          */
         getSelectedEntities(): Entities;
         /**
-         * Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
+         * Returns string values in a highlighted match that match the regular expressions defined in an XML manifest file.
          * Highlighted matches apply to contextual add-ins.
+         * 
+         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in
          * each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file.

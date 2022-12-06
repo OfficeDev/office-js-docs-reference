@@ -536,7 +536,33 @@ methods:
     package: word!
     fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
     summary: Inserts OOXML at the specified location.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Run a batch operation against the Word object model.
+      await Word.run(async (context) => {
+
+          // Create a proxy object for the document body.
+          const body = context.document.body;
+
+          // Queue a command to insert OOXML in to the beginning of the body.
+          body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          await context.sync();
+          console.log('OOXML added to the beginning of the document body.');
+      });
+
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://learn.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+      // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
