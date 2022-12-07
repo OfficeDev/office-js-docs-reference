@@ -14,7 +14,7 @@ Specifies the activation rules that should be evaluated for this contextual mail
 ## Contained in
 
 - [OfficeApp](officeapp.md)
-- [ExtensionPoint](extensionpoint.md) ([**CustomPane** (deprecated)](https://developer.microsoft.com/outlook/blogs/make-your-add-ins-available-in-the-office-ribbon/), [DetectedEntity](extensionpoint.md#detectedentity))
+- [ExtensionPoint](extensionpoint.md) ([**CustomPane** (deprecated)](https://devblogs.microsoft.com/microsoft365dev/make-your-add-ins-available-in-the-office-ribbon/), [DetectedEntity](extensionpoint.md#detectedentity))
 
 ## Attributes
 
