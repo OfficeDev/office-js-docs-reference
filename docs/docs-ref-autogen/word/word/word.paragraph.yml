@@ -1854,4 +1854,85 @@ methods:
       return:
         type: '<xref uid="word!Word.Paragraph:class" />'
         description: ''
+events:
+  - name: onCommentAdded
+    uid: 'word!Word.Paragraph#onCommentAdded:member'
+    package: word!
+    fullName: onCommentAdded
+    summary: Occurs when new comments are added.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentChanged
+    uid: 'word!Word.Paragraph#onCommentChanged:member'
+    package: word!
+    fullName: onCommentChanged
+    summary: Occurs when a comment or its reply is changed.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeleted
+    uid: 'word!Word.Paragraph#onCommentDeleted:member'
+    package: word!
+    fullName: onCommentDeleted
+    summary: Occurs when comments are deleted.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeselected
+    uid: 'word!Word.Paragraph#onCommentDeselected:member'
+    package: word!
+    fullName: onCommentDeselected
+    summary: Occurs when a comment is deselected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentSelected
+    uid: 'word!Word.Paragraph#onCommentSelected:member'
+    package: word!
+    fullName: onCommentSelected
+    summary: Occurs when a comment is selected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -1705,6 +1705,70 @@ methods:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
 events:
+  - name: onCommentAdded
+    uid: 'word!Word.ContentControl#onCommentAdded:member'
+    package: word!
+    fullName: onCommentAdded
+    summary: Occurs when new comments are added.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentChanged
+    uid: 'word!Word.ContentControl#onCommentChanged:member'
+    package: word!
+    fullName: onCommentChanged
+    summary: Occurs when a comment or its reply is changed.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentDeselected
+    uid: 'word!Word.ContentControl#onCommentDeselected:member'
+    package: word!
+    fullName: onCommentDeselected
+    summary: Occurs when a comment is deselected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
+  - name: onCommentSelected
+    uid: 'word!Word.ContentControl#onCommentSelected:member'
+    package: word!
+    fullName: onCommentSelected
+    summary: Occurs when a comment is selected.
+    remarks: >-
+      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          />&gt;
   - name: onDataChanged
     uid: 'word!Word.ContentControl#onDataChanged:member'
     package: word!
