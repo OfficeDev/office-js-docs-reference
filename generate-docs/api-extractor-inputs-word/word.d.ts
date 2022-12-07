@@ -389,6 +389,56 @@ export declare namespace Word {
             expand?: string;
         }): Word.Body;
         /**
+         * Occurs when new comments are added.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment or its reply is changed.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when comments are deleted.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is deselected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is selected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
         track(): Word.Body;
@@ -576,56 +626,6 @@ export declare namespace Word {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.CommentCollection;
-        /**
-         * Occurs when new comments are added.
-         *
-         * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
-        /**
-         * Occurs when a comment or its reply is changed.
-         *
-         * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
-        /**
-         * Occurs when comments are deleted.
-         *
-         * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
-        /**
-         * Occurs when a comment is deselected.
-         *
-         * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
-        /**
-         * Occurs when a comment is selected.
-         *
-         * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
-         *
-         * @eventproperty
-         * @beta
-         */
-        readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -1368,6 +1368,46 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.ContentControl;
+        /**
+         * Occurs when new comments are added.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment or its reply is changed.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is deselected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is selected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
         /**
          * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
          *
@@ -4406,6 +4446,56 @@ export declare namespace Word {
             expand?: string;
         }): Word.Paragraph;
         /**
+         * Occurs when new comments are added.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment or its reply is changed.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when comments are deleted.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is deselected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is selected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
         track(): Word.Paragraph;
@@ -5006,6 +5096,46 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Range;
+        /**
+         * Occurs when new comments are added.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment or its reply is changed.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is deselected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
+        /**
+         * Occurs when a comment is selected.
+         *
+         * @remarks
+         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -6918,35 +7048,35 @@ export declare namespace Word {
          */
         contentControlAdded = "ContentControlAdded",
         /**
-         * Represents that one or more comments were deleted from the comment collection.
+         * Represents that one or more comments were deleted.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta
          */
         commentDeleted = "CommentDeleted",
         /**
-         * Represents that a comment was selected in the comment collection.
+         * Represents that a comment was selected.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta
          */
         commentSelected = "CommentSelected",
         /**
-         * Represents that a comment was deselected in the comment collection.
+         * Represents that a comment was deselected.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta
          */
         commentDeselected = "CommentDeselected",
         /**
-         * Represents that a comment or its reply was changed in the comment collection.
+         * Represents that a comment or its reply was changed.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta
          */
         commentChanged = "CommentChanged",
         /**
-         * Represents that one or more new comments were added to the comment collection.
+         * Represents that one or more new comments were added.
          * @remarks
          * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
          * @beta

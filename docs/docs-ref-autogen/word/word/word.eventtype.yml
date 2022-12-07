@@ -31,7 +31,7 @@ fields:
     uid: 'word!Word.EventType.commentAdded:member'
     package: word!
     summary: >-
-      Represents that one or more new comments were added to the comment collection.
+      Represents that one or more new comments were added.
 
 
       * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
@@ -41,7 +41,7 @@ fields:
     uid: 'word!Word.EventType.commentChanged:member'
     package: word!
     summary: >-
-      Represents that a comment or its reply was changed in the comment collection.
+      Represents that a comment or its reply was changed.
 
 
       * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
@@ -51,7 +51,7 @@ fields:
     uid: 'word!Word.EventType.commentDeleted:member'
     package: word!
     summary: >-
-      Represents that one or more comments were deleted from the comment collection.
+      Represents that one or more comments were deleted.
 
 
       * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
@@ -61,7 +61,7 @@ fields:
     uid: 'word!Word.EventType.commentDeselected:member'
     package: word!
     summary: >-
-      Represents that a comment was deselected in the comment collection.
+      Represents that a comment was deselected.
 
 
       * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
@@ -71,7 +71,7 @@ fields:
     uid: 'word!Word.EventType.commentSelected:member'
     package: word!
     summary: >-
-      Represents that a comment was selected in the comment collection.
+      Represents that a comment was selected.
 
 
       * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
