@@ -1962,6 +1962,211 @@
                 },
                 {
                   "kind": "Property",
+                  "canonicalReference": "word!Word.Body#onCommentAdded:member",
+                  "docComment": "/**\n * Occurs when new comments are added.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentAdded: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentAdded",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Body#onCommentChanged:member",
+                  "docComment": "/**\n * Occurs when a comment or its reply is changed.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentChanged: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentChanged",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Body#onCommentDeleted:member",
+                  "docComment": "/**\n * Occurs when comments are deleted.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeleted: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeleted",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Body#onCommentDeselected:member",
+                  "docComment": "/**\n * Occurs when a comment is deselected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeselected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeselected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Body#onCommentSelected:member",
+                  "docComment": "/**\n * Occurs when a comment is selected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentSelected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentSelected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "word!Word.Body#paragraphs:member",
                   "docComment": "/**\n * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
@@ -5174,211 +5379,6 @@
                     }
                   ],
                   "name": "load"
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.CommentCollection#onCommentAdded:member",
-                  "docComment": "/**\n * Occurs when new comments are added.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly onCommentAdded: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<"
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.CommentEventArgs",
-                      "canonicalReference": "word!Word.CommentEventArgs:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ">"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "onCommentAdded",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 5
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.CommentCollection#onCommentChanged:member",
-                  "docComment": "/**\n * Occurs when a comment or its reply is changed.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly onCommentChanged: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<"
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.CommentEventArgs",
-                      "canonicalReference": "word!Word.CommentEventArgs:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ">"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "onCommentChanged",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 5
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.CommentCollection#onCommentDeleted:member",
-                  "docComment": "/**\n * Occurs when comments are deleted.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly onCommentDeleted: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<"
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.CommentEventArgs",
-                      "canonicalReference": "word!Word.CommentEventArgs:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ">"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "onCommentDeleted",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 5
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.CommentCollection#onCommentDeselected:member",
-                  "docComment": "/**\n * Occurs when a comment is deselected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly onCommentDeselected: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<"
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.CommentEventArgs",
-                      "canonicalReference": "word!Word.CommentEventArgs:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ">"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "onCommentDeselected",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 5
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.CommentCollection#onCommentSelected:member",
-                  "docComment": "/**\n * Occurs when a comment is selected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly onCommentSelected: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<"
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.CommentEventArgs",
-                      "canonicalReference": "word!Word.CommentEventArgs:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ">"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "onCommentSelected",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 5
-                  },
-                  "isStatic": false
                 },
                 {
                   "kind": "Method",
@@ -9060,6 +9060,170 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.ContentControl#onCommentAdded:member",
+                  "docComment": "/**\n * Occurs when new comments are added.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentAdded: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentAdded",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.ContentControl#onCommentChanged:member",
+                  "docComment": "/**\n * Occurs when a comment or its reply is changed.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentChanged: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentChanged",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.ContentControl#onCommentDeselected:member",
+                  "docComment": "/**\n * Occurs when a comment is deselected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeselected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeselected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.ContentControl#onCommentSelected:member",
+                  "docComment": "/**\n * Occurs when a comment is selected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentSelected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentSelected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Property",
@@ -17529,7 +17693,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.commentAdded:member",
-                  "docComment": "/**\n * Represents that one or more new comments were added to the comment collection.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents that one or more new comments were added.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17550,7 +17714,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.commentChanged:member",
-                  "docComment": "/**\n * Represents that a comment or its reply was changed in the comment collection.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents that a comment or its reply was changed.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17571,7 +17735,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.commentDeleted:member",
-                  "docComment": "/**\n * Represents that one or more comments were deleted from the comment collection.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents that one or more comments were deleted.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17592,7 +17756,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.commentDeselected:member",
-                  "docComment": "/**\n * Represents that a comment was deselected in the comment collection.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents that a comment was deselected.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17613,7 +17777,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.commentSelected:member",
-                  "docComment": "/**\n * Represents that a comment was selected in the comment collection.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents that a comment was selected.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -51802,6 +51966,211 @@
                 },
                 {
                   "kind": "Property",
+                  "canonicalReference": "word!Word.Paragraph#onCommentAdded:member",
+                  "docComment": "/**\n * Occurs when new comments are added.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentAdded: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentAdded",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Paragraph#onCommentChanged:member",
+                  "docComment": "/**\n * Occurs when a comment or its reply is changed.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentChanged: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentChanged",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Paragraph#onCommentDeleted:member",
+                  "docComment": "/**\n * Occurs when comments are deleted.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeleted: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeleted",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Paragraph#onCommentDeselected:member",
+                  "docComment": "/**\n * Occurs when a comment is deselected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeselected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeselected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Paragraph#onCommentSelected:member",
+                  "docComment": "/**\n * Occurs when a comment is selected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentSelected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentSelected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#outlineLevel:member",
                   "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
@@ -55329,6 +55698,170 @@
                     }
                   ],
                   "name": "load"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Range#onCommentAdded:member",
+                  "docComment": "/**\n * Occurs when new comments are added.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentAdded: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentAdded",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Range#onCommentChanged:member",
+                  "docComment": "/**\n * Occurs when a comment or its reply is changed.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentChanged: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentChanged",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Range#onCommentDeselected:member",
+                  "docComment": "/**\n * Occurs when a comment is deselected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentDeselected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentDeselected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Range#onCommentSelected:member",
+                  "docComment": "/**\n * Occurs when a comment is selected.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onCommentSelected: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.CommentEventArgs",
+                      "canonicalReference": "word!Word.CommentEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onCommentSelected",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Property",

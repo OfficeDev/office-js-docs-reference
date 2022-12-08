@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 09/26/2022
+ms.date: 12/07/2022
 ms.prod: word
 ms.localizationpriority: medium
 ---
@@ -45,18 +45,31 @@ The following table lists the Word JavaScript APIs currently in preview only in 
 
 | Class | Fields | Description |
 |:---|:---|:---|
-|[CommentCollection](/javascript/api/word/word.commentcollection)|[onCommentAdded](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentadded-member)|Occurs when new comments are added.|
-||[onCommentChanged](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
-||[onCommentDeleted](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentdeleted-member)|Occurs when comments are deleted.|
-||[onCommentDeselected](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentdeselected-member)|Occurs when a comment is deselected.|
-||[onCommentSelected](/javascript/api/word/word.commentcollection#word-word-commentcollection-oncommentselected-member)|Occurs when a comment is selected.|
+|[Body](/javascript/api/word/word.body)|[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
+||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
+||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
+||[onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)|Occurs when a comment is deselected.|
+||[onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)|Occurs when a comment is selected.|
 |[CommentDetail](/javascript/api/word/word.commentdetail)|[id](/javascript/api/word/word.commentdetail#word-word-commentdetail-id-member)|Represents the ID of this comment.|
 ||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
 |[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the comment changed event is triggered.|
 ||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.|
 ||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|The event type.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member)|Occurs when new comments are added.|
+||[onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
+||[onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member)|Occurs when a comment is deselected.|
+||[onCommentSelected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentselected-member)|Occurs when a comment is selected.|
 |[Field](/javascript/api/word/word.field)|[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
+|[Paragraph](/javascript/api/word/word.paragraph)|[onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)|Occurs when new comments are added.|
+||[onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
+||[onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)|Occurs when comments are deleted.|
+||[onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member)|Occurs when a comment is deselected.|
+||[onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)|Occurs when a comment is selected.|
+|[Range](/javascript/api/word/word.range)|[onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)|Occurs when new comments are added.|
+||[onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
+||[onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)|Occurs when a comment is deselected.|
+||[onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)|Occurs when a comment is selected.|
 
 ## See also
 
