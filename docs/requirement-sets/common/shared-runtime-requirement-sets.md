@@ -16,7 +16,7 @@ The following table lists the SharedRuntime 1.1 and 1.2 requirement sets, the su
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-| SharedRuntime 1.2 | Excel: XXXX (Build XX.XX) | Excel XXXX: Version XXXX (BUild XX.XX) | Excel XX | Not supported | Excel XX | Not supported |
+| SharedRuntime 1.2 | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel 16.52.0.0 | Not supported | Excel: Supported | Not supported |
 | SharedRuntime 1.1  | Excel: Version 2002 (Build 12527.20092)<br><br>PowerPoint: Version 2102 (Build 13722.10000)<br><br>Word: Version 2205 (Build 15202.10000) | Excel 2021: Version 2108 (Build 12527.20092)<br><br>PowerPoint 2021: Version 2108 (13722.10000) | Excel: 16.35<br><br>PowerPoint: 16.46.120.0<br><br>Word: 16.61.401.0 | Not supported | Excel, PowerPoint, Word: Supported | Not supported |
 
 ## Office versions and build numbers

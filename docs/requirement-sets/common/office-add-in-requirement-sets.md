@@ -223,7 +223,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | XX |
+| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.BeforeDocumentCloseNotification.disable<br>- Office.BeforeDocumentCloseNotification.enable<br>- Office.BeforeDocumentCloseNotification.onCloseActionCancelled |
 
 ---
 
