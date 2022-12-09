@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 09/27/2022
+ms.date: 12/09/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -211,11 +211,19 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ---
 
-### SharedRuntime
+### SharedRuntime 1.1
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.addin.getStartupBehavior<br>- Office.addin.hide<br>- Office.addin.onVisibilityModeChanged<br>- Office.addin.setStartupBehavior<br>- Office.addin.showAsTaskpane |
+
+---
+
+### SharedRuntime 1.2
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | XX |
 
 ---
 
