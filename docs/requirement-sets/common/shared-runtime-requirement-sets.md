@@ -1,7 +1,7 @@
 ---
 title: Shared runtime requirement sets
 description: Specifies the platforms and Office applications that support the SharedRuntime APIs.
-ms.date: 12/09/2022
+ms.date: 12/13/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -29,6 +29,17 @@ To find out more about versions, build numbers, and Office Online Server, see:
 ## Office Common API requirement sets
 
 For information about Common API requirement sets, see [Office Common API requirement sets](office-add-in-requirement-sets.md).
+
+## SharedRuntime API 1.1
+
+The SharedRuntime API 1.1 is the first version of the API. For details, see the [Office.Addin](/javascript/api/office/office.addin) reference topic.
+
+## SharedRuntime API 1.2
+
+The SharedRuntime API 1.2 adds the [BeforeDocumentCloseNotification](/javascript/api/office/office.beforedocumentclosenotification) interface, which helps ensure that workbooks don't close while an add-in process is running.
+
+> [!IMPORTANT]
+> SharedRuntime 1.2 is only supported in Excel.
 
 ## See also
 
