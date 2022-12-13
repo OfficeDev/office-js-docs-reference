@@ -36,7 +36,7 @@ The SharedRuntime API 1.1 is the first version of the API. For details, see the 
 
 ## SharedRuntime API 1.2
 
-The SharedRuntime API 1.2 adds the [BeforeDocumentCloseNotification](/javascript/api/office/office.beforedocumentclosenotification) interface, which helps ensure that workbooks don't close while an add-in process is running.
+The SharedRuntime API 1.2 adds the [Office.BeforeDocumentCloseNotification](/javascript/api/office/office.beforedocumentclosenotification) interface, which helps ensure that workbooks don't close while an add-in process is running.
 
 > [!IMPORTANT]
 > SharedRuntime 1.2 is only supported in Excel.
