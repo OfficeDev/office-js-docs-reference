@@ -211,19 +211,11 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 ---
 
-### SharedRuntime 1.1
+### SharedRuntime
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.addin.getStartupBehavior<br>- Office.addin.hide<br>- Office.addin.onVisibilityModeChanged<br>- Office.addin.setStartupBehavior<br>- Office.addin.showAsTaskpane |
-
----
-
-### SharedRuntime 1.2
-
-| Minimum Office application support | Methods in set |
-|:-----|:-----|
-| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.BeforeDocumentCloseNotification.disable<br>- Office.BeforeDocumentCloseNotification.enable<br>- Office.BeforeDocumentCloseNotification.onCloseActionCancelled |
+| See [Shared runtime requirement sets](shared-runtime-requirement-sets.md). | - Office.addin.getStartupBehavior<br>- Office.addin.hide<br>- Office.addin.onVisibilityModeChanged<br>- Office.addin.setStartupBehavior<br>- Office.addin.showAsTaskpane<br>- Office.BeforeDocumentCloseNotification.disable<br>- Office.BeforeDocumentCloseNotification.enable<br>- Office.BeforeDocumentCloseNotification.onCloseActionCancelled |
 
 ---
 
