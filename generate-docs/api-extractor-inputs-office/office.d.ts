@@ -637,14 +637,12 @@ export declare namespace Office {
         onVisibilityModeChanged(
             handler: (message: VisibilityModeChangedMessage) => void,
         ): Promise<() => Promise<void>>;
-
         /**
          * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
          * This API is only supported in Excel.
          *
          * @remarks
-         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-         * @beta
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
         */
         beforeDocumentCloseNotification: BeforeDocumentCloseNotification;
     }
@@ -654,8 +652,7 @@ export declare namespace Office {
      * This API is only supported in Excel.
      *
      * @remarks
-     * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-     * @beta
+     * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
      */
     export interface BeforeDocumentCloseNotification {
         /**
@@ -664,8 +661,7 @@ export declare namespace Office {
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          *
          * @remarks
-         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-         * @beta
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
          */
         enable(): Promise<void>;
 
@@ -674,26 +670,24 @@ export declare namespace Office {
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          *
          * @remarks
-         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-         * @beta
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
          */
         disable(): Promise<void>;
 
         /**
          * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. 
-         * This event handler will be triggered if one of the following conditions is met.
+         * This event handler will be triggered if both of the following conditions are met.
          *
-         * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
-         *
-         * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         * 1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
+         * 
+         * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
          *
          * The `BeforeDocumentCloseNotification` API is only supported in Excel.
          * @param handler - The event handler that is called when the dialog is cancelled.
          * @returns A promise that resolves when the event handler is added.
          *
          * @remarks
-         * [Api set: SharedRuntime BETA (PREVIEW ONLY)]
-         * @beta
+         * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
         */
         onCloseActionCancelled(
             handler: () => void

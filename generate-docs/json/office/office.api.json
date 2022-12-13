@@ -691,7 +691,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Addin#beforeDocumentCloseNotification:member",
-                  "docComment": "/**\n * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. This API is only supported in Excel.\n *\n * @remarks\n *\n * [Api set: SharedRuntime BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. This API is only supported in Excel.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -708,7 +708,7 @@
                     }
                   ],
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "beforeDocumentCloseNotification",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -1844,20 +1844,20 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.BeforeDocumentCloseNotification:interface",
-              "docComment": "/**\n * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document. This API is only supported in Excel.\n *\n * @remarks\n *\n * [Api set: SharedRuntime BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds. The notification dialog will allow the user to confirm the request to close the document or cancel the request to close the document. This API is only supported in Excel.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface BeforeDocumentCloseNotification "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "BeforeDocumentCloseNotification",
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.BeforeDocumentCloseNotification#disable:member(1)",
-                  "docComment": "/**\n * Prevents the notification dialog from appearing when the user attempts to close a document. The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * [Api set: SharedRuntime BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Prevents the notification dialog from appearing when the user attempts to close a document. The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1882,7 +1882,7 @@
                     "startIndex": 1,
                     "endIndex": 3
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "disable"
@@ -1890,7 +1890,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.BeforeDocumentCloseNotification#enable:member(1)",
-                  "docComment": "/**\n * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds. This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document. The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * [Api set: SharedRuntime BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Enable a modal notification dialog that appears when the user attempts to close a document. The document won't close until the user responds. This notification dialog asks the user to confirm the request to close the document, or allows the user to cancel the request to close the document. The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1915,7 +1915,7 @@
                     "startIndex": 1,
                     "endIndex": 3
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "enable"
@@ -1923,7 +1923,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.BeforeDocumentCloseNotification#onCloseActionCancelled:member(1)",
-                  "docComment": "/**\n * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. This event handler will be triggered if one of the following conditions is met.\n *\n * 1. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.\n *\n * 2. When the add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.\n *\n * The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * [Api set: SharedRuntime BETA (PREVIEW ONLY)]\n *\n * @param handler - The event handler that is called when the dialog is cancelled.\n *\n * @returns A promise that resolves when the event handler is added.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Adds an event handler that detects when the `BeforeDocumentCloseNotification` close operation is cancelled. This event handler will be triggered if both of the following conditions are met.\n *\n * 1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.\n *\n * 2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog, clicks the Close button in the upper right corner of the dialog, or presses the Esc key.\n *\n * The `BeforeDocumentCloseNotification` API is only supported in Excel.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}\n *\n * @param handler - The event handler that is called when the dialog is cancelled.\n *\n * @returns A promise that resolves when the event handler is added.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1965,7 +1965,7 @@
                     "startIndex": 3,
                     "endIndex": 7
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
