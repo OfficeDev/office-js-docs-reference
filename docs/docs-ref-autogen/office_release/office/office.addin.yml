@@ -10,6 +10,23 @@ remarks: >-
 isPreview: false
 isDeprecated: false
 type: interface
+properties:
+  - name: beforeDocumentCloseNotification
+    uid: 'office!Office.Addin#beforeDocumentCloseNotification:member'
+    package: office!
+    fullName: beforeDocumentCloseNotification
+    summary: >-
+      Represents a modal notification dialog that can appear when the user attempts to close a document. The document
+      won't close until the user responds. This API is only supported in Excel.
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'beforeDocumentCloseNotification: BeforeDocumentCloseNotification;'
+      return:
+        type: '<xref uid="office!Office.BeforeDocumentCloseNotification:interface" />'
 methods:
   - name: getStartupBehavior()
     uid: 'office!Office.Addin#getStartupBehavior:member(1)'

@@ -1,7 +1,7 @@
 ---
 title: Shared runtime requirement sets
 description: Specifies the platforms and Office applications that support the SharedRuntime APIs.
-ms.date: 09/28/2022
+ms.date: 12/13/2022
 ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
@@ -12,10 +12,11 @@ Requirement sets are named groups of API members. Office Add-ins use requirement
 
 Parts of an Office Add-in that run JavaScript code, such as task panes, function files launched from add-in commands, and Excel custom functions, can share a single JavaScript runtime. This enables all the parts to share a set of global variables, to share a set of loaded libraries, and to communicate with each other without having to pass messages through a persisted storage. For more information, see [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime).
 
-The following table lists the SharedRuntime 1.1 requirement set, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
+The following table lists the Shared Runtime requirement sets, the supported Office client applications, and the **minimum** builds or versions for those applications where applicable.
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web | Office Online Server |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+| SharedRuntime 1.2 | Excel: Version 2108 (Build 14326.20508) | Not supported | Excel: 16.52.0.0 | Not supported | Excel: Supported | Not supported |
 | SharedRuntime 1.1  | Excel: Version 2002 (Build 12527.20092)<br><br>PowerPoint: Version 2102 (Build 13722.10000)<br><br>Word: Version 2205 (Build 15202.10000) | Excel 2021: Version 2108 (Build 12527.20092)<br><br>PowerPoint 2021: Version 2108 (13722.10000) | Excel: 16.35<br><br>PowerPoint: 16.46.120.0<br><br>Word: 16.61.401.0 | Not supported | Excel, PowerPoint, Word: Supported | Not supported |
 
 ## Office versions and build numbers
@@ -28,6 +29,17 @@ To find out more about versions, build numbers, and Office Online Server, see:
 ## Office Common API requirement sets
 
 For information about Common API requirement sets, see [Office Common API requirement sets](office-add-in-requirement-sets.md).
+
+## SharedRuntime API 1.1
+
+The SharedRuntime API 1.1 is the first version of the API. For details, see the [Office.Addin](/javascript/api/office/office.addin) reference topic.
+
+## SharedRuntime API 1.2
+
+The SharedRuntime API 1.2 adds the [Office.BeforeDocumentCloseNotification](/javascript/api/office/office.beforedocumentclosenotification) interface, which helps ensure that workbooks don't close while an add-in process is running.
+
+> [!IMPORTANT]
+> SharedRuntime 1.2 is only supported in Excel.
 
 ## See also
 

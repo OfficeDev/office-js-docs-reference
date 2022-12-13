@@ -18,8 +18,10 @@ properties:
     summary: >-
       Represents a modal notification dialog that can appear when the user attempts to close a document. The document
       won't close until the user responds. This API is only supported in Excel.
-    remarks: '\[ [API set: SharedRuntime BETA (PREVIEW ONLY)](/office/dev/add-ins/reference/javascript-api-for-office) \]'
-    isPreview: true
+    remarks: >-
+      **Requirement set**: [SharedRuntime
+      1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'beforeDocumentCloseNotification: BeforeDocumentCloseNotification;'
