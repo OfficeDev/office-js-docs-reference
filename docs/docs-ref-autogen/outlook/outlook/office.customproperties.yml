@@ -186,7 +186,7 @@ methods:
 
       // are specific to the current item, and the saveAsync method to save
 
-      // these properties back to the server. After loading the custom properties,
+      // these to the mail item. After loading the custom properties,
 
       // the code sample uses the get method to read the custom property myProp,
 
