@@ -9,8 +9,8 @@ summary: >-
 
 
   While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings
-  should not be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They should
-  not be used to store sensitive information such as user credentials or security tokens.
+  shouldn't be considered secure storage. They can be accessed by Exchange Web Services or Extended MAPI. They shouldn't
+  be used to store sensitive information, such as user credentials or security tokens.
 
 
   The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.
@@ -19,11 +19,17 @@ summary: >-
   The `RoamingSettings` object is accessible via the `roamingSettings` property in the `Office.context` namespace.
 
 
+  To learn more about `RoamingSettings`<!-- -->, see [Get and set add-in metadata for an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
   **Important**:
 
 
   - The `RoamingSettings` object is initialized from the persisted storage only when the add-in is first loaded. For
-  task panes, this means that it is only initialized when the task pane first opens. If the task pane navigates to
+  task panes, this means that it's only initialized when the task pane first opens. If the task pane navigates to
   another page or reloads the current page, the in-memory object is reset to its initial values, even if your add-in has
   persisted changes. The persisted changes will not be available until the task pane (or item in the case of UI-less
   add-ins) is closed and reopened.
@@ -31,7 +37,8 @@ summary: >-
 
   - When set and saved through Outlook on Windows or Mac, these settings are reflected in Outlook on the web only after
   a browser refresh.
-remarks: >-
+
+
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `Restricted`
@@ -50,6 +57,9 @@ methods:
     fullName: get(name)
     summary: Retrieves the specified setting.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -92,8 +102,11 @@ methods:
     uid: 'outlook!Office.RoamingSettings#remove:member(1)'
     package: outlook!
     fullName: remove(name)
-    summary: Removes the specified setting
+    summary: Removes the specified setting.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -121,11 +134,14 @@ methods:
       Saves the settings.
 
 
-      Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
-      session you can just use the set and get methods to work with the in-memory copy of the settings property bag.
-      When you want to persist the settings so that they are available the next time the add-in is used, use the
-      saveAsync method.
+      Any settings previously saved by an add-in are loaded when it's initialized, so during the lifetime of the session
+      you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you
+      want to persist the settings so that they're available the next time the add-in is used, use the `saveAsync`
+      method.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
@@ -176,7 +192,7 @@ methods:
       Sets or creates the specified setting.
 
 
-      The `set` method creates a new setting of the specified name if it does not already exist, or sets an existing
+      The `set` method creates a new setting of the specified name if it doesn't already exist, or sets an existing
       setting of the specified name. The value is stored in the document as the serialized JSON representation of its
       data type.
 
@@ -187,6 +203,9 @@ methods:
       Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method
       is called.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `Restricted`
