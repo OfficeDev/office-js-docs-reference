@@ -655,16 +655,19 @@ export declare namespace Office {
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
-         * Custom properties are stored as key/value pairs on a per-app, per-item basis.
-         * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
-         * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+         * Custom properties are stored as key-value pairs on a per-app, per-item basis.
+         * This method returns a {@link Office.CustomProperties | CustomProperties} object in the callback, which provides methods to access the custom properties specific to the
+         * current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
          *
          * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
-         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to
-         * the server.
+         * This object can be used to get, set, save, and remove custom properties from the mail item.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
+         * To learn more about custom properties, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
@@ -1514,16 +1517,19 @@ export declare namespace Office {
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
-         * Custom properties are stored as key/value pairs on a per-app, per-item basis.
-         * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
-         * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+         * Custom properties are stored as key-value pairs on a per-app, per-item basis.
+         * This method returns a {@link Office.CustomProperties | CustomProperties} object in the callback, which provides methods to access the custom properties specific to the
+         * current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
          *
-         * The custom properties are provided as a `CustomProperties` object in the asyncResult.value property.
-         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to
-         * the server.
+         * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
+         * This object can be used to get, set, save, and remove custom properties from the mail item.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
+         * To learn more about custom properties, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
@@ -1923,15 +1929,27 @@ export declare namespace Office {
         urls: string[];
     }
     /**
-     * The `CustomProperties` object represents custom properties that are specific to a particular item and specific to a mail add-in for Outlook.
-     * For example, there might be a need for a mail add-in to save some data that is specific to the current email message that activated the add-in.
-     * If the user revisits the same message in the future and activates the mail add-in again, the add-in will be able to retrieve the data that had
-     * been saved as custom properties. **Important**: The maximum length of a `CustomProperties` JSON object is 2500 characters.
+     * The `CustomProperties` object represents custom properties that are specific to a particular mail item and specific to an Outlook add-in.
+     * For example, there might be a need for an add-in to save some data that's specific to the current message that activated the add-in.
+     * If the user revisits the same message in the future and activates the add-in again, the add-in will be able to retrieve the data that had
+     * been saved as custom properties. 
      *
-     * Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
+     * To learn more about `CustomProperties`, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
      *
      * @remarks
+     * [Api set: Mailbox 1.1]
+     * 
+     * When using custom properties in your add-in, keep in mind that:
+     * 
+     * - Custom properties saved while in compose mode aren't transmitted to recipients of the mail item. When a message or appointment with custom
+     * properties is sent, its properties can be accessed from the item in the Sent Items folder.
+     * If you want to make custom data accessible to recipients, consider using {@link Office.InternetHeaders | InternetHeaders} instead.
+     * 
+     * - The maximum length of a `CustomProperties` JSON object is 2500 characters.
      *
+     * - Outlook on Mac doesn't cache custom properties. If the user's network goes down, mail add-ins can't access their custom properties.
+     * 
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -1943,7 +1961,8 @@ export declare namespace Office {
          * @returns The value of the specified custom property.
          *
          * @remarks
-         *
+         * [Api set: Mailbox 1.1]
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -1967,7 +1986,7 @@ export declare namespace Office {
          */
         remove(name: string): void;
         /**
-         * Saves item-specific custom properties to the server.
+         * Saves custom properties to a message or appointment.
          *
          * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object.
          * The saving action is asynchronous.
@@ -1979,7 +1998,11 @@ export declare namespace Office {
          * Your callback function should handle this error accordingly.
          *
          * @remarks
-         *
+         * [Api set: Mailbox 1.1]
+         * 
+         * **Important**: In Outlook on Windows, custom properties saved while in compose mode only persist after the item being composed is closed or
+         * after `Office.context.mailbox.item.saveAsync` is called.
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -1990,7 +2013,7 @@ export declare namespace Office {
          */
         saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<void>) => void, asyncContext?: any): void;
         /**
-         * Saves item-specific custom properties to the server.
+         * Saves custom properties to a message or appointment.
          *
          * You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of the `CustomProperties` object.
          * The saving action is asynchronous.
@@ -2002,7 +2025,8 @@ export declare namespace Office {
          * Your callback function should handle this error accordingly.
          *
          * @remarks
-         *
+         * [Api set: Mailbox 1.1]
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -2013,14 +2037,16 @@ export declare namespace Office {
         /**
          * Sets the specified property to the specified value.
          *
-         * The `set` method sets the specified property to the specified value. You must use the `saveAsync` method to save the property to the server.
+         * The `set` method sets the specified property to the specified value. To ensure that the set property and value persist on the mail item,
+         * you must call the `saveAsync` method.
          *
          * The `set` method creates a new property if the specified property does not already exist;
          * otherwise, the existing value is replaced with the new value.
          * The `value` parameter can be of any type; however, it is always passed to the server as a string.
          *
          * @remarks
-         *
+         * [Api set: Mailbox 1.1]
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -3220,16 +3246,19 @@ export declare namespace Office {
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
-         * Custom properties are stored as key/value pairs on a per-app, per-item basis.
-         * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
-         * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+         * Custom properties are stored as key-value pairs on a per-app, per-item basis.
+         * This method returns a {@link Office.CustomProperties | CustomProperties} object in the callback, which provides methods to access the custom properties specific to the
+         * current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
          *
          * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
-         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to
-         * the server.
+         * This object can be used to get, set, save, and remove custom properties from the mail item.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
+         * To learn more about custom properties, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
@@ -3964,15 +3993,19 @@ export declare namespace Office {
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
-         * Custom properties are stored as key/value pairs on a per-app, per-item basis.
-         * This method returns a `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
-         * current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+         * Custom properties are stored as key-value pairs on a per-app, per-item basis.
+         * This method returns a {@link Office.CustomProperties | CustomProperties} object in the callback, which provides methods to access the custom properties specific to the
+         * current item and the current add-in. Custom properties aren't encrypted on the item, so this shouldn't be used as secure storage.
          *
          * The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property.
-         * This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+         * This object can be used to get, set, save, and remove custom properties from the mail item.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
+         * To learn more about custom properties, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
+         * 
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
@@ -4541,26 +4574,30 @@ export declare namespace Office {
      * The settings created by using the methods of the `RoamingSettings` object are saved per add-in and per user.
      * That is, they are available only to the add-in that created them, and only from the user's mailbox in which they are saved.
      *
-     * While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings should not be considered
+     * While the Outlook add-in API limits access to these settings to only the add-in that created them, these settings shouldn't be considered
      * secure storage. They can be accessed by Exchange Web Services or Extended MAPI.
-     * They should not be used to store sensitive information such as user credentials or security tokens.
+     * They shouldn't be used to store sensitive information, such as user credentials or security tokens.
      *
      * The name of a setting is a String, while the value can be a String, Number, Boolean, null, Object, or Array.
      *
      * The `RoamingSettings` object is accessible via the `roamingSettings` property in the `Office.context` namespace.
+     * 
+     * To learn more about `RoamingSettings`, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in | Get and set add-in metadata for an Outlook add-in}.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.1]
      *
      * **Important**:
      *
      * - The `RoamingSettings` object is initialized from the persisted storage only when the add-in is first loaded.
-     * For task panes, this means that it is only initialized when the task pane first opens.
+     * For task panes, this means that it's only initialized when the task pane first opens.
      * If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if
      * your add-in has persisted changes.
      * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
      *
      * - When set and saved through Outlook on Windows or Mac, these settings are reflected in Outlook on the web only after a browser refresh.
-     *
-     * @remarks
-     *
+     * 
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -4572,6 +4609,7 @@ export declare namespace Office {
          * @returns Type: String | Number | Boolean | Object | Array
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          *
@@ -4581,9 +4619,10 @@ export declare namespace Office {
          */
         get(name: string): any;
         /**
-         * Removes the specified setting
+         * Removes the specified setting.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          *
@@ -4595,11 +4634,12 @@ export declare namespace Office {
         /**
          * Saves the settings.
          *
-         * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use
+         * Any settings previously saved by an add-in are loaded when it's initialized, so during the lifetime of the session you can just use
          * the set and get methods to work with the in-memory copy of the settings property bag.
-         * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
+         * When you want to persist the settings so that they're available the next time the add-in is used, use the `saveAsync` method.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          *
@@ -4612,7 +4652,7 @@ export declare namespace Office {
         /**
          * Sets or creates the specified setting.
          *
-         * The `set` method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name.
+         * The `set` method creates a new setting of the specified name if it doesn't already exist, or sets an existing setting of the specified name.
          * The value is stored in the document as the serialized JSON representation of its data type.
          *
          * A maximum of 32KB is available for the settings of each add-in.
@@ -4620,6 +4660,7 @@ export declare namespace Office {
          * Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method is called.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          *

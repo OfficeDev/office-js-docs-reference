@@ -4,16 +4,34 @@ uid: 'outlook!Office.CustomProperties:interface'
 package: outlook!
 fullName: Office.CustomProperties
 summary: >-
-  The `CustomProperties` object represents custom properties that are specific to a particular item and specific to a
-  mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific to
-  the current email message that activated the add-in. If the user revisits the same message in the future and activates
-  the mail add-in again, the add-in will be able to retrieve the data that had been saved as custom properties.
-  **Important**: The maximum length of a `CustomProperties` JSON object is 2500 characters.
+  The `CustomProperties` object represents custom properties that are specific to a particular mail item and specific to
+  an Outlook add-in. For example, there might be a need for an add-in to save some data that's specific to the current
+  message that activated the add-in. If the user revisits the same message in the future and activates the add-in again,
+  the add-in will be able to retrieve the data that had been saved as custom properties.
 
 
-  Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access
-  their custom properties.
+  To learn more about `CustomProperties`<!-- -->, see [Get and set add-in metadata for an Outlook
+  add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 remarks: >-
+  \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  When using custom properties in your add-in, keep in mind that:
+
+
+  - Custom properties saved while in compose mode aren't transmitted to recipients of the mail item. When a message or
+  appointment with custom properties is sent, its properties can be accessed from the item in the Sent Items folder. If
+  you want to make custom data accessible to recipients, consider using
+  [InternetHeaders](xref:outlook!Office.InternetHeaders:interface) instead.
+
+
+  - The maximum length of a `CustomProperties` JSON object is 2500 characters.
+
+
+  - Outlook on Mac doesn't cache custom properties. If the user's network goes down, mail add-ins can't access their
+  custom properties.
+
+
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
   `ReadItem`
@@ -32,6 +50,9 @@ methods:
     fullName: get(name)
     summary: Returns the value of the specified custom property.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -122,7 +143,7 @@ methods:
     package: outlook!
     fullName: 'saveAsync(callback, asyncContext)'
     summary: >-
-      Saves item-specific custom properties to the server.
+      Saves custom properties to a message or appointment.
 
 
       You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of
@@ -134,6 +155,13 @@ methods:
       the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would
       return an error. Your callback function should handle this error accordingly.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **Important**: In Outlook on Windows, custom properties saved while in compose mode only persist after the item
+      being composed is closed or after `Office.context.mailbox.item.saveAsync` is called.
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -155,7 +183,7 @@ methods:
 
       // are specific to the current item, and the saveAsync method to save
 
-      // these properties back to the server. After loading the custom properties,
+      // these to the mail item. After loading the custom properties,
 
       // the code sample uses the get method to read the custom property myProp,
 
@@ -219,7 +247,7 @@ methods:
     package: outlook!
     fullName: saveAsync(asyncContext)
     summary: >-
-      Saves item-specific custom properties to the server.
+      Saves custom properties to a message or appointment.
 
 
       You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of
@@ -231,6 +259,9 @@ methods:
       the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would
       return an error. Your callback function should handle this error accordingly.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
@@ -258,14 +289,17 @@ methods:
       Sets the specified property to the specified value.
 
 
-      The `set` method sets the specified property to the specified value. You must use the `saveAsync` method to save
-      the property to the server.
+      The `set` method sets the specified property to the specified value. To ensure that the set property and value
+      persist on the mail item, you must call the `saveAsync` method.
 
 
       The `set` method creates a new property if the specified property does not already exist; otherwise, the existing
       value is replaced with the new value. The `value` parameter can be of any type; however, it is always passed to
       the server as a string.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
