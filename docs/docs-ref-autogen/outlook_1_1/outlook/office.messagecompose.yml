@@ -878,16 +878,22 @@ methods:
       Asynchronously loads custom properties for this add-in on the selected item.
 
 
-      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
-      `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
-      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
-      as secure storage.
+      Custom properties are stored as key-value pairs on a per-app, per-item basis. This method returns a
+      [CustomProperties](xref:outlook!Office.CustomProperties:interface) object in the callback, which provides methods
+      to access the custom properties specific to the current item and the current add-in. Custom properties aren't
+      encrypted on the item, so this shouldn't be used as secure storage.
 
 
       The custom properties are provided as a `CustomProperties` object in the `asyncResult.value` property. This object
-      can be used to get, set, and remove custom properties from the item and save changes to the custom property set
-      back to the server.
+      can be used to get, set, save, and remove custom properties from the mail item.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      To learn more about custom properties, see [Get and set add-in metadata for an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadItem`
