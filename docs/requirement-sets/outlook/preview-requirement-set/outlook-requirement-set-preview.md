@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 10/10/2022
+ms.date: 12/20/2022
 ms.localizationpriority: medium
 ---
 
@@ -76,6 +76,18 @@ Added a new property that returns an object that allows you to manage the delive
 Added a new object that allows you to manage the delivery date and time of a message in Compose mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Event-based activation: OnMessageFromChanged event
+
+Added support for the `OnMessageFromChanged` event in [event-based activation add-ins](/office/dev/add-ins/outlook/autolaunch). To learn more about this event, see [Automatically update your signature when switching between mail accounts (preview)](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events).
+
+**Available in**: Outlook on Windows (connected to a Microsoft 365 subscription)
 
 <br>
 
