@@ -950,8 +950,12 @@ functions:
   - name: Excel.createWorkbook(base64)
     uid: 'excel!Excel.createWorkbook:function(1)'
     package: excel!
-    summary: |-
+    summary: >-
       Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+      Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in
+      user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in"
+      button to proceed.
+
 
       \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
