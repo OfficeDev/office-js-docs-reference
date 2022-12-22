@@ -9244,9 +9244,9 @@ PowerPoint.Presentation,slideMasters,Property,Good,false
 PowerPoint.Presentation,slides,Property,Good,false
 PowerPoint.Presentation,tags,Property,Good,false
 PowerPoint.Presentation,title,Property,Missing,false
-PowerPoint.Presentation,getSelectedShapes(),Method,Poor,false
-PowerPoint.Presentation,getSelectedSlides(),Method,Poor,false
-PowerPoint.Presentation,getSelectedTextRange(),Method,Poor,false
+PowerPoint.Presentation,getSelectedShapes(),Method,Poor,true
+PowerPoint.Presentation,getSelectedSlides(),Method,Poor,true
+PowerPoint.Presentation,getSelectedTextRange(),Method,Poor,true
 PowerPoint.Presentation,getSelectedTextRangeOrNullObject(),Method,Poor,false
 PowerPoint.Presentation,insertSlidesFromBase64(base64File,Method,Poor,true
 PowerPoint.Presentation,load(options),Method,Poor,false

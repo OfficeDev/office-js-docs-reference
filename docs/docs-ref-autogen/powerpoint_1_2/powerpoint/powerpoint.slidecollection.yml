@@ -105,6 +105,35 @@ methods:
       });
 
       ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Selects slides 2, 4, and 5.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slide2 = context.presentation.slides.getItemAt(1);
+        const slide4 = context.presentation.slides.getItemAt(3);
+        const slide5 = context.presentation.slides.getItemAt(4);
+        slide2.load("id");
+        slide4.load("id");
+        slide5.load("id");
+        try {
+          await context.sync();
+        } catch (error) {
+          console.warn("This action requires at least 5 slides in the presentation.");
+          return;
+        }
+        await context.sync();
+        context.presentation.setSelectedSlides([slide2.id, slide4.id, slide5.id]);
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

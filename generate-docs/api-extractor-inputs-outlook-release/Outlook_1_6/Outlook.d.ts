@@ -1990,7 +1990,8 @@ export declare namespace Office {
      * 
      * - Custom properties saved while in compose mode aren't transmitted to recipients of the mail item. When a message or appointment with custom
      * properties is sent, its properties can be accessed from the item in the Sent Items folder.
-     * If you want to make custom data accessible to recipients, consider using {@link Office.InternetHeaders | InternetHeaders} instead.
+     * If you want to make custom data accessible to recipients, consider using
+     * {@link https://learn.microsoft.com/javascript/api/outlook/office.internetheaders | InternetHeaders} instead.
      * 
      * - The maximum length of a `CustomProperties` JSON object is 2500 characters.
      *
