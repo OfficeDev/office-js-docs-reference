@@ -51,6 +51,27 @@ methods:
       ```typescript
 
       // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Deletes the selected slides.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slides = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        slides.items.map((slide) => {
+          slide.delete();
+        });
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
       await PowerPoint.run(async function(context) {
@@ -70,27 +91,6 @@ methods:
         }
 
         await context.sync();
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
-
-      // Deletes the selected slides.
-
-      await PowerPoint.run(async (context) => {
-        context.presentation.load("slides");
-        await context.sync();
-        const slides = context.presentation.getSelectedSlides();
-        const slideCount = slides.getCount();
-        slides.load("items");
-        await context.sync();
-        slides.items.map((slide) => {
-          slide.delete();
-        });
       });
 
       ```

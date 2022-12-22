@@ -79,7 +79,98 @@ methods:
     summary: >-
       Returns the selected shapes in the current slide of the presentation. If no shapes are selected, an empty
       collection is returned.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Gets the shapes you selected on the slide and displays their IDs on the task pane.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        await context.sync();
+        finalTable += "<br>getSelectedShapes.getCount returned:<b>" + shapeCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape, index) => {
+          finalTable += "<tr><td>" + index + "</td><td>" + shape.id + "</td></tr>";
+        });
+        finalTable += "</table>";
+        $("#outputSpan").empty();
+        $("#outputSpan").append(finalTable);
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Saves which shapes are selected so that they can be reselected later.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.load("slides");
+        await context.sync();
+        const slides = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        savedSlideSelection = [];
+        slides.items.map((slide) => {
+          savedSlideSelection.push(slide.id);
+        });
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape) => {
+          savedShapeSelection.push(shape.id);
+        });
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -94,7 +185,83 @@ methods:
     summary: >-
       Returns the selected slides in the current view of the presentation. The first item in the collection is the
       active slide that is visible in the editing area. If no slides are selected, an empty collection is returned.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Gets the selected slides and displays their IDs on the task pane.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        context.presentation.load("slides");
+        await context.sync();
+        const allSlidesList = {};
+        const allSlidesCount = context.presentation.slides.getCount();
+        context.presentation.slides.load("items");
+        await context.sync();
+        let allSlideItems = context.presentation.slides.items;
+        allSlideItems.map((slide, index) => {
+          allSlidesList[slide.id] = `Slide ${index + 1}`;
+        });
+
+        if ($("#id-check-usenative").is(":checked")) {
+          context.presentation.load("tags");
+        }
+        const slides = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        slides.load("items");
+        await context.sync();
+        finalTable += "<br>getSelectedSlides.getCount returned:<b>" + slideCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        slides.items.map((slide, index) => {
+          finalTable += "<tr><td>" + index + " - " + allSlidesList[slide.id] + "</td><td>" + slide.id + "</td></tr>";
+        });
+        finalTable += "</table>";
+        $("#outputSpan").empty();
+        $("#outputSpan").append(finalTable);
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
+      // Saves which slides are currently selected so they can be reselected later.
+
+      await PowerPoint.run(async (context) => {
+        let finalTable = "";
+        context.presentation.load("slides");
+        await context.sync();
+        const slides = context.presentation.getSelectedSlides();
+        const slideCount = slides.getCount();
+        await context.sync();
+        finalTable += "<br>getSelectedSlides.getCount returned:<b>" + slideCount.value + "</b><br>";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        savedSlideSelection = [];
+        slides.load("items");
+        await context.sync();
+        slides.items.map((slide, index) => {
+          finalTable += "<tr><td>" + index + "</td><td>" + slide.id + "</td></tr>";
+          savedSlideSelection.push(slide.id);
+        });
+        finalTable += "</table>";
+        $("#outputSpan").empty();
+        $("#outputSpan").append(finalTable);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +276,71 @@ methods:
     summary: >-
       Returns the selected [PowerPoint.TextRange](xref:powerpoint!PowerPoint.TextRange:class) in the current view of the
       presentation. Throws an exception if no text is selected.
-    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+      // Gets the selected text range and prints data about the range on the task pane.
+
+      await PowerPoint.run(async (context) => {
+        const textRange = context.presentation.getSelectedTextRange();
+        try {
+          await context.sync();
+        } catch (error) {
+          console.warn("You must select only one range of text for this action to work.");
+          return;
+        }
+        textRange.load("text");
+        textRange.load("start");
+        textRange.load("length");
+        await context.sync();
+        let txtHtml = textRange.text;
+        txtHtml = txtHtml.replace(/\n/g, "<br>");
+        txtHtml = txtHtml.replace(/\r/g, "<br>");
+        txtHtml = txtHtml.replace(/\v/g, "<br>");
+        let txtExplained = textRange.text;
+        txtExplained = txtExplained.replace(/\n/g, "<font color=red>NL</font>");
+        txtExplained = txtExplained.replace(/\r/g, "<font color=red>CR</font>");
+        txtExplained = txtExplained.replace(/\v/g, "<font color=red>VV</font>");
+        let finalTable = "";
+        finalTable +=
+          "<br><table border=1 cellpadding=3 cellspacing=0><tr><td bgcolor=#3333EE><font color=white>Index</font></td><td bgcolor=#3333EE><font color=white>Id</font></td></tr>";
+        finalTable += "<tr><td>Raw</td><td>" + textRange.text + "</td></tr>";
+        finalTable += "<tr><td>Html</td><td>" + txtHtml + "</td></tr>";
+        finalTable += "<tr><td>Exp</td><td>" + txtExplained + "</td></tr>";
+        finalTable += "<tr><td>Start</td><td>" + textRange.start + "</td></tr>";
+        finalTable += "<tr><td>Length</td><td>" + textRange.length + "</td></tr>";
+        finalTable += "</table>";
+        $("#outputSpan").empty();
+        $("#outputSpan").append(finalTable);
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+
+      // Sets the range selection to the range that was saved previously.
+
+      await PowerPoint.run(async (context) => {
+        const slide1 = context.presentation.slides.getItem(savedTextSlideSelection[0]);
+        const shape1 = slide1.shapes.getItem(savedTextShapeSelection[0]);
+        const textRange = shape1.textFrame.textRange.getSubstring(savedTextTextRangeStart, savedTextTextRangeLength);
+        textRange.setSelected();
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,6 +493,20 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
+      // Sets selection to the slides that were saved.
+
+      await PowerPoint.run(async (context) => {
+        context.presentation.setSelectedSlides(savedSlideSelection);
+        await context.sync();
+      });
+
+      ```
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+
       // Selects slides 2, 4, and 5.
 
       await PowerPoint.run(async (context) => {
@@ -281,20 +526,6 @@ methods:
         }
         await context.sync();
         context.presentation.setSelectedSlides([slide2.id, slide4.id, slide5.id]);
-        await context.sync();
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
-
-      // Sets selection to the slides that were saved.
-
-      await PowerPoint.run(async (context) => {
-        context.presentation.setSelectedSlides(savedSlideSelection);
         await context.sync();
       });
 
