@@ -197,7 +197,7 @@ methods:
       data type.
 
 
-      A maximum of 32KB is available for the settings of each add-in.
+      A maximum of 32KB is available for the settings of each add-in. Error code 9057 means that roaming settings size exceeded the limit.
 
 
       Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method
