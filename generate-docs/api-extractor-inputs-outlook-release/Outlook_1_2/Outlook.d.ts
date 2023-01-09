@@ -4038,7 +4038,7 @@ export declare namespace Office {
          * The `set` method creates a new setting of the specified name if it doesn't already exist, or sets an existing setting of the specified name.
          * The value is stored in the document as the serialized JSON representation of its data type.
          *
-         * A maximum of 32KB is available for the settings of each add-in.
+         * A maximum of 32KB is available for the settings of each add-in. An error with code 9057 is thrown when that size limit is exceeded.
          *
          * Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method is called.
          *
