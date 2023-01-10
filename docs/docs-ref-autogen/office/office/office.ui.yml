@@ -149,7 +149,8 @@ methods:
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office applications and API
       requirements](https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
-      -->.
+      -->, if you're using the XML manifest. If you're using the Teams manifest (preview), see [Teams manifest for
+      Office Add-ins (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
@@ -263,7 +264,8 @@ methods:
       Mailbox requirement set 1.4 for Outlook. For more on how to specify a requirement set in your manifest, see
       [Specify Office applications and API
       requirements](https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)<!--
-      -->.
+      -->, if you're using the XML manifest. If you're using the Teams manifest (preview), see [Teams manifest for
+      Office Add-ins (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
 
 
       The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial

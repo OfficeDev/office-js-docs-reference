@@ -33,7 +33,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -103,7 +103,7 @@ properties:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -167,7 +167,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -216,7 +216,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -249,7 +249,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -285,7 +285,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -327,7 +327,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -371,7 +371,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -413,7 +413,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -451,7 +451,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -513,7 +513,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -566,7 +566,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -611,7 +611,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -650,7 +650,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -686,7 +686,7 @@ properties:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -808,7 +808,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -848,7 +848,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -889,7 +889,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -941,7 +941,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1040,7 +1040,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1184,7 +1184,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1333,7 +1333,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1420,7 +1420,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -1451,8 +1451,8 @@ methods:
             One of the `EntityType` enumeration values.
 
 
-            While the minimum permission level to use this method is `Restricted`<!-- -->, some entity types require
-            `ReadItem` to access, as specified in the following table.
+            While the minimum permission level to use this method is **restricted**, some entity types require **read
+            item** to access, as specified in the following table.
 
 
             <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
@@ -1494,7 +1494,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1565,7 +1565,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1671,7 +1671,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1763,7 +1763,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1873,7 +1873,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1982,7 +1982,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook

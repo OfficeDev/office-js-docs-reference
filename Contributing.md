@@ -49,7 +49,7 @@ Using this method allows you to contribute to one article at a time.
 1. Scroll to the bottom and enter a description.
 1. Choose **Propose file change** > **Create pull request**.
 
-You now have successfully submitted a pull request. Pull requests are typically reviewed within 10 business days.
+You now have successfully submitted a pull request. Pull requests are typically reviewed within 10 business days. Your changes will not necessarily be published immediately after your pull request is accepted. There is a further publication step that is done internally by Microsoft that typically will happen within a few days.
 
 ### Contribute using Git
 
@@ -103,7 +103,7 @@ To make the contribution process as seamless as possible, follow these steps.
 
 1. Create a new branch.
 1. Add new content or edit existing content.
-1. Submit a pull request to the main repository.
+1. Submit a pull request to the main repository. 
 1. Delete the branch.
 
 **Important**: Limit each branch to a single concept/article to streamline the work flow and reduce the chance of merge conflicts. Content appropriate for a new branch includes:
@@ -150,7 +150,7 @@ When you're finished with your work and are ready to have it merged into the mai
 1. Add a title to your pull request, and describe all the changes you're making.
 1. Submit the pull request.
 
-One of the site administrators will process your pull request. Your pull request will surface on the [OfficeDev/office-js-docs-reference](https://github.com/OfficeDev/office-js-docs-reference/pulls) site under **Pull requests**. When the pull request is accepted, the issue will be resolved.
+One of the site administrators will process your pull request. Your pull request will surface on the [OfficeDev/office-js-docs-reference](https://github.com/OfficeDev/office-js-docs-reference/pulls) site under **Pull requests**. When the pull request is accepted, the issue will be resolved. Your changes will not necessarily be published immediately after your pull request is accepted. There is a further publication step that is done internally by Microsoft that typically will happen within a few days.
 
 #### Create a new branch after merge
 
