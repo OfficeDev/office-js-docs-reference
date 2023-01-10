@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 12/20/2022
+ms.date: 01/10/2023
 ms.localizationpriority: medium
 ---
 
@@ -128,6 +128,20 @@ Added ability to get Office theme.
 Added `OfficeThemeChanged` event to `Mailbox`.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Prepend content on send
+
+#### [Office.context.mailbox.item.body.prependOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-prependonsendasync-member(1))
+
+Added method to prepend content to the beginning of a message or appointment body when the mail item is sent.
+
+**Available in**: Outlook on Windows
 
 <br>
 
