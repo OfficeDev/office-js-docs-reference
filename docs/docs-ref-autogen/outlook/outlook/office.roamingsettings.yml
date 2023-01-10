@@ -41,7 +41,7 @@ remarks: >-
 
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `Restricted`
+  **restricted**
 
 
   **[Applicable Outlook
@@ -62,7 +62,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -109,7 +109,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -144,7 +144,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -197,7 +197,8 @@ methods:
       data type.
 
 
-      A maximum of 32KB is available for the settings of each add-in. Error code 9057 means that roaming settings size exceeded the limit.
+      A maximum of 32KB is available for the settings of each add-in. An error with code 9057 is thrown when that size
+      limit is exceeded.
 
 
       Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method
@@ -208,7 +209,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook

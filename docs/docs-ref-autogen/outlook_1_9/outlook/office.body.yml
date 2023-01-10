@@ -20,7 +20,7 @@ remarks: >-
 
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `ReadItem`
+  **read item**
 
 
   **[Applicable Outlook
@@ -38,9 +38,11 @@ methods:
       Appends on send the specified content to the end of the item body, after any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, the `ExtendedPermissions` manifest node must include the `AppendOnSend`
-      extended permission. To learn more about append-on-send and its configuration, see [Implement append-on-send in
-      your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
+      the type of manifest. See [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
 
 
       **Important**: If the [on-send
@@ -67,7 +69,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -154,9 +156,11 @@ methods:
       Appends on send the specified content to the end of the item body, after any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, the `ExtendedPermissions` manifest node must include the `AppendOnSend`
-      extended permission. To learn more about append-on-send and its configuration, see [Implement append-on-send in
-      your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
+      the type of manifest. See [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
 
 
       **Important**: If the [on-send
@@ -183,7 +187,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -237,7 +241,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -313,7 +317,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -392,7 +396,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -454,7 +458,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -505,7 +509,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -612,7 +616,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -670,7 +674,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -813,7 +817,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -871,7 +875,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -978,7 +982,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook

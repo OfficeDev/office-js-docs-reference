@@ -20,7 +20,7 @@ remarks: >-
 
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `ReadItem`
+  **read item**
 
 
   **[Applicable Outlook
@@ -38,9 +38,11 @@ methods:
       Appends on send the specified content to the end of the item body, after any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, the `ExtendedPermissions` manifest node must include the `AppendOnSend`
-      extended permission. To learn more about append-on-send and its configuration, see [Implement append-on-send in
-      your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
+      the type of manifest. See [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
 
 
       **Important**: If the [on-send
@@ -67,7 +69,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -154,9 +156,11 @@ methods:
       Appends on send the specified content to the end of the item body, after any signature.
 
 
-      To use `appendOnSendAsync`<!-- -->, the `ExtendedPermissions` manifest node must include the `AppendOnSend`
-      extended permission. To learn more about append-on-send and its configuration, see [Implement append-on-send in
-      your Outlook add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
+      To use `appendOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary with
+      the type of manifest. See [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
 
 
       **Important**: If the [on-send
@@ -183,7 +187,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -237,7 +241,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -313,7 +317,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -392,7 +396,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -454,7 +458,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -505,7 +509,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -612,7 +616,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -631,6 +635,168 @@ methods:
       parameters:
         - id: data
           description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
+          type: string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'prependOnSendAsync(data, options, callback)'
+    uid: 'outlook!Office.Body#prependOnSendAsync:member(1)'
+    package: outlook!
+    fullName: 'prependOnSendAsync(data, options, callback)'
+    summary: >-
+      Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+
+
+      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary
+      with the type of manifest. For guidance, see [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      parameter.
+
+
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+
+
+      - In a [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->,
+      the prepend-on-send feature runs first.
+
+
+      - A new line is added after the prepended content.
+
+
+      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order of the inserted content depends on the
+      order in which the add-in runs. The content of the last run add-in appears above previously prepended content.
+
+
+      - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain
+      text will be inserted into an HTML body.
+
+
+      **Errors**:
+
+
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
+
+
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html`<!-- -->,
+      but the item body is in plain text format.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        prependOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: data
+          description: >-
+            The string to be prepended to the beginning of the message or appointment body. The string is limited to
+            5,000 characters.
+          type: string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Any object
+            that can be accessed in the callback function. `coercionType`<!-- -->: The desired format for the body. The
+            string in the `data` parameter is converted to this format.
+          type: >-
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. Any errors encountered will be provided in the
+            `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'prependOnSendAsync(data, callback)'
+    uid: 'outlook!Office.Body#prependOnSendAsync:member(2)'
+    package: outlook!
+    fullName: 'prependOnSendAsync(data, callback)'
+    summary: >-
+      Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+
+
+      To use `prependOnSendAsync`<!-- -->, you must specify a supplementary permission in the manifest. Details vary
+      with the type of manifest. For guidance, see [Understanding Outlook add-in
+      permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      parameter.
+
+
+      **Important**: When implementing `prependOnSendAsync`<!-- -->, keep the following in mind.
+
+
+      - In a [Smart Alerts
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!-- -->,
+      the prepend-on-send feature runs first.
+
+
+      - A new line is added after the prepended content.
+
+
+      - If multiple active add-ins call `prependOnSendAsync`<!-- -->, the order of the inserted content depends on the
+      order in which the add-in runs. The content of the last run add-in appears above previously prepended content.
+
+
+      - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain
+      text will be inserted into an HTML body.
+
+
+      **Errors**:
+
+
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter exceeds 5,000 characters.
+
+
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html`<!-- -->,
+      but the item body is in plain text format.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'prependOnSendAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: data
+          description: >-
+            The string to be prepended to the beginning of the message or appointment body. The string is limited to
+            5,000 characters.
           type: string
         - id: callback
           description: >-
@@ -670,7 +836,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -813,7 +979,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -871,7 +1037,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -978,7 +1144,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -1035,7 +1201,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook
@@ -1162,7 +1328,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteItem`
+      **read/write item**
 
 
       **[Applicable Outlook

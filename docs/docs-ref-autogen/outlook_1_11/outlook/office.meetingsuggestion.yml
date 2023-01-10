@@ -16,7 +16,7 @@ summary: >-
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `ReadItem`
+  **read item**
 
 
   **[Applicable Outlook

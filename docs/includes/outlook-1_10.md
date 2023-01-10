@@ -18,6 +18,6 @@
 ||[isClientSignatureEnabledAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<boolean>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-isclientsignatureenabledasync-member(1))|Gets if the client signature is enabled.|
 |[NotificationMessageAction](/javascript/api/outlook/office.notificationmessageaction)|[actionText](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-actiontext-member)|The text of the action link.|
 ||[actionType](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-actiontype-member)|The type of action to be performed.|
-||[commandId](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-commandid-member)|The button defined in the manifest based on the item type.|
+||[commandId](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-commandid-member)|The button defined in the manifest.|
 ||[contextData](/javascript/api/outlook/office.notificationmessageaction#outlook-office-notificationmessageaction-contextdata-member)|Any JSON data the action button needs to pass on.|
 |[NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails)|[actions](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-actions-member)|Specifies actions for the message.|
