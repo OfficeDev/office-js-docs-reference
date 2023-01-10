@@ -135,7 +135,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
-### Prepend-on-send
+### Prepend content on send
 
 #### [Office.context.mailbox.item.body.prependOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-prependonsendasync-member(1))
 
