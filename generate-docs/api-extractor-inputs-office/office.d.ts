@@ -941,7 +941,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
@@ -981,7 +981,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1036,7 +1036,7 @@ export declare namespace Office {
          *
          * See {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
@@ -1067,7 +1067,7 @@ export declare namespace Office {
              *
              * [Api set: Mailbox 1.3]
              * 
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              *
@@ -1093,7 +1093,7 @@ export declare namespace Office {
              *
              * [Api set: Mailbox 1.8]
              * 
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
@@ -1109,7 +1109,7 @@ export declare namespace Office {
              * 
              * [Api set: Mailbox 1.12]
              * 
-             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: `Restricted`
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **restricted**
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
@@ -1178,7 +1178,7 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.
@@ -1279,7 +1279,7 @@ export declare namespace Office {
          *
          * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
          * for Outlook. For more on how to specify a requirement set in your manifest, see
-         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
+         * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
          * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
          * other domains.

@@ -19,7 +19,7 @@ remarks: >-
 
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `ReadWriteMailbox`
+  **read/write mailbox**
 
 
   **[Applicable Outlook
@@ -42,7 +42,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -120,7 +120,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -162,7 +162,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -202,7 +202,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -259,7 +259,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -328,7 +328,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook

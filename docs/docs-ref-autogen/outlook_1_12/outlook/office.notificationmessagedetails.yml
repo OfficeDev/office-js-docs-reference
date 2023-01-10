@@ -10,7 +10,7 @@ remarks: >-
 
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `ReadItem`
+  **read item**
 
 
   **[Applicable Outlook
@@ -49,9 +49,9 @@ properties:
     package: outlook!
     fullName: icon
     summary: >-
-      A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
-      It is applicable if the type is `InformationalMessage`<!-- -->, and is required if the type is
-      `InsightMessage`<!-- -->. Specifying this parameter for an unsupported type results in an exception.
+      A reference to an icon that is defined in the manifest. It appears in the infobar area. It is applicable if the
+      type is `InformationalMessage`<!-- -->, and is required if the type is `InsightMessage`<!-- -->. Specifying this
+      parameter for an unsupported type results in an exception.
 
 
       **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,

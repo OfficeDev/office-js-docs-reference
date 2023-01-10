@@ -16,7 +16,7 @@
 ||[saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-saveasync-member(1))|Asynchronously saves an item.|
 ||[saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-saveasync-member(1))|Asynchronously saves an item.|
 |[MessageRead](/javascript/api/outlook/office.messageread)|[notificationMessages](/javascript/api/outlook/office.messageread#outlook-office-messageread-notificationmessages-member)|Gets the notification messages for an item.|
-|[NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails)|[icon](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-icon-member)|A reference to an icon that is defined in the manifest in the `Resources` section.|
+|[NotificationMessageDetails](/javascript/api/outlook/office.notificationmessagedetails)|[icon](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-icon-member)|A reference to an icon that is defined in the manifest.|
 ||[key](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-key-member)|The identifier for the notification message.|
 ||[message](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-message-member)|The text of the notification message.|
 ||[persistent](/javascript/api/outlook/office.notificationmessagedetails#outlook-office-notificationmessagedetails-persistent-member)|Specifies if the message should be persistent.|

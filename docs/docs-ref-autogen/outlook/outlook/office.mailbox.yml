@@ -16,7 +16,7 @@ summary: |-
 remarks: >-
   **[Minimum permission
   level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `Restricted`
+  **restricted**
 
 
   **[Applicable Outlook
@@ -59,7 +59,7 @@ properties:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -84,18 +84,19 @@ properties:
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
 
 
-      Your app must have the `ReadItem` permission specified in its manifest to call the `ewsUrl` member in read mode.
+      Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read
+      mode.
 
 
       In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have
-      `ReadWriteItem` permissions to call the `saveAsync` method.
+      **read/write item** permissions to call the `saveAsync` method.
 
 
       **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -185,7 +186,7 @@ properties:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -271,11 +272,12 @@ properties:
       Gets the URL of the REST endpoint for this email account.
 
 
-      Your app must have the `ReadItem` permission specified in its manifest to call the `restUrl` member in read mode.
+      Your app must have the **read item** permission specified in its manifest to call the `restUrl` member in read
+      mode.
 
 
       In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. Your app must have
-      `ReadWriteItem` permissions to call the `saveAsync` method.
+      **read/write item** permissions to call the `saveAsync` method.
 
 
       However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
@@ -288,7 +290,7 @@ properties:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -390,7 +392,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -473,7 +475,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -523,7 +525,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -593,7 +595,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -624,7 +626,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
@@ -715,7 +717,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -792,7 +794,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -856,7 +858,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -939,7 +941,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -992,7 +994,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1057,7 +1059,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1141,7 +1143,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1195,7 +1197,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1276,7 +1278,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1378,7 +1380,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1422,7 +1424,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1534,7 +1536,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1667,7 +1669,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1755,11 +1757,11 @@ methods:
       The token is returned as a string in the `asyncResult.value` property.
 
 
-      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of `ReadItem`<!-- -->.
+      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
 
 
       Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of `ReadWriteItem`<!-- -->.
+      method requires a minimum permission level of **read/write item**.
 
 
       **Important**: For guidance on delegate or shared scenarios, see the [shared folders and shared
@@ -1771,9 +1773,9 @@ methods:
 
       When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token will not work to
       authenticate EWS calls. The token will be limited in scope to read-only access to the current item and its
-      attachments, unless the add-in has specified the `ReadWriteMailbox` permission in its manifest. If the
-      `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar,
-      and contacts, including the ability to send mail.
+      attachments, unless the add-in has specified the **read/write mailbox** permission in its manifest. If the
+      **read/write mailbox** permission is specified, the resulting token will grant read/write access to mail,
+      calendar, and contacts, including the ability to send mail.
 
 
       The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
@@ -1824,7 +1826,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -1918,11 +1920,11 @@ methods:
       -->.
 
 
-      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of `ReadItem`<!-- -->.
+      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
 
 
       Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of `ReadWriteItem`<!-- -->.
+      method requires a minimum permission level of **read/write item**.
 
 
       **Important**: For guidance on delegate or shared scenarios, see the [shared folders and shared
@@ -1938,7 +1940,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -2010,7 +2012,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -2056,7 +2058,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -2130,7 +2132,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -2215,8 +2217,8 @@ methods:
       The XML request must specify UTF-8 encoding: `\<?xml version="1.0" encoding="utf-8"?\>`<!-- -->.
 
 
-      Your add-in must have the `ReadWriteMailbox` permission to use the `makeEwsRequestAsync` method. For information
-      about using the `ReadWriteMailbox` permission and the EWS operations that you can call with the
+      Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For
+      information about using the **read/write mailbox** permission and the EWS operations that you can call with the
       `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
 
@@ -2255,7 +2257,7 @@ methods:
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadWriteMailbox`
+      **read/write mailbox**
 
 
       **[Applicable Outlook
@@ -2418,7 +2420,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook
@@ -2463,7 +2465,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
+      **read item**
 
 
       **[Applicable Outlook

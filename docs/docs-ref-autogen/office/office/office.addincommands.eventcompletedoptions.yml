@@ -27,7 +27,7 @@ properties:
 
       **[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `Restricted`
+      -->**: **restricted**
 
 
       **[Applicable Outlook
@@ -87,7 +87,7 @@ properties:
 
       **[Minimum permission level
       (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->**: `Restricted`
+      -->**: **restricted**
 
 
       **[Applicable Outlook

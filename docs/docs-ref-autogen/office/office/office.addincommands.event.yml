@@ -15,7 +15,7 @@ remarks: >-
 
   **[Minimum permission level
   (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  `Restricted`
+  **restricted**
 
 
   **[Applicable Outlook
@@ -150,7 +150,7 @@ methods:
 
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `Restricted`
+      **restricted**
 
 
       **[Applicable Outlook
