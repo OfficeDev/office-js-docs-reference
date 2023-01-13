@@ -27,7 +27,10 @@ properties:
           #### Examples
 
           ```javascript
-          // In this example, consider a button defined in an add-in manifest as follows:
+          // In this example, consider a button defined in an add-in manifest.
+          // The following is the XML manifest definition. Below it is the Teams 
+          // manifest (preview) definition.
+          //
           //<Control xsi:type="Button" id="eventTestButton">
           //    <Label resid="eventButtonLabel" />
           //    <Tooltip resid="eventButtonTooltip" />
@@ -44,8 +47,73 @@ properties:
           //        <FunctionName>testEventObject</FunctionName>
           //    </Action>
           //</Control>
+          //
+          // The Teams manifest (preview) definition is the following.
+          // Ellipses("...") indicate omitted properties.
+          //
+          //     "extensions": [
+          //         {
+          //             ...
+          //             "runtimes": [
+          //                 {
+          //                  "id": "CommandsRuntime",
+          //                  "type": "general",
+          //                  "code": {
+          //                      "page": "https://localhost:3000/commands.html",
+          //                      "script": "https://localhost:3000/commands.js"
+          //                  },
+          //                  "lifetime": "short",
+          //                  "actions": [
+          //                      {
+          //                          "id": "testEventObject",
+          //                          "type": "executeFunction",
+          //                          "displayName": "testEventObject"
+          //                      }
+          //                  ]
+          //              }
+          //             ],
+          //             "ribbons": [
+          //                 {
+          //                     ...
+          //                     "tabs": [
+          //                         ...
+          //                         "groups": [
+          //                             ...
+          //                             "controls": [
+          //                                 {
+          //                                      "id": "eventTestButton",
+          //                                      "type": "button",
+          //                                      "label": "Perform an action",
+          //                                      "icons": [
+          //                                          {
+          //                                              "size": 16,
+          //                                              "file": "https://localhost:3000/assets/blue-icon-16.png"
+          //                                          },
+          //                                          {
+          //                                              "size": 32,
+          //                                              "file": "https://localhost:3000/assets/blue-icon-32.png"
+          //                                          },
+          //                                          {
+          //                                              "size": 80,
+          //                                              "file": "https://localhost:3000/assets/blue-icon-80.png"
+          //                                          }
+          //                                      ],
+          //                                      "supertip": {
+          //                                          "title": "Perform an action",
+          //                                          "description": "Perform an action when clicked."
+          //                                      },
+          //                                      "actionId": "testEventObject"
+          //                                  }
+          //                             ]
+          //                         ]
+          //                     ]                           
+          //                 }
+          //             ]
+          //         }
+          //     ]
 
-          // The button has an id attribute set to eventTestButton, and will invoke
+
+          // The button has an id set to "eventTestButton", and will invoke
           // the testEventObject function defined in the add-in.
           // That function looks like this:
           function testEventObject(event) {
