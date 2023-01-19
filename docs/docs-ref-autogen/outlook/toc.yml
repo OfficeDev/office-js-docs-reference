@@ -165,6 +165,14 @@ items:
             uid: 'outlook!Office.RoamingSettings:interface'
           - name: Sensitivity
             uid: 'outlook!Office.Sensitivity:interface'
+          - name: SensitivityLabel
+            uid: 'outlook!Office.SensitivityLabel:interface'
+          - name: SensitivityLabelChangedEventArgs
+            uid: 'outlook!Office.SensitivityLabelChangedEventArgs:interface'
+          - name: SensitivityLabelDetails
+            uid: 'outlook!Office.SensitivityLabelDetails:interface'
+          - name: SensitivityLabelsCatalog
+            uid: 'outlook!Office.SensitivityLabelsCatalog:interface'
           - name: SeriesTime
             uid: 'outlook!Office.SeriesTime:interface'
           - name: SessionData

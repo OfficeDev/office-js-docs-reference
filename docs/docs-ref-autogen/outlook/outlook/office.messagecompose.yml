@@ -710,6 +710,31 @@ properties:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type: '<xref uid="outlook!Office.NotificationMessages:interface" />'
+  - name: sensitivityLabel
+    uid: 'outlook!Office.MessageCompose#sensitivityLabel:member'
+    package: outlook!
+    fullName: sensitivityLabel
+    summary: >-
+      Gets the object to get or set the [sensitivity label](xref:outlook!Office.SensitivityLabel:interface) of a
+      message.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Message Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'sensitivityLabel: SensitivityLabel;'
+      return:
+        type: '<xref uid="outlook!Office.SensitivityLabel:interface" />'
   - name: seriesId
     uid: 'outlook!Office.MessageCompose#seriesId:member'
     package: outlook!

@@ -3,7 +3,7 @@ name: Office.MailboxEnums.AppointmentSensitivityType
 uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
 package: outlook!
 fullName: Office.MailboxEnums.AppointmentSensitivityType
-summary: Specifies the sensitivity type of an appointment.
+summary: 'Specifies the [sensitivity level](xref:outlook!Office.Sensitivity:interface) of an appointment.'
 remarks: >-
   \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
