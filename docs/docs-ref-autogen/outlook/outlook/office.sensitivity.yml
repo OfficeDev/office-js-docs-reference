@@ -3,7 +3,10 @@ name: Office.Sensitivity
 uid: 'outlook!Office.Sensitivity:interface'
 package: outlook!
 fullName: Office.Sensitivity
-summary: Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.
+summary: >-
+  Provides methods to get and set the sensitivity level of an appointment. To learn more about sensitivity levels, see
+  [Mark your email as Normal, Personal, Private, or
+  Confidential](https://support.microsoft.com/office/4a76d05b-6c29-4a0d-9096-71784a6b12c1)<!-- -->.
 remarks: >-
   \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -24,7 +27,7 @@ methods:
     uid: 'outlook!Office.Sensitivity#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: Gets the value of the appointment sensitivity.
+    summary: Gets the sensitivity level of an appointment.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -51,8 +54,9 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The sensitivity level of the
+            appointment is returned in the `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
@@ -63,7 +67,7 @@ methods:
     uid: 'outlook!Office.Sensitivity#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: Gets the value of the appointment sensitivity.
+    summary: Gets the sensitivity level of an appointment.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -102,8 +106,9 @@ methods:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The sensitivity level of the
+            appointment is returned in the `asyncResult.value` property.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" />&gt;) =&gt; void
@@ -114,7 +119,7 @@ methods:
     uid: 'outlook!Office.Sensitivity#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(sensitivity, options, callback)'
-    summary: Sets the value of the appointment sensitivity.
+    summary: Sets the sensitivity level of an appointment.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -157,7 +162,7 @@ methods:
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: sensitivity
-          description: The sensitivity value as enum or string.
+          description: The sensitivity level as an enum or string.
           type: '<xref uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
         - id: options
           description: >-
@@ -176,7 +181,7 @@ methods:
     uid: 'outlook!Office.Sensitivity#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(sensitivity, callback)'
-    summary: Sets the value of the appointment sensitivity.
+    summary: Sets the sensitivity level of an appointment.
     remarks: >-
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -197,7 +202,7 @@ methods:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: sensitivity
-          description: The sensitivity value as enum or string.
+          description: The sensitivity level as an enum or string.
           type: '<xref uid="outlook!Office.MailboxEnums.AppointmentSensitivityType:enum" /> | string'
         - id: callback
           description: >-
