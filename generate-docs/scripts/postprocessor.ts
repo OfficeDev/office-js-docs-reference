@@ -139,7 +139,7 @@ tryCatch(async () => {
     console.log(officeFolder);
         fsx.readdirSync(officeFolder)
             .forEach(filename => {
-                fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+                fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings").replace(/Outlook\.SensitivityLabelsCatalog/g, "Office.SensitivityLabelsCatalog"));
             });
     });
 

@@ -24,7 +24,8 @@ tryCatch(async () => {
             fsx.readFileSync(officeJsonPath + '/' + officeFilename)
                 .toString()
                 .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
-                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings"));
+                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings")
+                .replace(/office\!Office\.SensitivityLabelsCatalog/g, "outlook!Office.SensitivityLabelsCatalog"));
     });
 
     console.log("\nCompleted Office json cross-referencing cleanup");
