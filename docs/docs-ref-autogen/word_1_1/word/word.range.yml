@@ -336,10 +336,10 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-  - name: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
+  - name: 'insertFileFromBase64(base64File, insertLocation)'
     uid: 'word!Word.Range#insertFileFromBase64:member(1)'
     package: word!
-    fullName: 'insertFileFromBase64(base64File, insertLocation, asNewParagraph)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation)'
     summary: Inserts a document at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -369,7 +369,7 @@ methods:
     syntax:
       content: >-
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" |
-        "Before" | "After", asNewParagraph?: boolean): Word.Range;
+        "Before" | "After"): Word.Range;
       parameters:
         - id: base64File
           description: Required. The base64 encoded content of a .docx file.
@@ -377,11 +377,6 @@ methods:
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"'
-        - id: asNewParagraph
-          description: >-
-            Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that
-            the base64 content is merged as inline text into the existing paragraph.
-          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
@@ -428,10 +423,10 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
-  - name: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
+  - name: 'insertOoxml(ooxml, insertLocation)'
     uid: 'word!Word.Range#insertOoxml:member(1)'
     package: word!
-    fullName: 'insertOoxml(ooxml, insertLocation, asNewParagraph)'
+    fullName: 'insertOoxml(ooxml, insertLocation)'
     summary: Inserts OOXML at the specified location.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -463,7 +458,7 @@ methods:
     syntax:
       content: >-
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" |
-        "After", asNewParagraph?: boolean): Word.Range;
+        "After"): Word.Range;
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted.
@@ -471,11 +466,6 @@ methods:
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type: '<xref uid="word!Word.InsertLocation:enum" /> | "Replace" | "Start" | "End" | "Before" | "After"'
-        - id: asNewParagraph
-          description: >-
-            Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the
-            OOXML is merged as inline text into the existing paragraph.
-          type: boolean
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
