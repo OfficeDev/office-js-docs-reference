@@ -101,6 +101,26 @@ fields:
 
       * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDeleted"'
+  - name: contentControlEntered
+    uid: 'word!Word.EventType.contentControlEntered:member'
+    package: word!
+    summary: >-
+      Represents that a content control has been entered.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"ContentControlEntered"'
+  - name: contentControlExited
+    uid: 'word!Word.EventType.contentControlExited:member'
+    package: word!
+    summary: >-
+      Represents that a content control has been exited.
+
+
+      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
+      \]
+    value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'
     package: word!

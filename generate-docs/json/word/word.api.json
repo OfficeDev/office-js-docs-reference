@@ -1154,7 +1154,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1197,14 +1197,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -1220,8 +1212,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1241,14 +1233,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -1419,7 +1403,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1462,14 +1446,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -1485,8 +1461,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1506,14 +1482,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertOoxml"
@@ -8210,7 +8178,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8253,14 +8221,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -8276,8 +8236,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -8297,14 +8257,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -8484,7 +8436,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8527,14 +8479,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -8550,8 +8494,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -8571,14 +8515,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertOoxml"
@@ -9301,6 +9237,47 @@
                   "isOptional": false,
                   "releaseTag": "Beta",
                   "name": "onDeleted",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.ContentControl#onEntered:member",
+                  "docComment": "/**\n * Occurs when the content control is entered.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @eventproperty @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly onEntered: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeExtension.EventHandlers",
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ContentControlEventArgs",
+                      "canonicalReference": "word!Word.ContentControlEventArgs:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "onEntered",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 5
@@ -11144,6 +11121,63 @@
                   "isOptional": false,
                   "releaseTag": "Beta",
                   "name": "eventType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "word!Word.ContentControlEventArgs#ids:member",
+                  "docComment": "/**\n * Gets the content control IDs.\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "ids: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "ids",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "word!Word.ContentControlEventArgs#source:member",
+                  "docComment": "/**\n * The source of the event. It can be local or remote (through coauthoring).\n *\n * @remarks\n *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "source: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.EventSource",
+                      "canonicalReference": "word!Word.EventSource:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Local\" | \"Remote\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "source",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
@@ -17860,6 +17894,48 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "word!Word.EventType.contentControlEntered:member",
+                  "docComment": "/**\n * Represents that a content control has been entered.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "contentControlEntered = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"ContentControlEntered\""
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "contentControlEntered",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.EventType.contentControlExited:member",
+                  "docComment": "/**\n * Represents that a content control has been exited.\n *\n *  *\n * [Api set: WordApiOnline BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "contentControlExited = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"ContentControlExited\""
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "contentControlExited",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "word!Word.EventType.contentControlSelectionChanged:member",
                   "docComment": "/**\n * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.\n *\n *  *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
@@ -20598,7 +20674,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20632,14 +20708,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20655,8 +20723,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 10,
-                    "endIndex": 11
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20676,14 +20744,6 @@
                         "endIndex": 7
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 8,
-                        "endIndex": 9
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -20854,7 +20914,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20888,14 +20948,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -20911,8 +20963,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 10,
-                    "endIndex": 11
+                    "startIndex": 8,
+                    "endIndex": 9
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20932,14 +20984,6 @@
                         "endIndex": 7
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 8,
-                        "endIndex": 9
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertOoxml"
@@ -50903,7 +50947,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50946,14 +50990,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -50969,8 +51005,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -50990,14 +51026,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -51177,7 +51205,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -51220,14 +51248,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -51243,8 +51263,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 10,
+                    "endIndex": 11
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -51264,14 +51284,6 @@
                         "endIndex": 9
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertOoxml"
@@ -54804,7 +54816,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54829,14 +54841,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -54852,8 +54856,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -54873,14 +54877,6 @@
                         "endIndex": 5
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 6,
-                        "endIndex": 7
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertFileFromBase64"
@@ -55071,7 +55067,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * @param asNewParagraph - Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -55096,14 +55092,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", asNewParagraph?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -55119,8 +55107,8 @@
                   "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 6,
+                    "endIndex": 7
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -55140,14 +55128,6 @@
                         "endIndex": 5
                       },
                       "isOptional": false
-                    },
-                    {
-                      "parameterName": "asNewParagraph",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 6,
-                        "endIndex": 7
-                      },
-                      "isOptional": true
                     }
                   ],
                   "name": "insertOoxml"
