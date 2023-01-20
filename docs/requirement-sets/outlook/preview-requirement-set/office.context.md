@@ -1,7 +1,7 @@
 ---
 title: Office.context - preview requirement set
 description: Office.Context object members available for Outlook add-ins using Mailbox API preview requirement set.
-ms.date: 07/27/2022
+ms.date: 01/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -32,6 +32,7 @@ Office.context provides shared interfaces that are used by add-ins in all of the
 | [platform](#platform-platformtype) | Compose<br>Read | [PlatformType](/javascript/api/office/office.platformtype?view=outlook-js-preview&preserve-view=true) | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [requirements](#requirements-requirementsetsupport) | Compose<br>Read | [RequirementSetSupport](/javascript/api/office/office.requirementsetsupport?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [roamingSettings](#roamingsettings-roamingsettings) | Compose<br>Read | [RoamingSettings](/javascript/api/outlook/office.roamingsettings?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
+| [sensitivityLabelsCatalog](#sensitivitylabelscatalog-sensitivitylabelscatalog) | Compose | [SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true) | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
 | [ui](#ui-ui) | Compose<br>Read | [UI](/javascript/api/office/office.ui?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 
 ## Property details
@@ -337,6 +338,26 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| 1.1|
 |[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)| **restricted**|
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose or Read|
+
+<br>
+
+---
+---
+#### sensitivityLabelsCatalog: [SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
+
+Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available sensitivity labels if the catalog is enabled.
+
+##### Type
+
+*   [SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| Preview|
+|[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)| **read/write item** |
+|[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose|
 
 <br>
 
