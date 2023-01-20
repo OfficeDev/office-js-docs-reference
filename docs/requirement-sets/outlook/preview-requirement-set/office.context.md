@@ -356,7 +356,7 @@ Gets an object to check the status of the catalog of sensitivity labels in Outlo
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](../outlook-api-requirement-sets.md)| Preview|
-|[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)| ReadWriteItem |
+|[Minimum permission level](/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)| **read/write item** |
 |[Applicable Outlook mode](/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)| Compose|
 
 <br>
