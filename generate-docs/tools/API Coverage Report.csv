@@ -10203,6 +10203,8 @@ Word.ContentControlCollection,untrack(),Method,Poor,false
 Word.ContentControlEventArgs,N/A,Class,Good,false
 Word.ContentControlEventArgs,contentControl,Property,Good,true
 Word.ContentControlEventArgs,eventType,Property,Good,true
+Word.ContentControlEventArgs,ids,Property,Good,false
+Word.ContentControlEventArgs,source,Property,Good,false
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,buildingBlockGallery,EnumField,Fine,false
 Word.ContentControlType,checkBox,EnumField,Fine,false
@@ -10398,6 +10400,8 @@ Word.EventType,commentSelected,EnumField,Fine,false
 Word.EventType,contentControlAdded,EnumField,Fine,false
 Word.EventType,contentControlDataChanged,EnumField,Fine,false
 Word.EventType,contentControlDeleted,EnumField,Fine,false
+Word.EventType,contentControlEntered,EnumField,Fine,false
+Word.EventType,contentControlExited,EnumField,Fine,false
 Word.EventType,contentControlSelectionChanged,EnumField,Fine,false
 Word.Field,N/A,Class,Good,false
 Word.Field,code,Property,Good,true
