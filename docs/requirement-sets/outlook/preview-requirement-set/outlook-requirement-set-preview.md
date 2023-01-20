@@ -153,13 +153,13 @@ Added method to prepend content to the beginning of a message or appointment bod
 
 #### [Office.context.sensitivityLabelsCatalog](/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-sensitivitylabelscatalog-member)
 
-Added a property that provides an object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
+Added a property that provides the object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 #### [Office.context.mailbox.item.sensitivityLabel](office.context.mailbox.item.md#properties)
 
-Added a property that provides an object to get or set the sensitivity label of a message or appointment in compose mode.
+Added a property that provides the object to get or set the sensitivity label of a message or appointment in compose mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
