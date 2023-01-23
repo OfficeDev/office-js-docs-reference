@@ -47,7 +47,7 @@ The following is an example of the `ExtendedPermission` element.
           <SupportsSharedFolders>true</SupportsSharedFolders>
           <FunctionFile resid="residDesktopFuncUrl" />
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
-            <!-- Configure selected extension point. -->
+            <!-- Configure your selected extension point. -->
           </ExtensionPoint>
 
           <!-- You can define more than one ExtensionPoint element as needed. -->
@@ -56,6 +56,7 @@ The following is an example of the `ExtendedPermission` element.
       </Host>
     </Hosts>
     ...
+    <!-- Configure the prepend-on-send or append-on-send feature using the AppendOnSend value. -->
     <ExtendedPermissions>
       <ExtendedPermission>AppendOnSend</ExtendedPermission>
     </ExtendedPermissions>
