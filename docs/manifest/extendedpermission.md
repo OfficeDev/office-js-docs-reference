@@ -1,7 +1,7 @@
 ---
 title: ExtendedPermission element in the manifest file
 description: Defines an extended permission the add-in needs to access the associated API or feature.
-ms.date: 01/10/2023
+ms.date: 01/23/2023
 ms.localizationpriority: medium
 ---
 
@@ -30,8 +30,7 @@ The following are the available values.
 
 |Available value|Description|Hosts|
 |:---|:---|:---|
-|`AppendOnSend`|Declares that the add-in uses the [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-appendonsendasync-member(1)) API.|Outlook|
-|`PrependOnSend` (preview)|Declares that the add-in uses the [Office.Body.prependOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-prependonsendasync-member(1)) API.|Outlook|
+|`AppendOnSend`|Declares that the add-in uses the [Office.Body.prependOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-prependonsendasync-member(1)) (preview) or [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-appendonsendasync-member(1)) API.|Outlook|
 
 ## `ExtendedPermission` example
 
@@ -48,7 +47,7 @@ The following is an example of the `ExtendedPermission` element.
           <SupportsSharedFolders>true</SupportsSharedFolders>
           <FunctionFile resid="residDesktopFuncUrl" />
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
-            <!-- Configure selected extension point. -->
+            <!-- Configure your selected extension point. -->
           </ExtensionPoint>
 
           <!-- You can define more than one ExtensionPoint element as needed. -->
@@ -57,6 +56,7 @@ The following is an example of the `ExtendedPermission` element.
       </Host>
     </Hosts>
     ...
+    <!-- Configure the prepend-on-send or append-on-send feature using the AppendOnSend value. -->
     <ExtendedPermissions>
       <ExtendedPermission>AppendOnSend</ExtendedPermission>
     </ExtendedPermissions>
