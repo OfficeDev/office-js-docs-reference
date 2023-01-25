@@ -6604,7 +6604,7 @@ Office.Context,officeTheme,Property,Fine,true
 Office.Context,platform,Property,Good,false
 Office.Context,requirements,Property,Fine,false
 Office.Context,roamingSettings,Property,Good,true
-Office.Context,sensitivityLabelsCatalog,Property,Good,false
+Office.Context,sensitivityLabelsCatalog,Property,Good,true
 Office.Context,touchEnabled,Property,Good,false
 Office.Context,ui,Property,Fine,false
 Office.ContextInformation,N/A,Class,Good,false
@@ -8987,7 +8987,7 @@ Office.SensitivityLabel,getAsync(callback),Method,Poor,true
 Office.SensitivityLabel,setAsync(sensitivityLabel,Method,Fine,true
 Office.SensitivityLabelChangedEventArgs,N/A,Class,Good,false
 Office.SensitivityLabelChangedEventArgs,type,Property,Good,false
-Office.SensitivityLabelDetails,N/A,Class,Good,false
+Office.SensitivityLabelDetails,N/A,Class,Good,true
 Office.SensitivityLabelDetails,children,Property,Good,false
 Office.SensitivityLabelDetails,color,Property,Fine,false
 Office.SensitivityLabelDetails,id,Property,Fine,false
