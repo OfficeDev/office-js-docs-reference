@@ -354,13 +354,6 @@ methods:
         }
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
-
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const msgCc = asyncResult.value;
@@ -372,13 +365,6 @@ methods:
           console.error(asyncResult.error);
         }
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
       Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -398,13 +384,6 @@ methods:
         }
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
-
       Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           const apptRequiredAttendees = asyncResult.value;
@@ -422,13 +401,6 @@ methods:
           console.error(asyncResult.error);
         }
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -640,13 +612,6 @@ methods:
         }
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
-
       const email = $("#emailCc")
         .val()
         .toString();
@@ -659,13 +624,6 @@ methods:
           console.error(asyncResult.error);
         }
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
       const email = $("#emailOptional")
         .val()
@@ -680,13 +638,6 @@ methods:
         }
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
-
       const email = $("#emailRequired")
         .val()
         .toString();
@@ -699,13 +650,6 @@ methods:
           console.error(asyncResult.error);
         }
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
       const email = $("#emailTo")
         .val()

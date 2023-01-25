@@ -195,13 +195,6 @@ methods:
         console.log(`Successfully set start date and time to ${start}`);
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
-
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
           console.error(`Get start date failed with message ${result.error.message}`);

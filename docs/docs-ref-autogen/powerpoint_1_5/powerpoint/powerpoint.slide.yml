@@ -115,13 +115,6 @@ methods:
         });
       });
 
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
-
       await PowerPoint.run(async function(context) {
         const slides = context.presentation.slides;
         slides.load("tags/key, tags/value");
@@ -241,13 +234,6 @@ methods:
         slide1.setSelectedShapes(savedShapeSelection);
         await context.sync();
       });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
       // Selects the first two shapes on slide 1.
 

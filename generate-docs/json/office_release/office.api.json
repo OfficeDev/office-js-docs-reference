@@ -18102,7 +18102,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#bodyBackgroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme body background color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme body background color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18128,7 +18128,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#bodyForegroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18154,7 +18154,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#controlBackgroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme control background color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme control background color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18180,7 +18180,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#controlForegroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

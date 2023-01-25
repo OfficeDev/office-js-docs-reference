@@ -262,13 +262,6 @@ methods:
         await context.sync();
       });
 
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
-
       // Sets the range selection to the range that was saved previously.
 
       await PowerPoint.run(async (context) => {

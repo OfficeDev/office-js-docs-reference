@@ -346,13 +346,6 @@ events:
           console.log("Added event handlers for when comments are added, changed, or deleted.");
       });
 
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
-
       async function commentAdded(event: Excel.CommentAddedEventArgs) {
           // Retrieve the added comment using the comment ID.
           // Note: This function assumes only a single comment is added at a time. 
@@ -412,13 +405,6 @@ events:
           console.log("Added event handlers for when comments are added, changed, or deleted.");
       });
 
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
-
       async function commentChanged(event: Excel.CommentChangedEventArgs) {
           // Retrieve the changed comment using the comment ID.
           // Note: This function assumes only a single comment is changed at a time. 
@@ -477,13 +463,6 @@ events:
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
       });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-comment-event-handler.yaml
 
       async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
           // Print out the deleted comment's ID.

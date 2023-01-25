@@ -1467,13 +1467,6 @@ methods:
               await context.sync();
           });
 
-          ```
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 

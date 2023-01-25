@@ -236,13 +236,6 @@ properties:
           xhr.send();
       });
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
-
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       const ewsId = Office.context.mailbox.item.itemId;
@@ -574,13 +567,6 @@ methods:
           }
           xhr.send();
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -1357,13 +1343,6 @@ methods:
 
         console.log(getUID(result.value));
       });
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
       const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"

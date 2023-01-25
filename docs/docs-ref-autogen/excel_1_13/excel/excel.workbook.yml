@@ -695,7 +695,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
@@ -717,13 +717,6 @@ methods:
       // Read the file as a data URL so that we can parse the base64-encoded string.
 
       reader.readAsDataURL(myFile.files[0]);
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
 
       await Excel.run(async (context) => {
           // Retrieve the source workbook.
@@ -961,13 +954,6 @@ events:
           console.log("The workbook was activated.");
         });
       }
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
 
       await Excel.run(async (context) => {
         const workbook = context.workbook;

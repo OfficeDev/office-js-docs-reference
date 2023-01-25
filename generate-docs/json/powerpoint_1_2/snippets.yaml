@@ -25,9 +25,6 @@
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
     // Gets the shapes you selected on the slide and displays their IDs on the
     task pane.
@@ -49,9 +46,6 @@
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
     // Saves which shapes are selected so that they can be reselected later.
 
@@ -111,9 +105,6 @@
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
     // Saves which slides are currently selected so they can be reselected
     later.
@@ -179,9 +170,6 @@
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
     // Sets the range selection to the range that was saved previously.
 
@@ -217,9 +205,6 @@
       context.presentation.setSelectedSlides(savedSlideSelection);
       await context.sync();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
     // Selects slides 2, 4, and 5.
 
@@ -508,9 +493,6 @@
         slide.delete();
       });
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
 
     await PowerPoint.run(async function(context) {
       const slides = context.presentation.slides;
@@ -543,9 +525,6 @@
       slide1.setSelectedShapes(savedShapeSelection);
       await context.sync();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
 
     // Selects the first two shapes on slide 1.
 
@@ -604,9 +583,6 @@
 
       console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
     // Selects slides 2, 4, and 5.
 
@@ -732,9 +708,6 @@
       textRange10.setSelected();
       await context.sync();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
 
     // Sets the range selection to the range that was saved previously.
 

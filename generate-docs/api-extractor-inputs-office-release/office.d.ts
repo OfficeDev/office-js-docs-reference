@@ -1976,19 +1976,19 @@ export declare namespace Office {
      */
     export interface OfficeTheme {
         /**
-         * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         bodyBackgroundColor: string;
         /**
-         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         bodyForegroundColor: string;
         /**
-         * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         controlBackgroundColor: string;
         /**
-         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         controlForegroundColor: string;
     }

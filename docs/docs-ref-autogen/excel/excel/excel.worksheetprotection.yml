@@ -251,13 +251,6 @@ methods:
           }
       });
 
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
       let password = await passwordHandler();
 
       passwordHelper(password);
@@ -365,13 +358,6 @@ methods:
           let activeSheet = context.workbook.worksheets.getActiveWorksheet();
           activeSheet.protection.unprotect();
       });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
       let password = await passwordHandler();
 

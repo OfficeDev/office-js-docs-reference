@@ -711,13 +711,6 @@ properties:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
       const id = $("#notificationId").val();
 
       const details =
@@ -728,13 +721,6 @@ properties:
           persistent: false
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
       const id = $("#notificationId").val();
 
@@ -747,21 +733,7 @@ properties:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
       Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
 
       const id = $("#notificationId").val();
 
@@ -774,13 +746,6 @@ properties:
           persistent: false
         },
         handleResult);
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
-
       const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
@@ -1524,13 +1489,6 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
-
-      ```
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
