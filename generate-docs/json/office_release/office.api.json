@@ -18089,7 +18089,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office!Office.OfficeTheme:interface",
-              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with **File** \\> **Office Account** \\> **Office Theme UI**, which is applied across all Office applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * **Applications**: Excel, Outlook (in preview), PowerPoint, Word\n *\n * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.\n */\n",
+              "docComment": "/**\n * Provides access to the properties for Office theme colors.\n *\n * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with **File** \\> **Office Account** \\> **Office Theme UI**, which is applied across all Office applications. Using Office theme colors is appropriate for mail and task pane add-ins.\n *\n * @remarks\n *\n * *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> </td></tr> <tr><td><strong> Outlook </strong></td><td> Preview </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td></tr> </table>\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -18102,7 +18102,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#bodyBackgroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme body background color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme body background color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18128,7 +18128,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#bodyForegroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18154,7 +18154,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#controlBackgroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme control background color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme control background color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18180,7 +18180,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.OfficeTheme#controlForegroundColor:member",
-                  "docComment": "/**\n * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., \"FFA500\").\n */\n",
+                  "docComment": "/**\n * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., \"#FFA500\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
