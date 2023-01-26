@@ -934,6 +934,25 @@ Office.Context#roamingSettings:member:
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
+Office.Context#sensitivityLabelsCatalog:member:
+  - |-
+    // Check if the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    console.log(JSON.stringify(catalog));
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.ContextInformation#host:member:
   - |-
     const contextInfo = Office.context.diagnostics;
