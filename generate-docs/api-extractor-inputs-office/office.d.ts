@@ -1989,25 +1989,30 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * **Applications**: Excel, Outlook (in preview), PowerPoint, Word
-     *
-     * `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
+     *  *Supported applications, by platform*
+     *  <table>
+     *   <tr><th>                             </th><th> Office on Windows </th><th> Office on the web </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td>                   </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Preview           </td><td>                   </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td>                   </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>  Y                </td></tr>
+     *  </table>
      */
     export interface OfficeTheme {
         /**
-         * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         bodyBackgroundColor: string;
         /**
-         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         bodyForegroundColor: string;
         /**
-         * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         controlBackgroundColor: string;
         /**
-         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").
+         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "#FFA500").
          */
         controlForegroundColor: string;
     }
