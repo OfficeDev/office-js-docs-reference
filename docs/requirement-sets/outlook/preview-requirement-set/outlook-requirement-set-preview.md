@@ -149,56 +149,6 @@ Added method to prepend content to the beginning of a message or appointment bod
 
 ---
 
-### Manage the sensitivity label of a message or appointment
-
-#### [Office.context.sensitivityLabelsCatalog](/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-sensitivitylabelscatalog-member)
-
-Added a property that provides the object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.context.mailbox.item.sensitivityLabel](office.context.mailbox.item.md#properties)
-
-Added a property that provides the object to get or set the sensitivity label of a message or appointment in compose mode.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.EventType.SensitivityLabelChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
-
-Added the `SensitivityLabelChanged` event to `Item`. This event occurs when the sensitivity label of a message or appointment is changed.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.SensitivityLabelChangedEventArgs](/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview&preserve-view=true)
-
-Added an object that provides the change status of the sensitivity label applied to a message or appointment in compose mode.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
-
-Added an object that represents the catalog of sensitivity labels in Outlook.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true)
-
-Added an object that represents the sensitivity label of a message or appointment in compose mode.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-#### [Office.SensitivityLabelDetails](/javascript/api/outlook/office.sensitivitylabeldetails?view=outlook-js-preview&preserve-view=true)
-
-Added an object that represents the properties of a sensitivity label.
-
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
-
-<br>
-
----
-
----
-
 ### Shared mailboxes
 
 Feature support for shared folders (that is, delegate access) was released in [requirement set 1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md). However, support for shared mailboxes is now available in preview. To learn more, see [Enable shared folders and shared mailbox scenarios](/office/dev/add-ins/outlook/delegate-access).
