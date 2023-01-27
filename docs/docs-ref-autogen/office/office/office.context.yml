@@ -412,28 +412,6 @@ properties:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
-  - name: sensitivityLabelsCatalog
-    uid: 'office!Office.Context#sensitivityLabelsCatalog:member'
-    package: office!
-    fullName: sensitivityLabelsCatalog
-    summary: >-
-      Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
-      sensitivity labels if the catalog is enabled.
-    remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'sensitivityLabelsCatalog: Office.SensitivityLabelsCatalog;'
-      return:
-        type: '<xref uid="outlook!Office.SensitivityLabelsCatalog:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!
