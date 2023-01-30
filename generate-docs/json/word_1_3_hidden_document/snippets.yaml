@@ -19,6 +19,21 @@
       body.paragraphs.getFirst().alignment = "Left";
       body.paragraphs.getLast().alignment = Word.Alignment.left;
     });
+'Word.Application#createDocument:member(1)':
+  - |-
+    await Word.run(async (context) => {
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const body = context.document.body;
+        body.insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
+    });
 'Word.Body#clear:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -2002,7 +2017,7 @@
         } else {
             console.log('The document has not changed since the last save.');
         }
-        });
+    });
 'Word.Document#settings:member':
   - >-
     // Link to full sample:
@@ -2023,6 +2038,21 @@
           console.log(settings.items[i]);
         }
       }
+    });
+'Word.DocumentCreated:class':
+  - |-
+    await Word.run(async (context) => {
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const body = context.document.body;
+        body.insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
     });
 'Word.DocumentPropertyType:enum':
   - >-
