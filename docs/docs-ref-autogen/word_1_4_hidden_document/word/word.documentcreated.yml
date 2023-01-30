@@ -12,6 +12,7 @@ remarks: |-
   #### Examples
 
   ```typescript
+  // Update the text of the current document using the text from another document passed in as base64.
   await Word.run(async (context) => {
       const externalDoc = context.application.createDocument(getBase64());
       await context.sync();
@@ -262,7 +263,21 @@ methods:
     package: word!
     fullName: open()
     summary: Opens the document.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      #### Examples
+
+      ```typescript
+      // Create and open a new document in a new tab or window.
+      await Word.run(async (context) => {
+          const externalDoc = context.application.createDocument();
+          await context.sync();
+
+          externalDoc.open();
+          await context.sync();
+      });
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

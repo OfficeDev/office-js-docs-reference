@@ -10319,7 +10319,7 @@ Word.DocumentCreated,getBookmarkRangeOrNullObject(name),Method,Poor,false
 Word.DocumentCreated,load(options),Method,Poor,false
 Word.DocumentCreated,load(propertyNames),Method,Poor,false
 Word.DocumentCreated,load(propertyNamesAndPaths),Method,Poor,false
-Word.DocumentCreated,open(),Method,Poor,false
+Word.DocumentCreated,open(),Method,Poor,true
 Word.DocumentCreated,save(),Method,Poor,false
 Word.DocumentCreated,set(properties,Method,Poor,false
 Word.DocumentCreated,set(properties),Method,Poor,false

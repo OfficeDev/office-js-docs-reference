@@ -8965,6 +8965,7 @@ Visio.ShapeView#removeOverlay:member(1):
     });
 Word.Application#createDocument:member(1):
   - |-
+    // Update the text of the current document using the text from another document passed in as base64.
     await Word.run(async (context) => {
         const externalDoc = context.application.createDocument(getBase64());
         await context.sync();
@@ -9896,6 +9897,7 @@ Word.Document#save:member(1):
     });
 Word.DocumentCreated:class:
   - |-
+    // Update the text of the current document using the text from another document passed in as base64.
     await Word.run(async (context) => {
         const externalDoc = context.application.createDocument(getBase64());
         await context.sync();
@@ -9907,6 +9909,16 @@ Word.DocumentCreated:class:
         const externalDocBodyText = externalDocBody.text;
         const body = context.document.body;
         body.insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
+    });
+Word.DocumentCreated#open:member(1):
+  - |-
+    // Create and open a new document in a new tab or window.
+    await Word.run(async (context) => {
+        const externalDoc = context.application.createDocument();
+        await context.sync();
+
+        externalDoc.open();
         await context.sync();
     });
 Word.Font#name:member:

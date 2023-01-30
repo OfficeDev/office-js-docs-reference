@@ -35,6 +35,7 @@ methods:
       #### Examples
 
       ```typescript
+      // Update the text of the current document using the text from another document passed in as base64.
       await Word.run(async (context) => {
           const externalDoc = context.application.createDocument(getBase64());
           await context.sync();
