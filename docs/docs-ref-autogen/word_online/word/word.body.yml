@@ -1330,8 +1330,10 @@ methods:
         }
 
         await context.sync();
-      });...
+      });
 
+
+      ...
 
       await Word.run(async (context) => {
         // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
@@ -1348,8 +1350,10 @@ methods:
         }
 
         await context.sync();
-      });...
+      });
 
+
+      ...
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;

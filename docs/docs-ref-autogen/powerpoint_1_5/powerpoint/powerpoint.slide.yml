@@ -113,8 +113,10 @@ methods:
         slides.items.map((slide) => {
           slide.delete();
         });
-      });...
+      });
 
+
+      ...
 
       await PowerPoint.run(async function(context) {
         const slides = context.presentation.slides;
@@ -234,8 +236,10 @@ methods:
         await context.sync();
         slide1.setSelectedShapes(savedShapeSelection);
         await context.sync();
-      });...
+      });
 
+
+      ...
 
       // Selects the first two shapes on slide 1.
 

@@ -1518,8 +1518,10 @@ events:
         await context.sync();
         
         console.log("Registered a formula changed event handler for this worksheet.");
-      });...
+      });
 
+
+      ...
 
       async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
         await Excel.run(async (context) => {
@@ -1575,8 +1577,10 @@ events:
           sheet.onProtectionChanged.add(checkProtection);
           await context.sync();
           console.log("Added a worksheet protection change event handler.");
-      });...
+      });
 
+
+      ...
 
       async function checkProtection(event: Excel.WorksheetProtectionChangedEventArgs) {
           // This function is an event handler that returns the protection status of a worksheet

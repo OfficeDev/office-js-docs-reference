@@ -811,8 +811,10 @@ methods:
 
       // Read the file as a data URL so that we can parse the base64-encoded string.
 
-      reader.readAsDataURL(myFile.files[0]);...
+      reader.readAsDataURL(myFile.files[0]);
 
+
+      ...
 
       await Excel.run(async (context) => {
           // Retrieve the source workbook.
@@ -1049,8 +1051,10 @@ events:
           // Callback function for when the workbook is activated.
           console.log("The workbook was activated.");
         });
-      }...
+      }
 
+
+      ...
 
       await Excel.run(async (context) => {
         const workbook = context.workbook;

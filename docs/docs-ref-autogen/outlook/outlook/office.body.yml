@@ -1287,8 +1287,10 @@ methods:
             console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
           }
         }
-      );...
+      );
 
+
+      ...
 
       // Set the signature for the current item.
 

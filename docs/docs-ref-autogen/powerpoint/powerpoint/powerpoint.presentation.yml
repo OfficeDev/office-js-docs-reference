@@ -112,8 +112,10 @@ methods:
         await context.sync();
         currentLeft = 0;
         if (currentTop > slideHeight - 200) currentTop = 0;
-      });...
+      });
 
+
+      ...
 
       // Gets the shapes you selected on the slide and displays their IDs on the task pane.
 
@@ -133,8 +135,10 @@ methods:
         finalTable += "</table>";
         $("#outputSpan").empty();
         $("#outputSpan").append(finalTable);
-      });...
+      });
 
+
+      ...
 
       // Saves which shapes are selected so that they can be reselected later.
 
@@ -216,8 +220,10 @@ methods:
         finalTable += "</table>";
         $("#outputSpan").empty();
         $("#outputSpan").append(finalTable);
-      });...
+      });
 
+
+      ...
 
       // Saves which slides are currently selected so they can be reselected later.
 
@@ -303,8 +309,10 @@ methods:
         finalTable += "</table>";
         $("#outputSpan").empty();
         $("#outputSpan").append(finalTable);
-      });...
+      });
 
+
+      ...
 
       // Sets the range selection to the range that was saved previously.
 
@@ -474,8 +482,10 @@ methods:
       await PowerPoint.run(async (context) => {
         context.presentation.setSelectedSlides(savedSlideSelection);
         await context.sync();
-      });...
+      });
 
+
+      ...
 
       // Selects slides 2, 4, and 5.
 

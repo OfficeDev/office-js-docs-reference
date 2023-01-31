@@ -66,8 +66,10 @@ properties:
                   console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
               }
           });
-      }  ...
+      }  
 
+
+      ...
 
       // This function deletes data from a range and sets the delete shift direction to "up".
 

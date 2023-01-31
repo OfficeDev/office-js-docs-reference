@@ -38,7 +38,9 @@
         base64String,
         "logo.png",
         { isInline: false },
-        function(result) { console.log(result); });...
+        function(result) { console.log(result); });
+
+    ...
 
     // Set the signature for the current item with inline image.
 
@@ -146,8 +148,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -173,8 +177,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -250,8 +256,10 @@
         return;
       }
       console.log(`Appointment ends: ${result.value}`);
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -290,8 +298,10 @@
       } else {
         console.log("There are no locations.");
       }
-    });...
+    });
 
+
+    ...
 
     const locations = [
       {
@@ -311,8 +321,10 @@
       } else {
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
-    });...
+    });
 
+
+    ...
 
     const locations = [
       {
@@ -525,8 +537,10 @@
       } else {
         console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
     function(asyncResult) {
@@ -652,8 +666,10 @@
         return;
       }
       console.log(`Appointment location: ${result.value}`);
-    });...
+    });
 
+
+    ...
 
     const location = "my office";
 
@@ -677,8 +693,10 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -690,8 +708,10 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -703,12 +723,15 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
     ...
 
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -720,7 +743,9 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);...
+      handleResult);
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -761,8 +786,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailOptional")
       .val()
@@ -806,8 +833,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     // Important: Can only set the recurrence pattern of an appointment series.
 
@@ -918,8 +947,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailRequired")
       .val()
@@ -974,8 +1005,10 @@
       } else {
         console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.sensitivity.setAsync(
       Office.MailboxEnums.AppointmentSensitivityType.Confidential,
@@ -1042,8 +1075,10 @@
         return;
       }
       console.log(`Appointment starts: ${result.value}`);
-    });...
+    });
 
+
+    ...
 
     const start = new Date(); // Represents current date and time.
 
@@ -1067,8 +1102,10 @@
         return;
       }
       console.log(`Subject: ${result.value}`);
-    });...
+    });
 
+
+    ...
 
     let subject = "Hello World!";
 
@@ -1160,8 +1197,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -1187,8 +1226,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1376,8 +1417,10 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
-    text in italics</i>.");...
+    text in italics</i>.");
 
+
+    ...
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1402,8 +1445,10 @@
       asyncResult
     ) {
       console.log(JSON.stringify(asyncResult));
-    });...
+    });
 
+
+    ...
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -1965,8 +2010,10 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -1978,8 +2025,10 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -1991,12 +2040,15 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
     ...
 
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2008,7 +2060,9 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);...
+      handleResult);
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2446,8 +2500,10 @@
           console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
         }
       }
-    );...
+    );
 
+
+    ...
 
     // Set the signature for the current item.
 
@@ -3082,8 +3138,10 @@
             console.log(this.response);
         }
         xhr.send();
-    });...
+    });
 
+
+    ...
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -3441,8 +3499,10 @@
       }
 
       console.log(getUID(result.value));
-    });...
+    });
 
+
+    ...
 
     const request = '<soap:Envelope
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -3486,8 +3546,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const masterCategoriesToAdd = [
       {
@@ -3504,8 +3566,10 @@
       } else {
         console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
       }
-    });...
+    });
 
+
+    ...
 
     const masterCategoriesToRemove = ["TestCategory"];
 
@@ -3537,8 +3601,10 @@
             console.log(this.response);
         }
         xhr.send();
-    });...
+    });
 
+
+    ...
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -4439,7 +4505,9 @@
         base64String,
         "logo.png",
         { isInline: false },
-        function(result) { console.log(result); });...
+        function(result) { console.log(result); });
+
+    ...
 
     // Set the signature for the current item with inline image.
 
@@ -4538,8 +4606,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailBcc")
       .val()
@@ -4589,8 +4659,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -4616,8 +4688,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -4666,8 +4740,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailCc")
       .val()
@@ -5056,8 +5132,10 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5069,8 +5147,10 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5082,12 +5162,15 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
     ...
 
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5099,7 +5182,9 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);...
+      handleResult);
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5203,8 +5288,10 @@
         return;
       }
       console.log(`Subject: ${result.value}`);
-    });...
+    });
 
+
+    ...
 
     let subject = "Hello World!";
 
@@ -5242,8 +5329,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailTo")
       .val()
@@ -5338,8 +5427,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -5365,8 +5456,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -5573,8 +5666,10 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
-    text in italics</i>.");...
+    text in italics</i>.");
 
+
+    ...
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -5599,8 +5694,10 @@
       asyncResult
     ) {
       console.log(JSON.stringify(asyncResult));
-    });...
+    });
 
+
+    ...
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -6174,8 +6271,10 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6187,8 +6286,10 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6200,12 +6301,15 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
     ...
 
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6217,7 +6321,9 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);...
+      handleResult);
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6379,8 +6485,10 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6392,8 +6500,10 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6405,8 +6515,10 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);...
+    handleResult);
 
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6537,8 +6649,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -6550,8 +6664,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
     {
@@ -6570,8 +6686,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
     {
@@ -6590,8 +6708,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -6641,8 +6761,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailCc")
       .val()
@@ -6655,8 +6777,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailOptional")
       .val()
@@ -6670,8 +6794,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailRequired")
       .val()
@@ -6685,8 +6811,10 @@
       } else {
         console.error(asyncResult.error);
       }
-    });...
+    });
 
+
+    ...
 
     const email = $("#emailTo")
       .val()
@@ -7152,8 +7280,10 @@
         return;
       }
       console.log(`Successfully set start date and time to ${start}`);
-    });...
+    });
 
+
+    ...
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {

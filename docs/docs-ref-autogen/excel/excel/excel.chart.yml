@@ -840,8 +840,10 @@ events:
           await context.sync();
 
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });...
+      });
 
+
+      ...
 
       async function chartActivated(event) {
           await Excel.run(async (context) => {
@@ -895,8 +897,10 @@ events:
           await context.sync();
 
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
-      });...
+      });
 
+
+      ...
 
       async function chartDeactivated(event) {
           await Excel.run(async (context) => {

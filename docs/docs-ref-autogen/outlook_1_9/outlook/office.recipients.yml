@@ -352,8 +352,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -365,8 +367,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -384,8 +388,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -403,8 +409,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       Office.context.mailbox.item.to.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -614,8 +622,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       const email = $("#emailCc")
         .val()
@@ -628,8 +638,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       const email = $("#emailOptional")
         .val()
@@ -642,8 +654,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       const email = $("#emailRequired")
         .val()
@@ -656,8 +670,10 @@ methods:
         } else {
           console.error(asyncResult.error);
         }
-      });...
+      });
 
+
+      ...
 
       const email = $("#emailTo")
         .val()

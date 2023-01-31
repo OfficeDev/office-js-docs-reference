@@ -24,8 +24,10 @@
       await context.sync();
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
-    });...
+    });
 
+
+    ...
 
     // Gets the shapes you selected on the slide and displays their IDs on the
     task pane.
@@ -46,8 +48,10 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });...
+    });
 
+
+    ...
 
     // Saves which shapes are selected so that they can be reselected later.
 
@@ -106,8 +110,10 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });...
+    });
 
+
+    ...
 
     // Saves which slides are currently selected so they can be reselected
     later.
@@ -172,8 +178,10 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });...
+    });
 
+
+    ...
 
     // Sets the range selection to the range that was saved previously.
 
@@ -208,8 +216,10 @@
     await PowerPoint.run(async (context) => {
       context.presentation.setSelectedSlides(savedSlideSelection);
       await context.sync();
-    });...
+    });
 
+
+    ...
 
     // Selects slides 2, 4, and 5.
 
@@ -497,8 +507,10 @@
       slides.items.map((slide) => {
         slide.delete();
       });
-    });...
+    });
 
+
+    ...
 
     await PowerPoint.run(async function(context) {
       const slides = context.presentation.slides;
@@ -530,8 +542,10 @@
       await context.sync();
       slide1.setSelectedShapes(savedShapeSelection);
       await context.sync();
-    });...
+    });
 
+
+    ...
 
     // Selects the first two shapes on slide 1.
 
@@ -589,8 +603,10 @@
       await context.sync();
 
       console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
-    });...
+    });
 
+
+    ...
 
     // Selects slides 2, 4, and 5.
 
@@ -715,8 +731,10 @@
       const textRange10 = textRange.getSubstring(0, 10);
       textRange10.setSelected();
       await context.sync();
-    });...
+    });
 
+
+    ...
 
     // Sets the range selection to the range that was saved previously.
 

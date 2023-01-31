@@ -965,8 +965,10 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });...
+    });
 
+
+    ...
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -998,8 +1000,10 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });...
+    });
 
+
+    ...
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -1179,8 +1183,10 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });...
+    });
 
+
+    ...
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -1224,8 +1230,10 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });...
+    });
 
+
+    ...
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -2230,8 +2238,10 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });...
+    });
 
+
+    ...
 
     async function commentAdded(event: Excel.CommentAddedEventArgs) {
         // Retrieve the added comment using the comment ID.
@@ -2268,8 +2278,10 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });...
+    });
 
+
+    ...
 
     async function commentChanged(event: Excel.CommentChangedEventArgs) {
         // Retrieve the changed comment using the comment ID.
@@ -2306,8 +2318,10 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });...
+    });
 
+
+    ...
 
     async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
         // Print out the deleted comment's ID.
@@ -8034,8 +8048,10 @@
     // Read the file as a data URL so that we can parse the base64-encoded
     string.
 
-    reader.readAsDataURL(myFile.files[0]);...
+    reader.readAsDataURL(myFile.files[0]);
 
+
+    ...
 
     await Excel.run(async (context) => {
         // Retrieve the source workbook.
@@ -8062,8 +8078,10 @@
         // Callback function for when the workbook is activated.
         console.log("The workbook was activated.");
       });
-    }...
+    }
 
+
+    ...
 
     await Excel.run(async (context) => {
       const workbook = context.workbook;
@@ -8503,8 +8521,10 @@
       await context.sync();
       
       console.log("Registered a formula changed event handler for this worksheet.");
-    });...
+    });
 
+
+    ...
 
     async function formulaChangeHandler(event:
     Excel.WorksheetFormulaChangedEventArgs) {
@@ -8540,8 +8560,10 @@
         sheet.onProtectionChanged.add(checkProtection);
         await context.sync();
         console.log("Added a worksheet protection change event handler.");
-    });...
+    });
 
+
+    ...
 
     async function checkProtection(event:
     Excel.WorksheetProtectionChangedEventArgs) {
@@ -8752,8 +8774,10 @@
                 console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
             }
         });
-    }  ...
+    }  
 
+
+    ...
 
     // This function deletes data from a range and sets the delete shift
     direction to "up".

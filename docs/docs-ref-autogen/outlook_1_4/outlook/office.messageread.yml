@@ -709,8 +709,10 @@ properties:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
+
+      ...
 
       const id = $("#notificationId").val();
 
@@ -721,8 +723,10 @@ properties:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
+
+      ...
 
       const id = $("#notificationId").val();
 
@@ -733,11 +737,15 @@ properties:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
 
-      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          ...
+      ...
 
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+
+      ...
 
       const id = $("#notificationId").val();
 
@@ -749,7 +757,9 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);...
+        handleResult);
+
+      ...
 
       const id = $("#notificationId").val();
 
@@ -1254,8 +1264,10 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");...
+      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
+
+      ...
 
       Office.context.mailbox.item.displayReplyForm({
         htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",

@@ -344,8 +344,10 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });...
+      });
 
+
+      ...
 
       async function commentAdded(event: Excel.CommentAddedEventArgs) {
           // Retrieve the added comment using the comment ID.
@@ -404,8 +406,10 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });...
+      });
 
+
+      ...
 
       async function commentChanged(event: Excel.CommentChangedEventArgs) {
           // Retrieve the changed comment using the comment ID.
@@ -464,8 +468,10 @@ events:
           await context.sync();
 
           console.log("Added event handlers for when comments are added, changed, or deleted.");
-      });...
+      });
 
+
+      ...
 
       async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
           // Print out the deleted comment's ID.
