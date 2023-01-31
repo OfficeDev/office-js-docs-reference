@@ -44,28 +44,6 @@ properties:
           const sheet = context.workbook.worksheets.getItem("Sample");
 
           let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-          // Get the color of the chart trendline. 
-          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-          let line = trendline.format.line;
-          line.load("color");
-
-          await context.sync();
-
-          console.log("The trendline color is:" + line.color);
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          let seriesCollection = sheet.charts.getItemAt(0).series; 
           let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
 
           // Set format of the trendline to a solid, red line.
