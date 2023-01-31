@@ -4940,8 +4940,8 @@ Excel.Range,moveTo(destinationRange),Method,Poor,true
 Excel.Range,removeDuplicates(columns,Method,Fine,true
 Excel.Range,replaceAll(text,Method,Poor,false
 Excel.Range,select(),Method,Poor,true
-Excel.Range,set(properties,Method,Fine,true
-Excel.Range,set(properties),Method,Poor,false
+Excel.Range,set(properties,Method,Poor,false
+Excel.Range,set(properties),Method,Poor,true
 Excel.Range,setCellProperties(cellPropertiesData),Method,Poor,true
 Excel.Range,setColumnProperties(columnPropertiesData),Method,Poor,false
 Excel.Range,setDirty(),Method,Poor,false
@@ -6604,7 +6604,6 @@ Office.Context,officeTheme,Property,Fine,true
 Office.Context,platform,Property,Good,false
 Office.Context,requirements,Property,Fine,false
 Office.Context,roamingSettings,Property,Good,true
-Office.Context,sensitivityLabelsCatalog,Property,Good,false
 Office.Context,touchEnabled,Property,Good,false
 Office.Context,ui,Property,Fine,false
 Office.ContextInformation,N/A,Class,Good,false
@@ -6739,7 +6738,6 @@ Office.EventType,RecipientsChanged,EnumField,Good,false
 Office.EventType,RecurrenceChanged,EnumField,Good,false
 Office.EventType,ResourceSelectionChanged,EnumField,Fine,false
 Office.EventType,SelectedItemsChanged,EnumField,Good,false
-Office.EventType,SensitivityLabelChanged,EnumField,Good,false
 Office.EventType,SettingsChanged,EnumField,Poor,false
 Office.EventType,TaskSelectionChanged,EnumField,Fine,false
 Office.EventType,ViewSelectionChanged,EnumField,Fine,false
@@ -8278,7 +8276,6 @@ Office.AppointmentCompose,organizer,Property,Good,true
 Office.AppointmentCompose,recurrence,Property,Good,true
 Office.AppointmentCompose,requiredAttendees,Property,Good,true
 Office.AppointmentCompose,sensitivity,Property,Good,true
-Office.AppointmentCompose,sensitivityLabel,Property,Good,true
 Office.AppointmentCompose,seriesId,Property,Good,true
 Office.AppointmentCompose,sessionData,Property,Good,true
 Office.AppointmentCompose,start,Property,Good,true
@@ -8820,7 +8817,6 @@ Office.MessageCompose,from,Property,Good,true
 Office.MessageCompose,internetHeaders,Property,Good,true
 Office.MessageCompose,itemType,Property,Good,true
 Office.MessageCompose,notificationMessages,Property,Good,true
-Office.MessageCompose,sensitivityLabel,Property,Good,true
 Office.MessageCompose,seriesId,Property,Good,true
 Office.MessageCompose,sessionData,Property,Good,true
 Office.MessageCompose,subject,Property,Good,true
@@ -8981,23 +8977,6 @@ Office.Sensitivity,N/A,Class,Good,false
 Office.Sensitivity,getAsync(options,Method,Poor,false
 Office.Sensitivity,getAsync(callback),Method,Poor,true
 Office.Sensitivity,setAsync(sensitivity,Method,Poor,false
-Office.SensitivityLabel,N/A,Class,Good,false
-Office.SensitivityLabel,getAsync(options,Method,Poor,false
-Office.SensitivityLabel,getAsync(callback),Method,Poor,true
-Office.SensitivityLabel,setAsync(sensitivityLabel,Method,Fine,true
-Office.SensitivityLabelChangedEventArgs,N/A,Class,Good,false
-Office.SensitivityLabelChangedEventArgs,type,Property,Good,false
-Office.SensitivityLabelDetails,N/A,Class,Good,false
-Office.SensitivityLabelDetails,children,Property,Good,false
-Office.SensitivityLabelDetails,color,Property,Fine,false
-Office.SensitivityLabelDetails,id,Property,Fine,false
-Office.SensitivityLabelDetails,name,Property,Fine,false
-Office.SensitivityLabelDetails,tooltip,Property,Fine,false
-Office.SensitivityLabelsCatalog,N/A,Class,Good,false
-Office.SensitivityLabelsCatalog,getAsync(options,Method,Poor,false
-Office.SensitivityLabelsCatalog,getAsync(callback),Method,Poor,true
-Office.SensitivityLabelsCatalog,getIsEnabledAsync(options,Method,Poor,false
-Office.SensitivityLabelsCatalog,getIsEnabledAsync(callback),Method,Poor,true
 Office.SeriesTime,N/A,Class,Good,false
 Office.SeriesTime,getDuration(),Method,Poor,true
 Office.SeriesTime,getEndDate(),Method,Poor,true

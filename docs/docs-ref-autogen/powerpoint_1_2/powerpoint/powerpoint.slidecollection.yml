@@ -102,7 +102,8 @@ methods:
         await context.sync();
 
         console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
-      });
+      });...
+
 
       // Selects slides 2, 4, and 5.
 

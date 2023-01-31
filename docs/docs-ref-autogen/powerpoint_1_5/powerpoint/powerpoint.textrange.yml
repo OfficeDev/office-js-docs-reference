@@ -260,7 +260,8 @@ methods:
         const textRange10 = textRange.getSubstring(0, 10);
         textRange10.setSelected();
         await context.sync();
-      });
+      });...
+
 
       // Sets the range selection to the range that was saved previously.
 

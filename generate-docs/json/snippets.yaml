@@ -965,7 +965,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -997,7 +998,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -1177,7 +1179,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -1221,7 +1224,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -2069,21 +2073,6 @@
         const sheet = context.workbook.worksheets.getItem("Sample");
 
         let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-        // Get the color of the chart trendline. 
-        let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-        let line = trendline.format.line;
-        line.load("color");
-
-        await context.sync();
-
-        console.log("The trendline color is:" + line.color);
-    });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        let seriesCollection = sheet.charts.getItemAt(0).series; 
         let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
 
         // Set format of the trendline to a solid, red line.
@@ -2241,7 +2230,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentAdded(event: Excel.CommentAddedEventArgs) {
         // Retrieve the added comment using the comment ID.
@@ -2278,7 +2268,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentChanged(event: Excel.CommentChangedEventArgs) {
         // Retrieve the changed comment using the comment ID.
@@ -2315,7 +2306,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
         // Print out the deleted comment's ID.
@@ -2952,17 +2944,6 @@
                 formula: "=1000",
             }
         ];
-
-        await context.sync();
-    });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B16:D18");
-        const conditionalFormat = range.conditionalFormats
-            .add(Excel.ConditionalFormatType.containsText);
-        conditionalFormat.textComparison.format.font.color = "red";
-        conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
         await context.sync();
     });
@@ -5219,16 +5200,6 @@
 
         await context.sync();
     });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B8:E13");
-        const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-        conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-        conditionalFormat.custom.format.font.color = "green";
-
-        await context.sync();
-    });
 'Excel.Query#name:member':
   - |-
     // This function retrieves the query collection in a workbook, 
@@ -6097,29 +6068,10 @@
         range.select();
         await context.sync(); 
     });
-'Excel.Range#set:member(1)':
+'Excel.Range#set:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        const range = sheet.getRange("B2:E2");
-        range.set({
-            format: {
-                fill: {
-                    color: "#4472C4"
-                },
-                font: {
-                    name: "Verdana",
-                    color: "white"
-                }
-            }
-        })
-        range.format.autofitColumns();
-        await context.sync();
-    });
 
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -8082,7 +8034,8 @@
     // Read the file as a data URL so that we can parse the base64-encoded
     string.
 
-    reader.readAsDataURL(myFile.files[0]);
+    reader.readAsDataURL(myFile.files[0]);...
+
 
     await Excel.run(async (context) => {
         // Retrieve the source workbook.
@@ -8109,7 +8062,8 @@
         // Callback function for when the workbook is activated.
         console.log("The workbook was activated.");
       });
-    }
+    }...
+
 
     await Excel.run(async (context) => {
       const workbook = context.workbook;
@@ -8204,17 +8158,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.load("protection/protected");
-
-        await context.sync();
-
-        if (!workbook.protection.protected) {
-            workbook.protection.protect();
-        }
-    });
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -8233,11 +8176,6 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.protection.unprotect();
-    });
 
     let password = await passwordHandler();
 
@@ -8565,7 +8503,8 @@
       await context.sync();
       
       console.log("Registered a formula changed event handler for this worksheet.");
-    });
+    });...
+
 
     async function formulaChangeHandler(event:
     Excel.WorksheetFormulaChangedEventArgs) {
@@ -8601,7 +8540,8 @@
         sheet.onProtectionChanged.add(checkProtection);
         await context.sync();
         console.log("Added a worksheet protection change event handler.");
-    });
+    });...
+
 
     async function checkProtection(event:
     Excel.WorksheetProtectionChangedEventArgs) {
@@ -8741,14 +8681,6 @@
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-        // This collapses the entire outline.
-        sheet.showOutlineLevels(1, 1);
-        await context.sync();
-    });
-
-    Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
         // This shows the top 3 outline levels; collapsing any additional sublevels.
         sheet.showOutlineLevels(3, 3);
         await context.sync();
@@ -8820,7 +8752,8 @@
                 console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
             }
         });
-    }  
+    }  ...
+
 
     // This function deletes data from a range and sets the delete shift
     direction to "up".
@@ -9110,17 +9043,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.load("protection/protected");
-
-        await context.sync();
-
-        if (!activeSheet.protection.protected) {
-            activeSheet.protection.protect();
-        }
-    });
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -9139,11 +9061,6 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.protection.unprotect();
-    });
 
     let password = await passwordHandler();
 
@@ -9788,7 +9705,8 @@
         base64String,
         "logo.png",
         { isInline: false },
-        function(result) { console.log(result); });
+        function(result) { console.log(result); });...
+
     // Set the signature for the current item with inline image.
 
     const modIcon1Base64 =
@@ -9895,7 +9813,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     // Note: In order for you to successfully add a category,
 
@@ -9921,7 +9840,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -9997,7 +9917,8 @@
         return;
       }
       console.log(`Appointment ends: ${result.value}`);
-    });
+    });...
+
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -10036,7 +9957,8 @@
       } else {
         console.log("There are no locations.");
       }
-    });
+    });...
+
 
     const locations = [
       {
@@ -10056,7 +9978,8 @@
       } else {
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
-    });
+    });...
+
 
     const locations = [
       {
@@ -10269,7 +10192,8 @@
       } else {
         console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
     function(asyncResult) {
@@ -10395,7 +10319,8 @@
         return;
       }
       console.log(`Appointment location: ${result.value}`);
-    });
+    });...
+
 
     const location = "my office";
 
@@ -10419,7 +10344,8 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -10431,7 +10357,8 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -10443,9 +10370,12 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
+    ...
+
 
     const id = $("#notificationId").val();
 
@@ -10457,7 +10387,8 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);
+      handleResult);...
+
     const id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -10497,7 +10428,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailOptional")
       .val()
@@ -10541,7 +10473,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     // Important: Can only set the recurrence pattern of an appointment series.
 
@@ -10652,7 +10585,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailRequired")
       .val()
@@ -10707,7 +10641,8 @@
       } else {
         console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.sensitivity.setAsync(
       Office.MailboxEnums.AppointmentSensitivityType.Confidential,
@@ -10719,55 +10654,6 @@
         }
       }
     );
-'Office.AppointmentCompose#sensitivityLabel:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels.yaml
-
-    // This snippet gets the current mail item's sensitivity label.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            console.log(asyncResult.value);
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
-
-    // This snippet sets the sensitivity label on the current mail item.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            const catalog = asyncResult.value;
-            if (catalog.length > 0) {
-              var id = catalog[0].id;
-              Office.context.mailbox.item.sensitivityLabel.setAsync(id, (asyncResult) => {
-                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log(asyncResult.status);
-                } else {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-                }
-              });
-            }
-            else {
-              console.log("Catalog list is empty");
-            }
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
 'Office.AppointmentCompose#seriesId:member':
   - >-
     // Link to full sample:
@@ -10823,7 +10709,8 @@
         return;
       }
       console.log(`Appointment starts: ${result.value}`);
-    });
+    });...
+
 
     const start = new Date(); // Represents current date and time.
 
@@ -10847,7 +10734,8 @@
         return;
       }
       console.log(`Subject: ${result.value}`);
-    });
+    });...
+
 
     let subject = "Hello World!";
 
@@ -10939,7 +10827,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     // Note: In order for you to successfully add a category,
 
@@ -10965,7 +10854,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -11153,7 +11043,8 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
-    text in italics</i>.");
+    text in italics</i>.");...
+
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -11178,7 +11069,8 @@
       asyncResult
     ) {
       console.log(JSON.stringify(asyncResult));
-    });
+    });...
+
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -11740,7 +11632,8 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -11752,7 +11645,8 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -11764,9 +11658,12 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
+    ...
+
 
     const id = $("#notificationId").val();
 
@@ -11778,7 +11675,8 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);
+      handleResult);...
+
     const id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -12923,7 +12821,8 @@
           console.error(`addFileAttachmentFromBase64Async: ${result.error}`);
         }
       }
-    );
+    );...
+
 
     // Set the signature for the current item.
 
@@ -16310,7 +16209,8 @@
             console.log(this.response);
         }
         xhr.send();
-    });
+    });...
+
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -16668,7 +16568,8 @@
       }
 
       console.log(getUID(result.value));
-    });
+    });...
+
 
     const request = '<soap:Envelope
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16712,7 +16613,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const masterCategoriesToAdd = [
       {
@@ -16729,7 +16631,8 @@
       } else {
         console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
       }
-    });
+    });...
+
 
     const masterCategoriesToRemove = ["TestCategory"];
 
@@ -16761,7 +16664,8 @@
             console.log(this.response);
         }
         xhr.send();
-    });
+    });...
+
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -17684,7 +17588,8 @@
         base64String,
         "logo.png",
         { isInline: false },
-        function(result) { console.log(result); });
+        function(result) { console.log(result); });...
+
     // Set the signature for the current item with inline image.
 
     const modIcon1Base64 =
@@ -17782,7 +17687,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailBcc")
       .val()
@@ -17832,7 +17738,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     // Note: In order for you to successfully add a category,
 
@@ -17858,7 +17765,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -17907,7 +17815,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailCc")
       .val()
@@ -18296,7 +18205,8 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -18308,7 +18218,8 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -18320,9 +18231,12 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
+    ...
+
 
     const id = $("#notificationId").val();
 
@@ -18334,7 +18248,8 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);
+      handleResult);...
+
     const id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -18382,55 +18297,6 @@
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-'Office.MessageCompose#sensitivityLabel:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels.yaml
-
-    // This snippet gets the current mail item's sensitivity label.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            console.log(asyncResult.value);
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
-
-    // This snippet sets the sensitivity label on the current mail item.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            const catalog = asyncResult.value;
-            if (catalog.length > 0) {
-              var id = catalog[0].id;
-              Office.context.mailbox.item.sensitivityLabel.setAsync(id, (asyncResult) => {
-                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log(asyncResult.status);
-                } else {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-                }
-              });
-            }
-            else {
-              console.log("Catalog list is empty");
-            }
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
 'Office.MessageCompose#seriesId:member':
   - >-
     // Link to full sample:
@@ -18486,7 +18352,8 @@
         return;
       }
       console.log(`Subject: ${result.value}`);
-    });
+    });...
+
 
     let subject = "Hello World!";
 
@@ -18524,7 +18391,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailTo")
       .val()
@@ -18619,7 +18487,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     // Note: In order for you to successfully add a category,
 
@@ -18645,7 +18514,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -18852,7 +18722,8 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
-    text in italics</i>.");
+    text in italics</i>.");...
+
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -18877,7 +18748,8 @@
       asyncResult
     ) {
       console.log(JSON.stringify(asyncResult));
-    });
+    });...
+
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -19451,7 +19323,8 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -19463,7 +19336,8 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -19475,9 +19349,12 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
 
-    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);         
+    ...
+
 
     const id = $("#notificationId").val();
 
@@ -19489,7 +19366,8 @@
         icon: "icon2",
         persistent: false
       },
-      handleResult);
+      handleResult);...
+
     const id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -19650,7 +19528,8 @@
         message: "Progress indicator with id = " + id
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -19662,7 +19541,8 @@
         persistent: false
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -19674,7 +19554,8 @@
         persistent: true
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
-    handleResult);
+    handleResult);...
+
 
     const id = $("#notificationId").val();
 
@@ -19821,7 +19702,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -19833,7 +19715,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
     {
@@ -19852,7 +19735,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
     {
@@ -19871,7 +19755,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -19921,7 +19806,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailCc")
       .val()
@@ -19934,7 +19820,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailOptional")
       .val()
@@ -19948,7 +19835,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailRequired")
       .val()
@@ -19962,7 +19850,8 @@
       } else {
         console.error(asyncResult.error);
       }
-    });
+    });...
+
 
     const email = $("#emailTo")
       .val()
@@ -20180,96 +20069,6 @@
         }
       }
     );
-'Office.SensitivityLabel#getAsync:member(2)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels.yaml
-
-    // This snippet gets the current mail item's sensitivity label.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            console.log(asyncResult.value);
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
-'Office.SensitivityLabel#setAsync:member(2)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels.yaml
-
-    // This snippet sets the sensitivity label on the current mail item.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            const catalog = asyncResult.value;
-            if (catalog.length > 0) {
-              var id = catalog[0].id;
-              Office.context.mailbox.item.sensitivityLabel.setAsync(id, (asyncResult) => {
-                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log(asyncResult.status);
-                } else {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-                }
-              });
-            }
-            else {
-              console.log("Catalog list is empty");
-            }
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
-'Office.SensitivityLabelsCatalog#getAsync:member(2)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
-
-    // This snippet gets all available sensitivity labels from the catalog.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-        Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-            const catalog = asyncResult.value;
-            console.log("Sensitivity Labels Catalog:");
-            console.log(JSON.stringify(catalog));
-          } else {
-            console.log("Action failed with error: " + asyncResult.error.message);
-          }
-        });
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
-'Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
-
-    // This snippet determines if the sensitivity labels catalog is enabled on
-    the current mailbox.
-
-    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-        console.log(asyncResult.value);
-      } else {
-        console.log("Action failed with error: " + asyncResult.error.message);
-      }
-    });
 'Office.SeriesTime#getDuration:member(1)':
   - >-
     // This example gets the duration of a usual instance in a recurring
@@ -20772,7 +20571,8 @@
         return;
       }
       console.log(`Successfully set start date and time to ${start}`);
-    });
+    });...
+
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -22505,7 +22305,8 @@
       await context.sync();
       currentLeft = 0;
       if (currentTop > slideHeight - 200) currentTop = 0;
-    });
+    });...
+
 
     // Gets the shapes you selected on the slide and displays their IDs on the
     task pane.
@@ -22526,7 +22327,8 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });
+    });...
+
 
     // Saves which shapes are selected so that they can be reselected later.
 
@@ -22585,7 +22387,8 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });
+    });...
+
 
     // Saves which slides are currently selected so they can be reselected
     later.
@@ -22650,7 +22453,8 @@
       finalTable += "</table>";
       $("#outputSpan").empty();
       $("#outputSpan").append(finalTable);
-    });
+    });...
+
 
     // Sets the range selection to the range that was saved previously.
 
@@ -22685,7 +22489,8 @@
     await PowerPoint.run(async (context) => {
       context.presentation.setSelectedSlides(savedSlideSelection);
       await context.sync();
-    });
+    });...
+
 
     // Selects slides 2, 4, and 5.
 
@@ -22973,7 +22778,8 @@
       slides.items.map((slide) => {
         slide.delete();
       });
-    });
+    });...
+
 
     await PowerPoint.run(async function(context) {
       const slides = context.presentation.slides;
@@ -23005,7 +22811,8 @@
       await context.sync();
       slide1.setSelectedShapes(savedShapeSelection);
       await context.sync();
-    });
+    });...
+
 
     // Selects the first two shapes on slide 1.
 
@@ -23063,7 +22870,8 @@
       await context.sync();
 
       console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
-    });
+    });...
+
 
     // Selects slides 2, 4, and 5.
 
@@ -23188,7 +22996,8 @@
       const textRange10 = textRange.getSubstring(0, 10);
       textRange10.setSelected();
       await context.sync();
-    });
+    });...
+
 
     // Sets the range selection to the range that was saved previously.
 
@@ -24120,7 +23929,8 @@
       }
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
@@ -24137,7 +23947,8 @@
       }
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       const paragraphs = context.document.body.paragraphs;
@@ -24862,7 +24673,8 @@
 
         console.log("Added event handlers for when content controls are deleted.");
       }
-    });
+    });...
+
 
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
@@ -25322,7 +25134,8 @@
 
         await context.sync();
         console.log("Property added");
-    });
+    });...
+
 
     await Word.run(async (context) => {
         context.document.properties.customProperties.add("String Property", "Hello World!");
@@ -26954,7 +26767,8 @@
       context.document.body.paragraphs.getLast().select();
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -26978,7 +26792,8 @@
       });
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       const firstParagraph = context.document.body.paragraphs.getFirst();

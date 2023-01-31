@@ -430,7 +430,8 @@
       }
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
@@ -447,7 +448,8 @@
       }
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       const paragraphs = context.document.body.paragraphs;
@@ -1172,7 +1174,8 @@
 
         console.log("Added event handlers for when content controls are deleted.");
       }
-    });
+    });...
+
 
     async function contentControlDeleted(event: Word.ContentControlEventArgs) {
       await Word.run(async (context) => {
@@ -1632,7 +1635,8 @@
 
         await context.sync();
         console.log("Property added");
-    });
+    });...
+
 
     await Word.run(async (context) => {
         context.document.properties.customProperties.add("String Property", "Hello World!");
@@ -3264,7 +3268,8 @@
       context.document.body.paragraphs.getLast().select();
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -3288,7 +3293,8 @@
       });
 
       await context.sync();
-    });
+    });...
+
 
     await Word.run(async (context) => {
       const firstParagraph = context.document.body.paragraphs.getFirst();

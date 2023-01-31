@@ -133,17 +133,6 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-      await Excel.run(async (context) => {
-          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-          activeSheet.load("protection/protected");
-
-          await context.sync();
-
-          if (!activeSheet.protection.protected) {
-              activeSheet.protection.protect();
-          }
-      });
-
       let password = await passwordHandler();
 
       passwordHelper(password);

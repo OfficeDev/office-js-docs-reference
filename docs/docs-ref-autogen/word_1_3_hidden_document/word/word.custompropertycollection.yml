@@ -79,7 +79,8 @@ methods:
 
           await context.sync();
           console.log("Property added");
-      });
+      });...
+
 
       await Word.run(async (context) => {
           context.document.properties.customProperties.add("String Property", "Hello World!");

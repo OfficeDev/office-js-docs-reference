@@ -140,7 +140,8 @@ properties:
           return;
         }
         console.log(`Appointment ends: ${result.value}`);
-      });
+      });...
+
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -260,7 +261,8 @@ properties:
           return;
         }
         console.log(`Appointment location: ${result.value}`);
-      });
+      });...
+
 
       const location = "my office";
 
@@ -342,7 +344,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailOptional")
         .val()
@@ -428,7 +431,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailRequired")
         .val()
@@ -493,7 +497,8 @@ properties:
           return;
         }
         console.log(`Appointment starts: ${result.value}`);
-      });
+      });...
+
 
       const start = new Date(); // Represents current date and time.
 
@@ -549,7 +554,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
+      });...
+
 
       let subject = "Hello World!";
 

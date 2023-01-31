@@ -1467,7 +1467,8 @@ methods:
         context.document.body.paragraphs.getLast().select();
 
         await context.sync();
-      });
+      });...
+
 
       await Word.run(async (context) => {
         // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -1550,7 +1551,8 @@ methods:
             });
 
             await context.sync();
-          });
+          });...
+
 
           await Word.run(async (context) => {
             const firstParagraph = context.document.body.paragraphs.getFirst();

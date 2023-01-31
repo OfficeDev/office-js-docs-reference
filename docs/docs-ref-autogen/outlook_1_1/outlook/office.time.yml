@@ -193,7 +193,8 @@ methods:
           return;
         }
         console.log(`Successfully set start date and time to ${start}`);
-      });
+      });...
+
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {

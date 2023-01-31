@@ -323,7 +323,7 @@ function consolidateMappedSnippets(snippets: string[]): string[] {
     if (snippets.length > 1) {
         snippets.forEach((snippet, index) => {
             if (index > 0) {
-                consolidatedSnippets[0] = consolidatedSnippets[0] + snippet.replace(/\/\/ Link to full sample: https:\/\/.*.yaml/gm, "");
+                consolidatedSnippets[0] = consolidatedSnippets[0] + snippet.replace(/\/\/ Link to full sample: https:\/\/.*.yaml/gm, "...\n");
             }
         });
     }

@@ -965,7 +965,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -997,7 +998,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -1177,7 +1179,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartActivated(event) {
         await Excel.run(async (context) => {
@@ -1221,7 +1224,8 @@
         await context.sync();
 
         console.log("Added handlers for Chart onActivated and onDeactivated events.");
-    });
+    });...
+
 
     async function chartDeactivated(event) {
         await Excel.run(async (context) => {
@@ -2069,21 +2073,6 @@
         const sheet = context.workbook.worksheets.getItem("Sample");
 
         let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-        // Get the color of the chart trendline. 
-        let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-        let line = trendline.format.line;
-        line.load("color");
-
-        await context.sync();
-
-        console.log("The trendline color is:" + line.color);
-    });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        let seriesCollection = sheet.charts.getItemAt(0).series; 
         let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
 
         // Set format of the trendline to a solid, red line.
@@ -2241,7 +2230,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentAdded(event: Excel.CommentAddedEventArgs) {
         // Retrieve the added comment using the comment ID.
@@ -2278,7 +2268,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentChanged(event: Excel.CommentChangedEventArgs) {
         // Retrieve the changed comment using the comment ID.
@@ -2315,7 +2306,8 @@
         await context.sync();
 
         console.log("Added event handlers for when comments are added, changed, or deleted.");
-    });
+    });...
+
 
     async function commentDeleted(event: Excel.CommentDeletedEventArgs) {
         // Print out the deleted comment's ID.
@@ -2952,17 +2944,6 @@
                 formula: "=1000",
             }
         ];
-
-        await context.sync();
-    });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B16:D18");
-        const conditionalFormat = range.conditionalFormats
-            .add(Excel.ConditionalFormatType.containsText);
-        conditionalFormat.textComparison.format.font.color = "red";
-        conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
         await context.sync();
     });
@@ -5219,16 +5200,6 @@
 
         await context.sync();
     });
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B8:E13");
-        const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-        conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-        conditionalFormat.custom.format.font.color = "green";
-
-        await context.sync();
-    });
 'Excel.Query#name:member':
   - |-
     // This function retrieves the query collection in a workbook, 
@@ -6097,29 +6068,10 @@
         range.select();
         await context.sync(); 
     });
-'Excel.Range#set:member(1)':
+'Excel.Range#set:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        const range = sheet.getRange("B2:E2");
-        range.set({
-            format: {
-                fill: {
-                    color: "#4472C4"
-                },
-                font: {
-                    name: "Verdana",
-                    color: "white"
-                }
-            }
-        })
-        range.format.autofitColumns();
-        await context.sync();
-    });
 
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -8082,7 +8034,8 @@
     // Read the file as a data URL so that we can parse the base64-encoded
     string.
 
-    reader.readAsDataURL(myFile.files[0]);
+    reader.readAsDataURL(myFile.files[0]);...
+
 
     await Excel.run(async (context) => {
         // Retrieve the source workbook.
@@ -8109,7 +8062,8 @@
         // Callback function for when the workbook is activated.
         console.log("The workbook was activated.");
       });
-    }
+    }...
+
 
     await Excel.run(async (context) => {
       const workbook = context.workbook;
@@ -8204,17 +8158,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.load("protection/protected");
-
-        await context.sync();
-
-        if (!workbook.protection.protected) {
-            workbook.protection.protect();
-        }
-    });
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -8233,11 +8176,6 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.protection.unprotect();
-    });
 
     let password = await passwordHandler();
 
@@ -8565,7 +8503,8 @@
       await context.sync();
       
       console.log("Registered a formula changed event handler for this worksheet.");
-    });
+    });...
+
 
     async function formulaChangeHandler(event:
     Excel.WorksheetFormulaChangedEventArgs) {
@@ -8601,7 +8540,8 @@
         sheet.onProtectionChanged.add(checkProtection);
         await context.sync();
         console.log("Added a worksheet protection change event handler.");
-    });
+    });...
+
 
     async function checkProtection(event:
     Excel.WorksheetProtectionChangedEventArgs) {
@@ -8741,14 +8681,6 @@
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-        // This collapses the entire outline.
-        sheet.showOutlineLevels(1, 1);
-        await context.sync();
-    });
-
-    Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
         // This shows the top 3 outline levels; collapsing any additional sublevels.
         sheet.showOutlineLevels(3, 3);
         await context.sync();
@@ -8820,7 +8752,8 @@
                 console.log(`    Cells deleted shift direction: ` + event.changeDirectionState.deleteShiftDirection);
             }
         });
-    }  
+    }  ...
+
 
     // This function deletes data from a range and sets the delete shift
     direction to "up".
@@ -9110,17 +9043,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.load("protection/protected");
-
-        await context.sync();
-
-        if (!activeSheet.protection.protected) {
-            activeSheet.protection.protect();
-        }
-    });
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -9139,11 +9061,6 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.protection.unprotect();
-    });
 
     let password = await passwordHandler();
 

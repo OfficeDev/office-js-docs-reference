@@ -70,7 +70,8 @@ methods:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -81,7 +82,8 @@ methods:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -92,7 +94,8 @@ methods:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 

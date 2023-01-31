@@ -112,7 +112,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       // Note: In order for you to successfully add a category,
 
@@ -138,7 +139,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -235,7 +237,8 @@ properties:
           return;
         }
         console.log(`Appointment ends: ${result.value}`);
-      });
+      });...
+
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -307,7 +310,8 @@ properties:
         } else {
           console.log("There are no locations.");
         }
-      });
+      });...
+
 
       const locations = [
         {
@@ -326,7 +330,8 @@ properties:
         } else {
           console.error(`Failed to add locations. Error message: ${result.error.message}`);
         }
-      });
+      });...
+
 
       const locations = [
         {
@@ -387,7 +392,8 @@ properties:
         } else {
           console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
         }
-      });
+      });...
+
 
       Office.context.mailbox.item.isAllDayEvent.setAsync(true, function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -498,7 +504,8 @@ properties:
           return;
         }
         console.log(`Appointment location: ${result.value}`);
-      });
+      });...
+
 
       const location = "my office";
 
@@ -551,7 +558,8 @@ properties:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -562,7 +570,8 @@ properties:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -573,9 +582,11 @@ properties:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
 
-      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          ...
+
 
       const id = $("#notificationId").val();
 
@@ -587,7 +598,8 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        handleResult);...
+
       const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
@@ -662,7 +674,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailOptional")
         .val()
@@ -783,7 +796,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       // Important: Can only set the recurrence pattern of an appointment series.
 
@@ -901,7 +915,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailRequired")
         .val()
@@ -959,7 +974,8 @@ properties:
         } else {
           console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
         }
-      });
+      });...
+
 
       Office.context.mailbox.item.sensitivity.setAsync(
         Office.MailboxEnums.AppointmentSensitivityType.Confidential,
@@ -979,87 +995,6 @@ properties:
       content: 'sensitivity: Sensitivity;'
       return:
         type: '<xref uid="outlook!Office.Sensitivity:interface" />'
-  - name: sensitivityLabel
-    uid: 'outlook!Office.AppointmentCompose#sensitivityLabel:member'
-    package: outlook!
-    fullName: sensitivityLabel
-    summary: >-
-      Gets the object to get or set the [sensitivity label](xref:outlook!Office.SensitivityLabel:interface) of an
-      appointment.
-    remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
-
-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
-
-
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Appointment Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels.yaml
-
-      // This snippet gets the current mail item's sensitivity label.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.mailbox.item.sensitivityLabel.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log(asyncResult.value);
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      // This snippet sets the sensitivity label on the current mail item.
-
-      Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
-        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
-          Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              const catalog = asyncResult.value;
-              if (catalog.length > 0) {
-                var id = catalog[0].id;
-                Office.context.mailbox.item.sensitivityLabel.setAsync(id, (asyncResult) => {
-                  if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                    console.log(asyncResult.status);
-                  } else {
-                    console.log("Action failed with error: " + asyncResult.error.message);
-                  }
-                });
-              }
-              else {
-                console.log("Catalog list is empty");
-              }
-            } else {
-              console.log("Action failed with error: " + asyncResult.error.message);
-            }
-          });
-        } else {
-          console.log("Action failed with error: " + asyncResult.error.message);
-        }
-      });
-
-      ```
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'sensitivityLabel: SensitivityLabel;'
-      return:
-        type: '<xref uid="outlook!Office.SensitivityLabel:interface" />'
   - name: seriesId
     uid: 'outlook!Office.AppointmentCompose#seriesId:member'
     package: outlook!
@@ -1210,7 +1145,8 @@ properties:
           return;
         }
         console.log(`Appointment starts: ${result.value}`);
-      });
+      });...
+
 
       const start = new Date(); // Represents current date and time.
 
@@ -1266,7 +1202,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
+      });...
+
 
       let subject = "Hello World!";
 
@@ -1541,7 +1478,8 @@ methods:
           base64String,
           "logo.png",
           { isInline: false },
-          function(result) { console.log(result); });
+          function(result) { console.log(result); });...
+
       // Set the signature for the current item with inline image.
 
       const modIcon1Base64 =

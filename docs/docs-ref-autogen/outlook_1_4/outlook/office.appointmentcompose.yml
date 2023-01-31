@@ -140,7 +140,8 @@ properties:
           return;
         }
         console.log(`Appointment ends: ${result.value}`);
-      });
+      });...
+
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -260,7 +261,8 @@ properties:
           return;
         }
         console.log(`Appointment location: ${result.value}`);
-      });
+      });...
+
 
       const location = "my office";
 
@@ -313,7 +315,8 @@ properties:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -324,7 +327,8 @@ properties:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -335,9 +339,11 @@ properties:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
 
-      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          ...
+
 
       const id = $("#notificationId").val();
 
@@ -349,7 +355,8 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        handleResult);...
+
       const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
@@ -424,7 +431,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailOptional")
         .val()
@@ -510,7 +518,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailRequired")
         .val()
@@ -575,7 +584,8 @@ properties:
           return;
         }
         console.log(`Appointment starts: ${result.value}`);
-      });
+      });...
+
 
       const start = new Date(); // Represents current date and time.
 
@@ -631,7 +641,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
+      });...
+
 
       let subject = "Hello World!";
 

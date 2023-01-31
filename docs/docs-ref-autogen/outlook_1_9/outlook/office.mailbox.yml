@@ -214,7 +214,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const masterCategoriesToAdd = [
         {
@@ -230,7 +231,8 @@ properties:
         } else {
           console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
         }
-      });
+      });...
+
 
       const masterCategoriesToRemove = ["TestCategory"];
 
@@ -309,7 +311,8 @@ properties:
               console.log(this.response);
           }
           xhr.send();
-      });
+      });...
+
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -641,7 +644,8 @@ methods:
               console.log(this.response);
           }
           xhr.send();
-      });
+      });...
+
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -2194,7 +2198,8 @@ methods:
         }
 
         console.log(getUID(result.value));
-      });
+      });...
+
 
       const request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"

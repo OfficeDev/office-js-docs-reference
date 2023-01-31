@@ -83,7 +83,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailBcc")
         .val()
@@ -195,7 +196,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       // Note: In order for you to successfully add a category,
 
@@ -221,7 +223,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -308,7 +311,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailCc")
         .val()
@@ -554,7 +558,8 @@ properties:
           type: Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator,
           message: "Progress indicator with id = " + id
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -565,7 +570,8 @@ properties:
           icon: "icon1",
           persistent: false
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
+
 
       const id = $("#notificationId").val();
 
@@ -576,9 +582,11 @@ properties:
           icon: "icon1",
           persistent: true
         };
-      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);...
 
-      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          ...
+
 
       const id = $("#notificationId").val();
 
@@ -590,7 +598,8 @@ properties:
           icon: "icon2",
           persistent: false
         },
-        handleResult);
+        handleResult);...
+
       const id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
@@ -699,7 +708,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
+      });...
+
 
       let subject = "Hello World!";
 
@@ -775,7 +785,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailTo")
         .val()
@@ -1077,7 +1088,8 @@ methods:
           base64String,
           "logo.png",
           { isInline: false },
-          function(result) { console.log(result); });
+          function(result) { console.log(result); });...
+
       // Set the signature for the current item with inline image.
 
       const modIcon1Base64 =

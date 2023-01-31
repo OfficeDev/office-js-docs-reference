@@ -1812,7 +1812,8 @@ events:
 
           console.log("Added event handlers for when content controls are deleted.");
         }
-      });
+      });...
+
 
       async function contentControlDeleted(event: Word.ContentControlEventArgs) {
         await Word.run(async (context) => {

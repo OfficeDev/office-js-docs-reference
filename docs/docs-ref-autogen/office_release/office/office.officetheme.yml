@@ -10,14 +10,18 @@ summary: >-
   Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected
   by the user with **File** &gt; **Office Account** &gt; **Office Theme UI**, which is applied across all Office
   applications. Using Office theme colors is appropriate for mail and task pane add-ins.
-remarks: |-
-  **Applications**: Excel, Outlook (in preview), PowerPoint, Word
+remarks: >-
+  *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
+  </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> </td></tr> <tr><td><strong> Outlook
+  </strong></td><td> Preview </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
+  </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td></tr> </table>
 
-  `OfficeTheme` is only supported in Office on Windows, Mac, and the web.
 
   #### Examples
 
+
   ```javascript
+
   function applyOfficeTheme(){
       // Get office theme colors.
       const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
@@ -28,6 +32,7 @@ remarks: |-
       // Apply body background color to a CSS class.
       $('.body').css('background-color', bodyBackgroundColor);
   }
+
   ```
 isPreview: false
 isDeprecated: false

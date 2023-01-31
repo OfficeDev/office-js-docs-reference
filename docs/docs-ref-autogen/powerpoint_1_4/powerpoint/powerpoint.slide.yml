@@ -113,7 +113,8 @@ methods:
         slides.items.map((slide) => {
           slide.delete();
         });
-      });
+      });...
+
 
       await PowerPoint.run(async function(context) {
         const slides = context.presentation.slides;

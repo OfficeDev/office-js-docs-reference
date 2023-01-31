@@ -83,7 +83,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailBcc")
         .val()
@@ -210,7 +211,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailCc")
         .val()
@@ -357,7 +359,8 @@ properties:
           return;
         }
         console.log(`Subject: ${result.value}`);
-      });
+      });...
+
 
       let subject = "Hello World!";
 
@@ -433,7 +436,8 @@ properties:
         } else {
           console.error(asyncResult.error);
         }
-      });
+      });...
+
 
       const email = $("#emailTo")
         .val()
