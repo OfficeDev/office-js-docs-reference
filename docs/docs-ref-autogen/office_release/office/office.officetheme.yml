@@ -12,9 +12,9 @@ summary: >-
   applications. Using Office theme colors is appropriate for mail and task pane add-ins.
 remarks: >-
   *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office on the web
-  </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> </td></tr> <tr><td><strong> Outlook
-  </strong></td><td> Preview </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> </td></tr>
-  <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td></tr> </table>
+  </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> </td></tr> <tr><td><strong> Outlook
+  </strong></td><td> Preview </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
+  </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td></tr> </table>
 
 
   #### Examples

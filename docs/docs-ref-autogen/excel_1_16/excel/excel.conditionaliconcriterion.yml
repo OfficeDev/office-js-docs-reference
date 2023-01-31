@@ -143,24 +143,6 @@ properties:
       });
 
       ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B16:D18");
-          const conditionalFormat = range.conditionalFormats
-              .add(Excel.ConditionalFormatType.containsText);
-          conditionalFormat.textComparison.format.font.color = "red";
-          conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
-
-          await context.sync();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:

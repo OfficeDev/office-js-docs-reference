@@ -2081,24 +2081,6 @@
         const sheet = context.workbook.worksheets.getItem("Sample");
 
         let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-        // Get the color of the chart trendline. 
-        let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-        let line = trendline.format.line;
-        line.load("color");
-
-        await context.sync();
-
-        console.log("The trendline color is:" + line.color);
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-trendlines.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        let seriesCollection = sheet.charts.getItemAt(0).series; 
         let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
 
         // Set format of the trendline to a solid, red line.
@@ -2976,20 +2958,6 @@
                 formula: "=1000",
             }
         ];
-
-        await context.sync();
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B16:D18");
-        const conditionalFormat = range.conditionalFormats
-            .add(Excel.ConditionalFormatType.containsText);
-        conditionalFormat.textComparison.format.font.color = "red";
-        conditionalFormat.textComparison.rule = { operator: Excel.ConditionalTextOperator.contains, text: "Delayed" };
 
         await context.sync();
     });
@@ -5246,19 +5214,6 @@
 
         await context.sync();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-        const range = sheet.getRange("B8:E13");
-        const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-        conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-        conditionalFormat.custom.format.font.color = "green";
-
-        await context.sync();
-    });
 'Excel.Query#name:member':
   - |-
     // This function retrieves the query collection in a workbook, 
@@ -6127,29 +6082,7 @@
         range.select();
         await context.sync(); 
     });
-'Excel.Range#set:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Sample");
-
-        const range = sheet.getRange("B2:E2");
-        range.set({
-            format: {
-                fill: {
-                    color: "#4472C4"
-                },
-                font: {
-                    name: "Verdana",
-                    color: "white"
-                }
-            }
-        })
-        range.format.autofitColumns();
-        await context.sync();
-    });
+'Excel.Range#set:member(2)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
@@ -8243,20 +8176,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.load("protection/protected");
-
-        await context.sync();
-
-        if (!workbook.protection.protected) {
-            workbook.protection.protect();
-        }
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -8272,14 +8191,6 @@
         }
     });
 'Excel.WorkbookProtection#unprotect:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let workbook = context.workbook;
-        workbook.protection.unprotect();
-    });
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
@@ -8792,17 +8703,6 @@
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-        // This collapses the entire outline.
-        sheet.showOutlineLevels(1, 1);
-        await context.sync();
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
-
-    Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-
         // This shows the top 3 outline levels; collapsing any additional sublevels.
         sheet.showOutlineLevels(3, 3);
         await context.sync();
@@ -9167,20 +9067,6 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.load("protection/protected");
-
-        await context.sync();
-
-        if (!activeSheet.protection.protected) {
-            activeSheet.protection.protect();
-        }
-    });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
     let password = await passwordHandler();
 
     passwordHelper(password);
@@ -9196,14 +9082,6 @@
         }
     });
 'Excel.WorksheetProtection#unprotect:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-    await Excel.run(async (context) => {
-        let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-        activeSheet.protection.unprotect();
-    });
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml

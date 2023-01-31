@@ -66,23 +66,6 @@ properties:
       });
 
       ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
-
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-          const range = sheet.getRange("B8:E13");
-          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-          conditionalFormat.custom.format.font.color = "green";
-
-          await context.sync();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:
