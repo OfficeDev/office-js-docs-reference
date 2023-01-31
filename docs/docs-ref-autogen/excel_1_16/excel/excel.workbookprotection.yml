@@ -120,24 +120,6 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
 
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.load("protection/protected");
-
-          await context.sync();
-
-          if (!workbook.protection.protected) {
-              workbook.protection.protect();
-          }
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
       let password = await passwordHandler();
 
       passwordHelper(password);
@@ -194,18 +176,6 @@ methods:
 
       #### Examples
 
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/data-protection.yaml
-
-      await Excel.run(async (context) => {
-          let workbook = context.workbook;
-          workbook.protection.unprotect();
-      });
-
-      ```
 
       ```typescript
 

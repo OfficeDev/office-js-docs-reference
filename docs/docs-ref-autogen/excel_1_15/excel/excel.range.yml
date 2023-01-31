@@ -3117,37 +3117,28 @@ methods:
           type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
+        description: ''
+  - name: set(properties)
+    uid: 'excel!Excel.Range#set:member(2)'
+    package: excel!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.Range): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="excel!Excel.Range:class" />'
+      return:
+        type: void
         description: >-
 
 
           #### Examples
 
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              const range = sheet.getRange("B2:E2");
-              range.set({
-                  format: {
-                      fill: {
-                          color: "#4472C4"
-                      },
-                      font: {
-                          name: "Verdana",
-                          color: "white"
-                      }
-                  }
-              })
-              range.format.autofitColumns();
-              await context.sync();
-          });
-
-          ```
 
           ```typescript
 
@@ -3170,23 +3161,6 @@ methods:
           });
 
           ```
-  - name: set(properties)
-    uid: 'excel!Excel.Range#set:member(2)'
-    package: excel!
-    fullName: set(properties)
-    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'set(properties: Excel.Range): void;'
-      parameters:
-        - id: properties
-          description: ''
-          type: '<xref uid="excel!Excel.Range:class" />'
-      return:
-        type: void
-        description: ''
   - name: setCellProperties(cellPropertiesData)
     uid: 'excel!Excel.Range#setCellProperties:member(1)'
     package: excel!

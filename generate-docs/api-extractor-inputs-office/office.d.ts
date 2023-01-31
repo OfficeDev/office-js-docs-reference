@@ -223,20 +223,17 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this object is supported in the corresponding Office application.
-     * An empty cell indicates that the Office application doesn't support this object.
-     *
      * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
      * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
      *  </table>
      */
     var context: Context;
@@ -258,20 +255,17 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-     * An empty cell indicates that the Office application doesn't support this function.
-     *
      * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
      * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
      *  </table>
      *
      * @param reason - Indicates how the app was initialized.
@@ -295,20 +289,17 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-     * An empty cell indicates that the Office application doesn't support this function.
-     *
      * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
      * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
      *  </table>
      *
      * @param useShortNamespace - True to use the shortcut alias; otherwise false to disable it. The default is true.
@@ -859,20 +850,17 @@ export declare namespace Office {
          *
          * **Support details**
          *
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
-         * An empty cell indicates that the Office application doesn't support this property.
-         *
          * For more information about Office application and server requirements, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          *
          * *Supported applications, by platform*
          *  <table>
          *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
          *  </table>
          */
         contentLanguage: string;
@@ -900,20 +888,17 @@ export declare namespace Office {
          *
          * **Support details**
          *
-         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office application.
-         * An empty cell indicates that the Office application doesn't support this property.
-         *
          * For more information about Office application and server requirements, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
          *
          * *Supported applications, by platform*
          *  <table>
          *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-         *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-         *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+         *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+         *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+         *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+         *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+         *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
          *  </table>
          */
         displayLanguage: string;
@@ -1979,10 +1964,10 @@ export declare namespace Office {
      *  *Supported applications, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office on the web </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td>                   </td></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td>                   </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Preview           </td><td>                   </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td>                   </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>  Y                </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td>                   </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td>  Supported        </td></tr>
      *  </table>
      */
     export interface OfficeTheme {
@@ -2063,17 +2048,14 @@ export declare namespace Office {
      *
      * **Support details**
      *
-     * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-     * An empty cell indicates that the Office application doesn't support this function.
-     *
      * For more information about Office application and server requirements, see
      * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      *
      * *Supported applications, by platform*
      *  <table>
      *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
-     *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
-     *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
+     *   <tr><td><strong> Excel  </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td></tr>
+     *   <tr><td><strong> Word   </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td></tr>
      *  </table>
      */
     export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;
