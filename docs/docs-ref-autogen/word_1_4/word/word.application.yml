@@ -29,18 +29,14 @@ methods:
     package: word!
     fullName: createDocument(base64File)
     summary: Creates a new document by using an optional base64 encoded .docx file.
-    remarks: >-
+    remarks: |-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
 
       #### Examples
 
-
       ```typescript
-
-      // Update the text of the current document with the text from another document passed in as a base64-encoded
-      string.
-
+      // Update the text of the current document with the text from another document
+      // passed in as a base64-encoded string.
       await Word.run(async (context) => {
           const externalDoc = context.application.createDocument(getBase64());
           await context.sync();
@@ -54,7 +50,6 @@ methods:
           currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
           await context.sync();
       });
-
       ```
     isPreview: false
     isDeprecated: false
