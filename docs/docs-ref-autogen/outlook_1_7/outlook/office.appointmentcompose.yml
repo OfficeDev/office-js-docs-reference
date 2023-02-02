@@ -142,12 +142,8 @@ properties:
         console.log(`Appointment ends: ${result.value}`);
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+      ...
 
       Office.context.mailbox.item.start.getAsync((result) => {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -269,12 +265,8 @@ properties:
         console.log(`Appointment location: ${result.value}`);
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+      ...
 
       const location = "my office";
 
@@ -329,12 +321,8 @@ properties:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -347,12 +335,8 @@ properties:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -365,21 +349,13 @@ properties:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -392,12 +368,8 @@ properties:
           persistent: false
         },
         handleResult);
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -475,12 +447,8 @@ properties:
         }
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+      ...
 
       const email = $("#emailOptional")
         .val()
@@ -603,12 +571,8 @@ properties:
         }
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+      ...
 
       // Important: Can only set the recurrence pattern of an appointment series.
 
@@ -728,12 +692,8 @@ properties:
         }
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+      ...
 
       const email = $("#emailRequired")
         .val()
@@ -862,12 +822,8 @@ properties:
         console.log(`Appointment starts: ${result.value}`);
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+      ...
 
       const start = new Date(); // Represents current date and time.
 
@@ -925,12 +881,8 @@ properties:
         console.log(`Subject: ${result.value}`);
       });
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+      ...
 
       let subject = "Hello World!";
 

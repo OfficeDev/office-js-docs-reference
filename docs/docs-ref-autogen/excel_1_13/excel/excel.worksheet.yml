@@ -1505,12 +1505,8 @@ events:
         console.log("Registered a formula changed event handler for this worksheet.");
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
+      ...
 
       async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
         await Excel.run(async (context) => {

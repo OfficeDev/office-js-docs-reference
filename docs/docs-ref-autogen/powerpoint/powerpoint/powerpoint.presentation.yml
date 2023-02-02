@@ -114,12 +114,8 @@ methods:
         if (currentTop > slideHeight - 200) currentTop = 0;
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+      ...
 
       // Gets the shapes you selected on the slide and displays their IDs on the task pane.
 
@@ -141,12 +137,8 @@ methods:
         $("#outputSpan").append(finalTable);
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+      ...
 
       // Saves which shapes are selected so that they can be reselected later.
 
@@ -230,12 +222,8 @@ methods:
         $("#outputSpan").append(finalTable);
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+      ...
 
       // Saves which slides are currently selected so they can be reselected later.
 
@@ -323,12 +311,8 @@ methods:
         $("#outputSpan").append(finalTable);
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml
+      ...
 
       // Sets the range selection to the range that was saved previously.
 
@@ -500,12 +484,8 @@ methods:
         await context.sync();
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
+      ...
 
       // Selects slides 2, 4, and 5.
 

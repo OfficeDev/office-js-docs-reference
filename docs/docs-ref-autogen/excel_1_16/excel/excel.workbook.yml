@@ -728,7 +728,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
@@ -751,12 +751,8 @@ methods:
 
       reader.readAsDataURL(myFile.files[0]);
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
+      ...
 
       await Excel.run(async (context) => {
           // Retrieve the source workbook.
@@ -995,12 +991,8 @@ events:
         });
       }
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
+      ...
 
       await Excel.run(async (context) => {
         const workbook = context.workbook;

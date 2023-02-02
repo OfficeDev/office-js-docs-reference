@@ -1552,12 +1552,8 @@ methods:
         await context.sync();
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+      ...
 
       await Word.run(async (context) => {
         // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
@@ -1642,12 +1638,8 @@ methods:
             await context.sync();
           });
 
-          ```
 
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/multiple-property-set.yaml
+          ...
 
           await Word.run(async (context) => {
             const firstParagraph = context.document.body.paragraphs.getFirst();
