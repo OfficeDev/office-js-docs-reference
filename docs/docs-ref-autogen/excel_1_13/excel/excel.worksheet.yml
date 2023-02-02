@@ -1251,21 +1251,6 @@ methods:
       Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getActiveWorksheet();
 
-          // This collapses the entire outline.
-          sheet.showOutlineLevels(1, 1);
-          await context.sync();
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/outline.yaml
-
-      Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getActiveWorksheet();
-
           // This shows the top 3 outline levels; collapsing any additional sublevels.
           sheet.showOutlineLevels(3, 3);
           await context.sync();
@@ -1520,12 +1505,8 @@ events:
         console.log("Registered a formula changed event handler for this worksheet.");
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-formula-changed.yaml
+      ...
 
       async function formulaChangeHandler(event: Excel.WorksheetFormulaChangedEventArgs) {
         await Excel.run(async (context) => {

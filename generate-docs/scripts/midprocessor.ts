@@ -70,8 +70,10 @@ tryCatch(async () => {
     // If a duplicate key exists, merge the Script Lab example(s) into the item with the existing key.
     let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
     for (const key of Object.keys(scriptLabSnippets)) {
+        scriptLabSnippets[key] = consolidateMappedSnippets(scriptLabSnippets[key]);
+        
         if (allSnippets[key]) {
-            console.log("Combining local and Script Lab snippets for: " + key);
+            console.warn(`${key} has both local and Script Lab snippets. Combining, but these should be evaluated.`);
             allSnippets[key] = allSnippets[key].concat(scriptLabSnippets[key]);
         } else {
             allSnippets[key] = scriptLabSnippets[key];
@@ -314,6 +316,19 @@ function writeSnippetFileAndClearYamlIfNew(snippetsFilePath: string, snippetsCon
             }
         });
     }
+}
+
+function consolidateMappedSnippets(snippets: string[]): string[] {
+    let consolidatedSnippets = [snippets[0]];
+    if (snippets.length > 1) {
+        snippets.forEach((snippet, index) => {
+            if (index > 0) {
+                consolidatedSnippets[0] = consolidatedSnippets[0] + snippet.replace(/\/\/ Link to full sample: https:\/\/.*.yaml/gm, "\n\n...");
+            }
+        });
+    }
+
+    return consolidatedSnippets;
 }
 
 async function tryCatch(call: () => Promise<void>) {

@@ -4940,8 +4940,8 @@ Excel.Range,moveTo(destinationRange),Method,Poor,true
 Excel.Range,removeDuplicates(columns,Method,Fine,true
 Excel.Range,replaceAll(text,Method,Poor,false
 Excel.Range,select(),Method,Poor,true
-Excel.Range,set(properties,Method,Fine,true
-Excel.Range,set(properties),Method,Poor,false
+Excel.Range,set(properties,Method,Poor,false
+Excel.Range,set(properties),Method,Poor,true
 Excel.Range,setCellProperties(cellPropertiesData),Method,Poor,true
 Excel.Range,setColumnProperties(columnPropertiesData),Method,Poor,false
 Excel.Range,setDirty(),Method,Poor,false

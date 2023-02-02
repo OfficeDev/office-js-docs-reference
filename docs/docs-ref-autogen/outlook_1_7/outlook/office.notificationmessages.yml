@@ -72,12 +72,8 @@ methods:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -90,12 +86,8 @@ methods:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
@@ -108,12 +100,8 @@ methods:
         };
       Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+      ...
 
       const id = $("#notificationId").val();
 
