@@ -75,7 +75,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  [DesktopFormFactor](desktopformfactor.md)    |  Yes   |  Defines the settings for the desktop form factor. |
 |  [MobileFormFactor](mobileformfactor.md)    |  No   |  Defines the settings for the mobile form factor. **Note:** This element is only supported in Outlook on iOS and Android. |
 |  [AllFormFactors](allformfactors.md)    |  No   |  Defines the settings for all form factors. Only used by custom functions in Excel. |
-|  [Runtimes](runtimes.md)    |  No   |  Specifies the runtime of your add-in. Child of the [Host](host.md) element. |
+|  [Runtimes](runtimes.md)    |  No   |  Specifies the runtimes of your add-in. |
 
 ### xsi:type
 
