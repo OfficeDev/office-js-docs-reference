@@ -23648,8 +23648,8 @@
     });
 'Word.Application#createDocument:member(1)':
   - >-
-    // Update the text of the current document using the text from another
-    document passed in as base64.
+    // Update the text of the current document with the text from another
+    document passed in as a base64-encoded string.
 
     await Word.run(async (context) => {
         const externalDoc = context.application.createDocument(getBase64());
@@ -23660,8 +23660,8 @@
         await context.sync();
 
         const externalDocBodyText = externalDocBody.text;
-        const body = context.document.body;
-        body.insertText(externalDocBodyText, WordInsertLocation.start);
+        const currentDocBody = context.document.body;
+        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
         await context.sync();
     });
 'Word.Body#clear:member(1)':
