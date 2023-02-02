@@ -39,9 +39,8 @@
         "logo.png",
         { isInline: false },
         function(result) { console.log(result); });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+    ...
 
     // Set the signature for the current item with inline image.
 
@@ -150,9 +149,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -179,9 +178,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -258,9 +257,9 @@
       }
       console.log(`Appointment ends: ${result.value}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+
+
+    ...
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -300,9 +299,9 @@
         console.log("There are no locations.");
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+    ...
 
     const locations = [
       {
@@ -323,9 +322,9 @@
         console.error(`Failed to add locations. Error message: ${result.error.message}`);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
+
+    ...
 
     const locations = [
       {
@@ -539,9 +538,9 @@
         console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
+
+    ...
 
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
     function(asyncResult) {
@@ -668,9 +667,9 @@
       }
       console.log(`Appointment location: ${result.value}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
+
+    ...
 
     const location = "my office";
 
@@ -695,9 +694,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -710,9 +709,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -725,14 +724,14 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -745,9 +744,8 @@
         persistent: false
       },
       handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -789,9 +787,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
+
+    ...
 
     const email = $("#emailOptional")
       .val()
@@ -836,9 +834,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
+
+    ...
 
     // Important: Can only set the recurrence pattern of an appointment series.
 
@@ -950,9 +948,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
+
+    ...
 
     const email = $("#emailRequired")
       .val()
@@ -1008,9 +1006,9 @@
         console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
+
+    ...
 
     Office.context.mailbox.item.sensitivity.setAsync(
       Office.MailboxEnums.AppointmentSensitivityType.Confidential,
@@ -1078,9 +1076,9 @@
       }
       console.log(`Appointment starts: ${result.value}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
+
+    ...
 
     const start = new Date(); // Represents current date and time.
 
@@ -1105,9 +1103,9 @@
       }
       console.log(`Subject: ${result.value}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
+
+    ...
 
     let subject = "Hello World!";
 
@@ -1200,9 +1198,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -1229,9 +1227,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1420,9 +1418,9 @@
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
     text in italics</i>.");
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+    ...
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -1448,9 +1446,9 @@
     ) {
       console.log(JSON.stringify(asyncResult));
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+    ...
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -2013,9 +2011,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2028,9 +2026,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2043,14 +2041,14 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2063,9 +2061,8 @@
         persistent: false
       },
       handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -2504,9 +2501,9 @@
         }
       }
     );
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+
+    ...
 
     // Set the signature for the current item.
 
@@ -3142,9 +3139,9 @@
         }
         xhr.send();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
+
+    ...
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -3503,9 +3500,9 @@
 
       console.log(getUID(result.value));
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
+
+
+    ...
 
     const request = '<soap:Envelope
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -3550,9 +3547,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
+
+
+    ...
 
     const masterCategoriesToAdd = [
       {
@@ -3570,9 +3567,9 @@
         console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml
+
+
+    ...
 
     const masterCategoriesToRemove = ["TestCategory"];
 
@@ -3605,9 +3602,9 @@
         }
         xhr.send();
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
+
+    ...
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -4509,9 +4506,8 @@
         "logo.png",
         { isInline: false },
         function(result) { console.log(result); });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+    ...
 
     // Set the signature for the current item with inline image.
 
@@ -4611,9 +4607,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
+
+    ...
 
     const email = $("#emailBcc")
       .val()
@@ -4664,9 +4660,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -4693,9 +4689,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -4745,9 +4741,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
+
+    ...
 
     const email = $("#emailCc")
       .val()
@@ -5137,9 +5133,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5152,9 +5148,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5167,14 +5163,14 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5187,9 +5183,8 @@
         persistent: false
       },
       handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -5294,9 +5289,9 @@
       }
       console.log(`Subject: ${result.value}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
+
+    ...
 
     let subject = "Hello World!";
 
@@ -5335,9 +5330,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
+
+    ...
 
     const email = $("#emailTo")
       .val()
@@ -5433,9 +5428,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     // Note: In order for you to successfully add a category,
 
@@ -5462,9 +5457,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-categories.yaml
+
+
+    ...
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -5672,9 +5667,9 @@
 
     Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some
     text in italics</i>.");
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+    ...
 
     Office.context.mailbox.item.displayReplyForm({
       htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
@@ -5700,9 +5695,9 @@
     ) {
       console.log(JSON.stringify(asyncResult));
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
+
+    ...
 
     // The async version is only available starting with requirement set 1.9,
 
@@ -6277,9 +6272,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6292,9 +6287,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6307,14 +6302,14 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6327,9 +6322,8 @@
         persistent: false
       },
       handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6492,9 +6486,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6507,9 +6501,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6522,9 +6516,9 @@
       };
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/35-notifications/add-getall-remove.yaml
+
+
+    ...
 
     const id = $("#notificationId").val();
 
@@ -6656,9 +6650,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
+
+    ...
 
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -6671,9 +6665,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
+
+    ...
 
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
     {
@@ -6693,9 +6687,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
+
+    ...
 
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
     {
@@ -6715,9 +6709,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
+
+    ...
 
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -6768,9 +6762,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
+
+    ...
 
     const email = $("#emailCc")
       .val()
@@ -6784,9 +6778,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
+
+    ...
 
     const email = $("#emailOptional")
       .val()
@@ -6801,9 +6795,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
+
+    ...
 
     const email = $("#emailRequired")
       .val()
@@ -6818,9 +6812,9 @@
         console.error(asyncResult.error);
       }
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
+
+    ...
 
     const email = $("#emailTo")
       .val()
@@ -7287,9 +7281,9 @@
       }
       console.log(`Successfully set start date and time to ${start}`);
     });
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+
+
+    ...
 
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {

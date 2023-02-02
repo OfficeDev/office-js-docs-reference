@@ -755,12 +755,8 @@ events:
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+      ...
 
       async function chartActivated(event) {
           await Excel.run(async (context) => {
@@ -816,12 +812,8 @@ events:
           console.log("Added handlers for Chart onActivated and onDeactivated events.");
       });
 
-      ```
 
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
+      ...
 
       async function chartDeactivated(event) {
           await Excel.run(async (context) => {

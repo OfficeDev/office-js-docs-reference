@@ -116,32 +116,6 @@ methods:
       });
 
       ```
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
-
-      await PowerPoint.run(async function(context) {
-        const slides = context.presentation.slides;
-        slides.load("tags/key, tags/value");
-
-        await context.sync();
-
-        for (let i = 0; i < slides.items.length; i++) {
-          let currentSlide = slides.items[i];
-          for (let j = 0; j < currentSlide.tags.items.length; j++) {
-            let currentTag = currentSlide.tags.items[j];
-            if (currentTag.key === "CUSTOMER_TYPE" && currentTag.value === "Premium") {
-              currentSlide.delete();
-            }
-          }
-        }
-
-        await context.sync();
-      });
-
-      ```
     isPreview: false
     isDeprecated: false
     syntax:

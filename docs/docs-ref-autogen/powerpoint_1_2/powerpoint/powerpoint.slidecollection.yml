@@ -83,32 +83,6 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
-
-      await PowerPoint.run(async function(context) {
-        let selectedSlideIndex = await getSelectedSlideIndex();
-
-        // Decrement because the getSelectedSlideByIndex method is 1-based,
-        // but the getItemAt method is 0-based.
-        selectedSlideIndex = selectedSlideIndex - 1;
-        const slide = context.presentation.slides.getItemAt(selectedSlideIndex);
-        slide.tags.add("CUSTOMER_TYPE", "Premium");
-
-        await context.sync();
-
-        const audienceTag = slide.tags.getItem("CUSTOMER_TYPE");
-        audienceTag.load("key, value");
-
-        await context.sync();
-
-        console.log("Added key " + JSON.stringify(audienceTag.key) + " with value " + JSON.stringify(audienceTag.value));
-      });
-
-      ```
-
-      ```typescript
-
-      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
 
       // Selects slides 2, 4, and 5.

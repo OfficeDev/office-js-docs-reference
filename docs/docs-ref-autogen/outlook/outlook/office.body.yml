@@ -1289,12 +1289,8 @@ methods:
         }
       );
 
-      ```
 
-      ```javascript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+      ...
 
       // Set the signature for the current item.
 
