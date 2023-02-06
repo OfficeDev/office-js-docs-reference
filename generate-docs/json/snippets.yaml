@@ -27542,19 +27542,6 @@
         await context.sync();
     }); 
 'Word.Section#getFooter:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-    await Word.run(async (context) => {
-      context.document.sections
-        .getFirst()
-        .getFooter("Primary")
-        .insertParagraph("This is a primary footer.", "End");
-
-      await context.sync();
-    });
-'Word.Section#getFooter:member(2)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -27584,6 +27571,19 @@
         await context.sync();
         console.log("Added a footer to the first section.");   
     });  
+'Word.Section#getFooter:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getFooter("Primary")
+        .insertParagraph("This is a primary footer.", "End");
+
+      await context.sync();
+    });
 'Word.Section#getHeader:member(1)':
   - >-
     // Link to full sample:
@@ -27614,7 +27614,7 @@
         
         // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
-        const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+        const myHeader = mySections.items[0].getHeader("Primary");
         
         // Queue a command to insert text at the end of the header.
         myHeader.insertText("This is a header.", Word.InsertLocation.end);
