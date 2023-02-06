@@ -64,44 +64,6 @@ methods:
     package: word!
     fullName: getFooter(type)
     summary: Gets one of the section's footers.
-    remarks: >-
-      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-      await Word.run(async (context) => {
-        context.document.sections
-          .getFirst()
-          .getFooter("Primary")
-          .insertParagraph("This is a primary footer.", "End");
-
-        await context.sync();
-      });
-
-      ```
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
-      parameters:
-        - id: type
-          description: 'Required. The type of footer to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
-          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
-      return:
-        type: '<xref uid="word!Word.Body:class" />'
-        description: ''
-  - name: getFooter(typeString)
-    uid: 'word!Word.Section#getFooter:member(2)'
-    package: word!
-    fullName: getFooter(typeString)
-    summary: Gets one of the section's footers.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -136,6 +98,44 @@ methods:
           await context.sync();
           console.log("Added a footer to the first section.");   
       });  
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
+      parameters:
+        - id: type
+          description: 'Required. The type of footer to return. This value must be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
+          type: '<xref uid="word!Word.HeaderFooterType:enum" />'
+      return:
+        type: '<xref uid="word!Word.Body:class" />'
+        description: ''
+  - name: getFooter(typeString)
+    uid: 'word!Word.Section#getFooter:member(2)'
+    package: word!
+    fullName: getFooter(typeString)
+    summary: Gets one of the section's footers.
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+      await Word.run(async (context) => {
+        context.document.sections
+          .getFirst()
+          .getFooter("Primary")
+          .insertParagraph("This is a primary footer.", "End");
+
+        await context.sync();
+      });
+
       ```
     isPreview: false
     isDeprecated: false
@@ -212,7 +212,7 @@ methods:
           
           // Create a proxy object the primary header of the first section.
           // Note that the header is a body object.
-          const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+          const myHeader = mySections.items[0].getHeader("Primary");
           
           // Queue a command to insert text at the end of the header.
           myHeader.insertText("This is a header.", Word.InsertLocation.end);
