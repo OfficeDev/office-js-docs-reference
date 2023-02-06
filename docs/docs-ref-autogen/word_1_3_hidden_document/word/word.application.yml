@@ -38,6 +38,8 @@ methods:
       // Update the text of the current document with the text from another document
       // passed in as a base64-encoded string.
       await Word.run(async (context) => {
+          // Important: You'll need to implement getBase64() to get the base64-encoded 
+          // string representation of a docx file.
           const externalDoc = context.application.createDocument(getBase64());
           await context.sync();
 
