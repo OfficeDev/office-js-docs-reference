@@ -1680,7 +1680,7 @@ Word.SearchOptions#load:member(1):
         // and return a promise to indicate task completion.
         await context.sync();
     }); 
-Word.Section#getFooter:member(2):
+Word.Section#getFooter:member(1):
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -1727,7 +1727,7 @@ Word.Section#getHeader:member(2):
         
         // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
-        const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+        const myHeader = mySections.items[0].getHeader("Primary");
         
         // Queue a command to insert text at the end of the header.
         myHeader.insertText("This is a header.", Word.InsertLocation.end);
