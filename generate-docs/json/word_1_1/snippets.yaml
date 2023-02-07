@@ -19,6 +19,28 @@
       body.paragraphs.getFirst().alignment = "Left";
       body.paragraphs.getLast().alignment = Word.Alignment.left;
     });
+'Word.Application#createDocument:member(1)':
+  - >-
+    // Update the text of the current document with the text from another
+    document
+
+    // passed in as a base64-encoded string.
+
+    await Word.run(async (context) => {
+        // Important: You'll need to implement getBase64() to get the base64-encoded 
+        // string representation of a docx file.
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const currentDocBody = context.document.body;
+        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
+    });
 'Word.Body#clear:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -1954,7 +1976,7 @@
         } else {
             console.log('The document has not changed since the last save.');
         }
-        });
+    });
 'Word.Document#settings:member':
   - >-
     // Link to full sample:
@@ -1975,6 +1997,38 @@
           console.log(settings.items[i]);
         }
       }
+    });
+'Word.DocumentCreated#open:member(1)':
+  - |-
+    // Create and open a new document in a new tab or window.
+    await Word.run(async (context) => {
+        const externalDoc = context.application.createDocument();
+        await context.sync();
+
+        externalDoc.open();
+        await context.sync();
+    });
+'Word.DocumentCreated:class':
+  - >-
+    // Update the text of the current document with the text from another
+    document
+
+    // passed in as a base64-encoded string.
+
+    await Word.run(async (context) => {
+        // Important: You'll need to implement getBase64() to get the base64-encoded 
+        // string representation of a docx file.
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const currentDocBody = context.document.body;
+        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
     });
 'Word.DocumentPropertyType:enum':
   - >-
