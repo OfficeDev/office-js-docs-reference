@@ -23665,7 +23665,7 @@
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
         await context.sync();
     });
 'Word.Body#clear:member(1)':
@@ -25654,7 +25654,7 @@
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
         await context.sync();
     });
 'Word.DocumentPropertyType:enum':

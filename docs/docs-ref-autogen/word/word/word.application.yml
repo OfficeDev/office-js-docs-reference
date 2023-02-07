@@ -49,7 +49,7 @@ methods:
 
           const externalDocBodyText = externalDocBody.text;
           const currentDocBody = context.document.body;
-          currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+          currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
           await context.sync();
       });
       ```
