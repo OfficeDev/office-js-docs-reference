@@ -9886,7 +9886,7 @@ Word.Alignment,right,EnumField,Fine,false
 Word.Alignment,unknown,EnumField,Fine,false
 Word.Application,N/A,Class,Good,false
 Word.Application,context,Property,Good,false
-Word.Application,createDocument(base64File),Method,Poor,false
+Word.Application,createDocument(base64File),Method,Poor,true
 Word.Application,newObject(context),Method,Poor,false
 Word.Application,toJSON(),Method,Poor,false
 Word.Body,N/A,Class,Good,false
@@ -10304,7 +10304,7 @@ Word.Document,set(properties),Method,Poor,false
 Word.Document,toJSON(),Method,Poor,false
 Word.Document,track(),Method,Poor,false
 Word.Document,untrack(),Method,Poor,false
-Word.DocumentCreated,N/A,Class,Good,false
+Word.DocumentCreated,N/A,Class,Good,true
 Word.DocumentCreated,body,Property,Good,false
 Word.DocumentCreated,contentControls,Property,Good,false
 Word.DocumentCreated,context,Property,Good,false
@@ -10319,7 +10319,7 @@ Word.DocumentCreated,getBookmarkRangeOrNullObject(name),Method,Poor,false
 Word.DocumentCreated,load(options),Method,Poor,false
 Word.DocumentCreated,load(propertyNames),Method,Poor,false
 Word.DocumentCreated,load(propertyNamesAndPaths),Method,Poor,false
-Word.DocumentCreated,open(),Method,Poor,false
+Word.DocumentCreated,open(),Method,Poor,true
 Word.DocumentCreated,save(),Method,Poor,false
 Word.DocumentCreated,set(properties,Method,Poor,false
 Word.DocumentCreated,set(properties),Method,Poor,false

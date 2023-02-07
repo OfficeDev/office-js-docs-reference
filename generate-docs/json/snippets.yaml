@@ -23646,6 +23646,28 @@
       body.paragraphs.getFirst().alignment = "Left";
       body.paragraphs.getLast().alignment = Word.Alignment.left;
     });
+'Word.Application#createDocument:member(1)':
+  - >-
+    // Update the text of the current document with the text from another
+    document
+
+    // passed in as a base64-encoded string.
+
+    await Word.run(async (context) => {
+        // Important: You'll need to implement getBase64() to get the base64-encoded 
+        // string representation of a docx file.
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const currentDocBody = context.document.body;
+        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
+    });
 'Word.Body#clear:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -25581,7 +25603,7 @@
         } else {
             console.log('The document has not changed since the last save.');
         }
-        });
+    });
 'Word.Document#settings:member':
   - >-
     // Link to full sample:
@@ -25602,6 +25624,38 @@
           console.log(settings.items[i]);
         }
       }
+    });
+'Word.DocumentCreated#open:member(1)':
+  - |-
+    // Create and open a new document in a new tab or window.
+    await Word.run(async (context) => {
+        const externalDoc = context.application.createDocument();
+        await context.sync();
+
+        externalDoc.open();
+        await context.sync();
+    });
+'Word.DocumentCreated:class':
+  - >-
+    // Update the text of the current document with the text from another
+    document
+
+    // passed in as a base64-encoded string.
+
+    await Word.run(async (context) => {
+        // Important: You'll need to implement getBase64() to get the base64-encoded 
+        // string representation of a docx file.
+        const externalDoc = context.application.createDocument(getBase64());
+        await context.sync();
+
+        const externalDocBody = externalDoc.body;
+        externalDocBody.load("text");
+        await context.sync();
+
+        const externalDocBodyText = externalDocBody.text;
+        const currentDocBody = context.document.body;
+        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
+        await context.sync();
     });
 'Word.DocumentPropertyType:enum':
   - >-
@@ -27542,19 +27596,6 @@
         await context.sync();
     }); 
 'Word.Section#getFooter:member(1)':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
-
-    await Word.run(async (context) => {
-      context.document.sections
-        .getFirst()
-        .getFooter("Primary")
-        .insertParagraph("This is a primary footer.", "End");
-
-      await context.sync();
-    });
-'Word.Section#getFooter:member(2)':
   - |-
     // Run a batch operation against the Word object model.
     await Word.run(async (context) => {
@@ -27584,6 +27625,19 @@
         await context.sync();
         console.log("Added a footer to the first section.");   
     });  
+'Word.Section#getFooter:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
+
+    await Word.run(async (context) => {
+      context.document.sections
+        .getFirst()
+        .getFooter("Primary")
+        .insertParagraph("This is a primary footer.", "End");
+
+      await context.sync();
+    });
 'Word.Section#getHeader:member(1)':
   - >-
     // Link to full sample:
@@ -27614,7 +27668,7 @@
         
         // Create a proxy object the primary header of the first section.
         // Note that the header is a body object.
-        const myHeader = mySections.items[0].getHeader(Word.HeaderFooterType.primary);
+        const myHeader = mySections.items[0].getHeader("Primary");
         
         // Queue a command to insert text at the end of the header.
         myHeader.insertText("This is a header.", Word.InsertLocation.end);
