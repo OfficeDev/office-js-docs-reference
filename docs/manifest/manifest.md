@@ -104,12 +104,12 @@ This section contains information about every element used by an Office Add-in's
 |[Tokens](tokens.md)| General |
 |[Token](token.md)| General |
 |[Type](type.md)| General |
+|[Url](url.md)| VersionOverrides |
+|[Urls](urls.md)| VersionOverrides |
 |[Version](version.md)| General |
 |[VersionOverrides](versionoverrides.md)| General |
 |[VersionOverrides 1.0 Content](versionoverrides-1-0-content.md)| VersionOverrides |
 |[VersionOverrides 1.0 Mail](versionoverrides-1-0-mail.md)| VersionOverrides |
 |[VersionOverrides 1.1 Mail](versionoverrides-1-1-mail.md)| VersionOverrides |
 |[VersionOverrides 1.0 TaskPane](versionoverrides-1-0-taskpane.md)| VersionOverrides |
-|[Url](url.md)| VersionOverrides |
-|[Urls](urls.md)| VersionOverrides |
 |[WebApplicationInfo](webapplicationinfo.md)| VersionOverrides |
