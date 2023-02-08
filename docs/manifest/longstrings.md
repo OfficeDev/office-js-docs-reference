@@ -1,12 +1,11 @@
-
 ---
 title: LongStrings element in the manifest file
-description: The LongStrings element enables you to specify the text of a Description elements.
+description: The LongStrings element enables you to specify the text of Description elements.
 ms.date: 02/07/2023
 ms.localizationpriority: medium
 ---
 
-# ShortStrings element
+# LongStrings element
 
 Defines one or more strings that can be used as the text of one or more **\<Description\>** elements. 
 
