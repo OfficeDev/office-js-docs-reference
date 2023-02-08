@@ -25,7 +25,7 @@ Each resource can have one or more **\<Override\>** child elements to define a d
 
 |  Element |  Type  |  Description  |
 |:-----|:-----:|:-----|
-|  [Images](images.md)            |  image   |  Provides the HTTPS URLs to images for an icon. |
+|  [Images](images.md)            |  image   |  Provides the HTTPS URLs of images for an icon. |
 |  [Urls](urls.md)                 |  url     |  Provides HTTPS URLs. A URL can have a maximum of 2048 characters. |
 |  [ShortStrings](shortstrings.md) |  string  |  The text for **\<Label\>** and **\<Title\>** elements. Each **\<String\>** contains a maximum of 125 characters.|
 |  [LongStrings](longstrings.md) |  string  | The text for **\<Description\>** attributes. Each **\<String\>** contains a maximum of 250 characters.|

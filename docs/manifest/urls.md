@@ -23,7 +23,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Type  |  Description  |
 |:-----|:-----:|:-----|
-|  [Url](url.md)            |  url   |  Provides the HTTPS URL to a resource. |
+|  [Url](url.md)            |  url   |  Provides the HTTPS URL of a resource. |
 
 ## Example
 

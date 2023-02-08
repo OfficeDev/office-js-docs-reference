@@ -23,7 +23,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Type  |  Description  |
 |:-----|:-----:|:-----|
-|  [Image](image.md)            |  image   |  Provides the HTTPS URL to an image for an icon. |
+|  [Image](image.md)            |  image   |  Provides the HTTPS URL of an image for an icon. |
 
 ## Example
 

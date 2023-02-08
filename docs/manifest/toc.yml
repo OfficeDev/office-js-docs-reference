@@ -154,10 +154,10 @@
       href: ../../manifest/hosts.md
     - name: Icon
       href: ../../manifest/icon.md
-    - name: Images
-      href: ../../manifest/images.md
     - name: Image
       href: ../../manifest/image.md
+    - name: Images
+      href: ../../manifest/images.md
     - name: Item
       href: ../../manifest/item.md
     - name: Items
@@ -198,9 +198,9 @@
       href: ../../manifest/supertip.md
     - name: SupportsSharedFolders
       href: ../../manifest/supportssharedfolders.md
-    - name: Urls
-      href: ../../manifest/urls.md
     - name: Url
       href: ../../manifest/url.md
+    - name: Urls
+      href: ../../manifest/urls.md
     - name: WebApplicationInfo
       href: ../../manifest/webapplicationinfo.md
