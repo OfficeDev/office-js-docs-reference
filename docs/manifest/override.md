@@ -1,7 +1,7 @@
 ---
 title: Override element in the manifest file
 description: The Override element enables you to specify the value of a setting depending on a specified condition.
-ms.date: 06/09/2022
+ms.date: 02/07/2023
 ms.localizationpriority: medium
 ---
 
@@ -48,10 +48,13 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 |[DisplayName](displayname.md)|
 |[HighResolutionIconUrl](highresolutioniconurl.md)|
 |[IconUrl](iconurl.md)|
+|[Image](image.md)|
 |[QueryUri](queryuri.md)|
 |[SourceLocation](sourcelocation.md)|
+|[String](string.md)|
 |[SupportUrl](supporturl.md)|
 |[Token](token.md)|
+|[Url](url.md)|
 
 ### Attributes
 

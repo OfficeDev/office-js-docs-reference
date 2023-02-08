@@ -48,8 +48,14 @@
     href: ../../manifest/hosts.md
   - name: IconUrl
     href: ../../manifest/iconurl.md
+  - name: Images
+    href: ../../manifest/images.md
+  - name: Image
+    href: ../../manifest/image.md
   - name: Id
     href: ../../manifest/id.md
+  - name: LongStrings
+    href: ../../manifest/longstrings.md
   - name: Metadata
     href: ../../manifest/metadata.md
   - name: Method
@@ -84,10 +90,14 @@
     href: ../../manifest/set.md
   - name: Sets
     href: ../../manifest/sets.md
+  - name: ShortStrings
+    href: ../../manifest/shortstrings.md
   - name: SourceLocation
     href: ../../manifest/sourcelocation.md
   - name: SupportUrl
     href: ../../manifest/supporturl.md
+  - name: String
+    href: ../../manifest/string.md
   - name: TabletSettings
     href: ../../manifest/tabletsettings.md
   - name: TargetDialect
@@ -100,6 +110,10 @@
     href: ../../manifest/token.md
   - name: Type
     href: ../../manifest/type.md
+  - name: Urls
+    href: ../../manifest/urls.md
+  - name: Url
+    href: ../../manifest/url.md
   - name: Version
     href: ../../manifest/version.md
   - name: VersionOverrides
