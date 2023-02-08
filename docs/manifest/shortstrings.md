@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # ShortStrings element
 
-Defines one or more strings that can be used as the text of **\<Label\>** and **<\Title\>** elements. 
+Defines one or more strings that can be used as the text of **\<Label\>** and **\<Title\>** elements. 
 
 **Add-in type:** Task pane, Mail
 

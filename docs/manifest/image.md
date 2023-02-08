@@ -20,7 +20,7 @@ Provides the URL of an image file that is used as an icon.
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
 > [!NOTE]
-> You must use Secure Sockets Layer (SSL) for all URLs in the **\<Image\>** element and any child **\Override\>** elements.
+> You must use Secure Sockets Layer (SSL) for all URLs in the **\<Image\>** element and any child **\<Override\>** elements.
 
 Each icon must have three **\<Image\>** elements, one for each of the three mandatory sizes:
 

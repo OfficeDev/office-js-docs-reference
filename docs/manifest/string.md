@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # String element
 
-Defines a string that can be used as the text of one or more **\<Description\>**, **\<Label\>**, or **<\Title\>** elements. 
+Defines a string that can be used as the text of one or more **\<Description\>**, **\<Label\>**, or **\<Title\>** elements. 
 
 > [!NOTE]
 >
