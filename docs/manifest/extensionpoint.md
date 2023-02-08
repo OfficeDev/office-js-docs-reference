@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 10/17/2022
+ms.date: 02/06/2023
 ms.localizationpriority: medium
 ---
 
@@ -361,7 +361,7 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and function commands. To learn more about this scenario, refer to the [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments) article.
 
 > [!NOTE]
-> This extension point is only supported on Android with a Microsoft 365 subscription.
+> This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
 >
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
