@@ -1,4 +1,3 @@
-
 ---
 title: String element in the manifest file
 description: The String element enables you to specify the text of a Label, Title, or Description element.

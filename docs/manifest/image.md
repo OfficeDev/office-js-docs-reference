@@ -1,4 +1,3 @@
-
 ---
 title: Image element in the manifest file
 description: The Image element enables you to specify the URL of an image used for an icon.
