@@ -5,7 +5,7 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: medium
-ms.date: 03/24/2022
+ms.date: 02/07/2023
 ---
 
 # Office Add-ins manifest reference
@@ -57,10 +57,13 @@ This section contains information about every element used by an Office Add-in's
 |[Icon](icon.md)| VersionOverrides |
 |[IconUrl](iconurl.md)| General |
 |[Id](id.md)| General |
+|[Image](image.md)| VersionOverrides |
+|[Images](images.md)| VersionOverrides |
 |[Item](item.md)| VersionOverrides |
 |[Items](items.md)| VersionOverrides |
 |[LaunchEvent](launchevent.md)| VersionOverrides |
 |[LaunchEvents](launchevents.md)| VersionOverrides |
+|[LongStrings](longstrings.md)| VersionOverrides |
 |[Metadata](metadata.md)| General |
 |[Method](method.md)| General |
 |[Methods](methods.md)| General |
@@ -88,8 +91,10 @@ This section contains information about every element used by an Office Add-in's
 |[Script](script.md)| VersionOverrides |
 |[Set](set.md)| General |
 |[Sets](sets.md)| General |
+|[ShortStrings](shortstrings.md)| VersionOverrides |
 |[SourceLocation](sourcelocation.md)| General |
 |[SourceLocation (custom functions)](customfunctionssourcelocation.md)| VersionOverrides |
+|[String](string.md)| VersionOverrides |
 |[Supertip](supertip.md)| VersionOverrides |
 |[SupportsSharedFolders](supportssharedfolders.md)| VersionOverrides |
 |[SupportUrl](supporturl.md)| General |
@@ -106,3 +111,5 @@ This section contains information about every element used by an Office Add-in's
 |[VersionOverrides 1.1 Mail](versionoverrides-1-1-mail.md)| VersionOverrides |
 |[VersionOverrides 1.0 TaskPane](versionoverrides-1-0-taskpane.md)| VersionOverrides |
 |[WebApplicationInfo](webapplicationinfo.md)| VersionOverrides |
+|[Url](url.md)| VersionOverrides |
+|[Urls](urls.md)| VersionOverrides |
