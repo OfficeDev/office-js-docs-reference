@@ -110,6 +110,6 @@ This section contains information about every element used by an Office Add-in's
 |[VersionOverrides 1.0 Mail](versionoverrides-1-0-mail.md)| VersionOverrides |
 |[VersionOverrides 1.1 Mail](versionoverrides-1-1-mail.md)| VersionOverrides |
 |[VersionOverrides 1.0 TaskPane](versionoverrides-1-0-taskpane.md)| VersionOverrides |
-|[WebApplicationInfo](webapplicationinfo.md)| VersionOverrides |
 |[Url](url.md)| VersionOverrides |
 |[Urls](urls.md)| VersionOverrides |
+|[WebApplicationInfo](webapplicationinfo.md)| VersionOverrides |
