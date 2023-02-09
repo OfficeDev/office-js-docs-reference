@@ -1,7 +1,7 @@
 ---
 title: Resources element in the manifest file
 description: The Resources element contains icons, strings, and URLs for the VersionOverrides node.
-ms.date: 02/02/2022
+ms.date: 02/07/2023
 ms.localizationpriority: medium
 ---
 
@@ -25,43 +25,10 @@ Each resource can have one or more **\<Override\>** child elements to define a d
 
 |  Element |  Type  |  Description  |
 |:-----|:-----:|:-----|
-|  [Images](#images)            |  image   |  Provides the HTTPS URL to an image for an icon. |
-|  **\<Urls\>**                |  url     |  Provides an HTTPS URL location. A URL can have a maximum of 2048 characters. |
-|  **\<ShortStrings\>** |  string  |  The text for **\<Label\>** and **\<Title\>** elements. Each **\<String\>** contains a maximum of 125 characters.|
-|  **\<LongStrings\>**  |  string  | The text for **\<Description\>** attributes. Each **\<String\>** contains a maximum of 250 characters.|
-
-> [!NOTE]
-> You must use Secure Sockets Layer (SSL) for all URLs in the **\<Image\>** and **\<Url\>** elements.
-
-### Images
-
-Each icon must have three **\<Images\>** elements, one for each of the three mandatory sizes:
-
-- 16x16
-- 32x32
-- 80x80
-
-The following additional sizes are also supported, but not required.
-
-- 20x20
-- 24x24
-- 40x40
-- 48x48
-- 64x64
-
-The following image file formats are supported.
-
-- BMP
-- EXIF
-- GIF
-- JPG
-- PNG
-- TIFF
-
-> [!IMPORTANT]
->
-> - If this image is your add-in's representative icon, see [Create effective listings in AppSource and within Office](/office/dev/store/create-effective-office-store-listings#create-an-icon-for-your-add-in) for size and other requirements.
-> - Office Add-ins require the ability to cache image resources for performance purposes. For this reason, the server hosting an image resource must not add any CACHE-CONTROL directives to the response header. These directives result in Office automatically substituting a generic or default image. To force the use of new icons on your development computer, [Clear the Office cache](/office/dev/add-ins/testing/clear-cache). To force the use of new icons on your end-user's computers, you must give the new icons a different URL from the old ones.
+|  [Images](images.md)            |  image   |  Provides the HTTPS URLs of images for an icon. |
+|  [Urls](urls.md)                 |  url     |  Provides HTTPS URLs. A URL can have a maximum of 2048 characters. |
+|  [ShortStrings](shortstrings.md) |  string  |  The text for **\<Label\>** and **\<Title\>** elements. Each **\<String\>** contains a maximum of 125 characters.|
+|  [LongStrings](longstrings.md) |  string  | The text for **\<Description\>** attributes. Each **\<String\>** contains a maximum of 250 characters.|
 
 ## Resources examples
 
