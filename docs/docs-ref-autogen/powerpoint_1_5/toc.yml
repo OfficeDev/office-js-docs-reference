@@ -481,6 +481,10 @@ items:
             href: ../../manifest/hosts.md
           - name: Icon
             href: ../../manifest/icon.md
+          - name: Image
+            href: ../../manifest/image.md
+          - name: Images
+            href: ../../manifest/images.md
           - name: Item
             href: ../../manifest/item.md
           - name: Items
@@ -489,6 +493,8 @@ items:
             href: ../../manifest/launchevent.md
           - name: LaunchEvents
             href: ../../manifest/launchevents.md
+          - name: LongStrings
+            href: ../../manifest/longstrings.md
           - name: MobileFormFactor
             href: ../../manifest/mobileformfactor.md
           - name: OfficeMenu
@@ -509,12 +515,20 @@ items:
             href: ../../manifest/scopes.md
           - name: Script
             href: ../../manifest/script.md
+          - name: ShortStrings
+            href: ../../manifest/shortstrings.md
           - name: SourceLocation (version overrides)
             href: ../../manifest/customfunctionssourcelocation.md
+          - name: String
+            href: ../../manifest/string.md
           - name: Supertip
             href: ../../manifest/supertip.md
           - name: SupportsSharedFolders
             href: ../../manifest/supportssharedfolders.md
+          - name: Url
+            href: ../../manifest/url.md
+          - name: Urls
+            href: ../../manifest/urls.md
           - name: WebApplicationInfo
             href: ../../manifest/webapplicationinfo.md
   - name: Requirement sets
