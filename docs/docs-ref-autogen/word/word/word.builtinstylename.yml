@@ -4,7 +4,31 @@ uid: 'word!Word.BuiltInStyleName:enum'
 package: word!
 fullName: Word.BuiltInStyleName
 summary: ''
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-formatted-text.yaml
+
+  await Word.run(async (context) => {
+    const sentence = context.document.body.insertParagraph(
+      "To be or not to be",
+      "End"
+    );
+
+    // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use: range.style = "name of your style";
+    sentence.styleBuiltIn = Word.BuiltInStyleName.intenseReference;
+
+    await context.sync();
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:
