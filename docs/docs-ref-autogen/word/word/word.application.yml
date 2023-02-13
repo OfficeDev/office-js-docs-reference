@@ -81,6 +81,23 @@ methods:
       return:
         type: '<xref uid="word!Word.Application:class" />'
         description: ''
+  - name: retrieveStylesFromBase64(base64File)
+    uid: 'word!Word.Application#retrieveStylesFromBase64:member(1)'
+    package: word!
+    fullName: retrieveStylesFromBase64(base64File)
+    summary: Parse styles from template base 64 file and return JSON format of retrieved styles as a string.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'retrieveStylesFromBase64(base64File: string): OfficeExtension.ClientResult<string>;'
+      parameters:
+        - id: base64File
+          description: Required. The template file.
+          type: string
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        description: ''
   - name: toJSON()
     uid: 'word!Word.Application#toJSON:member(1)'
     package: word!

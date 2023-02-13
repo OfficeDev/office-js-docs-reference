@@ -24,6 +24,16 @@ export declare namespace Word {
          */
         createDocument(base64File?: string): Word.DocumentCreated;
         /**
+         * Parse styles from template base 64 file and return JSON format of retrieved styles as a string.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64File - Required. The template file.
+         */
+        retrieveStylesFromBase64(base64File: string): OfficeExtension.ClientResult<string>;
+        /**
          * Create a new instance of Word.Application object
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;
@@ -162,7 +172,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          * Gets the text of the body. Use the insertText method to insert text.
          *
@@ -199,6 +209,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         getComments(): Word.CommentCollection;
+        /**
+         * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -251,12 +273,14 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): void;
         /**
-         * Wraps the body object with a Rich Text content control.
+         * Wraps the body object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -390,7 +414,7 @@ export declare namespace Word {
          * Occurs when new comments are added.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -400,7 +424,7 @@ export declare namespace Word {
          * Occurs when a comment or its reply is changed.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -410,7 +434,7 @@ export declare namespace Word {
          * Occurs when comments are deleted.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -420,7 +444,7 @@ export declare namespace Word {
          * Occurs when a comment is deselected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -430,7 +454,7 @@ export declare namespace Word {
          * Occurs when a comment is selected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -913,7 +937,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.CommentReplyCollectionData;
     }
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -1095,9 +1119,9 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
-         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+         * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -1125,7 +1149,7 @@ export declare namespace Word {
          */
         title: string;
         /**
-         * Gets the content control type. Only rich text content controls are supported currently.
+         * Gets the content control type. Only rich text and plain text content controls are supported currently.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1162,6 +1186,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         getComments(): Word.CommentCollection;
+        /**
+         * Gets the currently supported content controls in the content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1368,7 +1404,7 @@ export declare namespace Word {
          * Occurs when new comments are added.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -1378,7 +1414,7 @@ export declare namespace Word {
          * Occurs when a comment or its reply is changed.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -1388,7 +1424,7 @@ export declare namespace Word {
          * Occurs when a comment is deselected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -1398,7 +1434,7 @@ export declare namespace Word {
          * Occurs when a comment is selected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -1428,12 +1464,22 @@ export declare namespace Word {
          * Occurs when the content control is entered.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
          */
         readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        /**
+         * Occurs when the content control is exited.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
         /**
          * Occurs when selection within the content control is changed.
          *
@@ -1459,7 +1505,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -1469,6 +1515,16 @@ export declare namespace Word {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
+        /**
+         * Gets the content controls that have the specified tracking state.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param changeTrackingStates - Required. An array of content control change tracking states.
+         */
+        getByChangeTrackingStates(changeTrackingStates: Word.ChangeTrackingState[]): Word.ContentControlCollection;
         /**
          * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
          *
@@ -1506,12 +1562,12 @@ export declare namespace Word {
          */
         getByTitle(title: string): Word.ContentControlCollection;
         /**
-         * Gets the content controls that have the specified types and/or subtypes.
+         * Gets the content controls that have the specified types.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param types - Required. An array of content control types and/or subtypes.
+         * @param types - Required. An array of content control types.
          */
         getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;
         /**
@@ -1568,6 +1624,23 @@ export declare namespace Word {
         * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
+    }
+    /**
+     * Specifies the options that define which content controls are returned.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface GetContentControlsOptions {
+        /**
+         * An array of content control types, item must be 'RichText' or 'PlainText'.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        types: Word.ContentControlType[];
     }
     /**
      * Represents a custom property.
@@ -2255,6 +2328,48 @@ export declare namespace Word {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
         /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. A string representing the style name.
+         * @param type - Required. Possibly: The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: Word.StyleType): Word.Style;
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. A string representing the style name.
+         * @param typeString - Required. Possibly: The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        /**
+         * Close current document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param closeBehavior - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+         */
+        close(closeBehavior?: Word.CloseBehavior): void;
+        /**
+         * Close current document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+         */
+        close(closeBehaviorString?: "Save" | "SkipSave"): void;
+        /**
          * Deletes a bookmark, if it exists, from the document.
          *
          * @remarks
@@ -2282,6 +2397,18 @@ export declare namespace Word {
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
+         * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        /**
          * Gets the document's endnotes in a single body.
                     Not implemented in Word on the web.
          *
@@ -2305,12 +2432,43 @@ export declare namespace Word {
          */
         getSelection(): Word.Range;
         /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+         * Gets a StyleCollection object that represents the whole style set of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getStyles(): Word.StyleCollection;
+        /**
+         * Inserts a document into the target document at a specific location with additional properties.
+                    Headers, footers, watermarks, and other section properties are copied by default.
+                    Required. The base64 encoded content of a .docx file.Required. The value must be 'Replace', 'Start', or 'End'.Optional. The additional properties that should be imported to the destination document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
+        /**
+         * Save the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name. Only take effect for a new document.
          */
-        save(): void;
+        save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
+        /**
+         * Save the document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.1]
+         *
+         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name. Only take effect for a new document.
+         */
+        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
          * Performs a search with the specified search options on the scope of the whole document. The search results are a collection of range objects.
          *
@@ -2438,6 +2596,28 @@ export declare namespace Word {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.DocumentCreated): void;
         /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. A string representing the style name.
+         * @param type - Required. Possibly: The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, type: Word.StyleType): Word.Style;
+        /**
+         * Adds a style into the document by name and type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. A string representing the style name.
+         * @param typeString - Required. Possibly: The style type, including character, list, paragraph, or table.
+         */
+        addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
+        /**
          * Deletes a bookmark, if it exists, from the document.
          *
          * @remarks
@@ -2465,6 +2645,36 @@ export declare namespace Word {
          */
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
+         * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        /**
+         * Gets a StyleCollection object that represents the whole style set of the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getStyles(): Word.StyleCollection;
+        /**
+         * Inserts a document into the target document at a specific location with additional properties.
+                    Headers, footers, watermarks, and other section properties are copied by default.
+                    Required. The base64 encoded content of a .docx file.Required. The value must be 'Replace', 'Start', or 'End'.Optional. The additional properties that should be imported to the destination document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
+        /**
          * Opens the document.
          *
          * @remarks
@@ -2472,12 +2682,25 @@ export declare namespace Word {
          */
         open(): void;
         /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+         * Save the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
+         *
+         * @param saveBehavior - Optional. DocumentCreated only support 'Save'.
+         * @param fileName - Optional. The file name. Only take effect for a new document.
          */
-        save(): void;
+        save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
+        /**
+         * Save the document.
+         *
+         * @remarks
+         * [Api set: WordApiHiddenDocument 1.3]
+         *
+         * @param saveBehaviorString - Optional. DocumentCreated only support 'Save'.
+         * @param fileName - Optional. The file name. Only take effect for a new document.
+         */
+        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2757,12 +2980,52 @@ export declare namespace Word {
          */
         readonly result: Word.Range;
         /**
-         * Gets the field's code instruction.
+         * Gets or sets the field's code instruction.
          *
          * @remarks
          * [Api set: WordApi 1.4]
          */
-        readonly code: string;
+        code: string;
+        /**
+         * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        data: string;
+        /**
+         * Gets the field's kind.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly kind: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";
+        /**
+         * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        locked: boolean;
+        /**
+         * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showCodes: boolean;
+        /**
+         * Gets the field's type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -2793,6 +3056,34 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         getNextOrNullObject(): Word.Field;
+        /**
+         * Selects the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         */
+        select(selectionMode?: Word.SelectionMode): void;
+        /**
+         * Selects the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+         */
+        select(selectionModeString?: "Select" | "Start" | "End"): void;
+        /**
+         * Updates the field.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        updateResult(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2853,6 +3144,16 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         getFirstOrNullObject(): Word.Field;
+        /**
+         * Gets the Field object collection including the specified types of fields.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param types - Required. An array of field types.
+         */
+        getByTypes(types: Word.FieldType[]): Word.FieldCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -3768,6 +4069,276 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ListItemData;
     }
     /**
+     * Represents a list level.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ListLevel extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets a Font object that represents the character formatting of the specified object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly font: Word.Font;
+        /**
+         * Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+        /**
+         * Gets or sets the name of the style that's linked to the specified list level object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        linkedStyle: string;
+        /**
+         * Gets or sets the number format for the specified list level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberFormat: string;
+        /**
+         * Gets or sets the position (in points) of the number or bullet for the specified list level object
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberPosition: number;
+        /**
+         * Gets or sets the number style for the list level object
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numberStyle: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
+        /**
+         * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resetOnHigher: number;
+        /**
+         * Gets or sets the starting number for the specified list level object
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        startAt: number;
+        /**
+         * Gets or sets the tab position for the specified list level object
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tabPosition: number;
+        /**
+         * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textPosition: number;
+        /**
+         * Gets or sets the character inserted after the number for the specified list level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trailingCharacter: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ListLevelUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ListLevel): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ListLevelLoadOptions): Word.ListLevel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ListLevel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ListLevel;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ListLevel;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ListLevel;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.ListLevel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ListLevelData;
+    }
+    /**
+     * Contains a collection of {@link Word.ListLevel} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ListLevelCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.ListLevel[];
+        /**
+         * Gets the first list level in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.ListLevel;
+        /**
+         * Gets the first list level in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.ListLevel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ListLevelCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListLevelCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ListLevelCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ListLevelCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ListLevelCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ListLevelCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.ListLevelCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.ListLevelCollectionData;
+    }
+    /**
+     * Represents a ListTemplate.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ListTemplate extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listLevels: Word.ListLevelCollection;
+        /**
+         * Gets or sets whether the specified ListTemplate object is outline numbered
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineNumbered: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ListTemplateUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ListTemplate): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ListTemplateLoadOptions): Word.ListTemplate;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ListTemplate;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ListTemplate;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ListTemplate;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ListTemplate;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.ListTemplate object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListTemplateData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ListTemplateData;
+    }
+    /**
      * Represents a footnote or endnote.
      *
      * @remarks
@@ -4143,7 +4714,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
          *
@@ -4204,6 +4775,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.4]
          */
         getComments(): Word.CommentCollection;
+        /**
+         * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -4294,12 +4877,14 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
-         * Wraps the paragraph object with a rich text content control.
+         * Wraps the paragraph object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -4451,7 +5036,7 @@ export declare namespace Word {
          * Occurs when new comments are added.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -4461,7 +5046,7 @@ export declare namespace Word {
          * Occurs when a comment or its reply is changed.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -4471,7 +5056,7 @@ export declare namespace Word {
          * Occurs when comments are deleted.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -4481,7 +5066,7 @@ export declare namespace Word {
          * Occurs when a comment is deselected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -4491,7 +5076,7 @@ export declare namespace Word {
          * Occurs when a comment is selected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -4581,6 +5166,171 @@ export declare namespace Word {
         * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
+    }
+    /**
+     * Represents a style of paragraph in a document.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ParagraphFormat extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets or sets the alignment for the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+        /**
+         * Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        firstLineIndent: number;
+        /**
+         * Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keepTogether: boolean;
+        /**
+         * Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keepWithNext: boolean;
+        /**
+         * Gets or sets the left Indent.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftIndent: number;
+        /**
+         * Gets or sets the line spacing (in points) for the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineSpacing: number;
+        /**
+         * Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineUnitAfter: number;
+        /**
+         * Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lineUnitBefore: number;
+        /**
+         * Gets or sets whether left and right indents are the same width.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mirrorIndents: boolean;
+        /**
+         * Gets or sets the outline level for the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+        /**
+         * Gets or sets the right indent (in points) for the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightIndent: number;
+        /**
+         * Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spaceAfter: number;
+        /**
+         * Gets or sets the spacing (in points) before the specified paragraphs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        spaceBefore: number;
+        /**
+         * Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        widowControl: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ParagraphFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.ParagraphFormat): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ParagraphFormatLoadOptions): Word.ParagraphFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ParagraphFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ParagraphFormat;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ParagraphFormat;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ParagraphFormat;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.ParagraphFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ParagraphFormatData;
     }
     /**
      * Represents a contiguous area in a document.
@@ -4730,7 +5480,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          * Gets the text of the range.
          *
@@ -4805,6 +5555,18 @@ export declare namespace Word {
          * @returns
          */
         getComments(): Word.CommentCollection;
+        /**
+         * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Make sure that your add-in respects it and is ready to handle new content control types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param options - Optional. Options that define which content controls are returned.
+         */
+        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -4913,12 +5675,14 @@ export declare namespace Word {
          */
         insertComment(commentText: string): Word.Comment;
         /**
-         * Wraps the range object with a rich text content control.
+         * Wraps the range object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts an endnote. The endnote reference is placed after the range.
          *
@@ -4928,6 +5692,32 @@ export declare namespace Word {
          * @param insertText - Optional. Text to be inserted into the endnote body. The default is "".
          */
         insertEndnote(insertText?: string): Word.NoteItem;
+        /**
+         * Inserts a field at the specified location.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
+         * @param text - Optional. Additional properties or options if needed for specified field type.
+         * @param removeFormatting - Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
+         */
+        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean): Word.Field;
+        /**
+         * Inserts a field at the specified location.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
+         * @param text - Optional. Additional properties or options if needed for specified field type.
+         * @param removeFormatting - Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
+         */
+        insertField(insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After", fieldTypeString?: "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined", text?: string, removeFormatting?: boolean): Word.Field;
         /**
          * Inserts a document at the specified location.
          *
@@ -5100,7 +5890,7 @@ export declare namespace Word {
          * Occurs when new comments are added.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -5110,7 +5900,7 @@ export declare namespace Word {
          * Occurs when a comment or its reply is changed.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -5120,7 +5910,7 @@ export declare namespace Word {
          * Occurs when a comment is deselected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -5130,7 +5920,7 @@ export declare namespace Word {
          * Occurs when a comment is selected.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          *
          * @eventproperty
          * @beta
@@ -5206,6 +5996,55 @@ export declare namespace Word {
         * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
         */
         toJSON(): Word.Interfaces.RangeCollectionData;
+    }
+    /**
+     * Specifies the options to determine what to copy when inserting a file.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface InsertFileOptions {
+        /**
+         * Represents whether the change tracking mode from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importChangeTrackingMode: boolean;
+        /**
+         * Represents whether the page color and other background information from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importPageColor: boolean;
+        /**
+         * Represents whether the paragraph spacing from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importParagraphSpacing: boolean;
+        /**
+         * Represents whether the styles from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importStyles: boolean;
+        /**
+         * Represents whether the theme from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importTheme: boolean;
     }
     /**
      * Specifies the options to be included in a search operation.
@@ -5630,6 +6469,268 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.SettingCollectionData;
     }
     /**
+     * Contains a collection of {@link Word.Style} objects.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class StyleCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Style[];
+        /**
+         * Get the style object by its name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The style name.
+         */
+        getByName(name: string): Word.Style;
+        /**
+         * If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The style name.
+         */
+        getByNameOrNullObject(name: string): Word.Style;
+        /**
+         * Gets the number of the styles in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         * Gets a style object by its index in the collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param index - A number that identifies the index location of a style object.
+         */
+        getItem(index: number): Word.Style;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.StyleCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.StyleCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.StyleCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.StyleCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.StyleCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.StyleCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.StyleCollectionData;
+    }
+    /**
+     * Represents a style in a Word document.
+     *
+     * @remarks
+     * [Api set: WordApi 1.3]
+     */
+    export class Style extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets a font object that represents the character formatting of the specified style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly font: Word.Font;
+        /**
+         * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly listTemplate: Word.ListTemplate;
+        /**
+         * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly paragraphFormat: Word.ParagraphFormat;
+        /**
+         * Gets the name of an existing style to use as the base formatting of another style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly baseStyle: string;
+        /**
+         * Gets whether the specified style is a built-in style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly builtIn: boolean;
+        /**
+         * Gets the description of the specified style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly description: string;
+        /**
+         * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly inUse: boolean;
+        /**
+         * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly linked: boolean;
+        /**
+         * Gets the name of a style in the language of the user.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nameLocal: string;
+        /**
+         * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly nextParagraphStyle: string;
+        /**
+         * Gets or sets the priority.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        priority: number;
+        /**
+         * Gets or sets whether the style corresponds to an available quick style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        quickStyle: boolean;
+        /**
+         * Gets the style type.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly styleType: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
+        /**
+         * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        unhideWhenUsed: boolean;
+        /**
+         * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        visibility: boolean;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Style): void;
+        /**
+         * Deletes the style.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.StyleLoadOptions): Word.Style;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Style;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Style;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Style;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Style;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.StyleData;
+    }
+    /**
      * Represents a table in a Word document.
      *
      * @remarks
@@ -5805,7 +6906,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+        styleBuiltIn: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         /**
          * Gets and sets whether the table has a first column with a special style.
          *
@@ -6995,6 +8096,35 @@ export declare namespace Word {
         current = "Current",
     }
     /**
+     * Specify the track state when ChangeTracking is on.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ChangeTrackingState {
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        unknown = "Unknown",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        normal = "Normal",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        added = "Added",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        deleted = "Deleted",
+    }
+    /**
      * Note item type
      *
      * @remarks
@@ -7050,49 +8180,49 @@ export declare namespace Word {
         /**
          * Represents that one or more comments were deleted.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentDeleted = "CommentDeleted",
         /**
          * Represents that a comment was selected.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentSelected = "CommentSelected",
         /**
          * Represents that a comment was deselected.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentDeselected = "CommentDeselected",
         /**
          * Represents that a comment or its reply was changed.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentChanged = "CommentChanged",
         /**
          * Represents that one or more new comments were added.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentAdded = "CommentAdded",
         /**
          * Represents that a content control has been entered.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         contentControlEntered = "ContentControlEntered",
         /**
          * Represents that a content control has been exited.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         contentControlExited = "ContentControlExited",
@@ -7101,18 +8231,18 @@ export declare namespace Word {
      * An enum that specifies an event's source. It can be local or remote (through coauthoring).
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum EventSource {
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          */
         local = "Local",
         /**
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          */
         remote = "Remote",
     }
@@ -7139,12 +8269,12 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         ids: number[];
@@ -7152,7 +8282,7 @@ export declare namespace Word {
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         source: Word.EventSource | "Local" | "Remote";
@@ -7161,7 +8291,7 @@ export declare namespace Word {
      * Provides information about the comments that raised the comment event.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export interface CommentEventArgs {
@@ -7169,7 +8299,7 @@ export declare namespace Word {
          * Represents how the comment changed event is triggered.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         changeType: Word.CommentChangeType | "none" | "edited" | "resolved" | "reopened" | "replyAdded" | "replyDeleted" | "replyEdited";
@@ -7177,7 +8307,7 @@ export declare namespace Word {
          * Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         commentDetails: Word.CommentDetail[];
@@ -7185,7 +8315,7 @@ export declare namespace Word {
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         source: Word.EventSource | "Local" | "Remote";
@@ -7193,16 +8323,16 @@ export declare namespace Word {
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
     }
     /**
      * A structure for the ID and reply IDs of this comment.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     export interface CommentDetail {
@@ -7210,7 +8340,7 @@ export declare namespace Word {
          * Represents the ID of this comment.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         id: string;
@@ -7218,7 +8348,7 @@ export declare namespace Word {
          * Represents the IDs of the replies to this comment.
          *
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         replyIds: string[];
@@ -7227,56 +8357,56 @@ export declare namespace Word {
      * Represents how the comments in the event were changed.
      *
      * @remarks
-     * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
     enum CommentChangeType {
         /**
          * No comment changed event is triggered.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         none = "none",
         /**
          * A comment was edited.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         edited = "edited",
         /**
          * A comment was resolved.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         resolved = "resolved",
         /**
          * A comment was reopened.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         reopened = "reopened",
         /**
          * A reply was added.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         replyAdded = "replyAdded",
         /**
          * A reply was deleted.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         replyDeleted = "replyDeleted",
         /**
          * A reply was edited.
          * @remarks
-         * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
         replyEdited = "replyEdited",
@@ -8308,7 +9438,7 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.3]
      */
-    enum Style {
+    enum BuiltInStyleName {
         /**
          * Mixed styles or other style not in this list.
          * @remarks
@@ -9088,6 +10218,1178 @@ export declare namespace Word {
          */
         boolean = "Boolean",
     }
+    /**
+     * Represents the type of style.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum StyleType {
+        /**
+         * Represents that the style is a character style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        character = "Character",
+        /**
+         * Represents that the style is a list style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        list = "List",
+        /**
+         * Represents that the style is a paragraph style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraph = "Paragraph",
+        /**
+         * Represents that the style is a table style.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        table = "Table",
+    }
+    /**
+     * Represents the outline levels.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum OutlineLevel {
+        /**
+         * Represents outline level 1.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel1 = "OutlineLevel1",
+        /**
+         * Represents outline level 2.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel2 = "OutlineLevel2",
+        /**
+         * Represents outline level 3.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel3 = "OutlineLevel3",
+        /**
+         * Represents outline level 4.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel4 = "OutlineLevel4",
+    }
+    /**
+     * Specifies the close behavior for `Document.close`.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum CloseBehavior {
+        /**
+         * Save the changes before closing the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        save = "Save",
+        /**
+         * Discard the possible changes when closing the document.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        skipSave = "SkipSave",
+    }
+    /**
+     * Specifies the save behavior for `Document.save`.
+     *
+     * @remarks
+     * [Api set: WordApi 1.1]
+     */
+    enum SaveBehavior {
+        /**
+         * Saves the document without prompting the user. If it's a new document,
+                    it will be saved with the default name or specified name in the default location.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        save = "Save",
+        /**
+         * Displays the "Save As" dialog to the user if the document hasn't been saved.
+                    Won't take effect if the document was previously saved.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        prompt = "Prompt",
+    }
+    /**
+     * Represents the type of Field.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum FieldType {
+        /**
+         * Represents that the field type is Add-in.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addin = "Addin",
+        /**
+         * Represents that the field type is AddressBlock.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        addressBlock = "AddressBlock",
+        /**
+         * Represents that the field type is Advance.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        advance = "Advance",
+        /**
+         * Represents that the field type is Ask.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ask = "Ask",
+        /**
+         * Represents that the field type is Author.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        author = "Author",
+        /**
+         * Represents that the field type is AutoText.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoText = "AutoText",
+        /**
+         * Represents that the field type is AutoTextList.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        autoTextList = "AutoTextList",
+        /**
+         * Represents that the field type is Barcode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        barCode = "BarCode",
+        /**
+         * Represents that the field type is Bibliography.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bibliography = "Bibliography",
+        /**
+         * Represents that the field type is BidiOutline.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bidiOutline = "BidiOutline",
+        /**
+         * Represents that the field type is Citation.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        citation = "Citation",
+        /**
+         * Represents that the field type is Comments.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        comments = "Comments",
+        /**
+         * Represents that the field type is Compare.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        compare = "Compare",
+        /**
+         * Represents that the field type is CreateDate.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        createDate = "CreateDate",
+        /**
+         * Represents that the field type is Data.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        data = "Data",
+        /**
+         * Represents that the field type is Database.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        database = "Database",
+        /**
+         * Represents that the field type is Date.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        date = "Date",
+        /**
+         * Represents that the field type is DisplayBarcode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        displayBarcode = "DisplayBarcode",
+        /**
+         * Represents that the field type is DocumentProperty
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        docProperty = "DocProperty",
+        /**
+         * Represents that the field type is DocumentVariable.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        docVariable = "DocVariable",
+        /**
+         * Represents that the field type is EditTime.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        editTime = "EditTime",
+        /**
+         * Represents that the field type is Embedded.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        embedded = "Embedded",
+        /**
+         * Represents that the field type is Equation.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eq = "EQ",
+        /**
+         * Represents that the field type is Expression.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        expression = "Expression",
+        /**
+         * Represents that the field type is FileName.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fileName = "FileName",
+        /**
+         * Represents that the field type is FileSize.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fileSize = "FileSize",
+        /**
+         * Represents that the field type is FillIn.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        fillIn = "FillIn",
+        /**
+         * Represents that the field type is FormCheckbox.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formCheckbox = "FormCheckbox",
+        /**
+         * Represents that the field type is FormDropdown.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formDropdown = "FormDropdown",
+        /**
+         * Represents that the field type is FormText.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formText = "FormText",
+        /**
+         * Represents that the field type is GotoButton.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        gotoButton = "GotoButton",
+        /**
+         * Represents that the field type is GreetingLine.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        greetingLine = "GreetingLine",
+        /**
+         * Represents that the field type is Hyperlink.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hyperlink = "Hyperlink",
+        /**
+         * Represents that the field type is If.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        if = "If",
+        /**
+         * Represents that the field type is Import.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        import = "Import",
+        /**
+         * Represents that the field type is Include.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        include = "Include",
+        /**
+         * Represents that the field type is IncludePicture.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includePicture = "IncludePicture",
+        /**
+         * Represents that the field type is IncludeText.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        includeText = "IncludeText",
+        /**
+         * Represents that the field type is Index.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        index = "Index",
+        /**
+         * Represents that the field type is Information.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        info = "Info",
+        /**
+         * Represents that the field type is Keywords.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        keywords = "Keywords",
+        /**
+         * Represents that the field type is LastSavedBy.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        lastSavedBy = "LastSavedBy",
+        /**
+         * Represents that the field type is Link.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        link = "Link",
+        /**
+         * Represents that the field type is ListNumber.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        listNum = "ListNum",
+        /**
+         * Represents that the field type is MacroButton.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        macroButton = "MacroButton",
+        /**
+         * Represents that the field type is MergeBarcode.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergeBarcode = "MergeBarcode",
+        /**
+         * Represents that the field type is MergeField.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergeField = "MergeField",
+        /**
+         * Represents that the field type is MergeRecord.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergeRec = "MergeRec",
+        /**
+         * Represents that the field type is MergeSequence.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        mergeSeq = "MergeSeq",
+        /**
+         * Represents that the field type is Next.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        next = "Next",
+        /**
+         * Represents that the field type is NextIf.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        nextIf = "NextIf",
+        /**
+         * Represents that the field type is NoteReference.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        noteRef = "NoteRef",
+        /**
+         * Represents that the field type is NumberOfCharacters.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numChars = "NumChars",
+        /**
+         * Represents that the field type is NumberOfPages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numPages = "NumPages",
+        /**
+         * Represents that the field type is NumberOfWords.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        numWords = "NumWords",
+        /**
+         * Represents that the field type is ActiveXControl.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ocx = "OCX",
+        /**
+         * Represents that the field type is Page.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        page = "Page",
+        /**
+         * Represents that the field type is PageReference.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        pageRef = "PageRef",
+        /**
+         * Represents that the field type is Print.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        print = "Print",
+        /**
+         * Represents that the field type is PrintDate.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        printDate = "PrintDate",
+        /**
+         * Represents that the field type is Private.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        private = "Private",
+        /**
+         * Represents that the field type is Quote.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        quote = "Quote",
+        /**
+         * Represents that the field type is ReferencedDocument.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rd = "RD",
+        /**
+         * Represents that the field type is Reference.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ref = "Ref",
+        /**
+         * Represents that the field type is RevisionNumber.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        revNum = "RevNum",
+        /**
+         * Represents that the field type is SaveDate.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        saveDate = "SaveDate",
+        /**
+         * Represents that the field type is Section.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        section = "Section",
+        /**
+         * Represents that the field type is SectionPages.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        sectionPages = "SectionPages",
+        /**
+         * Represents that the field type is Sequence.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        seq = "Seq",
+        /**
+         * Represents that the field type is Set.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        set = "Set",
+        /**
+         * Represents that the field type is Shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shape = "Shape",
+        /**
+         * Represents that the field type is SkipIf.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        skipIf = "SkipIf",
+        /**
+         * Represents that the field type is StyleReference.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        styleRef = "StyleRef",
+        /**
+         * Represents that the field type is Subject.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subject = "Subject",
+        /**
+         * Represents that the field type is Subscriber.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        subscriber = "Subscriber",
+        /**
+         * Represents that the field type is Symbol.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        symbol = "Symbol",
+        /**
+         * Represents that the field type is TableOfAuthoritiesEntry.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ta = "TA",
+        /**
+         * Represents that the field type is TableOfContentsEntry.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        tc = "TC",
+        /**
+         * Represents that the field type is Template.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        template = "Template",
+        /**
+         * Represents that the field type is Time.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        time = "Time",
+        /**
+         * Represents that the field type is Title.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        title = "Title",
+        /**
+         * Represents that the field type is TableOfAuthorities.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toa = "TOA",
+        /**
+         * Represents that the field type is TableOfContents.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        toc = "TOC",
+        /**
+         * Represents that the field type is UserAddress.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userAddress = "UserAddress",
+        /**
+         * Represents that the field type is UserInitials.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userInitials = "UserInitials",
+        /**
+         * Represents that the field type is UserName.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        userName = "UserName",
+        /**
+         * Represents that the field type is IndexEntry.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        xe = "XE",
+        /**
+         * Represents that the field type is Empty.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        empty = "Empty",
+        /**
+         * Represents the field types not supported by the Office JavaScript API.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        others = "Others",
+        /**
+         * Represents that the field type is Undefined.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        undefined = "Undefined",
+    }
+    /**
+     * Represents the kind of field. Indicates how the field works in relation to updating.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum FieldKind {
+        /**
+         * Represents that the field is invalid. For example, a pair of field characters with nothing inside.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        none = "None",
+        /**
+         * Represents that the field is automatically updated each time it's displayed or each time the page is reformatted, but which can also be manually updated.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        hot = "Hot",
+        /**
+         * Represents that the field is automatically updated when the source changes or the field can be manually updated.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        warm = "Warm",
+        /**
+         * Represents that the field doesn't have a result.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        cold = "Cold",
+    }
+    /**
+     * Represents the character inserted after the list item mark.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum TrailingCharacter {
+        /**
+         * A tab is inserted.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trailingTab = "TrailingTab",
+        /**
+         * A space is inserted. Default.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trailingSpace = "TrailingSpace",
+        /**
+         * No character is inserted.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        trailingNone = "TrailingNone",
+    }
+    /**
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ListBuiltInNumberStyle {
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        none = "None",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabic = "Arabic",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        upperRoman = "UpperRoman",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowerRoman = "LowerRoman",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        upperLetter = "UpperLetter",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowerLetter = "LowerLetter",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        ordinal = "Ordinal",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        cardinalText = "CardinalText",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        ordinalText = "OrdinalText",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        kanji = "Kanji",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        kanjiDigit = "KanjiDigit",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        aiueoHalfWidth = "AiueoHalfWidth",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        irohaHalfWidth = "IrohaHalfWidth",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabicFullWidth = "ArabicFullWidth",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        kanjiTraditional = "KanjiTraditional",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        kanjiTraditional2 = "KanjiTraditional2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        numberInCircle = "NumberInCircle",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        aiueo = "Aiueo",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        iroha = "Iroha",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabicLZ = "ArabicLZ",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        bullet = "Bullet",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        ganada = "Ganada",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        chosung = "Chosung",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        gbnum1 = "GBNum1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        gbnum2 = "GBNum2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        gbnum3 = "GBNum3",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        gbnum4 = "GBNum4",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        zodiac1 = "Zodiac1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        zodiac2 = "Zodiac2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        zodiac3 = "Zodiac3",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        tradChinNum1 = "TradChinNum1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        tradChinNum2 = "TradChinNum2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        tradChinNum3 = "TradChinNum3",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        tradChinNum4 = "TradChinNum4",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        simpChinNum1 = "SimpChinNum1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        simpChinNum2 = "SimpChinNum2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        simpChinNum3 = "SimpChinNum3",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        simpChinNum4 = "SimpChinNum4",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hanjaRead = "HanjaRead",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hanjaReadDigit = "HanjaReadDigit",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hangul = "Hangul",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hanja = "Hanja",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hebrew1 = "Hebrew1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabic1 = "Arabic1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hebrew2 = "Hebrew2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabic2 = "Arabic2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hindiLetter1 = "HindiLetter1",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hindiLetter2 = "HindiLetter2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hindiArabic = "HindiArabic",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        hindiCardinalText = "HindiCardinalText",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        thaiLetter = "ThaiLetter",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        thaiArabic = "ThaiArabic",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        thaiCardinalText = "ThaiCardinalText",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        vietCardinalText = "VietCardinalText",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowercaseRussian = "LowercaseRussian",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        uppercaseRussian = "UppercaseRussian",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowercaseGreek = "LowercaseGreek",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        uppercaseGreek = "UppercaseGreek",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabicLZ2 = "ArabicLZ2",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabicLZ3 = "ArabicLZ3",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        arabicLZ4 = "ArabicLZ4",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowercaseTurkish = "LowercaseTurkish",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        uppercaseTurkish = "UppercaseTurkish",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        lowercaseBulgarian = "LowercaseBulgarian",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        uppercaseBulgarian = "UppercaseBulgarian",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        pictureBullet = "PictureBullet",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        legal = "Legal",
+        /**
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         */
+        legalLZ = "LegalLZ",
+    }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -9133,7 +11435,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
         /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
@@ -9293,7 +11595,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets or sets a tag to identify a content control.
              *
@@ -9451,6 +11753,37 @@ export declare namespace Word {
             * [Api set: WordApi 1.4]
             */
             result?: Word.Interfaces.RangeUpdateData;
+            /**
+             * Gets or sets the field's code instruction.
+             *
+             * @remarks
+             * [Api set: WordApi 1.4]
+             */
+            code?: string;
+            /**
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            data?: string;
+            /**
+             * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            locked?: boolean;
+            /**
+             * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showCodes?: boolean;
         }
         /** An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`. */
         export interface FieldCollectionUpdateData {
@@ -9599,6 +11932,112 @@ export declare namespace Word {
              */
             level?: number;
         }
+        /** An interface for updating data on the ListLevel object, for use in `listLevel.set({ ... })`. */
+        export interface ListLevelUpdateData {
+            /**
+            * Gets a Font object that represents the character formatting of the specified object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontUpdateData;
+            /**
+             * Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Gets or sets the name of the style that's linked to the specified list level object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedStyle?: string;
+            /**
+             * Gets or sets the number format for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberFormat?: string;
+            /**
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberPosition?: number;
+            /**
+             * Gets or sets the number style for the list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
+            /**
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resetOnHigher?: number;
+            /**
+             * Gets or sets the starting number for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            startAt?: number;
+            /**
+             * Gets or sets the tab position for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabPosition?: number;
+            /**
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textPosition?: number;
+            /**
+             * Gets or sets the character inserted after the number for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
+        }
+        /** An interface for updating data on the ListLevelCollection object, for use in `listLevelCollection.set({ ... })`. */
+        export interface ListLevelCollectionUpdateData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface for updating data on the ListTemplate object, for use in `listTemplate.set({ ... })`. */
+        export interface ListTemplateUpdateData {
+            /**
+             * Gets or sets whether the specified ListTemplate object is outline numbered
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineNumbered?: boolean;
+        }
         /** An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`. */
         export interface NoteItemUpdateData {
             /**
@@ -9726,11 +12165,126 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
         /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
         export interface ParagraphCollectionUpdateData {
             items?: Word.Interfaces.ParagraphData[];
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
+            /**
+             * Gets or sets the alignment for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstLineIndent?: number;
+            /**
+             * Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepTogether?: boolean;
+            /**
+             * Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepWithNext?: boolean;
+            /**
+             * Gets or sets the left Indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: number;
+            /**
+             * Gets or sets the line spacing (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineSpacing?: number;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitAfter?: number;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitBefore?: number;
+            /**
+             * Gets or sets whether left and right indents are the same width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            mirrorIndents?: boolean;
+            /**
+             * Gets or sets the outline level for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+            /**
+             * Gets or sets the right indent (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: number;
+            /**
+             * Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: number;
+            /**
+             * Gets or sets the spacing (in points) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: number;
+            /**
+             * Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            widowControl?: boolean;
         }
         /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
@@ -9761,7 +12315,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
         /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
@@ -9847,6 +12401,69 @@ export declare namespace Word {
         export interface SettingCollectionUpdateData {
             items?: Word.Interfaces.SettingData[];
         }
+        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
+        export interface StyleCollectionUpdateData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
+        export interface StyleUpdateData {
+            /**
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontUpdateData;
+            /**
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateUpdateData;
+            /**
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;
+            /**
+             * Gets or sets the priority.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            priority?: number;
+            /**
+             * Gets or sets whether the style corresponds to an available quick style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            quickStyle?: boolean;
+            /**
+             * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            unhideWhenUsed?: boolean;
+            /**
+             * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visibility?: boolean;
+        }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             /**
@@ -9911,7 +12528,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets and sets whether the table has a first column with a special style.
              *
@@ -10145,7 +12762,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets the text of the body. Use the insertText method to insert text.
              *
@@ -10445,9 +13062,9 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -10475,7 +13092,7 @@ export declare namespace Word {
              */
             title?: string;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -10789,12 +13406,52 @@ export declare namespace Word {
             */
             result?: Word.Interfaces.RangeData;
             /**
-             * Gets the field's code instruction.
+             * Gets or sets the field's code instruction.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             code?: string;
+            /**
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            data?: string;
+            /**
+             * Gets the field's kind.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";
+            /**
+             * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            locked?: boolean;
+            /**
+             * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showCodes?: boolean;
+            /**
+             * Gets the field's type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined";
         }
         /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
         export interface FieldCollectionData {
@@ -10996,6 +13653,120 @@ export declare namespace Word {
              */
             siblingIndex?: number;
         }
+        /** An interface describing the data returned by calling `listLevel.toJSON()`. */
+        export interface ListLevelData {
+            /**
+            * Gets a Font object that represents the character formatting of the specified object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontData;
+            /**
+             * Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Gets or sets the name of the style that's linked to the specified list level object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedStyle?: string;
+            /**
+             * Gets or sets the number format for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberFormat?: string;
+            /**
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberPosition?: number;
+            /**
+             * Gets or sets the number style for the list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
+            /**
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resetOnHigher?: number;
+            /**
+             * Gets or sets the starting number for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            startAt?: number;
+            /**
+             * Gets or sets the tab position for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabPosition?: number;
+            /**
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textPosition?: number;
+            /**
+             * Gets or sets the character inserted after the number for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
+        }
+        /** An interface describing the data returned by calling `listLevelCollection.toJSON()`. */
+        export interface ListLevelCollectionData {
+            items?: Word.Interfaces.ListLevelData[];
+        }
+        /** An interface describing the data returned by calling `listTemplate.toJSON()`. */
+        export interface ListTemplateData {
+            /**
+            * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listLevels?: Word.Interfaces.ListLevelData[];
+            /**
+             * Gets or sets whether the specified ListTemplate object is outline numbered
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineNumbered?: boolean;
+        }
         /** An interface describing the data returned by calling `noteItem.toJSON()`. */
         export interface NoteItemData {
             /**
@@ -11158,7 +13929,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
              *
@@ -11177,6 +13948,121 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `paragraphCollection.toJSON()`. */
         export interface ParagraphCollectionData {
             items?: Word.Interfaces.ParagraphData[];
+        }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
+            /**
+             * Gets or sets the alignment for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
+            /**
+             * Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstLineIndent?: number;
+            /**
+             * Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepTogether?: boolean;
+            /**
+             * Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepWithNext?: boolean;
+            /**
+             * Gets or sets the left Indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: number;
+            /**
+             * Gets or sets the line spacing (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineSpacing?: number;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitAfter?: number;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitBefore?: number;
+            /**
+             * Gets or sets whether left and right indents are the same width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            mirrorIndents?: boolean;
+            /**
+             * Gets or sets the outline level for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+            /**
+             * Gets or sets the right indent (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: number;
+            /**
+             * Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: number;
+            /**
+             * Gets or sets the spacing (in points) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: number;
+            /**
+             * Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            widowControl?: boolean;
         }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
@@ -11228,7 +14114,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets the text of the range.
              *
@@ -11327,6 +14213,133 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
         export interface SettingCollectionData {
             items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface describing the data returned by calling `styleCollection.toJSON()`. */
+        export interface StyleCollectionData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface describing the data returned by calling `style.toJSON()`. */
+        export interface StyleData {
+            /**
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontData;
+            /**
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateData;
+            /**
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            paragraphFormat?: Word.Interfaces.ParagraphFormatData;
+            /**
+             * Gets the name of an existing style to use as the base formatting of another style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseStyle?: string;
+            /**
+             * Gets whether the specified style is a built-in style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
+             * Gets the description of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            description?: string;
+            /**
+             * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            inUse?: boolean;
+            /**
+             * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linked?: boolean;
+            /**
+             * Gets the name of a style in the language of the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameLocal?: string;
+            /**
+             * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextParagraphStyle?: string;
+            /**
+             * Gets or sets the priority.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            priority?: number;
+            /**
+             * Gets or sets whether the style corresponds to an available quick style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            quickStyle?: boolean;
+            /**
+             * Gets the style type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleType?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
+            /**
+             * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            unhideWhenUsed?: boolean;
+            /**
+             * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visibility?: boolean;
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -11434,7 +14447,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            styleBuiltIn?: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+            styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
             /**
              * Gets and sets whether the table has a first column with a special style.
              *
@@ -12053,7 +15066,7 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -12183,7 +15196,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -12211,7 +15224,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -12219,7 +15232,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -12349,7 +15362,7 @@ export declare namespace Word {
              */
             styleBuiltIn?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -12377,7 +15390,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -12800,12 +15813,52 @@ export declare namespace Word {
             */
             result?: Word.Interfaces.RangeLoadOptions;
             /**
-             * Gets the field's code instruction.
+             * Gets or sets the field's code instruction.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             code?: boolean;
+            /**
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            data?: boolean;
+            /**
+             * Gets the field's kind.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: boolean;
+            /**
+             * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            locked?: boolean;
+            /**
+             * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showCodes?: boolean;
+            /**
+             * Gets the field's type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Contains a collection of {@link Word.Field} objects.
@@ -12875,12 +15928,52 @@ export declare namespace Word {
             */
             result?: Word.Interfaces.RangeLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the field's code instruction.
+             * For EACH ITEM in the collection: Gets or sets the field's code instruction.
              *
              * @remarks
              * [Api set: WordApi 1.4]
              */
             code?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            data?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the field's kind.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            kind?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            locked?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showCodes?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the field's type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
         }
         /**
          * Represents a font.
@@ -13291,6 +16384,229 @@ export declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             siblingIndex?: boolean;
+        }
+        /**
+         * Represents a list level.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ListLevelLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Gets a Font object that represents the character formatting of the specified object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+             * Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * Gets or sets the name of the style that's linked to the specified list level object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedStyle?: boolean;
+            /**
+             * Gets or sets the number format for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberFormat?: boolean;
+            /**
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberPosition?: boolean;
+            /**
+             * Gets or sets the number style for the list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberStyle?: boolean;
+            /**
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resetOnHigher?: boolean;
+            /**
+             * Gets or sets the starting number for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            startAt?: boolean;
+            /**
+             * Gets or sets the tab position for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabPosition?: boolean;
+            /**
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textPosition?: boolean;
+            /**
+             * Gets or sets the character inserted after the number for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trailingCharacter?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.ListLevel} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ListLevelCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Gets a Font object that represents the character formatting of the specified object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the name of the style that's linked to the specified list level object.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linkedStyle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the number format for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberFormat?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the position (in points) of the number or bullet for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberPosition?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the number style for the list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            numberStyle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resetOnHigher?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            startAt?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            tabPosition?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            textPosition?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the character inserted after the number for the specified list level.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            trailingCharacter?: boolean;
+        }
+        /**
+         * Represents a ListTemplate.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ListTemplateLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets or sets whether the specified ListTemplate object is outline numbered
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineNumbered?: boolean;
         }
         /**
          * Represents a footnote or endnote.
@@ -13775,6 +17091,131 @@ export declare namespace Word {
             text?: boolean;
         }
         /**
+         * Represents a style of paragraph in a document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ParagraphFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+             * Gets or sets the alignment for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            alignment?: boolean;
+            /**
+             * Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            firstLineIndent?: boolean;
+            /**
+             * Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepTogether?: boolean;
+            /**
+             * Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            keepWithNext?: boolean;
+            /**
+             * Gets or sets the left Indent.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            leftIndent?: boolean;
+            /**
+             * Gets or sets the line spacing (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineSpacing?: boolean;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitAfter?: boolean;
+            /**
+             * Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            lineUnitBefore?: boolean;
+            /**
+             * Gets or sets whether left and right indents are the same width.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            mirrorIndents?: boolean;
+            /**
+             * Gets or sets the outline level for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            outlineLevel?: boolean;
+            /**
+             * Gets or sets the right indent (in points) for the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            rightIndent?: boolean;
+            /**
+             * Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceAfter?: boolean;
+            /**
+             * Gets or sets the spacing (in points) before the specified paragraphs.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            spaceBefore?: boolean;
+            /**
+             * Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            widowControl?: boolean;
+        }
+        /**
          * Represents a contiguous area in a document.
          *
          * @remarks
@@ -14131,6 +17572,271 @@ export declare namespace Word {
              * [Api set: WordApi 1.4]
              */
             value?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Style} objects.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface StyleCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
+            /**
+            * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
+            /**
+             * For EACH ITEM in the collection: Gets the name of an existing style to use as the base formatting of another style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseStyle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether the specified style is a built-in style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the description of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            description?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            inUse?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linked?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of a style in the language of the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameLocal?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextParagraphStyle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets the priority.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            priority?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets whether the style corresponds to an available quick style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            quickStyle?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the style type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleType?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            unhideWhenUsed?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visibility?: boolean;
+        }
+        /**
+         * Represents a style in a Word document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.3]
+         */
+        export interface StyleLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            font?: Word.Interfaces.FontLoadOptions;
+            /**
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
+            /**
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
+            /**
+             * Gets the name of an existing style to use as the base formatting of another style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            baseStyle?: boolean;
+            /**
+             * Gets whether the specified style is a built-in style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            builtIn?: boolean;
+            /**
+             * Gets the description of the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            description?: boolean;
+            /**
+             * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            inUse?: boolean;
+            /**
+             * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            linked?: boolean;
+            /**
+             * Gets the name of a style in the language of the user.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nameLocal?: boolean;
+            /**
+             * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            nextParagraphStyle?: boolean;
+            /**
+             * Gets or sets the priority.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            priority?: boolean;
+            /**
+             * Gets or sets whether the style corresponds to an available quick style.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            quickStyle?: boolean;
+            /**
+             * Gets the style type.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            styleType?: boolean;
+            /**
+             * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            unhideWhenUsed?: boolean;
+            /**
+             * Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            visibility?: boolean;
         }
         /**
          * Represents a table in a Word document.

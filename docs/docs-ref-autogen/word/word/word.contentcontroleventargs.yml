@@ -71,20 +71,18 @@ properties:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
         "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
-        | "CommentChanged" | "CommentAdded";
+        | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
       return:
         type: >-
           <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
           "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
-          "CommentDeselected" | "CommentChanged" | "CommentAdded"
+          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited"
   - name: ids
     uid: 'word!Word.ContentControlEventArgs#ids:member'
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -96,9 +94,7 @@ properties:
     package: word!
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
-    remarks: >-
-      \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:

@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Word.ChangeTrackingState
+uid: 'word!Word.ChangeTrackingState:enum'
+package: word!
+fullName: Word.ChangeTrackingState
+summary: Specify the track state when ChangeTracking is on.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: added
+    uid: 'word!Word.ChangeTrackingState.added:member'
+    package: word!
+    summary: '* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Added"'
+  - name: deleted
+    uid: 'word!Word.ChangeTrackingState.deleted:member'
+    package: word!
+    summary: '* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Deleted"'
+  - name: normal
+    uid: 'word!Word.ChangeTrackingState.normal:member'
+    package: word!
+    summary: '* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Normal"'
+  - name: unknown
+    uid: 'word!Word.ChangeTrackingState.unknown:member'
+    package: word!
+    summary: '* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    value: '"Unknown"'

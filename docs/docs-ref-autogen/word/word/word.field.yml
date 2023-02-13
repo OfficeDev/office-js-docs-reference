@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Field#code:member'
     package: word!
     fullName: code
-    summary: Gets the field's code instruction.
+    summary: Gets or sets the field's code instruction.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -46,7 +46,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly code: string;'
+      content: 'code: string;'
       return:
         type: string
   - name: context
@@ -63,6 +63,44 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: data
+    uid: 'word!Word.Field#data:member'
+    package: word!
+    fullName: data
+    summary: >-
+      Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when setting it.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'data: string;'
+      return:
+        type: string
+  - name: kind
+    uid: 'word!Word.Field#kind:member'
+    package: word!
+    fullName: kind
+    summary: Gets the field's kind.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly kind: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";'
+      return:
+        type: '<xref uid="word!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" | "Cold"'
+  - name: locked
+    uid: 'word!Word.Field#locked:member'
+    package: word!
+    fullName: locked
+    summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type: boolean
   - name: parentBody
     uid: 'word!Word.Field#parentBody:member'
     package: word!
@@ -233,6 +271,54 @@ properties:
       content: 'readonly result: Word.Range;'
       return:
         type: '<xref uid="word!Word.Range:class" />'
+  - name: showCodes
+    uid: 'word!Word.Field#showCodes:member'
+    package: word!
+    fullName: showCodes
+    summary: >-
+      Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are
+      displayed, `false` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showCodes: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Field#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the field's type.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" |
+        "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate"
+        | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" |
+        "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" |
+        "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" |
+        "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" |
+        "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" |
+        "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate"
+        | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" |
+        "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" |
+        "UserName" | "XE" | "Empty" | "Others" | "Undefined";
+      return:
+        type: >-
+          <xref uid="word!Word.FieldType:enum" /> | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText"
+          | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" |
+          "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" |
+          "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" |
+          "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
+          "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" |
+          "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" |
+          "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" |
+          "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" |
+          "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" |
+          "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"
 methods:
   - name: delete()
     uid: 'word!Word.Field#delete:member(1)'
@@ -344,6 +430,40 @@ methods:
       return:
         type: '<xref uid="word!Word.Field:class" />'
         description: ''
+  - name: select(selectionMode)
+    uid: 'word!Word.Field#select:member(1)'
+    package: word!
+    fullName: select(selectionMode)
+    summary: Selects the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type: '<xref uid="word!Word.SelectionMode:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: select(selectionModeString)
+    uid: 'word!Word.Field#select:member(2)'
+    package: word!
+    fullName: select(selectionModeString)
+    summary: Selects the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      parameters:
+        - id: selectionModeString
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type: '"Select" | "Start" | "End"'
+      return:
+        type: void
+        description: ''
   - name: 'set(properties, options)'
     uid: 'word!Word.Field#set:member(1)'
     package: word!
@@ -439,5 +559,18 @@ methods:
       content: 'untrack(): Word.Field;'
       return:
         type: '<xref uid="word!Word.Field:class" />'
+        description: ''
+  - name: updateResult()
+    uid: 'word!Word.Field#updateResult:member(1)'
+    package: word!
+    fullName: updateResult()
+    summary: Updates the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updateResult(): void;'
+      return:
+        type: void
         description: ''
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
