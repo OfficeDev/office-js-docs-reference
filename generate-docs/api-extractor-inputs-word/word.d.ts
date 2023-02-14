@@ -273,7 +273,7 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): void;
         /**
-         * Wraps the body object with a content control.
+         * Wraps the Body object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1187,7 +1187,7 @@ export declare namespace Word {
          */
         getComments(): Word.CommentCollection;
         /**
-         * Gets the currently supported content controls in the content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+         * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
                     Make sure that your add-in respects it and is ready to handle new content control types.
          *
@@ -2335,7 +2335,7 @@ export declare namespace Word {
          * @beta
          *
          * @param name - Required. A string representing the style name.
-         * @param type - Required. Possibly: The style type, including character, list, paragraph, or table.
+         * @param type - Required. The style type, including character, list, paragraph, or table.
          */
         addStyle(name: string, type: Word.StyleType): Word.Style;
         /**
@@ -2346,7 +2346,7 @@ export declare namespace Word {
          * @beta
          *
          * @param name - Required. A string representing the style name.
-         * @param typeString - Required. Possibly: The style type, including character, list, paragraph, or table.
+         * @param typeString - Required. The style type, including character, list, paragraph, or table.
          */
         addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
@@ -2442,11 +2442,14 @@ export declare namespace Word {
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
-                    Required. The base64 encoded content of a .docx file.Required. The value must be 'Replace', 'Start', or 'End'.Optional. The additional properties that should be imported to the destination document.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
+         *
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
@@ -2456,7 +2459,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
-         * @param fileName - Optional. The file name. Only take effect for a new document.
+         * @param fileName - Optional. The file name. Only takes effect for a new document.
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
@@ -2466,7 +2469,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
-         * @param fileName - Optional. The file name. Only take effect for a new document.
+         * @param fileName - Optional. The file name. Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
@@ -2603,7 +2606,7 @@ export declare namespace Word {
          * @beta
          *
          * @param name - Required. A string representing the style name.
-         * @param type - Required. Possibly: The style type, including character, list, paragraph, or table.
+         * @param type - Required. The style type, including character, list, paragraph, or table.
          */
         addStyle(name: string, type: Word.StyleType): Word.Style;
         /**
@@ -2614,7 +2617,7 @@ export declare namespace Word {
          * @beta
          *
          * @param name - Required. A string representing the style name.
-         * @param typeString - Required. Possibly: The style type, including character, list, paragraph, or table.
+         * @param typeString - Required. The style type, including character, list, paragraph, or table.
          */
         addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
@@ -2666,12 +2669,15 @@ export declare namespace Word {
         getStyles(): Word.StyleCollection;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
-                    Headers, footers, watermarks, and other section properties are copied by default.
-                    Required. The base64 encoded content of a .docx file.Required. The value must be 'Replace', 'Start', or 'End'.Optional. The additional properties that should be imported to the destination document.
+                    Headers, footers, watermarks, and other section properties are copied by default.        
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
+         *
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
+         * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
@@ -2687,8 +2693,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          *
-         * @param saveBehavior - Optional. DocumentCreated only support 'Save'.
-         * @param fileName - Optional. The file name. Only take effect for a new document.
+         * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.
+         * @param fileName - Optional. The file name. Only takes effect for a new document.
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
@@ -2697,8 +2703,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
          *
-         * @param saveBehaviorString - Optional. DocumentCreated only support 'Save'.
-         * @param fileName - Optional. The file name. Only take effect for a new document.
+         * @param saveBehaviorString - Optional. DocumentCreated only supports 'Save'.
+         * @param fileName - Optional. The file name. Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
@@ -2987,7 +2993,7 @@ export declare namespace Word {
          */
         code: string;
         /**
-         * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+         * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4877,7 +4883,7 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
-         * Wraps the paragraph object with a content control.
+         * Wraps the Paragraph object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -5675,7 +5681,7 @@ export declare namespace Word {
          */
         insertComment(commentText: string): Word.Comment;
         /**
-         * Wraps the range object with a content control.
+         * Wraps the Range object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -13413,7 +13419,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]

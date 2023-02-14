@@ -1028,7 +1028,7 @@ methods:
     uid: 'word!Word.Range#insertContentControl:member(1)'
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the range object with a content control.
+    summary: Wraps the Range object with a content control.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

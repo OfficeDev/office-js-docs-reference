@@ -2,7 +2,7 @@
 |:---|:---|:---|
 |[Application](/javascript/api/word/word.application)|[retrieveStylesFromBase64(base64File: string)](/javascript/api/word/word.application#word-word-application-retrievestylesfrombase64-member(1))|Parse styles from template base 64 file and return JSON format of retrieved styles as a string.|
 |[Body](/javascript/api/word/word.body)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))|Gets the currently supported content controls in the body.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the body object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the Body object with a content control.|
 ||[onCommentAdded](/javascript/api/word/word.body#word-word-body-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.body#word-word-body-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
@@ -15,7 +15,7 @@
 ||[commentDetails](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-commentdetails-member)|Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.|
 ||[source](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-source-member)|The source of the event.|
 ||[type](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-type-member)|The event type.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))|Gets the currently supported content controls in the content control.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))|Gets the currently supported child content controls in this content control.|
 ||[onCommentAdded](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeselected](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-oncommentdeselected-member)|Occurs when a comment is deselected.|
@@ -81,7 +81,7 @@
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Gets or sets whether the specified ListTemplate object is outline numbered|
 |[Paragraph](/javascript/api/word/word.paragraph)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))|Gets the currently supported content controls in the paragraph.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the paragraph object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 ||[onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)|Occurs when comments are deleted.|
@@ -103,7 +103,7 @@
 ||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Gets or sets the spacing (in points) before the specified paragraphs.|
 ||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
 |[Range](/javascript/api/word/word.range)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))|Gets the currently supported content controls in the range.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the range object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 ||[insertField(insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean)](/javascript/api/word/word.range#word-word-range-insertfield-member(1))|Inserts a field at the specified location.|
 ||[onCommentAdded](/javascript/api/word/word.range#word-word-range-oncommentadded-member)|Occurs when new comments are added.|
 ||[onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)|Occurs when a comment or its reply is changed.|

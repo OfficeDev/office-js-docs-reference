@@ -739,7 +739,7 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the content control. **Important**: If specific types are
+      Gets the currently supported child content controls in this content control. **Important**: If specific types are
       provided in the options parameter, only content controls of supported types are returned. Be aware that an
       exception will be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class)
       that aren't relevant for the specific type. Make sure that your add-in respects it and is ready to handle new

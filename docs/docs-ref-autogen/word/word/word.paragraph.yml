@@ -1145,7 +1145,7 @@ methods:
     uid: 'word!Word.Paragraph#insertContentControl:member(1)'
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the paragraph object with a content control.
+    summary: Wraps the Paragraph object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

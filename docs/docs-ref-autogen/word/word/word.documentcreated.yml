@@ -154,7 +154,7 @@ methods:
           description: Required. A string representing the style name.
           type: string
         - id: type
-          description: 'Required. Possibly: The style type, including character, list, paragraph, or table.'
+          description: 'Required. The style type, including character, list, paragraph, or table.'
           type: '<xref uid="word!Word.StyleType:enum" />'
       return:
         type: '<xref uid="word!Word.Style:class" />'
@@ -174,7 +174,7 @@ methods:
           description: Required. A string representing the style name.
           type: string
         - id: typeString
-          description: 'Required. Possibly: The style type, including character, list, paragraph, or table.'
+          description: 'Required. The style type, including character, list, paragraph, or table.'
           type: '"Character" | "List" | "Paragraph" | "Table"'
       return:
         type: '<xref uid="word!Word.Style:class" />'
@@ -275,9 +275,7 @@ methods:
     fullName: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
     summary: >-
       Inserts a document into the target document at a specific location with additional properties. Headers, footers,
-      watermarks, and other section properties are copied by default. Required. The base64 encoded content of a .docx
-      file.Required. The value must be 'Replace', 'Start', or 'End'.Optional. The additional properties that should be
-      imported to the destination document.
+      watermarks, and other section properties are copied by default.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -288,15 +286,15 @@ methods:
         Word.SectionCollection;
       parameters:
         - id: base64File
-          description: ''
+          description: Required. The base64 encoded content of a .docx file.
           type: string
         - id: insertLocation
-          description: ''
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
           type: >-
             <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
             /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
         - id: insertFileOptions
-          description: ''
+          description: Optional. The additional properties that should be imported to the destination document.
           type: '<xref uid="word!Word.InsertFileOptions:interface" />'
       return:
         type: '<xref uid="word!Word.SectionCollection:class" />'
@@ -407,10 +405,10 @@ methods:
       content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
       parameters:
         - id: saveBehavior
-          description: Optional. DocumentCreated only support 'Save'.
+          description: Optional. DocumentCreated only supports 'Save'.
           type: '<xref uid="word!Word.SaveBehavior:enum" />'
         - id: fileName
-          description: Optional. The file name. Only take effect for a new document.
+          description: Optional. The file name. Only takes effect for a new document.
           type: string
       return:
         type: void
@@ -427,10 +425,10 @@ methods:
       content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
       parameters:
         - id: saveBehaviorString
-          description: Optional. DocumentCreated only support 'Save'.
+          description: Optional. DocumentCreated only supports 'Save'.
           type: '"Save" | "Prompt"'
         - id: fileName
-          description: Optional. The file name. Only take effect for a new document.
+          description: Optional. The file name. Only takes effect for a new document.
           type: string
       return:
         type: void

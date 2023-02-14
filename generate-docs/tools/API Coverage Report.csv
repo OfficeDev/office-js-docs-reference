@@ -10460,7 +10460,7 @@ Word.Document,getEndnoteBody(),Method,Poor,false
 Word.Document,getFootnoteBody(),Method,Poor,false
 Word.Document,getSelection(),Method,Poor,true
 Word.Document,getStyles(),Method,Poor,false
-Word.Document,insertFileFromBase64(base64File,Method,Poor,false
+Word.Document,insertFileFromBase64(base64File,Method,Fine,false
 Word.Document,load(options),Method,Fine,true
 Word.Document,load(propertyNames),Method,Poor,false
 Word.Document,load(propertyNamesAndPaths),Method,Poor,false
@@ -10487,7 +10487,7 @@ Word.DocumentCreated,getBookmarkRange(name),Method,Poor,false
 Word.DocumentCreated,getBookmarkRangeOrNullObject(name),Method,Poor,false
 Word.DocumentCreated,getContentControls(options),Method,Poor,false
 Word.DocumentCreated,getStyles(),Method,Poor,false
-Word.DocumentCreated,insertFileFromBase64(base64File,Method,Poor,false
+Word.DocumentCreated,insertFileFromBase64(base64File,Method,Fine,false
 Word.DocumentCreated,load(options),Method,Poor,false
 Word.DocumentCreated,load(propertyNames),Method,Poor,false
 Word.DocumentCreated,load(propertyNamesAndPaths),Method,Poor,false

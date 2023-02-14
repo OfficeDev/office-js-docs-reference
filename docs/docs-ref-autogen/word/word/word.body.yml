@@ -861,7 +861,7 @@ methods:
     uid: 'word!Word.Body#insertContentControl:member(1)'
     package: word!
     fullName: insertContentControl(contentControlType)
-    summary: Wraps the body object with a content control.
+    summary: Wraps the Body object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

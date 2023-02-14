@@ -69,7 +69,7 @@ properties:
     fullName: data
     summary: >-
       Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
-      exception when setting it.
+      exception when code attempts to set it.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
