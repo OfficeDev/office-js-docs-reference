@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 02/13/2023
+ms.date: 02/14/2023
 ms.prod: word
 ms.localizationpriority: medium
 ---
@@ -28,9 +28,9 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |:---|:---|:---|
 |[Application](/javascript/api/word/word.application)|[retrieveStylesFromBase64(base64File: string)](/javascript/api/word/word.application#word-word-application-retrievestylesfrombase64-member(1))|Parse styles from template base 64 file and return JSON format of retrieved styles as a string.|
 |[Body](/javascript/api/word/word.body)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))|Gets the currently supported content controls in the body.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the body object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the Body object with a content control.|
 ||[styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)|Gets or sets the built-in style name for the body.|
-|[ContentControl](/javascript/api/word/word.contentcontrol)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))|Gets the currently supported content controls in the content control.|
+|[ContentControl](/javascript/api/word/word.contentcontrol)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))|Gets the currently supported child content controls in this content control.|
 ||[onDataChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondatachanged-member)|Occurs when data within the content control are changed.|
 ||[onDeleted](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondeleted-member)|Occurs when the content control is deleted.|
 ||[onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)|Occurs when the content control is entered.|
@@ -92,7 +92,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
 ||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Gets or sets whether the specified ListTemplate object is outline numbered|
 |[Paragraph](/javascript/api/word/word.paragraph)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))|Gets the currently supported content controls in the paragraph.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the paragraph object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 ||[styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)|Gets or sets the built-in style name for the paragraph.|
 |[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Gets or sets the alignment for the specified paragraphs.|
 ||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Gets or sets the value (in points) for a first line or hanging indent.|
@@ -109,7 +109,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Gets or sets the spacing (in points) before the specified paragraphs.|
 ||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
 |[Range](/javascript/api/word/word.range)|[getContentControls(options?: Word.GetContentControlsOptions)](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))|Gets the currently supported content controls in the range.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the range object with a content control.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 ||[insertField(insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean)](/javascript/api/word/word.range#word-word-range-insertfield-member(1))|Inserts a field at the specified location.|
 ||[styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)|Gets or sets the built-in style name for the range.|
 |[Style](/javascript/api/word/word.style)|[baseStyle](/javascript/api/word/word.style#word-word-style-basestyle-member)|Gets the name of an existing style to use as the base formatting of another style.|
