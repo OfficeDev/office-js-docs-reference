@@ -212,7 +212,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -1189,7 +1188,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -1471,7 +1469,7 @@ export declare namespace Word {
          */
         readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
         /**
-         * Occurs when the content control is exited.
+         * Occurs when the content control is exited, for example, when the cursor leaves the content control.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2399,7 +2397,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2650,7 +2647,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4784,7 +4780,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -5564,7 +5559,6 @@ export declare namespace Word {
         /**
          * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
                     Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
-                    Make sure that your add-in respects it and is ready to handle new content control types.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]

@@ -1,7 +1,7 @@
 ---
 title: Word JavaScript preview APIs
 description: Details about upcoming Word JavaScript APIs.
-ms.date: 02/14/2023
+ms.date: 02/17/2023
 ms.prod: word
 ms.localizationpriority: medium
 ---
@@ -34,7 +34,7 @@ The following table lists the Word JavaScript APIs currently in preview, except 
 ||[onDataChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondatachanged-member)|Occurs when data within the content control are changed.|
 ||[onDeleted](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-ondeleted-member)|Occurs when the content control is deleted.|
 ||[onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)|Occurs when the content control is entered.|
-||[onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)|Occurs when the content control is exited.|
+||[onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)|Occurs when the content control is exited, for example, when the cursor leaves the content control.|
 ||[onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)|Occurs when selection within the content control is changed.|
 ||[styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)|Gets or sets the built-in style name for the content control.|
 |[ContentControlCollection](/javascript/api/word/word.contentcontrolcollection)|[getByChangeTrackingStates(changeTrackingStates: Word.ChangeTrackingState[])](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbychangetrackingstates-member(1))|Gets the content controls that have the specified tracking state.|
