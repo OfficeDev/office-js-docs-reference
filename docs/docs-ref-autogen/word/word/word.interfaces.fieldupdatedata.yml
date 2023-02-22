@@ -9,6 +9,44 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: code
+    uid: 'word!Word.Interfaces.FieldUpdateData#code:member'
+    package: word!
+    fullName: code
+    summary: Gets or sets the field's code instruction.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string;'
+      return:
+        type: string
+  - name: data
+    uid: 'word!Word.Interfaces.FieldUpdateData#data:member'
+    package: word!
+    fullName: data
+    summary: >-
+      Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when setting it.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'data?: string;'
+      return:
+        type: string
+  - name: locked
+    uid: 'word!Word.Interfaces.FieldUpdateData#locked:member'
+    package: word!
+    fullName: locked
+    summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean
   - name: result
     uid: 'word!Word.Interfaces.FieldUpdateData#result:member'
     package: word!
@@ -21,3 +59,17 @@ properties:
       content: 'result?: Word.Interfaces.RangeUpdateData;'
       return:
         type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
+  - name: showCodes
+    uid: 'word!Word.Interfaces.FieldUpdateData#showCodes:member'
+    package: word!
+    fullName: showCodes
+    summary: >-
+      Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are
+      displayed, `false` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showCodes?: boolean;'
+      return:
+        type: boolean

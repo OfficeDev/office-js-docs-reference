@@ -1,0 +1,42 @@
+### YamlMime:TSEnum
+name: Word.OutlineLevel
+uid: 'word!Word.OutlineLevel:enum'
+package: word!
+fullName: Word.OutlineLevel
+summary: Represents the outline levels.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: outlineLevel1
+    uid: 'word!Word.OutlineLevel.outlineLevel1:member'
+    package: word!
+    summary: |-
+      Represents outline level 1.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutlineLevel1"'
+  - name: outlineLevel2
+    uid: 'word!Word.OutlineLevel.outlineLevel2:member'
+    package: word!
+    summary: |-
+      Represents outline level 2.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutlineLevel2"'
+  - name: outlineLevel3
+    uid: 'word!Word.OutlineLevel.outlineLevel3:member'
+    package: word!
+    summary: |-
+      Represents outline level 3.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutlineLevel3"'
+  - name: outlineLevel4
+    uid: 'word!Word.OutlineLevel.outlineLevel4:member'
+    package: word!
+    summary: |-
+      Represents outline level 4.
+
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    value: '"OutlineLevel4"'

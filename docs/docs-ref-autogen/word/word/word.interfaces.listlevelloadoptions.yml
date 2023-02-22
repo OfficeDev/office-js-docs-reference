@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListLevelLoadOptions
+uid: 'word!Word.Interfaces.ListLevelLoadOptions:interface'
+package: word!
+fullName: Word.Interfaces.ListLevelLoadOptions
+summary: Represents a list level.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#$all:member'
+    package: word!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: alignment
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#alignment:member'
+    package: word!
+    fullName: alignment
+    summary: 'Gets or sets the horizontal alignment of the list level. The value can be ''Left'', ''Centered'', or ''Right''.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#font:member'
+    package: word!
+    fullName: font
+    summary: Gets a Font object that represents the character formatting of the specified object.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.FontLoadOptions:interface" />'
+  - name: linkedStyle
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#linkedStyle:member'
+    package: word!
+    fullName: linkedStyle
+    summary: Gets or sets the name of the style that's linked to the specified list level object.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'linkedStyle?: boolean;'
+      return:
+        type: boolean
+  - name: numberFormat
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#numberFormat:member'
+    package: word!
+    fullName: numberFormat
+    summary: Gets or sets the number format for the specified list level.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type: boolean
+  - name: numberPosition
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#numberPosition:member'
+    package: word!
+    fullName: numberPosition
+    summary: Gets or sets the position (in points) of the number or bullet for the specified list level object
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numberPosition?: boolean;'
+      return:
+        type: boolean
+  - name: numberStyle
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#numberStyle:member'
+    package: word!
+    fullName: numberStyle
+    summary: Gets or sets the number style for the list level object
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'numberStyle?: boolean;'
+      return:
+        type: boolean
+  - name: resetOnHigher
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#resetOnHigher:member'
+    package: word!
+    fullName: resetOnHigher
+    summary: Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'resetOnHigher?: boolean;'
+      return:
+        type: boolean
+  - name: startAt
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#startAt:member'
+    package: word!
+    fullName: startAt
+    summary: Gets or sets the starting number for the specified list level object
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'startAt?: boolean;'
+      return:
+        type: boolean
+  - name: tabPosition
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#tabPosition:member'
+    package: word!
+    fullName: tabPosition
+    summary: Gets or sets the tab position for the specified list level object
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'tabPosition?: boolean;'
+      return:
+        type: boolean
+  - name: textPosition
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#textPosition:member'
+    package: word!
+    fullName: textPosition
+    summary: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'textPosition?: boolean;'
+      return:
+        type: boolean
+  - name: trailingCharacter
+    uid: 'word!Word.Interfaces.ListLevelLoadOptions#trailingCharacter:member'
+    package: word!
+    fullName: trailingCharacter
+    summary: Gets or sets the character inserted after the number for the specified list level.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'trailingCharacter?: boolean;'
+      return:
+        type: boolean
