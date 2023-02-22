@@ -30,52 +30,42 @@ fields:
   - name: commentAdded
     uid: 'word!Word.EventType.commentAdded:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that one or more new comments were added.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentAdded"'
   - name: commentChanged
     uid: 'word!Word.EventType.commentChanged:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that a comment or its reply was changed.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentChanged"'
   - name: commentDeleted
     uid: 'word!Word.EventType.commentDeleted:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that one or more comments were deleted.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentDeleted"'
   - name: commentDeselected
     uid: 'word!Word.EventType.commentDeselected:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that a comment was deselected.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentDeselected"'
   - name: commentSelected
     uid: 'word!Word.EventType.commentSelected:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that a comment was selected.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentSelected"'
   - name: contentControlAdded
     uid: 'word!Word.EventType.contentControlAdded:member'
@@ -104,22 +94,18 @@ fields:
   - name: contentControlEntered
     uid: 'word!Word.EventType.contentControlEntered:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been entered.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: 'word!Word.EventType.contentControlExited:member'
     package: word!
-    summary: >-
+    summary: |-
       Represents that a content control has been exited.
 
-
-      * \[ [API set: WordApiOnline BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets)
-      \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'

@@ -68,6 +68,23 @@ properties:
 
           ```
 methods:
+  - name: getByTypes(types)
+    uid: 'word!Word.FieldCollection#getByTypes:member(1)'
+    package: word!
+    fullName: getByTypes(types)
+    summary: Gets the Field object collection including the specified types of fields.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getByTypes(types: Word.FieldType[]): Word.FieldCollection;'
+      parameters:
+        - id: types
+          description: Required. An array of field types.
+          type: '<xref uid="word!Word.FieldType:enum" />[]'
+      return:
+        type: '<xref uid="word!Word.FieldCollection:class" />'
+        description: ''
   - name: getFirst()
     uid: 'word!Word.FieldCollection#getFirst:member(1)'
     package: word!
