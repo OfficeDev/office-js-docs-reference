@@ -211,7 +211,7 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -1187,7 +1187,7 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2396,7 +2396,7 @@ export declare namespace Word {
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2646,7 +2646,7 @@ export declare namespace Word {
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4779,7 +4779,7 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -5558,7 +5558,7 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]

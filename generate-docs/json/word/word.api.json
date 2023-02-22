@@ -807,7 +807,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11147,7 +11147,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18794,7 +18794,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20161,7 +20161,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -65274,7 +65274,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -69807,7 +69807,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getContentControls:member(1)",
-                  "docComment": "/**\n * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned. Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @param options - Optional. Options that define which content controls are returned.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
