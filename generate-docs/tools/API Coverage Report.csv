@@ -9959,7 +9959,7 @@ Word.BorderLocation,left,EnumField,Fine,false
 Word.BorderLocation,outside,EnumField,Fine,false
 Word.BorderLocation,right,EnumField,Fine,false
 Word.BorderLocation,top,EnumField,Fine,false
-Word.BorderType,N/A,Enum,Fine,false
+Word.BorderType,N/A,Enum,Fine,true
 Word.BorderType,dashDotStroked,EnumField,Fine,false
 Word.BorderType,dashed,EnumField,Fine,false
 Word.BorderType,dashedSmall,EnumField,Fine,false
@@ -11570,7 +11570,7 @@ Word.UnderlineType,wave,EnumField,Fine,false
 Word.UnderlineType,waveDouble,EnumField,Fine,false
 Word.UnderlineType,waveHeavy,EnumField,Fine,false
 Word.UnderlineType,word,EnumField,Fine,false
-Word.VerticalAlignment,N/A,Enum,Fine,false
+Word.VerticalAlignment,N/A,Enum,Fine,true
 Word.VerticalAlignment,bottom,EnumField,Fine,false
 Word.VerticalAlignment,center,EnumField,Fine,false
 Word.VerticalAlignment,mixed,EnumField,Fine,false
