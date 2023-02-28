@@ -438,7 +438,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The base64 encoded content of an image or file to be added to an email or event.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the Base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -545,7 +545,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(2)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The base64 encoded content of an image or file to be added to an email or event.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the Base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3050,6 +3050,33 @@
                   "isOptional": false,
                   "releaseTag": "Beta",
                   "name": "sensitivity",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#sensitivityLabel:member",
+                  "docComment": "/**\n * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of an appointment.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "sensitivityLabel: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabel",
+                      "canonicalReference": "outlook!Office.SensitivityLabel:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "sensitivityLabel",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -20832,7 +20859,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addFileAttachmentFromBase64Async:member(1)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The base64-encoded content of an image or file to be added to an email or event.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the Base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `isInline`: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20939,7 +20966,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#addFileAttachmentFromBase64Async:member(2)",
-                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that is not allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image will not render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The base64-encoded content of an image or file to be added to an email or event.\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
+                  "docComment": "/**\n * Adds a file to a message or appointment as an attachment.\n *\n * The `addFileAttachmentFromBase64Async` method uploads the file from the Base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the `asyncResult.value` object.\n *\n * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.\n *\n * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API. For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `AttachmentSizeExceeded`: The attachment is larger than allowed.\n *\n * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.\n *\n * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.\n *\n * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted. For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.\n *\n * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).\n *\n * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23491,6 +23518,33 @@
                     }
                   ],
                   "name": "saveAsync"
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#sensitivityLabel:member",
+                  "docComment": "/**\n * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "sensitivityLabel: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabel",
+                      "canonicalReference": "outlook!Office.SensitivityLabel:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "sensitivityLabel",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
                 },
                 {
                   "kind": "PropertySignature",
@@ -29924,6 +29978,791 @@
                     }
                   ],
                   "name": "setAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SensitivityLabel:interface",
+              "docComment": "/**\n * Provides methods to get or set the sensitivity label of a message or appointment. For more information on sensitivity labels, see {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | Learn about sensitivity labels}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SensitivityLabel "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SensitivityLabel",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabel#getAsync:member(1)",
+                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabel#getAsync:member(2)",
+                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabel#setAsync:member(1)",
+                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(sensitivityLabel: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabelDetails",
+                      "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "sensitivityLabel",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 6,
+                        "endIndex": 9
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabel#setAsync:member(2)",
+                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(sensitivityLabel: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabelDetails",
+                      "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "sensitivityLabel",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "setAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SensitivityLabelChangedEventArgs:interface",
+              "docComment": "/**\n * Provides the change status of the sensitivity label applied to a message or appointment in compose mode. This information is provided when the `Office.EventType.SensitivityLabelChanged` event is raised.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SensitivityLabelChangedEventArgs "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SensitivityLabelChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelChangedEventArgs#type:member",
+                  "docComment": "/**\n * The type of event that was raised. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "type: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkSensitivityLabelChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface",
+              "docComment": "/**\n * Represents the properties of available sensitivity labels in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SensitivityLabelDetails "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SensitivityLabelDetails",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelDetails#children:member",
+                  "docComment": "/**\n * The {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels | sublabels} of the sensitivity label. Returns `null` if a label doesn't have any sublabels.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "children: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabelDetails",
+                      "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "children",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelDetails#color:member",
+                  "docComment": "/**\n * The color of the sensitivity label.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "color: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "color",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelDetails#id:member",
+                  "docComment": "/**\n * The unique identifier (GUID) of the sensitivity label.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelDetails#name:member",
+                  "docComment": "/**\n * The name of the sensitivity label.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "name",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelDetails#tooltip:member",
+                  "docComment": "/**\n * The description of the sensitivity label.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "tooltip: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "tooltip",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SensitivityLabelsCatalog:interface",
+              "docComment": "/**\n * Provides methods to check the status of the catalog of {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | sensitivity labels} in Outlook and retrieve all available sensitivity labels if the catalog is enabled.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SensitivityLabelsCatalog "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "SensitivityLabelsCatalog",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getAsync:member(1)",
+                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabelDetails",
+                      "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 8
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getAsync:member(2)",
+                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SensitivityLabelDetails",
+                      "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 6
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(1)",
+                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getIsEnabledAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<boolean>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getIsEnabledAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2)",
+                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getIsEnabledAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<boolean>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getIsEnabledAsync"
                 }
               ],
               "extendsTokenRanges": []

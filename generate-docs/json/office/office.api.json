@@ -4650,6 +4650,33 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Context#sensitivityLabelsCatalog:member",
+                  "docComment": "/**\n * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available sensitivity labels if the catalog is enabled.\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "sensitivityLabelsCatalog: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Outlook.SensitivityLabelsCatalog",
+                      "canonicalReference": "outlook!Office.SensitivityLabelsCatalog:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "sensitivityLabelsCatalog",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#touchEnabled:member",
                   "docComment": "/**\n * Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch device, such as an iPad; false otherwise.\n *\n * @remarks\n *\n * **Applications**: Excel, PowerPoint, Word\n *\n * `touchEnabled` is only supported in Office on iPad.\n *\n * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.\n */\n",
                   "excerptTokens": [
@@ -12844,6 +12871,23 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SelectedItemsChanged",
+                  "initializerTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.EventType.SensitivityLabelChanged:member",
+                  "docComment": "/**\n * Occurs in Outlook when the sensitivity label of a message or appointment changes. **Important**: This event can only be handled in a task pane. It isn't supported by function commands.\n *\n * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object. The event handler receives an argument of type {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview | Office.SensitivityLabelChangedEventArgs}.\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "SensitivityLabelChanged"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "SensitivityLabelChanged",
                   "initializerTokenRange": {
                     "startIndex": 0,
                     "endIndex": 0

@@ -201,6 +201,21 @@ fields:
 
 
       \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+  - name: SensitivityLabelChanged
+    uid: 'office!Office.EventType.SensitivityLabelChanged:member'
+    package: office!
+    summary: >-
+      Occurs in Outlook when the sensitivity label of a message or appointment changes. **Important**: This event can
+      only be handled in a task pane. It isn't supported by function commands.
+
+
+      To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item`
+      object. The event handler receives an argument of type
+      [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview)<!--
+      -->.
+
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SettingsChanged
     uid: 'office!Office.EventType.SettingsChanged:member'
     package: office!

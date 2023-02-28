@@ -1,0 +1,183 @@
+### YamlMime:TSType
+name: Office.SensitivityLabel
+uid: 'outlook!Office.SensitivityLabel:interface'
+package: outlook!
+fullName: Office.SensitivityLabel
+summary: >-
+  Provides methods to get or set the sensitivity label of a message or appointment. For more information on sensitivity
+  labels, see [Learn about sensitivity
+  labels](https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels)<!-- -->.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: 'getAsync(options, callback)'
+    uid: 'outlook!Office.SensitivityLabel#getAsync:member(1)'
+    package: outlook!
+    fullName: 'getAsync(options, callback)'
+    summary: Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The sensitivity label's GUID is
+            returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: getAsync(callback)
+    uid: 'outlook!Office.SensitivityLabel#getAsync:member(2)'
+    package: outlook!
+    fullName: getAsync(callback)
+    summary: Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The sensitivity label's GUID is
+            returned in the `asyncResult.value` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(sensitivityLabel, options, callback)'
+    uid: 'outlook!Office.SensitivityLabel#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(sensitivityLabel, options, callback)'
+    summary: Applies the specified sensitivity label to the message or appointment being composed.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Tip**: To determine the sensitivity labels available for use, call the
+      `Office.context.sensitivityLabelsCatalog.getAsync` method.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(sensitivityLabel: string | SensitivityLabelDetails, options: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: sensitivityLabel
+          description: >-
+            The sensitivity label to be applied to the message or appointment being composed. The parameter value can be
+            a sensitivity label's unique identifier (GUID) or a
+            [SensitivityLabelDetails](xref:outlook!Office.SensitivityLabelDetails:interface) object.
+          type: 'string | <xref uid="outlook!Office.SensitivityLabelDetails:interface" />'
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function.
+          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(sensitivityLabel, callback)'
+    uid: 'outlook!Office.SensitivityLabel#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(sensitivityLabel, callback)'
+    summary: Applies the specified sensitivity label to the message or appointment being composed.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
+
+
+      **Tip**: To determine the sensitivity labels available for use, call the
+      `Office.context.sensitivityLabelsCatalog.getAsync` method.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(sensitivityLabel: string | SensitivityLabelDetails, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: sensitivityLabel
+          description: >-
+            The sensitivity label to be applied to the message or appointment being composed. The parameter value can be
+            a sensitivity label's unique identifier (GUID) or a
+            [SensitivityLabelDetails](xref:outlook!Office.SensitivityLabelDetails:interface) object.
+          type: 'string | <xref uid="outlook!Office.SensitivityLabelDetails:interface" />'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
