@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 01/19/2023
+ms.date: 02/27/2023
 ms.localizationpriority: medium
 ---
 
@@ -142,6 +142,56 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 Added method to prepend content to the beginning of a message or appointment body when the mail item is sent.
 
 **Available in**: Outlook on Windows
+
+<br>
+
+---
+
+---
+
+### Manage the sensitivity label of a message or appointment
+
+#### [Office.context.sensitivityLabelsCatalog](/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-sensitivitylabelscatalog-member)
+
+Added a property that provides the object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.context.mailbox.item.sensitivityLabel](office.context.mailbox.item.md#properties)
+
+Added a property that provides the object to get or set the sensitivity label of a message or appointment in compose mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.EventType.SensitivityLabelChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
+
+Added the `SensitivityLabelChanged` event to `Item`. This event occurs when the sensitivity label of a message or appointment is changed.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.SensitivityLabelChangedEventArgs](/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview&preserve-view=true)
+
+Added an object that provides the change status of the sensitivity label applied to a message or appointment in compose mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
+
+Added an object that represents the catalog of sensitivity labels in Outlook.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true)
+
+Added an object that represents the sensitivity label of a message or appointment in compose mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.SensitivityLabelDetails](/javascript/api/outlook/office.sensitivitylabeldetails?view=outlook-js-preview&preserve-view=true)
+
+Added an object that represents the properties of a sensitivity label.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
