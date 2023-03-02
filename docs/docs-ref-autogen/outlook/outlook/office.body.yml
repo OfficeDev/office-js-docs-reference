@@ -342,7 +342,7 @@ methods:
 
       mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-          // Insert the base64 image to the beginning of the body.
+          // Insert the Base64 image to the beginning of the body.
           const options = { isInline: true, asyncContext: bodyResult.value };
           mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
             if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -351,7 +351,7 @@ methods:
 
               mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
                 if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log("Inline base64 image added to the body.");
+                  console.log("Inline Base64 image added to the body.");
                 } else {
                   console.log(setResult.error.message);
                 }
@@ -935,7 +935,7 @@ methods:
 
       mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-          // Insert the base64 image to the beginning of the body.
+          // Insert the Base64 image to the beginning of the body.
           const options = { isInline: true, asyncContext: bodyResult.value };
           mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
             if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -944,7 +944,7 @@ methods:
 
               mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
                 if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log("Inline base64 image added to the body.");
+                  console.log("Inline Base64 image added to the body.");
                 } else {
                   console.log(setResult.error.message);
                 }
