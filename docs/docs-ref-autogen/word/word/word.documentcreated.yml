@@ -25,7 +25,7 @@ remarks: |-
 
       const externalDocBodyText = externalDocBody.text;
       const currentDocBody = context.document.body;
-      currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+      currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
       await context.sync();
   });
 
