@@ -24,7 +24,7 @@ remarks: >-
 
       const imageString = result.value;
       // Your add-in would save this string as a .png file.
-      console.log("The image's base64-encoded string: " + imageString);
+      console.log("The image's Base64-encoded string: " + imageString);
   });
 
   ```

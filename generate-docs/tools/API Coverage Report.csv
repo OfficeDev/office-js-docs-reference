@@ -6604,7 +6604,7 @@ Office.Context,officeTheme,Property,Fine,true
 Office.Context,platform,Property,Good,false
 Office.Context,requirements,Property,Fine,false
 Office.Context,roamingSettings,Property,Good,true
-Office.Context,sensitivityLabelsCatalog,Property,Good,false
+Office.Context,sensitivityLabelsCatalog,Property,Good,true
 Office.Context,touchEnabled,Property,Good,false
 Office.Context,ui,Property,Fine,false
 Office.ContextInformation,N/A,Class,Good,false
@@ -8983,11 +8983,11 @@ Office.Sensitivity,getAsync(callback),Method,Poor,true
 Office.Sensitivity,setAsync(sensitivity,Method,Poor,false
 Office.SensitivityLabel,N/A,Class,Good,false
 Office.SensitivityLabel,getAsync(options,Method,Poor,false
-Office.SensitivityLabel,getAsync(callback),Method,Poor,false
-Office.SensitivityLabel,setAsync(sensitivityLabel,Method,Fine,false
+Office.SensitivityLabel,getAsync(callback),Method,Poor,true
+Office.SensitivityLabel,setAsync(sensitivityLabel,Method,Fine,true
 Office.SensitivityLabelChangedEventArgs,N/A,Class,Good,false
 Office.SensitivityLabelChangedEventArgs,type,Property,Good,false
-Office.SensitivityLabelDetails,N/A,Class,Good,false
+Office.SensitivityLabelDetails,N/A,Class,Good,true
 Office.SensitivityLabelDetails,children,Property,Good,false
 Office.SensitivityLabelDetails,color,Property,Fine,false
 Office.SensitivityLabelDetails,id,Property,Fine,false
@@ -8995,9 +8995,9 @@ Office.SensitivityLabelDetails,name,Property,Fine,false
 Office.SensitivityLabelDetails,tooltip,Property,Fine,false
 Office.SensitivityLabelsCatalog,N/A,Class,Good,false
 Office.SensitivityLabelsCatalog,getAsync(options,Method,Poor,false
-Office.SensitivityLabelsCatalog,getAsync(callback),Method,Poor,false
+Office.SensitivityLabelsCatalog,getAsync(callback),Method,Poor,true
 Office.SensitivityLabelsCatalog,getIsEnabledAsync(options,Method,Poor,false
-Office.SensitivityLabelsCatalog,getIsEnabledAsync(callback),Method,Poor,false
+Office.SensitivityLabelsCatalog,getIsEnabledAsync(callback),Method,Poor,true
 Office.SeriesTime,N/A,Class,Good,false
 Office.SeriesTime,getDuration(),Method,Poor,true
 Office.SeriesTime,getEndDate(),Method,Poor,true

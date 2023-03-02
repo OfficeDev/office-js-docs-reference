@@ -2416,6 +2416,25 @@ Office.Context#officeTheme:member:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+Office.Context#sensitivityLabelsCatalog:member:
+  - |-
+    // Check if the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    console.log(JSON.stringify(catalog));
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.Context#roamingSettings:member:
   - |-
     // Get the current value of the 'myKey' setting.
@@ -8323,6 +8342,33 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
+Office.SensitivityLabelDetails:interface:
+  - |-
+    // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    
+                    // Log the details of the available sensitivity labels to the console.
+                    catalog.forEach((sensitivityLabel) => {
+                        console.log(`Name: ${sensitivityLabel.name}`);
+                        console.log(`ID: ${sensitivityLabel.id}`);
+                        console.log(`Tooltip: ${sensitivityLabel.tooltip}`);
+                        console.log(`Color: ${sensitivityLabel.color}`);
+                        console.log(`Sublabels: ${JSON.stringify(sensitivityLabel.children)}`);
+                    });
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.SeriesTime#getDuration:member(1):
   - |-
     // This example gets the duration of a usual instance in a recurring appointment series.
@@ -8978,7 +9024,7 @@ Word.Application#createDocument:member(1):
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 
@@ -9918,7 +9964,7 @@ Word.DocumentCreated:class:
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 

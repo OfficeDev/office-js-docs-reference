@@ -4670,7 +4670,7 @@
 
         const imageString = result.value;
         // Your add-in would save this string as a .png file.
-        console.log("The image's base64-encoded string: " + imageString);
+        console.log("The image's Base64-encoded string: " + imageString);
     });
 'Excel.PivotField#clearAllFilters:member(1)':
   - >-
@@ -6851,7 +6851,7 @@
 
         const imageString = result.value;
         // Your add-in would save this string as a .png file.
-        console.log("The image's base64-encoded string: " + imageString);
+        console.log("The image's Base64-encoded string: " + imageString);
     });
 'Excel.Shape#group:member':
   - >-
@@ -7024,9 +7024,9 @@
     reader.onload = (event) => {
         Excel.run((context) => {
             const startIndex = reader.result.toString().indexOf("base64,");
-            const mybase64 = reader.result.toString().substr(startIndex + 7);
+            const myBase64 = reader.result.toString().substr(startIndex + 7);
             const sheet = context.workbook.worksheets.getItem("Shapes");
-            const image = sheet.shapes.addImage(mybase64);
+            const image = sheet.shapes.addImage(myBase64);
             image.name = "Image";
             return context.sync();
         });
@@ -8039,13 +8039,13 @@
 
 
     reader.onload = (event) => {
-        // Remove the metadata before the base64-encoded string.
+        // Remove the metadata before the Base64-encoded string.
         const startIndex = reader.result.toString().indexOf("base64,");
         externalWorkbook = reader.result.toString().substr(startIndex + 7);
     };
 
 
-    // Read the file as a data URL so that we can parse the base64-encoded
+    // Read the file as a data URL so that we can parse the Base64-encoded
     string.
 
     reader.readAsDataURL(myFile.files[0]);

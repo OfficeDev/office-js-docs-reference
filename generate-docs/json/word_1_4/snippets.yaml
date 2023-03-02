@@ -37,7 +37,7 @@
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 
@@ -198,7 +198,7 @@
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-      // Get the image encoded as base64.
+      // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
       await context.sync();
@@ -2077,7 +2077,7 @@
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 
@@ -2362,7 +2362,7 @@
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-      // Get the image encoded as base64.
+      // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
       await context.sync();
@@ -2381,7 +2381,7 @@
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-      // Get the image encoded as base64.
+      // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
       await context.sync();
@@ -2448,7 +2448,7 @@
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-      // Get the image encoded as base64.
+      // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
       await context.sync();
@@ -2482,7 +2482,7 @@
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-      // Get the image encoded as base64.
+      // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
       await context.sync();

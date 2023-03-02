@@ -225,9 +225,9 @@ methods:
       reader.onload = (event) => {
           Excel.run((context) => {
               const startIndex = reader.result.toString().indexOf("base64,");
-              const mybase64 = reader.result.toString().substr(startIndex + 7);
+              const myBase64 = reader.result.toString().substr(startIndex + 7);
               const sheet = context.workbook.worksheets.getItem("Shapes");
-              const image = sheet.shapes.addImage(mybase64);
+              const image = sheet.shapes.addImage(myBase64);
               image.name = "Image";
               return context.sync();
           });
