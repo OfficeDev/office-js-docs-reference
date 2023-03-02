@@ -2,6 +2,7 @@
 title: Excel JavaScript API requirement set 1.10
 description: Details about the ExcelApi 1.10 requirement set.
 ms.date: 04/02/2021
+ms.topic: whats-new
 ms.prod: excel
 ms.localizationpriority: medium
 ---

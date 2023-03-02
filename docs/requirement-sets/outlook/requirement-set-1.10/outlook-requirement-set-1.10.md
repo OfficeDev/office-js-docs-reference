@@ -2,6 +2,7 @@
 title: Outlook add-in API requirement set 1.10
 description: Requirement set 1.10 for Outlook add-in API.
 ms.date: 11/04/2021
+ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 
