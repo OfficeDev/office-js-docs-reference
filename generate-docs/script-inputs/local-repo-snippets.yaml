@@ -9024,7 +9024,7 @@ Word.Application#createDocument:member(1):
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 
@@ -9964,7 +9964,7 @@ Word.DocumentCreated:class:
 
         const externalDocBodyText = externalDocBody.text;
         const currentDocBody = context.document.body;
-        currentDocBody.insertText(externalDocBodyText, WordInsertLocation.start);
+        currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
         await context.sync();
     });
 
