@@ -2276,7 +2276,7 @@
 
     mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
       if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-        // Insert the base64 image to the beginning of the body.
+        // Insert the Base64 image to the beginning of the body.
         const options = { isInline: true, asyncContext: bodyResult.value };
         mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
           if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -2285,7 +2285,7 @@
 
             mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
               if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Inline base64 image added to the body.");
+                console.log("Inline Base64 image added to the body.");
               } else {
                 console.log(setResult.error.message);
               }
@@ -2416,7 +2416,7 @@
 
     mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
       if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-        // Insert the base64 image to the beginning of the body.
+        // Insert the Base64 image to the beginning of the body.
         const options = { isInline: true, asyncContext: bodyResult.value };
         mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
           if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -2425,7 +2425,7 @@
 
             mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
               if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Inline base64 image added to the body.");
+                console.log("Inline Base64 image added to the body.");
               } else {
                 console.log(setResult.error.message);
               }
@@ -3660,11 +3660,11 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/get-attachment-content.yaml
 
     function handleAttachmentsCallback(result) {
-      // Identifies whether the attachment is a base64-encoded string, .eml file, .icalendar file, or a URL.
+      // Identifies whether the attachment is a Base64-encoded string, .eml file, .icalendar file, or a URL.
       switch (result.value.format) {
         case Office.MailboxEnums.AttachmentContentFormat.Base64:
           // Handle file attachment.
-          console.log("Attachment is a base64-encoded string.");
+          console.log("Attachment is a Base64-encoded string.");
           break;
         case Office.MailboxEnums.AttachmentContentFormat.Eml:
           // Handle email item attachment.

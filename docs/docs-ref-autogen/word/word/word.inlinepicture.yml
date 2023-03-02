@@ -119,7 +119,7 @@ properties:
 
         await context.sync();
         console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        // Get the image encoded as base64.
+        // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
         await context.sync();
@@ -303,7 +303,7 @@ methods:
 
         await context.sync();
         console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        // Get the image encoded as base64.
+        // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
         await context.sync();
