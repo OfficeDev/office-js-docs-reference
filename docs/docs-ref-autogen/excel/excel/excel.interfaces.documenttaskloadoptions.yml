@@ -95,18 +95,6 @@ properties:
       content: 'createdDateTime?: boolean;'
       return:
         type: boolean
-  - name: dueDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#dueDateTime:member'
-    package: excel!
-    fullName: dueDateTime
-    summary: Gets or sets the date and time the task is due.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'dueDateTime?: boolean;'
-      return:
-        type: boolean
   - name: id
     uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#id:member'
     package: excel!
@@ -145,16 +133,16 @@ properties:
       content: 'priority?: boolean;'
       return:
         type: boolean
-  - name: startDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#startDateTime:member'
+  - name: startAndDueDateTime
+    uid: 'excel!Excel.Interfaces.DocumentTaskLoadOptions#startAndDueDateTime:member'
     package: excel!
-    fullName: startDateTime
-    summary: Gets or sets the date and time the task starts.
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startDateTime?: boolean;'
+      content: 'startAndDueDateTime?: boolean;'
       return:
         type: boolean
   - name: title

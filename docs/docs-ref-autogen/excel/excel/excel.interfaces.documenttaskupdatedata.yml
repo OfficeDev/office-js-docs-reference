@@ -9,18 +9,6 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: dueDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData#dueDateTime:member'
-    package: excel!
-    fullName: dueDateTime
-    summary: Gets or sets the date and time the task is due.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'dueDateTime?: Date;'
-      return:
-        type: Date
   - name: percentComplete
     uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData#percentComplete:member'
     package: excel!
@@ -47,18 +35,18 @@ properties:
       content: 'priority?: number;'
       return:
         type: number
-  - name: startDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData#startDateTime:member'
+  - name: startAndDueDateTime
+    uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData#startAndDueDateTime:member'
     package: excel!
-    fullName: startDateTime
-    summary: Gets or sets the date and time the task starts.
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startDateTime?: Date;'
+      content: 'startAndDueDateTime?: Excel.DocumentTaskSchedule;'
       return:
-        type: Date
+        type: '<xref uid="excel!Excel.DocumentTaskSchedule:interface" />'
   - name: title
     uid: 'excel!Excel.Interfaces.DocumentTaskUpdateData#title:member'
     package: excel!

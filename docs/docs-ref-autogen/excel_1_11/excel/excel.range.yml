@@ -751,8 +751,10 @@ methods:
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     summary: >-
       Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range
-      can be a different size than the source range or `RangeAreas`<!-- -->. The destination will be expanded
-      automatically if it is smaller than the source.
+      can be a different size than the source range or `RangeAreas`<!-- -->. The destination is expanded automatically
+      if it's smaller than the source. Note: Like the copy functionality in the Excel UI, if the destination range is an
+      exact multiple greater than the source range in either rows or columns, then the source content is replicated
+      multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
     remarks: >-
       \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -807,8 +809,10 @@ methods:
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     summary: >-
       Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range
-      can be a different size than the source range or `RangeAreas`<!-- -->. The destination will be expanded
-      automatically if it is smaller than the source.
+      can be a different size than the source range or `RangeAreas`<!-- -->. The destination is expanded automatically
+      if it's smaller than the source. Note: Like the copy functionality in the Excel UI, if the destination range is an
+      exact multiple greater than the source range in either rows or columns, then the source content is replicated
+      multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -3,7 +3,7 @@ name: Excel.AggregationFunction
 uid: 'excel!Excel.AggregationFunction:enum'
 package: excel!
 fullName: Excel.AggregationFunction
-summary: Aggregation function for the DataPivotField.
+summary: Aggregation function for the `DataPivotHierarchy`<!-- -->.
 remarks: >-
   \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

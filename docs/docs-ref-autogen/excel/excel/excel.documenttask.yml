@@ -18,9 +18,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly assignees: Excel.Identity[];'
+      content: 'readonly assignees: Excel.EmailIdentity[];'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />[]'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />[]'
   - name: changes
     uid: 'excel!Excel.DocumentTask#changes:member'
     package: excel!
@@ -54,9 +54,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly completedBy: Excel.Identity;'
+      content: 'readonly completedBy: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: completedDateTime
     uid: 'excel!Excel.DocumentTask#completedDateTime:member'
     package: excel!
@@ -92,9 +92,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly createdBy: Excel.Identity;'
+      content: 'readonly createdBy: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: createdDateTime
     uid: 'excel!Excel.DocumentTask#createdDateTime:member'
     package: excel!
@@ -105,18 +105,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'readonly createdDateTime: Date;'
-      return:
-        type: Date
-  - name: dueDateTime
-    uid: 'excel!Excel.DocumentTask#dueDateTime:member'
-    package: excel!
-    fullName: dueDateTime
-    summary: Gets or sets the date and time the task is due.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'dueDateTime: Date;'
       return:
         type: Date
   - name: id
@@ -157,18 +145,18 @@ properties:
       content: 'priority: number;'
       return:
         type: number
-  - name: startDateTime
-    uid: 'excel!Excel.DocumentTask#startDateTime:member'
+  - name: startAndDueDateTime
+    uid: 'excel!Excel.DocumentTask#startAndDueDateTime:member'
     package: excel!
-    fullName: startDateTime
-    summary: Gets or sets the date and time the task starts.
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startDateTime: Date;'
+      content: 'startAndDueDateTime: Excel.DocumentTaskSchedule;'
       return:
-        type: Date
+        type: '<xref uid="excel!Excel.DocumentTaskSchedule:interface" />'
   - name: title
     uid: 'excel!Excel.DocumentTask#title:member'
     package: excel!
@@ -191,11 +179,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assign(assignee: Excel.Identity): void;'
+      content: 'assign(assignee: Excel.EmailIdentity): void;'
       parameters:
         - id: assignee
           description: The identity of the user to add to the assignee list.
-          type: '<xref uid="excel!Excel.Identity:interface" />'
+          type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
       return:
         type: void
         description: ''
@@ -293,11 +281,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'unassign(assignee: Excel.Identity): void;'
+      content: 'unassign(assignee: Excel.EmailIdentity): void;'
       parameters:
         - id: assignee
           description: The identity of the user to remove from the assignee list.
-          type: '<xref uid="excel!Excel.Identity:interface" />'
+          type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
       return:
         type: void
         description: ''
