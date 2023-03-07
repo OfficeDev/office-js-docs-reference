@@ -3,7 +3,7 @@ name: Excel.EntityCellValue
 uid: 'excel!Excel.EntityCellValue:interface'
 package: excel!
 fullName: Excel.EntityCellValue
-summary: Represents an schemaless set of properties.
+summary: Represents a set of properties without a schema or defined structure.
 remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

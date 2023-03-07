@@ -52,6 +52,63 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
+    * Represents a card layout that is best used for an array.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface EntityArrayCardLayout {
+        /**
+        * Represents the type of this layout.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        layout: EntityCardLayoutType.array | "Array";
+        /**
+        * Represents name of the property that contains the array shown in the card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        arrayProperty: string;
+        /**
+        * Represents name of the property that contains the array shown in the card. Default value is "Array".
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        displayName?: string;
+        /**
+        * Represents the count of rows which the card claims are in the array. A card may report a different number of rows than it actually has to display smaller amounts of preview data.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        rowsToReport?: number;
+        /**
+        * Represents the count of columns which the card claims are in the array. A card may report a different number of columns than it actually has to display smaller amounts of preview data.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        columnsToReport?: number;
+        /**
+        * Represents whether the first row of the array is treated as a header.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        firstRowIsHeader?: boolean;
+    }
+    /**
     * Represents types of #BLOCKED! errors.
     *
     * @remarks
@@ -526,7 +583,32 @@ export declare namespace Excel {
     * @remarks
     * [Api set: ExcelApi 1.16]
     */
-    export type CardLayout = EntityCardLayout;
+    export type CardLayout = EntityCardLayout | EntityArrayCardLayout;
+    /**
+    * Types of entity card layouts.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum EntityCardLayoutType {
+        /**
+        * Entity layout of the entity card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        entity = "Entity",
+        /**
+        * Array layout of the entity card.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        array = "Array"
+    }
     /**
     * The compact layout properties for an entity.
     *
@@ -5107,7 +5189,7 @@ export declare namespace Excel {
         propertyMetadata?: CellValuePropertyMetadata;
     }
     /**
-    * Represents an schemaless set of properties.
+    * Represents a set of properties without a schema or defined structure.
     *
     * @remarks
     * [Api set: ExcelApi 1.16]
@@ -5199,7 +5281,7 @@ export declare namespace Excel {
         compact?: CompactLayout;
     }
     /**
-    * Represents a card layout best used for an entity.
+    * Represents a card layout that is best used for an array.
     *
     * @remarks
     * [Api set: ExcelApi 1.16]
@@ -5211,7 +5293,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        layout?: "Entity";
+        layout?: EntityCardLayoutType.entity | "Entity";
     }
     /**
     * Represents the types of the `ErrorCellValue` object.
@@ -7319,12 +7401,12 @@ export declare namespace Excel {
     /**
      * Notifies when a worksheet is moved within a workbook.
                 
-                If a worksheet is moved from one position within the workbook to another
-                via the Excel UI, then this API will trigger an event. Note that if
-                the position of a worksheet changes as a result of moving a different worksheet,
-                then this event won't trigger for both position changes. This event only triggers
-                for the primary worksheet move, and not any worksheet position changes that occur
-                as a result of that primary move.
+                 If a worksheet is moved from one position within the workbook to another
+                 via the Excel UI, then this API will trigger an event. Note that if
+                 the position of a worksheet changes as a result of moving a different worksheet,
+                 then this event won't trigger for both position changes. This event only triggers
+                 for the primary worksheet move, and not any worksheet position changes that occur
+                 as a result of that primary move.
      *
      * @remarks
      * [Api set: ExcelApiOnline 1.1]
@@ -7912,6 +7994,115 @@ export declare namespace Excel {
         undo = "undo"
     }
     /**
+     * Represents a recorded change to the task, to be used as an input parameter.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentTaskChangeProperties {
+        /**
+         * Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for an `unassign` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        assignee?: Excel.EmailIdentity;
+        /**
+         * Represents the identity of the user who made the task change.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changedBy: Excel.EmailIdentity;
+        /**
+         * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        commentId?: string;
+        /**
+         * Represents the creation date and time of the task change record. All dates are in UTC.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        createdDateTime?: Date;
+        /**
+         * Represents the task's due date and time. It is used for the `setSchedule` change action.
+                    It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid conflicts.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dueDateTime?: Date;
+        /**
+         * The unique GUID of the task change.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        id: string;
+        /**
+         * Represents the task's completion percentage. It is used for the `setPercentComplete` change action.
+                    This is a value betwen 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        percentComplete?: number;
+        /**
+         * Represents the task's priority. It is used for the `setPriority` change action.
+                    This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest priority.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        priority?: number;
+        /**
+         * Represents the task's start date and time. It is used for the `setSchedule` change action.
+                    It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid conflicts.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        startDateTime?: Date;
+        /**
+         * Represents the task's title. It is used for the `setTitle` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        title?: string;
+        /**
+         * Represents the action type of the task change record. Some examples of action types are assign, undo, and setPriority.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
+        /**
+         * Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        undoChangeId?: string;
+    }
+    /**
      * Represents a recorded change to the task.
      *
      * @remarks
@@ -7928,7 +8119,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly assignee: Excel.Identity;
+        readonly assignee: Excel.EmailIdentity;
         /**
          * Represents the identity of the user who made the task change.
          *
@@ -7936,7 +8127,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly changedBy: Excel.Identity;
+        readonly changedBy: Excel.EmailIdentity;
         /**
          * Represents the ID of the `comment` or `commentReply` to which the task change is anchored.
          *
@@ -8133,6 +8324,64 @@ export declare namespace Excel {
         id: string;
     }
     /**
+     * Represents information about a user's identity.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface EmailIdentity {
+        /**
+         * Represents the user's display name.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        displayName?: string;
+        /**
+         * Represents the user's email.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        email?: string;
+        /**
+         * Represents the user's unique ID.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        id: string;
+    }
+    /**
+     * Represents information about a task's schedule.
+     *
+     * @remarks
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface DocumentTaskSchedule {
+        /**
+         * Gets the date and time that the task is due. All dates are in UTC.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        dueDateTime: Date;
+        /**
+         * Gets the date and time that the task should start. All dates are in UTC.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        startDateTime: Date;
+    }
+    /**
      * Represents a task.
      *
      * @remarks
@@ -8165,7 +8414,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly assignees: Excel.Identity[];
+        readonly assignees: Excel.EmailIdentity[];
         /**
          * Gets the most recent user to have completed the task.
          *
@@ -8173,7 +8422,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly completedBy: Excel.Identity;
+        readonly completedBy: Excel.EmailIdentity;
         /**
          * Gets the date and time that the task was completed. All dates are in UTC.
          *
@@ -8189,7 +8438,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly createdBy: Excel.Identity;
+        readonly createdBy: Excel.EmailIdentity;
         /**
          * Gets the date and time that the task was created. All dates are in UTC.
          *
@@ -8198,14 +8447,6 @@ export declare namespace Excel {
          * @beta
          */
         readonly createdDateTime: Date;
-        /**
-         * Gets or sets the date and time the task is due.
-         *
-         * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        dueDateTime: Date;
         /**
          * Gets the ID of the task.
          *
@@ -8231,13 +8472,13 @@ export declare namespace Excel {
          */
         priority: number;
         /**
-         * Gets or sets the date and time the task starts.
+         * Gets or sets the date and time the task should start and is due.
          *
          * @remarks
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        startDateTime: Date;
+        startAndDueDateTime: Excel.DocumentTaskSchedule;
         /**
          * Specifies title of the task.
          *
@@ -8255,7 +8496,7 @@ export declare namespace Excel {
          *
          * @param assignee - The identity of the user to add to the assignee list.
          */
-        assign(assignee: Excel.Identity): void;
+        assign(assignee: Excel.EmailIdentity): void;
         /**
          * Removes the given user from the list of assignees attached to the task.
          *
@@ -8265,7 +8506,7 @@ export declare namespace Excel {
          *
          * @param assignee - The identity of the user to remove from the assignee list.
          */
-        unassign(assignee: Excel.Identity): void;
+        unassign(assignee: Excel.EmailIdentity): void;
         /**
          * Removes all users from the list of assignees attached to the task.
          *
@@ -8436,8 +8677,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`, `exclusive`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8445,8 +8686,8 @@ export declare namespace Excel {
         /**
          * Date is before comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8454,8 +8695,8 @@ export declare namespace Excel {
         /**
          * Date is before or equal to comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8463,8 +8704,8 @@ export declare namespace Excel {
         /**
          * Date is after comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8472,8 +8713,8 @@ export declare namespace Excel {
         /**
          * Date is after or equal to comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8481,8 +8722,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` dates.
                     
-                    Required Criteria: {`lowerBound`, `upperBound`}.
-                    Optional Criteria: {`wholeDays`, `exclusive`}.
+                     Required Criteria: {`lowerBound`, `upperBound`}.
+                     Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8698,8 +8939,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8707,8 +8948,8 @@ export declare namespace Excel {
         /**
          * Label begins with substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8716,8 +8957,8 @@ export declare namespace Excel {
         /**
          * Label ends with substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8725,8 +8966,8 @@ export declare namespace Excel {
         /**
          * Label contains substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8734,7 +8975,7 @@ export declare namespace Excel {
         /**
          * Greater than comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8742,7 +8983,7 @@ export declare namespace Excel {
         /**
          * Greater than or equal to comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8750,7 +8991,7 @@ export declare namespace Excel {
         /**
          * Less than comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8758,7 +8999,7 @@ export declare namespace Excel {
         /**
          * Less than or equal to comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8766,8 +9007,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` criteria.
                     
-                    Required Criteria: {`lowerBound`, `upperBound`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`lowerBound`, `upperBound`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9080,8 +9321,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`value`, `comparator`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9089,7 +9330,7 @@ export declare namespace Excel {
         /**
          * Greater than comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9097,7 +9338,7 @@ export declare namespace Excel {
         /**
          * Greater than or equal to comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9105,7 +9346,7 @@ export declare namespace Excel {
         /**
          * Less than comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9113,7 +9354,7 @@ export declare namespace Excel {
         /**
          * Less than or equal to comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9121,8 +9362,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` criteria.
                     
-                    Required Criteria: {`value`, `lowerBound`, `upperBound`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`value`, `lowerBound`, `upperBound`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9130,7 +9371,7 @@ export declare namespace Excel {
         /**
          * In top N (`threshold`) [items, percent, sum] of value category.
                     
-                    Required Criteria: {`value`, `threshold`, `selectionType`}.
+                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -9138,7 +9379,7 @@ export declare namespace Excel {
         /**
          * In bottom N (`threshold`) [items, percent, sum] of value category.
                     
-                    Required Criteria: {`value`, `threshold`, `selectionType`}.
+                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -12973,9 +13214,9 @@ export declare namespace Excel {
         /**
          * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
 
-                    - The user drags the mouse for multi-selection.
+                     - The user drags the mouse for multi-selection.
 
-                    - The user selects a cell in the mode when cell arguments are selected for formula references.
+                     - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -13949,10 +14190,10 @@ export declare namespace Excel {
         set(properties: Excel.Range): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -13963,10 +14204,10 @@ export declare namespace Excel {
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -14018,8 +14259,8 @@ export declare namespace Excel {
          */
         convertToLinkedDataType(serviceID: number, languageCulture: string): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -14031,8 +14272,8 @@ export declare namespace Excel {
          */
         copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean, transpose?: boolean): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -18837,16 +19078,16 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-         getDataRange(): OfficeExtension.ClientResult<string>;
-         /**
-          * Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its `isNullObject` property set to `true`.
+        getDataRange(): OfficeExtension.ClientResult<string>;
+        /**
+         * Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its `isNullObject` property set to `true`.
                     For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-          *
-          * @remarks
-          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-          * @beta
-          */
-         getDataRangeOrNullObject(): OfficeExtension.ClientResult<string>;        
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getDataRangeOrNullObject(): OfficeExtension.ClientResult<string>;
         /**
          * Gets the data table on the chart. If the chart doesn't allow a data table, it will throw an exception.
          *
@@ -23510,7 +23751,7 @@ export declare namespace Excel {
          */
         date: string;
         /**
-         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
+         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -23700,6 +23941,14 @@ export declare namespace Excel {
     export class NumberFormatInfo extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        /**
+         * Gets the currency symbol for currency values. This is based on current system settings.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly currencySymbol: string;
         /**
          * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
          *
@@ -24458,9 +24707,9 @@ export declare namespace Excel {
         /**
          * The alt text description of the PivotTable.
                     
-                    Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                    A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                     Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -24469,9 +24718,9 @@ export declare namespace Excel {
         /**
          * The alt text title of the PivotTable.
                     
-                    Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                    A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                     Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -25824,7 +26073,7 @@ export declare namespace Excel {
         descending = "Descending"
     }
     /**
-     * Aggregation function for the DataPivotField.
+     * Aggregation function for the `DataPivotHierarchy`.
      *
      * @remarks
      * [Api set: ExcelApi 1.8]
@@ -29801,7 +30050,7 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.PageBreakCollectionData;
     }
     /**
-     * Represents a collection of all the data connections that are part of the workbook or worksheet.
+     * Represents a collection of all the data connections that are part of the workbook.
      *
      * @remarks
      * [Api set: ExcelApi 1.7]
@@ -30210,7 +30459,7 @@ export declare namespace Excel {
          *
          * @param assignee - The assignee's user identity information.
          */
-        assignTask(assignee: Excel.Identity): Excel.DocumentTask;
+        assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;
         /**
          * Deletes the comment and all the connected replies.
          *
@@ -30458,7 +30707,7 @@ export declare namespace Excel {
          *
          * @param assignee - The assignee's user identity information.
          */
-        assignTask(assignee: Excel.Identity): Excel.DocumentTask;
+        assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;
         /**
          * Deletes the comment reply.
          *
@@ -43750,14 +43999,6 @@ export declare namespace Excel {
         /** An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`. */
         export interface DocumentTaskUpdateData {
             /**
-             * Gets or sets the date and time the task is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: Date;
-            /**
              * Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a completed task.
              *
              * @remarks
@@ -43774,13 +44015,13 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task starts.
+             * Gets or sets the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startDateTime?: Date;
+            startAndDueDateTime?: Excel.DocumentTaskSchedule;
             /**
              * Specifies title of the task.
              *
@@ -46784,9 +47025,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -46795,9 +47036,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -48784,7 +49025,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            assignee?: Excel.Identity;
+            assignee?: Excel.EmailIdentity;
             /**
              * Represents the identity of the user who made the task change.
              *
@@ -48792,7 +49033,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            changedBy?: Excel.Identity;
+            changedBy?: Excel.EmailIdentity;
             /**
              * Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
              *
@@ -48891,7 +49132,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            assignees?: Excel.Identity[];
+            assignees?: Excel.EmailIdentity[];
             /**
              * Gets the most recent user to have completed the task.
              *
@@ -48899,7 +49140,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            completedBy?: Excel.Identity;
+            completedBy?: Excel.EmailIdentity;
             /**
              * Gets the date and time that the task was completed. All dates are in UTC.
              *
@@ -48915,7 +49156,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            createdBy?: Excel.Identity;
+            createdBy?: Excel.EmailIdentity;
             /**
              * Gets the date and time that the task was created. All dates are in UTC.
              *
@@ -48924,14 +49165,6 @@ export declare namespace Excel {
              * @beta
              */
             createdDateTime?: Date;
-            /**
-             * Gets or sets the date and time the task is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: Date;
             /**
              * Gets the ID of the task.
              *
@@ -48957,13 +49190,13 @@ export declare namespace Excel {
              */
             priority?: number;
             /**
-             * Gets or sets the date and time the task starts.
+             * Gets or sets the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startDateTime?: Date;
+            startAndDueDateTime?: Excel.DocumentTaskSchedule;
             /**
              * Specifies title of the task.
              *
@@ -53010,6 +53243,14 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
             /**
+             * Gets the currency symbol for currency values. This is based on current system settings.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            currencySymbol?: string;
+            /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
              * @remarks
@@ -53188,9 +53429,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -53199,9 +53440,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -56137,14 +56378,6 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
-             * Gets or sets the date and time the task is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: boolean;
-            /**
              * Gets the ID of the task.
              *
              * @remarks
@@ -56169,13 +56402,13 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * Gets or sets the date and time the task starts.
+             * Gets or sets the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startDateTime?: boolean;
+            startAndDueDateTime?: boolean;
             /**
              * Specifies title of the task.
              *
@@ -56246,14 +56479,6 @@ export declare namespace Excel {
              */
             createdDateTime?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the date and time the task is due.
-             *
-             * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
-            dueDateTime?: boolean;
-            /**
              * For EACH ITEM in the collection: Gets the ID of the task.
              *
              * @remarks
@@ -56278,13 +56503,13 @@ export declare namespace Excel {
              */
             priority?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the date and time the task starts.
+             * For EACH ITEM in the collection: Gets or sets the date and time the task should start and is due.
              *
              * @remarks
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            startDateTime?: boolean;
+            startAndDueDateTime?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies title of the task.
              *
@@ -62294,6 +62519,14 @@ export declare namespace Excel {
              */
             $all?: boolean;
             /**
+             * Gets the currency symbol for currency values. This is based on current system settings.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            currencySymbol?: boolean;
+            /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
              * @remarks
@@ -62662,9 +62895,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -62673,9 +62906,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]

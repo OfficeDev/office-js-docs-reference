@@ -3,7 +3,7 @@ name: Excel.DataConnectionCollection
 uid: 'excel!Excel.DataConnectionCollection:class'
 package: excel!
 fullName: Excel.DataConnectionCollection
-summary: Represents a collection of all the data connections that are part of the workbook or worksheet.
+summary: Represents a collection of all the data connections that are part of the workbook.
 remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false

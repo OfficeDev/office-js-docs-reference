@@ -5200,7 +5200,7 @@ export declare namespace Excel {
         compact?: CompactLayout;
     }
     /**
-    * Represents a card layout best used for an entity.
+    * Represents a card layout that is best used for an array.
     *
     * @remarks
     * [Api set: ExcelApi 1.16]
@@ -7320,12 +7320,12 @@ export declare namespace Excel {
     /**
      * Notifies when a worksheet is moved within a workbook.
                 
-                If a worksheet is moved from one position within the workbook to another
-                via the Excel UI, then this API will trigger an event. Note that if
-                the position of a worksheet changes as a result of moving a different worksheet,
-                then this event won't trigger for both position changes. This event only triggers
-                for the primary worksheet move, and not any worksheet position changes that occur
-                as a result of that primary move.
+                 If a worksheet is moved from one position within the workbook to another
+                 via the Excel UI, then this API will trigger an event. Note that if
+                 the position of a worksheet changes as a result of moving a different worksheet,
+                 then this event won't trigger for both position changes. This event only triggers
+                 for the primary worksheet move, and not any worksheet position changes that occur
+                 as a result of that primary move.
      *
      * @remarks
      * [Api set: ExcelApiOnline 1.1]
@@ -7862,8 +7862,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`, `exclusive`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -7871,8 +7871,8 @@ export declare namespace Excel {
         /**
          * Date is before comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -7880,8 +7880,8 @@ export declare namespace Excel {
         /**
          * Date is before or equal to comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -7889,8 +7889,8 @@ export declare namespace Excel {
         /**
          * Date is after comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -7898,8 +7898,8 @@ export declare namespace Excel {
         /**
          * Date is after or equal to comparator date.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`wholeDays`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`wholeDays`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -7907,8 +7907,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` dates.
                     
-                    Required Criteria: {`lowerBound`, `upperBound`}.
-                    Optional Criteria: {`wholeDays`, `exclusive`}.
+                     Required Criteria: {`lowerBound`, `upperBound`}.
+                     Optional Criteria: {`wholeDays`, `exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8124,8 +8124,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`comparator`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8133,8 +8133,8 @@ export declare namespace Excel {
         /**
          * Label begins with substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8142,8 +8142,8 @@ export declare namespace Excel {
         /**
          * Label ends with substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8151,8 +8151,8 @@ export declare namespace Excel {
         /**
          * Label contains substring criterion.
                     
-                    Required Criteria: {`substring`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`substring`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8160,7 +8160,7 @@ export declare namespace Excel {
         /**
          * Greater than comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8168,7 +8168,7 @@ export declare namespace Excel {
         /**
          * Greater than or equal to comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8176,7 +8176,7 @@ export declare namespace Excel {
         /**
          * Less than comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8184,7 +8184,7 @@ export declare namespace Excel {
         /**
          * Less than or equal to comparator criterion.
                     
-                    Required Criteria: {`comparator`}.
+                     Required Criteria: {`comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8192,8 +8192,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` criteria.
                     
-                    Required Criteria: {`lowerBound`, `upperBound`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`lowerBound`, `upperBound`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8506,8 +8506,8 @@ export declare namespace Excel {
         /**
          * Equals comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`value`, `comparator`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8515,7 +8515,7 @@ export declare namespace Excel {
         /**
          * Greater than comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8523,7 +8523,7 @@ export declare namespace Excel {
         /**
          * Greater than or equal to comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8531,7 +8531,7 @@ export declare namespace Excel {
         /**
          * Less than comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8539,7 +8539,7 @@ export declare namespace Excel {
         /**
          * Less than or equal to comparator criterion.
                     
-                    Required Criteria: {`value`, `comparator`}.
+                     Required Criteria: {`value`, `comparator`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8547,8 +8547,8 @@ export declare namespace Excel {
         /**
          * Between `lowerBound` and `upperBound` criteria.
                     
-                    Required Criteria: {`value`, `lowerBound`, `upperBound`}.
-                    Optional Criteria: {`exclusive`}.
+                     Required Criteria: {`value`, `lowerBound`, `upperBound`}.
+                     Optional Criteria: {`exclusive`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8556,7 +8556,7 @@ export declare namespace Excel {
         /**
          * In top N (`threshold`) [items, percent, sum] of value category.
                     
-                    Required Criteria: {`value`, `threshold`, `selectionType`}.
+                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -8564,7 +8564,7 @@ export declare namespace Excel {
         /**
          * In bottom N (`threshold`) [items, percent, sum] of value category.
                     
-                    Required Criteria: {`value`, `threshold`, `selectionType`}.
+                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          * @remarks
          * [Api set: ExcelApi 1.12]
          */
@@ -11151,9 +11151,9 @@ export declare namespace Excel {
         /**
          * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
 
-                    - The user drags the mouse for multi-selection.
+                     - The user drags the mouse for multi-selection.
 
-                    - The user selects a cell in the mode when cell arguments are selected for formula references.
+                     - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -11491,7 +11491,7 @@ export declare namespace Excel {
         /**
          * Specifies if the password can be used to unlock worksheet protection.
                     This method doesn't change the worksheet protection state.
-                    If a password is inputted but no password is required to unlock worksheet protection, this method will return false.
+                    If a password is input but no password is required to unlock worksheet protection, this method will return false.
          *
          * @remarks
          * [Api set: ExcelApiOnline 1.1]
@@ -12085,10 +12085,10 @@ export declare namespace Excel {
         set(properties: Excel.Range): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -12099,10 +12099,10 @@ export declare namespace Excel {
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -12154,8 +12154,8 @@ export declare namespace Excel {
          */
         convertToLinkedDataType(serviceID: number, languageCulture: string): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -12167,8 +12167,8 @@ export declare namespace Excel {
          */
         copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean, transpose?: boolean): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -12315,7 +12315,7 @@ export declare namespace Excel {
         getDependents(): Excel.WorkbookRangeAreas;
         /**
          * Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a specified range in the same worksheet or across multiple worksheets.
-         * 
+         *
          * @remarks
          * [Api set: ExcelApi 1.13]
          */
@@ -21590,7 +21590,7 @@ export declare namespace Excel {
          */
         date: string;
         /**
-         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
+         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -22481,9 +22481,9 @@ export declare namespace Excel {
         /**
          * The alt text description of the PivotTable.
                     
-                    Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                    A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                     Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -22492,9 +22492,9 @@ export declare namespace Excel {
         /**
          * The alt text title of the PivotTable.
                     
-                    Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                    This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                    A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                     Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                     This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                     A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
          *
          * @remarks
          * [Api set: ExcelApi 1.13]
@@ -23824,7 +23824,7 @@ export declare namespace Excel {
         descending = "Descending"
     }
     /**
-     * Aggregation function for the DataPivotField.
+     * Aggregation function for the `DataPivotHierarchy`.
      *
      * @remarks
      * [Api set: ExcelApi 1.8]
@@ -27709,7 +27709,7 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.PageBreakCollectionData;
     }
     /**
-     * Represents a collection of all the data connections that are part of the workbook or worksheet.
+     * Represents a collection of all the data connections that are part of the workbook.
      *
      * @remarks
      * [Api set: ExcelApi 1.7]
@@ -44126,9 +44126,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -44137,9 +44137,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -50276,9 +50276,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -50287,9 +50287,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -59178,9 +59178,9 @@ export declare namespace Excel {
             /**
              * The alt text description of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
@@ -59189,9 +59189,9 @@ export declare namespace Excel {
             /**
              * The alt text title of the PivotTable.
                         
-                        Alt text provides alternative, text-based representations of the information contained in the PivotTable.
-                        This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
-                        A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
+                         Alt text provides alternative, text-based representations of the information contained in the PivotTable.
+                         This information is useful for people with vision or cognitive impairments who may not be able to see or understand the table.
+                         A title can be read to a person with a disability and is used to determine whether they wish to hear the description of the content.
              *
              * @remarks
              * [Api set: ExcelApi 1.13]
