@@ -2,6 +2,7 @@
 title: Outlook add-in API requirement set 1.5
 description: Features and APIs that were introduced for Outlook add-ins and the Office JavaScript APIs as part of Mailbox API 1.5.
 ms.date: 04/06/2022
+ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 

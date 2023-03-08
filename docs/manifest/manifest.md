@@ -6,6 +6,7 @@ ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: medium
 ms.date: 02/07/2023
+ms.topic: overview
 ---
 
 # Office Add-ins manifest reference
