@@ -20,9 +20,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly assignee: Excel.Identity;'
+      content: 'readonly assignee: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: changedBy
     uid: 'excel!Excel.DocumentTaskChange#changedBy:member'
     package: excel!
@@ -32,9 +32,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly changedBy: Excel.Identity;'
+      content: 'readonly changedBy: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: commentId
     uid: 'excel!Excel.DocumentTaskChange#commentId:member'
     package: excel!

@@ -208,6 +208,8 @@ items:
                 uid: 'excel!Excel.DocumentTaskChangeAction:enum'
               - name: DynamicFilterCriteria
                 uid: 'excel!Excel.DynamicFilterCriteria:enum'
+              - name: EntityCardLayoutType
+                uid: 'excel!Excel.EntityCardLayoutType:enum'
               - name: EntityCompactLayoutIcons
                 uid: 'excel!Excel.EntityCompactLayoutIcons:enum'
               - name: ErrorCellValueType
@@ -723,12 +725,20 @@ items:
             uid: 'excel!Excel.DocumentTaskChange:class'
           - name: DocumentTaskChangeCollection
             uid: 'excel!Excel.DocumentTaskChangeCollection:class'
+          - name: DocumentTaskChangeProperties
+            uid: 'excel!Excel.DocumentTaskChangeProperties:interface'
           - name: DocumentTaskCollection
             uid: 'excel!Excel.DocumentTaskCollection:class'
+          - name: DocumentTaskSchedule
+            uid: 'excel!Excel.DocumentTaskSchedule:interface'
           - name: DoubleCellValue
             uid: 'excel!Excel.DoubleCellValue:interface'
+          - name: EmailIdentity
+            uid: 'excel!Excel.EmailIdentity:interface'
           - name: EmptyCellValue
             uid: 'excel!Excel.EmptyCellValue:interface'
+          - name: EntityArrayCardLayout
+            uid: 'excel!Excel.EntityArrayCardLayout:interface'
           - name: EntityCardLayout
             uid: 'excel!Excel.EntityCardLayout:interface'
           - name: EntityCellValue
