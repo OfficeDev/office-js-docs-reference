@@ -18607,7 +18607,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.TagCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a tag using its unique ID. An error is thrown if the tag does not exist.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n *\n * @param key - The ID of the tag.\n *\n * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.\n */\n",
+                  "docComment": "/**\n * Gets a tag using its unique ID. An error is thrown if the tag does not exist.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n *\n * @param key - The ID of the tag. The `key` parameter is case-sensitive.\n *\n * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18701,7 +18701,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "powerpoint!PowerPoint.TagCollection#getItemOrNullObject:member(1)",
-                  "docComment": "/**\n * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n *\n * @param key - The ID of the tag.\n *\n * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.\n */\n",
+                  "docComment": "/**\n * Gets a tag using its unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.\n *\n * @remarks\n *\n * [Api set: PowerPointApi 1.3]\n *\n * @param key - The ID of the tag. The `key` parameter is case-sensitive.\n *\n * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
