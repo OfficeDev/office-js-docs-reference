@@ -2981,9 +2981,9 @@ export declare namespace Excel {
         /**
          * Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in the following cases:
 
-                    - The user drags the mouse for multi-selection.
+                     - The user drags the mouse for multi-selection.
 
-                    - The user selects a cell in the mode when cell arguments are selected for formula references.
+                     - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * @remarks
          * [Api set: ExcelApi 1.10]
@@ -3718,10 +3718,10 @@ export declare namespace Excel {
         set(properties: Excel.Range): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -3732,10 +3732,10 @@ export declare namespace Excel {
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          * Fills a range from the current range to the destination range using the specified AutoFill logic.
-                    The destination range can be `null` or can extend the source range either horizontally or vertically.
-                    Discontiguous ranges are not supported.
+                     The destination range can be `null` or can extend the source range either horizontally or vertically.
+                     Discontiguous ranges are not supported.
                     
-                    For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+                     For more information, see {@link https://support.microsoft.com/office/2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * @remarks
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -3787,8 +3787,8 @@ export declare namespace Excel {
          */
         convertToLinkedDataType(serviceID: number, languageCulture: string): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -3800,8 +3800,8 @@ export declare namespace Excel {
          */
         copyFrom(sourceRange: Range | RangeAreas | string, copyType?: Excel.RangeCopyType, skipBlanks?: boolean, transpose?: boolean): void;
         /**
-         * Copies cell data or formatting from the source range or `RangeAreas` to the current range.
-                    The destination range can be a different size than the source range or `RangeAreas`. The destination will be expanded automatically if it is smaller than the source.
+         * Copies cell data or formatting from the source range or `RangeAreas` to the current range. The destination range can be a different size than the source range or `RangeAreas`. The destination is expanded automatically if it's smaller than the source.
+                    Note: Like the copy functionality in the Excel UI, if the destination range is an exact multiple greater than the source range in either rows or columns, then the source content is replicated multiple times. For example, a 2x2 range copy into a 2x6 range will result in 3 copies of the original 2x2 range.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -12669,7 +12669,7 @@ export declare namespace Excel {
          */
         date: string;
         /**
-         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
+         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -14602,7 +14602,7 @@ export declare namespace Excel {
         descending = "Descending"
     }
     /**
-     * Aggregation function for the DataPivotField.
+     * Aggregation function for the `DataPivotHierarchy`.
      *
      * @remarks
      * [Api set: ExcelApi 1.8]
@@ -18333,7 +18333,7 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.PageBreakCollectionData;
     }
     /**
-     * Represents a collection of all the data connections that are part of the workbook or worksheet.
+     * Represents a collection of all the data connections that are part of the workbook.
      *
      * @remarks
      * [Api set: ExcelApi 1.7]

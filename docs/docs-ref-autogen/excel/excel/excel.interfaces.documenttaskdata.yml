@@ -18,9 +18,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assignees?: Excel.Identity[];'
+      content: 'assignees?: Excel.EmailIdentity[];'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />[]'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />[]'
   - name: completedBy
     uid: 'excel!Excel.Interfaces.DocumentTaskData#completedBy:member'
     package: excel!
@@ -30,9 +30,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'completedBy?: Excel.Identity;'
+      content: 'completedBy?: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: completedDateTime
     uid: 'excel!Excel.Interfaces.DocumentTaskData#completedDateTime:member'
     package: excel!
@@ -54,9 +54,9 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'createdBy?: Excel.Identity;'
+      content: 'createdBy?: Excel.EmailIdentity;'
       return:
-        type: '<xref uid="excel!Excel.Identity:interface" />'
+        type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
   - name: createdDateTime
     uid: 'excel!Excel.Interfaces.DocumentTaskData#createdDateTime:member'
     package: excel!
@@ -67,18 +67,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'createdDateTime?: Date;'
-      return:
-        type: Date
-  - name: dueDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskData#dueDateTime:member'
-    package: excel!
-    fullName: dueDateTime
-    summary: Gets or sets the date and time the task is due.
-    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'dueDateTime?: Date;'
       return:
         type: Date
   - name: id
@@ -119,18 +107,18 @@ properties:
       content: 'priority?: number;'
       return:
         type: number
-  - name: startDateTime
-    uid: 'excel!Excel.Interfaces.DocumentTaskData#startDateTime:member'
+  - name: startAndDueDateTime
+    uid: 'excel!Excel.Interfaces.DocumentTaskData#startAndDueDateTime:member'
     package: excel!
-    fullName: startDateTime
-    summary: Gets or sets the date and time the task starts.
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'startDateTime?: Date;'
+      content: 'startAndDueDateTime?: Excel.DocumentTaskSchedule;'
       return:
-        type: Date
+        type: '<xref uid="excel!Excel.DocumentTaskSchedule:interface" />'
   - name: title
     uid: 'excel!Excel.Interfaces.DocumentTaskData#title:member'
     package: excel!

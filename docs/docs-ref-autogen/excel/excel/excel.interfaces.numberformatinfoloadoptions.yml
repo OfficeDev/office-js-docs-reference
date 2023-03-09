@@ -23,6 +23,18 @@ properties:
       content: '$all?: boolean;'
       return:
         type: boolean
+  - name: currencySymbol
+    uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions#currencySymbol:member'
+    package: excel!
+    fullName: currencySymbol
+    summary: Gets the currency symbol for currency values. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'currencySymbol?: boolean;'
+      return:
+        type: boolean
   - name: numberDecimalSeparator
     uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions#numberDecimalSeparator:member'
     package: excel!

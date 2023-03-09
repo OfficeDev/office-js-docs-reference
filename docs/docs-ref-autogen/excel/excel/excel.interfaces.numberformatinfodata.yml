@@ -9,6 +9,18 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: currencySymbol
+    uid: 'excel!Excel.Interfaces.NumberFormatInfoData#currencySymbol:member'
+    package: excel!
+    fullName: currencySymbol
+    summary: Gets the currency symbol for currency values. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'currencySymbol?: string;'
+      return:
+        type: string
   - name: numberDecimalSeparator
     uid: 'excel!Excel.Interfaces.NumberFormatInfoData#numberDecimalSeparator:member'
     package: excel!
