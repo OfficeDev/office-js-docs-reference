@@ -96,7 +96,7 @@ interfaces:
   - 'word!Word.CommentDetail:interface'
   - 'word!Word.CommentEventArgs:interface'
   - 'word!Word.ContentControlEventArgs:interface'
-  - 'word!Word.GetContentControlsOptions:interface'
+  - 'word!Word.ContentControlOptions:interface'
   - 'word!Word.InsertFileOptions:interface'
   - 'word!Word.Interfaces.BodyData:interface'
   - 'word!Word.Interfaces.BodyLoadOptions:interface'

@@ -255,11 +255,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;'
+      content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
       parameters:
         - id: options
           description: Optional. Options that define which content controls are returned.
-          type: '<xref uid="word!Word.GetContentControlsOptions:interface" />'
+          type: '<xref uid="word!Word.ContentControlOptions:interface" />'
       return:
         type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''
@@ -415,7 +415,7 @@ methods:
           description: Optional. DocumentCreated only supports 'Save'.
           type: '<xref uid="word!Word.SaveBehavior:enum" />'
         - id: fileName
-          description: Optional. The file name. Only takes effect for a new document.
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
           type: string
       return:
         type: void
@@ -435,7 +435,7 @@ methods:
           description: Optional. DocumentCreated only supports 'Save'.
           type: '"Save" | "Prompt"'
         - id: fileName
-          description: Optional. The file name. Only takes effect for a new document.
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
           type: string
       return:
         type: void

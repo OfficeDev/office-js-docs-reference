@@ -219,7 +219,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1195,7 +1195,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1630,7 +1630,7 @@ export declare namespace Word {
      * [Api set: WordApi BETA (PREVIEW ONLY)]
      * @beta
      */
-    export interface GetContentControlsOptions {
+    export interface ContentControlOptions {
         /**
          * An array of content control types, item must be 'RichText' or 'PlainText'.
          *
@@ -2404,7 +2404,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets the document's endnotes in a single body.
                     Not implemented in Word on the web.
@@ -2456,7 +2456,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
-         * @param fileName - Optional. The file name. Only takes effect for a new document.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
@@ -2466,7 +2466,7 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
-         * @param fileName - Optional. The file name. Only takes effect for a new document.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
@@ -2654,7 +2654,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets a StyleCollection object that represents the whole style set of the document.
          *
@@ -2690,7 +2690,7 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          *
          * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.
-         * @param fileName - Optional. The file name. Only takes effect for a new document.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
@@ -2700,7 +2700,7 @@ export declare namespace Word {
          * [Api set: WordApiHiddenDocument 1.3]
          *
          * @param saveBehaviorString - Optional. DocumentCreated only supports 'Save'.
-         * @param fileName - Optional. The file name. Only takes effect for a new document.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
         save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         /**
@@ -4787,7 +4787,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -5566,7 +5566,7 @@ export declare namespace Word {
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
-        getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;
+        getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -6006,7 +6006,7 @@ export declare namespace Word {
      */
     export interface InsertFileOptions {
         /**
-         * Represents whether the change tracking mode from the source document should be imported.
+         * Represents whether the change tracking mode status from the source document should be imported.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -6662,7 +6662,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly styleType: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
+        readonly type: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
         /**
          * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
          *
@@ -14323,7 +14323,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            styleType?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
+            type?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
             /**
              * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
@@ -17688,7 +17688,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            styleType?: boolean;
+            type?: boolean;
             /**
              * For EACH ITEM in the collection: Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
@@ -17820,7 +17820,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            styleType?: boolean;
+            type?: boolean;
             /**
              * Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *

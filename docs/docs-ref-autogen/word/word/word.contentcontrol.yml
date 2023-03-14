@@ -748,11 +748,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getContentControls(options?: Word.GetContentControlsOptions): Word.ContentControlCollection;'
+      content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
       parameters:
         - id: options
           description: Optional. Options that define which content controls are returned.
-          type: '<xref uid="word!Word.GetContentControlsOptions:interface" />'
+          type: '<xref uid="word!Word.ContentControlOptions:interface" />'
       return:
         type: '<xref uid="word!Word.ContentControlCollection:class" />'
         description: ''

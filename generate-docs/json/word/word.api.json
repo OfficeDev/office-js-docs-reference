@@ -815,8 +815,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -11155,8 +11155,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -14728,6 +14728,53 @@
                   "isOptional": false,
                   "releaseTag": "Beta",
                   "name": "source",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "word!Word.ContentControlOptions:interface",
+              "docComment": "/**\n * Specifies the options that define which content controls are returned.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface ContentControlOptions "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "ContentControlOptions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "word!Word.ContentControlOptions#types:member",
+                  "docComment": "/**\n * An array of content control types, item must be 'RichText' or 'PlainText'.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "types: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.ContentControlType",
+                      "canonicalReference": "word!Word.ContentControlType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "types",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
@@ -18802,8 +18849,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -19276,7 +19323,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#save:member(1)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name. Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19339,7 +19386,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#save:member(2)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name. Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20169,8 +20216,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -20541,7 +20588,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#save:member(1)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.\n *\n * @param fileName - Optional. The file name. Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @param saveBehavior - Optional. DocumentCreated only supports 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20604,7 +20651,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#save:member(2)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @param saveBehaviorString - Optional. DocumentCreated only supports 'Save'.\n *\n * @param fileName - Optional. The file name. Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @param saveBehaviorString - Optional. DocumentCreated only supports 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -26565,53 +26612,6 @@
               "implementsTokenRanges": []
             },
             {
-              "kind": "Interface",
-              "canonicalReference": "word!Word.GetContentControlsOptions:interface",
-              "docComment": "/**\n * Specifies the options that define which content controls are returned.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "export interface GetContentControlsOptions "
-                }
-              ],
-              "releaseTag": "Beta",
-              "name": "GetContentControlsOptions",
-              "members": [
-                {
-                  "kind": "PropertySignature",
-                  "canonicalReference": "word!Word.GetContentControlsOptions#types:member",
-                  "docComment": "/**\n * An array of content control types, item must be 'RichText' or 'PlainText'.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "types: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.ContentControlType",
-                      "canonicalReference": "word!Word.ContentControlType:enum"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "[]"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "types",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 3
-                  }
-                }
-              ],
-              "extendsTokenRanges": []
-            },
-            {
               "kind": "Enum",
               "canonicalReference": "word!Word.HeaderFooterType:enum",
               "docComment": "/**\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
@@ -29063,7 +29063,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "word!Word.InsertFileOptions#importChangeTrackingMode:member",
-                  "docComment": "/**\n * Represents whether the change tracking mode from the source document should be imported.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Represents whether the change tracking mode status from the source document should be imported.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -51010,12 +51010,12 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "word!Word.Interfaces.StyleCollectionLoadOptions#styleType:member",
+                      "canonicalReference": "word!Word.Interfaces.StyleCollectionLoadOptions#type:member",
                       "docComment": "/**\n * For EACH ITEM in the collection: Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
-                          "text": "styleType?: "
+                          "text": "type?: "
                         },
                         {
                           "kind": "Content",
@@ -51028,7 +51028,7 @@
                       ],
                       "isOptional": true,
                       "releaseTag": "Beta",
-                      "name": "styleType",
+                      "name": "type",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -51466,12 +51466,12 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "word!Word.Interfaces.StyleData#styleType:member",
+                      "canonicalReference": "word!Word.Interfaces.StyleData#type:member",
                       "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
-                          "text": "styleType?: "
+                          "text": "type?: "
                         },
                         {
                           "kind": "Reference",
@@ -51489,7 +51489,7 @@
                       ],
                       "isOptional": true,
                       "releaseTag": "Beta",
-                      "name": "styleType",
+                      "name": "type",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
@@ -51906,12 +51906,12 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "word!Word.Interfaces.StyleLoadOptions#styleType:member",
+                      "canonicalReference": "word!Word.Interfaces.StyleLoadOptions#type:member",
                       "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
-                          "text": "styleType?: "
+                          "text": "type?: "
                         },
                         {
                           "kind": "Content",
@@ -51924,7 +51924,7 @@
                       ],
                       "isOptional": true,
                       "releaseTag": "Beta",
-                      "name": "styleType",
+                      "name": "type",
                       "propertyTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -65282,8 +65282,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -69815,8 +69815,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "Word.GetContentControlsOptions",
-                      "canonicalReference": "word!Word.GetContentControlsOptions:interface"
+                      "text": "Word.ContentControlOptions",
+                      "canonicalReference": "word!Word.ContentControlOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -77101,38 +77101,6 @@
                   "name": "set"
                 },
                 {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.Style#styleType:member",
-                  "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "readonly styleType: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "Word.StyleType",
-                      "canonicalReference": "word!Word.StyleType:enum"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": " | \"Character\" | \"List\" | \"Paragraph\" | \"Table\""
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "releaseTag": "Beta",
-                  "name": "styleType",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 3
-                  },
-                  "isStatic": false
-                },
-                {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Style#toJSON:member(1)",
                   "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
@@ -77191,6 +77159,38 @@
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "track"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "word!Word.Style#type:member",
+                  "docComment": "/**\n * Gets the style type.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "readonly type: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Word.StyleType",
+                      "canonicalReference": "word!Word.StyleType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | \"Character\" | \"List\" | \"Paragraph\" | \"Table\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "releaseTag": "Beta",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Property",

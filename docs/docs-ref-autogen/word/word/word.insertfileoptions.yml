@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.InsertFileOptions#importChangeTrackingMode:member'
     package: word!
     fullName: importChangeTrackingMode
-    summary: Represents whether the change tracking mode from the source document should be imported.
+    summary: Represents whether the change tracking mode status from the source document should be imported.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
