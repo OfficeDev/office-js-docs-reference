@@ -1,8 +1,8 @@
 ### YamlMime:TSType
-name: Word.GetContentControlsOptions
-uid: 'word!Word.GetContentControlsOptions:interface'
+name: Word.ContentControlOptions
+uid: 'word!Word.ContentControlOptions:interface'
 package: word!
-fullName: Word.GetContentControlsOptions
+fullName: Word.ContentControlOptions
 summary: Specifies the options that define which content controls are returned.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: true
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: types
-    uid: 'word!Word.GetContentControlsOptions#types:member'
+    uid: 'word!Word.ContentControlOptions#types:member'
     package: word!
     fullName: types
     summary: 'An array of content control types, item must be ''RichText'' or ''PlainText''.'

@@ -117,6 +117,8 @@ items:
             uid: 'word!Word.ContentControlCollection:class'
           - name: ContentControlEventArgs
             uid: 'word!Word.ContentControlEventArgs:interface'
+          - name: ContentControlOptions
+            uid: 'word!Word.ContentControlOptions:interface'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection
@@ -139,8 +141,6 @@ items:
             uid: 'word!Word.FieldCollection:class'
           - name: Font
             uid: 'word!Word.Font:class'
-          - name: GetContentControlsOptions
-            uid: 'word!Word.GetContentControlsOptions:interface'
           - name: InlinePicture
             uid: 'word!Word.InlinePicture:class'
           - name: InlinePictureCollection

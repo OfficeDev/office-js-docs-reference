@@ -181,16 +181,16 @@ properties:
       content: 'quickStyle?: boolean;'
       return:
         type: boolean
-  - name: styleType
-    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#styleType:member'
+  - name: type
+    uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#type:member'
     package: word!
-    fullName: styleType
+    fullName: type
     summary: 'For EACH ITEM in the collection: Gets the style type.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'styleType?: boolean;'
+      content: 'type?: boolean;'
       return:
         type: boolean
   - name: unhideWhenUsed
