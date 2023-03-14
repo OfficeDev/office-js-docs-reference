@@ -171,16 +171,16 @@ properties:
       content: 'quickStyle: boolean;'
       return:
         type: boolean
-  - name: styleType
-    uid: 'word!Word.Style#styleType:member'
+  - name: type
+    uid: 'word!Word.Style#type:member'
     package: word!
-    fullName: styleType
+    fullName: type
     summary: Gets the style type.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly styleType: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";'
+      content: 'readonly type: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";'
       return:
         type: '<xref uid="word!Word.StyleType:enum" /> | "Character" | "List" | "Paragraph" | "Table"'
   - name: unhideWhenUsed

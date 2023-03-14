@@ -10396,6 +10396,8 @@ Word.ContentControlEventArgs,contentControl,Property,Good,true
 Word.ContentControlEventArgs,eventType,Property,Good,true
 Word.ContentControlEventArgs,ids,Property,Good,false
 Word.ContentControlEventArgs,source,Property,Good,false
+Word.ContentControlOptions,N/A,Class,Good,false
+Word.ContentControlOptions,types,Property,Good,false
 Word.ContentControlType,N/A,Enum,Good,true
 Word.ContentControlType,buildingBlockGallery,EnumField,Fine,false
 Word.ContentControlType,checkBox,EnumField,Fine,false
@@ -10765,8 +10767,6 @@ Word.Font,set(properties),Method,Poor,false
 Word.Font,toJSON(),Method,Poor,false
 Word.Font,track(),Method,Poor,false
 Word.Font,untrack(),Method,Poor,false
-Word.GetContentControlsOptions,N/A,Class,Good,false
-Word.GetContentControlsOptions,types,Property,Good,false
 Word.HeaderFooterType,N/A,Enum,Fine,true
 Word.HeaderFooterType,evenPages,EnumField,Fine,false
 Word.HeaderFooterType,firstPage,EnumField,Fine,false
@@ -11375,7 +11375,7 @@ Word.Style,nextParagraphStyle,Property,Good,false
 Word.Style,paragraphFormat,Property,Good,false
 Word.Style,priority,Property,Good,false
 Word.Style,quickStyle,Property,Good,false
-Word.Style,styleType,Property,Good,false
+Word.Style,type,Property,Good,false
 Word.Style,unhideWhenUsed,Property,Good,false
 Word.Style,visibility,Property,Good,false
 Word.Style,delete(),Method,Poor,false
