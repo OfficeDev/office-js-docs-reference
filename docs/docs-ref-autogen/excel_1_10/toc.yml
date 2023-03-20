@@ -1225,6 +1225,8 @@ items:
             href: ../../manifest/getstarted.md
           - name: Group
             href: ../../manifest/group.md
+          - name: Host
+            href: ../../manifest/host.md
           - name: Hosts
             href: ../../manifest/hosts.md
           - name: Icon
@@ -1249,6 +1251,8 @@ items:
             href: ../../manifest/officemenu.md
           - name: OfficeTab
             href: ../../manifest/officetab.md
+          - name: Override
+            href: ../../manifest/override.md
           - name: OverriddenByRibbonApi
             href: ../../manifest/overriddenbyribbonapi.md
           - name: Page

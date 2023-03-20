@@ -1,7 +1,7 @@
 ---
 title: FunctionFile element in the manifest file
 description: Specifies the source code file for operations that an add-in exposes through add-in commands that execute a JavaScript function instead of displaying UI.
-ms.date: 08/26/2022
+ms.date: 03/20/2023
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,7 @@ The following is an example of the **\<FunctionFile\>** element.
 
 ```XML
 <DesktopFormFactor>
-  <FunctionFile resid="residDesktopFuncUrl" />
+  <FunctionFile resid="Commands.Url" />
   <ExtensionPoint xsi:type="PrimaryCommandSurface">
     <!-- Information about this extension point. -->
   </ExtensionPoint>
@@ -45,63 +45,44 @@ The following is an example of the **\<FunctionFile\>** element.
 
 <Resources>
     <bt:Urls>
-        <bt:Url id="residDesktopFuncUrl" DefaultValue="https://www.contoso.com/Pages/Home.aspx" />
+        <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html" />
     </bt:Urls>
 
     <!-- Define other resources as needed. -->
 </Resources>
 ```
 
-The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must call `Office.initialize` and define named functions that take a single parameter: `event`. The functions should use the `item.notificationMessages` API to indicate progress, success, or failure to the user. It should also call `event.completed` when it has finished execution. The name of the functions are used in the [FunctionName](action.md#functionname) element for function command buttons.
+The JavaScript in the HTML file indicated by the **\<FunctionFile\>** element must [initialize Office.js](/office/dev/add-ins/develop/initialize-add-in) and define named functions that take a single parameter: `event`. It should also call `event.completed` when it has finished execution. Functions in Outlook add-ins should use the [notification APIs](/javascript/api/outlook/office.notificationmessages) to indicate progress, success, or failure to the user. The name of the functions are used in the [FunctionName](action.md#functionname) element for function command buttons.
 
-The following is an example of the contents of a `<script>` tag in an HTML file. The code defines and registers a `trackMessage` function.
-
-```js
-Office.initialize = function () {
-    // Your add-in's initialization logic, if any, goes here.
-}
-
-function trackMessage (event) {
-    const buttonId = event.source.id;    
-    const itemId = Office.context.mailbox.item.id;
-    // save this message
-    event.completed();
-}
-
-// Register the function with Office.
-Office.actions.associate("trackMessage", trackMessage);
-```
-
-You can also define and register the function specified by the **\<FunctionName\>** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
+You can define and register the function specified by the **\<FunctionName\>** element in a separate JavaScript file that is loaded by the HTML file. The following is an example of such a file.
 
 ```js
-// The initialize function must be assigned each time a new page is loaded.
-Office.initialize = function (reason) {
-    // If you need to initialize something you can do so here.
-};
+// Initialize the Office Add-in.
+Office.onReady(() => {
+  // If needed, Office.js is ready to be called
+});
 
+// The command function.
+async function highlightSelection(event) {
 
-// Define the function.
-function writeText(event) {
+    // Implement your custom code here. The following code is a simple Excel example.  
+    try {
+          await Excel.run(async (context) => {
+              const range = context.workbook.getSelectedRange();
+              range.format.fill.color = "yellow";
+              await context.sync();
+          });
+      } catch (error) {
+          // Note: In a production add-in, notify the user through your add-in's UI.
+          console.error(error);
+      }
 
-    // Implement your custom code here. The following code is a simple example.
-
-    Office.context.document.setSelectedDataAsync("ExecuteFunction works. Button ID=" + event.source.id,
-        function (asyncResult) {
-            const error = asyncResult.error;
-            if (asyncResult.status === "failed") {
-                // Show error message.
-            }
-            else {
-                // Show success message.
-            }
-        });
     // Calling event.completed is required. event.completed lets the platform know that processing has completed.
     event.completed();
 }
 
-// Register the function with Office.
-Office.actions.associate("writeText", writeText);
+// You must register the function with the following line.
+Office.actions.associate("highlightSelection", highlightSelection);
 ```
 
 > [!IMPORTANT]
