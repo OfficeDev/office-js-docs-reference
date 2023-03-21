@@ -1,13 +1,31 @@
 ---
 title: Hosts element in the manifest file
 description: Specifies the Office client applications where the Office Add-in will activate.
-ms.date: 02/25/2022
+ms.date: 03/20/2023
 ms.localizationpriority: medium
 ---
 
 # Hosts element
 
 Specifies the Office client applications where the Office Add-in will activate. Contains a collection of **\<Host\>** elements and their settings.
+
+**Add-in type**: Content, Task pane, Mail
+
+## Syntax
+
+```XML
+<Hosts>
+    <Host>Host1</Host>
+</Hosts>
+```
+
+## Contained in
+
+- [OfficeApp](officeapp.md)
+
+## Can contain
+
+- [Host](host.md)
 
 ## As child of VersionOverrides element
 
@@ -25,7 +43,7 @@ This element overrides the **\<Hosts\>** element in the base manifest.
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
-## Child elements
+### Child elements
 
 |  Element |  Required  |  Description  |
 |:-----|:-----:|:-----|
