@@ -1830,11 +1830,11 @@
     // For a complete code sample that shows how to use a
     ResourceSelectionChanged
 
-    // event handler in a Project add-in, see "Build your first Project task
-    pane add-in".
+    // event handler in a Project add-in, see "Create your first task pane
+    add-in for Microsoft Project".
 
     //
-    https://learn.microsoft.com/office/dev/add-ins/quickstarts/project-quickstart
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example adds a handler for the TaskSelectionChanged
     event.
@@ -1941,10 +1941,11 @@
     // For an example that shows how to use a ViewSelectionChanged event handler
     in a
 
-    // Project add-in, see "Build your first Project task pane add-in".
+    // Project add-in, see "Create your first task pane add-in for Microsoft
+    Project".
 
     //
-    https://learn.microsoft.com/office/dev/add-ins/quickstarts/project-quickstart
+    https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the ViewSelectionChanged event.
