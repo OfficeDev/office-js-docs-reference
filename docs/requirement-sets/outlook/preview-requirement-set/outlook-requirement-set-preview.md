@@ -142,7 +142,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 Added method to prepend content to the beginning of a message or appointment body when the mail item is sent.
 
-**Available in**: Outlook on Windows, Outlook on the web
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 <br>
 
