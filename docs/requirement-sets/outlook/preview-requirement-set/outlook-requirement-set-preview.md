@@ -91,7 +91,7 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 Added support for the `OnMessageFromChanged` and `OnAppointmentFromChanged` events in [event-based activation add-ins](/office/dev/add-ins/outlook/autolaunch). To learn more about these events, see [Automatically update your signature when switching between mail accounts (preview)](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events).
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
@@ -145,7 +145,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 Added method to prepend content to the beginning of a message or appointment body when the mail item is sent.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
@@ -159,43 +159,43 @@ Added method to prepend content to the beginning of a message or appointment bod
 
 Added a property that provides the object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.context.mailbox.item.sensitivityLabel](office.context.mailbox.item.md#properties)
 
 Added a property that provides the object to get or set the sensitivity label of a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.EventType.SensitivityLabelChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
 
 Added the `SensitivityLabelChanged` event to `Item`. This event occurs when the sensitivity label of a message or appointment is changed.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.SensitivityLabelChangedEventArgs](/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview&preserve-view=true)
 
 Added an object that provides the change status of the sensitivity label applied to a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the catalog of sensitivity labels in Outlook.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the sensitivity label of a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.SensitivityLabelDetails](/javascript/api/outlook/office.sensitivitylabeldetails?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the properties of a sensitivity label.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
