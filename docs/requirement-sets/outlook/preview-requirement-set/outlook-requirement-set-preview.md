@@ -10,17 +10,20 @@ ms.localizationpriority: medium
 
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
-> [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
+Preview APIs are subject to change and are not intended for use in a production environment. We recommend that you try them out in test and development environments only. Do not use preview APIs in a production environment or within business-critical documents.
 
-[!INCLUDE [Information about using preview APIs](../../../includes/using-preview-apis-host.md)]
+To use preview APIs:
 
-> [!TIP]
-> You may be able to preview features in Outlook on the web by [configuring targeted release on your Microsoft 365 tenant](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true#set-up-the-release-option-in-the-admin-center). "Configure preview access" is noted on this page for applicable features.
->
-> For other features, you may be able to request access to preview bits for Outlook on the web using your Microsoft 365 account by completing and submitting [this form](https://aka.ms/OWAPreview). "Request preview access" is noted on those features.
+- You must use the preview version of the Office JavaScript API library from the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/beta/hosted/office.js). The [type definition file](https://appsforoffice.microsoft.com/lib/beta/hosted/office.d.ts) for TypeScript compilation and IntelliSense is found at the CDN and [DefinitelyTyped](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts). You can install these types with `npm install --save-dev @types/office-js-preview` (be sure to remove the types for `@types/office-js` if you've previously installed them).
+
+- You may need to join the [Office Insider program](https://insider.office.com) for access to more recent Office builds in Outlook on Windows and on Mac.
+
+- You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
 The preview requirement set includes all of the features of [requirement set 1.12](../requirement-set-1.12/outlook-requirement-set-1.12.md).
+
+> [!IMPORTANT]
+> This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
 
 ## Features in preview
 
@@ -88,7 +91,7 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 Added support for the `OnMessageFromChanged` and `OnAppointmentFromChanged` events in [event-based activation add-ins](/office/dev/add-ins/outlook/autolaunch). To learn more about these events, see [Automatically update your signature when switching between mail accounts (preview)](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events).
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 <br>
 
@@ -156,43 +159,43 @@ Added method to prepend content to the beginning of a message or appointment bod
 
 Added a property that provides the object to check the status of the catalog of sensitivity labels and retrieve all available sensitivity labels if the catalog is enabled.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.context.mailbox.item.sensitivityLabel](office.context.mailbox.item.md#properties)
 
 Added a property that provides the object to get or set the sensitivity label of a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.EventType.SensitivityLabelChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
 
 Added the `SensitivityLabelChanged` event to `Item`. This event occurs when the sensitivity label of a message or appointment is changed.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.SensitivityLabelChangedEventArgs](/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview&preserve-view=true)
 
 Added an object that provides the change status of the sensitivity label applied to a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.SensitivityLabelsCatalog](/javascript/api/outlook/office.sensitivitylabelscatalog?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the catalog of sensitivity labels in Outlook.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the sensitivity label of a message or appointment in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 #### [Office.SensitivityLabelDetails](/javascript/api/outlook/office.sensitivitylabeldetails?view=outlook-js-preview&preserve-view=true)
 
 Added an object that represents the properties of a sensitivity label.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern, [Configure preview access](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release))
 
 <br>
 
