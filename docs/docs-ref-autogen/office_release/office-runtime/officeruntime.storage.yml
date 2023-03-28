@@ -8,6 +8,13 @@ remarks: >-
   \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
+  This interface is available in the [SharedRuntime 1.1 requirement
+  set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel,
+  PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+  1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+  for Outlook.
+
+
   **Important**: In Outlook, support is only available with [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
 
@@ -26,6 +33,13 @@ methods:
       returns null.
     remarks: >-
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
 
 
       **Important**: In Outlook, support is only available with [event-based
@@ -52,6 +66,13 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
       **Important**: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
@@ -74,6 +95,13 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
       **Important**: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
@@ -90,6 +118,13 @@ methods:
     summary: Removes an item from storage based on its key. Returns a Promise.
     remarks: >-
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
 
 
       **Important**: In Outlook, support is only available with [event-based
@@ -114,6 +149,13 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
       **Important**: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
@@ -134,6 +176,13 @@ methods:
     summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
     remarks: >-
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
 
 
       **Important**: In Outlook, support is only available with [event-based
@@ -159,6 +208,13 @@ methods:
     summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
     remarks: >-
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
 
 
       **Important**: In Outlook, support is only available with [event-based
