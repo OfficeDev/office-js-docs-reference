@@ -8448,7 +8448,7 @@ Office.CustomProperties,remove(name),Method,Poor,true
 Office.CustomProperties,saveAsync(callback,Method,Poor,true
 Office.CustomProperties,saveAsync(asyncContext),Method,Poor,false
 Office.CustomProperties,set(name,Method,Poor,true
-Office.DelayDeliveryTime,N/A,Class,Good,true
+Office.DelayDeliveryTime,N/A,Class,Good,false
 Office.DelayDeliveryTime,getAsync(options,Method,Poor,false
 Office.DelayDeliveryTime,getAsync(callback),Method,Poor,false
 Office.DelayDeliveryTime,setAsync(datetime,Method,Poor,false
@@ -8845,7 +8845,7 @@ Office.MessageCompose,body,Property,Good,true
 Office.MessageCompose,categories,Property,Good,true
 Office.MessageCompose,cc,Property,Good,true
 Office.MessageCompose,conversationId,Property,Good,true
-Office.MessageCompose,delayDeliveryTime,Property,Good,true
+Office.MessageCompose,delayDeliveryTime,Property,Good,false
 Office.MessageCompose,from,Property,Good,true
 Office.MessageCompose,internetHeaders,Property,Good,true
 Office.MessageCompose,itemType,Property,Good,true

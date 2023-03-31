@@ -13666,18 +13666,6 @@
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-'Office.DelayDeliveryTime:interface':
-  - >-
-    const date_1 = new Date();
-
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with
-    2-minute delay.
-
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 'Office.Document#addHandlerAsync:member(2)':
   - >-
     // The following example adds an event handler for the SelectionChanged
@@ -17964,18 +17952,6 @@
 
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
-'Office.MessageCompose#delayDeliveryTime:member':
-  - >-
-    const date_1 = new Date();
-
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with
-    2-minute delay.
-
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:

@@ -407,23 +407,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      const date_1 = new Date();
-
-      const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-
-      Office.context.mailbox.item.delayDeliveryTime.setAsync(
-          date_2,
-          function(callback) {
-              console.log(callback);
-          });
-      ```
     isPreview: true
     isDeprecated: false
     syntax:
