@@ -2927,8 +2927,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For a complete code sample that shows how to use a ResourceSelectionChanged
-    // event handler in a Project add-in, see "Create your first task pane add-in
-    // for Project 2013 by using a text editor."
+    // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
@@ -3016,8 +3015,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For an example that shows how to use a ViewSelectionChanged event handler in a
-    // Project add-in, see "Create your first task pane add-in for Project 2013 by
-    // using a text editor."
+    // Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
@@ -7514,7 +7512,7 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
             '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
             '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
             '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
             '  </soap:Header>' +
             '  <soap:Body>' +
             '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +

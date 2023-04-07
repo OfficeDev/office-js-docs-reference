@@ -311,9 +311,7 @@ methods:
 
       // For a complete code sample that shows how to use a ResourceSelectionChanged
 
-      // event handler in a Project add-in, see "Create your first task pane add-in
-
-      // for Project 2013 by using a text editor."
+      // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
 
       //
       https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
@@ -424,9 +422,7 @@ methods:
 
       // For an example that shows how to use a ViewSelectionChanged event handler in a
 
-      // Project add-in, see "Create your first task pane add-in for Project 2013 by
-
-      // using a text editor."
+      // Project add-in, see "Create your first task pane add-in for Microsoft Project".
 
       //
       https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
