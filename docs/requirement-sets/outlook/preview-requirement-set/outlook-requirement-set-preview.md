@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 03/27/2023
+ms.date: 04/11/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -91,7 +91,7 @@ Added a new object that allows you to manage the delivery date and time of a mes
 
 Added support for the `OnMessageFromChanged` and `OnAppointmentFromChanged` events in [event-based activation add-ins](/office/dev/add-ins/outlook/autolaunch). To learn more about these events, see [Automatically update your signature when switching between mail accounts (preview)](/office/dev/add-ins/outlook/onmessagefromchanged-onappointmentfromchanged-events).
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
