@@ -2927,8 +2927,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For a complete code sample that shows how to use a ResourceSelectionChanged
-    // event handler in a Project add-in, see "Create your first task pane add-in
-    // for Project 2013 by using a text editor."
+    // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
@@ -3016,8 +3015,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For an example that shows how to use a ViewSelectionChanged event handler in a
-    // Project add-in, see "Create your first task pane add-in for Project 2013 by
-    // using a text editor."
+    // Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
@@ -7322,15 +7320,6 @@ Office.CustomProperties#saveAsync:member(1):
             // Proceed to do the appropriate for your add-in.
         }
     }
-Office.DelayDeliveryTime:interface:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.EmailAddressDetails#appointmentResponse:member:
   - |-
     // The following sample provides the responses from required attendees.
@@ -7514,7 +7503,7 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
             '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
             '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
             '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
             '  </soap:Header>' +
             '  <soap:Body>' +
             '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
@@ -7776,15 +7765,6 @@ Office.MessageCompose#cc:member:
     function callback(asyncResult) {
         const arrayOfCcRecipients = asyncResult.value;
     }
-Office.MessageCompose#delayDeliveryTime:member:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.MessageCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).

@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 10/20/2022
+ms.date: 03/21/2023
 ms.topic: overview
 ms.prod: outlook
 ms.localizationpriority: high
@@ -71,9 +71,6 @@ else {
 }
 ```
 
-> [!IMPORTANT]
-> There is currently a bug where `isSetSupported('Mailbox', '1.3')` erroneously returns `true` in Outlook on the web against Exchange 2013. To learn more about the supported combinations of requirement sets, Exchange servers, and Outlook clients, see [Requirement sets supported by Exchange servers and Outlook clients](#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
-
 Alternatively, developers can check for the existence of a newer API by using standard JavaScript technique.
 
 ```js
@@ -94,7 +91,7 @@ Developers should use the earliest requirement set that contains the critical se
 In this section, we note the range of requirement sets supported by Exchange server and Outlook clients. For details about server and client requirements for running Outlook add-ins, see [Outlook add-ins requirements](/office/dev/add-ins/outlook/add-in-requirements).
 
 > [!IMPORTANT]
-> If your target Exchange server and Outlook client support different requirement sets, then you may be restricted to the lower requirement set range. For example, if an add-in is running in Outlook 2016 on Mac (highest requirement set: 1.6) against Exchange 2013 (highest requirement set: 1.1), your add-in may be limited to requirement set 1.1.
+> If your target Exchange server and Outlook client support different requirement sets, then you may be restricted to the lower requirement set range. For example, if an add-in is running in Outlook 2019 on Windows (highest requirement set: 1.6) against Exchange 2016 (highest requirement set: 1.5), your add-in may be limited to requirement set 1.5.
 
 ### Exchange server support
 

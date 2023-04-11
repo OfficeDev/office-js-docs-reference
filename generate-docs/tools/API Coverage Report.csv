@@ -8448,10 +8448,10 @@ Office.CustomProperties,remove(name),Method,Poor,true
 Office.CustomProperties,saveAsync(callback,Method,Poor,true
 Office.CustomProperties,saveAsync(asyncContext),Method,Poor,false
 Office.CustomProperties,set(name,Method,Poor,true
-Office.DelayDeliveryTime,N/A,Class,Good,true
+Office.DelayDeliveryTime,N/A,Class,Good,false
 Office.DelayDeliveryTime,getAsync(options,Method,Poor,false
-Office.DelayDeliveryTime,getAsync(callback),Method,Poor,false
-Office.DelayDeliveryTime,setAsync(datetime,Method,Poor,false
+Office.DelayDeliveryTime,getAsync(callback),Method,Poor,true
+Office.DelayDeliveryTime,setAsync(datetime,Method,Poor,true
 Office.Diagnostics,N/A,Class,Good,false
 Office.Diagnostics,hostName,Property,Good,false
 Office.Diagnostics,hostVersion,Property,Good,false

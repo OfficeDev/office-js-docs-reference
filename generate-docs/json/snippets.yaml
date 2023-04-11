@@ -13666,18 +13666,51 @@
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-'Office.DelayDeliveryTime:interface':
+'Office.DelayDeliveryTime#getAsync:member(2)':
   - >-
-    const date_1 = new Date();
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
 
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with
-    2-minute delay.
+    // This snippet gets the delivery date and time of a message.
 
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
+    Office.context.mailbox.item.delayDeliveryTime.getAsync((asyncResult) => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(asyncResult.error.message);
+        return;
+      }
+
+      const deliveryDate = asyncResult.value;
+
+      if (deliveryDate.toString() === "0") {
+        console.log(`Message delivery date and time: ${new Date()}`);
+      } else {
+        const date = new Date(deliveryDate);
+        console.log(`Message delivery date and time: ${date.toString()}`);
+      }
+    });
+'Office.DelayDeliveryTime#setAsync:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+
+    function setDeliveryDate(minutes) {
+      // This snippet sets the delivery date and time of a message.
+      const currentTime = new Date().getTime();
+      const milliseconds = totalDelay * 60000;
+      const timeDelay = new Date(currentTime + milliseconds);
+      Office.context.mailbox.item.delayDeliveryTime.setAsync(timeDelay, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(asyncResult.error.message);
+          return;
+        }
+
+        if (minutes === 1440) {
+          console.log(`Delayed delivery by an additional one day.`);
+        } else {
+          console.log(`Delayed delivery by an additional ${minutes} minutes.`);
+        }
+      });
+    }
 'Office.Document#addHandlerAsync:member(2)':
   - >-
     // The following example adds an event handler for the SelectionChanged
@@ -13752,9 +13785,7 @@
     ResourceSelectionChanged
 
     // event handler in a Project add-in, see "Create your first task pane
-    add-in
-
-    // for Project 2013 by using a text editor."
+    add-in for Microsoft Project".
 
     //
     https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
@@ -13864,10 +13895,8 @@
     // For an example that shows how to use a ViewSelectionChanged event handler
     in a
 
-    // Project add-in, see "Create your first task pane add-in for Project 2013
-    by
-
-    // using a text editor."
+    // Project add-in, see "Create your first task pane add-in for Microsoft
+    Project".
 
     //
     https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
@@ -16610,7 +16639,7 @@
             '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
             '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
             '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
             '  </soap:Header>' +
             '  <soap:Body>' +
             '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
@@ -17966,16 +17995,27 @@
     ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageCompose#delayDeliveryTime:member':
   - >-
-    const date_1 = new Date();
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
 
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with
-    2-minute delay.
+    function setDeliveryDate(minutes) {
+      // This snippet sets the delivery date and time of a message.
+      const currentTime = new Date().getTime();
+      const milliseconds = totalDelay * 60000;
+      const timeDelay = new Date(currentTime + milliseconds);
+      Office.context.mailbox.item.delayDeliveryTime.setAsync(timeDelay, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(asyncResult.error.message);
+          return;
+        }
 
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
+        if (minutes === 1440) {
+          console.log(`Delayed delivery by an additional one day.`);
+        } else {
+          console.log(`Delayed delivery by an additional ${minutes} minutes.`);
+        }
+      });
+    }
 'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:

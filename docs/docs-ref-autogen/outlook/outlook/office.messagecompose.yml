@@ -414,15 +414,28 @@ properties:
 
       ```javascript
 
-      const date_1 = new Date();
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
 
-      const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
+      function setDeliveryDate(minutes) {
+        // This snippet sets the delivery date and time of a message.
+        const currentTime = new Date().getTime();
+        const milliseconds = totalDelay * 60000;
+        const timeDelay = new Date(currentTime + milliseconds);
+        Office.context.mailbox.item.delayDeliveryTime.setAsync(timeDelay, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log(asyncResult.error.message);
+            return;
+          }
 
-      Office.context.mailbox.item.delayDeliveryTime.setAsync(
-          date_2,
-          function(callback) {
-              console.log(callback);
-          });
+          if (minutes === 1440) {
+            console.log(`Delayed delivery by an additional one day.`);
+          } else {
+            console.log(`Delayed delivery by an additional ${minutes} minutes.`);
+          }
+        });
+      }
+
       ```
     isPreview: true
     isDeprecated: false
