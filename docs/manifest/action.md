@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 10/10/2022
+ms.date: 04/12/2023
 ms.localizationpriority: medium
 ---
 
@@ -29,18 +29,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |:-----|:-----:|:-----|
 |  [xsi:type](#xsitype)  |  Yes  | Action type to take|
 
-## Child elements
-
-|  Element |  Description  |
-|:-----|:-----|
-|  [FunctionName](#functionname) |    Specifies the name of the function to execute. |
-|  [SourceLocation](#sourcelocation) |    Specifies the source file location for this action. |
-|  [TaskpaneId](#taskpaneid) | Specifies the ID of the task pane container. Not supported in Outlook add-ins.|
-|  [Title](#title) | Specifies the custom title for the task pane. Not supported in Outlook add-ins.|
-|  [SupportsPinning](#supportspinning) | Specifies that a task pane supports pinning, which keeps the task pane open when the user changes the selection.|
-|  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected messages. |
-
-## xsi:type
+### xsi:type
 
 This attribute specifies the kind of action performed when the user selects the button. It can be one of the following:
 
@@ -52,7 +41,17 @@ Once the user selects a button that kicks off the `ExecuteFunction` action, the 
 > [!IMPORTANT]
 > Outlook: Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available when **xsi:type** is `ExecuteFunction`.
 
-## FunctionName
+## Child elements
+
+The valid child elements very depending on the value of the `xsi:type` parameter. 
+
+### xsi:type is ExecuteFunction
+
+|  Element |  Description  |
+|:-----|:-----|
+|  [FunctionName](#functionname) |    Specifies the name of the function to execute. |
+
+#### FunctionName
 
 Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of the function to execute. The function is contained in the file specified in the [FunctionFile](functionfile.md) element.
 
@@ -62,7 +61,18 @@ Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of t
 </Action>
 ```
 
-## SourceLocation
+### xsi:type is ShowTaskpane
+
+|  Element |  Description  |
+|:-----|:-----|
+|  [SourceLocation](#sourcelocation) |    Specifies the source file location for this action. |
+|  [TaskpaneId](#taskpaneid) | Specifies the ID of the task pane container. Not supported in Outlook add-ins.|
+|  [Title](#title) | Specifies the custom title for the task pane. Not supported in Outlook add-ins.|
+|  [SupportsPinning](#supportspinning) | Specifies that a task pane supports pinning, which keeps the task pane open when the user changes the selection. Supported in Outlook only. |
+|  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected messages. Supported in Outlook only. |
+
+
+#### SourceLocation
 
 Required element when **xsi:type** is `ShowTaskpane`. Specifies the source file location for this action. The **resid** attribute can be no more than 32 characters and must be set to the value of the **id** attribute of a **\<Url\>** element in the **\<Urls\>** element in the [Resources](resources.md) element.
 
@@ -72,7 +82,7 @@ Required element when **xsi:type** is `ShowTaskpane`. Specifies the source file 
 </Action>
 ```  
 
-## TaskpaneId
+#### TaskpaneId
 
 Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the ID of the task pane container. When you have multiple `ShowTaskpane` actions, use a different **\<TaskpaneId\>** if you want an independent pane for each. Use the same **\<TaskpaneId\>** for  different actions that share the same pane. When users choose commands that share the same **\<TaskpaneId\>**, the pane container will remain open but the contents of the pane will be replaced with the corresponding Action `SourceLocation`.
 
@@ -126,7 +136,7 @@ The following examples show two actions that use a different **\<TaskpaneId\>**.
 </bt:Urls>
 ```  
 
-## Title
+#### Title
 
 Optional element when  **xsi:type** is `ShowTaskpane`. Specifies the custom title for the task pane for this action.
 
@@ -168,7 +178,7 @@ The following example shows an action that uses the **\<Title\>** element. Note 
 </Resources>
 ```
 
-## SupportsPinning
+#### SupportsPinning
 
 Optional element when **xsi:type** is `ShowTaskpane`. The containing [VersionOverrides](versionoverrides.md) elements must have an **xsi:type** attribute value of `VersionOverridesV1_1`. Include this element with a value of `true` to support task pane pinning. The user will be able to "pin" the task pane, causing it to stay open when changing the selection. For more information, see [Implement a pinnable task pane in Outlook](/office/dev/add-ins/outlook/pinnable-taskpane).
 
@@ -198,7 +208,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 </Action>
 ```
 
-## SupportsMultiselect (preview)
+#### SupportsMultiselect (preview)
 
 Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate and perform specific operations on multiple selected messages. Because item multi-select only applies to messages, the [ExtensionPoint element's `xsi:type` attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface` or `MessageComposeCommandSurface`. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages (preview)](/office/dev/add-ins/outlook/item-multi-select).
 
