@@ -407,6 +407,36 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+
+      function setDeliveryDate(minutes) {
+        // This snippet sets the delivery date and time of a message.
+        const currentTime = new Date().getTime();
+        const milliseconds = totalDelay * 60000;
+        const timeDelay = new Date(currentTime + milliseconds);
+        Office.context.mailbox.item.delayDeliveryTime.setAsync(timeDelay, (asyncResult) => {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log(asyncResult.error.message);
+            return;
+          }
+
+          if (minutes === 1440) {
+            console.log(`Delayed delivery by an additional one day.`);
+          } else {
+            console.log(`Delayed delivery by an additional ${minutes} minutes.`);
+          }
+        });
+      }
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
