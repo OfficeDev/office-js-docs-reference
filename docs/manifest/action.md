@@ -45,7 +45,7 @@ Once the user selects a button that kicks off the `ExecuteFunction` action, the 
 
 The valid child elements very depending on the value of the `xsi:type` parameter. 
 
-### Type is ExecuteFunction
+### xsi:type is ExecuteFunction
 
 |  Element |  Description  |
 |:-----|:-----|
@@ -61,7 +61,7 @@ Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of t
 </Action>
 ```
 
-### Type is ShowTaskpane
+### xsi:type is ShowTaskpane
 
 |  Element |  Description  |
 |:-----|:-----|
