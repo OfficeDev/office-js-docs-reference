@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/11/2023
+ms.date: 04/12/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -145,7 +145,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 Added method to prepend content to the beginning of a message or appointment body when the mail item is sent.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
