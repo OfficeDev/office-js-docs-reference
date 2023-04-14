@@ -144,7 +144,7 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>5</sup> Add-ins aren't supported in Outlook on Android, on iOS, and modern mobile web with on-premises Exchange accounts. Certain iOS devices still support add-ins when using on-premises Exchange accounts with classic Outlook on the web. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 >
-> <sup>6</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands for Outlook Mobile](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
+> <sup>6</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands in Outlook on mobile devices](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
 >
 > <sup>7</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 
