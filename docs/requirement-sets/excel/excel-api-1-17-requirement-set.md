@@ -9,12 +9,14 @@ ms.localizationpriority: medium
 
 # What's new in Excel JavaScript API 1.17
 
+The ExcelApi 1.17 expanded conditional formatting controls and added worksheet events.
 
 The following table provides a concise summary of the APIs, while the subsequent [API list](#api-list) table gives a detailed list.
 
 | Feature area | Description | Relevant objects |
 |:--- |:--- |:--- |
-
+| Conditional formatting | Change conditional formatting rules. | [ConditionalFormat](/javascript/api/excel/excel.conditionalformat), [ConditionalRangeFormat](/javascript/api/excel/excel.conditionalrangeformat) |
+| Worksheet events | Monitor changes to name, visibility, and position. | [Worksheet](/javascript/api/excel/excel.worksheet), [WorksheetCollection](/javascript/api/excel/excel.worksheetcollection), [WorksheetMovedEventArgs](/javascript/api/excel/excel.worksheetmovedeventargs), [WorksheetNameChangedEventArgs](/javascript/api/excel/excel.worksheetnamechangedeventargs), [WorksheetVisibilityChangedEventArgs](/javascript/api/excel/excel.worksheetvisibilitychangedeventargs) |
 
 ## API list
 
