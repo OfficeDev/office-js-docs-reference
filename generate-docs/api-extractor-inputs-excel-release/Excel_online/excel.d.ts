@@ -4573,6 +4573,13 @@ export declare namespace Excel {
         */
         linkedEntity = "LinkedEntity",
         /**
+        * Represents a `LocalImageCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        localImage = "LocalImage",
+        /**
         * Represents a `ReferenceCellValue`.
         *
         * @remarks
@@ -5428,7 +5435,14 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        dataProviderError = "DataProviderError"
+        dataProviderError = "DataProviderError",
+        /**
+        * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        richValueRelMissingFilePart = "RichValueRelMissingFilePart"
     }
     /**
     * Represents the value of a cell containing a #FIELD! error.
@@ -5473,7 +5487,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
+        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError" | "RichValueRelMissingFilePart";
         /**
         * Represents the field which was not found by FIELDVALUE.
         *
@@ -7328,42 +7342,42 @@ export declare namespace Excel {
                  as a result of that primary move.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetMovedEventArgs {
         /**
          * Gets the new position of the worksheet, after the move.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         positionAfter: number;
         /**
          * Gets the previous position of the worksheet, prior to the move.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         positionBefore: number;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the ID of the worksheet that was moved.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -7371,42 +7385,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose name has changed.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetNameChangedEventArgs {
         /**
          * Gets the new name of the worksheet, after the name change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         nameAfter: string;
         /**
          * Gets the previous name of the worksheet, before the name changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         nameBefore: string;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the ID of the worksheet with the new name.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -7414,42 +7428,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose visibility has changed.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetVisibilityChangedEventArgs {
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the new visibility setting of the worksheet, after the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         visibilityAfter: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the previous visibility setting of the worksheet, before the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         visibilityBefore: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the ID of the worksheet whose visibility has changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -11107,7 +11121,7 @@ export declare namespace Excel {
          * Occurs when the worksheet name is changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -11165,7 +11179,7 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -11352,7 +11366,7 @@ export declare namespace Excel {
          * Occurs when a worksheet is moved within a workbook. This event only triggers when a worksheet is directly moved within a workbook. This event doesn't trigger when the position of a worksheet is indirectly changed, such as when a new worksheet is inserted and causes existing worksheets to change positions.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -11361,7 +11375,7 @@ export declare namespace Excel {
          * Occurs when the worksheet name is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -11417,7 +11431,7 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -21781,6 +21795,13 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
+         * Gets the currency symbol for currency values. This is based on current system settings.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         */
+        readonly currencySymbol: string;
+        /**
          * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
          *
          * @remarks
@@ -24731,6 +24752,72 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalFormat): void;
         /**
+         * Change the conditional format rule type to cell value.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param properties - The properties to set for the cell value conditional format rule.
+         */
+        changeRuleToCellValue(properties: Excel.ConditionalCellValueRule): void;
+        /**
+         * Change the conditional format rule type to color scale.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         */
+        changeRuleToColorScale(): void;
+        /**
+         * Change the conditional format rule type to text comparison.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param properties - The properties to set for the text comparison conditional format rule.
+         */
+        changeRuleToContainsText(properties: Excel.ConditionalTextComparisonRule): void;
+        /**
+         * Change the conditional format rule type to custom.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param formula - The formula to set for the custom conditional format rule.
+         */
+        changeRuleToCustom(formula: string): void;
+        /**
+         * Change the conditional format rule type to data bar.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         */
+        changeRuleToDataBar(): void;
+        /**
+         * Change the conditional format rule type to icon set.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         */
+        changeRuleToIconSet(): void;
+        /**
+         * Change the conditional format rule type to preset criteria.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param properties - The properties to set for the preset criteria conditional format rule.
+         */
+        changeRuleToPresetCriteria(properties: Excel.ConditionalPresetCriteriaRule): void;
+        /**
+         * Change the conditional format rule type to top/bottom.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param properties - The properties to set for the top/bottom conditional format rule.
+         */
+        changeRuleToTopBottom(properties: Excel.ConditionalTopBottomRule): void;
+        /**
          * Deletes this conditional format.
          *
          * @remarks
@@ -24759,6 +24846,15 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getRanges(): Excel.RangeAreas;
+        /**
+         * Set the ranges that the conditonal format rule is applied to.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         *
+         * @param ranges - Collection of one or more ranges for this rule to be applied to.
+         */
+        setRanges(ranges: Range | RangeAreas | string): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -25763,6 +25859,13 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalRangeFormat): void;
+        /**
+         * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
+         *
+         * @remarks
+         * [Api set: ExcelApi 1.17]
+         */
+        clearFormat(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -50106,6 +50209,13 @@ export declare namespace Excel {
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
             /**
+             * Gets the currency symbol for currency values. This is based on current system settings.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.17]
+             */
+            currencySymbol?: string;
+            /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
              * @remarks
@@ -58817,6 +58927,13 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            /**
+             * Gets the currency symbol for currency values. This is based on current system settings.
+             *
+             * @remarks
+             * [Api set: ExcelApi 1.17]
+             */
+            currencySymbol?: boolean;
             /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *

@@ -32,9 +32,13 @@ methods:
       parameters:
         - id: tabDefinition
           description: >-
-            Specifies the tab's properties and child controls and their properties. Pass a JSON string that conforms to
-            the Office dynamic-ribbon JSON schema to `JSON.parse`<!-- -->, and then pass the returned object to this
-            method.
+            Specifies the tab's properties and child controls and their properties. This parameter isn't strongly typed
+            because its shape is defined by a JSON schema that can be versioned. To create the parameter object, pass a
+            JSON string that conforms to the Office [dynamic-ribbon JSON
+            schema](https://developer.microsoft.com/json-schemas/office-js/dynamic-ribbon.schema.json) to
+            `JSON.parse`<!-- -->, and then pass the returned object to this method. To get IntelliSense for the JSON in
+            Visual Studio Code, see [Editing JSON with Visual Studio Code - JSON schemas and
+            settings](https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings)<!-- -->.
           type: Object
       return:
         type: Promise&lt;void&gt;

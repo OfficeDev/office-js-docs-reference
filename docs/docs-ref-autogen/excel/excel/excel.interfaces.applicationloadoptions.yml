@@ -91,6 +91,20 @@ properties:
       content: 'decimalSeparator?: boolean;'
       return:
         type: boolean
+  - name: formatStaleValues
+    uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#formatStaleValues:member'
+    package: excel!
+    fullName: formatStaleValues
+    summary: >-
+      Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled. The stale
+      formulas are rendered with stale formatting if the option is enabled.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'formatStaleValues?: boolean;'
+      return:
+        type: boolean
   - name: iterativeCalculation
     uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
     package: excel!

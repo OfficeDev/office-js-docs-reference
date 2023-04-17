@@ -52,6 +52,56 @@ export declare namespace Excel {
         referencedValues?: ReferencedValue[];
     }
     /**
+    * The base64 encoding type and data of an image.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface Base64EncodedImage {
+        /**
+        * The file type of the encoded image.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        type: Base64EncodingType | "JPG" | "PNG";
+        /**
+        * The base64 string encoding.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        data: string;
+    }
+    /**
+    * The file type represented by the base64 encoding.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    enum Base64EncodingType {
+        /**
+        * The JPG file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        JPG = "JPG",
+        /**
+        * The PNG file type.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        PNG = "PNG"
+    }
+    /**
     * Represents a card layout that is best used for an array.
     *
     * @remarks
@@ -4654,6 +4704,13 @@ export declare namespace Excel {
         */
         linkedEntity = "LinkedEntity",
         /**
+        * Represents a `LocalImageCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        localImage = "LocalImage",
+        /**
         * Represents a `ReferenceCellValue`.
         *
         * @remarks
@@ -4688,7 +4745,7 @@ export declare namespace Excel {
     * @remarks
     * [Api set: ExcelApi 1.16]
     */
-    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
+    export type CellValue = (ArrayCellValue | BooleanCellValue | DoubleCellValue | EntityCellValue | EmptyCellValue | ErrorCellValue | FormattedNumberCellValue | LinkedEntityCellValue | LocalImageCellValue | ReferenceCellValue | StringCellValue | ValueTypeNotAvailableCellValue | WebImageCellValue) & CellValueExtraProperties;
     /**
     * These extra properties may appear on a `CellValue` and provide information about that `CellValue`, but the extra properties are not part of the value in the cell.
     *
@@ -5509,7 +5566,14 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        dataProviderError = "DataProviderError"
+        dataProviderError = "DataProviderError",
+        /**
+        * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        richValueRelMissingFilePart = "RichValueRelMissingFilePart"
     }
     /**
     * Represents the value of a cell containing a #FIELD! error.
@@ -5554,7 +5618,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
+        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError" | "RichValueRelMissingFilePart";
         /**
         * Represents the field which was not found by FIELDVALUE.
         *
@@ -5748,6 +5812,88 @@ export declare namespace Excel {
         * [Api set: ExcelApi 1.16]
         */
         provider?: CellValueProviderAttributes;
+    }
+    /**
+    * Represents the value of a cell containing a locally stored or generated image.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface LocalImageCellValue {
+        /**
+        * Represents the type of this cell value.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        type: CellValueType.localImage | "LocalImage";
+        /**
+        * Represents the value that would be returned by `Range.values` for a cell with this value.
+        * When accessed through a `valuesAsJson` property, this string value aligns with the en-US locale.
+        * When accessed through a `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        basicValue?: "#VALUE!" | string;
+        /**
+        * Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        basicType?: RangeValueType.error | "Error";
+        /**
+        * Represents the image itself, either cached or encoded.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        image: LocalImageCellValueCacheId | Base64EncodedImage;
+        /**
+        * Represents the alternate text used in accessibility scenarios to describe what the image represents.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        altText?: string;
+        /**
+        * Represents attribution information to describe the source and license requirements for this image.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        attribution?: CellValueAttributionAttributes[];
+        /**
+        * Represents information that describes the entity or individual who provided the image.
+        * This information is used for branding purposes in image cards.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        provider?: CellValueProviderAttributes;
+    }
+    /**
+    * The UID of a previously cached image.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+    export interface LocalImageCellValueCacheId {
+        /**
+        * Represents the image's UID as it appears in the cache.
+        *
+        * @remarks
+        * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+        * @beta
+        */
+        cacheUid: string;
     }
     /**
     * Represents the value of a cell containing a #N/A! error.
@@ -7409,42 +7555,42 @@ export declare namespace Excel {
                  as a result of that primary move.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetMovedEventArgs {
         /**
          * Gets the new position of the worksheet, after the move.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         positionAfter: number;
         /**
          * Gets the previous position of the worksheet, prior to the move.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         positionBefore: number;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the ID of the worksheet that was moved.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -7452,42 +7598,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose name has changed.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetNameChangedEventArgs {
         /**
          * Gets the new name of the worksheet, after the name change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         nameAfter: string;
         /**
          * Gets the previous name of the worksheet, before the name changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         nameBefore: string;
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the ID of the worksheet with the new name.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -7495,42 +7641,42 @@ export declare namespace Excel {
      * Provides information about the worksheet whose visibility has changed.
      *
      * @remarks
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.17]
      */
     export interface WorksheetVisibilityChangedEventArgs {
         /**
          * The source of the event. It can be local or remote (through co-authoring).
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          * Gets the type of the event.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         type: string;
         /**
          * Gets the new visibility setting of the worksheet, after the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         visibilityAfter: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the previous visibility setting of the worksheet, before the visibility change.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         visibilityBefore: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         /**
          * Gets the ID of the worksheet whose visibility has changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          */
         worksheetId: string;
     }
@@ -12004,6 +12150,15 @@ export declare namespace Excel {
          */
         readonly decimalSeparator: string;
         /**
+         * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+                    The stale formulas are rendered with stale formatting if the option is enabled.
+         *
+         * @remarks
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        formatStaleValues: boolean;
+        /**
          * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
          *
          * @remarks
@@ -13170,7 +13325,7 @@ export declare namespace Excel {
          * Occurs when the worksheet name is changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -13228,7 +13383,7 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -13457,7 +13612,7 @@ export declare namespace Excel {
          * Occurs when a worksheet is moved within a workbook. This event only triggers when a worksheet is directly moved within a workbook. This event doesn't trigger when the position of a worksheet is indirectly changed, such as when a new worksheet is inserted and causes existing worksheets to change positions.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -13466,7 +13621,7 @@ export declare namespace Excel {
          * Occurs when the worksheet name is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -13522,7 +13677,7 @@ export declare namespace Excel {
          * Occurs when the worksheet visibility is changed in the worksheet collection.
          *
          * @remarks
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.17]
          *
          * @eventproperty
          */
@@ -23945,8 +24100,7 @@ export declare namespace Excel {
          * Gets the currency symbol for currency values. This is based on current system settings.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          */
         readonly currencySymbol: string;
         /**
@@ -26983,8 +27137,7 @@ export declare namespace Excel {
          * Change the conditional format rule type to cell value.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param properties - The properties to set for the cell value conditional format rule.
          */
@@ -26993,16 +27146,14 @@ export declare namespace Excel {
          * Change the conditional format rule type to color scale.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          */
         changeRuleToColorScale(): void;
         /**
          * Change the conditional format rule type to text comparison.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param properties - The properties to set for the text comparison conditional format rule.
          */
@@ -27011,8 +27162,7 @@ export declare namespace Excel {
          * Change the conditional format rule type to custom.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param formula - The formula to set for the custom conditional format rule.
          */
@@ -27021,24 +27171,21 @@ export declare namespace Excel {
          * Change the conditional format rule type to data bar.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          */
         changeRuleToDataBar(): void;
         /**
          * Change the conditional format rule type to icon set.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          */
         changeRuleToIconSet(): void;
         /**
          * Change the conditional format rule type to preset criteria.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param properties - The properties to set for the preset criteria conditional format rule.
          */
@@ -27047,8 +27194,7 @@ export declare namespace Excel {
          * Change the conditional format rule type to top/bottom.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param properties - The properties to set for the top/bottom conditional format rule.
          */
@@ -27086,8 +27232,7 @@ export declare namespace Excel {
          * Set the ranges that the conditonal format rule is applied to.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          *
          * @param ranges - Collection of one or more ranges for this rule to be applied to.
          */
@@ -28100,8 +28245,7 @@ export declare namespace Excel {
          * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
          *
          * @remarks
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.17]
          */
         clearFormat(): void;
         /**
@@ -44063,6 +44207,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1 for get, 1.8 for set]
              */
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
+            /**
+             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+                        The stale formulas are rendered with stale formatting if the option is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formatStaleValues?: boolean;
         }
         /** An interface for updating data on the IterativeCalculation object, for use in `iterativeCalculation.set({ ... })`. */
         export interface IterativeCalculationUpdateData {
@@ -49267,6 +49420,15 @@ export declare namespace Excel {
              */
             decimalSeparator?: string;
             /**
+             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+                        The stale formulas are rendered with stale formatting if the option is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formatStaleValues?: boolean;
+            /**
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
              *
              * @remarks
@@ -53246,8 +53408,7 @@ export declare namespace Excel {
              * Gets the currency symbol for currency values. This is based on current system settings.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.17]
              */
             currencySymbol?: string;
             /**
@@ -56593,6 +56754,15 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.11]
              */
             decimalSeparator?: boolean;
+            /**
+             * Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.
+                        The stale formulas are rendered with stale formatting if the option is enabled.
+             *
+             * @remarks
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            formatStaleValues?: boolean;
             /**
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on the local Excel settings.
              *
@@ -62522,8 +62692,7 @@ export declare namespace Excel {
              * Gets the currency symbol for currency values. This is based on current system settings.
              *
              * @remarks
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.17]
              */
             currencySymbol?: boolean;
             /**

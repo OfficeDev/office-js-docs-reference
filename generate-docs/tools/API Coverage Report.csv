@@ -67,6 +67,7 @@ Excel.Application,calculationState,Property,Good,false
 Excel.Application,context,Property,Good,false
 Excel.Application,cultureInfo,Property,Good,false
 Excel.Application,decimalSeparator,Property,Good,true
+Excel.Application,formatStaleValues,Property,Good,false
 Excel.Application,iterativeCalculation,Property,Good,false
 Excel.Application,thousandsSeparator,Property,Good,false
 Excel.Application,useSystemSeparators,Property,Good,false
@@ -130,6 +131,12 @@ Excel.AutoFilter,load(propertyNamesAndPaths),Method,Poor,false
 Excel.AutoFilter,reapply(),Method,Poor,true
 Excel.AutoFilter,remove(),Method,Poor,true
 Excel.AutoFilter,toJSON(),Method,Poor,false
+Excel.Base64EncodedImage,N/A,Class,Good,false
+Excel.Base64EncodedImage,data,Property,Good,false
+Excel.Base64EncodedImage,type,Property,Good,false
+Excel.Base64EncodingType,N/A,Enum,Good,false
+Excel.Base64EncodingType,JPG,EnumField,Fine,false
+Excel.Base64EncodingType,PNG,EnumField,Fine,false
 Excel.BasicDataValidation,N/A,Class,Good,false
 Excel.BasicDataValidation,formula1,Property,Good,false
 Excel.BasicDataValidation,formula2,Property,Good,false
@@ -628,6 +635,7 @@ Excel.CellValueType,entity,EnumField,Fine,false
 Excel.CellValueType,error,EnumField,Fine,false
 Excel.CellValueType,formattedNumber,EnumField,Fine,false
 Excel.CellValueType,linkedEntity,EnumField,Fine,false
+Excel.CellValueType,localImage,EnumField,Fine,false
 Excel.CellValueType,notAvailable,EnumField,Fine,false
 Excel.CellValueType,reference,EnumField,Fine,false
 Excel.CellValueType,string,EnumField,Fine,false
@@ -3271,6 +3279,7 @@ Excel.FieldErrorCellValue,fieldName,Property,Good,false
 Excel.FieldErrorCellValue,type,Property,Good,false
 Excel.FieldErrorCellValueSubType,N/A,Enum,Good,false
 Excel.FieldErrorCellValueSubType,dataProviderError,EnumField,Good,false
+Excel.FieldErrorCellValueSubType,richValueRelMissingFilePart,EnumField,Good,false
 Excel.FieldErrorCellValueSubType,unknown,EnumField,Good,false
 Excel.FieldErrorCellValueSubType,webImageMissingFilePart,EnumField,Good,false
 Excel.FillPattern,N/A,Enum,Fine,true
@@ -4294,6 +4303,16 @@ Excel.LoadToType,connectionOnly,EnumField,Fine,false
 Excel.LoadToType,pivotChart,EnumField,Fine,false
 Excel.LoadToType,pivotTable,EnumField,Fine,false
 Excel.LoadToType,table,EnumField,Fine,false
+Excel.LocalImageCellValue,N/A,Class,Good,false
+Excel.LocalImageCellValue,altText,Property,Good,false
+Excel.LocalImageCellValue,attribution,Property,Good,false
+Excel.LocalImageCellValue,basicType,Property,Good,false
+Excel.LocalImageCellValue,basicValue,Property,Good,false
+Excel.LocalImageCellValue,image,Property,Good,false
+Excel.LocalImageCellValue,provider,Property,Good,false
+Excel.LocalImageCellValue,type,Property,Good,false
+Excel.LocalImageCellValueCacheId,N/A,Class,Good,false
+Excel.LocalImageCellValueCacheId,cacheUid,Property,Good,false
 Excel.NamedItem,N/A,Class,Good,false
 Excel.NamedItem,arrayValues,Property,Good,false
 Excel.NamedItem,comment,Property,Good,false

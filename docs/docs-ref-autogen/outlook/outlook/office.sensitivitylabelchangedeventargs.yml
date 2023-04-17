@@ -6,7 +6,16 @@ fullName: Office.SensitivityLabelChangedEventArgs
 summary: >-
   Provides the change status of the sensitivity label applied to a message or appointment in compose mode. This
   information is provided when the `Office.EventType.SensitivityLabelChanged` event is raised.
-remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
+  or appointment in compose mode
+  (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 isPreview: true
 isDeprecated: false
 type: interface

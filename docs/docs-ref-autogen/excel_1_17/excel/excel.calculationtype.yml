@@ -1,0 +1,53 @@
+### YamlMime:TSEnum
+name: Excel.CalculationType
+uid: 'excel!Excel.CalculationType:enum'
+package: excel!
+fullName: Excel.CalculationType
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-calculation.yaml
+
+  await Excel.run(async (context) => {
+    context.application.calculate(Excel.CalculationType.recalculate);
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: full
+    uid: 'excel!Excel.CalculationType.full:member'
+    package: excel!
+    summary: |-
+      This will mark all cells as dirty and then recalculate them.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Full"'
+  - name: fullRebuild
+    uid: 'excel!Excel.CalculationType.fullRebuild:member'
+    package: excel!
+    summary: |-
+      This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"FullRebuild"'
+  - name: recalculate
+    uid: 'excel!Excel.CalculationType.recalculate:member'
+    package: excel!
+    summary: >-
+      Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells
+      programmatically marked as dirty.
+
+
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Recalculate"'

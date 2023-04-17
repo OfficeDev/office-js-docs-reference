@@ -15399,6 +15399,7 @@ export declare namespace Excel {
         export interface NumberFormatInfoData {
             
             
+            
         }
         /** An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`. */
         export interface DatetimeFormatInfoData {
