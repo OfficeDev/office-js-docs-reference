@@ -38,6 +38,8 @@ items:
                 uid: 'excel!Excel.ArrowheadWidth:enum'
               - name: AutoFillType
                 uid: 'excel!Excel.AutoFillType:enum'
+              - name: Base64EncodingType
+                uid: 'excel!Excel.Base64EncodingType:enum'
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
               - name: BlockedErrorCellValueSubType
@@ -439,6 +441,8 @@ items:
             uid: 'excel!Excel.ArrayCellValue:interface'
           - name: AutoFilter
             uid: 'excel!Excel.AutoFilter:class'
+          - name: Base64EncodedImage
+            uid: 'excel!Excel.Base64EncodedImage:interface'
           - name: BasicDataValidation
             uid: 'excel!Excel.BasicDataValidation:interface'
           - name: Binding
@@ -817,6 +821,10 @@ items:
             uid: 'excel!Excel.LinkedWorkbookCollection:class'
           - name: ListDataValidation
             uid: 'excel!Excel.ListDataValidation:interface'
+          - name: LocalImageCellValue
+            uid: 'excel!Excel.LocalImageCellValue:interface'
+          - name: LocalImageCellValueCacheId
+            uid: 'excel!Excel.LocalImageCellValueCacheId:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemArrayValues
@@ -1588,6 +1596,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.17 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.16 requirement set
             href: ../../requirement-sets/excel/excel-api-1-16-requirement-set.md

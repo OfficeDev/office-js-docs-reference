@@ -1565,7 +1565,7 @@ events:
     package: excel!
     fullName: onNameChanged
     summary: Occurs when the worksheet name is changed.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1790,7 +1790,7 @@ events:
     package: excel!
     fullName: onVisibilityChanged
     summary: Occurs when the worksheet visibility is changed.
-    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:

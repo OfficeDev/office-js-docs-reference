@@ -4573,6 +4573,13 @@ export declare namespace Excel {
         */
         linkedEntity = "LinkedEntity",
         /**
+        * Represents a `LocalImageCellValue`.
+        *
+        * @remarks
+        * [Api set: ExcelApi 1.16]
+        */
+        localImage = "LocalImage",
+        /**
         * Represents a `ReferenceCellValue`.
         *
         * @remarks
@@ -5428,7 +5435,14 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        dataProviderError = "DataProviderError"
+        dataProviderError = "DataProviderError",
+        /**
+        * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+        *
+        * @remarks
+        * [Api set: 1.16]
+        */
+        richValueRelMissingFilePart = "RichValueRelMissingFilePart"
     }
     /**
     * Represents the value of a cell containing a #FIELD! error.
@@ -5473,7 +5487,7 @@ export declare namespace Excel {
         * @remarks
         * [Api set: ExcelApi 1.16]
         */
-        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError";
+        errorSubType?: FieldErrorCellValueSubType | "Unknown" | "WebImageMissingFilePart" | "DataProviderError" | "RichValueRelMissingFilePart";
         /**
         * Represents the field which was not found by FIELDVALUE.
         *
@@ -21104,6 +21118,7 @@ export declare namespace Excel {
     export class NumberFormatInfo extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
+        
         /**
          * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
          *
@@ -24054,6 +24069,14 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalFormat): void;
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Deletes this conditional format.
          *
@@ -24083,6 +24106,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getRanges(): Excel.RangeAreas;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -25087,6 +25111,7 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalRangeFormat): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -49172,6 +49197,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
+            
             /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
@@ -57732,6 +57758,7 @@ export declare namespace Excel {
               Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
              */
             $all?: boolean;
+            
             /**
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *

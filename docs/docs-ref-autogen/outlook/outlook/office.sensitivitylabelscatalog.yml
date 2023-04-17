@@ -19,6 +19,14 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
+  or appointment in compose mode
+  (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 isPreview: true
 isDeprecated: false
 type: interface
@@ -42,8 +50,16 @@ methods:
       Compose
 
 
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,8 +102,16 @@ methods:
       Compose
 
 
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
       #### Examples
@@ -155,6 +179,14 @@ methods:
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
+
+
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -198,6 +230,14 @@ methods:
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
+
+
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
       #### Examples

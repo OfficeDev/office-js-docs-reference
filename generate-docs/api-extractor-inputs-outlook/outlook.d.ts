@@ -1530,7 +1530,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @beta
          */
         sensitivityLabel: SensitivityLabel;
@@ -6855,7 +6860,12 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @beta
          */
         sensitivityLabel: SensitivityLabel;
@@ -10176,7 +10186,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-     * 
+     *
+     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+     *
+     * To learn more about how to manage sensitivity labels in your add-in, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+     *
      * @beta
      */
     export interface SensitivityLabel {
@@ -10189,13 +10204,18 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the
          *                 `asyncResult.value` property.
-         * 
+         *
          * @beta
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
@@ -10208,11 +10228,16 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the
          *                 `asyncResult.value` property.
-         * 
+         *
          * @beta
          */
         getAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
@@ -10225,8 +10250,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
          * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
          * 
          * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's
          *                         unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.
@@ -10234,7 +10264,7 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object.
-         * 
+         *
          * @beta
          */
         setAsync(sensitivityLabel: string | SensitivityLabelDetails, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
@@ -10247,8 +10277,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
          * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
          * 
          * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's
          *                         unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.
@@ -10265,7 +10300,12 @@ export declare namespace Office {
      * 
      * @remarks
      * [Api set: Mailbox preview]
-     * 
+     *
+     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+     *
+     * To learn more about how to manage sensitivity labels in your add-in, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+     *
      * @beta
      */
     export interface SensitivityLabelChangedEventArgs {
@@ -10288,6 +10328,11 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+     *
+     * To learn more about how to manage sensitivity labels in your add-in, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
      * 
      * @beta
      */
@@ -10334,7 +10379,12 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-     * 
+     *
+     * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+     *
+     * To learn more about how to manage sensitivity labels in your add-in, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+     *
      * @beta
      */
     export interface SensitivityLabelsCatalog {
@@ -10347,9 +10397,14 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
          * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.
-         * 
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -10368,8 +10423,13 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
          * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
          * 
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the
@@ -10390,7 +10450,12 @@ export declare namespace Office {
          * 
          * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see
          * {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
@@ -10408,10 +10473,15 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
+         *
          * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see
          * {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.
-         * 
+         *
+         * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+         *
+         * To learn more about how to manage sensitivity labels in your add-in, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.
+         *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
          *                 which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.
          * 

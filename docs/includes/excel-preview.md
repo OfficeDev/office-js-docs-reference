@@ -1,5 +1,8 @@
 | Class | Fields | Description |
 |:---|:---|:---|
+|[Application](/javascript/api/excel/excel.application)|[formatStaleValues](/javascript/api/excel/excel.application#excel-excel-application-formatstalevalues-member)|Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled.|
+|[Base64EncodedImage](/javascript/api/excel/excel.base64encodedimage)|[data](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-data-member)|The base64 string encoding.|
+||[type](/javascript/api/excel/excel.base64encodedimage#excel-excel-base64encodedimage-type-member)|The file type of the encoded image.|
 |[Chart](/javascript/api/excel/excel.chart)|[getDataRange()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarange-member(1))|Gets the data source of the whole chart.|
 ||[getDataRangeOrNullObject()](/javascript/api/excel/excel.chart#excel-excel-chart-getdatarangeornullobject-member(1))|Gets the data source of the whole chart.|
 |[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.comment#excel-excel-comment-assigntask-member(1))|Assigns the task attached to the comment to the given user as an assignee.|
@@ -8,16 +11,6 @@
 |[CommentReply](/javascript/api/excel/excel.commentreply)|[assignTask(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-assigntask-member(1))|Assigns the task attached to the comment to the given user as the sole assignee.|
 ||[getTask()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettask-member(1))|Gets the task associated with this comment reply's thread.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#excel-excel-commentreply-gettaskornullobject-member(1))|Gets the task associated with this comment reply's thread.|
-|[ConditionalFormat](/javascript/api/excel/excel.conditionalformat)|[changeRuleToCellValue(properties: Excel.ConditionalCellValueRule)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocellvalue-member(1))|Change the conditional format rule type to cell value.|
-||[changeRuleToColorScale()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocolorscale-member(1))|Change the conditional format rule type to color scale.|
-||[changeRuleToContainsText(properties: Excel.ConditionalTextComparisonRule)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocontainstext-member(1))|Change the conditional format rule type to text comparison.|
-||[changeRuleToCustom(formula: string)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletocustom-member(1))|Change the conditional format rule type to custom.|
-||[changeRuleToDataBar()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletodatabar-member(1))|Change the conditional format rule type to data bar.|
-||[changeRuleToIconSet()](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletoiconset-member(1))|Change the conditional format rule type to icon set.|
-||[changeRuleToPresetCriteria(properties: Excel.ConditionalPresetCriteriaRule)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletopresetcriteria-member(1))|Change the conditional format rule type to preset criteria.|
-||[changeRuleToTopBottom(properties: Excel.ConditionalTopBottomRule)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-changeruletotopbottom-member(1))|Change the conditional format rule type to top/bottom.|
-||[setRanges(ranges: Range \| RangeAreas \| string)](/javascript/api/excel/excel.conditionalformat#excel-excel-conditionalformat-setranges-member(1))|Set the ranges that the conditonal format rule is applied to.|
-|[ConditionalRangeFormat](/javascript/api/excel/excel.conditionalrangeformat)|[clearFormat()](/javascript/api/excel/excel.conditionalrangeformat#excel-excel-conditionalrangeformat-clearformat-member(1))|Remove the format properties from a conditional format rule.|
 |[DocumentTask](/javascript/api/excel/excel.documenttask)|[assign(assignee: Excel.EmailIdentity)](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assign-member(1))|Adds the given user to the list of assignees attached to the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-assignees-member)|Returns a collection of assignees of the task.|
 ||[changes](/javascript/api/excel/excel.documenttask#excel-excel-documenttask-changes-member)|Gets the change records of the task.|
@@ -97,8 +90,15 @@
 ||[getItemOrNullObject(key: number)](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-getitemornullobject-member(1))|Gets a linked data type by ID.|
 ||[items](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-items-member)|Gets the loaded child items in this collection.|
 ||[requestRefreshAll()](/javascript/api/excel/excel.linkeddatatypecollection#excel-excel-linkeddatatypecollection-requestrefreshall-member(1))|Makes a request to refresh all the linked data types in the collection.|
+|[LocalImageCellValue](/javascript/api/excel/excel.localimagecellvalue)|[altText](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-alttext-member)|Represents the alternate text used in accessibility scenarios to describe what the image represents.|
+||[attribution](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-attribution-member)|Represents attribution information to describe the source and license requirements for this image.|
+||[basicType](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-basictype-member)|Represents the value that would be returned by `Range.valueTypes` for a cell with this value.|
+||[basicValue](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-basicvalue-member)|Represents the value that would be returned by `Range.values` for a cell with this value.|
+||[image](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-image-member)|Represents the image itself, either cached or encoded.|
+||[provider](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-provider-member)|Represents information that describes the entity or individual who provided the image.|
+||[type](/javascript/api/excel/excel.localimagecellvalue#excel-excel-localimagecellvalue-type-member)|Represents the type of this cell value.|
+|[LocalImageCellValueCacheId](/javascript/api/excel/excel.localimagecellvaluecacheid)|[cacheUid](/javascript/api/excel/excel.localimagecellvaluecacheid#excel-excel-localimagecellvaluecacheid-cacheuid-member)|Represents the image's UID as it appears in the cache.|
 |[NamedSheetViewCollection](/javascript/api/excel/excel.namedsheetviewcollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.namedsheetviewcollection#excel-excel-namedsheetviewcollection-getitemornullobject-member(1))|Gets a sheet view using its name.|
-|[NumberFormatInfo](/javascript/api/excel/excel.numberformatinfo)|[currencySymbol](/javascript/api/excel/excel.numberformatinfo#excel-excel-numberformatinfo-currencysymbol-member)|Gets the currency symbol for currency values.|
 |[PivotLayout](/javascript/api/excel/excel.pivotlayout)|[getCell(dataHierarchy: DataPivotHierarchy \| string, rowItems: Array<PivotItem \| string>, columnItems: Array<PivotItem \| string>)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-getcell-member(1))|Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies.|
 ||[pivotStyle](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-pivotstyle-member)|The style applied to the PivotTable.|
 ||[setStyle(style: string \| PivotTableStyle \| BuiltInPivotTableStyle)](/javascript/api/excel/excel.pivotlayout#excel-excel-pivotlayout-setstyle-member(1))|Sets the style applied to the PivotTable.|
