@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/12/2023
+ms.date: 04/17/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -58,6 +58,20 @@ Added a new property that represents the sensitivity of an appointment.
 #### [Office.MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true)
 
 Added a new enum `AppointmentSensitivityType` that represents the sensitivity options available on an appointment.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Close and discard a message in compose
+
+#### [Office.context.mailbox.item.closeAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
+
+Added method to close a current message being composed with the option to save it as a draft or discard unsaved changes.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
