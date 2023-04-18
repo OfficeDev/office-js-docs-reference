@@ -469,6 +469,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "excel-js-1.17",
+        "src": "docs-ref-autogen/excel_1_17",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "excel-js-1.17",
+        "src": "docs-ref-autogen/excel_1_17",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "excel-js-online",
         "src": "docs-ref-autogen/excel_online",
         "dest": "api/office-js-docs-reference"
@@ -801,6 +813,10 @@
         "dest": "excel-js-1.16",
         "moniker_range": "excel-js-1.16"
       },
+      "excel-js-1.17": {
+        "dest": "excel-js-1.17",
+        "moniker_range": "excel-js-1.17"
+      },      
       "excel-js-online": {
         "dest": "excel-js-online",
         "moniker_range": "excel-js-online"
@@ -962,6 +978,8 @@
         "docs-ref-autogen/excel_1_15/excel/**": ["excel 1.15"],
         "docs-ref-autogen/excel_1_16/**": ["excel 1.16"],
         "docs-ref-autogen/excel_1_16/excel/**": ["excel 1.16"],
+        "docs-ref-autogen/excel_1_17/**": ["excel 1.17"],
+        "docs-ref-autogen/excel_1_17/excel/**": ["excel 1.17"],
         "docs-ref-autogen/excel_online/**": ["excel online"],
         "docs-ref-autogen/excel_online/excel/**": ["excel online"],
         "docs-ref-autogen/office/**": ["common preview"],
@@ -1049,6 +1067,7 @@
         "docs-ref-autogen/excel_1_14/**": "excel",
         "docs-ref-autogen/excel_1_15/**": "excel",
         "docs-ref-autogen/excel_1_16/**": "excel",
+        "docs-ref-autogen/excel_1_17/**": "excel",
         "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/excel_1_1/excel/**": "excel",
         "docs-ref-autogen/excel_1_2/excel/**": "excel",
@@ -1066,6 +1085,7 @@
         "docs-ref-autogen/excel_1_14/excel/**": "excel",
         "docs-ref-autogen/excel_1_15/excel/**": "excel",
         "docs-ref-autogen/excel_1_16/excel/**": "excel",
+        "docs-ref-autogen/excel_1_17/excel/**": "excel",
         "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",

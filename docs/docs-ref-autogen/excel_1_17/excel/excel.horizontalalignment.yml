@@ -1,0 +1,77 @@
+### YamlMime:TSEnum
+name: Excel.HorizontalAlignment
+uid: 'excel!Excel.HorizontalAlignment:enum'
+package: excel!
+fullName: Excel.HorizontalAlignment
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
+
+  await Excel.run(async (context) => {
+    // Retrieve the worksheet and the table in that worksheet.
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+    const tableRange = sheet.getRange("B2:E6");
+
+    // Create a merged range in the first row of the table.
+    const chartTitle = tableRange.getRow(0);
+    chartTitle.merge(true);
+
+    // Format the merged range.
+    chartTitle.format.horizontalAlignment = "Center";
+
+    await context.sync();
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'excel!Excel.HorizontalAlignment.center:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Center"'
+  - name: centerAcrossSelection
+    uid: 'excel!Excel.HorizontalAlignment.centerAcrossSelection:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"CenterAcrossSelection"'
+  - name: distributed
+    uid: 'excel!Excel.HorizontalAlignment.distributed:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Distributed"'
+  - name: fill
+    uid: 'excel!Excel.HorizontalAlignment.fill:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Fill"'
+  - name: general
+    uid: 'excel!Excel.HorizontalAlignment.general:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"General"'
+  - name: justify
+    uid: 'excel!Excel.HorizontalAlignment.justify:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Justify"'
+  - name: left
+    uid: 'excel!Excel.HorizontalAlignment.left:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Left"'
+  - name: right
+    uid: 'excel!Excel.HorizontalAlignment.right:member'
+    package: excel!
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    value: '"Right"'

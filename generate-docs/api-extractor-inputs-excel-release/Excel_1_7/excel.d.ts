@@ -8932,6 +8932,14 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalFormat): void;
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Deletes this conditional format.
          *
@@ -8954,6 +8962,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         getRangeOrNullObject(): Excel.Range;
+        
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -9959,6 +9968,7 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalRangeFormat): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -23400,6 +23410,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
+            
             
             
         }

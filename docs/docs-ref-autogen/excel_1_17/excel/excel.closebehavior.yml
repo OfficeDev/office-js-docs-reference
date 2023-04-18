@@ -1,0 +1,42 @@
+### YamlMime:TSEnum
+name: Excel.CloseBehavior
+uid: 'excel!Excel.CloseBehavior:enum'
+package: excel!
+fullName: Excel.CloseBehavior
+summary: Specifies the close behavior for `Workbook.close`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+  await Excel.run(async (context) => {
+      context.workbook.close(Excel.CloseBehavior.skipSave);
+  });
+
+  ```
+isPreview: false
+isDeprecated: false
+fields:
+  - name: save
+    uid: 'excel!Excel.CloseBehavior.save:member'
+    package: excel!
+    summary: |-
+      Save the possible changes before closing the workbook.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"Save"'
+  - name: skipSave
+    uid: 'excel!Excel.CloseBehavior.skipSave:member'
+    package: excel!
+    summary: |-
+      Discard the possible changes when closing the workbook.
+
+      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"SkipSave"'

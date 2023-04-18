@@ -23,6 +23,18 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: currencySymbol
+    uid: 'excel!Excel.NumberFormatInfo#currencySymbol:member'
+    package: excel!
+    fullName: currencySymbol
+    summary: Gets the currency symbol for currency values. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly currencySymbol: string;'
+      return:
+        type: string
   - name: numberDecimalSeparator
     uid: 'excel!Excel.NumberFormatInfo#numberDecimalSeparator:member'
     package: excel!

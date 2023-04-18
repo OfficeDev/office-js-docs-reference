@@ -16,6 +16,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataProviderError"'
+  - name: richValueRelMissingFilePart
+    uid: 'excel!Excel.FieldErrorCellValueSubType.richValueRelMissingFilePart:member'
+    package: excel!
+    summary: >-
+      An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package.
+      Displays as error type \#FIELD! in Excel.
+
+
+      * \[ [API set: 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"RichValueRelMissingFilePart"'
   - name: unknown
     uid: 'excel!Excel.FieldErrorCellValueSubType.unknown:member'
     package: excel!
