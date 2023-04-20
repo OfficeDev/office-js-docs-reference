@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/18/2023
+ms.date: 04/21/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -80,6 +80,20 @@ Added a new property that returns an object that allows you to manage the delive
 Added a new object that allows you to manage the delivery date and time of a message in compose mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+
+<br>
+
+---
+
+---
+
+### Enable your add-in without the Reading Pane enabled or a message selected
+
+#### [SupportsNoItemContext (preview)](../../../manifest/action.md#supportsnoitemcontext-preview)
+
+Added a new XML manifest element to allow add-ins to activate without the Reading Pane enabled or a message first selected. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/contextless).
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
 
