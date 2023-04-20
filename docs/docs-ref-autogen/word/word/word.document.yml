@@ -210,8 +210,8 @@ methods:
     package: word!
     fullName: 'addStyle(name, type)'
     summary: Adds a style into the document by name and type.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'addStyle(name: string, type: Word.StyleType): Word.Style;'
@@ -230,8 +230,8 @@ methods:
     package: word!
     fullName: 'addStyle(name, typeString)'
     summary: Adds a style into the document by name and type.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;'
@@ -250,8 +250,8 @@ methods:
     package: word!
     fullName: close(closeBehavior)
     summary: Close current document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'close(closeBehavior?: Word.CloseBehavior): void;'
@@ -267,8 +267,8 @@ methods:
     package: word!
     fullName: close(closeBehaviorString)
     summary: Close current document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
@@ -344,8 +344,8 @@ methods:
       thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
@@ -361,7 +361,7 @@ methods:
     package: word!
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -374,7 +374,7 @@ methods:
     package: word!
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -426,8 +426,8 @@ methods:
     package: word!
     fullName: getStyles()
     summary: Gets a StyleCollection object that represents the whole style set of the document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getStyles(): Word.StyleCollection;'
@@ -441,8 +441,8 @@ methods:
     summary: >-
       Inserts a document into the target document at a specific location with additional properties. Headers, footers,
       watermarks, and other section properties are copied by default.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -451,7 +451,7 @@ methods:
         Word.SectionCollection;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
@@ -567,6 +567,8 @@ methods:
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+
       #### Examples
 
       ```typescript
@@ -615,7 +617,10 @@ methods:
     package: word!
     fullName: 'save(saveBehaviorString, fileName)'
     summary: Save the document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -774,13 +779,13 @@ events:
     summary: >-
       Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
       properties.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

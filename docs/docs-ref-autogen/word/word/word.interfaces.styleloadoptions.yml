@@ -28,8 +28,8 @@ properties:
     package: word!
     fullName: baseStyle
     summary: Gets the name of an existing style to use as the base formatting of another style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'baseStyle?: boolean;'
@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: builtIn
     summary: Gets whether the specified style is a built-in style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'builtIn?: boolean;'
@@ -64,8 +64,8 @@ properties:
     package: word!
     fullName: font
     summary: Gets a font object that represents the character formatting of the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
@@ -78,8 +78,8 @@ properties:
     summary: >-
       Gets whether the specified style is a built-in style that has been modified or applied in the document or a new
       style that has been created in the document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'inUse?: boolean;'
@@ -90,8 +90,8 @@ properties:
     package: word!
     fullName: linked
     summary: Gets whether a style is a linked style that can be used for both paragraph and character formatting.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'linked?: boolean;'
@@ -114,8 +114,8 @@ properties:
     package: word!
     fullName: nameLocal
     summary: Gets the name of a style in the language of the user.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'nameLocal?: boolean;'
@@ -128,8 +128,8 @@ properties:
     summary: >-
       Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
       formatted with the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'nextParagraphStyle?: boolean;'
@@ -140,8 +140,8 @@ properties:
     package: word!
     fullName: paragraphFormat
     summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;'
@@ -152,8 +152,8 @@ properties:
     package: word!
     fullName: priority
     summary: Gets or sets the priority.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'priority?: boolean;'
@@ -164,8 +164,8 @@ properties:
     package: word!
     fullName: quickStyle
     summary: Gets or sets whether the style corresponds to an available quick style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'quickStyle?: boolean;'
@@ -176,8 +176,8 @@ properties:
     package: word!
     fullName: type
     summary: Gets the style type.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: boolean;'
@@ -190,8 +190,8 @@ properties:
     summary: >-
       Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles
       task pane in Microsoft Word after it's used in the document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'unhideWhenUsed?: boolean;'
@@ -204,8 +204,8 @@ properties:
     summary: >-
       Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
       task pane.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'visibility?: boolean;'

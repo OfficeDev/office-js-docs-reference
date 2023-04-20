@@ -201,7 +201,7 @@ methods:
     uid: 'word!Word.List#getLevelPicture:member(1)'
     package: word!
     fullName: getLevelPicture(level)
-    summary: Gets the base64 encoded string representation of the picture at the specified level in the list.
+    summary: Gets the Base64-encoded string representation of the picture at the specified level in the list.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -678,7 +678,7 @@ methods:
           description: Required. The level in the list.
           type: number
         - id: base64EncodedImage
-          description: 'Optional. The base64 encoded image to be set. If not given, the default picture is set.'
+          description: 'Optional. The Base64-encoded image to be set. If not given, the default picture is set.'
           type: string
       return:
         type: void

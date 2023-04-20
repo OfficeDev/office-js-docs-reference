@@ -13,9 +13,12 @@ properties:
     uid: 'word!Word.Field#code:member'
     package: word!
     fullName: code
-    summary: Gets the field's code instruction.
+    summary: Gets or sets the field's code instruction.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
 
 
       #### Examples
@@ -46,7 +49,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly code: string;'
+      content: 'code: string;'
       return:
         type: string
   - name: context

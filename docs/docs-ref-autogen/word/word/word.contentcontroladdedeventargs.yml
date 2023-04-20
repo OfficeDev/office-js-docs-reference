@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Word.ContentControlAddedEventArgs
+uid: 'word!Word.ContentControlAddedEventArgs:interface'
+package: word!
+fullName: Word.ContentControlAddedEventArgs
+summary: Provides information about the content control that raised contentControlAdded event.
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eventType
+    uid: 'word!Word.ContentControlAddedEventArgs#eventType:member'
+    package: word!
+    fullName: eventType
+    summary: The event type. See Word.EventType for details.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
+        | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited"
+  - name: ids
+    uid: 'word!Word.ContentControlAddedEventArgs#ids:member'
+    package: word!
+    fullName: ids
+    summary: Gets the content control IDs.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ids: number[];'
+      return:
+        type: 'number[]'
+  - name: source
+    uid: 'word!Word.ContentControlAddedEventArgs#source:member'
+    package: word!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'

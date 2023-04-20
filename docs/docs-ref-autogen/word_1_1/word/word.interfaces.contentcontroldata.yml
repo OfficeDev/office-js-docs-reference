@@ -206,7 +206,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlData#type:member'
     package: word!
     fullName: type
-    summary: Gets the content control type. Only rich text content controls are supported currently.
+    summary: Gets the content control type. Only rich text and plain text content controls are supported currently.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

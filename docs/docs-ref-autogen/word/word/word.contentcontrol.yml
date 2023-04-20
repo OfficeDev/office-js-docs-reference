@@ -153,7 +153,7 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the content control.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +189,7 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the content control.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -744,8 +744,8 @@ methods:
       exception will be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class)
       that aren't relevant for the specific type. With time, additional types of content controls may be supported.
       Therefore, your add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
@@ -1001,7 +1001,7 @@ methods:
         | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: >-
@@ -1086,7 +1086,7 @@ methods:
         Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted in the content control.
+          description: Required. The Base64-encoded image to be inserted in the content control.
           type: string
         - id: insertLocation
           description: >-
@@ -1781,15 +1781,15 @@ events:
     summary: >-
       Occurs when data within the content control are changed. To get the new text, load this content control in the
       handler. To get the old text, do not load it.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlDataChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlDataChangedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'word!Word.ContentControl#onDeleted:member'
     package: word!
@@ -1798,7 +1798,7 @@ events:
       Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't
       be able to get its original properties.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -1840,54 +1840,54 @@ events:
       }
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlDeletedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlDeletedEventArgs:interface" />&gt;
   - name: onEntered
     uid: 'word!Word.ContentControl#onEntered:member'
     package: word!
     fullName: onEntered
     summary: Occurs when the content control is entered.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEnteredEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlEnteredEventArgs:interface" />&gt;
   - name: onExited
     uid: 'word!Word.ContentControl#onExited:member'
     package: word!
     fullName: onExited
     summary: 'Occurs when the content control is exited, for example, when the cursor leaves the content control.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlExitedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlExitedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'word!Word.ContentControl#onSelectionChanged:member'
     package: word!
     fullName: onSelectionChanged
     summary: Occurs when selection within the content control is changed.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlSelectionChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlSelectionChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

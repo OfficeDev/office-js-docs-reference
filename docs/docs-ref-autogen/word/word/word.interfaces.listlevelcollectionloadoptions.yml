@@ -83,7 +83,7 @@ properties:
     fullName: numberPosition
     summary: >-
       For EACH ITEM in the collection: Gets or sets the position (in points) of the number or bullet for the specified
-      list level object
+      list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -95,7 +95,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#numberStyle:member'
     package: word!
     fullName: numberStyle
-    summary: 'For EACH ITEM in the collection: Gets or sets the number style for the list level object'
+    summary: 'For EACH ITEM in the collection: Gets or sets the number style for the list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -109,7 +109,7 @@ properties:
     fullName: resetOnHigher
     summary: >-
       For EACH ITEM in the collection: Gets or sets the list level that must appear before the specified list level
-      restarts numbering at 1
+      restarts numbering at 1.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -121,7 +121,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#startAt:member'
     package: word!
     fullName: startAt
-    summary: 'For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object'
+    summary: 'For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -133,7 +133,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#tabPosition:member'
     package: word!
     fullName: tabPosition
-    summary: 'For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object'
+    summary: 'For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -147,7 +147,7 @@ properties:
     fullName: textPosition
     summary: >-
       For EACH ITEM in the collection: Gets or sets the position (in points) for the second line of wrapping text for
-      the specified list level object
+      the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

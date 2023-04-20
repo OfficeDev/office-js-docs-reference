@@ -27,9 +27,9 @@ properties:
     fullName: data
     summary: >-
       Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
-      exception when setting it.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'data?: string;'
@@ -40,8 +40,8 @@ properties:
     package: word!
     fullName: locked
     summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'locked?: boolean;'

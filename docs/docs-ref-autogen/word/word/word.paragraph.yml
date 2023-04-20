@@ -71,7 +71,7 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the paragraph.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,7 +121,7 @@ properties:
     package: word!
     fullName: footnotes
     summary: Gets the collection of footnotes in the paragraph.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -501,7 +501,49 @@ properties:
     summary: >-
       Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      await Word.run(async (context) => {
+          const paragraph = context.document.body.insertParagraph("Timeline", "End");
+          paragraph.styleBuiltIn = "Heading2";
+          const paragraph2 = context.document.body.insertParagraph("The Services shall commence on July 31, 2015, and shall continue through July 29, 2015.", "End");
+          paragraph2.styleBuiltIn = "Normal";
+          const paragraph3 = context.document.body.insertParagraph("Project Costs by Phase", "End");
+          paragraph3.styleBuiltIn = "Heading2";
+          // Note a content control with the title of "ProjectCosts" is added. Content will be replaced later.
+          const paragraph4 = context.document.body.insertParagraph("<Add Project Costs Here>", "End");
+          paragraph4.styleBuiltIn = "Normal";
+          paragraph4.font.highlightColor = "#FFFF00";
+          const contentControl = paragraph4.insertContentControl();
+          contentControl.title = "ProjectCosts";
+          const paragraph5 = context.document.body.insertParagraph("Project Team", "End");
+          paragraph5.styleBuiltIn = "Heading2";
+          paragraph5.font.highlightColor = "#FFFFFF";
+          const paragraph6 = context.document.body.insertParagraph("Terms of Work", "End");
+          paragraph6.styleBuiltIn = "Heading1";
+          const paragraph7 = context.document.body.insertParagraph("Contractor shall provide the Services and Deliverable(s) as follows:", "End");
+          paragraph7.styleBuiltIn = "Normal";
+          const paragraph8 = context.document.body.insertParagraph("Out-of-Pocket Expenses / Invoice Procedures", "End");
+          paragraph8.styleBuiltIn = "Heading2";
+          const paragraph9 = context.document.body.insertParagraph("Client will be invoiced monthly for the consulting services and T&L expenses. Standard Contractor invoicing is assumed to be acceptable. Invoices are due upon receipt. client will be invoiced all costs associated with out-of-pocket expenses (including, without limitation, costs and expenses associated with meals, lodging, local transportation and any other applicable business expenses) listed on the invoice as a separate line item. Reimbursement for out-of-pocket expenses in connection with performance of this SOW, when authorized and up to the limits set forth in this SOW, shall be in accordance with Client's then-current published policies governing travel and associated business expenses, which information shall be provided by the Client Project Manager.", "End");
+          paragraph9.styleBuiltIn = "Normal";
+          // Insert a page break at the end of the document.
+          context.document.body.insertBreak("Page", "End");
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -755,8 +797,8 @@ methods:
       thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
@@ -1149,6 +1191,8 @@ methods:
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+
       #### Examples
 
       ```typescript
@@ -1207,7 +1251,7 @@ methods:
         | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
@@ -1318,7 +1362,7 @@ methods:
         Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted.
+          description: Required. The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'

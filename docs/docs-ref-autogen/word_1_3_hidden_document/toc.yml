@@ -29,6 +29,8 @@ items:
                 uid: 'word!Word.BorderType:enum'
               - name: BreakType
                 uid: 'word!Word.BreakType:enum'
+              - name: BuiltInStyleName
+                uid: 'word!Word.BuiltInStyleName:enum'
               - name: CellPaddingLocation
                 uid: 'word!Word.CellPaddingLocation:enum'
               - name: ContentControlAppearance
@@ -53,10 +55,10 @@ items:
                 uid: 'word!Word.LocationRelation:enum'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
+              - name: SaveBehavior
+                uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
-              - name: Style
-                uid: 'word!Word.Style:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
@@ -107,6 +109,8 @@ items:
             uid: 'word!Word.Section:class'
           - name: SectionCollection
             uid: 'word!Word.SectionCollection:class'
+          - name: Style
+            uid: 'word!Word.Style:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder
@@ -890,6 +894,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.5 requirement set
+            href: ../../requirement-sets/word/word-api-1-5-requirement-set.md
             displayName: Word
           - name: WordApi 1.4 requirement set
             href: ../../requirement-sets/word/word-api-1-4-requirement-set.md

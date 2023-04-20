@@ -295,16 +295,49 @@ methods:
       return:
         type: void
         description: ''
-  - name: save()
+  - name: 'save(saveBehavior, fileName)'
     uid: 'word!Word.DocumentCreated#save:member(1)'
     package: word!
-    fullName: save()
-    summary: Saves the document. This uses the Word default file naming convention if the document has not been saved before.
-    remarks: '\[ [API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    fullName: 'save(saveBehavior, fileName)'
+    summary: Save the document.
+    remarks: |-
+      \[ [API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'save(): void;'
+      content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
+      parameters:
+        - id: saveBehavior
+          description: Optional. DocumentCreated only supports 'Save'.
+          type: '<xref uid="word!Word.SaveBehavior:enum" />'
+        - id: fileName
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'save(saveBehaviorString, fileName)'
+    uid: 'word!Word.DocumentCreated#save:member(2)'
+    package: word!
+    fullName: 'save(saveBehaviorString, fileName)'
+    summary: Save the document.
+    remarks: |-
+      \[ [API set: WordApiHiddenDocument 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApiHiddenDocument 1.5.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
+      parameters:
+        - id: saveBehaviorString
+          description: Optional. DocumentCreated only supports 'Save'.
+          type: '"Save" | "Prompt"'
+        - id: fileName
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          type: string
       return:
         type: void
         description: ''

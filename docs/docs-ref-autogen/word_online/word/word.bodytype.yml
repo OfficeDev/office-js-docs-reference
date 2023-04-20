@@ -41,7 +41,7 @@ fields:
   - name: endnote
     uid: 'word!Word.BodyType.endnote:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Endnote"'
   - name: footer
     uid: 'word!Word.BodyType.footer:member'
@@ -51,7 +51,7 @@ fields:
   - name: footnote
     uid: 'word!Word.BodyType.footnote:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Footnote"'
   - name: header
     uid: 'word!Word.BodyType.header:member'
@@ -66,7 +66,7 @@ fields:
   - name: noteItem
     uid: 'word!Word.BodyType.noteItem:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"NoteItem"'
   - name: section
     uid: 'word!Word.BodyType.section:member'

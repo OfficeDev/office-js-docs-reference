@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
   bounded and potentially labeled regions in a document that serve as containers for specific types of content.
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
-  only rich text content controls are supported.
+  only rich text and plain text content controls are supported.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -40,6 +40,23 @@ properties:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />[]'
 methods:
+  - name: getByChangeTrackingStates(changeTrackingStates)
+    uid: 'word!Word.ContentControlCollection#getByChangeTrackingStates:member(1)'
+    package: word!
+    fullName: getByChangeTrackingStates(changeTrackingStates)
+    summary: Gets the content controls that have the specified tracking state.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getByChangeTrackingStates(changeTrackingStates: Word.ChangeTrackingState[]): Word.ContentControlCollection;'
+      parameters:
+        - id: changeTrackingStates
+          description: Required. An array of content control change tracking states.
+          type: '<xref uid="word!Word.ChangeTrackingState:enum" />[]'
+      return:
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+        description: ''
   - name: getById(id)
     uid: 'word!Word.ContentControlCollection#getById:member(1)'
     package: word!
@@ -218,7 +235,7 @@ methods:
     uid: 'word!Word.ContentControlCollection#getByTypes:member(1)'
     package: word!
     fullName: getByTypes(types)
-    summary: Gets the content controls that have the specified types and/or subtypes.
+    summary: Gets the content controls that have the specified types.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -226,7 +243,7 @@ methods:
       content: 'getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;'
       parameters:
         - id: types
-          description: Required. An array of content control types and/or subtypes.
+          description: Required. An array of content control types.
           type: '<xref uid="word!Word.ContentControlType:enum" />[]'
       return:
         type: '<xref uid="word!Word.ContentControlCollection:class" />'
