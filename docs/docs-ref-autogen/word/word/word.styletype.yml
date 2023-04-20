@@ -20,7 +20,7 @@ fields:
     uid: 'word!Word.StyleType.list:member'
     package: word!
     summary: |-
-      Represents that the style is a list style.
+      Represents that the style is a list style. Currently supported on desktop.
 
       * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"List"'

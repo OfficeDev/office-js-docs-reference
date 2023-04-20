@@ -7,7 +7,7 @@
 ||[getOoxml()](/javascript/api/word/word.body#word-word-body-getooxml-member(1))|Gets the OOXML (Office Open XML) representation of the body object.|
 ||[inlinePictures](/javascript/api/word/word.body#word-word-body-inlinepictures-member)|Gets the collection of InlinePicture objects in the body.|
 ||[insertBreak(breakType: Word.BreakType \| "Page" \| "Next" \| "SectionNext" \| "SectionContinuous" \| "SectionEven" \| "SectionOdd" \| "Line", insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End")](/javascript/api/word/word.body#word-word-body-insertbreak-member(1))|Inserts a break at the specified location in the main document.|
-||[insertContentControl()](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the body object with a Rich Text content control.|
+||[insertContentControl()](/javascript/api/word/word.body#word-word-body-insertcontentcontrol-member(1))|Wraps the Body object with a Rich Text content control.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.body#word-word-body-insertfilefrombase64-member(1))|Inserts a document into the body at the specified location.|
 ||[insertHtml(html: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.body#word-word-body-inserthtml-member(1))|Inserts HTML at the specified location.|
 ||[insertOoxml(ooxml: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.body#word-word-body-insertooxml-member(1))|Inserts OOXML at the specified location.|
@@ -72,7 +72,7 @@
 ||[underline](/javascript/api/word/word.font#word-word-font-underline-member)|Gets or sets a value that indicates the font's underline type.|
 |[InlinePicture](/javascript/api/word/word.inlinepicture)|[altTextDescription](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-alttextdescription-member)|Gets or sets a string that represents the alternative text associated with the inline image.|
 ||[altTextTitle](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-alttexttitle-member)|Gets or sets a string that contains the title for the inline image.|
-||[getBase64ImageSrc()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getbase64imagesrc-member(1))|Gets the base64 encoded string representation of the inline image.|
+||[getBase64ImageSrc()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-getbase64imagesrc-member(1))|Gets the Base64-encoded string representation of the inline image.|
 ||[height](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-height-member)|Gets or sets a number that describes the height of the inline image.|
 ||[hyperlink](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-hyperlink-member)|Gets or sets a hyperlink on the image.|
 ||[insertContentControl()](/javascript/api/word/word.inlinepicture#word-word-inlinepicture-insertcontentcontrol-member(1))|Wraps the inline picture with a rich text content control.|
@@ -90,7 +90,7 @@
 ||[getOoxml()](/javascript/api/word/word.paragraph#word-word-paragraph-getooxml-member(1))|Gets the Office Open XML (OOXML) representation of the paragraph object.|
 ||[inlinePictures](/javascript/api/word/word.paragraph#word-word-paragraph-inlinepictures-member)|Gets the collection of InlinePicture objects in the paragraph.|
 ||[insertBreak(breakType: Word.BreakType \| "Page" \| "Next" \| "SectionNext" \| "SectionContinuous" \| "SectionEven" \| "SectionOdd" \| "Line", insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After")](/javascript/api/word/word.paragraph#word-word-paragraph-insertbreak-member(1))|Inserts a break at the specified location in the main document.|
-||[insertContentControl()](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the paragraph object with a rich text content control.|
+||[insertContentControl()](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a rich text content control.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.paragraph#word-word-paragraph-insertfilefrombase64-member(1))|Inserts a document into the paragraph at the specified location.|
 ||[insertHtml(html: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.paragraph#word-word-paragraph-inserthtml-member(1))|Inserts HTML into the paragraph at the specified location.|
 ||[insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End")](/javascript/api/word/word.paragraph#word-word-paragraph-insertinlinepicturefrombase64-member(1))|Inserts a picture into the paragraph at the specified location.|
@@ -118,7 +118,7 @@
 ||[getHtml()](/javascript/api/word/word.range#word-word-range-gethtml-member(1))|Gets an HTML representation of the range object.|
 ||[getOoxml()](/javascript/api/word/word.range#word-word-range-getooxml-member(1))|Gets the OOXML representation of the range object.|
 ||[insertBreak(breakType: Word.BreakType \| "Page" \| "Next" \| "SectionNext" \| "SectionContinuous" \| "SectionEven" \| "SectionOdd" \| "Line", insertLocation: Word.InsertLocation.before \| Word.InsertLocation.after \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-insertbreak-member(1))|Inserts a break at the specified location in the main document.|
-||[insertContentControl()](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the range object with a rich text content control.|
+||[insertContentControl()](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a rich text content control.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-insertfilefrombase64-member(1))|Inserts a document at the specified location.|
 ||[insertHtml(html: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-inserthtml-member(1))|Inserts HTML at the specified location.|
 ||[insertOoxml(ooxml: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.range#word-word-range-insertooxml-member(1))|Inserts OOXML at the specified location.|

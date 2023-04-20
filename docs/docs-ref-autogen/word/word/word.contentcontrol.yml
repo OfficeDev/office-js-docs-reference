@@ -1001,7 +1001,7 @@ methods:
         | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: >-
@@ -1086,7 +1086,7 @@ methods:
         Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted in the content control.
+          description: Required. The Base64-encoded image to be inserted in the content control.
           type: string
         - id: insertLocation
           description: >-
@@ -1785,11 +1785,11 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlDataChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlDataChangedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'word!Word.ContentControl#onDeleted:member'
     package: word!
@@ -1843,11 +1843,11 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlDeletedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlDeletedEventArgs:interface" />&gt;
   - name: onEntered
     uid: 'word!Word.ContentControl#onEntered:member'
     package: word!
@@ -1857,11 +1857,11 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEnteredEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlEnteredEventArgs:interface" />&gt;
   - name: onExited
     uid: 'word!Word.ContentControl#onExited:member'
     package: word!
@@ -1871,11 +1871,11 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlExitedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlExitedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'word!Word.ContentControl#onSelectionChanged:member'
     package: word!
@@ -1885,9 +1885,9 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlSelectionChangedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlSelectionChangedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
