@@ -71,7 +71,7 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 #### [Office.context.mailbox.item.closeAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
 
-Added method to close a current message being composed with the option to save it as a draft or discard unsaved changes.
+Added method to close a current message being composed with the option to discard unsaved changes.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
