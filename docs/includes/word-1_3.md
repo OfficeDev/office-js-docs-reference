@@ -1,6 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[Application](/javascript/api/word/word.application)|[createDocument(base64File?: string)](/javascript/api/word/word.application#word-word-application-createdocument-member(1))|Creates a new document by using an optional base64 encoded .docx file.|
+|[Application](/javascript/api/word/word.application)|[createDocument(base64File?: string)](/javascript/api/word/word.application#word-word-application-createdocument-member(1))|Creates a new document by using an optional Base64-encoded .docx file.|
 |[Body](/javascript/api/word/word.body)|[getRange(rangeLocation?: Word.RangeLocation.whole \| Word.RangeLocation.start \| Word.RangeLocation.end \| Word.RangeLocation.after \| Word.RangeLocation.content \| "Whole" \| "Start" \| "End" \| "After" \| "Content")](/javascript/api/word/word.body#word-word-body-getrange-member(1))|Gets the whole body, or the starting or ending point of the body, as a range.|
 ||[insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", values?: string[][])](/javascript/api/word/word.body#word-word-body-inserttable-member(1))|Inserts a table with the specified number of rows and columns.|
 ||[lists](/javascript/api/word/word.body#word-word-body-lists-member)|Gets the collection of list objects in the body.|
@@ -27,7 +27,7 @@
 ||[subtype](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-subtype-member)|Gets the content control subtype.|
 ||[tables](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-tables-member)|Gets the collection of table objects in the content control.|
 |[ContentControlCollection](/javascript/api/word/word.contentcontrolcollection)|[getByIdOrNullObject(id: number)](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbyidornullobject-member(1))|Gets a content control by its identifier.|
-||[getByTypes(types: Word.ContentControlType[])](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))|Gets the content controls that have the specified types and/or subtypes.|
+||[getByTypes(types: Word.ContentControlType[])](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getbytypes-member(1))|Gets the content controls that have the specified types.|
 ||[getFirst()](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getfirst-member(1))|Gets the first content control in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.contentcontrolcollection#word-word-contentcontrolcollection-getfirstornullobject-member(1))|Gets the first content control in this collection.|
 |[CustomProperty](/javascript/api/word/word.customproperty)|[delete()](/javascript/api/word/word.customproperty#word-word-customproperty-delete-member(1))|Deletes the custom property.|

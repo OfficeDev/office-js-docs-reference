@@ -1,6 +1,6 @@
 | Class | Fields | Description |
 |:---|:---|:---|
-|[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[close()](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-close-member(1))|Closes the current item that is being composed|
+|[AppointmentCompose](/javascript/api/outlook/office.appointmentcompose)|[close()](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-close-member(1))|Closes the current item that is being composed.|
 ||[notificationMessages](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-notificationmessages-member)|Gets the notification messages for an item.|
 ||[saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-saveasync-member(1))|Asynchronously saves an item.|
 ||[saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.appointmentcompose#outlook-office-appointmentcompose-saveasync-member(1))|Asynchronously saves an item.|
@@ -11,7 +11,7 @@
 ||[setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void)](/javascript/api/outlook/office.body#outlook-office-body-setasync-member(1))|Replaces the entire body with the specified text.|
 |[Mailbox](/javascript/api/outlook/office.mailbox)|[convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion \| string)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttoewsid-member(1))|Converts an item ID formatted for REST into EWS format.|
 ||[convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion \| string)](/javascript/api/outlook/office.mailbox#outlook-office-mailbox-converttorestid-member(1))|Converts an item ID formatted for EWS into REST format.|
-|[MessageCompose](/javascript/api/outlook/office.messagecompose)|[close()](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-close-member(1))|Closes the current item that is being composed|
+|[MessageCompose](/javascript/api/outlook/office.messagecompose)|[close()](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-close-member(1))|Closes the current item that is being composed.|
 ||[notificationMessages](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-notificationmessages-member)|Gets the notification messages for an item.|
 ||[saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-saveasync-member(1))|Asynchronously saves an item.|
 ||[saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) => void)](/javascript/api/outlook/office.messagecompose#outlook-office-messagecompose-saveasync-member(1))|Asynchronously saves an item.|

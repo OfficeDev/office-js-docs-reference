@@ -113,12 +113,24 @@ items:
             uid: 'word!Word.CommentReplyCollection:class'
           - name: ContentControl
             uid: 'word!Word.ContentControl:class'
+          - name: ContentControlAddedEventArgs
+            uid: 'word!Word.ContentControlAddedEventArgs:interface'
           - name: ContentControlCollection
             uid: 'word!Word.ContentControlCollection:class'
+          - name: ContentControlDataChangedEventArgs
+            uid: 'word!Word.ContentControlDataChangedEventArgs:interface'
+          - name: ContentControlDeletedEventArgs
+            uid: 'word!Word.ContentControlDeletedEventArgs:interface'
+          - name: ContentControlEnteredEventArgs
+            uid: 'word!Word.ContentControlEnteredEventArgs:interface'
           - name: ContentControlEventArgs
             uid: 'word!Word.ContentControlEventArgs:interface'
+          - name: ContentControlExitedEventArgs
+            uid: 'word!Word.ContentControlExitedEventArgs:interface'
           - name: ContentControlOptions
             uid: 'word!Word.ContentControlOptions:interface'
+          - name: ContentControlSelectionChangedEventArgs
+            uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection

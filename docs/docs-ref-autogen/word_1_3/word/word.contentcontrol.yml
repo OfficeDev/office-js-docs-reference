@@ -895,7 +895,7 @@ methods:
         | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: >-
@@ -980,7 +980,7 @@ methods:
         Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted in the content control.
+          description: Required. The Base64-encoded image to be inserted in the content control.
           type: string
         - id: insertLocation
           description: >-

@@ -15,16 +15,16 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Creates a new document by using an optional base64 encoded .docx file.
+         * Creates a new document by using an optional Base64-encoded .docx file.
          *
          * @remarks
          * [Api set: WordApi 1.3]
          *
-         * @param base64File - Optional. The base64 encoded .docx file. The default value is null.
+         * @param base64File - Optional. The Base64-encoded .docx file. The default value is null.
          */
         createDocument(base64File?: string): Word.DocumentCreated;
         /**
-         * Parse styles from template base 64 file and return JSON format of retrieved styles as a string.
+         * Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -211,7 +211,8 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -286,7 +287,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -306,7 +307,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
+         * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the body.
          * @param insertLocation - Required. The value must be 'Start' or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): Word.InlinePicture;
@@ -1187,7 +1188,8 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported child content controls in this content control. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -1263,7 +1265,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -1283,7 +1285,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
+         * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the content control.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
@@ -1447,7 +1449,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlDataChangedEventArgs>;
         /**
          * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
          *
@@ -1457,7 +1459,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlDeletedEventArgs>;
         /**
          * Occurs when the content control is entered.
          *
@@ -1467,7 +1469,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEnteredEventArgs>;
         /**
          * Occurs when the content control is exited, for example, when the cursor leaves the content control.
          *
@@ -1477,7 +1479,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlExitedEventArgs>;
         /**
          * Occurs when selection within the content control is changed.
          *
@@ -1487,7 +1489,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlSelectionChangedEventArgs>;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -2396,7 +2398,8 @@ export declare namespace Word {
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2444,13 +2447,13 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2460,7 +2463,7 @@ export declare namespace Word {
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2514,7 +2517,7 @@ export declare namespace Word {
          * @eventproperty
          * @beta
          */
-        readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -2646,7 +2649,8 @@ export declare namespace Word {
         getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -2665,13 +2669,13 @@ export declare namespace Word {
         getStyles(): Word.StyleCollection;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
-                    Headers, footers, watermarks, and other section properties are copied by default.        
+                    Headers, footers, watermarks, and other section properties are copied by default.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          * @param insertFileOptions - Optional. The additional properties that should be imported to the destination document.
          */
@@ -2684,7 +2688,7 @@ export declare namespace Word {
          */
         open(): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
@@ -2694,7 +2698,7 @@ export declare namespace Word {
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
@@ -3441,7 +3445,7 @@ export declare namespace Word {
          */
         delete(): void;
         /**
-         * Gets the base64 encoded string representation of the inline image.
+         * Gets the Base64-encoded string representation of the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3493,7 +3497,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): Word.Range;
@@ -3513,7 +3517,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
@@ -3714,7 +3718,7 @@ export declare namespace Word {
          */
         getLevelParagraphs(level: number): Word.ParagraphCollection;
         /**
-         * Gets the base64 encoded string representation of the picture at the specified level in the list.
+         * Gets the Base64-encoded string representation of the picture at the specified level in the list.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -3838,7 +3842,7 @@ export declare namespace Word {
          * @beta
          *
          * @param level - Required. The level in the list.
-         * @param base64EncodedImage - Optional. The base64 encoded image to be set. If not given, the default picture is set.
+         * @param base64EncodedImage - Optional. The Base64-encoded image to be set. If not given, the default picture is set.
          */
         setLevelPicture(level: number, base64EncodedImage?: string): void;
         /**
@@ -4113,7 +4117,7 @@ export declare namespace Word {
          */
         numberFormat: string;
         /**
-         * Gets or sets the position (in points) of the number or bullet for the specified list level object
+         * Gets or sets the position (in points) of the number or bullet for the specified list level object.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4121,7 +4125,7 @@ export declare namespace Word {
          */
         numberPosition: number;
         /**
-         * Gets or sets the number style for the list level object
+         * Gets or sets the number style for the list level object.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4129,7 +4133,7 @@ export declare namespace Word {
          */
         numberStyle: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
         /**
-         * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+         * Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4137,7 +4141,7 @@ export declare namespace Word {
          */
         resetOnHigher: number;
         /**
-         * Gets or sets the starting number for the specified list level object
+         * Gets or sets the starting number for the specified list level object.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4145,7 +4149,7 @@ export declare namespace Word {
          */
         startAt: number;
         /**
-         * Gets or sets the tab position for the specified list level object
+         * Gets or sets the tab position for the specified list level object.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4153,7 +4157,7 @@ export declare namespace Word {
          */
         tabPosition: number;
         /**
-         * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+         * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4290,7 +4294,7 @@ export declare namespace Word {
          */
         readonly listLevels: Word.ListLevelCollection;
         /**
-         * Gets or sets whether the specified ListTemplate object is outline numbered
+         * Gets or sets whether the specified ListTemplate object is outline numbered.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4779,7 +4783,8 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the paragraph. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -4892,7 +4897,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
@@ -4912,7 +4917,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.InlinePicture;
@@ -5211,7 +5216,7 @@ export declare namespace Word {
          */
         keepWithNext: boolean;
         /**
-         * Gets or sets the left Indent.
+         * Gets or sets the left indent.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -5257,7 +5262,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        outlineLevel: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+        outlineLevel: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
         /**
          * Gets or sets the right indent (in points) for the specified paragraphs.
          *
@@ -5558,7 +5563,8 @@ export declare namespace Word {
         getComments(): Word.CommentCollection;
         /**
          * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
-                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+                    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+                    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -5724,7 +5730,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
@@ -5753,7 +5759,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.InlinePicture;
@@ -8288,6 +8294,204 @@ export declare namespace Word {
         source: Word.EventSource | "Local" | "Remote";
     }
     /**
+     * Provides information about the content control that raised contentControlAdded event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlAddedEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the content control that raised contentControlDataChanged event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlDataChangedEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the content control that raised contentControlDeleted event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlDeletedEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the content control that raised contentControlEntered event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlEnteredEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the content control that raised contentControlExited event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlExitedEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
+     * Provides information about the content control that raised contentControlSelectionChanged event.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlSelectionChangedEventArgs {
+        /**
+         * The event type. See Word.EventType for details.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+        /**
+         * Gets the content control IDs.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        ids: number[];
+        /**
+         * The source of the event. It can be local or remote (through coauthoring).
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Word.EventSource | "Local" | "Remote";
+    }
+    /**
      * Provides information about the comments that raised the comment event.
      *
      * @remarks
@@ -10234,7 +10438,7 @@ export declare namespace Word {
          */
         character = "Character",
         /**
-         * Represents that the style is a list style.
+         * Represents that the style is a list style. Currently supported on desktop.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
@@ -10291,6 +10495,48 @@ export declare namespace Word {
          * @beta
          */
         outlineLevel4 = "OutlineLevel4",
+        /**
+         * Represents outline level 5.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel5 = "OutlineLevel5",
+        /**
+         * Represents outline level 6.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel6 = "OutlineLevel6",
+        /**
+         * Represents outline level 7.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel7 = "OutlineLevel7",
+        /**
+         * Represents outline level 8.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel8 = "OutlineLevel8",
+        /**
+         * Represents outline level 9.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevel9 = "OutlineLevel9",
+        /**
+         * Represents outline level body text, not an outline level.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outlineLevelBodyText = "OutlineLevelBodyText",
     }
     /**
      * Specifies the close behavior for `Document.close`.
@@ -11761,7 +12007,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11967,7 +12213,7 @@ export declare namespace Word {
              */
             numberFormat?: string;
             /**
-             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11975,7 +12221,7 @@ export declare namespace Word {
              */
             numberPosition?: number;
             /**
-             * Gets or sets the number style for the list level object
+             * Gets or sets the number style for the list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11983,7 +12229,7 @@ export declare namespace Word {
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
-             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11991,7 +12237,7 @@ export declare namespace Word {
              */
             resetOnHigher?: number;
             /**
-             * Gets or sets the starting number for the specified list level object
+             * Gets or sets the starting number for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -11999,7 +12245,7 @@ export declare namespace Word {
              */
             startAt?: number;
             /**
-             * Gets or sets the tab position for the specified list level object
+             * Gets or sets the tab position for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -12007,7 +12253,7 @@ export declare namespace Word {
              */
             tabPosition?: number;
             /**
-             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -12030,7 +12276,7 @@ export declare namespace Word {
         /** An interface for updating data on the ListTemplate object, for use in `listTemplate.set({ ... })`. */
         export interface ListTemplateUpdateData {
             /**
-             * Gets or sets whether the specified ListTemplate object is outline numbered
+             * Gets or sets whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -12206,7 +12452,7 @@ export declare namespace Word {
              */
             keepWithNext?: boolean;
             /**
-             * Gets or sets the left Indent.
+             * Gets or sets the left indent.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -12252,7 +12498,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
             /**
              * Gets or sets the right indent (in points) for the specified paragraphs.
              *
@@ -13688,7 +13934,7 @@ export declare namespace Word {
              */
             numberFormat?: string;
             /**
-             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13696,7 +13942,7 @@ export declare namespace Word {
              */
             numberPosition?: number;
             /**
-             * Gets or sets the number style for the list level object
+             * Gets or sets the number style for the list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13704,7 +13950,7 @@ export declare namespace Word {
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
-             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13712,7 +13958,7 @@ export declare namespace Word {
              */
             resetOnHigher?: number;
             /**
-             * Gets or sets the starting number for the specified list level object
+             * Gets or sets the starting number for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13720,7 +13966,7 @@ export declare namespace Word {
              */
             startAt?: number;
             /**
-             * Gets or sets the tab position for the specified list level object
+             * Gets or sets the tab position for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13728,7 +13974,7 @@ export declare namespace Word {
              */
             tabPosition?: number;
             /**
-             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13759,7 +14005,7 @@ export declare namespace Word {
             */
             listLevels?: Word.Interfaces.ListLevelData[];
             /**
-             * Gets or sets whether the specified ListTemplate object is outline numbered
+             * Gets or sets whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -13984,7 +14230,7 @@ export declare namespace Word {
              */
             keepWithNext?: boolean;
             /**
-             * Gets or sets the left Indent.
+             * Gets or sets the left indent.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -14030,7 +14276,7 @@ export declare namespace Word {
              * [Api set: WordApi BETA (PREVIEW ONLY)]
              * @beta
              */
-            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";
+            outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
             /**
              * Gets or sets the right indent (in points) for the specified paragraphs.
              *
@@ -15820,7 +16066,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -15935,7 +16181,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when setting it.
+             * For EACH ITEM in the collection: Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16430,7 +16676,7 @@ export declare namespace Word {
              */
             numberFormat?: boolean;
             /**
-             * Gets or sets the position (in points) of the number or bullet for the specified list level object
+             * Gets or sets the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16438,7 +16684,7 @@ export declare namespace Word {
              */
             numberPosition?: boolean;
             /**
-             * Gets or sets the number style for the list level object
+             * Gets or sets the number style for the list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16446,7 +16692,7 @@ export declare namespace Word {
              */
             numberStyle?: boolean;
             /**
-             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             * Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16454,7 +16700,7 @@ export declare namespace Word {
              */
             resetOnHigher?: boolean;
             /**
-             * Gets or sets the starting number for the specified list level object
+             * Gets or sets the starting number for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16462,7 +16708,7 @@ export declare namespace Word {
              */
             startAt?: boolean;
             /**
-             * Gets or sets the tab position for the specified list level object
+             * Gets or sets the tab position for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16470,7 +16716,7 @@ export declare namespace Word {
              */
             tabPosition?: boolean;
             /**
-             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             * Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16531,7 +16777,7 @@ export declare namespace Word {
              */
             numberFormat?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the position (in points) of the number or bullet for the specified list level object
+             * For EACH ITEM in the collection: Gets or sets the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16539,7 +16785,7 @@ export declare namespace Word {
              */
             numberPosition?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the number style for the list level object
+             * For EACH ITEM in the collection: Gets or sets the number style for the list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16547,7 +16793,7 @@ export declare namespace Word {
              */
             numberStyle?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the list level that must appear before the specified list level restarts numbering at 1
+             * For EACH ITEM in the collection: Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16555,7 +16801,7 @@ export declare namespace Word {
              */
             resetOnHigher?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object
+             * For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16563,7 +16809,7 @@ export declare namespace Word {
              */
             startAt?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object
+             * For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16571,7 +16817,7 @@ export declare namespace Word {
              */
             tabPosition?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object
+             * For EACH ITEM in the collection: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -16600,7 +16846,7 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets or sets whether the specified ListTemplate object is outline numbered
+             * Gets or sets whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -17135,7 +17381,7 @@ export declare namespace Word {
              */
             keepWithNext?: boolean;
             /**
-             * Gets or sets the left Indent.
+             * Gets or sets the left indent.
              *
              * @remarks
              * [Api set: WordApi BETA (PREVIEW ONLY)]

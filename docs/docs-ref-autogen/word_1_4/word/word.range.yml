@@ -960,7 +960,7 @@ methods:
     uid: 'word!Word.Range#insertContentControl:member(1)'
     package: word!
     fullName: insertContentControl()
-    summary: Wraps the range object with a rich text content control.
+    summary: Wraps the Range object with a rich text content control.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -1037,7 +1037,7 @@ methods:
         "Before" | "After"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
@@ -1102,7 +1102,7 @@ methods:
         "Start" | "End" | "Before" | "After"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted.
+          description: Required. The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'

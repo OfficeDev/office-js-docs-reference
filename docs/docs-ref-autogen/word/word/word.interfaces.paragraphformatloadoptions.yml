@@ -81,7 +81,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatLoadOptions#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: Gets or sets the left Indent.
+    summary: Gets or sets the left indent.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
