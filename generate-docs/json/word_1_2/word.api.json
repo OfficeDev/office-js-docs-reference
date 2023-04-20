@@ -638,7 +638,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the body object with a Rich Text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Wraps the Body object with a Rich Text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -668,7 +668,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The Base64-encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -840,7 +840,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocation - Required. The value must be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the body at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the body.\n *\n * @param insertLocation - Required. The value must be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2465,7 +2465,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The Base64-encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2637,7 +2637,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The Base64-encoded image to be inserted in the content control.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6365,7 +6365,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#getBase64ImageSrc:member(1)",
-                  "docComment": "/**\n * Gets the base64 encoded string representation of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the Base64-encoded string representation of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6564,7 +6564,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The Base64-encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6718,7 +6718,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts an inline picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17466,7 +17466,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the paragraph object with a rich text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Wraps the Paragraph object with a rich text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17496,7 +17496,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The Base64-encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17668,7 +17668,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19484,7 +19484,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertContentControl:member(1)",
-                  "docComment": "/**\n * Wraps the range object with a rich text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Wraps the Range object with a rich text content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19514,7 +19514,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The Base64-encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19650,7 +19650,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture at the specified location.\n *\n * @remarks\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The Base64-encoded image to be inserted.\n *\n * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

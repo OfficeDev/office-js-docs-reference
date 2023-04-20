@@ -1073,7 +1073,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#close:member(1)",
-                  "docComment": "/**\n * Closes the current item that is being composed\n *\n * The behaviors of the `close` method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action.\n *\n * In the Outlook desktop client, if the message is an inline reply, the `close` method has no effect.\n *\n * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n */\n",
+                  "docComment": "/**\n * Closes the current item that is being composed.\n *\n * The behavior of the `close` method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action.\n *\n * In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21548,7 +21548,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#close:member(1)",
-                  "docComment": "/**\n * Closes the current item that is being composed\n *\n * The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action.\n *\n * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.\n *\n * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Closes the current item that is being composed.\n *\n * The behavior of the `close` method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action.\n *\n * In the Outlook desktop client, the `close` method has no effect on a reply in the Reading Pane.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using `saveAsync`, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.\n *\n * **Tip**: Use the {@link https://learn.microsoft.com/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1) | closeAsync} method instead of the `close` method if you want your add-in to:\n *\n * - Automatically discard a message being composed without prompting the user with the save dialog.\n *\n * - Determine when a user cancels the save item dialog on a message being composed.\n *\n * - Close a reply in the Reading Pane or an existing draft from an Outlook desktop client.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21572,6 +21572,135 @@
                   "overloadIndex": 1,
                   "parameters": [],
                   "name": "close"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#closeAsync:member(1)",
+                  "docComment": "/**\n * Closes the current message being composed with the option to discard unsaved changes. The message being composed can be a new message, reply, or an existing draft.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.\n *\n * **Errors**:\n *\n * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog and the `discardItem` property isn't defined or is set to `false`.\n *\n * - `The operation is not supported`: The `closeAsync` method attempts to close a reply in the Reading Pane or an existing draft and the `discardItem` property isn't defined or is set to `false`.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `discardItem`: If `true`, the current message being composed is closed and unsaved changes are discarded. When the parameter isn't declared or is set to `false`, a save dialog appears prompting the user to save a draft, discard changes, or cancel the operation. This behavior occurs for new messages and replies popped out from the Reading Pane. If you want to close a reply in the Reading Pane or an existing draft, you must set `discardItem` to `true`. Otherwise, the call will return an error. For more information on the error, see the Remarks section.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "closeAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & { discardItem: boolean }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "closeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.MessageCompose#closeAsync:member(2)",
+                  "docComment": "/**\n * Closes the current new message being composed.\n *\n * The behavior on a new message being composed depends on whether the message contains any unsaved changes. If no changes have been made, the message is closed without a save dialog. On the other hand, if the message contains unsaved changes, a save dialog appears prompting the user to save a draft, discard changes, or cancel the operation.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Important**: The `closeAsync` method is in preview. It's only supported in Outlook on Windows at this time.\n *\n * **Errors**:\n *\n * - `The operation was cancelled by the user`: The user selects **Cancel** from the save dialog.\n *\n * - `The operation is not supported`: The `closeAsync` method attempts to close a reply in the Reading Pane or an existing draft.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "closeAsync(callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      },
+                      "isOptional": true
+                    }
+                  ],
+                  "name": "closeAsync"
                 },
                 {
                   "kind": "PropertySignature",
