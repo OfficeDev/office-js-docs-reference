@@ -70,6 +70,7 @@ Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of t
 |  [Title](#title) | Specifies the custom title for the task pane. Not supported in Outlook add-ins.|
 |  [SupportsPinning](#supportspinning) | Specifies that a task pane supports pinning, which keeps the task pane open when the user changes the selection. Supported in Outlook only. |
 |  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected messages. Supported in Outlook only. |
+|  [SupportsNoItemContext (preview)](#supportsnoitemcontext-preview) | Specifies that an Outlook add-in can activate without the Reading Pane enabled or a message first selected. Supported in Outlook only. |
 
 #### SourceLocation
 
