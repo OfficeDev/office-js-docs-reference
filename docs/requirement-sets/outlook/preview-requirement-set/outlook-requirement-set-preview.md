@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/17/2023
+ms.date: 04/20/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -87,13 +87,13 @@ Added method to close a current message being composed with the option to save i
 
 Added a new property that returns an object that allows you to manage the delivery date and time of a message in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true)
 
 Added a new object that allows you to manage the delivery date and time of a message in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
