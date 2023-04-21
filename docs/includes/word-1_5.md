@@ -42,7 +42,8 @@
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End", insertFileOptions?: Word.InsertFileOptions)](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))|Inserts a document into the target document at a specific location with additional properties.|
 ||[onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)|Occurs when a content control is added.|
 ||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.document#word-word-document-save-member(1))|Saves the document.|
-|[Field](/javascript/api/word/word.field)|[data](/javascript/api/word/word.field#word-word-field-data-member)|Gets or sets data in an "Addin" field.|
+|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Gets or sets the field's code instruction.|
+||[data](/javascript/api/word/word.field#word-word-field-data-member)|Gets or sets data in an "Addin" field.|
 ||[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
 ||[kind](/javascript/api/word/word.field#word-word-field-kind-member)|Gets the field's kind.|
 ||[locked](/javascript/api/word/word.field#word-word-field-locked-member)|Gets or sets whether the field is locked.|
@@ -67,9 +68,9 @@
 |[Paragraph](/javascript/api/word/word.paragraph)|[endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member)|Gets the collection of endnotes in the paragraph.|
 ||[footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)|Gets the collection of footnotes in the paragraph.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))|Gets the currently supported content controls in the paragraph.|
+||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 |[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Gets or sets the alignment for the specified paragraphs.|
 ||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Gets or sets the value (in points) for a first line or hanging indent.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 ||[keepTogether](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keeptogether-member)|Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.|
 ||[keepWithNext](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keepwithnext-member)|Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.|
 ||[leftIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-leftindent-member)|Gets or sets the left indent.|
