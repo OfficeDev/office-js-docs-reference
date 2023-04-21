@@ -11631,7 +11631,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#save:member(1)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.\n *\n * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Saves the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.\n *\n * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11694,7 +11694,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#save:member(2)",
-                  "docComment": "/**\n * Save the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.\n *\n * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
+                  "docComment": "/**\n * Saves the document.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n *\n * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.\n *\n * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.\n *\n * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

@@ -563,7 +563,7 @@ methods:
     uid: 'word!Word.Document#save:member(1)'
     package: word!
     fullName: 'save(saveBehavior, fileName)'
-    summary: Save the document.
+    summary: Saves the document.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -616,7 +616,7 @@ methods:
     uid: 'word!Word.Document#save:member(2)'
     package: word!
     fullName: 'save(saveBehaviorString, fileName)'
-    summary: Save the document.
+    summary: Saves the document.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

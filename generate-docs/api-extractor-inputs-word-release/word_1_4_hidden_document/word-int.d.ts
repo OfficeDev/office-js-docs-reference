@@ -2347,7 +2347,7 @@ export declare namespace Word {
          */
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions): Word.SectionCollection;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2359,7 +2359,7 @@ export declare namespace Word {
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2521,7 +2521,7 @@ export declare namespace Word {
          */
         open(): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
@@ -2533,7 +2533,7 @@ export declare namespace Word {
          */
         save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
         /**
-         * Save the document.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApiHiddenDocument 1.3]
