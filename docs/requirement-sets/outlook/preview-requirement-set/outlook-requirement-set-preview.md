@@ -81,6 +81,20 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 
 ---
 
+### Close and discard a message in compose
+
+#### [Office.context.mailbox.item.closeAsync](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-closeasync-member(1))
+
+Added method to close a current message being composed with the option to discard unsaved changes.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
 ### Delay delivery time
 
 #### [Office.context.mailbox.item.delayDeliveryTime](office.context.mailbox.item.md#properties)

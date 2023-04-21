@@ -137,7 +137,7 @@ methods:
     uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
     package: word!
     fullName: getBase64ImageSrc()
-    summary: Gets the base64 encoded string representation of the inline image.
+    summary: Gets the Base64-encoded string representation of the inline image.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

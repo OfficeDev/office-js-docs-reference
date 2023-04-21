@@ -67,7 +67,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatData#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: Gets or sets the left Indent.
+    summary: Gets or sets the left indent.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -132,11 +132,15 @@ properties:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4";'
+      content: >-
+        outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" |
+        "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
+        "OutlineLevelBodyText";
       return:
         type: >-
           <xref uid="word!Word.OutlineLevel:enum" /> | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" |
-          "OutlineLevel4"
+          "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" |
+          "OutlineLevelBodyText"
   - name: rightIndent
     uid: 'word!Word.Interfaces.ParagraphFormatData#rightIndent:member'
     package: word!

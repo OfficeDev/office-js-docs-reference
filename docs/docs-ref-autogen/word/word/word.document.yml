@@ -451,7 +451,7 @@ methods:
         Word.SectionCollection;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
@@ -563,7 +563,7 @@ methods:
     uid: 'word!Word.Document#save:member(1)'
     package: word!
     fullName: 'save(saveBehavior, fileName)'
-    summary: Save the document.
+    summary: Saves the document.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -614,7 +614,7 @@ methods:
     uid: 'word!Word.Document#save:member(2)'
     package: word!
     fullName: 'save(saveBehaviorString, fileName)'
-    summary: Save the document.
+    summary: Saves the document.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -778,9 +778,9 @@ events:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
         type: >-
           <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
-          uid="word!Word.ContentControlEventArgs:interface" />&gt;
+          uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

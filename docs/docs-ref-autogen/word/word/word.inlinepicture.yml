@@ -282,7 +282,7 @@ methods:
     uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
     package: word!
     fullName: getBase64ImageSrc()
-    summary: Gets the base64 encoded string representation of the inline image.
+    summary: Gets the Base64-encoded string representation of the inline image.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -473,7 +473,7 @@ methods:
         | "Before" | "After"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
@@ -521,7 +521,7 @@ methods:
         Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted.
+          description: Required. The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Before'', or ''After''.'
