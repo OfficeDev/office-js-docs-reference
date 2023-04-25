@@ -8880,7 +8880,7 @@ Office.MessageCompose,addHandlerAsync(eventType,Method,Fine,false
 Office.MessageCompose,addItemAttachmentAsync(itemId,Method,Fine,false
 Office.MessageCompose,close(),Method,Poor,true
 Office.MessageCompose,closeAsync(options,Method,Fine,false
-Office.MessageCompose,closeAsync(callback),Method,Poor,false
+Office.MessageCompose,closeAsync(callback),Method,Poor,true
 Office.MessageCompose,disableClientSignatureAsync(options,Method,Poor,true
 Office.MessageCompose,disableClientSignatureAsync(callback),Method,Poor,false
 Office.MessageCompose,getAttachmentContentAsync(attachmentId,Method,Poor,false
