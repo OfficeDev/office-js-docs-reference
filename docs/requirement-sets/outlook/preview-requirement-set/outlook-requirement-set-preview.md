@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/20/2023
+ms.date: 04/26/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -28,6 +28,20 @@ The preview requirement set includes all of the features of [requirement set 1.1
 ## Features in preview
 
 The following features are in preview.
+
+### Activate your add-in without the Reading Pane enabled or a message selected
+
+#### [SupportsNoItemContext (preview)](../../../manifest/action.md#supportsnoitemcontext-preview)
+
+Added a new XML manifest element to allow add-ins to activate without the Reading Pane enabled or a message first selected. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/contextless).
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
 
 ### Additional calendar properties
 
