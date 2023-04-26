@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 02/06/2023
+ms.date: 04/26/2023
 ms.localizationpriority: medium
 ---
 
@@ -313,7 +313,7 @@ This extension point puts buttons in the command surface for the mail read view 
 
 ### MobileOnlineMeetingCommandSurface
 
-This extension point puts a mode-appropriate toggle in the command surface for an appointment in the mobile form factor. A meeting organizer can create an online meeting. An attendee can subsequently join the online meeting. To learn more about this scenario, see the [Create an Outlook mobile add-in for an online-meeting provider](/office/dev/add-ins/outlook/online-meeting) article.
+This extension point puts a mode-appropriate toggle in the command surface for an appointment in the mobile form factor. A meeting organizer can create an online meeting. An attendee can subsequently join the online meeting. To learn more about this scenario, see [Create an Outlook mobile add-in for an online-meeting provider](/office/dev/add-ins/outlook/online-meeting).
 
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
@@ -358,7 +358,7 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 
 ### MobileLogEventAppointmentAttendee
 
-This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and function commands. To learn more about this scenario, refer to the [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments) article.
+This extension point puts a **Log** action button contextually in the command surface for an appointment in the mobile form factor. Appointment attendees who have the add-in installed can save their appointment notes to an external app in one click. This extension point supports functionality for task pane and function commands. To learn more about this scenario, see [Log appointment notes to an external application in Outlook mobile add-ins](/office/dev/add-ins/outlook/mobile-log-appointments).
 
 > [!NOTE]
 > This extension point is only supported on Android and iOS with a Microsoft 365 subscription.
@@ -403,7 +403,7 @@ The `Icon` images should be in grayscale using hex code `#919191` or its equival
 
 ### LaunchEvent
 
-This extension point enables an add-in to activate based on supported events in the desktop form factor. To learn more about this scenario and for the full list of supported events, see the [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch) article.
+This extension point enables an add-in to activate based on supported events in both the desktop and mobile form factors. To learn more about event-based activation and for the full list of supported events, see [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch).
 
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
