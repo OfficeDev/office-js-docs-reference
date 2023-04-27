@@ -74,7 +74,39 @@ properties:
     package: word!
     fullName: namespaceUri
     summary: Gets the namespace URI of the custom XML part.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+      // Get the namespace URI from a custom XML part.
+
+      await Word.run(async (context) => {
+        const settings = context.document.settings;
+        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+
+        await context.sync();
+
+        if (xmlPartIDSetting.value) {
+          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          customXmlPart.load("namespaceUri");
+          await context.sync();
+
+          const namespaceUri = customXmlPart.namespaceUri;
+          console.log(`Namespace URI: ${JSON.stringify(namespaceUri)}`);
+        } else {
+          console.warn("Didn't find custom XML part");
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +159,7 @@ methods:
             console.error(strangeMessage);
           }
         } else {
-          console.warn("No custom XML part to delete");
+          console.warn("Didn't find custom XML part to delete");
         }
       });
 
@@ -347,7 +379,7 @@ methods:
           console.log("Successfully inserted attribute:");
           console.log(readableXml);
         } else {
-          console.warn("No custom XML part to insert attribute into");
+          console.warn("Didn't find custom XML part to insert attribute into");
         }
       });
 
@@ -443,7 +475,7 @@ methods:
           console.log("Successfully inserted element:");
           console.log(readableXml);
         } else {
-          console.warn("No custom XML part to insert element into");
+          console.warn("Didn't find custom XML part to insert element into");
         }
       });
 
@@ -606,7 +638,7 @@ methods:
             console.log(clientResult.value[i]);
           }
         } else {
-          console.warn("No custom XML part to query");
+          console.warn("Didn't find custom XML part to query");
         }
       });
 
@@ -640,7 +672,50 @@ methods:
     package: word!
     fullName: setXml(xml)
     summary: Sets the full XML content of the custom XML part.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+      // Replace a custom XML part.
+
+      await Word.run(async (context) => {
+        const settings = context.document.settings;
+        const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+        await context.sync();
+
+        if (xmlPartIDSetting.value) {
+          const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+          const originalXmlBlob = customXmlPart.getXml();
+          await context.sync();
+
+          let readableXml = addLineBreaksToXML(originalXmlBlob.value);
+          console.log("Original custom XML part:");
+          console.log(readableXml);
+
+          // The setXml method replaces the entire XML part.
+          customXmlPart.setXml(
+            "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>John</Reviewer><Reviewer>Hitomi</Reviewer></Reviewers>"
+          );
+          const updatedXmlBlob = customXmlPart.getXml();
+          await context.sync();
+
+          readableXml = addLineBreaksToXML(updatedXmlBlob.value);
+          console.log("Replaced custom XML part:");
+          console.log(readableXml);
+        } else {
+          console.warn("Didn't find custom XML part to replace");
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
