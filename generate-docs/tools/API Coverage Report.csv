@@ -10492,7 +10492,7 @@ Word.CustomPropertyCollection,untrack(),Method,Poor,false
 Word.CustomXmlPart,N/A,Class,Good,false
 Word.CustomXmlPart,context,Property,Good,false
 Word.CustomXmlPart,id,Property,Good,true
-Word.CustomXmlPart,namespaceUri,Property,Good,false
+Word.CustomXmlPart,namespaceUri,Property,Good,true
 Word.CustomXmlPart,delete(),Method,Poor,true
 Word.CustomXmlPart,deleteAttribute(xpath,Method,Poor,false
 Word.CustomXmlPart,deleteElement(xpath,Method,Fine,false
@@ -10503,7 +10503,7 @@ Word.CustomXmlPart,load(options),Method,Poor,false
 Word.CustomXmlPart,load(propertyNames),Method,Poor,false
 Word.CustomXmlPart,load(propertyNamesAndPaths),Method,Poor,false
 Word.CustomXmlPart,query(xpath,Method,Fine,true
-Word.CustomXmlPart,setXml(xml),Method,Poor,false
+Word.CustomXmlPart,setXml(xml),Method,Poor,true
 Word.CustomXmlPart,toJSON(),Method,Poor,false
 Word.CustomXmlPart,track(),Method,Poor,false
 Word.CustomXmlPart,untrack(),Method,Poor,false
