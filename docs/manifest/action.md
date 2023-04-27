@@ -236,7 +236,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 #### SupportsNoItemContext (preview)
 
-Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate without the Reading Pane enabled or a message selected. If **\<SupportsNoItemContext\>** is set to `true`, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface`. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/contextless).
+Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate without the Reading Pane enabled or a message selected. If **\<SupportsNoItemContext\>** is set to `true`, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface`. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/outlook/contextless).
 
 **Add-in type:** Mail
 

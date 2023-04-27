@@ -33,7 +33,7 @@ The following features are in preview.
 
 #### [SupportsNoItemContext (preview)](../../../manifest/action.md#supportsnoitemcontext-preview)
 
-Added a new XML manifest element to allow add-ins to activate without the Reading Pane enabled or a message first selected. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/contextless).
+Added a new XML manifest element to allow add-ins to activate without the Reading Pane enabled or a message first selected. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/outlook/contextless).
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
