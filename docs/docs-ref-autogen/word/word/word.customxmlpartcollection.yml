@@ -156,7 +156,7 @@ methods:
             console.log(clientResult.value[i]);
           }
         } else {
-          console.warn("No custom XML part to query");
+          console.warn("Didn't find custom XML part to query");
         }
       });
 
