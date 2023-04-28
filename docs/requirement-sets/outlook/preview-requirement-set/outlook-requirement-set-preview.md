@@ -101,7 +101,7 @@ Added method to close a current message being composed with the option to discar
 
 Added a new property that returns an object that allows you to manage the delivery date and time of a message in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true)
 
