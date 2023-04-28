@@ -3,7 +3,7 @@ title: Word JavaScript API requirement set 1.1
 description: Details about the WordApi 1.1 requirement set.
 ms.date: 11/01/2021
 ms.topic: whats-new
-ms.prod: word
+ms.service: word
 ms.localizationpriority: medium
 ---
 

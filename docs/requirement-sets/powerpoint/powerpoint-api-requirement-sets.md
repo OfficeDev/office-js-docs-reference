@@ -3,7 +3,7 @@ title: PowerPoint JavaScript API requirement sets
 description: Learn more about the PowerPoint JavaScript API requirement sets.
 ms.date: 11/28/2022
 ms.topic: overview
-ms.prod: powerpoint
+ms.service: powerpoint
 ms.localizationpriority: high
 ---
 

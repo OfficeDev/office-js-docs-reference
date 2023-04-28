@@ -3,7 +3,7 @@ title: Open Browser Window requirement sets
 description: Specifies which Office platforms and builds support the openBrowserWindow API.
 ms.date: 09/28/2022
 ms.topic: overview
-ms.prod: non-product-specific
+ms.service: microsoft-365
 ms.localizationpriority: medium
 ---
 

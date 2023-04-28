@@ -2,7 +2,7 @@
 title: Word JavaScript API Hidden Document requirement set 1.3
 description: Details about the WordApiHiddenDocument 1.3 requirement set.
 ms.date: 07/01/2022
-ms.prod: word
+ms.service: word
 ms.localizationpriority: medium
 ---
 
