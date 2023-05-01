@@ -5,7 +5,6 @@ title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 author: o365devx
 ms.author: o365devx
-ms.service: microsoft-365
 localization_priority: Priority
 ms.date: 04/17/2023
 ---
