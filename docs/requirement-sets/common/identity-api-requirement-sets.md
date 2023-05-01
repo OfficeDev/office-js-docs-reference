@@ -3,7 +3,6 @@ title: Identity API requirement sets
 description: Identity API requirement set information for Office Add-ins.
 ms.date: 09/28/2022
 ms.topic: overview
-ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
 

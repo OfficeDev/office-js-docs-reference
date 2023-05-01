@@ -3,7 +3,6 @@ title: Excel JavaScript API requirement set 1.7
 description: Details about the ExcelApi 1.7 requirement set.
 ms.date: 11/09/2020
 ms.topic: whats-new
-ms.prod: excel
 ms.localizationpriority: medium
 ---
 
