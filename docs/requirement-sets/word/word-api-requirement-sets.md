@@ -3,7 +3,6 @@ title: Word JavaScript API requirement sets
 description: Office Add-in requirement set information for Word.
 ms.date: 09/28/2022
 ms.topic: overview
-ms.prod: word
 ms.localizationpriority: high
 ---
 
@@ -22,7 +21,7 @@ Word add-ins run across multiple versions of Office, including Office 2016 or la
 
 | Requirement set | Office on Windows<br>- Microsoft 365 subscription<br>- retail perpetual Office 2016 and later | Office on Windows<br>(volume-licensed perpetual) | Office on Mac | Office on iPad | Office on the web |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Office Insider program](https://insider.office.com)) |
+| [Preview](word-preview-apis.md) | Please use the latest Office version to try preview APIs (you may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join)) |
 | [WordApiOnline 1.1](word-api-online-requirement-set.md) | Not applicable | Not applicable | Not applicable | Not applicable | Latest (see [requirement set page](word-api-online-requirement-set.md)) |
 | [WordApiHiddenDocument 1.4](word-api-1.4-hidden-document-requirement-set.md) (Desktop only) | Version 2208 (Build 15601.20148) | Not available | 16.64 | Not applicable | Not applicable |
 | [WordApiHiddenDocument 1.3](word-api-1.3-hidden-document-requirement-set.md) (Desktop only) | Version 1612 (Build 7668.1000) | Office 2019: Version 1612 (Build 7668.1000) | 15.32 | Not applicable | Not applicable |

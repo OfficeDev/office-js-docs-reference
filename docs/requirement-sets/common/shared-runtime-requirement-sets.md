@@ -3,7 +3,6 @@ title: Shared runtime requirement sets
 description: Specifies the platforms and Office applications that support the SharedRuntime APIs.
 ms.date: 12/13/2022
 ms.topic: overview
-ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
 

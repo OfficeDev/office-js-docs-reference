@@ -3,7 +3,6 @@ title: OneNote JavaScript API requirement sets
 description: Learn more about the OneNote JavaScript API requirement sets.
 ms.date: 09/28/2022
 ms.topic: overview
-ms.prod: onenote
 ms.localizationpriority: high
 ---
 
