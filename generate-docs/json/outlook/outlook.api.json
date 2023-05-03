@@ -8988,7 +8988,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9023,7 +9023,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ">) => void"
+                      "text": " | 0>) => void"
                     },
                     {
                       "kind": "Content",
@@ -9068,7 +9068,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9094,7 +9094,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ">) => void"
+                      "text": " | 0>) => void"
                     },
                     {
                       "kind": "Content",
@@ -9131,7 +9131,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9219,7 +9219,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(2)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
