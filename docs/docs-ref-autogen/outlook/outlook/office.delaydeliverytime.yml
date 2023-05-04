@@ -41,8 +41,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Date>) => void):
-        void;
+        getAsync(options: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Date | 0>) =>
+        void): void;
       parameters:
         - id: options
           description: >-
@@ -52,8 +52,10 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The delivery date and time of a
+            message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message
+            yet, `0` is returned instead.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date | 0&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -93,9 +95,8 @@ methods:
         }
 
         const deliveryDate = asyncResult.value;
-
-        if (deliveryDate.toString() === "0") {
-          console.log(`Message delivery date and time: ${new Date()}`);
+        if (deliveryDate === 0) {
+          console.log("Your message will be delivered immediately when you select Send.");
         } else {
           const date = new Date(deliveryDate);
           console.log(`Message delivery date and time: ${date.toString()}`);
@@ -106,13 +107,15 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Date>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Date | 0>) => void): void;'
       parameters:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date&gt;) =&gt; void'
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The delivery date and time of a
+            message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message
+            yet, `0` is returned instead.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Date | 0&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -133,6 +136,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      **Errors**:
+
+
+      - `InvalidFormatError` - The format of the specified data object is not valid.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -151,8 +160,8 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be
+            provided in the `asyncResult.error` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
@@ -174,6 +183,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      **Errors**:
+
+
+      - `InvalidFormatError` - The format of the specified data object is not valid.
 
 
       #### Examples
@@ -215,8 +230,8 @@ methods:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error`
-            property.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be
+            provided in the `asyncResult.error` property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
