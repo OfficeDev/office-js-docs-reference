@@ -1122,7 +1122,37 @@ methods:
     package: word!
     fullName: 'insertField(insertLocation, fieldType, text, removeFormatting)'
     summary: Inserts a field at the specified location.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+      // Inserts a Date field before selection.
+
+      await Word.run(async (context) => {
+        var range = context.document.getSelection().getRange();
+
+        const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+        field.load("result,code");
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of the field: " + field.code);
+          console.log("Result of the field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

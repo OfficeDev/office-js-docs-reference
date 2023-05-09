@@ -690,7 +690,7 @@ methods:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
       await Word.run(async (context) => {
         const contentControls = context.document.contentControls.getByTag("forTesting");
@@ -1725,7 +1725,49 @@ events:
     summary: >-
       Occurs when data within the content control are changed. To get the new text, load this content control in the
       handler. To get the old text, do not load it.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+      await Word.run(async (context) => {
+        const contentControls = context.document.contentControls;
+        contentControls.load("items");
+        await context.sync();
+
+        // Register the onDataChanged event handler on each content control.
+        if (contentControls.items.length === 0) {
+          console.log("There aren't any content controls in this document so can't register event handlers.");
+        } else {
+          for (let i = 0; i < contentControls.items.length; i++) {
+            eventContexts[i] = contentControls.items[i].onDataChanged.add(contentControlDataChanged);
+            contentControls.items[i].track();
+          }
+
+          await context.sync();
+
+          console.log("Added event handlers for when data is changed in content controls.");
+        }
+      });
+
+
+      ...
+
+      async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
+        await Word.run(async (context) => {
+          // Display the data changed content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control where data was changed: ${event.ids[0]}`);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1751,7 +1793,7 @@ events:
       ```typescript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
       await Word.run(async (context) => {
         const contentControls = context.document.contentControls;
@@ -1776,10 +1818,12 @@ events:
 
       ...
 
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+      async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
         await Word.run(async (context) => {
           // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+          console.log(
+            `${event.eventType} event detected. ID of content control that was deleted: ${event.ids[0]}`
+          );
         });
       }
 
@@ -1797,7 +1841,48 @@ events:
     package: word!
     fullName: onEntered
     summary: Occurs when the content control is entered.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
+
+      await Word.run(async (context) => {
+        const contentControls = context.document.contentControls;
+        contentControls.load("items");
+        await context.sync();
+
+        // Register the onEntered event handler on each content control.
+        if (contentControls.items.length === 0) {
+          console.log("There aren't any content controls in this document so can't register event handlers.");
+        } else {
+          for (let i = 0; i < contentControls.items.length; i++) {
+            eventContexts[i] = contentControls.items[i].onEntered.add(contentControlEntered);
+            contentControls.items[i].track();
+          }
+
+          await context.sync();
+
+          console.log("Added event handlers for when the cursor is placed in content controls.");
+        }
+      });
+
+
+      ...
+
+      async function contentControlEntered(event: Word.ContentControlEnteredEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. ID of content control that was entered: ${event.ids[0]}`);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1811,7 +1896,48 @@ events:
     package: word!
     fullName: onExited
     summary: 'Occurs when the content control is exited, for example, when the cursor leaves the content control.'
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+      await Word.run(async (context) => {
+        const contentControls = context.document.contentControls;
+        contentControls.load("items");
+        await context.sync();
+
+        // Register the onExited event handler on each content control.
+        if (contentControls.items.length === 0) {
+          console.log("There aren't any content controls in this document so can't register event handlers.");
+        } else {
+          for (let i = 0; i < contentControls.items.length; i++) {
+            eventContexts[i] = contentControls.items[i].onExited.add(contentControlExited);
+            contentControls.items[i].track();
+          }
+
+          await context.sync();
+
+          console.log("Added event handlers for when the cursor is removed from within content controls.");
+        }
+      });
+
+
+      ...
+
+      async function contentControlExited(event: Word.ContentControlExitedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1825,7 +1951,49 @@ events:
     package: word!
     fullName: onSelectionChanged
     summary: Occurs when selection within the content control is changed.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+      await Word.run(async (context) => {
+        const contentControls = context.document.contentControls;
+        contentControls.load("items");
+        await context.sync();
+
+        if (contentControls.items.length === 0) {
+          console.log("There aren't any content controls in this document so can't register event handlers.");
+        } else {
+          for (let i = 0; i < contentControls.items.length; i++) {
+            eventContexts[i] = contentControls.items[i].onSelectionChanged.add(contentControlSelectionChanged);
+            contentControls.items[i].track();
+          }
+
+          await context.sync();
+
+          console.log("Added event handlers for when selections are changed in content controls.");
+        }
+      });
+
+
+      ...
+
+      async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(
+            `${event.eventType} event detected. ID of content control where selection was changed: ${event.ids[0]}`
+          );
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

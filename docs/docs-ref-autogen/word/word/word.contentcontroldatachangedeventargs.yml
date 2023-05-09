@@ -14,7 +14,26 @@ properties:
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+      async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
+        await Word.run(async (context) => {
+          // Display the data changed content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control where data was changed: ${event.ids[0]}`);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +51,26 @@ properties:
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+      async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
+        await Word.run(async (context) => {
+          // Display the data changed content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control where data was changed: ${event.ids[0]}`);
+        });
+      }
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

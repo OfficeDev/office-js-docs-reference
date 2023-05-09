@@ -14,7 +14,40 @@ properties:
     package: word!
     fullName: alignment
     summary: Gets or sets the alignment for the specified paragraphs.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Set the specified style's paragraph alignment to centered.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update alignment.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (!style.nameLocal) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.paragraphFormat.alignment = Word.Alignment.centered;
+          console.log(`Successfully set paragraph alignment to centered of the '${styleName}' style.`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,7 +115,40 @@ properties:
     package: word!
     fullName: leftIndent
     summary: Gets or sets the left indent.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Set the left indent size of the specified style's paragraph format.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update left indent.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (!style.nameLocal) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.paragraphFormat.leftIndent = 30;
+          console.log(`Successfully set size of left indent of the '${styleName}' style.`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

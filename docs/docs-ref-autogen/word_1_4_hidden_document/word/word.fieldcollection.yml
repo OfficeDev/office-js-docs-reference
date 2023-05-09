@@ -102,19 +102,22 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets the first field in the document body.
+      // Gets the first field in the document.
 
       await Word.run(async (context) => {
         const field = context.document.body.fields.getFirstOrNullObject();
-        field.load(["code", "result"]);
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
 
         if (field.isNullObject) {
-          console.log("There are no fields in this document.");
+          console.log("This document has no fields.");
         } else {
           console.log("Code of first field: " + field.code);
           console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("Type of first field: " + field.type);
+          console.log("Is the first field locked? " + field.locked);
+          console.log("Kind of the first field: " + field.kind);
         }
       });
 

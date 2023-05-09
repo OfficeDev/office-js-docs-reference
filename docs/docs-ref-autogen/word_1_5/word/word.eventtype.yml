@@ -14,12 +14,14 @@ remarks: >-
   ```typescript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
-  async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+  async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
     await Word.run(async (context) => {
       // Display the deleted content control's ID.
-      console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      console.log(
+        `${event.eventType} event detected. ID of content control that was deleted: ${event.ids[0]}`
+      );
     });
   }
 

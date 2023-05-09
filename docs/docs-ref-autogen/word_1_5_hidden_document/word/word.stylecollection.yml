@@ -60,7 +60,44 @@ methods:
     summary: >-
       If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set
       to `true`<!-- -->.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Add a new style.
+
+      await Word.run(async (context) => {
+        const newStyleName = $("#new-style-name").val() as string;
+        if (newStyleName == "") {
+          console.warn("Enter a style name to add.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        style.load();
+        await context.sync();
+
+        if (style.nameLocal) {
+          console.warn(
+            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+          );
+          return;
+        }
+
+        const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+        context.document.addStyle(newStyleName, newStyleType);
+        console.log(newStyleName + " has been added to the style list.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,7 +114,29 @@ methods:
     package: word!
     fullName: getCount()
     summary: Gets the number of the styles in the collection.
-    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Get the number of styles.
+
+      await Word.run(async (context) => {
+        const styles = context.document.getStyles();
+        const count = styles.getCount();
+        await context.sync();
+
+        console.log(`Number of styles: ${count.value}`);
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:

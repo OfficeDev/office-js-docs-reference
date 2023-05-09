@@ -14,26 +14,7 @@ properties:
     package: word!
     fullName: contentControl
     summary: The object that raised the event. Load this object to get its properties.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
-
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-        await Word.run(async (context) => {
-          // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,26 +26,7 @@ properties:
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
-
-      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
-        await Word.run(async (context) => {
-          // Display the deleted content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
-        });
-      }
-
-      ```
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
