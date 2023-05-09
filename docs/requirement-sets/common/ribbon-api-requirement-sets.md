@@ -3,7 +3,6 @@ title: Ribbon API requirement sets
 description: Specifies which Office platforms and builds support the dynamic ribbon APIs.
 ms.date: 09/28/2022
 ms.topic: overview
-ms.prod: non-product-specific
 ms.localizationpriority: medium
 ---
 

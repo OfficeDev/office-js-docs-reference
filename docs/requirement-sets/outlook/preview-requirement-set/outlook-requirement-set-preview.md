@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 04/20/2023
+ms.date: 04/28/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -16,7 +16,7 @@ To use preview APIs:
 
 - You must use the preview version of the Office JavaScript API library from the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/beta/hosted/office.js). The [type definition file](https://appsforoffice.microsoft.com/lib/beta/hosted/office.d.ts) for TypeScript compilation and IntelliSense is found at the CDN and [DefinitelyTyped](https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts). You can install these types with `npm install --save-dev @types/office-js-preview` (be sure to remove the types for `@types/office-js` if you've previously installed them).
 
-- You may need to join the [Office Insider program](https://insider.office.com) for access to more recent Office builds in Outlook on Windows and on Mac.
+- You may need to join the [Microsoft 365 Insider program](https://insider.microsoft365.com/join) for access to more recent Office builds in Outlook on Windows and on Mac.
 
 - You may need to configure the **Targeted release** option on your Microsoft 365 tenant to preview features in Outlook on the web. For more information, see the "Targeted release" section of [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365#targeted-release).
 
@@ -28,6 +28,20 @@ The preview requirement set includes all of the features of [requirement set 1.1
 ## Features in preview
 
 The following features are in preview.
+
+### Activate your add-in without the Reading Pane enabled or a message selected
+
+#### [SupportsNoItemContext (preview)](../../../manifest/action.md#supportsnoitemcontext-preview)
+
+Added a new XML manifest element to allow add-ins to activate without the Reading Pane enabled or a message first selected. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/outlook/contextless).
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
 
 ### Additional calendar properties
 
@@ -87,13 +101,13 @@ Added method to close a current message being composed with the option to discar
 
 Added a new property that returns an object that allows you to manage the delivery date and time of a message in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern)
 
 #### [Office.DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true)
 
 Added a new object that allows you to manage the delivery date and time of a message in compose mode.
 
-**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on the web (modern)
+**Available in**: Outlook on Windows (Microsoft 365 subscription), Outlook on Mac (Microsoft 365 subscription), Outlook on the web (modern)
 
 <br>
 
