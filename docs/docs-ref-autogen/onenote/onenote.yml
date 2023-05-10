@@ -195,7 +195,7 @@ functions:
           description: >-
             A previously-created API object. The batch will use the same request context as the passed-in object, which
             means that any changes applied to the object will be picked up by "context.sync()".
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+          type: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
             A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of
@@ -221,7 +221,7 @@ functions:
       parameters:
         - id: objects
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+          type: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of

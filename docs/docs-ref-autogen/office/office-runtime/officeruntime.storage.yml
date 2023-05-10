@@ -15,7 +15,7 @@ remarks: >-
   for Outlook.
 
 
-  **Important**: In Outlook, support is only available with [event-based
+  \*\*Important\*\*: In Outlook, support is only available with [event-based
   activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
 
 
@@ -42,7 +42,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -102,7 +102,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -127,7 +127,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -156,7 +156,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -185,7 +185,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false
@@ -217,7 +217,7 @@ methods:
       for Outlook.
 
 
-      **Important**: In Outlook, support is only available with [event-based
+      \*\*Important\*\*: In Outlook, support is only available with [event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     isPreview: false
     isDeprecated: false

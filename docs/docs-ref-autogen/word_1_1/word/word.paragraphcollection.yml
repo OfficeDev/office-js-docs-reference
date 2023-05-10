@@ -41,7 +41,7 @@ properties:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
@@ -102,7 +102,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // This example shows how to get the paragraphs in the Word document
           // along with their text and font size properties.
           // 
@@ -160,7 +160,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="word!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
@@ -219,4 +219,4 @@ methods:
       return:
         type: '<xref uid="word!Word.ParagraphCollection:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

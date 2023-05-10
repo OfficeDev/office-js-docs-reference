@@ -98,7 +98,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
@@ -172,7 +172,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const selectedRange = context.workbook.getSelectedRange();
           selectedRange.load('address');
@@ -274,7 +274,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -326,6 +326,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

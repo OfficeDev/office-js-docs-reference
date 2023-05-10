@@ -99,7 +99,7 @@ functions:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const myFile = <HTMLInputElement>document.getElementById("file");
           const reader = new FileReader();
 
@@ -136,9 +136,9 @@ functions:
             to get access to the PowerPoint object model from the add-in.
           type: >-
             (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+            uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: '<xref uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;'
         description: ''
   - name: 'PowerPoint.run(object, batch)'
     uid: 'powerpoint!PowerPoint.run:function(2)'
@@ -159,7 +159,7 @@ functions:
           description: >-
             A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
             means that any changes applied to the object will be picked up by "context.sync()".
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+          type: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -168,9 +168,9 @@ functions:
             to get access to the PowerPoint object model from the add-in.
           type: >-
             (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+            uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: '<xref uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;'
         description: ''
   - name: 'PowerPoint.run(objects, batch)'
     uid: 'powerpoint!PowerPoint.run:function(3)'
@@ -191,7 +191,7 @@ functions:
             An array of previously-created API objects. The array will be validated to make sure that all of the objects
             share the same context. The batch will use this shared RequestContext, which means that any changes applied
             to these objects will be picked up by "context.sync()".
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+          type: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -200,7 +200,7 @@ functions:
             to get access to the PowerPoint object model from the add-in.
           type: >-
             (context: <xref uid="powerpoint!PowerPoint.RequestContext:class" />) =&gt; <xref
-            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+            uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;
       return:
-        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        type: '<xref uid="powerpoint!~OfficeExtension.IPromise:type" />&lt;T&gt;'
         description: ''

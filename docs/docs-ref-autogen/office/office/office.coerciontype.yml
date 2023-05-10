@@ -54,11 +54,11 @@ fields:
     summary: |-
       Return or set data as HTML.
 
-      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+      \*\*Note\*\*: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
   - name: Image
     uid: 'office!Office.CoercionType.Image:member'
     package: office!
-    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
+    summary: 'Data is returned or set as an image stream. \*\*Note\*\*: Only applies to data in Excel, Word, and PowerPoint.'
   - name: Matrix
     uid: 'office!Office.CoercionType.Matrix:member'
     package: office!
@@ -68,14 +68,14 @@ fields:
       "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
 
 
-      **Note**: Only applies to data in Excel and Word.
+      \*\*Note\*\*: Only applies to data in Excel and Word.
   - name: Ooxml
     uid: 'office!Office.CoercionType.Ooxml:member'
     package: office!
     summary: |-
       Return or set data as Office Open XML.
 
-      **Note**: Only applies to data in Word.
+      \*\*Note\*\*: Only applies to data in Word.
   - name: SlideRange
     uid: 'office!Office.CoercionType.SlideRange:member'
     package: office!
@@ -85,7 +85,7 @@ fields:
       two slides.
 
 
-      **Note**: Only applies to data in PowerPoint when calling the
+      \*\*Note\*\*: Only applies to data in PowerPoint when calling the
       [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedData method to get the current slide or
       selected range of slides.
   - name: Table
@@ -96,7 +96,7 @@ fields:
       optional headers.
 
 
-      **Note**: Only applies to data in Excel and Word.
+      \*\*Note\*\*: Only applies to data in Excel and Word.
   - name: Text
     uid: 'office!Office.CoercionType.Text:member'
     package: office!
@@ -105,5 +105,5 @@ fields:
     uid: 'office!Office.CoercionType.XmlSvg:member'
     package: office!
     summary: >-
-      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
-      PowerPoint.
+      Data is returned or set as XML data containing an SVG image. \*\*Note\*\*: Only applies to data in Excel, Word,
+      and PowerPoint.

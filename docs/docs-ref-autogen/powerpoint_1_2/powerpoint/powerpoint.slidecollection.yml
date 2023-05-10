@@ -47,7 +47,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of slides in the collection.
   - name: getItem(key)
     uid: 'powerpoint!PowerPoint.SlideCollection#getItem:member(1)'
@@ -80,7 +80,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
@@ -125,7 +125,7 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to
-      true is returned. For further information, see [*OrNullObject methods and
+      true is returned. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
@@ -199,7 +199,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.SlideCollection:class" />'
         description: ''
@@ -221,4 +221,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

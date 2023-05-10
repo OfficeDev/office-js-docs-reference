@@ -5,7 +5,7 @@ package: office!
 fullName: Office.Addin
 summary: Represents add-in level functionality for operating or configuring various aspects of the add-in.
 remarks: >-
-  **Requirement set**: [SharedRuntime
+  \*\*Requirement set\*\*: [SharedRuntime
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 isPreview: false
 isDeprecated: false
@@ -19,7 +19,7 @@ properties:
       Represents a modal notification dialog that can appear when the user attempts to close a document. The document
       won't close until the user responds. This API is only supported in Excel.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -34,7 +34,7 @@ methods:
     fullName: getStartupBehavior()
     summary: Gets the current startup behavior for the add-in.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ methods:
     fullName: hide()
     summary: Hides the task pane.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -64,7 +64,7 @@ methods:
     fullName: onVisibilityModeChanged(handler)
     summary: Adds a handler for the `onVisibilityModeChanged` event.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -88,7 +88,7 @@ methods:
     fullName: setStartupBehavior(behavior)
     summary: Sets the startup behavior for the add-in for when the document is opened next time.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -107,7 +107,7 @@ methods:
     fullName: showAsTaskpane()
     summary: Shows the task pane associated with the add-in.
     remarks: >-
-      **Requirement set**: [SharedRuntime
+      \*\*Requirement set\*\*: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false

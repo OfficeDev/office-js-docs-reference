@@ -34,7 +34,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Clear the line format of the major gridlines on the value axis of the chart named "Chart1".
       await Excel.run(async (context) => { 
           const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
@@ -63,7 +63,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-point.yaml
@@ -118,4 +118,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

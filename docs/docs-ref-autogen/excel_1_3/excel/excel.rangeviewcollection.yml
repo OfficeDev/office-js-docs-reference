@@ -112,7 +112,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.RangeViewCollection:class" />'
         description: ''
@@ -134,4 +134,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.RangeViewCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

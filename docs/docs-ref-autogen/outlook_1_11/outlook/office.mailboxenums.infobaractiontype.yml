@@ -11,7 +11,7 @@ remarks: |-
 
   #### Examples
 
-  ```javascript
+  ```TypeScript
   /*
   * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
   * The event handler logs the custom action and notification type to the console.
@@ -50,5 +50,5 @@ fields:
     summary: |-
       Dismiss action was selected.
 
-      * \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '1'

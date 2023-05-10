@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
@@ -35,7 +35,7 @@ fields:
     summary: |-
       Returns all headers or footers on even-numbered pages of a section.
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"EvenPages"'
   - name: firstPage
     uid: 'word!Word.HeaderFooterType.firstPage:member'
@@ -43,7 +43,7 @@ fields:
     summary: |-
       Returns the header or footer on the first page of a section.
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"FirstPage"'
   - name: primary
     uid: 'word!Word.HeaderFooterType.primary:member'
@@ -53,5 +53,5 @@ fields:
       different.
 
 
-      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Primary"'

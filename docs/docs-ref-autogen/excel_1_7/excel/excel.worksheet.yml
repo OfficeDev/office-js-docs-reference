@@ -100,7 +100,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
@@ -135,7 +135,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set worksheet position.
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
@@ -160,7 +160,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Unprotecting a worksheet with unprotect() will remove all 
       // WorksheetProtectionOptions options applied to a worksheet.
       // To remove only a subset of WorksheetProtectionOptions use the 
@@ -222,7 +222,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/tab-color.yaml
@@ -278,7 +278,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -322,7 +322,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-copy.yaml
@@ -399,7 +399,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -426,7 +426,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -466,7 +466,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
@@ -514,7 +514,7 @@ methods:
     fullName: getNextOrNullObject(visibleOnly)
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, then this method returns
-      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
       methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -542,7 +542,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
@@ -586,7 +586,7 @@ methods:
     fullName: getPreviousOrNullObject(visibleOnly)
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -611,7 +611,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -671,13 +671,14 @@ methods:
     fullName: getUsedRange(valuesOnly)
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will \*not\* throw an
+      error).
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -708,7 +709,7 @@ methods:
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, then this method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -765,7 +766,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
               const wSheetName = 'Sheet1';
@@ -825,7 +826,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -875,7 +876,7 @@ events:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onActivated.add(function (event) {
@@ -893,7 +894,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
   - name: onChanged
     uid: 'excel!Excel.Worksheet#onChanged:member'
@@ -907,7 +908,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
@@ -927,7 +928,7 @@ events:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Worksheet#onDeactivated:member'
@@ -939,7 +940,7 @@ events:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onDeactivated.add(function (event) {
@@ -957,7 +958,7 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
@@ -969,7 +970,7 @@ events:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onSelectionChanged.add(function (event) {
@@ -987,6 +988,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

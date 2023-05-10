@@ -81,7 +81,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       let image = null;
 
       await OneNote.run(async (context) => {
@@ -169,7 +169,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       let image = null;
       let imageString;
 
@@ -201,7 +201,7 @@ methods:
     syntax:
       content: 'getBase64Image(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'onenote!OneNote.Image#load:member(1)'
@@ -245,7 +245,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
               // Get the current outline.
               const outline = context.application.getActiveOutline();
@@ -325,7 +325,7 @@ methods:
           type: '<xref uid="onenote!OneNote.Interfaces.ImageUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="onenote!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -399,4 +399,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.Image:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

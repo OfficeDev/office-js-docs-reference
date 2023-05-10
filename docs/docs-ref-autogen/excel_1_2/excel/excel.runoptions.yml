@@ -27,4 +27,4 @@ properties:
       content: 'delayForCellEdit?: boolean;'
       return:
         type: boolean
-extends: '<xref uid="office!OfficeExtension.RunOptions:interface" />&lt;<xref uid="excel!Excel.Session:interface" />&gt; '
+extends: '<xref uid="excel!~OfficeExtension.RunOptions:interface" />&lt;<xref uid="excel!Excel.Session:interface" />&gt;'

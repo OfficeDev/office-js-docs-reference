@@ -87,7 +87,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
@@ -112,7 +112,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -140,7 +140,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -168,7 +168,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -196,7 +196,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -256,7 +256,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const tableName = 'Table1';
               const column = context.workbook.tables.getItem(tableName).columns.getItem(0);
@@ -315,7 +315,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.TableColumnUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -354,4 +354,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableColumnData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

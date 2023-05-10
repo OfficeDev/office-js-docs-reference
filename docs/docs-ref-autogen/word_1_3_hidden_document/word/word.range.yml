@@ -103,9 +103,9 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs
-      in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables
-      are also returned.
+      Gets the collection of paragraph objects in the range. \*\*Important\*\*: For requirement sets 1.1 and 1.2,
+      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
+      such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -146,7 +146,7 @@ properties:
     summary: >-
       Gets the content control that contains the range. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -188,7 +188,7 @@ properties:
     fullName: parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the range. If it is not contained in a table cell, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
       methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -205,7 +205,7 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains the range. If it is not contained in a table, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -341,7 +341,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -377,7 +377,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
@@ -410,7 +410,7 @@ methods:
           description: Required. The range to compare with this range.
           type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.LocationRelation:enum" />&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.LocationRelation:enum" />&gt;'
         description: ''
   - name: delete()
     uid: 'word!Word.Range#delete:member(1)'
@@ -422,7 +422,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -472,7 +472,7 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
       changed. If the two ranges do not have a union, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -501,7 +501,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -523,7 +523,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getHyperlinkRanges()
     uid: 'word!Word.Range#getHyperlinkRanges:member(1)'
@@ -570,7 +570,7 @@ methods:
     summary: >-
       Gets the next text range by using punctuation marks and/or other ending marks. If this text range is the last one,
       then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
+      information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -601,7 +601,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -623,7 +623,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Range#getRange:member(1)'
@@ -660,7 +660,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
@@ -719,7 +719,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -769,7 +769,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
@@ -812,7 +812,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -856,7 +856,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -921,7 +921,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -967,7 +967,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1042,7 +1042,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1101,7 +1101,7 @@ methods:
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. If the two
       ranges are not overlapped or adjacent, then this method will return an object with its `isNullObject` property set
-      to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -1233,7 +1233,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1301,7 +1301,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1412,4 +1412,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

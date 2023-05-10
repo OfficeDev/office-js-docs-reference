@@ -20,4 +20,4 @@ properties:
     syntax:
       content: 'coercionType?: Office.CoercionType | string;'
       return:
-        type: '<xref uid="office!Office.CoercionType:enum" /> | string'
+        type: '<xref uid="office!~Office_2.CoercionType:enum" /> | string'

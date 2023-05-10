@@ -268,7 +268,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+          type: '<xref uid="excel!~OfficeExtension.ClientRequestContext:class" />'
       return:
         type: '<xref uid="excel!Excel.DocumentTaskChange:class" />'
         description: ''
@@ -290,4 +290,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.DocumentTaskChangeData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

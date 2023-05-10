@@ -108,4 +108,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.SelectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

@@ -205,7 +205,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
@@ -291,7 +291,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -381,7 +381,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
@@ -433,7 +433,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
@@ -531,7 +531,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
@@ -626,7 +626,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Clear the format and contents of the range.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -714,7 +714,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-copyfrom.yaml
@@ -800,7 +800,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D:F";
@@ -851,7 +851,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
@@ -901,7 +901,7 @@ methods:
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
       there are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [*OrNullObject methods and
+      For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -911,7 +911,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-find.yaml
@@ -1002,7 +1002,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:G6";
@@ -1038,7 +1038,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1077,7 +1077,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
@@ -1119,7 +1119,7 @@ methods:
           type: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
+          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
           />[][]&gt;
         description: A 2D array where each item represents the requested properties of the corresponding cell.
   - name: getColumn(column)
@@ -1132,7 +1132,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet19";
           const rangeAddress = "A1:F8";
@@ -1175,7 +1175,7 @@ methods:
           type: '<xref uid="excel!Excel.ColumnPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ColumnProperties:interface"
+          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ColumnProperties:interface"
           />[]&gt;
         description: An array where each item represents the requested properties of the corresponding column.
   - name: getColumnsAfter(count)
@@ -1230,7 +1230,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Note: the grid properties of the Range (values, numberFormat, formulas) 
       // contains null since the Range in question is unbounded.
       await Excel.run(async (context) => { 
@@ -1263,7 +1263,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Gets an object that represents the entire row of the range 
       // (for example, if the current range represents cells "B4:E11", 
       // its GetEntireRow is a range that represents rows "4:11").
@@ -1290,15 +1290,16 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for Mac.
-      Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
+      Renders the range as a base64-encoded png image. \*Important\*\*: This API is currently unsupported in Excel for
+      Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
+      status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'getImage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getIntersection(anotherRange)
     uid: 'excel!Excel.Range#getIntersection:member(1)'
@@ -1310,7 +1311,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1340,7 +1341,7 @@ methods:
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [*OrNullObject methods and
+      information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1350,7 +1351,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
@@ -1432,7 +1433,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1460,7 +1461,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1488,7 +1489,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1519,7 +1520,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:F6";
@@ -1585,7 +1586,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1628,7 +1629,7 @@ methods:
           type: '<xref uid="excel!Excel.RowPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.RowProperties:interface"
+          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.RowProperties:interface"
           />[]&gt;
         description: An array where each item represents the requested properties of the corresponding row.
   - name: getRowsAbove(count)
@@ -1685,7 +1686,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
@@ -1761,7 +1762,7 @@ methods:
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1791,7 +1792,7 @@ methods:
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1870,7 +1871,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
@@ -1949,7 +1950,7 @@ methods:
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, then this method
       returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1959,7 +1960,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/used-range.yaml
@@ -2034,7 +2035,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10";
@@ -2115,7 +2116,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Use the range address to get the range object.
           await Excel.run(async (context) => {
               const sheetName = "Sheet1";
@@ -2169,7 +2170,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -2181,7 +2182,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
@@ -2227,7 +2228,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-remove-duplicates.yaml
@@ -2284,7 +2285,7 @@ methods:
           description: Additional replacement criteria.
           type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of replacements performed.
   - name: select()
     uid: 'excel!Excel.Range#select:member(1)'
@@ -2296,7 +2297,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10"; 
@@ -2332,7 +2333,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -2358,7 +2359,7 @@ methods:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
@@ -2393,7 +2394,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
@@ -2593,7 +2594,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:C3";
@@ -2630,7 +2631,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => {
               const largeRange = context.workbook.getSelectedRange();
               largeRange.load(["rowCount", "columnCount"]);
@@ -2649,4 +2650,4 @@ methods:
               await context.sync();
           });
           ```
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

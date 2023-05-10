@@ -71,7 +71,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const range = binding.getRange();
@@ -98,7 +98,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const table = binding.getTable();
@@ -125,7 +125,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const text = binding.getText();
@@ -140,7 +140,7 @@ methods:
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Binding#load:member(1)'
@@ -184,7 +184,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const binding = context.workbook.bindings.getItemAt(0);
               binding.load('type');
@@ -253,7 +253,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
@@ -276,7 +276,7 @@ events:
       content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Binding#onSelectionChanged:member'
@@ -286,8 +286,8 @@ events:
       Occurs when the selected content in the binding is changed.
 
 
-      *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
-      information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+      \*Note\*\*: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and
+      column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -295,6 +295,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

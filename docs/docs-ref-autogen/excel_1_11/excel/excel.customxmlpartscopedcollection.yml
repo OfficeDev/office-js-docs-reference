@@ -50,7 +50,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
@@ -89,7 +89,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(id)
     uid: 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
@@ -114,7 +114,7 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a custom XML part based on its ID. If the `CustomXmlPart` does not exist, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -124,7 +124,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
@@ -181,7 +181,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
@@ -296,7 +296,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.CustomXmlPartScopedCollection:class" />'
         description: ''
@@ -318,4 +318,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

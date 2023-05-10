@@ -46,7 +46,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               activePage.view.zoom = 300;
@@ -83,7 +83,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);
@@ -126,7 +126,7 @@ methods:
     syntax:
       content: 'getPosition(): OfficeExtension.ClientResult<Visio.Position>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.Position:interface" />&gt;'
+        type: '<xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.Position:interface" />&gt;'
         description: ''
   - name: getSelection()
     uid: 'visio!Visio.PageView#getSelection:member(1)'
@@ -162,7 +162,7 @@ methods:
           description: Shape to be checked.
           type: '<xref uid="visio!Visio.Shape:class" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: load(options)
     uid: 'visio!Visio.PageView#load:member(1)'
@@ -254,7 +254,7 @@ methods:
           type: '<xref uid="visio!Visio.Interfaces.PageViewUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="visio!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -330,4 +330,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.PageViewData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

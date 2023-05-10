@@ -135,4 +135,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.GeometricShapeData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

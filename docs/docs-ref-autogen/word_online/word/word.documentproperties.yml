@@ -334,7 +334,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.DocumentPropertiesUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -410,4 +410,4 @@ methods:
       return:
         type: '<xref uid="word!Word.DocumentProperties:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

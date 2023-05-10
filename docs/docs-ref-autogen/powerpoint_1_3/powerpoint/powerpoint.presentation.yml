@@ -84,7 +84,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/insert-slides.yaml
@@ -201,4 +201,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.PresentationData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

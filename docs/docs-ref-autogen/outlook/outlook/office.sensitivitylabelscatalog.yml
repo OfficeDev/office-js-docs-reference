@@ -11,17 +11,17 @@ remarks: >-
   \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read/write item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read/write item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 
 
-  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+  \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
 
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
@@ -40,20 +40,21 @@ methods:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
-      **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
+      \*\*Recommended\*\*: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
 
 
@@ -71,14 +72,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The available sensitivity labels
             and their properties are returned in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SensitivityLabelDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -92,20 +93,21 @@ methods:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
-      **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
+      \*\*Recommended\*\*: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
 
 
@@ -117,7 +119,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
@@ -152,7 +154,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The available sensitivity labels
             and their properties are returned in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SensitivityLabelDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -166,22 +168,23 @@ methods:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
+      \*\*Important\*\*: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
@@ -198,13 +201,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The status of the catalog of
             sensitivity labels is returned in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -217,22 +220,23 @@ methods:
       \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
+      \*\*Important\*\*: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
@@ -243,7 +247,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
@@ -269,7 +273,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The status of the catalog of
             sensitivity labels is returned in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
         description: ''

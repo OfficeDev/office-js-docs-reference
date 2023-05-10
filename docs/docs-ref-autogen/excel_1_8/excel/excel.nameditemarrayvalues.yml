@@ -133,4 +133,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.NamedItemArrayValuesData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

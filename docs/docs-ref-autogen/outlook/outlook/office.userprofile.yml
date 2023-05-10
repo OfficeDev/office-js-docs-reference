@@ -7,13 +7,13 @@ summary: >-
   Information about the user associated with the mailbox. This includes their account type, display name, email address,
   and time zone.
 remarks: >-
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -23,22 +23,24 @@ properties:
     uid: 'outlook!Office.UserProfile#accountType:member'
     package: outlook!
     fullName: accountType
-    summary: |-
+    summary: >-
       Gets the account type of the user associated with the mailbox.
 
-      **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
+
+      \*\*Note\*\*: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and
+      greater.
     remarks: >-
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
       The possible account types are listed in the following table.
@@ -51,15 +53,15 @@ properties:
       account.</td> </tr> </table>
 
 
-      **Note**: For hybrid Exchange environments, the returned account type value depends on where the mailbox is
-      hosted. If the mailbox is on an on-premises server, the account type value is **enterprise**. However, if it's
-      hosted on Exchange Online, the account type value is **office365**.
+      \*\*Note\*\*: For hybrid Exchange environments, the returned account type value depends on where the mailbox is
+      hosted. If the mailbox is on an on-premises server, the account type value is \*\*enterprise\*\*. However, if it's
+      hosted on Exchange Online, the account type value is \*\*office365\*\*.
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       console.log(Office.context.mailbox.userProfile.accountType);
 
@@ -76,20 +78,20 @@ properties:
     fullName: displayName
     summary: Gets the user's display name.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Example: Allie Bellew
 
@@ -108,20 +110,20 @@ properties:
     fullName: emailAddress
     summary: Gets the user's SMTP email address.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Example: allieb@contoso.com
 
@@ -145,20 +147,20 @@ properties:
       The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar
       preferences is returned instead.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Example: Pacific Standard Time
 

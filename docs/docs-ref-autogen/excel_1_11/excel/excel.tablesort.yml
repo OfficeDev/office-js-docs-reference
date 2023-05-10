@@ -70,7 +70,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -236,4 +236,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableSortData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
@@ -69,7 +69,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -122,7 +122,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
@@ -160,7 +160,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-header-and-footer.yaml
@@ -196,7 +196,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -256,7 +256,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next section. If this section is the last one, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -354,7 +354,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.SectionUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -430,4 +430,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Section:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

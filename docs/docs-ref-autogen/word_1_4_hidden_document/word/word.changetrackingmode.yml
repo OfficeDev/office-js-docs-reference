@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
@@ -42,7 +42,7 @@ fields:
     summary: |-
       ChangeTracking is turned off.
 
-      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: 'word!Word.ChangeTrackingMode.trackAll:member'
@@ -50,7 +50,7 @@ fields:
     summary: |-
       ChangeTracking is turned on for everyone.
 
-      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
@@ -58,5 +58,5 @@ fields:
     summary: |-
       Tracking is turned on for my changes only.
 
-      * \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

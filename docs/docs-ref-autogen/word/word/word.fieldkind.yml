@@ -14,7 +14,7 @@ fields:
     summary: |-
       Represents that the field doesn't have a result.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Cold"'
   - name: hot
     uid: 'word!Word.FieldKind.hot:member'
@@ -24,7 +24,7 @@ fields:
       but which can also be manually updated.
 
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hot"'
   - name: none
     uid: 'word!Word.FieldKind.none:member'
@@ -32,7 +32,7 @@ fields:
     summary: |-
       Represents that the field is invalid. For example, a pair of field characters with nothing inside.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"None"'
   - name: warm
     uid: 'word!Word.FieldKind.warm:member'
@@ -40,5 +40,5 @@ fields:
     summary: |-
       Represents that the field is automatically updated when the source changes or the field can be manually updated.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Warm"'

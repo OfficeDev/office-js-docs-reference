@@ -146,4 +146,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

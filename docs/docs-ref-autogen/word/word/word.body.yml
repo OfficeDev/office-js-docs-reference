@@ -59,7 +59,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
@@ -101,7 +101,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the style and the font size, font name, and font color properties on the body object.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -144,7 +144,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
@@ -178,7 +178,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
@@ -222,7 +222,7 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for
+      Gets the collection of paragraph objects in the body. \*\*Important\*\*: Paragraphs in tables are not returned for
       requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -231,7 +231,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
@@ -313,7 +313,7 @@ properties:
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a
       parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [*OrNullObject methods and
+      further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -344,7 +344,7 @@ properties:
     summary: >-
       Gets the content control that contains the body. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -372,7 +372,7 @@ properties:
     fullName: parentSectionOrNullObject
     summary: >-
       Gets the parent section of the body. If there isn't a parent section, then this method will return an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -485,7 +485,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -517,7 +517,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the text property on the body object
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -554,7 +554,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
@@ -599,7 +599,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -639,7 +639,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
@@ -670,8 +670,8 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the body. **Important**: If specific types are provided in the
-      options parameter, only content controls of supported types are returned. Be aware that an exception will be
+      Gets the currently supported content controls in the body. \*\*Important\*\*: If specific types are provided in
+      the options parameter, only content controls of supported types are returned. Be aware that an exception will be
       thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
@@ -701,7 +701,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -722,7 +722,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.Body#getOoxml:member(1)'
@@ -734,7 +734,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -755,7 +755,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Body#getRange:member(1)'
@@ -795,7 +795,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getReviewedText(changeTrackingVersionString)
     uid: 'word!Word.Body#getReviewedText:member(2)'
@@ -812,7 +812,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.Body#insertBreak:member(1)'
@@ -824,7 +824,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -871,7 +871,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -912,7 +912,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -957,7 +957,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1002,7 +1002,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1048,7 +1048,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1100,7 +1100,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Run a batch operation against the Word object model.
 
@@ -1126,7 +1126,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
@@ -1179,7 +1179,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -1232,7 +1232,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1347,7 +1347,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
@@ -1432,7 +1432,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1497,7 +1497,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1586,7 +1586,7 @@ events:
       content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentChanged
     uid: 'word!Word.Body#onCommentChanged:member'
@@ -1600,7 +1600,7 @@ events:
       content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeleted
     uid: 'word!Word.Body#onCommentDeleted:member'
@@ -1614,7 +1614,7 @@ events:
       content: 'readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeselected
     uid: 'word!Word.Body#onCommentDeselected:member'
@@ -1628,7 +1628,7 @@ events:
       content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentSelected
     uid: 'word!Word.Body#onCommentSelected:member'
@@ -1642,6 +1642,6 @@ events:
       content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

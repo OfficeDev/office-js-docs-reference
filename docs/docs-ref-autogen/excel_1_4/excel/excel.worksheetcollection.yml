@@ -48,7 +48,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sample Name';
           const worksheet = context.workbook.worksheets.add(wSheetName);
@@ -81,7 +81,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {  
           const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
           activeWorksheet.load('name');
@@ -111,7 +111,7 @@ methods:
           description: 'Optional. If `true`<!-- -->, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
@@ -136,7 +136,7 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: >-
       Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -197,7 +197,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const worksheets = context.workbook.worksheets;
               worksheets.load('items');
@@ -225,7 +225,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: ''
@@ -247,4 +247,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

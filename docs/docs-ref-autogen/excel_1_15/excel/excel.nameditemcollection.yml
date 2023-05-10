@@ -50,7 +50,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
@@ -117,7 +117,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
@@ -129,7 +129,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = 'Sheet1';
           const nameditem = context.workbook.names.getItem(sheetName);
@@ -156,7 +156,7 @@ methods:
     fullName: getItemOrNullObject(name)
     summary: >-
       Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -217,7 +217,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const nameditems = context.workbook.names;
               nameditems.load('items');
@@ -245,7 +245,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.NamedItemCollection:class" />'
         description: ''
@@ -267,4 +267,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.NamedItemCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

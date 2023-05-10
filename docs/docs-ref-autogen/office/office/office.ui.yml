@@ -22,7 +22,7 @@ methods:
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      \*\*Requirement set\*\*: [DialogAPI
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -61,7 +61,7 @@ methods:
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
-      **Requirement set**: [DialogAPI
+      \*\*Requirement set\*\*: [DialogAPI
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 
 
@@ -97,10 +97,10 @@ methods:
     fullName: closeContainer()
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
+      \*\*Applications\*\*: Excel, Outlook (Minimum requirement set: Mailbox 1.5), PowerPoint, Word
 
 
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       - [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
@@ -133,10 +133,10 @@ methods:
     fullName: 'displayDialogAsync(startAddress, options, callback)'
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      **Applications**: Excel, Outlook, PowerPoint, Word
+      \*\*Applications\*\*: Excel, Outlook, PowerPoint, Word
 
 
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       - [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
@@ -160,7 +160,7 @@ methods:
       Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
-      **Design considerations**:
+      \*\*Design considerations\*\*:
 
 
       The following design considerations apply to dialog boxes.
@@ -194,7 +194,7 @@ methods:
       Do not use a dialog box to interact with a document. Use a task pane instead.
 
 
-      **displayDialogAsync Errors**
+      \*\*displayDialogAsync Errors\*\*
 
 
       <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
@@ -248,10 +248,10 @@ methods:
     fullName: 'displayDialogAsync(startAddress, callback)'
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      **Applications**: Excel, Outlook, PowerPoint, Word
+      \*\*Applications\*\*: Excel, Outlook, PowerPoint, Word
 
 
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       - [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
@@ -275,7 +275,7 @@ methods:
       Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
-      **Design considerations**:
+      \*\*Design considerations\*\*:
 
 
       The following design considerations apply to dialog boxes.
@@ -309,7 +309,7 @@ methods:
       Do not use a dialog box to interact with a document. Use a task pane instead.
 
 
-      **displayDialogAsync Errors**
+      \*\*displayDialogAsync Errors\*\*
 
 
       <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
@@ -356,7 +356,7 @@ methods:
     fullName: 'messageParent(message, messageOptions)'
     summary: Delivers a message from the dialog box to its parent/opener page.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       - [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
@@ -387,7 +387,7 @@ methods:
     fullName: openBrowserWindow(url)
     summary: Opens a browser window and loads the specified URL.
     remarks: >-
-      **Requirement set**: [OpenBrowserWindowAPI
+      \*\*Requirement set\*\*: [OpenBrowserWindowAPI
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets)
     isPreview: false
     isDeprecated: false

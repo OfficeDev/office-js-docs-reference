@@ -11,14 +11,14 @@ summary: >-
   Internet headers are stored as string key-value pairs on a per-item basis.
 
 
-  **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see
+  \*\*Note\*\*: This object is intended for you to set and get your custom headers on a message item. To learn more, see
   [Get and set internet headers on a message in an Outlook
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **Recommended practices**
+  \*\*Recommended practices\*\*
 
 
   Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create
@@ -43,13 +43,13 @@ remarks: >-
   (for example, based on user input, timestamp, etc.).
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 isPreview: false
 isDeprecated: false
@@ -65,25 +65,26 @@ methods:
       results.
 
 
-      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
+      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync`
+      method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -114,7 +115,7 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
@@ -122,8 +123,8 @@ methods:
             internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in
             the `asyncResult.error` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt;
-            void
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -137,19 +138,20 @@ methods:
       results.
 
 
-      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
+      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync`
+      method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,8 +167,8 @@ methods:
             internet headers are returned in the `asyncResult.value` property. Any errors encountered are provided in
             the `asyncResult.error` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;) =&gt;
-            void
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;Record&lt;string, string&gt;&gt;)
+            =&gt; void
       return:
         type: void
         description: ''
@@ -179,25 +181,25 @@ methods:
       collection.
 
 
-      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
+      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -228,13 +230,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
             in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -247,19 +249,19 @@ methods:
       collection.
 
 
-      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
+      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -273,7 +275,7 @@ methods:
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
             in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -289,12 +291,13 @@ methods:
       value is replaced with the new value.
 
 
-      **Note**: This method is intended to set the values of your custom headers.
+      \*\*Note\*\*: This method is intended to set the values of your custom headers.
 
 
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-      the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by
-      your organization's administrator. For further information on header limits, see [Exchange Online message
+      \*\*Important\*\*: The header quota is based on the total size of headers applied to a message. In Exchange
+      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
+      determined by your organization's administrator. For further information on header limits, see [Exchange Online
+      message
       limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
@@ -303,20 +306,20 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -350,13 +353,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
             in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -372,12 +375,13 @@ methods:
       value is replaced with the new value.
 
 
-      **Note**: This method is intended to set the values of your custom headers.
+      \*\*Note\*\*: This method is intended to set the values of your custom headers.
 
 
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-      the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by
-      your organization's administrator. For further information on header limits, see [Exchange Online message
+      \*\*Important\*\*: The header quota is based on the total size of headers applied to a message. In Exchange
+      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
+      determined by your organization's administrator. For further information on header limits, see [Exchange Online
+      message
       limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
@@ -386,14 +390,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -409,7 +413,7 @@ methods:
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. Any errors encountered are provided
             in the `asyncResult.error` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

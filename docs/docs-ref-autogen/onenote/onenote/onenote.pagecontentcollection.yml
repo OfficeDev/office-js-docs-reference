@@ -75,7 +75,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           const page = context.application.getActivePage();
@@ -147,7 +147,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
 
               // Get the collection of pageContent items from the page.
@@ -181,7 +181,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="onenote!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.PageContentCollection:class" />'
         description: ''
@@ -238,4 +238,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.PageContentCollection:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

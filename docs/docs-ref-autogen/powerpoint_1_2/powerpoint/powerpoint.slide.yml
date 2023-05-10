@@ -48,7 +48,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/slide-management/get-set-slides.yaml
@@ -160,4 +160,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

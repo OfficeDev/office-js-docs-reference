@@ -7,8 +7,8 @@ summary: >-
   The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-  this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.1/office.context.mailbox.item)
   page.
 
@@ -30,8 +30,8 @@ properties:
     package: outlook!
     fullName: bcc
     summary: >-
-      Gets an object that provides methods to get or update the recipients on the **Bcc** (blind carbon copy) line of a
-      message.
+      Gets an object that provides methods to get or update the recipients on the \*\*Bcc\*\* (blind carbon copy) line
+      of a message.
 
 
       Depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply on how many recipients you can get
@@ -40,20 +40,20 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
@@ -68,7 +68,7 @@ properties:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -117,20 +117,20 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // This example gets the body of the item as plain text.
 
@@ -166,24 +166,24 @@ properties:
 
 
       The `cc` property returns a `Recipients` object that provides methods to get or update the recipients on the
-      **Cc** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
-      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      \*\*Cc\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
+      apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
       object for more details.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
@@ -198,7 +198,7 @@ properties:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
@@ -254,20 +254,20 @@ properties:
       You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
       the `conversationId` property will return a value.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
@@ -292,20 +292,20 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
       instance is a message or an appointment.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-item-type.yaml
@@ -339,20 +339,20 @@ properties:
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
@@ -390,29 +390,29 @@ properties:
     package: outlook!
     fullName: to
     summary: >-
-      Provides access to the recipients on the **To** line of a message. The type of object and level of access depend
-      on the mode of the current item.
+      Provides access to the recipients on the \*\*To\*\* line of a message. The type of object and level of access
+      depend on the mode of the current item.
 
 
       The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the
-      **To** line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may apply
-      on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
+      \*\*To\*\* line of the message. However, depending on the client/platform (i.e., Windows, Mac, etc.), limits may
+      apply on how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface)
       object for more details.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
 
@@ -427,7 +427,7 @@ properties:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
@@ -484,24 +484,24 @@ methods:
       same session.
 
 
-      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      \*\*Important\*\*: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -516,7 +516,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function callback(result) {
           if (result.error) {
@@ -537,7 +537,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following example adds an image file as an inline attachment and
 
@@ -561,7 +561,7 @@ methods:
           });
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
@@ -597,14 +597,14 @@ methods:
             can provide any object they wish to access in the callback function. `isInline`<!-- -->: If true, indicates
             that the attachment will be shown inline in the message body, and should not be displayed in the attachment
             list.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" /> & { isInline: boolean }'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" /> & { isInline: boolean }'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
             the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain
             an `Error` object that provides a description of the error.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -624,24 +624,24 @@ methods:
       same session.
 
 
-      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      \*\*Important\*\*: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -674,7 +674,7 @@ methods:
             parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
             the `asyncResult.value` property. If uploading the attachment fails, the `asyncResult` object will contain
             an `Error` object that provides a description of the error.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -702,17 +702,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -721,7 +721,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example adds an existing Outlook item as an attachment
 
@@ -748,7 +748,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
@@ -780,14 +780,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
             the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an
             `Error` object that provides a description of the error.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -815,17 +815,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -850,7 +850,7 @@ methods:
             parameter of type `Office.AsyncResult`<!-- -->. On success, the attachment identifier will be provided in
             the `asyncResult.value` property. If adding the attachment fails, the `asyncResult` object will contain an
             `Error` object that provides a description of the error.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -878,20 +878,20 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example shows how to use the loadCustomPropertiesAsync method
 
@@ -932,7 +932,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
@@ -967,7 +967,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
@@ -994,17 +994,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1013,7 +1013,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following code removes an attachment with an identifier of '0'.
 
@@ -1028,7 +1028,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/40-attachments/attachments-compose.yaml
@@ -1063,13 +1063,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. If removing the attachment fails, the `asyncResult.error`
             property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1090,17 +1090,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Message Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Message Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1121,7 +1121,7 @@ methods:
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. If removing the attachment fails, the `asyncResult.error`
             property will contain an error code with the reason for the failure.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

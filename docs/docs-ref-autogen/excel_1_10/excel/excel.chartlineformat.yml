@@ -74,7 +74,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Clear the format of the major gridlines on Chart1. 
       await Excel.run(async (context) => { 
           const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
@@ -133,7 +133,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Set chart major gridlines on value axis to be red.
           await Excel.run(async (context) => {
               const gridlines = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
@@ -192,7 +192,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -231,4 +231,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ChartLineFormatData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

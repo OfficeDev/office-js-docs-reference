@@ -51,4 +51,4 @@ properties:
       content: 'readonly workbook: Workbook;'
       return:
         type: '<xref uid="excel!Excel.Workbook:class" />'
-extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientRequestContext:class" />'

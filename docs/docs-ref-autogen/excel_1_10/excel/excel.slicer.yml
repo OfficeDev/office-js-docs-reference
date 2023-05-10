@@ -140,7 +140,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
@@ -211,7 +211,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
@@ -242,7 +242,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
@@ -272,7 +272,7 @@ methods:
     syntax:
       content: 'getSelectedItems(): OfficeExtension.ClientResult<string[]>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Slicer#load:member(1)'
@@ -355,7 +355,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-slicer.yaml
@@ -398,7 +398,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.SlicerUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -437,4 +437,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.SlicerData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

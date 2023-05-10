@@ -58,7 +58,7 @@ methods:
       Removes the specified function from the event handler list so that it will not be called on subsequent events.
 
 
-      **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
+      \*\*Note\*\*: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
       handler was added in must be used when removing the handler. More information can be found in [Remove an event
       handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!--
       -->.

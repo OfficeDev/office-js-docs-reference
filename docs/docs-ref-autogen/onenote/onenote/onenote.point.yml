@@ -180,4 +180,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.Point:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

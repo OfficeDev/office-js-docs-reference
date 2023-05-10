@@ -61,7 +61,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const pages = ctx.document.pages;
               const pageCount = pages.getCount();
@@ -111,7 +111,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               const activePage = document.getActivePage();
@@ -216,7 +216,7 @@ methods:
           type: '<xref uid="visio!Visio.Interfaces.DocumentUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="visio!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -261,7 +261,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               const pageName = "Page-1";
@@ -373,7 +373,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               document.startDataRefresh();
@@ -419,7 +419,7 @@ events:
       content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.DataRefreshCompleteEventArgs:interface" />&gt;
   - name: onDocumentError
     uid: 'visio!Visio.Document#onDocumentError:member'
@@ -436,7 +436,7 @@ events:
       content: 'readonly onDocumentError: OfficeExtension.EventHandlers<Visio.DocumentErrorEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.DocumentErrorEventArgs:interface" />&gt;
   - name: onDocumentLoadComplete
     uid: 'visio!Visio.Document#onDocumentLoadComplete:member'
@@ -453,7 +453,7 @@ events:
       content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.DocumentLoadCompleteEventArgs:interface" />&gt;
   - name: onPageLoadComplete
     uid: 'visio!Visio.Document#onPageLoadComplete:member'
@@ -470,7 +470,7 @@ events:
       content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.PageLoadCompleteEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'visio!Visio.Document#onSelectionChanged:member'
@@ -487,7 +487,7 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.SelectionChangedEventArgs:interface" />&gt;
   - name: onShapeMouseEnter
     uid: 'visio!Visio.Document#onShapeMouseEnter:member'
@@ -504,7 +504,7 @@ events:
       content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.ShapeMouseEnterEventArgs:interface" />&gt;
   - name: onShapeMouseLeave
     uid: 'visio!Visio.Document#onShapeMouseLeave:member'
@@ -521,7 +521,7 @@ events:
       content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.ShapeMouseLeaveEventArgs:interface" />&gt;
   - name: onTaskPaneStateChanged
     uid: 'visio!Visio.Document#onTaskPaneStateChanged:member'
@@ -538,6 +538,6 @@ events:
       content: 'readonly onTaskPaneStateChanged: OfficeExtension.EventHandlers<Visio.TaskPaneStateChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="visio!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="visio!Visio.TaskPaneStateChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

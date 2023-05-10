@@ -38,7 +38,7 @@ properties:
     syntax:
       content: 'callback?: (asyncResult: Office.AsyncResult<any>) => void;'
       return:
-        type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
+        type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;any&gt;) =&gt; void'
   - name: htmlBody
     uid: 'outlook!Office.ReplyFormData#htmlBody:member'
     package: outlook!
@@ -66,4 +66,4 @@ properties:
     syntax:
       content: 'options?: Office.AsyncContextOptions;'
       return:
-        type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+        type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'

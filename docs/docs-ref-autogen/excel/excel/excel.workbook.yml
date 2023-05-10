@@ -212,7 +212,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
@@ -273,7 +273,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/26-document/properties.yaml
@@ -406,7 +406,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
@@ -538,7 +538,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
@@ -588,7 +588,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-get-active-cell.yaml
@@ -633,7 +633,7 @@ methods:
     fullName: getActiveChartOrNullObject()
     summary: >-
       Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -665,7 +665,7 @@ methods:
     fullName: getActiveSlicerOrNullObject()
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -690,7 +690,7 @@ methods:
     syntax:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: getLinkedEntityCellValue(linkedEntityCellValueId)
     uid: 'excel!Excel.Workbook#getLinkedEntityCellValue:member(1)'
@@ -710,7 +710,7 @@ methods:
           type: '<xref uid="excel!Excel.LinkedEntityId:interface" />'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref
           uid="excel!Excel.LinkedEntityCellValue:interface" />&gt;
         description: ''
   - name: getSelectedRange()
@@ -725,7 +725,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const selectedRange = context.workbook.getSelectedRange();
           selectedRange.load('address');
@@ -754,7 +754,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-areas.yaml
@@ -782,7 +782,7 @@ methods:
     summary: |-
       Inserts the specified worksheets from a source workbook into the current workbook.
 
-      *Note**: This API is currently only supported for Office on Windows, Mac, and the web.
+      \*Note\*\*: This API is currently only supported for Office on Windows, Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -790,7 +790,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-insert-external-worksheets.yaml
@@ -850,7 +850,7 @@ methods:
             current workbook.
           type: '<xref uid="excel!Excel.InsertWorksheetOptions:interface" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: An array of IDs corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: 'excel!Excel.Workbook#load:member(1)'
@@ -931,7 +931,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
@@ -989,7 +989,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1041,7 +1041,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-workbook-activated.yaml
@@ -1073,7 +1073,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
   - name: onAutoSaveSettingChanged
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
@@ -1087,7 +1087,7 @@ events:
       content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Workbook#onSelectionChanged:member'
@@ -1101,6 +1101,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

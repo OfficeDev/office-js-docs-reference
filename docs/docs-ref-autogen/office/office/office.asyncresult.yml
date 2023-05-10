@@ -15,7 +15,7 @@ remarks: |-
 
   #### Examples
 
-  ```javascript
+  ```TypeScript
   // The following is an example applicable to content and task pane add-ins.
   // The example shows a call to the getSelectedDataAsync method of the Document object.
   Office.context.document.getSelectedDataAsync("text", {
@@ -65,7 +65,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function getDataWithContext() {
               const format = "Your data: ";
               Office.context.document.getSelectedDataAsync(
@@ -91,14 +91,14 @@ properties:
       This property returns additional information if the following errors occur with these supported APIs.
 
 
-      *Supported APIs*
+      \*Supported APIs\*
 
 
       `Office.context.mailbox.item.getCallbackTokenAsync`<!-- -->,
       `Office.context.mailbox.item.getUserIdentityTokenAsync`
 
 
-      *Supported errors* <table> <tr><th><code>AsyncResult.error.name</code>
+      \*Supported errors\* <table> <tr><th><code>AsyncResult.error.name</code>
       </th><th><code>AsyncResult.error.message</code> </th><th>Description of diagnostics object returned </th></tr>
       <tr><td><strong>HTTPRequestFailure</strong> </td><td>The request has failed. Please look at the diagnostics object
       for the HTTP error code. </td><td>The HTTP error code in a JSON object e.g., <code>{<!-- -->"HTTPCode":"401"<!--
@@ -131,7 +131,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -164,7 +164,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -191,7 +191,7 @@ properties:
       [Document](xref:office!Office.Document:interface) object.
 
 
-      **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and
+      \*\*Note\*\*: What the value property returns for a particular "Async" method varies depending on the purpose and
       context of that method. To determine what is returned by the value property for an "Async" method, refer to the
       "Callback value" section of the method's topic.
 
@@ -199,7 +199,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {

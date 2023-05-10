@@ -67,7 +67,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const row = context.workbook.tables.getItem(tableName).rows.getItemAt(2);
@@ -92,7 +92,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
@@ -152,7 +152,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const tableName = 'Table1';
               const row = context.workbook.tables.getItem(tableName).rows.getItemAt(0);
@@ -211,7 +211,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.TableRowUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -250,4 +250,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableRowData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
@@ -106,7 +106,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-get-pictures.yaml
@@ -183,7 +183,7 @@ properties:
     summary: >-
       Gets the content control that contains the inline image. If there isn't a parent content control, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -226,7 +226,7 @@ properties:
     summary: >-
       Gets the table cell that contains the inline image. If it is not contained in a table cell, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -242,8 +242,8 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains the inline image. If it is not contained in a table, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -291,7 +291,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
@@ -317,7 +317,7 @@ methods:
     syntax:
       content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getNext()
     uid: 'word!Word.InlinePicture#getNext:member(1)'
@@ -329,7 +329,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -363,7 +363,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next inline image. If this inline image is the last one, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: |-
@@ -371,7 +371,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -725,7 +725,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.InlinePictureUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -801,4 +801,4 @@ methods:
       return:
         type: '<xref uid="word!Word.InlinePicture:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

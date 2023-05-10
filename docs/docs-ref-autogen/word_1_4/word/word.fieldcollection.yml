@@ -41,7 +41,7 @@ properties:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
@@ -87,7 +87,7 @@ methods:
     fullName: getFirstOrNullObject()
     summary: >-
       Gets the first field in this collection. If this collection is empty, then this method will return an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -97,7 +97,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
@@ -185,7 +185,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="word!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="word!Word.FieldCollection:class" />'
         description: ''
@@ -244,4 +244,4 @@ methods:
       return:
         type: '<xref uid="word!Word.FieldCollection:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

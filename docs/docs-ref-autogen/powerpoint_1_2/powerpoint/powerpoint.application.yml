@@ -37,7 +37,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+          type: '<xref uid="powerpoint!~OfficeExtension.ClientRequestContext:class" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Application:class" />'
         description: ''
@@ -65,4 +65,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

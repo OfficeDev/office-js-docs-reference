@@ -72,7 +72,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -163,7 +163,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -217,7 +217,7 @@ methods:
     syntax:
       content: 'isTitle(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: load(options)
     uid: 'onenote!OneNote.Outline#load:member(1)'
@@ -339,4 +339,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.Outline:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

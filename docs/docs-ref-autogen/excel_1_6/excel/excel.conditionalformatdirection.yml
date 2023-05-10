@@ -11,10 +11,10 @@ fields:
   - name: bottom
     uid: 'excel!Excel.ConditionalFormatDirection.bottom:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: top
     uid: 'excel!Excel.ConditionalFormatDirection.top:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Top"'

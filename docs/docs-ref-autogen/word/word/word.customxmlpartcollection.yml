@@ -48,7 +48,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
@@ -115,7 +115,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(id)
     uid: 'word!Word.CustomXmlPartCollection#getItem:member(1)'
@@ -129,7 +129,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
@@ -178,8 +178,8 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -253,7 +253,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="word!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
@@ -312,4 +312,4 @@ methods:
       return:
         type: '<xref uid="word!Word.CustomXmlPartCollection:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

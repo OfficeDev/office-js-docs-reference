@@ -48,7 +48,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sample Name';
           const worksheet = context.workbook.worksheets.add(wSheetName);
@@ -81,7 +81,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {  
           const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
           activeWorksheet.load('name');
@@ -159,7 +159,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const worksheets = context.workbook.worksheets;
               worksheets.load('items');
@@ -187,7 +187,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: ''
@@ -209,4 +209,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

@@ -5,15 +5,15 @@ package: outlook!
 fullName: Office.MailboxEnums.ResponseType
 summary: Specifies the type of response to a meeting invitation.
 remarks: >-
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 
 
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-all-attendees.yaml

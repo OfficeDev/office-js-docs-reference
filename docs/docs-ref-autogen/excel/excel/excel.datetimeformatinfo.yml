@@ -169,4 +169,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.DatetimeFormatInfoData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

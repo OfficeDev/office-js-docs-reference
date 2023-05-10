@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -46,7 +46,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -135,7 +135,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -217,7 +217,7 @@ properties:
     summary: >-
       Gets the content control that contains the table. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -259,7 +259,7 @@ properties:
     fullName: parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains this table. If it is not contained in a table cell, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
       methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -276,7 +276,7 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains this table. If it is not contained in a table, then this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -310,7 +310,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -534,7 +534,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -734,7 +734,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -799,7 +799,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -836,7 +836,7 @@ methods:
     summary: >-
       Gets the table cell at a specified row and column. If the specified table cell does not exist, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -866,7 +866,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
@@ -894,7 +894,7 @@ methods:
           description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getCellPadding(cellPaddingLocationString)
     uid: 'word!Word.Table#getCellPadding:member(2)'
@@ -913,7 +913,7 @@ methods:
           description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getNext()
     uid: 'word!Word.Table#getNext:member(1)'
@@ -934,7 +934,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next table. If this table is the last one, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -964,8 +964,8 @@ methods:
     fullName: getParagraphAfterOrNullObject()
     summary: >-
       Gets the paragraph after the table. If there isn't a paragraph after the table, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -995,8 +995,8 @@ methods:
     fullName: getParagraphBeforeOrNullObject()
     summary: >-
       Gets the paragraph before the table. If there isn't a paragraph before the table, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -1283,7 +1283,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.TableUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1399,4 +1399,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Table:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

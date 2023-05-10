@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```typescript
+  ```TypeScript
   // This function adds a custom AutoFilter to the active worksheet 
   // and applies the filter to a column of the used range.
   await Excel.run(async (context) => {
@@ -32,50 +32,50 @@ fields:
   - name: bottomItems
     uid: 'excel!Excel.FilterOn.bottomItems:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BottomItems"'
   - name: bottomPercent
     uid: 'excel!Excel.FilterOn.bottomPercent:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BottomPercent"'
   - name: cellColor
     uid: 'excel!Excel.FilterOn.cellColor:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"CellColor"'
   - name: custom
     uid: 'excel!Excel.FilterOn.custom:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Custom"'
   - name: dynamic
     uid: 'excel!Excel.FilterOn.dynamic:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Dynamic"'
   - name: fontColor
     uid: 'excel!Excel.FilterOn.fontColor:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FontColor"'
   - name: icon
     uid: 'excel!Excel.FilterOn.icon:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Icon"'
   - name: topItems
     uid: 'excel!Excel.FilterOn.topItems:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"TopItems"'
   - name: topPercent
     uid: 'excel!Excel.FilterOn.topPercent:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"TopPercent"'
   - name: values
     uid: 'excel!Excel.FilterOn.values:member'
     package: excel!
-    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Values"'

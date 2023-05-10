@@ -8,15 +8,15 @@ remarks: >-
   \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 
 
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
@@ -42,7 +42,7 @@ fields:
     summary: |-
       Treat the item as confidential.
 
-      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"confidential"'
   - name: Normal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
@@ -50,7 +50,7 @@ fields:
     summary: |-
       The item needs no special treatment.
 
-      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"normal"'
   - name: Personal
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
@@ -58,7 +58,7 @@ fields:
     summary: |-
       Treat the item as personal.
 
-      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"personal"'
   - name: Private
     uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
@@ -66,5 +66,5 @@ fields:
     summary: |-
       Treat the item as private.
 
-      * \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"private"'

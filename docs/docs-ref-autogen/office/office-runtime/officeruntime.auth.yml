@@ -27,8 +27,9 @@ methods:
       both user account types to access resources in the Microsoft Graph.
 
 
-      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-    remarks: '**Applications**: Excel, Outlook, PowerPoint, Word'
+      \*\*Important\*\*: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
+      mailbox.
+    remarks: '\*\*Applications\*\*: Excel, Outlook, PowerPoint, Word'
     isPreview: false
     isDeprecated: false
     syntax:

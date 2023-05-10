@@ -14,7 +14,7 @@ fields:
     summary: |-
       The dash line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Dash"'
   - name: dashDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.dashDot:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       The dash-dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DashDot"'
   - name: dashDotDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.dashDotDot:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       The dash-dot-dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"DashDotDot"'
   - name: longDash
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.longDash:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       The long dash line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LongDash"'
   - name: longDashDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.longDashDot:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       The long dash-dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LongDashDot"'
   - name: longDashDotDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.longDashDotDot:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       The long dash-dot-dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"LongDashDotDot"'
   - name: roundDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.roundDot:member'
@@ -62,7 +62,7 @@ fields:
     summary: |-
       The round dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"RoundDot"'
   - name: solid
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.solid:member'
@@ -70,7 +70,7 @@ fields:
     summary: |-
       The solid line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Solid"'
   - name: squareDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.squareDot:member'
@@ -78,7 +78,7 @@ fields:
     summary: |-
       The square dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SquareDot"'
   - name: systemDash
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.systemDash:member'
@@ -86,7 +86,7 @@ fields:
     summary: |-
       The system dash line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SystemDash"'
   - name: systemDashDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.systemDashDot:member'
@@ -94,7 +94,7 @@ fields:
     summary: |-
       The system dash-dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SystemDashDot"'
   - name: systemDot
     uid: 'powerpoint!PowerPoint.ShapeLineDashStyle.systemDot:member'
@@ -102,5 +102,5 @@ fields:
     summary: |-
       The system dot line pattern
 
-      * \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"SystemDot"'

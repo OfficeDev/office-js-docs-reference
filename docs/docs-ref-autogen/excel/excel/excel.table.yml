@@ -219,7 +219,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set table style.
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
@@ -300,7 +300,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -325,7 +325,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -350,7 +350,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -378,7 +378,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -406,7 +406,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -434,7 +434,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -494,7 +494,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get a table by name.
           await Excel.run(async (context) => { 
               const tableName = 'Table1';
@@ -561,7 +561,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/46-table/resize-table.yaml
@@ -609,7 +609,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.TableUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -680,7 +680,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
@@ -700,7 +700,7 @@ events:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
   - name: onFiltered
     uid: 'excel!Excel.Table#onFiltered:member'
@@ -714,7 +714,7 @@ events:
       content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableFilteredEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Table#onSelectionChanged:member'
@@ -728,7 +728,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
@@ -748,6 +748,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableSelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

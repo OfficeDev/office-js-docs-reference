@@ -31,7 +31,7 @@ properties:
     uid: 'word!Word.RequestContext#application:member'
     package: word!
     fullName: application
-    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \] *'
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \] \*'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,4 +51,4 @@ properties:
       content: 'readonly document: Document;'
       return:
         type: '<xref uid="word!Word.Document:class" />'
-extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientRequestContext:class" />'

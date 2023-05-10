@@ -32,7 +32,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showBindingColumnCount() {
               Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
                   write("Column: " + asyncResult.value.columnCount);
@@ -60,7 +60,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showBindingHasHeaders() {
               Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
                   write("Binding has headers: " + asyncResult.value.hasHeaders);
@@ -98,7 +98,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showBindingRowCount() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -155,7 +155,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example adds a single column with three rows to a bound table with the id "myTable"
 
@@ -296,7 +296,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function addRowsToTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -386,7 +386,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
 
@@ -441,7 +441,7 @@ methods:
 
       #### Examples
 
-      ```javascript
+      ```TypeScript
       function deleteAllRowsFromTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               const binding = asyncResult.value;
@@ -492,7 +492,7 @@ methods:
     fullName: 'getFormatsAsync(cellReference, formats, options, callback)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
-      **Returned format structure**
+      \*\*Returned format structure\*\*
 
 
       Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition
@@ -502,7 +502,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -517,7 +517,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Right-click then select \*\*Format Cells\*\*, or \*\*Home\*\* &gt; \*\*Format\*\* &gt;
+      \*\*Format Cells\*\*).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -552,7 +553,7 @@ methods:
     fullName: 'getFormatsAsync(cellReference, formats, callback)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
-      **Returned format structure**
+      \*\*Returned format structure\*\*
 
 
       Each JavaScript object in the return value array has this form: `{cells:{ cell_range }, format:{ format_definition
@@ -562,7 +563,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -577,7 +578,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Right-click then select \*\*Format Cells\*\*, or \*\*Home\*\* &gt; \*\*Format\*\* &gt;
+      \*\*Format Cells\*\*).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -609,7 +611,7 @@ methods:
     fullName: 'setFormatsAsync(cellFormat, options, callback)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
-      **Specifying the cellFormat parameter**
+      \*\*Specifying the cellFormat parameter\*\*
 
 
       Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background,
@@ -625,7 +627,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -640,7 +642,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Right-click then select \*\*Format Cells\*\*, or \*\*Home\*\* &gt; \*\*Format\*\* &gt;
+      \*\*Format Cells\*\*).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -709,7 +712,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Specifying a single target
 
@@ -778,7 +781,7 @@ methods:
     fullName: 'setFormatsAsync(cellFormat, callback)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
-      **Specifying the cellFormat parameter**
+      \*\*Specifying the cellFormat parameter\*\*
 
 
       Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background,
@@ -794,7 +797,7 @@ methods:
       The `cells:` property specifies the range you want format using one of the following values.
 
 
-      **Supported ranges in cells property**
+      \*\*Supported ranges in cells property\*\*
 
 
       <table> <tr> <th><code>cells</code> range settings</th> <th>Description</th> </tr> <tr> <td><code>{<!-- -->row:
@@ -809,7 +812,8 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
+      dialog box in Excel (Right-click then select \*\*Format Cells\*\*, or \*\*Home\*\* &gt; \*\*Format\*\* &gt;
+      \*\*Format Cells\*\*).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -897,7 +901,7 @@ methods:
     fullName: 'setTableOptionsAsync(tableOptions, options, callback)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
@@ -916,7 +920,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example shows how to:
 
@@ -960,7 +964,7 @@ methods:
     fullName: 'setTableOptionsAsync(tableOptions, callback)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 

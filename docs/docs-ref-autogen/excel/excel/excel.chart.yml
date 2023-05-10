@@ -172,7 +172,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set to show legend of Chart1 and make it on top of the chart.
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -200,7 +200,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Rename the chart to new name, resize the chart to 200 points in both height and weight.
       // Move Chart1 to 100 points to the top and left.
       await Excel.run(async (context) => { 
@@ -406,7 +406,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.delete();
@@ -433,7 +433,7 @@ methods:
     syntax:
       content: 'getDataRange(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getDataRangeOrNullObject()
     uid: 'excel!Excel.Chart#getDataRangeOrNullObject:member(1)'
@@ -441,7 +441,7 @@ methods:
     fullName: getDataRangeOrNullObject()
     summary: >-
       Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -450,7 +450,7 @@ methods:
     syntax:
       content: 'getDataRangeOrNullObject(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getDataTable()
     uid: 'excel!Excel.Chart#getDataTable:member(1)'
@@ -471,7 +471,7 @@ methods:
     fullName: getDataTableOrNullObject()
     summary: >-
       Gets the data table on the chart. If the chart doesn't allow a data table, then this method returns an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -481,7 +481,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-data-table.yaml
@@ -519,7 +519,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           const image = chart.getImage();
@@ -543,7 +543,7 @@ methods:
           description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'getImage(width, height, fittingModeString)'
     uid: 'excel!Excel.Chart#getImage:member(2)'
@@ -570,7 +570,7 @@ methods:
           description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Chart#load:member(1)'
@@ -614,7 +614,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get a chart named "Chart1".
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -673,7 +673,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ChartUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -704,7 +704,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns".
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sheet1");
@@ -762,7 +762,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Charts";
           const rangeSelection = "A1:B4";
@@ -824,7 +824,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -867,7 +867,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Chart#onDeactivated:member'
@@ -881,7 +881,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -916,6 +916,6 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

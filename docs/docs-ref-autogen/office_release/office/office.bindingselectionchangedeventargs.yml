@@ -51,7 +51,7 @@ properties:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following example adds an event handler for the SelectionChanged event to the binding with an id of
           myTable.
@@ -111,7 +111,7 @@ properties:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following example adds an event handler for the SelectionChanged event to the binding with an id of
           myTable.
@@ -171,7 +171,7 @@ properties:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following example adds an event handler for the SelectionChanged event to the binding with an id of
           myTable.
@@ -231,7 +231,7 @@ properties:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following example adds an event handler for the SelectionChanged event to the binding with an id of
           myTable.

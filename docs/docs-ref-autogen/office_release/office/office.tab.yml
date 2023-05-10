@@ -8,7 +8,7 @@ summary: >-
   Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom contextual
   tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
 remarks: >-
-  **Requirement set**: [RibbonAPI
+  \*\*Requirement set\*\*: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 isPreview: false
 isDeprecated: false
@@ -43,7 +43,7 @@ properties:
       controls have their enabled status changed; the `controls` property of the `Tab` object is ignored.
 
 
-      **Requirement set**: [RibbonAPI
+      \*\*Requirement set\*\*: [RibbonAPI
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -69,7 +69,7 @@ properties:
     fullName: visible
     summary: Specifies whether the tab is visible on the ribbon. Used only with contextual tabs.
     remarks: >-
-      **Requirement set**: [RibbonAPI
+      \*\*Requirement set\*\*: [RibbonAPI
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
     isPreview: false
     isDeprecated: false

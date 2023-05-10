@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-formatted-text.yaml
@@ -35,612 +35,612 @@ fields:
   - name: bibliography
     uid: 'word!Word.BuiltInStyleName.bibliography:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Bibliography"'
   - name: bookTitle
     uid: 'word!Word.BuiltInStyleName.bookTitle:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"BookTitle"'
   - name: caption
     uid: 'word!Word.BuiltInStyleName.caption:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Caption"'
   - name: emphasis
     uid: 'word!Word.BuiltInStyleName.emphasis:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Emphasis"'
   - name: endnoteReference
     uid: 'word!Word.BuiltInStyleName.endnoteReference:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"EndnoteReference"'
   - name: endnoteText
     uid: 'word!Word.BuiltInStyleName.endnoteText:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"EndnoteText"'
   - name: footer
     uid: 'word!Word.BuiltInStyleName.footer:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Footer"'
   - name: footnoteReference
     uid: 'word!Word.BuiltInStyleName.footnoteReference:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"FootnoteReference"'
   - name: footnoteText
     uid: 'word!Word.BuiltInStyleName.footnoteText:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"FootnoteText"'
   - name: gridTable1Light
     uid: 'word!Word.BuiltInStyleName.gridTable1Light:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light"'
   - name: gridTable1Light_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent1"'
   - name: gridTable1Light_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent2"'
   - name: gridTable1Light_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent3"'
   - name: gridTable1Light_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent4"'
   - name: gridTable1Light_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent5"'
   - name: gridTable1Light_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable1Light_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable1Light_Accent6"'
   - name: gridTable2
     uid: 'word!Word.BuiltInStyleName.gridTable2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2"'
   - name: gridTable2_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent1"'
   - name: gridTable2_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent2"'
   - name: gridTable2_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent3"'
   - name: gridTable2_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent4"'
   - name: gridTable2_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent5"'
   - name: gridTable2_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable2_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable2_Accent6"'
   - name: gridTable3
     uid: 'word!Word.BuiltInStyleName.gridTable3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3"'
   - name: gridTable3_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent1"'
   - name: gridTable3_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent2"'
   - name: gridTable3_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent3"'
   - name: gridTable3_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent4"'
   - name: gridTable3_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent5"'
   - name: gridTable3_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable3_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable3_Accent6"'
   - name: gridTable4
     uid: 'word!Word.BuiltInStyleName.gridTable4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4"'
   - name: gridTable4_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent1"'
   - name: gridTable4_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent2"'
   - name: gridTable4_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent3"'
   - name: gridTable4_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent4"'
   - name: gridTable4_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent5"'
   - name: gridTable4_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable4_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable4_Accent6"'
   - name: gridTable5Dark
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark"'
   - name: gridTable5Dark_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent1"'
   - name: gridTable5Dark_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent2"'
   - name: gridTable5Dark_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent3"'
   - name: gridTable5Dark_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent4"'
   - name: gridTable5Dark_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent5"'
   - name: gridTable5Dark_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable5Dark_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable5Dark_Accent6"'
   - name: gridTable6Colorful
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful"'
   - name: gridTable6Colorful_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent1"'
   - name: gridTable6Colorful_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent2"'
   - name: gridTable6Colorful_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent3"'
   - name: gridTable6Colorful_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent4"'
   - name: gridTable6Colorful_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent5"'
   - name: gridTable6Colorful_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable6Colorful_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable6Colorful_Accent6"'
   - name: gridTable7Colorful
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful"'
   - name: gridTable7Colorful_Accent1
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent1"'
   - name: gridTable7Colorful_Accent2
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent2"'
   - name: gridTable7Colorful_Accent3
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent3"'
   - name: gridTable7Colorful_Accent4
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent4"'
   - name: gridTable7Colorful_Accent5
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent5"'
   - name: gridTable7Colorful_Accent6
     uid: 'word!Word.BuiltInStyleName.gridTable7Colorful_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"GridTable7Colorful_Accent6"'
   - name: header
     uid: 'word!Word.BuiltInStyleName.header:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Header"'
   - name: heading1
     uid: 'word!Word.BuiltInStyleName.heading1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading1"'
   - name: heading2
     uid: 'word!Word.BuiltInStyleName.heading2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading2"'
   - name: heading3
     uid: 'word!Word.BuiltInStyleName.heading3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading3"'
   - name: heading4
     uid: 'word!Word.BuiltInStyleName.heading4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading4"'
   - name: heading5
     uid: 'word!Word.BuiltInStyleName.heading5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading5"'
   - name: heading6
     uid: 'word!Word.BuiltInStyleName.heading6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading6"'
   - name: heading7
     uid: 'word!Word.BuiltInStyleName.heading7:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading7"'
   - name: heading8
     uid: 'word!Word.BuiltInStyleName.heading8:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading8"'
   - name: heading9
     uid: 'word!Word.BuiltInStyleName.heading9:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Heading9"'
   - name: hyperlink
     uid: 'word!Word.BuiltInStyleName.hyperlink:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Hyperlink"'
   - name: intenseEmphasis
     uid: 'word!Word.BuiltInStyleName.intenseEmphasis:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"IntenseEmphasis"'
   - name: intenseQuote
     uid: 'word!Word.BuiltInStyleName.intenseQuote:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"IntenseQuote"'
   - name: intenseReference
     uid: 'word!Word.BuiltInStyleName.intenseReference:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"IntenseReference"'
   - name: listParagraph
     uid: 'word!Word.BuiltInStyleName.listParagraph:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListParagraph"'
   - name: listTable1Light
     uid: 'word!Word.BuiltInStyleName.listTable1Light:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light"'
   - name: listTable1Light_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent1"'
   - name: listTable1Light_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent2"'
   - name: listTable1Light_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent3"'
   - name: listTable1Light_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent4"'
   - name: listTable1Light_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent5"'
   - name: listTable1Light_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable1Light_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable1Light_Accent6"'
   - name: listTable2
     uid: 'word!Word.BuiltInStyleName.listTable2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2"'
   - name: listTable2_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent1"'
   - name: listTable2_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent2"'
   - name: listTable2_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent3"'
   - name: listTable2_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent4"'
   - name: listTable2_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent5"'
   - name: listTable2_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable2_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable2_Accent6"'
   - name: listTable3
     uid: 'word!Word.BuiltInStyleName.listTable3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3"'
   - name: listTable3_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent1"'
   - name: listTable3_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent2"'
   - name: listTable3_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent3"'
   - name: listTable3_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent4"'
   - name: listTable3_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent5"'
   - name: listTable3_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable3_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable3_Accent6"'
   - name: listTable4
     uid: 'word!Word.BuiltInStyleName.listTable4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4"'
   - name: listTable4_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent1"'
   - name: listTable4_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent2"'
   - name: listTable4_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent3"'
   - name: listTable4_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent4"'
   - name: listTable4_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent5"'
   - name: listTable4_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable4_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable4_Accent6"'
   - name: listTable5Dark
     uid: 'word!Word.BuiltInStyleName.listTable5Dark:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark"'
   - name: listTable5Dark_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent1"'
   - name: listTable5Dark_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent2"'
   - name: listTable5Dark_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent3"'
   - name: listTable5Dark_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent4"'
   - name: listTable5Dark_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent5"'
   - name: listTable5Dark_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable5Dark_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable5Dark_Accent6"'
   - name: listTable6Colorful
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful"'
   - name: listTable6Colorful_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent1"'
   - name: listTable6Colorful_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent2"'
   - name: listTable6Colorful_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent3"'
   - name: listTable6Colorful_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent4"'
   - name: listTable6Colorful_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent5"'
   - name: listTable6Colorful_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable6Colorful_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable6Colorful_Accent6"'
   - name: listTable7Colorful
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful"'
   - name: listTable7Colorful_Accent1
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent1"'
   - name: listTable7Colorful_Accent2
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent2"'
   - name: listTable7Colorful_Accent3
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent3"'
   - name: listTable7Colorful_Accent4
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent4"'
   - name: listTable7Colorful_Accent5
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent5"'
   - name: listTable7Colorful_Accent6
     uid: 'word!Word.BuiltInStyleName.listTable7Colorful_Accent6:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"ListTable7Colorful_Accent6"'
   - name: normal
     uid: 'word!Word.BuiltInStyleName.normal:member'
@@ -648,12 +648,12 @@ fields:
     summary: |-
       Reset character and paragraph style to default.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Normal"'
   - name: noSpacing
     uid: 'word!Word.BuiltInStyleName.noSpacing:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"NoSpacing"'
   - name: other
     uid: 'word!Word.BuiltInStyleName.other:member'
@@ -661,72 +661,72 @@ fields:
     summary: |-
       Mixed styles or other style not in this list.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Other"'
   - name: plainTable1
     uid: 'word!Word.BuiltInStyleName.plainTable1:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"PlainTable1"'
   - name: plainTable2
     uid: 'word!Word.BuiltInStyleName.plainTable2:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"PlainTable2"'
   - name: plainTable3
     uid: 'word!Word.BuiltInStyleName.plainTable3:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"PlainTable3"'
   - name: plainTable4
     uid: 'word!Word.BuiltInStyleName.plainTable4:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"PlainTable4"'
   - name: plainTable5
     uid: 'word!Word.BuiltInStyleName.plainTable5:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"PlainTable5"'
   - name: quote
     uid: 'word!Word.BuiltInStyleName.quote:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Quote"'
   - name: strong
     uid: 'word!Word.BuiltInStyleName.strong:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Strong"'
   - name: subtitle
     uid: 'word!Word.BuiltInStyleName.subtitle:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Subtitle"'
   - name: subtleEmphasis
     uid: 'word!Word.BuiltInStyleName.subtleEmphasis:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"SubtleEmphasis"'
   - name: subtleReference
     uid: 'word!Word.BuiltInStyleName.subtleReference:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"SubtleReference"'
   - name: tableGrid
     uid: 'word!Word.BuiltInStyleName.tableGrid:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"TableGrid"'
   - name: tableGridLight
     uid: 'word!Word.BuiltInStyleName.tableGridLight:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"TableGridLight"'
   - name: title
     uid: 'word!Word.BuiltInStyleName.title:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Title"'
   - name: toc1
     uid: 'word!Word.BuiltInStyleName.toc1:member'
@@ -734,7 +734,7 @@ fields:
     summary: |-
       Table-of-content level 1.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc1"'
   - name: toc2
     uid: 'word!Word.BuiltInStyleName.toc2:member'
@@ -742,7 +742,7 @@ fields:
     summary: |-
       Table-of-content level 2.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc2"'
   - name: toc3
     uid: 'word!Word.BuiltInStyleName.toc3:member'
@@ -750,7 +750,7 @@ fields:
     summary: |-
       Table-of-content level 3.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc3"'
   - name: toc4
     uid: 'word!Word.BuiltInStyleName.toc4:member'
@@ -758,7 +758,7 @@ fields:
     summary: |-
       Table-of-content level 4.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc4"'
   - name: toc5
     uid: 'word!Word.BuiltInStyleName.toc5:member'
@@ -766,7 +766,7 @@ fields:
     summary: |-
       Table-of-content level 5.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc5"'
   - name: toc6
     uid: 'word!Word.BuiltInStyleName.toc6:member'
@@ -774,7 +774,7 @@ fields:
     summary: |-
       Table-of-content level 6.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc6"'
   - name: toc7
     uid: 'word!Word.BuiltInStyleName.toc7:member'
@@ -782,7 +782,7 @@ fields:
     summary: |-
       Table-of-content level 7.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc7"'
   - name: toc8
     uid: 'word!Word.BuiltInStyleName.toc8:member'
@@ -790,7 +790,7 @@ fields:
     summary: |-
       Table-of-content level 8.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc8"'
   - name: toc9
     uid: 'word!Word.BuiltInStyleName.toc9:member'
@@ -798,7 +798,7 @@ fields:
     summary: |-
       Table-of-content level 9.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Toc9"'
   - name: tocHeading
     uid: 'word!Word.BuiltInStyleName.tocHeading:member'
@@ -806,5 +806,5 @@ fields:
     summary: |-
       Table-of-content heading.
 
-      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TocHeading"'

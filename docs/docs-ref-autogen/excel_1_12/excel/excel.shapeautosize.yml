@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
@@ -33,7 +33,7 @@ fields:
     summary: |-
       A combination of automatic sizing schemes are used.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeMixed"'
   - name: autoSizeNone
     uid: 'excel!Excel.ShapeAutoSize.autoSizeNone:member'
@@ -41,7 +41,7 @@ fields:
     summary: |-
       No autosizing.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeNone"'
   - name: autoSizeShapeToFitText
     uid: 'excel!Excel.ShapeAutoSize.autoSizeShapeToFitText:member'
@@ -49,7 +49,7 @@ fields:
     summary: |-
       The shape is adjusted to fit the text.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeShapeToFitText"'
   - name: autoSizeTextToFitShape
     uid: 'excel!Excel.ShapeAutoSize.autoSizeTextToFitShape:member'
@@ -57,5 +57,5 @@ fields:
     summary: |-
       The text is adjusted to fit the shape.
 
-      * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AutoSizeTextToFitShape"'

@@ -124,8 +124,8 @@ methods:
     package: word!
     fullName: 'insertText(text, insertLocation)'
     summary: >-
-      Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked across
-      context turns to empty if any revision to the comment is posted through the UI.
+      Inserts text into at the specified location. \*\*Note\*\*: For the modern comment, the content range tracked
+      across context turns to empty if any revision to the comment is posted through the UI.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -230,7 +230,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -306,4 +306,4 @@ methods:
       return:
         type: '<xref uid="word!Word.CommentContentRange:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

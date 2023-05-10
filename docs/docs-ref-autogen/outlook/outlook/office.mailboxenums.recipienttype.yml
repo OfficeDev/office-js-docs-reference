@@ -8,12 +8,12 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 
 
-  **Important**: A `recipientType` property value isn't returned by the
+  \*\*Important\*\*: A `recipientType` property value isn't returned by the
   [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1))
   and
   [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1))
@@ -23,7 +23,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
@@ -95,7 +95,7 @@ fields:
       added from a personal Outlook address book.
 
 
-      **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web,
+      \*\*Important\*\*: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web,
       Global Address Book (GAL) recipients saved to a personal address book return the `ExternalUser` value, even if
       their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
       added or resolved against the GAL.
@@ -108,9 +108,9 @@ fields:
       against the Exchange address book, and is therefore treated as an external SMTP address.
 
 
-      **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address
-      book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return
-      a `User` value only if they're directly added or resolved against the GAL.
+      \*\*Important\*\*: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal
+      address book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients
+      return a `User` value only if they're directly added or resolved against the GAL.
     value: '"other"'
   - name: User
     uid: 'outlook!Office.MailboxEnums.RecipientType.User:member'

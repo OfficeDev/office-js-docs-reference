@@ -8,13 +8,13 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 isPreview: false
 isDeprecated: false
@@ -43,8 +43,8 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -55,17 +55,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -74,7 +74,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects
 
@@ -117,13 +117,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
             property will contain an error code.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -150,8 +150,8 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -162,17 +162,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -193,7 +193,7 @@ methods:
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
             property will contain an error code.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -217,25 +217,25 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
+      \*\*Important\*\*: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
       email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
       contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
       the contact's saved name. For more details, refer to the [related GitHub
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      \*\*Important\*\*: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      recipient has the following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -251,7 +251,7 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
       suggested contact or email address from the auto-complete list.
     isPreview: false
     isDeprecated: false
@@ -264,14 +264,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
             `EmailAddressDetails` objects.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -296,25 +296,25 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
+      \*\*Important\*\*: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
       email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
       contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
       the contact's saved name. For more details, refer to the [related GitHub
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      \*\*Important\*\*: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      recipient has the following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -330,14 +330,14 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
       suggested contact or email address from the auto-complete list.
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -438,7 +438,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
             `EmailAddressDetails` objects.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -469,8 +469,8 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -481,17 +481,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -511,13 +511,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
             contain a code that indicates any error that occurred while adding the data.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -547,8 +547,8 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -559,17 +559,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*read/write item\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose
 
 
-      **Errors**:
+      \*\*Errors\*\*:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -578,7 +578,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects and
 
@@ -606,7 +606,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -706,7 +706,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
             contain a code that indicates any error that occurred while adding the data.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''

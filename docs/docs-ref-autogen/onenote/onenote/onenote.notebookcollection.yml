@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the notebooks that are open in the application instance and have the specified name.
@@ -170,7 +170,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
 
               // Get the notebooks that are open in the application instance and have the specified name.
@@ -211,7 +211,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="onenote!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="onenote!OneNote.NotebookCollection:class" />'
         description: ''
@@ -268,4 +268,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.NotebookCollection:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

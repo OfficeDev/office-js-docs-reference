@@ -14,7 +14,7 @@ fields:
     summary: |-
       Sort slicer items in ascending order by item captions.
 
-      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Ascending"'
   - name: dataSourceOrder
     uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Sort slicer items in the order provided by the data source.
 
-      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"DataSourceOrder"'
   - name: descending
     uid: 'excel!Excel.SlicerSortType.descending:member'
@@ -30,5 +30,5 @@ fields:
     summary: |-
       Sort slicer items in descending order by item captions.
 
-      * \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Descending"'

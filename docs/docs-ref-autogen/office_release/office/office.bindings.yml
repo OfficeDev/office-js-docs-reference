@@ -30,7 +30,7 @@ methods:
     fullName: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
     summary: Creates a binding against a named object in the document.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -53,7 +53,7 @@ methods:
       the Table Tools \| Design tab of the ribbon.
 
 
-      **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
+      \*\*Note\*\*: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
       worksheet name in the name of the table in this format: "Sheet1!Table1"
 
 
@@ -67,15 +67,15 @@ methods:
       property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
-      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
-      the operation will fail.
+      \*\*Note\*\*: In Word, if there are multiple Rich Text content controls with the same Title property value (name),
+      and you try to bind to one these content controls with this method (by specifying its name as the itemName
+      parameter), the operation will fail.
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
 
@@ -197,7 +197,7 @@ methods:
       the Table Tools \| Design tab of the ribbon.
 
 
-      **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
+      \*\*Note\*\*: In Excel, when specifying a table as a named item, you must fully qualify the name to include the
       worksheet name in the name of the table in this format: "Sheet1!Table1"
 
 
@@ -211,9 +211,9 @@ methods:
       property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
-      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
-      the operation will fail.
+      \*\*Note\*\*: In Word, if there are multiple Rich Text content controls with the same Title property value (name),
+      and you try to bind to one these content controls with this method (by specifying its name as the itemName
+      parameter), the operation will fail.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +246,7 @@ methods:
     fullName: 'addFromPromptAsync(bindingType, options, callback)'
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
@@ -257,7 +257,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function addBindingFromPrompt() {
           Office.context.document.bindings.addFromPromptAsync(
@@ -307,7 +307,7 @@ methods:
     fullName: 'addFromPromptAsync(bindingType, callback)'
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      **Requirement set**: [Not in a
+      \*\*Requirement set\*\*: [Not in a
       set](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
@@ -340,7 +340,7 @@ methods:
     fullName: 'addFromSelectionAsync(bindingType, options, callback)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -369,7 +369,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function addBindingFromSelection() {
           Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
@@ -418,7 +418,7 @@ methods:
     fullName: 'addFromSelectionAsync(bindingType, callback)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -469,7 +469,7 @@ methods:
     fullName: 'getAllAsync(options, callback)'
     summary: Gets all bindings that were previously created.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -507,7 +507,7 @@ methods:
     fullName: getAllAsync(callback)
     summary: Gets all bindings that were previously created.
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -525,7 +525,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function displayAllBindingNames() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -566,7 +566,7 @@ methods:
     fullName: 'getByIdAsync(id, options, callback)'
     summary: Retrieves a binding based on its Name
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -612,7 +612,7 @@ methods:
     fullName: 'getByIdAsync(id, callback)'
     summary: Retrieves a binding based on its Name
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -633,7 +633,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function displayBindingType() {
           Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
@@ -673,7 +673,7 @@ methods:
     fullName: 'releaseByIdAsync(id, options, callback)'
     summary: Removes the binding from the document
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -716,7 +716,7 @@ methods:
     fullName: 'releaseByIdAsync(id, callback)'
     summary: Removes the binding from the document
     remarks: >-
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       -
@@ -737,7 +737,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
           write("Released MyBinding!"); 

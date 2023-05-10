@@ -133,7 +133,7 @@ properties:
     summary: >-
       Gets the content control that contains the content control. If there isn't a parent content control, then this
       method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -178,7 +178,7 @@ properties:
     summary: >-
       Gets the table cell that contains the content control. If it is not contained in a table cell, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -194,7 +194,7 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains the content control. If it is not contained in a table, then this method will return
-      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
       methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
@@ -211,7 +211,7 @@ properties:
     fullName: placeholderText
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
-      is empty. **Note**: The set operation for this property is not supported in Word on the web.
+      is empty. \*\*Note\*\*: The set operation for this property is not supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -6,7 +6,7 @@ fullName: Office.Context
 summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
   exists as a property of Office. It is accessed using `Office.context`<!-- -->.
-remarks: '**Applications**: Excel, Outlook, PowerPoint, Project, Word'
+remarks: '\*\*Applications\*\*: Excel, Outlook, PowerPoint, Project, Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,7 +17,7 @@ properties:
     fullName: commerceAllowed
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
-      **Applications**: Excel, Word
+      \*\*Applications\*\*: Excel, Word
 
 
       `commerceAllowed` is only supported in Office on iPad.
@@ -39,31 +39,31 @@ properties:
     fullName: contentLanguage
     summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
-      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt; **Options**
-      &gt; **Language** in the Office application.
+      The `contentLanguage` value reflects the \*\*Editing Language\*\* setting specified with \*\*File\*\* &gt;
+      \*\*Options\*\* &gt; \*\*Language\*\* in the Office application.
 
 
-      **Support details**
+      \*\*Support details\*\*
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> </td></tr>
-      <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td><td>
-      Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td> </td><td>
-      </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> </table>
+      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
+      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td>
+      </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function sayHelloWithContentLanguage() {
           const myContentLanguage = Office.context.contentLanguage;
@@ -96,7 +96,7 @@ properties:
     fullName: diagnostics
     summary: Gets information about the environment in which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
+      \*\*Important\*\*: In Outlook, this property is available from Mailbox requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
@@ -105,7 +105,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       const contextInfo = Office.context.diagnostics;
 
@@ -131,34 +131,34 @@ properties:
       The returned value is a string in the RFC 1766 Language tag format, such as en-US.
 
 
-      The `displayLanguage` value reflects the current **Display Language** setting specified with **File** &gt;
-      **Options** &gt; **Language** in the Office application.
+      The `displayLanguage` value reflects the current \*\*Display Language\*\* setting specified with \*\*File\*\* &gt;
+      \*\*Options\*\* &gt; \*\*Language\*\* in the Office application.
 
 
       When using in Outlook, the applicable modes are Compose or Read.
 
 
-      **Support details**
+      \*\*Support details\*\*
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td> Supported
-      </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported
-      </td><td> </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
+      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
+      Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td>
+      Supported </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td>
+      Supported </td><td> </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function sayHelloWithDisplayLanguage() {
           const myDisplayLanguage = Office.context.displayLanguage;
@@ -202,7 +202,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // Extension initialization code.
           let _document;
 
@@ -222,7 +222,7 @@ properties:
     fullName: host
     summary: Contains the Office application in which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      \*\*Important\*\*: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the application starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
@@ -251,17 +251,17 @@ properties:
     fullName: mailbox
     summary: Provides access to the Microsoft Outlook add-in object model.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
-      **Key properties**:
+      \*\*Key properties\*\*:
 
 
       - `diagnostics`<!-- -->: Provides diagnostic information to an Outlook add-in.
@@ -276,7 +276,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following line of code access the item object of the JavaScript API for Office.
 
@@ -288,7 +288,7 @@ properties:
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: '<xref uid="outlook!Office.Mailbox:interface" />'
+        type: '<xref uid="office!~Office_2.Mailbox:interface" />'
   - name: officeTheme
     uid: 'office!Office.Context#officeTheme:member'
     package: office!
@@ -306,7 +306,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function applyOfficeTheme(){
               // Get office theme colors.
               const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
@@ -324,7 +324,7 @@ properties:
     fullName: platform
     summary: Provides the platform on which the add-in is running.
     remarks: >-
-      **Important**: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
+      \*\*Important\*\*: In Outlook, this property is available from Mailbox requirement set 1.5. You can also use the
       `Office.context.diagnostics` property to get the platform starting with requirement set 1.5. For all Mailbox
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-1.1&preserve-view=true#outlook-office-mailbox-diagnostics-member)
@@ -360,20 +360,20 @@ properties:
       The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox,
       so it's available to that add-in when it is running from any client application used to access that mailbox.
     remarks: >-
-      **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      \*\*[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->\*\*: \*\*restricted\*\*
 
 
-      **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      \*\*[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->\*\*: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Get the current value of the 'myKey' setting.
 
@@ -393,7 +393,7 @@ properties:
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
+        type: '<xref uid="office!~Office_2.RoamingSettings:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!
@@ -402,7 +402,7 @@ properties:
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
       device, such as an iPad; false otherwise.
     remarks: >-
-      **Applications**: Excel, PowerPoint, Word
+      \*\*Applications\*\*: Excel, PowerPoint, Word
 
 
       `touchEnabled` is only supported in Office on iPad.

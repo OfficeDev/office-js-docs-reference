@@ -61,7 +61,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.add('Sheet1!A1:E7', true);
           table.load('name');
@@ -101,7 +101,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -132,7 +132,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.getItemAt(0);
           table.load('name');
@@ -198,7 +198,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get the number of tables.
           await Excel.run(async (context) => { 
               const tables = context.workbook.tables;
@@ -225,7 +225,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.TableCollection:class" />'
         description: ''
@@ -247,4 +247,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.TableCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

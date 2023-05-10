@@ -46,7 +46,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);
@@ -96,13 +96,13 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: |-
 
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);
@@ -151,7 +151,7 @@ methods:
           description: Overlay Height.
           type: number
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: load(options)
     uid: 'visio!Visio.ShapeView#load:member(1)'
@@ -244,7 +244,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);
@@ -280,7 +280,7 @@ methods:
           type: '<xref uid="visio!Visio.Interfaces.ShapeViewUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="visio!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -359,4 +359,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.ShapeViewData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

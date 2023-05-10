@@ -37,7 +37,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
@@ -117,7 +117,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
@@ -175,7 +175,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
@@ -319,7 +319,7 @@ methods:
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
       Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -339,9 +339,9 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided in
-      the options parameter, only content controls of supported types are returned. Be aware that an exception will be
-      thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
+      Gets the currently supported content controls in the document. \*\*Important\*\*: If specific types are provided
+      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
+      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -392,7 +392,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -487,7 +487,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
               
@@ -569,7 +569,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -690,7 +690,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.DocumentUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -781,6 +781,6 @@ events:
       content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

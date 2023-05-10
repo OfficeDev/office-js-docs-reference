@@ -27,7 +27,7 @@ properties:
     fullName: criterion1
     summary: >-
       The first criterion used to filter data. Used as an operator in the case of `custom` filtering. For example "<!--
-      -->&gt;<!-- -->50" for numbers greater than 50, or "=*s" for values ending in "s".
+      -->&gt;<!-- -->50" for numbers greater than 50, or "=\*s" for values ending in "s".
 
 
       Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if `filterOn` is set to
@@ -92,7 +92,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml

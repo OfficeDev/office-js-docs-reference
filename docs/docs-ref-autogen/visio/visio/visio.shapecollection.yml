@@ -53,13 +53,13 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: |-
 
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const numShapesActivePage = activePage.shapes.getCount();
@@ -152,7 +152,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="visio!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="visio!Visio.ShapeCollection:class" />'
         description: ''
@@ -191,4 +191,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.ShapeCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

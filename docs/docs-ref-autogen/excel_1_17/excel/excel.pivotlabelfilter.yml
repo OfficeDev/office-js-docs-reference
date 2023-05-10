@@ -46,7 +46,7 @@ properties:
     package: excel!
     fullName: exclusive
     summary: >-
-      If `true`<!-- -->, filter *excludes* items that meet criteria. The default is `false` (filter to include items
+      If `true`<!-- -->, filter \*excludes\* items that meet criteria. The default is `false` (filter to include items
       that meet criteria).
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

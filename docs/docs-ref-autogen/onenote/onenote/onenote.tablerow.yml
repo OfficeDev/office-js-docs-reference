@@ -107,7 +107,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -219,7 +219,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
               const app = context.application;
               const outline = app.getActiveOutline();
@@ -354,4 +354,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

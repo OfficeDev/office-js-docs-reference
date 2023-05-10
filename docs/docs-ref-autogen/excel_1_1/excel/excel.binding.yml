@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const range = binding.getRange();
@@ -85,7 +85,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const table = binding.getTable();
@@ -112,7 +112,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const text = binding.getText();
@@ -127,7 +127,7 @@ methods:
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Binding#load:member(1)'
@@ -171,7 +171,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const binding = context.workbook.bindings.getItemAt(0);
               binding.load('type');
@@ -227,4 +227,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.BindingData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

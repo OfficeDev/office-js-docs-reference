@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlNode:interface'
 package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
-remarks: '**Applications**: Word'
+remarks: '\*\*Applications\*\*: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -26,7 +26,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showXmlNodeBaseNames() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -61,7 +61,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showXmlNamespaceUri() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -96,7 +96,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showXmlNodeType() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -121,7 +121,7 @@ methods:
     fullName: 'getNodesAsync(xPath, options, callback)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -154,14 +154,14 @@ methods:
     fullName: 'getNodesAsync(xPath, callback)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showXmlChildNodes() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -211,7 +211,7 @@ methods:
     fullName: 'getNodeValueAsync(options, callback)'
     summary: Gets the node value.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -236,14 +236,14 @@ methods:
     fullName: getNodeValueAsync(callback)
     summary: Gets the node value.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showXmlNodeValues() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -287,14 +287,14 @@ methods:
     fullName: 'getTextAsync(options, callback)'
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
 
@@ -355,7 +355,7 @@ methods:
     fullName: getTextAsync(callback)
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -377,7 +377,7 @@ methods:
     fullName: 'getXmlAsync(options, callback)'
     summary: Gets the node's XML.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -402,14 +402,14 @@ methods:
     fullName: getXmlAsync(callback)
     summary: Gets the node's XML.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -453,7 +453,7 @@ methods:
     fullName: 'setNodeValueAsync(value, options, callback)'
     summary: Sets the node value.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -482,14 +482,14 @@ methods:
     fullName: 'setNodeValueAsync(value, callback)'
     summary: Sets the node value.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function setXmlNodeValue() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -534,14 +534,14 @@ methods:
     fullName: 'setTextAsync(text, options, callback)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Learn how to set the text value of a node in a custom XML part from the following example.
 
@@ -614,7 +614,7 @@ methods:
     fullName: 'setTextAsync(text, callback)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -638,14 +638,14 @@ methods:
     fullName: 'setXmlAsync(xml, options, callback)'
     summary: Sets the node XML.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function setXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -688,7 +688,7 @@ methods:
     fullName: 'setXmlAsync(xml, callback)'
     summary: Sets the node XML.
     remarks: >-
-      **Requirement set**:
+      \*\*Requirement set\*\*:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false

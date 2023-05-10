@@ -61,7 +61,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/update-named-item.yaml
@@ -182,7 +182,7 @@ properties:
     summary: >-
       Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this
       method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -205,7 +205,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/34-named-item/create-and-remove-named-item.yaml
@@ -248,7 +248,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Returns the Range object that is associated with the name.
       // Returns `null` if the name is not of type Range.
       // Note: This API currently supports only the Workbook scoped items.
@@ -275,7 +275,7 @@ methods:
     summary: >-
       Returns the range object that is associated with the name. If the named item's type is not a range, then this
       method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [*OrNullObject methods and
+      [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -328,7 +328,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const names = context.workbook.names;
               const namedItem = names.getItem('MyRange');
@@ -387,7 +387,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.NamedItemUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -426,4 +426,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.NamedItemData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

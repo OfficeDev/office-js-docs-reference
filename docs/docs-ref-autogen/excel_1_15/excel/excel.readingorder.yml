@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
@@ -45,7 +45,7 @@ fields:
       order is left to right.
 
 
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Context"'
   - name: leftToRight
     uid: 'excel!Excel.ReadingOrder.leftToRight:member'
@@ -53,7 +53,7 @@ fields:
     summary: |-
       Left to right reading order
 
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ReadingOrder.rightToLeft:member'
@@ -61,5 +61,5 @@ fields:
     summary: |-
       Right to left reading order
 
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RightToLeft"'

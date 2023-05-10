@@ -8,13 +8,13 @@ remarks: >-
   \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -30,8 +30,8 @@ properties:
       parameter for an unsupported type results in an exception.
 
 
-      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,
-      web browser).
+      \*\*Note\*\*: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g.,
+      Mac, web browser).
     remarks: ''
     isPreview: false
     isDeprecated: false

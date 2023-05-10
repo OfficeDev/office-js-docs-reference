@@ -8,17 +8,17 @@ remarks: >-
   \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  **[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **read/write item**
+  \*\*[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
+  \*\*read/write item\*\*
 
 
-  **[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  \*\*[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
   Compose
 
 
-  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+  \*\*Important\*\*: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
 
 
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
@@ -29,7 +29,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
 

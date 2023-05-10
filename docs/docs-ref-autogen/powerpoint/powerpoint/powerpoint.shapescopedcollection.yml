@@ -47,7 +47,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="powerpoint!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of shapes in the collection.
   - name: getItem(key)
     uid: 'powerpoint!PowerPoint.ShapeScopedCollection#getItem:member(1)'
@@ -163,7 +163,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="powerpoint!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="powerpoint!PowerPoint.ShapeScopedCollection:class" />'
         description: ''
@@ -185,4 +185,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'

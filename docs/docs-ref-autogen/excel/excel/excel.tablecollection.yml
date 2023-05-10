@@ -61,7 +61,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.add('Sheet1!A1:E7', true);
           table.load('name');
@@ -102,7 +102,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.TableCollection#getItem:member(1)'
@@ -114,7 +114,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -145,7 +145,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.getItemAt(0);
           table.load('name');
@@ -171,7 +171,7 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: >-
       Gets a table by name or ID. If the table doesn't exist, then this method returns an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -232,7 +232,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get the number of tables.
           await Excel.run(async (context) => { 
               const tables = context.workbook.tables;
@@ -259,7 +259,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.TableCollection:class" />'
         description: ''
@@ -294,7 +294,7 @@ events:
       content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableAddedEventArgs:interface" />&gt;
   - name: onChanged
     uid: 'excel!Excel.TableCollection#onChanged:member'
@@ -308,7 +308,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
@@ -328,7 +328,7 @@ events:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableChangedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'excel!Excel.TableCollection#onDeleted:member'
@@ -342,7 +342,7 @@ events:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableDeletedEventArgs:interface" />&gt;
   - name: onFiltered
     uid: 'excel!Excel.TableCollection#onFiltered:member'
@@ -356,6 +356,6 @@ events:
       content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
       return:
         type: >-
-          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.TableFilteredEventArgs:interface" />&gt;
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

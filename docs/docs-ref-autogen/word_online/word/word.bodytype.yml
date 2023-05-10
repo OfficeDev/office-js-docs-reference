@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
@@ -41,45 +41,45 @@ fields:
   - name: endnote
     uid: 'word!Word.BodyType.endnote:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Endnote"'
   - name: footer
     uid: 'word!Word.BodyType.footer:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Footer"'
   - name: footnote
     uid: 'word!Word.BodyType.footnote:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Footnote"'
   - name: header
     uid: 'word!Word.BodyType.header:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Header"'
   - name: mainDoc
     uid: 'word!Word.BodyType.mainDoc:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"MainDoc"'
   - name: noteItem
     uid: 'word!Word.BodyType.noteItem:member'
     package: word!
-    summary: '* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"NoteItem"'
   - name: section
     uid: 'word!Word.BodyType.section:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Section"'
   - name: tableCell
     uid: 'word!Word.BodyType.tableCell:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"TableCell"'
   - name: unknown
     uid: 'word!Word.BodyType.unknown:member'
     package: word!
-    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Unknown"'

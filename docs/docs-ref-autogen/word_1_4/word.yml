@@ -214,7 +214,7 @@ functions:
             An array of previously created API objects. The array will be validated to make sure that all of the objects
             share the same context. The batch will use this shared RequestContext, which means that any changes applied
             to these objects will be picked up by "context.sync()".
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+          type: '<xref uid="word!~OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -244,7 +244,7 @@ functions:
           description: >-
             A previously created API object. The batch will use the same RequestContext as the passed-in object, which
             means that any changes applied to the object will be picked up by "context.sync()".
-          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+          type: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of

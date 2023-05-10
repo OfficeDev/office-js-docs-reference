@@ -74,7 +74,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set worksheet position.
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
@@ -126,7 +126,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -154,7 +154,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -181,7 +181,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -217,7 +217,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -285,7 +285,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
               const wSheetName = 'Sheet1';
@@ -345,7 +345,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -384,4 +384,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.WorksheetData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

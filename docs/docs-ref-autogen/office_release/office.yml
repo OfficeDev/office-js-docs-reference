@@ -130,30 +130,30 @@ functions:
       - The user opened a document that already contains the add-in.
 
 
-      *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
+      \*Note\*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
     remarks: >-
-      **Support details**
+      \*\*Support details\*\*
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td> Supported
-      </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported
-      </td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
+      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
+      Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td>
+      Supported </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td>
+      Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // You can use the value of the InitializationEnumeration to implement different logic for
 
@@ -248,23 +248,23 @@ functions:
     package: office!
     summary: Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
     remarks: >-
-      **Support details**
+      \*\*Support details\*\*
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> </td><td> Supported
-      </td></tr> </table>
+      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td>
+      Supported </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> </td><td>
+      Supported </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following code example uses the select function to retrieve a binding with the id "cities" from
 
@@ -303,27 +303,27 @@ functions:
     package: office!
     summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: >-
-      **Support details**
+      \*\*Support details\*\*
 
 
       For more information about Office application and server requirements, see [Requirements for running Office
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> </td></tr>
-      <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td><td>
-      Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td> </td><td>
-      </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> </table>
+      \*Supported applications, by platform\* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
+      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td>
+      </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function startUsingShortNamespace() {
           if (typeof Office === 'undefined') {

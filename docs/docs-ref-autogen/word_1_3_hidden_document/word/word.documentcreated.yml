@@ -13,7 +13,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
@@ -199,7 +199,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Create and open a new document in a new tab or window.
       await Word.run(async (context) => {
           const externalDoc = context.application.createDocument();
@@ -249,7 +249,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.DocumentCreatedUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -325,4 +325,4 @@ methods:
       return:
         type: '<xref uid="word!Word.DocumentCreated:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'

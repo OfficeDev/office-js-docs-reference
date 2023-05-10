@@ -51,4 +51,4 @@ properties:
       content: 'readonly presentation: Presentation;'
       return:
         type: '<xref uid="powerpoint!PowerPoint.Presentation:class" />'
-extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+extends: '<xref uid="powerpoint!~OfficeExtension.ClientRequestContext:class" />'

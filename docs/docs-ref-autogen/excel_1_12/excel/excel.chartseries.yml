@@ -386,7 +386,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
@@ -438,7 +438,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
@@ -490,7 +490,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
@@ -542,7 +542,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series-markers.yaml
@@ -799,7 +799,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
@@ -842,7 +842,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
@@ -878,7 +878,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: getDimensionValues(dimensionString)
     uid: 'excel!Excel.ChartSeries#getDimensionValues:member(2)'
@@ -899,7 +899,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartSeries#load:member(1)'
@@ -943,7 +943,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Rename the 1st series of Chart1 to "New Series Name".
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -1002,7 +1002,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1035,7 +1035,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
@@ -1109,7 +1109,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-series.yaml
@@ -1176,4 +1176,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'

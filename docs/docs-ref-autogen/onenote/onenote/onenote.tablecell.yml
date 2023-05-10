@@ -106,7 +106,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -178,7 +178,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -293,7 +293,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
               const app = context.application;
               const outline = app.getActiveOutline();
@@ -373,7 +373,7 @@ methods:
           type: '<xref uid="onenote!OneNote.Interfaces.TableCellUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="onenote!~OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -447,4 +447,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.TableCell:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'

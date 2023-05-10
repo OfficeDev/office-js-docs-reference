@@ -20,7 +20,7 @@ properties:
     syntax:
       content: 'officeTheme: Office.OfficeTheme;'
       return:
-        type: '<xref uid="office!Office.OfficeTheme:interface" />'
+        type: '<xref uid="office!~Office_2.OfficeTheme:interface" />'
   - name: type
     uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     package: outlook!

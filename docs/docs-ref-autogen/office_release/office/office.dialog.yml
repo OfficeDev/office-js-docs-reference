@@ -7,7 +7,7 @@ summary: >-
   The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers
   and closing the dialog.
 remarks: >-
-  **Requirement set**:
+  \*\*Requirement set\*\*:
   [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
 isPreview: false
 isDeprecated: false
@@ -74,10 +74,10 @@ methods:
       Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened
       from the page.
     remarks: >-
-      **Applications**: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
+      \*\*Applications\*\*: Excel, Outlook (Minimum requirement set: Mailbox 1.9), PowerPoint, Word
 
 
-      **Requirement sets**:
+      \*\*Requirement sets\*\*:
 
 
       - [DialogAPI 1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)

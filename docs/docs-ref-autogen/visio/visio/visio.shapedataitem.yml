@@ -110,7 +110,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);
@@ -210,4 +210,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.ShapeDataItemData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'

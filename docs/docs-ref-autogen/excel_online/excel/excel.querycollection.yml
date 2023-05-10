@@ -40,7 +40,7 @@ properties:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // This function retrieves the query collection in a workbook, 
           // loads the query items in that collection, and then
           // logs the name of each query to the console.
@@ -64,7 +64,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // This function retrieves the query collection in a workbook and then 
       // logs the number of queries in the collection to the console.
       await Excel.run(async (context) => { 
@@ -80,7 +80,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'excel!Excel.QueryCollection#getItem:member(1)'
@@ -158,7 +158,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.QueryCollection:class" />'
         description: ''
@@ -180,4 +180,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.QueryCollectionData:interface" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
