@@ -341,7 +341,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -445,7 +445,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientRequestContext",
-                      "canonicalReference": "word!~OfficeExtension.ClientRequestContext:class"
+                      "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                     },
                     {
                       "kind": "Content",
@@ -503,7 +503,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -586,7 +586,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -909,7 +909,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -945,7 +945,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -1080,7 +1080,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -1133,7 +1133,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -2155,7 +2155,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -2199,7 +2199,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -2243,7 +2243,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -2287,7 +2287,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -2331,7 +2331,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -2768,7 +2768,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -7750,7 +7750,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -8317,7 +8317,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -8689,7 +8689,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -8951,7 +8951,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -9104,7 +9104,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -9506,7 +9506,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -10026,7 +10026,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -10482,7 +10482,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -10691,7 +10691,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -10953,7 +10953,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -11106,7 +11106,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -11602,7 +11602,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -11638,7 +11638,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -11737,7 +11737,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -11790,7 +11790,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -12907,7 +12907,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -12951,7 +12951,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -12995,7 +12995,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13039,7 +13039,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13083,7 +13083,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13127,7 +13127,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13171,7 +13171,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13215,7 +13215,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13259,7 +13259,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -13787,7 +13787,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -14536,7 +14536,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -15151,7 +15151,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -16402,7 +16402,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -16675,7 +16675,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -16949,7 +16949,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -17100,7 +17100,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -17377,7 +17377,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -17530,7 +17530,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -17760,7 +17760,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -18212,7 +18212,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -18592,7 +18592,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -18745,7 +18745,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -19022,7 +19022,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -19175,7 +19175,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -19230,7 +19230,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -19571,7 +19571,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -19724,7 +19724,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -20712,7 +20712,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -21056,7 +21056,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -21296,7 +21296,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -22317,7 +22317,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -22557,7 +22557,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -23223,7 +23223,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -24090,7 +24090,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -24867,7 +24867,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -25172,7 +25172,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -25488,7 +25488,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -27647,7 +27647,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -28039,7 +28039,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -28792,7 +28792,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -28938,7 +28938,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -30304,7 +30304,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -30543,7 +30543,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -30805,7 +30805,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -60456,7 +60456,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -60617,7 +60617,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -60670,7 +60670,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -63561,7 +63561,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -63970,7 +63970,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -64123,7 +64123,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -64542,7 +64542,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -64781,7 +64781,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -65214,7 +65214,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -65548,7 +65548,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -65810,7 +65810,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -66184,7 +66184,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -66457,7 +66457,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -66976,7 +66976,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -67345,7 +67345,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -67589,7 +67589,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -67851,7 +67851,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -68288,7 +68288,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -68803,7 +68803,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -68903,7 +68903,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -69102,7 +69102,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -69155,7 +69155,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -70524,7 +70524,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -70568,7 +70568,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -70612,7 +70612,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -70656,7 +70656,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -70700,7 +70700,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -71197,7 +71197,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -71704,7 +71704,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -72030,7 +72030,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -72183,7 +72183,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -72735,7 +72735,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -73034,7 +73034,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -73098,7 +73098,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -73485,7 +73485,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -73620,7 +73620,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -73818,7 +73818,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -73953,7 +73953,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -74006,7 +74006,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -75572,7 +75572,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -75616,7 +75616,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -75660,7 +75660,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -75704,7 +75704,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.EventHandlers",
-                      "canonicalReference": "word!~OfficeExtension.EventHandlers:class"
+                      "canonicalReference": "office!OfficeExtension.EventHandlers:class"
                     },
                     {
                       "kind": "Content",
@@ -76172,7 +76172,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -76604,7 +76604,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -76866,7 +76866,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -77161,7 +77161,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientRequestContext",
-                  "canonicalReference": "word!~OfficeExtension.ClientRequestContext:class"
+                  "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                 },
                 {
                   "kind": "Content",
@@ -77286,7 +77286,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -77387,7 +77387,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -77622,7 +77622,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -78035,7 +78035,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientRequestContext",
-                      "canonicalReference": "word!~OfficeExtension.ClientRequestContext:class"
+                      "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                     },
                     {
                       "kind": "Content",
@@ -78094,7 +78094,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -78239,7 +78239,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -78744,7 +78744,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -78953,7 +78953,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -79215,7 +79215,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -79447,7 +79447,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -79720,7 +79720,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -79959,7 +79959,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -80110,7 +80110,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -80387,7 +80387,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -80540,7 +80540,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -81146,7 +81146,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -81450,7 +81450,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -81603,7 +81603,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -81831,7 +81831,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -82084,7 +82084,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -82977,7 +82977,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -83030,7 +83030,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -84394,7 +84394,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -85103,7 +85103,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -85345,7 +85345,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -85619,7 +85619,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -85935,7 +85935,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -85988,7 +85988,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -86570,7 +86570,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -87097,7 +87097,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -87359,7 +87359,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -87512,7 +87512,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -87774,7 +87774,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -87927,7 +87927,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -88337,7 +88337,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -88390,7 +88390,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "word!~OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -89138,7 +89138,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "word!~OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -89571,7 +89571,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "word!~OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -89833,7 +89833,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "word!~OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",

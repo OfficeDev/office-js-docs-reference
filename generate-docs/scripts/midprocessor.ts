@@ -290,7 +290,7 @@ function cleanUpOutlookJson(jsonString : string) {
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension")
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!~OfficeExtension/g, "office!OfficeExtension")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
