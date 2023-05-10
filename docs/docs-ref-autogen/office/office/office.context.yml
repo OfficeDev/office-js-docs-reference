@@ -300,7 +300,7 @@ properties:
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: '<xref uid="office!~Office_2.Mailbox:interface" />'
+        type: '<xref uid="outlook!Office.Mailbox:interface" />'
   - name: officeTheme
     uid: 'office!Office.Context#officeTheme:member'
     package: office!
@@ -405,7 +405,7 @@ properties:
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: '<xref uid="office!~Office_2.RoamingSettings:interface" />'
+        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
   - name: sensitivityLabelsCatalog
     uid: 'office!Office.Context#sensitivityLabelsCatalog:member'
     package: office!
@@ -454,7 +454,7 @@ properties:
     syntax:
       content: 'sensitivityLabelsCatalog: Office.SensitivityLabelsCatalog;'
       return:
-        type: '<xref uid="office!~Office_2.SensitivityLabelsCatalog:interface" />'
+        type: '<xref uid="outlook!Office.SensitivityLabelsCatalog:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!
