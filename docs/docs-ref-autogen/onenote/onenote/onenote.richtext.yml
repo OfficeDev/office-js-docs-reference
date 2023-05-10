@@ -95,7 +95,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: The html of the rich text
   - name: load(options)
     uid: 'onenote!OneNote.RichText#load:member(1)'
@@ -271,4 +271,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.RichText:class" />'
         description: ''
-extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

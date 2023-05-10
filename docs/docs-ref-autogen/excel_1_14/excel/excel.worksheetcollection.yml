@@ -111,7 +111,7 @@ methods:
           description: 'Optional. If `true`<!-- -->, considers only visible worksheets, skipping over any hidden ones.'
           type: boolean
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getFirst(visibleOnly)
     uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
@@ -333,7 +333,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.WorksheetCollection:class" />'
         description: ''
@@ -388,7 +388,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
   - name: onAdded
     uid: 'excel!Excel.WorksheetCollection#onAdded:member'
@@ -422,7 +422,7 @@ events:
       content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetAddedEventArgs:interface" />&gt;
   - name: onCalculated
     uid: 'excel!Excel.WorksheetCollection#onCalculated:member'
@@ -436,7 +436,7 @@ events:
       content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
   - name: onChanged
     uid: 'excel!Excel.WorksheetCollection#onChanged:member'
@@ -450,7 +450,7 @@ events:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
   - name: onColumnSorted
     uid: 'excel!Excel.WorksheetCollection#onColumnSorted:member'
@@ -464,7 +464,7 @@ events:
       content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetColumnSortedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.WorksheetCollection#onDeactivated:member'
@@ -498,7 +498,7 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'excel!Excel.WorksheetCollection#onDeleted:member'
@@ -512,7 +512,7 @@ events:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetDeletedEventArgs:interface" />&gt;
   - name: onFormatChanged
     uid: 'excel!Excel.WorksheetCollection#onFormatChanged:member'
@@ -526,7 +526,7 @@ events:
       content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
   - name: onFormulaChanged
     uid: 'excel!Excel.WorksheetCollection#onFormulaChanged:member'
@@ -542,7 +542,7 @@ events:
       content: 'readonly onFormulaChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormulaChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormulaChangedEventArgs:interface" />&gt;
   - name: onProtectionChanged
     uid: 'excel!Excel.WorksheetCollection#onProtectionChanged:member'
@@ -556,7 +556,7 @@ events:
       content: 'readonly onProtectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetProtectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetProtectionChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.WorksheetCollection#onRowHiddenChanged:member'
@@ -570,7 +570,7 @@ events:
       content: 'readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetRowHiddenChangedEventArgs:interface" />&gt;
   - name: onRowSorted
     uid: 'excel!Excel.WorksheetCollection#onRowSorted:member'
@@ -584,7 +584,7 @@ events:
       content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetRowSortedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.WorksheetCollection#onSelectionChanged:member'
@@ -598,7 +598,7 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
   - name: onSingleClicked
     uid: 'excel!Excel.WorksheetCollection#onSingleClicked:member'
@@ -615,6 +615,6 @@ events:
       content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

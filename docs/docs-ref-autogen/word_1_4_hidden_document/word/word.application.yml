@@ -85,7 +85,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="word!~OfficeExtension.ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
       return:
         type: '<xref uid="word!Word.Application:class" />'
         description: ''
@@ -113,4 +113,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

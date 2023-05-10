@@ -176,7 +176,7 @@ methods:
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.CustomXmlPart#load:member(1)'
@@ -312,4 +312,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.CustomXmlPartData:interface" />'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

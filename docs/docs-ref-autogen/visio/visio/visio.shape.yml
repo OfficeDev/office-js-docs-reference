@@ -177,7 +177,7 @@ methods:
       content: 'getBounds(): OfficeExtension.ClientResult<Visio.BoundingBox>;'
       return:
         type: >-
-          <xref uid="visio!~OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.BoundingBox:interface"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="visio!Visio.BoundingBox:interface"
           />&gt;
         description: ''
   - name: load(options)
@@ -306,7 +306,7 @@ methods:
           type: '<xref uid="visio!Visio.Interfaces.ShapeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="visio!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -362,4 +362,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.ShapeData:interface" />'
         description: ''
-extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

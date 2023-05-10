@@ -321,7 +321,7 @@ methods:
     syntax:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertAttribute(xpath, namespaceMappings, name, value)'
     uid: 'word!Word.CustomXmlPart#insertAttribute:member(1)'
@@ -665,7 +665,7 @@ methods:
                         [key: string]: string;
                     }
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: An array where each item represents an entry matched by the XPath query.
   - name: setXml(xml)
     uid: 'word!Word.CustomXmlPart#setXml:member(1)'
@@ -893,4 +893,4 @@ methods:
       return:
         type: void
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

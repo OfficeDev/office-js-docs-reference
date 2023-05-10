@@ -159,7 +159,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(name)
     uid: 'excel!Excel.ChartCollection#getItem:member(1)'
@@ -318,7 +318,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.ChartCollection:class" />'
         description: ''
@@ -396,7 +396,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
   - name: onAdded
     uid: 'excel!Excel.ChartCollection#onAdded:member'
@@ -426,7 +426,7 @@ events:
       content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartAddedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.ChartCollection#onDeactivated:member'
@@ -475,7 +475,7 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'excel!Excel.ChartCollection#onDeleted:member'
@@ -505,6 +505,6 @@ events:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeletedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

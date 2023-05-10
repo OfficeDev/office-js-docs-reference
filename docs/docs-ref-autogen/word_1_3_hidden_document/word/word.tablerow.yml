@@ -291,7 +291,7 @@ methods:
           description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '<xref uid="word!Word.CellPaddingLocation:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getCellPadding(cellPaddingLocationString)
     uid: 'word!Word.TableRow#getCellPadding:member(2)'
@@ -310,7 +310,7 @@ methods:
           description: 'Required. The cell padding location must be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type: '"Top" | "Left" | "Bottom" | "Right"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getNext()
     uid: 'word!Word.TableRow#getNext:member(1)'
@@ -534,7 +534,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.TableRowUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -650,4 +650,4 @@ methods:
       return:
         type: '<xref uid="word!Word.TableRow:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

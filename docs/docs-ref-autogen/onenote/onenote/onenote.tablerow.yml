@@ -354,4 +354,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.TableRow:class" />'
         description: ''
-extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

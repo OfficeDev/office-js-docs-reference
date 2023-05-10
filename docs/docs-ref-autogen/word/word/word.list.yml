@@ -212,7 +212,7 @@ methods:
           description: Required. The level in the list.
           type: number
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getLevelString(level)
     uid: 'word!Word.List#getLevelString:member(1)'
@@ -229,7 +229,7 @@ methods:
           description: Required. The level in the list.
           type: number
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertParagraph(paragraphText, insertLocation)'
     uid: 'word!Word.List#insertParagraph:member(1)'
@@ -758,4 +758,4 @@ methods:
       return:
         type: '<xref uid="word!Word.List:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

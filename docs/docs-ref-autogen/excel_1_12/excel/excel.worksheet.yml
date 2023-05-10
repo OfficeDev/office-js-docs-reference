@@ -1185,7 +1185,7 @@ methods:
           description: Additional replacement criteria.
           type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of replacements performed.
   - name: 'set(properties, options)'
     uid: 'excel!Excel.Worksheet#set:member(1)'
@@ -1207,7 +1207,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorksheetUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1319,7 +1319,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetActivatedEventArgs:interface" />&gt;
   - name: onCalculated
     uid: 'excel!Excel.Worksheet#onCalculated:member'
@@ -1349,7 +1349,7 @@ events:
       content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetCalculatedEventArgs:interface" />&gt;
   - name: onChanged
     uid: 'excel!Excel.Worksheet#onChanged:member'
@@ -1383,7 +1383,7 @@ events:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetChangedEventArgs:interface" />&gt;
   - name: onColumnSorted
     uid: 'excel!Excel.Worksheet#onColumnSorted:member'
@@ -1430,7 +1430,7 @@ events:
       content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetColumnSortedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Worksheet#onDeactivated:member'
@@ -1460,7 +1460,7 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetDeactivatedEventArgs:interface" />&gt;
   - name: onFormatChanged
     uid: 'excel!Excel.Worksheet#onFormatChanged:member'
@@ -1474,7 +1474,7 @@ events:
       content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetFormatChangedEventArgs:interface" />&gt;
   - name: onRowHiddenChanged
     uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
@@ -1504,7 +1504,7 @@ events:
       content: 'readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetRowHiddenChangedEventArgs:interface" />&gt;
   - name: onRowSorted
     uid: 'excel!Excel.Worksheet#onRowSorted:member'
@@ -1551,7 +1551,7 @@ events:
       content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetRowSortedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
@@ -1581,7 +1581,7 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSelectionChangedEventArgs:interface" />&gt;
   - name: onSingleClicked
     uid: 'excel!Excel.Worksheet#onSingleClicked:member'
@@ -1629,6 +1629,6 @@ events:
       content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorksheetSingleClickedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

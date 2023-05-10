@@ -302,7 +302,7 @@ methods:
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertSectionAsSibling(location, title)'
     uid: 'onenote!OneNote.Section#insertSectionAsSibling:member(1)'
@@ -505,4 +505,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.Section:class" />'
         description: ''
-extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -803,7 +803,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.ContentControl#getOoxml:member(1)'
@@ -847,7 +847,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.ContentControl#getRange:member(1)'
@@ -883,7 +883,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getReviewedText(changeTrackingVersionString)
     uid: 'word!Word.ContentControl#getReviewedText:member(2)'
@@ -900,7 +900,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.ContentControl#getTextRanges:member(1)'
@@ -1561,7 +1561,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.ContentControlUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: >-
@@ -1730,7 +1730,7 @@ events:
       content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentChanged
     uid: 'word!Word.ContentControl#onCommentChanged:member'
@@ -1744,7 +1744,7 @@ events:
       content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeselected
     uid: 'word!Word.ContentControl#onCommentDeselected:member'
@@ -1758,7 +1758,7 @@ events:
       content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentSelected
     uid: 'word!Word.ContentControl#onCommentSelected:member'
@@ -1772,7 +1772,7 @@ events:
       content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onDataChanged
     uid: 'word!Word.ContentControl#onDataChanged:member'
@@ -1788,7 +1788,7 @@ events:
       content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlDataChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlDataChangedEventArgs:interface" />&gt;
   - name: onDeleted
     uid: 'word!Word.ContentControl#onDeleted:member'
@@ -1846,7 +1846,7 @@ events:
       content: 'readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlDeletedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlDeletedEventArgs:interface" />&gt;
   - name: onEntered
     uid: 'word!Word.ContentControl#onEntered:member'
@@ -1860,7 +1860,7 @@ events:
       content: 'readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEnteredEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlEnteredEventArgs:interface" />&gt;
   - name: onExited
     uid: 'word!Word.ContentControl#onExited:member'
@@ -1874,7 +1874,7 @@ events:
       content: 'readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlExitedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlExitedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'word!Word.ContentControl#onSelectionChanged:member'
@@ -1888,6 +1888,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="word!Word.ContentControlSelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

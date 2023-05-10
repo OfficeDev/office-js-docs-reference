@@ -1209,7 +1209,7 @@ methods:
           type: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
           />[][]&gt;
         description: A 2D array where each item represents the requested properties of the corresponding cell.
   - name: getColumn(column)
@@ -1265,7 +1265,7 @@ methods:
           type: '<xref uid="excel!Excel.ColumnPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ColumnProperties:interface"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ColumnProperties:interface"
           />[]&gt;
         description: An array where each item represents the requested properties of the corresponding column.
   - name: getColumnsAfter(count)
@@ -1563,7 +1563,7 @@ methods:
     syntax:
       content: 'getImage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getIntersection(anotherRange)
     uid: 'excel!Excel.Range#getIntersection:member(1)'
@@ -2127,7 +2127,7 @@ methods:
           type: '<xref uid="excel!Excel.RowPropertiesLoadOptions:interface" />'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.RowProperties:interface"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.RowProperties:interface"
           />[]&gt;
         description: An array where each item represents the requested properties of the corresponding row.
   - name: getRowsAbove(count)
@@ -3021,7 +3021,7 @@ methods:
           description: Additional replacement criteria.
           type: '<xref uid="excel!Excel.ReplaceCriteria:interface" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: The number of replacements performed.
   - name: select()
     uid: 'excel!Excel.Range#select:member(1)'
@@ -3069,7 +3069,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -3478,4 +3478,4 @@ methods:
               await context.sync();
           });
           ```
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -617,7 +617,7 @@ methods:
           description: Specifies the format of the image.
           type: '<xref uid="excel!Excel.PictureFormat:enum" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getAsImage(formatString)
     uid: 'excel!Excel.Shape#getAsImage:member(2)'
@@ -639,7 +639,7 @@ methods:
           description: Specifies the format of the image.
           type: '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: incrementLeft(increment)
     uid: 'excel!Excel.Shape#incrementLeft:member(1)'
@@ -989,7 +989,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ShapeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1098,7 +1098,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ShapeActivatedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Shape#onDeactivated:member'
@@ -1112,6 +1112,6 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ShapeDeactivatedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

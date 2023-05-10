@@ -127,7 +127,7 @@ methods:
     syntax:
       content: 'getText(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Binding#load:member(1)'
@@ -263,7 +263,7 @@ events:
       content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.BindingDataChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Binding#onSelectionChanged:member'
@@ -282,6 +282,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.BindingSelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

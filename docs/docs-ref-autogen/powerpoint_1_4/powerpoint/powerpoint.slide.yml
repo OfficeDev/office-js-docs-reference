@@ -208,4 +208,4 @@ methods:
       return:
         type: '<xref uid="powerpoint!PowerPoint.Interfaces.SlideData:interface" />'
         description: ''
-extends: '<xref uid="powerpoint!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

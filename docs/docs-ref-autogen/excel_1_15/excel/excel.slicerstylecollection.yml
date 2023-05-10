@@ -71,7 +71,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getDefault()
     uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
@@ -183,7 +183,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="excel!~OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="excel!Excel.SlicerStyleCollection:class" />'
         description: ''
@@ -222,4 +222,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.SlicerStyleCollectionData:interface" />'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

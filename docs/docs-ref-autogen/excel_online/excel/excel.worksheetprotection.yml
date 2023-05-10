@@ -132,7 +132,7 @@ methods:
           description: The password to check against the protected worksheet.
           type: string
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: 'Returns `true` if the password can be used to unlock worksheet protection. Otherwise, returns `false`<!-- -->.'
   - name: load(options)
     uid: 'excel!Excel.WorksheetProtection#load:member(1)'
@@ -384,4 +384,4 @@ methods:
       return:
         type: void
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

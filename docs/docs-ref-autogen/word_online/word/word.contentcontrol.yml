@@ -780,7 +780,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.ContentControl#getOoxml:member(1)'
@@ -824,7 +824,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.ContentControl#getRange:member(1)'
@@ -860,7 +860,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getReviewedText(changeTrackingVersionString)
     uid: 'word!Word.ContentControl#getReviewedText:member(2)'
@@ -877,7 +877,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.ContentControl#getTextRanges:member(1)'
@@ -1538,7 +1538,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.ContentControlUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: >-
@@ -1694,4 +1694,4 @@ methods:
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

@@ -722,7 +722,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.Body#getOoxml:member(1)'
@@ -755,7 +755,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Body#getRange:member(1)'
@@ -795,7 +795,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getReviewedText(changeTrackingVersionString)
     uid: 'word!Word.Body#getReviewedText:member(2)'
@@ -812,7 +812,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.Body#insertBreak:member(1)'
@@ -1497,7 +1497,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.BodyUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1586,7 +1586,7 @@ events:
       content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentChanged
     uid: 'word!Word.Body#onCommentChanged:member'
@@ -1600,7 +1600,7 @@ events:
       content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeleted
     uid: 'word!Word.Body#onCommentDeleted:member'
@@ -1614,7 +1614,7 @@ events:
       content: 'readonly onCommentDeleted: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeselected
     uid: 'word!Word.Body#onCommentDeselected:member'
@@ -1628,7 +1628,7 @@ events:
       content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentSelected
     uid: 'word!Word.Body#onCommentSelected:member'
@@ -1642,6 +1642,6 @@ events:
       content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

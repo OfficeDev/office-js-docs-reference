@@ -118,4 +118,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

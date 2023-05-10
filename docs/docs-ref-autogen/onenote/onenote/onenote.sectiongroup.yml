@@ -227,7 +227,7 @@ methods:
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'onenote!OneNote.SectionGroup#load:member(1)'
@@ -371,4 +371,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.SectionGroup:class" />'
         description: ''
-extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

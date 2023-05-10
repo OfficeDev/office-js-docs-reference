@@ -363,7 +363,7 @@ methods:
     syntax:
       content: 'getDataSourceString(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getDataSourceType()
     uid: 'excel!Excel.PivotTable#getDataSourceType:member(1)'
@@ -404,7 +404,7 @@ methods:
     syntax:
       content: 'getDataSourceType(): OfficeExtension.ClientResult<Excel.DataSourceType>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.DataSourceType:enum" />&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.DataSourceType:enum" />&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.PivotTable#load:member(1)'
@@ -528,7 +528,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.PivotTableUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -567,4 +567,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.PivotTableData:interface" />'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

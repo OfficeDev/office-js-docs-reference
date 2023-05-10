@@ -468,7 +468,7 @@ methods:
           description: Required. The range to compare with this range.
           type: '<xref uid="word!Word.Range:class" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.LocationRelation:enum" />&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="word!Word.LocationRelation:enum" />&gt;'
         description: ''
   - name: delete()
     uid: 'word!Word.Range#delete:member(1)'
@@ -569,7 +569,7 @@ methods:
             indicates that the adjacent bookmarks are excluded.
           type: boolean
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: getComments()
     uid: 'word!Word.Range#getComments:member(1)'
@@ -667,7 +667,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getHyperlinkRanges()
     uid: 'word!Word.Range#getHyperlinkRanges:member(1)'
@@ -767,7 +767,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getRange(rangeLocation)
     uid: 'word!Word.Range#getRange:member(1)'
@@ -832,7 +832,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '<xref uid="word!Word.ChangeTrackingVersion:enum" />'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getReviewedText(changeTrackingVersionString)
     uid: 'word!Word.Range#getReviewedText:member(2)'
@@ -849,7 +849,7 @@ methods:
           description: Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
           type: '"Original" | "Current"'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'getTextRanges(endingMarks, trimSpacing)'
     uid: 'word!Word.Range#getTextRanges:member(1)'
@@ -1719,7 +1719,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1843,7 +1843,7 @@ events:
       content: 'readonly onCommentAdded: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentChanged
     uid: 'word!Word.Range#onCommentChanged:member'
@@ -1857,7 +1857,7 @@ events:
       content: 'readonly onCommentChanged: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentDeselected
     uid: 'word!Word.Range#onCommentDeselected:member'
@@ -1871,7 +1871,7 @@ events:
       content: 'readonly onCommentDeselected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
   - name: onCommentSelected
     uid: 'word!Word.Range#onCommentSelected:member'
@@ -1885,6 +1885,6 @@ events:
       content: 'readonly onCommentSelected: OfficeExtension.EventHandlers<Word.CommentEventArgs>;'
       return:
         type: >-
-          <xref uid="word!~OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref uid="word!Word.CommentEventArgs:interface"
           />&gt;
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

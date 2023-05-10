@@ -212,4 +212,4 @@ methods:
       return:
         type: '<xref uid="visio!Visio.Interfaces.HyperlinkData:interface" />'
         description: ''
-extends: '<xref uid="visio!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

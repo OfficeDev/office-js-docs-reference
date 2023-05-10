@@ -207,7 +207,7 @@ methods:
     syntax:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getOoxml()
     uid: 'word!Word.Range#getOoxml:member(1)'
@@ -241,7 +241,7 @@ methods:
     syntax:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'insertBreak(breakType, insertLocation)'
     uid: 'word!Word.Range#insertBreak:member(1)'
@@ -742,7 +742,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -818,4 +818,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

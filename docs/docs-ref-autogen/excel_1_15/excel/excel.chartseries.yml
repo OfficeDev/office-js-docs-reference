@@ -878,7 +878,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getDimensionDataSourceString(dimensionString)
     uid: 'excel!Excel.ChartSeries#getDimensionDataSourceString:member(2)'
@@ -899,7 +899,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getDimensionDataSourceType(dimension)
     uid: 'excel!Excel.ChartSeries#getDimensionDataSourceType:member(1)'
@@ -952,7 +952,7 @@ methods:
           type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
           />&gt;
         description: ''
   - name: getDimensionDataSourceType(dimensionString)
@@ -973,7 +973,7 @@ methods:
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.ChartDataSourceType:enum"
           />&gt;
         description: ''
   - name: getDimensionValues(dimension)
@@ -1026,7 +1026,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '<xref uid="excel!Excel.ChartSeriesDimension:enum" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: getDimensionValues(dimensionString)
     uid: 'excel!Excel.ChartSeries#getDimensionValues:member(2)'
@@ -1047,7 +1047,7 @@ methods:
           description: The dimension of the axis where the data is from.
           type: '"Categories" | "Values" | "XValues" | "YValues" | "BubbleSizes"'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.ChartSeries#load:member(1)'
@@ -1150,7 +1150,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ChartSeriesUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1324,4 +1324,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.ChartSeriesData:interface" />'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

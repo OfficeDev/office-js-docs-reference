@@ -857,7 +857,7 @@ methods:
     syntax:
       content: 'getImage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: getIntersection(anotherRange)
     uid: 'excel!Excel.Range#getIntersection:member(1)'
@@ -1626,7 +1626,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.RangeUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -1789,4 +1789,4 @@ methods:
               await context.sync();
           });
           ```
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

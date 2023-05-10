@@ -321,7 +321,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="word!~OfficeExtension.ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
       return:
         type: '<xref uid="word!Word.SearchOptions:class" />'
         description: ''
@@ -345,7 +345,7 @@ methods:
           type: '<xref uid="word!Word.Interfaces.SearchOptionsUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="word!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -384,4 +384,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Interfaces.SearchOptionsData:interface" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

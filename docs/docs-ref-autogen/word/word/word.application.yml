@@ -85,7 +85,7 @@ methods:
       parameters:
         - id: context
           description: ''
-          type: '<xref uid="word!~OfficeExtension.ClientRequestContext:class" />'
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
       return:
         type: '<xref uid="word!Word.Application:class" />'
         description: ''
@@ -104,7 +104,7 @@ methods:
           description: Required. The template file.
           type: string
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: toJSON()
     uid: 'word!Word.Application#toJSON:member(1)'
@@ -130,4 +130,4 @@ methods:
                       [key: string]: string;
                   }
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

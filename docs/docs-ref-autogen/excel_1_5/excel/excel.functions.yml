@@ -10534,4 +10534,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.FunctionResult:class" />&lt;number&gt;'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

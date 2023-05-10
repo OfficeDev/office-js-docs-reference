@@ -130,7 +130,7 @@ methods:
     syntax:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
-        type: '<xref uid="word!~OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
         description: ''
   - name: getItem(key)
     uid: 'word!Word.CustomPropertyCollection#getItem:member(1)'
@@ -232,7 +232,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="word!~OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
         description: ''
@@ -291,4 +291,4 @@ methods:
       return:
         type: '<xref uid="word!Word.CustomPropertyCollection:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

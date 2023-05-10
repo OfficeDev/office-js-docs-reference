@@ -183,7 +183,7 @@ methods:
           description: >-
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
-          type: '<xref uid="word!~OfficeExtension.LoadOption:interface" />'
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
       return:
         type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
@@ -242,4 +242,4 @@ methods:
       return:
         type: '<xref uid="word!Word.ListCollection:class" />'
         description: ''
-extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

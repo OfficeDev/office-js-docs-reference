@@ -456,7 +456,7 @@ methods:
           description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '<xref uid="excel!Excel.ImageFittingMode:enum" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: 'getImage(width, height, fittingModeString)'
     uid: 'excel!Excel.Chart#getImage:member(2)'
@@ -483,7 +483,7 @@ methods:
           description: Optional. The method used to scale the chart to the specified dimensions (if both height and width are set).
           type: '"Fit" | "FitAndCenter" | "Fill"'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: load(options)
     uid: 'excel!Excel.Chart#load:member(1)'
@@ -586,7 +586,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.ChartUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -780,7 +780,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartActivatedEventArgs:interface" />&gt;
   - name: onDeactivated
     uid: 'excel!Excel.Chart#onDeactivated:member'
@@ -829,6 +829,6 @@ events:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.ChartDeactivatedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

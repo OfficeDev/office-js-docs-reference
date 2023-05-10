@@ -202,7 +202,7 @@ methods:
     syntax:
       content: 'analyzePage(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: applyTranslation(translatedContent)
     uid: 'onenote!OneNote.Page#applyTranslation:member(1)'
@@ -317,7 +317,7 @@ methods:
     syntax:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;string&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string&gt;'
         description: ''
   - name: hasTitleContent()
     uid: 'onenote!OneNote.Page#hasTitleContent:member(1)'
@@ -330,7 +330,7 @@ methods:
     syntax:
       content: 'hasTitleContent(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: '<xref uid="onenote!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: 'insertPageAsSibling(location, title)'
     uid: 'onenote!OneNote.Page#insertPageAsSibling:member(1)'
@@ -510,7 +510,7 @@ methods:
           type: '<xref uid="onenote!OneNote.Interfaces.PageUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="onenote!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -584,4 +584,4 @@ methods:
       return:
         type: '<xref uid="onenote!OneNote.Page:class" />'
         description: ''
-extends: '<xref uid="onenote!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

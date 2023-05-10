@@ -616,7 +616,7 @@ methods:
     syntax:
       content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;boolean&gt;'
         description: ''
   - name: getSelectedRange()
     uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
@@ -755,7 +755,7 @@ methods:
             current workbook.
           type: '<xref uid="excel!Excel.InsertWorksheetOptions:interface" />'
       return:
-        type: '<xref uid="excel!~OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;string[]&gt;'
         description: An array of IDs corresponding to each newly inserted worksheet.
   - name: load(options)
     uid: 'excel!Excel.Workbook#load:member(1)'
@@ -894,7 +894,7 @@ methods:
           type: '<xref uid="excel!Excel.Interfaces.WorkbookUpdateData:interface" />'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
-          type: '<xref uid="excel!~OfficeExtension.UpdateOptions:interface" />'
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
       return:
         type: void
         description: ''
@@ -978,7 +978,7 @@ events:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorkbookActivatedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorkbookActivatedEventArgs:interface" />&gt;
   - name: onAutoSaveSettingChanged
     uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
@@ -992,7 +992,7 @@ events:
       content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface" />&gt;
   - name: onSelectionChanged
     uid: 'excel!Excel.Workbook#onSelectionChanged:member'
@@ -1006,6 +1006,6 @@ events:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
         type: >-
-          <xref uid="excel!~OfficeExtension.EventHandlers:class" />&lt;<xref
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
           uid="excel!Excel.SelectionChangedEventArgs:interface" />&gt;
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

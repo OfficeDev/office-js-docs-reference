@@ -359,4 +359,4 @@ methods:
       return:
         type: '<xref uid="excel!Excel.Interfaces.AutoFilterData:interface" />'
         description: ''
-extends: '<xref uid="excel!~OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
