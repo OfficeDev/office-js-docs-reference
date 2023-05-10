@@ -4544,7 +4544,7 @@
                     {
                       "kind": "Reference",
                       "text": "Outlook.Mailbox",
-                      "canonicalReference": "office!~Office_2.Mailbox:interface"
+                      "canonicalReference": "outlook!Office.Mailbox:interface"
                     },
                     {
                       "kind": "Content",
@@ -4656,7 +4656,7 @@
                     {
                       "kind": "Reference",
                       "text": "Outlook.RoamingSettings",
-                      "canonicalReference": "office!~Office_2.RoamingSettings:interface"
+                      "canonicalReference": "outlook!Office.RoamingSettings:interface"
                     },
                     {
                       "kind": "Content",
@@ -4684,7 +4684,7 @@
                     {
                       "kind": "Reference",
                       "text": "Outlook.SensitivityLabelsCatalog",
-                      "canonicalReference": "office!~Office_2.SensitivityLabelsCatalog:interface"
+                      "canonicalReference": "outlook!Office.SensitivityLabelsCatalog:interface"
                     },
                     {
                       "kind": "Content",
