@@ -11,20 +11,10 @@ fields:
   - name: prompt
     uid: 'word!Word.SaveBehavior.prompt:member'
     package: word!
-    summary: >-
-      Displays the "Save As" dialog to the user if the document hasn't been saved. Won't take effect if the document was
-      previously saved.
-
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Prompt"'
   - name: save
     uid: 'word!Word.SaveBehavior.save:member'
     package: word!
-    summary: >-
-      Saves the document without prompting the user. If it's a new document, it will be saved with the default name or
-      specified name in the default location.
-
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Save"'

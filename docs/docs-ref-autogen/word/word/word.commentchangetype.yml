@@ -11,56 +11,35 @@ fields:
   - name: edited
     uid: 'word!Word.CommentChangeType.edited:member'
     package: word!
-    summary: |-
-      A comment was edited.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"edited"'
   - name: none
     uid: 'word!Word.CommentChangeType.none:member'
     package: word!
-    summary: |-
-      No comment changed event is triggered.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"none"'
   - name: reopened
     uid: 'word!Word.CommentChangeType.reopened:member'
     package: word!
-    summary: |-
-      A comment was reopened.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"reopened"'
   - name: replyAdded
     uid: 'word!Word.CommentChangeType.replyAdded:member'
     package: word!
-    summary: |-
-      A reply was added.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"replyAdded"'
   - name: replyDeleted
     uid: 'word!Word.CommentChangeType.replyDeleted:member'
     package: word!
-    summary: |-
-      A reply was deleted.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"replyDeleted"'
   - name: replyEdited
     uid: 'word!Word.CommentChangeType.replyEdited:member'
     package: word!
-    summary: |-
-      A reply was edited.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"replyEdited"'
   - name: resolved
     uid: 'word!Word.CommentChangeType.resolved:member'
     package: word!
-    summary: |-
-      A comment was resolved.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"resolved"'

@@ -11,34 +11,20 @@ fields:
   - name: cold
     uid: 'word!Word.FieldKind.cold:member'
     package: word!
-    summary: |-
-      Represents that the field doesn't have a result.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Cold"'
   - name: hot
     uid: 'word!Word.FieldKind.hot:member'
     package: word!
-    summary: >-
-      Represents that the field is automatically updated each time it's displayed or each time the page is reformatted,
-      but which can also be manually updated.
-
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Hot"'
   - name: none
     uid: 'word!Word.FieldKind.none:member'
     package: word!
-    summary: |-
-      Represents that the field is invalid. For example, a pair of field characters with nothing inside.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"None"'
   - name: warm
     uid: 'word!Word.FieldKind.warm:member'
     package: word!
-    summary: |-
-      Represents that the field is automatically updated when the source changes or the field can be manually updated.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Warm"'

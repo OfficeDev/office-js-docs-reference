@@ -41,10 +41,10 @@ fields:
   - name: endnote
     uid: 'word!Word.NoteItemType.endnote:member'
     package: word!
-    summary: '\* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Endnote"'
   - name: footnote
     uid: 'word!Word.NoteItemType.footnote:member'
     package: word!
-    summary: '\* \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Footnote"'

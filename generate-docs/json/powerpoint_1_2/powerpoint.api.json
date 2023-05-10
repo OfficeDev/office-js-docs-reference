@@ -433,7 +433,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member",
-                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n *\n *  *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Copy the source theme into the target presentation and use that theme.\n *\n * /\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -454,7 +454,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member",
-                  "docComment": "/**\n * Use the existing theme in the target presentation.\n *\n *  *\n * [Api set: PowerPointApi 1.2]\n */\n",
+                  "docComment": "/**\n * Use the existing theme in the target presentation.\n *\n * /\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

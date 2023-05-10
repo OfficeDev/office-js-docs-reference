@@ -40,45 +40,30 @@ fields:
   - name: centered
     uid: 'word!Word.Alignment.centered:member'
     package: word!
-    summary: |-
-      Alignment to the center.
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Centered"'
   - name: justified
     uid: 'word!Word.Alignment.justified:member'
     package: word!
-    summary: |-
-      Fully justified alignment.
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Justified"'
   - name: left
     uid: 'word!Word.Alignment.left:member'
     package: word!
-    summary: |-
-      Alignment to the left.
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Left"'
   - name: mixed
     uid: 'word!Word.Alignment.mixed:member'
     package: word!
-    summary: '\* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Mixed"'
   - name: right
     uid: 'word!Word.Alignment.right:member'
     package: word!
-    summary: |-
-      Alignment to the right.
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Right"'
   - name: unknown
     uid: 'word!Word.Alignment.unknown:member'
     package: word!
-    summary: |-
-      Unknown alignment.
-
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"Unknown"'

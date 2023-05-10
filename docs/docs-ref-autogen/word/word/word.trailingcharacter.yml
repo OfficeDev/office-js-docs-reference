@@ -11,24 +11,15 @@ fields:
   - name: trailingNone
     uid: 'word!Word.TrailingCharacter.trailingNone:member'
     package: word!
-    summary: |-
-      No character is inserted.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"TrailingNone"'
   - name: trailingSpace
     uid: 'word!Word.TrailingCharacter.trailingSpace:member'
     package: word!
-    summary: |-
-      A space is inserted. Default.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"TrailingSpace"'
   - name: trailingTab
     uid: 'word!Word.TrailingCharacter.trailingTab:member'
     package: word!
-    summary: |-
-      A tab is inserted.
-
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+    summary: ''
     value: '"TrailingTab"'

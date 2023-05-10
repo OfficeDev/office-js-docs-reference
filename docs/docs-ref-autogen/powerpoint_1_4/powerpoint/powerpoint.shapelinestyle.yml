@@ -11,44 +11,25 @@ fields:
   - name: single
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.single:member'
     package: powerpoint!
-    summary: |-
-      Single line.
-
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: ''
     value: '"Single"'
   - name: thickBetweenThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member'
     package: powerpoint!
-    summary: |-
-      Thick line with a thin line on each side.
-
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: ''
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thickThin:member'
     package: powerpoint!
-    summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the
-      thick line is to the left of the thin line.
-
-
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: ''
     value: '"ThickThin"'
   - name: thinThick
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thinThick:member'
     package: powerpoint!
-    summary: >-
-      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the
-      thick line is to the right of the thin line.
-
-
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: ''
     value: '"ThinThick"'
   - name: thinThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thinThin:member'
     package: powerpoint!
-    summary: |-
-      Two thin lines.
-
-      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    summary: ''
     value: '"ThinThin"'

@@ -11,340 +11,340 @@ fields:
   - name: aiueo
     uid: 'word!Word.ListBuiltInNumberStyle.aiueo:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Aiueo"'
   - name: aiueoHalfWidth
     uid: 'word!Word.ListBuiltInNumberStyle.aiueoHalfWidth:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"AiueoHalfWidth"'
   - name: arabic
     uid: 'word!Word.ListBuiltInNumberStyle.arabic:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Arabic"'
   - name: arabic1
     uid: 'word!Word.ListBuiltInNumberStyle.arabic1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Arabic1"'
   - name: arabic2
     uid: 'word!Word.ListBuiltInNumberStyle.arabic2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Arabic2"'
   - name: arabicFullWidth
     uid: 'word!Word.ListBuiltInNumberStyle.arabicFullWidth:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ArabicFullWidth"'
   - name: arabicLZ
     uid: 'word!Word.ListBuiltInNumberStyle.arabicLZ:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ArabicLZ"'
   - name: arabicLZ2
     uid: 'word!Word.ListBuiltInNumberStyle.arabicLZ2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ArabicLZ2"'
   - name: arabicLZ3
     uid: 'word!Word.ListBuiltInNumberStyle.arabicLZ3:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ArabicLZ3"'
   - name: arabicLZ4
     uid: 'word!Word.ListBuiltInNumberStyle.arabicLZ4:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ArabicLZ4"'
   - name: bullet
     uid: 'word!Word.ListBuiltInNumberStyle.bullet:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Bullet"'
   - name: cardinalText
     uid: 'word!Word.ListBuiltInNumberStyle.cardinalText:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"CardinalText"'
   - name: chosung
     uid: 'word!Word.ListBuiltInNumberStyle.chosung:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Chosung"'
   - name: ganada
     uid: 'word!Word.ListBuiltInNumberStyle.ganada:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Ganada"'
   - name: gbnum1
     uid: 'word!Word.ListBuiltInNumberStyle.gbnum1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"GBNum1"'
   - name: gbnum2
     uid: 'word!Word.ListBuiltInNumberStyle.gbnum2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"GBNum2"'
   - name: gbnum3
     uid: 'word!Word.ListBuiltInNumberStyle.gbnum3:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"GBNum3"'
   - name: gbnum4
     uid: 'word!Word.ListBuiltInNumberStyle.gbnum4:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"GBNum4"'
   - name: hangul
     uid: 'word!Word.ListBuiltInNumberStyle.hangul:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Hangul"'
   - name: hanja
     uid: 'word!Word.ListBuiltInNumberStyle.hanja:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Hanja"'
   - name: hanjaRead
     uid: 'word!Word.ListBuiltInNumberStyle.hanjaRead:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HanjaRead"'
   - name: hanjaReadDigit
     uid: 'word!Word.ListBuiltInNumberStyle.hanjaReadDigit:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HanjaReadDigit"'
   - name: hebrew1
     uid: 'word!Word.ListBuiltInNumberStyle.hebrew1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Hebrew1"'
   - name: hebrew2
     uid: 'word!Word.ListBuiltInNumberStyle.hebrew2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Hebrew2"'
   - name: hindiArabic
     uid: 'word!Word.ListBuiltInNumberStyle.hindiArabic:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HindiArabic"'
   - name: hindiCardinalText
     uid: 'word!Word.ListBuiltInNumberStyle.hindiCardinalText:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HindiCardinalText"'
   - name: hindiLetter1
     uid: 'word!Word.ListBuiltInNumberStyle.hindiLetter1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HindiLetter1"'
   - name: hindiLetter2
     uid: 'word!Word.ListBuiltInNumberStyle.hindiLetter2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"HindiLetter2"'
   - name: iroha
     uid: 'word!Word.ListBuiltInNumberStyle.iroha:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Iroha"'
   - name: irohaHalfWidth
     uid: 'word!Word.ListBuiltInNumberStyle.irohaHalfWidth:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"IrohaHalfWidth"'
   - name: kanji
     uid: 'word!Word.ListBuiltInNumberStyle.kanji:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Kanji"'
   - name: kanjiDigit
     uid: 'word!Word.ListBuiltInNumberStyle.kanjiDigit:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"KanjiDigit"'
   - name: kanjiTraditional
     uid: 'word!Word.ListBuiltInNumberStyle.kanjiTraditional:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"KanjiTraditional"'
   - name: kanjiTraditional2
     uid: 'word!Word.ListBuiltInNumberStyle.kanjiTraditional2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"KanjiTraditional2"'
   - name: legal
     uid: 'word!Word.ListBuiltInNumberStyle.legal:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Legal"'
   - name: legalLZ
     uid: 'word!Word.ListBuiltInNumberStyle.legalLZ:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LegalLZ"'
   - name: lowercaseBulgarian
     uid: 'word!Word.ListBuiltInNumberStyle.lowercaseBulgarian:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowercaseBulgarian"'
   - name: lowercaseGreek
     uid: 'word!Word.ListBuiltInNumberStyle.lowercaseGreek:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowercaseGreek"'
   - name: lowercaseRussian
     uid: 'word!Word.ListBuiltInNumberStyle.lowercaseRussian:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowercaseRussian"'
   - name: lowercaseTurkish
     uid: 'word!Word.ListBuiltInNumberStyle.lowercaseTurkish:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowercaseTurkish"'
   - name: lowerLetter
     uid: 'word!Word.ListBuiltInNumberStyle.lowerLetter:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowerLetter"'
   - name: lowerRoman
     uid: 'word!Word.ListBuiltInNumberStyle.lowerRoman:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"LowerRoman"'
   - name: none
     uid: 'word!Word.ListBuiltInNumberStyle.none:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"None"'
   - name: numberInCircle
     uid: 'word!Word.ListBuiltInNumberStyle.numberInCircle:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"NumberInCircle"'
   - name: ordinal
     uid: 'word!Word.ListBuiltInNumberStyle.ordinal:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Ordinal"'
   - name: ordinalText
     uid: 'word!Word.ListBuiltInNumberStyle.ordinalText:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"OrdinalText"'
   - name: pictureBullet
     uid: 'word!Word.ListBuiltInNumberStyle.pictureBullet:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"PictureBullet"'
   - name: simpChinNum1
     uid: 'word!Word.ListBuiltInNumberStyle.simpChinNum1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"SimpChinNum1"'
   - name: simpChinNum2
     uid: 'word!Word.ListBuiltInNumberStyle.simpChinNum2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"SimpChinNum2"'
   - name: simpChinNum3
     uid: 'word!Word.ListBuiltInNumberStyle.simpChinNum3:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"SimpChinNum3"'
   - name: simpChinNum4
     uid: 'word!Word.ListBuiltInNumberStyle.simpChinNum4:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"SimpChinNum4"'
   - name: thaiArabic
     uid: 'word!Word.ListBuiltInNumberStyle.thaiArabic:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ThaiArabic"'
   - name: thaiCardinalText
     uid: 'word!Word.ListBuiltInNumberStyle.thaiCardinalText:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ThaiCardinalText"'
   - name: thaiLetter
     uid: 'word!Word.ListBuiltInNumberStyle.thaiLetter:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"ThaiLetter"'
   - name: tradChinNum1
     uid: 'word!Word.ListBuiltInNumberStyle.tradChinNum1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"TradChinNum1"'
   - name: tradChinNum2
     uid: 'word!Word.ListBuiltInNumberStyle.tradChinNum2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"TradChinNum2"'
   - name: tradChinNum3
     uid: 'word!Word.ListBuiltInNumberStyle.tradChinNum3:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"TradChinNum3"'
   - name: tradChinNum4
     uid: 'word!Word.ListBuiltInNumberStyle.tradChinNum4:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"TradChinNum4"'
   - name: uppercaseBulgarian
     uid: 'word!Word.ListBuiltInNumberStyle.uppercaseBulgarian:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UppercaseBulgarian"'
   - name: uppercaseGreek
     uid: 'word!Word.ListBuiltInNumberStyle.uppercaseGreek:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UppercaseGreek"'
   - name: uppercaseRussian
     uid: 'word!Word.ListBuiltInNumberStyle.uppercaseRussian:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UppercaseRussian"'
   - name: uppercaseTurkish
     uid: 'word!Word.ListBuiltInNumberStyle.uppercaseTurkish:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UppercaseTurkish"'
   - name: upperLetter
     uid: 'word!Word.ListBuiltInNumberStyle.upperLetter:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UpperLetter"'
   - name: upperRoman
     uid: 'word!Word.ListBuiltInNumberStyle.upperRoman:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"UpperRoman"'
   - name: vietCardinalText
     uid: 'word!Word.ListBuiltInNumberStyle.vietCardinalText:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"VietCardinalText"'
   - name: zodiac1
     uid: 'word!Word.ListBuiltInNumberStyle.zodiac1:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Zodiac1"'
   - name: zodiac2
     uid: 'word!Word.ListBuiltInNumberStyle.zodiac2:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Zodiac2"'
   - name: zodiac3
     uid: 'word!Word.ListBuiltInNumberStyle.zodiac3:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Zodiac3"'

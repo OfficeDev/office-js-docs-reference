@@ -11,20 +11,20 @@ fields:
   - name: added
     uid: 'word!Word.ChangeTrackingState.added:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Added"'
   - name: deleted
     uid: 'word!Word.ChangeTrackingState.deleted:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Deleted"'
   - name: normal
     uid: 'word!Word.ChangeTrackingState.normal:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Normal"'
   - name: unknown
     uid: 'word!Word.ChangeTrackingState.unknown:member'
     package: word!
-    summary: '\* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: ''
     value: '"Unknown"'
