@@ -11,15 +11,15 @@ fields:
   - name: double
     uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.double:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Double"'
   - name: none
     uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.none:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: single
     uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle.single:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Single"'

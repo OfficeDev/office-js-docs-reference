@@ -39,15 +39,24 @@ fields:
   - name: 'off'
     uid: 'word!Word.ChangeTrackingMode.off:member'
     package: word!
-    summary: ''
+    summary: |-
+      ChangeTracking is turned off.
+
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Off"'
   - name: trackAll
     uid: 'word!Word.ChangeTrackingMode.trackAll:member'
     package: word!
-    summary: ''
+    summary: |-
+      ChangeTracking is turned on for everyone.
+
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackAll"'
   - name: trackMineOnly
     uid: 'word!Word.ChangeTrackingMode.trackMineOnly:member'
     package: word!
-    summary: ''
+    summary: |-
+      Tracking is turned on for my changes only.
+
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"TrackMineOnly"'

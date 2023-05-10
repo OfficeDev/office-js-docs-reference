@@ -14,7 +14,7 @@ fields:
     summary: |-
       The workbook links are updated at a set interval determined by the Excel application.
 
-      \* \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Automatic"'
   - name: manual
     uid: 'excel!Excel.WorkbookLinksRefreshMode.manual:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       The workbook links are updated manually.
 
-      \* \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Manual"'

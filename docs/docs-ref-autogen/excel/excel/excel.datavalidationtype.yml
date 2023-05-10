@@ -14,7 +14,7 @@ fields:
     summary: |-
       The custom data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Custom"'
   - name: date
     uid: 'excel!Excel.DataValidationType.date:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       The date data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Date"'
   - name: decimal
     uid: 'excel!Excel.DataValidationType.decimal:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       The decimal data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Decimal"'
   - name: inconsistent
     uid: 'excel!Excel.DataValidationType.inconsistent:member'
@@ -40,7 +40,7 @@ fields:
       different cells.
 
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Inconsistent"'
   - name: list
     uid: 'excel!Excel.DataValidationType.list:member'
@@ -48,7 +48,7 @@ fields:
     summary: |-
       The list data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"List"'
   - name: mixedCriteria
     uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
@@ -56,7 +56,7 @@ fields:
     summary: |-
       Mixed criteria means that the range has data validation present on some but not all cells.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"MixedCriteria"'
   - name: none
     uid: 'excel!Excel.DataValidationType.none:member'
@@ -64,7 +64,7 @@ fields:
     summary: |-
       None means allow any value, indicating that there is no data validation in the range.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"None"'
   - name: textLength
     uid: 'excel!Excel.DataValidationType.textLength:member'
@@ -72,7 +72,7 @@ fields:
     summary: |-
       The text length data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TextLength"'
   - name: time
     uid: 'excel!Excel.DataValidationType.time:member'
@@ -80,7 +80,7 @@ fields:
     summary: |-
       The time data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Time"'
   - name: wholeNumber
     uid: 'excel!Excel.DataValidationType.wholeNumber:member'
@@ -88,5 +88,5 @@ fields:
     summary: |-
       The whole number data validation type.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"WholeNumber"'

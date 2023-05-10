@@ -14,7 +14,7 @@ fields:
     summary: |-
       Comments were edited.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentEdited"'
   - name: commentReopened
     uid: 'excel!Excel.CommentChangeType.commentReopened:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Comments were reopened.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentReopened"'
   - name: commentResolved
     uid: 'excel!Excel.CommentChangeType.commentResolved:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       Comments were resolved.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CommentResolved"'
   - name: replyAdded
     uid: 'excel!Excel.CommentChangeType.replyAdded:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       Replies were added.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ReplyAdded"'
   - name: replyDeleted
     uid: 'excel!Excel.CommentChangeType.replyDeleted:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       Replies were deleted.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ReplyDeleted"'
   - name: replyEdited
     uid: 'excel!Excel.CommentChangeType.replyEdited:member'
@@ -54,5 +54,5 @@ fields:
     summary: |-
       Replies were edited.
 
-      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ReplyEdited"'

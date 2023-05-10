@@ -32,10 +32,10 @@ fields:
   - name: down
     uid: 'excel!Excel.InsertShiftDirection.down:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Down"'
   - name: right
     uid: 'excel!Excel.InsertShiftDirection.right:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Right"'

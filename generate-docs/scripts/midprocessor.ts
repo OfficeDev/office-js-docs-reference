@@ -286,12 +286,12 @@ function cleanUpJson(host: string) {
 
 function cleanUpOutlookJson(jsonString : string) {
     return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!~Office_2/gm, "$1office!Office")
-                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n.*\*/gm, `$1`);
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n\s*\*/gm, `$1`);
 }
 
 function cleanUpRichApiJson(jsonString : string) {
     return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!~OfficeExtension/g, "office!OfficeExtension")
-                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n.*\*/gm, `$1`);
+                     .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n\s*\*/gm, `$1`);
 }
 
 function cleanUpOutlookMarkdown(markdownString : string) {

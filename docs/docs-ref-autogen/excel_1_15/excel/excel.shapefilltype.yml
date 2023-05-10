@@ -14,7 +14,7 @@ fields:
     summary: |-
       Gradient fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Gradient"'
   - name: mixed
     uid: 'excel!Excel.ShapeFillType.mixed:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Mixed fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Mixed"'
   - name: noFill
     uid: 'excel!Excel.ShapeFillType.noFill:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       No fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"NoFill"'
   - name: pattern
     uid: 'excel!Excel.ShapeFillType.pattern:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       Pattern fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Pattern"'
   - name: pictureAndTexture
     uid: 'excel!Excel.ShapeFillType.pictureAndTexture:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       Picture and texture fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PictureAndTexture"'
   - name: solid
     uid: 'excel!Excel.ShapeFillType.solid:member'
@@ -54,5 +54,5 @@ fields:
     summary: |-
       Solid fill.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Solid"'

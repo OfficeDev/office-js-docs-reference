@@ -11,20 +11,32 @@ fields:
   - name: character
     uid: 'word!Word.StyleType.character:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that the style is a character style.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Character"'
   - name: list
     uid: 'word!Word.StyleType.list:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that the style is a list style. Currently supported on desktop.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"List"'
   - name: paragraph
     uid: 'word!Word.StyleType.paragraph:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that the style is a paragraph style.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Paragraph"'
   - name: table
     uid: 'word!Word.StyleType.table:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that the style is a table style.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Table"'

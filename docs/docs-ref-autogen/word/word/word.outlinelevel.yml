@@ -11,50 +11,80 @@ fields:
   - name: outlineLevel1
     uid: 'word!Word.OutlineLevel.outlineLevel1:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 1.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel1"'
   - name: outlineLevel2
     uid: 'word!Word.OutlineLevel.outlineLevel2:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 2.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel2"'
   - name: outlineLevel3
     uid: 'word!Word.OutlineLevel.outlineLevel3:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 3.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel3"'
   - name: outlineLevel4
     uid: 'word!Word.OutlineLevel.outlineLevel4:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 4.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel4"'
   - name: outlineLevel5
     uid: 'word!Word.OutlineLevel.outlineLevel5:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 5.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel5"'
   - name: outlineLevel6
     uid: 'word!Word.OutlineLevel.outlineLevel6:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 6.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel6"'
   - name: outlineLevel7
     uid: 'word!Word.OutlineLevel.outlineLevel7:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 7.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel7"'
   - name: outlineLevel8
     uid: 'word!Word.OutlineLevel.outlineLevel8:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 8.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel8"'
   - name: outlineLevel9
     uid: 'word!Word.OutlineLevel.outlineLevel9:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level 9.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevel9"'
   - name: outlineLevelBodyText
     uid: 'word!Word.OutlineLevel.outlineLevelBodyText:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents outline level body text, not an outline level.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OutlineLevelBodyText"'

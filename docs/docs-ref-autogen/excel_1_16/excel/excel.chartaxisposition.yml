@@ -11,20 +11,20 @@ fields:
   - name: automatic
     uid: 'excel!Excel.ChartAxisPosition.automatic:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Automatic"'
   - name: custom
     uid: 'excel!Excel.ChartAxisPosition.custom:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Custom"'
   - name: maximum
     uid: 'excel!Excel.ChartAxisPosition.maximum:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Maximum"'
   - name: minimum
     uid: 'excel!Excel.ChartAxisPosition.minimum:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Minimum"'

@@ -14,12 +14,12 @@ fields:
     summary: |-
       Axis displays categories.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Category"'
   - name: invalid
     uid: 'excel!Excel.ChartAxisType.invalid:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: series
     uid: 'excel!Excel.ChartAxisType.series:member'
@@ -27,7 +27,7 @@ fields:
     summary: |-
       Axis displays data series.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Series"'
   - name: value
     uid: 'excel!Excel.ChartAxisType.value:member'
@@ -35,5 +35,5 @@ fields:
     summary: |-
       Axis displays values.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Value"'

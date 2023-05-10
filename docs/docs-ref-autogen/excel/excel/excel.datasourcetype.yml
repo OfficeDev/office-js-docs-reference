@@ -11,12 +11,10 @@ fields:
   - name: cube
     uid: 'excel!Excel.DataSourceType.cube:member'
     package: excel!
-    summary: >-
+    summary: |-
       Contains a cube name for an OLAP data source.
 
-
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Cube"'
   - name: localRange
     uid: 'excel!Excel.DataSourceType.localRange:member'
@@ -24,7 +22,7 @@ fields:
     summary: |-
       The data source type is a range in the current workbook.
 
-      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LocalRange"'
   - name: localTable
     uid: 'excel!Excel.DataSourceType.localTable:member'
@@ -32,17 +30,15 @@ fields:
     summary: |-
       The data source type is a table in the current workbook.
 
-      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LocalTable"'
   - name: oledbDefault
     uid: 'excel!Excel.DataSourceType.oledbDefault:member'
     package: excel!
-    summary: >-
+    summary: |-
       Contains command text that the OLE DB provider (such as Power BI) understands.
 
-
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OledbDefault"'
   - name: unknown
     uid: 'excel!Excel.DataSourceType.unknown:member'
@@ -50,5 +46,5 @@ fields:
     summary: |-
       The data source type is unknown or unsupported.
 
-      \* \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

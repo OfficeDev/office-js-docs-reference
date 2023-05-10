@@ -14,7 +14,7 @@ fields:
     summary: |-
       Load to connection only.
 
-      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ConnectionOnly"'
   - name: pivotChart
     uid: 'excel!Excel.LoadToType.pivotChart:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Load to PivotChart.
 
-      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PivotChart"'
   - name: pivotTable
     uid: 'excel!Excel.LoadToType.pivotTable:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       Load to PivotTable.
 
-      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PivotTable"'
   - name: table
     uid: 'excel!Excel.LoadToType.table:member'
@@ -38,5 +38,5 @@ fields:
     summary: |-
       Load to a table.
 
-      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Table"'

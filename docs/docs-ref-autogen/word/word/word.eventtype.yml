@@ -30,55 +30,88 @@ fields:
   - name: commentAdded
     uid: 'word!Word.EventType.commentAdded:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that one or more new comments were added.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentAdded"'
   - name: commentChanged
     uid: 'word!Word.EventType.commentChanged:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that a comment or its reply was changed.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentChanged"'
   - name: commentDeleted
     uid: 'word!Word.EventType.commentDeleted:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that one or more comments were deleted.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentDeleted"'
   - name: commentDeselected
     uid: 'word!Word.EventType.commentDeselected:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that a comment was deselected.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentDeselected"'
   - name: commentSelected
     uid: 'word!Word.EventType.commentSelected:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that a comment was selected.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"CommentSelected"'
   - name: contentControlAdded
     uid: 'word!Word.EventType.contentControlAdded:member'
     package: word!
-    summary: ''
+    summary: |-
+      ContentControlAdded represents the event a content control has been added to the document.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: 'word!Word.EventType.contentControlDataChanged:member'
     package: word!
-    summary: ''
+    summary: |-
+      ContentControlDataChanged represents the event that the data in the content control have been changed.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: 'word!Word.EventType.contentControlDeleted:member'
     package: word!
-    summary: ''
+    summary: |-
+      ContentControlDeleted represents the event that the content control has been deleted.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: 'word!Word.EventType.contentControlEntered:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that a content control has been entered.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: 'word!Word.EventType.contentControlExited:member'
     package: word!
-    summary: ''
+    summary: |-
+      Represents that a content control has been exited.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'
     package: word!
-    summary: ''
+    summary: |-
+      ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'

@@ -11,10 +11,10 @@ fields:
   - name: workbook
     uid: 'excel!Excel.NamedItemScope.workbook:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Workbook"'
   - name: worksheet
     uid: 'excel!Excel.NamedItemScope.worksheet:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Worksheet"'

@@ -11,10 +11,10 @@ fields:
   - name: local
     uid: 'word!Word.EventSource.local:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Local"'
   - name: remote
     uid: 'word!Word.EventSource.remote:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Remote"'

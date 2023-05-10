@@ -11,15 +11,24 @@ fields:
   - name: curve
     uid: 'powerpoint!PowerPoint.ConnectorType.curve:member'
     package: powerpoint!
-    summary: ''
+    summary: |-
+      Curve connector type
+
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Curve"'
   - name: elbow
     uid: 'powerpoint!PowerPoint.ConnectorType.elbow:member'
     package: powerpoint!
-    summary: ''
+    summary: |-
+      Elbow connector type
+
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Elbow"'
   - name: straight
     uid: 'powerpoint!PowerPoint.ConnectorType.straight:member'
     package: powerpoint!
-    summary: ''
+    summary: |-
+      Straight connector type
+
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Straight"'

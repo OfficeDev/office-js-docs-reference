@@ -11,20 +11,20 @@ fields:
   - name: splitByCustomSplit
     uid: 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SplitByCustomSplit"'
   - name: splitByPercentValue
     uid: 'excel!Excel.ChartSplitType.splitByPercentValue:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SplitByPercentValue"'
   - name: splitByPosition
     uid: 'excel!Excel.ChartSplitType.splitByPosition:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SplitByPosition"'
   - name: splitByValue
     uid: 'excel!Excel.ChartSplitType.splitByValue:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SplitByValue"'

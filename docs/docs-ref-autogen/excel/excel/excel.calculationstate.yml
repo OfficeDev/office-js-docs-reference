@@ -14,7 +14,7 @@ fields:
     summary: |-
       Calculations in progress.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Calculating"'
   - name: done
     uid: 'excel!Excel.CalculationState.done:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Calculations complete.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Done"'
   - name: pending
     uid: 'excel!Excel.CalculationState.pending:member'
@@ -30,5 +30,5 @@ fields:
     summary: |-
       Changes that trigger calculation have been made, but a recalculation has not yet been performed.
 
-      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Pending"'

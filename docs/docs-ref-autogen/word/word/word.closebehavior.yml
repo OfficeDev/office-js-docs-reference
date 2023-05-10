@@ -11,10 +11,16 @@ fields:
   - name: save
     uid: 'word!Word.CloseBehavior.save:member'
     package: word!
-    summary: ''
+    summary: |-
+      Save the changes before closing the document.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Save"'
   - name: skipSave
     uid: 'word!Word.CloseBehavior.skipSave:member'
     package: word!
-    summary: ''
+    summary: |-
+      Discard the possible changes when closing the document.
+
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SkipSave"'

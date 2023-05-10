@@ -61,30 +61,30 @@ fields:
   - name: arabic
     uid: 'word!Word.ListNumbering.arabic:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Arabic"'
   - name: lowerLetter
     uid: 'word!Word.ListNumbering.lowerLetter:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"LowerLetter"'
   - name: lowerRoman
     uid: 'word!Word.ListNumbering.lowerRoman:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"LowerRoman"'
   - name: none
     uid: 'word!Word.ListNumbering.none:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"None"'
   - name: upperLetter
     uid: 'word!Word.ListNumbering.upperLetter:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"UpperLetter"'
   - name: upperRoman
     uid: 'word!Word.ListNumbering.upperRoman:member'
     package: word!
-    summary: ''
+    summary: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"UpperRoman"'

@@ -11,20 +11,16 @@ fields:
   - name: array
     uid: 'excel!Excel.EntityCardLayoutType.array:member'
     package: excel!
-    summary: >-
+    summary: |-
       Array layout of the entity card.
 
-
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Array"'
   - name: entity
     uid: 'excel!Excel.EntityCardLayoutType.entity:member'
     package: excel!
-    summary: >-
+    summary: |-
       Entity layout of the entity card.
 
-
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Entity"'

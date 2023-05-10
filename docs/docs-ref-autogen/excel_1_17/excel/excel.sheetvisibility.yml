@@ -39,15 +39,15 @@ fields:
   - name: hidden
     uid: 'excel!Excel.SheetVisibility.hidden:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Hidden"'
   - name: veryHidden
     uid: 'excel!Excel.SheetVisibility.veryHidden:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"VeryHidden"'
   - name: visible
     uid: 'excel!Excel.SheetVisibility.visible:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Visible"'
