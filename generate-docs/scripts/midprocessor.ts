@@ -285,7 +285,7 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!~Office_2/gm, "$1office!office")
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!~Office_2/gm, "$1office!Office")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 

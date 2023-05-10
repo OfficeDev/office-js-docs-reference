@@ -594,7 +594,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->. The token is returned as a string in the `asyncResult.value` property.
             If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide
             additional information.
-          type: '(asyncResult: <xref uid="office!office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type: any
@@ -669,7 +669,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->. The token is returned as a string in the `asyncResult.value` property.
             If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide
             additional information.
-          type: '(asyncResult: <xref uid="office!office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type: any
@@ -871,7 +871,7 @@ methods:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the XML of the EWS request
             provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.
-          type: '(asyncResult: <xref uid="office!office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type: any
