@@ -3,8 +3,6 @@ layout: LandingPage
 ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
-author: o365devx
-ms.author: o365devx
 localization_priority: Priority
 ms.date: 05/23/2023
 ---
@@ -175,6 +173,10 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
 
 > [!NOTE]
 > If you're looking for the JavaScript APIs for developing Office Scripts, visit the [Office Scripts API reference](/javascript/api/office-scripts/overview).
+
+## License terms
+
+Use of the Office.js API library is governed by the terms described under the [Microsoft software license terms for the Microsoft Office JavaScript (Office.js) API library](https://github.com/OfficeDev/office-js/blob/release/LICENSE.md).
 
 ## See also
 
