@@ -51,7 +51,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get alignment details about the first table in the document.
+      // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -164,7 +164,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get alignment details about the first table in the document.
+      // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -339,7 +339,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get content alignment details about the first row of the first table in the document.
+      // Gets content alignment details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -563,7 +563,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get alignment details about the first table in the document.
+      // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -763,7 +763,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get border details about the first table in the document.
+      // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -828,7 +828,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-      // Get the content of the first cell in the first table.
+      // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
         const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -895,7 +895,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get cell padding details about the first table in the document.
+      // Gets cell padding details about the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();

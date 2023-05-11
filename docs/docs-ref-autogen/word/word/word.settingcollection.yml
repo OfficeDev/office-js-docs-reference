@@ -16,7 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-  // Delete all custom settings this add-in had set on this document.
+  // Deletes all custom settings this add-in had set on this document.
 
   await Word.run(async (context) => {
     const settings = context.document.settings;
@@ -67,7 +67,7 @@ properties:
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-          // Get all custom settings this add-in set on this document.
+          // Gets all custom settings this add-in set on this document.
 
           await Word.run(async (context) => {
             const settings = context.document.settings;
@@ -103,7 +103,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-      // Add a new custom setting, or edit the value of an existing one.
+      // Adds a new custom setting, or edit the value of an existing one.
 
       await Word.run(async (context) => {
         const key = $("#key")

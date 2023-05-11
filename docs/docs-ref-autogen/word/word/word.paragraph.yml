@@ -27,7 +27,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Centers last paragraph alignment.
+        // Center last paragraph alignment.
         context.document.body.paragraphs.getLast().alignment = "Centered";
 
         await context.sync();
@@ -182,7 +182,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Indents the first paragraph.
+        // Indent the first paragraph.
         context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
         return context.sync();
@@ -215,7 +215,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Adjusts line spacing.
+        // Adjust line spacing.
         context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
         await context.sync();
@@ -964,14 +964,14 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
+        // Get the complete sentence (as range) associated with the insertion point.
         const sentences = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
-        // Expands the range to the end of the paragraph to get all the complete sentences.
+        // Expand the range to the end of the paragraph to get all the complete sentences.
         const sentencesToTheEndOfParagraph = sentences.items[0]
           .getRange()
           .expandTo(
@@ -1794,7 +1794,7 @@ methods:
         list.insertParagraph("New list item at the start of the list", "Start");
         const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-        // Sets up list level for the list item.
+        // Set up list level for the list item.
         paragraph.listItem.level = 4;
 
         // To add paragraphs outside the list, use Before or After.
