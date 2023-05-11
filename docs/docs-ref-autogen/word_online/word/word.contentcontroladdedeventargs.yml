@@ -28,8 +28,8 @@ properties:
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
-          // Display the added content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was added: ${event.ids[0]}`);
+          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+          console.log(event.ids);
         });
       }
 
@@ -63,8 +63,8 @@ properties:
 
       async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
         await Word.run(async (context) => {
-          // Display the added content control's ID.
-          console.log(`${event.eventType} event detected. ID of content control that was added: ${event.ids[0]}`);
+          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+          console.log(event.ids);
         });
       }
 

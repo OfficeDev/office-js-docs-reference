@@ -50,7 +50,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Edit the first comment in the selected content.
+      // Edits the first comment in the selected content.
 
       await Word.run(async (context) => {
         const text = $("#edit-comment-text")
@@ -158,7 +158,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Toggle Resolved status of the first comment in the selected content.
+      // Toggles Resolved status of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const comment = context.document
@@ -205,7 +205,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Delete the first comment in the selected content.
+      // Deletes the first comment in the selected content.
 
       await Word.run(async (context) => {
         context.document
@@ -243,7 +243,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the range of the first comment in the selected content.
+      // Gets the range of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const range = context.document
@@ -349,7 +349,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Reply to the first active comment in the selected content.
+      // Replies to the first active comment in the selected content.
 
       await Word.run(async (context) => {
         const text = $("#reply-text")

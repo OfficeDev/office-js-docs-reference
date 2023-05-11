@@ -27,7 +27,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Centers last paragraph alignment.
+        // Center last paragraph alignment.
         context.document.body.paragraphs.getLast().alignment = "Centered";
 
         await context.sync();
@@ -122,7 +122,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Indents the first paragraph.
+        // Indent the first paragraph.
         context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
         return context.sync();
@@ -155,7 +155,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Adjusts line spacing.
+        // Adjust line spacing.
         context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
         await context.sync();
@@ -292,7 +292,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
-      // Apply the specified style to a paragraph.
+      // Applies the specified style to a paragraph.
 
       await Word.run(async (context) => {
         const styleName = $("#style-name-to-use").val() as string;
@@ -305,7 +305,7 @@ properties:
         style.load();
         await context.sync();
 
-        if (!style.nameLocal) {
+        if (style.isNullObject) {
           console.warn(`There's no existing style with the name '${styleName}'.`);
         } else if (style.type != Word.StyleType.paragraph) {
           console.log(`The '${styleName}' style isn't a paragraph style.`);

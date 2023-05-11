@@ -137,7 +137,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-      // Get the first image in the document.
+      // Gets the first image in the document.
 
       await Word.run(async (context) => {
         const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -190,7 +190,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
-      // Count how many times each term appears in the document.
+      // Counts how many times each term appears in the document.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -444,7 +444,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-      // Get the content of the first cell in the first table.
+      // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
         const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -513,7 +513,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the referenced note's item type and body type, which are both "Footnote".
+      // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -598,7 +598,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the comments in the document body.
+      // Gets the comments in the document body.
 
       await Word.run(async (context) => {
         const comments = context.document.body.getComments();
@@ -1286,7 +1286,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
-      // Do a basic text search and highlight matches in the document.
+      // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
         const results = context.document.body.search("Online");
@@ -1305,7 +1305,7 @@ methods:
 
       ...
 
-      // Do a wildcard search and highlight matches in the document.
+      // Does a wildcard search and highlights matches in the document.
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.

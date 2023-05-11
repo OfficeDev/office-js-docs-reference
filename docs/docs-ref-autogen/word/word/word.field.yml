@@ -198,8 +198,11 @@ properties:
         if (field.isNullObject) {
           console.log("The selection has no fields.");
         } else {
+          console.log(`The first field in the selection is currently ${field.locked ? "locked" : "unlocked"}.`);
           field.locked = !field.locked;
           await context.sync();
+
+          console.log(`The first field in the selection is now ${field.locked ? "locked" : "unlocked"}.`);
         }
       });
 
@@ -390,34 +393,7 @@ properties:
     summary: >-
       Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are
       displayed, `false` otherwise.
-    remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
-
-
-      #### Examples
-
-
-      ```typescript
-
-      // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/manage-fields.yaml
-
-      // Gets the first field in the selection and toggles between showing the field code and showing the result.
-
-      await Word.run(async (context) => {
-        var field = context.document.getSelection().fields.getFirstOrNullObject();
-        field.load(["code", "result", "type", "locked", "showCodes"]);
-        await context.sync();
-
-        if (field.isNullObject) {
-          console.log("This document has no fields.");
-        } else {
-          field.showCodes = !field.showCodes;
-          await context.sync();
-        }
-      });
-
-      ```
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
@@ -520,6 +496,8 @@ methods:
         } else {
           field.delete();
           await context.sync();
+
+          console.log("The first field in the document was deleted.");
         }
       });
 

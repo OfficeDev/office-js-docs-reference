@@ -88,7 +88,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the footnotes in the selected document range.
+      // Gets the footnotes in the selected document range.
 
       await Word.run(async (context) => {
         const footnotes = context.document.getSelection().footnotes;
@@ -460,7 +460,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-      // Compare the location of one paragraph in relation to another paragraph.
+      // Compares the location of one paragraph in relation to another paragraph.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -608,7 +608,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the comments in the selected content.
+      // Gets the comments in the selected content.
 
       await Word.run(async (context) => {
         const comments = context.document.getSelection().getComments();
@@ -829,7 +829,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-      // Get the reviewed text.
+      // Gets the reviewed text.
 
       await Word.run(async (context) => {
         const range = context.document.getSelection();
@@ -889,14 +889,14 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
+        // Get the complete sentence (as range) associated with the insertion point.
         const sentences = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
-        // Expands the range to the end of the paragraph to get all the complete sentences.
+        // Expand the range to the end of the paragraph to get all the complete sentences.
         const sentencesToTheEndOfParagraph = sentences.items[0]
           .getRange()
           .expandTo(
@@ -1016,7 +1016,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Set a comment on the selected content.
+      // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
         const text = $("#comment-text")
@@ -1063,6 +1063,14 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
+
+      // then changes the format  of each search result,
+
+      // then wraps each search result within a content control,
+
+      // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
           const results = context.document.body.search("Contractor");
@@ -1293,7 +1301,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Set a footnote on the selected content.
+      // Sets a footnote on the selected content.
 
       await Word.run(async (context) => {
         const text = $("#input-footnote")

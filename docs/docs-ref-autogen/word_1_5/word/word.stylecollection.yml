@@ -72,7 +72,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
-      // Add a new style.
+      // Adds a new style.
 
       await Word.run(async (context) => {
         const newStyleName = $("#new-style-name").val() as string;
@@ -85,7 +85,7 @@ methods:
         style.load();
         await context.sync();
 
-        if (style.nameLocal) {
+        if (!style.isNullObject) {
           console.warn(
             `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
           );
@@ -94,6 +94,8 @@ methods:
 
         const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
         context.document.addStyle(newStyleName, newStyleType);
+        await context.sync();
+        
         console.log(newStyleName + " has been added to the style list.");
       });
 
@@ -126,7 +128,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
 
-      // Get the number of styles.
+      // Gets the number of styles.
 
       await Word.run(async (context) => {
         const styles = context.document.getStyles();

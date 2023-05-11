@@ -9960,7 +9960,7 @@ Word.Application,N/A,Class,Good,false
 Word.Application,context,Property,Good,false
 Word.Application,createDocument(base64File),Method,Poor,true
 Word.Application,newObject(context),Method,Poor,false
-Word.Application,retrieveStylesFromBase64(base64File),Method,Poor,false
+Word.Application,retrieveStylesFromBase64(base64File),Method,Poor,true
 Word.Application,toJSON(),Method,Poor,false
 Word.Body,N/A,Class,Good,false
 Word.Body,contentControls,Property,Good,false
@@ -10667,7 +10667,7 @@ Word.Field,parentTableCell,Property,Good,false
 Word.Field,parentTableCellOrNullObject,Property,Good,false
 Word.Field,parentTableOrNullObject,Property,Good,false
 Word.Field,result,Property,Good,true
-Word.Field,showCodes,Property,Good,true
+Word.Field,showCodes,Property,Good,false
 Word.Field,type,Property,Good,true
 Word.Field,delete(),Method,Poor,true
 Word.Field,getNext(),Method,Poor,false
