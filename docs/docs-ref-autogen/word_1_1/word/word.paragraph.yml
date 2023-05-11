@@ -27,7 +27,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Centers last paragraph alignment.
+        // Center last paragraph alignment.
         context.document.body.paragraphs.getLast().alignment = "Centered";
 
         await context.sync();
@@ -122,7 +122,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Indents the first paragraph.
+        // Indent the first paragraph.
         context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
         return context.sync();
@@ -155,7 +155,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
       await Word.run(async (context) => {
-        // Adjusts line spacing.
+        // Adjust line spacing.
         context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
         await context.sync();

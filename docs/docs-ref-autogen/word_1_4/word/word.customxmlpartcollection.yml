@@ -53,7 +53,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Add a custom XML part.
+      // Adds a custom XML part.
 
       await Word.run(async (context) => {
         const originalXml =
@@ -134,7 +134,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Query a custom XML part for elements matching the search terms.
+      // Queries a custom XML part for elements matching the search terms.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
