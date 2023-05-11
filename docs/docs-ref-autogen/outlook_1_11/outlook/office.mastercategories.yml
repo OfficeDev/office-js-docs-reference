@@ -11,19 +11,19 @@ summary: >-
   categories in a master list on their mailbox. They can then apply one or more categories to an item.
 
 
-  \*\*Important\*\*: In delegate or shared scenarios, the delegate can get the categories in the master list but can't
+  **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't
   add or remove categories.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read/write mailbox\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write mailbox**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -40,17 +40,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DuplicateCategory`<!-- -->: One of the categories provided is already in the master category list.
@@ -118,17 +118,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DuplicateCategory`<!-- -->: One of the categories provided is already in the master category list.
@@ -160,14 +160,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,14 +200,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -257,17 +257,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
@@ -326,17 +326,17 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.

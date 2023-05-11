@@ -11,35 +11,35 @@ fields:
   - name: bottomItems
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BottomItems"'
   - name: bottomPercent
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BottomPercent"'
   - name: bottomSum
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BottomSum"'
   - name: invalid
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.invalid:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: topItems
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topItems:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"TopItems"'
   - name: topPercent
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topPercent:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"TopPercent"'
   - name: topSum
     uid: 'excel!Excel.PivotFilterTopBottomCriterion.topSum:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"TopSum"'

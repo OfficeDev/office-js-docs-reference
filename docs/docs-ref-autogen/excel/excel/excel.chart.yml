@@ -441,7 +441,7 @@ methods:
     fullName: getDataRangeOrNullObject()
     summary: >-
       Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -471,7 +471,7 @@ methods:
     fullName: getDataTableOrNullObject()
     summary: >-
       Gets the data table on the chart. If the chart doesn't allow a data table, then this method returns an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

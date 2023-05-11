@@ -6,18 +6,18 @@ fullName: Office.SessionData
 summary: |-
   Provides methods to manage an item's session data.
 
-  \*\*Important\*\*: The entire SessionData object is limited to 50,000 characters per add-in.
+  **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
 remarks: >-
   \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 isPreview: false
 isDeprecated: false
@@ -32,14 +32,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -88,14 +88,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,14 +118,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -167,14 +167,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -221,14 +221,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -283,14 +283,14 @@ methods:
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -314,19 +314,19 @@ methods:
     summary: |-
       Sets a session data key-value pair.
 
-      \*\*Important\*\*: The entire SessionData object is limited to 50,000 characters per add-in.
+      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -382,19 +382,19 @@ methods:
     summary: |-
       Sets a session data key-value pair.
 
-      \*\*Important\*\*: The entire SessionData object is limited to 50,000 characters per add-in.
+      **Important**: The entire SessionData object is limited to 50,000 characters per add-in.
     remarks: >-
       \[ [API set: Mailbox 1.11](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:

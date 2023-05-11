@@ -8,13 +8,13 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 isPreview: false
 isDeprecated: false
@@ -43,7 +43,7 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
       target field on the item is 500 recipients.
 
 
@@ -55,17 +55,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -150,7 +150,7 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
       target field on the item is 500 recipients.
 
 
@@ -162,17 +162,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -217,24 +217,24 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
+      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
       email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
       contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
       the contact's saved name. For more details, refer to the [related GitHub
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      \*\*Important\*\*: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
       recipient has the following characteristics.
 
 
@@ -251,7 +251,7 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
       suggested contact or email address from the auto-complete list.
     isPreview: false
     isDeprecated: false
@@ -296,24 +296,24 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Important\*\*: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
+      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
       email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
       contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
       the contact's saved name. For more details, refer to the [related GitHub
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      \*\*Important\*\*: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
       recipient has the following characteristics.
 
 
@@ -330,7 +330,7 @@ methods:
       - The recipient's name or email address is underlined or enclosed in a box.
 
 
-      To resolve an email address once it's added to a mail item, the sender must use the \*\*Tab\*\* key or select a
+      To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
       suggested contact or email address from the auto-complete list.
 
 
@@ -469,7 +469,7 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
       target field on the item is 500 recipients.
 
 
@@ -481,17 +481,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
@@ -547,7 +547,7 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. \*\*Note\*\*: Can call API repeatedly but the maximum number of recipients in the
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
       target field on the item is 500 recipients.
 
 
@@ -559,17 +559,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.

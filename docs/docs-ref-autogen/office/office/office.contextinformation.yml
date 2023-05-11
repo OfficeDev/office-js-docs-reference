@@ -5,7 +5,7 @@ package: office!
 fullName: Office.ContextInformation
 summary: Provides information about the environment in which the add-in is running.
 remarks: >-
-  \*\*Important\*\*: In Outlook, this object is available from Mailbox requirement set 1.5. For all Mailbox requirement
+  **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. For all Mailbox requirement
   sets, you can use the
   [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
   property to get similar information.

@@ -26,7 +26,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the text of the referenced footnote.
+      // Gets the text of the referenced footnote.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -80,7 +80,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Select the footnote's reference mark in the document body.
+      // Selects the footnote's reference mark in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -121,7 +121,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the referenced note's item type and body type, which are both "Footnote".
+      // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -164,7 +164,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Delete this referenced footnote.
+      // Deletes this referenced footnote.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -204,7 +204,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Select the next footnote in the document body.
+      // Selects the next footnote in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -232,7 +232,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next note item of the same type. If this note item is the last one, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
       methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.

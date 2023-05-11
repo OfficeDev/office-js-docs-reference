@@ -79,7 +79,7 @@ methods:
       Inserts the specified worksheets of a workbook into the current workbook.
 
 
-      \*Note\*\*: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please
+      *Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please
       use `Workbook.insertWorksheetFromBase64` instead.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
@@ -119,7 +119,7 @@ methods:
       Inserts the specified worksheets of a workbook into the current workbook.
 
 
-      \*Note\*\*: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please
+      *Note**: This API is currently only supported for Office on Windows and Mac. And it has been deprecated, please
       use `Workbook.insertWorksheetFromBase64` instead.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: true
@@ -270,7 +270,7 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: >-
       Gets a worksheet object using its name or ID. If the worksheet does not exist, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

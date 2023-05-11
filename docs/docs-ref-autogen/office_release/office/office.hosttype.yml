@@ -5,7 +5,7 @@ package: office!
 fullName: Office.HostType
 summary: Specifies the Office application in which the add-in is running.
 remarks: |-
-  \*\*Important\*\*: In Outlook, this enum is available from Mailbox requirement set 1.5.
+  **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
 
   #### Examples
 
@@ -23,7 +23,7 @@ fields:
       The Office application is Microsoft Access.
 
 
-      \*\*Important\*\*: We no longer recommend that you create and use Access web apps and databases in SharePoint. As
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As
       an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
       business solutions for web and mobile devices.
   - name: Excel

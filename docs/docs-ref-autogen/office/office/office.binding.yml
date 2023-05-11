@@ -19,11 +19,11 @@ summary: >-
   MatrixBinding and TableBinding objects expose additional methods for matrix- and table-specific features, such as
   counting the number of rows and columns.
 remarks: >-
-  \*\*Applications\*\*: Word, Excel (deprecated, use
+  **Applications**: Word, Excel (deprecated, use
   [Excel.Binding](https://learn.microsoft.com/javascript/api/excel/excel.binding?view=excel-js-preview) instead)
 
 
-  \*\*Requirement sets\*\*:
+  **Requirement sets**:
 
 
   -
@@ -133,7 +133,7 @@ methods:
       -->. Supported EventTypes are `Office.EventType.BindingDataChanged` and
       `Office.EventType.BindingSelectionChanged`<!-- -->.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
@@ -178,7 +178,7 @@ methods:
       -->. Supported EventTypes are `Office.EventType.BindingDataChanged` and
       `Office.EventType.BindingSelectionChanged`<!-- -->.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
@@ -274,7 +274,7 @@ methods:
     fullName: 'getDataAsync(options, callback)'
     summary: Returns the data contained within the binding.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       -
@@ -341,7 +341,7 @@ methods:
     fullName: getDataAsync(callback)
     summary: Returns the data contained within the binding.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       -
@@ -491,7 +491,7 @@ methods:
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
     isPreview: false
     isDeprecated: false
@@ -522,7 +522,7 @@ methods:
     fullName: 'removeHandlerAsync(eventType, callback)'
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [BindingEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#bindingevents)
 
 
@@ -561,7 +561,7 @@ methods:
     fullName: 'setDataAsync(data, options, callback)'
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       -
@@ -642,11 +642,11 @@ methods:
       pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the
       data displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code> object, and the shape of the table
       matches the bound table</td> <td>The specified set of rows and/or headers are written, if no other data in
-      surrounding cells will be overwritten. \*\*Note\*\*: If you specify formulas in the <code>TableData</code> object
-      you pass for the \*data\* parameter, you might not get the results you expect due to the "calculated columns"
+      surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object
+      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
       feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write \*data\* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of
-      a <code>TableData</code> object), and specify the \*coercionType\* as Microsoft.Office.Matrix or "matrix".</td>
+      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of
+      a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
       </tr> </table>
 
 
@@ -716,7 +716,7 @@ methods:
     fullName: 'setDataAsync(data, callback)'
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
-      \*\*Requirement sets\*\*:
+      **Requirement sets**:
 
 
       -
@@ -797,11 +797,11 @@ methods:
       pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the
       data displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code> object, and the shape of the table
       matches the bound table</td> <td>The specified set of rows and/or headers are written, if no other data in
-      surrounding cells will be overwritten. \*\*Note\*\*: If you specify formulas in the <code>TableData</code> object
-      you pass for the \*data\* parameter, you might not get the results you expect due to the "calculated columns"
+      surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object
+      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
       feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write \*data\* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of
-      a <code>TableData</code> object), and specify the \*coercionType\* as Microsoft.Office.Matrix or "matrix".</td>
+      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of
+      a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
       </tr> </table>
 
 

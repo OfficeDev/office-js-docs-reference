@@ -42,7 +42,7 @@ fields:
     summary: |-
       Add content after the contents of the calling object.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: 'word!Word.InsertLocation.before:member'
@@ -50,7 +50,7 @@ fields:
     summary: |-
       Add content before the contents of the calling object.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: end
     uid: 'word!Word.InsertLocation.end:member'
@@ -58,7 +58,7 @@ fields:
     summary: |-
       Append content to the contents of the calling object.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: replace
     uid: 'word!Word.InsertLocation.replace:member'
@@ -66,7 +66,7 @@ fields:
     summary: |-
       Replace the contents of the current object.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Replace"'
   - name: start
     uid: 'word!Word.InsertLocation.start:member'
@@ -74,5 +74,5 @@ fields:
     summary: |-
       Prepend content to the contents of the calling object.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

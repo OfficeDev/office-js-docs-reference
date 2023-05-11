@@ -16,7 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-  // Compare the location of one paragraph in relation to another paragraph.
+  // Compares the location of one paragraph in relation to another paragraph.
 
   await Word.run(async (context) => {
     const paragraphs = context.document.body.paragraphs;
@@ -44,7 +44,7 @@ fields:
     summary: |-
       Indicates that this instance occurs after, and is adjacent to, the range.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AdjacentAfter"'
   - name: adjacentBefore
     uid: 'word!Word.LocationRelation.adjacentBefore:member'
@@ -52,7 +52,7 @@ fields:
     summary: |-
       Indicates that this instance occurs before, and is adjacent to, the range.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"AdjacentBefore"'
   - name: after
     uid: 'word!Word.LocationRelation.after:member'
@@ -60,7 +60,7 @@ fields:
     summary: |-
       Indicates that this instance occurs after the range.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: 'word!Word.LocationRelation.before:member'
@@ -68,7 +68,7 @@ fields:
     summary: |-
       Indicates that this instance occurs before the range.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: contains
     uid: 'word!Word.LocationRelation.contains:member'
@@ -78,7 +78,7 @@ fields:
       instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Contains"'
   - name: containsEnd
     uid: 'word!Word.LocationRelation.containsEnd:member'
@@ -88,7 +88,7 @@ fields:
       share the same start character as this instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContainsEnd"'
   - name: containsStart
     uid: 'word!Word.LocationRelation.containsStart:member'
@@ -98,7 +98,7 @@ fields:
       share the same end character as this instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContainsStart"'
   - name: equal
     uid: 'word!Word.LocationRelation.equal:member'
@@ -106,7 +106,7 @@ fields:
     summary: |-
       Indicates that this instance and the range represent the same range.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Equal"'
   - name: inside
     uid: 'word!Word.LocationRelation.inside:member'
@@ -116,7 +116,7 @@ fields:
       this instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Inside"'
   - name: insideEnd
     uid: 'word!Word.LocationRelation.insideEnd:member'
@@ -126,7 +126,7 @@ fields:
       share the same start character as this instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideEnd"'
   - name: insideStart
     uid: 'word!Word.LocationRelation.insideStart:member'
@@ -136,7 +136,7 @@ fields:
       share the same end character as this instance.
 
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"InsideStart"'
   - name: overlapsAfter
     uid: 'word!Word.LocationRelation.overlapsAfter:member'
@@ -144,7 +144,7 @@ fields:
     summary: |-
       Indicates that this instance starts inside the range and overlaps the range’s last character.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OverlapsAfter"'
   - name: overlapsBefore
     uid: 'word!Word.LocationRelation.overlapsBefore:member'
@@ -152,7 +152,7 @@ fields:
     summary: |-
       Indicates that this instance starts before the range and overlaps the range’s first character.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"OverlapsBefore"'
   - name: unrelated
     uid: 'word!Word.LocationRelation.unrelated:member'
@@ -160,5 +160,5 @@ fields:
     summary: |-
       Indicates that this instance and the range are in different sub-documents.
 
-      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Unrelated"'

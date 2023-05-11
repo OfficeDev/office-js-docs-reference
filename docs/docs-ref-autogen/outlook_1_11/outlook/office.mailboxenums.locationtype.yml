@@ -8,8 +8,8 @@ remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -51,7 +51,7 @@ fields:
       A custom location. Custom locations don't have an SMTP address.
 
 
-      \*\*Note\*\*: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
+      **Note**: [Personal contact groups](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
       added as appointment locations aren't returned by the
       [EnhancedLocation.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.enhancedlocation#outlook-office-enhancedlocation-getasync-member(1))
       method.

@@ -5,13 +5,13 @@ package: outlook!
 fullName: Office.Diagnostics
 summary: Provides diagnostic information to an Outlook add-in.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -34,16 +34,16 @@ properties:
       -->, or `OutlookAndroid`<!-- -->.
 
 
-      \*\*Note\*\*: The `Outlook` value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+      **Note**: The `Outlook` value is returned for Outlook on desktop clients (i.e., Windows and Mac).
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,14 +63,14 @@ properties:
       version of the application, Outlook. In Outlook on the web, the property returns the version of the Exchange
       Server.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -107,14 +107,14 @@ properties:
       - `ThreeColumns`<!-- -->, which is displayed when the screen is wide. For example, Outlook on the web uses this
       view in a full screen window on a desktop computer.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:

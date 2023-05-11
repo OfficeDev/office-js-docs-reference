@@ -10,7 +10,7 @@ remarks: >-
   \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*Known issue with HTML table border colors\*\*
+  **Known issue with HTML table border colors**
 
 
   Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a
@@ -18,13 +18,13 @@ remarks: >-
   \#1818](https://github.com/OfficeDev/office-js/issues/1818)<!-- -->.
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -39,14 +39,14 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -101,14 +101,14 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,25 +144,25 @@ methods:
 
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -251,25 +251,25 @@ methods:
 
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
@@ -305,25 +305,25 @@ methods:
 
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.
@@ -412,25 +412,25 @@ methods:
 
 
       When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the \*\*Examples\*\* section for a sample).
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      \*\*Recommended\*\*: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 1,000,000 characters.

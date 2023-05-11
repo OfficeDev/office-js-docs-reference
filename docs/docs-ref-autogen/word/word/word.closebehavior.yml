@@ -14,7 +14,7 @@ fields:
     summary: |-
       Save the changes before closing the document.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Save"'
   - name: skipSave
     uid: 'word!Word.CloseBehavior.skipSave:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       Discard the possible changes when closing the document.
 
-      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"SkipSave"'

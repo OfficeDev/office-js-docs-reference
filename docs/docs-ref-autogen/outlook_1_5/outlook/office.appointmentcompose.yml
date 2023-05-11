@@ -7,7 +7,7 @@ summary: >-
   The appointment organizer mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
   treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.5/office.context.mailbox.item)
   page.
@@ -34,14 +34,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -90,16 +90,16 @@ properties:
       convert the local time on the client to UTC for the server.
 
 
-      \*\*Important\*\*: In the Windows client, you can't use this property to update the end of a recurrence.
+      **Important**: In the Windows client, you can't use this property to update the end of a recurrence.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -180,14 +180,14 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the `item` object
       instance is a message or an appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -225,14 +225,14 @@ properties:
       [Location](xref:outlook!Office.Location:interface) object that provides methods that are used to get and set the
       location of the appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -294,14 +294,14 @@ properties:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -396,14 +396,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -484,14 +484,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -576,16 +576,16 @@ properties:
       to convert the local time on the client to UTC for the server.
 
 
-      \*\*Important\*\*: In the Windows client, you can't use this property to update the start of a recurrence.
+      **Important**: In the Windows client, you can't use this property to update the start of a recurrence.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -637,14 +637,14 @@ properties:
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -700,24 +700,24 @@ methods:
       same session.
 
 
-      \*\*Important\*\*: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -816,24 +816,24 @@ methods:
       same session.
 
 
-      \*\*Important\*\*: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
       `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
       issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `AttachmentSizeExceeded`<!-- -->: The attachment is larger than allowed.
@@ -894,17 +894,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -1007,17 +1007,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
@@ -1063,17 +1063,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Important\*\*: In Outlook on the web, if the item is an appointment and it has previously been saved using
+      **Important**: In Outlook on the web, if the item is an appointment and it has previously been saved using
       `saveAsync`<!-- -->, the user is prompted to save, discard, or cancel even if no changes have occurred since the
       item was last saved.
 
@@ -1116,14 +1116,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -1192,14 +1192,14 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -1266,14 +1266,14 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
       #### Examples
@@ -1382,17 +1382,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1478,17 +1478,17 @@ methods:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1536,12 +1536,12 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      \*\*Note\*\*: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with
+      **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with
       EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is
       actually synced to the server. Until the item is synced, using the item ID will return an error.
 
 
-      \*\*Note\*\*: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the
+      **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the
       `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting
       as a draft in Outlook for Mac by using Office JS
       API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
@@ -1550,17 +1550,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1627,12 +1627,12 @@ methods:
       `saveAsync` may not result in the same content.
 
 
-      \*\*Note\*\*: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with
+      **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with
       EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is
       actually synced to the server. Until the item is synced, using the item ID will return an error.
 
 
-      \*\*Note\*\*: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the
+      **Note**: In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the
       `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see [Cannot save a meeting
       as a draft in Outlook for Mac by using Office JS
       API](https://learn.microsoft.com/outlook/troubleshoot/calendars/cannot-save-meeting-as-draft-in-outlook-for-mac)<!--
@@ -1641,17 +1641,17 @@ methods:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1711,17 +1711,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
@@ -1804,17 +1804,17 @@ methods:
       \[ [API set: Mailbox 1.2](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Organizer
+      -->**: Appointment Organizer
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.

@@ -34,25 +34,25 @@ fields:
   - name: beginsWith
     uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BeginsWith"'
   - name: contains
     uid: 'excel!Excel.ConditionalTextOperator.contains:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Contains"'
   - name: endsWith
     uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"EndsWith"'
   - name: invalid
     uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: notContains
     uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NotContains"'

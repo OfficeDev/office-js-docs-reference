@@ -33,15 +33,15 @@ fields:
   - name: context
     uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Context"'
   - name: leftToRight
     uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LeftToRight"'
   - name: rightToLeft
     uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"RightToLeft"'

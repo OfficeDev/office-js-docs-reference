@@ -16,7 +16,7 @@ remarks: >-
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-  // Get cell padding details about the first table in the document.
+  // Gets cell padding details about the first table in the document.
 
   await Word.run(async (context) => {
     const firstTable = context.document.body.tables.getFirst();
@@ -36,20 +36,20 @@ fields:
   - name: bottom
     uid: 'word!Word.CellPaddingLocation.bottom:member'
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Bottom"'
   - name: left
     uid: 'word!Word.CellPaddingLocation.left:member'
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Left"'
   - name: right
     uid: 'word!Word.CellPaddingLocation.right:member'
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Right"'
   - name: top
     uid: 'word!Word.CellPaddingLocation.top:member'
     package: word!
-    summary: '\* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: '* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     value: '"Top"'

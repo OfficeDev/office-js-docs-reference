@@ -380,7 +380,7 @@ methods:
     summary: >-
       Gets the `RangeAreas` object, comprising one or more rectangular ranges, that represents the print area for the
       worksheet. If there is no print area, then this method returns an object with its `isNullObject` property set to
-      `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -410,7 +410,7 @@ methods:
     fullName: getPrintTitleColumnsOrNullObject()
     summary: >-
       Gets the range object representing the title columns. If not set, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -440,7 +440,7 @@ methods:
     fullName: getPrintTitleRowsOrNullObject()
     summary: >-
       Gets the range object representing the title rows. If not set, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

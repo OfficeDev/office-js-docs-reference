@@ -7,7 +7,7 @@ summary: >-
   The appointment attendee mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
-  \*\*Important\*\*: This is an internal Outlook object, not directly exposed through existing interfaces. You should
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
   treat this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
   Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.4/office.context.mailbox.item)
   page.
@@ -31,17 +31,17 @@ properties:
     fullName: attachments
     summary: Gets the item's attachments as an array.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
-      \*\*Note\*\*: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
       Outlook](https://support.microsoft.com/office/434752e1-02d3-4e90-9124-8b81e49a8519)<!-- -->.
 
@@ -101,14 +101,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -146,14 +146,14 @@ properties:
     fullName: dateTimeCreated
     summary: Gets the date and time that an item was created.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -180,16 +180,16 @@ properties:
     summary: |-
       Gets the date and time that an item was last modified.
 
-      \*\*Note\*\*: This member is not supported in Outlook on iOS or Android.
+      **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -224,14 +224,14 @@ properties:
       When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -262,14 +262,14 @@ properties:
       You can create custom message classes that extends a default message class, for example, a custom appointment
       message class `IPM.Appointment.Contoso`<!-- -->.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       The `itemClass` property specifies the message class of the selected item. The following are the default message
@@ -317,21 +317,21 @@ properties:
       parameter in the callback function.
 
 
-      \*\*Note\*\*: The identifier returned by the `itemId` property is the same as the [Exchange Web Services item
+      **Note**: The identifier returned by the `itemId` property is the same as the [Exchange Web Services item
       identifier](https://learn.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
       -->. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
       making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
       -->. For more details, see [Use the Outlook REST APIs from an Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id)<!-- -->.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -377,14 +377,14 @@ properties:
       The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
       instance is a message or an appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -422,14 +422,14 @@ properties:
 
       The `location` property returns a string that contains the location of the appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -469,14 +469,14 @@ properties:
       that are added by email programs. To get the subject of the item with the prefixes intact, use the `subject`
       property.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -505,14 +505,14 @@ properties:
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -615,14 +615,14 @@ properties:
 
       - New Mac UI, web browser, Android: No limit
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -660,14 +660,14 @@ properties:
     fullName: organizer
     summary: Gets the meeting organizer's email properties.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -711,14 +711,14 @@ properties:
 
       - New Mac UI, web browser, Android: No limit
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -761,14 +761,14 @@ properties:
       The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You
       can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -802,14 +802,14 @@ properties:
       The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading
       prefixes such as RE: and FW:.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -851,16 +851,16 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -995,16 +995,16 @@ methods:
       UI. If this isn't possible, then no error message is thrown.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1140,16 +1140,16 @@ methods:
     summary: |-
       Gets the entities found in the selected item's body.
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1227,16 +1227,16 @@ methods:
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1262,8 +1262,8 @@ methods:
             One of the `EntityType` enumeration values.
 
 
-            While the minimum permission level to use this method is \*\*restricted\*\*, some entity types require
-            \*\*read item\*\* to access, as specified in the following table.
+            While the minimum permission level to use this method is **restricted**, some entity types require
+            **read item** to access, as specified in the following table.
 
 
             <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
@@ -1291,7 +1291,7 @@ methods:
       Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
 
 
-      \*\*Note\*\*: This method is used with the [activation rules feature for Outlook
+      **Note**: This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
       by the [Teams manifest for Office Add-ins
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
@@ -1301,16 +1301,16 @@ methods:
       `ItemHasKnownEntity` rule element in the manifest XML file with the specified `FilterName` element value.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1354,7 +1354,7 @@ methods:
       Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
 
 
-      \*\*Note\*\*: This method is used with the [activation rules feature for Outlook
+      **Note**: This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
       by the [Teams manifest for Office Add-ins
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
@@ -1368,20 +1368,20 @@ methods:
 
       If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
       use the `Body.getAsync` method to retrieve the entire body.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1462,7 +1462,7 @@ methods:
       file.
 
 
-      \*\*Note\*\*: This method is used with the [activation rules feature for Outlook
+      **Note**: This method is used with the [activation rules feature for Outlook
       add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
       by the [Teams manifest for Office Add-ins
       (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
@@ -1475,19 +1475,19 @@ methods:
 
       If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results.
+      expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples
@@ -1576,14 +1576,14 @@ methods:
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/metadata-for-an-outlook-add-in)<!-- -->.
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Appointment Attendee
+      -->**: Appointment Attendee
 
 
       #### Examples

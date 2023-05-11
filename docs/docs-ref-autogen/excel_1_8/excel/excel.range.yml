@@ -848,7 +848,7 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. \*Important\*\*: This API is currently unsupported in Excel for
+      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for
       Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
       status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -899,7 +899,7 @@ methods:
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [\*OrNullObject methods and
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1314,7 +1314,7 @@ methods:
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, then this method
       returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

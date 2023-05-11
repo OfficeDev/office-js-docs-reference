@@ -5,8 +5,8 @@ package: outlook!
 fullName: Office.MailboxEnums.AttachmentType
 summary: Specifies an attachment's type.
 remarks: >-
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 
@@ -59,7 +59,7 @@ fields:
       The attachment is stored in a cloud location, such as OneDrive.
 
 
-      \*\*Important\*\*: In Read mode, the `id` property of the attachment's
+      **Important**: In Read mode, the `id` property of the attachment's
       [details](xref:outlook!Office.AttachmentDetails:interface) object contains a URL to the file. From requirement set
       1.8, the `url` property included in the attachment's
       [details](xref:outlook!Office.AttachmentDetailsCompose:interface) object contains a URL to the file in Compose

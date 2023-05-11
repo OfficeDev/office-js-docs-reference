@@ -15,7 +15,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark1"'
   - name: dark10
@@ -25,7 +25,7 @@ fields:
       Yellow with filled header, striped rows, light
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark10"'
   - name: dark11
@@ -35,7 +35,7 @@ fields:
       Green with filled header, striped rows, light
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark11"'
   - name: dark2
@@ -45,7 +45,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark2"'
   - name: dark3
@@ -55,7 +55,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark3"'
   - name: dark4
@@ -65,7 +65,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark4"'
   - name: dark5
@@ -75,7 +75,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark5"'
   - name: dark6
@@ -85,7 +85,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark6"'
   - name: dark7
@@ -95,7 +95,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and dark.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark7"'
   - name: dark8
@@ -105,7 +105,7 @@ fields:
       Black with filled header, striped rows, light
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark8"'
   - name: dark9
@@ -115,7 +115,7 @@ fields:
       Orange with filled header, striped rows, light
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Dark9"'
   - name: light1
@@ -125,7 +125,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light1"'
   - name: light10
@@ -135,7 +135,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light10"'
   - name: light11
@@ -145,7 +145,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light11"'
   - name: light12
@@ -155,7 +155,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light12"'
   - name: light13
@@ -165,7 +165,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light13"'
   - name: light14
@@ -175,7 +175,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light14"'
   - name: light15
@@ -185,7 +185,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light15"'
   - name: light16
@@ -195,7 +195,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light16"'
   - name: light17
@@ -205,7 +205,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light17"'
   - name: light18
@@ -215,7 +215,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light18"'
   - name: light19
@@ -225,7 +225,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light19"'
   - name: light2
@@ -235,7 +235,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light2"'
   - name: light20
@@ -245,7 +245,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light20"'
   - name: light21
@@ -255,7 +255,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light21"'
   - name: light3
@@ -265,7 +265,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light3"'
   - name: light4
@@ -275,7 +275,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light4"'
   - name: light5
@@ -285,7 +285,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light5"'
   - name: light6
@@ -295,7 +295,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light6"'
   - name: light7
@@ -305,7 +305,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with header borders and bottom border.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light7"'
   - name: light8
@@ -315,7 +315,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light8"'
   - name: light9
@@ -325,7 +325,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with filled header, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Light9"'
   - name: medium1
@@ -335,7 +335,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium1"'
   - name: medium10
@@ -345,7 +345,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium10"'
   - name: medium11
@@ -355,7 +355,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium11"'
   - name: medium12
@@ -365,7 +365,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium12"'
   - name: medium13
@@ -375,7 +375,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium13"'
   - name: medium14
@@ -385,7 +385,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium14"'
   - name: medium15
@@ -395,7 +395,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium15"'
   - name: medium16
@@ -405,7 +405,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium16"'
   - name: medium17
@@ -415,7 +415,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium17"'
   - name: medium18
@@ -425,7 +425,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium18"'
   - name: medium19
@@ -435,7 +435,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium19"'
   - name: medium2
@@ -445,7 +445,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium2"'
   - name: medium20
@@ -455,7 +455,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium20"'
   - name: medium21
@@ -465,7 +465,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with filled header, striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium21"'
   - name: medium22
@@ -475,7 +475,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium22"'
   - name: medium23
@@ -485,7 +485,7 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium23"'
   - name: medium24
@@ -495,7 +495,7 @@ fields:
       "Accent 2" (orange in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium24"'
   - name: medium25
@@ -505,7 +505,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium25"'
   - name: medium26
@@ -515,7 +515,7 @@ fields:
       "Accent 4" (yellow in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium26"'
   - name: medium27
@@ -525,7 +525,7 @@ fields:
       "Accent 5" (light blue in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium27"'
   - name: medium28
@@ -535,7 +535,7 @@ fields:
       "Accent 6" (green in the default "Office" theme) with striped rows, and cell borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium28"'
   - name: medium3
@@ -546,7 +546,7 @@ fields:
       borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium3"'
   - name: medium4
@@ -556,7 +556,7 @@ fields:
       "Accent 3" (gray in the default "Office" theme) with filled header, striped rows, outside border, and row borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium4"'
   - name: medium5
@@ -567,7 +567,7 @@ fields:
       borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium5"'
   - name: medium6
@@ -578,7 +578,7 @@ fields:
       borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium6"'
   - name: medium7
@@ -589,7 +589,7 @@ fields:
       borders.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium7"'
   - name: medium8
@@ -599,7 +599,7 @@ fields:
       "Dark 1" (black in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium8"'
   - name: medium9
@@ -609,6 +609,6 @@ fields:
       "Accent 1" (blue in the default "Office" theme) with filled header, and striped rows.
 
 
-      \* \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"Medium9"'

@@ -40,7 +40,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Add a custom XML part.
+      // Adds a custom XML part.
 
       await Word.run(async (context) => {
         const originalXml =
@@ -86,7 +86,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Get the namespace URI from a custom XML part.
+      // Gets the namespace URI from a custom XML part.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -131,7 +131,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Delete a custom XML part.
+      // Deletes a custom XML part.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -293,7 +293,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Add a custom XML part.
+      // Adds a custom XML part.
 
       await Word.run(async (context) => {
         const originalXml =
@@ -360,7 +360,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Insert an attribute into a custom XML part.
+      // Inserts an attribute into a custom XML part.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -451,7 +451,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Insert an element into a custom XML part.
+      // Inserts an element into a custom XML part.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -616,7 +616,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Query a custom XML part for elements matching the search terms.
+      // Queries a custom XML part for elements matching the search terms.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -684,7 +684,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
 
-      // Replace a custom XML part.
+      // Replaces a custom XML part.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;

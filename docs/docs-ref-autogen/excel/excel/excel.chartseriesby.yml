@@ -66,15 +66,15 @@ fields:
       is by rows or columns. In Excel on the web, "auto" will simply default to "columns".
 
 
-      \* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Auto"'
   - name: columns
     uid: 'excel!Excel.ChartSeriesBy.columns:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Columns"'
   - name: rows
     uid: 'excel!Excel.ChartSeriesBy.rows:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Rows"'

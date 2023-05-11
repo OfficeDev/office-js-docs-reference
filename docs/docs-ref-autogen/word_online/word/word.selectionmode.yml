@@ -33,7 +33,7 @@ fields:
     summary: |-
       The cursor is at the end of the selection (just after the end of the selected range).
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: select
     uid: 'word!Word.SelectionMode.select:member'
@@ -41,7 +41,7 @@ fields:
     summary: |-
       The entire range is selected.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Select"'
   - name: start
     uid: 'word!Word.SelectionMode.start:member'
@@ -49,5 +49,5 @@ fields:
     summary: |-
       The cursor is at the beginning of the selection (just before the start of the selected range).
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'

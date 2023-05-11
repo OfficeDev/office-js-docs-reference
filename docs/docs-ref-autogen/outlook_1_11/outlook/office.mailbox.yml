@@ -14,13 +14,13 @@ summary: |-
 
   - `userProfile`<!-- -->: Provides information about the user in an Outlook add-in.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*restricted\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **restricted**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ properties:
 
       - `hostName` (string): A string that represents the name of the Office application. It should be one of the
       following values: `Outlook`<!-- -->, `OutlookWebApp`<!-- -->, `OutlookIOS`<!-- -->, or `OutlookAndroid`<!-- -->.
-      \*\*Note\*\*: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+      **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
 
 
       - `hostVersion` (string): A string that represents the version of either the Office application or the Exchange
@@ -57,14 +57,14 @@ properties:
 
       More information is under [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       Starting with Mailbox requirement set 1.5, you can also use the
@@ -84,24 +84,24 @@ properties:
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
 
 
-      Your app must have the \*\*read item\*\* permission specified in its manifest to call the `ewsUrl` member in read
+      Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read
       mode.
 
 
       In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have
-      \*\*read/write item\*\* permissions to call the `saveAsync` method.
+      **read/write item** permissions to call the `saveAsync` method.
 
 
-      \*\*Note\*\*: This member is not supported in Outlook on iOS or Android.
+      **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
@@ -157,7 +157,7 @@ properties:
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      \*\*Important\*\*: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
+      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
       see [Implement a pinnable task pane in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
@@ -184,14 +184,14 @@ properties:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -264,12 +264,12 @@ properties:
       Gets the URL of the REST endpoint for this email account.
 
 
-      Your app must have the \*\*read item\*\* permission specified in its manifest to call the `restUrl` member in read
+      Your app must have the **read item** permission specified in its manifest to call the `restUrl` member in read
       mode.
 
 
       In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. Your app must have
-      \*\*read/write item\*\* permissions to call the `saveAsync` method.
+      **read/write item** permissions to call the `saveAsync` method.
 
 
       However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
@@ -280,14 +280,14 @@ properties:
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       The `restUrl` value can be used to make [REST API](https://learn.microsoft.com/outlook/rest/) calls to the user's
@@ -368,7 +368,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane
       implementation.
 
 
@@ -379,14 +379,14 @@ methods:
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -452,7 +452,7 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: >-
-      Adds an event handler for a supported event. \*\*Note\*\*: Events are only available with task pane
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane
       implementation.
 
 
@@ -463,14 +463,14 @@ methods:
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -508,19 +508,19 @@ methods:
       the proper format for EWS.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -583,14 +583,14 @@ methods:
       the web, the `convertToLocalClientTime` method will return a dictionary object with the values set to the time
       zone specified in the EAC.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -609,19 +609,19 @@ methods:
     summary: |-
       Converts an item ID formatted for EWS into REST format.
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.3](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*restricted\*\*
+      -->**: **restricted**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs
@@ -701,14 +701,14 @@ methods:
       The `convertToUtcClientTime` method converts a dictionary containing a local date and time to a `Date` object with
       the correct values for the local date and time.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -776,16 +776,16 @@ methods:
       computer or device, and no error message is returned.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -837,19 +837,19 @@ methods:
       computer or device, and no error message is returned.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -920,19 +920,19 @@ methods:
       computer or device, and no error message is returned.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -976,16 +976,16 @@ methods:
       form to create a new appointment.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -1038,19 +1038,19 @@ methods:
       appointment.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -1122,19 +1122,19 @@ methods:
       appointment.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1165,30 +1165,30 @@ methods:
 
 
       In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
-      attendees as input arguments, the method displays a form with a \*\*Save\*\* button. If you have specified
-      attendees, the form would include the attendees and a \*\*Send\*\* button.
+      attendees as input arguments, the method displays a form with a **Save** button. If you have specified
+      attendees, the form would include the attendees and a **Send** button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
-      form with a \*\*Send\*\* button. If you don't specify any recipients, this method displays an appointment form
-      with a \*\*Save &amp; Close\*\* button.
+      form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
+      with a **Save &amp; Close** button.
 
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
 
 
       #### Examples
@@ -1243,33 +1243,33 @@ methods:
 
 
       In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
-      attendees as input arguments, the method displays a form with a \*\*Save\*\* button. If you have specified
-      attendees, the form would include the attendees and a \*\*Send\*\* button.
+      attendees as input arguments, the method displays a form with a **Save** button. If you have specified
+      attendees, the form would include the attendees and a **Send** button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
-      form with a \*\*Send\*\* button. If you don't specify any recipients, this method displays an appointment form
-      with a \*\*Save &amp; Close\*\* button.
+      form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
+      with a **Save &amp; Close** button.
 
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
 
 
       #### Examples
@@ -1345,33 +1345,33 @@ methods:
 
 
       In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
-      attendees as input arguments, the method displays a form with a \*\*Save\*\* button. If you have specified
-      attendees, the form would include the attendees and a \*\*Send\*\* button.
+      attendees as input arguments, the method displays a form with a **Save** button. If you have specified
+      attendees, the form would include the attendees and a **Send** button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
-      form with a \*\*Send\*\* button. If you don't specify any recipients, this method displays an appointment form
-      with a \*\*Save &amp; Close\*\* button.
+      form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
+      with a **Save &amp; Close** button.
 
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
 
 
-      \*\*Note\*\*: This method is not supported in Outlook on iOS or Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1408,14 +1408,14 @@ methods:
       \[ [API set: Mailbox 1.6](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
 
 
       #### Examples
@@ -1455,17 +1455,17 @@ methods:
 
             `toRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*To\*\* line. The array is limited to a maximum of 100 entries.
+            on the **To** line. The array is limited to a maximum of 100 entries.
 
 
             `ccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Cc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Cc** line. The array is limited to a maximum of 100 entries.
 
 
             `bccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Bcc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Bcc** line. The array is limited to a maximum of 100 entries.
 
 
             `subject`<!-- -->: A string containing the subject of the message. The string is limited to a maximum of 255
@@ -1487,7 +1487,7 @@ methods:
 
 
             `attachments.url`<!-- -->: Only used if type is set to file. The URI of the location for the file.
-            \*\*Important\*\*: This link must be publicly accessible, without need for authentication by Exchange Online
+            **Important**: This link must be publicly accessible, without need for authentication by Exchange Online
             servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it
             doesn't need further authentication.
 
@@ -1520,14 +1520,14 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
 
 
       #### Examples
@@ -1578,17 +1578,17 @@ methods:
 
             `toRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*To\*\* line. The array is limited to a maximum of 100 entries.
+            on the **To** line. The array is limited to a maximum of 100 entries.
 
 
             `ccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Cc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Cc** line. The array is limited to a maximum of 100 entries.
 
 
             `bccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Bcc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Bcc** line. The array is limited to a maximum of 100 entries.
 
 
             `subject`<!-- -->: A string containing the subject of the message. The string is limited to a maximum of 255
@@ -1610,7 +1610,7 @@ methods:
 
 
             `attachments.url`<!-- -->: Only used if type is set to file. The URI of the location for the file.
-            \*\*Important\*\*: This link must be publicly accessible, without need for authentication by Exchange Online
+            **Important**: This link must be publicly accessible, without need for authentication by Exchange Online
             servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it
             doesn't need further authentication.
 
@@ -1653,14 +1653,14 @@ methods:
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Read
+      -->**: Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1676,17 +1676,17 @@ methods:
 
             `toRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*To\*\* line. The array is limited to a maximum of 100 entries.
+            on the **To** line. The array is limited to a maximum of 100 entries.
 
 
             `ccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Cc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Cc** line. The array is limited to a maximum of 100 entries.
 
 
             `bccRecipients`<!-- -->: An array of strings containing the email addresses or an array containing an
             [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each of the recipients
-            on the \*\*Bcc\*\* line. The array is limited to a maximum of 100 entries.
+            on the **Bcc** line. The array is limited to a maximum of 100 entries.
 
 
             `subject`<!-- -->: A string containing the subject of the message. The string is limited to a maximum of 255
@@ -1708,7 +1708,7 @@ methods:
 
 
             `attachments.url`<!-- -->: Only used if type is set to file. The URI of the location for the file.
-            \*\*Important\*\*: This link must be publicly accessible, without need for authentication by Exchange Online
+            **Important**: This link must be publicly accessible, without need for authentication by Exchange Online
             servers. However, with on-premises Exchange, the link can be accessible on a private network as long as it
             doesn't need further authentication.
 
@@ -1743,24 +1743,24 @@ methods:
       The token is returned as a string in the `asyncResult.value` property.
 
 
-      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of \*\*read item\*\*.
+      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
 
 
       Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of \*\*read/write item\*\*.
+      method requires a minimum permission level of **read/write item**.
 
 
-      \*\*Important\*\*: For guidance on delegate or shared scenarios, see the [delegate
+      **Important**: For guidance on delegate or shared scenarios, see the [delegate
       access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
-      \*REST Tokens\*
+      *REST Tokens*
 
 
       When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token will not work to
       authenticate EWS calls. The token will be limited in scope to read-only access to the current item and its
-      attachments, unless the add-in has specified the \*\*read/write mailbox\*\* permission in its manifest. If the
-      \*\*read/write mailbox\*\* permission is specified, the resulting token will grant read/write access to mail,
+      attachments, unless the add-in has specified the **read/write mailbox** permission in its manifest. If the
+      **read/write mailbox** permission is specified, the resulting token will grant read/write access to mail,
       calendar, and contacts, including the ability to send mail.
 
 
@@ -1782,7 +1782,7 @@ methods:
       - `Contacts.ReadWrite`
 
 
-      \*EWS Tokens\*
+      *EWS Tokens*
 
 
       When an EWS token is requested (`options.isRest` = `false`<!-- -->), the resulting token will not work to
@@ -1801,26 +1801,26 @@ methods:
       selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
 
-      \*\*Important\*\*: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token
+      **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token
       is always returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
 
 
-      \*\*Note\*\*: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+      **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
     remarks: >-
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
@@ -1906,35 +1906,35 @@ methods:
       -->.
 
 
-      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of \*\*read item\*\*.
+      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
 
 
       Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of \*\*read/write item\*\*.
+      method requires a minimum permission level of **read/write item**.
 
 
-      \*\*Important\*\*: For guidance on delegate or shared scenarios, see the [delegate
+      **Important**: For guidance on delegate or shared scenarios, see the [delegate
       access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
-      \*\*Note\*\*: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins
+      **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins
       running on Outlook mobile clients.
     remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
@@ -1993,21 +1993,21 @@ methods:
 
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
       and user with an external system](https://learn.microsoft.com/office/dev/add-ins/outlook/authentication)<!-- -->.
 
 
-      \*\*Errors\*\*:
+      **Errors**:
 
 
       - `HTTPRequestFailure`<!-- -->: The request has failed. Please look at the diagnostics object for the HTTP error
@@ -2080,8 +2080,8 @@ methods:
       The XML request must specify UTF-8 encoding: `\<?xml version="1.0" encoding="utf-8"?\>`<!-- -->.
 
 
-      Your add-in must have the \*\*read/write mailbox\*\* permission to use the `makeEwsRequestAsync` method. For
-      information about using the \*\*read/write mailbox\*\* permission and the EWS operations that you can call with
+      Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For
+      information about using the **read/write mailbox** permission and the EWS operations that you can call with
       the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
 
@@ -2090,7 +2090,7 @@ methods:
       1 MB in size, an error message is returned instead.
 
 
-      \*\*Note\*\*: This method is not supported in the following scenarios.
+      **Note**: This method is not supported in the following scenarios.
 
 
       - In Outlook on iOS or Android.
@@ -2099,11 +2099,11 @@ methods:
       - When the add-in is loaded in a Gmail mailbox.
 
 
-      \*\*Note\*\*: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS
+      **Note**: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS
       directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
 
-      \*Version differences\*
+      *Version differences*
 
 
       When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version
@@ -2118,14 +2118,14 @@ methods:
       property. You can determine what version of Outlook is running by using the `mailbox.diagnostics.hostVersion`
       property.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write mailbox\*\*
+      -->**: **read/write mailbox**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
 
 
       #### Examples
@@ -2266,7 +2266,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
+      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
       implementation.
 
 
@@ -2277,14 +2277,14 @@ methods:
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2311,7 +2311,7 @@ methods:
     package: outlook!
     fullName: 'removeHandlerAsync(eventType, callback)'
     summary: >-
-      Removes the event handlers for a supported event type. \*\*Note\*\*: Events are only available with task pane
+      Removes the event handlers for a supported event type. **Note**: Events are only available with task pane
       implementation.
 
 
@@ -2322,14 +2322,14 @@ methods:
       \[ [API set: Mailbox 1.5](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:

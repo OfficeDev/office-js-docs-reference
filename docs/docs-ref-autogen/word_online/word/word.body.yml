@@ -149,7 +149,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the footnotes in the document body.
+      // Gets the footnotes in the document body.
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -183,7 +183,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-      // Get the first image in the document.
+      // Gets the first image in the document.
 
       await Word.run(async (context) => {
         const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -222,7 +222,7 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the body. \*\*Important\*\*: Paragraphs in tables are not returned for
+      Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for
       requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
@@ -236,7 +236,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
-      // Count how many times each term appears in the document.
+      // Counts how many times each term appears in the document.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -313,7 +313,7 @@ properties:
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. If there isn't a
       parent body, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [\*OrNullObject methods and
+      further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -344,7 +344,7 @@ properties:
     summary: >-
       Gets the content control that contains the body. If there isn't a parent content control, then this method will
       return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -372,7 +372,7 @@ properties:
     fullName: parentSectionOrNullObject
     summary: >-
       Gets the parent section of the body. If there isn't a parent section, then this method will return an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -490,7 +490,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-      // Get the content of the first cell in the first table.
+      // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
         const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -559,7 +559,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the referenced note's item type and body type, which are both "Footnote".
+      // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
         const footnotes = context.document.body.footnotes;
@@ -644,7 +644,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the comments in the document body.
+      // Gets the comments in the document body.
 
       await Word.run(async (context) => {
         const comments = context.document.body.getComments();
@@ -1322,7 +1322,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
-      // Do a basic text search and highlight matches in the document.
+      // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
         const results = context.document.body.search("Online");
@@ -1341,7 +1341,7 @@ methods:
 
       ...
 
-      // Do a wildcard search and highlight matches in the document.
+      // Does a wildcard search and highlights matches in the document.
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.

@@ -62,105 +62,105 @@ fields:
   - name: fiveArrows
     uid: 'excel!Excel.IconSet.fiveArrows:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FiveArrows"'
   - name: fiveArrowsGray
     uid: 'excel!Excel.IconSet.fiveArrowsGray:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FiveArrowsGray"'
   - name: fiveBoxes
     uid: 'excel!Excel.IconSet.fiveBoxes:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FiveBoxes"'
   - name: fiveQuarters
     uid: 'excel!Excel.IconSet.fiveQuarters:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FiveQuarters"'
   - name: fiveRating
     uid: 'excel!Excel.IconSet.fiveRating:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FiveRating"'
   - name: fourArrows
     uid: 'excel!Excel.IconSet.fourArrows:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FourArrows"'
   - name: fourArrowsGray
     uid: 'excel!Excel.IconSet.fourArrowsGray:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FourArrowsGray"'
   - name: fourRating
     uid: 'excel!Excel.IconSet.fourRating:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FourRating"'
   - name: fourRedToBlack
     uid: 'excel!Excel.IconSet.fourRedToBlack:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FourRedToBlack"'
   - name: fourTrafficLights
     uid: 'excel!Excel.IconSet.fourTrafficLights:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"FourTrafficLights"'
   - name: invalid
     uid: 'excel!Excel.IconSet.invalid:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'
   - name: threeArrows
     uid: 'excel!Excel.IconSet.threeArrows:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeArrows"'
   - name: threeArrowsGray
     uid: 'excel!Excel.IconSet.threeArrowsGray:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeArrowsGray"'
   - name: threeFlags
     uid: 'excel!Excel.IconSet.threeFlags:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeFlags"'
   - name: threeSigns
     uid: 'excel!Excel.IconSet.threeSigns:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeSigns"'
   - name: threeStars
     uid: 'excel!Excel.IconSet.threeStars:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeStars"'
   - name: threeSymbols
     uid: 'excel!Excel.IconSet.threeSymbols:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeSymbols"'
   - name: threeSymbols2
     uid: 'excel!Excel.IconSet.threeSymbols2:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeSymbols2"'
   - name: threeTrafficLights1
     uid: 'excel!Excel.IconSet.threeTrafficLights1:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeTrafficLights1"'
   - name: threeTrafficLights2
     uid: 'excel!Excel.IconSet.threeTrafficLights2:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeTrafficLights2"'
   - name: threeTriangles
     uid: 'excel!Excel.IconSet.threeTriangles:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThreeTriangles"'

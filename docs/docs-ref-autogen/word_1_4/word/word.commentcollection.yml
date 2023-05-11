@@ -46,7 +46,7 @@ properties:
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-          // Reply to the first active comment in the selected content.
+          // Replies to the first active comment in the selected content.
 
           await Word.run(async (context) => {
             const text = $("#reply-text")
@@ -83,7 +83,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the range of the first comment in the selected content.
+      // Gets the range of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const range = context.document
@@ -111,7 +111,7 @@ methods:
     fullName: getFirstOrNullObject()
     summary: >-
       Gets the first comment in the collection. If the collection is empty, then this method will return an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

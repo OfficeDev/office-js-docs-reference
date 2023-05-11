@@ -229,7 +229,7 @@ methods:
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
       the chart doesn't exist, then this method returns an object with its `isNullObject` property set to `true`<!--
-      -->. For further information, see [\*OrNullObject methods and
+      -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

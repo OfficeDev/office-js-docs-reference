@@ -120,7 +120,7 @@ methods:
     summary: >-
       Returns the `RangeAreas` object based on worksheet name or ID in the collection. If the worksheet does not exist,
       then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [\*OrNullObject methods and
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

@@ -148,7 +148,7 @@ properties:
     summary: >-
       Returns the worksheet to which the named item is scoped. If the item is scoped to the workbook instead, then this
       method returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

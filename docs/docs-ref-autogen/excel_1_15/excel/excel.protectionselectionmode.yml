@@ -14,7 +14,7 @@ fields:
     summary: |-
       Selection is not allowed for any cells.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"None"'
   - name: normal
     uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Selection is allowed for all cells.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Normal"'
   - name: unlocked
     uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
@@ -30,5 +30,5 @@ fields:
     summary: |-
       Selection is allowed only for cells that are not locked.
 
-      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unlocked"'

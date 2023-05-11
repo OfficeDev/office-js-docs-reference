@@ -42,7 +42,7 @@ methods:
     fullName: closeAsync(callback)
     summary: Closes the document file.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 
@@ -79,7 +79,7 @@ methods:
     fullName: 'getSliceAsync(sliceIndex, callback)'
     summary: Returns the specified slice.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [File](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#file)
 
 

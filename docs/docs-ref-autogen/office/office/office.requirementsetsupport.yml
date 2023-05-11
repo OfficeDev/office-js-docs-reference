@@ -37,7 +37,7 @@ methods:
       Check if the specified requirement set is supported by the Office application.
 
 
-      \*\*Warning\*\*: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use
+      **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use
       the string overload of `isSetSupported` instead.
     remarks: ''
     isPreview: false

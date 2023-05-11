@@ -124,7 +124,7 @@ methods:
     package: word!
     fullName: 'insertText(text, insertLocation)'
     summary: >-
-      Inserts text into at the specified location. \*\*Note\*\*: For the modern comment, the content range tracked
+      Inserts text into at the specified location. **Note**: For the modern comment, the content range tracked
       across context turns to empty if any revision to the comment is posted through the UI.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

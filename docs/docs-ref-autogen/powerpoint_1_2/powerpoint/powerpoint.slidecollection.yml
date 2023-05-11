@@ -125,7 +125,7 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a slide using its unique ID. If such a slide does not exist, an object with an `isNullObject` property set to
-      true is returned. For further information, see [\*OrNullObject methods and
+      true is returned. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'

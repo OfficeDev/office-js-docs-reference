@@ -156,7 +156,7 @@ methods:
     fullName: getItemOrNullObject(name)
     summary: >-
       Gets a `NamedItem` object using its name. If the object does not exist, then this method returns an object with
-      its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

@@ -11,14 +11,14 @@ summary: >-
   Internet headers are stored as string key-value pairs on a per-item basis.
 
 
-  \*\*Note\*\*: This object is intended for you to set and get your custom headers on a message item. To learn more, see
+  **Note**: This object is intended for you to set and get your custom headers on a message item. To learn more, see
   [Get and set internet headers on a message in an Outlook
   add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/internet-headers)<!-- -->.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*Recommended practices\*\*
+  **Recommended practices**
 
 
   Currently, internet headers are a finite resource on a user's mailbox. When the quota is exhausted, you can't create
@@ -43,13 +43,13 @@ remarks: >-
   (for example, based on user input, timestamp, etc.).
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
 isPreview: false
 isDeprecated: false
@@ -65,20 +65,20 @@ methods:
       results.
 
 
-      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync`
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
       method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -138,20 +138,20 @@ methods:
       results.
 
 
-      \*\*Note\*\*: This method is intended to return the values of the custom headers you set using the `setAsync`
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
       method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,19 +181,19 @@ methods:
       collection.
 
 
-      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -249,19 +249,19 @@ methods:
       collection.
 
 
-      \*\*Note\*\*: This method is intended to remove the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -291,10 +291,10 @@ methods:
       value is replaced with the new value.
 
 
-      \*\*Note\*\*: This method is intended to set the values of your custom headers.
+      **Note**: This method is intended to set the values of your custom headers.
 
 
-      \*\*Important\*\*: The header quota is based on the total size of headers applied to a message. In Exchange
+      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
       Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
       determined by your organization's administrator. For further information on header limits, see [Exchange Online
       message
@@ -306,14 +306,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
 
 
       #### Examples
@@ -375,10 +375,10 @@ methods:
       value is replaced with the new value.
 
 
-      \*\*Note\*\*: This method is intended to set the values of your custom headers.
+      **Note**: This method is intended to set the values of your custom headers.
 
 
-      \*\*Important\*\*: The header quota is based on the total size of headers applied to a message. In Exchange
+      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
       Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
       determined by your organization's administrator. For further information on header limits, see [Exchange Online
       message
@@ -390,14 +390,14 @@ methods:
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read/write item\*\*
+      -->**: **read/write item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:

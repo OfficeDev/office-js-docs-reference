@@ -64,7 +64,7 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the range. \*\*Important\*\*: For requirement sets 1.1 and 1.2,
+      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2,
       paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
       such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -319,6 +319,14 @@ methods:
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
+
+      // then changes the format  of each search result,
+
+      // then wraps each search result within a content control,
+
+      // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
           const results = context.document.body.search("Contractor");

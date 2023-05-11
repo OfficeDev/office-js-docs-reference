@@ -108,7 +108,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the field. If there isn't a parent content
       control, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For
-      further information, see [\*OrNullObject methods and
+      further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -153,7 +153,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the field. If it is not contained in a table
       cell, then this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [\*OrNullObject methods and
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -170,7 +170,7 @@ properties:
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the field. If it is not contained in a table, then
       this method will return an object with its `isNullObject` property set to `true`<!-- -->. For further information,
-      see [\*OrNullObject methods and
+      see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

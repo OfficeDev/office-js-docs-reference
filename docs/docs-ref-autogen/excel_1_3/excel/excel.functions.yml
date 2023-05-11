@@ -3776,7 +3776,7 @@ methods:
     uid: 'excel!Excel.Functions#fact:member(1)'
     package: excel!
     fullName: fact(number)
-    summary: 'Returns the factorial of a number, equal to 1\*2\*3\*...\* Number.'
+    summary: 'Returns the factorial of a number, equal to 1*2*3*...* Number.'
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -8680,7 +8680,7 @@ methods:
       content: 'sin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
       parameters:
         - id: number
-          description: Is the angle in radians for which you want the sine. Degrees \* PI()/180 = radians.
+          description: Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
           type: >-
             number | <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeReference:interface" /> |
             <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;
@@ -8839,7 +8839,7 @@ methods:
     uid: 'excel!Excel.Functions#sqrtPi:member(1)'
     package: excel!
     fullName: sqrtPi(number)
-    summary: Returns the square root of (number \* Pi).
+    summary: Returns the square root of (number * Pi).
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -9378,7 +9378,7 @@ methods:
       content: 'tan(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;'
       parameters:
         - id: number
-          description: Is the angle in radians for which you want the tangent. Degrees \* PI()/180 = radians.
+          description: Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
           type: >-
             number | <xref uid="excel!Excel.Range:class" /> | <xref uid="excel!Excel.RangeReference:interface" /> |
             <xref uid="excel!Excel.FunctionResult:class" />&lt;any&gt;

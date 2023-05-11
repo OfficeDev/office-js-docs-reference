@@ -14,7 +14,7 @@ fields:
     summary: |-
       A horizontally compressed form with labels from the next field in the same column.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Compact"'
   - name: outline
     uid: 'excel!Excel.PivotLayoutType.outline:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Outline"'
   - name: tabular
     uid: 'excel!Excel.PivotLayoutType.tabular:member'
@@ -30,5 +30,5 @@ fields:
     summary: |-
       Inner fields' items are always on a new line relative to the outer fields' items.
 
-      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      * \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Tabular"'

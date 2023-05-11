@@ -949,7 +949,7 @@ methods:
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
       there are no matches, then this method returns an object with its `isNullObject` property set to `true`<!-- -->.
-      For further information, see [\*OrNullObject methods and
+      For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1338,7 +1338,7 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. \*Important\*\*: This API is currently unsupported in Excel for
+      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for
       Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
       status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1389,7 +1389,7 @@ methods:
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, then this method returns an object with its `isNullObject` property set to `true`<!-- -->. For further
-      information, see [\*OrNullObject methods and
+      information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-
@@ -1810,7 +1810,7 @@ methods:
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1840,7 +1840,7 @@ methods:
     summary: >-
       Gets the `RangeAreas` object, comprising one or more ranges, that represents all the cells that match the
       specified type and value. If no special cells are found, then this method returns an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -1998,7 +1998,7 @@ methods:
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, then this method
       returns an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: >-

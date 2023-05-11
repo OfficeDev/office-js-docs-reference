@@ -239,7 +239,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get border details about the first row of the first table in the document.
+      // Gets border details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -303,7 +303,7 @@ methods:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-      // Get cell padding details about the first row of the first table in the document.
+      // Gets cell padding details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
         const firstTable = context.document.body.tables.getFirst();
@@ -367,7 +367,7 @@ methods:
     fullName: getNextOrNullObject()
     summary: >-
       Gets the next row. If this row is the last one, then this method will return an object with its `isNullObject`
-      property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

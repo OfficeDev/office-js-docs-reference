@@ -73,7 +73,7 @@ methods:
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist in the collection, then this method
       will return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
-      [\*OrNullObject methods and
+      [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -107,7 +107,7 @@ methods:
     fullName: getOnlyItemOrNullObject()
     summary: >-
       If the collection contains exactly one item, this method returns it. Otherwise, this method will return an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

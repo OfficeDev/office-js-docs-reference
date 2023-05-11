@@ -8,13 +8,13 @@ remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -44,12 +44,12 @@ properties:
 
 
       For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting
-      is a string representing an .eml formatted file. \*\*Important\*\*: If a message item was attached by
+      is a string representing an .eml formatted file. **Important**: If a message item was attached by
       drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
 
 
       For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the
-      formatting is a string representing an .icalendar file. \*\*Important\*\*: If a calendar item was attached by
+      formatting is a string representing an .icalendar file. **Important**: If a calendar item was attached by
       drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
 
 

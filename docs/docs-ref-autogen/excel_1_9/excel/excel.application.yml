@@ -284,7 +284,7 @@ methods:
       Suspends screen updating until the next `context.sync()` is called.
 
 
-      \*Note\*\*: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will
+      *Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will
       cause the Excel window to flicker.
     remarks: >-
       \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]

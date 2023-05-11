@@ -7,7 +7,7 @@ summary: >-
   Provides information about the selection that raised the selection changed event.
 
 
-  \*Note\*\*: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
+  *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
   information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
 remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
 isPreview: false

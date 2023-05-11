@@ -4,7 +4,7 @@ uid: 'office!Office.CustomXmlNode:interface'
 package: office!
 fullName: Office.CustomXmlNode
 summary: Represents an XML node in a tree in a document.
-remarks: '\*\*Applications\*\*: Word'
+remarks: '**Applications**: Word'
 isPreview: false
 isDeprecated: false
 type: interface
@@ -121,7 +121,7 @@ methods:
     fullName: 'getNodesAsync(xPath, options, callback)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -154,7 +154,7 @@ methods:
     fullName: 'getNodesAsync(xPath, callback)'
     summary: Gets the nodes associated with the XPath expression.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -211,7 +211,7 @@ methods:
     fullName: 'getNodeValueAsync(options, callback)'
     summary: Gets the node value.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -236,7 +236,7 @@ methods:
     fullName: getNodeValueAsync(callback)
     summary: Gets the node value.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -287,7 +287,7 @@ methods:
     fullName: 'getTextAsync(options, callback)'
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -355,7 +355,7 @@ methods:
     fullName: getTextAsync(callback)
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -377,7 +377,7 @@ methods:
     fullName: 'getXmlAsync(options, callback)'
     summary: Gets the node's XML.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -402,7 +402,7 @@ methods:
     fullName: getXmlAsync(callback)
     summary: Gets the node's XML.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -453,7 +453,7 @@ methods:
     fullName: 'setNodeValueAsync(value, options, callback)'
     summary: Sets the node value.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -482,7 +482,7 @@ methods:
     fullName: 'setNodeValueAsync(value, callback)'
     summary: Sets the node value.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -534,7 +534,7 @@ methods:
     fullName: 'setTextAsync(text, options, callback)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -614,7 +614,7 @@ methods:
     fullName: 'setTextAsync(text, callback)'
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false
@@ -638,7 +638,7 @@ methods:
     fullName: 'setXmlAsync(xml, options, callback)'
     summary: Sets the node XML.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
 
 
@@ -688,7 +688,7 @@ methods:
     fullName: 'setXmlAsync(xml, callback)'
     summary: Sets the node XML.
     remarks: >-
-      \*\*Requirement set\*\*:
+      **Requirement set**:
       [CustomXmlParts](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts)
     isPreview: false
     isDeprecated: false

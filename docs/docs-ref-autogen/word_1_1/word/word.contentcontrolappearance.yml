@@ -22,7 +22,7 @@ remarks: >-
   // Adds title and colors to odd and even content controls and changes their appearance.
 
   await Word.run(async (context) => {
-    // Gets the complete sentence (as range) associated with the insertion point.
+    // Get the complete sentence (as range) associated with the insertion point.
     let evenContentControls = context.document.contentControls.getByTag("even");
     let oddContentControls = context.document.contentControls.getByTag("odd");
     evenContentControls.load("length");
@@ -63,7 +63,7 @@ fields:
     summary: |-
       Represents a content control shown as a shaded rectangle or bounding box (with optional title).
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"BoundingBox"'
   - name: hidden
     uid: 'word!Word.ContentControlAppearance.hidden:member'
@@ -71,7 +71,7 @@ fields:
     summary: |-
       Represents a content control that is not shown.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Hidden"'
   - name: tags
     uid: 'word!Word.ContentControlAppearance.tags:member'
@@ -79,5 +79,5 @@ fields:
     summary: |-
       Represents a content control shown as start and end markers.
 
-      \* \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Tags"'

@@ -7,7 +7,7 @@ summary: >-
   Represents a group of controls on a ribbon tab.
 
 
-  \*\*Requirement set\*\*: [RibbonAPI
+  **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
 remarks: ''
 isPreview: false

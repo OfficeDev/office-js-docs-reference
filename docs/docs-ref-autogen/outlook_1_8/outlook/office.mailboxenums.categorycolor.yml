@@ -7,14 +7,14 @@ summary: >-
   Specifies the category color.
 
 
-  \*\*Note\*\*: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each
+  **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each
   preset are for the Outlook desktop client.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 
 

@@ -5,13 +5,13 @@ package: outlook!
 fullName: Office.EmailAddressDetails
 summary: Provides the email properties of the sender or specified recipients of an email message or appointment.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*read item\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read item**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -94,7 +94,7 @@ properties:
     fullName: recipientType
     summary: Gets the email address type of a recipient.
     remarks: >-
-      \*\*Important\*\*: A `recipientType` property value isn't returned by the
+      **Important**: A `recipientType` property value isn't returned by the
       [Office.context.mailbox.item.from.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-preview#outlook-office-from-getasync-member(1))
       and
       [Office.context.mailbox.item.organizer.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-preview#outlook-office-organizer-getasync-member(1))

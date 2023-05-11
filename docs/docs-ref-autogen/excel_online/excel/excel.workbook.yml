@@ -585,7 +585,7 @@ methods:
     fullName: getActiveChartOrNullObject()
     summary: >-
       Gets the currently active chart in the workbook. If there is no active chart, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -617,7 +617,7 @@ methods:
     fullName: getActiveSlicerOrNullObject()
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, then this method returns an object
-      with its `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -734,7 +734,7 @@ methods:
     summary: |-
       Inserts the specified worksheets from a source workbook into the current workbook.
 
-      \*Note\*\*: This API is currently only supported for Office on Windows, Mac, and the web.
+      *Note**: This API is currently only supported for Office on Windows, Mac, and the web.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 

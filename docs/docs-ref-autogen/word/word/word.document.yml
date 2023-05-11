@@ -42,7 +42,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-      // Get the current change tracking mode.
+      // Gets the current change tracking mode.
 
       await Word.run(async (context) => {
         const document = context.document;
@@ -180,7 +180,7 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-      // Get all custom settings this add-in set on this document.
+      // Gets all custom settings this add-in set on this document.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -319,7 +319,7 @@ methods:
     fullName: getBookmarkRangeOrNullObject(name)
     summary: >-
       Gets a bookmark's range. If the bookmark does not exist, then this method will return an object with its
-      `isNullObject` property set to `true`<!-- -->. For further information, see [\*OrNullObject methods and
+      `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -339,7 +339,7 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the document. \*\*Important\*\*: If specific types are provided
+      Gets the currently supported content controls in the document. **Important**: If specific types are provided
       in the options parameter, only content controls of supported types are returned. Be aware that an exception will
       be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your

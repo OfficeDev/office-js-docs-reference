@@ -42,175 +42,175 @@ fields:
   - name: aboveAverage
     uid: 'excel!Excel.DynamicFilterCriteria.aboveAverage:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AboveAverage"'
   - name: allDatesInPeriodApril
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodApril:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodApril"'
   - name: allDatesInPeriodAugust
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodAugust:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodAugust"'
   - name: allDatesInPeriodDecember
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodDecember:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodDecember"'
   - name: allDatesInPeriodFebruray
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodFebruray:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodFebruray"'
   - name: allDatesInPeriodJanuary
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJanuary:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodJanuary"'
   - name: allDatesInPeriodJuly
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJuly:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodJuly"'
   - name: allDatesInPeriodJune
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJune:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodJune"'
   - name: allDatesInPeriodMarch
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMarch:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodMarch"'
   - name: allDatesInPeriodMay
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMay:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodMay"'
   - name: allDatesInPeriodNovember
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodNovember:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodNovember"'
   - name: allDatesInPeriodOctober
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodOctober:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodOctober"'
   - name: allDatesInPeriodQuarter1
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodQuarter1"'
   - name: allDatesInPeriodQuarter2
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodQuarter2"'
   - name: allDatesInPeriodQuarter3
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodQuarter3"'
   - name: allDatesInPeriodQuarter4
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodQuarter4"'
   - name: allDatesInPeriodSeptember
     uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodSeptember:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"AllDatesInPeriodSeptember"'
   - name: belowAverage
     uid: 'excel!Excel.DynamicFilterCriteria.belowAverage:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BelowAverage"'
   - name: lastMonth
     uid: 'excel!Excel.DynamicFilterCriteria.lastMonth:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LastMonth"'
   - name: lastQuarter
     uid: 'excel!Excel.DynamicFilterCriteria.lastQuarter:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LastQuarter"'
   - name: lastWeek
     uid: 'excel!Excel.DynamicFilterCriteria.lastWeek:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LastWeek"'
   - name: lastYear
     uid: 'excel!Excel.DynamicFilterCriteria.lastYear:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LastYear"'
   - name: nextMonth
     uid: 'excel!Excel.DynamicFilterCriteria.nextMonth:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NextMonth"'
   - name: nextQuarter
     uid: 'excel!Excel.DynamicFilterCriteria.nextQuarter:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NextQuarter"'
   - name: nextWeek
     uid: 'excel!Excel.DynamicFilterCriteria.nextWeek:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NextWeek"'
   - name: nextYear
     uid: 'excel!Excel.DynamicFilterCriteria.nextYear:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"NextYear"'
   - name: thisMonth
     uid: 'excel!Excel.DynamicFilterCriteria.thisMonth:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThisMonth"'
   - name: thisQuarter
     uid: 'excel!Excel.DynamicFilterCriteria.thisQuarter:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThisQuarter"'
   - name: thisWeek
     uid: 'excel!Excel.DynamicFilterCriteria.thisWeek:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThisWeek"'
   - name: thisYear
     uid: 'excel!Excel.DynamicFilterCriteria.thisYear:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"ThisYear"'
   - name: today
     uid: 'excel!Excel.DynamicFilterCriteria.today:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Today"'
   - name: tomorrow
     uid: 'excel!Excel.DynamicFilterCriteria.tomorrow:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Tomorrow"'
   - name: unknown
     uid: 'excel!Excel.DynamicFilterCriteria.unknown:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Unknown"'
   - name: yearToDate
     uid: 'excel!Excel.DynamicFilterCriteria.yearToDate:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"YearToDate"'
   - name: yesterday
     uid: 'excel!Excel.DynamicFilterCriteria.yesterday:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Yesterday"'

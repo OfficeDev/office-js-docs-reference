@@ -89,7 +89,7 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a layout using its unique ID. If such a layout does not exist, an object with an `isNullObject` property set
-      to true is returned. For further information, see [\*OrNullObject methods and
+      to true is returned. For further information, see [*OrNullObject methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'

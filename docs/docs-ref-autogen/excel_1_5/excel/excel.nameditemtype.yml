@@ -13,30 +13,30 @@ fields:
   - name: boolean
     uid: 'excel!Excel.NamedItemType.boolean:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Boolean"'
   - name: double
     uid: 'excel!Excel.NamedItemType.double:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Double"'
   - name: error
     uid: 'excel!Excel.NamedItemType.error:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Error"'
   - name: integer
     uid: 'excel!Excel.NamedItemType.integer:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Integer"'
   - name: range
     uid: 'excel!Excel.NamedItemType.range:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Range"'
   - name: string
     uid: 'excel!Excel.NamedItemType.string:member'
     package: excel!
-    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"String"'

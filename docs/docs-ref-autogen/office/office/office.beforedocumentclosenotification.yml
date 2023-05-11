@@ -8,7 +8,7 @@ summary: >-
   close until the user responds. The notification dialog will allow the user to confirm the request to close the
   document or cancel the request to close the document. This API is only supported in Excel.
 remarks: >-
-  \*\*Requirement set\*\*: [SharedRuntime
+  **Requirement set**: [SharedRuntime
   1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
 
 
@@ -48,7 +48,7 @@ methods:
       Prevents the notification dialog from appearing when the user attempts to close a document. The
       `BeforeDocumentCloseNotification` API is only supported in Excel.
     remarks: >-
-      \*\*Requirement set\*\*: [SharedRuntime
+      **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -67,7 +67,7 @@ methods:
       document, or allows the user to cancel the request to close the document. The `BeforeDocumentCloseNotification`
       API is only supported in Excel.
     remarks: >-
-      \*\*Requirement set\*\*: [SharedRuntime
+      **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false
@@ -88,13 +88,13 @@ methods:
       1. The add-in calls the `enable` method on the `BeforeDocumentCloseNotification` object.
 
 
-      2. When the notification dialog is open, the end user clicks the \*\*Don't close\*\* button within the dialog,
+      2. When the notification dialog is open, the end user clicks the **Don't close** button within the dialog,
       clicks the Close button in the upper right corner of the dialog, or presses the Esc key.
 
 
       The `BeforeDocumentCloseNotification` API is only supported in Excel.
     remarks: >-
-      \*\*Requirement set\*\*: [SharedRuntime
+      **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
     isPreview: false
     isDeprecated: false

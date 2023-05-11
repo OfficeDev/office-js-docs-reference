@@ -5,13 +5,13 @@ package: outlook!
 fullName: Office.AppointmentForm
 summary: The `AppointmentForm` object is used to access the currently selected appointment.
 remarks: >-
-  \*\*[Minimum permission
-  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->\*\*:
-  \*\*restricted\*\*
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **restricted**
 
 
-  \*\*[Applicable Outlook
-  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->\*\*:
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
 isPreview: false
 isDeprecated: false
@@ -26,14 +26,14 @@ properties:
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,13 +52,13 @@ properties:
       `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `end` property returns a `Date` object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `end` property returns a `Time` object.
@@ -67,14 +67,14 @@ properties:
       When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,26 +89,26 @@ properties:
       Gets or sets the location of an appointment.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `location` property returns a string that contains the location of the appointment.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `location` property returns a `Location` object that provides methods that are used to get and set the
       location of the appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +124,7 @@ properties:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `optionalAttendees` property returns an array that contains an
@@ -141,7 +141,7 @@ properties:
       - New Mac UI, web browser, Android: No limit
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the optional
@@ -149,14 +149,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,7 +174,7 @@ properties:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `requiredAttendees` property returns an array that contains an
@@ -191,7 +191,7 @@ properties:
       - New Mac UI, web browser, Android: No limit
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the required
@@ -199,14 +199,14 @@ properties:
       how many recipients you can get or update. See the [Recipients](xref:outlook!Office.Recipients:interface) object
       for more details.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -223,14 +223,14 @@ properties:
       Provides access to the resources of an event. Returns an array of strings containing the resources required for
       the appointment.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,13 +249,13 @@ properties:
       `convertToLocalClientTime` method to convert the value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `start` property returns a `Date` object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `start` property returns a `Time` object.
@@ -264,14 +264,14 @@ properties:
       When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method
       to convert the local time on the client to UTC for the server.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -289,26 +289,26 @@ properties:
       The `subject` property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading
       prefixes such as RE: and FW:.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
-      \*\*[Minimum permission
+      **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
-      -->\*\*: \*\*read item\*\*
+      -->**: **read item**
 
 
-      \*\*[Applicable Outlook
+      **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->\*\*: Compose or Read
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
