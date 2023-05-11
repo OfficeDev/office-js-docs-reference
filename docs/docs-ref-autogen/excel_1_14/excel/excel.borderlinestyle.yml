@@ -95,40 +95,40 @@ fields:
   - name: continuous
     uid: 'excel!Excel.BorderLineStyle.continuous:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Continuous"'
   - name: dash
     uid: 'excel!Excel.BorderLineStyle.dash:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Dash"'
   - name: dashDot
     uid: 'excel!Excel.BorderLineStyle.dashDot:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"DashDot"'
   - name: dashDotDot
     uid: 'excel!Excel.BorderLineStyle.dashDotDot:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"DashDotDot"'
   - name: dot
     uid: 'excel!Excel.BorderLineStyle.dot:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Dot"'
   - name: double
     uid: 'excel!Excel.BorderLineStyle.double:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Double"'
   - name: none
     uid: 'excel!Excel.BorderLineStyle.none:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: slantDashDot
     uid: 'excel!Excel.BorderLineStyle.slantDashDot:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SlantDashDot"'

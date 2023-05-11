@@ -50,7 +50,7 @@ fields:
     summary: |-
       The notification message is an informational message with actions.
 
-      \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \* \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
     value: '"insightMessage"'
   - name: ProgressIndicator
     uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'

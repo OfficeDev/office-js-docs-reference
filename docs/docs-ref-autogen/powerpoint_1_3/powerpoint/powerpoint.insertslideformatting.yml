@@ -14,7 +14,7 @@ fields:
     summary: |-
       Copy the source theme into the target presentation and use that theme.
 
-      \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"KeepSourceFormatting"'
   - name: useDestinationTheme
     uid: 'powerpoint!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       Use the existing theme in the target presentation.
 
-      \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"UseDestinationTheme"'

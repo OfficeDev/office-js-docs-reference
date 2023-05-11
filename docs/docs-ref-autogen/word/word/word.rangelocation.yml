@@ -54,7 +54,7 @@ fields:
       after the EOP or Table characters.
 
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"After"'
   - name: before
     uid: 'word!Word.RangeLocation.before:member'
@@ -62,7 +62,7 @@ fields:
     summary: |-
       For content control only. It is the point before the opening tag.
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Before"'
   - name: content
     uid: 'word!Word.RangeLocation.content:member'
@@ -70,7 +70,7 @@ fields:
     summary: |-
       The range between 'Start' and 'End'.
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Content"'
   - name: end
     uid: 'word!Word.RangeLocation.end:member'
@@ -80,7 +80,7 @@ fields:
       point before the closing tag.
 
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"End"'
   - name: start
     uid: 'word!Word.RangeLocation.start:member'
@@ -88,7 +88,7 @@ fields:
     summary: |-
       The starting point of the object. For content control, it is the point after the opening tag.
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Start"'
   - name: whole
     uid: 'word!Word.RangeLocation.whole:member'
@@ -98,5 +98,5 @@ fields:
       characters after the content control are also included.
 
 
-      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"Whole"'

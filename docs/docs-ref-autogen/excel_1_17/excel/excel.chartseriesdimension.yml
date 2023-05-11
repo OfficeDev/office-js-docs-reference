@@ -47,7 +47,7 @@ fields:
     summary: |-
       The chart series axis for the bubble sizes in bubble charts.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BubbleSizes"'
   - name: categories
     uid: 'excel!Excel.ChartSeriesDimension.categories:member'
@@ -55,7 +55,7 @@ fields:
     summary: |-
       The chart series axis for the categories.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Categories"'
   - name: values
     uid: 'excel!Excel.ChartSeriesDimension.values:member'
@@ -63,7 +63,7 @@ fields:
     summary: |-
       The chart series axis for the values.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Values"'
   - name: xvalues
     uid: 'excel!Excel.ChartSeriesDimension.xvalues:member'
@@ -71,7 +71,7 @@ fields:
     summary: |-
       The chart series axis for the x-axis values in scatter and bubble charts.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"XValues"'
   - name: yvalues
     uid: 'excel!Excel.ChartSeriesDimension.yvalues:member'
@@ -79,5 +79,5 @@ fields:
     summary: |-
       The chart series axis for the y-axis values in scatter and bubble charts.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"YValues"'

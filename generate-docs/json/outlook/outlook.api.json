@@ -14543,7 +14543,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member",
-                      "docComment": "/**\n * Treat the item as confidential.\n *\n * \n * [Api set: Mailbox preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as confidential.\n *\n *  *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14564,7 +14564,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member",
-                      "docComment": "/**\n * The item needs no special treatment.\n *\n * \n * [Api set: Mailbox preview]\n */\n",
+                      "docComment": "/**\n * The item needs no special treatment.\n *\n *  *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14585,7 +14585,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member",
-                      "docComment": "/**\n * Treat the item as personal.\n *\n * \n * [Api set: Mailbox preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as personal.\n *\n *  *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14606,7 +14606,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member",
-                      "docComment": "/**\n * Treat the item as private.\n *\n * \n * [Api set: Mailbox preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as private.\n *\n *  *\n * [Api set: Mailbox preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15844,7 +15844,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.InfobarActionType.Dismiss:member",
-                      "docComment": "/**\n * Dismiss action was selected.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * Dismiss action was selected.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15881,7 +15881,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Error:member",
-                      "docComment": "/**\n * Notification displays an error message.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * Notification displays an error message.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15902,7 +15902,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Informational:member",
-                      "docComment": "/**\n * Notification displays an informational message.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * Notification displays an informational message.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15923,7 +15923,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.Insight:member",
-                      "docComment": "/**\n * Notification displays an informational message with actions.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * Notification displays an informational message with actions.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15944,7 +15944,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.InfobarType.ProgressIndicator:member",
-                      "docComment": "/**\n * Notification displays a progress indicator.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * Notification displays a progress indicator.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16023,7 +16023,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.ItemNotificationMessageType.InsightMessage:member",
-                      "docComment": "/**\n * The notification message is an informational message with actions.\n *\n * \n * [Api set: Mailbox 1.10]\n */\n",
+                      "docComment": "/**\n * The notification message is an informational message with actions.\n *\n *  *\n * [Api set: Mailbox 1.10]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",

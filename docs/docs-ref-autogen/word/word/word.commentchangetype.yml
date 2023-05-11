@@ -14,7 +14,7 @@ fields:
     summary: |-
       A comment was edited.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"edited"'
   - name: none
     uid: 'word!Word.CommentChangeType.none:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       No comment changed event is triggered.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"none"'
   - name: reopened
     uid: 'word!Word.CommentChangeType.reopened:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       A comment was reopened.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"reopened"'
   - name: replyAdded
     uid: 'word!Word.CommentChangeType.replyAdded:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       A reply was added.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyAdded"'
   - name: replyDeleted
     uid: 'word!Word.CommentChangeType.replyDeleted:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       A reply was deleted.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyDeleted"'
   - name: replyEdited
     uid: 'word!Word.CommentChangeType.replyEdited:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       A reply was edited.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"replyEdited"'
   - name: resolved
     uid: 'word!Word.CommentChangeType.resolved:member'
@@ -62,5 +62,5 @@ fields:
     summary: |-
       A comment was resolved.
 
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \* \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"resolved"'

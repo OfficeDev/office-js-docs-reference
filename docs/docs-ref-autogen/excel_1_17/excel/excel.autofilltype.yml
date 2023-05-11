@@ -36,7 +36,7 @@ fields:
     summary: |-
       Populates the adjacent cells with data based on the selected data.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillCopy"'
   - name: fillDays
     uid: 'excel!Excel.AutoFillType.fillDays:member'
@@ -46,7 +46,7 @@ fields:
       depending on the context.
 
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillDays"'
   - name: fillDefault
     uid: 'excel!Excel.AutoFillType.fillDefault:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillDefault"'
   - name: fillFormats
     uid: 'excel!Excel.AutoFillType.fillFormats:member'
@@ -62,7 +62,7 @@ fields:
     summary: |-
       Populates the adjacent cells with the selected formulas.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillFormats"'
   - name: fillMonths
     uid: 'excel!Excel.AutoFillType.fillMonths:member'
@@ -70,7 +70,7 @@ fields:
     summary: |-
       A version of "FillSeries" for dates that bases the pattern on the month.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillMonths"'
   - name: fillSeries
     uid: 'excel!Excel.AutoFillType.fillSeries:member'
@@ -78,7 +78,7 @@ fields:
     summary: |-
       Populates the adjacent cells with data that follows a pattern in the copied cells.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillSeries"'
   - name: fillValues
     uid: 'excel!Excel.AutoFillType.fillValues:member'
@@ -86,7 +86,7 @@ fields:
     summary: |-
       Populates the adjacent cells with the selected values.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillValues"'
   - name: fillWeekdays
     uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
@@ -94,7 +94,7 @@ fields:
     summary: |-
       A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillWeekdays"'
   - name: fillYears
     uid: 'excel!Excel.AutoFillType.fillYears:member'
@@ -102,7 +102,7 @@ fields:
     summary: |-
       A version of "FillSeries" for dates that bases the pattern on the year.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FillYears"'
   - name: flashFill
     uid: 'excel!Excel.AutoFillType.flashFill:member'
@@ -110,7 +110,7 @@ fields:
     summary: |-
       Populates the adjacent cells by using Excel's Flash Fill feature.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"FlashFill"'
   - name: growthTrend
     uid: 'excel!Excel.AutoFillType.growthTrend:member'
@@ -120,7 +120,7 @@ fields:
       model.
 
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GrowthTrend"'
   - name: linearTrend
     uid: 'excel!Excel.AutoFillType.linearTrend:member'
@@ -130,5 +130,5 @@ fields:
       model.
 
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinearTrend"'

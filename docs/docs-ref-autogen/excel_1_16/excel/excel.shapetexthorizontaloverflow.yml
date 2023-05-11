@@ -11,10 +11,10 @@ fields:
   - name: clip
     uid: 'excel!Excel.ShapeTextHorizontalOverflow.clip:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Clip"'
   - name: overflow
     uid: 'excel!Excel.ShapeTextHorizontalOverflow.overflow:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Overflow"'

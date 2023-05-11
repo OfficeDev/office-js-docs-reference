@@ -11,15 +11,15 @@ fields:
   - name: information
     uid: 'excel!Excel.DataValidationAlertStyle.information:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Information"'
   - name: stop
     uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Stop"'
   - name: warning
     uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Warning"'

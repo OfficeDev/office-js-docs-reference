@@ -16,7 +16,7 @@ fields:
     summary: |-
       Align text in the center.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Center"'
   - name: distributed
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.distributed:member'
@@ -24,7 +24,7 @@ fields:
     summary: |-
       Distributes the text words across an entire text line.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Distributed"'
   - name: justify
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.justify:member'
@@ -32,7 +32,7 @@ fields:
     summary: |-
       Align text so that it is justified across the whole line.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Justify"'
   - name: justifyLow
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.justifyLow:member'
@@ -40,7 +40,7 @@ fields:
     summary: |-
       Specifies the alignment or adjustment of kashida length in Arabic text.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"JustifyLow"'
   - name: left
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.left:member'
@@ -48,7 +48,7 @@ fields:
     summary: |-
       Align text to the left margin.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Left"'
   - name: right
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.right:member'
@@ -56,7 +56,7 @@ fields:
     summary: |-
       Align text to the right margin.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Right"'
   - name: thaiDistributed
     uid: 'powerpoint!PowerPoint.ParagraphHorizontalAlignment.thaiDistributed:member'
@@ -64,5 +64,5 @@ fields:
     summary: |-
       Distributes Thai text specially, because each character is treated as a word.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ThaiDistributed"'

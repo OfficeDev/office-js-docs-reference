@@ -16,7 +16,7 @@ fields:
     summary: |-
       Filter the top/bottom N number of items as measured by the chosen value.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Items"'
   - name: percent
     uid: 'excel!Excel.TopBottomSelectionType.percent:member'
@@ -24,7 +24,7 @@ fields:
     summary: |-
       Filter the top/bottom N percent of items as measured by the chosen value.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Percent"'
   - name: sum
     uid: 'excel!Excel.TopBottomSelectionType.sum:member'
@@ -32,5 +32,5 @@ fields:
     summary: |-
       Filter the top/bottom N sum as measured by the chosen value.
 
-      \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Sum"'

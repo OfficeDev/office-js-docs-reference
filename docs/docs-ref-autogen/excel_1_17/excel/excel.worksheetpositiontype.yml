@@ -39,25 +39,25 @@ fields:
   - name: after
     uid: 'excel!Excel.WorksheetPositionType.after:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"After"'
   - name: before
     uid: 'excel!Excel.WorksheetPositionType.before:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Before"'
   - name: beginning
     uid: 'excel!Excel.WorksheetPositionType.beginning:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Beginning"'
   - name: end
     uid: 'excel!Excel.WorksheetPositionType.end:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"End"'
   - name: none
     uid: 'excel!Excel.WorksheetPositionType.none:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'

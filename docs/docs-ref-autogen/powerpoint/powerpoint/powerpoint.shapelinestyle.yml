@@ -14,7 +14,7 @@ fields:
     summary: |-
       Single line.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"Single"'
   - name: thickBetweenThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thickBetweenThin:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       Thick line with a thin line on each side.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ThickBetweenThin"'
   - name: thickThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thickThin:member'
@@ -32,7 +32,7 @@ fields:
       thick line is to the left of the thin line.
 
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ThickThin"'
   - name: thinThick
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thinThick:member'
@@ -42,7 +42,7 @@ fields:
       thick line is to the right of the thin line.
 
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ThinThick"'
   - name: thinThin
     uid: 'powerpoint!PowerPoint.ShapeLineStyle.thinThin:member'
@@ -50,5 +50,5 @@ fields:
     summary: |-
       Two thin lines.
 
-      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+      \* \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     value: '"ThinThin"'

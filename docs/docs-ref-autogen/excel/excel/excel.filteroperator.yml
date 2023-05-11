@@ -11,10 +11,10 @@ fields:
   - name: and
     uid: 'excel!Excel.FilterOperator.and:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"And"'
   - name: or
     uid: 'excel!Excel.FilterOperator.or:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Or"'

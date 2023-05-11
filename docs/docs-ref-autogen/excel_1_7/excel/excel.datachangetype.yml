@@ -14,7 +14,7 @@ fields:
     summary: |-
       `CellDeleted` indicates that the data change event is triggered by deleting cells.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellDeleted"'
   - name: cellInserted
     uid: 'excel!Excel.DataChangeType.cellInserted:member'
@@ -22,7 +22,7 @@ fields:
     summary: |-
       `CellInserted` indicates that the data change event is triggered by inserting new cells.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"CellInserted"'
   - name: columnDeleted
     uid: 'excel!Excel.DataChangeType.columnDeleted:member'
@@ -30,7 +30,7 @@ fields:
     summary: |-
       `ColumnDeleted` indicates that the data change event is triggered by deleting columns.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnDeleted"'
   - name: columnInserted
     uid: 'excel!Excel.DataChangeType.columnInserted:member'
@@ -38,7 +38,7 @@ fields:
     summary: |-
       `ColumnInserted` indicates that the data change event is triggered by inserting new columns.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ColumnInserted"'
   - name: rangeEdited
     uid: 'excel!Excel.DataChangeType.rangeEdited:member'
@@ -46,7 +46,7 @@ fields:
     summary: |-
       `RangeEdited` indicates that the data change event is triggered by a range being edited.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RangeEdited"'
   - name: rowDeleted
     uid: 'excel!Excel.DataChangeType.rowDeleted:member'
@@ -54,7 +54,7 @@ fields:
     summary: |-
       `RowDeleted` indicates that the data change event is triggered by deleting rows.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RowDeleted"'
   - name: rowInserted
     uid: 'excel!Excel.DataChangeType.rowInserted:member'
@@ -62,5 +62,5 @@ fields:
     summary: |-
       `RowInserted` indicates that the data change event is triggered by inserting new rows.
 
-      \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"RowInserted"'

@@ -11,10 +11,10 @@ fields:
   - name: after
     uid: 'onenote!OneNote.InsertLocation.after:member'
     package: onenote!
-    summary: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: '\* \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     value: '"After"'
   - name: before
     uid: 'onenote!OneNote.InsertLocation.before:member'
     package: onenote!
-    summary: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    summary: '\* \[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
     value: '"Before"'

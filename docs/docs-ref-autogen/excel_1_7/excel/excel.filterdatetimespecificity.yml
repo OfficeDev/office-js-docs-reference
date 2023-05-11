@@ -51,30 +51,30 @@ fields:
   - name: day
     uid: 'excel!Excel.FilterDatetimeSpecificity.day:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Day"'
   - name: hour
     uid: 'excel!Excel.FilterDatetimeSpecificity.hour:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Hour"'
   - name: minute
     uid: 'excel!Excel.FilterDatetimeSpecificity.minute:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Minute"'
   - name: month
     uid: 'excel!Excel.FilterDatetimeSpecificity.month:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Month"'
   - name: second
     uid: 'excel!Excel.FilterDatetimeSpecificity.second:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Second"'
   - name: year
     uid: 'excel!Excel.FilterDatetimeSpecificity.year:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Year"'

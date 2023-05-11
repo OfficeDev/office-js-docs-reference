@@ -31,10 +31,10 @@ fields:
   - name: left
     uid: 'excel!Excel.DeleteShiftDirection.left:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Left"'
   - name: up
     uid: 'excel!Excel.DeleteShiftDirection.up:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Up"'

@@ -11,20 +11,20 @@ fields:
   - name: auto
     uid: 'excel!Excel.ChartBinType.auto:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Auto"'
   - name: binCount
     uid: 'excel!Excel.ChartBinType.binCount:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BinCount"'
   - name: binWidth
     uid: 'excel!Excel.ChartBinType.binWidth:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"BinWidth"'
   - name: category
     uid: 'excel!Excel.ChartBinType.category:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Category"'

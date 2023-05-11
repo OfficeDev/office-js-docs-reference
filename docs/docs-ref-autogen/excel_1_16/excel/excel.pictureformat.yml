@@ -37,7 +37,7 @@ fields:
     summary: |-
       Bitmap image.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"BMP"'
   - name: gif
     uid: 'excel!Excel.PictureFormat.gif:member'
@@ -45,7 +45,7 @@ fields:
     summary: |-
       Graphics Interchange Format.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"GIF"'
   - name: jpeg
     uid: 'excel!Excel.PictureFormat.jpeg:member'
@@ -53,7 +53,7 @@ fields:
     summary: |-
       Joint Photographic Experts Group.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"JPEG"'
   - name: png
     uid: 'excel!Excel.PictureFormat.png:member'
@@ -61,7 +61,7 @@ fields:
     summary: |-
       Portable Network Graphics.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"PNG"'
   - name: svg
     uid: 'excel!Excel.PictureFormat.svg:member'
@@ -69,10 +69,10 @@ fields:
     summary: |-
       Scalable Vector Graphic.
 
-      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"SVG"'
   - name: unknown
     uid: 'excel!Excel.PictureFormat.unknown:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"UNKNOWN"'

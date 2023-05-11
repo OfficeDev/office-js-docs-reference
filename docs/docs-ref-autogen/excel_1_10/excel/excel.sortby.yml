@@ -14,7 +14,7 @@ fields:
     summary: |-
       Ascending sort. Smallest to largest or A to Z.
 
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Ascending"'
   - name: descending
     uid: 'excel!Excel.SortBy.descending:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       Descending sort. Largest to smallest or Z to A.
 
-      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Descending"'

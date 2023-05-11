@@ -95,105 +95,105 @@ fields:
   - name: checker
     uid: 'excel!Excel.FillPattern.checker:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Checker"'
   - name: crissCross
     uid: 'excel!Excel.FillPattern.crissCross:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"CrissCross"'
   - name: down
     uid: 'excel!Excel.FillPattern.down:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Down"'
   - name: gray16
     uid: 'excel!Excel.FillPattern.gray16:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Gray16"'
   - name: gray25
     uid: 'excel!Excel.FillPattern.gray25:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Gray25"'
   - name: gray50
     uid: 'excel!Excel.FillPattern.gray50:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Gray50"'
   - name: gray75
     uid: 'excel!Excel.FillPattern.gray75:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Gray75"'
   - name: gray8
     uid: 'excel!Excel.FillPattern.gray8:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Gray8"'
   - name: grid
     uid: 'excel!Excel.FillPattern.grid:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Grid"'
   - name: horizontal
     uid: 'excel!Excel.FillPattern.horizontal:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Horizontal"'
   - name: lightDown
     uid: 'excel!Excel.FillPattern.lightDown:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LightDown"'
   - name: lightHorizontal
     uid: 'excel!Excel.FillPattern.lightHorizontal:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LightHorizontal"'
   - name: lightUp
     uid: 'excel!Excel.FillPattern.lightUp:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LightUp"'
   - name: lightVertical
     uid: 'excel!Excel.FillPattern.lightVertical:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LightVertical"'
   - name: linearGradient
     uid: 'excel!Excel.FillPattern.linearGradient:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"LinearGradient"'
   - name: none
     uid: 'excel!Excel.FillPattern.none:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"None"'
   - name: rectangularGradient
     uid: 'excel!Excel.FillPattern.rectangularGradient:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"RectangularGradient"'
   - name: semiGray75
     uid: 'excel!Excel.FillPattern.semiGray75:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"SemiGray75"'
   - name: solid
     uid: 'excel!Excel.FillPattern.solid:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Solid"'
   - name: up
     uid: 'excel!Excel.FillPattern.up:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Up"'
   - name: vertical
     uid: 'excel!Excel.FillPattern.vertical:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Vertical"'

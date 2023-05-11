@@ -62,15 +62,15 @@ fields:
   - name: greaterThan
     uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThan:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"GreaterThan"'
   - name: greaterThanOrEqual
     uid: 'excel!Excel.ConditionalIconCriterionOperator.greaterThanOrEqual:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"GreaterThanOrEqual"'
   - name: invalid
     uid: 'excel!Excel.ConditionalIconCriterionOperator.invalid:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Invalid"'

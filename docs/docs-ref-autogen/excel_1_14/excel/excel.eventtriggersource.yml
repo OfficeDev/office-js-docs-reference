@@ -14,7 +14,7 @@ fields:
     summary: |-
       The event is triggered by the Office JS API of the current add-in.
 
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"ThisLocalAddin"'
   - name: unknown
     uid: 'excel!Excel.EventTriggerSource.unknown:member'
@@ -22,5 +22,5 @@ fields:
     summary: |-
       The event trigger source is unknown or currently unsupported.
 
-      \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+      \* \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

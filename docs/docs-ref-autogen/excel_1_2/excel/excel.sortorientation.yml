@@ -48,10 +48,10 @@ fields:
   - name: columns
     uid: 'excel!Excel.SortOrientation.columns:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Columns"'
   - name: rows
     uid: 'excel!Excel.SortOrientation.rows:member'
     package: excel!
-    summary: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    summary: '\* \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     value: '"Rows"'
