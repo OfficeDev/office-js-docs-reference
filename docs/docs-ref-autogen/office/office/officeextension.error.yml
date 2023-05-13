@@ -103,7 +103,7 @@ properties:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // The following example shows how you can instrument a batch of commands
           // to determine where an error occurred. The first batch successfully
           // inserts the first two paragraphs into the document and cause no errors.

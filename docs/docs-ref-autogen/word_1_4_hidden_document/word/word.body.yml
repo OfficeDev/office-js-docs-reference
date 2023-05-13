@@ -47,7 +47,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
@@ -89,7 +89,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the style and the font size, font name, and font color properties on the body object.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -132,7 +132,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
@@ -185,7 +185,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
@@ -439,7 +439,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -471,7 +471,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the text property on the body object
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -508,7 +508,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
@@ -553,7 +553,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -593,7 +593,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
@@ -633,7 +633,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -666,7 +666,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -756,7 +756,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -803,7 +803,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -836,7 +836,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -881,7 +881,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -926,7 +926,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -972,7 +972,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1024,7 +1024,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Run a batch operation against the Word object model.
 
@@ -1050,7 +1050,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
@@ -1103,7 +1103,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
@@ -1156,7 +1156,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1271,7 +1271,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
@@ -1356,7 +1356,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 

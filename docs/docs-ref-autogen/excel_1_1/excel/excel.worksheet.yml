@@ -74,7 +74,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set worksheet position.
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
@@ -126,7 +126,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -154,7 +154,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -181,7 +181,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -217,7 +217,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -285,7 +285,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
               const wSheetName = 'Sheet1';

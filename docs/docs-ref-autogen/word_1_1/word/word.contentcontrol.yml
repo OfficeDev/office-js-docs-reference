@@ -12,7 +12,7 @@ remarks: |-
 
   #### Examples
 
-  ```typescript
+  ```TypeScript
   // Run a batch operation against the Word object model.
   await Word.run(async (context) => {
 
@@ -191,8 +191,8 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2,
-      paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
+      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and
+      1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
       paragraphs in such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -269,7 +269,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
@@ -358,7 +358,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -404,7 +404,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Run a batch operation against the Word object model.
 
@@ -436,7 +436,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
@@ -485,7 +485,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -529,7 +529,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -575,7 +575,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -661,7 +661,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -720,7 +720,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -780,7 +780,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -838,7 +838,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -911,7 +911,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Load all of the content control properties
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
@@ -1026,7 +1026,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1148,7 +1148,7 @@ methods:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml

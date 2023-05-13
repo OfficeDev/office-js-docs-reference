@@ -16,7 +16,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml

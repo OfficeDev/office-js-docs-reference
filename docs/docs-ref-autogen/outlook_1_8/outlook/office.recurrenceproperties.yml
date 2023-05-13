@@ -21,7 +21,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // This example gets the Recurrence object of an appointment item.
 

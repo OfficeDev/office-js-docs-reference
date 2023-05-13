@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.20.0",
-    "schemaVersion": 1005,
+    "toolVersion": "7.34.8",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "outlook!",
   "docComment": "",
   "name": "outlook",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "outlook!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Namespace",
@@ -179,8 +182,10 @@
               "text": "export declare namespace Office "
             }
           ],
+          "fileUrlPath": "Outlook.d.ts",
           "releaseTag": "Public",
           "name": "Office",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Interface",
@@ -203,11 +208,12 @@
               ],
               "releaseTag": "Public",
               "name": "Appointment",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -241,6 +247,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentCompose",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -643,6 +650,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -698,6 +706,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -896,6 +905,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -1002,6 +1012,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -1029,6 +1040,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "notificationMessages",
@@ -1056,6 +1068,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -1240,6 +1253,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -1558,6 +1572,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -1585,6 +1600,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -1601,7 +1617,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -1617,6 +1633,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentForm",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -1641,6 +1658,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -1677,6 +1695,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -1708,6 +1727,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -1748,6 +1768,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -1788,6 +1809,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -1814,6 +1836,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "resources",
@@ -1850,6 +1873,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -1881,6 +1905,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -1922,6 +1947,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentRead",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -1946,6 +1972,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -1973,6 +2000,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -2000,6 +2028,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeCreated",
@@ -2027,6 +2056,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeModified",
@@ -2154,6 +2184,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -2506,6 +2537,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemClass",
@@ -2532,6 +2564,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -2563,6 +2596,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -2668,6 +2702,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -2694,6 +2729,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "normalizedSubject",
@@ -2721,6 +2757,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "notificationMessages",
@@ -2752,6 +2789,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -2779,6 +2817,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "organizer",
@@ -2810,6 +2849,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -2837,6 +2877,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -2863,6 +2904,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -2879,7 +2921,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -2895,6 +2937,7 @@
               ],
               "releaseTag": "Public",
               "name": "AttachmentDetails",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -2919,6 +2962,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachmentType",
@@ -2945,6 +2989,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "contentType",
@@ -2971,6 +3016,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "id",
@@ -2997,6 +3043,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "isInline",
@@ -3023,6 +3070,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "name",
@@ -3049,6 +3097,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "size",
@@ -3072,6 +3121,7 @@
               ],
               "releaseTag": "Public",
               "name": "Body",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -3896,6 +3946,7 @@
               ],
               "releaseTag": "Public",
               "name": "CoercionTypeOptions",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3920,6 +3971,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "coercionType",
@@ -3943,6 +3995,7 @@
               ],
               "releaseTag": "Public",
               "name": "Contact",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3962,6 +4015,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "addresses",
@@ -3988,6 +4042,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "businessName",
@@ -4014,6 +4069,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddresses",
@@ -4040,6 +4096,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "personName",
@@ -4071,6 +4128,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneNumbers",
@@ -4097,6 +4155,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "urls",
@@ -4120,6 +4179,7 @@
               ],
               "releaseTag": "Public",
               "name": "CustomProperties",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -4402,6 +4462,7 @@
               ],
               "releaseTag": "Public",
               "name": "Diagnostics",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4421,6 +4482,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hostName",
@@ -4447,6 +4509,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hostVersion",
@@ -4478,6 +4541,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "OWAView",
@@ -4501,6 +4565,7 @@
               ],
               "releaseTag": "Public",
               "name": "EmailAddressDetails",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4525,6 +4590,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "appointmentResponse",
@@ -4551,6 +4617,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -4577,6 +4644,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -4608,6 +4676,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "recipientType",
@@ -4631,6 +4700,7 @@
               ],
               "releaseTag": "Public",
               "name": "EmailUser",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4650,6 +4720,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -4676,6 +4747,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -4699,6 +4771,7 @@
               ],
               "releaseTag": "Public",
               "name": "Entities",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4718,6 +4791,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "addresses",
@@ -4749,6 +4823,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "contacts",
@@ -4775,6 +4850,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddresses",
@@ -4806,6 +4882,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "meetingSuggestions",
@@ -4837,6 +4914,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneNumbers",
@@ -4863,6 +4941,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "taskSuggestions",
@@ -4889,6 +4968,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "urls",
@@ -4912,6 +4992,7 @@
               ],
               "releaseTag": "Public",
               "name": "Item",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": []
             },
@@ -4936,11 +5017,12 @@
               ],
               "releaseTag": "Public",
               "name": "ItemCompose",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -4965,11 +5047,12 @@
               ],
               "releaseTag": "Public",
               "name": "ItemRead",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -4985,6 +5068,7 @@
               ],
               "releaseTag": "Public",
               "name": "LocalClientTime",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -5004,6 +5088,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "date",
@@ -5030,6 +5115,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hours",
@@ -5056,6 +5142,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "milliseconds",
@@ -5082,6 +5169,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "minutes",
@@ -5108,6 +5196,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "month",
@@ -5134,6 +5223,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "seconds",
@@ -5160,6 +5250,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "timezoneOffset",
@@ -5186,6 +5277,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "year",
@@ -5209,6 +5301,7 @@
               ],
               "releaseTag": "Public",
               "name": "Location",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -5507,6 +5600,7 @@
               ],
               "releaseTag": "Public",
               "name": "Mailbox",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -5952,6 +6046,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "diagnostics",
@@ -6159,6 +6254,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "ewsUrl",
@@ -6473,6 +6569,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "item",
@@ -6752,6 +6849,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "restUrl",
@@ -6779,6 +6877,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "userProfile",
@@ -6802,6 +6901,7 @@
               ],
               "releaseTag": "Public",
               "name": "MailboxEnums",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Enum",
@@ -6815,6 +6915,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "AttachmentType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -6830,12 +6931,12 @@
                           "text": "\"cloud\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Cloud",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Cloud"
                     },
                     {
                       "kind": "EnumMember",
@@ -6851,12 +6952,12 @@
                           "text": "\"file\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "File",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "File"
                     },
                     {
                       "kind": "EnumMember",
@@ -6872,12 +6973,12 @@
                           "text": "\"item\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Item",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Item"
                     }
                   ]
                 },
@@ -6893,6 +6994,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "EntityType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -6908,12 +7010,12 @@
                           "text": "\"address\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Address",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Address"
                     },
                     {
                       "kind": "EnumMember",
@@ -6929,12 +7031,12 @@
                           "text": "\"contact\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Contact",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Contact"
                     },
                     {
                       "kind": "EnumMember",
@@ -6950,12 +7052,12 @@
                           "text": "\"emailAddress\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "EmailAddress",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "EmailAddress"
                     },
                     {
                       "kind": "EnumMember",
@@ -6971,12 +7073,12 @@
                           "text": "\"meetingSuggestion\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "MeetingSuggestion",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "MeetingSuggestion"
                     },
                     {
                       "kind": "EnumMember",
@@ -6992,12 +7094,12 @@
                           "text": "\"phoneNumber\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "PhoneNumber",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "PhoneNumber"
                     },
                     {
                       "kind": "EnumMember",
@@ -7013,12 +7115,12 @@
                           "text": "\"taskSuggestion\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "TaskSuggestion",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "TaskSuggestion"
                     },
                     {
                       "kind": "EnumMember",
@@ -7034,12 +7136,12 @@
                           "text": "\"url\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Url",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Url"
                     }
                   ]
                 },
@@ -7055,6 +7157,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ItemNotificationMessageType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7070,12 +7173,12 @@
                           "text": "\"errorMessage\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ErrorMessage",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ErrorMessage"
                     },
                     {
                       "kind": "EnumMember",
@@ -7091,12 +7194,12 @@
                           "text": "\"informationalMessage\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "InformationalMessage",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "InformationalMessage"
                     },
                     {
                       "kind": "EnumMember",
@@ -7112,12 +7215,12 @@
                           "text": "\"progressIndicator\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ProgressIndicator",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ProgressIndicator"
                     }
                   ]
                 },
@@ -7133,6 +7236,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ItemType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7148,12 +7252,12 @@
                           "text": "\"appointment\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Appointment",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Appointment"
                     },
                     {
                       "kind": "EnumMember",
@@ -7169,12 +7273,12 @@
                           "text": "\"message\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Message",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Message"
                     }
                   ]
                 },
@@ -7190,6 +7294,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "OWAView",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7205,12 +7310,12 @@
                           "text": "\"OneColumn\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "OneColumn",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "OneColumn"
                     },
                     {
                       "kind": "EnumMember",
@@ -7226,12 +7331,12 @@
                           "text": "\"OneColumnNarrow\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "OneColumnNarrow",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "OneColumnNarrow"
                     },
                     {
                       "kind": "EnumMember",
@@ -7247,12 +7352,12 @@
                           "text": "\"ThreeColumns\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ThreeColumns",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ThreeColumns"
                     },
                     {
                       "kind": "EnumMember",
@@ -7268,12 +7373,12 @@
                           "text": "\"TwoColumns\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "TwoColumns",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "TwoColumns"
                     }
                   ]
                 },
@@ -7289,6 +7394,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "RecipientType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7304,12 +7410,12 @@
                           "text": "\"distributionList\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "DistributionList",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "DistributionList"
                     },
                     {
                       "kind": "EnumMember",
@@ -7325,12 +7431,12 @@
                           "text": "\"externalUser\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ExternalUser",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ExternalUser"
                     },
                     {
                       "kind": "EnumMember",
@@ -7346,12 +7452,12 @@
                           "text": "\"other\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Other",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Other"
                     },
                     {
                       "kind": "EnumMember",
@@ -7367,12 +7473,12 @@
                           "text": "\"user\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "User",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "User"
                     }
                   ]
                 },
@@ -7388,6 +7494,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ResponseType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7403,12 +7510,12 @@
                           "text": "\"accepted\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Accepted",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Accepted"
                     },
                     {
                       "kind": "EnumMember",
@@ -7424,12 +7531,12 @@
                           "text": "\"declined\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Declined",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Declined"
                     },
                     {
                       "kind": "EnumMember",
@@ -7445,12 +7552,12 @@
                           "text": "\"none\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "None",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "None"
                     },
                     {
                       "kind": "EnumMember",
@@ -7466,12 +7573,12 @@
                           "text": "\"organizer\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Organizer",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Organizer"
                     },
                     {
                       "kind": "EnumMember",
@@ -7487,12 +7594,12 @@
                           "text": "\"tentative\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Tentative",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Tentative"
                     }
                   ]
                 },
@@ -7508,6 +7615,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "RestVersion",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7523,12 +7631,12 @@
                           "text": "\"beta\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Beta",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Beta"
                     },
                     {
                       "kind": "EnumMember",
@@ -7544,12 +7652,12 @@
                           "text": "\"v1.0\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "v1_0",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "v1_0"
                     },
                     {
                       "kind": "EnumMember",
@@ -7565,12 +7673,12 @@
                           "text": "\"v2.0\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "v2_0",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "v2_0"
                     }
                   ]
                 },
@@ -7586,6 +7694,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SourceProperty",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -7601,12 +7710,12 @@
                           "text": "\"body\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Body",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Body"
                     },
                     {
                       "kind": "EnumMember",
@@ -7622,12 +7731,12 @@
                           "text": "\"subject\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Subject",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Subject"
                     }
                   ]
                 }
@@ -7645,6 +7754,7 @@
               ],
               "releaseTag": "Public",
               "name": "MeetingSuggestion",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -7669,6 +7779,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attendees",
@@ -7695,6 +7806,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -7721,6 +7833,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -7747,6 +7860,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "meetingString",
@@ -7773,6 +7887,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -7799,6 +7914,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -7831,11 +7947,12 @@
               ],
               "releaseTag": "Public",
               "name": "Message",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -7869,6 +7986,7 @@
               ],
               "releaseTag": "Public",
               "name": "MessageCompose",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -8271,6 +8389,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "bcc",
@@ -8298,6 +8417,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -8325,6 +8445,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "cc",
@@ -8379,6 +8500,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "conversationId",
@@ -8577,6 +8699,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -8683,6 +8806,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "notificationMessages",
@@ -9158,6 +9282,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -9185,6 +9310,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "to",
@@ -9201,7 +9327,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -9235,6 +9361,7 @@
               ],
               "releaseTag": "Public",
               "name": "MessageRead",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -9259,6 +9386,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -9286,6 +9414,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -9317,6 +9446,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "cc",
@@ -9343,6 +9473,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "conversationId",
@@ -9370,6 +9501,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeCreated",
@@ -9397,6 +9529,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeModified",
@@ -9524,6 +9657,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -9551,6 +9685,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "from",
@@ -9903,6 +10038,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "internetMessageId",
@@ -9929,6 +10065,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemClass",
@@ -9955,6 +10092,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -9986,6 +10124,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -10091,6 +10230,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -10117,6 +10257,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "normalizedSubject",
@@ -10144,6 +10285,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "notificationMessages",
@@ -10171,6 +10313,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "sender",
@@ -10198,6 +10341,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -10224,6 +10368,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -10255,6 +10400,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "to",
@@ -10271,7 +10417,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -10287,6 +10433,7 @@
               ],
               "releaseTag": "Public",
               "name": "NotificationMessageDetails",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -10306,6 +10453,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "icon",
@@ -10332,6 +10480,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "key",
@@ -10358,6 +10507,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "message",
@@ -10385,6 +10535,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "persistent",
@@ -10416,6 +10567,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "type",
@@ -10439,6 +10591,7 @@
               ],
               "releaseTag": "Public",
               "name": "NotificationMessages",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -11137,6 +11290,7 @@
               ],
               "releaseTag": "Public",
               "name": "PhoneNumber",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -11156,6 +11310,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "originalPhoneString",
@@ -11182,6 +11337,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneString",
@@ -11208,6 +11364,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "type",
@@ -11231,6 +11388,7 @@
               ],
               "releaseTag": "Public",
               "name": "Recipients",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -11776,6 +11934,7 @@
               ],
               "releaseTag": "Public",
               "name": "ReplyFormAttachment",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -11795,6 +11954,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "inLine",
@@ -11821,6 +11981,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -11847,6 +12008,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "name",
@@ -11873,6 +12035,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "type",
@@ -11899,6 +12062,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "url",
@@ -11922,6 +12086,7 @@
               ],
               "releaseTag": "Public",
               "name": "ReplyFormData",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -11946,6 +12111,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -11981,6 +12147,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "callback",
@@ -12007,6 +12174,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "htmlBody",
@@ -12034,6 +12202,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "options",
@@ -12057,6 +12226,7 @@
               ],
               "releaseTag": "Public",
               "name": "RoamingSettings",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -12278,6 +12448,7 @@
               ],
               "releaseTag": "Public",
               "name": "Subject",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -12576,6 +12747,7 @@
               ],
               "releaseTag": "Public",
               "name": "TaskSuggestion",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -12600,6 +12772,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "assignees",
@@ -12626,6 +12799,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "taskString",
@@ -12649,6 +12823,7 @@
               ],
               "releaseTag": "Public",
               "name": "Time",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -12967,6 +13142,7 @@
               ],
               "releaseTag": "Public",
               "name": "UserProfile",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -12986,6 +13162,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "accountType",
@@ -13012,6 +13189,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -13038,6 +13216,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -13064,6 +13243,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "timeZone",

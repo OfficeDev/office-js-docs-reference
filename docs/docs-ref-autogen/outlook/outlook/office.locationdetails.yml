@@ -21,7 +21,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 

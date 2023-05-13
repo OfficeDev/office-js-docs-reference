@@ -114,7 +114,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    

@@ -44,8 +44,8 @@ properties:
 
 
       For item attachments that represent messages and were attached by drag-and-drop or "Attach Item", the formatting
-      is a string representing an .eml formatted file. **Important**: If a message item was attached by drag-and-drop in
-      Outlook on the web, then `getAttachmentContentAsync` throws an error.
+      is a string representing an .eml formatted file. **Important**: If a message item was attached by
+      drag-and-drop in Outlook on the web, then `getAttachmentContentAsync` throws an error.
 
 
       For item attachments that represent calendar items and were attached by drag-and-drop or "Attach Item", the
@@ -66,7 +66,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const item = Office.context.mailbox.item;
           const options = {asyncContext: {currentItem: item}};
           item.getAttachmentsAsync(options, callback);

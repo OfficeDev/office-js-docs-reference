@@ -46,7 +46,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               activePage.view.zoom = 300;
@@ -83,7 +83,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);

@@ -261,13 +261,18 @@ function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook"
     const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-outlook/outlook\"\n";
     const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-office/office\"\n";
     if (hostName === "Outlook") {
-        hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.");
+        hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.")
+                         .replace(/\<Office\./g, "<CommonAPI.");
         return commonApiNamespaceImportForOutlook + hostDts;
     } else if (hostName === "Common API") {
-        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox").replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings").replace(/Office\.SensitivityLabelsCatalog/g, "Outlook.SensitivityLabelsCatalog");
+        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox")
+                         .replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings")
+                         .replace(/Office\.SensitivityLabelsCatalog/g, "Outlook.SensitivityLabelsCatalog");
         return outlookApiNamespaceImport + hostDts;
     } else {
-        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox").replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings").replace(/Office\.SensitivityLabelsCatalog/g, "Outlook.SensitivityLabelsCatalog");
+        hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox")
+                         .replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings")
+                         .replace(/Office\.SensitivityLabelsCatalog/g, "Outlook.SensitivityLabelsCatalog");
         return commonApiNamespaceImport + outlookApiNamespaceImport + hostDts;
     }
 }

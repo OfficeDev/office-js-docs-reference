@@ -215,7 +215,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       async function onBindingDataChanged(eventArgs) {
           await Excel.run(async (context) => { 
               // Highlight the table related to the binding in orange to indicate data has been changed.
@@ -247,7 +247,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const lastPosition = context.workbook.bindings.count - 1;
           const binding = context.workbook.bindings.getItemAt(lastPosition);
@@ -335,7 +335,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const bindings = context.workbook.bindings;
               bindings.load('items');

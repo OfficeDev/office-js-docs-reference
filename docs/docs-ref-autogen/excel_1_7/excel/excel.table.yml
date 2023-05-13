@@ -195,7 +195,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set table style.
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
@@ -251,7 +251,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -276,7 +276,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -301,7 +301,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -329,7 +329,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -357,7 +357,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -385,7 +385,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -445,7 +445,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get a table by name.
           await Excel.run(async (context) => { 
               const tableName = 'Table1';
@@ -570,7 +570,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml
@@ -604,7 +604,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-table-changed.yaml

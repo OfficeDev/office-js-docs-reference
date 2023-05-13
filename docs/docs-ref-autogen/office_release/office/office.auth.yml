@@ -32,11 +32,12 @@ methods:
       1.3](https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets)
 
 
-      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
+      mailbox.
 
 
-      **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from
-      Version 2111 (Build 14701.20000). To retrieve an access token in older builds, use
+      **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting
+      from Version 2111 (Build 14701.20000). To retrieve an access token in older builds, use
       [OfficeRuntime.auth.getAccessToken](https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js#office-runtime-officeruntime-auth-getaccesstoken-member(1))
       instead. For more information, see [Enable single sign-on (SSO) in Outlook add-ins that use event-based
       activation](https://learn.microsoft.com/office/dev/add-ins/outlook/use-sso-in-event-based-activation)<!-- -->.
@@ -45,7 +46,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       try{
           const accessToken = await Office.auth.getAccessToken({
@@ -81,7 +82,8 @@ methods:
       -->.
 
 
-      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
+      mailbox.
 
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.
@@ -101,7 +103,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.context.auth.getAccessTokenAsync(function(result) {
           if (result.status === Office.AsyncResultStatus.Succeeded) {
@@ -143,7 +145,8 @@ methods:
       -->.
 
 
-      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+      **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail
+      mailbox.
 
 
       **Warning**: `getAccessTokenAsync` has been deprecated. Use `Office.auth.getAccessToken` instead.

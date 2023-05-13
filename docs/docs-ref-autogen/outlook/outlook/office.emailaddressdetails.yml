@@ -37,7 +37,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following sample provides the responses from required attendees.
           // Note that this sample needs the add-in to be in Appointment Read (Attendee) mode.
           const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
@@ -63,7 +63,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const organizerName = Office.context.mailbox.item.organizer.displayName;
           console.log("Organizer: " + organizerName);
           ```
@@ -84,7 +84,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
           console.log("Organizer's email address: " + organizerAddress);
           ```
@@ -104,7 +104,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       const requiredAttendees = Office.context.mailbox.item.requiredAttendees;
 

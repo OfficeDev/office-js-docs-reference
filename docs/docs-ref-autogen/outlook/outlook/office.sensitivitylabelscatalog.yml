@@ -41,16 +41,17 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
@@ -93,16 +94,17 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
@@ -117,7 +119,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
@@ -167,13 +169,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
@@ -181,7 +183,8 @@ methods:
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
@@ -218,13 +221,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
@@ -232,7 +235,8 @@ methods:
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
 
 
-      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5
+      subscription.
 
 
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
@@ -243,7 +247,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml

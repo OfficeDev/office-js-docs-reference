@@ -29,7 +29,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
 

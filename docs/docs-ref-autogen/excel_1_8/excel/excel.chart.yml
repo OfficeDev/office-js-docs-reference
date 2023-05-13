@@ -172,7 +172,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set to show legend of Chart1 and make it on top of the chart.
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -200,7 +200,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Rename the chart to new name, resize the chart to 200 points in both height and weight.
       // Move Chart1 to 100 points to the top and left.
       await Excel.run(async (context) => { 
@@ -381,7 +381,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.delete();
@@ -407,7 +407,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           const image = chart.getImage();
@@ -502,7 +502,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get a chart named "Chart1".
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -592,7 +592,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set the sourceData to be the range at "A1:B4" and seriesBy to be "Columns".
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sheet1");
@@ -650,7 +650,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Charts";
           const rangeSelection = "A1:B4";
@@ -712,7 +712,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -769,7 +769,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml

@@ -14,7 +14,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml

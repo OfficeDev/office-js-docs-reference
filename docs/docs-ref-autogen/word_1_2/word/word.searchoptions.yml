@@ -148,7 +148,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Ignore punctuation search
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
@@ -176,7 +176,7 @@ methods:
               await context.sync();
           });  
           ```
-          ```typescript
+          ```TypeScript
           // Search based on a prefix
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
@@ -203,7 +203,7 @@ methods:
               await context.sync();
           }); 
           ```
-          ```typescript
+          ```TypeScript
           // Search based on a suffix
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
@@ -231,7 +231,7 @@ methods:
               await context.sync();
           });  
           ```
-          ```typescript
+          ```TypeScript
           // Search using a wildcard
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
