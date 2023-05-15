@@ -227,7 +227,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the collection of pageContent items from the page.
@@ -285,7 +285,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the collection of pageContent items from the page.
@@ -361,7 +361,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the collection of pageContent items from the page.
@@ -447,7 +447,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the collection of pageContent items from the page.
@@ -604,7 +604,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
 
               // Get the collection of pageContent items from the page.

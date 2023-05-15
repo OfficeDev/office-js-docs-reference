@@ -23,9 +23,9 @@ tryCatch(async () => {
             officeJsonPath + '/' + officeFilename,
             fsx.readFileSync(officeJsonPath + '/' + officeFilename)
                 .toString()
-                .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
-                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings")
-                .replace(/office\!Office\.SensitivityLabelsCatalog/g, "outlook!Office.SensitivityLabelsCatalog"));
+                .replace(/office\!~Office_2\.Mailbox/g, "outlook!Office.Mailbox")
+                .replace(/office\!~Office_2\.RoamingSettings/g, "outlook!Office.RoamingSettings")
+                .replace(/office\!~Office_2\.SensitivityLabelsCatalog/g, "outlook!Office.SensitivityLabelsCatalog"));
     });
 
     console.log("\nCompleted Office json cross-referencing cleanup");
@@ -291,12 +291,12 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!")
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!~Office_2/gm, "$1office!Office")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension")
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!~OfficeExtension/g, "office!OfficeExtension")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 

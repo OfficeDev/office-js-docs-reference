@@ -43,7 +43,7 @@ properties:
     uid: 'word!Word.Interfaces.DocumentLoadOptions#changeTrackingMode:member'
     package: word!
     fullName: changeTrackingMode
-    summary: Gets or sets the ChangeTracking mode.
+    summary: Specifies the ChangeTracking mode.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

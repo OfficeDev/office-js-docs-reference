@@ -53,7 +53,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions#content:member'
     package: word!
     fullName: content
-    summary: 'For EACH ITEM in the collection: Gets or sets the comment reply''s content. The string is plain text.'
+    summary: 'For EACH ITEM in the collection: Specifies the comment reply''s content. The string is plain text.'
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -65,7 +65,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentReplyCollectionLoadOptions#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: 'For EACH ITEM in the collection: Gets or sets the commentReply''s content range.'
+    summary: 'For EACH ITEM in the collection: Specifies the commentReply''s content range.'
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

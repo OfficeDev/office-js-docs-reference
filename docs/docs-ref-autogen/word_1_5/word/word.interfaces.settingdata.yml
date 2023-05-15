@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.Interfaces.SettingData#value:member'
     package: word!
     fullName: value
-    summary: Gets or sets the value of the setting.
+    summary: Specifies the value of the setting.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

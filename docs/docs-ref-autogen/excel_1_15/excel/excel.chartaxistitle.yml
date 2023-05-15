@@ -59,7 +59,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
         // Get a chart named "Sales Chart" from the "Sample" worksheet.
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -137,7 +137,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Add "Values" as the title for the value Axis.
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 

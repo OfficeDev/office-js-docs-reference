@@ -28,7 +28,7 @@ properties:
     package: word!
     fullName: alignment
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the horizontal alignment of the list level. The value can be 'Left',
+      For EACH ITEM in the collection: Specifies the horizontal alignment of the list level. The value can be 'Left',
       'Centered', or 'Right'.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
@@ -55,9 +55,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#linkedStyle:member'
     package: word!
     fullName: linkedStyle
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the name of the style that's linked to the specified list level
-      object.
+    summary: 'For EACH ITEM in the collection: Specifies the name of the style that''s linked to the specified list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -69,7 +67,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#numberFormat:member'
     package: word!
     fullName: numberFormat
-    summary: 'For EACH ITEM in the collection: Gets or sets the number format for the specified list level.'
+    summary: 'For EACH ITEM in the collection: Specifies the number format for the specified list level.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -82,8 +80,8 @@ properties:
     package: word!
     fullName: numberPosition
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the position (in points) of the number or bullet for the specified
-      list level object.
+      For EACH ITEM in the collection: Specifies the position (in points) of the number or bullet for the specified list
+      level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -95,7 +93,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#numberStyle:member'
     package: word!
     fullName: numberStyle
-    summary: 'For EACH ITEM in the collection: Gets or sets the number style for the list level object.'
+    summary: 'For EACH ITEM in the collection: Specifies the number style for the list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -108,7 +106,7 @@ properties:
     package: word!
     fullName: resetOnHigher
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the list level that must appear before the specified list level
+      For EACH ITEM in the collection: Specifies the list level that must appear before the specified list level
       restarts numbering at 1.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
@@ -121,7 +119,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#startAt:member'
     package: word!
     fullName: startAt
-    summary: 'For EACH ITEM in the collection: Gets or sets the starting number for the specified list level object.'
+    summary: 'For EACH ITEM in the collection: Specifies the starting number for the specified list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -133,7 +131,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#tabPosition:member'
     package: word!
     fullName: tabPosition
-    summary: 'For EACH ITEM in the collection: Gets or sets the tab position for the specified list level object.'
+    summary: 'For EACH ITEM in the collection: Specifies the tab position for the specified list level object.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -146,8 +144,8 @@ properties:
     package: word!
     fullName: textPosition
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the position (in points) for the second line of wrapping text for
-      the specified list level object.
+      For EACH ITEM in the collection: Specifies the position (in points) for the second line of wrapping text for the
+      specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -159,9 +157,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelCollectionLoadOptions#trailingCharacter:member'
     package: word!
     fullName: trailingCharacter
-    summary: >-
-      For EACH ITEM in the collection: Gets or sets the character inserted after the number for the specified list
-      level.
+    summary: 'For EACH ITEM in the collection: Specifies the character inserted after the number for the specified list level.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

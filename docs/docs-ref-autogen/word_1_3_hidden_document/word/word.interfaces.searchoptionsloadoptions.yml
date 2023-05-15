@@ -31,7 +31,7 @@ properties:
     package: word!
     fullName: ignorePunct
     summary: >-
-      Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
+      Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
       Ignore punctuation check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -45,7 +45,7 @@ properties:
     package: word!
     fullName: ignoreSpace
     summary: >-
-      Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
+      Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
       whitespace characters check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -59,8 +59,8 @@ properties:
     package: word!
     fullName: matchCase
     summary: >-
-      Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
-      check box in the Find and Replace dialog box.
+      Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check
+      box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     package: word!
     fullName: matchPrefix
     summary: >-
-      Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
+      Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the
       Match prefix check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -87,8 +87,8 @@ properties:
     package: word!
     fullName: matchSuffix
     summary: >-
-      Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
-      Match suffix check box in the Find and Replace dialog box.
+      Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match
+      suffix check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     package: word!
     fullName: matchWholeWord
     summary: >-
-      Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
+      Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -115,8 +115,8 @@ properties:
     package: word!
     fullName: matchWildcards
     summary: >-
-      Gets or sets a value that indicates whether the search will be performed using special search operators.
-      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+      Specifies a value that indicates whether the search will be performed using special search operators. Corresponds
+      to the Use wildcards check box in the Find and Replace dialog box.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

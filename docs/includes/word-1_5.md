@@ -4,7 +4,6 @@
 |[Body](/javascript/api/word/word.body)|[endnotes](/javascript/api/word/word.body#word-word-body-endnotes-member)|Gets the collection of endnotes in the body.|
 ||[footnotes](/javascript/api/word/word.body#word-word-body-footnotes-member)|Gets the collection of footnotes in the body.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.body#word-word-body-getcontentcontrols-member(1))|Gets the currently supported content controls in the body.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Body object with a content control.|
 |[ContentControl](/javascript/api/word/word.contentcontrol)|[endnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-endnotes-member)|Gets the collection of endnotes in the content control.|
 ||[footnotes](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-footnotes-member)|Gets the collection of footnotes in the content control.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-getcontentcontrols-member(1))|Gets the currently supported child content controls in this content control.|
@@ -41,12 +40,10 @@
 ||[getStyles()](/javascript/api/word/word.document#word-word-document-getstyles-member(1))|Gets a StyleCollection object that represents the whole style set of the document.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End", insertFileOptions?: Word.InsertFileOptions)](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))|Inserts a document into the target document at a specific location with additional properties.|
 ||[onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)|Occurs when a content control is added.|
-||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.document#word-word-document-save-member(1))|Saves the document.|
-|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Gets or sets the field's code instruction.|
-||[data](/javascript/api/word/word.field#word-word-field-data-member)|Gets or sets data in an "Addin" field.|
+|[Field](/javascript/api/word/word.field)|[data](/javascript/api/word/word.field#word-word-field-data-member)|Specifies data in an "Addin" field.|
 ||[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
 ||[kind](/javascript/api/word/word.field#word-word-field-kind-member)|Gets the field's kind.|
-||[locked](/javascript/api/word/word.field#word-word-field-locked-member)|Gets or sets whether the field is locked.|
+||[locked](/javascript/api/word/word.field#word-word-field-locked-member)|Specifies whether the field is locked.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.field#word-word-field-select-member(1))|Selects the field.|
 ||[type](/javascript/api/word/word.field#word-word-field-type-member)|Gets the field's type.|
 ||[updateResult()](/javascript/api/word/word.field#word-word-field-updateresult-member(1))|Updates the field.|
@@ -68,25 +65,23 @@
 |[Paragraph](/javascript/api/word/word.paragraph)|[endnotes](/javascript/api/word/word.paragraph#word-word-paragraph-endnotes-member)|Gets the collection of endnotes in the paragraph.|
 ||[footnotes](/javascript/api/word/word.paragraph#word-word-paragraph-footnotes-member)|Gets the collection of footnotes in the paragraph.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))|Gets the currently supported content controls in the paragraph.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
-|[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Gets or sets the alignment for the specified paragraphs.|
-||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Gets or sets the value (in points) for a first line or hanging indent.|
-||[keepTogether](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keeptogether-member)|Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.|
-||[keepWithNext](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keepwithnext-member)|Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.|
-||[leftIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-leftindent-member)|Gets or sets the left indent.|
-||[lineSpacing](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-linespacing-member)|Gets or sets the line spacing (in points) for the specified paragraphs.|
-||[lineUnitAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitafter-member)|Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.|
-||[lineUnitBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitbefore-member)|Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.|
-||[mirrorIndents](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-mirrorindents-member)|Gets or sets whether left and right indents are the same width.|
-||[outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)|Gets or sets the outline level for the specified paragraphs.|
-||[rightIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-rightindent-member)|Gets or sets the right indent (in points) for the specified paragraphs.|
-||[spaceAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spaceafter-member)|Gets or sets the amount of spacing (in points) after the specified paragraph or text column.|
-||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Gets or sets the spacing (in points) before the specified paragraphs.|
-||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
+|[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Specifies the alignment for the specified paragraphs.|
+||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Specifies the value (in points) for a first line or hanging indent.|
+||[keepTogether](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keeptogether-member)|Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.|
+||[keepWithNext](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keepwithnext-member)|Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.|
+||[leftIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-leftindent-member)|Specifies the left indent.|
+||[lineSpacing](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-linespacing-member)|Specifies the line spacing (in points) for the specified paragraphs.|
+||[lineUnitAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitafter-member)|Specifies the amount of spacing (in gridlines) after the specified paragraphs.|
+||[lineUnitBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitbefore-member)|Specifies the amount of spacing (in gridlines) before the specified paragraphs.|
+||[mirrorIndents](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-mirrorindents-member)|Specifies whether left and right indents are the same width.|
+||[outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)|Specifies the outline level for the specified paragraphs.|
+||[rightIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-rightindent-member)|Specifies the right indent (in points) for the specified paragraphs.|
+||[spaceAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spaceafter-member)|Specifies the amount of spacing (in points) after the specified paragraph or text column.|
+||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Specifies the spacing (in points) before the specified paragraphs.|
+||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
 |[Range](/javascript/api/word/word.range)|[endnotes](/javascript/api/word/word.range#word-word-range-endnotes-member)|Gets the collection of endnotes in the range.|
 ||[footnotes](/javascript/api/word/word.range#word-word-range-footnotes-member)|Gets the collection of footnotes in the range.|
 ||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))|Gets the currently supported content controls in the range.|
-||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 ||[insertEndnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertendnote-member(1))|Inserts an endnote.|
 ||[insertField(insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean)](/javascript/api/word/word.range#word-word-range-insertfield-member(1))|Inserts a field at the specified location.|
 ||[insertFootnote(insertText?: string)](/javascript/api/word/word.range#word-word-range-insertfootnote-member(1))|Inserts a footnote.|
@@ -99,11 +94,11 @@
 ||[nameLocal](/javascript/api/word/word.style#word-word-style-namelocal-member)|Gets the name of a style in the language of the user.|
 ||[nextParagraphStyle](/javascript/api/word/word.style#word-word-style-nextparagraphstyle-member)|Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.|
 ||[paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)|Gets a ParagraphFormat object that represents the paragraph settings for the specified style.|
-||[priority](/javascript/api/word/word.style#word-word-style-priority-member)|Gets or sets the priority.|
-||[quickStyle](/javascript/api/word/word.style#word-word-style-quickstyle-member)|Gets or sets whether the style corresponds to an available quick style.|
+||[priority](/javascript/api/word/word.style#word-word-style-priority-member)|Specifies the priority.|
+||[quickStyle](/javascript/api/word/word.style#word-word-style-quickstyle-member)|Specifies whether the style corresponds to an available quick style.|
 ||[type](/javascript/api/word/word.style#word-word-style-type-member)|Gets the style type.|
-||[unhideWhenUsed](/javascript/api/word/word.style#word-word-style-unhidewhenused-member)|Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.|
-||[visibility](/javascript/api/word/word.style#word-word-style-visibility-member)|Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.|
+||[unhideWhenUsed](/javascript/api/word/word.style#word-word-style-unhidewhenused-member)|Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.|
+||[visibility](/javascript/api/word/word.style#word-word-style-visibility-member)|Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.|
 |[StyleCollection](/javascript/api/word/word.stylecollection)|[getByName(name: string)](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1))|Get the style object by its name.|
 ||[getByNameOrNullObject(name: string)](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1))|If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.|
 ||[getCount()](/javascript/api/word/word.stylecollection#word-word-stylecollection-getcount-member(1))|Gets the number of the styles in the collection.|

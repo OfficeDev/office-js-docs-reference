@@ -43,8 +43,8 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -56,13 +56,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Errors**:
@@ -74,7 +74,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects
 
@@ -150,8 +150,8 @@ methods:
       Maximum number that can be added:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -163,13 +163,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Errors**:
@@ -218,13 +218,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
@@ -234,8 +234,8 @@ methods:
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      recipient has the following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -297,13 +297,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
@@ -313,8 +313,8 @@ methods:
       issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved
+      recipient has the following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -337,7 +337,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -469,8 +469,8 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -482,13 +482,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Errors**:
@@ -547,8 +547,8 @@ methods:
       Maximum number that can be set:
 
 
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
+      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the
+      target field on the item is 500 recipients.
 
 
       - Classic Mac UI, web browser: 100 recipients
@@ -560,13 +560,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       **Errors**:
@@ -578,7 +578,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects and
 
@@ -606,7 +606,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml

@@ -119,8 +119,8 @@ fields:
     uid: 'office!Office.EventType.ItemChanged:member'
     package: office!
     summary: >-
-      Occurs when a different Outlook item is selected for viewing while the task pane is pinned. **Important**: Only
-      available with task pane implementation.
+      Occurs when a different Outlook item is selected for viewing while the task pane is pinned. **Important**:
+      Only available with task pane implementation.
 
 
       To add an event handler for the `ItemChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.

@@ -193,7 +193,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
@@ -267,7 +267,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -357,7 +357,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/event-column-and-row-sort.yaml
@@ -409,7 +409,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
@@ -510,7 +510,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Clear the format and contents of the range.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -558,7 +558,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D:F";
@@ -629,7 +629,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:G6";
@@ -665,7 +665,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -702,7 +702,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet19";
           const rangeAddress = "A1:F8";
@@ -776,7 +776,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Note: the grid properties of the Range (values, numberFormat, formulas) 
       // contains null since the Range in question is unbounded.
       await Excel.run(async (context) => { 
@@ -809,7 +809,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Gets an object that represents the entire row of the range 
       // (for example, if the current range represents cells "B4:E11", 
       // its GetEntireRow is a range that represents rows "4:11").
@@ -836,8 +836,9 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for Mac.
-      Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
+      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for
+      Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
+      status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -856,7 +857,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -896,7 +897,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
@@ -978,7 +979,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1006,7 +1007,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1034,7 +1035,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1065,7 +1066,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "D4:F6";
@@ -1131,7 +1132,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -1222,7 +1223,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-relationships.yaml
@@ -1311,7 +1312,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/used-range.yaml
@@ -1386,7 +1387,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10";
@@ -1467,7 +1468,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Use the range address to get the range object.
           await Excel.run(async (context) => {
               const sheetName = "Sheet1";
@@ -1521,7 +1522,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -1533,7 +1534,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-merged-ranges.yaml
@@ -1577,7 +1578,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "F5:F10"; 
@@ -1639,7 +1640,7 @@ methods:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/90-scenarios/multiple-property-set.yaml
@@ -1720,7 +1721,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:C3";
@@ -1757,7 +1758,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => {
               const largeRange = context.workbook.getSelectedRange();
               largeRange.load(["rowCount", "columnCount"]);

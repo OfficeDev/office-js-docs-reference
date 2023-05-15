@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.20.0",
-    "schemaVersion": 1005,
+    "toolVersion": "7.34.8",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "office-runtime!",
   "docComment": "",
   "name": "office-runtime",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "office-runtime!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Namespace",
@@ -179,8 +182,10 @@
               "text": "export declare namespace OfficeRuntime "
             }
           ],
+          "fileUrlPath": "office-runtime.d.ts",
           "releaseTag": "Public",
           "name": "OfficeRuntime",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Interface",
@@ -194,6 +199,7 @@
               ],
               "releaseTag": "Public",
               "name": "ApiInformation",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -274,6 +280,7 @@
                   "canonicalReference": "office-runtime!OfficeRuntime.ApiInformation:interface"
                 }
               ],
+              "isReadonly": true,
               "releaseTag": "Public",
               "name": "apiInformation",
               "variableTypeTokenRange": {
@@ -293,6 +300,7 @@
               ],
               "releaseTag": "Public",
               "name": "Auth",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -363,6 +371,7 @@
                   "canonicalReference": "office-runtime!OfficeRuntime.Auth:interface"
                 }
               ],
+              "isReadonly": true,
               "releaseTag": "Public",
               "name": "auth",
               "variableTypeTokenRange": {
@@ -382,6 +391,7 @@
               ],
               "releaseTag": "Public",
               "name": "AuthOptions",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -401,6 +411,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "allowConsentPrompt",
@@ -427,6 +438,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "allowSignInPrompt",
@@ -453,6 +465,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "asyncContext",
@@ -479,6 +492,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "authChallenge",
@@ -505,6 +519,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forceAddAccount",
@@ -531,6 +546,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forceConsent",
@@ -557,6 +573,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "forMSGraphAccess",
@@ -580,6 +597,7 @@
               ],
               "releaseTag": "Public",
               "name": "Dialog",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -704,6 +722,7 @@
               ],
               "releaseTag": "Public",
               "name": "DisplayWebDialogOptions",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -723,6 +742,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "displayInIFrame",
@@ -749,6 +769,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "height",
@@ -775,6 +796,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onClose",
@@ -810,6 +832,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onMessage",
@@ -854,6 +877,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onRuntimeError",
@@ -880,6 +904,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "width",
@@ -903,6 +928,7 @@
               ],
               "releaseTag": "Public",
               "name": "Storage",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -1271,6 +1297,7 @@
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface"
                 }
               ],
+              "isReadonly": true,
               "releaseTag": "Public",
               "name": "storage",
               "variableTypeTokenRange": {

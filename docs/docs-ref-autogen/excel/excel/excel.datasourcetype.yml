@@ -11,10 +11,12 @@ fields:
   - name: cube
     uid: 'excel!Excel.DataSourceType.cube:member'
     package: excel!
-    summary: |-
+    summary: >-
       Contains a cube name for an OLAP data source.
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"Cube"'
   - name: localRange
     uid: 'excel!Excel.DataSourceType.localRange:member'
@@ -35,10 +37,12 @@ fields:
   - name: oledbDefault
     uid: 'excel!Excel.DataSourceType.oledbDefault:member'
     package: excel!
-    summary: |-
+    summary: >-
       Contains command text that the OLE DB provider (such as Power BI) understands.
 
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
     value: '"OledbDefault"'
   - name: unknown
     uid: 'excel!Excel.DataSourceType.unknown:member'

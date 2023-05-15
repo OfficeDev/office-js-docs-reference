@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const range = binding.getRange();
@@ -85,7 +85,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const table = binding.getTable();
@@ -112,7 +112,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const text = binding.getText();
@@ -171,7 +171,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const binding = context.workbook.bindings.getItemAt(0);
               binding.load('type');
@@ -240,7 +240,7 @@ events:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/data-changed.yaml
@@ -273,8 +273,8 @@ events:
       Occurs when the selected content in the binding is changed.
 
 
-      *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
-      information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+      *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and
+      column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Interfaces.TableCellData#columnWidth:member'
     package: word!
     fullName: columnWidth
-    summary: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+    summary: Specifies the width of the cell's column in points. This is applicable to uniform tables.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
     package: word!
     fullName: horizontalAlignment
-    summary: 'Gets and sets the horizontal alignment of the cell. The value can be ''Left'', ''Centered'', ''Right'', or ''Justified''.'
+    summary: 'Specifies the horizontal alignment of the cell. The value can be ''Left'', ''Centered'', ''Right'', or ''Justified''.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     uid: 'word!Word.Interfaces.TableCellData#shadingColor:member'
     package: word!
     fullName: shadingColor
-    summary: 'Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.'
+    summary: 'Specifies the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -85,7 +85,7 @@ properties:
     uid: 'word!Word.Interfaces.TableCellData#value:member'
     package: word!
     fullName: value
-    summary: Gets and sets the text of the cell.
+    summary: Specifies the text of the cell.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -97,7 +97,7 @@ properties:
     uid: 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
     package: word!
     fullName: verticalAlignment
-    summary: 'Gets and sets the vertical alignment of the cell. The value can be ''Top'', ''Center'', or ''Bottom''.'
+    summary: 'Specifies the vertical alignment of the cell. The value can be ''Top'', ''Center'', or ''Bottom''.'
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

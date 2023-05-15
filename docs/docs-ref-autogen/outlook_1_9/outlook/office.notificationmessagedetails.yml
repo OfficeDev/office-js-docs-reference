@@ -30,8 +30,8 @@ properties:
       parameter for an unsupported type results in an exception.
 
 
-      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,
-      web browser).
+      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g.,
+      Mac, web browser).
     remarks: ''
     isPreview: false
     isDeprecated: false

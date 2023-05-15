@@ -97,7 +97,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // This sample shows how to get all the slices of a file. 
 

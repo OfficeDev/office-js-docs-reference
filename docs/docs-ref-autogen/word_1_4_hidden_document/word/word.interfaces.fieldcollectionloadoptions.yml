@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#code:member'
     package: word!
     fullName: code
-    summary: 'For EACH ITEM in the collection: Gets or sets the field''s code instruction.'
+    summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
     remarks: |-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

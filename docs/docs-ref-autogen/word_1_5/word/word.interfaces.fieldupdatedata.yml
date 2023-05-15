@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldUpdateData#code:member'
     package: word!
     fullName: code
-    summary: Gets or sets the field's code instruction.
+    summary: Specifies the field's code instruction.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -26,7 +26,7 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
       exception when code attempts to set it.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -39,7 +39,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldUpdateData#locked:member'
     package: word!
     fullName: locked
-    summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    summary: 'Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.'
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

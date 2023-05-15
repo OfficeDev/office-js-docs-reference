@@ -23,7 +23,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
@@ -108,9 +108,9 @@ fields:
       against the Exchange address book, and is therefore treated as an external SMTP address.
 
 
-      **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address
-      book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return
-      a `User` value only if they're directly added or resolved against the GAL.
+      **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal
+      address book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients
+      return a `User` value only if they're directly added or resolved against the GAL.
     value: '"other"'
   - name: User
     uid: 'outlook!Office.MailboxEnums.RecipientType.User:member'

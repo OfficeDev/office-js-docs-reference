@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#alignment:member'
     package: word!
     fullName: alignment
-    summary: Gets or sets the alignment for the specified paragraphs.
+    summary: Specifies the alignment for the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -26,7 +26,7 @@ properties:
     package: word!
     fullName: firstLineIndent
     summary: >-
-      Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line
+      Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -40,7 +40,7 @@ properties:
     package: word!
     fullName: keepTogether
     summary: >-
-      Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates
+      Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates
       the document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -54,8 +54,8 @@ properties:
     package: word!
     fullName: keepWithNext
     summary: >-
-      Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when
-      Microsoft Word repaginates the document.
+      Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft
+      Word repaginates the document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -67,7 +67,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: Gets or sets the left indent.
+    summary: Specifies the left indent.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -79,7 +79,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#lineSpacing:member'
     package: word!
     fullName: lineSpacing
-    summary: Gets or sets the line spacing (in points) for the specified paragraphs.
+    summary: Specifies the line spacing (in points) for the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -91,7 +91,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#lineUnitAfter:member'
     package: word!
     fullName: lineUnitAfter
-    summary: Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+    summary: Specifies the amount of spacing (in gridlines) after the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -103,7 +103,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#lineUnitBefore:member'
     package: word!
     fullName: lineUnitBefore
-    summary: Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+    summary: Specifies the amount of spacing (in gridlines) before the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -115,7 +115,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#mirrorIndents:member'
     package: word!
     fullName: mirrorIndents
-    summary: Gets or sets whether left and right indents are the same width.
+    summary: Specifies whether left and right indents are the same width.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -127,7 +127,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#outlineLevel:member'
     package: word!
     fullName: outlineLevel
-    summary: Gets or sets the outline level for the specified paragraphs.
+    summary: Specifies the outline level for the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -145,7 +145,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#rightIndent:member'
     package: word!
     fullName: rightIndent
-    summary: Gets or sets the right indent (in points) for the specified paragraphs.
+    summary: Specifies the right indent (in points) for the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -157,7 +157,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#spaceAfter:member'
     package: word!
     fullName: spaceAfter
-    summary: Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+    summary: Specifies the amount of spacing (in points) after the specified paragraph or text column.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -169,7 +169,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphFormatUpdateData#spaceBefore:member'
     package: word!
     fullName: spaceBefore
-    summary: Gets or sets the spacing (in points) before the specified paragraphs.
+    summary: Specifies the spacing (in points) before the specified paragraphs.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -182,8 +182,8 @@ properties:
     package: word!
     fullName: widowControl
     summary: >-
-      Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of
-      the paragraph when Microsoft Word repaginates the document.
+      Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the
+      paragraph when Microsoft Word repaginates the document.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

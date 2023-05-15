@@ -16,7 +16,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Get the attachment that was just added to a message or appointment.
 

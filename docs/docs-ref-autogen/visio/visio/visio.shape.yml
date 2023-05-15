@@ -222,7 +222,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shapeName = "Sample Name";
@@ -241,7 +241,7 @@ methods:
               }
           });
           ```
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);

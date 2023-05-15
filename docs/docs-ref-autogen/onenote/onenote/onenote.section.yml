@@ -158,7 +158,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
                   
           // Queue a command to add a page to the current section.
@@ -197,7 +197,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           
@@ -239,7 +239,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           
@@ -282,7 +282,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           // Get the current section.
           const section = context.application.getActiveSection();
@@ -334,7 +334,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
                   
           // Queue a command to insert a section after the current section.
@@ -408,7 +408,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
                   
               // Get the current section.

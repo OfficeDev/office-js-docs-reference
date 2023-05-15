@@ -172,12 +172,16 @@ tryCatch(async () => {
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
                         fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
-                            // Remove example field from yml as the OPS schema does not support it.
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                            
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
+                                .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                                .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
-                        // Remove example field from yml as the OPS schema does not support it.
-                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                        
+                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
+                            .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                            .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                     }
                 });
         });
