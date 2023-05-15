@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Comment#content:member'
     package: word!
     fullName: content
-    summary: Gets or sets the comment's content as plain text.
+    summary: Specifies the comment's content as plain text.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -81,7 +81,7 @@ properties:
     uid: 'word!Word.Comment#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: Gets or sets the comment's content range.
+    summary: Specifies the comment's content range.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -144,8 +144,8 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
-      means that the comment thread is resolved.
+      Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means
+      that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

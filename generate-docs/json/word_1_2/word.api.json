@@ -1700,7 +1700,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#style:member",
-                  "docComment": "/**\n * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2050,7 +2050,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#appearance:member",
-                  "docComment": "/**\n * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2085,7 +2085,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#cannotDelete:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2115,7 +2115,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#cannotEdit:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2176,7 +2176,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#color:member",
-                  "docComment": "/**\n * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3328,7 +3328,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#placeholderText:member",
-                  "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3358,7 +3358,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#removeWhenEdited:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3670,7 +3670,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#style:member",
-                  "docComment": "/**\n * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3700,7 +3700,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#tag:member",
-                  "docComment": "/**\n * Gets or sets a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3760,7 +3760,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#title:member",
-                  "docComment": "/**\n * Gets or sets the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5721,7 +5721,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#bold:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5751,7 +5751,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#color:member",
-                  "docComment": "/**\n * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5812,7 +5812,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#doubleStrikeThrough:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5842,7 +5842,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#highlightColor:member",
-                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5872,7 +5872,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#italic:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6050,7 +6050,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#name:member",
-                  "docComment": "/**\n * Gets or sets a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6195,7 +6195,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#size:member",
-                  "docComment": "/**\n * Gets or sets a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6225,7 +6225,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#strikeThrough:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6255,7 +6255,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#subscript:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6285,7 +6285,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#superscript:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6379,7 +6379,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#underline:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6556,7 +6556,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#altTextDescription:member",
-                  "docComment": "/**\n * Gets or sets a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6586,7 +6586,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#altTextTitle:member",
-                  "docComment": "/**\n * Gets or sets a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6714,7 +6714,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#height:member",
-                  "docComment": "/**\n * Gets or sets a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6744,7 +6744,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#hyperlink:member",
-                  "docComment": "/**\n * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7520,7 +7520,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#lockAspectRatio:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7920,7 +7920,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#width:member",
-                  "docComment": "/**\n * Gets or sets a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8581,7 +8581,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -8735,7 +8735,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyLoadOptions#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -8834,7 +8834,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyUpdateData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9317,7 +9317,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#appearance:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9344,7 +9344,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9371,7 +9371,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotEdit:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9398,7 +9398,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9508,7 +9508,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9535,7 +9535,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9562,7 +9562,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9589,7 +9589,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9643,7 +9643,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#title:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9763,7 +9763,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#appearance:member",
-                      "docComment": "/**\n * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9795,7 +9795,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#cannotDelete:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9822,7 +9822,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#cannotEdit:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -9849,7 +9849,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#color:member",
-                      "docComment": "/**\n * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10027,7 +10027,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10054,7 +10054,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#removeWhenEdited:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10081,7 +10081,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10108,7 +10108,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#tag:member",
-                      "docComment": "/**\n * Gets or sets a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10162,7 +10162,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlData#title:member",
-                      "docComment": "/**\n * Gets or sets the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10265,7 +10265,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#appearance:member",
-                      "docComment": "/**\n * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10292,7 +10292,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#cannotDelete:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10319,7 +10319,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#cannotEdit:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10346,7 +10346,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#color:member",
-                      "docComment": "/**\n * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10456,7 +10456,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10483,7 +10483,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#removeWhenEdited:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10510,7 +10510,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10537,7 +10537,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#tag:member",
-                      "docComment": "/**\n * Gets or sets a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10591,7 +10591,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#title:member",
-                      "docComment": "/**\n * Gets or sets the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10662,7 +10662,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#appearance:member",
-                      "docComment": "/**\n * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10694,7 +10694,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10721,7 +10721,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the user can edit the contents of the content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10748,7 +10748,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#color:member",
-                      "docComment": "/**\n * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10803,7 +10803,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#placeholderText:member",
-                      "docComment": "/**\n * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10830,7 +10830,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10857,7 +10857,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10884,7 +10884,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#tag:member",
-                      "docComment": "/**\n * Gets or sets a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a tag to identify a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10911,7 +10911,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData#title:member",
-                      "docComment": "/**\n * Gets or sets the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the title for a content control.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11771,7 +11771,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#bold:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11798,7 +11798,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#color:member",
-                      "docComment": "/**\n * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11825,7 +11825,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#doubleStrikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11852,7 +11852,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11879,7 +11879,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#italic:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11906,7 +11906,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#name:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11933,7 +11933,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#size:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11960,7 +11960,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#strikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11987,7 +11987,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#subscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12014,7 +12014,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#superscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12041,7 +12041,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#underline:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12117,7 +12117,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#bold:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12144,7 +12144,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#color:member",
-                      "docComment": "/**\n * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12171,7 +12171,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#doubleStrikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12198,7 +12198,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12225,7 +12225,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#italic:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12252,7 +12252,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#name:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12279,7 +12279,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#size:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12306,7 +12306,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#strikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12333,7 +12333,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#subscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12360,7 +12360,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#superscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12387,7 +12387,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#underline:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12431,7 +12431,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#bold:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12458,7 +12458,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#color:member",
-                      "docComment": "/**\n * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12485,7 +12485,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#doubleStrikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12512,7 +12512,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12539,7 +12539,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#italic:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12566,7 +12566,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#name:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the name of the font.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12593,7 +12593,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#size:member",
-                      "docComment": "/**\n * Gets or sets a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that represents the font size in points.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12620,7 +12620,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#strikeThrough:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12647,7 +12647,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#subscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12674,7 +12674,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#superscript:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12701,7 +12701,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#underline:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12826,7 +12826,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12853,7 +12853,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12880,7 +12880,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12907,7 +12907,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12934,7 +12934,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13017,7 +13017,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13110,7 +13110,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#altTextDescription:member",
-                      "docComment": "/**\n * Gets or sets a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13137,7 +13137,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#altTextTitle:member",
-                      "docComment": "/**\n * Gets or sets a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13164,7 +13164,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#height:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13191,7 +13191,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#hyperlink:member",
-                      "docComment": "/**\n * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13218,7 +13218,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#lockAspectRatio:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13245,7 +13245,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureData#width:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13316,7 +13316,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#altTextDescription:member",
-                      "docComment": "/**\n * Gets or sets a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13343,7 +13343,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#altTextTitle:member",
-                      "docComment": "/**\n * Gets or sets a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13370,7 +13370,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#height:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13397,7 +13397,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#hyperlink:member",
-                      "docComment": "/**\n * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13424,7 +13424,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#lockAspectRatio:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13507,7 +13507,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#width:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13551,7 +13551,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member",
-                      "docComment": "/**\n * Gets or sets a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that represents the alternative text associated with the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13578,7 +13578,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#altTextTitle:member",
-                      "docComment": "/**\n * Gets or sets a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a string that contains the title for the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13605,7 +13605,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#height:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the height of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13632,7 +13632,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member",
-                      "docComment": "/**\n * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13659,7 +13659,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13686,7 +13686,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData#width:member",
-                      "docComment": "/**\n * Gets or sets a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a number that describes the width of the inline image.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14082,7 +14082,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14109,7 +14109,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14164,7 +14164,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14191,7 +14191,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14218,7 +14218,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14245,7 +14245,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14272,7 +14272,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14327,7 +14327,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14354,7 +14354,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14381,7 +14381,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14408,7 +14408,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14528,7 +14528,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#alignment:member",
-                      "docComment": "/**\n * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14560,7 +14560,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#firstLineIndent:member",
-                      "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14647,7 +14647,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#leftIndent:member",
-                      "docComment": "/**\n * Gets or sets the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14674,7 +14674,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#lineSpacing:member",
-                      "docComment": "/**\n * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14701,7 +14701,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#lineUnitAfter:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14728,7 +14728,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#lineUnitBefore:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14755,7 +14755,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#outlineLevel:member",
-                      "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14782,7 +14782,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#rightIndent:member",
-                      "docComment": "/**\n * Gets or sets the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14809,7 +14809,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#spaceAfter:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14836,7 +14836,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#spaceBefore:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14863,7 +14863,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14961,7 +14961,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#alignment:member",
-                      "docComment": "/**\n * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14988,7 +14988,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#firstLineIndent:member",
-                      "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15043,7 +15043,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#leftIndent:member",
-                      "docComment": "/**\n * Gets or sets the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15070,7 +15070,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#lineSpacing:member",
-                      "docComment": "/**\n * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15097,7 +15097,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#lineUnitAfter:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15124,7 +15124,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#lineUnitBefore:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15151,7 +15151,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#outlineLevel:member",
-                      "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15206,7 +15206,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#rightIndent:member",
-                      "docComment": "/**\n * Gets or sets the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15233,7 +15233,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#spaceAfter:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15260,7 +15260,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#spaceBefore:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15287,7 +15287,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15358,7 +15358,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#alignment:member",
-                      "docComment": "/**\n * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15390,7 +15390,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#firstLineIndent:member",
-                      "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15445,7 +15445,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#leftIndent:member",
-                      "docComment": "/**\n * Gets or sets the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15472,7 +15472,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#lineSpacing:member",
-                      "docComment": "/**\n * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15499,7 +15499,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#lineUnitAfter:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15526,7 +15526,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#lineUnitBefore:member",
-                      "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15553,7 +15553,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#outlineLevel:member",
-                      "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15580,7 +15580,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#rightIndent:member",
-                      "docComment": "/**\n * Gets or sets the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15607,7 +15607,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#spaceAfter:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15634,7 +15634,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#spaceBefore:member",
-                      "docComment": "/**\n * Gets or sets the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15661,7 +15661,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15837,7 +15837,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16017,7 +16017,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16171,7 +16171,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16270,7 +16270,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeUpdateData#style:member",
-                      "docComment": "/**\n * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16314,7 +16314,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#ignorePunct:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16341,7 +16341,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#ignoreSpace:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16368,7 +16368,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#matchCase:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16395,7 +16395,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#matchPrefix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16422,7 +16422,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#matchSuffix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16449,7 +16449,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#matchWholeWord:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16476,7 +16476,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsData#matchWildcards:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16547,7 +16547,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#ignorePunct:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16574,7 +16574,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#ignoreSpace:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16601,7 +16601,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#matchCase:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16628,7 +16628,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#matchPrefix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16655,7 +16655,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#matchSuffix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16682,7 +16682,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#matchWholeWord:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16709,7 +16709,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#matchWildcards:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16753,7 +16753,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#ignorePunct:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16780,7 +16780,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#ignoreSpace:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16807,7 +16807,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#matchCase:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16834,7 +16834,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#matchPrefix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16861,7 +16861,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#matchSuffix:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16888,7 +16888,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#matchWholeWord:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16915,7 +16915,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData#matchWildcards:member",
-                      "docComment": "/**\n * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17855,7 +17855,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#alignment:member",
-                  "docComment": "/**\n * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18014,7 +18014,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#firstLineIndent:member",
-                  "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18812,7 +18812,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#leftIndent:member",
-                  "docComment": "/**\n * Gets or sets the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the left indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18842,7 +18842,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#lineSpacing:member",
-                  "docComment": "/**\n * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18872,7 +18872,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#lineUnitAfter:member",
-                  "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the amount of spacing, in grid lines, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18902,7 +18902,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#lineUnitBefore:member",
-                  "docComment": "/**\n * Gets or sets the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the amount of spacing, in grid lines, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19080,7 +19080,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#outlineLevel:member",
-                  "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the outline level for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19141,7 +19141,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#rightIndent:member",
-                  "docComment": "/**\n * Gets or sets the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the right indent value, in points, for the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19453,7 +19453,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#spaceAfter:member",
-                  "docComment": "/**\n * Gets or sets the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the spacing, in points, after the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19483,7 +19483,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#spaceBefore:member",
-                  "docComment": "/**\n * Gets or sets the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the spacing, in points, before the paragraph.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19513,7 +19513,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#style:member",
-                  "docComment": "/**\n * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21345,7 +21345,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#style:member",
-                  "docComment": "/**\n * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22286,7 +22286,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#ignorePunct:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22316,7 +22316,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#ignoreSpace:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22494,7 +22494,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#matchCase:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22524,7 +22524,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#matchPrefix:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22554,7 +22554,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#matchSuffix:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22584,7 +22584,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#matchWholeWord:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22614,7 +22614,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.SearchOptions#matchWildcards:member",
-                  "docComment": "/**\n * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.\n *\n * @remarks\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

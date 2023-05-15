@@ -8,7 +8,7 @@
 ||[onCommentDeleted](/javascript/api/word/word.body#word-word-body-oncommentdeleted-member)|Occurs when comments are deleted.|
 ||[onCommentDeselected](/javascript/api/word/word.body#word-word-body-oncommentdeselected-member)|Occurs when a comment is deselected.|
 ||[onCommentSelected](/javascript/api/word/word.body#word-word-body-oncommentselected-member)|Occurs when a comment is selected.|
-||[styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)|Gets or sets the built-in style name for the body.|
+||[styleBuiltIn](/javascript/api/word/word.body#word-word-body-stylebuiltin-member)|Specifies the built-in style name for the body.|
 |[CommentDetail](/javascript/api/word/word.commentdetail)|[id](/javascript/api/word/word.commentdetail#word-word-commentdetail-id-member)|Represents the ID of this comment.|
 ||[replyIds](/javascript/api/word/word.commentdetail#word-word-commentdetail-replyids-member)|Represents the IDs of the replies to this comment.|
 |[CommentEventArgs](/javascript/api/word/word.commenteventargs)|[changeType](/javascript/api/word/word.commenteventargs#word-word-commenteventargs-changetype-member)|Represents how the comment changed event is triggered.|
@@ -25,7 +25,7 @@
 ||[onEntered](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onentered-member)|Occurs when the content control is entered.|
 ||[onExited](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onexited-member)|Occurs when the content control is exited, for example, when the cursor leaves the content control.|
 ||[onSelectionChanged](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-onselectionchanged-member)|Occurs when selection within the content control is changed.|
-||[styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)|Gets or sets the built-in style name for the content control.|
+||[styleBuiltIn](/javascript/api/word/word.contentcontrol#word-word-contentcontrol-stylebuiltin-member)|Specifies the built-in style name for the content control.|
 |[ContentControlAddedEventArgs](/javascript/api/word/word.contentcontroladdedeventargs)|[eventType](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-eventtype-member)|The event type.|
 ||[ids](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-ids-member)|Gets the content control IDs.|
 ||[source](/javascript/api/word/word.contentcontroladdedeventargs#word-word-contentcontroladdedeventargs-source-member)|The source of the event.|
@@ -62,13 +62,13 @@
 ||[getStyles()](/javascript/api/word/word.documentcreated#word-word-documentcreated-getstyles-member(1))|Gets a StyleCollection object that represents the whole style set of the document.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End", insertFileOptions?: Word.InsertFileOptions)](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))|Inserts a document into the target document at a specific location with additional properties.|
 ||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.documentcreated#word-word-documentcreated-save-member(1))|Saves the document.|
-|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Gets or sets the field's code instruction.|
-||[data](/javascript/api/word/word.field#word-word-field-data-member)|Gets or sets data in an "Addin" field.|
+|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Specifies the field's code instruction.|
+||[data](/javascript/api/word/word.field#word-word-field-data-member)|Specifies data in an "Addin" field.|
 ||[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
 ||[kind](/javascript/api/word/word.field#word-word-field-kind-member)|Gets the field's kind.|
-||[locked](/javascript/api/word/word.field#word-word-field-locked-member)|Gets or sets whether the field is locked.|
+||[locked](/javascript/api/word/word.field#word-word-field-locked-member)|Specifies whether the field is locked.|
 ||[select(selectionMode?: Word.SelectionMode)](/javascript/api/word/word.field#word-word-field-select-member(1))|Selects the field.|
-||[showCodes](/javascript/api/word/word.field#word-word-field-showcodes-member)|Gets or sets whether the field codes are displayed for the specified field.|
+||[showCodes](/javascript/api/word/word.field#word-word-field-showcodes-member)|Specifies whether the field codes are displayed for the specified field.|
 ||[type](/javascript/api/word/word.field#word-word-field-type-member)|Gets the field's type.|
 ||[updateResult()](/javascript/api/word/word.field#word-word-field-updateresult-member(1))|Updates the field.|
 |[FieldCollection](/javascript/api/word/word.fieldcollection)|[getByTypes(types: Word.FieldType[])](/javascript/api/word/word.fieldcollection#word-word-fieldcollection-getbytypes-member(1))|Gets the Field object collection including the specified types of fields.|
@@ -82,22 +82,22 @@
 ||[getLevelPicture(level: number)](/javascript/api/word/word.list#word-word-list-getlevelpicture-member(1))|Gets the Base64-encoded string representation of the picture at the specified level in the list.|
 ||[resetLevelFont(level: number, resetFontName?: boolean)](/javascript/api/word/word.list#word-word-list-resetlevelfont-member(1))|Resets the font of the bullet, number, or picture at the specified level in the list.|
 ||[setLevelPicture(level: number, base64EncodedImage?: string)](/javascript/api/word/word.list#word-word-list-setlevelpicture-member(1))|Sets the picture at the specified level in the list.|
-|[ListLevel](/javascript/api/word/word.listlevel)|[alignment](/javascript/api/word/word.listlevel#word-word-listlevel-alignment-member)|Gets or sets the horizontal alignment of the list level.|
+|[ListLevel](/javascript/api/word/word.listlevel)|[alignment](/javascript/api/word/word.listlevel#word-word-listlevel-alignment-member)|Specifies the horizontal alignment of the list level.|
 ||[font](/javascript/api/word/word.listlevel#word-word-listlevel-font-member)|Gets a Font object that represents the character formatting of the specified object.|
-||[linkedStyle](/javascript/api/word/word.listlevel#word-word-listlevel-linkedstyle-member)|Gets or sets the name of the style that's linked to the specified list level object.|
-||[numberFormat](/javascript/api/word/word.listlevel#word-word-listlevel-numberformat-member)|Gets or sets the number format for the specified list level.|
-||[numberPosition](/javascript/api/word/word.listlevel#word-word-listlevel-numberposition-member)|Gets or sets the position (in points) of the number or bullet for the specified list level object.|
-||[numberStyle](/javascript/api/word/word.listlevel#word-word-listlevel-numberstyle-member)|Gets or sets the number style for the list level object.|
-||[resetOnHigher](/javascript/api/word/word.listlevel#word-word-listlevel-resetonhigher-member)|Gets or sets the list level that must appear before the specified list level restarts numbering at 1.|
-||[startAt](/javascript/api/word/word.listlevel#word-word-listlevel-startat-member)|Gets or sets the starting number for the specified list level object.|
-||[tabPosition](/javascript/api/word/word.listlevel#word-word-listlevel-tabposition-member)|Gets or sets the tab position for the specified list level object.|
-||[textPosition](/javascript/api/word/word.listlevel#word-word-listlevel-textposition-member)|Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.|
-||[trailingCharacter](/javascript/api/word/word.listlevel#word-word-listlevel-trailingcharacter-member)|Gets or sets the character inserted after the number for the specified list level.|
+||[linkedStyle](/javascript/api/word/word.listlevel#word-word-listlevel-linkedstyle-member)|Specifies the name of the style that's linked to the specified list level object.|
+||[numberFormat](/javascript/api/word/word.listlevel#word-word-listlevel-numberformat-member)|Specifies the number format for the specified list level.|
+||[numberPosition](/javascript/api/word/word.listlevel#word-word-listlevel-numberposition-member)|Specifies the position (in points) of the number or bullet for the specified list level object.|
+||[numberStyle](/javascript/api/word/word.listlevel#word-word-listlevel-numberstyle-member)|Specifies the number style for the list level object.|
+||[resetOnHigher](/javascript/api/word/word.listlevel#word-word-listlevel-resetonhigher-member)|Specifies the list level that must appear before the specified list level restarts numbering at 1.|
+||[startAt](/javascript/api/word/word.listlevel#word-word-listlevel-startat-member)|Specifies the starting number for the specified list level object.|
+||[tabPosition](/javascript/api/word/word.listlevel#word-word-listlevel-tabposition-member)|Specifies the tab position for the specified list level object.|
+||[textPosition](/javascript/api/word/word.listlevel#word-word-listlevel-textposition-member)|Specifies the position (in points) for the second line of wrapping text for the specified list level object.|
+||[trailingCharacter](/javascript/api/word/word.listlevel#word-word-listlevel-trailingcharacter-member)|Specifies the character inserted after the number for the specified list level.|
 |[ListLevelCollection](/javascript/api/word/word.listlevelcollection)|[getFirst()](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-getfirst-member(1))|Gets the first list level in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-getfirstornullobject-member(1))|Gets the first list level in this collection.|
 ||[items](/javascript/api/word/word.listlevelcollection#word-word-listlevelcollection-items-member)|Gets the loaded child items in this collection.|
 |[ListTemplate](/javascript/api/word/word.listtemplate)|[listLevels](/javascript/api/word/word.listtemplate#word-word-listtemplate-listlevels-member)|Gets a ListLevels collection that represents all the levels for the specified ListTemplate.|
-||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Gets or sets whether the specified ListTemplate object is outline numbered.|
+||[outlineNumbered](/javascript/api/word/word.listtemplate#word-word-listtemplate-outlinenumbered-member)|Specifies whether the specified ListTemplate object is outline numbered.|
 |[Paragraph](/javascript/api/word/word.paragraph)|[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.paragraph#word-word-paragraph-getcontentcontrols-member(1))|Gets the currently supported content controls in the paragraph.|
 ||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.paragraph#word-word-paragraph-insertcontentcontrol-member(1))|Wraps the Paragraph object with a content control.|
 ||[onCommentAdded](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentadded-member)|Occurs when new comments are added.|
@@ -105,21 +105,21 @@
 ||[onCommentDeleted](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeleted-member)|Occurs when comments are deleted.|
 ||[onCommentDeselected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentdeselected-member)|Occurs when a comment is deselected.|
 ||[onCommentSelected](/javascript/api/word/word.paragraph#word-word-paragraph-oncommentselected-member)|Occurs when a comment is selected.|
-||[styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)|Gets or sets the built-in style name for the paragraph.|
-|[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Gets or sets the alignment for the specified paragraphs.|
-||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Gets or sets the value (in points) for a first line or hanging indent.|
-||[keepTogether](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keeptogether-member)|Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.|
-||[keepWithNext](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keepwithnext-member)|Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.|
-||[leftIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-leftindent-member)|Gets or sets the left indent.|
-||[lineSpacing](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-linespacing-member)|Gets or sets the line spacing (in points) for the specified paragraphs.|
-||[lineUnitAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitafter-member)|Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.|
-||[lineUnitBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitbefore-member)|Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.|
-||[mirrorIndents](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-mirrorindents-member)|Gets or sets whether left and right indents are the same width.|
-||[outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)|Gets or sets the outline level for the specified paragraphs.|
-||[rightIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-rightindent-member)|Gets or sets the right indent (in points) for the specified paragraphs.|
-||[spaceAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spaceafter-member)|Gets or sets the amount of spacing (in points) after the specified paragraph or text column.|
-||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Gets or sets the spacing (in points) before the specified paragraphs.|
-||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
+||[styleBuiltIn](/javascript/api/word/word.paragraph#word-word-paragraph-stylebuiltin-member)|Specifies the built-in style name for the paragraph.|
+|[ParagraphFormat](/javascript/api/word/word.paragraphformat)|[alignment](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-alignment-member)|Specifies the alignment for the specified paragraphs.|
+||[firstLineIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-firstlineindent-member)|Specifies the value (in points) for a first line or hanging indent.|
+||[keepTogether](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keeptogether-member)|Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.|
+||[keepWithNext](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-keepwithnext-member)|Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.|
+||[leftIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-leftindent-member)|Specifies the left indent.|
+||[lineSpacing](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-linespacing-member)|Specifies the line spacing (in points) for the specified paragraphs.|
+||[lineUnitAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitafter-member)|Specifies the amount of spacing (in gridlines) after the specified paragraphs.|
+||[lineUnitBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-lineunitbefore-member)|Specifies the amount of spacing (in gridlines) before the specified paragraphs.|
+||[mirrorIndents](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-mirrorindents-member)|Specifies whether left and right indents are the same width.|
+||[outlineLevel](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-outlinelevel-member)|Specifies the outline level for the specified paragraphs.|
+||[rightIndent](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-rightindent-member)|Specifies the right indent (in points) for the specified paragraphs.|
+||[spaceAfter](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spaceafter-member)|Specifies the amount of spacing (in points) after the specified paragraph or text column.|
+||[spaceBefore](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-spacebefore-member)|Specifies the spacing (in points) before the specified paragraphs.|
+||[widowControl](/javascript/api/word/word.paragraphformat#word-word-paragraphformat-widowcontrol-member)|Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.|
 |[Range](/javascript/api/word/word.range)|[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.range#word-word-range-getcontentcontrols-member(1))|Gets the currently supported content controls in the range.|
 ||[insertContentControl(contentControlType?: Word.ContentControlType.richText \| Word.ContentControlType.plainText \| "RichText" \| "PlainText")](/javascript/api/word/word.range#word-word-range-insertcontentcontrol-member(1))|Wraps the Range object with a content control.|
 ||[insertField(insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After", fieldType?: Word.FieldType, text?: string, removeFormatting?: boolean)](/javascript/api/word/word.range#word-word-range-insertfield-member(1))|Inserts a field at the specified location.|
@@ -127,7 +127,7 @@
 ||[onCommentChanged](/javascript/api/word/word.range#word-word-range-oncommentchanged-member)|Occurs when a comment or its reply is changed.|
 ||[onCommentDeselected](/javascript/api/word/word.range#word-word-range-oncommentdeselected-member)|Occurs when a comment is deselected.|
 ||[onCommentSelected](/javascript/api/word/word.range#word-word-range-oncommentselected-member)|Occurs when a comment is selected.|
-||[styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)|Gets or sets the built-in style name for the range.|
+||[styleBuiltIn](/javascript/api/word/word.range#word-word-range-stylebuiltin-member)|Specifies the built-in style name for the range.|
 |[Style](/javascript/api/word/word.style)|[baseStyle](/javascript/api/word/word.style#word-word-style-basestyle-member)|Gets the name of an existing style to use as the base formatting of another style.|
 ||[builtIn](/javascript/api/word/word.style#word-word-style-builtin-member)|Gets whether the specified style is a built-in style.|
 ||[delete()](/javascript/api/word/word.style#word-word-style-delete-member(1))|Deletes the style.|
@@ -139,15 +139,15 @@
 ||[nameLocal](/javascript/api/word/word.style#word-word-style-namelocal-member)|Gets the name of a style in the language of the user.|
 ||[nextParagraphStyle](/javascript/api/word/word.style#word-word-style-nextparagraphstyle-member)|Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.|
 ||[paragraphFormat](/javascript/api/word/word.style#word-word-style-paragraphformat-member)|Gets a ParagraphFormat object that represents the paragraph settings for the specified style.|
-||[priority](/javascript/api/word/word.style#word-word-style-priority-member)|Gets or sets the priority.|
-||[quickStyle](/javascript/api/word/word.style#word-word-style-quickstyle-member)|Gets or sets whether the style corresponds to an available quick style.|
+||[priority](/javascript/api/word/word.style#word-word-style-priority-member)|Specifies the priority.|
+||[quickStyle](/javascript/api/word/word.style#word-word-style-quickstyle-member)|Specifies whether the style corresponds to an available quick style.|
 ||[type](/javascript/api/word/word.style#word-word-style-type-member)|Gets the style type.|
-||[unhideWhenUsed](/javascript/api/word/word.style#word-word-style-unhidewhenused-member)|Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.|
-||[visibility](/javascript/api/word/word.style#word-word-style-visibility-member)|Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.|
+||[unhideWhenUsed](/javascript/api/word/word.style#word-word-style-unhidewhenused-member)|Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.|
+||[visibility](/javascript/api/word/word.style#word-word-style-visibility-member)|Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.|
 |[StyleCollection](/javascript/api/word/word.stylecollection)|[getByName(name: string)](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbyname-member(1))|Get the style object by its name.|
 ||[getByNameOrNullObject(name: string)](/javascript/api/word/word.stylecollection#word-word-stylecollection-getbynameornullobject-member(1))|If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.|
 ||[getCount()](/javascript/api/word/word.stylecollection#word-word-stylecollection-getcount-member(1))|Gets the number of the styles in the collection.|
 ||[getItem(index: number)](/javascript/api/word/word.stylecollection#word-word-stylecollection-getitem-member(1))|Gets a style object by its index in the collection.|
 ||[items](/javascript/api/word/word.stylecollection#word-word-stylecollection-items-member)|Gets the loaded child items in this collection.|
-|[Table](/javascript/api/word/word.table)|[styleBuiltIn](/javascript/api/word/word.table#word-word-table-stylebuiltin-member)|Gets or sets the built-in style name for the table.|
+|[Table](/javascript/api/word/word.table)|[styleBuiltIn](/javascript/api/word/word.table#word-word-table-stylebuiltin-member)|Specifies the built-in style name for the table.|
 |[TableRow](/javascript/api/word/word.tablerow)|[insertContentControl()](/javascript/api/word/word.tablerow#word-word-tablerow-insertcontentcontrol-member(1))|Inserts a content control on the row.|

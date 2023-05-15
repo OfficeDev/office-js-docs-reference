@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.FieldCollectionLoadOptions#code:member'
     package: word!
     fullName: code
-    summary: 'For EACH ITEM in the collection: Gets or sets the field''s code instruction.'
+    summary: 'For EACH ITEM in the collection: Specifies the field''s code instruction.'
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -40,7 +40,7 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      For EACH ITEM in the collection: Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is
+      For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is
       null and it will throw a general exception when code attempts to set it.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
@@ -66,7 +66,7 @@ properties:
     package: word!
     fullName: locked
     summary: >-
-      For EACH ITEM in the collection: Gets or sets whether the field is locked. `true` if the field is locked, `false`
+      For EACH ITEM in the collection: Specifies whether the field is locked. `true` if the field is locked, `false`
       otherwise.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
@@ -197,8 +197,8 @@ properties:
     package: word!
     fullName: showCodes
     summary: >-
-      For EACH ITEM in the collection: Gets or sets whether the field codes are displayed for the specified field.
-      `true` if the field codes are displayed, `false` otherwise.
+      For EACH ITEM in the collection: Specifies whether the field codes are displayed for the specified field. `true`
+      if the field codes are displayed, `false` otherwise.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

@@ -29,7 +29,7 @@ properties:
     uid: 'word!Word.Document#changeTrackingMode:member'
     package: word!
     fullName: changeTrackingMode
-    summary: Gets or sets the ChangeTracking mode.
+    summary: Specifies the ChangeTracking mode.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 

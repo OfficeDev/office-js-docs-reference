@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#altTextDescription:member'
     package: word!
     fullName: altTextDescription
-    summary: Gets or sets a string that represents the alternative text associated with the inline image.
+    summary: Specifies a string that represents the alternative text associated with the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#altTextTitle:member'
     package: word!
     fullName: altTextTitle
-    summary: Gets or sets a string that contains the title for the inline image.
+    summary: Specifies a string that contains the title for the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#height:member'
     package: word!
     fullName: height
-    summary: Gets or sets a number that describes the height of the inline image.
+    summary: Specifies a number that describes the height of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#hyperlink:member'
     package: word!
     fullName: hyperlink
-    summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    summary: 'Specifies a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
     package: word!
     fullName: lockAspectRatio
-    summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    summary: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +89,7 @@ properties:
     uid: 'word!Word.Interfaces.InlinePictureData#width:member'
     package: word!
     fullName: width
-    summary: Gets or sets a number that describes the width of the inline image.
+    summary: Specifies a number that describes the width of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

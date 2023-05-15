@@ -28,7 +28,7 @@ properties:
     package: word!
     fullName: alignment
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',
+      For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be 'left', 'centered',
       'right', or 'justified'.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -42,7 +42,7 @@ properties:
     package: word!
     fullName: firstLineIndent
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a
+      For EACH ITEM in the collection: Specifies the value, in points, for a first line or hanging indent. Use a
       positive value to set a first-line indent, and use a negative value to set a hanging indent.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -93,7 +93,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: 'For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the left indent value, in points, for the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -106,8 +106,8 @@ properties:
     package: word!
     fullName: lineSpacing
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the
-      Word UI, this value is divided by 12.
+      For EACH ITEM in the collection: Specifies the line spacing, in points, for the specified paragraph. In the Word
+      UI, this value is divided by 12.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -119,7 +119,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
     package: word!
     fullName: lineUnitAfter
-    summary: 'For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, after the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -131,7 +131,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
     package: word!
     fullName: lineUnitBefore
-    summary: 'For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, before the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -205,7 +205,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
     package: word!
     fullName: outlineLevel
-    summary: 'For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the outline level for the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -322,7 +322,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
     package: word!
     fullName: rightIndent
-    summary: 'For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the right indent value, in points, for the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -334,7 +334,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
     package: word!
     fullName: spaceAfter
-    summary: 'For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the spacing, in points, after the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -346,7 +346,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
     package: word!
     fullName: spaceBefore
-    summary: 'For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.'
+    summary: 'For EACH ITEM in the collection: Specifies the spacing, in points, before the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -359,9 +359,9 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom
-      styles and localized style names. To use the built-in styles that are portable between locales, see the
-      "styleBuiltIn" property.
+      For EACH ITEM in the collection: Specifies the style name for the paragraph. Use this property for custom styles
+      and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
+      property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -374,7 +374,7 @@ properties:
     package: word!
     fullName: styleBuiltIn
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for
+      For EACH ITEM in the collection: Specifies the built-in style name for the paragraph. Use this property for
       built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
       property.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

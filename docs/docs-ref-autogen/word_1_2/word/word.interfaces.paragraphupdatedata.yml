@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#alignment:member'
     package: word!
     fullName: alignment
-    summary: 'Gets or sets the alignment for a paragraph. The value can be ''left'', ''centered'', ''right'', or ''justified''.'
+    summary: 'Specifies the alignment for a paragraph. The value can be ''left'', ''centered'', ''right'', or ''justified''.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -26,7 +26,7 @@ properties:
     package: word!
     fullName: firstLineIndent
     summary: >-
-      Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
+      Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#leftIndent:member'
     package: word!
     fullName: leftIndent
-    summary: 'Gets or sets the left indent value, in points, for the paragraph.'
+    summary: 'Specifies the left indent value, in points, for the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,9 +63,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#lineSpacing:member'
     package: word!
     fullName: lineSpacing
-    summary: >-
-      Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
-      12.
+    summary: 'Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +75,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#lineUnitAfter:member'
     package: word!
     fullName: lineUnitAfter
-    summary: 'Gets or sets the amount of spacing, in grid lines, after the paragraph.'
+    summary: 'Specifies the amount of spacing, in grid lines, after the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +87,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#lineUnitBefore:member'
     package: word!
     fullName: lineUnitBefore
-    summary: 'Gets or sets the amount of spacing, in grid lines, before the paragraph.'
+    summary: 'Specifies the amount of spacing, in grid lines, before the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,7 +99,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#outlineLevel:member'
     package: word!
     fullName: outlineLevel
-    summary: Gets or sets the outline level for the paragraph.
+    summary: Specifies the outline level for the paragraph.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -113,7 +111,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#rightIndent:member'
     package: word!
     fullName: rightIndent
-    summary: 'Gets or sets the right indent value, in points, for the paragraph.'
+    summary: 'Specifies the right indent value, in points, for the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -125,7 +123,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#spaceAfter:member'
     package: word!
     fullName: spaceAfter
-    summary: 'Gets or sets the spacing, in points, after the paragraph.'
+    summary: 'Specifies the spacing, in points, after the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -137,7 +135,7 @@ properties:
     uid: 'word!Word.Interfaces.ParagraphUpdateData#spaceBefore:member'
     package: word!
     fullName: spaceBefore
-    summary: 'Gets or sets the spacing, in points, before the paragraph.'
+    summary: 'Specifies the spacing, in points, before the paragraph.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -150,8 +148,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
-      use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
