@@ -40,7 +40,8 @@
 ||[getStyles()](/javascript/api/word/word.document#word-word-document-getstyles-member(1))|Gets a StyleCollection object that represents the whole style set of the document.|
 ||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End", insertFileOptions?: Word.InsertFileOptions)](/javascript/api/word/word.document#word-word-document-insertfilefrombase64-member(1))|Inserts a document into the target document at a specific location with additional properties.|
 ||[onContentControlAdded](/javascript/api/word/word.document#word-word-document-oncontentcontroladded-member)|Occurs when a content control is added.|
-||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.document#word-word-document-save-member(1))|Saves the document.||[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Specifies the field's code instruction.|
+||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.document#word-word-document-save-member(1))|Saves the document.|
+|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Specifies the field's code instruction.|
 ||[data](/javascript/api/word/word.field#word-word-field-data-member)|Specifies data in an "Addin" field.|
 ||[delete()](/javascript/api/word/word.field#word-word-field-delete-member(1))|Deletes the field.|
 ||[kind](/javascript/api/word/word.field#word-word-field-kind-member)|Gets the field's kind.|
