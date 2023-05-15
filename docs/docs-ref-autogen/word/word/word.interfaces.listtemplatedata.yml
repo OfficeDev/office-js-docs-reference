@@ -25,7 +25,7 @@ properties:
     uid: 'word!Word.Interfaces.ListTemplateData#outlineNumbered:member'
     package: word!
     fullName: outlineNumbered
-    summary: Gets or sets whether the specified ListTemplate object is outline numbered.
+    summary: Specifies whether the specified ListTemplate object is outline numbered.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

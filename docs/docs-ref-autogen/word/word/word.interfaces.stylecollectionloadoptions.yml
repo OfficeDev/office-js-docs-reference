@@ -161,7 +161,7 @@ properties:
     uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#priority:member'
     package: word!
     fullName: priority
-    summary: 'For EACH ITEM in the collection: Gets or sets the priority.'
+    summary: 'For EACH ITEM in the collection: Specifies the priority.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -173,7 +173,7 @@ properties:
     uid: 'word!Word.Interfaces.StyleCollectionLoadOptions#quickStyle:member'
     package: word!
     fullName: quickStyle
-    summary: 'For EACH ITEM in the collection: Gets or sets whether the style corresponds to an available quick style.'
+    summary: 'For EACH ITEM in the collection: Specifies whether the style corresponds to an available quick style.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -198,8 +198,8 @@ properties:
     package: word!
     fullName: unhideWhenUsed
     summary: >-
-      For EACH ITEM in the collection: Gets or sets whether the specified style is made visible as a recommended style
-      in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
+      For EACH ITEM in the collection: Specifies whether the specified style is made visible as a recommended style in
+      the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -212,7 +212,7 @@ properties:
     package: word!
     fullName: visibility
     summary: >-
-      For EACH ITEM in the collection: Gets or sets whether the specified style is visible as a recommended style in the
+      For EACH ITEM in the collection: Specifies whether the specified style is visible as a recommended style in the
       Styles gallery and in the Styles task pane.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true

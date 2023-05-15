@@ -54,8 +54,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
-      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the body. Use this property for custom styles and localized style names. To use the
+      built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

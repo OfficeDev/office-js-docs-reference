@@ -9,6 +9,18 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: code
+    uid: 'word!Word.Interfaces.FieldUpdateData#code:member'
+    package: word!
+    fullName: code
+    summary: Specifies the field's code instruction.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string;'
+      return:
+        type: string
   - name: result
     uid: 'word!Word.Interfaces.FieldUpdateData#result:member'
     package: word!

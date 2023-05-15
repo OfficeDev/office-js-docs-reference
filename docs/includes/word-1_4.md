@@ -5,30 +5,30 @@
 ||[getReviewedText(changeTrackingVersion?: Word.ChangeTrackingVersion)](/javascript/api/word/word.body#word-word-body-getreviewedtext-member(1))|Gets reviewed text based on ChangeTrackingVersion selection.|
 |[Comment](/javascript/api/word/word.comment)|[authorEmail](/javascript/api/word/word.comment#word-word-comment-authoremail-member)|Gets the email of the comment's author.|
 ||[authorName](/javascript/api/word/word.comment#word-word-comment-authorname-member)|Gets the name of the comment's author.|
-||[content](/javascript/api/word/word.comment#word-word-comment-content-member)|Gets or sets the comment's content as plain text.|
-||[contentRange](/javascript/api/word/word.comment#word-word-comment-contentrange-member)|Gets or sets the comment's content range.|
+||[content](/javascript/api/word/word.comment#word-word-comment-content-member)|Specifies the comment's content as plain text.|
+||[contentRange](/javascript/api/word/word.comment#word-word-comment-contentrange-member)|Specifies the comment's content range.|
 ||[creationDate](/javascript/api/word/word.comment#word-word-comment-creationdate-member)|Gets the creation date of the comment.|
 ||[delete()](/javascript/api/word/word.comment#word-word-comment-delete-member(1))|Deletes the comment and its replies.|
 ||[getRange()](/javascript/api/word/word.comment#word-word-comment-getrange-member(1))|Gets the range in the main document where the comment is on.|
 ||[id](/javascript/api/word/word.comment#word-word-comment-id-member)|Gets the ID of the comment.|
 ||[replies](/javascript/api/word/word.comment#word-word-comment-replies-member)|Gets the collection of reply objects associated with the comment.|
 ||[reply(replyText: string)](/javascript/api/word/word.comment#word-word-comment-reply-member(1))|Adds a new reply to the end of the comment thread.|
-||[resolved](/javascript/api/word/word.comment#word-word-comment-resolved-member)|Gets or sets the comment thread's status.|
+||[resolved](/javascript/api/word/word.comment#word-word-comment-resolved-member)|Specifies the comment thread's status.|
 |[CommentCollection](/javascript/api/word/word.commentcollection)|[getFirst()](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirst-member(1))|Gets the first comment in the collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.commentcollection#word-word-commentcollection-getfirstornullobject-member(1))|Gets the first comment in the collection.|
 ||[items](/javascript/api/word/word.commentcollection#word-word-commentcollection-items-member)|Gets the loaded child items in this collection.|
-|[CommentContentRange](/javascript/api/word/word.commentcontentrange)|[bold](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-bold-member)|Gets or sets a value that indicates whether the comment text is bold.|
+|[CommentContentRange](/javascript/api/word/word.commentcontentrange)|[bold](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-bold-member)|Specifies a value that indicates whether the comment text is bold.|
 ||[hyperlink](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-hyperlink-member)|Gets the first hyperlink in the range, or sets a hyperlink on the range.|
 ||[insertText(text: string, insertLocation: Word.InsertLocation \| "Replace" \| "Start" \| "End" \| "Before" \| "After")](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-inserttext-member(1))|Inserts text into at the specified location.|
 ||[isEmpty](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-isempty-member)|Checks whether the range length is zero.|
-||[italic](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-italic-member)|Gets or sets a value that indicates whether the comment text is italicized.|
-||[strikeThrough](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-strikethrough-member)|Gets or sets a value that indicates whether the comment text has a strikethrough.|
+||[italic](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-italic-member)|Specifies a value that indicates whether the comment text is italicized.|
+||[strikeThrough](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-strikethrough-member)|Specifies a value that indicates whether the comment text has a strikethrough.|
 ||[text](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-text-member)|Gets the text of the comment range.|
-||[underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)|Gets or sets a value that indicates the comment text's underline type.|
+||[underline](/javascript/api/word/word.commentcontentrange#word-word-commentcontentrange-underline-member)|Specifies a value that indicates the comment text's underline type.|
 |[CommentReply](/javascript/api/word/word.commentreply)|[authorEmail](/javascript/api/word/word.commentreply#word-word-commentreply-authoremail-member)|Gets the email of the comment reply's author.|
 ||[authorName](/javascript/api/word/word.commentreply#word-word-commentreply-authorname-member)|Gets the name of the comment reply's author.|
-||[content](/javascript/api/word/word.commentreply#word-word-commentreply-content-member)|Gets or sets the comment reply's content.|
-||[contentRange](/javascript/api/word/word.commentreply#word-word-commentreply-contentrange-member)|Gets or sets the commentReply's content range.|
+||[content](/javascript/api/word/word.commentreply#word-word-commentreply-content-member)|Specifies the comment reply's content.|
+||[contentRange](/javascript/api/word/word.commentreply#word-word-commentreply-contentrange-member)|Specifies the commentReply's content range.|
 ||[creationDate](/javascript/api/word/word.commentreply#word-word-commentreply-creationdate-member)|Gets the creation date of the comment reply.|
 ||[delete()](/javascript/api/word/word.commentreply#word-word-commentreply-delete-member(1))|Deletes the comment reply.|
 ||[id](/javascript/api/word/word.commentreply#word-word-commentreply-id-member)|Gets the ID of the comment reply.|
@@ -63,7 +63,7 @@
 ||[getOnlyItem()](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitem-member(1))|If the collection contains exactly one item, this method returns it.|
 ||[getOnlyItemOrNullObject()](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-getonlyitemornullobject-member(1))|If the collection contains exactly one item, this method returns it.|
 ||[items](/javascript/api/word/word.customxmlpartscopedcollection#word-word-customxmlpartscopedcollection-items-member)|Gets the loaded child items in this collection.|
-|[Document](/javascript/api/word/word.document)|[changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)|Gets or sets the ChangeTracking mode.|
+|[Document](/javascript/api/word/word.document)|[changeTrackingMode](/javascript/api/word/word.document#word-word-document-changetrackingmode-member)|Specifies the ChangeTracking mode.|
 ||[customXmlParts](/javascript/api/word/word.document#word-word-document-customxmlparts-member)|Gets the custom XML parts in the document.|
 ||[deleteBookmark(name: string)](/javascript/api/word/word.document#word-word-document-deletebookmark-member(1))|Deletes a bookmark, if it exists, from the document.|
 ||[getBookmarkRange(name: string)](/javascript/api/word/word.document#word-word-document-getbookmarkrange-member(1))|Gets a bookmark's range.|
@@ -94,7 +94,7 @@
 ||[insertComment(commentText: string)](/javascript/api/word/word.range#word-word-range-insertcomment-member(1))|Insert a comment on the range.|
 |[Setting](/javascript/api/word/word.setting)|[delete()](/javascript/api/word/word.setting#word-word-setting-delete-member(1))|Deletes the setting.|
 ||[key](/javascript/api/word/word.setting#word-word-setting-key-member)|Gets the key of the setting.|
-||[value](/javascript/api/word/word.setting#word-word-setting-value-member)|Gets or sets the value of the setting.|
+||[value](/javascript/api/word/word.setting#word-word-setting-value-member)|Specifies the value of the setting.|
 |[SettingCollection](/javascript/api/word/word.settingcollection)|[add(key: string, value: any)](/javascript/api/word/word.settingcollection#word-word-settingcollection-add-member(1))|Creates a new setting or sets an existing setting.|
 ||[deleteAll()](/javascript/api/word/word.settingcollection#word-word-settingcollection-deleteall-member(1))|Deletes all settings in this add-in.|
 ||[getCount()](/javascript/api/word/word.settingcollection#word-word-settingcollection-getcount-member(1))|Gets the count of settings.|
