@@ -34,7 +34,13 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.5-hidden-document&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_5_hidden_document.md)]
+| Class | Fields | Description |
+|:---|:---|:---|
+|[DocumentCreated](/javascript/api/word/word.documentcreated)|[addStyle(name: string, type: Word.StyleType)](/javascript/api/word/word.documentcreated#word-word-documentcreated-addstyle-member(1))|Adds a style into the document by name and type.|
+||[getContentControls(options?: Word.ContentControlOptions)](/javascript/api/word/word.documentcreated#word-word-documentcreated-getcontentcontrols-member(1))|Gets the currently supported content controls in the document.|
+||[getStyles()](/javascript/api/word/word.documentcreated#word-word-documentcreated-getstyles-member(1))|Gets a StyleCollection object that represents the whole style set of the document.|
+||[insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace \| Word.InsertLocation.start \| Word.InsertLocation.end \| "Replace" \| "Start" \| "End", insertFileOptions?: Word.InsertFileOptions)](/javascript/api/word/word.documentcreated#word-word-documentcreated-insertfilefrombase64-member(1))|Inserts a document into the target document at a specific location with additional properties.|
+||[save(saveBehavior?: Word.SaveBehavior, fileName?: string)](/javascript/api/word/word.documentcreated#word-word-documentcreated-save-member(1))|Saves the document.|
 
 ## See also
 
