@@ -69,7 +69,7 @@
 ||[getBookmarkRange(name: string)](/javascript/api/word/word.document#word-word-document-getbookmarkrange-member(1))|Gets a bookmark's range.|
 ||[getBookmarkRangeOrNullObject(name: string)](/javascript/api/word/word.document#word-word-document-getbookmarkrangeornullobject-member(1))|Gets a bookmark's range.|
 ||[settings](/javascript/api/word/word.document#word-word-document-settings-member)|Gets the add-in's settings in the document.|
-|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Specifies the field's code instruction.|
+|[Field](/javascript/api/word/word.field)|[code](/javascript/api/word/word.field#word-word-field-code-member)|Gets the field's code instruction.|
 ||[getNext()](/javascript/api/word/word.field#word-word-field-getnext-member(1))|Gets the next field.|
 ||[getNextOrNullObject()](/javascript/api/word/word.field#word-word-field-getnextornullobject-member(1))|Gets the next field.|
 ||[parentBody](/javascript/api/word/word.field#word-word-field-parentbody-member)|Gets the parent body of the field.|
