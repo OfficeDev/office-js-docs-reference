@@ -68,7 +68,7 @@ Each resource can have one or more **\<Override\>** child elements to define a d
   <bt:Images>
     <!-- Blue icon -->
     <bt:Image id="blue-icon-16" DefaultValue="YOUR_WEB_SERVER/blue-16.png"/>
-    <bt:Image id="blue-icon-32" DefaultValue="YOUR_WEB_SERVER//blue-32.png"/>
+    <bt:Image id="blue-icon-32" DefaultValue="YOUR_WEB_SERVER/blue-32.png"/>
     <bt:Image id="blue-icon-80" DefaultValue="YOUR_WEB_SERVER/blue-80.png"/>
   </bt:Images>
   <bt:Urls>
