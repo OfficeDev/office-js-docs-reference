@@ -12,7 +12,7 @@ remarks: |-
 
   #### Examples
 
-  ```typescript
+  ```TypeScript
   // Run a batch operation against the Word object model.
   await Word.run(async (context) => {
 
@@ -76,7 +76,7 @@ properties:
     uid: 'word!Word.ContentControl#appearance:member'
     package: word!
     fullName: appearance
-    summary: 'Gets or sets the appearance of the content control. The value can be ''BoundingBox'', ''Tags'', or ''Hidden''.'
+    summary: 'Specifies the appearance of the content control. The value can be ''BoundingBox'', ''Tags'', or ''Hidden''.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -89,7 +89,7 @@ properties:
     package: word!
     fullName: cannotDelete
     summary: >-
-      Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
+      Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -102,7 +102,7 @@ properties:
     uid: 'word!Word.ContentControl#cannotEdit:member'
     package: word!
     fullName: cannotEdit
-    summary: Gets or sets a value that indicates whether the user can edit the contents of the content control.
+    summary: Specifies a value that indicates whether the user can edit the contents of the content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -114,7 +114,7 @@ properties:
     uid: 'word!Word.ContentControl#color:member'
     package: word!
     fullName: color
-    summary: 'Gets or sets the color of the content control. Color is specified in ''\#RRGGBB'' format or by using the color name.'
+    summary: 'Specifies the color of the content control. Color is specified in ''\#RRGGBB'' format or by using the color name.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -203,8 +203,8 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and 1.2,
-      paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
+      Gets the collection of paragraph objects in the content control. **Important**: For requirement sets 1.1 and
+      1.2, paragraphs in tables wholly contained within this content control are not returned. From requirement set 1.3,
       paragraphs in such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -323,8 +323,8 @@ properties:
     package: word!
     fullName: placeholderText
     summary: >-
-      Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
-      is empty. **Note**: The set operation for this property is not supported in Word on the web.
+      Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
+      empty. **Note**: The set operation for this property is not supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -337,7 +337,7 @@ properties:
     package: word!
     fullName: removeWhenEdited
     summary: >-
-      Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
+      Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -351,8 +351,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the content control. Use this property for custom styles and localized style
-      names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the content control. Use this property for custom styles and localized style names.
+      To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -365,8 +365,8 @@ properties:
     package: word!
     fullName: styleBuiltIn
     summary: >-
-      Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
-      portable between locales. To use custom styles or localized style names, see the "style" property.
+      Specifies the built-in style name for the content control. Use this property for built-in styles that are portable
+      between locales. To use custom styles or localized style names, see the "style" property.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -475,7 +475,7 @@ properties:
     uid: 'word!Word.ContentControl#tag:member'
     package: word!
     fullName: tag
-    summary: Gets or sets a tag to identify a content control.
+    summary: Specifies a tag to identify a content control.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -483,7 +483,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
@@ -533,7 +533,7 @@ properties:
     uid: 'word!Word.ContentControl#title:member'
     package: word!
     fullName: title
-    summary: Gets or sets the title for a content control.
+    summary: Specifies the title for a content control.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -572,7 +572,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -618,7 +618,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Run a batch operation against the Word object model.
 
@@ -650,7 +650,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
@@ -699,7 +699,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -743,7 +743,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -831,7 +831,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -917,7 +917,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1002,7 +1002,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1062,7 +1062,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1154,7 +1154,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1227,7 +1227,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Load all of the content control properties
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
@@ -1342,7 +1342,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -1464,7 +1464,7 @@ methods:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml

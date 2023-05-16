@@ -7,8 +7,8 @@ summary: >-
   Specifies the category color.
 
 
-  **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset
-  are for the Outlook desktop client.
+  **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each
+  preset are for the Outlook desktop client.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -21,7 +21,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/45-categories/work-with-master-categories.yaml

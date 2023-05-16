@@ -26,7 +26,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // In this example, consider a button defined in an add-in manifest.
           // The following is the XML manifest definition. Below it is the Teams 
           // manifest (preview) definition.
@@ -126,7 +126,7 @@ properties:
               event.completed();
           }
           ```
-          ```javascript
+          ```TypeScript
           // Function is used by two buttons:
           // button1 and button2
           function multiButton (event) {

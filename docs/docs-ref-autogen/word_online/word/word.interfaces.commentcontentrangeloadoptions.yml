@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentContentRangeLoadOptions#bold:member'
     package: word!
     fullName: bold
-    summary: Gets or sets a value that indicates whether the comment text is bold.
+    summary: Specifies a value that indicates whether the comment text is bold.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -65,7 +65,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentContentRangeLoadOptions#italic:member'
     package: word!
     fullName: italic
-    summary: Gets or sets a value that indicates whether the comment text is italicized.
+    summary: Specifies a value that indicates whether the comment text is italicized.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -77,7 +77,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentContentRangeLoadOptions#strikeThrough:member'
     package: word!
     fullName: strikeThrough
-    summary: Gets or sets a value that indicates whether the comment text has a strikethrough.
+    summary: Specifies a value that indicates whether the comment text has a strikethrough.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -101,9 +101,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentContentRangeLoadOptions#underline:member'
     package: word!
     fullName: underline
-    summary: >-
-      Gets or sets a value that indicates the comment text's underline type. 'None' if the comment text is not
-      underlined.
+    summary: Specifies a value that indicates the comment text's underline type. 'None' if the comment text is not underlined.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

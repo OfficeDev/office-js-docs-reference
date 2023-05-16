@@ -28,7 +28,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showXMLPartBuiltIn() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -59,7 +59,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function showXMLPartBuiltId() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -92,7 +92,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function setXMLPartNamespaceManagerNamespace() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -162,7 +162,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
 
@@ -184,7 +184,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // To add an event handler for the NodeInserted event, use the addHandlerAsync method of the CustomXmlPart object.
 
@@ -206,7 +206,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // To add an event handler for the NodeReplaced event, use the addHandlerAsync method of the CustomXmlPart object.
 
@@ -292,7 +292,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function deleteXMLPart() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -370,7 +370,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showXmlNodeType() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -450,7 +450,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function showXMLPartInnerXML() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -531,7 +531,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function removeNodeInsertedEventHandler() {
           Office.context.document.customXmlParts.getByIdAsync(

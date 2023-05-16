@@ -65,7 +65,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
@@ -122,7 +122,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -174,7 +174,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
               
@@ -256,7 +256,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           

@@ -959,7 +959,7 @@ functions:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const myFile = <HTMLInputElement>document.getElementById("file");
           const reader = new FileReader();
 

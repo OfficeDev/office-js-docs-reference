@@ -56,8 +56,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
-      and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
+      For EACH ITEM in the collection: Specifies the style name for the range. Use this property for custom styles and
+      localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
       property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

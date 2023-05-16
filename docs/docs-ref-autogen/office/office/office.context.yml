@@ -51,8 +51,8 @@ properties:
     fullName: contentLanguage
     summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
-      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt; **Options**
-      &gt; **Language** in the Office application.
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File** &gt;
+      **Options** &gt; **Language** in the Office application.
 
 
       **Support details**
@@ -62,20 +62,20 @@ properties:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> </td></tr>
-      <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td><td>
-      Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td> </td><td>
-      </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td>
-      Supported </td><td> </td><td> </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
+      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td>
+      </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function sayHelloWithContentLanguage() {
           const myContentLanguage = Office.context.contentLanguage;
@@ -117,7 +117,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       const contextInfo = Office.context.diagnostics;
 
@@ -157,20 +157,20 @@ properties:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
-      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
-      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td> Supported
-      </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported
-      </td><td> </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
+      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td>
+      Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
+      Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td>
+      Supported </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td>
+      Supported </td><td> </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function sayHelloWithDisplayLanguage() {
           const myDisplayLanguage = Office.context.displayLanguage;
@@ -214,7 +214,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // Extension initialization code.
           let _document;
 
@@ -264,13 +264,13 @@ properties:
     summary: Provides access to the Microsoft Outlook add-in object model.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       **Key properties**:
@@ -288,7 +288,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following line of code access the item object of the JavaScript API for Office.
 
@@ -318,7 +318,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function applyOfficeTheme(){
               // Get office theme colors.
               const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
@@ -373,19 +373,19 @@ properties:
       so it's available to that add-in when it is running from any client application used to access that mailbox.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Get the current value of the 'myKey' setting.
 
@@ -415,19 +415,19 @@ properties:
       sensitivity labels if the catalog is enabled.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Check if the catalog of sensitivity labels is enabled on the current mailbox.
 

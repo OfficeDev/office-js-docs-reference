@@ -34,7 +34,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // This example shows how to get the paragraphs in the Word document
 
@@ -129,7 +129,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // This OneNote example shows how to get the page title and indentation level
           // of the top five pages in the current section.
           OneNote.run(function (context) {

@@ -29,7 +29,7 @@ properties:
     uid: 'word!Word.Document#changeTrackingMode:member'
     package: word!
     fullName: changeTrackingMode
-    summary: Gets or sets the ChangeTracking mode.
+    summary: Specifies the ChangeTracking mode.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -37,7 +37,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
@@ -117,7 +117,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
@@ -175,7 +175,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
@@ -339,9 +339,9 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the document. **Important**: If specific types are provided in
-      the options parameter, only content controls of supported types are returned. Be aware that an exception will be
-      thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
+      Gets the currently supported content controls in the document. **Important**: If specific types are provided
+      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
+      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -392,7 +392,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -487,7 +487,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
               
@@ -567,9 +567,11 @@ methods:
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -615,7 +617,10 @@ methods:
     package: word!
     fullName: 'save(saveBehaviorString, fileName)'
     summary: Saves the document.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
     isPreview: false
     isDeprecated: false
     syntax:

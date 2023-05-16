@@ -90,7 +90,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -142,7 +142,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
               
@@ -224,7 +224,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           

@@ -14,14 +14,14 @@ properties:
     package: word!
     fullName: bold
     summary: >-
-      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
       false.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Bold format text
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -48,15 +48,13 @@ properties:
     uid: 'word!Word.Font#color:member'
     package: word!
     fullName: color
-    summary: >-
-      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
-      name.
+    summary: 'Specifies the color for the specified font. You can provide the value in the ''\#RRGGBB'' format or the color name.'
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Change the font color
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -98,7 +96,7 @@ properties:
     package: word!
     fullName: doubleStrikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
+      Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -112,18 +110,18 @@ properties:
     package: word!
     fullName: highlightColor
     summary: >-
-      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
-      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
-      string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are
-      available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red",
-      "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs
-      in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+      Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
+      highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty string for
+      mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in
+      Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal",
+      "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for
+      Windows Desktop, any other color is converted to the closest color when applied to the font.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Highlight selected text
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -150,9 +148,7 @@ properties:
     uid: 'word!Word.Font#italic:member'
     package: word!
     fullName: italic
-    summary: >-
-      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
-      false.
+    summary: 'Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -164,13 +160,13 @@ properties:
     uid: 'word!Word.Font#name:member'
     package: word!
     fullName: name
-    summary: Gets or sets a value that represents the name of the font.
+    summary: Specifies a value that represents the name of the font.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Change the font name
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -197,13 +193,13 @@ properties:
     uid: 'word!Word.Font#size:member'
     package: word!
     fullName: size
-    summary: Gets or sets a value that represents the font size in points.
+    summary: Specifies a value that represents the font size in points.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Change the font size
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -231,14 +227,14 @@ properties:
     package: word!
     fullName: strikeThrough
     summary: >-
-      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
+      Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Strike format text
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -266,7 +262,7 @@ properties:
     package: word!
     fullName: subscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
       otherwise, false.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
@@ -280,8 +276,8 @@ properties:
     package: word!
     fullName: superscript
     summary: >-
-      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
-      superscript, otherwise, false.
+      Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript,
+      otherwise, false.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -293,13 +289,13 @@ properties:
     uid: 'word!Word.Font#underline:member'
     package: word!
     fullName: underline
-    summary: Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+    summary: Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Underline format text
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
