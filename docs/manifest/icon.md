@@ -64,8 +64,8 @@ When the parent **\<Icon\>** element is a descendant of a [MobileFormFactor](mob
   <bt:Image resid="blue-icon-32-1" size="32" scale="1" />
   <bt:Image resid="blue-icon-32-2" size="32" scale="2" />
   <bt:Image resid="blue-icon-32-3" size="32" scale="3" />
-  <bt:Image resid="blue-icon-80-1" size="48" scale="1" />
-  <bt:Image resid="blue-icon-80-2" size="48" scale="2" />
-  <bt:Image resid="blue-icon-80-3" size="48" scale="3" />
+  <bt:Image resid="blue-icon-48-1" size="48" scale="1" />
+  <bt:Image resid="blue-icon-48-2" size="48" scale="2" />
+  <bt:Image resid="blue-icon-48-3" size="48" scale="3" />
 </Icon>
 ```
