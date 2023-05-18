@@ -153,6 +153,7 @@
 ||[getNextOrNullObject()](/javascript/api/word/word.section#word-word-section-getnextornullobject-member(1))|Gets the next section.|
 |[SectionCollection](/javascript/api/word/word.sectioncollection)|[getFirst()](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirst-member(1))|Gets the first section in this collection.|
 ||[getFirstOrNullObject()](/javascript/api/word/word.sectioncollection#word-word-sectioncollection-getfirstornullobject-member(1))|Gets the first section in this collection.|
+|[Style](/javascript/api/word/word.style)|||
 |[Table](/javascript/api/word/word.table)|[addColumns(insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", columnCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addcolumns-member(1))|Adds columns to the start or end of the table, using the first or last existing column as a template.|
 ||[addRows(insertLocation: Word.InsertLocation.start \| Word.InsertLocation.end \| "Start" \| "End", rowCount: number, values?: string[][])](/javascript/api/word/word.table#word-word-table-addrows-member(1))|Adds rows to the start or end of the table, using the first or last existing row as a template.|
 ||[alignment](/javascript/api/word/word.table#word-word-table-alignment-member)|Specifies the alignment of the table against the page column.|
