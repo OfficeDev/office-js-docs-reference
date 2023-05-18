@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyUpdateData
+uid: 'word!Word.Interfaces.CommentReplyUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.CommentReplyUpdateData
+summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: 'word!Word.Interfaces.CommentReplyUpdateData#content:member'
+    package: word!
+    fullName: content
+    summary: Specifies the comment reply's content. The string is plain text.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string;'
+      return:
+        type: string
+  - name: contentRange
+    uid: 'word!Word.Interfaces.CommentReplyUpdateData#contentRange:member'
+    package: word!
+    fullName: contentRange
+    summary: Specifies the commentReply's content range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
+  - name: parentComment
+    uid: 'word!Word.Interfaces.CommentReplyUpdateData#parentComment:member'
+    package: word!
+    fullName: parentComment
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentComment?: Word.Interfaces.CommentUpdateData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CommentUpdateData:interface" />'

@@ -13,9 +13,12 @@ properties:
     uid: 'word!Word.Field#code:member'
     package: word!
     fullName: code
-    summary: Gets the field's code instruction.
+    summary: Specifies the field's code instruction.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
 
 
       #### Examples
@@ -26,19 +29,22 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets the first field in the document body.
+      // Gets the first field in the document.
 
       await Word.run(async (context) => {
         const field = context.document.body.fields.getFirstOrNullObject();
-        field.load(["code", "result"]);
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
 
         if (field.isNullObject) {
-          console.log("There are no fields in this document.");
+          console.log("This document has no fields.");
         } else {
           console.log("Code of first field: " + field.code);
           console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("Type of first field: " + field.type);
+          console.log("Is the first field locked? " + field.locked);
+          console.log("Kind of the first field: " + field.kind);
         }
       });
 
@@ -46,7 +52,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'readonly code: string;'
+      content: 'code: string;'
       return:
         type: string
   - name: context
@@ -210,19 +216,22 @@ properties:
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-      // Gets the first field in the document body.
+      // Gets the first field in the document.
 
       await Word.run(async (context) => {
         const field = context.document.body.fields.getFirstOrNullObject();
-        field.load(["code", "result"]);
+        field.load(["code", "result", "locked", "type", "data", "kind"]);
 
         await context.sync();
 
         if (field.isNullObject) {
-          console.log("There are no fields in this document.");
+          console.log("This document has no fields.");
         } else {
           console.log("Code of first field: " + field.code);
           console.log("Result of first field: " + JSON.stringify(field.result));
+          console.log("Type of first field: " + field.type);
+          console.log("Is the first field locked? " + field.locked);
+          console.log("Kind of the first field: " + field.kind);
         }
       });
 

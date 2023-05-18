@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: Word.ContentControlDeletedEventArgs
+uid: 'word!Word.ContentControlDeletedEventArgs:interface'
+package: word!
+fullName: Word.ContentControlDeletedEventArgs
+summary: Provides information about the content control that raised contentControlDeleted event.
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: eventType
+    uid: 'word!Word.ContentControlDeletedEventArgs#eventType:member'
+    package: word!
+    fullName: eventType
+    summary: The event type. See Word.EventType for details.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+          console.log(event.ids);
+        });
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited";
+      return:
+        type: >-
+          <xref uid="word!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "ContentControlEntered" | "ContentControlExited"
+  - name: ids
+    uid: 'word!Word.ContentControlDeletedEventArgs#ids:member'
+    package: word!
+    fullName: ids
+    summary: Gets the content control IDs.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+          console.log(event.ids);
+        });
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ids: number[];'
+      return:
+        type: 'number[]'
+  - name: source
+    uid: 'word!Word.ContentControlDeletedEventArgs#source:member'
+    package: word!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="word!Word.EventSource:enum" /> | "Local" | "Remote"'

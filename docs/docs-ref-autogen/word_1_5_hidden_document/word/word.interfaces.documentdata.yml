@@ -1,0 +1,113 @@
+### YamlMime:TSType
+name: Word.Interfaces.DocumentData
+uid: 'word!Word.Interfaces.DocumentData:interface'
+package: word!
+fullName: Word.Interfaces.DocumentData
+summary: An interface describing the data returned by calling `document.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'word!Word.Interfaces.DocumentData#body:member'
+    package: word!
+    fullName: body
+    summary: >-
+      Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
+      textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.BodyData:interface" />'
+  - name: changeTrackingMode
+    uid: 'word!Word.Interfaces.DocumentData#changeTrackingMode:member'
+    package: word!
+    fullName: changeTrackingMode
+    summary: Specifies the ChangeTracking mode.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      return:
+        type: '<xref uid="word!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
+  - name: contentControls
+    uid: 'word!Word.Interfaces.DocumentData#contentControls:member'
+    package: word!
+    fullName: contentControls
+    summary: >-
+      Gets the collection of content control objects in the document. This includes content controls in the body of the
+      document, headers, footers, textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.ContentControlData:interface" />[]'
+  - name: customXmlParts
+    uid: 'word!Word.Interfaces.DocumentData#customXmlParts:member'
+    package: word!
+    fullName: customXmlParts
+    summary: Gets the custom XML parts in the document.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.CustomXmlPartData:interface" />[]'
+  - name: properties
+    uid: 'word!Word.Interfaces.DocumentData#properties:member'
+    package: word!
+    fullName: properties
+    summary: Gets the properties of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.DocumentPropertiesData:interface" />'
+  - name: saved
+    uid: 'word!Word.Interfaces.DocumentData#saved:member'
+    package: word!
+    fullName: saved
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
+      changed since it was saved.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'saved?: boolean;'
+      return:
+        type: boolean
+  - name: sections
+    uid: 'word!Word.Interfaces.DocumentData#sections:member'
+    package: word!
+    fullName: sections
+    summary: Gets the collection of section objects in the document.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sections?: Word.Interfaces.SectionData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.SectionData:interface" />[]'
+  - name: settings
+    uid: 'word!Word.Interfaces.DocumentData#settings:member'
+    package: word!
+    fullName: settings
+    summary: Gets the add-in's settings in the document.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'settings?: Word.Interfaces.SettingData[];'
+      return:
+        type: '<xref uid="word!Word.Interfaces.SettingData:interface" />[]'
