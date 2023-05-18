@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
   bounded and potentially labeled regions in a document that serve as containers for specific types of content.
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
-  only rich text content controls are supported.
+  only rich text and plain text content controls are supported.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -208,8 +208,8 @@ properties:
     package: word!
     fullName: type
     summary: >-
-      For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported
-      currently.
+      For EACH ITEM in the collection: Gets the content control type. Only rich text and plain text content controls are
+      supported currently.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

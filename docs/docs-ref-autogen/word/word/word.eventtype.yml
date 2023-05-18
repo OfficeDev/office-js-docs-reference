@@ -5,7 +5,7 @@ package: word!
 fullName: Word.EventType
 summary: Provides information about the type of a raised event.
 remarks: >-
-  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+  \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
   #### Examples
@@ -14,12 +14,12 @@ remarks: >-
   ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
-  async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+  async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
     await Word.run(async (context) => {
-      // Display the deleted content control's ID.
-      console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+      console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+      console.log(event.ids);
     });
   }
 
@@ -73,7 +73,7 @@ fields:
     summary: |-
       ContentControlAdded represents the event a content control has been added to the document.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlAdded"'
   - name: contentControlDataChanged
     uid: 'word!Word.EventType.contentControlDataChanged:member'
@@ -81,7 +81,7 @@ fields:
     summary: |-
       ContentControlDataChanged represents the event that the data in the content control have been changed.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDataChanged"'
   - name: contentControlDeleted
     uid: 'word!Word.EventType.contentControlDeleted:member'
@@ -89,7 +89,7 @@ fields:
     summary: |-
       ContentControlDeleted represents the event that the content control has been deleted.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlDeleted"'
   - name: contentControlEntered
     uid: 'word!Word.EventType.contentControlEntered:member'
@@ -97,7 +97,7 @@ fields:
     summary: |-
       Represents that a content control has been entered.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlEntered"'
   - name: contentControlExited
     uid: 'word!Word.EventType.contentControlExited:member'
@@ -105,7 +105,7 @@ fields:
     summary: |-
       Represents that a content control has been exited.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlExited"'
   - name: contentControlSelectionChanged
     uid: 'word!Word.EventType.contentControlSelectionChanged:member'
@@ -113,5 +113,5 @@ fields:
     summary: |-
       ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
 
-      * \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      * \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
     value: '"ContentControlSelectionChanged"'

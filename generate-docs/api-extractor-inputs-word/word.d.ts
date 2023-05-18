@@ -27,8 +27,7 @@ export declare namespace Word {
          * Parse styles from template Base64 file and return JSON format of retrieved styles as a string.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param base64File - Required. The template file.
          */
@@ -65,7 +64,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the body.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -86,7 +85,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the body.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -215,8 +214,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -277,6 +275,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
          *
          * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
@@ -956,7 +956,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the content control.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -977,7 +977,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the content control.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -1192,8 +1192,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -1444,50 +1443,45 @@ export declare namespace Word {
          * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlDataChangedEventArgs>;
         /**
          * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlDeletedEventArgs>;
         /**
          * Occurs when the content control is entered.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onEntered: OfficeExtension.EventHandlers<Word.ContentControlEnteredEventArgs>;
         /**
          * Occurs when the content control is exited, for example, when the cursor leaves the content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onExited: OfficeExtension.EventHandlers<Word.ContentControlExitedEventArgs>;
         /**
          * Occurs when selection within the content control is changed.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlSelectionChangedEventArgs>;
         /**
@@ -1519,8 +1513,7 @@ export declare namespace Word {
          * Gets the content controls that have the specified tracking state.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param changeTrackingStates - Required. An array of content control change tracking states.
          */
@@ -1629,16 +1622,14 @@ export declare namespace Word {
      * Specifies the options that define which content controls are returned.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlOptions {
         /**
          * An array of content control types, item must be 'RichText' or 'PlainText'.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         types: Word.ContentControlType[];
     }
@@ -2331,8 +2322,7 @@ export declare namespace Word {
          * Adds a style into the document by name and type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param name - Required. A string representing the style name.
          * @param type - Required. The style type, including character, list, paragraph, or table.
@@ -2342,8 +2332,7 @@ export declare namespace Word {
          * Adds a style into the document by name and type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param name - Required. A string representing the style name.
          * @param typeString - Required. The style type, including character, list, paragraph, or table.
@@ -2353,8 +2342,7 @@ export declare namespace Word {
          * Close current document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param closeBehavior - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
@@ -2363,8 +2351,7 @@ export declare namespace Word {
          * Close current document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param closeBehaviorString - Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
          */
@@ -2402,8 +2389,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -2413,7 +2399,7 @@ export declare namespace Word {
                     Not implemented in Word on the web.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getEndnoteBody(): Word.Body;
         /**
@@ -2421,7 +2407,7 @@ export declare namespace Word {
                     Not implemented in Word on the web.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getFootnoteBody(): Word.Body;
         /**
@@ -2435,8 +2421,7 @@ export declare namespace Word {
          * Gets a StyleCollection object that represents the whole style set of the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         getStyles(): Word.StyleCollection;
         /**
@@ -2444,8 +2429,7 @@ export declare namespace Word {
                     Headers, footers, watermarks, and other section properties are copied by default.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -2516,10 +2500,9 @@ export declare namespace Word {
          * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          *
          * @eventproperty
-         * @beta
          */
         readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;
         /**
@@ -2606,8 +2589,7 @@ export declare namespace Word {
          * Adds a style into the document by name and type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiHiddenDocument 1.5]
          *
          * @param name - Required. A string representing the style name.
          * @param type - Required. The style type, including character, list, paragraph, or table.
@@ -2617,8 +2599,7 @@ export declare namespace Word {
          * Adds a style into the document by name and type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiHiddenDocument 1.5]
          *
          * @param name - Required. A string representing the style name.
          * @param typeString - Required. The style type, including character, list, paragraph, or table.
@@ -2657,8 +2638,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiHiddenDocument 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -2667,8 +2647,7 @@ export declare namespace Word {
          * Gets a StyleCollection object that represents the whole style set of the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiHiddenDocument 1.5]
          */
         getStyles(): Word.StyleCollection;
         /**
@@ -2676,8 +2655,7 @@ export declare namespace Word {
                     Headers, footers, watermarks, and other section properties are copied by default.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiHiddenDocument 1.5]
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -2998,30 +2976,29 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.4]
+         *
+         * Note: The ability to set the code was introduced in WordApi 1.5.
          */
         code: string;
         /**
          * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         data: string;
         /**
          * Gets the field's kind.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly kind: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";
         /**
          * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         locked: boolean;
         /**
@@ -3036,8 +3013,7 @@ export declare namespace Word {
          * Gets the field's type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined";
         /**
@@ -3052,8 +3028,7 @@ export declare namespace Word {
          * Deletes the field.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         delete(): void;
         /**
@@ -3074,8 +3049,7 @@ export declare namespace Word {
          * Selects the field.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param selectionMode - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
@@ -3084,8 +3058,7 @@ export declare namespace Word {
          * Selects the field.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param selectionModeString - Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
          */
@@ -3094,8 +3067,7 @@ export declare namespace Word {
          * Updates the field.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         updateResult(): void;
         /**
@@ -3162,8 +3134,7 @@ export declare namespace Word {
          * Gets the Field object collection including the specified types of fields.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param types - Required. An array of field types.
          */
@@ -4356,7 +4327,7 @@ export declare namespace Word {
      * Represents a footnote or endnote.
      *
      * @remarks
-     * [Api set: WordApiOnline 1.1]
+     * [Api set: WordApi 1.5]
      */
     export class NoteItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4365,21 +4336,21 @@ export declare namespace Word {
          * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly body: Word.Body;
         /**
          * Represents a footnote or endnote reference in the main document.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly reference: Word.Range;
         /**
          * Represents the note item type: footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly type: Word.NoteItemType | "Footnote" | "Endnote";
         /**
@@ -4394,21 +4365,21 @@ export declare namespace Word {
          * Deletes the note item.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         delete(): void;
         /**
          * Gets the next note item of the same type. Throws an `ItemNotFound` error if this note item is the last one.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getNext(): Word.NoteItem;
         /**
          * Gets the next note item of the same type. If this note item is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getNextOrNullObject(): Word.NoteItem;
         /**
@@ -4450,7 +4421,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.NoteItem} objects.
      *
      * @remarks
-     * [Api set: WordApiOnline 1.1]
+     * [Api set: WordApi 1.5]
      */
     export class NoteItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4461,14 +4432,14 @@ export declare namespace Word {
          * Gets the first note item in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getFirst(): Word.NoteItem;
         /**
          * Gets the first note item in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         getFirstOrNullObject(): Word.NoteItem;
         /**
@@ -4523,7 +4494,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the paragraph.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -4544,7 +4515,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the paragraph.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -4795,8 +4766,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -4895,6 +4865,8 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
          *
          * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
@@ -5185,8 +5157,7 @@ export declare namespace Word {
      * Represents a style of paragraph in a document.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export class ParagraphFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5195,112 +5166,98 @@ export declare namespace Word {
          * Specifies the alignment for the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          * Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         firstLineIndent: number;
         /**
          * Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         keepTogether: boolean;
         /**
          * Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         keepWithNext: boolean;
         /**
          * Specifies the left indent.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         leftIndent: number;
         /**
          * Specifies the line spacing (in points) for the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         lineSpacing: number;
         /**
          * Specifies the amount of spacing (in gridlines) after the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         lineUnitAfter: number;
         /**
          * Specifies the amount of spacing (in gridlines) before the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         lineUnitBefore: number;
         /**
          * Specifies whether left and right indents are the same width.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         mirrorIndents: boolean;
         /**
          * Specifies the outline level for the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
         /**
          * Specifies the right indent (in points) for the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         rightIndent: number;
         /**
          * Specifies the amount of spacing (in points) after the specified paragraph or text column.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         spaceAfter: number;
         /**
          * Specifies the spacing (in points) before the specified paragraphs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         spaceBefore: number;
         /**
          * Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         widowControl: boolean;
         /**
@@ -5366,7 +5323,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the range.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -5387,7 +5344,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the range.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -5575,8 +5532,7 @@ export declare namespace Word {
                     With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param options - Optional. Options that define which content controls are returned.
          */
@@ -5694,6 +5650,8 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
          * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
@@ -5701,7 +5659,7 @@ export declare namespace Word {
          * Inserts an endnote. The endnote reference is placed after the range.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          *
          * @param insertText - Optional. Text to be inserted into the endnote body. The default is "".
          */
@@ -5710,8 +5668,7 @@ export declare namespace Word {
          * Inserts a field at the specified location.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5723,8 +5680,7 @@ export declare namespace Word {
          * Inserts a field at the specified location.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -5746,7 +5702,7 @@ export declare namespace Word {
          * Inserts a footnote. The footnote reference is placed after the range.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          *
          * @param insertText - Optional. Text to be inserted into the footnote body. The default is "".
          */
@@ -6015,48 +5971,42 @@ export declare namespace Word {
      * Specifies the options to determine what to copy when inserting a file.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface InsertFileOptions {
         /**
          * Represents whether the change tracking mode status from the source document should be imported.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         importChangeTrackingMode: boolean;
         /**
          * Represents whether the page color and other background information from the source document should be imported.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         importPageColor: boolean;
         /**
          * Represents whether the paragraph spacing from the source document should be imported.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         importParagraphSpacing: boolean;
         /**
          * Represents whether the styles from the source document should be imported.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         importStyles: boolean;
         /**
          * Represents whether the theme from the source document should be imported.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         importTheme: boolean;
     }
@@ -6486,8 +6436,7 @@ export declare namespace Word {
      * Contains a collection of {@link Word.Style} objects.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export class StyleCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -6498,8 +6447,7 @@ export declare namespace Word {
          * Get the style object by its name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param name - Required. The style name.
          */
@@ -6508,8 +6456,7 @@ export declare namespace Word {
          * If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param name - Required. The style name.
          */
@@ -6518,16 +6465,14 @@ export declare namespace Word {
          * Gets the number of the styles in the collection.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a style object by its index in the collection.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          *
          * @param index - A number that identifies the index location of a style object.
          */
@@ -6577,8 +6522,7 @@ export declare namespace Word {
          * Gets a font object that represents the character formatting of the specified style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly font: Word.Font;
         /**
@@ -6593,24 +6537,21 @@ export declare namespace Word {
          * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly paragraphFormat: Word.ParagraphFormat;
         /**
          * Gets the name of an existing style to use as the base formatting of another style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly baseStyle: string;
         /**
          * Gets whether the specified style is a built-in style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly builtIn: boolean;
         /**
@@ -6625,72 +6566,63 @@ export declare namespace Word {
          * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly inUse: boolean;
         /**
          * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly linked: boolean;
         /**
          * Gets the name of a style in the language of the user.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly nameLocal: string;
         /**
          * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly nextParagraphStyle: string;
         /**
          * Specifies the priority.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         priority: number;
         /**
          * Specifies whether the style corresponds to an available quick style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         quickStyle: boolean;
         /**
          * Gets the style type.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         readonly type: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
         /**
          * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         unhideWhenUsed: boolean;
         /**
          * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         visibility: boolean;
         /**
@@ -6705,8 +6637,7 @@ export declare namespace Word {
          * Deletes the style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         delete(): void;
         /**
@@ -6757,7 +6688,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the table.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -6778,7 +6709,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the table.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -7357,7 +7288,7 @@ export declare namespace Word {
          * Gets the collection of endnotes in the table row.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly endnotes: Word.NoteItemCollection;
         /**
@@ -7378,7 +7309,7 @@ export declare namespace Word {
          * Gets the collection of footnotes in the table row.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         readonly footnotes: Word.NoteItemCollection;
         /**
@@ -8113,28 +8044,27 @@ export declare namespace Word {
      * Specify the track state when ChangeTracking is on.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum ChangeTrackingState {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         unknown = "Unknown",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         normal = "Normal",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         added = "Added",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         deleted = "Deleted",
     }
@@ -8142,17 +8072,17 @@ export declare namespace Word {
      * Note item type
      *
      * @remarks
-     * [Api set: WordApiOnline 1.1]
+     * [Api set: WordApi 1.5]
      */
     enum NoteItemType {
         /**
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         footnote = "Footnote",
         /**
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         endnote = "Endnote",
     }
@@ -8160,35 +8090,31 @@ export declare namespace Word {
      * Provides information about the type of a raised event.
      *
      * @remarks
-     * [Api set: WordApi 1.3]
+     * [Api set: WordApi 1.5]
      */
     enum EventType {
         /**
          * ContentControlDeleted represents the event that the content control has been deleted.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlDeleted = "ContentControlDeleted",
         /**
          * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlSelectionChanged = "ContentControlSelectionChanged",
         /**
          * ContentControlDataChanged represents the event that the data in the content control have been changed.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlDataChanged = "ContentControlDataChanged",
         /**
          * ContentControlAdded represents the event a content control has been added to the document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlAdded = "ContentControlAdded",
         /**
@@ -8229,15 +8155,13 @@ export declare namespace Word {
         /**
          * Represents that a content control has been entered.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlEntered = "ContentControlEntered",
         /**
          * Represents that a content control has been exited.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         contentControlExited = "ContentControlExited",
     }
@@ -8245,18 +8169,17 @@ export declare namespace Word {
      * An enum that specifies an event's source. It can be local or remote (through coauthoring).
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum EventSource {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         local = "Local",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.5]
          */
         remote = "Remote",
     }
@@ -8305,32 +8228,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlAdded event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlAddedEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -8338,32 +8257,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlDataChanged event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlDataChangedEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -8371,32 +8286,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlDeleted event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlDeletedEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -8404,32 +8315,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlEntered event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlEnteredEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -8437,32 +8344,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlExited event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlExitedEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -8470,32 +8373,28 @@ export declare namespace Word {
      * Provides information about the content control that raised contentControlSelectionChanged event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     export interface ContentControlSelectionChangedEventArgs {
         /**
          * The event type. See Word.EventType for details.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
         /**
          * Gets the content control IDs.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ids: number[];
         /**
          * The source of the event. It can be local or remote (through coauthoring).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         source: Word.EventSource | "Local" | "Remote";
     }
@@ -9070,17 +8969,17 @@ export declare namespace Word {
         tableCell = "TableCell",
         /**
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         footnote = "Footnote",
         /**
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         endnote = "Endnote",
         /**
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         noteItem = "NoteItem",
     }
@@ -9647,6 +9546,10 @@ export declare namespace Word {
         lowerLetter = "LowerLetter",
     }
     /**
+     * Represents the built-in style in a Word document.
+     *
+     * Important: This enum was renamed from `Style` to `BuiltInStyleName` in WordApi 1.5.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
@@ -10434,36 +10337,31 @@ export declare namespace Word {
      * Represents the type of style.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum StyleType {
         /**
          * Represents that the style is a character style.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         character = "Character",
         /**
          * Represents that the style is a list style. Currently supported on desktop.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         list = "List",
         /**
          * Represents that the style is a paragraph style.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         paragraph = "Paragraph",
         /**
          * Represents that the style is a table style.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         table = "Table",
     }
@@ -10471,78 +10369,67 @@ export declare namespace Word {
      * Represents the outline levels.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum OutlineLevel {
         /**
          * Represents outline level 1.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel1 = "OutlineLevel1",
         /**
          * Represents outline level 2.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel2 = "OutlineLevel2",
         /**
          * Represents outline level 3.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel3 = "OutlineLevel3",
         /**
          * Represents outline level 4.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel4 = "OutlineLevel4",
         /**
          * Represents outline level 5.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel5 = "OutlineLevel5",
         /**
          * Represents outline level 6.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel6 = "OutlineLevel6",
         /**
          * Represents outline level 7.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel7 = "OutlineLevel7",
         /**
          * Represents outline level 8.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel8 = "OutlineLevel8",
         /**
          * Represents outline level 9.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevel9 = "OutlineLevel9",
         /**
          * Represents outline level body text, not an outline level.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         outlineLevelBodyText = "OutlineLevelBodyText",
     }
@@ -10550,22 +10437,19 @@ export declare namespace Word {
      * Specifies the close behavior for `Document.close`.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum CloseBehavior {
         /**
          * Save the changes before closing the document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         save = "Save",
         /**
          * Discard the possible changes when closing the document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         skipSave = "SkipSave",
     }
@@ -10595,638 +10479,547 @@ export declare namespace Word {
      * Represents the type of Field.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum FieldType {
         /**
          * Represents that the field type is Add-in.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         addin = "Addin",
         /**
          * Represents that the field type is AddressBlock.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         addressBlock = "AddressBlock",
         /**
          * Represents that the field type is Advance.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         advance = "Advance",
         /**
          * Represents that the field type is Ask.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ask = "Ask",
         /**
          * Represents that the field type is Author.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         author = "Author",
         /**
          * Represents that the field type is AutoText.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         autoText = "AutoText",
         /**
          * Represents that the field type is AutoTextList.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         autoTextList = "AutoTextList",
         /**
          * Represents that the field type is Barcode.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         barCode = "BarCode",
         /**
          * Represents that the field type is Bibliography.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         bibliography = "Bibliography",
         /**
          * Represents that the field type is BidiOutline.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         bidiOutline = "BidiOutline",
         /**
          * Represents that the field type is Citation.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         citation = "Citation",
         /**
          * Represents that the field type is Comments.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         comments = "Comments",
         /**
          * Represents that the field type is Compare.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         compare = "Compare",
         /**
          * Represents that the field type is CreateDate.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         createDate = "CreateDate",
         /**
          * Represents that the field type is Data.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         data = "Data",
         /**
          * Represents that the field type is Database.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         database = "Database",
         /**
          * Represents that the field type is Date.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         date = "Date",
         /**
          * Represents that the field type is DisplayBarcode.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         displayBarcode = "DisplayBarcode",
         /**
          * Represents that the field type is DocumentProperty
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         docProperty = "DocProperty",
         /**
          * Represents that the field type is DocumentVariable.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         docVariable = "DocVariable",
         /**
          * Represents that the field type is EditTime.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         editTime = "EditTime",
         /**
          * Represents that the field type is Embedded.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         embedded = "Embedded",
         /**
          * Represents that the field type is Equation.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         eq = "EQ",
         /**
          * Represents that the field type is Expression.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         expression = "Expression",
         /**
          * Represents that the field type is FileName.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         fileName = "FileName",
         /**
          * Represents that the field type is FileSize.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         fileSize = "FileSize",
         /**
          * Represents that the field type is FillIn.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         fillIn = "FillIn",
         /**
          * Represents that the field type is FormCheckbox.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         formCheckbox = "FormCheckbox",
         /**
          * Represents that the field type is FormDropdown.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         formDropdown = "FormDropdown",
         /**
          * Represents that the field type is FormText.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         formText = "FormText",
         /**
          * Represents that the field type is GotoButton.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         gotoButton = "GotoButton",
         /**
          * Represents that the field type is GreetingLine.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         greetingLine = "GreetingLine",
         /**
          * Represents that the field type is Hyperlink.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         hyperlink = "Hyperlink",
         /**
          * Represents that the field type is If.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         if = "If",
         /**
          * Represents that the field type is Import.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         import = "Import",
         /**
          * Represents that the field type is Include.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         include = "Include",
         /**
          * Represents that the field type is IncludePicture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         includePicture = "IncludePicture",
         /**
          * Represents that the field type is IncludeText.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         includeText = "IncludeText",
         /**
          * Represents that the field type is Index.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         index = "Index",
         /**
          * Represents that the field type is Information.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         info = "Info",
         /**
          * Represents that the field type is Keywords.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         keywords = "Keywords",
         /**
          * Represents that the field type is LastSavedBy.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         lastSavedBy = "LastSavedBy",
         /**
          * Represents that the field type is Link.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         link = "Link",
         /**
          * Represents that the field type is ListNumber.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         listNum = "ListNum",
         /**
          * Represents that the field type is MacroButton.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         macroButton = "MacroButton",
         /**
          * Represents that the field type is MergeBarcode.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         mergeBarcode = "MergeBarcode",
         /**
          * Represents that the field type is MergeField.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         mergeField = "MergeField",
         /**
          * Represents that the field type is MergeRecord.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         mergeRec = "MergeRec",
         /**
          * Represents that the field type is MergeSequence.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         mergeSeq = "MergeSeq",
         /**
          * Represents that the field type is Next.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         next = "Next",
         /**
          * Represents that the field type is NextIf.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         nextIf = "NextIf",
         /**
          * Represents that the field type is NoteReference.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         noteRef = "NoteRef",
         /**
          * Represents that the field type is NumberOfCharacters.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         numChars = "NumChars",
         /**
          * Represents that the field type is NumberOfPages.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         numPages = "NumPages",
         /**
          * Represents that the field type is NumberOfWords.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         numWords = "NumWords",
         /**
          * Represents that the field type is ActiveXControl.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ocx = "OCX",
         /**
          * Represents that the field type is Page.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         page = "Page",
         /**
          * Represents that the field type is PageReference.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         pageRef = "PageRef",
         /**
          * Represents that the field type is Print.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         print = "Print",
         /**
          * Represents that the field type is PrintDate.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         printDate = "PrintDate",
         /**
          * Represents that the field type is Private.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         private = "Private",
         /**
          * Represents that the field type is Quote.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         quote = "Quote",
         /**
          * Represents that the field type is ReferencedDocument.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         rd = "RD",
         /**
          * Represents that the field type is Reference.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ref = "Ref",
         /**
          * Represents that the field type is RevisionNumber.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         revNum = "RevNum",
         /**
          * Represents that the field type is SaveDate.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         saveDate = "SaveDate",
         /**
          * Represents that the field type is Section.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         section = "Section",
         /**
          * Represents that the field type is SectionPages.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         sectionPages = "SectionPages",
         /**
          * Represents that the field type is Sequence.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         seq = "Seq",
         /**
          * Represents that the field type is Set.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         set = "Set",
         /**
          * Represents that the field type is Shape.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         shape = "Shape",
         /**
          * Represents that the field type is SkipIf.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         skipIf = "SkipIf",
         /**
          * Represents that the field type is StyleReference.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         styleRef = "StyleRef",
         /**
          * Represents that the field type is Subject.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         subject = "Subject",
         /**
          * Represents that the field type is Subscriber.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         subscriber = "Subscriber",
         /**
          * Represents that the field type is Symbol.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         symbol = "Symbol",
         /**
          * Represents that the field type is TableOfAuthoritiesEntry.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         ta = "TA",
         /**
          * Represents that the field type is TableOfContentsEntry.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         tc = "TC",
         /**
          * Represents that the field type is Template.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         template = "Template",
         /**
          * Represents that the field type is Time.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         time = "Time",
         /**
          * Represents that the field type is Title.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         title = "Title",
         /**
          * Represents that the field type is TableOfAuthorities.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         toa = "TOA",
         /**
          * Represents that the field type is TableOfContents.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         toc = "TOC",
         /**
          * Represents that the field type is UserAddress.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         userAddress = "UserAddress",
         /**
          * Represents that the field type is UserInitials.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         userInitials = "UserInitials",
         /**
          * Represents that the field type is UserName.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         userName = "UserName",
         /**
          * Represents that the field type is IndexEntry.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         xe = "XE",
         /**
          * Represents that the field type is Empty.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         empty = "Empty",
         /**
          * Represents the field types not supported by the Office JavaScript API.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         others = "Others",
         /**
          * Represents that the field type is Undefined.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         undefined = "Undefined",
     }
@@ -11234,36 +11027,31 @@ export declare namespace Word {
      * Represents the kind of field. Indicates how the field works in relation to updating.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.5]
      */
     enum FieldKind {
         /**
          * Represents that the field is invalid. For example, a pair of field characters with nothing inside.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         none = "None",
         /**
          * Represents that the field is automatically updated each time it's displayed or each time the page is reformatted, but which can also be manually updated.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         hot = "Hot",
         /**
          * Represents that the field is automatically updated when the source changes or the field can be manually updated.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         warm = "Warm",
         /**
          * Represents that the field doesn't have a result.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         cold = "Cold",
     }
@@ -12018,16 +11806,14 @@ export declare namespace Word {
              * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             data?: string;
             /**
              * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             locked?: boolean;
             /**
@@ -12298,14 +12084,14 @@ export declare namespace Word {
             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             reference?: Word.Interfaces.RangeUpdateData;
         }
@@ -12431,112 +12217,98 @@ export declare namespace Word {
              * Specifies the alignment for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             firstLineIndent?: number;
             /**
              * Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepTogether?: boolean;
             /**
              * Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepWithNext?: boolean;
             /**
              * Specifies the left indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             leftIndent?: number;
             /**
              * Specifies the line spacing (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineSpacing?: number;
             /**
              * Specifies the amount of spacing (in gridlines) after the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitAfter?: number;
             /**
              * Specifies the amount of spacing (in gridlines) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitBefore?: number;
             /**
              * Specifies whether left and right indents are the same width.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             mirrorIndents?: boolean;
             /**
              * Specifies the outline level for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
             /**
              * Specifies the right indent (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             rightIndent?: number;
             /**
              * Specifies the amount of spacing (in points) after the specified paragraph or text column.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceAfter?: number;
             /**
              * Specifies the spacing (in points) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceBefore?: number;
             /**
              * Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             widowControl?: boolean;
         }
@@ -12665,8 +12437,7 @@ export declare namespace Word {
             * Gets a font object that represents the character formatting of the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
@@ -12681,40 +12452,35 @@ export declare namespace Word {
             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;
             /**
              * Specifies the priority.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             priority?: number;
             /**
              * Specifies whether the style corresponds to an available quick style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             quickStyle?: boolean;
             /**
              * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             unhideWhenUsed?: boolean;
             /**
              * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
         }
@@ -13664,30 +13430,29 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi 1.4]
+             *
+             * Note: The ability to set the code was introduced in WordApi 1.5.
              */
             code?: string;
             /**
              * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             data?: string;
             /**
              * Gets the field's kind.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             kind?: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";
             /**
              * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             locked?: boolean;
             /**
@@ -13702,8 +13467,7 @@ export declare namespace Word {
              * Gets the field's type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined";
         }
@@ -14027,21 +13791,21 @@ export declare namespace Word {
             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             body?: Word.Interfaces.BodyData;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             reference?: Word.Interfaces.RangeData;
             /**
              * Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline 1.1]
+             * [Api set: WordApi 1.5]
              */
             type?: Word.NoteItemType | "Footnote" | "Endnote";
         }
@@ -14209,112 +13973,98 @@ export declare namespace Word {
              * Specifies the alignment for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             firstLineIndent?: number;
             /**
              * Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepTogether?: boolean;
             /**
              * Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepWithNext?: boolean;
             /**
              * Specifies the left indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             leftIndent?: number;
             /**
              * Specifies the line spacing (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineSpacing?: number;
             /**
              * Specifies the amount of spacing (in gridlines) after the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitAfter?: number;
             /**
              * Specifies the amount of spacing (in gridlines) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitBefore?: number;
             /**
              * Specifies whether left and right indents are the same width.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             mirrorIndents?: boolean;
             /**
              * Specifies the outline level for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             outlineLevel?: Word.OutlineLevel | "OutlineLevel1" | "OutlineLevel2" | "OutlineLevel3" | "OutlineLevel4" | "OutlineLevel5" | "OutlineLevel6" | "OutlineLevel7" | "OutlineLevel8" | "OutlineLevel9" | "OutlineLevelBodyText";
             /**
              * Specifies the right indent (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             rightIndent?: number;
             /**
              * Specifies the amount of spacing (in points) after the specified paragraph or text column.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceAfter?: number;
             /**
              * Specifies the spacing (in points) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceBefore?: number;
             /**
              * Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             widowControl?: boolean;
         }
@@ -14478,8 +14228,7 @@ export declare namespace Word {
             * Gets a font object that represents the character formatting of the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             font?: Word.Interfaces.FontData;
             /**
@@ -14494,24 +14243,21 @@ export declare namespace Word {
             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatData;
             /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             baseStyle?: string;
             /**
              * Gets whether the specified style is a built-in style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             builtIn?: boolean;
             /**
@@ -14526,72 +14272,63 @@ export declare namespace Word {
              * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             inUse?: boolean;
             /**
              * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             linked?: boolean;
             /**
              * Gets the name of a style in the language of the user.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nameLocal?: string;
             /**
              * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nextParagraphStyle?: string;
             /**
              * Specifies the priority.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             priority?: number;
             /**
              * Specifies whether the style corresponds to an available quick style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             quickStyle?: boolean;
             /**
              * Gets the style type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";
             /**
              * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             unhideWhenUsed?: boolean;
             /**
              * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
         }
@@ -16071,30 +15808,29 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi 1.4]
+             *
+             * Note: The ability to set the code was introduced in WordApi 1.5.
              */
             code?: boolean;
             /**
              * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             data?: boolean;
             /**
              * Gets the field's kind.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             kind?: boolean;
             /**
              * Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             locked?: boolean;
             /**
@@ -16109,8 +15845,7 @@ export declare namespace Word {
              * Gets the field's type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
         }
@@ -16186,30 +15921,29 @@ export declare namespace Word {
              *
              * @remarks
              * [Api set: WordApi 1.4]
+             *
+             * Note: The ability to set the code was introduced in WordApi 1.5.
              */
             code?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             data?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the field's kind.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             kind?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             locked?: boolean;
             /**
@@ -16224,8 +15958,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets the field's type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
         }
@@ -16866,7 +16599,7 @@ export declare namespace Word {
          * Represents a footnote or endnote.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         export interface NoteItemLoadOptions {
             /**
@@ -16877,21 +16610,21 @@ export declare namespace Word {
             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             * Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
              * Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline 1.1]
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
         }
@@ -16899,7 +16632,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.NoteItem} objects.
          *
          * @remarks
-         * [Api set: WordApiOnline 1.1]
+         * [Api set: WordApi 1.5]
          */
         export interface NoteItemCollectionLoadOptions {
             /**
@@ -16910,21 +16643,21 @@ export declare namespace Word {
             * For EACH ITEM in the collection: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
             * For EACH ITEM in the collection: Represents a footnote or endnote reference in the main document.
             *
             * @remarks
-            * [Api set: WordApiOnline 1.1]
+            * [Api set: WordApi 1.5]
             */
             reference?: Word.Interfaces.RangeLoadOptions;
             /**
              * For EACH ITEM in the collection: Represents the note item type: footnote or endnote.
              *
              * @remarks
-             * [Api set: WordApiOnline 1.1]
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
         }
@@ -17348,8 +17081,7 @@ export declare namespace Word {
          * Represents a style of paragraph in a document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         export interface ParagraphFormatLoadOptions {
             /**
@@ -17360,112 +17092,98 @@ export declare namespace Word {
              * Specifies the alignment for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             alignment?: boolean;
             /**
              * Specifies the value (in points) for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             firstLineIndent?: boolean;
             /**
              * Specifies whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepTogether?: boolean;
             /**
              * Specifies whether the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             keepWithNext?: boolean;
             /**
              * Specifies the left indent.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             leftIndent?: boolean;
             /**
              * Specifies the line spacing (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineSpacing?: boolean;
             /**
              * Specifies the amount of spacing (in gridlines) after the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitAfter?: boolean;
             /**
              * Specifies the amount of spacing (in gridlines) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             lineUnitBefore?: boolean;
             /**
              * Specifies whether left and right indents are the same width.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             mirrorIndents?: boolean;
             /**
              * Specifies the outline level for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             outlineLevel?: boolean;
             /**
              * Specifies the right indent (in points) for the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             rightIndent?: boolean;
             /**
              * Specifies the amount of spacing (in points) after the specified paragraph or text column.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceAfter?: boolean;
             /**
              * Specifies the spacing (in points) before the specified paragraphs.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             spaceBefore?: boolean;
             /**
              * Specifies whether the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             widowControl?: boolean;
         }
@@ -17831,8 +17549,7 @@ export declare namespace Word {
          * Contains a collection of {@link Word.Style} objects.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.5]
          */
         export interface StyleCollectionLoadOptions {
             /**
@@ -17843,8 +17560,7 @@ export declare namespace Word {
             * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
@@ -17859,24 +17575,21 @@ export declare namespace Word {
             * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
              * For EACH ITEM in the collection: Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             baseStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Gets whether the specified style is a built-in style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             builtIn?: boolean;
             /**
@@ -17891,72 +17604,63 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             inUse?: boolean;
             /**
              * For EACH ITEM in the collection: Gets whether a style is a linked style that can be used for both paragraph and character formatting.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             linked?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of a style in the language of the user.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nameLocal?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nextParagraphStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the priority.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             priority?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the style corresponds to an available quick style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             quickStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the style type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             unhideWhenUsed?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
         }
@@ -17975,8 +17679,7 @@ export declare namespace Word {
             * Gets a font object that represents the character formatting of the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
@@ -17991,24 +17694,21 @@ export declare namespace Word {
             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApi 1.5]
             */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
              * Gets the name of an existing style to use as the base formatting of another style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             baseStyle?: boolean;
             /**
              * Gets whether the specified style is a built-in style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             builtIn?: boolean;
             /**
@@ -18023,72 +17723,63 @@ export declare namespace Word {
              * Gets whether the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             inUse?: boolean;
             /**
              * Gets whether a style is a linked style that can be used for both paragraph and character formatting.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             linked?: boolean;
             /**
              * Gets the name of a style in the language of the user.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nameLocal?: boolean;
             /**
              * Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph formatted with the specified style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             nextParagraphStyle?: boolean;
             /**
              * Specifies the priority.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             priority?: boolean;
             /**
              * Specifies whether the style corresponds to an available quick style.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             quickStyle?: boolean;
             /**
              * Gets the style type.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             type?: boolean;
             /**
              * Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task pane in Microsoft Word after it's used in the document.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             unhideWhenUsed?: boolean;
             /**
              * Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles task pane.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.5]
              */
             visibility?: boolean;
         }

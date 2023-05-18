@@ -92,6 +92,7 @@ export declare namespace Word {
          */
         clear(): void;
         
+        
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -120,12 +121,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): void;
         /**
-         * Wraps the Body object with a Rich Text content control.
+         * Wraps the Body object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -255,7 +260,7 @@ export declare namespace Word {
     
     
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -389,7 +394,7 @@ export declare namespace Word {
          */
         title: string;
         /**
-         * Gets the content control type. Only rich text content controls are supported currently.
+         * Gets the content control type. Only rich text and plain text content controls are supported currently.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -419,6 +424,7 @@ export declare namespace Word {
          * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
+        
         
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
@@ -558,6 +564,11 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.ContentControl;
+        
+        
+        
+        
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -573,7 +584,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -583,6 +594,7 @@ export declare namespace Word {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
+        
         /**
          * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
          *
@@ -660,6 +672,7 @@ export declare namespace Word {
     
     
     
+    
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
@@ -714,6 +727,11 @@ export declare namespace Word {
         
         
         
+        
+        
+        
+        
+        
         /**
          * Gets the current selection of the document. Multiple selections are not supported.
          *
@@ -721,13 +739,32 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
+        
+        
         /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+         *
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(): void;
+        save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
+        /**
+         * Saves the document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.1]
+         *
+         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+         *
+         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
+         */
+        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -750,6 +787,7 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -1244,6 +1282,7 @@ export declare namespace Word {
         delete(): void;
         
         
+        
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1277,12 +1316,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
-         * Wraps the Paragraph object with a rich text content control.
+         * Wraps the Paragraph object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -1464,6 +1507,7 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
+    
     /**
      * Represents a contiguous area in a document.
      *
@@ -1557,6 +1601,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1591,12 +1636,18 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         
         /**
-         * Wraps the Range object with a rich text content control.
+         * Wraps the Range object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        
+        
         
         /**
          * Inserts a document at the specified location.
@@ -1770,6 +1821,7 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
+    
     /**
      * Specifies the options to be included in a search operation.
                 To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
@@ -2010,6 +2062,17 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -2470,6 +2533,33 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    /**
+     * Specifies the save behavior for `Document.save`.
+     *
+     * @remarks
+     * [Api set: WordApi 1.1]
+     */
+    enum SaveBehavior {
+        /**
+         * Saves the document without prompting the user. If it's a new document,
+                    it will be saved with the default name or specified name in the default location.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        save = "Save",
+        /**
+         * Displays the "Save As" dialog to the user if the document hasn't been saved.
+                    Won't take effect if the document was previously saved.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        prompt = "Prompt",
+    }
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -2664,6 +2754,8 @@ export declare namespace Word {
         }
         /** An interface for updating data on the Field object, for use in `field.set({ ... })`. */
         export interface FieldUpdateData {
+            
+            
             
             
         }
@@ -2911,6 +3003,23 @@ export declare namespace Word {
         export interface ParagraphCollectionUpdateData {
             items?: Word.Interfaces.ParagraphData[];
         }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
             /**
@@ -3007,6 +3116,19 @@ export declare namespace Word {
         /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
         export interface SettingCollectionUpdateData {
             items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
+        export interface StyleCollectionUpdateData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
+        export interface StyleUpdateData {
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -3264,7 +3386,7 @@ export declare namespace Word {
              */
             title?: string;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3366,6 +3488,10 @@ export declare namespace Word {
         }
         /** An interface describing the data returned by calling `field.toJSON()`. */
         export interface FieldData {
+            
+            
+            
+            
             
             
         }
@@ -3641,6 +3767,23 @@ export declare namespace Word {
         export interface ParagraphCollectionData {
             items?: Word.Interfaces.ParagraphData[];
         }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             
@@ -3748,6 +3891,26 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
         export interface SettingCollectionData {
             items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface describing the data returned by calling `styleCollection.toJSON()`. */
+        export interface StyleCollectionData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface describing the data returned by calling `style.toJSON()`. */
+        export interface StyleData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -3870,7 +4033,7 @@ export declare namespace Word {
         
         
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3980,7 +4143,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3988,7 +4151,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4098,7 +4261,7 @@ export declare namespace Word {
              */
             title?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4618,6 +4781,7 @@ export declare namespace Word {
              */
             text?: boolean;
         }
+        
         /**
          * Represents a contiguous area in a document.
          *
@@ -4816,6 +4980,8 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
+        
+        
         
         
         
