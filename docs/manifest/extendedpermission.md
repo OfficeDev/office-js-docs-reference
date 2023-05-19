@@ -1,7 +1,7 @@
 ---
 title: ExtendedPermission element in the manifest file
 description: Defines an extended permission the add-in needs to access the associated API or feature.
-ms.date: 01/23/2023
+ms.date: 05/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +30,7 @@ The following are the available values.
 
 |Available value|Description|Hosts|
 |:---|:---|:---|
-|`AppendOnSend`|Declares that the add-in uses the [Office.Body.prependOnSendAsync](/javascript/api/outlook/office.body?view=outlook-js-preview&preserve-view=true#outlook-office-body-prependonsendasync-member(1)) (preview) or [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-appendonsendasync-member(1)) API.|Outlook|
+|`AppendOnSend`|Declares that the add-in uses the [Office.Body.prependOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-prependonsendasync-member(1)) or [Office.Body.appendOnSendAsync](/javascript/api/outlook/office.body#outlook-office-body-appendonsendasync-member(1)) API.<br><br>To learn more, see [Prepend or append content to a message or appointment body on send](/office/dev/add-ins/outlook/append-on-send).|Outlook|
 
 ## `ExtendedPermission` example
 

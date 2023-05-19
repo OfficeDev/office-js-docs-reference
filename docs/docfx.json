@@ -265,6 +265,18 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "outlook-js-1.13",
+        "src": "docs-ref-autogen/outlook_1_13",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "outlook-js-1.13",
+        "src": "docs-ref-autogen/outlook_1_13",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "excel-js-preview",
         "src": "docs-ref-autogen/excel",
         "dest": "api/office-js-docs-reference"

@@ -1991,9 +1991,9 @@ methods:
     summary: >-
       Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on
       a maximum of 100 messages at a time. To learn more about item multi-select, see [Activate your Outlook add-in on
-      multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2007,7 +2007,7 @@ methods:
 
 
       **Important**: This method only applies to messages.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -2037,9 +2037,9 @@ methods:
     summary: >-
       Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on
       a maximum of 100 messages at a time. To learn more about item multi-select, see [Activate your Outlook add-in on
-      multiple messages (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+      multiple messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.13](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2091,7 +2091,7 @@ methods:
       }
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getSelectedItemsAsync(callback: (asyncResult: Office.AsyncResult<object[]>) => void): void;'
