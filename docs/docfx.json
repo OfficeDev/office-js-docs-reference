@@ -781,6 +781,10 @@
         "dest": "outlook-js-1.12",
         "moniker_range": "outlook-js-1.12"
       },
+      "outlook-js-1.13": {
+        "dest": "outlook-js-1.13",
+        "moniker_range": "outlook-js-1.13"
+      },
       "excel-js-preview": {
         "dest": "excel-js-preview",
         "moniker_range": "excel-js-preview"
@@ -1058,6 +1062,8 @@
         "docs-ref-autogen/outlook_1_11/outlook/**": ["outlook 1.11"],
         "docs-ref-autogen/outlook_1_12/**": ["outlook 1.12"],
         "docs-ref-autogen/outlook_1_12/outlook/**": ["outlook 1.12"],
+        "docs-ref-autogen/outlook_1_13/**": ["outlook 1.13"],
+        "docs-ref-autogen/outlook_1_13/outlook/**": ["outlook 1.13"],
         "docs-ref-autogen/overview/**": ["common"],
         "docs-ref-autogen/powerpoint/**": ["powerpoint preview"],
         "docs-ref-autogen/powerpoint/powerpoint/**": ["powerpoint preview"],
@@ -1154,6 +1160,7 @@
         "docs-ref-autogen/outlook_1_10/**": "outlook",
         "docs-ref-autogen/outlook_1_11/**": "outlook",
         "docs-ref-autogen/outlook_1_12/**": "outlook",
+        "docs-ref-autogen/outlook_1_13/**": "outlook",
         "docs-ref-autogen/outlook/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_1/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_2/outlook/**": "outlook",
@@ -1167,6 +1174,7 @@
         "docs-ref-autogen/outlook_1_10/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_11/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_12/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_13/outlook/**": "outlook",
         "docs-ref-autogen/overview/**": "microsoft-365",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/powerpoint/powerpoint/**": "powerpoint",
