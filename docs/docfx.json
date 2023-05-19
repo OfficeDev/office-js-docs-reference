@@ -685,6 +685,30 @@
       },
       {
         "files": ["**/toc.yml"],
+        "group": "word-js-1.5",
+        "src": "docs-ref-autogen/word_1_5",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-1.5",
+        "src": "docs-ref-autogen/word_1_5",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
+        "group": "word-js-1.5-hidden-document",
+        "src": "docs-ref-autogen/word_1_5_hidden_document",
+        "dest": "api/office-js-docs-reference"
+      },
+      {
+        "files": ["**/*.md", "**/*.yml"],
+        "group": "word-js-1.5-hidden-document",
+        "src": "docs-ref-autogen/word_1_5_hidden_document",
+        "dest": "api"
+      },
+      {
+        "files": ["**/toc.yml"],
         "group": "word-js-online",
         "src": "docs-ref-autogen/word_online",
         "dest": "api/office-js-docs-reference"
@@ -893,6 +917,14 @@
         "dest": "word-js-1.4-hidden-document",
         "moniker_range": "word-js-1.4-hidden-document"
       },
+      "word-js-1.5": {
+        "dest": "word-js-1.5",
+        "moniker_range": "word-js-1.5"
+      },
+      "word-js-1.5-hidden-document": {
+        "dest": "word-js-1.5-hidden-document",
+        "moniker_range": "word-js-1.5-hidden-document"
+      },
       "word-js-online": {
         "dest": "word-js-online",
         "moniker_range": "word-js-online"
@@ -1055,6 +1087,10 @@
         "docs-ref-autogen/word_1_4/word/**": ["word 1.4"],
         "docs-ref-autogen/word_1_4_hidden_document/**": ["word hiddendocument 1.4"],
         "docs-ref-autogen/word_1_4_hidden_document/word/**": ["word hiddendocument 1.4"],
+        "docs-ref-autogen/word_1_5/**": ["word 1.5"],
+        "docs-ref-autogen/word_1_5/word/**": ["word 1.5"],
+        "docs-ref-autogen/word_1_5_hidden_document/**": ["word hiddendocument 1.5"],
+        "docs-ref-autogen/word_1_5_hidden_document/word/**": ["word hiddendocument 1.5"],
         "docs-ref-autogen/word_online/**": ["word online"],
         "docs-ref-autogen/word_online/word/**": ["word online"]
       },
@@ -1156,12 +1192,16 @@
         "docs-ref-autogen/word_1_3/word/**": "word",
         "docs-ref-autogen/word_1_4/**": "word",
         "docs-ref-autogen/word_1_4/word/**": "word",
+        "docs-ref-autogen/word_1_5/**": "word",
+        "docs-ref-autogen/word_1_5/word/**": "word",
         "docs-ref-autogen/word_online/**": "word",
         "docs-ref-autogen/word_online/word/**": "word",
         "docs-ref-autogen/word_1_3_hidden_document/**": "word",
         "docs-ref-autogen/word_1_3_hidden_document/word/**": "word",
         "docs-ref-autogen/word_1_4_hidden_document/**": "word",
         "docs-ref-autogen/word_1_4_hidden_document/word/**": "word",
+        "docs-ref-autogen/word_1_5_hidden_document/**": "word",
+        "docs-ref-autogen/word_1_5_hidden_document/word/**": "word",
         "manifest/**": "microsoft-365",
         "requirement-sets/**": "microsoft-365",
         "requirement-sets/common/**": "microsoft-365",

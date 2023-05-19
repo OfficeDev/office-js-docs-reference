@@ -1,0 +1,316 @@
+### YamlMime:TSType
+name: Word.TableBorder
+uid: 'word!Word.TableBorder:class'
+package: word!
+fullName: Word.TableBorder
+summary: Specifies the border style.
+remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: color
+    uid: 'word!Word.TableBorder#color:member'
+    package: word!
+    fullName: color
+    summary: Specifies the table border color.
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+      // Gets border details about the first table in the document.
+
+      await Word.run(async (context) => {
+        const firstTable = context.document.body.tables.getFirst();
+        const borderLocation = Word.BorderLocation.top;
+        const border = firstTable.getBorder(borderLocation);
+        border.load(["type", "color", "width"]);
+        await context.sync();
+
+        console.log(`Details about the ${borderLocation} border of the first table:`);
+        console.log(`- Color: ${border.color}`);
+        console.log(`- Type: ${border.type}`);
+        console.log(`- Width: ${border.width} points`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'word!Word.TableBorder#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: type
+    uid: 'word!Word.TableBorder#type:member'
+    package: word!
+    fullName: type
+    summary: Specifies the type of the table border.
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+      // Gets border details about the first table in the document.
+
+      await Word.run(async (context) => {
+        const firstTable = context.document.body.tables.getFirst();
+        const borderLocation = Word.BorderLocation.top;
+        const border = firstTable.getBorder(borderLocation);
+        border.load(["type", "color", "width"]);
+        await context.sync();
+
+        console.log(`Details about the ${borderLocation} border of the first table:`);
+        console.log(`- Color: ${border.color}`);
+        console.log(`- Type: ${border.type}`);
+        console.log(`- Width: ${border.width} points`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
+        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
+      return:
+        type: >-
+          <xref uid="word!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: width
+    uid: 'word!Word.TableBorder#width:member'
+    package: word!
+    fullName: width
+    summary: 'Specifies the width, in points, of the table border. Not applicable to table border types that have fixed widths.'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+      // Gets border details about the first table in the document.
+
+      await Word.run(async (context) => {
+        const firstTable = context.document.body.tables.getFirst();
+        const borderLocation = Word.BorderLocation.top;
+        const border = firstTable.getBorder(borderLocation);
+        border.load(["type", "color", "width"]);
+        await context.sync();
+
+        console.log(`Details about the ${borderLocation} border of the first table:`);
+        console.log(`- Color: ${border.color}`);
+        console.log(`- Type: ${border.type}`);
+        console.log(`- Width: ${border.width} points`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+methods:
+  - name: load(options)
+    uid: 'word!Word.TableBorder#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="word!Word.Interfaces.TableBorderLoadOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.TableBorder:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.TableBorder#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.TableBorder;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.TableBorder:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.TableBorder#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.TableBorder;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="word!Word.TableBorder:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'word!Word.TableBorder#set:member(1)'
+    package: word!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.TableBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="word!Word.Interfaces.TableBorderUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'word!Word.TableBorder#set:member(2)'
+    package: word!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.TableBorder): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="word!Word.TableBorder:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.TableBorder#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.TableBorder object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.TableBorderData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.TableBorderData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.TableBorderData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.TableBorder#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.TableBorder;'
+      return:
+        type: '<xref uid="word!Word.TableBorder:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.TableBorder#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.TableBorder;'
+      return:
+        type: '<xref uid="word!Word.TableBorder:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

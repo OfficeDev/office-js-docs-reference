@@ -82,12 +82,16 @@ node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/p
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts "PowerPointApi 1.2" ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts "PowerPointApi 1.1" ./tool-inputs/powerpoint-base.d.ts
 
-node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-init.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-int.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-int.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_online/word-int.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-int.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-int2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-int2.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts "WordApi 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_4/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_5/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5/word.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_4/word.d.ts "WordApi 1.4" ../api-extractor-inputs-word-release/word_1_3/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_3/word.d.ts "WordApi 1.3" ../api-extractor-inputs-word-release/word_1_2/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_2/word.d.ts "WordApi 1.2" ../api-extractor-inputs-word-release/word_1_1/word.d.ts
@@ -136,10 +140,13 @@ node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ../../docs/includes/powerpoint-1_2
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts ../../docs/includes/powerpoint-1_1
 
-node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-init.d.ts ../../docs/includes/word-preview
-node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../../docs/includes/word-online
+node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-init.d.ts ../../docs/includes/word-preview
+node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_5/word.d.ts ../../docs/includes/word-online
+node whats-new word ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-int.d.ts ../../docs/includes/word-1_5_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../../docs/includes/word-1_4_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-int.d.ts ../../docs/includes/word-1_4_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_3_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_5/word.d.ts ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../../docs/includes/word-1_5
 node whats-new word ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_4
 node whats-new word ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../api-extractor-inputs-word-release/word_1_2/word.d.ts ../../docs/includes/word-1_3
 node whats-new word ../api-extractor-inputs-word-release/word_1_2/word.d.ts ../api-extractor-inputs-word-release/word_1_1/word.d.ts ../../docs/includes/word-1_2
@@ -423,6 +430,12 @@ if [ ! -d "json/word_online" ]; then
     ../../node_modules/.bin/api-extractor run
     popd
 fi
+if [ ! -d "json/word_1_5_hidden_document" ]; then
+    echo Running API Extractor for Word desktop 1.5.
+    pushd api-extractor-inputs-word-release/word_1_5_hidden_document
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
 if [ ! -d "json/word_1_4_hidden_document" ]; then
     echo Running API Extractor for Word desktop 1.4.
     pushd api-extractor-inputs-word-release/word_1_4_hidden_document
@@ -432,6 +445,12 @@ fi
 if [ ! -d "json/word_1_3_hidden_document" ]; then
     echo Running API Extractor for Word desktop 1.3.
     pushd api-extractor-inputs-word-release/word_1_3_hidden_document
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/word_1_5" ]; then
+    echo Running API Extractor for Word 1.5.
+    pushd api-extractor-inputs-word-release/word_1_5
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -620,11 +639,17 @@ fi
 if [ ! -d "yaml/word_1_4" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4 --output-folder ./yaml/word_1_4 --office 2>/dev/null
 fi
+if [ ! -d "yaml/word_1_5" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5 --output-folder ./yaml/word_1_5 --office 2>/dev/null
+fi
 if [ ! -d "yaml/word_1_3_hidden_document" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3_hidden_document --output-folder ./yaml/word_1_3_hidden_document --office 2>/dev/null
 fi
 if [ ! -d "yaml/word_1_4_hidden_document" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_4_hidden_document --output-folder ./yaml/word_1_4_hidden_document --office 2>/dev/null
+fi
+if [ ! -d "yaml/word_1_5_hidden_document" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5_hidden_document --output-folder ./yaml/word_1_5_hidden_document --office 2>/dev/null
 fi
 if [ ! -d "yaml/word_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_online --output-folder ./yaml/word_online --office 2>/dev/null

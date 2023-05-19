@@ -29,12 +29,18 @@ items:
                 uid: 'word!Word.BorderType:enum'
               - name: BreakType
                 uid: 'word!Word.BreakType:enum'
+              - name: BuiltInStyleName
+                uid: 'word!Word.BuiltInStyleName:enum'
               - name: CellPaddingLocation
                 uid: 'word!Word.CellPaddingLocation:enum'
               - name: ChangeTrackingMode
                 uid: 'word!Word.ChangeTrackingMode:enum'
+              - name: ChangeTrackingState
+                uid: 'word!Word.ChangeTrackingState:enum'
               - name: ChangeTrackingVersion
                 uid: 'word!Word.ChangeTrackingVersion:enum'
+              - name: CloseBehavior
+                uid: 'word!Word.CloseBehavior:enum'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
               - name: ContentControlType
@@ -43,6 +49,14 @@ items:
                 uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'word!Word.ErrorCodes:enum'
+              - name: EventSource
+                uid: 'word!Word.EventSource:enum'
+              - name: EventType
+                uid: 'word!Word.EventType:enum'
+              - name: FieldKind
+                uid: 'word!Word.FieldKind:enum'
+              - name: FieldType
+                uid: 'word!Word.FieldType:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: InsertLocation
@@ -57,12 +71,16 @@ items:
                 uid: 'word!Word.LocationRelation:enum'
               - name: NoteItemType
                 uid: 'word!Word.NoteItemType:enum'
+              - name: OutlineLevel
+                uid: 'word!Word.OutlineLevel:enum'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
+              - name: SaveBehavior
+                uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
-              - name: Style
-                uid: 'word!Word.Style:enum'
+              - name: StyleType
+                uid: 'word!Word.StyleType:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
@@ -83,8 +101,22 @@ items:
             uid: 'word!Word.CommentReplyCollection:class'
           - name: ContentControl
             uid: 'word!Word.ContentControl:class'
+          - name: ContentControlAddedEventArgs
+            uid: 'word!Word.ContentControlAddedEventArgs:interface'
           - name: ContentControlCollection
             uid: 'word!Word.ContentControlCollection:class'
+          - name: ContentControlDataChangedEventArgs
+            uid: 'word!Word.ContentControlDataChangedEventArgs:interface'
+          - name: ContentControlDeletedEventArgs
+            uid: 'word!Word.ContentControlDeletedEventArgs:interface'
+          - name: ContentControlEnteredEventArgs
+            uid: 'word!Word.ContentControlEnteredEventArgs:interface'
+          - name: ContentControlExitedEventArgs
+            uid: 'word!Word.ContentControlExitedEventArgs:interface'
+          - name: ContentControlOptions
+            uid: 'word!Word.ContentControlOptions:interface'
+          - name: ContentControlSelectionChangedEventArgs
+            uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection
@@ -111,6 +143,8 @@ items:
             uid: 'word!Word.InlinePicture:class'
           - name: InlinePictureCollection
             uid: 'word!Word.InlinePictureCollection:class'
+          - name: InsertFileOptions
+            uid: 'word!Word.InsertFileOptions:interface'
           - name: List
             uid: 'word!Word.List:class'
           - name: ListCollection
@@ -125,6 +159,8 @@ items:
             uid: 'word!Word.Paragraph:class'
           - name: ParagraphCollection
             uid: 'word!Word.ParagraphCollection:class'
+          - name: ParagraphFormat
+            uid: 'word!Word.ParagraphFormat:class'
           - name: Range
             uid: 'word!Word.Range:class'
           - name: RangeCollection
@@ -141,6 +177,10 @@ items:
             uid: 'word!Word.Setting:class'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
+          - name: Style
+            uid: 'word!Word.Style:class'
+          - name: StyleCollection
+            uid: 'word!Word.StyleCollection:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder
@@ -940,6 +980,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.5 requirement set
+            href: ../../requirement-sets/word/word-api-1-5-requirement-set.md
             displayName: Word
           - name: WordApi 1.4 requirement set
             href: ../../requirement-sets/word/word-api-1-4-requirement-set.md

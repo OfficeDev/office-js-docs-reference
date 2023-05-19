@@ -407,13 +407,15 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertContentControl()
+  - name: insertContentControl(contentControlType)
     uid: 'word!Word.Body#insertContentControl:member(1)'
     package: word!
-    fullName: insertContentControl()
-    summary: Wraps the Body object with a Rich Text content control.
+    fullName: insertContentControl(contentControlType)
+    summary: Wraps the Body object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
 
       #### Examples
 
@@ -436,7 +438,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
+      content: >-
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
+        "RichText" | "PlainText"): Word.ContentControl;
+      parameters:
+        - id: contentControlType
+          description: Optional. The content control type. The default is 'RichText'.
+          type: >-
+            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
+            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''

@@ -10064,7 +10064,7 @@ Word.BreakType,sectionContinuous,EnumField,Fine,false
 Word.BreakType,sectionEven,EnumField,Good,false
 Word.BreakType,sectionNext,EnumField,Fine,false
 Word.BreakType,sectionOdd,EnumField,Good,false
-Word.BuiltInStyleName,N/A,Enum,Fine,true
+Word.BuiltInStyleName,N/A,Enum,Good,true
 Word.BuiltInStyleName,bibliography,EnumField,Fine,false
 Word.BuiltInStyleName,bookTitle,EnumField,Fine,false
 Word.BuiltInStyleName,caption,EnumField,Fine,false

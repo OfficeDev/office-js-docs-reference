@@ -33,6 +33,8 @@ items:
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
+              - name: SaveBehavior
+                uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
               - name: UnderlineType
@@ -852,6 +854,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.5 requirement set
+            href: ../../requirement-sets/word/word-api-1-5-requirement-set.md
             displayName: Word
           - name: WordApi 1.4 requirement set
             href: ../../requirement-sets/word/word-api-1-4-requirement-set.md

@@ -278,7 +278,49 @@ properties:
     summary: >-
       Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Applies the specified style to a paragraph.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name-to-use").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to apply.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else if (style.type != Word.StyleType.paragraph) {
+          console.log(`The '${styleName}' style isn't a paragraph style.`);
+        } else {
+          const body = context.document.body;
+          body.clear();
+          body.insertParagraph(
+            "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+            "Start"
+          );
+          const paragraph = body.paragraphs.getFirst();
+          paragraph.style = style.nameLocal;
+          console.log(`'${styleName}' style applied to first paragraph.`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -560,13 +602,15 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertContentControl()
+  - name: insertContentControl(contentControlType)
     uid: 'word!Word.Paragraph#insertContentControl:member(1)'
     package: word!
-    fullName: insertContentControl()
-    summary: Wraps the Paragraph object with a rich text content control.
+    fullName: insertContentControl(contentControlType)
+    summary: Wraps the Paragraph object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
 
       #### Examples
 
@@ -600,7 +644,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
+      content: >-
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
+        "RichText" | "PlainText"): Word.ContentControl;
+      parameters:
+        - id: contentControlType
+          description: Optional. The content control type. The default is 'RichText'.
+          type: >-
+            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
+            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''

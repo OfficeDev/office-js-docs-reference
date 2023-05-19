@@ -4,7 +4,7 @@ ms.topic: landing-page
 title: Office JavaScript API reference
 description: The Office JavaScript APIs by host and version.
 localization_priority: Priority
-ms.date: 05/19/2023
+ms.date: 05/23/2023
 ---
 
 # Office Add-ins JavaScript API reference
@@ -89,8 +89,10 @@ The following is a list of APIs for the [supported Office host applications](/of
             <ul>
                 <li><a href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
                 <li><a href="/javascript/api/word?view=word-js-online">WordApiOnline 1.1</a></li>
+                <li><a href="/javascript/api/word?view=word-js-1.5-hidden-document">WordApiHiddenDocument 1.5</a> (Desktop only)</li>
                 <li><a href="/javascript/api/word?view=word-js-1.4-hidden-document">WordApiHiddenDocument 1.4</a> (Desktop only)</li>
                 <li><a href="/javascript/api/word?view=word-js-1.3-hidden-document">WordApiHiddenDocument 1.3</a> (Desktop only)</li>
+                <li><a href="/javascript/api/word?view=word-js-1.5">WordApi 1.5</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.4">WordApi 1.4</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
                 <li><a href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
@@ -166,6 +168,7 @@ Online-only and desktop-only requirement sets are special requirement sets. An o
 
 - `ExcelApiOnline 1.1`: [Excel JavaScript API online-only requirement set](/javascript/api/requirement-sets/excel/excel-api-online-requirement-set)
 - `WordApiOnline 1.1`: [Word JavaScript API online-only requirement set](/javascript/api/requirement-sets/word/word-api-online-requirement-set)
+- `WordApiHiddenDocument 1.5`: [Word JavaScript API desktop-only requirement set 1.5](/javascript/api/requirement-sets/word/word-api-1.5-hidden-document-requirement-set)
 - `WordApiHiddenDocument 1.4`: [Word JavaScript API desktop-only requirement set 1.4](/javascript/api/requirement-sets/word/word-api-1.4-hidden-document-requirement-set)
 - `WordApiHiddenDocument 1.3`: [Word JavaScript API desktop-only requirement set 1.3](/javascript/api/requirement-sets/word/word-api-1.3-hidden-document-requirement-set)
 

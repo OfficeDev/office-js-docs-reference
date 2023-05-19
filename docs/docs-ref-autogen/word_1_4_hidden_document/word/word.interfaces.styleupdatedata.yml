@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.StyleUpdateData
+uid: 'word!Word.Interfaces.StyleUpdateData:interface'
+package: word!
+fullName: Word.Interfaces.StyleUpdateData
+summary: 'An interface for updating data on the Style object, for use in `style.set({ ... })`<!-- -->.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

@@ -40,7 +40,7 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the body.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -138,7 +138,7 @@ properties:
     fullName: footnotes
     summary: Gets the collection of footnotes in the body.
     remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -675,8 +675,8 @@ methods:
       thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
@@ -868,6 +868,8 @@ methods:
     summary: Wraps the Body object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
 
       #### Examples
 
@@ -1191,7 +1193,7 @@ methods:
           ["Apple", "Orange", "Pineapple"]
         ];
         const table = context.document.body.insertTable(2, 3, "Start", data);
-        table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+        table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
         table.styleFirstColumn = false;
 
         await context.sync();
