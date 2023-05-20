@@ -40,6 +40,7 @@
         "outlook-js-1.10",
         "outlook-js-1.11",
         "outlook-js-1.12",
+        "outlook-js-1.13",
         "powerpoint-js-preview",
         "powerpoint-js-1.1",
         "powerpoint-js-1.2",
@@ -164,6 +165,10 @@
     },
     {
       "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_12/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
+      "ReferenceTOC": "docs/docs-ref-autogen/outlook_1_13/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {

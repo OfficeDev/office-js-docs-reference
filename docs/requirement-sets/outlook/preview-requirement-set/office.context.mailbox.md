@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Mailbox object model.
-ms.date: 10/10/2022
+ms.date: 05/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +49,7 @@ Provides access to the Outlook add-in object model for Microsoft Outlook.
 | [displayNewMessageFormAsync(parameters, [options], [callback])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-displaynewmessageformasync-member(1)) | **read item** | Read | [1.9](../requirement-set-1.9/outlook-requirement-set-1.9.md) |
 | [getCallbackTokenAsync([options], callback)](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getcallbacktokenasync-member(1)) | **read item** | Compose<br>Read | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | [getCallbackTokenAsync(callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getcallbacktokenasync-member(2)) | **read item** | Compose<br>Read | [1.3](../requirement-set-1.3/outlook-requirement-set-1.3.md)<br>[1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| [getSelectedItemsAsync([options], callback)](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getselecteditemsasync-member(1)) | **read/write mailbox** | Compose<br>Read | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
+| [getSelectedItemsAsync([options], callback)](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getselecteditemsasync-member(1)) | **read/write mailbox** | Compose<br>Read | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 | [getUserIdentityTokenAsync(callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-getuseridentitytokenasync-member(1)) | **read item** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [makeEwsRequestAsync(data, callback, [userContext])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-makeewsrequestasync-member(1)) | **read/write mailbox** | Compose<br>Read | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | [removeHandlerAsync(eventType, [options], [callback])](/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-removehandlerasync-member(1)) | **read item** | Compose<br>Read | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
@@ -65,4 +65,4 @@ You can subscribe to and unsubscribe from the following events using [addHandler
 |---|---|:---:|
 |`ItemChanged`| A different Outlook item is selected for viewing while the task pane is pinned. | [1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md) |
 |`OfficeThemeChanged`| The Office theme on the mailbox has changed. | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
-|`SelectedItemsChanged`| One or more messages are selected or deselected. | [Preview](../preview-requirement-set/outlook-requirement-set-preview.md) |
+|`SelectedItemsChanged`| One or more messages are selected or deselected. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |

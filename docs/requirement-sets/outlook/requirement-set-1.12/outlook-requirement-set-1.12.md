@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API requirement set 1.12
 description: Requirement set 1.12 for Outlook add-in API.
-ms.date: 09/09/2022
+ms.date: 05/19/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -9,6 +9,9 @@ ms.localizationpriority: medium
 # Outlook add-in API requirement set 1.12
 
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
+
+> [!NOTE]
+> This documentation is for a [requirement set](../outlook-api-requirement-sets.md) other than the latest requirement set.
 
 ## What's new in 1.12?
 
