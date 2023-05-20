@@ -84,7 +84,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
       // This snippet gets the delivery date and time of a message.
 
@@ -197,7 +197,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
       function setDeliveryDate(minutes) {
         // This snippet sets the delivery date and time of a message.
