@@ -121,7 +121,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
       // This snippet gets all available sensitivity labels from the catalog.
 
@@ -249,7 +249,7 @@ methods:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
       // This snippet determines if the sensitivity labels catalog is enabled on the current mailbox.
 

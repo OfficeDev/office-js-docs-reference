@@ -9902,7 +9902,7 @@
 'Office.AppointmentCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -10244,7 +10244,7 @@
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 
@@ -10729,7 +10729,7 @@
 'Office.AppointmentCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -12749,7 +12749,7 @@
 'Office.Body#prependOnSendAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/prepend-text-on-send.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-on-send.yaml
 
     // This snippet prepends text to the beginning of the message or
     appointment's body once it's sent.
@@ -12873,7 +12873,7 @@
 'Office.Body#setSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -13669,7 +13669,7 @@
 'Office.DelayDeliveryTime#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     // This snippet gets the delivery date and time of a message.
 
@@ -13690,7 +13690,7 @@
 'Office.DelayDeliveryTime#setAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     function setDeliveryDate(minutes) {
       // This snippet sets the delivery date and time of a message.
@@ -16957,7 +16957,7 @@
 'Office.MailboxEnums.ComposeType:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Get the compose type of the current message.
 
@@ -18018,7 +18018,7 @@
 'Office.MessageCompose#delayDeliveryTime:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     function setDeliveryDate(minutes) {
       // This snippet sets the delivery date and time of a message.
@@ -18041,7 +18041,7 @@
 'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -18134,7 +18134,7 @@
 'Office.MessageCompose#getComposeTypeAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Get the compose type of the current message.
 
@@ -18284,7 +18284,7 @@
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 
@@ -18507,7 +18507,7 @@
 'Office.MessageCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -20307,7 +20307,7 @@
 'Office.SensitivityLabel#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-label.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
 
     // This snippet gets the current mail item's sensitivity label.
 
@@ -20327,7 +20327,7 @@
 'Office.SensitivityLabel#setAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-label.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
 
     // This snippet sets the sensitivity label on the current mail item.
 
@@ -20389,7 +20389,7 @@
 'Office.SensitivityLabelsCatalog#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
     // This snippet gets all available sensitivity labels from the catalog.
 
@@ -20411,7 +20411,7 @@
 'Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
     // This snippet determines if the sensitivity labels catalog is enabled on
     the current mailbox.
@@ -20531,7 +20531,7 @@
 'Office.SessionData#clearAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.clearAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -20543,7 +20543,7 @@
 'Office.SessionData#getAllAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -20555,7 +20555,7 @@
 'Office.SessionData#getAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAsync(
       "Date",
@@ -20569,7 +20569,7 @@
 'Office.SessionData#removeAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.removeAsync(
       "Date",
@@ -20584,7 +20584,7 @@
 'Office.SessionData#setAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.setAsync(
       "Date",
@@ -26351,43 +26351,6 @@
         console.log("Kind of the first field: " + field.kind);
       }
     });
-'Word.Field#data:member':
-  - >-
-    // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
-
-    // Gets the first Addin field in the document and sets its data.
-
-    await Word.run(async (context) => {
-      var myFieldTypes = new Array();
-      myFieldTypes[0] = Word.FieldType.addin;
-
-      const addinFields = context.document.body.fields.getByTypes(myFieldTypes);
-      let fields = addinFields.load("items");
-      await context.sync();
-
-      if (fields.items.length === 0) {
-        console.log("No Addin fields in this document.");
-      } else {
-        fields.load();
-        await context.sync();
-
-        const firstAddinField = fields.items[0];
-        firstAddinField.load("code,result,data");
-        await context.sync();
-
-        console.log("The data of the Addin field before being set:");
-        console.log(firstAddinField.data);
-
-        const data = $("#input-reference").val();
-        firstAddinField.data = data;
-        firstAddinField.load("data");
-        await context.sync();
-
-        console.log("The data of the Addin field after being set:");
-        console.log(firstAddinField.data);
-      }
-    });
 'Word.Field#delete:member(1)':
   - >-
     // Link to full sample:
@@ -26638,36 +26601,21 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-    // Gets the first Addin field in the document and sets its data.
+    // Inserts a Date field before selection.
 
     await Word.run(async (context) => {
-      var myFieldTypes = new Array();
-      myFieldTypes[0] = Word.FieldType.addin;
+      var range = context.document.getSelection().getRange();
 
-      const addinFields = context.document.body.fields.getByTypes(myFieldTypes);
-      let fields = addinFields.load("items");
+      const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+      field.load("result,code");
       await context.sync();
 
-      if (fields.items.length === 0) {
-        console.log("No Addin fields in this document.");
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
       } else {
-        fields.load();
-        await context.sync();
-
-        const firstAddinField = fields.items[0];
-        firstAddinField.load("code,result,data");
-        await context.sync();
-
-        console.log("The data of the Addin field before being set:");
-        console.log(firstAddinField.data);
-
-        const data = $("#input-reference").val();
-        firstAddinField.data = data;
-        firstAddinField.load("data");
-        await context.sync();
-
-        console.log("The data of the Addin field after being set:");
-        console.log(firstAddinField.data);
+        console.log("Code of the field: " + field.code);
+        console.log("Result of the field: " + JSON.stringify(field.result));
       }
     });
 'Word.Font#bold:member':

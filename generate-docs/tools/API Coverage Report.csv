@@ -10656,7 +10656,7 @@ Word.EventType,contentControlSelectionChanged,EnumField,Fine,false
 Word.Field,N/A,Class,Good,false
 Word.Field,code,Property,Good,true
 Word.Field,context,Property,Good,false
-Word.Field,data,Property,Good,true
+Word.Field,data,Property,Good,false
 Word.Field,kind,Property,Good,true
 Word.Field,locked,Property,Good,true
 Word.Field,parentBody,Property,Good,true
