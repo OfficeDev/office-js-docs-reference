@@ -130,7 +130,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
         "outlook",
         forceRebuild

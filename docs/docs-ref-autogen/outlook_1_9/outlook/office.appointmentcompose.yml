@@ -2482,16 +2482,14 @@ methods:
     package: outlook!
     fullName: 'getSharedPropertiesAsync(options, callback)'
     summary: >-
-      Gets the properties of an appointment or message in a shared folder.
+      Gets the properties of an appointment or message in a shared folder or shared mailbox.
 
 
-      For more information around using this API, see the [delegate
-      access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2502,6 +2500,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      *Note**: This method is not supported in Outlook on iOS or Android.
 
 
       #### Examples
@@ -2568,9 +2569,9 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
-            item.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property
+            provides the properties of the shared item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
@@ -2582,16 +2583,14 @@ methods:
     package: outlook!
     fullName: getSharedPropertiesAsync(callback)
     summary: >-
-      Gets the properties of an appointment or message in a shared folder.
+      Gets the properties of an appointment or message in a shared folder or shared mailbox.
 
 
-      For more information around using this API, see the [delegate
-      access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+      For more information around using this API, see [Enable shared folders and shared mailbox scenarios in an Outlook
+      add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access)<!-- -->.
     remarks: >-
-      \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox
+      support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
@@ -2602,6 +2601,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Organizer
+
+
+      *Note**: This method is not supported in Outlook on iOS or Android.
 
 
       #### Examples
@@ -2630,9 +2632,9 @@ methods:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
-            item.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The `asyncResult.value` property
+            provides the properties of the shared item.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void

@@ -1566,6 +1566,8 @@ export declare namespace Office {
         prependAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         
         
+        
+        
         /**
          * Replaces the selection in the body with the specified text.
          *
@@ -1801,6 +1803,7 @@ export declare namespace Office {
          */
         set(name: string, value: string): void;
     }
+    
     /**
      * Provides diagnostic information to an Outlook add-in.
      *
@@ -2450,6 +2453,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
@@ -2665,6 +2670,7 @@ export declare namespace Office {
         conversationId: string;
         
         
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -2678,6 +2684,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         itemType: MailboxEnums.ItemType | string;
+        
         
         
         
@@ -4058,6 +4065,10 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
+    
+    
+    
     
     
     

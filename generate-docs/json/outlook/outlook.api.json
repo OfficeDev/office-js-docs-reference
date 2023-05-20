@@ -2026,7 +2026,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member(1)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * *Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2106,7 +2106,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getSharedPropertiesAsync:member(2)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5182,7 +5182,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5262,7 +5262,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(2)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7311,7 +7311,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependOnSendAsync:member(1)",
-                  "docComment": "/**\n * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.\n *\n * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.\n *\n * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.\n *\n * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}, the prepend-on-send feature runs first.\n *\n * - A new line is added after the prepended content.\n *\n * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs. The content of the last run add-in appears above previously prepended content.\n *\n * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.\n *\n * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Any object that can be accessed in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.\n *\n * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.\n *\n * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.\n *\n * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}, the prepend-on-send feature runs first.\n *\n * - A new line is added after the prepended content.\n *\n * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs. The content of the last run add-in appears above previously prepended content.\n *\n * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.\n *\n * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Any object that can be accessed in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7374,7 +7374,7 @@
                     "startIndex": 11,
                     "endIndex": 12
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -7407,7 +7407,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependOnSendAsync:member(2)",
-                  "docComment": "/**\n * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.\n *\n * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.\n *\n * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.\n *\n * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}, the prepend-on-send feature runs first.\n *\n * - A new line is added after the prepended content.\n *\n * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs. The content of the last run add-in appears above previously prepended content.\n *\n * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.\n *\n * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.\n *\n * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.\n *\n * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.\n *\n * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in}, the prepend-on-send feature runs first.\n *\n * - A new line is added after the prepended content.\n *\n * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs. The content of the last run add-in appears above previously prepended content.\n *\n * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.\n *\n * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7452,7 +7452,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -9072,21 +9072,21 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.DelayDeliveryTime:interface",
-              "docComment": "/**\n * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "docComment": "/**\n * The `DelayDeliveryTime` object enables you to manage the delayed delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface DelayDeliveryTime "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "DelayDeliveryTime",
               "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9141,7 +9141,7 @@
                     "startIndex": 9,
                     "endIndex": 10
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -9166,7 +9166,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The delivery date and time of a message is returned in the `asyncResult.value` property. If a delivery date hasn't been set on a message yet, `0` is returned instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9212,7 +9212,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -9229,7 +9229,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(1)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9284,7 +9284,7 @@
                     "startIndex": 9,
                     "endIndex": 10
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -9317,7 +9317,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.DelayDeliveryTime#setAsync:member(2)",
-                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Sets the delivery date and time of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `InvalidFormatError` - The format of the specified data object is not valid.\n *\n * @param datetime - The future date and time when the message should be sent.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9363,7 +9363,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -13844,7 +13844,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#getSelectedItemsAsync:member(1)",
-                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13890,7 +13890,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -13915,7 +13915,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#getSelectedItemsAsync:member(2)",
-                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages (preview)}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13952,7 +13952,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -21825,7 +21825,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#delayDeliveryTime:member",
-                  "docComment": "/**\n * Gets or sets the delayed delivery date and time of a message.\n *\n * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets or sets the delayed delivery date and time of a message.\n *\n * The `delayDeliveryTime` property returns a `DelayDeliveryTime` object that provides methods to manage the delivery date and time of the message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21843,7 +21843,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "delayDeliveryTime",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -22866,7 +22866,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getSharedPropertiesAsync:member(1)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.\n *\n * a. **Delegate access/Shared folders**\n *\n * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.\n *\n * 3. The delegate opens the draft from the shared folder then continues composing.\n *\n * b. **Shared mailbox (applies to Outlook on Windows only)**\n *\n * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.\n *\n * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.\n *\n * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.\n *\n * a. **Delegate access/Shared folders**\n *\n * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.\n *\n * 3. The delegate opens the draft from the shared folder then continues composing.\n *\n * b. **Shared mailbox (applies to Outlook on Windows only)**\n *\n * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.\n *\n * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.\n *\n * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22946,7 +22946,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getSharedPropertiesAsync:member(2)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.\n *\n * a. **Delegate access/Shared folders**\n *\n * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.\n *\n * 3. The delegate opens the draft from the shared folder then continues composing.\n *\n * b. **Shared mailbox (applies to Outlook on Windows only)**\n *\n * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.\n *\n * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.\n *\n * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.\n *\n * a. **Delegate access/Shared folders**\n *\n * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder shared with the delegate.\n *\n * 3. The delegate opens the draft from the shared folder then continues composing.\n *\n * b. **Shared mailbox (applies to Outlook on Windows only)**\n *\n * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.\n *\n * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.\n *\n * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.\n *\n * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties. After the message has been sent, it's usually found in the sender's **Sent Items** folder.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23750,7 +23750,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#sensitivityLabel:member",
-                  "docComment": "/**\n * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the object to get or set the {@link Office.SensitivityLabel | sensitivity label} of a message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23768,7 +23768,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "sensitivityLabel",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -25742,7 +25742,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#getSharedPropertiesAsync:member(1)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25822,7 +25822,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#getSharedPropertiesAsync:member(2)",
-                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.\n */\n",
+                  "docComment": "/**\n * Gets the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information around using this API, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30305,21 +30305,21 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SensitivityLabel:interface",
-              "docComment": "/**\n * Provides methods to get or set the sensitivity label of a message or appointment. For more information on sensitivity labels, see {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | Learn about sensitivity labels}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides methods to get or set the sensitivity label of a message or appointment. For more information on sensitivity labels, see {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | Learn about sensitivity labels}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface SensitivityLabel "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "SensitivityLabel",
               "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabel#getAsync:member(1)",
-                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30365,7 +30365,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -30390,7 +30390,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabel#getAsync:member(2)",
-                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets the unique identifier (GUID) of the sensitivity label applied to a message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The sensitivity label's GUID is returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30427,7 +30427,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -30444,7 +30444,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabel#setAsync:member(1)",
-                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30503,7 +30503,7 @@
                     "startIndex": 10,
                     "endIndex": 11
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -30536,7 +30536,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabel#setAsync:member(2)",
-                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Applies the specified sensitivity label to the message or appointment being composed.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Tip**: To determine the sensitivity labels available for use, call the `Office.context.sensitivityLabelsCatalog.getAsync` method.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param sensitivityLabel - The sensitivity label to be applied to the message or appointment being composed. The parameter value can be a sensitivity label's unique identifier (GUID) or a {@link Office.SensitivityLabelDetails | SensitivityLabelDetails} object.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30586,7 +30586,7 @@
                     "startIndex": 8,
                     "endIndex": 9
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -30614,21 +30614,21 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SensitivityLabelChangedEventArgs:interface",
-              "docComment": "/**\n * Provides the change status of the sensitivity label applied to a message or appointment in compose mode. This information is provided when the `Office.EventType.SensitivityLabelChanged` event is raised.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides the change status of the sensitivity label applied to a message or appointment in compose mode. This information is provided when the `Office.EventType.SensitivityLabelChanged` event is raised.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface SensitivityLabelChangedEventArgs "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "SensitivityLabelChangedEventArgs",
               "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelChangedEventArgs#type:member",
-                  "docComment": "/**\n * The type of event that was raised. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The type of event that was raised. For details, refer to {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30645,7 +30645,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30658,21 +30658,21 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SensitivityLabelDetails:interface",
-              "docComment": "/**\n * Represents the properties of available sensitivity labels in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents the properties of available sensitivity labels in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface SensitivityLabelDetails "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "SensitivityLabelDetails",
               "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelDetails#children:member",
-                  "docComment": "/**\n * The {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels | sublabels} of the sensitivity label. Returns `null` if a label doesn't have any sublabels.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels | sublabels} of the sensitivity label. Returns `null` if a label doesn't have any sublabels.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30694,7 +30694,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "children",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30704,7 +30704,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelDetails#color:member",
-                  "docComment": "/**\n * The color of the sensitivity label.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The color of the sensitivity label.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30721,7 +30721,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "color",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30731,7 +30731,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelDetails#id:member",
-                  "docComment": "/**\n * The unique identifier (GUID) of the sensitivity label.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The unique identifier (GUID) of the sensitivity label.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30748,7 +30748,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "id",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30758,7 +30758,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelDetails#name:member",
-                  "docComment": "/**\n * The name of the sensitivity label.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The name of the sensitivity label.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30775,7 +30775,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "name",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30785,7 +30785,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelDetails#tooltip:member",
-                  "docComment": "/**\n * The description of the sensitivity label.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * The description of the sensitivity label.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30802,7 +30802,7 @@
                   ],
                   "isReadonly": false,
                   "isOptional": false,
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "name": "tooltip",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
@@ -30815,21 +30815,21 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SensitivityLabelsCatalog:interface",
-              "docComment": "/**\n * Provides methods to check the status of the catalog of {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | sensitivity labels} in Outlook and retrieve all available sensitivity labels if the catalog is enabled.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Provides methods to check the status of the catalog of {@link https://learn.microsoft.com/microsoft-365/compliance/sensitivity-labels | sensitivity labels} in Outlook and retrieve all available sensitivity labels if the catalog is enabled.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
                   "text": "export interface SensitivityLabelsCatalog "
                 }
               ],
-              "releaseTag": "Beta",
+              "releaseTag": "Public",
               "name": "SensitivityLabelsCatalog",
               "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getAsync:member(1)",
-                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30884,7 +30884,7 @@
                     "startIndex": 9,
                     "endIndex": 10
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -30909,7 +30909,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getAsync:member(2)",
-                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Gets all the sensitivity labels that are enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call `getIsEnabledAsync` before using `getAsync`.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The available sensitivity labels and their properties are returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30955,7 +30955,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -30972,7 +30972,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(1)",
-                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31018,7 +31018,7 @@
                     "startIndex": 7,
                     "endIndex": 8
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -31043,7 +31043,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2)",
-                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox preview]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode (preview)}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Checks whether the catalog of sensitivity labels is enabled in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more information, see {@link https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels | Get started with sensitivity labels}.\n *\n * **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.\n *\n * To learn more about how to manage sensitivity labels in your add-in, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label | Manage the sensitivity label of your message or appointment in compose mode}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The status of the catalog of sensitivity labels is returned in the `asyncResult.value` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31080,7 +31080,7 @@
                     "startIndex": 5,
                     "endIndex": 6
                   },
-                  "releaseTag": "Beta",
+                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -32264,7 +32264,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.SharedProperties:interface",
-              "docComment": "/**\n * Represents the properties of an appointment or message in a shared folder or shared mailbox (now in preview).\n *\n * For more information on how this object is used, see the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents the properties of an appointment or message in a shared folder or shared mailbox.\n *\n * For more information on how this object is used, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

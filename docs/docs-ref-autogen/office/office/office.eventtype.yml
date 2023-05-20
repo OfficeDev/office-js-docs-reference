@@ -200,7 +200,7 @@ fields:
       object.
 
 
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SensitivityLabelChanged
     uid: 'office!Office.EventType.SensitivityLabelChanged:member'
     package: office!
@@ -211,11 +211,11 @@ fields:
 
       To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item`
       object. The event handler receives an argument of type
-      [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview)<!--
+      [Office.SensitivityLabelChangedEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs)<!--
       -->.
 
 
-      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: SettingsChanged
     uid: 'office!Office.EventType.SettingsChanged:member'
     package: office!

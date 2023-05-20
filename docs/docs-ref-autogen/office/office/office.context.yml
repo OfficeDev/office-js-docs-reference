@@ -414,6 +414,9 @@ properties:
       Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
       sensitivity labels if the catalog is enabled.
     remarks: >-
+      \[ [API set: Mailbox 1.13](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read/write item**
@@ -449,7 +452,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sensitivityLabelsCatalog: Office.SensitivityLabelsCatalog;'

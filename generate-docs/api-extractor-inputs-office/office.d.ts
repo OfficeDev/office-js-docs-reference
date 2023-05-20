@@ -974,14 +974,14 @@ export declare namespace Office {
         /**
          * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
          * sensitivity labels if the catalog is enabled.
-         * 
+         *
          * @remarks
-         * 
+         *
+         * [Api set: Mailbox 1.13]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
-         * @beta
          */
         sensitivityLabelsCatalog: Outlook.SensitivityLabelsCatalog;
         /**
@@ -2400,7 +2400,7 @@ export declare namespace Office {
          * 
          * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          * 
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.13]
          */
         SelectedItemsChanged,
         /**
@@ -2409,11 +2409,9 @@ export declare namespace Office {
          * 
          * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview | Office.SensitivityLabelChangedEventArgs}.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs | Office.SensitivityLabelChangedEventArgs}.
          * 
-         * [Api set: Mailbox preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.13]
          */
         SensitivityLabelChanged,
         /**

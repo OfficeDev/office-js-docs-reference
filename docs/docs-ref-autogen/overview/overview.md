@@ -61,6 +61,7 @@ The following is a list of APIs for the [supported Office host applications](/of
             <h3>Outlook APIs</h3>
             <ul>
                 <li><a href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
+                <li><a href="/javascript/api/outlook?view=outlook-js-1.13">Mailbox 1.13</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.12">Mailbox 1.12</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.11">Mailbox 1.11</a></li>
                 <li><a href="/javascript/api/outlook?view=outlook-js-1.10">Mailbox 1.10</a></li>
