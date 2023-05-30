@@ -104,9 +104,9 @@ The following servers support Outlook add-ins.
 || 2013 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md) |
 
 > [!NOTE]
-> <sup>1</sup>[!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
+> <sup>1</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
 >
-> <sup>2</sup>In an Exchange on-premises environment, add-ins installed in Outlook on the web only support the requirement sets listed for the specific Exchange version. If an installed add-in implements a feature from a requirement set that isn't supported by Exchange on-premises, it won't work in Outlook on the web. However, it may work in Outlook desktop clients that support the minimum requirement set needed to run the feature. To determine whether a feature can run on Outlook desktop clients in an Exchange on-premises environment, see the documentation for that specific feature.
+> <sup>2</sup> In an Exchange on-premises environment, add-ins installed in Outlook on the web only support the requirement sets listed for the specific Exchange version. If an installed add-in implements a feature from a requirement set that isn't supported by Exchange on-premises, it won't work in Outlook on the web. However, it may work in Outlook desktop clients that support the minimum requirement set needed to run the feature. To determine whether a feature can run on Outlook desktop clients in an Exchange on-premises environment, see the documentation for that specific feature.
 
 ### Outlook client support
 
