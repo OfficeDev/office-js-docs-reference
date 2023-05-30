@@ -1525,11 +1525,15 @@ export declare namespace Office {
          * @remarks
          *
          * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
-         * 
+         *
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
-         * 
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-         * 
+         *
+         * **Important**: In Outlook, this API isn't supported in the following scenarios.
+         *
+         * - If the add-in is loaded in an Outlook.com or Gmail mailbox.
+         *
+         * - If the add-in is loaded in Outlook on the web in the Safari browser. This results in error 13001 ("The user is not signed into Office").
+         *
          * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
          * To retrieve an access token in older builds, use 
          * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
