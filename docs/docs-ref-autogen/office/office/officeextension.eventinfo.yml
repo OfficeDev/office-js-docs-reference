@@ -3,7 +3,7 @@ name: OfficeExtension.EventInfo
 uid: 'office!OfficeExtension.EventInfo:interface'
 package: office!
 fullName: OfficeExtension.EventInfo
-summary: ''
+summary: Used by Office to construct event handlers. Do not call in your code.
 remarks: ''
 isPreview: false
 isDeprecated: false

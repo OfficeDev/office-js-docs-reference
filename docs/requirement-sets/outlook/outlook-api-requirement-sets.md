@@ -1,14 +1,14 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 05/19/2023
+ms.date: 06/09/2023
 ms.topic: overview
 ms.localizationpriority: high
 ---
 
 # Outlook JavaScript API requirement sets
 
-Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you are using the [Teams manifest format (preview)](/office/dev/add-ins/develop/json-manifest-overview) or the [XML manifest format](/office/dev/add-ins/develop/add-in-manifests).
+Outlook add-ins declare what API versions they require in their manifest. The markup varies depending on whether you're using the [XML manifest format](/office/dev/add-ins/develop/xml-manifest-overview) or the [unified manifest for Microsoft 365 (preview)](/office/dev/add-ins/develop/unified-manifest-overview).
 
 # [XML Manifest](#tab/xmlmanifest)
 
@@ -24,7 +24,7 @@ For example, the following manifest snippet indicates a minimum requirement set 
 </Requirements>
 ```
 
-# [Teams Manifest (developer preview)](#tab/jsonmanifest)
+# [Unified manifest for Microsoft 365 (developer preview)](#tab/jsonmanifest)
 
 The API version is specified by the "extensions.requirements.capabilities" property. Set the "capabilities.name" property to "Mailbox" and the "capabilities.minVersion" property to the minimum API requirement set that supports the add-in's scenarios.
 
@@ -98,13 +98,15 @@ The following servers support Outlook add-ins.
 
 | Product | Major Exchange version | Supported API requirement sets |
 |---|---|---|
-| Exchange Online | Latest build | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md), [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)\* |
-| Exchange on-premises | 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| Exchange Online | Latest build | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md), [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>1</sup> |
+| Exchange on-premises<sup>2</sup> | 2019 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2016 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 || 2013 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md) |
 
 > [!NOTE]
-> \* [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
+> <sup>1</sup> [!INCLUDE [How to use the Identity 1.3 requirement set in Outlook add-ins](../../includes/outlook-identity-13-note.md)]
+>
+> <sup>2</sup> Even if an add-in implements features from requirement sets not supported in an Exchange on-premises environment, it can still be added to an Outlook client as long as the requirement set specified in its manifest aligns with those supported by Exchange on-premises. However, an implemented feature will only work if the Outlook client in which the add-in is installed supports the minimum requirement set needed by a feature. To determine the requirement sets supported by varying Outlook clients, see [Outlook client support](#outlook-client-support). We recommend supplementing this with the documentation on the specific feature for any exceptions.
 
 ### Outlook client support
 
