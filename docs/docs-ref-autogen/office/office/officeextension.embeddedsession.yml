@@ -3,7 +3,10 @@ name: OfficeExtension.EmbeddedSession
 uid: 'office!OfficeExtension.EmbeddedSession:class'
 package: office!
 fullName: OfficeExtension.EmbeddedSession
-summary: ''
+summary: >-
+  Represents a session of a Visio diagram embedded in a SharePoint page. For more information, see [Visio JavaScript API
+  overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!--
+  -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -31,7 +34,7 @@ methods:
     uid: 'office!OfficeExtension.EmbeddedSession#init:member(1)'
     package: office!
     fullName: init()
-    summary: ''
+    summary: Initializes the session.
     remarks: ''
     isPreview: false
     isDeprecated: false

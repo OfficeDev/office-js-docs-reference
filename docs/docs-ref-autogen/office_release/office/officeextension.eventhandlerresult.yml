@@ -3,7 +3,13 @@ name: OfficeExtension.EventHandlerResult
 uid: 'office!OfficeExtension.EventHandlerResult:class'
 package: office!
 fullName: OfficeExtension.EventHandlerResult
-summary: ''
+summary: >-
+  Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+
+
+  **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
+  handler was added in must be used when removing the handler. More information can be found in [Remove an event
+  handler](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler)<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
