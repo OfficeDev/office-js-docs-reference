@@ -85,7 +85,7 @@ Added method to close a current message being composed with the option to discar
 
 #### [Office.SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails?view=outlook-js-preview&preserve-view=true)
 
-The ability to get the properties of selected messages in Outlook was introduced in [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md). Additional properties, such as `conversationId`, `internetMessageId`, and `hasAttachment`, are now available in preview.
+The ability to get the properties of selected messages in Outlook using [Office.context.mailbox.getSelectedItemsAsync](office.context.mailbox.md#methods) was introduced in [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md). Additional properties, such as `conversationId`, `internetMessageId`, and `hasAttachment`, are now available in preview.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
