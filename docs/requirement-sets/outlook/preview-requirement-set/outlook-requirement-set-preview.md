@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/15/2023
+ms.date: 06/19/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -85,7 +85,7 @@ Added method to close a current message being composed with the option to discar
 
 #### [Office.SelectedItemDetails](/javascript/api/outlook/office.selecteditemdetails?view=outlook-js-preview&preserve-view=true)
 
-Access to properties of selected messages in Outlook was introduced in [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md). Additional properties, such as `conversationId`, `internetMessageId`, and `hasAttachment`, are now available in preview.
+The ability to get the properties of selected messages in Outlook was introduced in [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md). Additional properties, such as `conversationId`, `internetMessageId`, and `hasAttachment`, are now available in preview.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
