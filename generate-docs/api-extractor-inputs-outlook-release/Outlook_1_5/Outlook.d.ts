@@ -1706,13 +1706,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning
-         * of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
@@ -1747,13 +1744,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning
-         * of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
@@ -1787,14 +1781,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows**: The cursor appears at the beginning of the body of the mail item.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
-         *
-         *   - **Web**: The cursor appears at the end of the body of the mail item.
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
@@ -1833,14 +1823,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows**: The cursor appears at the beginning of the body of the mail item.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
-         *
-         *   - **Web**: The cursor appears at the end of the body of the mail item.
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
@@ -4892,6 +4878,7 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
     
     
     

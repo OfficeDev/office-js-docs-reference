@@ -9028,6 +9028,14 @@ Office.RoamingSettings,get(name),Method,Fine,true
 Office.RoamingSettings,remove(name),Method,Poor,false
 Office.RoamingSettings,saveAsync(callback),Method,Poor,true
 Office.RoamingSettings,set(name,Method,Poor,true
+Office.SelectedItemDetails,N/A,Class,Good,false
+Office.SelectedItemDetails,conversationId,Property,Fine,false
+Office.SelectedItemDetails,hasAttachment,Property,Fine,false
+Office.SelectedItemDetails,internetMessageId,Property,Fine,false
+Office.SelectedItemDetails,itemId,Property,Fine,false
+Office.SelectedItemDetails,itemMode,Property,Fine,false
+Office.SelectedItemDetails,itemType,Property,Good,false
+Office.SelectedItemDetails,subject,Property,Fine,false
 Office.Sensitivity,N/A,Class,Good,false
 Office.Sensitivity,getAsync(options,Method,Poor,false
 Office.Sensitivity,getAsync(callback),Method,Poor,true

@@ -3975,13 +3975,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning
-         * of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
@@ -4016,13 +4013,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the content is prepended, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning
-         * of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
          * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
@@ -4133,14 +4127,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows**: The cursor appears at the beginning of the body of the mail item.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
-         *
-         *   - **Web**: The cursor appears at the end of the body of the mail item.
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
@@ -4179,14 +4169,10 @@ export declare namespace Office {
          *
          * **Important**:
          *
-         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.
-         * 
-         *   - **Windows**: The cursor appears at the beginning of the body of the mail item.
-         *
-         *   - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the
-         * body of the mail item.
-         *
-         *   - **Web**: The cursor appears at the end of the body of the mail item.
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
          *
          * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
          * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
@@ -6394,11 +6380,11 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
-         *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-         *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+         *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+         *        messages were selected.
          */
-        getSelectedItemsAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<object[]>) => void): void;
+        getSelectedItemsAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SelectedItemDetails[]>) => void): void;
         /**
          * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time.
          * To learn more about item multi-select, see
@@ -6416,11 +6402,11 @@ export declare namespace Office {
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the
-         *        `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-         *        (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.
+         *        `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of
+         *        {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which
+         *        messages were selected.
          */
-        getSelectedItemsAsync(callback: (asyncResult: CommonAPI.AsyncResult<object[]>) => void): void;
+        getSelectedItemsAsync(callback: (asyncResult: CommonAPI.AsyncResult<SelectedItemDetails[]>) => void): void;
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
@@ -10186,6 +10172,52 @@ export declare namespace Office {
          * @param value - Specifies the value to be stored.
          */
         set(name: string, value: any): void;
+    }
+    /**
+     * Represents the properties of a message that's currently selected in Outlook.
+     *
+     * @remarks
+     * [Api set: Mailbox 1.13]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read
+     */
+    export interface SelectedItemDetails {
+        /**
+         * The identifier of the message conversation that contains the message that's currently selected.
+         *
+         * @beta
+         */
+        conversationId: string;
+        /**
+         * Returns `true` if the message that's currently selected contains an attachment.
+         *
+         * @beta
+         */
+        hasAttachment: boolean;
+        /**
+         * The internet message identifier of the message that's currently selected.
+         *
+         * @beta
+         */
+        internetMessageId: string;
+        /**
+         * The Exchange Web Services (EWS) item identifier of the message that's currently selected.
+         */
+        itemId: string;
+        /**
+         * The Outlook mode (`Read` or `Compose`) of the message that's currently selected.
+         */
+        itemMode: string;
+        /**
+         * The type of the item that's currently selected. `Message` is the only supported type at this time.
+         */
+        itemType: MailboxEnums.ItemType | string;
+        /**
+         * The description that appears in the subject field of the message that's currently selected.
+         */
+        subject: string;
     }
     /**
      * Provides methods to get and set the sensitivity level of an appointment. To learn more about sensitivity levels, see
