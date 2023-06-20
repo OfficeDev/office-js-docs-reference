@@ -7006,7 +7006,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependAsync:member(1)",
-                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running.\n *\n * - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.\n *\n * - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7102,7 +7102,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependAsync:member(2)",
-                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running.\n *\n * - **Windows, Web**: The cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call.\n *\n * - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7338,7 +7338,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#setAsync:member(1)",
-                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.\n *\n * - **Windows**: The cursor appears at the beginning of the body of the mail item.\n *\n * - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - **Web**: The cursor appears at the end of the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows, the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7434,7 +7434,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#setAsync:member(2)",
-                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running.\n *\n * - **Windows**: The cursor appears at the beginning of the body of the mail item.\n *\n * - **Mac**: The cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - **Web**: The cursor appears at the end of the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Replaces the entire body with the specified text.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.3]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows, the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.\n *\n * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13406,7 +13406,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Mailbox#getSelectedItemsAsync:member(1)",
-                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n */\n",
+                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which messages were selected.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13432,7 +13432,87 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "<object[]>) => void"
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SelectedItemDetails",
+                      "canonicalReference": "outlook!Office.SelectedItemDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isOptional": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      },
+                      "isOptional": false
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 8
+                      },
+                      "isOptional": false
+                    }
+                  ],
+                  "name": "getSelectedItemsAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Mailbox#getSelectedItemsAsync:member(2)",
+                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages, such as the item ID and subject, are returned as an array of {@link Office.SelectedItemDetails | SelectedItemDetails} objects in the `asyncResult.value` property. The objects in the array follow the order in which messages were selected.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getSelectedItemsAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "SelectedItemDetails",
+                      "canonicalReference": "outlook!Office.SelectedItemDetails:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
                     },
                     {
                       "kind": "Content",
@@ -13453,75 +13533,13 @@
                     "endIndex": 8
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
-                  "parameters": [
-                    {
-                      "parameterName": "options",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 1,
-                        "endIndex": 2
-                      },
-                      "isOptional": false
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 3,
-                        "endIndex": 6
-                      },
-                      "isOptional": false
-                    }
-                  ],
-                  "name": "getSelectedItemsAsync"
-                },
-                {
-                  "kind": "MethodSignature",
-                  "canonicalReference": "outlook!Office.Mailbox#getSelectedItemsAsync:member(2)",
-                  "docComment": "/**\n * Gets currently selected messages on which an add-in can activate and perform operations. An add-in can activate on a maximum of 100 messages at a time. To learn more about item multi-select, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select | Activate your Outlook add-in on multiple messages}.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read\n *\n * **Important**: This method only applies to messages.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object. The properties of the selected messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode (`Read` or `Compose`). The objects in the array follow the order in which messages were selected.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "getSelectedItemsAsync(callback: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "office!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<object[]>) => void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "): "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "void"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "isOptional": false,
-                  "returnTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
-                  },
-                  "releaseTag": "Public",
                   "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
-                        "endIndex": 4
+                        "endIndex": 6
                       },
                       "isOptional": false
                     }
@@ -29232,6 +29250,136 @@
                     }
                   ],
                   "name": "set"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.SelectedItemDetails:interface",
+              "docComment": "/**\n * Represents the properties of a message that's currently selected in Outlook.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.13]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose, Message Read\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface SelectedItemDetails "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "SelectedItemDetails",
+              "preserveMemberOrder": false,
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SelectedItemDetails#itemId:member",
+                  "docComment": "/**\n * The Exchange Web Services (EWS) item identifier of the message that's currently selected.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "itemId: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "itemId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SelectedItemDetails#itemMode:member",
+                  "docComment": "/**\n * The Outlook mode (`Read` or `Compose`) of the message that's currently selected.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "itemMode: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "itemMode",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SelectedItemDetails#itemType:member",
+                  "docComment": "/**\n * The type of the item that's currently selected. `Message` is the only supported type at this time.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "itemType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.ItemType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.ItemType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "itemType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.SelectedItemDetails#subject:member",
+                  "docComment": "/**\n * The description that appears in the subject field of the message that's currently selected.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "subject: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": false,
+                  "releaseTag": "Public",
+                  "name": "subject",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
                 }
               ],
               "extendsTokenRanges": []
