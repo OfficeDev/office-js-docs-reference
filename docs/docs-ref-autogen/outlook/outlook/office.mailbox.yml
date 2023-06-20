@@ -2012,7 +2012,7 @@ methods:
     syntax:
       content: >-
         getSelectedItemsAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
-        Office.AsyncResult<object[]>) => void): void;
+        Office.AsyncResult<SelectedItemDetails[]>) => void): void;
       parameters:
         - id: options
           description: >-
@@ -2023,10 +2023,12 @@ methods:
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The properties of the selected
-            messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties
-            include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-            (`Read` or `Compose`<!-- -->). The objects in the array follow the order in which messages were selected.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;object[]&gt;) =&gt; void'
+            messages, such as the item ID and subject, are returned as an array of
+            [SelectedItemDetails](xref:outlook!Office.SelectedItemDetails:interface) objects in the `asyncResult.value`
+            property. The objects in the array follow the order in which messages were selected.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.SelectedItemDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''
@@ -2094,16 +2096,18 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getSelectedItemsAsync(callback: (asyncResult: Office.AsyncResult<object[]>) => void): void;'
+      content: 'getSelectedItemsAsync(callback: (asyncResult: Office.AsyncResult<SelectedItemDetails[]>) => void): void;'
       parameters:
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The properties of the selected
-            messages are returned as an array of JSON objects in the `asyncResult.value` property. These properties
-            include the item ID, subject, item type (`Message` is the only supported type at this time), and item mode
-            (`Read` or `Compose`<!-- -->). The objects in the array follow the order in which messages were selected.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;object[]&gt;) =&gt; void'
+            messages, such as the item ID and subject, are returned as an array of
+            [SelectedItemDetails](xref:outlook!Office.SelectedItemDetails:interface) objects in the `asyncResult.value`
+            property. The objects in the array follow the order in which messages were selected.
+          type: >-
+            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            uid="outlook!Office.SelectedItemDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
         description: ''

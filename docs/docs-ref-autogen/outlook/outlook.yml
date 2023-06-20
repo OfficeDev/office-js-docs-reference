@@ -60,6 +60,7 @@ interfaces:
   - 'outlook!Office.ReplyFormAttachment:interface'
   - 'outlook!Office.ReplyFormData:interface'
   - 'outlook!Office.RoamingSettings:interface'
+  - 'outlook!Office.SelectedItemDetails:interface'
   - 'outlook!Office.Sensitivity:interface'
   - 'outlook!Office.SensitivityLabel:interface'
   - 'outlook!Office.SensitivityLabelChangedEventArgs:interface'

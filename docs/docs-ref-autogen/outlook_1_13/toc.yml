@@ -157,6 +157,8 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
+          - name: SelectedItemDetails
+            uid: 'outlook!Office.SelectedItemDetails:interface'
           - name: SensitivityLabel
             uid: 'outlook!Office.SensitivityLabel:interface'
           - name: SensitivityLabelChangedEventArgs
