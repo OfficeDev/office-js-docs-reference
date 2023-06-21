@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 02/06/2023
+ms.date: 06/22/2023
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +56,7 @@ The following example shows how to use the **\<ExtensionPoint\>** element with *
 > [!IMPORTANT]
 > For elements that contain an ID attribute, make sure you provide a unique ID.
 
-```XML
+```xml
 <ExtensionPoint xsi:type="PrimaryCommandSurface">
   <CustomTab id="Contoso.MyTab1">
     <Label resid="residLabel4" />
@@ -138,13 +138,14 @@ A custom function written in JavaScript or TypeScript for Excel.
 - [MessageComposeCommandSurface](#messagecomposecommandsurface)
 - [AppointmentOrganizerCommandSurface](#appointmentorganizercommandsurface)
 - [AppointmentAttendeeCommandSurface](#appointmentattendeecommandsurface)
-- [Module](#module) (Can only be used in the [DesktopFormFactor](desktopformfactor.md).)
+- [Module](#module) (can only be used in the [DesktopFormFactor](desktopformfactor.md))
 - [MobileMessageReadCommandSurface](#mobilemessagereadcommandsurface)
 - [MobileOnlineMeetingCommandSurface](#mobileonlinemeetingcommandsurface)
 - [MobileLogEventAppointmentAttendee](#mobilelogeventappointmentattendee)
 - [LaunchEvent](#launchevent)
 - [Events](#events)
 - [DetectedEntity](#detectedentity)
+- [ReportPhishingCommandSurface (preview)](#reportphishingcommandsurface-preview)
 
 ### MessageReadCommandSurface
 
@@ -326,11 +327,11 @@ This extension point puts a mode-appropriate toggle in the command surface for a
 |:-----|:-----|
 |  [Control](control.md) |  Adds a button to the command surface.  |
 
-`ExtensionPoint` elements of this type can only have one child element: a `Control` element.
+**\<ExtensionPoint\>** elements of this type can only have one child element: a **\<Control\>** element.
 
-The `Control` element contained in this extension point must have the `xsi:type` attribute set to `MobileButton`.
+The **\<Control\>** element contained in this extension point must have the **xsi:type** attribute set to `MobileButton`.
 
-The `Icon` images should be in grayscale using hex code `#919191` or its equivalent in [other color formats](https://convertingcolors.com/hex-color-919191.html).
+The images specified in the **\<Icon\>** element should be in grayscale using hex code `#919191` or its equivalent in [other color formats](https://convertingcolors.com/hex-color-919191.html).
 
 #### Example
 
@@ -371,11 +372,11 @@ This extension point puts a **Log** action button contextually in the command su
 |:-----|:-----|
 |  [Control](control.md) |  Adds a button to the command surface.  |
 
-`ExtensionPoint` elements of this type can only have one child element: a `Control` element.
+**\<ExtensionPoint\>** elements of this type can only have one child element: a **\<Control\>** element.
 
-The `Control` element contained in this extension point must have the `xsi:type` attribute set to `MobileButton`.
+The **\<Control\>** element contained in this extension point must have the **xsi:type** attribute set to `MobileButton`.
 
-The `Icon` images should be in grayscale using hex code `#919191` or its equivalent in [other color formats](https://convertingcolors.com/hex-color-919191.html).
+The images specified in the **\<Icon\>** element should be in grayscale using hex code `#919191` or its equivalent in [other color formats](https://convertingcolors.com/hex-color-919191.html).
 
 #### Example
 
@@ -457,7 +458,7 @@ This extension point adds a contextual add-in activation on a specified entity t
 > [!IMPORTANT]
 > Registering [Mailbox](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.md#events) and [Item](../requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item.md#events) events is not available with this extension point.
 
-The containing [VersionOverrides](versionoverrides.md) element must have an `xsi:type` attribute value of `VersionOverridesV1_1`.
+The containing [VersionOverrides](versionoverrides.md) element must have an **xsi:type** attribute value of `VersionOverridesV1_1`.
 
 > [!NOTE]
 > This element type is available to [Outlook clients that support requirement sets 1.6 and later](../requirement-sets/outlook/outlook-api-requirement-sets.md#requirement-sets-supported-by-exchange-servers-and-outlook-clients).
@@ -474,14 +475,14 @@ Required. The label of the group. The **resid** attribute can be no more than 32
 
 #### Highlight requirements
 
-The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the `Highlight` attribute of the `Rule` element for `ItemHasKnownEntity` and `ItemHasRegularExpressionMatch` rule types.
+The only way a user can activate a contextual add-in is to interact with a highlighted entity. Developers can control which entities are highlighted by using the **Highlight** attribute of the **\<Rule\>** element for `ItemHasKnownEntity` and `ItemHasRegularExpressionMatch` rule types.
 
 However, there are some limitations to be aware of. These limitations are in place to ensure that there will always be a highlighted entity in applicable messages or appointments to give the user a way to activate the add-in.
 
 - The `EmailAddress` and `Url` entity types cannot be highlighted, and therefore cannot be used to activate an add-in.
-- If using a single rule, `Highlight` MUST be set to `all`.
-- If using a `RuleCollection` rule type with `Mode="AND"` to combine multiple rules, at least one of the rules MUST have `Highlight` set to `all`.
-- If using a `RuleCollection` rule type with `Mode="OR"` to combine multiple rules, all of the rules MUST have `Highlight` set to `all`.
+- If using a single rule, the **Highlight** attribute MUST be set to `all`.
+- If using a `RuleCollection` rule type with `Mode="AND"` to combine multiple rules, at least one of the rules MUST have the **Highlight** attribute set to `all`.
+- If using a `RuleCollection` rule type with `Mode="OR"` to combine multiple rules, all of the rules MUST have the **Highlight** attribute set to `all`.
 
 #### DetectedEntity event example
 
@@ -496,5 +497,59 @@ However, there are some limitations to be aware of. These limitations are in pla
     <Rule xsi:type="ItemHasKnownEntity" EntityType="MeetingSuggestion" Highlight="all" />
     <Rule xsi:type="ItemHasKnownEntity" EntityType="Address" Highlight="none" />
   </Rule>
+</ExtensionPoint>
+```
+
+### ReportPhishingCommandSurface (preview)
+
+This extension point activates your spam reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow section.
+
+#### Child elements
+
+| Element | Description |
+| ------- | ------- |
+| [ReportPhishingCustomization element (preview)](reportphishingcustomization.md)| Configures the ribbon button and pre-processing dialog of a spam reporting add-in. |
+
+#### Example
+
+```xml
+<ExtensionPoint xsi:type="ReportPhishingCommandSurface">
+  <ReportPhishingCustomization>
+    <!-- Configures the ribbon button. -->
+    <Control xsi:type="Button" id="ReportingButton">
+      <Label resid="ReportingButton.Label"/>
+      <Supertip>
+        <Title resid="ReportingButton.Label"/>
+        <Description resid="ReportingButton.Description"/>
+      </Supertip>
+      <Icon>
+        <bt:Image size="16" resid="Icon.16x16"/>
+        <bt:Image size="32" resid="Icon.32x32"/>
+        <bt:Image size="64" resid="Icon.64x64"/>
+        <bt:Image size="80" resid="Icon.80x80"/>
+      </Icon>
+      <Action xsi:type="ExecuteFunction">
+        <FunctionName>onMessageReport</FunctionName>
+      </Action>
+    </Control>
+    <!-- Configures the pre-processing dialog. -->
+    <PreProcessingDialog>
+      <Title resid="PreProcessingDialog.Label"/>
+      <Description resid="PreProcessingDialog.Description"/>
+      <ReportingOptions>
+        <Title resid="OptionsTitle.Label"/>
+        <Option resid="Option1.Label"/>
+        <Option resid="Option2.Label"/>
+        <Option resid="Option3.Label"/>
+        <Option resid="Option4.Label"/>
+      </ReportingOptions>
+      <FreeTextLabel resid="FreeText.Label"/>
+      <MoreInfo>
+        <MoreInfoText resid="MoreInfo.Label"/>
+        <MoreInfoUrl resid="MoreInfo.Url"/>
+      </MoreInfo>
+    </PreProcessingDialog>
+    <SourceLocation resid="Commands.Url"/>
+  </ReportPhishingCustomization>
 </ExtensionPoint>
 ```
