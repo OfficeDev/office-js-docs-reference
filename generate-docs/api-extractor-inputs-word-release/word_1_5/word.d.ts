@@ -5325,35 +5325,35 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        importChangeTrackingMode: boolean;
+        importChangeTrackingMode?: boolean;
         /**
          * Represents whether the page color and other background information from the source document should be imported.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        importPageColor: boolean;
+        importPageColor?: boolean;
         /**
          * Represents whether the paragraph spacing from the source document should be imported.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        importParagraphSpacing: boolean;
+        importParagraphSpacing?: boolean;
         /**
          * Represents whether the styles from the source document should be imported.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        importStyles: boolean;
+        importStyles?: boolean;
         /**
          * Represents whether the theme from the source document should be imported.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        importTheme: boolean;
+        importTheme?: boolean;
     }
     /**
      * Specifies the options to be included in a search operation.
