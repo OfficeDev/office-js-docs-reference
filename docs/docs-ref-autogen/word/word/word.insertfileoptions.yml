@@ -18,7 +18,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importChangeTrackingMode: boolean;'
+      content: 'importChangeTrackingMode?: boolean;'
       return:
         type: boolean
   - name: importPageColor
@@ -30,7 +30,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importPageColor: boolean;'
+      content: 'importPageColor?: boolean;'
       return:
         type: boolean
   - name: importParagraphSpacing
@@ -42,7 +42,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importParagraphSpacing: boolean;'
+      content: 'importParagraphSpacing?: boolean;'
       return:
         type: boolean
   - name: importStyles
@@ -54,7 +54,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importStyles: boolean;'
+      content: 'importStyles?: boolean;'
       return:
         type: boolean
   - name: importTheme
@@ -66,6 +66,6 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importTheme: boolean;'
+      content: 'importTheme?: boolean;'
       return:
         type: boolean
