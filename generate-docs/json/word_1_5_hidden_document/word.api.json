@@ -29506,7 +29506,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "importChangeTrackingMode: "
+                      "text": "importChangeTrackingMode?: "
                     },
                     {
                       "kind": "Content",
@@ -29518,7 +29518,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "importChangeTrackingMode",
                   "propertyTypeTokenRange": {
@@ -29533,7 +29533,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "importPageColor: "
+                      "text": "importPageColor?: "
                     },
                     {
                       "kind": "Content",
@@ -29545,7 +29545,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "importPageColor",
                   "propertyTypeTokenRange": {
@@ -29560,7 +29560,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "importParagraphSpacing: "
+                      "text": "importParagraphSpacing?: "
                     },
                     {
                       "kind": "Content",
@@ -29572,7 +29572,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "importParagraphSpacing",
                   "propertyTypeTokenRange": {
@@ -29587,7 +29587,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "importStyles: "
+                      "text": "importStyles?: "
                     },
                     {
                       "kind": "Content",
@@ -29599,7 +29599,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "importStyles",
                   "propertyTypeTokenRange": {
@@ -29614,7 +29614,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "importTheme: "
+                      "text": "importTheme?: "
                     },
                     {
                       "kind": "Content",
@@ -29626,7 +29626,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "importTheme",
                   "propertyTypeTokenRange": {
