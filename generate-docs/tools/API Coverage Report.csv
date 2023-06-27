@@ -10891,6 +10891,8 @@ Word.InlinePictureCollection,track(),Method,Poor,false
 Word.InlinePictureCollection,untrack(),Method,Poor,false
 Word.InsertFileOptions,N/A,Class,Good,false
 Word.InsertFileOptions,importChangeTrackingMode,Property,Good,false
+Word.InsertFileOptions,importCustomProperties,Property,Good,false
+Word.InsertFileOptions,importCustomXmlParts,Property,Good,false
 Word.InsertFileOptions,importPageColor,Property,Good,false
 Word.InsertFileOptions,importParagraphSpacing,Property,Good,false
 Word.InsertFileOptions,importStyles,Property,Good,false

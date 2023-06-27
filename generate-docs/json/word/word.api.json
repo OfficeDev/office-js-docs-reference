@@ -30989,6 +30989,60 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "word!Word.InsertFileOptions#importCustomProperties:member",
+                  "docComment": "/**\n * Represents whether the custom properties from the source document should be imported. Overwrites existing properties with the same name.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "importCustomProperties?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": true,
+                  "releaseTag": "Beta",
+                  "name": "importCustomProperties",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "word!Word.InsertFileOptions#importCustomXmlParts:member",
+                  "docComment": "/**\n * Represents whether the custom XML parts from the source document should be imported.\n *\n * @remarks\n *\n * [Api set: WordApi BETA (PREVIEW ONLY)]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "importCustomXmlParts?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isReadonly": false,
+                  "isOptional": true,
+                  "releaseTag": "Beta",
+                  "name": "importCustomXmlParts",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "word!Word.InsertFileOptions#importPageColor:member",
                   "docComment": "/**\n * Represents whether the page color and other background information from the source document should be imported.\n *\n * @remarks\n *\n * [Api set: WordApi 1.5]\n */\n",
                   "excerptTokens": [
