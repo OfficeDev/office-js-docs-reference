@@ -5982,6 +5982,22 @@ export declare namespace Word {
          */
         importChangeTrackingMode?: boolean;
         /**
+         * Represents whether the custom properties from the source document should be imported. Overwrites existing properties with the same name.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importCustomProperties?: boolean;
+        /**
+         * Represents whether the custom XML parts from the source document should be imported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        importCustomXmlParts?: boolean;
+        /**
          * Represents whether the page color and other background information from the source document should be imported.
          *
          * @remarks
