@@ -8475,6 +8475,13 @@ Office.Diagnostics,N/A,Class,Good,false
 Office.Diagnostics,hostName,Property,Good,false
 Office.Diagnostics,hostVersion,Property,Good,false
 Office.Diagnostics,OWAView,Property,Good,false
+Office.Display,N/A,Class,Good,false
+Office.Display,body,Property,Good,false
+Office.Display,subject,Property,Good,false
+Office.DisplayedBody,N/A,Class,Good,false
+Office.DisplayedBody,setAsync(data,Method,Fine,false
+Office.DisplayedSubject,N/A,Class,Good,false
+Office.DisplayedSubject,setAsync(data,Method,Fine,false
 Office.EmailAddressDetails,N/A,Class,Good,false
 Office.EmailAddressDetails,appointmentResponse,Property,Good,true
 Office.EmailAddressDetails,displayName,Property,Fine,true
@@ -8911,6 +8918,7 @@ Office.MessageRead,cc,Property,Good,true
 Office.MessageRead,conversationId,Property,Good,true
 Office.MessageRead,dateTimeCreated,Property,Good,true
 Office.MessageRead,dateTimeModified,Property,Good,true
+Office.MessageRead,display,Property,Good,false
 Office.MessageRead,end,Property,Good,true
 Office.MessageRead,from,Property,Good,true
 Office.MessageRead,internetMessageId,Property,Good,true

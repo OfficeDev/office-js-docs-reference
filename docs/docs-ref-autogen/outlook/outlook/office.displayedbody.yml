@@ -1,0 +1,113 @@
+### YamlMime:TSType
+name: Office.DisplayedBody
+uid: 'outlook!Office.DisplayedBody:interface'
+package: outlook!
+fullName: Office.DisplayedBody
+summary: Provides a method to temporarily set the content displayed in the body of a message in read mode.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Message Read
+isPreview: true
+isDeprecated: false
+type: interface
+methods:
+  - name: 'setAsync(data, options, callback)'
+    uid: 'outlook!Office.DisplayedBody#setAsync:member(1)'
+    package: outlook!
+    fullName: 'setAsync(data, options, callback)'
+    summary: >-
+      Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible
+      until the user switches to a different messsage or closes the window of the current message.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Recommended**: Call
+      [Office.context.mailbox.item.body.getTypeAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1))<!--
+      -->, then pass the returned value to the `options.coercionType` parameter.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      parameters:
+        - id: data
+          description: >-
+            The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000
+            characters.
+          type: string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback function. `coercionType`<!-- -->: The format of
+            the data to be temporarily displayed. The string in the `data` parameter will be converted to this format.
+          type: >-
+            <xref uid="office!Office.AsyncContextOptions:interface" /> & <xref
+            uid="outlook!Office.CoercionTypeOptions:interface" />
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
+  - name: 'setAsync(data, callback)'
+    uid: 'outlook!Office.DisplayedBody#setAsync:member(2)'
+    package: outlook!
+    fullName: 'setAsync(data, callback)'
+    summary: >-
+      Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible
+      until the user switches to a different messsage or closes the window of the current message.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'setAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      parameters:
+        - id: data
+          description: >-
+            The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000
+            characters.
+          type: string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. Any errors encountered will be
+            provided in the `asyncResult.error` property.
+          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+      return:
+        type: void
+        description: ''
