@@ -91,6 +91,12 @@ items:
             uid: 'outlook!Office.DelayDeliveryTime:interface'
           - name: Diagnostics
             uid: 'outlook!Office.Diagnostics:interface'
+          - name: Display
+            uid: 'outlook!Office.Display:interface'
+          - name: DisplayedBody
+            uid: 'outlook!Office.DisplayedBody:interface'
+          - name: DisplayedSubject
+            uid: 'outlook!Office.DisplayedSubject:interface'
           - name: EmailAddressDetails
             uid: 'outlook!Office.EmailAddressDetails:interface'
           - name: EmailUser
