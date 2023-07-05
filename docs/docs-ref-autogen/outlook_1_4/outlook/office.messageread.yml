@@ -151,19 +151,19 @@ properties:
 
       The `cc` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the
-      **Cc** line of the message. Collection size limits:
+      **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
 
 
-      - Windows: 500 members
+      - Windows: 500 recipients
 
 
-      - Classic Mac UI: 100 members
+      - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser: 20 members
+      - Web browser: 20 recipients
 
 
-      - New Mac UI, Android: No limit
+      - New Mac UI: No limit
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
@@ -907,19 +907,19 @@ properties:
 
       The `to` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each recipient listed on the
-      **To** line of the message. Collection size limits:
+      **To** line of the message. The maximum number of recipients returned varies per Outlook client.
 
 
-      - Windows: 500 members
+      - Windows: 500 recipients
 
 
-      - Classic Mac UI: 100 members
+      - Android, classic Mac UI, iOS: 100 recipients
 
 
-      - Web browser: 20 members
+      - Web browser: 20 recipients
 
 
-      - New Mac UI, Android: No limit
+      - New Mac UI: No limit
     remarks: >-
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
