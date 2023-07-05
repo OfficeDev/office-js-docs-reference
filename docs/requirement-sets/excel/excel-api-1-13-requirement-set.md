@@ -3,7 +3,6 @@ title: Excel JavaScript API requirement set 1.13
 description: Details about the ExcelApi 1.13 requirement set.
 ms.date: 07/09/2021
 ms.topic: whats-new
-ms.prod: excel
 ms.localizationpriority: medium
 ---
 

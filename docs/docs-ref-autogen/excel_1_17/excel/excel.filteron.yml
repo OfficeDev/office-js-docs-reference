@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```typescript
+  ```TypeScript
   // This function adds a custom AutoFilter to the active worksheet 
   // and applies the filter to a column of the used range.
   await Excel.run(async (context) => {

@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Comment#content:member'
     package: word!
     fullName: content
-    summary: Gets or sets the comment's content as plain text.
+    summary: Specifies the comment's content as plain text.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -45,12 +45,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Edit the first comment in the selected content.
+      // Edits the first comment in the selected content.
 
       await Word.run(async (context) => {
         const text = $("#edit-comment-text")
@@ -81,7 +81,7 @@ properties:
     uid: 'word!Word.Comment#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: Gets or sets the comment's content range.
+    summary: Specifies the comment's content range.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -144,8 +144,8 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      Gets or sets the comment thread's status. Setting to true resolves the comment thread. Getting a value of true
-      means that the comment thread is resolved.
+      Specifies the comment thread's status. Setting to true resolves the comment thread. Getting a value of true means
+      that the comment thread is resolved.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -153,12 +153,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Toggle Resolved status of the first comment in the selected content.
+      // Toggles Resolved status of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const comment = context.document
@@ -200,12 +200,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Delete the first comment in the selected content.
+      // Deletes the first comment in the selected content.
 
       await Word.run(async (context) => {
         context.document
@@ -238,12 +238,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the range of the first comment in the selected content.
+      // Gets the range of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const range = context.document
@@ -344,12 +344,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Reply to the first active comment in the selected content.
+      // Replies to the first active comment in the selected content.
 
       await Word.run(async (context) => {
         const text = $("#reply-text")

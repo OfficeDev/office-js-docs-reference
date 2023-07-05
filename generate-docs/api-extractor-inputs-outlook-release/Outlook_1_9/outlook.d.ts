@@ -487,7 +487,7 @@ export declare namespace Office {
             /**
              * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.
              * 
-             * **Note**: In Outlook on Windows starting with Version 2210 (Build 15813.20002), Global Address Book (GAL) recipients saved to a personal address book return
+             * **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web, Global Address Book (GAL) recipients saved to a personal address book return
              * the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
              * added or resolved against the GAL.
              */
@@ -495,6 +495,10 @@ export declare namespace Office {
             /**
              * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
              * and is therefore treated as an external SMTP address.
+             *
+             * **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address book return
+             * the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
+             * added or resolved against the GAL.
              */
             Other = "other"
         }
@@ -1940,45 +1944,43 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
+         *
+         * *Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
-         *                 The `value` property of the result is the properties of the shared item.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer
          *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
-         *                 The `value` property of the result is the properties of the shared item.
+         * *Note**: This method is not supported in Outlook on iOS or Android.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         
@@ -3220,45 +3222,43 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
-         *                 The `value` property of the result is the properties of the shared item.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`.
-         *                 The `value` property of the result is the properties of the shared item.
+         * **Note**: This method is not supported in Outlook on iOS or Android.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
@@ -3605,16 +3605,16 @@ export declare namespace Office {
          *
          * This method returns the entire current body in the format specified by `coercionType`.
          *
-         * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-         * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously.
-         * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+         * render efficiently with its rendering engine.
          *
          * @param coercionType - The format for the returned body.
          * @param options - An object literal that contains one or more of the following properties:-
@@ -3628,16 +3628,16 @@ export declare namespace Office {
          *
          * This method returns the entire current body in the format specified by `coercionType`.
          *
-         * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-         * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method previously.
-         * The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+         * render efficiently with its rendering engine.
          *
          * @param coercionType - The format for the returned body.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -3679,24 +3679,28 @@ export declare namespace Office {
         /**
          * Adds the specified content to the beginning of the item body.
          *
-         * The `prependAsync` method inserts the specified string at the beginning of the item body.
-         * After insertion, the cursor is returned to its original place, relative to the inserted content.
-         *
-         * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-         * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+         * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -3713,24 +3717,28 @@ export declare namespace Office {
         /**
          * Adds the specified content to the beginning of the item body.
          *
-         * The `prependAsync` method inserts the specified string at the beginning of the item body.
-         * After insertion, the cursor is returned to its original place, relative to the inserted content.
-         *
-         * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-         * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+         * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -3741,19 +3749,10 @@ export declare namespace Office {
          *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
          */
         prependAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         /**
          * Replaces the entire body with the specified text.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-         * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method
-         * previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
-         * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
          *
          * @remarks
          * [Api set: Mailbox 1.3]
@@ -3761,6 +3760,24 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+         * render efficiently with its rendering engine.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -3779,23 +3796,30 @@ export declare namespace Office {
         /**
          * Replaces the entire body with the specified text.
          *
-         * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
-         * The value returned from the `getAsync` method will not necessarily be exactly the same as the value that was passed in the `setAsync` method
-         * previously. The client may modify the value passed to `setAsync` in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
-         * **Important**: In Outlook on Windows and on Mac, the add-in user won't be able to revert this action with the **Undo** command.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the body is replaced with the specified content, the position of the cursor depends on which client the add-in is running. In Outlook on Windows,
+         * the cursor appears at the beginning of the body of the mail item, while in Outlook on the web, the cursor appears at the end of the body of the mail item.
+         * In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects
+         * something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync` method won't necessarily
+         * be the exact same value that was previously passed in the `Body.setAsync` method. The client may modify the value passed to `setAsync` to make it
+         * render efficiently with its rendering engine.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -4223,6 +4247,7 @@ export declare namespace Office {
          */
         set(name: string, value: string): void;
     }
+    
     /**
      * Provides diagnostic information to an Outlook add-in.
      *
@@ -5788,6 +5813,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
@@ -6178,6 +6205,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         conversationId: string;
+        
         /**
          * Gets the email address of the sender of a message.
          *
@@ -6231,6 +6259,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         notificationMessages: NotificationMessages;
+        
         /**
          * Gets the ID of the series that an instance belongs to.
          *
@@ -6795,17 +6824,23 @@ export declare namespace Office {
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android. 
          *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
          *
          * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
          *
@@ -6813,31 +6848,41 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
+         * b. **Shared mailbox (applies to Outlook on Windows only)**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
          * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
          * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
+         *
+         * @remarks
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
-         * @remarks
-         * [Api set: Mailbox 1.8]
-         *
          * **Important**: In Message Compose mode, this API is not supported in Outlook on the web or on Windows unless the following conditions are met.
+         *
+         * a. **Delegate access/Shared folders**
          *
          * 1. The mailbox owner starts a message. This can be a new message, a reply, or a forward.
          *
@@ -6845,15 +6890,19 @@ export declare namespace Office {
          *
          * 3. The delegate opens the draft from the shared folder then continues composing.
          *
+         * b. **Shared mailbox (applies to Outlook on Windows only)**
+         *
+         * 1. The shared mailbox user starts a message. This can be a new message, a reply, or a forward.
+         *
+         * 2. They save the message then move it from their own **Drafts** folder to a folder in the shared mailbox.
+         *
+         * 3. Another shared mailbox user opens the draft from the shared mailbox then continues composing.
+         *
          * The message is now in a shared context and add-ins that support these shared scenarios can get the item's shared properties.
          * After the message has been sent, it's usually found in the sender's **Sent Items** folder.
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
-         *
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         
@@ -8009,43 +8058,43 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
-         * Gets the properties of an appointment or message in a shared folder.
+         * Gets the properties of an appointment or message in a shared folder or shared mailbox.
          *
-         * For more information around using this API, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
+         * For more information around using this API, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
          *
          * @remarks
-         * [Api set: Mailbox 1.8]
+         * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          *
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
-         *                 type `Office.AsyncResult`. The `value` property of the result is the properties of the shared item.
+         * **Note**: This method is not supported in Outlook on iOS or Android.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an
+         *                 `Office.AsyncResult` object. The `asyncResult.value` property provides the properties of the shared item.
          */
         getSharedPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<SharedProperties>) => void): void;
         /**
@@ -9146,6 +9195,11 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
+    
+    
+    
+    
     /**
      * The `SeriesTime` object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times
      * of meeting requests in a recurring series.
@@ -9321,13 +9375,13 @@ export declare namespace Office {
     }
     
     /**
-     * Represents the properties of an appointment or message in a shared folder.
+     * Represents the properties of an appointment or message in a shared folder or shared mailbox.
      *
-     * For more information on how this object is used, see the
-     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+     * For more information on how this object is used, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | Enable shared folders and shared mailbox scenarios in an Outlook add-in}.
      *
      * @remarks
-     * [Api set: Mailbox 1.8]
+     * [Api set: Mailbox 1.8 for shared folder support, Mailbox 1.13 for shared mailbox support]
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
@@ -9355,7 +9409,7 @@ export declare namespace Office {
          */
         targetMailbox: string;
         /**
-         * The permissions that the delegate has on a shared folder.
+         * The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
     }

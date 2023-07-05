@@ -1,7 +1,7 @@
 ---
 title: Icon element in the manifest file
 description: Defines Image elements for Button or Menu controls.
-ms.date: 02/25/2022
+ms.date: 05/16/2023
 ms.localizationpriority: medium
 ---
 
@@ -58,14 +58,14 @@ When the parent **\<Icon\>** element is a descendant of a [MobileFormFactor](mob
 
 ```xml
 <Icon xsi:type="bt:MobileIconList">
-  <bt:Image resid="blue-icon-16-1" size="25" scale="1" />
-  <bt:Image resid="blue-icon-16-2" size="25" scale="2" />
-  <bt:Image resid="blue-icon-16-3" size="25" scale="3" />
-  <bt:Image resid="blue-icon-32-1" size="32" scale="1" />
-  <bt:Image resid="blue-icon-32-2" size="32" scale="2" />
-  <bt:Image resid="blue-icon-32-3" size="32" scale="3" />
-  <bt:Image resid="blue-icon-80-1" size="48" scale="1" />
-  <bt:Image resid="blue-icon-80-2" size="48" scale="2" />
-  <bt:Image resid="blue-icon-80-3" size="48" scale="3" />
+  <bt:Image resid="blue-icon-16" size="25" scale="1" />
+  <bt:Image resid="blue-icon-16" size="25" scale="2" />
+  <bt:Image resid="blue-icon-16" size="25" scale="3" />
+  <bt:Image resid="blue-icon-32" size="32" scale="1" />
+  <bt:Image resid="blue-icon-32" size="32" scale="2" />
+  <bt:Image resid="blue-icon-32" size="32" scale="3" />
+  <bt:Image resid="blue-icon-80" size="48" scale="1" />
+  <bt:Image resid="blue-icon-80" size="48" scale="2" />
+  <bt:Image resid="blue-icon-80" size="48" scale="3" />
 </Icon>
 ```

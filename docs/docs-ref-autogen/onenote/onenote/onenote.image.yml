@@ -81,7 +81,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       let image = null;
 
       await OneNote.run(async (context) => {
@@ -169,7 +169,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       let image = null;
       let imageString;
 
@@ -245,7 +245,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
               // Get the current outline.
               const outline = context.application.getActiveOutline();

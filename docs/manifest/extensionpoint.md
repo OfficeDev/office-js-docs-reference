@@ -304,9 +304,9 @@ This extension point puts buttons in the command surface for the mail read view 
 <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
   <Group id="Contoso.mobileGroup1">
     <Label resid="residAppName"/>
-      <Control  xsi:type="MobileButton id="Contoso.mobileButton1"">
-        <!-- Control definition -->
-      </Control>
+    <Control xsi:type="MobileButton" id="Contoso.mobileButton1">
+      <!-- Control definition -->
+    </Control>
   </Group>
 </ExtensionPoint>
 ```

@@ -1,7 +1,7 @@
 ---
 title: Action element in the manifest file
 description: This element specifies the action to perform when the user selects a button or menu control.
-ms.date: 04/26/2023
+ms.date: 05/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -69,8 +69,8 @@ Required element when **xsi:type** is `ExecuteFunction`. Specifies the name of t
 |  [TaskpaneId](#taskpaneid) | Specifies the ID of the task pane container. Not supported in Outlook add-ins.|
 |  [Title](#title) | Specifies the custom title for the task pane. Not supported in Outlook add-ins.|
 |  [SupportsPinning](#supportspinning) | Specifies that a task pane supports pinning, which keeps the task pane open when the user changes the selection. Supported in Outlook only. |
-|  [SupportsMultiselect (preview)](#supportsmultiselect-preview) | Specifies that an Outlook add-in can activate on multiple selected messages. Supported in Outlook only. |
-|  [SupportsNoItemContext (preview)](#supportsnoitemcontext-preview) | Specifies that an Outlook add-in can activate without the Reading Pane enabled or a message selected. Supported in Outlook only. |
+|  [SupportsMultiselect](#supportsmultiselect) | Specifies that an Outlook add-in can activate on multiple selected messages. Supported in Outlook only. |
+|  [SupportsNoItemContext](#supportsnoitemcontext) | Specifies that an Outlook add-in can activate without the Reading Pane enabled or a message selected. Supported in Outlook only. |
 
 #### SourceLocation
 
@@ -208,9 +208,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 </Action>
 ```
 
-#### SupportsMultiselect (preview)
+#### SupportsMultiselect
 
-Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate and perform specific operations on multiple selected messages. Because item multi-select only applies to messages, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface` or `MessageComposeCommandSurface`. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages (preview)](/office/dev/add-ins/outlook/item-multi-select).
+Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate and perform specific operations on multiple selected messages. Because item multi-select only applies to messages, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface` or `MessageComposeCommandSurface`. To learn more about item multi-select, see [Activate your Outlook add-in on multiple messages](/office/dev/add-ins/outlook/item-multi-select).
 
 **Add-in type:** Mail
 
@@ -222,10 +222,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox preview](../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md)
-
-> [!NOTE]
-> **\<SupportsMultiSelect\>** is in preview and is subject to change. It shouldn't be used in a production environment. We recommend that you try it out in test and development environments only.
+- [Mailbox 1.13](../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md)
 
 ```xml
 <Action xsi:type="ShowTaskpane">
@@ -234,9 +231,9 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 </Action>
 ```
 
-#### SupportsNoItemContext (preview)
+#### SupportsNoItemContext
 
-Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate without the Reading Pane enabled or a message selected. If **\<SupportsNoItemContext\>** is set to `true`, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface`. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected (preview)](/office/dev/add-ins/contextless).
+Optional element in Outlook add-ins when **xsi:type** is `ShowTaskpane`. Include a value of `true` to allow an add-in to activate without the Reading Pane enabled or a message selected. If **\<SupportsNoItemContext\>** is set to `true`, the [ExtensionPoint element's xsi:type attribute value](extensionpoint.md#extension-points-for-outlook) must be set to `MessageReadCommandSurface`. To learn more, see [Activate your Outlook add-in without the Reading Pane enabled or a message selected](/office/dev/add-ins/outlook/contextless).
 
 **Add-in type:** Mail
 
@@ -248,10 +245,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 **Associated with these requirement sets**:
 
-- [Mailbox preview](../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md)
-
-> [!NOTE]
-> **\<SupportsNoItemContext\>** is in preview and is subject to change. It shouldn't be used in a production environment. We recommend that you try it out in test and development environments only.
+- [Mailbox 1.13](../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md)
 
 ```xml
 <Action xsi:type="ShowTaskpane">

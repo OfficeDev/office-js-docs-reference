@@ -16,10 +16,10 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Link to full sample:
-  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
   // Get the compose type of the current message.
 

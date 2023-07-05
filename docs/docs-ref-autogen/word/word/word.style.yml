@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: baseStyle
     summary: Gets the name of an existing style to use as the base formatting of another style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly baseStyle: string;'
@@ -26,8 +26,8 @@ properties:
     package: word!
     fullName: builtIn
     summary: Gets whether the specified style is a built-in style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly builtIn: boolean;'
@@ -64,8 +64,43 @@ properties:
     package: word!
     fullName: font
     summary: Gets a font object that represents the character formatting of the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Updates font properties (e.g., color, size) of the specified style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update font properties.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          const font = style.font;
+          font.color = "#FF0000";
+          font.size = 20;
+          console.log(`Successfully updated font properties of the '${styleName}' style.`);
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly font: Word.Font;'
@@ -78,8 +113,8 @@ properties:
     summary: >-
       Gets whether the specified style is a built-in style that has been modified or applied in the document or a new
       style that has been created in the document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly inUse: boolean;'
@@ -90,8 +125,8 @@ properties:
     package: word!
     fullName: linked
     summary: Gets whether a style is a linked style that can be used for both paragraph and character formatting.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly linked: boolean;'
@@ -114,8 +149,50 @@ properties:
     package: word!
     fullName: nameLocal
     summary: Gets the name of a style in the language of the user.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Applies the specified style to a paragraph.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name-to-use").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to apply.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else if (style.type != Word.StyleType.paragraph) {
+          console.log(`The '${styleName}' style isn't a paragraph style.`);
+        } else {
+          const body = context.document.body;
+          body.clear();
+          body.insertParagraph(
+            "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+            "Start"
+          );
+          const paragraph = body.paragraphs.getFirst();
+          paragraph.style = style.nameLocal;
+          console.log(`'${styleName}' style applied to first paragraph.`);
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly nameLocal: string;'
@@ -128,8 +205,8 @@ properties:
     summary: >-
       Gets the name of the style to be applied automatically to a new paragraph that is inserted after a paragraph
       formatted with the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly nextParagraphStyle: string;'
@@ -140,8 +217,42 @@ properties:
     package: word!
     fullName: paragraphFormat
     summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Sets certain aspects of the specified style's paragraph format e.g., the left indent size and the alignment.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to update its paragraph format.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.paragraphFormat.leftIndent = 30;
+          style.paragraphFormat.alignment = Word.Alignment.centered;
+          console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly paragraphFormat: Word.ParagraphFormat;'
@@ -151,9 +262,9 @@ properties:
     uid: 'word!Word.Style#priority:member'
     package: word!
     fullName: priority
-    summary: Gets or sets the priority.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Specifies the priority.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'priority: number;'
@@ -163,9 +274,9 @@ properties:
     uid: 'word!Word.Style#quickStyle:member'
     package: word!
     fullName: quickStyle
-    summary: Gets or sets whether the style corresponds to an available quick style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Specifies whether the style corresponds to an available quick style.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'quickStyle: boolean;'
@@ -176,8 +287,8 @@ properties:
     package: word!
     fullName: type
     summary: Gets the style type.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly type: Word.StyleType | "Character" | "List" | "Paragraph" | "Table";'
@@ -188,10 +299,10 @@ properties:
     package: word!
     fullName: unhideWhenUsed
     summary: >-
-      Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles
-      task pane in Microsoft Word after it's used in the document.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+      Specifies whether the specified style is made visible as a recommended style in the Styles and in the Styles task
+      pane in Microsoft Word after it's used in the document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'unhideWhenUsed: boolean;'
@@ -202,10 +313,10 @@ properties:
     package: word!
     fullName: visibility
     summary: >-
-      Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
+      Specifies whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
       task pane.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'visibility: boolean;'
@@ -217,8 +328,41 @@ methods:
     package: word!
     fullName: delete()
     summary: Deletes the style.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Deletes the custom style.
+
+      await Word.run(async (context) => {
+        const styleName = $("#style-name-to-delete").val() as string;
+        if (styleName == "") {
+          console.warn("Enter a style name to delete.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        style.load();
+        await context.sync();
+
+        if (style.isNullObject) {
+          console.warn(`There's no existing style with the name '${styleName}'.`);
+        } else {
+          style.delete();
+          console.log(`Successfully deleted custom style '${styleName}'.`);
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'delete(): void;'

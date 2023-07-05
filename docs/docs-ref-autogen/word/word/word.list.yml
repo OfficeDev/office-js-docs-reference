@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
@@ -34,7 +34,7 @@ remarks: >-
     list.insertParagraph("New list item at the start of the list", "Start");
     const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-    // Sets up list level for the list item.
+    // Set up list level for the list item.
     paragraph.listItem.level = 4;
 
     // To add paragraphs outside the list, use Before or After.
@@ -100,12 +100,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-      // Insert a list starting with the first paragraph then set numbering and bullet types of the list items.
+      // Inserts a list starting with the first paragraph then set numbering and bullet types of the list items.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -243,7 +243,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
@@ -266,7 +266,7 @@ methods:
         list.insertParagraph("New list item at the start of the list", "Start");
         const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-        // Sets up list level for the list item.
+        // Set up list level for the list item.
         paragraph.listItem.level = 4;
 
         // To add paragraphs outside the list, use Before or After.
@@ -438,12 +438,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-      // Insert a list starting with the first paragraph then set numbering and bullet types of the list items.
+      // Inserts a list starting with the first paragraph then set numbering and bullet types of the list items.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -567,12 +567,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-      // Insert a list starting with the first paragraph then set numbering and bullet types of the list items.
+      // Inserts a list starting with the first paragraph then set numbering and bullet types of the list items.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;

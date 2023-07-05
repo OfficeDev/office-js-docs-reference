@@ -61,7 +61,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -92,6 +92,7 @@ export declare namespace Word {
          */
         clear(): void;
         
+        
         /**
          * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
@@ -120,12 +121,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.start | Word.InsertLocation.end | "Start" | "End"): void;
         /**
-         * Wraps the Body object with a Rich Text content control.
+         * Wraps the Body object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
@@ -255,7 +260,7 @@ export declare namespace Word {
     
     
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -310,28 +315,28 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+         * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         appearance: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
         /**
-         * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+         * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         cannotDelete: boolean;
         /**
-         * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+         * Specifies a value that indicates whether the user can edit the contents of the content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         cannotEdit: boolean;
         /**
-         * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+         * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -345,21 +350,21 @@ export declare namespace Word {
          */
         readonly id: number;
         /**
-         * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+         * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         placeholderText: string;
         /**
-         * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+         * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         removeWhenEdited: boolean;
         /**
-         * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -368,7 +373,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets a tag to identify a content control.
+         * Specifies a tag to identify a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -382,14 +387,14 @@ export declare namespace Word {
          */
         readonly text: string;
         /**
-         * Gets or sets the title for a content control.
+         * Specifies the title for a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         title: string;
         /**
-         * Gets the content control type. Only rich text content controls are supported currently.
+         * Gets the content control type. Only rich text and plain text content controls are supported currently.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -419,6 +424,7 @@ export declare namespace Word {
          * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
+        
         
         /**
          * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
@@ -558,6 +564,11 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.ContentControl;
+        
+        
+        
+        
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -573,7 +584,7 @@ export declare namespace Word {
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -583,6 +594,7 @@ export declare namespace Word {
         context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
+        
         /**
          * Gets a content control by its identifier. Throws an `ItemNotFound` error if there isn't a content control with the identifier in this collection.
          *
@@ -660,6 +672,7 @@ export declare namespace Word {
     
     
     
+    
     /**
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
@@ -714,6 +727,11 @@ export declare namespace Word {
         
         
         
+        
+        
+        
+        
+        
         /**
          * Gets the current selection of the document. Multiple selections are not supported.
          *
@@ -721,13 +739,32 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         getSelection(): Word.Range;
+        
+        
         /**
-         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+         * Saves the document.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+         *
+         * @param saveBehavior - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
          */
-        save(): void;
+        save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;
+        /**
+         * Saves the document.
+         *
+         * @remarks
+         * [Api set: WordApi 1.1]
+         *
+         * Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+         *
+         * @param saveBehaviorString - Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+         * @param fileName - Optional. The file name (exclude file extension). Only takes effect for a new document.
+         */
+        save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -750,6 +787,7 @@ export declare namespace Word {
             select?: string;
             expand?: string;
         }): Word.Document;
+        
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
          */
@@ -778,77 +816,77 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+         * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         bold: boolean;
         /**
-         * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+         * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         color: string;
         /**
-         * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+         * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         doubleStrikeThrough: boolean;
         /**
-         * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         highlightColor: string;
         /**
-         * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+         * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         italic: boolean;
         /**
-         * Gets or sets a value that represents the name of the font.
+         * Specifies a value that represents the name of the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         name: string;
         /**
-         * Gets or sets a value that represents the font size in points.
+         * Specifies a value that represents the font size in points.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         size: number;
         /**
-         * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+         * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         strikeThrough: boolean;
         /**
-         * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+         * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         subscript: boolean;
         /**
-         * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+         * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         superscript: boolean;
         /**
-         * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+         * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -920,42 +958,42 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets a string that represents the alternative text associated with the inline image.
+         * Specifies a string that represents the alternative text associated with the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         altTextDescription: string;
         /**
-         * Gets or sets a string that contains the title for the inline image.
+         * Specifies a string that contains the title for the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         altTextTitle: string;
         /**
-         * Gets or sets a number that describes the height of the inline image.
+         * Specifies a number that describes the height of the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         height: number;
         /**
-         * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+         * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         hyperlink: string;
         /**
-         * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+         * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         lockAspectRatio: boolean;
         /**
-         * Gets or sets a number that describes the width of the inline image.
+         * Specifies a number that describes the width of the inline image.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1132,14 +1170,14 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+         * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
-         * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+         * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1148,63 +1186,63 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets the left indent value, in points, for the paragraph.
+         * Specifies the left indent value, in points, for the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         leftIndent: number;
         /**
-         * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+         * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         lineSpacing: number;
         /**
-         * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+         * Specifies the amount of spacing, in grid lines, after the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         lineUnitAfter: number;
         /**
-         * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+         * Specifies the amount of spacing, in grid lines, before the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         lineUnitBefore: number;
         /**
-         * Gets or sets the outline level for the paragraph.
+         * Specifies the outline level for the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         outlineLevel: number;
         /**
-         * Gets or sets the right indent value, in points, for the paragraph.
+         * Specifies the right indent value, in points, for the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         rightIndent: number;
         /**
-         * Gets or sets the spacing, in points, after the paragraph.
+         * Specifies the spacing, in points, after the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         spaceAfter: number;
         /**
-         * Gets or sets the spacing, in points, before the paragraph.
+         * Specifies the spacing, in points, before the paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         spaceBefore: number;
         /**
-         * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1244,6 +1282,7 @@ export declare namespace Word {
         delete(): void;
         
         
+        
         /**
          * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1277,12 +1316,16 @@ export declare namespace Word {
          */
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         /**
-         * Wraps the Paragraph object with a rich text content control.
+         * Wraps the Paragraph object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
@@ -1464,6 +1507,7 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
+    
     /**
      * Represents a contiguous area in a document.
      *
@@ -1516,7 +1560,7 @@ export declare namespace Word {
         
         
         /**
-         * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+         * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -1557,6 +1601,7 @@ export declare namespace Word {
         
         
         
+        
         /**
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
@@ -1591,12 +1636,18 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType | "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: Word.InsertLocation.before | Word.InsertLocation.after | "Before" | "After"): void;
         
         /**
-         * Wraps the Range object with a rich text content control.
+         * Wraps the Range object with a content control.
          *
          * @remarks
          * [Api set: WordApi 1.1]
+         *
+         * Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+         *
+         * @param contentControlType - Optional. The content control type. The default is 'RichText'.
          */
-        insertContentControl(): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | "RichText" | "PlainText"): Word.ContentControl;
+        
+        
         
         /**
          * Inserts a document at the specified location.
@@ -1770,6 +1821,7 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.RangeCollectionData;
     }
+    
     /**
      * Specifies the options to be included in a search operation.
                 To learn more about how to use search options in the Word JavaScript APIs, read {@link https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance | Use search options to find text in your Word add-in}.
@@ -1781,49 +1833,49 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         ignorePunct: boolean;
         /**
-         * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         ignoreSpace: boolean;
         /**
-         * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         matchCase: boolean;
         /**
-         * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         matchPrefix: boolean;
         /**
-         * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         matchSuffix: boolean;
         /**
-         * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         matchWholeWord: boolean;
         /**
-         * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+         * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2010,6 +2062,17 @@ export declare namespace Word {
         */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -2470,6 +2533,33 @@ export declare namespace Word {
     
     
     
+    
+    
+    
+    /**
+     * Specifies the save behavior for `Document.save`.
+     *
+     * @remarks
+     * [Api set: WordApi 1.1]
+     */
+    enum SaveBehavior {
+        /**
+         * Saves the document without prompting the user. If it's a new document,
+                    it will be saved with the default name or specified name in the default location.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        save = "Save",
+        /**
+         * Displays the "Save As" dialog to the user if the document hasn't been saved.
+                    Won't take effect if the document was previously saved.
+         * @remarks
+         * [Api set: WordApi 1.1]
+         */
+        prompt = "Prompt",
+    }
+    
+    
     enum ErrorCodes {
         accessDenied = "AccessDenied",
         generalException = "GeneralException",
@@ -2503,7 +2593,7 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2549,49 +2639,49 @@ export declare namespace Word {
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             * Specifies a value that indicates whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             placeholderText?: string;
             /**
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2599,14 +2689,14 @@ export declare namespace Word {
             style?: string;
             
             /**
-             * Gets or sets a tag to identify a content control.
+             * Specifies a tag to identify a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             tag?: string;
             /**
-             * Gets or sets the title for a content control.
+             * Specifies the title for a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2665,6 +2755,9 @@ export declare namespace Word {
         /** An interface for updating data on the Field object, for use in `field.set({ ... })`. */
         export interface FieldUpdateData {
             
+            
+            
+            
         }
         /** An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`. */
         export interface FieldCollectionUpdateData {
@@ -2673,77 +2766,77 @@ export declare namespace Word {
         /** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
             /**
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
-             * Gets or sets a value that represents the name of the font.
+             * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: string;
             /**
-             * Gets or sets a value that represents the font size in points.
+             * Specifies a value that represents the font size in points.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             size?: number;
             /**
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2753,42 +2846,42 @@ export declare namespace Word {
         /** An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
             /**
-             * Gets or sets a string that represents the alternative text associated with the inline image.
+             * Specifies a string that represents the alternative text associated with the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextDescription?: string;
             /**
-             * Gets or sets a string that contains the title for the inline image.
+             * Specifies a string that contains the title for the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextTitle?: string;
             /**
-             * Gets or sets a number that describes the height of the inline image.
+             * Specifies a number that describes the height of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             height?: number;
             /**
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
             /**
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
-             * Gets or sets a number that describes the width of the inline image.
+             * Specifies a number that describes the width of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2828,77 +2921,77 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             firstLineIndent?: number;
             /**
-             * Gets or sets the left indent value, in points, for the paragraph.
+             * Specifies the left indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             leftIndent?: number;
             /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineSpacing?: number;
             /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             * Specifies the amount of spacing, in grid lines, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: number;
             /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             * Specifies the amount of spacing, in grid lines, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: number;
             /**
-             * Gets or sets the outline level for the paragraph.
+             * Specifies the outline level for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             outlineLevel?: number;
             /**
-             * Gets or sets the right indent value, in points, for the paragraph.
+             * Specifies the right indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             rightIndent?: number;
             /**
-             * Gets or sets the spacing, in points, after the paragraph.
+             * Specifies the spacing, in points, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceAfter?: number;
             /**
-             * Gets or sets the spacing, in points, before the paragraph.
+             * Specifies the spacing, in points, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceBefore?: number;
             /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2909,6 +3002,23 @@ export declare namespace Word {
         /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
         export interface ParagraphCollectionUpdateData {
             items?: Word.Interfaces.ParagraphData[];
+        }
+        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        export interface ParagraphFormatUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
@@ -2921,7 +3031,7 @@ export declare namespace Word {
             font?: Word.Interfaces.FontUpdateData;
             
             /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -2936,49 +3046,49 @@ export declare namespace Word {
         /** An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`. */
         export interface SearchOptionsUpdateData {
             /**
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3006,6 +3116,19 @@ export declare namespace Word {
         /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
         export interface SettingCollectionUpdateData {
             items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
+        export interface StyleCollectionUpdateData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
+        export interface StyleUpdateData {
+            
+            
+            
+            
+            
+            
         }
         /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
@@ -3095,7 +3218,7 @@ export declare namespace Word {
             paragraphs?: Word.Interfaces.ParagraphData[];
             
             /**
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3184,28 +3307,28 @@ export declare namespace Word {
             paragraphs?: Word.Interfaces.ParagraphData[];
             
             /**
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             appearance?: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden";
             /**
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             * Specifies a value that indicates whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3219,21 +3342,21 @@ export declare namespace Word {
              */
             id?: number;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             placeholderText?: string;
             /**
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3242,7 +3365,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets a tag to identify a content control.
+             * Specifies a tag to identify a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3256,14 +3379,14 @@ export declare namespace Word {
              */
             text?: string;
             /**
-             * Gets or sets the title for a content control.
+             * Specifies the title for a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             title?: string;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3367,6 +3490,10 @@ export declare namespace Word {
         export interface FieldData {
             
             
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `fieldCollection.toJSON()`. */
         export interface FieldCollectionData {
@@ -3375,77 +3502,77 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `font.toJSON()`. */
         export interface FontData {
             /**
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             color?: string;
             /**
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
             /**
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
-             * Gets or sets a value that represents the name of the font.
+             * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: string;
             /**
-             * Gets or sets a value that represents the font size in points.
+             * Specifies a value that represents the font size in points.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             size?: number;
             /**
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3455,42 +3582,42 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
         export interface InlinePictureData {
             /**
-             * Gets or sets a string that represents the alternative text associated with the inline image.
+             * Specifies a string that represents the alternative text associated with the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextDescription?: string;
             /**
-             * Gets or sets a string that contains the title for the inline image.
+             * Specifies a string that contains the title for the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextTitle?: string;
             /**
-             * Gets or sets a number that describes the height of the inline image.
+             * Specifies a number that describes the height of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             height?: number;
             /**
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
             /**
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
-             * Gets or sets a number that describes the width of the inline image.
+             * Specifies a number that describes the width of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3548,14 +3675,14 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3564,63 +3691,63 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the left indent value, in points, for the paragraph.
+             * Specifies the left indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             leftIndent?: number;
             /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineSpacing?: number;
             /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             * Specifies the amount of spacing, in grid lines, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: number;
             /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             * Specifies the amount of spacing, in grid lines, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: number;
             /**
-             * Gets or sets the outline level for the paragraph.
+             * Specifies the outline level for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             outlineLevel?: number;
             /**
-             * Gets or sets the right indent value, in points, for the paragraph.
+             * Specifies the right indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             rightIndent?: number;
             /**
-             * Gets or sets the spacing, in points, after the paragraph.
+             * Specifies the spacing, in points, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceAfter?: number;
             /**
-             * Gets or sets the spacing, in points, before the paragraph.
+             * Specifies the spacing, in points, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceBefore?: number;
             /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3640,6 +3767,23 @@ export declare namespace Word {
         export interface ParagraphCollectionData {
             items?: Word.Interfaces.ParagraphData[];
         }
+        /** An interface describing the data returned by calling `paragraphFormat.toJSON()`. */
+        export interface ParagraphFormatData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             
@@ -3654,7 +3798,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3676,49 +3820,49 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `searchOptions.toJSON()`. */
         export interface SearchOptionsData {
             /**
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3747,6 +3891,26 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
         export interface SettingCollectionData {
             items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface describing the data returned by calling `styleCollection.toJSON()`. */
+        export interface StyleCollectionData {
+            items?: Word.Interfaces.StyleData[];
+        }
+        /** An interface describing the data returned by calling `style.toJSON()`. */
+        export interface StyleData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
         /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
@@ -3847,7 +4011,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3869,7 +4033,7 @@ export declare namespace Word {
         
         
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -3900,28 +4064,28 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             appearance?: boolean;
             /**
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             * Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             * Specifies a value that indicates whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             * Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3935,21 +4099,21 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             placeholderText?: boolean;
             /**
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             * Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3958,7 +4122,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets a tag to identify a content control.
+             * Specifies a tag to identify a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3972,14 +4136,14 @@ export declare namespace Word {
              */
             text?: boolean;
             /**
-             * Gets or sets the title for a content control.
+             * Specifies the title for a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             title?: boolean;
             /**
-             * Gets the content control type. Only rich text content controls are supported currently.
+             * Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -3987,7 +4151,7 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4018,28 +4182,28 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
+             * For EACH ITEM in the collection: Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             appearance?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
+             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotDelete?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.
+             * For EACH ITEM in the collection: Specifies a value that indicates whether the user can edit the contents of the content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             cannotEdit?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
+             * For EACH ITEM in the collection: Specifies the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4053,21 +4217,21 @@ export declare namespace Word {
              */
             id?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
+             * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty. **Note**: The set operation for this property is not supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             placeholderText?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
+             * For EACH ITEM in the collection: Specifies a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             removeWhenEdited?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * For EACH ITEM in the collection: Specifies the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4076,7 +4240,7 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
+             * For EACH ITEM in the collection: Specifies a tag to identify a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4090,14 +4254,14 @@ export declare namespace Word {
              */
             text?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the title for a content control.
+             * For EACH ITEM in the collection: Specifies the title for a content control.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             title?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently.
+             * For EACH ITEM in the collection: Gets the content control type. Only rich text and plain text content controls are supported currently.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4153,77 +4317,77 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
+             * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             bold?: boolean;
             /**
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
+             * Specifies the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             color?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             doubleStrikeThrough?: boolean;
             /**
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             highlightColor?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
+             * Specifies a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             italic?: boolean;
             /**
-             * Gets or sets a value that represents the name of the font.
+             * Specifies a value that represents the name of the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             name?: boolean;
             /**
-             * Gets or sets a value that represents the font size in points.
+             * Specifies a value that represents the font size in points.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             size?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
+             * Specifies a value that indicates whether the font has a strikethrough. True if the font is formatted as strikethrough text, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             strikeThrough?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             subscript?: boolean;
             /**
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
+             * Specifies a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             superscript?: boolean;
             /**
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+             * Specifies a value that indicates the font's underline type. 'None' if the font is not underlined.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4255,42 +4419,42 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets a string that represents the alternative text associated with the inline image.
+             * Specifies a string that represents the alternative text associated with the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextDescription?: boolean;
             /**
-             * Gets or sets a string that contains the title for the inline image.
+             * Specifies a string that contains the title for the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextTitle?: boolean;
             /**
-             * Gets or sets a number that describes the height of the inline image.
+             * Specifies a number that describes the height of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             height?: boolean;
             /**
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             * Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
             /**
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             * Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
-             * Gets or sets a number that describes the width of the inline image.
+             * Specifies a number that describes the width of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4322,42 +4486,42 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image.
+             * For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextDescription?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+             * For EACH ITEM in the collection: Specifies a string that contains the title for the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             altTextTitle?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+             * For EACH ITEM in the collection: Specifies a number that describes the height of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             height?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
+             * For EACH ITEM in the collection: Specifies a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+             * For EACH ITEM in the collection: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lockAspectRatio?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+             * For EACH ITEM in the collection: Specifies a number that describes the width of the inline image.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4405,14 +4569,14 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             alignment?: boolean;
             /**
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             * Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4421,63 +4585,63 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the left indent value, in points, for the paragraph.
+             * Specifies the left indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             leftIndent?: boolean;
             /**
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             * Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineSpacing?: boolean;
             /**
-             * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             * Specifies the amount of spacing, in grid lines, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: boolean;
             /**
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             * Specifies the amount of spacing, in grid lines, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: boolean;
             /**
-             * Gets or sets the outline level for the paragraph.
+             * Specifies the outline level for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             outlineLevel?: boolean;
             /**
-             * Gets or sets the right indent value, in points, for the paragraph.
+             * Specifies the right indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             rightIndent?: boolean;
             /**
-             * Gets or sets the spacing, in points, after the paragraph.
+             * Specifies the spacing, in points, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceAfter?: boolean;
             /**
-             * Gets or sets the spacing, in points, before the paragraph.
+             * Specifies the spacing, in points, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceBefore?: boolean;
             /**
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4529,14 +4693,14 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
+             * For EACH ITEM in the collection: Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             alignment?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+             * For EACH ITEM in the collection: Specifies the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4545,63 +4709,63 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
+             * For EACH ITEM in the collection: Specifies the left indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             leftIndent?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+             * For EACH ITEM in the collection: Specifies the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineSpacing?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
+             * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitAfter?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
+             * For EACH ITEM in the collection: Specifies the amount of spacing, in grid lines, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             lineUnitBefore?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
+             * For EACH ITEM in the collection: Specifies the outline level for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             outlineLevel?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
+             * For EACH ITEM in the collection: Specifies the right indent value, in points, for the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             rightIndent?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
+             * For EACH ITEM in the collection: Specifies the spacing, in points, after the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceAfter?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
+             * For EACH ITEM in the collection: Specifies the spacing, in points, before the paragraph.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             spaceBefore?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * For EACH ITEM in the collection: Specifies the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4617,6 +4781,7 @@ export declare namespace Word {
              */
             text?: boolean;
         }
+        
         /**
          * Represents a contiguous area in a document.
          *
@@ -4651,7 +4816,7 @@ export declare namespace Word {
             
             
             /**
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4700,7 +4865,7 @@ export declare namespace Word {
             
             
             /**
-             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+             * For EACH ITEM in the collection: Specifies the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4728,49 +4893,49 @@ export declare namespace Word {
              */
             $all?: boolean;
             /**
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignorePunct?: boolean;
             /**
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             ignoreSpace?: boolean;
             /**
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchCase?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchPrefix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchSuffix?: boolean;
             /**
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
              */
             matchWholeWord?: boolean;
             /**
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+             * Specifies a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -4815,6 +4980,8 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
+        
+        
         
         
         

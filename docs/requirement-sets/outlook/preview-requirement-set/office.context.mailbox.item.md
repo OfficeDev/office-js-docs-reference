@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Item object model.
-ms.date: 04/17/2023
+ms.date: 07/05/2023
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +45,8 @@ ms.localizationpriority: medium
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-datetimecreated-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | dateTimeModified | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-datetimemodified-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-datetimemodified-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
-| delayDeliveryTime | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-delaydeliverytime-member) | [DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
+| delayDeliveryTime | **read item** | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-delaydeliverytime-member) | [DelayDeliveryTime](/javascript/api/outlook/office.delaydeliverytime?view=outlook-js-preview&preserve-view=true) | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
+| display | **read/write item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member) | [Display](/javascript/api/outlook/office.display?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
 | end | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-end-member) | [Time](/javascript/api/outlook/office.time?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-end-member) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-end-member)<br>(Meeting Request) | Date | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
@@ -86,8 +87,8 @@ ms.localizationpriority: medium
 | sender | **read item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-sender-member) | [EmailAddressDetails](/javascript/api/outlook/office.emailaddressdetails?view=outlook-js-preview&preserve-view=true) | [1.1](../requirement-set-1.1/outlook-requirement-set-1.1.md) |
 | sensitivity | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-sensitivity-member) | [Sensitivity](/javascript/api/outlook/office.sensitivity?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-sensitivity-member) | [MailboxEnums.AppointmentSensitivityType](/javascript/api/outlook/office.mailboxenums.appointmentsensitivitytype?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
-| sensitivityLabel | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-sensitivitylabel-member) | [SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
-| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-sensitivitylabel-member) | [SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true) | [Preview](outlook-requirement-set-preview.md) |
+| sensitivityLabel | **read/write item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-sensitivitylabel-member) | [SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true) | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
+| | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-sensitivitylabel-member) | [SensitivityLabel](/javascript/api/outlook/office.sensitivitylabel?view=outlook-js-preview&preserve-view=true) | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 | seriesId | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-seriesid-member) | String | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-seriesid-member) | String | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-seriesid-member) | String | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
@@ -197,7 +198,7 @@ You can subscribe to and unsubscribe from the following events using `addHandler
 |`InfobarClicked`| An action has been selected from a notification message. | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
 |`RecipientsChanged`| The recipient list of the selected item or appointment location has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
 |`RecurrenceChanged`| The recurrence pattern of the selected series has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
-|`SensitivityLabelChanged`| The sensitivity label of a message or appointment in compose mode has changed. | [Preview](outlook-requirement-set-preview.md)
+|`SensitivityLabelChanged`| The sensitivity label of a message or appointment in compose mode has changed. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
 
 ## Example
 

@@ -4,8 +4,8 @@ uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
 package: word!
 fullName: Word.ContentControlSelectionChangedEventArgs
 summary: Provides information about the content control that raised contentControlSelectionChanged event.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,8 +14,27 @@ properties:
     package: word!
     fullName: eventType
     summary: The event type. See Word.EventType for details.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+      async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
+          console.log(event.ids);
+        });
+      }
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -32,8 +51,27 @@ properties:
     package: word!
     fullName: ids
     summary: Gets the content control IDs.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+      async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
+          console.log(event.ids);
+        });
+      }
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ids: number[];'
@@ -44,8 +82,8 @@ properties:
     package: word!
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'source: Word.EventSource | "Local" | "Remote";'

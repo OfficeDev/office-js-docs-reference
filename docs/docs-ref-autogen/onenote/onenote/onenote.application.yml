@@ -50,7 +50,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
               
           // Get the active notebook.
@@ -86,7 +86,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the active notebook.
@@ -123,7 +123,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // get active outline.
@@ -156,7 +156,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // get active outline.
@@ -189,7 +189,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
               
           // Get the active page.
@@ -224,7 +224,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the active page.
@@ -287,7 +287,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
               
           // Get the active section.
@@ -322,7 +322,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the active section.
@@ -481,7 +481,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
               
           // Get the pages in the current section.
@@ -527,7 +527,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the pages in the current section.

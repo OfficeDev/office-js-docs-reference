@@ -41,7 +41,7 @@ properties:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
@@ -69,7 +69,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml

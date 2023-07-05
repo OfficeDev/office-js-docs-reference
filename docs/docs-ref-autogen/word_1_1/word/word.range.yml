@@ -52,9 +52,9 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs
-      in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables
-      are also returned.
+      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2,
+      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
+      such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -81,8 +81,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
-      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the range. Use this property for custom styles and localized style names. To use the
+      built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -113,7 +113,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -147,7 +147,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -185,7 +185,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -219,7 +219,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -253,7 +253,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -291,22 +291,33 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertContentControl()
+  - name: insertContentControl(contentControlType)
     uid: 'word!Word.Range#insertContentControl:member(1)'
     package: word!
-    fullName: insertContentControl()
-    summary: Wraps the Range object with a rich text content control.
+    fullName: insertContentControl(contentControlType)
+    summary: Wraps the Range object with a content control.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
 
 
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
+
+      // then changes the format  of each search result,
+
+      // then wraps each search result within a content control,
+
+      // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
           const results = context.document.body.search("Contractor");
@@ -332,7 +343,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
+      content: >-
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
+        "RichText" | "PlainText"): Word.ContentControl;
+      parameters:
+        - id: contentControlType
+          description: Optional. The content control type. The default is 'RichText'.
+          type: >-
+            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
+            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -346,7 +365,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -390,7 +409,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -433,7 +452,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -479,7 +498,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -524,7 +543,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -674,7 +693,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 

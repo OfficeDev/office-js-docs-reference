@@ -45,7 +45,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the style and the font size, font name, and font color properties on the body object.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -88,12 +88,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-      // Get the first image in the document.
+      // Gets the first image in the document.
 
       await Word.run(async (context) => {
         const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -129,12 +129,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
-      // Count how many times each term appears in the document.
+      // Counts how many times each term appears in the document.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -209,8 +209,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
-      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the body. Use this property for custom styles and localized style names. To use the
+      built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -228,7 +228,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Get the text property on the body object
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -262,7 +262,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -304,7 +304,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -337,7 +337,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -370,7 +370,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -407,17 +407,19 @@ methods:
       return:
         type: void
         description: ''
-  - name: insertContentControl()
+  - name: insertContentControl(contentControlType)
     uid: 'word!Word.Body#insertContentControl:member(1)'
     package: word!
-    fullName: insertContentControl()
-    summary: Wraps the Body object with a Rich Text content control.
+    fullName: insertContentControl(contentControlType)
+    summary: Wraps the Body object with a content control.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -436,7 +438,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
+      content: >-
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
+        "RichText" | "PlainText"): Word.ContentControl;
+      parameters:
+        - id: contentControlType
+          description: Optional. The content control type. The default is 'RichText'.
+          type: >-
+            <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
+            uid="word!Word.ContentControlType.plainText:member" /> | "RichText" | "PlainText"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -450,7 +460,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -495,7 +505,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -540,7 +550,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -586,7 +596,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -638,7 +648,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Run a batch operation against the Word object model.
 
@@ -664,7 +674,7 @@ methods:
 
       ```
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
@@ -715,7 +725,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -830,12 +840,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
-      // Do a basic text search and highlight matches in the document.
+      // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
         const results = context.document.body.search("Online");
@@ -854,7 +864,7 @@ methods:
 
       ...
 
-      // Do a wildcard search and highlight matches in the document.
+      // Does a wildcard search and highlights matches in the document.
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
@@ -915,7 +925,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 

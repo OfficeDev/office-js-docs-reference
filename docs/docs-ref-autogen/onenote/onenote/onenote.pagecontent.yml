@@ -132,7 +132,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           const page = context.application.getActivePage();

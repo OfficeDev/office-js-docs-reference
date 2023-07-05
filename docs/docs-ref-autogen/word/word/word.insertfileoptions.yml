@@ -4,8 +4,8 @@ uid: 'word!Word.InsertFileOptions:interface'
 package: word!
 fullName: Word.InsertFileOptions
 summary: Specifies the options to determine what to copy when inserting a file.
-remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-isPreview: true
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,11 +14,37 @@ properties:
     package: word!
     fullName: importChangeTrackingMode
     summary: Represents whether the change tracking mode status from the source document should be imported.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'importChangeTrackingMode?: boolean;'
+      return:
+        type: boolean
+  - name: importCustomProperties
+    uid: 'word!Word.InsertFileOptions#importCustomProperties:member'
+    package: word!
+    fullName: importCustomProperties
+    summary: >-
+      Represents whether the custom properties from the source document should be imported. Overwrites existing
+      properties with the same name.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'importChangeTrackingMode: boolean;'
+      content: 'importCustomProperties?: boolean;'
+      return:
+        type: boolean
+  - name: importCustomXmlParts
+    uid: 'word!Word.InsertFileOptions#importCustomXmlParts:member'
+    package: word!
+    fullName: importCustomXmlParts
+    summary: Represents whether the custom XML parts from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importCustomXmlParts?: boolean;'
       return:
         type: boolean
   - name: importPageColor
@@ -26,11 +52,11 @@ properties:
     package: word!
     fullName: importPageColor
     summary: Represents whether the page color and other background information from the source document should be imported.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importPageColor: boolean;'
+      content: 'importPageColor?: boolean;'
       return:
         type: boolean
   - name: importParagraphSpacing
@@ -38,11 +64,11 @@ properties:
     package: word!
     fullName: importParagraphSpacing
     summary: Represents whether the paragraph spacing from the source document should be imported.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importParagraphSpacing: boolean;'
+      content: 'importParagraphSpacing?: boolean;'
       return:
         type: boolean
   - name: importStyles
@@ -50,11 +76,11 @@ properties:
     package: word!
     fullName: importStyles
     summary: Represents whether the styles from the source document should be imported.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importStyles: boolean;'
+      content: 'importStyles?: boolean;'
       return:
         type: boolean
   - name: importTheme
@@ -62,10 +88,10 @@ properties:
     package: word!
     fullName: importTheme
     summary: Represents whether the theme from the source document should be imported.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'importTheme: boolean;'
+      content: 'importTheme?: boolean;'
       return:
         type: boolean

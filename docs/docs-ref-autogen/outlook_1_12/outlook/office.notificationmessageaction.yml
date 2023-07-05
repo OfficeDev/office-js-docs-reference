@@ -3,10 +3,12 @@ name: Office.NotificationMessageAction
 uid: 'outlook!Office.NotificationMessageAction:interface'
 package: outlook!
 fullName: Office.NotificationMessageAction
-summary: |-
+summary: >-
   The definition of the action for a notification message.
 
-  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode only.
+
+  **Important**: In modern Outlook on the web, the `NotificationMessageAction` object is available in Compose mode
+  only.
 remarks: >-
   \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -24,7 +26,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   // Define notification.
 

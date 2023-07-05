@@ -7708,7 +7708,7 @@
         function(result) { console.log(result); });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -7827,7 +7827,7 @@
 'Office.AppointmentCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -8118,7 +8118,7 @@
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 
@@ -8497,7 +8497,7 @@
 'Office.AppointmentCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -9336,7 +9336,7 @@
 'Office.Body#prependOnSendAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/prepend-text-on-send.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/prepend-text-on-send.yaml
 
     // This snippet prepends text to the beginning of the message or
     appointment's body once it's sent.
@@ -9435,7 +9435,7 @@
 'Office.Body#setSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -9464,7 +9464,7 @@
     );
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item.
 
@@ -9592,7 +9592,7 @@
 'Office.DelayDeliveryTime#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     // This snippet gets the delivery date and time of a message.
 
@@ -9603,9 +9603,8 @@
       }
 
       const deliveryDate = asyncResult.value;
-
-      if (deliveryDate.toString() === "0") {
-        console.log(`Message delivery date and time: ${new Date()}`);
+      if (deliveryDate === 0) {
+        console.log("Your message will be delivered immediately when you select Send.");
       } else {
         const date = new Date(deliveryDate);
         console.log(`Message delivery date and time: ${date.toString()}`);
@@ -9614,7 +9613,7 @@
 'Office.DelayDeliveryTime#setAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     function setDeliveryDate(minutes) {
       // This snippet sets the delivery date and time of a message.
@@ -10358,7 +10357,7 @@
 'Office.MailboxEnums.ComposeType:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Get the compose type of the current message.
 
@@ -10977,7 +10976,7 @@
         function(result) { console.log(result); });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item with inline image.
 
@@ -11190,7 +11189,7 @@
 'Office.MessageCompose#delayDeliveryTime:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/delay-message-delivery.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/delay-message-delivery.yaml
 
     function setDeliveryDate(minutes) {
       // This snippet sets the delivery date and time of a message.
@@ -11213,7 +11212,7 @@
 'Office.MessageCompose#disableClientSignatureAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
 
@@ -11306,7 +11305,7 @@
 'Office.MessageCompose#getComposeTypeAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Get the compose type of the current message.
 
@@ -11427,7 +11426,7 @@
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
 
@@ -11582,7 +11581,7 @@
 'Office.MessageCompose#sessionData:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -12774,7 +12773,7 @@
 'Office.SensitivityLabel#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-label.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
 
     // This snippet gets the current mail item's sensitivity label.
 
@@ -12794,7 +12793,7 @@
 'Office.SensitivityLabel#setAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-label.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-label.yaml
 
     // This snippet sets the sensitivity label on the current mail item.
 
@@ -12827,7 +12826,7 @@
 'Office.SensitivityLabelsCatalog#getAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
     // This snippet gets all available sensitivity labels from the catalog.
 
@@ -12849,7 +12848,7 @@
 'Office.SensitivityLabelsCatalog#getIsEnabledAsync:member(2)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/sensitivity-labels-catalog.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-sensitivity-label/sensitivity-labels-catalog.yaml
 
     // This snippet determines if the sensitivity labels catalog is enabled on
     the current mailbox.
@@ -12864,7 +12863,7 @@
 'Office.SessionData#clearAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.clearAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -12876,7 +12875,7 @@
 'Office.SessionData#getAllAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAllAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -12888,7 +12887,7 @@
 'Office.SessionData#getAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.getAsync(
       "Date",
@@ -12902,7 +12901,7 @@
 'Office.SessionData#removeAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.removeAsync(
       "Date",
@@ -12917,7 +12916,7 @@
 'Office.SessionData#setAsync:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/session-data-apis.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/90-other-item-apis/session-data-apis.yaml
 
     Office.context.mailbox.item.sessionData.setAsync(
       "Date",
@@ -13706,7 +13705,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-    // Update the text of the current document with the text from another
+    // Updates the text of the current document with the text from another
     document passed in as a Base64-encoded string.
 
     await Word.run(async (context) => {
@@ -13724,12 +13723,27 @@
       currentDocBody.insertText(externalDocBodyText, Word.InsertLocation.start);
       await context.sync();
     });
+'Word.Application#retrieveStylesFromBase64:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Gets style info from another document passed in as a Base64-encoded
+    string.
+
+    await Word.run(async (context) => {
+      const retrievedStyles = context.application.retrieveStylesFromBase64(externalDocument);
+      await context.sync();
+
+      console.log("Styles from the other document:");
+      console.log(retrievedStyles.value);
+    });
 'Word.Body#getComments:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Get the comments in the document body.
+    // Gets the comments in the document body.
 
     await Word.run(async (context) => {
       const comments = context.document.body.getComments();
@@ -13774,7 +13788,7 @@
         ["Apple", "Orange", "Pineapple"]
       ];
       const table = context.document.body.insertTable(2, 3, "Start", data);
-      table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+      table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
       table.styleFirstColumn = false;
 
       await context.sync();
@@ -13784,7 +13798,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
-    // Do a basic text search and highlight matches in the document.
+    // Does a basic text search and highlights matches in the document.
 
     await Word.run(async (context) => {
       const results = context.document.body.search("Online");
@@ -13803,7 +13817,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/search.yaml
 
-    // Do a wildcard search and highlight matches in the document.
+    // Does a wildcard search and highlights matches in the document.
 
     await Word.run(async (context) => {
       // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
@@ -13849,7 +13863,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the footnotes in the document body.
+    // Gets the footnotes in the document body.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -13863,7 +13877,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-    // Get the first image in the document.
+    // Gets the first image in the document.
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -13882,7 +13896,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-word-count.yaml
 
-    // Count how many times each term appears in the document.
+    // Counts how many times each term appears in the document.
 
     await Word.run(async (context) => {
       const paragraphs = context.document.body.paragraphs;
@@ -13935,7 +13949,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-    // Get the content of the first cell in the first table.
+    // Gets the content of the first cell in the first table.
 
     await Word.run(async (context) => {
       const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -13949,7 +13963,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the referenced note's item type and body type, which are both
+    // Gets the referenced note's item type and body type, which are both
     "Footnote".
 
     await Word.run(async (context) => {
@@ -13972,7 +13986,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the referenced note's item type and body type, which are both
+    // Gets the referenced note's item type and body type, which are both
     "Footnote".
 
     await Word.run(async (context) => {
@@ -13995,7 +14009,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first table in the document.
+    // Gets border details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -14014,7 +14028,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first of the first table in the document.
+    // Gets border details about the first of the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -14043,7 +14057,7 @@
 'Word.BuiltInStyleName:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-formatted-text.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
 
     await Word.run(async (context) => {
       const sentence = context.document.body.insertParagraph(
@@ -14061,7 +14075,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get cell padding details about the first table in the document.
+    // Gets cell padding details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -14078,7 +14092,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-    // Get the current change tracking mode.
+    // Gets the current change tracking mode.
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -14098,7 +14112,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-    // Get the reviewed text.
+    // Gets the reviewed text.
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -14115,7 +14129,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Delete the first comment in the selected content.
+    // Deletes the first comment in the selected content.
 
     await Word.run(async (context) => {
       context.document
@@ -14132,7 +14146,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Get the range of the first comment in the selected content.
+    // Gets the range of the first comment in the selected content.
 
     await Word.run(async (context) => {
       const range = context.document
@@ -14150,7 +14164,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Reply to the first active comment in the selected content.
+    // Replies to the first active comment in the selected content.
 
     await Word.run(async (context) => {
       const text = $("#reply-text")
@@ -14172,7 +14186,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Edit the first comment in the selected content.
+    // Edits the first comment in the selected content.
 
     await Word.run(async (context) => {
       const text = $("#edit-comment-text")
@@ -14196,7 +14210,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Toggle Resolved status of the first comment in the selected content.
+    // Toggles Resolved status of the first comment in the selected content.
 
     await Word.run(async (context) => {
       const comment = context.document
@@ -14222,7 +14236,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Get the range of the first comment in the selected content.
+    // Gets the range of the first comment in the selected content.
 
     await Word.run(async (context) => {
       const range = context.document
@@ -14240,7 +14254,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Reply to the first active comment in the selected content.
+    // Replies to the first active comment in the selected content.
 
     await Word.run(async (context) => {
       const text = $("#reply-text")
@@ -14260,7 +14274,7 @@
 'Word.ContentControl#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
     await Word.run(async (context) => {
       const contentControls = context.document.contentControls.getByTag("forTesting");
@@ -14285,7 +14299,7 @@
     appearance.
 
     await Word.run(async (context) => {
-      // Gets the complete sentence (as range) associated with the insertion point.
+      // Get the complete sentence (as range) associated with the insertion point.
       let evenContentControls = context.document.contentControls.getByTag("even");
       let oddContentControls = context.document.contentControls.getByTag("odd");
       evenContentControls.load("length");
@@ -14315,10 +14329,45 @@
 
       await context.sync();
     });
+'Word.ContentControl#onDataChanged:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+    await Word.run(async (context) => {
+      const contentControls = context.document.contentControls;
+      contentControls.load("items");
+      await context.sync();
+
+      // Register the onDataChanged event handler on each content control.
+      if (contentControls.items.length === 0) {
+        console.log("There aren't any content controls in this document so can't register event handlers.");
+      } else {
+        for (let i = 0; i < contentControls.items.length; i++) {
+          eventContexts[i] = contentControls.items[i].onDataChanged.add(contentControlDataChanged);
+          contentControls.items[i].track();
+        }
+
+        await context.sync();
+
+        console.log("Added event handlers for when data is changed in content controls.");
+      }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
+
+    async function contentControlDataChanged(event:
+    Word.ContentControlDataChangedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`);
+        console.log(event.ids);
+      });
+    }
 'Word.ContentControl#onDeleted:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
     await Word.run(async (context) => {
       const contentControls = context.document.contentControls;
@@ -14341,12 +14390,115 @@
     });
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
-    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    async function contentControlDeleted(event:
+    Word.ContentControlDeletedEventArgs) {
       await Word.run(async (context) => {
-        // Display the deleted content control's ID.
-        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControl#onEntered:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
+
+    await Word.run(async (context) => {
+      const contentControls = context.document.contentControls;
+      contentControls.load("items");
+      await context.sync();
+
+      // Register the onEntered event handler on each content control.
+      if (contentControls.items.length === 0) {
+        console.log("There aren't any content controls in this document so can't register event handlers.");
+      } else {
+        for (let i = 0; i < contentControls.items.length; i++) {
+          eventContexts[i] = contentControls.items[i].onEntered.add(contentControlEntered);
+          contentControls.items[i].track();
+        }
+
+        await context.sync();
+
+        console.log("Added event handlers for when the cursor is placed in content controls.");
+      }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
+
+    async function contentControlEntered(event:
+    Word.ContentControlEnteredEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was entered: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControl#onExited:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+    await Word.run(async (context) => {
+      const contentControls = context.document.contentControls;
+      contentControls.load("items");
+      await context.sync();
+
+      // Register the onExited event handler on each content control.
+      if (contentControls.items.length === 0) {
+        console.log("There aren't any content controls in this document so can't register event handlers.");
+      } else {
+        for (let i = 0; i < contentControls.items.length; i++) {
+          eventContexts[i] = contentControls.items[i].onExited.add(contentControlExited);
+          contentControls.items[i].track();
+        }
+
+        await context.sync();
+
+        console.log("Added event handlers for when the cursor is removed from within content controls.");
+      }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+    async function contentControlExited(event:
+    Word.ContentControlExitedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControl#onSelectionChanged:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+    await Word.run(async (context) => {
+      const contentControls = context.document.contentControls;
+      contentControls.load("items");
+      await context.sync();
+
+      if (contentControls.items.length === 0) {
+        console.log("There aren't any content controls in this document so can't register event handlers.");
+      } else {
+        for (let i = 0; i < contentControls.items.length; i++) {
+          eventContexts[i] = contentControls.items[i].onSelectionChanged.add(contentControlSelectionChanged);
+          contentControls.items[i].track();
+        }
+
+        await context.sync();
+
+        console.log("Added event handlers for when selections are changed in content controls.");
+      }
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+    async function contentControlSelectionChanged(event:
+    Word.ContentControlSelectionChangedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
+        console.log(event.ids);
       });
     }
 'Word.ContentControl#tag:member':
@@ -14376,6 +14528,30 @@
 
       await context.sync();
     });
+'Word.ContentControlAddedEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+    async function contentControlAdded(event: Word.ContentControlAddedEventArgs)
+    {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControlAddedEventArgs#ids:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+    async function contentControlAdded(event: Word.ContentControlAddedEventArgs)
+    {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+        console.log(event.ids);
+      });
+    }
 'Word.ContentControlAppearance:enum':
   - >-
     // Link to full sample:
@@ -14385,7 +14561,7 @@
     appearance.
 
     await Word.run(async (context) => {
-      // Gets the complete sentence (as range) associated with the insertion point.
+      // Get the complete sentence (as range) associated with the insertion point.
       let evenContentControls = context.document.contentControls.getByTag("even");
       let oddContentControls = context.document.contentControls.getByTag("odd");
       evenContentControls.load("length");
@@ -14432,26 +14608,120 @@
 
         await context.sync();
     });
-'Word.ContentControlEventArgs#contentControl:member':
+'Word.ContentControlDataChangedEventArgs#eventType:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
 
-    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    async function contentControlDataChanged(event:
+    Word.ContentControlDataChangedEventArgs) {
       await Word.run(async (context) => {
-        // Display the deleted content control's ID.
-        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`);
+        console.log(event.ids);
       });
     }
-'Word.ContentControlEventArgs#eventType:member':
+'Word.ContentControlDataChangedEventArgs#ids:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondatachanged-event.yaml
 
-    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    async function contentControlDataChanged(event:
+    Word.ContentControlDataChangedEventArgs) {
       await Word.run(async (context) => {
-        // Display the deleted content control's ID.
-        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControlDeletedEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event:
+    Word.ContentControlDeletedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControlDeletedEventArgs#ids:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
+
+    async function contentControlDeleted(event:
+    Word.ContentControlDeletedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControlEnteredEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
+
+    async function contentControlEntered(event:
+    Word.ContentControlEnteredEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was entered: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControlEnteredEventArgs#ids:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onentered-event.yaml
+
+    async function contentControlEntered(event:
+    Word.ContentControlEnteredEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was entered: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControlExitedEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+    async function contentControlExited(event:
+    Word.ContentControlExitedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControlExitedEventArgs#ids:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onexited-event.yaml
+
+    async function contentControlExited(event:
+    Word.ContentControlExitedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. ID of content control that was exited: ${event.ids[0]}`);
+      });
+    }
+'Word.ContentControlSelectionChangedEventArgs#eventType:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+    async function contentControlSelectionChanged(event:
+    Word.ContentControlSelectionChangedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
+        console.log(event.ids);
+      });
+    }
+'Word.ContentControlSelectionChangedEventArgs#ids:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onselectionchanged-event.yaml
+
+    async function contentControlSelectionChanged(event:
+    Word.ContentControlSelectionChangedEventArgs) {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
+        console.log(event.ids);
       });
     }
 'Word.CustomProperty:class':
@@ -14506,7 +14776,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Delete a custom XML part.
+    // Deletes a custom XML part.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14534,7 +14804,7 @@
           console.error(strangeMessage);
         }
       } else {
-        console.warn("No custom XML part to delete");
+        console.warn("Didn't find custom XML part to delete");
       }
     });
 'Word.CustomXmlPart#getXml:member(1)':
@@ -14542,7 +14812,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Add a custom XML part.
+    // Adds a custom XML part.
 
     await Word.run(async (context) => {
       const originalXml =
@@ -14568,7 +14838,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Insert an attribute into a custom XML part.
+    // Inserts an attribute into a custom XML part.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14587,7 +14857,7 @@
         console.log("Successfully inserted attribute:");
         console.log(readableXml);
       } else {
-        console.warn("No custom XML part to insert attribute into");
+        console.warn("Didn't find custom XML part to insert attribute into");
       }
     });
 'Word.CustomXmlPart#insertElement:member(1)':
@@ -14595,7 +14865,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Insert an element into a custom XML part.
+    // Inserts an element into a custom XML part.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14619,7 +14889,7 @@
         console.log("Successfully inserted element:");
         console.log(readableXml);
       } else {
-        console.warn("No custom XML part to insert element into");
+        console.warn("Didn't find custom XML part to insert element into");
       }
     });
 'Word.CustomXmlPart#query:member(1)':
@@ -14627,7 +14897,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Query a custom XML part for elements matching the search terms.
+    // Queries a custom XML part for elements matching the search terms.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14649,7 +14919,42 @@
           console.log(clientResult.value[i]);
         }
       } else {
-        console.warn("No custom XML part to query");
+        console.warn("Didn't find custom XML part to query");
+      }
+    });
+'Word.CustomXmlPart#setXml:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+    // Replaces a custom XML part.
+
+    await Word.run(async (context) => {
+      const settings = context.document.settings;
+      const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+      await context.sync();
+
+      if (xmlPartIDSetting.value) {
+        const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+        const originalXmlBlob = customXmlPart.getXml();
+        await context.sync();
+
+        let readableXml = addLineBreaksToXML(originalXmlBlob.value);
+        console.log("Original custom XML part:");
+        console.log(readableXml);
+
+        // The setXml method replaces the entire XML part.
+        customXmlPart.setXml(
+          "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>John</Reviewer><Reviewer>Hitomi</Reviewer></Reviewers>"
+        );
+        const updatedXmlBlob = customXmlPart.getXml();
+        await context.sync();
+
+        readableXml = addLineBreaksToXML(updatedXmlBlob.value);
+        console.log("Replaced custom XML part:");
+        console.log(readableXml);
+      } else {
+        console.warn("Didn't find custom XML part to replace");
       }
     });
 'Word.CustomXmlPart#id:member':
@@ -14657,7 +14962,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Add a custom XML part.
+    // Adds a custom XML part.
 
     await Word.run(async (context) => {
       const originalXml =
@@ -14678,12 +14983,36 @@
 
       await context.sync();
     });
+'Word.CustomXmlPart#namespaceUri:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part-ns.yaml
+
+    // Gets the namespace URI from a custom XML part.
+
+    await Word.run(async (context) => {
+      const settings = context.document.settings;
+      const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartIdNS").load("value");
+
+      await context.sync();
+
+      if (xmlPartIDSetting.value) {
+        const customXmlPart = context.document.customXmlParts.getItem(xmlPartIDSetting.value);
+        customXmlPart.load("namespaceUri");
+        await context.sync();
+
+        const namespaceUri = customXmlPart.namespaceUri;
+        console.log(`Namespace URI: ${JSON.stringify(namespaceUri)}`);
+      } else {
+        console.warn("Didn't find custom XML part");
+      }
+    });
 'Word.CustomXmlPartCollection#add:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Add a custom XML part.
+    // Adds a custom XML part.
 
     await Word.run(async (context) => {
       const originalXml =
@@ -14709,7 +15038,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-    // Query a custom XML part for elements matching the search terms.
+    // Queries a custom XML part for elements matching the search terms.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14731,15 +15060,60 @@
           console.log(clientResult.value[i]);
         }
       } else {
-        console.warn("No custom XML part to query");
+        console.warn("Didn't find custom XML part to query");
       }
+    });
+'Word.Document#addStyle:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Adds a new style.
+
+    await Word.run(async (context) => {
+      const newStyleName = $("#new-style-name").val() as string;
+      if (newStyleName == "") {
+        console.warn("Enter a style name to add.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+      style.load();
+      await context.sync();
+
+      if (!style.isNullObject) {
+        console.warn(
+          `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+        );
+        return;
+      }
+
+      const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+      context.document.addStyle(newStyleName, newStyleType);
+      await context.sync();
+      
+      console.log(newStyleName + " has been added to the style list.");
+    });
+'Word.Document#getStyles:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Gets the number of styles.
+
+    await Word.run(async (context) => {
+      const styles = context.document.getStyles();
+      const count = styles.getCount();
+      await context.sync();
+
+      console.log(`Number of styles: ${count.value}`);
     });
 'Word.Document#changeTrackingMode:member':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-    // Get the current change tracking mode.
+    // Gets the current change tracking mode.
 
     await Word.run(async (context) => {
       const document = context.document;
@@ -14754,6 +15128,30 @@
         console.log("No changes are being tracked.");
       }
     });
+'Word.Document#onContentControlAdded:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+    // Registers the onAdded event handler on the document.
+
+    await Word.run(async (context) => {
+      eventContext = context.document.onContentControlAdded.add(contentControlAdded);
+      await context.sync();
+
+      console.log("Added event handler for when content controls are added.");
+    });
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+    async function contentControlAdded(event: Word.ContentControlAddedEventArgs)
+    {
+      await Word.run(async (context) => {
+        console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+        console.log(event.ids);
+      });
+    }
 'Word.Document#properties:member':
   - >-
     // Link to full sample:
@@ -14771,7 +15169,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-    // Get all custom settings this add-in set on this document.
+    // Gets all custom settings this add-in set on this document.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -14792,7 +15190,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-    // Update the text of the current document with the text from another
+    // Updates the text of the current document with the text from another
     document passed in as a Base64-encoded string.
 
     await Word.run(async (context) => {
@@ -14826,32 +15224,168 @@
 'Word.EventType:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-ondeleted-event.yaml
 
-    async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    async function contentControlDeleted(event:
+    Word.ContentControlDeletedEventArgs) {
       await Word.run(async (context) => {
-        // Display the deleted content control's ID.
-        console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
+        console.log(event.ids);
       });
     }
+'Word.Field#delete:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Deletes the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load();
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        field.delete();
+        await context.sync();
+
+        console.log("The first field in the document was deleted.");
+      }
+    });
+'Word.Field#select:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Gets and updates the first field in the selection.
+
+    await Word.run(async (context) => {
+      var field = context.document.getSelection().fields.getFirstOrNullObject();
+      field.load(["code", "result", "type", "locked"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("No field in selection.");
+      } else {
+        console.log("Before updating:");
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+
+        field.updateResult();
+        field.select();
+        await context.sync();
+
+        field.load(["code", "result"]);
+        await context.sync();
+
+        console.log("After updating:");
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+      }
+    });
+'Word.Field#updateResult:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Gets and updates the first field in the selection.
+
+    await Word.run(async (context) => {
+      var field = context.document.getSelection().fields.getFirstOrNullObject();
+      field.load(["code", "result", "type", "locked"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("No field in selection.");
+      } else {
+        console.log("Before updating:");
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+
+        field.updateResult();
+        field.select();
+        await context.sync();
+
+        field.load(["code", "result"]);
+        await context.sync();
+
+        console.log("After updating:");
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+      }
+    });
 'Word.Field#code:member':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-    // Gets the first field in the document body.
+    // Gets the first field in the document.
 
     await Word.run(async (context) => {
       const field = context.document.body.fields.getFirstOrNullObject();
-      field.load(["code", "result"]);
+      field.load(["code", "result", "locked", "type", "data", "kind"]);
 
       await context.sync();
 
       if (field.isNullObject) {
-        console.log("There are no fields in this document.");
+        console.log("This document has no fields.");
       } else {
         console.log("Code of first field: " + field.code);
         console.log("Result of first field: " + JSON.stringify(field.result));
+        console.log("Type of first field: " + field.type);
+        console.log("Is the first field locked? " + field.locked);
+        console.log("Kind of the first field: " + field.kind);
+      }
+    });
+'Word.Field#kind:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Gets the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+        console.log("Type of first field: " + field.type);
+        console.log("Is the first field locked? " + field.locked);
+        console.log("Kind of the first field: " + field.kind);
+      }
+    });
+'Word.Field#locked:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Gets the first field in the selection and toggles between setting it to
+    locked or unlocked.
+
+    await Word.run(async (context) => {
+      var field = context.document.getSelection().fields.getFirstOrNullObject();
+      field.load(["code", "result", "type", "locked"]);
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("The selection has no fields.");
+      } else {
+        console.log(`The first field in the selection is currently ${field.locked ? "locked" : "unlocked"}.`);
+        field.locked = !field.locked;
+        await context.sync();
+
+        console.log(`The first field in the selection is now ${field.locked ? "locked" : "unlocked"}.`);
       }
     });
 'Word.Field#parentBody:member':
@@ -14879,19 +15413,45 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-    // Gets the first field in the document body.
+    // Gets the first field in the document.
 
     await Word.run(async (context) => {
       const field = context.document.body.fields.getFirstOrNullObject();
-      field.load(["code", "result"]);
+      field.load(["code", "result", "locked", "type", "data", "kind"]);
 
       await context.sync();
 
       if (field.isNullObject) {
-        console.log("There are no fields in this document.");
+        console.log("This document has no fields.");
       } else {
         console.log("Code of first field: " + field.code);
         console.log("Result of first field: " + JSON.stringify(field.result));
+        console.log("Type of first field: " + field.type);
+        console.log("Is the first field locked? " + field.locked);
+        console.log("Kind of the first field: " + field.kind);
+      }
+    });
+'Word.Field#type:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Gets the first field in the document.
+
+    await Word.run(async (context) => {
+      const field = context.document.body.fields.getFirstOrNullObject();
+      field.load(["code", "result", "locked", "type", "data", "kind"]);
+
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("This document has no fields.");
+      } else {
+        console.log("Code of first field: " + field.code);
+        console.log("Result of first field: " + JSON.stringify(field.result));
+        console.log("Type of first field: " + field.type);
+        console.log("Is the first field locked? " + field.locked);
+        console.log("Kind of the first field: " + field.kind);
       }
     });
 'Word.FieldCollection#getFirstOrNullObject:member(1)':
@@ -14899,19 +15459,22 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
 
-    // Gets the first field in the document body.
+    // Gets the first field in the document.
 
     await Word.run(async (context) => {
       const field = context.document.body.fields.getFirstOrNullObject();
-      field.load(["code", "result"]);
+      field.load(["code", "result", "locked", "type", "data", "kind"]);
 
       await context.sync();
 
       if (field.isNullObject) {
-        console.log("There are no fields in this document.");
+        console.log("This document has no fields.");
       } else {
         console.log("Code of first field: " + field.code);
         console.log("Result of first field: " + JSON.stringify(field.result));
+        console.log("Type of first field: " + field.type);
+        console.log("Is the first field locked? " + field.locked);
+        console.log("Kind of the first field: " + field.kind);
       }
     });
 'Word.FieldCollection#items:member':
@@ -14938,6 +15501,28 @@
         }
       }
     });
+'Word.FieldType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Inserts a Date field before selection.
+
+    await Word.run(async (context) => {
+      var range = context.document.getSelection().getRange();
+
+      const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+      field.load("result,code");
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of the field: " + field.code);
+        console.log("Result of the field: " + JSON.stringify(field.result));
+      }
+    });
 'Word.HeaderFooterType:enum':
   - >-
     // Link to full sample:
@@ -14954,16 +15539,17 @@
 'Word.ImageFormat:enum':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-get-pictures.yaml
 
-    // Get the first image in the document.
+    // Gets the first image in the document.
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
-      firstPicture.load("width, height");
+      firstPicture.load("width, height, imageFormat");
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+      console.log(`Image format: ${firstPicture.imageFormat}`);
       // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
@@ -14990,7 +15576,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-    // Get the first image in the document.
+    // Gets the first image in the document.
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -15007,16 +15593,17 @@
 'Word.InlinePicture#imageFormat:member':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-get-pictures.yaml
 
-    // Get the first image in the document.
+    // Gets the first image in the document.
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
-      firstPicture.load("width, height");
+      firstPicture.load("width, height, imageFormat");
 
       await context.sync();
       console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+      console.log(`Image format: ${firstPicture.imageFormat}`);
       // Get the image encoded as Base64.
       const base64 = firstPicture.getBase64ImageSrc();
 
@@ -15028,7 +15615,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-    // Get the first image in the document.
+    // Gets the first image in the document.
 
     await Word.run(async (context) => {
       const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -15080,7 +15667,7 @@
       list.insertParagraph("New list item at the start of the list", "Start");
       const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-      // Sets up list level for the list item.
+      // Set up list level for the list item.
       paragraph.listItem.level = 4;
 
       // To add paragraphs outside the list, use Before or After.
@@ -15111,7 +15698,7 @@
       list.insertParagraph("New list item at the start of the list", "Start");
       const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-      // Sets up list level for the list item.
+      // Set up list level for the list item.
       paragraph.listItem.level = 4;
 
       // To add paragraphs outside the list, use Before or After.
@@ -15124,7 +15711,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15167,7 +15754,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15210,7 +15797,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15271,7 +15858,7 @@
       list.insertParagraph("New list item at the start of the list", "Start");
       const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-      // Sets up list level for the list item.
+      // Set up list level for the list item.
       paragraph.listItem.level = 4;
 
       // To add paragraphs outside the list, use Before or After.
@@ -15284,7 +15871,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15327,7 +15914,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15370,7 +15957,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
 
-    // Insert a list starting with the first paragraph then set numbering and
+    // Inserts a list starting with the first paragraph then set numbering and
     bullet types of the list items.
 
     await Word.run(async (context) => {
@@ -15413,7 +16000,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-    // Compare the location of one paragraph in relation to another paragraph.
+    // Compares the location of one paragraph in relation to another paragraph.
 
     await Word.run(async (context) => {
       const paragraphs = context.document.body.paragraphs;
@@ -15435,7 +16022,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Delete this referenced footnote.
+    // Deletes this referenced footnote.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -15454,7 +16041,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Select the next footnote in the document body.
+    // Selects the next footnote in the document body.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -15472,7 +16059,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the text of the referenced footnote.
+    // Gets the text of the referenced footnote.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -15492,7 +16079,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Select the footnote's reference mark in the document body.
+    // Selects the footnote's reference mark in the document body.
 
     await Word.run(async (context) => {
       const footnotes = context.document.body.footnotes;
@@ -15513,7 +16100,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the referenced note's item type and body type, which are both
+    // Gets the referenced note's item type and body type, which are both
     "Footnote".
 
     await Word.run(async (context) => {
@@ -15536,7 +16123,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the first footnote in the document body and select its reference
+    // Gets the first footnote in the document body and select its reference
     mark.
 
     await Word.run(async (context) => {
@@ -15549,7 +16136,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the referenced note's item type and body type, which are both
+    // Gets the referenced note's item type and body type, which are both
     "Footnote".
 
     await Word.run(async (context) => {
@@ -15573,14 +16160,14 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
-      // Gets the complete sentence (as range) associated with the insertion point.
+      // Get the complete sentence (as range) associated with the insertion point.
       const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
-      // Expands the range to the end of the paragraph to get all the complete sentences.
+      // Expand the range to the end of the paragraph to get all the complete sentences.
       const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
@@ -15687,7 +16274,7 @@
       list.insertParagraph("New list item at the start of the list", "Start");
       const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-      // Sets up list level for the list item.
+      // Set up list level for the list item.
       paragraph.listItem.level = 4;
 
       // To add paragraphs outside the list, use Before or After.
@@ -15733,7 +16320,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
-      // Centers last paragraph alignment.
+      // Center last paragraph alignment.
       context.document.body.paragraphs.getLast().alignment = "Centered";
 
       await context.sync();
@@ -15744,7 +16331,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
-      // Indents the first paragraph.
+      // Indent the first paragraph.
       context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
       return context.sync();
@@ -15755,7 +16342,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
-      // Adjusts line spacing.
+      // Adjust line spacing.
       context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
       await context.sync();
@@ -15770,6 +16357,74 @@
       context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
       await context.sync();
+    });
+'Word.Paragraph#style:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Applies the specified style to a paragraph.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to apply.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else if (style.type != Word.StyleType.paragraph) {
+        console.log(`The '${styleName}' style isn't a paragraph style.`);
+      } else {
+        const body = context.document.body;
+        body.clear();
+        body.insertParagraph(
+          "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+          "Start"
+        );
+        const paragraph = body.paragraphs.getFirst();
+        paragraph.style = style.nameLocal;
+        console.log(`'${styleName}' style applied to first paragraph.`);
+      }
+    });
+'Word.Paragraph#styleBuiltIn:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+    await Word.run(async (context) => {
+        const paragraph = context.document.body.insertParagraph("Timeline", "End");
+        paragraph.styleBuiltIn = "Heading2";
+        const paragraph2 = context.document.body.insertParagraph("The Services shall commence on July 31, 2015, and shall continue through July 29, 2015.", "End");
+        paragraph2.styleBuiltIn = "Normal";
+        const paragraph3 = context.document.body.insertParagraph("Project Costs by Phase", "End");
+        paragraph3.styleBuiltIn = "Heading2";
+        // Note a content control with the title of "ProjectCosts" is added. Content will be replaced later.
+        const paragraph4 = context.document.body.insertParagraph("<Add Project Costs Here>", "End");
+        paragraph4.styleBuiltIn = "Normal";
+        paragraph4.font.highlightColor = "#FFFF00";
+        const contentControl = paragraph4.insertContentControl();
+        contentControl.title = "ProjectCosts";
+        const paragraph5 = context.document.body.insertParagraph("Project Team", "End");
+        paragraph5.styleBuiltIn = "Heading2";
+        paragraph5.font.highlightColor = "#FFFFFF";
+        const paragraph6 = context.document.body.insertParagraph("Terms of Work", "End");
+        paragraph6.styleBuiltIn = "Heading1";
+        const paragraph7 = context.document.body.insertParagraph("Contractor shall provide the Services and Deliverable(s) as follows:", "End");
+        paragraph7.styleBuiltIn = "Normal";
+        const paragraph8 = context.document.body.insertParagraph("Out-of-Pocket Expenses / Invoice Procedures", "End");
+        paragraph8.styleBuiltIn = "Heading2";
+        const paragraph9 = context.document.body.insertParagraph("Client will be invoiced monthly for the consulting services and T&L expenses. Standard Contractor invoicing is assumed to be acceptable. Invoices are due upon receipt. client will be invoiced all costs associated with out-of-pocket expenses (including, without limitation, costs and expenses associated with meals, lodging, local transportation and any other applicable business expenses) listed on the invoice as a separate line item. Reimbursement for out-of-pocket expenses in connection with performance of this SOW, when authorized and up to the limits set forth in this SOW, shall be in accordance with Client's then-current published policies governing travel and associated business expenses, which information shall be provided by the Client Project Manager.", "End");
+        paragraph9.styleBuiltIn = "Normal";
+        // Insert a page break at the end of the document.
+        context.document.body.insertBreak("Page", "End");
+
+        await context.sync();
     });
 'Word.Paragraph#text:member':
   - >-
@@ -15822,7 +16477,7 @@
       list.insertParagraph("New list item at the start of the list", "Start");
       const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-      // Sets up list level for the list item.
+      // Set up list level for the list item.
       paragraph.listItem.level = 4;
 
       // To add paragraphs outside the list, use Before or After.
@@ -15830,12 +16485,66 @@
 
       await context.sync();
     });
+'Word.ParagraphFormat#alignment:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Sets certain aspects of the specified style's paragraph format e.g., the
+    left indent size and the alignment.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update its paragraph format.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        style.paragraphFormat.leftIndent = 30;
+        style.paragraphFormat.alignment = Word.Alignment.centered;
+        console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+      }
+    });
+'Word.ParagraphFormat#leftIndent:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Sets certain aspects of the specified style's paragraph format e.g., the
+    left indent size and the alignment.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update its paragraph format.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        style.paragraphFormat.leftIndent = 30;
+        style.paragraphFormat.alignment = Word.Alignment.centered;
+        console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+      }
+    });
 'Word.Range#compareLocationWith:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-    // Compare the location of one paragraph in relation to another paragraph.
+    // Compares the location of one paragraph in relation to another paragraph.
 
     await Word.run(async (context) => {
       const paragraphs = context.document.body.paragraphs;
@@ -15857,7 +16566,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Get the comments in the selected content.
+    // Gets the comments in the selected content.
 
     await Word.run(async (context) => {
       const comments = context.document.getSelection().getComments();
@@ -15874,7 +16583,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-    // Get the reviewed text.
+    // Gets the reviewed text.
 
     await Word.run(async (context) => {
       const range = context.document.getSelection();
@@ -15892,14 +16601,14 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
-      // Gets the complete sentence (as range) associated with the insertion point.
+      // Get the complete sentence (as range) associated with the insertion point.
       const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
-      // Expands the range to the end of the paragraph to get all the complete sentences.
+      // Expand the range to the end of the paragraph to get all the complete sentences.
       const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
@@ -15921,7 +16630,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-    // Set a comment on the selected content.
+    // Sets a comment on the selected content.
 
     await Word.run(async (context) => {
       const text = $("#comment-text")
@@ -15940,6 +16649,15 @@
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+    // Simulates creation of a template. First searches the document for
+    instances of the string "Contractor",
+
+    // then changes the format  of each search result,
+
+    // then wraps each search result within a content control,
+
+    // finally sets a tag and title property on each content control.
 
     await Word.run(async (context) => {
         const results = context.document.body.search("Contractor");
@@ -15960,12 +16678,34 @@
       }
         await context.sync();
     });
+'Word.Range#insertField:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+    // Inserts a Date field before selection.
+
+    await Word.run(async (context) => {
+      var range = context.document.getSelection().getRange();
+
+      const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+      field.load("result,code");
+      await context.sync();
+
+      if (field.isNullObject) {
+        console.log("There are no fields in this document.");
+      } else {
+        console.log("Code of the field: " + field.code);
+        console.log("Result of the field: " + JSON.stringify(field.result));
+      }
+    });
 'Word.Range#insertFootnote:member(1)':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Set a footnote on the selected content.
+    // Sets a footnote on the selected content.
 
     await Word.run(async (context) => {
       const text = $("#input-footnote")
@@ -15981,7 +16721,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-    // Get the footnotes in the selected document range.
+    // Gets the footnotes in the selected document range.
 
     await Word.run(async (context) => {
       const footnotes = context.document.getSelection().footnotes;
@@ -15990,20 +16730,32 @@
 
       console.log("Number of footnotes in the selected range: " + footnotes.items.length);
     });
+'Word.Range#styleBuiltIn:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+    await Word.run(async (context) => {
+        const header = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
+            "Start" /*this means at the beginning of the body */);
+        header.styleBuiltIn = Word.BuiltInStyleName.heading1;
+
+        await context.sync();
+    });
 'Word.RangeLocation:enum':
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
-      // Gets the complete sentence (as range) associated with the insertion point.
+      // Get the complete sentence (as range) associated with the insertion point.
       const sentences = context.document
         .getSelection()
         .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
       sentences.load("$none");
       await context.sync();
 
-      // Expands the range to the end of the paragraph to get all the complete sentences.
+      // Expand the range to the end of the paragraph to get all the complete sentences.
       const sentencesToTheEndOfParagraph = sentences.items[0]
         .getRange()
         .expandTo(
@@ -16092,7 +16844,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-    // Delete all custom settings this add-in had set on this document.
+    // Deletes all custom settings this add-in had set on this document.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -16105,7 +16857,9 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-    // Add a new custom setting, or edit the value of an existing one.
+    // Adds a new custom setting or
+
+    // edits the value of an existing one.
 
     await Word.run(async (context) => {
       const key = $("#key")
@@ -16134,7 +16888,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-    // Get all custom settings this add-in set on this document.
+    // Gets all custom settings this add-in set on this document.
 
     await Word.run(async (context) => {
       const settings = context.document.settings;
@@ -16150,21 +16904,197 @@
         }
       }
     });
-'Word.Style:enum':
+'Word.Style#delete:member(1)':
   - >-
     // Link to full sample:
-    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/insert-formatted-text.yaml
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Deletes the custom style.
 
     await Word.run(async (context) => {
-      const sentence = context.document.body.insertParagraph(
-        "To be or not to be",
-        "End"
-      );
+      const styleName = $("#style-name-to-delete").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to delete.");
+        return;
+      }
 
-      // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use: range.style = "name of your style";
-      sentence.styleBuiltIn = Word.Style.intenseReference;
-
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
       await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        style.delete();
+        console.log(`Successfully deleted custom style '${styleName}'.`);
+      }
+    });
+'Word.Style#font:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Updates font properties (e.g., color, size) of the specified style.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update font properties.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        const font = style.font;
+        font.color = "#FF0000";
+        font.size = 20;
+        console.log(`Successfully updated font properties of the '${styleName}' style.`);
+      }
+    });
+'Word.Style#nameLocal:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Applies the specified style to a paragraph.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to apply.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else if (style.type != Word.StyleType.paragraph) {
+        console.log(`The '${styleName}' style isn't a paragraph style.`);
+      } else {
+        const body = context.document.body;
+        body.clear();
+        body.insertParagraph(
+          "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+          "Start"
+        );
+        const paragraph = body.paragraphs.getFirst();
+        paragraph.style = style.nameLocal;
+        console.log(`'${styleName}' style applied to first paragraph.`);
+      }
+    });
+'Word.Style#paragraphFormat:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Sets certain aspects of the specified style's paragraph format e.g., the
+    left indent size and the alignment.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to update its paragraph format.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else {
+        style.paragraphFormat.leftIndent = 30;
+        style.paragraphFormat.alignment = Word.Alignment.centered;
+        console.log(`Successfully the paragraph format of the '${styleName}' style.`);
+      }
+    });
+'Word.StyleCollection#getByNameOrNullObject:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Adds a new style.
+
+    await Word.run(async (context) => {
+      const newStyleName = $("#new-style-name").val() as string;
+      if (newStyleName == "") {
+        console.warn("Enter a style name to add.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+      style.load();
+      await context.sync();
+
+      if (!style.isNullObject) {
+        console.warn(
+          `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+        );
+        return;
+      }
+
+      const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+      context.document.addStyle(newStyleName, newStyleType);
+      await context.sync();
+      
+      console.log(newStyleName + " has been added to the style list.");
+    });
+'Word.StyleCollection#getCount:member(1)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Gets the number of styles.
+
+    await Word.run(async (context) => {
+      const styles = context.document.getStyles();
+      const count = styles.getCount();
+      await context.sync();
+
+      console.log(`Number of styles: ${count.value}`);
+    });
+'Word.StyleType:enum':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+    // Applies the specified style to a paragraph.
+
+    await Word.run(async (context) => {
+      const styleName = $("#style-name-to-use").val() as string;
+      if (styleName == "") {
+        console.warn("Enter a style name to apply.");
+        return;
+      }
+
+      const style = context.document.getStyles().getByNameOrNullObject(styleName);
+      style.load();
+      await context.sync();
+
+      if (style.isNullObject) {
+        console.warn(`There's no existing style with the name '${styleName}'.`);
+      } else if (style.type != Word.StyleType.paragraph) {
+        console.log(`The '${styleName}' style isn't a paragraph style.`);
+      } else {
+        const body = context.document.body;
+        body.clear();
+        body.insertParagraph(
+          "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+          "Start"
+        );
+        const paragraph = body.paragraphs.getFirst();
+        paragraph.style = style.nameLocal;
+        console.log(`'${styleName}' style applied to first paragraph.`);
+      }
     });
 'Word.Table:class':
   - >-
@@ -16178,7 +17108,7 @@
         ["Apple", "Orange", "Pineapple"]
       ];
       const table = context.document.body.insertTable(2, 3, "Start", data);
-      table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+      table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
       table.styleFirstColumn = false;
 
       await context.sync();
@@ -16188,7 +17118,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first table in the document.
+    // Gets border details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16207,7 +17137,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-    // Get the content of the first cell in the first table.
+    // Gets the content of the first cell in the first table.
 
     await Word.run(async (context) => {
       const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -16221,7 +17151,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get cell padding details about the first table in the document.
+    // Gets cell padding details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16238,7 +17168,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get alignment details about the first table in the document.
+    // Gets alignment details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16255,7 +17185,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get alignment details about the first table in the document.
+    // Gets alignment details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16272,7 +17202,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get content alignment details about the first row of the first table in
+    // Gets content alignment details about the first row of the first table in
     the document.
 
     await Word.run(async (context) => {
@@ -16290,7 +17220,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get alignment details about the first table in the document.
+    // Gets alignment details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16307,7 +17237,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first table in the document.
+    // Gets border details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16326,7 +17256,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first table in the document.
+    // Gets border details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16345,7 +17275,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first table in the document.
+    // Gets border details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16364,7 +17294,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-    // Get the content of the first cell in the first table.
+    // Gets the content of the first cell in the first table.
 
     await Word.run(async (context) => {
       const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -16378,7 +17308,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first of the first table in the document.
+    // Gets border details about the first of the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16398,7 +17328,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get cell padding details about the first cell of the first table in the
+    // Gets cell padding details about the first cell of the first table in the
     document.
 
     await Word.run(async (context) => {
@@ -16417,7 +17347,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get content alignment details about the first cell of the first table in
+    // Gets content alignment details about the first cell of the first table in
     the document.
 
     await Word.run(async (context) => {
@@ -16435,7 +17365,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get content alignment details about the first cell of the first table in
+    // Gets content alignment details about the first cell of the first table in
     the document.
 
     await Word.run(async (context) => {
@@ -16453,7 +17383,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get alignment details about the first table in the document.
+    // Gets alignment details about the first table in the document.
 
     await Word.run(async (context) => {
       const firstTable = context.document.body.tables.getFirst();
@@ -16470,7 +17400,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/table-cell-access.yaml
 
-    // Get the content of the first cell in the first table.
+    // Gets the content of the first cell in the first table.
 
     await Word.run(async (context) => {
       const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
@@ -16484,7 +17414,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first row of the first table in the
+    // Gets border details about the first row of the first table in the
     document.
 
     await Word.run(async (context) => {
@@ -16505,7 +17435,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get cell padding details about the first row of the first table in the
+    // Gets cell padding details about the first row of the first table in the
     document.
 
     await Word.run(async (context) => {
@@ -16524,7 +17454,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get content alignment details about the first row of the first table in
+    // Gets content alignment details about the first row of the first table in
     the document.
 
     await Word.run(async (context) => {
@@ -16542,7 +17472,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get border details about the first row of the first table in the
+    // Gets border details about the first row of the first table in the
     document.
 
     await Word.run(async (context) => {
@@ -16563,7 +17493,7 @@
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
 
-    // Get content alignment details about the first row of the first table in
+    // Gets content alignment details about the first row of the first table in
     the document.
 
     await Word.run(async (context) => {

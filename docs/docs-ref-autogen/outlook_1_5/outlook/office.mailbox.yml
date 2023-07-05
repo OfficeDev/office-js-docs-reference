@@ -58,13 +58,13 @@ properties:
       More information is under [Office.Diagnostics](xref:outlook!Office.Diagnostics:interface)<!-- -->.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       Starting with Mailbox requirement set 1.5, you can also use the
@@ -95,13 +95,13 @@ properties:
       **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
@@ -112,7 +112,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
@@ -157,8 +157,8 @@ properties:
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
 
 
-      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle, see
-      [Implement a pinnable task pane in
+      **Important**: `item` can be null if your add-in supports pinning the task pane. For details on how to handle,
+      see [Implement a pinnable task pane in
       Outlook](https://learn.microsoft.com/office/dev/add-ins/outlook/pinnable-taskpane#implement-the-event-handler)<!--
       -->.
     remarks: ''
@@ -200,13 +200,13 @@ properties:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       The `restUrl` value can be used to make [REST API](https://learn.microsoft.com/outlook/rest/) calls to the user's
@@ -216,7 +216,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
@@ -287,7 +287,8 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      implementation.
 
 
       For supported events, refer to the Mailbox object model [events
@@ -298,19 +299,19 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       Office.initialize = function (reason) {
           $(document).ready(function () {
@@ -370,7 +371,8 @@ methods:
     package: outlook!
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     summary: >-
-      Adds an event handler for a supported event. **Note**: Events are only available with task pane implementation.
+      Adds an event handler for a supported event. **Note**: Events are only available with task pane
+      implementation.
 
 
       For supported events, refer to the Mailbox object model [events
@@ -381,13 +383,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -431,19 +433,19 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
@@ -501,13 +503,13 @@ methods:
       zone specified in the EAC.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -532,13 +534,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs
@@ -551,7 +553,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
@@ -619,19 +621,19 @@ methods:
       the correct values for the local date and time.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Represents 3:37 PM PDT on Monday, August 26, 2019.
 
@@ -696,19 +698,19 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-appointment.yaml
@@ -757,19 +759,19 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-existing-message.yaml
@@ -804,14 +806,14 @@ methods:
 
 
       In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
-      attendees as input arguments, the method displays a form with a **Save** button. If you have specified attendees,
-      the form would include the attendees and a **Send** button.
+      attendees as input arguments, the method displays a form with a **Save** button. If you have specified
+      attendees, the form would include the attendees and a **Send** button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the
       `requiredAttendees`<!-- -->, `optionalAttendees`<!-- -->, or `resources` parameter, this method displays a meeting
-      form with a **Send** button. If you don't specify any recipients, this method displays an appointment form with a
-      **Save &amp; Close** button.
+      form with a **Send** button. If you don't specify any recipients, this method displays an appointment form
+      with a **Save &amp; Close** button.
 
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
@@ -821,19 +823,19 @@ methods:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/55-display-items/display-new-appointment.yaml
@@ -941,8 +943,8 @@ methods:
       selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
 
-      **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token is
-      always returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
+      **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token
+      is always returned in Outlook mobile clients even if `options.isRest` is set to `false`<!-- -->.
 
 
       **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
@@ -951,13 +953,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       **Errors**:
@@ -978,7 +980,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
@@ -1065,13 +1067,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       **Errors**:
@@ -1092,7 +1094,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
@@ -1134,13 +1136,13 @@ methods:
       The token is returned as a string in the `asyncResult.value` property.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       The `getUserIdentityTokenAsync` method returns a token that you can use to identify and [authenticate the add-in
@@ -1165,7 +1167,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
@@ -1221,8 +1223,8 @@ methods:
 
 
       Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For
-      information about using the **read/write mailbox** permission and the EWS operations that you can call with the
-      `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
+      information about using the **read/write mailbox** permission and the EWS operations that you can call with
+      the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
       mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
 
 
@@ -1259,19 +1261,19 @@ methods:
       property.
     remarks: >-
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write mailbox**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write mailbox**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function getSubjectRequest(id) {
           // Return a GetItem operation request for the subject of the specified item.
@@ -1317,7 +1319,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/85-tokens-and-service-calls/get-icaluid-as-attendee.yaml
@@ -1418,13 +1420,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1463,13 +1465,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:

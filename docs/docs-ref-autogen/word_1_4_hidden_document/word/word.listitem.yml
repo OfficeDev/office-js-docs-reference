@@ -27,7 +27,7 @@ properties:
     uid: 'word!Word.ListItem#level:member'
     package: word!
     fullName: level
-    summary: Gets or sets the level of the item in the list.
+    summary: Specifies the level of the item in the list.
     remarks: >-
       \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -35,7 +35,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/insert-list.yaml
@@ -58,7 +58,7 @@ properties:
         list.insertParagraph("New list item at the start of the list", "Start");
         const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
-        // Sets up list level for the list item.
+        // Set up list level for the list item.
         paragraph.listItem.level = 4;
 
         // To add paragraphs outside the list, use Before or After.

@@ -36,8 +36,8 @@ properties:
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,8 +54,8 @@ properties:
       parameter for an unsupported type results in an exception.
 
 
-      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g., Mac,
-      web browser).
+      **Note**: At present, the custom icon is displayed in Outlook on Windows only and not on other clients (e.g.,
+      Mac, web browser).
     remarks: ''
     isPreview: false
     isDeprecated: false

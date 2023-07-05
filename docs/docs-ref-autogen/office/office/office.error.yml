@@ -30,7 +30,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
@@ -63,7 +63,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",
@@ -96,7 +96,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
           function setText() {
               Office.context.document.setSelectedDataAsync("Hello World!",

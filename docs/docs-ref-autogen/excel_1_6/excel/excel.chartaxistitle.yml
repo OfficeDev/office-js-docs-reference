@@ -102,7 +102,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Add "Values" as the title for the value Axis.
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 

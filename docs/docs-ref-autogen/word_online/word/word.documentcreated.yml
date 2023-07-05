@@ -13,12 +13,12 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-external-document.yaml
 
-  // Update the text of the current document with the text from another document passed in as a Base64-encoded string.
+  // Updates the text of the current document with the text from another document passed in as a Base64-encoded string.
 
   await Word.run(async (context) => {
     // Use the Base64-encoded string representation of the selected .docx file.
@@ -133,7 +133,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Create and open a new document in a new tab or window.
       await Word.run(async (context) => {
           const externalDoc = context.application.createDocument();

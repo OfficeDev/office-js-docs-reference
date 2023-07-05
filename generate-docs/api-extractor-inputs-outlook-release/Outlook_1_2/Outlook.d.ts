@@ -148,7 +148,7 @@ export declare namespace Office {
             /**
              * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.
              * 
-             * **Note**: In Outlook on Windows starting with Version 2210 (Build 15813.20002), Global Address Book (GAL) recipients saved to a personal address book return
+             * **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web, Global Address Book (GAL) recipients saved to a personal address book return
              * the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
              * added or resolved against the GAL.
              */
@@ -156,6 +156,10 @@ export declare namespace Office {
             /**
              * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
              * and is therefore treated as an external SMTP address.
+             *
+             * **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address book return
+             * the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
+             * added or resolved against the GAL.
              */
             Other = "other"
         }
@@ -1498,24 +1502,28 @@ export declare namespace Office {
         /**
          * Adds the specified content to the beginning of the item body.
          *
-         * The `prependAsync` method inserts the specified string at the beginning of the item body.
-         * After insertion, the cursor is returned to its original place, relative to the inserted content.
-         *
-         * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-         * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+         * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -1532,24 +1540,28 @@ export declare namespace Office {
         /**
          * Adds the specified content to the beginning of the item body.
          *
-         * The `prependAsync` method inserts the specified string at the beginning of the item body.
-         * After insertion, the cursor is returned to its original place, relative to the inserted content.
-         *
-         * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to
-         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
-         * (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
-         * (see the **Examples** section for a sample).
-         *
-         * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor
+         * position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the
+         * `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor
+         * position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.
+         *
+         * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to
+         * make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method
+         * (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.
+         *
+         * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
+         * (see the **Examples** section for a sample).
+         *
+         * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
          *
@@ -1560,6 +1572,8 @@ export declare namespace Office {
          *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
          */
         prependAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         
         
         /**
@@ -1797,6 +1811,7 @@ export declare namespace Office {
          */
         set(name: string, value: string): void;
     }
+    
     /**
      * Provides diagnostic information to an Outlook add-in.
      *
@@ -2446,6 +2461,8 @@ export declare namespace Office {
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
+        
+        
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
@@ -2661,6 +2678,7 @@ export declare namespace Office {
         conversationId: string;
         
         
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -2674,6 +2692,7 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          */
         itemType: MailboxEnums.ItemType | string;
+        
         
         
         
@@ -4054,6 +4073,11 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
+    
+    
+    
+    
     
     
     

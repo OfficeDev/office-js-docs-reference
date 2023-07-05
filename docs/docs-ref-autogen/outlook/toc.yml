@@ -91,6 +91,12 @@ items:
             uid: 'outlook!Office.DelayDeliveryTime:interface'
           - name: Diagnostics
             uid: 'outlook!Office.Diagnostics:interface'
+          - name: Display
+            uid: 'outlook!Office.Display:interface'
+          - name: DisplayedBody
+            uid: 'outlook!Office.DisplayedBody:interface'
+          - name: DisplayedSubject
+            uid: 'outlook!Office.DisplayedSubject:interface'
           - name: EmailAddressDetails
             uid: 'outlook!Office.EmailAddressDetails:interface'
           - name: EmailUser
@@ -163,6 +169,8 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
+          - name: SelectedItemDetails
+            uid: 'outlook!Office.SelectedItemDetails:interface'
           - name: Sensitivity
             uid: 'outlook!Office.Sensitivity:interface'
           - name: SensitivityLabel
@@ -731,6 +739,22 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.13
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.13/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.12
             items:
               - name: Overview
@@ -962,6 +986,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.5 requirement set
+            href: ../../requirement-sets/word/word-api-1-5-requirement-set.md
             displayName: Word
           - name: WordApi 1.4 requirement set
             href: ../../requirement-sets/word/word-api-1-4-requirement-set.md

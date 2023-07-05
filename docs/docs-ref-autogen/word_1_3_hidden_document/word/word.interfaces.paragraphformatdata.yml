@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphFormatData
+uid: 'word!Word.Interfaces.ParagraphFormatData:interface'
+package: word!
+fullName: Word.Interfaces.ParagraphFormatData
+summary: An interface describing the data returned by calling `paragraphFormat.toJSON()`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

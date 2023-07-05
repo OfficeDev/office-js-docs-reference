@@ -88,7 +88,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
@@ -123,7 +123,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Set worksheet position.
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
@@ -148,7 +148,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Unprotecting a worksheet with unprotect() will remove all 
       // WorksheetProtectionOptions options applied to a worksheet.
       // To remove only a subset of WorksheetProtectionOptions use the 
@@ -204,7 +204,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -232,7 +232,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -259,7 +259,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -295,7 +295,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -327,13 +327,14 @@ methods:
     fullName: getUsedRange(valuesOnly)
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an
+      error).
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -421,7 +422,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
               const wSheetName = 'Sheet1';

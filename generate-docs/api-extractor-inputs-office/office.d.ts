@@ -974,14 +974,14 @@ export declare namespace Office {
         /**
          * Gets the object to check the status of the catalog of sensitivity labels in Outlook and retrieve all available
          * sensitivity labels if the catalog is enabled.
-         * 
+         *
          * @remarks
-         * 
+         *
+         * [Api set: Mailbox 1.13]
+         *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
-         * @beta
          */
         sensitivityLabelsCatalog: Outlook.SensitivityLabelsCatalog;
         /**
@@ -1533,10 +1533,18 @@ export declare namespace Office {
          * **Applications**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
          * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/identity-api-requirement-sets | IdentityAPI 1.3}
-         * 
-         * **Important**: In Outlook, this API isn't supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
-         * 
-         * **Note**: In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
+         *
+         * **Important**:
+         *
+         * - In Outlook, this API isn't supported if you load an add-in in an Outlook.com or Gmail mailbox.
+         *
+         * - In Outlook on the web, this API isn't supported if you use the Safari browser. This results in error 13001 ("The user is not signed into Office").
+         *
+         * - In Outlook on the web, if you use the
+         * {@link https://learn.microsoft.com/javascript/api/office/office.ui#office-office-ui-displaydialogasync-member(1) | displayDialogAsync}
+         * method to open a dialog, you must close the dialog before you can call `getAccessToken`.
+         *
+         * - In an Outlook event-based activation add-in, this API is supported in Outlook on Windows starting from Version 2111 (Build 14701.20000).
          * To retrieve an access token in older builds, use 
          * {@link https://learn.microsoft.com/javascript/api/office-runtime/officeruntime.auth?view=common-js-preview#office-runtime-officeruntime-auth-getaccesstoken-member(1) |
          * OfficeRuntime.auth.getAccessToken} instead. For more information, see 
@@ -2400,7 +2408,7 @@ export declare namespace Office {
          * 
          * To add an event handler for the `SelectedItemsChanged` event, use the `addHandlerAsync` method of the `Mailbox` object.
          * 
-         * [Api set: Mailbox preview]
+         * [Api set: Mailbox 1.13]
          */
         SelectedItemsChanged,
         /**
@@ -2409,11 +2417,9 @@ export declare namespace Office {
          * 
          * To add an event handler for the `SensitivityLabelChanged` event, use the `addHandlerAsync` method of the `Item` object.
          * The event handler receives an argument of type
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs?view=outlook-js-preview | Office.SensitivityLabelChangedEventArgs}.
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.sensitivitylabelchangedeventargs | Office.SensitivityLabelChangedEventArgs}.
          * 
-         * [Api set: Mailbox preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.13]
          */
         SensitivityLabelChanged,
         /**
@@ -8504,8 +8510,15 @@ export declare namespace OfficeExtension {
         readonly debugInfo: RequestContextDebugInfo;
     }
 
+    /**
+     * Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of `EmbeddedSession`.
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+     */
     export interface EmbeddedOptions {
         sessionKey?: string,
+		/*
+		* The iframe element that hosts the Visio diagram.
+		*/
         container?: HTMLElement,
         id?: string;
         timeoutInMilliseconds?: number;
@@ -8513,8 +8526,15 @@ export declare namespace OfficeExtension {
         width?: string;
     }
 
+    /**
+     * Represents a session of a Visio diagram embedded in a SharePoint page. 
+	 * For more information, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview | Visio JavaScript API overview}.
+     */
     export class EmbeddedSession {
         constructor(url: string, options?: EmbeddedOptions);
+		/**
+		* Initializes the session.
+		*/
         public init(): Promise<any>;
     }
 
@@ -8680,13 +8700,25 @@ export declare namespace OfficeExtension {
         remove(handler: (args: T) => Promise<any>): void;
     }
 
+    /**
+    * Enables the removal of an event handler. Returned by the `EventHandlers.add` method.
+	*
+	* **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler.
+    * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}.
+    */
     export class EventHandlerResult<T> {
         constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);
         /** The request context associated with the object */
         context: ClientRequestContext;
+		/*
+		* Removes the handler from the event.
+		*/
         remove(): void;
     }
 
+    /**
+	* Used by Office to construct event handlers. Do not call in your code.
+	*/
     export interface EventInfo<T> {
         registerFunc: (callback: (args: any) => void) => Promise<any>;
         unregisterFunc: (callback: (args: any) => void) => Promise<any>;

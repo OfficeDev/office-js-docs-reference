@@ -7,7 +7,7 @@ summary: >-
   Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
   bounded and potentially labeled regions in a document that serve as containers for specific types of content.
   Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently,
-  only rich text content controls are supported.
+  only rich text and plain text content controls are supported.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -91,7 +91,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
@@ -131,7 +131,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -212,7 +212,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
 

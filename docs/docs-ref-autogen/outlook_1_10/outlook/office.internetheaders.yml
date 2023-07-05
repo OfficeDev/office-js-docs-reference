@@ -65,25 +65,26 @@ methods:
       results.
 
 
-      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
+      method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -137,19 +138,20 @@ methods:
       results.
 
 
-      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
+      method.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,19 +187,19 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -253,13 +255,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,9 +294,10 @@ methods:
       **Note**: This method is intended to set the values of your custom headers.
 
 
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-      the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by
-      your organization's administrator. For further information on header limits, see [Exchange Online message
+      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
+      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
+      determined by your organization's administrator. For further information on header limits, see [Exchange Online
+      message
       limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
@@ -304,19 +307,19 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
@@ -375,9 +378,10 @@ methods:
       **Note**: This method is intended to set the values of your custom headers.
 
 
-      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange Online,
-      the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is determined by
-      your organization's administrator. For further information on header limits, see [Exchange Online message
+      **Important**: The header quota is based on the total size of headers applied to a message. In Exchange
+      Online, the header limit is capped at 256 KB, while in an Exchange on-premises environment, the limit is
+      determined by your organization's administrator. For further information on header limits, see [Exchange Online
+      message
       limits](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)
       and [Exchange Server message
       limits](https://learn.microsoft.com/exchange/mail-flow/message-size-limits?view=exchserver-2019#types-of-message-size-limits)<!--
@@ -387,13 +391,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
     isPreview: false
     isDeprecated: false
     syntax:

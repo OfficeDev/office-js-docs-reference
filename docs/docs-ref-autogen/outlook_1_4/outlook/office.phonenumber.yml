@@ -24,7 +24,7 @@ remarks: >-
   #### Examples
 
 
-  ```javascript
+  ```TypeScript
 
   const item = Office.context.mailbox.item;
 

@@ -48,12 +48,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Add a custom XML part.
+      // Adds a custom XML part.
 
       await Word.run(async (context) => {
         const originalXml =
@@ -129,12 +129,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-custom-xml-part.yaml
 
-      // Query a custom XML part for elements matching the search terms.
+      // Queries a custom XML part for elements matching the search terms.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -156,7 +156,7 @@ methods:
             console.log(clientResult.value[i]);
           }
         } else {
-          console.warn("No custom XML part to query");
+          console.warn("Didn't find custom XML part to query");
         }
       });
 
@@ -178,8 +178,8 @@ methods:
     fullName: getItemOrNullObject(id)
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'

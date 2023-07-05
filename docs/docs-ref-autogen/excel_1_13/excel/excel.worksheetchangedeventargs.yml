@@ -50,7 +50,7 @@ properties:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // This function would be used as an event handler for the Worksheet.onChanged event.
       async function onWorksheetChanged(eventArgs) {
           await Excel.run(async (context) => {

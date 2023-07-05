@@ -14,7 +14,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
@@ -22,7 +22,7 @@ remarks: >-
   // Adds title and colors to odd and even content controls and changes their appearance.
 
   await Word.run(async (context) => {
-    // Gets the complete sentence (as range) associated with the insertion point.
+    // Get the complete sentence (as range) associated with the insertion point.
     let evenContentControls = context.document.contentControls.getByTag("even");
     let oddContentControls = context.document.contentControls.getByTag("odd");
     evenContentControls.load("length");

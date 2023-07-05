@@ -13,7 +13,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#alignment:member'
     package: word!
     fullName: alignment
-    summary: 'Gets or sets the horizontal alignment of the list level. The value can be ''Left'', ''Centered'', or ''Right''.'
+    summary: 'Specifies the horizontal alignment of the list level. The value can be ''Left'', ''Centered'', or ''Right''.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#linkedStyle:member'
     package: word!
     fullName: linkedStyle
-    summary: Gets or sets the name of the style that's linked to the specified list level object.
+    summary: Specifies the name of the style that's linked to the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#numberFormat:member'
     package: word!
     fullName: numberFormat
-    summary: Gets or sets the number format for the specified list level.
+    summary: Specifies the number format for the specified list level.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -61,7 +61,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#numberPosition:member'
     package: word!
     fullName: numberPosition
-    summary: Gets or sets the position (in points) of the number or bullet for the specified list level object.
+    summary: Specifies the position (in points) of the number or bullet for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -73,7 +73,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#numberStyle:member'
     package: word!
     fullName: numberStyle
-    summary: Gets or sets the number style for the list level object.
+    summary: Specifies the number style for the list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -107,7 +107,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#resetOnHigher:member'
     package: word!
     fullName: resetOnHigher
-    summary: Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
+    summary: Specifies the list level that must appear before the specified list level restarts numbering at 1.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -119,7 +119,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#startAt:member'
     package: word!
     fullName: startAt
-    summary: Gets or sets the starting number for the specified list level object.
+    summary: Specifies the starting number for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -131,7 +131,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#tabPosition:member'
     package: word!
     fullName: tabPosition
-    summary: Gets or sets the tab position for the specified list level object.
+    summary: Specifies the tab position for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -143,7 +143,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#textPosition:member'
     package: word!
     fullName: textPosition
-    summary: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
+    summary: Specifies the position (in points) for the second line of wrapping text for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false
@@ -155,7 +155,7 @@ properties:
     uid: 'word!Word.Interfaces.ListLevelUpdateData#trailingCharacter:member'
     package: word!
     fullName: trailingCharacter
-    summary: Gets or sets the character inserted after the number for the specified list level.
+    summary: Specifies the character inserted after the number for the specified list level.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: true
     isDeprecated: false

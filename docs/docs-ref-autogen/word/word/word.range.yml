@@ -40,7 +40,7 @@ properties:
     package: word!
     fullName: endnotes
     summary: Gets the collection of endnotes in the range.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -77,18 +77,18 @@ properties:
     fullName: footnotes
     summary: Gets the collection of footnotes in the range.
     remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Get the footnotes in the selected document range.
+      // Gets the footnotes in the selected document range.
 
       await Word.run(async (context) => {
         const footnotes = context.document.getSelection().footnotes;
@@ -161,9 +161,9 @@ properties:
     package: word!
     fullName: paragraphs
     summary: >-
-      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs
-      in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables
-      are also returned.
+      Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2,
+      paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in
+      such tables are also returned.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -278,8 +278,8 @@ properties:
     package: word!
     fullName: style
     summary: >-
-      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
-      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+      Specifies the style name for the range. Use this property for custom styles and localized style names. To use the
+      built-in styles that are portable between locales, see the "styleBuiltIn" property.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -292,9 +292,29 @@ properties:
     package: word!
     fullName: styleBuiltIn
     summary: >-
-      Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
-      between locales. To use custom styles or localized style names, see the "style" property.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+      Specifies the built-in style name for the range. Use this property for built-in styles that are portable between
+      locales. To use custom styles or localized style names, see the "style" property.
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      await Word.run(async (context) => {
+          const header = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
+              "Start" /*this means at the beginning of the body */);
+          header.styleBuiltIn = Word.BuiltInStyleName.heading1;
+
+          await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,7 +419,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -435,12 +455,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-      // Compare the location of one paragraph in relation to another paragraph.
+      // Compares the location of one paragraph in relation to another paragraph.
 
       await Word.run(async (context) => {
         const paragraphs = context.document.body.paragraphs;
@@ -480,7 +500,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -583,12 +603,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the comments in the selected content.
+      // Gets the comments in the selected content.
 
       await Word.run(async (context) => {
         const comments = context.document.getSelection().getComments();
@@ -614,13 +634,13 @@ methods:
     package: word!
     fullName: getContentControls(options)
     summary: >-
-      Gets the currently supported content controls in the range. **Important**: If specific types are provided in the
-      options parameter, only content controls of supported types are returned. Be aware that an exception will be
+      Gets the currently supported content controls in the range. **Important**: If specific types are provided in
+      the options parameter, only content controls of supported types are returned. Be aware that an exception will be
       thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
       relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
       add-in should request and handle specific types of content controls.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
@@ -645,7 +665,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -745,7 +765,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -804,12 +824,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-      // Get the reviewed text.
+      // Gets the reviewed text.
 
       await Word.run(async (context) => {
         const range = context.document.getSelection();
@@ -863,20 +883,20 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
       await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
+        // Get the complete sentence (as range) associated with the insertion point.
         const sentences = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
-        // Expands the range to the end of the paragraph to get all the complete sentences.
+        // Expand the range to the end of the paragraph to get all the complete sentences.
         const sentencesToTheEndOfParagraph = sentences.items[0]
           .getRange()
           .expandTo(
@@ -941,7 +961,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -991,12 +1011,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Set a comment on the selected content.
+      // Sets a comment on the selected content.
 
       await Word.run(async (context) => {
         const text = $("#comment-text")
@@ -1033,13 +1053,24 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
+      Note: The `contentControlType` parameter was introduced in WordApi 1.5.
+
+
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/90-scenarios/doc-assembly.yaml
+
+      // Simulates creation of a template. First searches the document for instances of the string "Contractor",
+
+      // then changes the format  of each search result,
+
+      // then wraps each search result within a content control,
+
+      // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
           const results = context.document.body.search("Contractor");
@@ -1082,7 +1113,7 @@ methods:
     package: word!
     fullName: insertEndnote(insertText)
     summary: Inserts an endnote. The endnote reference is placed after the range.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1099,8 +1130,38 @@ methods:
     package: word!
     fullName: 'insertField(insertLocation, fieldType, text, removeFormatting)'
     summary: Inserts a field at the specified location.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+      // Inserts a Date field before selection.
+
+      await Word.run(async (context) => {
+        var range = context.document.getSelection().getRange();
+
+        const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+
+        field.load("result,code");
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of the field: " + field.code);
+          console.log("Result of the field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1131,8 +1192,8 @@ methods:
     package: word!
     fullName: 'insertField(insertLocation, fieldTypeString, text, removeFormatting)'
     summary: Inserts a field at the specified location.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -1189,7 +1250,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1229,18 +1290,18 @@ methods:
     fullName: insertFootnote(insertText)
     summary: Inserts a footnote. The footnote reference is placed after the range.
     remarks: >-
-      \[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-footnotes.yaml
 
-      // Set a footnote on the selected content.
+      // Sets a footnote on the selected content.
 
       await Word.run(async (context) => {
         const text = $("#input-footnote")
@@ -1274,7 +1335,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1339,7 +1400,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1385,7 +1446,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1460,7 +1521,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 
@@ -1651,7 +1712,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
 

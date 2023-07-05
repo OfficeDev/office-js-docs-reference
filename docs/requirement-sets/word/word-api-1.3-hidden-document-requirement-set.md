@@ -2,7 +2,6 @@
 title: Word JavaScript API Hidden Document requirement set 1.3
 description: Details about the WordApiHiddenDocument 1.3 requirement set.
 ms.date: 07/01/2022
-ms.prod: word
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +33,14 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 
 The following table lists the Word JavaScript APIs currently included in the `WordApiHiddenDocument` requirement set. For a complete list of all Word JavaScript APIs (including `WordApiHiddenDocument` APIs and previously released APIs), see [all Word JavaScript APIs](/javascript/api/word?view=word-js-1.3-hidden-document&preserve-view=true).
 
-[!INCLUDE[API table](../../includes/word-1_3_hidden_document.md)]
+| Class | Fields | Description |
+|:---|:---|:---|
+|[DocumentCreated](/javascript/api/word/word.documentcreated)|[body](/javascript/api/word/word.documentcreated#word-word-documentcreated-body-member)|Gets the body object of the document.|
+||[contentControls](/javascript/api/word/word.documentcreated#word-word-documentcreated-contentcontrols-member)|Gets the collection of content control objects in the document.|
+||[properties](/javascript/api/word/word.documentcreated#word-word-documentcreated-properties-member)|Gets the properties of the document.|
+||[save()](/javascript/api/word/word.documentcreated#word-word-documentcreated-save-member(1))|Saves the document.|
+||[saved](/javascript/api/word/word.documentcreated#word-word-documentcreated-saved-member)|Indicates whether the changes in the document have been saved.|
+||[sections](/javascript/api/word/word.documentcreated#word-word-documentcreated-sections-member)|Gets the collection of section objects in the document.|
 
 ## See also
 

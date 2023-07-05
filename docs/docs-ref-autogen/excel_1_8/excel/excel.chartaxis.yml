@@ -97,7 +97,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis.yaml
@@ -422,7 +422,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-axis.yaml
@@ -604,7 +604,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Get the maximum of Chart Axis from Chart1.
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
