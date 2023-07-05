@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 06/21/2023
+ms.date: 07/05/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
-Preview APIs are subject to change and are not intended for use in a production environment. We recommend that you try them out in test and development environments only. Do not use preview APIs in a production environment or within business-critical documents.
+Preview APIs are subject to change and are not intended for use in a production environment. We recommend that you try them out in test and development environments only. Don't use preview APIs in a production environment or within business-critical documents.
 
 To use preview APIs:
 
@@ -106,6 +106,40 @@ Added ability to get Office theme.
 #### [Office.EventType.OfficeThemeChanged](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true)
 
 Added `OfficeThemeChanged` event to `Mailbox`.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Temporarily set the body or subject displayed in read mode
+
+#### [Office.context.mailbox.item.display](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member)
+
+Added a property that gets an object to temporarily set the content displayed in the body or subject of a message in read mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.Display](/javascript/api/outlook/office.display?view=outlook-js-preview&preserve-view=true)
+
+Added an object that provides properties to temporarily set the content displayed in the body or subject of a message in read mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.DisplayedBody](/javascript/api/outlook/office.displayedbody?view=outlook-js-preview&preserve-view=true)
+
+Added an object that provides a method to temporarily set the content displayed in the body of a message in read mode.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+#### [Office.DisplayedSubject](/javascript/api/outlook/office.displayedsubject?view=outlook-js-preview&preserve-view=true)
+
+Added an object that provides a method to temporarily set the content displayed in the subject of a message in read mode.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
