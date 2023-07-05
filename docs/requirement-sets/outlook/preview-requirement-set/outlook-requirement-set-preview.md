@@ -115,7 +115,7 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
-### Temporarily set the body or subject of a message in read mode
+### Temporarily set the body or subject displayed in read mode
 
 #### [Office.context.mailbox.item.display](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member)
 
