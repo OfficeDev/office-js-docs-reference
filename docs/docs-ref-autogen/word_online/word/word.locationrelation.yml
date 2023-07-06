@@ -11,12 +11,12 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
 
-  // Compare the location of one paragraph in relation to another paragraph.
+  // Compares the location of one paragraph in relation to another paragraph.
 
   await Word.run(async (context) => {
     const paragraphs = context.document.body.paragraphs;

@@ -22,7 +22,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function displayAllBindings() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -65,7 +65,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function getCustomXmlParts(){
               Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
                   write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
@@ -94,7 +94,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function displayDocumentMode() {
               write(Office.context.document.mode);
           }
@@ -104,7 +104,7 @@ properties:
               document.getElementById('message').innerText += message; 
           }
           ```
-          ```javascript
+          ```TypeScript
           // The following example initializes the add-in and then gets properties of the
           // Document object that are available in the context of a Project document.
           // A Project document is the opened, active project. To access members of the
@@ -169,7 +169,7 @@ properties:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           function displayDocumentUrl() {
               write(Office.context.document.url);
           }
@@ -239,7 +239,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example adds an event handler for the SelectionChanged event of a document
 
@@ -262,7 +262,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example adds a handler for the ResourceSelectionChanged event.
 
@@ -311,16 +311,14 @@ methods:
 
       // For a complete code sample that shows how to use a ResourceSelectionChanged
 
-      // event handler in a Project add-in, see "Create your first task pane add-in
-
-      // for Project 2013 by using a text editor."
+      // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
 
       //
       https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example adds a handler for the TaskSelectionChanged event.
 
@@ -371,7 +369,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example adds a handler for the ViewSelectionChanged
 
@@ -424,16 +422,14 @@ methods:
 
       // For an example that shows how to use a ViewSelectionChanged event handler in a
 
-      // Project add-in, see "Create your first task pane add-in for Project 2013 by
-
-      // using a text editor."
+      // Project add-in, see "Create your first task pane add-in for Microsoft Project".
 
       //
       https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
 
@@ -603,7 +599,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       function getFileView() {
           // Get whether the current view is edit or read.
@@ -683,7 +679,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
 
@@ -915,7 +911,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // To read the URL of the current file, you need to write a callback function that returns the URL.
 
@@ -1012,7 +1008,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
           // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
           // method to get each resource GUID. The example assumes that your add-in has a reference to the 
@@ -1144,7 +1140,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getMaxTaskIndexAsync to get the maximum index
           // of the collection of tasks in the current project. Then it uses the returned value
           // with the getTaskByIndexAsync method to get each task GUID.
@@ -1276,7 +1272,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example gets the values of three specified fields for the active project, 
           // and then displays the values in the add-in.
           // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
@@ -1402,7 +1398,7 @@ methods:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's
           resource
@@ -1551,7 +1547,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedResourceAsync to get the GUID of the resource
           // that's currently selected in a resource view. Then it gets three resource field values by calling 
           // getResourceFieldAsync recursively.
@@ -1709,7 +1705,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
 
@@ -1737,7 +1733,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // To read the value of the current selection, you need to write a callback function that reads the selection.
 
@@ -1776,7 +1772,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example gets the values of the selected cells. It uses the optional
 
@@ -1986,7 +1982,7 @@ methods:
           #### Examples
 
 
-          ```javascript
+          ```TypeScript
 
           // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
 
@@ -2135,7 +2131,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
           // selected in a task view. Then it gets task properties by calling getTaskAsync.
           // The example assumes your add-in has a reference to the jQuery library and that the following page
@@ -2253,7 +2249,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls adds a ViewSelectionChanged event handler that
           // calls getSelectedViewAsync to get the name and type of the active view in the document.
           // The example assumes your add-in has a reference to the jQuery library and that
@@ -2358,7 +2354,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
           // selected task. Then it calls getTaskAsync to get the properties for the task that are
           // available from the JavaScript API for Office.
@@ -2489,7 +2485,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getMaxTaskIndexAsync to get the
           // maximum index in the project's task collection, and then
           // calls getTaskByIndexAsync to get the GUID for each task.
@@ -2628,7 +2624,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
           // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
           // The example assumes your add-in has a reference to the jQuery library and that the following page
@@ -2845,7 +2841,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Go to a binding by id (Word and Excel)
 
@@ -3040,7 +3036,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example removes the event handler named 'MyHandler'.
 
@@ -3055,7 +3051,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // The following code example uses addHandlerAsync to add an event handler for the
 
@@ -3216,7 +3212,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
           // currently selected in a resource view. Then it sets two resource field values by calling
           // setResourceFieldAsync recursively.
@@ -3417,7 +3413,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example sets the selected text or cell to "Hello World!", 
 
@@ -3863,7 +3859,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
           // currently selected in a task view. Then it sets two task field values by calling
           // setTaskFieldAsync recursively.

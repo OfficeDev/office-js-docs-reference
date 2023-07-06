@@ -4,10 +4,10 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 16;
+const CURRENT_EXCEL_RELEASE = 17;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
-const CURRENT_OUTLOOK_RELEASE = 12;
-const CURRENT_WORD_RELEASE = 4;
+const CURRENT_OUTLOOK_RELEASE = 13;
+const CURRENT_WORD_RELEASE = 5;
 const CURRENT_POWERPOINT_RELEASE = 5;
 
 tryCatch(async () => {
@@ -23,9 +23,9 @@ tryCatch(async () => {
             officeJsonPath + '/' + officeFilename,
             fsx.readFileSync(officeJsonPath + '/' + officeFilename)
                 .toString()
-                .replace(/office\!Office\.Mailbox/g, "outlook!Office.Mailbox")
-                .replace(/office\!Office\.RoamingSettings/g, "outlook!Office.RoamingSettings")
-                .replace(/office\!Office\.SensitivityLabelsCatalog/g, "outlook!Office.SensitivityLabelsCatalog"));
+                .replace(/office\!~Office_2\.Mailbox/g, "outlook!Office.Mailbox")
+                .replace(/office\!~Office_2\.RoamingSettings/g, "outlook!Office.RoamingSettings")
+                .replace(/office\!~Office_2\.SensitivityLabelsCatalog/g, "outlook!Office.SensitivityLabelsCatalog"));
     });
 
     console.log("\nCompleted Office json cross-referencing cleanup");
@@ -190,6 +190,7 @@ tryCatch(async () => {
 
     writeSnippetFileAndClearYamlIfNew("../json/word/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_online/snippets.yaml", yaml.safeDump(wordSnippets), "word");
+    writeSnippetFileAndClearYamlIfNew("../json/word_1_5_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_4_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     writeSnippetFileAndClearYamlIfNew("../json/word_1_3_hidden_document/snippets.yaml", yaml.safeDump(wordSnippets), "word");
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
@@ -251,6 +252,11 @@ function cleanUpJson(host: string) {
         json = fsx.readFileSync(`${jsonPath}_online/${fileName}`).toString();
         fsx.writeFileSync(`${jsonPath}_online/${fileName}`, cleanUpRichApiJson(json));
         console.log(`\nCompleted ${host}_online`);
+        // Handle WordApiHiddenDocument 1.5 case.
+        console.log(`\nStarting ${host}_1_5_hidden_document...`);
+        json = fsx.readFileSync(`${jsonPath}_1_5_hidden_document/${fileName}`).toString();
+        fsx.writeFileSync(`${jsonPath}_1_5_hidden_document/${fileName}`, cleanUpRichApiJson(json));
+        console.log(`\nCompleted ${host}_1_5_hidden_document`);
         // Handle WordApiHiddenDocument 1.4 case.
         console.log(`\nStarting ${host}_1_4_hidden_document...`);
         json = fsx.readFileSync(`${jsonPath}_1_4_hidden_document/${fileName}`).toString();
@@ -285,12 +291,12 @@ function cleanUpJson(host: string) {
 }
 
 function cleanUpOutlookJson(jsonString : string) {
-    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!/gm, "$1office!")
+    return jsonString.replace(/(\"CommonAPI\.\w+",[\s]+"canonicalReference": ")outlook!~Office_2/gm, "$1office!Office")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 
 function cleanUpRichApiJson(jsonString : string) {
-    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!OfficeExtension/g, "office!OfficeExtension")
+    return jsonString.replace(/(excel|word|visio|onenote|powerpoint)\!~OfficeExtension/g, "office!OfficeExtension")
                      .replace(/("kind": "EnumMember",((?!kind)[\s\S])+"docComment":.*)@remarks\\n/gm, `$1`);
 }
 

@@ -27,12 +27,53 @@ properties:
     uid: 'word!Word.Interfaces.FieldLoadOptions#code:member'
     package: word!
     fullName: code
-    summary: Gets the field's code instruction.
-    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Specifies the field's code instruction.
+    remarks: |-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The ability to set the code was introduced in WordApi 1.5.
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'code?: boolean;'
+      return:
+        type: boolean
+  - name: data
+    uid: 'word!Word.Interfaces.FieldLoadOptions#data:member'
+    package: word!
+    fullName: data
+    summary: >-
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data?: boolean;'
+      return:
+        type: boolean
+  - name: kind
+    uid: 'word!Word.Interfaces.FieldLoadOptions#kind:member'
+    package: word!
+    fullName: kind
+    summary: Gets the field's kind.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'kind?: boolean;'
+      return:
+        type: boolean
+  - name: locked
+    uid: 'word!Word.Interfaces.FieldLoadOptions#locked:member'
+    package: word!
+    fullName: locked
+    summary: 'Specifies whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
       return:
         type: boolean
   - name: parentBody
@@ -149,3 +190,29 @@ properties:
       content: 'result?: Word.Interfaces.RangeLoadOptions;'
       return:
         type: '<xref uid="word!Word.Interfaces.RangeLoadOptions:interface" />'
+  - name: showCodes
+    uid: 'word!Word.Interfaces.FieldLoadOptions#showCodes:member'
+    package: word!
+    fullName: showCodes
+    summary: >-
+      Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed,
+      `false` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showCodes?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'word!Word.Interfaces.FieldLoadOptions#type:member'
+    package: word!
+    fullName: type
+    summary: Gets the field's type.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

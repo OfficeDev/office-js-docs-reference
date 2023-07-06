@@ -118,7 +118,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Gets the active notebook.
@@ -156,7 +156,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Gets the active notebook.
@@ -194,7 +194,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           // Get the current notebook.
           const notebook = context.application.getActiveNotebook();
@@ -258,7 +258,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
                   
               // Get the current notebook.

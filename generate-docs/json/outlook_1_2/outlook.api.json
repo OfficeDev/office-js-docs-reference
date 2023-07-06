@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.20.0",
-    "schemaVersion": 1005,
+    "toolVersion": "7.34.8",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "outlook!",
   "docComment": "",
   "name": "outlook",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "outlook!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Namespace",
@@ -179,8 +182,10 @@
               "text": "export declare namespace Office "
             }
           ],
+          "fileUrlPath": "Outlook.d.ts",
           "releaseTag": "Public",
           "name": "Office",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Interface",
@@ -203,11 +208,12 @@
               ],
               "releaseTag": "Public",
               "name": "Appointment",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -241,6 +247,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentCompose",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -643,6 +650,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -670,6 +678,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -868,6 +877,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -974,6 +984,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -1001,6 +1012,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -1185,6 +1197,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -1378,6 +1391,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -1405,6 +1419,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -1421,7 +1436,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -1437,6 +1452,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentForm",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -1461,6 +1477,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -1497,6 +1514,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -1528,6 +1546,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -1568,6 +1587,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -1608,6 +1628,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -1634,6 +1655,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "resources",
@@ -1670,6 +1692,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -1701,6 +1724,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -1742,6 +1766,7 @@
               ],
               "releaseTag": "Public",
               "name": "AppointmentRead",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -1766,6 +1791,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -1793,6 +1819,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -1820,6 +1847,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeCreated",
@@ -1847,6 +1875,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeModified",
@@ -1974,6 +2003,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -2269,6 +2299,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemClass",
@@ -2295,6 +2326,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -2326,6 +2358,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -2431,6 +2464,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -2457,6 +2491,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "normalizedSubject",
@@ -2468,7 +2503,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#optionalAttendees:member",
-                  "docComment": "/**\n * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.\n *\n * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each optional attendee to the meeting. Collection size limits:\n *\n * - Windows: 500 members\n *\n * - Classic Mac UI: 100 members\n *\n * - New Mac UI, web browser, Android: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
+                  "docComment": "/**\n * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.\n *\n * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.\n *\n * - Windows: 500 attendees\n *\n * - Android, classic Mac UI, iOS: 100 attendees\n *\n * - New Mac UI, web browser: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2488,6 +2523,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "optionalAttendees",
@@ -2515,6 +2551,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "organizer",
@@ -2526,7 +2563,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#requiredAttendees:member",
-                  "docComment": "/**\n * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.\n *\n * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each required attendee to the meeting. Collection size limits:\n *\n * - Windows: 500 members\n *\n * - Classic Mac UI: 100 members\n *\n * - New Mac UI, web browser, Android: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
+                  "docComment": "/**\n * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.\n *\n * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.\n *\n * - Windows: 500 attendees\n *\n * - Android, classic Mac UI, iOS: 100 attendees\n *\n * - New Mac UI, web browser: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2546,6 +2583,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "requiredAttendees",
@@ -2573,6 +2611,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -2599,6 +2638,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -2615,7 +2655,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -2631,6 +2671,7 @@
               ],
               "releaseTag": "Public",
               "name": "AttachmentDetails",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -2655,6 +2696,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachmentType",
@@ -2681,6 +2723,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "contentType",
@@ -2707,6 +2750,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "id",
@@ -2733,6 +2777,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "isInline",
@@ -2759,6 +2804,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "name",
@@ -2785,6 +2831,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "size",
@@ -2808,6 +2855,7 @@
               ],
               "releaseTag": "Public",
               "name": "Body",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -2955,7 +3003,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependAsync:member(1)",
-                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.\n *\n * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function. `coercionType`: The desired format for the body. The string in the `data` parameter will be converted to this format.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3051,7 +3099,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Body#prependAsync:member(2)",
-                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * The `prependAsync` method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.\n *\n * When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` in order to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) will not necessarily exactly contain the value that was passed in the `prependAsync` method previously.\n *\n * When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
+                  "docComment": "/**\n * Adds the specified content to the beginning of the item body.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * - After the content is prepended, the position of the cursor depends on which client the add-in is running. In Outlook on Windows and on the web, the cursor position remains the same in the pre-existing content of the body. For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user selects something in the body of the mail item.\n *\n * - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to `prependAsync` to make it render efficiently with its rendering engine. This means that the value returned from a subsequent call to the `Body.getAsync` method (introduced in Mailbox 1.3) won't necessarily contain the exact value that was passed in the previous `prependAsync` call.\n *\n * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\\<a\\>) to \"LPNoLP\" (see the **Examples** section for a sample).\n *\n * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter.\n *\n * **Errors**:\n *\n * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.\n *\n * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3299,6 +3347,7 @@
               ],
               "releaseTag": "Public",
               "name": "CoercionTypeOptions",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3323,6 +3372,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "coercionType",
@@ -3346,6 +3396,7 @@
               ],
               "releaseTag": "Public",
               "name": "Contact",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3365,6 +3416,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "addresses",
@@ -3391,6 +3443,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "businessName",
@@ -3417,6 +3470,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddresses",
@@ -3443,6 +3497,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "personName",
@@ -3474,6 +3529,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneNumbers",
@@ -3500,6 +3556,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "urls",
@@ -3523,6 +3580,7 @@
               ],
               "releaseTag": "Public",
               "name": "CustomProperties",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -3805,6 +3863,7 @@
               ],
               "releaseTag": "Public",
               "name": "Diagnostics",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3824,6 +3883,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hostName",
@@ -3850,6 +3910,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hostVersion",
@@ -3881,6 +3942,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "OWAView",
@@ -3904,6 +3966,7 @@
               ],
               "releaseTag": "Public",
               "name": "EmailAddressDetails",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -3928,6 +3991,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "appointmentResponse",
@@ -3954,6 +4018,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -3980,6 +4045,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -4011,6 +4077,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "recipientType",
@@ -4034,6 +4101,7 @@
               ],
               "releaseTag": "Public",
               "name": "EmailUser",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4053,6 +4121,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -4079,6 +4148,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -4102,6 +4172,7 @@
               ],
               "releaseTag": "Public",
               "name": "Entities",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4121,6 +4192,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "addresses",
@@ -4152,6 +4224,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "contacts",
@@ -4178,6 +4251,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddresses",
@@ -4209,6 +4283,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "meetingSuggestions",
@@ -4240,6 +4315,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneNumbers",
@@ -4266,6 +4342,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "taskSuggestions",
@@ -4292,6 +4369,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "urls",
@@ -4315,6 +4393,7 @@
               ],
               "releaseTag": "Public",
               "name": "Item",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": []
             },
@@ -4339,11 +4418,12 @@
               ],
               "releaseTag": "Public",
               "name": "ItemCompose",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -4368,11 +4448,12 @@
               ],
               "releaseTag": "Public",
               "name": "ItemRead",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -4388,6 +4469,7 @@
               ],
               "releaseTag": "Public",
               "name": "LocalClientTime",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -4407,6 +4489,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "date",
@@ -4433,6 +4516,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "hours",
@@ -4459,6 +4543,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "milliseconds",
@@ -4485,6 +4570,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "minutes",
@@ -4511,6 +4597,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "month",
@@ -4537,6 +4624,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "seconds",
@@ -4563,6 +4651,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "timezoneOffset",
@@ -4589,6 +4678,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "year",
@@ -4612,6 +4702,7 @@
               ],
               "releaseTag": "Public",
               "name": "Location",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -4910,6 +5001,7 @@
               ],
               "releaseTag": "Public",
               "name": "Mailbox",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -5024,6 +5116,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "diagnostics",
@@ -5186,6 +5279,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "ewsUrl",
@@ -5425,6 +5519,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "item",
@@ -5538,6 +5633,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "userProfile",
@@ -5561,6 +5657,7 @@
               ],
               "releaseTag": "Public",
               "name": "MailboxEnums",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Enum",
@@ -5574,6 +5671,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "AttachmentType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -5589,12 +5687,12 @@
                           "text": "\"cloud\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Cloud",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Cloud"
                     },
                     {
                       "kind": "EnumMember",
@@ -5610,12 +5708,12 @@
                           "text": "\"file\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "File",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "File"
                     },
                     {
                       "kind": "EnumMember",
@@ -5631,12 +5729,12 @@
                           "text": "\"item\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Item",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Item"
                     }
                   ]
                 },
@@ -5652,6 +5750,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "EntityType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -5667,12 +5766,12 @@
                           "text": "\"address\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Address",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Address"
                     },
                     {
                       "kind": "EnumMember",
@@ -5688,12 +5787,12 @@
                           "text": "\"contact\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Contact",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Contact"
                     },
                     {
                       "kind": "EnumMember",
@@ -5709,12 +5808,12 @@
                           "text": "\"emailAddress\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "EmailAddress",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "EmailAddress"
                     },
                     {
                       "kind": "EnumMember",
@@ -5730,12 +5829,12 @@
                           "text": "\"meetingSuggestion\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "MeetingSuggestion",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "MeetingSuggestion"
                     },
                     {
                       "kind": "EnumMember",
@@ -5751,12 +5850,12 @@
                           "text": "\"phoneNumber\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "PhoneNumber",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "PhoneNumber"
                     },
                     {
                       "kind": "EnumMember",
@@ -5772,12 +5871,12 @@
                           "text": "\"taskSuggestion\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "TaskSuggestion",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "TaskSuggestion"
                     },
                     {
                       "kind": "EnumMember",
@@ -5793,12 +5892,12 @@
                           "text": "\"url\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Url",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Url"
                     }
                   ]
                 },
@@ -5814,6 +5913,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ItemType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -5829,12 +5929,12 @@
                           "text": "\"appointment\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Appointment",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Appointment"
                     },
                     {
                       "kind": "EnumMember",
@@ -5850,12 +5950,12 @@
                           "text": "\"message\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Message",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Message"
                     }
                   ]
                 },
@@ -5871,6 +5971,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "OWAView",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -5886,12 +5987,12 @@
                           "text": "\"OneColumn\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "OneColumn",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "OneColumn"
                     },
                     {
                       "kind": "EnumMember",
@@ -5907,12 +6008,12 @@
                           "text": "\"OneColumnNarrow\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "OneColumnNarrow",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "OneColumnNarrow"
                     },
                     {
                       "kind": "EnumMember",
@@ -5928,12 +6029,12 @@
                           "text": "\"ThreeColumns\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ThreeColumns",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ThreeColumns"
                     },
                     {
                       "kind": "EnumMember",
@@ -5949,12 +6050,12 @@
                           "text": "\"TwoColumns\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "TwoColumns",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "TwoColumns"
                     }
                   ]
                 },
@@ -5970,6 +6071,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "RecipientType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -5985,17 +6087,17 @@
                           "text": "\"distributionList\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "DistributionList",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "DistributionList"
                     },
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.ExternalUser:member",
-                      "docComment": "/**\n * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.\n *\n * **Note**: In Outlook on Windows starting with Version 2210 (Build 15813.20002), Global Address Book (GAL) recipients saved to a personal address book return the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly added or resolved against the GAL.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.\n *\n * **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web, Global Address Book (GAL) recipients saved to a personal address book return the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly added or resolved against the GAL.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -6006,17 +6108,17 @@
                           "text": "\"externalUser\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "ExternalUser",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "ExternalUser"
                     },
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.RecipientType.Other:member",
-                      "docComment": "/**\n * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book, and is therefore treated as an external SMTP address.\n */\n",
+                      "docComment": "/**\n * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book, and is therefore treated as an external SMTP address.\n *\n * **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address book return the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly added or resolved against the GAL.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -6027,12 +6129,12 @@
                           "text": "\"other\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Other",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Other"
                     },
                     {
                       "kind": "EnumMember",
@@ -6048,12 +6150,12 @@
                           "text": "\"user\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "User",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "User"
                     }
                   ]
                 },
@@ -6069,6 +6171,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ResponseType",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -6084,12 +6187,12 @@
                           "text": "\"accepted\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Accepted",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Accepted"
                     },
                     {
                       "kind": "EnumMember",
@@ -6105,12 +6208,12 @@
                           "text": "\"declined\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Declined",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Declined"
                     },
                     {
                       "kind": "EnumMember",
@@ -6126,12 +6229,12 @@
                           "text": "\"none\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "None",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "None"
                     },
                     {
                       "kind": "EnumMember",
@@ -6147,12 +6250,12 @@
                           "text": "\"organizer\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Organizer",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Organizer"
                     },
                     {
                       "kind": "EnumMember",
@@ -6168,12 +6271,12 @@
                           "text": "\"tentative\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Tentative",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Tentative"
                     }
                   ]
                 },
@@ -6189,6 +6292,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SourceProperty",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "EnumMember",
@@ -6204,12 +6308,12 @@
                           "text": "\"body\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Body",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Body"
                     },
                     {
                       "kind": "EnumMember",
@@ -6225,12 +6329,12 @@
                           "text": "\"subject\""
                         }
                       ],
-                      "releaseTag": "Public",
-                      "name": "Subject",
                       "initializerTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
-                      }
+                      },
+                      "releaseTag": "Public",
+                      "name": "Subject"
                     }
                   ]
                 }
@@ -6248,6 +6352,7 @@
               ],
               "releaseTag": "Public",
               "name": "MeetingSuggestion",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -6272,6 +6377,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attendees",
@@ -6298,6 +6404,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -6324,6 +6431,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -6350,6 +6458,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "meetingString",
@@ -6376,6 +6485,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -6402,6 +6512,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -6434,11 +6545,12 @@
               ],
               "releaseTag": "Public",
               "name": "Message",
+              "preserveMemberOrder": false,
               "members": [],
               "extendsTokenRanges": [
                 {
                   "startIndex": 1,
-                  "endIndex": 3
+                  "endIndex": 2
                 }
               ]
             },
@@ -6472,6 +6584,7 @@
               ],
               "releaseTag": "Public",
               "name": "MessageCompose",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -6874,6 +6987,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "bcc",
@@ -6901,6 +7015,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -6928,6 +7043,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "cc",
@@ -6954,6 +7070,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "conversationId",
@@ -7152,6 +7269,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -7581,6 +7699,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -7608,6 +7727,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "to",
@@ -7624,7 +7744,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -7658,6 +7778,7 @@
               ],
               "releaseTag": "Public",
               "name": "MessageRead",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -7682,6 +7803,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -7709,6 +7831,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "body",
@@ -7720,7 +7843,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#cc:member",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the current item.\n *\n * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each recipient listed on the **Cc** line of the message. Collection size limits:\n *\n * - Windows: 500 members\n *\n * - Classic Mac UI: 100 members\n *\n * - Web browser: 20 members\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depend on the mode of the current item.\n *\n * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.\n *\n * - Windows: 500 recipients\n *\n * - Android, classic Mac UI, iOS: 100 recipients\n *\n * - Web browser: 20 recipients\n *\n * - New Mac UI: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7740,6 +7863,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "cc",
@@ -7766,6 +7890,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "conversationId",
@@ -7793,6 +7918,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeCreated",
@@ -7820,6 +7946,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "dateTimeModified",
@@ -7947,6 +8074,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "end",
@@ -7974,6 +8102,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "from",
@@ -8269,6 +8398,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "internetMessageId",
@@ -8295,6 +8425,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemClass",
@@ -8321,6 +8452,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -8352,6 +8484,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "itemType",
@@ -8457,6 +8590,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "location",
@@ -8483,6 +8617,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "normalizedSubject",
@@ -8510,6 +8645,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "sender",
@@ -8537,6 +8673,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "start",
@@ -8563,6 +8700,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "subject",
@@ -8574,7 +8712,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#to:member",
-                  "docComment": "/**\n * Provides access to the recipients on the **To** line of a message. The type of object and level of access depend on the mode of the current item.\n *\n * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each recipient listed on the **To** line of the message. Collection size limits:\n *\n * - Windows: 500 members\n *\n * - Classic Mac UI: 100 members\n *\n * - Web browser: 20 members\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the recipients on the **To** line of a message. The type of object and level of access depend on the mode of the current item.\n *\n * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.\n *\n * - Windows: 500 recipients\n *\n * - Android, classic Mac UI, iOS: 100 recipients\n *\n * - Web browser: 20 recipients\n *\n * - New Mac UI: No limit\n *\n * @remarks\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8594,6 +8732,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "to",
@@ -8610,7 +8749,7 @@
                 },
                 {
                   "startIndex": 3,
-                  "endIndex": 5
+                  "endIndex": 4
                 }
               ]
             },
@@ -8626,6 +8765,7 @@
               ],
               "releaseTag": "Public",
               "name": "PhoneNumber",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -8645,6 +8785,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "originalPhoneString",
@@ -8671,6 +8812,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "phoneString",
@@ -8697,6 +8839,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "type",
@@ -8720,11 +8863,12 @@
               ],
               "releaseTag": "Public",
               "name": "Recipients",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#addAsync:member(1)",
-                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be added:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Classic Mac UI, web browser: 100 recipients\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:\n *\n * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.\n *\n * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is supported.\n *\n * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses, {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8829,7 +8973,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#addAsync:member(2)",
-                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be added:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Classic Mac UI, web browser: 100 recipients\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
+                  "docComment": "/**\n * Adds a recipient list to the existing recipients for an appointment or message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:\n *\n * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.\n *\n * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is supported.\n *\n * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses, {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8917,7 +9061,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#getAsync:member(1)",
-                  "docComment": "/**\n * Gets a recipient list for an appointment or message.\n *\n * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects. Collection size limits:\n *\n * - Windows, classic Mac UI, web browser: 500 members\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.\n *\n * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.\n *\n * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.\n *\n * - A Teams meeting status icon appears before the recipient's name or email address.\n *\n * - A semicolon appears after the recipient's name or email address.\n *\n * - The recipient's name or email address is underlined or enclosed in a box.\n *\n * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from the auto-complete list.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.\n */\n",
+                  "docComment": "/**\n * Gets a recipient list for an appointment or message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * The maximum number of recipients returned by this method varies per Outlook client.\n *\n * - Windows, web browser, Mac (classic UI): 500 recipients\n *\n * - Android, iOS: 100 recipients\n *\n * - Mac (new UI): No limit\n *\n * The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.\n *\n * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.\n *\n * - A Teams meeting status icon appears before the recipient's name or email address.\n *\n * - A semicolon appears after the recipient's name or email address.\n *\n * - The recipient's name or email address is underlined or enclosed in a box.\n *\n * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from the auto-complete list.\n *\n * In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name. For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8997,7 +9141,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#getAsync:member(2)",
-                  "docComment": "/**\n * Gets a recipient list for an appointment or message.\n *\n * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects. Collection size limits:\n *\n * - Windows, classic Mac UI, web browser: 500 members\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.\n *\n * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.\n *\n * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.\n *\n * - A Teams meeting status icon appears before the recipient's name or email address.\n *\n * - A semicolon appears after the recipient's name or email address.\n *\n * - The recipient's name or email address is underlined or enclosed in a box.\n *\n * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from the auto-complete list.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.\n */\n",
+                  "docComment": "/**\n * Gets a recipient list for an appointment or message.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**:\n *\n * The maximum number of recipients returned by this method varies per Outlook client.\n *\n * - Windows, web browser, Mac (classic UI): 500 recipients\n *\n * - Android, iOS: 100 recipients\n *\n * - Mac (new UI): No limit\n *\n * The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.\n *\n * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.\n *\n * - A Teams meeting status icon appears before the recipient's name or email address.\n *\n * - A semicolon appears after the recipient's name or email address.\n *\n * - The recipient's name or email address is underlined or enclosed in a box.\n *\n * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from the auto-complete list.\n *\n * In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name. For more details, see {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9060,7 +9204,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#setAsync:member(1)",
-                  "docComment": "/**\n * Sets a recipient list for an appointment or message.\n *\n * The `setAsync` method overwrites the current recipient list.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be set:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Classic Mac UI, web browser: 100 recipients\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.\n */\n",
+                  "docComment": "/**\n * Sets a recipient list for an appointment or message.\n *\n * The `setAsync` method overwrites the current recipient list.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:\n *\n * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.\n *\n * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported.\n *\n * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses, {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n *\n * @param options - An object literal that contains one or more of the following properties:- `asyncContext`: Developers can provide any object they wish to access in the callback function.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9165,7 +9309,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.Recipients#setAsync:member(2)",
-                  "docComment": "/**\n * Sets a recipient list for an appointment or message.\n *\n * The `setAsync` method overwrites the current recipient list.\n *\n * The recipients parameter can be an array of one of the following:\n *\n * - Strings containing SMTP email addresses\n *\n * - {@link Office.EmailUser | EmailUser} objects\n *\n * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects\n *\n * Maximum number that can be set:\n *\n * - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.\n *\n * - Classic Mac UI, web browser: 100 recipients\n *\n * - New Mac UI, Android: No limit\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.\n */\n",
+                  "docComment": "/**\n * Sets a recipient list for an appointment or message.\n *\n * The `setAsync` method overwrites the current recipient list.\n *\n * @remarks\n *\n * [Api set: Mailbox 1.1]\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**\n *\n * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:\n *\n * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.\n *\n * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is supported.\n *\n * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).\n *\n * **Errors**:\n *\n * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.\n *\n * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses, {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that indicates any error that occurred while adding the data.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9265,6 +9409,7 @@
               ],
               "releaseTag": "Public",
               "name": "ReplyFormAttachment",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -9284,6 +9429,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "inLine",
@@ -9310,6 +9456,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "itemId",
@@ -9336,6 +9483,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "name",
@@ -9362,6 +9510,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "type",
@@ -9388,6 +9537,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "url",
@@ -9411,6 +9561,7 @@
               ],
               "releaseTag": "Public",
               "name": "ReplyFormData",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -9435,6 +9586,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "attachments",
@@ -9470,6 +9622,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "callback",
@@ -9496,6 +9649,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "htmlBody",
@@ -9523,6 +9677,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "options",
@@ -9546,6 +9701,7 @@
               ],
               "releaseTag": "Public",
               "name": "RoamingSettings",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -9767,6 +9923,7 @@
               ],
               "releaseTag": "Public",
               "name": "Subject",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -10065,6 +10222,7 @@
               ],
               "releaseTag": "Public",
               "name": "TaskSuggestion",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -10089,6 +10247,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "assignees",
@@ -10115,6 +10274,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "taskString",
@@ -10138,6 +10298,7 @@
               ],
               "releaseTag": "Public",
               "name": "Time",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "MethodSignature",
@@ -10456,6 +10617,7 @@
               ],
               "releaseTag": "Public",
               "name": "UserProfile",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -10475,6 +10637,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "displayName",
@@ -10501,6 +10664,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "emailAddress",
@@ -10527,6 +10691,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "timeZone",

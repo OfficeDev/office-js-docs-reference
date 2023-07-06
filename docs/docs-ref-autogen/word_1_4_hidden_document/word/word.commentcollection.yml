@@ -41,12 +41,12 @@ properties:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-          // Reply to the first active comment in the selected content.
+          // Replies to the first active comment in the selected content.
 
           await Word.run(async (context) => {
             const text = $("#reply-text")
@@ -78,12 +78,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
 
-      // Get the range of the first comment in the selected content.
+      // Gets the range of the first comment in the selected content.
 
       await Word.run(async (context) => {
         const range = context.document

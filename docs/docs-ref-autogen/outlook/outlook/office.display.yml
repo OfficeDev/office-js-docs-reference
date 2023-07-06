@@ -1,0 +1,124 @@
+### YamlMime:TSType
+name: Office.Display
+uid: 'outlook!Office.Display:interface'
+package: outlook!
+fullName: Office.Display
+summary: Provides properties to temporarily set the content displayed in the body or subject of a message in read mode.
+remarks: >-
+  \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+  **[Minimum permission
+  level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+  **read/write item**
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Message Read
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'outlook!Office.Display#body:member'
+    package: outlook!
+    fullName: body
+    summary: Gets an object to temporarily set the content displayed in the body of a message in read mode.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+      // This snippet temporarily sets the content displayed in the body of a message in read mode.
+
+      // The set content will remain visible until the user switches to a different message in the Reading Pane or
+      closes the window of the current message.
+
+      const bodyText = $("#body-text-field")
+        .val()
+        .toString();
+      Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Action failed with error: ${asyncResult.error.message}`);
+          return;
+        }
+
+        console.log("Temporarily set the content displayed in the body.");
+      });
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'body: DisplayedBody;'
+      return:
+        type: '<xref uid="outlook!Office.DisplayedBody:interface" />'
+  - name: subject
+    uid: 'outlook!Office.Display#subject:member'
+    package: outlook!
+    fullName: subject
+    summary: Gets an object to temporarily set the content displayed in the subject of a message in read mode.
+    remarks: >-
+      \[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
+      **[Minimum permission
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+      // This snippet temporarily sets the content displayed in the subject field of a message in read mode.
+
+      // The set content will remain visible until the user switches to a different message in the Reading Pane or
+      closes the window of the current message.
+
+      const subjectText = $("#subject-text-field")
+        .val()
+        .toString();
+      Office.context.mailbox.item.display.subject.setAsync(subjectText, (asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Action failed with error: ${asyncResult.error.message}`);
+          return;
+        }
+
+        console.log("Temporarily set the content displayed in the subject field.");
+      });
+
+      ```
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'subject: DisplayedSubject;'
+      return:
+        type: '<xref uid="outlook!Office.DisplayedSubject:interface" />'

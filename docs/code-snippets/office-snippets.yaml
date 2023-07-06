@@ -926,6 +926,25 @@ Office.Context#officeTheme:member:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+Office.Context#sensitivityLabelsCatalog:member:
+  - |-
+    // Check if the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    console.log(JSON.stringify(catalog));
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.Context#roamingSettings:member:
   - |-
     // Get the current value of the 'myKey' setting.
@@ -1418,8 +1437,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For a complete code sample that shows how to use a ResourceSelectionChanged
-    // event handler in a Project add-in, see "Create your first task pane add-in
-    // for Project 2013 by using a text editor."
+    // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
@@ -1507,8 +1525,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For an example that shows how to use a ViewSelectionChanged event handler in a
-    // Project add-in, see "Create your first task pane add-in for Project 2013 by
-    // using a text editor."
+    // Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.

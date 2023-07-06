@@ -6143,7 +6143,7 @@ export declare namespace Excel {
          */
         date: string;
         /**
-         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
+         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -6844,6 +6844,14 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalFormat): void;
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          * Deletes this conditional format.
          *
@@ -6866,6 +6874,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.6]
          */
         getRangeOrNullObject(): Excel.Range;
+        
         
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
@@ -7871,6 +7880,7 @@ export declare namespace Excel {
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ConditionalRangeFormat): void;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -18366,6 +18376,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
+            
             
             
         }

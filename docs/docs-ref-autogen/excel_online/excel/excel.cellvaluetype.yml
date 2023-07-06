@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
@@ -102,6 +102,14 @@ fields:
 
       * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedEntity"'
+  - name: localImage
+    uid: 'excel!Excel.CellValueType.localImage:member'
+    package: excel!
+    summary: |-
+      Represents a `LocalImageCellValue`<!-- -->.
+
+      * \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    value: '"LocalImage"'
   - name: notAvailable
     uid: 'excel!Excel.CellValueType.notAvailable:member'
     package: excel!

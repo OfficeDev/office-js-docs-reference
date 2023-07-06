@@ -3,7 +3,7 @@ name: Excel.AggregationFunction
 uid: 'excel!Excel.AggregationFunction:enum'
 package: excel!
 fullName: Excel.AggregationFunction
-summary: Aggregation function for the DataPivotField.
+summary: Aggregation function for the `DataPivotHierarchy`<!-- -->.
 remarks: >-
   \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml

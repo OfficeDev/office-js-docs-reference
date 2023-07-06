@@ -79,7 +79,7 @@ methods:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           Visio.run(session, function (ctx) {
               const pageName = 'Page-1';
               const page = ctx.document.pages.getItem(pageName);

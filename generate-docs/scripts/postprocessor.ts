@@ -93,12 +93,12 @@ tryCatch(async () => {
     (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
     const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
     const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 17}, /*not including online*/
+    const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
                             {host: "onenote", versions: 1},
-                            {host: "outlook", versions: 13},
+                            {host: "outlook", versions: 14},
                             {host: "powerpoint", versions: 6},
                             {host: "visio", versions: 1},
-                            {host: "word", versions: 5}]; /* not including online or desktop*/
+                            {host: "word", versions: 6}]; /* not including online or desktop*/
 
     hostVersionMap.forEach(category => {
         if (category.versions > 1) {
@@ -119,6 +119,7 @@ tryCatch(async () => {
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
     // Special case for WordApi Desktop
+    scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_5_hidden_document`), tocWithReleaseCommon, "word", 5.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
     scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);
 
@@ -171,12 +172,16 @@ tryCatch(async () => {
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
                         fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
-                            // Remove example field from yml as the OPS schema does not support it.
-                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                            
+                            fsx.writeFileSync(packageFolder + '/' + packageFileName, fsx.readFileSync(packageFolder + '/' + packageFileName).toString()
+                                .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                                .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                         });
                     } else if (subfilename.indexOf(".yml") > 0) {
-                        // Remove example field from yml as the OPS schema does not support it.
-                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/^\s*example: \[\]\s*$/gm, ""));
+                        
+                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString()
+                            .replace(/^\s*example: \[\]\s*$/gm, "") // Remove example field from yml as the OPS schema does not support it.
+                            .replace(/\\\*/gm, "*")); // Fix asterisk protection.
                     }
                 });
         });

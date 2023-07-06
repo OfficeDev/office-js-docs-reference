@@ -45,7 +45,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
@@ -152,7 +152,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-resolution.yaml
@@ -196,11 +196,11 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: 'assignTask(assignee: Excel.Identity): Excel.DocumentTask;'
+      content: 'assignTask(assignee: Excel.EmailIdentity): Excel.DocumentTask;'
       parameters:
         - id: assignee
           description: The assignee's user identity information.
-          type: '<xref uid="excel!Excel.Identity:interface" />'
+          type: '<xref uid="excel!Excel.EmailIdentity:interface" />'
       return:
         type: '<xref uid="excel!Excel.DocumentTask:class" />'
         description: ''
@@ -216,7 +216,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml
@@ -323,7 +323,7 @@ methods:
           #### Examples
 
 
-          ```typescript
+          ```TypeScript
 
           // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/12-comment/comment-basics.yaml

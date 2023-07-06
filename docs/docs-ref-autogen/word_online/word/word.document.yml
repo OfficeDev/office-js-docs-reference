@@ -29,7 +29,7 @@ properties:
     uid: 'word!Word.Document#changeTrackingMode:member'
     package: word!
     fullName: changeTrackingMode
-    summary: Gets or sets the ChangeTracking mode.
+    summary: Specifies the ChangeTracking mode.
     remarks: >-
       \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -37,12 +37,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-change-tracking.yaml
 
-      // Get the current change tracking mode.
+      // Gets the current change tracking mode.
 
       await Word.run(async (context) => {
         const document = context.document;
@@ -117,7 +117,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/get-built-in-properties.yaml
@@ -175,12 +175,12 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
 
-      // Get all custom settings this add-in set on this document.
+      // Gets all custom settings this add-in set on this document.
 
       await Word.run(async (context) => {
         const settings = context.document.settings;
@@ -205,6 +205,119 @@ properties:
       return:
         type: '<xref uid="word!Word.SettingCollection:class" />'
 methods:
+  - name: 'addStyle(name, type)'
+    uid: 'word!Word.Document#addStyle:member(1)'
+    package: word!
+    fullName: 'addStyle(name, type)'
+    summary: Adds a style into the document by name and type.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Adds a new style.
+
+      await Word.run(async (context) => {
+        const newStyleName = $("#new-style-name").val() as string;
+        if (newStyleName == "") {
+          console.warn("Enter a style name to add.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        style.load();
+        await context.sync();
+
+        if (!style.isNullObject) {
+          console.warn(
+            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+          );
+          return;
+        }
+
+        const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+        context.document.addStyle(newStyleName, newStyleType);
+        await context.sync();
+        
+        console.log(newStyleName + " has been added to the style list.");
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addStyle(name: string, type: Word.StyleType): Word.Style;'
+      parameters:
+        - id: name
+          description: Required. A string representing the style name.
+          type: string
+        - id: type
+          description: 'Required. The style type, including character, list, paragraph, or table.'
+          type: '<xref uid="word!Word.StyleType:enum" />'
+      return:
+        type: '<xref uid="word!Word.Style:class" />'
+        description: ''
+  - name: 'addStyle(name, typeString)'
+    uid: 'word!Word.Document#addStyle:member(2)'
+    package: word!
+    fullName: 'addStyle(name, typeString)'
+    summary: Adds a style into the document by name and type.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;'
+      parameters:
+        - id: name
+          description: Required. A string representing the style name.
+          type: string
+        - id: typeString
+          description: 'Required. The style type, including character, list, paragraph, or table.'
+          type: '"Character" | "List" | "Paragraph" | "Table"'
+      return:
+        type: '<xref uid="word!Word.Style:class" />'
+        description: ''
+  - name: close(closeBehavior)
+    uid: 'word!Word.Document#close:member(1)'
+    package: word!
+    fullName: close(closeBehavior)
+    summary: Close current document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'close(closeBehavior?: Word.CloseBehavior): void;'
+      parameters:
+        - id: closeBehavior
+          description: Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+          type: '<xref uid="word!Word.CloseBehavior:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: close(closeBehaviorString)
+    uid: 'word!Word.Document#close:member(2)'
+    package: word!
+    fullName: close(closeBehaviorString)
+    summary: Close current document.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      parameters:
+        - id: closeBehaviorString
+          description: Optional. The close behavior must be 'Save' or 'SkipSave'. Default value is 'Save'.
+          type: '"Save" | "SkipSave"'
+      return:
+        type: void
+        description: ''
   - name: deleteBookmark(name)
     uid: 'word!Word.Document#deleteBookmark:member(1)'
     package: word!
@@ -260,12 +373,34 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: getContentControls(options)
+    uid: 'word!Word.Document#getContentControls:member(1)'
+    package: word!
+    fullName: getContentControls(options)
+    summary: >-
+      Gets the currently supported content controls in the document. **Important**: If specific types are provided
+      in the options parameter, only content controls of supported types are returned. Be aware that an exception will
+      be thrown on using methods of a generic [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't
+      relevant for the specific type. With time, additional types of content controls may be supported. Therefore, your
+      add-in should request and handle specific types of content controls.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getContentControls(options?: Word.ContentControlOptions): Word.ContentControlCollection;'
+      parameters:
+        - id: options
+          description: Optional. Options that define which content controls are returned.
+          type: '<xref uid="word!Word.ContentControlOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.ContentControlCollection:class" />'
+        description: ''
   - name: getEndnoteBody()
     uid: 'word!Word.Document#getEndnoteBody:member(1)'
     package: word!
     fullName: getEndnoteBody()
     summary: Gets the document's endnotes in a single body. Not implemented in Word on the web.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,7 +413,7 @@ methods:
     package: word!
     fullName: getFootnoteBody()
     summary: Gets the document's footnotes in a single body. Not implemented in Word on the web.
-    remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
@@ -296,7 +431,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -325,6 +460,71 @@ methods:
       return:
         type: '<xref uid="word!Word.Range:class" />'
         description: ''
+  - name: getStyles()
+    uid: 'word!Word.Document#getStyles:member(1)'
+    package: word!
+    fullName: getStyles()
+    summary: Gets a StyleCollection object that represents the whole style set of the document.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Gets the number of styles.
+
+      await Word.run(async (context) => {
+        const styles = context.document.getStyles();
+        const count = styles.getCount();
+        await context.sync();
+
+        console.log(`Number of styles: ${count.value}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStyles(): Word.StyleCollection;'
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
+    uid: 'word!Word.Document#insertFileFromBase64:member(1)'
+    package: word!
+    fullName: 'insertFileFromBase64(base64File, insertLocation, insertFileOptions)'
+    summary: >-
+      Inserts a document into the target document at a specific location with additional properties. Headers, footers,
+      watermarks, and other section properties are copied by default.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start
+        | Word.InsertLocation.end | "Replace" | "Start" | "End", insertFileOptions?: Word.InsertFileOptions):
+        Word.SectionCollection;
+      parameters:
+        - id: base64File
+          description: Required. The Base64-encoded content of a .docx file.
+          type: string
+        - id: insertLocation
+          description: 'Required. The value must be ''Replace'', ''Start'', or ''End''.'
+          type: >-
+            <xref uid="word!Word.InsertLocation.replace:member" /> | <xref uid="word!Word.InsertLocation.start:member"
+            /> | <xref uid="word!Word.InsertLocation.end:member" /> | "Replace" | "Start" | "End"
+        - id: insertFileOptions
+          description: Optional. The additional properties that should be imported to the destination document.
+          type: '<xref uid="word!Word.InsertFileOptions:interface" />'
+      return:
+        type: '<xref uid="word!Word.SectionCollection:class" />'
+        description: ''
   - name: load(options)
     uid: 'word!Word.Document#load:member(1)'
     package: word!
@@ -348,7 +548,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Run a batch operation against the Word object model.
           await Word.run(async (context) => {
               
@@ -420,17 +620,19 @@ methods:
       return:
         type: '<xref uid="word!Word.Document:class" />'
         description: ''
-  - name: save()
+  - name: 'save(saveBehavior, fileName)'
     uid: 'word!Word.Document#save:member(1)'
     package: word!
-    fullName: save()
-    summary: Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+    fullName: 'save(saveBehavior, fileName)'
+    summary: Saves the document.
     remarks: |-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
           
@@ -460,7 +662,37 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'save(): void;'
+      content: 'save(saveBehavior?: Word.SaveBehavior, fileName?: string): void;'
+      parameters:
+        - id: saveBehavior
+          description: Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+          type: '<xref uid="word!Word.SaveBehavior:enum" />'
+        - id: fileName
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'save(saveBehaviorString, fileName)'
+    uid: 'word!Word.Document#save:member(2)'
+    package: word!
+    fullName: 'save(saveBehaviorString, fileName)'
+    summary: Saves the document.
+    remarks: |-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+      Note: The `saveBehavior` and `fileName` parameters were introduced in WordApi 1.5.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'save(saveBehaviorString?: "Save" | "Prompt", fileName?: string): void;'
+      parameters:
+        - id: saveBehaviorString
+          description: Optional. The save behavior must be 'Save' or 'Prompt'. Default value is 'Save'.
+          type: '"Save" | "Prompt"'
+        - id: fileName
+          description: Optional. The file name (exclude file extension). Only takes effect for a new document.
+          type: string
       return:
         type: void
         description: ''
@@ -600,4 +832,52 @@ methods:
       return:
         type: '<xref uid="word!Word.Document:class" />'
         description: ''
+events:
+  - name: onContentControlAdded
+    uid: 'word!Word.Document#onContentControlAdded:member'
+    package: word!
+    fullName: onContentControlAdded
+    summary: >-
+      Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
+      properties.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/content-control-onadded-event.yaml
+
+      // Registers the onAdded event handler on the document.
+
+      await Word.run(async (context) => {
+        eventContext = context.document.onContentControlAdded.add(contentControlAdded);
+        await context.sync();
+
+        console.log("Added event handler for when content controls are added.");
+      });
+
+
+      ...
+
+      async function contentControlAdded(event: Word.ContentControlAddedEventArgs) {
+        await Word.run(async (context) => {
+          console.log(`${event.eventType} event detected. IDs of content controls that were added:`);
+          console.log(event.ids);
+        });
+      }
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlAddedEventArgs>;'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.EventHandlers:class" />&lt;<xref
+          uid="word!Word.ContentControlAddedEventArgs:interface" />&gt;
 extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

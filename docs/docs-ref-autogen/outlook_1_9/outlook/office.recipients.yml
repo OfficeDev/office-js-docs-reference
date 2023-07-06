@@ -24,45 +24,35 @@ methods:
     uid: 'outlook!Office.Recipients#addAsync:member(1)'
     package: outlook!
     fullName: 'addAsync(recipients, options, callback)'
-    summary: >-
-      Adds a recipient list to the existing recipients for an appointment or message.
-
-
-      The recipients parameter can be an array of one of the following:
-
-
-      - Strings containing SMTP email addresses
-
-
-      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
-
-
-      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
-
-
-      Maximum number that can be added:
-
-
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
-
-
-      - Classic Mac UI, web browser: 100 recipients
-
-
-      - New Mac UI, Android: No limit
+    summary: Adds a recipient list to the existing recipients for an appointment or message.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
+      on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+
+
+      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
+      mindful of the recipient limit of the field.
+
+
+      - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
+      Appointment Organizer mode is supported.
+
+
+      There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
 
       **Errors**:
@@ -74,7 +64,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects
 
@@ -109,7 +99,10 @@ methods:
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list.
+          description: >-
+            The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email
+            addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
             uid="outlook!Office.EmailAddressDetails:interface" />)[]
@@ -131,45 +124,35 @@ methods:
     uid: 'outlook!Office.Recipients#addAsync:member(2)'
     package: outlook!
     fullName: 'addAsync(recipients, callback)'
-    summary: >-
-      Adds a recipient list to the existing recipients for an appointment or message.
-
-
-      The recipients parameter can be an array of one of the following:
-
-
-      - Strings containing SMTP email addresses
-
-
-      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
-
-
-      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
-
-
-      Maximum number that can be added:
-
-
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
-
-
-      - Classic Mac UI, web browser: 100 recipients
-
-
-      - New Mac UI, Android: No limit
+    summary: Adds a recipient list to the existing recipients for an appointment or message.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook
+      on Windows, on Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+
+
+      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      field. If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be
+      mindful of the recipient limit of the field.
+
+
+      - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
+      Appointment Organizer mode is supported.
+
+
+      There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
 
 
       **Errors**:
@@ -184,7 +167,10 @@ methods:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list.
+          description: >-
+            The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email
+            addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
             uid="outlook!Office.EmailAddressDetails:interface" />)[]
@@ -201,41 +187,38 @@ methods:
     uid: 'outlook!Office.Recipients#getAsync:member(1)'
     package: outlook!
     fullName: 'getAsync(options, callback)'
-    summary: >-
-      Gets a recipient list for an appointment or message.
-
-
-      When the call completes, the `asyncResult.value` property will contain an array of
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
-
-
-      - Windows, classic Mac UI, web browser: 500 members
-
-
-      - New Mac UI, Android: No limit
+    summary: Gets a recipient list for an appointment or message.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
-      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
-      email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
-      contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
-      the contact's saved name. For more details, refer to the [related GitHub
-      issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
+      **Important**:
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      The maximum number of recipients returned by this method varies per Outlook client.
+
+
+      - Windows, web browser, Mac (classic UI): 500 recipients
+
+
+      - Android, iOS: 100 recipients
+
+
+      - Mac (new UI): No limit
+
+
+      The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the
+      following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -253,6 +236,13 @@ methods:
 
       To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
       suggested contact or email address from the auto-complete list.
+
+
+      In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link
+      from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address
+      in the `displayName` property of the associated
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
+      name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -267,9 +257,9 @@ methods:
           type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
-            `EmailAddressDetails` objects.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The `asyncResult.value` property of
+            the result is an array of [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
@@ -280,41 +270,38 @@ methods:
     uid: 'outlook!Office.Recipients#getAsync:member(2)'
     package: outlook!
     fullName: getAsync(callback)
-    summary: >-
-      Gets a recipient list for an appointment or message.
-
-
-      When the call completes, the `asyncResult.value` property will contain an array of
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects. Collection size limits:
-
-
-      - Windows, classic Mac UI, web browser: 500 members
-
-
-      - New Mac UI, Android: No limit
+    summary: Gets a recipient list for an appointment or message.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
 
 
-      **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's
-      email address link from their contact or profile card, your add-in's `Recipients.getAsync` call returns the
-      contact's email address in the `displayName` property of the associated `EmailAddressDetails` object instead of
-      the contact's saved name. For more details, refer to the [related GitHub
-      issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
+      **Important**:
 
 
-      **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient
-      has the following characteristics.
+      The maximum number of recipients returned by this method varies per Outlook client.
+
+
+      - Windows, web browser, Mac (classic UI): 500 recipients
+
+
+      - Android, iOS: 100 recipients
+
+
+      - Mac (new UI): No limit
+
+
+      The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the
+      following characteristics.
 
 
       - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the
@@ -334,10 +321,17 @@ methods:
       suggested contact or email address from the auto-complete list.
 
 
+      In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link
+      from their contact or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address
+      in the `displayName` property of the associated
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object instead of the contact's saved
+      name. For more details, see [related GitHub issue](https://github.com/OfficeDev/office-js/issues/2201)<!-- -->.
+
+
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -434,9 +428,9 @@ methods:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the `callback` parameter is called with a single parameter
-            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
-            `EmailAddressDetails` objects.
+            When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, of type `Office.AsyncResult`<!-- -->. The `asyncResult.value` property of
+            the result is an array of [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.EmailAddressDetails:interface" />[]&gt;) =&gt; void
@@ -447,48 +441,38 @@ methods:
     uid: 'outlook!Office.Recipients#setAsync:member(1)'
     package: outlook!
     fullName: 'setAsync(recipients, options, callback)'
-    summary: >-
+    summary: |-
       Sets a recipient list for an appointment or message.
 
-
       The `setAsync` method overwrites the current recipient list.
-
-
-      The recipients parameter can be an array of one of the following:
-
-
-      - Strings containing SMTP email addresses
-
-
-      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
-
-
-      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
-
-
-      Maximum number that can be set:
-
-
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
-
-
-      - Classic Mac UI, web browser: 100 recipients
-
-
-      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on
+      Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+
+
+      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
+      recipient limit of the field.
+
+
+      - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the
+      Appointment Organizer mode is supported.
+
+
+      There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
 
 
       **Errors**:
@@ -503,7 +487,10 @@ methods:
         callback: (asyncResult: Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list.
+          description: >-
+            The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email
+            addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
             uid="outlook!Office.EmailAddressDetails:interface" />)[]
@@ -525,48 +512,38 @@ methods:
     uid: 'outlook!Office.Recipients#setAsync:member(2)'
     package: outlook!
     fullName: 'setAsync(recipients, callback)'
-    summary: >-
+    summary: |-
       Sets a recipient list for an appointment or message.
 
-
       The `setAsync` method overwrites the current recipient list.
-
-
-      The recipients parameter can be an array of one of the following:
-
-
-      - Strings containing SMTP email addresses
-
-
-      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
-
-
-      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
-
-
-      Maximum number that can be set:
-
-
-      - Windows: 100 recipients. **Note**: Can call API repeatedly but the maximum number of recipients in the target
-      field on the item is 500 recipients.
-
-
-      - Classic Mac UI, web browser: 100 recipients
-
-
-      - New Mac UI, Android: No limit
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **read/write item**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read/write item**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose
+
+
+      **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on
+      Mac (classic UI), on the web, on Android, and on iOS. However, take note of the following:
+
+
+      - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target
+      field. If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the
+      recipient limit of the field.
+
+
+      - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the
+      Appointment Organizer mode is supported.
+
+
+      There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
 
 
       **Errors**:
@@ -578,7 +555,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // The following example creates an array of EmailUser objects and
 
@@ -606,7 +583,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
@@ -697,7 +674,10 @@ methods:
         Office.AsyncResult<void>) => void): void;
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list.
+          description: >-
+            The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email
+            addresses, [EmailUser](xref:outlook!Office.EmailUser:interface) objects, or
+            [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
           type: >-
             (string | <xref uid="outlook!Office.EmailUser:interface" /> | <xref
             uid="outlook!Office.EmailAddressDetails:interface" />)[]

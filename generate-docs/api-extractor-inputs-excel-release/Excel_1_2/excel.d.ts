@@ -5347,7 +5347,7 @@ export declare namespace Excel {
          */
         date: string;
         /**
-         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
+         * How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specificity is set to "month", the filter operation will keep all rows with a date in the month of April 2005.
          *
          * @remarks
          * [Api set: ExcelApi 1.2]
@@ -14340,6 +14340,7 @@ export declare namespace Excel {
         }
         /** An interface describing the data returned by calling `numberFormatInfo.toJSON()`. */
         export interface NumberFormatInfoData {
+            
             
             
         }

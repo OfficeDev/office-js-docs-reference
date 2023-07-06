@@ -9,6 +9,7 @@ enums:
   - 'excel!Excel.ArrowheadStyle:enum'
   - 'excel!Excel.ArrowheadWidth:enum'
   - 'excel!Excel.AutoFillType:enum'
+  - 'excel!Excel.Base64EncodingType:enum'
   - 'excel!Excel.BindingType:enum'
   - 'excel!Excel.BlockedErrorCellValueSubType:enum'
   - 'excel!Excel.BorderIndex:enum'
@@ -94,6 +95,7 @@ enums:
   - 'excel!Excel.DocumentPropertyType:enum'
   - 'excel!Excel.DocumentTaskChangeAction:enum'
   - 'excel!Excel.DynamicFilterCriteria:enum'
+  - 'excel!Excel.EntityCardLayoutType:enum'
   - 'excel!Excel.EntityCompactLayoutIcons:enum'
   - 'excel!Excel.ErrorCellValueType:enum'
   - 'excel!Excel.ErrorCodes:enum'
@@ -370,6 +372,7 @@ classes:
 interfaces:
   - 'excel!Excel.AllowEditRangeOptions:interface'
   - 'excel!Excel.ArrayCellValue:interface'
+  - 'excel!Excel.Base64EncodedImage:interface'
   - 'excel!Excel.BasicDataValidation:interface'
   - 'excel!Excel.BindingDataChangedEventArgs:interface'
   - 'excel!Excel.BindingSelectionChangedEventArgs:interface'
@@ -428,8 +431,12 @@ interfaces:
   - 'excel!Excel.DataValidationRule:interface'
   - 'excel!Excel.DateTimeDataValidation:interface'
   - 'excel!Excel.Div0ErrorCellValue:interface'
+  - 'excel!Excel.DocumentTaskChangeProperties:interface'
+  - 'excel!Excel.DocumentTaskSchedule:interface'
   - 'excel!Excel.DoubleCellValue:interface'
+  - 'excel!Excel.EmailIdentity:interface'
   - 'excel!Excel.EmptyCellValue:interface'
+  - 'excel!Excel.EntityArrayCardLayout:interface'
   - 'excel!Excel.EntityCardLayout:interface'
   - 'excel!Excel.EntityCellValue:interface'
   - 'excel!Excel.EntityCompactLayout:interface'
@@ -977,6 +984,8 @@ interfaces:
   - 'excel!Excel.LinkedEntityCellValue:interface'
   - 'excel!Excel.LinkedEntityId:interface'
   - 'excel!Excel.ListDataValidation:interface'
+  - 'excel!Excel.LocalImageCellValue:interface'
+  - 'excel!Excel.LocalImageCellValueCacheId:interface'
   - 'excel!Excel.NameErrorCellValue:interface'
   - 'excel!Excel.NotAvailableErrorCellValue:interface'
   - 'excel!Excel.NullErrorCellValue:interface'
@@ -1091,7 +1100,7 @@ functions:
 
           #### Examples
 
-          ```javascript
+          ```TypeScript
           const myFile = <HTMLInputElement>document.getElementById("file");
           const reader = new FileReader();
 

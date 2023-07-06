@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: Word.ContentControlOptions
+uid: 'word!Word.ContentControlOptions:interface'
+package: word!
+fullName: Word.ContentControlOptions
+summary: Specifies the options that define which content controls are returned.
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: types
+    uid: 'word!Word.ContentControlOptions#types:member'
+    package: word!
+    fullName: types
+    summary: 'An array of content control types, item must be ''RichText'' or ''PlainText''.'
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'types: Word.ContentControlType[];'
+      return:
+        type: '<xref uid="word!Word.ContentControlType:enum" />[]'

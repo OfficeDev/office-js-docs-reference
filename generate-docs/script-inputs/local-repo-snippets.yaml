@@ -2416,6 +2416,25 @@ Office.Context#officeTheme:member:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+Office.Context#sensitivityLabelsCatalog:member:
+  - |-
+    // Check if the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    console.log(JSON.stringify(catalog));
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.Context#roamingSettings:member:
   - |-
     // Get the current value of the 'myKey' setting.
@@ -2908,8 +2927,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For a complete code sample that shows how to use a ResourceSelectionChanged
-    // event handler in a Project add-in, see "Create your first task pane add-in
-    // for Project 2013 by using a text editor."
+    // event handler in a Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example adds a handler for the TaskSelectionChanged event.
@@ -2997,8 +3015,7 @@ Office.Document#addHandlerAsync:member(2):
     })();
 
     // For an example that shows how to use a ViewSelectionChanged event handler in a
-    // Project add-in, see "Create your first task pane add-in for Project 2013 by
-    // using a text editor."
+    // Project add-in, see "Create your first task pane add-in for Microsoft Project".
     // https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
@@ -7303,15 +7320,6 @@ Office.CustomProperties#saveAsync:member(1):
             // Proceed to do the appropriate for your add-in.
         }
     }
-Office.DelayDeliveryTime:interface:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.EmailAddressDetails#appointmentResponse:member:
   - |-
     // The following sample provides the responses from required attendees.
@@ -7495,7 +7503,7 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
             '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
             '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
             '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
             '  </soap:Header>' +
             '  <soap:Body>' +
             '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
@@ -7757,15 +7765,6 @@ Office.MessageCompose#cc:member:
     function callback(asyncResult) {
         const arrayOfCcRecipients = asyncResult.value;
     }
-Office.MessageCompose#delayDeliveryTime:member:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.MessageCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
@@ -8323,6 +8322,33 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
+Office.SensitivityLabelDetails:interface:
+  - |-
+    // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    
+                    // Log the details of the available sensitivity labels to the console.
+                    catalog.forEach((sensitivityLabel) => {
+                        console.log(`Name: ${sensitivityLabel.name}`);
+                        console.log(`ID: ${sensitivityLabel.id}`);
+                        console.log(`Tooltip: ${sensitivityLabel.tooltip}`);
+                        console.log(`Color: ${sensitivityLabel.color}`);
+                        console.log(`Sublabels: ${JSON.stringify(sensitivityLabel.children)}`);
+                    });
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.SeriesTime#getDuration:member(1):
   - |-
     // This example gets the duration of a usual instance in a recurring appointment series.
@@ -8962,25 +8988,6 @@ Visio.ShapeView#removeOverlay:member(1):
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
-    });
-Word.Application#createDocument:member(1):
-  - |-
-    // Update the text of the current document with the text from another document
-    // passed in as a base64-encoded string.
-    await Word.run(async (context) => {
-        // Important: You'll need to implement getBase64() to get the base64-encoded 
-        // string representation of a docx file.
-        const externalDoc = context.application.createDocument(getBase64());
-        await context.sync();
-
-        const externalDocBody = externalDoc.body;
-        externalDocBody.load("text");
-        await context.sync();
-
-        const externalDocBodyText = externalDocBody.text;
-        const currentDocBody = context.document.body;
-        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
-        await context.sync();
     });
 Word.Body#clear:member(1):
   - |-
@@ -9897,25 +9904,6 @@ Word.Document#save:member(1):
         } else {
             console.log('The document has not changed since the last save.');
         }
-    });
-Word.DocumentCreated:class:
-  - |-
-    // Update the text of the current document with the text from another document
-    // passed in as a base64-encoded string.
-    await Word.run(async (context) => {
-        // Important: You'll need to implement getBase64() to get the base64-encoded 
-        // string representation of a docx file.
-        const externalDoc = context.application.createDocument(getBase64());
-        await context.sync();
-
-        const externalDocBody = externalDoc.body;
-        externalDocBody.load("text");
-        await context.sync();
-
-        const externalDocBodyText = externalDocBody.text;
-        const currentDocBody = context.document.body;
-        currentDocBody .insertText(externalDocBodyText, WordInsertLocation.start);
-        await context.sync();
     });
 Word.DocumentCreated#open:member(1):
   - |-

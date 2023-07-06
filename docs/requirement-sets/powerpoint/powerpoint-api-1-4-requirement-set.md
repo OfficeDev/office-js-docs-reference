@@ -2,7 +2,7 @@
 title: PowerPoint JavaScript API requirement set 1.4
 description: Details about the PowerPointApi 1.4 requirement set.
 ms.date: 06/13/2022
-ms.prod: powerpoint
+ms.topic: whats-new
 ms.localizationpriority: medium
 ---
 

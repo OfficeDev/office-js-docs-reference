@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: Excel.Base64EncodingType
+uid: 'excel!Excel.Base64EncodingType:enum'
+package: excel!
+fullName: Excel.Base64EncodingType
+summary: The file type represented by the base64 encoding.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+fields:
+  - name: JPG
+    uid: 'excel!Excel.Base64EncodingType.JPG:member'
+    package: excel!
+    summary: >-
+      The JPG file type.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"JPG"'
+  - name: PNG
+    uid: 'excel!Excel.Base64EncodingType.PNG:member'
+    package: excel!
+    summary: >-
+      The PNG file type.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"PNG"'

@@ -8,8 +8,16 @@ remarks: >-
   \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-  **Important**: In Outlook, support is only available with [event-based
-  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+  This interface is available in the [SharedRuntime 1.1 requirement
+  set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for Excel,
+  PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+  1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+  for Outlook.
+
+
+  **Important**: In Outlook, support is only available with the [event-based
+  activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+  Windows. This interface isn't supported in Outlook on Mac or on the web.
 
 
   Storage limit is 10 MB per domain, which may be shared by multiple add-ins.
@@ -28,8 +36,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,8 +68,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,8 +98,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,8 +124,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,8 +154,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,8 +184,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,8 +217,16 @@ methods:
       \[ [API set: SharedRuntime 1.1, Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
 
-      **Important**: In Outlook, support is only available with [event-based
-      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
+      This method is available in the [SharedRuntime 1.1 requirement
+      set](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets) for
+      Excel, PowerPoint, and Word add-ins. It's also available starting in [Mailbox requirement set
+      1.10](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10)
+      for Outlook.
+
+
+      **Important**: In Outlook, support is only available with the [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch) feature implemented in Outlook on
+      Windows. This method isn't supported in Outlook on Mac or on the web.
     isPreview: false
     isDeprecated: false
     syntax:

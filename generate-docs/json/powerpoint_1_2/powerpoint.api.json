@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.20.0",
-    "schemaVersion": 1005,
+    "toolVersion": "7.34.8",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "powerpoint!",
   "docComment": "",
   "name": "powerpoint",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "powerpoint!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Namespace",
@@ -179,8 +182,10 @@
               "text": "export declare namespace PowerPoint "
             }
           ],
+          "fileUrlPath": "powerpoint.d.ts",
           "releaseTag": "Public",
           "name": "PowerPoint",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "Class",
@@ -202,7 +207,9 @@
                 }
               ],
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "Application",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Property",
@@ -223,6 +230,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
@@ -230,7 +238,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -260,13 +270,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": true,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -278,6 +288,8 @@
                       "isOptional": false
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "newObject"
                 },
                 {
@@ -298,21 +310,23 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "toJSON"
                 }
               ],
               "extendsTokenRange": {
                 "startIndex": 1,
-                "endIndex": 3
+                "endIndex": 2
               },
               "implementsTokenRanges": []
             },
@@ -377,6 +391,7 @@
               ],
               "releaseTag": "Public",
               "name": "ErrorCodes",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "EnumMember",
@@ -392,12 +407,12 @@
                       "text": "\"GeneralException\""
                     }
                   ],
-                  "releaseTag": "Public",
-                  "name": "generalException",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "releaseTag": "Public",
+                  "name": "generalException"
                 }
               ]
             },
@@ -413,6 +428,7 @@
               ],
               "releaseTag": "Public",
               "name": "InsertSlideFormatting",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "EnumMember",
@@ -428,12 +444,12 @@
                       "text": "\"KeepSourceFormatting\""
                     }
                   ],
-                  "releaseTag": "Public",
-                  "name": "keepSourceFormatting",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "releaseTag": "Public",
+                  "name": "keepSourceFormatting"
                 },
                 {
                   "kind": "EnumMember",
@@ -449,12 +465,12 @@
                       "text": "\"UseDestinationTheme\""
                     }
                   ],
-                  "releaseTag": "Public",
-                  "name": "useDestinationTheme",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "releaseTag": "Public",
+                  "name": "useDestinationTheme"
                 }
               ]
             },
@@ -470,6 +486,7 @@
               ],
               "releaseTag": "Public",
               "name": "InsertSlideOptions",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "PropertySignature",
@@ -494,6 +511,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "formatting",
@@ -520,6 +538,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "sourceSlideIds",
@@ -546,6 +565,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": true,
                   "releaseTag": "Public",
                   "name": "targetSlideId",
@@ -569,6 +589,7 @@
               ],
               "releaseTag": "Public",
               "name": "Interfaces",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Interface",
@@ -582,6 +603,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "BulletFormatData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -597,6 +619,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "BulletFormatUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -612,6 +635,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "CollectionLoadOptions",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -631,6 +655,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$skip",
@@ -657,6 +682,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$top",
@@ -680,6 +706,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ParagraphFormatData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -695,6 +722,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ParagraphFormatUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -710,6 +738,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "PresentationData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -729,6 +758,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "title",
@@ -752,6 +782,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "PresentationLoadOptions",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -771,6 +802,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
@@ -797,6 +829,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "title",
@@ -820,6 +853,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -844,6 +878,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -867,6 +902,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -891,6 +927,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -914,6 +951,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -929,6 +967,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeFillData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -944,6 +983,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeFillUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -959,6 +999,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeFontData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -974,6 +1015,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeFontUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -989,6 +1031,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeLineFormatData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1004,6 +1047,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeLineFormatUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1019,6 +1063,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeScopedCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1043,6 +1088,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1066,6 +1112,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeScopedCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1090,6 +1137,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1113,6 +1161,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ShapeUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1128,6 +1177,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1152,6 +1202,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1175,6 +1226,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideCollectionLoadOptions",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1194,6 +1246,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
@@ -1220,6 +1273,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
@@ -1243,6 +1297,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1267,6 +1322,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1290,6 +1346,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1309,6 +1366,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
@@ -1332,6 +1390,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideLayoutCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1356,6 +1415,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1379,6 +1439,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideLayoutCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1403,6 +1464,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1426,6 +1488,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideLayoutData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1441,6 +1504,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideLoadOptions",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1460,6 +1524,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
@@ -1486,6 +1551,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
@@ -1509,6 +1575,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideMasterCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1533,6 +1600,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1556,6 +1624,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideMasterCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1580,6 +1649,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1603,6 +1673,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideMasterData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1618,6 +1689,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideScopedCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1642,6 +1714,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1665,6 +1738,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideScopedCollectionLoadOptions",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1684,6 +1758,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "$all",
@@ -1710,6 +1785,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "id",
@@ -1733,6 +1809,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SlideScopedCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1757,6 +1834,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1780,6 +1858,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TagCollectionData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1804,6 +1883,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1827,6 +1907,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TagCollectionUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [
                     {
                       "kind": "PropertySignature",
@@ -1851,6 +1932,7 @@
                           "text": ";"
                         }
                       ],
+                      "isReadonly": false,
                       "isOptional": true,
                       "releaseTag": "Public",
                       "name": "items",
@@ -1874,6 +1956,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TagData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1889,6 +1972,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TagUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1904,6 +1988,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextFrameData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1919,6 +2004,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextFrameUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1934,6 +2020,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextRangeData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -1949,6 +2036,7 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextRangeUpdateData",
+                  "preserveMemberOrder": false,
                   "members": [],
                   "extendsTokenRanges": []
                 }
@@ -1974,7 +2062,9 @@
                 }
               ],
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "Presentation",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Property",
@@ -1995,6 +2085,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
@@ -2002,7 +2093,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -2039,13 +2132,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
                     "endIndex": 6
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2065,6 +2158,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "insertSlidesFromBase64"
                 },
                 {
@@ -2095,13 +2190,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2113,6 +2208,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2142,13 +2239,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -2160,6 +2257,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2189,13 +2288,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 3,
                   "parameters": [
                     {
@@ -2207,6 +2306,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2228,6 +2329,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "slides",
@@ -2235,7 +2337,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Property",
@@ -2255,6 +2359,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "title",
@@ -2262,7 +2367,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -2283,21 +2390,23 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "toJSON"
                 }
               ],
               "extendsTokenRange": {
                 "startIndex": 1,
-                "endIndex": 3
+                "endIndex": 2
               },
               "implementsTokenRanges": []
             },
@@ -2321,7 +2430,9 @@
                 }
               ],
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "RequestContext",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Constructor",
@@ -2342,6 +2453,7 @@
                     }
                   ],
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2373,6 +2485,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "application",
@@ -2380,7 +2493,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Property",
@@ -2401,6 +2516,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "presentation",
@@ -2408,12 +2524,14 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 }
               ],
               "extendsTokenRange": {
                 "startIndex": 1,
-                "endIndex": 3
+                "endIndex": 2
               },
               "implementsTokenRanges": []
             },
@@ -2715,7 +2833,9 @@
                 }
               ],
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "Slide",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Property",
@@ -2736,6 +2856,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
@@ -2743,7 +2864,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -2763,15 +2886,17 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "delete"
                 },
                 {
@@ -2792,6 +2917,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "id",
@@ -2799,7 +2925,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -2829,13 +2957,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -2847,6 +2975,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2876,13 +3006,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -2894,6 +3024,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2923,13 +3055,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 3,
                   "parameters": [
                     {
@@ -2941,6 +3073,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -2962,21 +3096,23 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "toJSON"
                 }
               ],
               "extendsTokenRange": {
                 "startIndex": 1,
-                "endIndex": 3
+                "endIndex": 2
               },
               "implementsTokenRanges": []
             },
@@ -3000,7 +3136,9 @@
                 }
               ],
               "releaseTag": "Public",
+              "isAbstract": false,
               "name": "SlideCollection",
+              "preserveMemberOrder": false,
               "members": [
                 {
                   "kind": "Property",
@@ -3021,6 +3159,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": false,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "context",
@@ -3028,7 +3167,9 @@
                     "startIndex": 1,
                     "endIndex": 2
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -3053,15 +3194,17 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "getCount"
                 },
                 {
@@ -3091,13 +3234,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -3109,6 +3252,8 @@
                       "isOptional": false
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "getItem"
                 },
                 {
@@ -3138,13 +3283,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -3156,6 +3301,8 @@
                       "isOptional": false
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "getItemAt"
                 },
                 {
@@ -3185,13 +3332,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -3203,6 +3350,8 @@
                       "isOptional": false
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "getItemOrNullObject"
                 },
                 {
@@ -3228,6 +3377,7 @@
                       "text": ";"
                     }
                   ],
+                  "isReadonly": true,
                   "isOptional": false,
                   "releaseTag": "Public",
                   "name": "items",
@@ -3235,7 +3385,9 @@
                     "startIndex": 1,
                     "endIndex": 3
                   },
-                  "isStatic": false
+                  "isStatic": false,
+                  "isProtected": false,
+                  "isAbstract": false
                 },
                 {
                   "kind": "Method",
@@ -3274,13 +3426,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 5,
                     "endIndex": 6
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -3292,6 +3444,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -3321,13 +3475,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -3339,6 +3493,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -3369,13 +3525,13 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 3,
                   "parameters": [
                     {
@@ -3387,6 +3543,8 @@
                       "isOptional": true
                     }
                   ],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "load"
                 },
                 {
@@ -3408,21 +3566,23 @@
                       "text": ";"
                     }
                   ],
-                  "isOptional": false,
                   "isStatic": false,
                   "returnTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
                   },
                   "releaseTag": "Public",
+                  "isProtected": false,
                   "overloadIndex": 1,
                   "parameters": [],
+                  "isOptional": false,
+                  "isAbstract": false,
                   "name": "toJSON"
                 }
               ],
               "extendsTokenRange": {
                 "startIndex": 1,
-                "endIndex": 3
+                "endIndex": 2
               },
               "implementsTokenRanges": []
             }

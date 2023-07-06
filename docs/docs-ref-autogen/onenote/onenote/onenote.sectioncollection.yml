@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
 
           // Get the sections in the current notebook.
@@ -175,7 +175,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
 
               // Get the sections in the current notebook.

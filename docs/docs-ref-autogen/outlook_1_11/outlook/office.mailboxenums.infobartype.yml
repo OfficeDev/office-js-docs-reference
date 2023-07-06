@@ -11,7 +11,7 @@ remarks: |-
 
   #### Examples
 
-  ```javascript
+  ```TypeScript
   /*
   * This snippet activates when a notification message is dismissed from an Outlook message or appointment.
   * The event handler logs the custom action and notification type to the console.

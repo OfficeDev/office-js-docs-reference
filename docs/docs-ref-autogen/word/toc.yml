@@ -29,12 +29,18 @@ items:
                 uid: 'word!Word.BorderType:enum'
               - name: BreakType
                 uid: 'word!Word.BreakType:enum'
+              - name: BuiltInStyleName
+                uid: 'word!Word.BuiltInStyleName:enum'
               - name: CellPaddingLocation
                 uid: 'word!Word.CellPaddingLocation:enum'
               - name: ChangeTrackingMode
                 uid: 'word!Word.ChangeTrackingMode:enum'
+              - name: ChangeTrackingState
+                uid: 'word!Word.ChangeTrackingState:enum'
               - name: ChangeTrackingVersion
                 uid: 'word!Word.ChangeTrackingVersion:enum'
+              - name: CloseBehavior
+                uid: 'word!Word.CloseBehavior:enum'
               - name: CommentChangeType
                 uid: 'word!Word.CommentChangeType:enum'
               - name: ContentControlAppearance
@@ -49,12 +55,18 @@ items:
                 uid: 'word!Word.EventSource:enum'
               - name: EventType
                 uid: 'word!Word.EventType:enum'
+              - name: FieldKind
+                uid: 'word!Word.FieldKind:enum'
+              - name: FieldType
+                uid: 'word!Word.FieldType:enum'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
                 uid: 'word!Word.ImageFormat:enum'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
+              - name: ListBuiltInNumberStyle
+                uid: 'word!Word.ListBuiltInNumberStyle:enum'
               - name: ListBullet
                 uid: 'word!Word.ListBullet:enum'
               - name: ListLevelType
@@ -65,12 +77,18 @@ items:
                 uid: 'word!Word.LocationRelation:enum'
               - name: NoteItemType
                 uid: 'word!Word.NoteItemType:enum'
+              - name: OutlineLevel
+                uid: 'word!Word.OutlineLevel:enum'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
+              - name: SaveBehavior
+                uid: 'word!Word.SaveBehavior:enum'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
-              - name: Style
-                uid: 'word!Word.Style:enum'
+              - name: StyleType
+                uid: 'word!Word.StyleType:enum'
+              - name: TrailingCharacter
+                uid: 'word!Word.TrailingCharacter:enum'
               - name: UnderlineType
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
@@ -95,10 +113,24 @@ items:
             uid: 'word!Word.CommentReplyCollection:class'
           - name: ContentControl
             uid: 'word!Word.ContentControl:class'
+          - name: ContentControlAddedEventArgs
+            uid: 'word!Word.ContentControlAddedEventArgs:interface'
           - name: ContentControlCollection
             uid: 'word!Word.ContentControlCollection:class'
+          - name: ContentControlDataChangedEventArgs
+            uid: 'word!Word.ContentControlDataChangedEventArgs:interface'
+          - name: ContentControlDeletedEventArgs
+            uid: 'word!Word.ContentControlDeletedEventArgs:interface'
+          - name: ContentControlEnteredEventArgs
+            uid: 'word!Word.ContentControlEnteredEventArgs:interface'
           - name: ContentControlEventArgs
             uid: 'word!Word.ContentControlEventArgs:interface'
+          - name: ContentControlExitedEventArgs
+            uid: 'word!Word.ContentControlExitedEventArgs:interface'
+          - name: ContentControlOptions
+            uid: 'word!Word.ContentControlOptions:interface'
+          - name: ContentControlSelectionChangedEventArgs
+            uid: 'word!Word.ContentControlSelectionChangedEventArgs:interface'
           - name: CustomProperty
             uid: 'word!Word.CustomProperty:class'
           - name: CustomPropertyCollection
@@ -125,12 +157,20 @@ items:
             uid: 'word!Word.InlinePicture:class'
           - name: InlinePictureCollection
             uid: 'word!Word.InlinePictureCollection:class'
+          - name: InsertFileOptions
+            uid: 'word!Word.InsertFileOptions:interface'
           - name: List
             uid: 'word!Word.List:class'
           - name: ListCollection
             uid: 'word!Word.ListCollection:class'
           - name: ListItem
             uid: 'word!Word.ListItem:class'
+          - name: ListLevel
+            uid: 'word!Word.ListLevel:class'
+          - name: ListLevelCollection
+            uid: 'word!Word.ListLevelCollection:class'
+          - name: ListTemplate
+            uid: 'word!Word.ListTemplate:class'
           - name: NoteItem
             uid: 'word!Word.NoteItem:class'
           - name: NoteItemCollection
@@ -139,6 +179,8 @@ items:
             uid: 'word!Word.Paragraph:class'
           - name: ParagraphCollection
             uid: 'word!Word.ParagraphCollection:class'
+          - name: ParagraphFormat
+            uid: 'word!Word.ParagraphFormat:class'
           - name: Range
             uid: 'word!Word.Range:class'
           - name: RangeCollection
@@ -155,6 +197,10 @@ items:
             uid: 'word!Word.Setting:class'
           - name: SettingCollection
             uid: 'word!Word.SettingCollection:class'
+          - name: Style
+            uid: 'word!Word.Style:class'
+          - name: StyleCollection
+            uid: 'word!Word.StyleCollection:class'
           - name: Table
             uid: 'word!Word.Table:class'
           - name: TableBorder
@@ -553,10 +599,16 @@ items:
             href: ../../manifest/getstarted.md
           - name: Group
             href: ../../manifest/group.md
+          - name: Host
+            href: ../../manifest/host.md
           - name: Hosts
             href: ../../manifest/hosts.md
           - name: Icon
             href: ../../manifest/icon.md
+          - name: Image
+            href: ../../manifest/image.md
+          - name: Images
+            href: ../../manifest/images.md
           - name: Item
             href: ../../manifest/item.md
           - name: Items
@@ -565,12 +617,16 @@ items:
             href: ../../manifest/launchevent.md
           - name: LaunchEvents
             href: ../../manifest/launchevents.md
+          - name: LongStrings
+            href: ../../manifest/longstrings.md
           - name: MobileFormFactor
             href: ../../manifest/mobileformfactor.md
           - name: OfficeMenu
             href: ../../manifest/officemenu.md
           - name: OfficeTab
             href: ../../manifest/officetab.md
+          - name: Override
+            href: ../../manifest/override.md
           - name: OverriddenByRibbonApi
             href: ../../manifest/overriddenbyribbonapi.md
           - name: Page
@@ -585,12 +641,20 @@ items:
             href: ../../manifest/scopes.md
           - name: Script
             href: ../../manifest/script.md
+          - name: ShortStrings
+            href: ../../manifest/shortstrings.md
           - name: SourceLocation (version overrides)
             href: ../../manifest/customfunctionssourcelocation.md
+          - name: String
+            href: ../../manifest/string.md
           - name: Supertip
             href: ../../manifest/supertip.md
           - name: SupportsSharedFolders
             href: ../../manifest/supportssharedfolders.md
+          - name: Url
+            href: ../../manifest/url.md
+          - name: Urls
+            href: ../../manifest/urls.md
           - name: WebApplicationInfo
             href: ../../manifest/webapplicationinfo.md
   - name: Requirement sets
@@ -610,6 +674,9 @@ items:
             displayName: Excel
           - name: ExcelApi online-only requirement set
             href: ../../requirement-sets/excel/excel-api-online-requirement-set.md
+            displayName: Excel
+          - name: ExcelApi 1.17 requirement set
+            href: ../../requirement-sets/excel/excel-api-1-17-requirement-set.md
             displayName: Excel
           - name: ExcelApi 1.16 requirement set
             href: ../../requirement-sets/excel/excel-api-1-16-requirement-set.md
@@ -686,6 +753,22 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.13
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/outlook-requirement-set-1.13.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.13/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.13/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.12
             items:
               - name: Overview
@@ -917,6 +1000,9 @@ items:
             displayName: Word
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.5 requirement set
+            href: ../../requirement-sets/word/word-api-1-5-requirement-set.md
             displayName: Word
           - name: WordApi 1.4 requirement set
             href: ../../requirement-sets/word/word-api-1-4-requirement-set.md

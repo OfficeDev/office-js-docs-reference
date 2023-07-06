@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```javascript
+  ```TypeScript
   // Define an insight notification message.
   const insightMessage = {
       type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,

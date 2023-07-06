@@ -139,7 +139,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
@@ -224,7 +224,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-title-format.yaml
@@ -295,7 +295,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           // Set the text of the chart title to "My Chart" and display it as an overlay on the chart.
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    

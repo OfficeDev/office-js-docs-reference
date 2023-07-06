@@ -1,0 +1,284 @@
+### YamlMime:TSType
+name: Word.StyleCollection
+uid: 'word!Word.StyleCollection:class'
+package: word!
+fullName: Word.StyleCollection
+summary: 'Contains a collection of [Word.Style](xref:word!Word.Style:class) objects.'
+remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'word!Word.StyleCollection#context:member'
+    package: word!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="word!Word.RequestContext:class" />'
+  - name: items
+    uid: 'word!Word.StyleCollection#items:member'
+    package: word!
+    fullName: items
+    summary: Gets the loaded child items in this collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly items: Word.Style[];'
+      return:
+        type: '<xref uid="word!Word.Style:class" />[]'
+methods:
+  - name: getByName(name)
+    uid: 'word!Word.StyleCollection#getByName:member(1)'
+    package: word!
+    fullName: getByName(name)
+    summary: Get the style object by its name.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getByName(name: string): Word.Style;'
+      parameters:
+        - id: name
+          description: Required. The style name.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Style:class" />'
+        description: ''
+  - name: getByNameOrNullObject(name)
+    uid: 'word!Word.StyleCollection#getByNameOrNullObject:member(1)'
+    package: word!
+    fullName: getByNameOrNullObject(name)
+    summary: >-
+      If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set
+      to `true`<!-- -->.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Adds a new style.
+
+      await Word.run(async (context) => {
+        const newStyleName = $("#new-style-name").val() as string;
+        if (newStyleName == "") {
+          console.warn("Enter a style name to add.");
+          return;
+        }
+
+        const style = context.document.getStyles().getByNameOrNullObject(newStyleName);
+        style.load();
+        await context.sync();
+
+        if (!style.isNullObject) {
+          console.warn(
+            `There's an existing style with the same name '${newStyleName}'! Please provide another style name.`
+          );
+          return;
+        }
+
+        const newStyleType = ($("#new-style-type").val() as unknown) as Word.StyleType;
+        context.document.addStyle(newStyleName, newStyleType);
+        await context.sync();
+        
+        console.log(newStyleName + " has been added to the style list.");
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getByNameOrNullObject(name: string): Word.Style;'
+      parameters:
+        - id: name
+          description: Required. The style name.
+          type: string
+      return:
+        type: '<xref uid="word!Word.Style:class" />'
+        description: ''
+  - name: getCount()
+    uid: 'word!Word.StyleCollection#getCount:member(1)'
+    package: word!
+    fullName: getCount()
+    summary: Gets the number of the styles in the collection.
+    remarks: >-
+      \[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-styles.yaml
+
+      // Gets the number of styles.
+
+      await Word.run(async (context) => {
+        const styles = context.document.getStyles();
+        const count = styles.getCount();
+        await context.sync();
+
+        console.log(`Number of styles: ${count.value}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type: '<xref uid="office!OfficeExtension.ClientResult:class" />&lt;number&gt;'
+        description: ''
+  - name: getItem(index)
+    uid: 'word!Word.StyleCollection#getItem:member(1)'
+    package: word!
+    fullName: getItem(index)
+    summary: Gets a style object by its index in the collection.
+    remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItem(index: number): Word.Style;'
+      parameters:
+        - id: index
+          description: A number that identifies the index location of a style object.
+          type: number
+      return:
+        type: '<xref uid="word!Word.Style:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'word!Word.StyleCollection#load:member(1)'
+    package: word!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        load(options?: Word.Interfaces.StyleCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.StyleCollection;
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: >-
+            <xref uid="word!Word.Interfaces.StyleCollectionLoadOptions:interface" /> & <xref
+            uid="word!Word.Interfaces.CollectionLoadOptions:interface" />
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'word!Word.StyleCollection#load:member(2)'
+    package: word!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.StyleCollection;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'word!Word.StyleCollection#load:member(3)'
+    package: word!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.StyleCollection;'
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: '<xref uid="office!OfficeExtension.LoadOption:interface" />'
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'word!Word.StyleCollection#toJSON:member(1)'
+    package: word!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.StyleCollectionData;'
+      return:
+        type: '<xref uid="word!Word.Interfaces.StyleCollectionData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'word!Word.StyleCollection#track:member(1)'
+    package: word!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.StyleCollection;'
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'word!Word.StyleCollection#untrack:member(1)'
+    package: word!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.StyleCollection;'
+      return:
+        type: '<xref uid="word!Word.StyleCollection:class" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

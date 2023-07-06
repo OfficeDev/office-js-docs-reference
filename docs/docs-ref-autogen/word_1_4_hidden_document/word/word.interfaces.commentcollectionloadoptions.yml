@@ -51,7 +51,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentCollectionLoadOptions#content:member'
     package: word!
     fullName: content
-    summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content as plain text.'
+    summary: 'For EACH ITEM in the collection: Specifies the comment''s content as plain text.'
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -63,7 +63,7 @@ properties:
     uid: 'word!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member'
     package: word!
     fullName: contentRange
-    summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content range.'
+    summary: 'For EACH ITEM in the collection: Specifies the comment''s content range.'
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -100,7 +100,7 @@ properties:
     package: word!
     fullName: resolved
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment
+      For EACH ITEM in the collection: Specifies the comment thread's status. Setting to true resolves the comment
       thread. Getting a value of true means that the comment thread is resolved.
     remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

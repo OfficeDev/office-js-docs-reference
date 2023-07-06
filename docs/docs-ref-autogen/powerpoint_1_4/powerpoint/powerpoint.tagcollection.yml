@@ -50,7 +50,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
@@ -101,7 +101,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
@@ -155,7 +155,7 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/tags/tags.yaml
@@ -186,7 +186,7 @@ methods:
       content: 'getItem(key: string): PowerPoint.Tag;'
       parameters:
         - id: key
-          description: The ID of the tag.
+          description: The ID of the tag. The `key` parameter is case-sensitive.
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'
@@ -222,7 +222,7 @@ methods:
       content: 'getItemOrNullObject(key: string): PowerPoint.Tag;'
       parameters:
         - id: key
-          description: The ID of the tag.
+          description: The ID of the tag. The `key` parameter is case-sensitive.
           type: string
       return:
         type: '<xref uid="powerpoint!PowerPoint.Tag:class" />'

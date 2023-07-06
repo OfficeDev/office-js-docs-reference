@@ -675,15 +675,6 @@ Office.CustomProperties#saveAsync:member(1):
             // Proceed to do the appropriate for your add-in.
         }
     }
-Office.DelayDeliveryTime:interface:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.EmailAddressDetails#appointmentResponse:member:
   - |-
     // The following sample provides the responses from required attendees.
@@ -867,7 +858,7 @@ Office.Mailbox#makeEwsRequestAsync:member(1):
             '               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"' +
             '               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">' +
             '  <soap:Header>' +
-            '    <RequestServerVersion Version="Exchange2013" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
+            '    <RequestServerVersion Version="Exchange2016" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" soap:mustUnderstand="0" />' +
             '  </soap:Header>' +
             '  <soap:Body>' +
             '    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">' +
@@ -1129,15 +1120,6 @@ Office.MessageCompose#cc:member:
     function callback(asyncResult) {
         const arrayOfCcRecipients = asyncResult.value;
     }
-Office.MessageCompose#delayDeliveryTime:member:
-  - |-
-    const date_1 = new Date();
-    const date_2 = new Date(date_1.getTime() + 2*60000);  // Sending with 2-minute delay.
-    Office.context.mailbox.item.delayDeliveryTime.setAsync(
-        date_2,
-        function(callback) {
-            console.log(callback);
-        });
 Office.MessageCompose#getInitializationContextAsync:member(1):
   - |-
     // Get the initialization context (if present).
@@ -1695,6 +1677,33 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
+Office.SensitivityLabelDetails:interface:
+  - |-
+    // Check whether the catalog of sensitivity labels is enabled on the current mailbox.
+    Office.context.sensitivityLabelsCatalog.getIsEnabledAsync((asyncResult) => {
+        // If the catalog is enabled, get all available sensitivity labels.
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded && asyncResult.value == true) {
+            Office.context.sensitivityLabelsCatalog.getAsync((asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                    const catalog = asyncResult.value;
+                    console.log("Sensitivity Labels Catalog:");
+                    
+                    // Log the details of the available sensitivity labels to the console.
+                    catalog.forEach((sensitivityLabel) => {
+                        console.log(`Name: ${sensitivityLabel.name}`);
+                        console.log(`ID: ${sensitivityLabel.id}`);
+                        console.log(`Tooltip: ${sensitivityLabel.tooltip}`);
+                        console.log(`Color: ${sensitivityLabel.color}`);
+                        console.log(`Sublabels: ${JSON.stringify(sensitivityLabel.children)}`);
+                    });
+                } else {
+                    console.log("Action failed with error: " + asyncResult.error.message);
+                }
+            });
+        } else {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
 Office.SeriesTime#getDuration:member(1):
   - |-
     // This example gets the duration of a usual instance in a recurring appointment series.

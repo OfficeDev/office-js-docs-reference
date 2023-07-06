@@ -4,7 +4,35 @@ uid: 'word!Word.BorderType:enum'
 package: word!
 fullName: Word.BorderType
 summary: ''
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+  // Gets border details about the first of the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable = context.document.body.tables.getFirst();
+    const firstCell = firstTable.getCell(0, 0);
+    const borderLocation = "Left";
+    const border = firstCell.getBorder(borderLocation);
+    border.load(["type", "color", "width"]);
+    await context.sync();
+
+    console.log(`Details about the ${borderLocation} border of the first table's first cell:`);
+    console.log(`- Color: ${border.color}`);
+    console.log(`- Type: ${border.type}`);
+    console.log(`- Width: ${border.width} points`);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 fields:

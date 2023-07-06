@@ -11,7 +11,7 @@ remarks: >-
   #### Examples
 
 
-  ```typescript
+  ```TypeScript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
@@ -36,7 +36,7 @@ properties:
     uid: 'word!Word.InlinePicture#altTextDescription:member'
     package: word!
     fullName: altTextDescription
-    summary: Gets or sets a string that represents the alternative text associated with the inline image.
+    summary: Specifies a string that represents the alternative text associated with the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -48,7 +48,7 @@ properties:
     uid: 'word!Word.InlinePicture#altTextTitle:member'
     package: word!
     fullName: altTextTitle
-    summary: Gets or sets a string that contains the title for the inline image.
+    summary: Specifies a string that contains the title for the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -74,7 +74,7 @@ properties:
     uid: 'word!Word.InlinePicture#height:member'
     package: word!
     fullName: height
-    summary: Gets or sets a number that describes the height of the inline image.
+    summary: Specifies a number that describes the height of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -86,7 +86,7 @@ properties:
     uid: 'word!Word.InlinePicture#hyperlink:member'
     package: word!
     fullName: hyperlink
-    summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    summary: 'Specifies a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -98,7 +98,7 @@ properties:
     uid: 'word!Word.InlinePicture#lockAspectRatio:member'
     package: word!
     fullName: lockAspectRatio
-    summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    summary: Specifies a value that indicates whether the inline image retains its original proportions when you resize it.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -198,8 +198,8 @@ properties:
     fullName: parentTableOrNullObject
     summary: >-
       Gets the table that contains the inline image. If it is not contained in a table, then this method will return an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
-      and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
@@ -213,7 +213,7 @@ properties:
     uid: 'word!Word.InlinePicture#width:member'
     package: word!
     fullName: width
-    summary: Gets or sets a number that describes the width of the inline image.
+    summary: Specifies a number that describes the width of the inline image.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -239,7 +239,7 @@ methods:
     uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
     package: word!
     fullName: getBase64ImageSrc()
-    summary: Gets the base64 encoded string representation of the inline image.
+    summary: Gets the Base64-encoded string representation of the inline image.
     remarks: >-
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -247,12 +247,12 @@ methods:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
-      // Get the first image in the document.
+      // Gets the first image in the document.
 
       await Word.run(async (context) => {
         const firstPicture = context.document.body.inlinePictures.getFirst();
@@ -260,7 +260,7 @@ methods:
 
         await context.sync();
         console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        // Get the image encoded as base64.
+        // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
         await context.sync();
@@ -285,7 +285,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -327,7 +327,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       await Word.run(async (context) => {
@@ -430,7 +430,7 @@ methods:
         | "Before" | "After"): Word.Range;
       parameters:
         - id: base64File
-          description: Required. The base64 encoded content of a .docx file.
+          description: Required. The Base64-encoded content of a .docx file.
           type: string
         - id: insertLocation
           description: Required. The value must be 'Before' or 'After'.
@@ -478,7 +478,7 @@ methods:
         Word.InsertLocation.before | Word.InsertLocation.after | "Replace" | "Before" | "After"): Word.InlinePicture;
       parameters:
         - id: base64EncodedImage
-          description: Required. The base64 encoded image to be inserted.
+          description: Required. The Base64-encoded image to be inserted.
           type: string
         - id: insertLocation
           description: 'Required. The value must be ''Replace'', ''Before'', or ''After''.'
