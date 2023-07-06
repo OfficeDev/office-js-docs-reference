@@ -29,7 +29,7 @@ Office Add-ins run across multiple versions of Office. The following table lists
 
 > [!NOTE]
 >
-> - IdentityAPI 1.3 isn't support in Outlook on Android nor on iOS.
+> - IdentityAPI 1.3 isn't supported in Outlook on Android or on iOS.
 > - In an Outlook add-in using event-based activation, the [OfficeRuntime.Auth interface](/javascript/api/office-runtime/officeruntime.auth) is supported in Outlook from Version 2108 (Build 14326.20258) on Windows. The [Office.Auth interface](/javascript/api/office/office.auth) is supported from Version 2111 (Build 14701.20000). For more details according to your version, see the update history page for [Office 2021](/officeupdates/update-history-office-2021) or [Microsoft 365](/officeupdates/update-history-office365-proplus-by-date) and how to [find your Office client version and update channel](https://support.microsoft.com/office/932788b8-a3ce-44bf-bb09-e334518b8b19).
 
 ## Office versions and build numbers
