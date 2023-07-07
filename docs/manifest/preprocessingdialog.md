@@ -37,7 +37,7 @@ None.
 | **Description** | Yes | Specifies the custom text that appears in the pre-processing dialog. Its **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [LongStrings](longstrings.md) element under the [Resources](resources.md) element. |
 | [ReportingOptions](reportingoptions.md) | No | Lists the options a user can select from the pre-processing dialog to provide a reason for reporting a message. |
 | **FreeTextLabel** | No | Adds a text box to the pre-processing dialog to allow users to provide additional information on the message they're reporting. Its **resid** attribute sets the title of the text box. The **resid** attribute must be set to the value of the **id** attribute of a [String](string.md) in the [ShortStrings](shortstrings.md) element under the [Resources](resources.md) element. |
-| [MoreInfo](moreinfo.md) | No | Specifies the custom text and URL to direct users to informational resources. The custom text and URL configured in this element appear below the text provided in the **\<Description\>** element. |
+| [MoreInfo](moreinfo.md) | No | Specifies the custom text and URL to provide informational resources to the users. The custom text and URL configured in this element appear below the text provided in the **\<Description\>** element. |
 
 ## Example
 
