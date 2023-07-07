@@ -96,6 +96,9 @@ properties:
 
       If type is `ProgressIndicator`<!-- -->, the developer should remove or replace the progress indicator when the
       action is complete.
+
+
+      **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
     remarks: ''
     isPreview: false
     isDeprecated: false

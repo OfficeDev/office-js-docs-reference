@@ -303,6 +303,11 @@ properties:
       -->**: Message Compose
 
 
+      **Important**: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
+      [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
       #### Examples
 
 
