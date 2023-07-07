@@ -97,6 +97,8 @@ export declare namespace Office {
             InformationalMessage = "informationalMessage",
             /**
              * The notification message is an error message.
+             * 
+             * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
              */
             ErrorMessage = "errorMessage",
                     }
@@ -4077,6 +4079,8 @@ export declare namespace Office {
          * Including them will result in an `ArgumentException`.
          *
          * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.
+         * 
+         * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          */
         type: MailboxEnums.ItemNotificationMessageType | string;
         /**
@@ -4118,6 +4122,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -4125,12 +4136,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -4147,6 +4153,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -4154,12 +4167,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.

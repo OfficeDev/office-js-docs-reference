@@ -146,6 +146,8 @@ export declare namespace Office {
             InformationalMessage = "informationalMessage",
             /**
              * The notification message is an error message.
+             * 
+             * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
              */
             ErrorMessage = "errorMessage",
                     }
@@ -3313,6 +3315,9 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: This interface is supported in Outlook on Android and on iOS. For a sample scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
      */
     export interface From {
         /**
@@ -3329,7 +3334,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * **Important**:
+         *
+         * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
          * @param options - An object literal that contains one or more of the following properties:-
@@ -3353,7 +3363,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * **Important**:
+         *
+         * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -4309,6 +4324,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          */
         from: From;
         
@@ -5658,6 +5676,8 @@ export declare namespace Office {
          * Including them will result in an `ArgumentException`.
          *
          * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.
+         * 
+         * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          */
         type: MailboxEnums.ItemNotificationMessageType | string;
         /**
@@ -5699,6 +5719,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -5706,12 +5733,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -5728,6 +5750,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -5735,12 +5764,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.

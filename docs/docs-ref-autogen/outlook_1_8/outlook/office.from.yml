@@ -16,6 +16,11 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
+
+  **Important**: This interface is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement
+  event-based activation in Outlook mobile
+  add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
 isPreview: false
 isDeprecated: false
 type: interface
@@ -47,8 +52,16 @@ methods:
       -->**: Compose
 
 
-      **Important**: A `recipientType` property value isn't returned by the getAsync method. The email sender is
-      always a user whose email address is on the Exchange server.
+      **Important**:
+
+
+      - This method is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement event-based
+      activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
+      - A `recipientType` property value isn't returned by the `getAsync` method. The email sender is always a user
+      whose email address is on the Exchange server.
 
 
       #### Examples
@@ -119,8 +132,16 @@ methods:
       -->**: Compose
 
 
-      **Important**: A `recipientType` property value isn't returned by the getAsync method. The email sender is
-      always a user whose email address is on the Exchange server.
+      **Important**:
+
+
+      - This method is supported in Outlook on Android and on iOS. For a sample scenario, see [Implement event-based
+      activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
+      - A `recipientType` property value isn't returned by the `getAsync` method. The email sender is always a user
+      whose email address is on the Exchange server.
     isPreview: false
     isDeprecated: false
     syntax:
