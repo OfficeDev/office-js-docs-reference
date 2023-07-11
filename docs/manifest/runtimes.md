@@ -1,8 +1,7 @@
 ---
 title: Runtimes in the manifest file 
 description: The Runtimes element specifies your add-in's runtime.
-ms.date: 09/28/2021
-
+ms.date: 07/11/2023
 ms.localizationpriority: medium
 ---
 
@@ -25,6 +24,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 **Associated with these requirement sets**:
 
 - [SharedRuntime 1.1](../requirement-sets/common/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
+- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/outlook/autolaunch).)
+- [Mailbox preview](/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview) (When used in an Outlook add-in that implements integrated spam reporting (preview).)
 
 [!include[Runtimes support](../includes/runtimes-note.md)]
 
@@ -45,7 +46,6 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
 | [Runtime](runtime.md) | Yes |  The runtime for your add-in. **Important**: At present, you can only define one **\<Runtime\>** element. |
-
 
 ## See also
 

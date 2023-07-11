@@ -1,7 +1,7 @@
 ---
 title: Runtime in the manifest file
 description: The Runtime element configures your add-in to use a shared JavaScript runtime for its various components, for example, ribbon, task pane, custom functions.
-ms.date: 03/22/2022
+ms.date: 07/11/2023
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,8 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 **Associated with these requirement sets**:
 
 - [SharedRuntime 1.1](../requirement-sets/common/shared-runtime-requirement-sets.md) (Only when used in a task pane add-in.)
+- [Mailbox 1.10 and later](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) (When used in an Outlook add-in that implements [event-based activation](/office/dev/add-ins/outlook/autolaunch).)
+- [Mailbox preview](/javascript/api/requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview) (When used in an Outlook add-in that implements integrated spam reporting (preview).)
 
 [!include[Runtimes support](../includes/runtimes-note.md)]
 
@@ -53,7 +55,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 Optional. Represents the length of time the add-in is allowed to run.
 
-**Available values**
+#### Available values
 
 `short`: Default. Used only for Outlook event-based activation add-ins. After the add-in is activated, it will run for a maximum amount of time as specified by the platform. Currently, that's around 5 minutes. This is the only value supported by Outlook.
 
