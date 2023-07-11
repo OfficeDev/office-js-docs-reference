@@ -90,7 +90,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
       Office.context.mailbox.item.internetHeaders.getAsync(
-        ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+        ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
         function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
             console.log("Selected headers: " + JSON.stringify(asyncResult.value));
@@ -205,7 +205,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
       Office.context.mailbox.item.internetHeaders.removeAsync(
-        ["x-best-vegetable", "x-nonexistent-header"],
+        ["best-vegetable", "nonexistent-header"],
         function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
             console.log("Successfully removed selected headers");
@@ -325,7 +325,7 @@ methods:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
       Office.context.mailbox.item.internetHeaders.setAsync(
-        { "x-preferred-fruit": "orange", "x-preferred-vegetable": "broccoli", "x-best-vegetable": "spinach" },
+        { "preferred-fruit": "orange", "preferred-vegetable": "broccoli", "best-vegetable": "spinach" },
         function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
             console.log("Successfully set headers");
