@@ -163,7 +163,7 @@ Add-ins are supported in Outlook on the following platforms.
 
 ## Reference the Office JavaScript API production library
 
-To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js). For information on how to use preview APIs, see [Use preview APIs](#use-preview-apis).
+To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
 
 ## Test preview APIs
 
