@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 06/29/2023
+ms.date: 07/13/2023
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -146,7 +146,7 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>6</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For more details, see [code considerations when adding support for add-in commands in Outlook on mobile devices](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
 >
-> <sup>7</sup> Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
+> <sup>7</sup> Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets, such as event-based activation. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
 >
 > <sup>8</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 

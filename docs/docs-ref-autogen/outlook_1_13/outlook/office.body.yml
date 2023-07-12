@@ -1247,20 +1247,7 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
     package: outlook!
     fullName: 'setSignatureAsync(data, options, callback)'
-    summary: >-
-      Adds or replaces the signature of the item body.
-
-
-      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
-
-
-      **Important**: If your add-in implements the [event-based activation feature using \`LaunchEvent\` in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, and calls
-      `setSignatureAsync` in the event handler, the following behavior applies.
-
-
-      - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the
-      form. This means if the user closes the form without making other edits, they won't be prompted to save changes.
+    summary: Adds or replaces the signature of the item body.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1273,6 +1260,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - In Outlook on the web, `setSignatureAsync` only works on messages.
+
+
+      - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+      [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
+      - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
+      [event-based activation feature using \`LaunchEvent\` in the
+      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
+      item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
+      the form without making other edits, they won't be prompted to save changes.
 
 
       **Errors**:
@@ -1370,20 +1375,7 @@ methods:
     uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
     package: outlook!
     fullName: 'setSignatureAsync(data, callback)'
-    summary: >-
-      Adds or replaces the signature of the item body.
-
-
-      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
-
-
-      **Important**: If your add-in implements the [event-based activation feature using \`LaunchEvent\` in the
-      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->, and calls
-      `setSignatureAsync` in the event handler, the following behavior applies.
-
-
-      - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the
-      form. This means if the user closes the form without making other edits, they won't be prompted to save changes.
+    summary: Adds or replaces the signature of the item body.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1396,6 +1388,24 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**:
+
+
+      - In Outlook on the web, `setSignatureAsync` only works on messages.
+
+
+      - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+      [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
+      - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
+      [event-based activation feature using \`LaunchEvent\` in the
+      manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
+      item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
+      the form without making other edits, they won't be prompted to save changes.
 
 
       **Errors**:

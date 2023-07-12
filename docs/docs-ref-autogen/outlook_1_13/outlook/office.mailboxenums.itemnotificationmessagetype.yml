@@ -37,7 +37,10 @@ fields:
   - name: ErrorMessage
     uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
     package: outlook!
-    summary: The notification message is an error message.
+    summary: |-
+      The notification message is an error message.
+
+      **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
     value: '"errorMessage"'
   - name: InformationalMessage
     uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'

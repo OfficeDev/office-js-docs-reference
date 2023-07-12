@@ -457,6 +457,8 @@ export declare namespace Office {
             InformationalMessage = "informationalMessage",
             /**
              * The notification message is an error message.
+             *
+             * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
              */
             ErrorMessage = "errorMessage",
             /**
@@ -2892,13 +2894,13 @@ export declare namespace Office {
          * Provides access to the optional attendees of an event. The type of object and level of access depend on the mode of the current item.
          *
          * The `optionalAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-         * each optional attendee to the meeting. Collection size limits:
+         * each optional attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 members
+         * - Windows: 500 attendees
          *
-         * - Classic Mac UI: 100 members
+         * - Android, classic Mac UI, iOS: 100 attendees
          *
-         * - New Mac UI, web browser, Android: No limit
+         * - New Mac UI, web browser: No limit
          *
          * @remarks
          *
@@ -2940,13 +2942,13 @@ export declare namespace Office {
          * Provides access to the required attendees of an event. The type of object and level of access depend on the mode of the current item.
          *
          * The `requiredAttendees` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-         * each required attendee to the meeting. Collection size limits:
+         * each required attendee to the meeting. The maximum number of attendees returned varies per Outlook client.
          *
-         * - Windows: 500 members
+         * - Windows: 500 attendees
          *
-         * - Classic Mac UI: 100 members
+         * - Android, classic Mac UI, iOS: 100 attendees
          *
-         * - New Mac UI, web browser, Android: No limit
+         * - New Mac UI, web browser: No limit
          *
          * @remarks
          *
@@ -4262,21 +4264,24 @@ export declare namespace Office {
         /**
          * Adds or replaces the signature of the item body.
          *
-         * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
-         *
-         * **Important**: If your add-in implements the 
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest},
-         * and calls `setSignatureAsync` in the event handler, the following behavior applies.
-         *
-         * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
-         * if the user closes the form without making other edits, they won't be prompted to save changes.
-         *
          * @remarks
          * [Api set: Mailbox 1.10]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, `setSignatureAsync` only works on messages.
+         * 
+         * - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}.
+         * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
+         * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
          * **Errors**:
          *
@@ -4296,21 +4301,24 @@ export declare namespace Office {
         /**
          * Adds or replaces the signature of the item body.
          *
-         * **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
-         *
-         * **Important**: If your add-in implements the 
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest},
-         * and calls `setSignatureAsync` in the event handler, the following behavior applies.
-         *
-         * - When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
-         * if the user closes the form without making other edits, they won't be prompted to save changes.
-         *
          * @remarks
          * [Api set: Mailbox 1.10]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, `setSignatureAsync` only works on messages.
+         * 
+         * - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation feature using `LaunchEvent` in the manifest}.
+         * When the user composes a new item (including reply or forward), the signature is set but doesn't modify the form. This means
+         * if the user closes the form without making other edits, they won't be prompted to save changes.
          *
          * **Errors**:
          *
@@ -4824,6 +4832,151 @@ export declare namespace Office {
         OWAView: MailboxEnums.OWAView | "OneColumn" | "TwoColumns" | "ThreeColumns";
     }
     /**
+     * Provides properties to temporarily set the content displayed in the body or subject of a message in read mode. 
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface Display {
+        /**
+         * Gets an object to temporarily set the content displayed in the body of a message in read mode.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        body: DisplayedBody;
+        /**
+         * Gets an object to temporarily set the content displayed in the subject of a message in read mode.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @beta
+         */
+        subject: DisplayedSubject;
+    }
+    /**
+     * Provides a method to temporarily set the content displayed in the body of a message in read mode.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface DisplayedBody {
+        /**
+         * Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * closes the window of the current message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Recommended**: Call
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-gettypeasync-member(1) | Office.context.mailbox.item.body.getTypeAsync},
+         * then pass the returned value to the `options.coercionType` parameter.
+         *
+         * @param data - The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000 characters.
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         *        `coercionType`: The format of the data to be temporarily displayed. The string in the `data` parameter will be converted to this format.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
+         */
+        setAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Temporarily sets the content displayed in the body of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * closes the window of the current message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param data - The string to be temporarily displayed in the body of a message. The string is limited to 1,000,000 characters.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         *
+         * @beta
+         */
+        setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Provides a method to temporarily set the content displayed in the subject of a message in read mode.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+     *
+     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+     *
+     * @beta
+     */
+    export interface DisplayedSubject {
+        /**
+         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * closes the window of the current message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param data - The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(data: string, options: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        /**
+         * Temporarily sets the content displayed in the subject of a message in read mode. The set content will remain visible until the user switches to a different messsage or
+         * closes the window of the current message.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param data - The string to be temporarily displayed in the subject of a message. The string is limited to 255 characters.
+         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *        which is an `Office.AsyncResult` object. Any errors encountered will be provided in the `asyncResult.error` property.
+         */
+        setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
      * Provides the email properties of the sender or specified recipients of an email message or appointment.
      *
      * @remarks
@@ -5095,6 +5248,9 @@ export declare namespace Office {
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
      *
      * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+     *
+     * **Important**: This interface is supported in Outlook on Android and on iOS. For a sample scenario, see
+     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
      */
     export interface From {
         /**
@@ -5111,7 +5267,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * **Important**:
+         *
+         * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
          * @param options - An object literal that contains one or more of the following properties:-
@@ -5135,7 +5296,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Important**: A `recipientType` property value isn't returned by the getAsync method.
+         * **Important**:
+         *
+         * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
+         * 
+         * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
@@ -6821,6 +6987,9 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
          */
         from: From;
         /**
@@ -7024,15 +7193,24 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
-         * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
-         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS.
+         *
+         * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
+         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
+         *
+         * - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
+         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}. 
          *
          * **Errors**:
          *
@@ -7041,11 +7219,6 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-         *
-         * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          *
          * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -7065,15 +7238,24 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the same session.
          *
-         * **Note**: If you're using a data URL API (e.g., `readAsDataURL`), you need to strip out the data URL prefix then send the rest of the string to this API.
-         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
-         *
          * @remarks
          * [Api set: Mailbox 1.8]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**:
+         *
+         * - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS.
+         *
+         * - If you're using a data URL API (for example, `readAsDataURL`), you need to strip out the data URL prefix, then send the rest of the string to this API.
+         * For example, if the full string is represented by `data:image/svg+xml;base64,<rest of Base64 string>`, remove `data:image/svg+xml;base64,`.
+         *
+         * - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
+         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
+         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}. 
          *
          * **Errors**:
          *
@@ -7082,11 +7264,6 @@ export declare namespace Office {
          * - `FileTypeNotSupported`: The attachment has an extension that isn't allowed.
          *
          * - `NumberOfAttachmentsExceeded`: The message or appointment has too many attachments.
-         *
-         * **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first get the current item body using the
-         * {@link https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1) | Office.context.mailbox.item.body.getAsync} 
-         * method before inserting the image using `addFileAttachmentFromBase64Async`. Otherwise, the image won't render in the body once it's inserted.
-         * For further guidance, see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file | Attach a file}.
          *
          * @param base64File - The Base64-encoded content of an image or file to be added to an email or event. The maximum length of the encoded string is 27,892,122 characters (about 25 MB).
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -7297,10 +7474,15 @@ export declare namespace Office {
         /**
          * Disables the Outlook client signature.
          *
-         * For Windows and Mac rich clients, this API sets the signature under the "New Message" and "Replies/Forwards" sections
-         * for the sending account to "(none)", effectively disabling the signature.
-         * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
-         * If the signature is selected, this API call should disable it.
+         * The behavior of this method depends on which client the add-in is running.
+         *
+         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
+         * of the sending account is set to **(none)**.
+         *
+         * - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled.
+         * A signature that's selected is also disabled by the method.
+         * 
+         * - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -7308,6 +7490,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This method is supported in Message Compose on Outlook on Android and on iOS. 
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
@@ -7318,10 +7502,15 @@ export declare namespace Office {
         /**
          * Disables the Outlook client signature.
          *
-         * For Windows and Mac rich clients, this API sets the signature under the "New Message" and "Replies/Forwards" sections
-         * for the sending account to "(none)", effectively disabling the signature.
-         * For Outlook on the web, the API should disable the signature option for new mails, replies, and forwards.
-         * If the signature is selected, this API call should disable it.
+         * The behavior of this method depends on which client the add-in is running.
+         *
+         * - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards** sections
+         * of the sending account is set to **(none)**.
+         *
+         * - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled.
+         * A signature that's selected is also disabled by the method.
+         * 
+         * - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
          *
          * @remarks
          * [Api set: Mailbox 1.10]
@@ -7329,6 +7518,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This method is supported in Message Compose in Outlook on Android and on iOS. 
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
@@ -7437,6 +7628,8 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
          *
+         * **Important**: This method is supported in Outlook on Android and on iOS.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -7457,6 +7650,8 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose
+         *
+         * **Important**: This method is supported in Outlook on Android and on iOS.
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
@@ -8025,15 +8220,15 @@ export declare namespace Office {
          * current item.
          *
          * The `cc` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-         * each recipient listed on the **Cc** line of the message. Collection size limits:
+         * each recipient listed on the **Cc** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - Windows: 500 members
+         * - Windows: 500 recipients
          *
-         * - Classic Mac UI: 100 members
+         * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser: 20 members
+         * - Web browser: 20 recipients
          *
-         * - New Mac UI, Android: No limit
+         * - New Mac UI: No limit
          *
          * @remarks
          *
@@ -8081,6 +8276,19 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
          */
         dateTimeModified: Date;
+        /**
+         * Gets an object to temporarily set the content displayed in the body or subject of a message in read mode.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * 
+         * @beta
+         */
+        display: Display;
         /**
          * Gets the date and time that the appointment is to end.
          *
@@ -8323,15 +8531,15 @@ export declare namespace Office {
          * current item.
          *
          * The `to` property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for
-         * each recipient listed on the **To** line of the message. Collection size limits:
+         * each recipient listed on the **To** line of the message. The maximum number of recipients returned varies per Outlook client.
          *
-         * - Windows: 500 members
+         * - Windows: 500 recipients
          *
-         * - Classic Mac UI: 100 members
+         * - Android, classic Mac UI, iOS: 100 recipients
          *
-         * - Web browser: 20 members
+         * - Web browser: 20 recipients
          *
-         * - New Mac UI, Android: No limit
+         * - New Mac UI: No limit
          *
          * @remarks
          *
@@ -9124,6 +9332,8 @@ export declare namespace Office {
          * Including them will result in an `ArgumentException`.
          *
          * If type is `ProgressIndicator`, the developer should remove or replace the progress indicator when the action is complete.
+         *
+         * **Important**: Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          */
         type: MailboxEnums.ItemNotificationMessageType | string;
         /**
@@ -9177,6 +9387,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -9184,12 +9401,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -9206,6 +9418,13 @@ export declare namespace Office {
          *
          * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
          *
+         * @remarks
+         * [Api set: Mailbox 1.3]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Important**:
          *
          * - Only one notification of type {@link https://learn.microsoft.com/javascript/api/outlook/office.mailboxenums.itemnotificationmessagetype#fields | InsightMessage}
@@ -9213,12 +9432,7 @@ export declare namespace Office {
          *
          * - In modern Outlook on the web, you can add an `InsightMessage` notification only in Compose mode.
          *
-         * @remarks
-         * [Api set: Mailbox 1.3]
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - Only the `InformationalMessage` type is supported in Outlook on Android and on iOS.
          *
          * @param key - A developer-specified key used to reference this notification message.
          *             Developers can use it to modify this message later. It can't be longer than 32 characters.
@@ -9453,23 +9667,6 @@ export declare namespace Office {
         /**
          * Adds a recipient list to the existing recipients for an appointment or message.
          *
-         * The recipients parameter can be an array of one of the following:
-         *
-         * - Strings containing SMTP email addresses
-         *
-         * - {@link Office.EmailUser | EmailUser} objects
-         *
-         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
-         *
-         * Maximum number that can be added:
-         *
-         * - Windows: 100 recipients.
-         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
-         *
-         * - Classic Mac UI, web browser: 100 recipients
-         *
-         * - New Mac UI, Android: No limit
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
@@ -9477,11 +9674,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI),
+         * on the web, on Android, and on iOS. However, take note of the following:
+         *
+         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         *
+         * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
+         * supported.
+         *
+         * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
-         * @param recipients - The recipients to add to the recipients list.
+         * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses,
+         *        {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -9491,23 +9700,6 @@ export declare namespace Office {
         /**
          * Adds a recipient list to the existing recipients for an appointment or message.
          *
-         * The recipients parameter can be an array of one of the following:
-         *
-         * - Strings containing SMTP email addresses
-         *
-         * - {@link Office.EmailUser | EmailUser} objects
-         *
-         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
-         *
-         * Maximum number that can be added:
-         *
-         * - Windows: 100 recipients.
-         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
-         *
-         * - Classic Mac UI, web browser: 100 recipients
-         *
-         * - New Mac UI, Android: No limit
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
@@ -9515,11 +9707,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: With the `addAsync` method, you can add a maximum of 100 recipients to a mail item in Outlook on Windows, on Mac (classic UI),
+         * on the web, on Android, and on iOS. However, take note of the following:
+         *
+         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
+         *
+         * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
+         * supported.
+         *
+         * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
-         * @param recipients - The recipients to add to the recipients list.
+         * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses,
+         *        {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                 of type `Office.AsyncResult`. If adding the recipients fails, the `asyncResult.error` property will contain an error code.
          */
@@ -9527,54 +9731,51 @@ export declare namespace Office {
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
-         * objects. Collection size limits:
-         *
-         * - Windows, classic Mac UI, web browser: 500 members
-         *
-         * - New Mac UI, Android: No limit
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-         * 
-         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
-         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
-         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
-         * 
-         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
-         * 
+         *
+         * **Important**:
+         *
+         * The maximum number of recipients returned by this method varies per Outlook client.
+         *
+         * - Windows, web browser, Mac (classic UI): 500 recipients
+         *
+         * - Android, iOS: 100 recipients
+         *
+         * - Mac (new UI): No limit
+         *
+         * The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         *
          * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
-         * 
+         *
          * - A Teams meeting status icon appears before the recipient's name or email address.
-         * 
+         *
          * - A semicolon appears after the recipient's name or email address.
-         * 
+         *
          * - The recipient's name or email address is underlined or enclosed in a box.
-         * 
-         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         *
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from
          * the auto-complete list.
+         *
+         * In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name. For more details, see
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
          *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                 of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of
+         *                 {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          */
         getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the `asyncResult.value` property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails}
-         * objects. Collection size limits:
-         *
-         * - Windows, classic Mac UI, web browser: 500 members
-         *
-         * - New Mac UI, Android: No limit
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
@@ -9582,49 +9783,43 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
-         * **Important**: In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
-         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
-         * `EmailAddressDetails` object instead of the contact's saved name. For more details, refer to the
-         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
-         * 
-         * **Important**: The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
-         * 
+         * **Important**:
+         *
+         * The maximum number of recipients returned by this method varies per Outlook client.
+         *
+         * - Windows, web browser, Mac (classic UI): 500 recipients
+         *
+         * - Android, iOS: 100 recipients
+         *
+         * - Mac (new UI): No limit
+         *
+         * The `getAsync` method only returns recipients resolved by the Outlook client. A resolved recipient has the following characteristics.
+         *
          * - If the recipient has a saved entry in the sender's address book, Outlook resolves the email address to the recipient's saved display name.
-         * 
+         *
          * - A Teams meeting status icon appears before the recipient's name or email address.
-         * 
+         *
          * - A semicolon appears after the recipient's name or email address.
-         * 
+         *
          * - The recipient's name or email address is underlined or enclosed in a box.
-         * 
-         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from 
+         *
+         * To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a suggested contact or email address from
          * the auto-complete list.
          *
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter
-         *                 of type `Office.AsyncResult`. The `value` property of the result is an array of `EmailAddressDetails` objects.
+         * In Outlook on the web and on Windows, if a user creates a new message by activating a contact's email address link from their contact
+         * or profile card, your add-in's `Recipients.getAsync` call returns the contact's email address in the `displayName` property of the associated
+         * {@link Office.EmailAddressDetails | EmailAddressDetails} object instead of the contact's saved name. For more details, see
+         * {@link https://github.com/OfficeDev/office-js/issues/2201 | related GitHub issue}.
+         *
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`,
+         *                 of type `Office.AsyncResult`. The `asyncResult.value` property of the result is an array of
+         *                 {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          */
         getAsync(callback: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;
         /**
          * Sets a recipient list for an appointment or message.
          *
          * The `setAsync` method overwrites the current recipient list.
-         *
-         * The recipients parameter can be an array of one of the following:
-         *
-         * - Strings containing SMTP email addresses
-         *
-         * - {@link Office.EmailUser | EmailUser} objects
-         *
-         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
-         *
-         * Maximum number that can be set:
-         *
-         * - Windows: 100 recipients.
-         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
-         *
-         * - Classic Mac UI, web browser: 100 recipients
-         *
-         * - New Mac UI, Android: No limit
          *
          * @remarks
          * [Api set: Mailbox 1.1]
@@ -9633,11 +9828,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI),
+         * on the web, on Android, and on iOS. However, take note of the following:
+         *
+         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
+         *
+         * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported.
+         *
+         * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
-         * @param recipients - The recipients to add to the recipients list.
+         * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses,
+         *        {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
@@ -9650,23 +9857,6 @@ export declare namespace Office {
          *
          * The `setAsync` method overwrites the current recipient list.
          *
-         * The recipients parameter can be an array of one of the following:
-         *
-         * - Strings containing SMTP email addresses
-         *
-         * - {@link Office.EmailUser | EmailUser} objects
-         *
-         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
-         *
-         * Maximum number that can be set:
-         *
-         * - Windows: 100 recipients.
-         * **Note**: Can call API repeatedly but the maximum number of recipients in the target field on the item is 500 recipients.
-         *
-         * - Classic Mac UI, web browser: 100 recipients
-         *
-         * - New Mac UI, Android: No limit
-         *
          * @remarks
          * [Api set: Mailbox 1.1]
          *
@@ -9674,11 +9864,23 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: With the `setAsync` method, you can set a maximum of 100 recipients in Outlook on Windows, on Mac (classic UI),
+         * on the web, on Android, and on iOS. However, take note of the following:
+         *
+         * - In Outlook on Windows, on Mac (classic UI), and on the web, you can have a maximum of 500 recipients in a target field.
+         * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
+         *
+         * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported.
+         *
+         * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
+         *
          * **Errors**:
          *
          * - `NumberOfRecipientsExceeded`: The number of recipients exceeded 100 entries.
          *
-         * @param recipients - The recipients to add to the recipients list.
+         * @param recipients - The recipients to add to the recipients list. The array of recipients can contain strings of SMTP email addresses,
+         *        {@link Office.EmailUser | EmailUser} objects, or {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                 type `Office.AsyncResult`. If setting the recipients fails the `asyncResult.error` property will contain a code that
          *                 indicates any error that occurred while adding the data.

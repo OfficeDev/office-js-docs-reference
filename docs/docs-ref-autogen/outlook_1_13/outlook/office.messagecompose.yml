@@ -465,6 +465,11 @@ properties:
       -->**: Message Compose
 
 
+      **Important**: This property is supported in Outlook on Android and on iOS. For a sample scenario, see
+      [Implement event-based activation in Outlook mobile
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+
+
       #### Examples
 
 
@@ -526,7 +531,7 @@ properties:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
       Office.context.mailbox.item.internetHeaders.getAsync(
-        ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+        ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
         function (asyncResult) {
           if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
             console.log("Selected headers: " + JSON.stringify(asyncResult.value));
@@ -1192,11 +1197,6 @@ methods:
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
       same session.
-
-
-      **Note**: If you're using a data URL API (e.g., `readAsDataURL`<!-- -->), you need to strip out the data URL
-      prefix then send the rest of the string to this API. For example, if the full string is represented by
-      `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1211,6 +1211,26 @@ methods:
       -->**: Message Compose
 
 
+      **Important**:
+
+
+      - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS.
+
+
+      - If you're using a data URL API (for example, `readAsDataURL`<!-- -->), you need to strip out the data URL
+      prefix, then send the rest of the string to this API. For example, if the full string is represented by
+      `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
+
+
+      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
+      get the current item body using the
+      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
+      render in the body once it's inserted. For further guidance, see [Attach a
+      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      -->.
+
+
       **Errors**:
 
 
@@ -1221,15 +1241,6 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
-
-      **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you
-      must first get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
 
 
       #### Examples
@@ -1327,11 +1338,6 @@ methods:
 
       You can subsequently use the identifier with the `removeAttachmentAsync` method to remove the attachment in the
       same session.
-
-
-      **Note**: If you're using a data URL API (e.g., `readAsDataURL`<!-- -->), you need to strip out the data URL
-      prefix then send the rest of the string to this API. For example, if the full string is represented by
-      `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1346,6 +1352,26 @@ methods:
       -->**: Message Compose
 
 
+      **Important**:
+
+
+      - Adding an inline Base64 file to a messsage in compose mode is supported in Outlook on Android and on iOS.
+
+
+      - If you're using a data URL API (for example, `readAsDataURL`<!-- -->), you need to strip out the data URL
+      prefix, then send the rest of the string to this API. For example, if the full string is represented by
+      `data:image/svg+xml;base64,<rest of Base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
+
+
+      - If you're adding an inline Base64 image to the body of a message or appointment being composed, you must first
+      get the current item body using the
+      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
+      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
+      render in the body once it's inserted. For further guidance, see [Attach a
+      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
+      -->.
+
+
       **Errors**:
 
 
@@ -1356,15 +1382,6 @@ methods:
 
 
       - `NumberOfAttachmentsExceeded`<!-- -->: The message or appointment has too many attachments.
-
-
-      **Note**: If you're adding an inline Base64 image to the body of a message or appointment being composed, you
-      must first get the current item body using the
-      [Office.context.mailbox.item.body.getAsync](https://learn.microsoft.com/javascript/api/outlook/office.body#outlook-office-body-getasync-member(1))
-      method before inserting the image using `addFileAttachmentFromBase64Async`<!-- -->. Otherwise, the image won't
-      render in the body once it's inserted. For further guidance, see [Attach a
-      file](https://learn.microsoft.com/office/dev/add-ins/outlook/add-and-remove-attachments-to-an-item-in-a-compose-form#attach-a-file)<!--
-      -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1746,10 +1763,18 @@ methods:
       Disables the Outlook client signature.
 
 
-      For Windows and Mac rich clients, this API sets the signature under the "New Message" and "Replies/Forwards"
-      sections for the sending account to "(none)", effectively disabling the signature. For Outlook on the web, the API
-      should disable the signature option for new mails, replies, and forwards. If the signature is selected, this API
-      call should disable it.
+      The behavior of this method depends on which client the add-in is running.
+
+
+      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
+      sections of the sending account is set to **(none)**.
+
+
+      - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
+      selected is also disabled by the method.
+
+
+      - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1762,6 +1787,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: This method is supported in Message Compose in Outlook on Android and on iOS.
 
 
       #### Examples
@@ -1811,10 +1839,18 @@ methods:
       Disables the Outlook client signature.
 
 
-      For Windows and Mac rich clients, this API sets the signature under the "New Message" and "Replies/Forwards"
-      sections for the sending account to "(none)", effectively disabling the signature. For Outlook on the web, the API
-      should disable the signature option for new mails, replies, and forwards. If the signature is selected, this API
-      call should disable it.
+      The behavior of this method depends on which client the add-in is running.
+
+
+      - In Outlook on Windows and on Mac, the signature under the **New messages** and **Replies/forwards**
+      sections of the sending account is set to **(none)**.
+
+
+      - In Outlook on the web, the signature option for new mails, replies, and forwards is disabled. A signature that's
+      selected is also disabled by the method.
+
+
+      - In Outlook on Android and on iOS, the signature saved on the mobile device is cleared.
     remarks: >-
       \[ [API set: Mailbox 1.10](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1827,6 +1863,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: This method is supported in Message Compose on Outlook on Android and on iOS.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2129,6 +2168,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: This method is supported in Outlook on Android and on iOS.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2169,6 +2211,9 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Compose
+
+
+      **Important**: This method is supported in Outlook on Android and on iOS.
 
 
       #### Examples

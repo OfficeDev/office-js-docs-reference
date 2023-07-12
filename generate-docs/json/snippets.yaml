@@ -13710,6 +13710,102 @@
         }
       });
     }
+'Office.Display#body:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+    // This snippet temporarily sets the content displayed in the body of a
+    message in read mode.
+
+    // The set content will remain visible until the user switches to a
+    different message in the Reading Pane or closes the window of the current
+    message.
+
+    const bodyText = $("#body-text-field")
+      .val()
+      .toString();
+    Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult) =>
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Action failed with error: ${asyncResult.error.message}`);
+        return;
+      }
+
+      console.log("Temporarily set the content displayed in the body.");
+    });
+'Office.Display#subject:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+    // This snippet temporarily sets the content displayed in the subject field
+    of a message in read mode.
+
+    // The set content will remain visible until the user switches to a
+    different message in the Reading Pane or closes the window of the current
+    message.
+
+    const subjectText = $("#subject-text-field")
+      .val()
+      .toString();
+    Office.context.mailbox.item.display.subject.setAsync(subjectText,
+    (asyncResult) => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Action failed with error: ${asyncResult.error.message}`);
+        return;
+      }
+
+      console.log("Temporarily set the content displayed in the subject field.");
+    });
+'Office.DisplayedBody#setAsync:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+    // This snippet temporarily sets the content displayed in the body of a
+    message in read mode.
+
+    // The set content will remain visible until the user switches to a
+    different message in the Reading Pane or closes the window of the current
+    message.
+
+    const bodyText = $("#body-text-field")
+      .val()
+      .toString();
+    Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult) =>
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Action failed with error: ${asyncResult.error.message}`);
+        return;
+      }
+
+      console.log("Temporarily set the content displayed in the body.");
+    });
+'Office.DisplayedSubject#setAsync:member(2)':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+    // This snippet temporarily sets the content displayed in the subject field
+    of a message in read mode.
+
+    // The set content will remain visible until the user switches to a
+    different message in the Reading Pane or closes the window of the current
+    message.
+
+    const subjectText = $("#subject-text-field")
+      .val()
+      .toString();
+    Office.context.mailbox.item.display.subject.setAsync(subjectText,
+    (asyncResult) => {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Action failed with error: ${asyncResult.error.message}`);
+        return;
+      }
+
+      console.log("Temporarily set the content displayed in the subject field.");
+    });
 'Office.Document#addHandlerAsync:member(2)':
   - >-
     // The following example adds an event handler for the SelectionChanged
@@ -16146,7 +16242,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
     Office.context.mailbox.item.internetHeaders.getAsync(
-      ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+      ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
       function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Selected headers: " + JSON.stringify(asyncResult.value));
@@ -16161,7 +16257,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
     Office.context.mailbox.item.internetHeaders.removeAsync(
-      ["x-best-vegetable", "x-nonexistent-header"],
+      ["best-vegetable", "nonexistent-header"],
       function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Successfully removed selected headers");
@@ -16176,7 +16272,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
     Office.context.mailbox.item.internetHeaders.setAsync(
-      { "x-preferred-fruit": "orange", "x-preferred-vegetable": "broccoli", "x-best-vegetable": "spinach" },
+      { "preferred-fruit": "orange", "preferred-vegetable": "broccoli", "best-vegetable": "spinach" },
       function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Successfully set headers");
@@ -18272,7 +18368,7 @@
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/70-mime-headers/manage-custom-internet-headers-message-compose.yaml
 
     Office.context.mailbox.item.internetHeaders.getAsync(
-      ["x-preferred-fruit", "x-preferred-vegetable", "x-best-vegetable", "x-nonexistent-header"],
+      ["preferred-fruit", "preferred-vegetable", "best-vegetable", "nonexistent-header"],
       function (asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           console.log("Selected headers: " + JSON.stringify(asyncResult.value));
@@ -18770,6 +18866,30 @@
 
     console.log(`Date and time item last modified:
     ${Office.context.mailbox.item.dateTimeModified}`);
+'Office.MessageRead#display:member':
+  - >-
+    // Link to full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/set-displayed-body-subject.yaml
+
+    // This snippet temporarily sets the content displayed in the body of a
+    message in read mode.
+
+    // The set content will remain visible until the user switches to a
+    different message in the Reading Pane or closes the window of the current
+    message.
+
+    const bodyText = $("#body-text-field")
+      .val()
+      .toString();
+    Office.context.mailbox.item.display.body.setAsync(bodyText, (asyncResult) =>
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log(`Action failed with error: ${asyncResult.error.message}`);
+        return;
+      }
+
+      console.log("Temporarily set the content displayed in the body.");
+    });
 'Office.MessageRead#displayReplyAllForm:member(1)':
   - |-
     // The following code passes a string to the `displayReplyAllForm` method.
@@ -18995,14 +19115,14 @@
     (asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Internet headers received successfully");
-        if (asyncResult.value.match(/x-preferred-fruit:.*/gim)) {
-          console.log("Sender's preferred fruit: " + asyncResult.value.match(/x-preferred-fruit:.*/gim)[0].slice(19));
+        if (asyncResult.value.match(/preferred-fruit:.*/gim)) {
+          console.log("Sender's preferred fruit: " + asyncResult.value.match(/preferred-fruit:.*/gim)[0].slice(17));
         } else {
           console.log("Didn't receive header with sender's preferred fruit");
         }
-        if (asyncResult.value.match(/x-preferred-vegetable:.*/gim)) {
+        if (asyncResult.value.match(/preferred-vegetable:.*/gim)) {
           console.log(
-            "Sender's preferred vegetable: " + asyncResult.value.match(/x-preferred-vegetable:.*/gim)[0].slice(23)
+            "Sender's preferred vegetable: " + asyncResult.value.match(/preferred-vegetable:.*/gim)[0].slice(21)
           );
         } else {
           console.log("Didn't receive header with sender's preferred vegetable");
