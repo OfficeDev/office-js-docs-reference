@@ -42,14 +42,14 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
-| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook Desktop requires for [LaunchEvent extension point](extensionpoint.md#launchevent) handlers. **Important**: At present, you can only define one **\<Override\>** element and it must be of type `javascript`.|
+| [Override](override.md) | No | **Outlook**: Specifies the URL location of the JavaScript file that Outlook on Windows requires for [LaunchEvent extension point](extensionpoint.md#launchevent) and [ReportPhishingCommandSurface extension point (preview)](/javascript/api/manifest/extensionpoint) handlers. **Important**: At present, you can only define one **\<Override\>** element and it must be of type `javascript`.|
 
 ## Attributes
 
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
 |  **resid**  |  Yes  | Specifies the URL location of the HTML page for your add-in. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element. |
-|  [lifetime](#lifetime-attribute)  |  No  | The default value for `lifetime` is `short` and doesn't need to be specified. Outlook event-based activation add-ins use only the `short` value. If you want to use a shared runtime in an Excel add-in, explicitly set the value to `long`. |
+|  [lifetime](#lifetime-attribute)  |  No  | The default value for `lifetime` is `short` and doesn't need to be specified. Outlook event-based activation and spam reporting add-ins use only the `short` value. If you want to use a shared runtime in an Excel add-in, explicitly set the value to `long`. |
 
 ### lifetime attribute
 
@@ -57,7 +57,7 @@ Optional. Represents the length of time the add-in is allowed to run.
 
 #### Available values
 
-`short`: Default. Used only for Outlook event-based activation add-ins. After the add-in is activated, it will run for a maximum amount of time as specified by the platform. Currently, that's around 5 minutes. This is the only value supported by Outlook.
+`short`: Default. Used only for Outlook event-based activation and spam reporting add-ins. After the add-in is activated, it will run for a maximum amount of time as specified by the platform. Currently, that's around 5 minutes. This is the only value supported by Outlook.
 
 `long`: Used only when configuring a [shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime). The add-in can start on document open and run indefinitely. For example, task pane code will continue running even when the user closes the task pane. This is the only value supported by the shared runtime.
 
