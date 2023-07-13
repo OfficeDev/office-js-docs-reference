@@ -1944,13 +1944,15 @@ export declare namespace Office {
         /**
          * Gets the date and time that an item was last modified.
          *
-         * **Note**: This member is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         dateTimeModified: Date;
         /**
@@ -2235,20 +2237,24 @@ export declare namespace Office {
          * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
          * selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
-         *
-         * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
-         *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
-         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+         *
+         * - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+         *
+         * - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -2259,20 +2265,24 @@ export declare namespace Office {
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
-         *
-         * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
-         *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
-         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+         *
+         * - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+         *
+         * - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -2285,19 +2295,19 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns null.
@@ -2305,10 +2315,14 @@ export declare namespace Office {
          * Otherwise, the type of the objects in the returned array depends on the type of entity requested in the `entityType` parameter.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param entityType - One of the `EntityType` enumeration values.
          *
@@ -2360,24 +2374,27 @@ export declare namespace Office {
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
-         * The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the `ItemHasKnownEntity` rule element
-         * in the manifest XML file with the specified `FilterName` element value.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
-         * @returns If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` element value that matches the `name` parameter,
-         * the method returns `null`.
-         * If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match,
-         * the method return an empty array.
+         * @returns
+         * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
+         * manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
+         * `FilterName` element value that matches the `name` parameter, the method returns `null`. If the `name` parameter matches an
+         * `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match, the method returns an empty array.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
@@ -2386,55 +2403,58 @@ export declare namespace Office {
         
         /**
          * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
-         *
-         * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
-         * `ItemHasKnownEntity` rule element in the manifest XML file.
-         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule.
-         * The `PropertyName` simple type defines the supported properties.
-         *
-         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
-         * and should not attempt to return the entire body of the item.
-         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-         * Instead, use the `Body.getAsync` method to retrieve the entire body.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
          * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule
-         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
+         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
+         * of the item that's specified by that rule. The `PropertyName` simple type defines the supported properties.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getRegExMatches(): any;
         /**
          * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
-         *
-         * The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule
-         * element in the manifest XML file with the specified `RegExName` element value.
-         *
-         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
-         * and should not attempt to return the entire body of the item.
-         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
-         * An array that contains the strings that match the regular expression defined in the manifest XML file.
+         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file,
+         * with the specified `RegExName` element value.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
          */
@@ -2707,6 +2727,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * @param options - An object literal that contains one or more of the following properties:-
          *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -2723,6 +2747,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
@@ -2752,6 +2780,10 @@ export declare namespace Office {
          *
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
@@ -2791,6 +2823,10 @@ export declare namespace Office {
          * - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the anchor (\<a\>) to "LPNoLP"
          * (see the **Examples** section for a sample).
          *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
          * **Errors**:
@@ -2829,6 +2865,10 @@ export declare namespace Office {
          * (see the **Examples** section for a sample).
          *
          * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
@@ -2871,6 +2911,10 @@ export declare namespace Office {
          * (see the **Examples** section for a sample).
          *
          * - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo** command.
+         *
+         * - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * **Recommended**: Call `getTypeAsync`, then pass the returned value to the `options.coercionType` parameter. 
          *
@@ -3338,7 +3382,9 @@ export declare namespace Office {
          *
          * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
-         * 
+         * To learn more about APIs supported in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
@@ -3367,7 +3413,9 @@ export declare namespace Office {
          *
          * - This method is supported in Outlook on Android and on iOS. For a sample scenario, see
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based | Implement event-based activation in Outlook mobile add-ins}.
-         * 
+         * To learn more about APIs supported in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * - A `recipientType` property value isn't returned by the `getAsync` method.
          * The email sender is always a user whose email address is on the Exchange server.
          *
@@ -3625,22 +3673,26 @@ export declare namespace Office {
          */
         diagnostics: Diagnostics;
         /**
-         * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
-         *
-         * Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read mode.
-         *
-         * In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member.
-         * Your app must have **read/write item** permissions to call the `saveAsync` method.
-         *
-         * **Note**: This member is not supported in Outlook on iOS or Android.
+         * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox.
+         * **Important**:
+         *
+         * - Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read mode.
+         *
+         * - In compose mode, you must call the `saveAsync` method before you can use the `ewsUrl` member.
+         * Your app must have **read/write item** permissions to call the `saveAsync` method.
+         *
+         * - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox.
          * For example, you can create a remote service to {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          */
         ewsUrl: string;
@@ -3733,14 +3785,15 @@ export declare namespace Office {
          * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by
          * Exchange Web Services (EWS). The `convertToEwsId` method converts a REST-formatted ID into the proper format for EWS.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param itemId - An item ID formatted for the Outlook REST APIs.
          * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID.
@@ -3771,8 +3824,6 @@ export declare namespace Office {
         /**
          * Converts an item ID formatted for EWS into REST format.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
          * [Api set: Mailbox 1.3]
          *
@@ -3780,7 +3831,12 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs (such as the
+         * **Important**:
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Item IDs retrieved via EWS or via the `itemId` property use a different format than the format used by REST APIs (such as the
          * {@link https://learn.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API}
          * or the {@link https://graph.microsoft.io/ | Microsoft Graph}.
          * The `convertToRestId` method converts an EWS-formatted ID into the proper format for REST.
@@ -3809,10 +3865,9 @@ export declare namespace Office {
         /**
          * Displays an existing calendar appointment.
          *
-         * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on
-         * mobile devices.
+         * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop.
          *
-         * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment
+         * In Outlook on Mac, you can use this method to display a single appointment that isn't part of a recurring series, or the master appointment
          * of a recurring series. However, you can't display an instance of the series because you can't access the properties
          * (including the item ID) of instances of a recurring series.
          *
@@ -3821,13 +3876,15 @@ export declare namespace Office {
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and
          * no error message is returned.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
          */
@@ -3837,23 +3894,27 @@ export declare namespace Office {
         /**
          * Displays an existing message.
          *
-         * The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
+         * The `displayMessageForm` method opens an existing message in a new window on the desktop.
          *
          * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
          *
-         * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
+         * If the specified item identifier doesn't identify an existing message, no message will be displayed on the client computer, and
          * no error message is returned.
          *
-         * Do not use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display
-         * an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - Don't use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display
+         * an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
          *
          * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
          */
@@ -3867,7 +3928,7 @@ export declare namespace Office {
          * If parameters are specified, the appointment form fields are automatically populated with the contents of the parameters.
          *
          * In Outlook on the web, this method always displays a form with an attendees field.
-         * If you do not specify any attendees as input arguments, the method displays a form with a **Save** button.
+         * If you don't specify any attendees as input arguments, the method displays a form with a **Save** button.
          * If you have specified attendees, the form would include the attendees and a **Send** button.
          *
          * In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the `requiredAttendees`, `optionalAttendees`, or
@@ -3876,13 +3937,15 @@ export declare namespace Office {
          *
          * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param parameters - An `AppointmentForm` describing the new appointment. All properties are optional.
          */
@@ -3946,17 +4009,16 @@ export declare namespace Office {
          *
          * The token is returned as a string in the `asyncResult.value` property.
          *
-         * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+         * @remarks
+         * [Api set: Mailbox 1.5]
          *
-         * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
-         * The `saveAsync` method requires a minimum permission level of **read/write item**.
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **Important**: For guidance on delegate or shared scenarios, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * *REST Tokens*
          *
-         * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate EWS calls.
+         * When a REST token is requested (`options.isRest` = `true`), the resulting token won't work to authenticate EWS calls.
          * The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the
          * **read/write mailbox** permission in its manifest.
          * If the **read/write mailbox** permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
@@ -3976,7 +4038,7 @@ export declare namespace Office {
          *
          * *EWS Tokens*
          *
-         * When an EWS token is requested (`options.isRest` = `false`), the resulting token will not work to authenticate REST API calls.
+         * When an EWS token is requested (`options.isRest` = `false`), the resulting token won't work to authenticate REST API calls.
          * The token will be limited in scope to accessing the current item.
          *
          * The add-in should use the `ewsUrl` property to determine the correct URL to use when making EWS calls.
@@ -3988,17 +4050,21 @@ export declare namespace Office {
          * attachment or item. For example, you can create a remote service to
          * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
          *
-         * **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token is always returned in Outlook
+         * **Important**:
+         *
+         * - This method is only supported in read mode in Outlook on Android and on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         * 
+         * - EWS operations aren't supported in add-ins running in Outlook on iOS and on Android. A REST token is always returned in Outlook
          * mobile clients even if `options.isRest` is set to `false`.
          *
-         * **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+         *- Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
          *
-         * @remarks
-         * [Api set: Mailbox 1.5]
+         * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
+         * The `saveAsync` method requires a minimum permission level of **read/write item**.
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
-         *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         * - For guidance on delegate or shared scenarios, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Errors**:
          *
@@ -4024,29 +4090,33 @@ export declare namespace Office {
          *
          * The token is returned as a string in the `asyncResult.value` property.
          *
-         * You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
-         * the token as a bearer authorization token to call the Exchange Web Services (EWS)
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation | GetAttachment} or
-         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation | GetItem} operation to return an
-         * attachment or item. For example, you can create a remote service to
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
-         *
-         * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
-         *
-         * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
-         * The `saveAsync` method requires a minimum permission level of **read/write item**.
-         *
-         * **Important**: For guidance on delegate or shared scenarios, see the
-         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-         *
-         * **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins running on Outlook mobile clients.
-         *
          * @remarks
          * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
+         * **Important**:
+         *
+         * - You can pass both the token and either an attachment identifier or item identifier to an external system. That system uses
+         * the token as a bearer authorization token to call the Exchange Web Services (EWS)
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation | GetAttachment} or
+         * {@link https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation | GetItem} operation to return an
+         * attachment or item. For example, you can create a remote service to
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
+         *
+         * - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
+         *
+         * - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
+         * The `saveAsync` method requires a minimum permission level of **read/write item**.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running on Outlook mobile clients.
+         * For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - For guidance on delegate or shared scenarios, see the
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
          *
          * **Errors**:
          *
@@ -4096,52 +4166,41 @@ export declare namespace Office {
         /**
          * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user's mailbox.
          *
-         * In these cases, add-ins should use REST APIs to access the user's mailbox instead.
-         *
          * The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange.
          *
-         * You cannot request Folder Associated Items with the `makeEwsRequestAsync` method.
-         *
-         * The XML request must specify UTF-8 encoding: `\<?xml version="1.0" encoding="utf-8"?\>`.
-         *
-         * Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method.
-         * For information about using the **read/write mailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method,
-         * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.
-         *
-         * The XML result of the EWS call is provided as a string in the `asyncResult.value` property.
-         * If the result exceeds 1 MB in size, an error message is returned instead.
-         *
-         * **Note**: This method is not supported in the following scenarios.
-         *
-         * - In Outlook on iOS or Android.
-         *
-         * - When the add-in is loaded in a Gmail mailbox.
-         *
-         * **Note**: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS directory to enable the
-         * `makeEwsRequestAsync` method to make EWS requests.
-         *
-         * *Version differences*
-         *
-         * When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set
-         * the encoding value to ISO-8859-1.
-         *
-         * `<?xml version="1.0" encoding="iso-8859-1"?>`
-         *
-         * You do not need to set the encoding value when your mail app is running in Outlook on the web.
-         * You can determine whether your mail app is running in Outlook or Outlook on the web by using the `mailbox.diagnostics.hostName` property.
-         * You can determine what version of Outlook is running by using the `mailbox.diagnostics.hostVersion` property.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
+         * **Important**:
+         *
+         * - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set `OAuthAuthentication` to `true` on the
+         * Client Access Server EWS directory .
+         *
+         * - Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method.
+         * For information about using the **read/write mailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.
+         *
+         * - If your add-in needs to access Folder Associated Items or its XML request must specify UTF-8 encoding (`\<?xml version="1.0" encoding="utf-8"?\>`),
+         * it must use Microsoft Graph or REST APIs to access the user's mailbox instead.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
+         * - This method isn't supported when the add-in is loaded in a Gmail mailbox.
+         *
+         * - When you use the `makeEwsRequestAsync` method in add-ins that run in Outlook versions earlier than Version 15.0.4535.1004, you must set
+         * the encoding value to ISO-8859-1 (`<?xml version="1.0" encoding="iso-8859-1"?>`). To determine the version of an Outlook client, use the
+         * `mailbox.diagnostics.hostVersion` property. You don't need to set the encoding value when your add-in is running in Outlook on the web.
+         * To determine the Outlook client in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
+         *
          * @param data - The EWS request.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter
-         *                   of type `Office.AsyncResult`.
-         *                 The `value` property of the result is the XML of the EWS request provided as a string.
-         *                 If the result exceeds 1 MB in size, an error message is returned instead.
+         *                   of type `Office.AsyncResult`. The `value` property of the result is the XML of the EWS request provided as a string.
+         *                   If the result exceeds 1 MB in size, an error message is returned in the `error` property.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         makeEwsRequestAsync(data: any, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
@@ -5015,13 +5074,15 @@ export declare namespace Office {
         /**
          * Gets the date and time that an item was last modified.
          *
-         * **Note**: This member is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         dateTimeModified: Date;
         /**
@@ -5330,20 +5391,24 @@ export declare namespace Office {
          * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
          * selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
-         *
-         * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
-         *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
-         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+         *
+         * - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+         *
+         * - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -5354,20 +5419,24 @@ export declare namespace Office {
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
-         *
-         * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
-         *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
-         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**:
+         *
+         * - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
+         *
+         * - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+         *
+         * - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
@@ -5382,19 +5451,19 @@ export declare namespace Office {
         /**
          * Gets the entities found in the selected item's body.
          *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getEntities(): Entities;
         /**
          * Gets an array of all the entities of the specified entity type found in the selected item's body.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns `null`.
@@ -5402,10 +5471,14 @@ export declare namespace Office {
          * Otherwise, the type of the objects in the returned array depends on the type of entity requested in the `entityType` parameter.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param entityType - One of the `EntityType` enumeration values.
          *
@@ -5458,24 +5531,27 @@ export declare namespace Office {
         getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
          *
-         * The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the `ItemHasKnownEntity` rule element
-         * in the manifest XML file with the specified `FilterName` element value.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
-         *
-         * @returns If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` element value that matches the `name` parameter,
-         * the method returns `null`.
-         * If the `name` parameter does match an `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match,
-         * the method return an empty array.
+         * @returns
+         * The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
+         * manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in the manifest with a
+         * `FilterName` element value that matches the `name` parameter, the method returns `null`. If the `name` parameter matches an
+         * `ItemHasKnownEntity` element in the manifest, but there are no entities in the current item that match, the method returns an empty array.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param name - The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
          */
@@ -5484,55 +5560,58 @@ export declare namespace Office {
         
         /**
          * Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
-         *
-         * The `getRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or
-         * `ItemHasKnownEntity` rule element in the manifest XML file.
-         * For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule.
-         * The `PropertyName` simple type defines the supported properties.
-         *
-         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter
-         * the body and should not attempt to return the entire body of the item.
-         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-         * Instead, use the `Body.getAsync` method to retrieve the entire body.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
          * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-         * The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule
-         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
+         * The name of each array is equal to the corresponding value of the RegExName attribute of the matching `ItemHasRegularExpressionMatch` rule
+         * or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property
+         * of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          */
         getRegExMatches(): any;
         /**
          * Returns string values in the selected item that match the named regular expression defined in an XML manifest file.
-         * 
-         * **Note**: This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins}, which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
-         *
-         * The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the
-         * `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element value.
-         *
-         * If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter
-         * the body and should not attempt to return the entire body of the item.
-         * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
-         *
-         * **Note**: This method is not supported in Outlook on iOS or Android.
          *
          * @returns
-         * An array that contains the strings that match the regular expression defined in the manifest XML file.
+         * An array that contains the strings that match the regular expression defined in the `ItemHasRegularExpressionMatch` rule element in the manifest XML file,
+         * with the specified `RegExName` element value.
          *
          * @remarks
+         * [Api set: Mailbox 1.1]
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
-         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee
+         *
+         * **Important**:
+         *
+         * - This method is used with the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules | activation rules feature for Outlook add-ins},
+         * which isn't supported by the {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
+         *
+         * - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body
+         * and shouldn't attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item doesn't always return the expected results.
+         * Instead, use the `Body.getAsync` method to retrieve the entire body.
+         *
+         * - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * @param name - The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
          */
@@ -5985,7 +6064,8 @@ export declare namespace Office {
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
-         * supported.
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
          *
@@ -6018,7 +6098,8 @@ export declare namespace Office {
          * If you need to add more than 100 recipients to a mail item, you can call `addAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the Appointment Organizer mode is
-         * supported.
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
          *
@@ -6139,7 +6220,8 @@ export declare namespace Office {
          * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
-         * supported.
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
          *
@@ -6175,7 +6257,8 @@ export declare namespace Office {
          * If you need to set more than 100 recipients, you can call `setAsync` repeatedly, but be mindful of the recipient limit of the field.
          *
          * - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
-         * supported.
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
          *
@@ -6917,6 +7000,10 @@ export declare namespace Office {
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
          *
+         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
+         *
          * **Errors**:
          *
          * - `DataExceedsMaximumSize`: The subject parameter is longer than 255 characters.
@@ -6940,6 +7027,10 @@ export declare namespace Office {
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
          *
          * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         *
+         * **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment Organizer mode is
+         * supported. For more information on supported APIs in Outlook mobile, see
+         * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis | Outlook JavaScript APIs supported in Outlook on mobile devices}.
          *
          * **Errors**:
          *

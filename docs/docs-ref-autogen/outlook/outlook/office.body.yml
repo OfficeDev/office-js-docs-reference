@@ -402,6 +402,12 @@ methods:
       -->**: Compose
 
 
+      **Important**: In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only
+      the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see
+      [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       #### Examples
 
 
@@ -462,6 +468,12 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Important**: In Outlook on Android and on iOS, this<!-- -->\` method isn't supported in the Message Compose
+      mode. Only the Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile,
+      see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -516,6 +528,12 @@ methods:
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
@@ -630,6 +648,12 @@ methods:
 
       - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
@@ -897,6 +921,12 @@ methods:
       command.
 
 
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
       **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
       parameter.
 
@@ -1047,6 +1077,12 @@ methods:
 
       - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
       command.
+
+
+      - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
+      Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript
+      APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
@@ -1270,7 +1306,9 @@ methods:
 
       - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
       [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the
@@ -1398,7 +1436,9 @@ methods:
 
       - This method is supported in Message Compose on Outlook on Android and on iOS. For a sample scenario, see
       [Implement event-based activation in Outlook mobile
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->.
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/mobile-event-based)<!-- -->. To learn more about
+      APIs supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       - The behavior of `setSignatureAsync` differs if you call it in the event handler of an add-in that implements the

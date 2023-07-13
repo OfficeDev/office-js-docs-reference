@@ -1,7 +1,7 @@
 ---
 title: Outlook JavaScript API requirement sets
 description: Learn more about the Outlook JavaScript API requirement sets.
-ms.date: 07/06/2023
+ms.date: 07/13/2023
 ms.topic: overview
 ms.localizationpriority: high
 ---
@@ -48,14 +48,12 @@ For example, the following manifest snippet indicates a minimum requirement set 
 
 All Outlook APIs belong to the `Mailbox` [requirement set](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements). The `Mailbox` requirement set has versions, and each new set of APIs that we release belongs to a higher version of the set. Not all Outlook clients support the newest set of APIs, but if an Outlook client declares support for a requirement set, generally it supports all of the APIs in that requirement set (check the documentation on a specific API or feature for any exceptions).
 
-Setting a minimum requirement set version in the manifest controls which Outlook client the add-in will appear in. If a client doesn't support the minimum requirement set, it doesn't load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
+Setting a minimum requirement set version in the manifest controls in which Outlook client the add-in will appear. If a client doesn't support the minimum requirement set, it doesn't load the add-in. For example, if requirement set version 1.3 is specified, this means the add-in will not show up in any Outlook client that doesn't support at least 1.3.
 
 > [!NOTE]
-> To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js).
->
-> For information about using preview APIs, see the [Using preview APIs](#using-preview-apis) section later in this article.
+> Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
 
-## Using APIs from later requirement sets
+## Use APIs from later requirement sets
 
 Setting a requirement set doesn't limit the available APIs that the add-in can use. For example, if the add-in specifies requirement set "Mailbox 1.1", but it's running in an Outlook client which supports "Mailbox 1.3", the add-in can use APIs from requirement set "Mailbox 1.3".
 
@@ -81,7 +79,7 @@ if (item.somePropertyOrMethod !== undefined) {
 
 No such checks are necessary for any APIs which are present in the requirement set version specified in the manifest.
 
-## Choosing a minimum requirement set
+## Choose a minimum requirement set
 
 Developers should use the earliest requirement set that contains the critical set of APIs for their scenario, without which the add-in won't work.
 
@@ -121,8 +119,8 @@ Add-ins are supported in Outlook on the following platforms.
 || perpetual Outlook 2013 | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md)<sup>3</sup>, [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md)<sup>3</sup> |
 | Mac | classic UI | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || new UI<sup>4</sup> | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
-| iOS<sup>5 6</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md)<sup>7</sup> |
-| Android<sup>5 6</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md)<sup>7</sup> |
+| Android<sup>5 6 7</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
+| iOS<sup>5 6 7</sup> | subscription | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md) |
 | Web browser<sup>5 8</sup> | modern Outlook UI when connected to<br>Exchange Online: subscription, Outlook.com | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md), [1.7](requirement-set-1.7/outlook-requirement-set-1.7.md), [1.8](requirement-set-1.8/outlook-requirement-set-1.8.md), [1.9](requirement-set-1.9/outlook-requirement-set-1.9.md), [1.10](requirement-set-1.10/outlook-requirement-set-1.10.md), [1.11](requirement-set-1.11/outlook-requirement-set-1.11.md), [1.12](requirement-set-1.12/outlook-requirement-set-1.12.md), [1.13](requirement-set-1.13/outlook-requirement-set-1.13.md)<br>[IdentityAPI 1.3](../common/identity-api-requirement-sets.md)<sup>2</sup> |
 || classic Outlook UI when connected to<br>Exchange on-premises | [1.1](requirement-set-1.1/outlook-requirement-set-1.1.md), [1.2](requirement-set-1.2/outlook-requirement-set-1.2.md), [1.3](requirement-set-1.3/outlook-requirement-set-1.3.md), [1.4](requirement-set-1.4/outlook-requirement-set-1.4.md), [1.5](requirement-set-1.5/outlook-requirement-set-1.5.md), [1.6](requirement-set-1.6/outlook-requirement-set-1.6.md) |
 
@@ -146,9 +144,9 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > <sup>5</sup> Add-ins aren't supported in Outlook on Android, on iOS, and modern mobile web with on-premises Exchange accounts. Certain iOS devices still support add-ins when using on-premises Exchange accounts with classic Outlook on the web. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 >
-> <sup>6</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For example, the only supported mode is Message Read. For more details, see [code considerations when adding support for add-in commands in Outlook on mobile devices](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
+> <sup>6</sup> Currently, there are additional considerations when designing and implementing add-ins for mobile clients. For more details, see [code considerations when adding support for add-in commands in Outlook on mobile devices](/office/dev/add-ins/outlook/add-mobile-support#code-considerations).
 >
-> <sup>7</sup> Outlook on Android and on iOS only support up to Mailbox requirement set 1.5. However, to support the event-based activation feature, some APIs from later requirement sets have been enabled on mobile clients. To learn more about this exception, see [Additional supported APIs](/office/dev/add-ins/outlook/mobile-event-based#additional-supported-apis).
+> <sup>7</sup> Although Outlook on Android and on iOS support up to requirement set 1.5, your mobile add-in can now implement some APIs from later requirement sets, such as event-based activation. For more information on which APIs are supported in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile devices](/office/dev/add-ins/outlook/outlook-mobile-apis).
 >
 > <sup>8</sup> Add-ins don't work in modern Outlook on the web on iPhone and Android smartphones. For information about supported devices, see [Requirements for running Office Add-ins](/office/dev/add-ins/concepts/requirements-for-running-office-add-ins#client-requirements-non-windows-smartphone-and-tablet).
 
@@ -163,7 +161,11 @@ Add-ins are supported in Outlook on the following platforms.
 >
 > ![The classic Outlook toolbar.](/office/dev/add-ins/images/outlook-on-the-web-classic-toolbar.png)
 
-## Using preview APIs
+## Reference the Office JavaScript API production library
+
+To use APIs in any of the numbered requirement sets, you should reference the **production** library on the [Office.js content delivery network (CDN)](https://appsforoffice.microsoft.com/lib/1/hosted/office.js). For information on how to use preview APIs, see [Test preview APIs](#test-preview-apis).
+
+## Test preview APIs
 
 New Outlook JavaScript APIs are first introduced in "preview" and later become part of a specific, numbered requirement set after sufficient testing occurs and user feedback is acquired. To provide feedback about a preview API, please use the feedback mechanism at the end of the web page where the API is documented.
 

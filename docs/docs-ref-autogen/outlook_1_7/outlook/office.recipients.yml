@@ -49,7 +49,9 @@ methods:
 
 
       - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
-      Appointment Organizer mode is supported.
+      Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
@@ -149,7 +151,9 @@ methods:
 
 
       - In Outlook on Android and on iOS, the `addAsync` method isn't supported in Message Compose mode. Only the
-      Appointment Organizer mode is supported.
+      Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       There's no recipient limit if you call `addAsync` in Outlook on Mac (new UI).
@@ -469,7 +473,9 @@ methods:
 
 
       - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the
-      Appointment Organizer mode is supported.
+      Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).
@@ -540,7 +546,9 @@ methods:
 
 
       - In Outlook on Android and on iOS, the `setAsync` method isn't supported in the Message Compose mode. Only the
-      Appointment Organizer mode is supported.
+      Appointment Organizer mode is supported. For more information on supported APIs in Outlook mobile, see [Outlook
+      JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       There's no recipient limit if you call `setAsync` in Outlook on Mac (new UI).

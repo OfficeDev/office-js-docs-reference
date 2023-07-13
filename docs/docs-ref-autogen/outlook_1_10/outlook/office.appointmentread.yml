@@ -278,11 +278,11 @@ properties:
     uid: 'outlook!Office.AppointmentRead#dateTimeModified:member'
     package: outlook!
     fullName: dateTimeModified
-    summary: |-
-      Gets the date and time that an item was last modified.
-
-      **Note**: This member is not supported in Outlook on iOS or Android.
+    summary: Gets the date and time that an item was last modified.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -291,6 +291,11 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**: This property isn't supported in Outlook on Android or on iOS. For more information on
+      supported APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -1236,22 +1241,10 @@ methods:
     summary: >-
       Displays a reply form that includes either the sender and all recipients of the selected message or the organizer
       and all attendees of the selected appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -1260,6 +1253,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
+      the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -1512,22 +1525,10 @@ methods:
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
-
-
-      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2-column or 1-column view.
-
-
-      If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
-
-
-      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
-      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
-      UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -1536,6 +1537,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in
+      the 2-column or 1-column view.
+
+
+      - If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
+
+
+      - When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -1969,11 +1990,11 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getEntities:member(1)'
     package: outlook!
     fullName: getEntities()
-    summary: |-
-      Gets the entities found in the selected item's body.
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+    summary: Gets the entities found in the selected item's body.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -1982,6 +2003,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
+      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2056,11 +2082,11 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
     package: outlook!
     fullName: getEntitiesByType(entityType)
-    summary: |-
-      Gets an array of all the entities of the specified entity type found in the selected item's body.
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+    summary: Gets an array of all the entities of the specified entity type found in the selected item's body.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **restricted**
@@ -2069,6 +2095,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
+      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2119,22 +2150,11 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)'
     package: outlook!
     fullName: getFilteredEntitiesByName(name)
-    summary: >-
-      Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
-
-
-      **Note**: This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the
-      `ItemHasKnownEntity` rule element in the manifest XML file with the specified `FilterName` element value.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+    summary: Returns well-known entities in the selected item that pass the named filter defined in an XML manifest file.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -2143,6 +2163,20 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2174,10 +2208,11 @@ methods:
           uid="outlook!Office.MeetingSuggestion:interface" /> | <xref uid="outlook!Office.PhoneNumber:interface" /> |
           <xref uid="outlook!Office.TaskSuggestion:interface" />)[]
         description: >-
-          If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` element value that matches the
-          `name` parameter, the method returns `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity`
-          element in the manifest, but there are no entities in the current item that match, the method return an empty
-          array.
+          The entities that match the regular expression defined in the `ItemHasKnownEntity` rule element in the
+          manifest XML file with the specified `FilterName` element value. If there's no `ItemHasKnownEntity` element in
+          the manifest with a `FilterName` element value that matches the `name` parameter, the method returns
+          `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity` element in the manifest, but there are
+          no entities in the current item that match, the method returns an empty array.
   - name: 'getInitializationContextAsync(options, callback)'
     uid: 'outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)'
     package: outlook!
@@ -2279,30 +2314,11 @@ methods:
     uid: 'outlook!Office.AppointmentRead#getRegExMatches:member(1)'
     package: outlook!
     fullName: getRegExMatches()
-    summary: >-
-      Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
-
-
-      **Note**: This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      The `getRegExMatches` method returns the strings that match the regular expression defined in each
-      `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an
-      `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified
-      by that rule. The `PropertyName` simple type defines the supported properties.
-
-
-      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
-      should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the `Body.getAsync` method to retrieve the entire body.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
+    summary: Returns string values in the selected item that match the regular expressions defined in an XML manifest file.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -2311,6 +2327,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
+      should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
+      expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead,
+      use the `Body.getAsync` method to retrieve the entire body.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2382,6 +2418,8 @@ methods:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
+          For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that's
+          specified by that rule. The `PropertyName` simple type defines the supported properties.
   - name: getRegExMatchesByName(name)
     uid: 'outlook!Office.AppointmentRead#getRegExMatchesByName:member(1)'
     package: outlook!
@@ -2389,26 +2427,10 @@ methods:
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in an XML manifest
       file.
-
-
-      **Note**: This method is used with the [activation rules feature for Outlook
-      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
-      by the [Teams manifest for Office Add-ins
-      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
-
-
-      The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the
-      `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element
-      value.
-
-
-      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
-      should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .* to obtain the entire body of an item does not always return the expected results.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -2417,6 +2439,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Appointment Attendee
+
+
+      **Important**:
+
+
+      - This method is used with the [activation rules feature for Outlook
+      add-ins](https://learn.microsoft.com/office/dev/add-ins/outlook/activation-rules)<!-- -->, which isn't supported
+      by the [Teams manifest for Office Add-ins
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview)<!-- -->.
+
+
+      - If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
+      should further filter the body and shouldn't attempt to return the entire body of the item. Using a regular
+      expression such as `.*` to obtain the entire body of an item doesn't always return the expected results. Instead,
+      use the `Body.getAsync` method to retrieve the entire body.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -2480,7 +2522,10 @@ methods:
           type: string
       return:
         type: 'string[]'
-        description: An array that contains the strings that match the regular expression defined in the manifest XML file.
+        description: >-
+          An array that contains the strings that match the regular expression defined in the
+          `ItemHasRegularExpressionMatch` rule element in the manifest XML file, with the specified `RegExName` element
+          value.
   - name: getSelectedEntities()
     uid: 'outlook!Office.AppointmentRead#getSelectedEntities:member(1)'
     package: outlook!
