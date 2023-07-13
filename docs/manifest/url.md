@@ -1,7 +1,7 @@
 ---
 title: Url element in the manifest file
 description: The Url element enables you to specify the URL of a resource used by the add-in.
-ms.date: 06/22/2023
+ms.date: 07/13/2023
 ms.localizationpriority: medium
 ---
 

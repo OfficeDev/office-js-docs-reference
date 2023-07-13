@@ -1,7 +1,7 @@
 ---
 title: ExtensionPoint element in the manifest file
 description: Defines where an add-in exposes functionality in the Office UI.
-ms.date: 07/06/2023
+ms.date: 07/13/2023
 ms.localizationpriority: medium
 ---
 
@@ -503,6 +503,8 @@ However, there are some limitations to be aware of. These limitations are in pla
 ### ReportPhishingCommandSurface (preview)
 
 This extension point activates your spam reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow section.
+
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
 #### Child elements
 

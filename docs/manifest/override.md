@@ -1,7 +1,7 @@
 ---
 title: Override element in the manifest file
 description: The Override element enables you to specify the value of a setting depending on a specified condition.
-ms.date: 07/11/2023
+ms.date: 07/13/2023
 ms.localizationpriority: medium
 ---
 

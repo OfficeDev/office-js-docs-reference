@@ -1,13 +1,15 @@
 ---
 title: MoreInfo element in the manifest file (preview)
 description: The MoreInfo element specifies the custom text and URL that direct users to informational resources from the pre-processing dialog of a spam reporting add-in in Outlook.
-ms.date: 06/22/2023
+ms.date: 07/13/2023
 ms.localizationpriority: medium
 ---
 
 # MoreInfo element (preview)
 
 Specifies the custom text and URL to provide informational resources to the users from the pre-processing dialog of a spam reporting add-in in Outlook. The information provided in this element helps users identify and report unsolicited messages.
+
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
 **Add-in type**: Mail
 
