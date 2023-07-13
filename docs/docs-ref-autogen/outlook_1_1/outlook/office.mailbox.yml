@@ -80,20 +80,11 @@ properties:
     uid: 'outlook!Office.Mailbox#ewsUrl:member'
     package: outlook!
     fullName: ewsUrl
-    summary: >-
-      Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
-
-
-      Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read
-      mode.
-
-
-      In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have
-      **read/write item** permissions to call the `saveAsync` method.
-
-
-      **Note**: This member is not supported in Outlook on iOS or Android.
+    summary: Gets the URL of the Exchange Web Services (EWS) endpoint for this email account.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -104,7 +95,23 @@ properties:
       -->**: Compose or Read
 
 
-      The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
+      **Important**:
+
+
+      - Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in
+      read mode.
+
+
+      - In compose mode, you must call the `saveAsync` method before you can use the `ewsUrl` member. Your app must have
+      **read/write item** permissions to call the `saveAsync` method.
+
+
+      - This property isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - The `ewsUrl` value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
       create a remote service to [get attachments from the selected
       item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!-- -->.
 
@@ -300,11 +307,10 @@ methods:
       Displays an existing calendar appointment.
 
 
-      The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a
-      dialog box on mobile devices.
+      The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop.
 
 
-      In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series,
+      In Outlook on Mac, you can use this method to display a single appointment that isn't part of a recurring series,
       or the master appointment of a recurring series. However, you can't display an instance of the series because you
       can't access the properties (including the item ID) of instances of a recurring series.
 
@@ -315,10 +321,10 @@ methods:
 
       If the specified item identifier does not identify an existing appointment, a blank pane opens on the client
       computer or device, and no error message is returned.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -327,6 +333,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
+      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -361,25 +372,19 @@ methods:
       Displays an existing message.
 
 
-      The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on
-      mobile devices.
+      The `displayMessageForm` method opens an existing message in a new window on the desktop.
 
 
       In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to
       32K characters.
 
 
-      If the specified item identifier does not identify an existing message, no message will be displayed on the client
+      If the specified item identifier doesn't identify an existing message, no message will be displayed on the client
       computer, and no error message is returned.
-
-
-      Do not use the `displayMessageForm` with an itemId that represents an appointment. Use the
-      `displayAppointmentForm` method to display an existing appointment, and `displayNewAppointmentForm` to display a
-      form to create a new appointment.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -388,6 +393,19 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - Don't use the `displayMessageForm` with an itemId that represents an appointment. Use the
+      `displayAppointmentForm` method to display an existing appointment, and `displayNewAppointmentForm` to display a
+      form to create a new appointment.
 
 
       #### Examples
@@ -427,7 +445,7 @@ methods:
       parameters.
 
 
-      In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
+      In Outlook on the web, this method always displays a form with an attendees field. If you don't specify any
       attendees as input arguments, the method displays a form with a **Save** button. If you have specified
       attendees, the form would include the attendees and a **Send** button.
 
@@ -440,10 +458,10 @@ methods:
 
       If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an
       exception is thrown.
-
-
-      **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read item**
@@ -452,6 +470,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Read
+
+
+      **Important**: This method isn't supported in Outlook on Android or on iOS. For more information on supported
+      APIs in Outlook mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
       #### Examples
@@ -505,30 +528,6 @@ methods:
 
 
       The token is returned as a string in the `asyncResult.value` property.
-
-
-      You can pass both the token and either an attachment identifier or item identifier to an external system. That
-      system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
-      [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
-      or [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation)
-      operation to return an attachment or item. For example, you can create a remote service to [get attachments from
-      the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
-      -->.
-
-
-      Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
-
-
-      Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
-      method requires a minimum permission level of **read/write item**.
-
-
-      **Important**: For guidance on delegate or shared scenarios, see the [delegate
-      access](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
-
-
-      **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins
-      running on Outlook mobile clients.
     remarks: >-
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
       support](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
@@ -542,6 +541,36 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - You can pass both the token and either an attachment identifier or item identifier to an external system. That
+      system uses the token as a bearer authorization token to call the Exchange Web Services (EWS)
+      [GetAttachment](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getattachment-operation)
+      or [GetItem](https://learn.microsoft.com/exchange/client-developer/web-service-reference/getitem-operation)
+      operation to return an attachment or item. For example, you can create a remote service to [get attachments from
+      the selected item](https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item)<!--
+      -->.
+
+
+      - Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read
+      item**.
+
+
+      - Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
+      method requires a minimum permission level of **read/write item**.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. EWS operations aren't supported in add-ins running
+      on Outlook mobile clients. For more information on supported APIs in Outlook mobile, see [Outlook JavaScript APIs
+      supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - For guidance on delegate or shared scenarios, see the [shared folders and shared
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       **Errors**:
@@ -685,56 +714,11 @@ methods:
       user's mailbox.
 
 
-      In these cases, add-ins should use REST APIs to access the user's mailbox instead.
-
-
       The `makeEwsRequestAsync` method sends an EWS request on behalf of the add-in to Exchange.
-
-
-      You cannot request Folder Associated Items with the `makeEwsRequestAsync` method.
-
-
-      The XML request must specify UTF-8 encoding: `\<?xml version="1.0" encoding="utf-8"?\>`<!-- -->.
-
-
-      Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For
-      information about using the **read/write mailbox** permission and the EWS operations that you can call with
-      the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
-      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
-
-
-      The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds
-      1 MB in size, an error message is returned instead.
-
-
-      **Note**: This method is not supported in the following scenarios.
-
-
-      - In Outlook on iOS or Android.
-
-
-      - When the add-in is loaded in a Gmail mailbox.
-
-
-      **Note**: The server administrator must set `OAuthAuthentication` to `true` on the Client Access Server EWS
-      directory to enable the `makeEwsRequestAsync` method to make EWS requests.
-
-
-      *Version differences*
-
-
-      When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version
-      15.0.4535.1004, you should set the encoding value to ISO-8859-1.
-
-
-      `<?xml version="1.0" encoding="iso-8859-1"?>`
-
-
-      You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
-      whether your mail app is running in Outlook or Outlook on the web by using the `mailbox.diagnostics.hostName`
-      property. You can determine what version of Outlook is running by using the `mailbox.diagnostics.hostVersion`
-      property.
     remarks: >-
+      \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
+
+
       **[Minimum permission
       level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->**: **read/write mailbox**
@@ -743,6 +727,39 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**:
+
+
+      - To enable the `makeEwsRequestAsync` method to make EWS requests, the server administrator must set
+      `OAuthAuthentication` to `true` on the Client Access Server EWS directory .
+
+
+      - Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method. For
+      information about using the **read/write mailbox** permission and the EWS operations that you can call with
+      the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's
+      mailbox](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->.
+
+
+      - If your add-in needs to access Folder Associated Items or its XML request must specify UTF-8 encoding (`\<?xml
+      version="1.0" encoding="utf-8"?\>`<!-- -->), it must use Microsoft Graph or REST APIs to access the user's mailbox
+      instead.
+
+
+      - This method isn't supported in Outlook on Android or on iOS. For more information on supported APIs in Outlook
+      mobile, see [Outlook JavaScript APIs supported in Outlook on mobile
+      devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
+
+
+      - This method isn't supported when the add-in is loaded in a Gmail mailbox.
+
+
+      - When you use the `makeEwsRequestAsync` method in add-ins that run in Outlook versions earlier than Version
+      15.0.4535.1004, you must set the encoding value to ISO-8859-1 (`<?xml version="1.0" encoding="iso-8859-1"?>`<!--
+      -->). To determine the version of an Outlook client, use the `mailbox.diagnostics.hostVersion` property. You don't
+      need to set the encoding value when your add-in is running in Outlook on the web. To determine the Outlook client
+      in which your add-in is running, use the `mailbox.diagnostics.hostName` property.
 
 
       #### Examples
@@ -870,7 +887,8 @@ methods:
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the XML of the EWS request
-            provided as a string. If the result exceeds 1 MB in size, an error message is returned instead.
+            provided as a string. If the result exceeds 1 MB in size, an error message is returned in the `error`
+            property.
           type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.

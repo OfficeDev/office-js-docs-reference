@@ -5,7 +5,7 @@ package: outlook!
 fullName: Office.InternetHeaders
 summary: >-
   The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves
-  Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
+  Exchange and is converted to a MIME message.
 
 
   Internet headers are stored as string key-value pairs on a per-item basis.
@@ -61,8 +61,7 @@ methods:
     fullName: 'getAsync(names, options, callback)'
     summary: >-
       Given an array of internet header names, this method returns a record containing those internet headers and their
-      values. If the add-in requests an x-header that isn't available, that x-header will not be returned in the
-      results.
+      values. If the add-in requests a header that isn't available, that header won't be returned in the results.
 
 
       **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
@@ -134,8 +133,7 @@ methods:
     fullName: 'getAsync(names, callback)'
     summary: >-
       Given an array of internet header names, this method returns a record containing those internet headers and their
-      values. If the add-in requests an x-header that isn't available, that x-header will not be returned in the
-      results.
+      values. If the add-in requests a header that isn't available, that header won't be returned in the results.
 
 
       **Note**: This method is intended to return the values of the custom headers you set using the `setAsync`
