@@ -1,15 +1,15 @@
 ---
 title: ReportPhishingCustomization element in the manifest file (preview)
-description: The ReportPhishingCustomization element configures the ribbon button and pre-processing dialog of a spam reporting add-in in Outlook.
-ms.date: 07/13/2023
+description: The ReportPhishingCustomization element configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
+ms.date: 07/14/2023
 ms.localizationpriority: medium
 ---
 
 # ReportPhishingCustomization element (preview)
 
-Configures the ribbon button and pre-processing dialog of a spam reporting add-in in Outlook.
+Configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
 
-To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
 **Add-in type**: Mail
 
@@ -36,7 +36,7 @@ None.
 | Element | Required | Description |
 | :------ | :------: | :------ |
 | [Control](control.md) | Yes | Configures and adds the add-in button to the ribbon. The **xsi:type** attribute must be set to `Button` and the **xsi:type** attribute of its **\<Action\>** child element must be set to `ExecuteFunction`. |
-| [PreProcessingDialog (preview)](preprocessingdialog.md) | Yes | Configures the pre-processing dialog shown after the add-in button is selected from the ribbon. This dialog allows users to provide additional information about a message they're reporting. |
+| [PreProcessingDialog (preview)](preprocessingdialog.md) | Yes | Configures the preprocessing dialog shown after the add-in button is selected from the ribbon. This dialog allows users to provide additional information about a message they're reporting. |
 | [SourceLocation element (version overrides)](customfunctionssourcelocation.md) | Yes | Specifies the location of the source JavaScript file. |
 
 ## Example
@@ -61,7 +61,7 @@ None.
         <FunctionName>onMessageReport</FunctionName>
       </Action>
     </Control>
-    <!-- Configures the pre-processing dialog. -->
+    <!-- Configures the preprocessing dialog. -->
     <PreProcessingDialog>
       <Title resid="PreProcessingDialog.Label"/>
       <Description resid="PreProcessingDialog.Description"/>

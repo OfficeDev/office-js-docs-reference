@@ -1,7 +1,7 @@
 ---
 title: Runtimes in the manifest file 
 description: The Runtimes element specifies your add-in's runtime.
-ms.date: 07/13/2023
+ms.date: 07/14/2023
 ms.localizationpriority: medium
 ---
 
@@ -50,5 +50,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 ## See also
 
 - [Runtime](runtime.md)
+- [Runtimes in Office Add-ins](/office/dev/add-ins/testing/runtimes)
 - [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
 - [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)
+- [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting)

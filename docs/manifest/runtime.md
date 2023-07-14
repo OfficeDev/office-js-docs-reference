@@ -1,7 +1,7 @@
 ---
 title: Runtime in the manifest file
 description: The Runtime element configures your add-in to use a shared JavaScript runtime for its various components, for example, ribbon, task pane, custom functions.
-ms.date: 07/13/2023
+ms.date: 07/14/2023
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +49,7 @@ For more information, see [Version overrides in the manifest](/office/dev/add-in
 |  Attribute  |  Required  |  Description  |
 |:-----|:-----|:-----|
 |  **resid**  |  Yes  | Specifies the URL location of the HTML page for your add-in. The `resid` can be no more than 32 characters and must match an `id` attribute of a `Url` element in the `Resources` element. |
-|  [lifetime](#lifetime-attribute)  |  No  | The default value for `lifetime` is `short` and doesn't need to be specified. Outlook event-based activation and spam reporting add-ins use only the `short` value. If you want to use a shared runtime in an Excel add-in, explicitly set the value to `long`. |
+|  [lifetime](#lifetime-attribute)  |  No  | The default value for `lifetime` is `short` and doesn't need to be specified. Outlook event-based activation and spam-reporting add-ins use only the `short` value. If you want to use a shared runtime in an Excel add-in, explicitly set the value to `long`. |
 
 ### lifetime attribute
 
@@ -57,12 +57,14 @@ Optional. Represents the length of time the add-in is allowed to run.
 
 #### Available values
 
-`short`: Default. Used only for Outlook event-based activation and spam reporting add-ins. After the add-in is activated, it will run for a maximum amount of time as specified by the platform. Currently, that's around 5 minutes. This is the only value supported by Outlook.
+`short`: Default. Used only for Outlook event-based activation and spam-reporting add-ins. After the add-in is activated, it will run for a maximum amount of time as specified by the platform. Currently, that's around 5 minutes. This is the only value supported by Outlook.
 
 `long`: Used only when configuring a [shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime). The add-in can start on document open and run indefinitely. For example, task pane code will continue running even when the user closes the task pane. This is the only value supported by the shared runtime.
 
 ## See also
 
 - [Runtimes](runtimes.md)
+- [Runtimes in Office Add-ins](/office/dev/add-ins/testing/runtimes)
 - [Configure your Office Add-in to use a shared JavaScript runtime](/office/dev/add-ins/develop/configure-your-add-in-to-use-a-shared-runtime)
 - [Configure your Outlook add-in for event-based activation](/office/dev/add-ins/outlook/autolaunch)
+- [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting)
