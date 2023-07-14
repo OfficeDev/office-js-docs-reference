@@ -502,7 +502,7 @@ However, there are some limitations to be aware of. These limitations are in pla
 
 ### ReportPhishingCommandSurface (preview)
 
-This extension point activates your spam reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow section.
+This extension point activates your spam reporting add-in in the Outlook ribbon and prevents it from appearing at the end of the ribbon or in the overflow menu.
 
 To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # PreProcessingDialog element (preview)
 
-Configures the pre-processing dialog of a spam reporting add-in in Outlook, so that users can provide additional information about the message they're reporting.
+Configures the preprocessing dialog of a spam reporting add-in in Outlook, so that users can provide additional information about the message they're reporting.
 
 To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
