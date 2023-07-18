@@ -331,7 +331,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "onCanceled: "
+                      "text": "onCanceled?: "
                     },
                     {
                       "kind": "Content",
@@ -343,7 +343,7 @@
                     }
                   ],
                   "isReadonly": false,
-                  "isOptional": false,
+                  "isOptional": true,
                   "releaseTag": "Public",
                   "name": "onCanceled",
                   "propertyTypeTokenRange": {

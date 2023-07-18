@@ -12652,9 +12652,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          *
          * @param groupOption - Specifies how the range can be grouped by rows or columns.
-                    An `InvalidArgument` error is thrown when the group option differs from the range's
-                    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
-                    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+         * An `InvalidArgument` error is thrown when the group option differs from the range's
+         * `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+         * or `range.isEntireColumn` is true and `groupOption` is "ByRows").
          */
         group(groupOption: Excel.GroupOption): void;
         /**
@@ -12664,9 +12664,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          *
          * @param groupOptionString - Specifies how the range can be grouped by rows or columns.
-                    An `InvalidArgument` error is thrown when the group option differs from the range's
-                    `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
-                    or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+         * An `InvalidArgument` error is thrown when the group option differs from the range's
+         * `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+         * or `range.isEntireColumn` is true and `groupOption` is "ByRows").
          */
         group(groupOptionString: "ByRows" | "ByColumns"): void;
         /**
@@ -16127,8 +16127,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.11]
          *
          * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
-                    **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
-                    Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
+         * **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
+         * Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
          */
         adjustIndent(amount: number): void;
         /**
@@ -17524,7 +17524,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+         * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -21660,8 +21660,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.14]
          *
          * @param columnIndex - The zero-based column index, which represents which column filter needs to be cleared.
-                     If the index value is not supported (for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
-                     then an `InvalidArgument` error will be thrown.
+         * If the index value is not supported (for example, if the value is a negative number, or if the value is greater than the number of available columns in the range),
+         * then an `InvalidArgument` error will be thrown.
          */
         clearColumnCriteria(columnIndex: number): void;
         /**
@@ -22522,7 +22522,7 @@ export declare namespace Excel {
          */
         altTextTitle: string;
         /**
-         * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+         * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -23575,9 +23575,9 @@ export declare namespace Excel {
          * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
-                    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
-                    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
-                    you want to sort on, this can be empty.
+         * items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+         * the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+         * you want to sort on, this can be empty.
          */
         sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
@@ -23590,9 +23590,9 @@ export declare namespace Excel {
          * @param sortByString - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
-                    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
-                    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
-                    you want to sort on, this can be empty.
+         * items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+         * the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+         * you want to sort on, this can be empty.
          */
         sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
@@ -36656,13 +36656,13 @@ export declare namespace Excel {
      */
     enum Placement {
         /**
-         * The object is moved with the cells.
+         * The object is moved and sized with the cells.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         twoCell = "TwoCell",
         /**
-         * The object is moved and sized with the cells.
+         * The object is moved with the cells.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -37299,7 +37299,7 @@ export declare namespace Excel {
          * [Api set: ExcelApiOnline 1.1]
          *
          * @param name - The name of the sheet view to be created.
-                    Throws an error when the provided name already exists, is empty, or is a name reserved by the worksheet.
+         * Throws an error when the provided name already exists, is empty, or is a name reserved by the worksheet.
          * @returns The newly created sheet view object.
          */
         add(name: string): Excel.NamedSheetView;
@@ -42619,7 +42619,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -44249,7 +44249,7 @@ export declare namespace Excel {
              */
             altTextTitle?: string;
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
@@ -48426,7 +48426,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -50406,7 +50406,7 @@ export declare namespace Excel {
              */
             altTextTitle?: string;
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
@@ -56263,7 +56263,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -56592,7 +56592,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -59315,7 +59315,7 @@ export declare namespace Excel {
              */
             altTextTitle?: boolean;
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]

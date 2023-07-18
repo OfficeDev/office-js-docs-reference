@@ -8323,7 +8323,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+         * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -12799,7 +12799,7 @@ export declare namespace Excel {
         
         
         /**
-         * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+         * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
          *
          * @remarks
          * [Api set: ExcelApi 1.9]
@@ -13752,9 +13752,9 @@ export declare namespace Excel {
          * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
-                    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
-                    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
-                    you want to sort on, this can be empty.
+         * items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+         * the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+         * you want to sort on, this can be empty.
          */
         sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
@@ -13767,9 +13767,9 @@ export declare namespace Excel {
          * @param sortByString - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
-                    items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
-                    the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
-                    you want to sort on, this can be empty.
+         * items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
+         * the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
+         * you want to sort on, this can be empty.
          */
         sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
@@ -24766,13 +24766,13 @@ export declare namespace Excel {
      */
     enum Placement {
         /**
-         * The object is moved with the cells.
+         * The object is moved and sized with the cells.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
         twoCell = "TwoCell",
         /**
-         * The object is moved and sized with the cells.
+         * The object is moved with the cells.
          * @remarks
          * [Api set: ExcelApi 1.9]
          */
@@ -30372,7 +30372,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -31916,7 +31916,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
@@ -35595,7 +35595,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -37423,7 +37423,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
@@ -42440,7 +42440,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -42769,7 +42769,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -45187,7 +45187,7 @@ export declare namespace Excel {
             
             
             /**
-             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+             * Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
              *
              * @remarks
              * [Api set: ExcelApi 1.9]
