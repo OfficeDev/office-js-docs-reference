@@ -3218,6 +3218,7 @@ Excel.EventTriggerSource,thisLocalAddin,EnumField,Fine,false
 Excel.EventTriggerSource,unknown,EnumField,Fine,false
 Excel.EventType,N/A,Enum,Fine,false
 Excel.EventType,agaveVisualUpdate,EnumField,Fine,false
+Excel.EventType,annotationAdded,EnumField,Fine,false
 Excel.EventType,chartActivated,EnumField,Fine,false
 Excel.EventType,chartAdded,EnumField,Fine,false
 Excel.EventType,chartDeactivated,EnumField,Fine,false
@@ -3230,6 +3231,7 @@ Excel.EventType,linkedDataTypeRefreshModeChanged,EnumField,Fine,false
 Excel.EventType,linkedDataTypeRefreshRequestCompleted,EnumField,Fine,false
 Excel.EventType,linkedWorkbookRefreshCompleted,EnumField,Fine,false
 Excel.EventType,linkedWorkbookWorkbookLinksChanged,EnumField,Fine,false
+Excel.EventType,rangeValuesPreviewDismissed,EnumField,Fine,false
 Excel.EventType,ribbonCommandExecuted,EnumField,Fine,false
 Excel.EventType,shapeActivated,EnumField,Fine,false
 Excel.EventType,shapeDeactivated,EnumField,Fine,false
@@ -3240,6 +3242,7 @@ Excel.EventType,tableFiltered,EnumField,Fine,false
 Excel.EventType,tableSelectionChanged,EnumField,Fine,false
 Excel.EventType,visualChange,EnumField,Fine,false
 Excel.EventType,visualSelectionChanged,EnumField,Fine,false
+Excel.EventType,workbookActionRecorded,EnumField,Fine,false
 Excel.EventType,workbookActivated,EnumField,Fine,false
 Excel.EventType,workbookAutoSaveSettingChanged,EnumField,Fine,false
 Excel.EventType,workbookNavigationObjectChanged,EnumField,Fine,false
@@ -10914,7 +10917,7 @@ Word.InsertLocation,start,EnumField,Fine,false
 Word.List,N/A,Class,Good,true
 Word.List,context,Property,Good,false
 Word.List,id,Property,Good,false
-Word.List,levelExistences,Property,Good,false
+Word.List,levelExistences,Property,Good,true
 Word.List,levelTypes,Property,Good,true
 Word.List,paragraphs,Property,Good,false
 Word.List,getLevelFont(level),Method,Poor,false
@@ -11405,8 +11408,8 @@ Word.SelectionMode,select,EnumField,Fine,false
 Word.SelectionMode,start,EnumField,Fine,false
 Word.Setting,N/A,Class,Good,false
 Word.Setting,context,Property,Good,false
-Word.Setting,key,Property,Good,false
-Word.Setting,value,Property,Good,false
+Word.Setting,key,Property,Good,true
+Word.Setting,value,Property,Good,true
 Word.Setting,delete(),Method,Poor,true
 Word.Setting,load(options),Method,Poor,false
 Word.Setting,load(propertyNames),Method,Poor,false
