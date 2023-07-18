@@ -18,6 +18,13 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"AgaveVisualUpdate"'
+  - name: annotationAdded
+    uid: 'excel!Excel.EventType.annotationAdded:member'
+    package: excel!
+    summary: >-
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"AnnotationAdded"'
   - name: chartActivated
     uid: 'excel!Excel.EventType.chartActivated:member'
     package: excel!
@@ -136,6 +143,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedWorkbookWorkbookLinksChanged"'
+  - name: rangeValuesPreviewDismissed
+    uid: 'excel!Excel.EventType.rangeValuesPreviewDismissed:member'
+    package: excel!
+    summary: >-
+      RangeValuesPreviewDismissed represents the type of event registered when a RangeValuePreview is dismissed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"RangeValuesPreviewDismissed"'
   - name: ribbonCommandExecuted
     uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     package: excel!
@@ -228,6 +245,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"VisualSelectionChanged"'
+  - name: workbookActionRecorded
+    uid: 'excel!Excel.EventType.workbookActionRecorded:member'
+    package: excel!
+    summary: >-
+      Workbook Action Recorded represents the type of event registered when the workbook records an action.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"WorkbookActionRecorded"'
   - name: workbookActivated
     uid: 'excel!Excel.EventType.workbookActivated:member'
     package: excel!

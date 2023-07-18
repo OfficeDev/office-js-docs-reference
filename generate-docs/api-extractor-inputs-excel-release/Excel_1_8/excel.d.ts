@@ -5868,7 +5868,7 @@ export declare namespace Excel {
          */
         name: string;
         /**
-         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+         * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
          *
          * @remarks
          * [Api set: ExcelApi 1.8]
@@ -22055,7 +22055,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -26150,7 +26150,7 @@ export declare namespace Excel {
              */
             name?: string;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -31532,7 +31532,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]
@@ -31735,7 +31735,7 @@ export declare namespace Excel {
              */
             name?: boolean;
             /**
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
+             * Specifies how bars and columns are positioned. Can be a value between -100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * @remarks
              * [Api set: ExcelApi 1.8]

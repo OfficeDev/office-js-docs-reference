@@ -51,7 +51,7 @@ properties:
     uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#autoFormat:member'
     package: excel!
     fullName: autoFormat
-    summary: Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
+    summary: Specifies if formatting will be automatically formatted when it's refreshed or when fields are moved.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
