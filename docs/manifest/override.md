@@ -1,7 +1,7 @@
 ---
 title: Override element in the manifest file
 description: The Override element enables you to specify the value of a setting depending on a specified condition.
-ms.date: 02/07/2023
+ms.date: 07/14/2023
 ms.localizationpriority: medium
 ---
 
@@ -200,7 +200,7 @@ The **\<Override\>** element for `RequirementToken` must contain the following c
 > [!IMPORTANT]
 > Support for this element was introduced in [Mailbox requirement set 1.10](../requirement-sets/outlook/requirement-set-1.10/outlook-requirement-set-1.10.md) with the [event-based activation feature](/office/dev/add-ins/outlook/autolaunch). See [clients and platforms](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets#requirement-sets-supported-by-exchange-servers-and-outlook-clients) that support this requirement set.
 
-An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook Desktop requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) handlers.
+An **\<Override\>** element expresses a conditional and can be read as an "If ... then ..." statement. If the **\<Override\>** element is of type **RuntimeOverride**, then the `type` attribute is the condition, and the `resid` attribute is the consequent. For example, the following is read "If the type is 'javascript', then the `resid` is 'JSRuntime.Url'." Outlook on Windows requires this element for [LaunchEvent extension point](/office/dev/add-ins/reference/manifest/extensionpoint#launchevent) and [ReportPhishingCommandSurface extension point (preview)](/javascript/api/manifest/extensionpoint) handlers.
 
 ```xml
 <Runtime resid="WebViewRuntime.Url">
@@ -230,12 +230,12 @@ An **\<Override\>** element expresses a conditional and can be read as an "If ..
 ### Examples
 
 ```xml
-<!-- Event-based activation happens in a lightweight runtime.-->
+<!-- Event-based activation and integrated spam reporting happen in a lightweight runtime.-->
 <Runtimes>
   <!-- HTML file including reference to or inline JavaScript event handlers.
   This is used by Outlook on the web and on the new Mac UI. -->
   <Runtime resid="WebViewRuntime.Url">
-    <!-- JavaScript file containing event handlers. This is used by Outlook Desktop. -->
+    <!-- JavaScript file containing event handlers. This is used by Outlook on Windows. -->
     <Override type="javascript" resid="JSRuntime.Url"/>
   </Runtime>
 </Runtimes>

@@ -1,7 +1,7 @@
 ---
 title: Office.context.mailbox.item - preview requirement set
 description: Outlook Mailbox API preview requirement set version of the Item object model.
-ms.date: 07/05/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 
@@ -133,6 +133,7 @@ ms.localizationpriority: medium
 | displayReplyFormAsync(formData, [options], [callback]) | **read item** | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-displayreplyformasync-member(1)) | [1.9](../requirement-set-1.9/outlook-requirement-set-1.9.md) |
 | | | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-displayreplyformasync-member(1)) | [1.9](../requirement-set-1.9/outlook-requirement-set-1.9.md) |
 | getAllInternetHeadersAsync([options], [callback]) | **read item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getallinternetheadersasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+| getAsFileAsync([options], callback) | **read item** | [Message Read](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getasfileasync-member(1)) | [Preview](outlook-requirement-set-preview.md) |
 | getAttachmentContentAsync(attachmentId, [options], [callback]) | **read item** | [Appointment Organizer](/javascript/api/outlook/office.appointmentcompose?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentcompose-getattachmentcontentasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Appointment Attendee](/javascript/api/outlook/office.appointmentread?view=outlook-js-preview&preserve-view=true#outlook-office-appointmentread-getattachmentcontentasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
 | | | [Message Compose](/javascript/api/outlook/office.messagecompose?view=outlook-js-preview&preserve-view=true#outlook-office-messagecompose-getattachmentcontentasync-member(1)) | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
@@ -187,18 +188,16 @@ ms.localizationpriority: medium
 
 You can subscribe to and unsubscribe from the following events using `addHandlerAsync` and `removeHandlerAsync` respectively.
 
-> [!IMPORTANT]
-> Events are only available with task pane implementation.
-
 | [Event](/javascript/api/office/office.eventtype?view=outlook-js-preview&preserve-view=true) | Description | Minimum<br>requirement set |
 |---|---|:---:|
-|`AppointmentTimeChanged`| The date or time of the selected appointment or series has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
-|`AttachmentsChanged`| An attachment has been added to or removed from the item. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
-|`EnhancedLocationsChanged`| The location of the selected appointment has changed. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
-|`InfobarClicked`| An action has been selected from a notification message. | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
-|`RecipientsChanged`| The recipient list of the selected item or appointment location has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
-|`RecurrenceChanged`| The recurrence pattern of the selected series has changed. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
-|`SensitivityLabelChanged`| The sensitivity label of a message or appointment in compose mode has changed. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
+|`AppointmentTimeChanged`| The date or time of the selected appointment or series has changed. Only available with task pane implementation. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
+|`AttachmentsChanged`| An attachment has been added to or removed from the item. Only available with task pane implementation. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+|`EnhancedLocationsChanged`| The location of the selected appointment has changed. Only available with task pane implementation. | [1.8](../requirement-set-1.8/outlook-requirement-set-1.8.md) |
+|`InfobarClicked`| An action has been selected from a notification message. Only available with task pane implementation. | [1.10](../requirement-set-1.10/outlook-requirement-set-1.10.md) |
+|`RecipientsChanged`| The recipient list of the selected item or appointment location has changed. Only available with task pane implementation. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
+|`RecurrenceChanged`| The recurrence pattern of the selected series has changed. Only available with task pane implementation. | [1.7](../requirement-set-1.7/outlook-requirement-set-1.7.md) |
+|`SensitivityLabelChanged`| The sensitivity label of a message or appointment in compose mode has changed. Only available with task pane implementation. | [1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md) |
+|`SpamReporting`| An unsolicited message is reported in Outlook. Only available with a function command. | [Preview](outlook-requirement-set-preview.md) |
 
 ## Example
 
