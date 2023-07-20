@@ -220,6 +220,16 @@ fields:
     uid: 'office!Office.EventType.SettingsChanged:member'
     package: office!
     summary: A Settings.settingsChanged event was raised.
+  - name: SpamReporting
+    uid: 'office!Office.EventType.SpamReporting:member'
+    package: office!
+    summary: >-
+      Occurs in Outlook when an unsolicited message is reported. The event handler receives an argument of type
+      [Office.SpamReportingEventArgs](https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs?view=outlook-js-preview&preserve-view=true)<!--
+      -->.
+
+
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
   - name: TaskSelectionChanged
     uid: 'office!Office.EventType.TaskSelectionChanged:member'
     package: office!

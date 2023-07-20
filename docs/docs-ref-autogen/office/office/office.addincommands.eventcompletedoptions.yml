@@ -14,13 +14,17 @@ properties:
     package: office!
     fullName: allowEvent
     summary: >-
-      When the [completed
+      When you use the [completed
       method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      is used to signal completion of an event handler, this value indicates if the handled event should continue
-      execution or be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can
-      set `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts
+      to signal completion of an event handler, this property indicates if the handled event should continue execution
+      or be canceled. For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set
+      `allowEvent` to `false` to cancel the sending of an item. For a complete sample, see the [Smart Alerts
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
+
+
+      **Important**: Only applicable to add-ins that implement [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
@@ -67,7 +71,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'allowEvent: boolean;'
+      content: 'allowEvent?: boolean;'
       return:
         type: boolean
   - name: errorMessage
@@ -75,12 +79,16 @@ properties:
     package: office!
     fullName: errorMessage
     summary: >-
-      When the [completed
+      When you use the [completed
       method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
-      is used to signal completion of an event handler and if the `allowEvent` option is set to `false`<!-- -->, this
-      value sets the error message that will be displayed to the user. For an example, see the [Smart Alerts
+      to signal completion of an event handler and set its `allowEvent` property to `false`<!-- -->, this property sets
+      the error message that will be displayed to the user. For an example, see the [Smart Alerts
       walkthrough](https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough)<!--
       -->.
+
+
+      **Important**: Only applicable to add-ins that implement [event-based
+      activation](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.12](/office/dev/add-ins/reference/javascript-api-for-office) \]
 
@@ -131,3 +139,159 @@ properties:
       content: 'errorMessage?: string;'
       return:
         type: string
+  - name: folderName
+    uid: 'office!Office.AddinCommands.EventCompletedOptions#folderName:member'
+    package: office!
+    fullName: folderName
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to
+      which the message will be moved.
+
+
+      **Important**: Only applicable to add-ins that implement the [integrated spam reporting
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**:
+
+
+      - If the specified folder doesn't exist yet, it will be created before the message is moved.
+
+
+      - If the `postProcessingAction` property is set to `moveToCustomFolder`<!-- -->, the `folderName` property must be
+      specified. Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If
+      `postProcessingAction` is set to another action other than `moveToCustomFolder`<!-- -->, the `folderName` property
+      is ignored.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'folderName?: string;'
+      return:
+        type: string
+  - name: onErrorDeleteItem
+    uid: 'office!Office.AddinCommands.EventCompletedOptions#onErrorDeleteItem:member'
+    package: office!
+    fullName: onErrorDeleteItem
+    summary: >-
+      When set to `true`<!-- -->, deletes a reported message if an error occurs while the message is processed. If this
+      property is set to `false` or isn't specified in the [completed
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))<!--
+      -->, the reported message remains in its current mailbox folder.
+
+
+      **Important**: Only applicable to add-ins that implement the [integrated spam reporting
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'onErrorDeleteItem?: boolean;'
+      return:
+        type: boolean
+  - name: postProcessingAction
+    uid: 'office!Office.AddinCommands.EventCompletedOptions#postProcessingAction:member'
+    package: office!
+    fullName: postProcessingAction
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      to signal that a reported message has finished processing, this property specifies the next action to be performed
+      on the message. The following post-processing actions are available:
+
+
+      - `delete` - Deletes the reported message.
+
+
+      - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder
+      in the `folderName` property.
+
+
+      - `moveToSpamFolder` - Moves the reported message to the Junk Email folder of the mailbox.
+
+
+      - `noMove` - Leaves the reported message in its current folder.
+
+
+      **Important**: Only applicable to add-ins that implement the [integrated spam reporting
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+
+
+      **Important**: If the property is set to `moveToCustomFolder`<!-- -->, you must specify the name of the folder
+      to which the message will be moved in the `folderName` property of the `event.completed` call. Otherwise, the
+      `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the Junk Email
+      folder.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'postProcessingAction?: string;'
+      return:
+        type: string
+  - name: showPostProcessingDialog
+    uid: 'office!Office.AddinCommands.EventCompletedOptions#showPostProcessingDialog:member'
+    package: office!
+    fullName: showPostProcessingDialog
+    summary: >-
+      When you use the [completed
+      method](https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1))
+      to signal that a reported message has finished processing, this property indicates if a post-processing dialog is
+      shown to the user. The JSON object assigned to this property must contain a title and a description. If this
+      property isn't specified, a dialog isn't shown to the user once their reported message is processed.
+
+
+      **Important**: Only applicable to add-ins that implement the [integrated spam reporting
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting)<!-- -->.
+    remarks: >-
+      \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+      **[Minimum permission level
+      (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **read item**
+
+
+      **[Applicable Outlook
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Message Read
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showPostProcessingDialog?: object;'
+      return:
+        type: object
