@@ -1,7 +1,7 @@
 ---
 title: SourceLocation element (version overrides) in the manifest file
 description: Defines the location of a resource needed by the Script or Page elements used by custom functions in Excel, or needed by the ReportPhishingCustomization element, DetectedEntity extension point, or LaunchEvent extension point in Outlook.
-ms.date: 07/14/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 

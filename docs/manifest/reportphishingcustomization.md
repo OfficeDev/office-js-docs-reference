@@ -1,7 +1,7 @@
 ---
 title: ReportPhishingCustomization element in the manifest file (preview)
 description: The ReportPhishingCustomization element configures the ribbon button and preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 07/14/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 

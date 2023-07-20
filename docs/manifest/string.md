@@ -1,7 +1,7 @@
 ---
 title: String element in the manifest file
 description: The String element enables you to specify the text of a Label, Title, or Description element.
-ms.date: 07/14/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 
