@@ -280,6 +280,11 @@ methods:
       - An [event](https://learn.microsoft.com/javascript/api/manifest/event) defined in the [Events extension
       point](https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events)<!-- -->. For example, an
       `ItemSend` event.
+
+
+      - An event defined in the [ReportPhishingCommandSurface extension point
+      (preview)](https://learn.microsoft.com/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview)<!--
+      -->.
     remarks: >-
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
 

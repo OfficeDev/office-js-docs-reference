@@ -8864,6 +8864,42 @@ export declare namespace Office {
          */
         getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
+         * Gets the current message in EML format encoded in Base64.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param options - An object literal that contains one or more of the following properties:-
+         *        `asyncContext`: Developers can provide any object they wish to access in the callback function.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an
+         *          `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are
+         *          returned in the `asyncResult.error` property.
+         *
+         * @beta
+         */
+        getAsFileAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
+         * Gets the current message in EML format encoded in Base64.
+         * 
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
+         *
+         * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+         *
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an
+         *          `Office.AsyncResult` object. The Base64-encoded EML format of the message is returned in the `asyncResult.value` property. Any errors encountered are
+         *          returned in the `asyncResult.error` property.
+         *
+         * @beta
+         */
+        getAsFileAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        /**
          * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
          *
          * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should get
@@ -11230,6 +11266,25 @@ export declare namespace Office {
          * The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.
          */
         delegatePermissions: MailboxEnums.DelegatePermissions;
+    }
+    /**
+     * Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is reported.
+     *
+     * @remarks
+     * [Api set: Mailbox preview]
+     *
+     * @beta
+     */
+    export interface SpamReportingEventArgs {
+        /**
+         * The type of event that was raised. For details, see {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType}.
+         *
+         * @remarks
+         * [Api set: Mailbox preview]
+         *
+         * @beta
+         */
+        type: "SpamReporting";
     }
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

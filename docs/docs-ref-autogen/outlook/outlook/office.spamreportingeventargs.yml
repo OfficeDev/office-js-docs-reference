@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Office.SpamReportingEventArgs
+uid: 'outlook!Office.SpamReportingEventArgs:interface'
+package: outlook!
+fullName: Office.SpamReportingEventArgs
+summary: >-
+  Provides information about the `Office.EventType.SpamReporting` event that occurs when an unsolicited message is
+  reported.
+remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: 'outlook!Office.SpamReportingEventArgs#type:member'
+    package: outlook!
+    fullName: type
+    summary: >-
+      The type of event that was raised. For details, see
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox preview](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: "SpamReporting";'
+      return:
+        type: '"SpamReporting"'
