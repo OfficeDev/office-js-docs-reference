@@ -215,7 +215,6 @@ export declare namespace Office {
          */
         resolve(): Promise<void>;
     }
-
     /**
      * Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level objects of the API.
      *
@@ -1047,7 +1046,6 @@ export declare namespace Office {
              * This property is supported in Outlook only in {@link https://learn.microsoft.com/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
              */
             source:Source;
-
             /**
              * Indicates that the add-in has completed processing and will automatically be closed.
              *
@@ -1056,10 +1054,13 @@ export declare namespace Office {
              * - A function command button (that is, an add-in command defined with an `Action` element, where the `xsi:type` attribute is set to `ExecuteFunction`).
              *
              * - An event defined in the {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#launchevent | LaunchEvent extension point}.
-             * For example, an `OnMessageSend` event. 
+             * For example, an `OnMessageSend` event.
              * 
              * - An {@link https://learn.microsoft.com/javascript/api/manifest/event | event} defined in the
              * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint#events | Events extension point}. For example, an `ItemSend` event.
+             * 
+             * - An event defined in the
+             * {@link https://learn.microsoft.com/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview | ReportPhishingCommandSurface extension point (preview)}.
              *
              * @remarks
              *
@@ -1075,18 +1076,19 @@ export declare namespace Office {
              */
             completed(options?: EventCompletedOptions): void;
         }
-
         /**
          * Specifies the behavior for when the event is completed.
          */
         export interface EventCompletedOptions {
             /**
-             * When the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * is used to signal completion of an event handler, this value indicates if the handled event should continue execution or be canceled.
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal completion of an event handler, this property indicates if the handled event should continue execution or be canceled.
              * For example, an add-in that handles the `OnMessageSend` or `OnAppointmentSend` event can set `allowEvent` to `false` to cancel the
              * sending of an item. For a complete sample, see the
              * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
              * 
+             * **Important**: Only applicable to add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
+             *
              * @remarks
              *
              * [Api set: Mailbox 1.8]
@@ -1095,13 +1097,14 @@ export declare namespace Office {
              *
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
-            allowEvent: boolean;
-
+            allowEvent?: boolean;
             /**
-             * When the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
-             * is used to signal completion of an event handler and if the `allowEvent` option is set to `false`, this value sets the error message
-             * that will be displayed to the user. For an example, see the  
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal completion of an event handler and set its `allowEvent` property to `false`, this property sets the error message
+             * that will be displayed to the user. For an example, see the
              * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts walkthrough}.
+             *
+             * **Important**: Only applicable to add-ins that implement {@link https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch | event-based activation}.
              *
              * @remarks
              * 
@@ -1112,8 +1115,98 @@ export declare namespace Office {
              * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
              */
             errorMessage?: string;
+            /**
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal that a reported message has finished processing, this property specifies the Outlook mailbox folder to which the message will be moved.
+             *
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             *
+             * @remarks
+             *
+             * [Api set: Mailbox preview]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+             *
+             * **Important**:
+             *
+             * - If the specified folder doesn't exist yet, it will be created before the message is moved.
+             *
+             * - If the `postProcessingAction` property is set to `moveToCustomFolder`, the `folderName` property must be specified.
+             * Otherwise, the reported message is moved to the Junk Email folder of the mailbox. If `postProcessingAction` is set to another action other than `moveToCustomFolder`,
+             * the `folderName` property is ignored.
+             *
+             * @beta
+             */
+            folderName?: string;
+            /**
+             * When set to `true`, deletes a reported message if an error occurs while the message is processed.
+             * If this property is set to `false` or isn't specified in the
+             * {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method},
+             * the reported message remains in its current mailbox folder.
+             *
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             *
+             * @remarks
+             *
+             * [Api set: Mailbox preview]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+             *
+             * @beta
+             */
+            onErrorDeleteItem?: boolean;
+            /**
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal that a reported message has finished processing, this property specifies the next action to be performed on the message. The following post-processing actions are available:
+             *
+             * - `delete` - Deletes the reported message.
+             *
+             * - `moveToCustomFolder` - Moves the reported message to a specified folder. You must specify the name of the folder in the `folderName` property.
+             *
+             * - `moveToSpamFolder` - Moves the reported message to the Junk Email folder of the mailbox.
+             *
+             * - `noMove` - Leaves the reported message in its current folder.
+             *
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             *
+             * @remarks
+             *
+             * [Api set: Mailbox preview]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+             *
+             * **Important**: If the property is set to `moveToCustomFolder`, you must specify the name of the folder to which the message will be moved in the `folderName`
+             * property of the `event.completed` call. Otherwise, the `postProcessingAction` property will default to `moveToSpamFolder` and move the reported message to the
+             * Junk Email folder.
+             *
+             * @beta
+             */
+            postProcessingAction?: string;
+            /**
+             * When you use the {@link https://learn.microsoft.com/javascript/api/office/office.addincommands.event#office-office-addincommands-event-completed-member(1) | completed method}
+             * to signal that a reported message has finished processing, this property indicates if a post-processing dialog is shown to the user. The JSON object assigned to this property
+             * must contain a title and a description. If this property isn't specified, a dialog isn't shown to the user once their reported message is processed. 
+             *
+             * **Important**: Only applicable to add-ins that implement the {@link https://learn.microsoft.com/office/dev/add-ins/outlook/spam-reporting | integrated spam reporting feature}.
+             *
+             * @remarks
+             *
+             * [Api set: Mailbox preview]
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: **read item**
+             *
+             * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
+             *
+             * @beta
+             */
+            showPostProcessingDialog?: object;
         }
-
         /**
          * Encapsulates source data for add-in events.
          */
@@ -1411,7 +1504,6 @@ export declare namespace Office {
          */
         openBrowserWindow(url: string): void;
     }
-
     /**
      * Provides information about which Requirement Sets are supported in the current environment.
      */
@@ -1434,7 +1526,6 @@ export declare namespace Office {
         */
        isSetSupported(name: string, minVersionNumber?: number): boolean;
     }
-
     /**
      * Provides options for how a dialog is displayed.
      */
@@ -1466,7 +1557,6 @@ export declare namespace Office {
          */
         asyncContext?: any
     }
-
     /**
      * The Office Auth namespace, `Office.auth`, provides a method that allows the Office client application to obtain an access token to the add-in's web application.
      * Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
@@ -2058,7 +2148,6 @@ export declare namespace Office {
          */
         sendMessage(name: string): void;
     }
-
     /**
      * Returns a promise of an object described in the expression. Callback is invoked only if the function fails.
      *
@@ -2430,6 +2519,15 @@ export declare namespace Office {
          * **Applications**: Excel, PowerPoint, Word
          */
         SettingsChanged,
+        /**
+         * Occurs in Outlook when an unsolicited message is reported. The event handler receives an argument of type
+         * {@link https://learn.microsoft.com/javascript/api/outlook/office.spamreportingeventargs?view=outlook-js-preview&preserve-view=true | Office.SpamReportingEventArgs}.
+         *
+         * [Api set: Mailbox preview]
+         *
+         * @beta
+         */
+        SpamReporting,
         /**
          * Triggers when a Task selection happens in Project.
          */
@@ -3004,7 +3102,6 @@ export declare namespace Office {
          */
         setDataAsync(data: TableData | any, callback?: (result: AsyncResult<void>) => void): void;
     }
-
     /**
      * Provides information about the binding that raised the DataChanged event.
      */
@@ -3019,7 +3116,6 @@ export declare namespace Office {
          */
         type: EventType;
     }
-
     /**
      * Provides information about the binding that raised the SelectionChanged event.
      */
@@ -3073,7 +3169,6 @@ export declare namespace Office {
          */
         type: EventType;
     }
-
     /**
      * Represents the bindings the add-in has within the document.
      */
@@ -3689,7 +3784,6 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: Office.EventType, handler?: (result: any) => void, callback?: (result: AsyncResult<void>) => void): void;
     }
-
     /**
      * Provides information about the deleted node that raised the nodeDeleted event.
      */
@@ -3710,7 +3804,6 @@ export declare namespace Office {
          */
         oldNode: CustomXmlNode;
     }
-
     /**
      * Provides information about the inserted node that raised the nodeInserted event.
      */
@@ -3726,7 +3819,6 @@ export declare namespace Office {
          */
         newNode: CustomXmlNode;
     }
-
     /**
      * Provides information about the replaced node that raised the nodeReplaced event.
      */
@@ -3749,7 +3841,6 @@ export declare namespace Office {
          */
         oldNode: CustomXmlNode;
     }
-
     /**
      * Represents a collection of CustomXmlPart objects.
      *

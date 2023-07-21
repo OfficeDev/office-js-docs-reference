@@ -1,7 +1,7 @@
 ---
 title: Url element in the manifest file
 description: The Url element enables you to specify the URL of a resource used by the add-in.
-ms.date: 02/07/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 
@@ -19,11 +19,18 @@ Defines the URL of a resource.
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
+## Attributes
+
+| Attribute | Required | Description |
+| :----- | :-----: | :----- |
+| **id** | Yes | Specifies the unique identifier of a URL resource. |
+| **DefaultValue** | Yes | Specifies the HTTPS URL of a resource. The URL can have a maximum of 2048 characters. |
+
 ## Child elements
 
-|  Element |  Type  |  Description  |
+| Element | Type | Description |
 |:-----|:-----:|:-----|
-|  [Override](override.md)           |  image   |  Provides a way to override the URL depending on a specified locale. |
+| [Override](override.md) | image | Provides a way to override the URL depending on a specified locale. |
 
 ## Example
 

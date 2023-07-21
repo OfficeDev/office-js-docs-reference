@@ -187,6 +187,8 @@ items:
             uid: 'outlook!Office.SessionData:interface'
           - name: SharedProperties
             uid: 'outlook!Office.SharedProperties:interface'
+          - name: SpamReportingEventArgs
+            uid: 'outlook!Office.SpamReportingEventArgs:interface'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

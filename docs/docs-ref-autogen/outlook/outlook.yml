@@ -72,6 +72,7 @@ interfaces:
   - 'outlook!Office.SeriesTime:interface'
   - 'outlook!Office.SessionData:interface'
   - 'outlook!Office.SharedProperties:interface'
+  - 'outlook!Office.SpamReportingEventArgs:interface'
   - 'outlook!Office.Subject:interface'
   - 'outlook!Office.TaskSuggestion:interface'
   - 'outlook!Office.Time:interface'

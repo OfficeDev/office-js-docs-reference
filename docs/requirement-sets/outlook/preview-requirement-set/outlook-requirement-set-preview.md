@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 07/05/2023
+ms.date: 07/20/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The Outlook add-in API subset of the Office JavaScript API includes objects, methods, properties, and events that you can use in an Outlook add-in.
 
-Preview APIs are subject to change and are not intended for use in a production environment. We recommend that you try them out in test and development environments only. Don't use preview APIs in a production environment or within business-critical documents.
+Preview APIs are subject to change and aren't intended for use in a production environment. We recommend that you try them out in test and development environments only. Don't use preview APIs in a production environment or within business-critical documents.
 
 To use preview APIs:
 
@@ -23,7 +23,7 @@ To use preview APIs:
 The preview requirement set includes all of the features of [requirement set 1.13](../requirement-set-1.13/outlook-requirement-set-1.13.md).
 
 > [!IMPORTANT]
-> This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set is not fully implemented yet, and clients will not accurately report support for it. You should not specify this requirement set in your add-in manifest.
+> This documentation is for a **preview** [requirement set](../outlook-api-requirement-sets.md). This requirement set isn't fully implemented yet, and clients won't accurately report support for it. You shouldn't specify this requirement set in your add-in manifest.
 
 ## Features in preview
 
@@ -74,6 +74,40 @@ Added a new enum `AppointmentSensitivityType` that represents the sensitivity op
 Added method to close a current message being composed with the option to discard unsaved changes.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+<br>
+
+---
+
+---
+
+### Integrated spam reporting
+
+#### [ReportPhishingCommandSurface extension point](/javascript/api/manifest/extensionpoint?view=outlook-js-preview&preserve-view=true#reportphishingcommandsurface-preview)
+
+Added an extension point to activate your spam-reporting add-in in the Outlook ribbon and prevent it from appearing at the end of the ribbon or in the overflow section.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [ReportPhishingCustomization element](../../../manifest/reportphishingcustomization.md)
+
+Added a manifest element to configure the ribbon button and preprocessing dialog of a spam-reporting add-in.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.context.mailbox.item.getAsFileAsync](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-getasfileasync-member(1))
+
+Added a method to get the Base64 encoding of a message.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
+
+Added options to customize a post-processing dialog or configure a spam-reporting add-in to perform additional operations on a reported message, such as deleting it from the inbox.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+To learn more about how to implement the integrated spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
 
 <br>
 

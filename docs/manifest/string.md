@@ -1,17 +1,17 @@
 ---
 title: String element in the manifest file
 description: The String element enables you to specify the text of a Label, Title, or Description element.
-ms.date: 02/07/2023
+ms.date: 07/20/2023
 ms.localizationpriority: medium
 ---
 
 # String element
 
-Defines a string that can be used as the text of one or more **\<Description\>**, **\<Label\>**, or **\<Title\>** elements. 
+Defines a string that can be used as the text of one or more **\<Description\>**, **\<Label\>**, or **\<Title\>** elements.
 
 > [!NOTE]
 >
-> - When the parent element is **\<ShortStrings\>**, the value can be no more than 125 characters. 
+> - When the parent element is **\<ShortStrings\>**, the value can be no more than 125 characters.
 > - When the parent element is **\<LongStrings\>**, the value can be no more than 250 characters.
 
 **Add-in type:** Task pane, Mail
@@ -24,11 +24,18 @@ Defines a string that can be used as the text of one or more **\<Description\>**
 
 For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
 
+## Attributes
+
+| Attribute | Required | Description |
+| :----- | :-----: | :----- |
+| **id** | Yes | Specifies the unique identifier of a string resource. |
+| **DefaultValue** | Yes | Specifies the custom text of a resource. If the parent element is **\<ShortStrings\>**, the text can have a maximum of 125 characters. However, if its parent element is **\<LongStrings\>**, the text can have a maximum of 250 characters. |
+
 ## Child elements
 
-|  Element |  Type  |  Description  |
+| Element | Type | Description |
 |:-----|:-----:|:-----|
-|  [Override](override.md)           |  string   |  Provides a way to override the string depending on a specified locale. |
+| [Override](override.md) | string | Provides a way to override the string depending on a specified locale. |
 
 ## Example
 
