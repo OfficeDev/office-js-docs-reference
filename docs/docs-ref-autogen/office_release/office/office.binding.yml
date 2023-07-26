@@ -57,7 +57,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write(asyncResult.value.document.url);
           });
@@ -86,7 +86,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write(asyncResult.value.id);
           });
@@ -113,7 +113,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Office.context.document.bindings.getByIdAsync("MyBinding", function (asyncResult) { 
               write(asyncResult.value.type); 
           }) 
@@ -189,7 +189,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following code sample calls the select function of the Office object to access the binding
 
@@ -216,7 +216,7 @@ methods:
 
       ```
 
-      ```TypeScript
+      ```javascript
 
       // To add an event handler for the BindingSelectionChanged event of a binding, 
 
@@ -389,7 +389,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showBindingData() {
           Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
@@ -529,7 +529,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function removeEventHandlerFromBinding() {
           Office.select("bindings#MyBinding").removeHandlerAsync(
@@ -641,9 +641,9 @@ methods:
       can't read the added formulas (or any pre-existing formulas) from the binding with the
       <code>Binding.getDataAsync</code> method - it returns only the data displayed in the bound cells.</td> </tr> <tr>
       <td>A <code>TableData</code> object, and the shape of the table matches the bound table</td> <td>The specified set
-      of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If
-      you specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get
-      the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas
+      of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you
+      specify formulas in the <code>TableData</code> object you pass for the *data* parameter, you might not get the
+      results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas
       within a column. To work around this when you want to write *data* that contains formulas to a bound table, try
       specifying the data as an array of arrays (instead of a <code>TableData</code> object), and specify the
       *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
@@ -796,12 +796,12 @@ methods:
       pre-existing formulas) from the binding with the <code>Binding.getDataAsync</code> method - it returns only the
       data displayed in the bound cells.</td> </tr> <tr> <td>A <code>TableData</code> object, and the shape of the table
       matches the bound table</td> <td>The specified set of rows and/or headers are written, if no other data in
-      surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object
-      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
-      feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of
-      a <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
-      </tr> </table>
+      surrounding cells will be overwritten. **Note**: If you specify formulas in the <code>TableData</code> object you
+      pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of
+      Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data*
+      that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a
+      <code>TableData</code> object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr>
+      </table>
 
 
       For Excel on the web:
@@ -837,7 +837,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function setBindingData() {
           Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });

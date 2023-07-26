@@ -26,7 +26,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function showXmlNodeBaseNames() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -61,7 +61,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function showXmlNamespaceUri() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -96,7 +96,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function showXmlNodeType() {
               Office.context.document.customXmlParts.getByIdAsync(
                   "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
@@ -161,7 +161,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showXmlChildNodes() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -243,7 +243,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showXmlNodeValues() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -294,7 +294,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // Get the built-in core properties XML part by using its ID. This results in a call to Word.
 
@@ -409,7 +409,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -489,7 +489,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function setXmlNodeValue() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -541,7 +541,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // Learn how to set the text value of a node in a custom XML part from the following example.
 
@@ -645,7 +645,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function setXmlNodeInnerXml() {
           Office.context.document.customXmlParts.getByIdAsync(

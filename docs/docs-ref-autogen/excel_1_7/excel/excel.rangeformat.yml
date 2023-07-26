@@ -126,7 +126,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-text-orientation.yaml
@@ -280,7 +280,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Select all of the range's format properties.
           await Excel.run(async (context) => { 
               const sheetName = "Sheet1";

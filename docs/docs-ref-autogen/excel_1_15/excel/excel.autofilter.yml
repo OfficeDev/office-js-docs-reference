@@ -74,7 +74,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
@@ -127,7 +127,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
@@ -281,7 +281,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml
@@ -317,7 +317,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-auto-filter.yaml

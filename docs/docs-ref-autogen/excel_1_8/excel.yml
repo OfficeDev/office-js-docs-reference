@@ -739,7 +739,7 @@ functions:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           const myFile = <HTMLInputElement>document.getElementById("file");
           const reader = new FileReader();
 

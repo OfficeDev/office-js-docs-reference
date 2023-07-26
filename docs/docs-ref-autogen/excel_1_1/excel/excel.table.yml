@@ -117,7 +117,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Set table style.
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
@@ -148,7 +148,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -173,7 +173,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -201,7 +201,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -229,7 +229,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -257,7 +257,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -317,7 +317,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Get a table by name.
           await Excel.run(async (context) => { 
               const tableName = 'Table1';

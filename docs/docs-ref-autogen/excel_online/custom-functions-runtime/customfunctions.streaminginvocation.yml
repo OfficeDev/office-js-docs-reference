@@ -26,7 +26,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/16-custom-functions/streaming-function.yaml

@@ -61,7 +61,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.add('Sheet1!A1:E7', true);
           table.load('name');
@@ -114,7 +114,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);
@@ -145,7 +145,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const table = context.workbook.tables.getItemAt(0);
           table.load('name');
@@ -232,7 +232,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Get the number of tables.
           await Excel.run(async (context) => { 
               const tables = context.workbook.tables;
@@ -294,7 +294,7 @@ events:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml

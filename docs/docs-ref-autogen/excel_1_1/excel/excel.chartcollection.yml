@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
       // with sourceData from range "A1:B4" and seriesBy set to "auto".
       await Excel.run(async (context) => {
@@ -158,7 +158,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Get the number of charts.
       await Excel.run(async (context) => { 
           const charts = context.workbook.worksheets.getItem("Sheet1").charts;
@@ -189,7 +189,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
@@ -255,7 +255,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const charts = context.workbook.worksheets.getItem("Sheet1").charts;
               charts.load('items');

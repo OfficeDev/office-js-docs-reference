@@ -140,20 +140,20 @@ functions:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
-      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
-      Supported </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td>
-      Supported </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td>
-      Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td>
-      Supported </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td>
-      Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> Supported
+      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
+      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td><td> </td><td> Supported </td></tr> <tr><td><strong> Project </strong></td><td> Supported
+      </td><td> </td><td> </td><td> </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported
+      </td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td></tr> </table>
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // You can use the value of the InitializationEnumeration to implement different logic for
 
@@ -255,16 +255,16 @@ functions:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
-      browser </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td>
-      Supported </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> </td><td>
-      Supported </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported
+      </td><td> Supported </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> </td><td> Supported
+      </td></tr> </table>
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following code example uses the select function to retrieve a binding with the id "cities" from
 
@@ -310,20 +310,20 @@ functions:
       Add-ins](https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web
-      browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-      <tr><td><strong> Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td>
-      </td></tr> <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported
-      </td><td> Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td>
-      </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported
-      </td><td> Supported </td><td> </td><td> </td></tr> </table>
+      *Supported applications, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Supported </td><td> Supported </td><td> Supported </td><td> </td><td> </td></tr>
+      <tr><td><strong> Outlook </strong></td><td> Supported </td><td> Supported </td><td> </td><td> Supported </td><td>
+      Supported </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Supported </td><td> Supported </td><td>
+      Supported </td><td> </td><td> </td></tr> <tr><td><strong> Project </strong></td><td> Supported </td><td> </td><td>
+      </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Supported </td><td> Supported </td><td>
+      Supported </td><td> </td><td> </td></tr> </table>
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function startUsingShortNamespace() {
           if (typeof Office === 'undefined') {

@@ -61,7 +61,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const pages = ctx.document.pages;
               const pageCount = pages.getCount();
@@ -111,7 +111,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               const activePage = document.getActivePage();
@@ -261,7 +261,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               const pageName = "Page-1";
@@ -373,7 +373,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const document = ctx.document;
               document.startDataRefresh();

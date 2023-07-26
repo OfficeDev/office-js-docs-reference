@@ -31,14 +31,14 @@ properties:
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example checks whether a location is specified in an appointment before it's sent.
 
@@ -91,14 +91,14 @@ properties:
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
-      -->**: Compose
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example checks whether a message's subject is prefixed with "[For Review]" before it's sent.
 

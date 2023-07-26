@@ -59,7 +59,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const numShapesActivePage = activePage.shapes.getCount();

@@ -62,7 +62,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       await Excel.run(async (context) => { 
           const tables = context.workbook.tables;
@@ -119,7 +119,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableColumn = context.workbook.tables.getItem('Table1').columns.getItem(0);
           tableColumn.load('name');
@@ -148,7 +148,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const tableColumn = context.workbook.tables.getItem['Table1'].columns.getItemAt(0);
           tableColumn.load('name');
@@ -234,7 +234,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const tableColumns = context.workbook.tables.getItem('Table1').columns;
               tableColumns.load('items');

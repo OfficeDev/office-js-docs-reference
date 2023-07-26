@@ -40,7 +40,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // This function retrieves the query collection in a workbook, 
           // loads the query items in that collection, and then
           // logs the name of each query to the console.
@@ -64,7 +64,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // This function retrieves the query collection in a workbook and then 
       // logs the number of queries in the collection to the console.
       await Excel.run(async (context) => { 

@@ -46,7 +46,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const application = ctx.document.application;
               application.showToolbars = false;

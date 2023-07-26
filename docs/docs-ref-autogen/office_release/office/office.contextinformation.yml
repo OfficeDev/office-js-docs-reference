@@ -30,7 +30,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           const contextInfo = Office.context.diagnostics;
           console.log("Office application: " + contextInfo.host);
           ```
@@ -51,7 +51,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           const contextInfo = Office.context.diagnostics;
           console.log("Platform: " + contextInfo.platform);
           ```
@@ -72,7 +72,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           const contextInfo = Office.context.diagnostics;
           console.log("Office version: " + contextInfo.version);
           ```

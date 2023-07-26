@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
       // with sourceData from range "A1:B4" and seriesBy set to "auto".
       await Excel.run(async (context) => {
@@ -171,7 +171,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Get the number of charts.
       await Excel.run(async (context) => { 
           const charts = context.workbook.worksheets.getItem("Sheet1").charts;
@@ -202,7 +202,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const lastPosition = context.workbook.worksheets.getItem("Sheet1").charts.count - 1;
           const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
@@ -290,7 +290,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const charts = context.workbook.worksheets.getItem("Sheet1").charts;
               charts.load('items');
@@ -353,7 +353,7 @@ events:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -408,7 +408,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           context.workbook.worksheets.getActiveWorksheet()
               .charts.onAdded.add(function (event) {
@@ -440,7 +440,7 @@ events:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-chart-activated.yaml
@@ -487,7 +487,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           context.workbook.worksheets.getActiveWorksheet()
               .charts.onDeleted.add(function (event) {

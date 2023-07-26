@@ -61,7 +61,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml
@@ -111,7 +111,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-tablecollection-changed.yaml

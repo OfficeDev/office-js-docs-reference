@@ -48,7 +48,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sample Name';
           const worksheet = context.workbook.worksheets.add(wSheetName);
@@ -81,7 +81,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {  
           const activeWorksheet = context.workbook.worksheets.getActiveWorksheet();
           activeWorksheet.load('name');
@@ -159,7 +159,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const worksheets = context.workbook.worksheets;
               worksheets.load('items');

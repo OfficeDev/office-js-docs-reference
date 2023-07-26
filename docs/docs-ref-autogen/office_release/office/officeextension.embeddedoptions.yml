@@ -3,11 +3,7 @@ name: OfficeExtension.EmbeddedOptions
 uid: 'office!OfficeExtension.EmbeddedOptions:interface'
 package: office!
 fullName: OfficeExtension.EmbeddedOptions
-summary: >-
-  Specifies options for a session of a Visio diagram embedded in a SharePoint page. Called by constructor of
-  `EmbeddedSession`<!-- -->. For more information, see [Visio JavaScript API
-  overview](https://learn.microsoft.com/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)<!--
-  -->.
+summary: ''
 remarks: ''
 isPreview: false
 isDeprecated: false

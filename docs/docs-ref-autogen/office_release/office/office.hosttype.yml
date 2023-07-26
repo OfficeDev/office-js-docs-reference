@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   const contextInfo = Office.context.diagnostics;
   console.log("Office application: " + contextInfo.host);
   ```
@@ -23,8 +23,8 @@ fields:
       The Office application is Microsoft Access.
 
 
-      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As
-      an alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
       business solutions for web and mobile devices.
   - name: Excel
     uid: 'office!Office.HostType.Excel:member'

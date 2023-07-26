@@ -37,7 +37,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
@@ -115,7 +115,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // This function would be used as an event handler for the Worksheet.onChanged event.
       async function onWorksheetChanged(eventArgs) {
           await Excel.run(async (context) => {
@@ -159,7 +159,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml

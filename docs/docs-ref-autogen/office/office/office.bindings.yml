@@ -67,15 +67,15 @@ methods:
       property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name),
-      and you try to bind to one these content controls with this method (by specifying its name as the itemName
-      parameter), the operation will fail.
+      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
+      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
+      the operation will fail.
 
 
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
 
@@ -211,9 +211,9 @@ methods:
       property of the content control to the name you want to reference from your code.
 
 
-      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name),
-      and you try to bind to one these content controls with this method (by specifying its name as the itemName
-      parameter), the operation will fail.
+      **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
+      you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
+      the operation will fail.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -257,7 +257,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function addBindingFromPrompt() {
           Office.context.document.bindings.addFromPromptAsync(
@@ -369,7 +369,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function addBindingFromSelection() {
           Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
@@ -525,7 +525,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function displayAllBindingNames() {
           Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -633,7 +633,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function displayBindingType() {
           Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
@@ -737,7 +737,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
           write("Released MyBinding!"); 

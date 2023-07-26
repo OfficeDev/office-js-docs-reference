@@ -61,7 +61,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example creates a single-column table with a header and three rows.
 
@@ -105,7 +105,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example creates a single-column table with a header and three rows.
 

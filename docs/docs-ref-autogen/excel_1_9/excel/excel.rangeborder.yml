@@ -65,7 +65,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Add grid borders around the range.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";

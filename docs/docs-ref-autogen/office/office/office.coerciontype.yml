@@ -105,5 +105,5 @@ fields:
     uid: 'office!Office.CoercionType.XmlSvg:member'
     package: office!
     summary: >-
-      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word,
-      and PowerPoint.
+      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
+      PowerPoint.

@@ -142,7 +142,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -231,7 +231,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
           const app = context.application;
           
@@ -297,7 +297,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
           // Get the current page.
           const page = context.application.getActivePage();
@@ -362,7 +362,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
 
           // Gets the active page.
@@ -435,7 +435,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await OneNote.run(async (context) => {
 
               // Gets the active page.

@@ -92,7 +92,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Returns the Range object that is associated with the name.
       // Returns `null` if the name is not of type Range.
       // Note: This API currently supports only the Workbook scoped items.
@@ -154,7 +154,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const names = context.workbook.names;
               const namedItem = names.getItem('MyRange');

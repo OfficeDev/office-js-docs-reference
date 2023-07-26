@@ -11,40 +11,32 @@ fields:
   - name: manual
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.manual:member'
     package: excel!
-    summary: >-
+    summary: |-
       Manual refresh. Refresh does not get triggered automatically.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Manual"'
   - name: onLoad
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.onLoad:member'
     package: excel!
-    summary: >-
+    summary: |-
       Refresh on workbook load only.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OnLoad"'
   - name: periodic
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.periodic:member'
     package: excel!
-    summary: >-
+    summary: |-
       Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Periodic"'
   - name: unknown
     uid: 'excel!Excel.LinkedDataTypeRefreshMode.unknown:member'
     package: excel!
-    summary: >-
+    summary: |-
       Refresh mode is unknown or unsupported.
 
-
-      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
-      \]
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"Unknown"'

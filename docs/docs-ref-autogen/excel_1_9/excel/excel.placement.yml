@@ -20,7 +20,7 @@ fields:
     uid: 'excel!Excel.Placement.oneCell:member'
     package: excel!
     summary: |-
-      The object is moved with the cells.
+      The object is moved and sized with the cells.
 
       * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"OneCell"'
@@ -28,7 +28,7 @@ fields:
     uid: 'excel!Excel.Placement.twoCell:member'
     package: excel!
     summary: |-
-      The object is moved and sized with the cells.
+      The object is moved with the cells.
 
       * \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"TwoCell"'

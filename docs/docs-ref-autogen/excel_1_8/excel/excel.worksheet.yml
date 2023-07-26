@@ -100,7 +100,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-get-pivottables.yaml
@@ -135,7 +135,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Set worksheet position.
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
@@ -160,7 +160,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Unprotecting a worksheet with unprotect() will remove all 
       // WorksheetProtectionOptions options applied to a worksheet.
       // To remove only a subset of WorksheetProtectionOptions use the 
@@ -191,7 +191,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/gridlines.yaml
@@ -265,7 +265,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/tab-color.yaml
@@ -321,7 +321,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -365,7 +365,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/worksheet-copy.yaml
@@ -442,7 +442,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -469,7 +469,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -509,7 +509,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
@@ -585,7 +585,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
@@ -654,7 +654,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // Use the range address to get the range object.
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
@@ -714,14 +714,13 @@ methods:
     fullName: getUsedRange(valuesOnly)
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an
-      error).
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const wSheetName = 'Sheet1';
           const worksheet = context.workbook.worksheets.getItem(wSheetName);
@@ -809,7 +808,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Get worksheet properties based on sheet name.
           await Excel.run(async (context) => { 
               const wSheetName = 'Sheet1';
@@ -919,7 +918,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onActivated.add(function (event) {
@@ -949,7 +948,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onCalculated.add(function (event) {
@@ -981,7 +980,7 @@ events:
       #### Examples
 
 
-      ```TypeScript
+      ```typescript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet.yaml
@@ -1013,7 +1012,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onDeactivated.add(function (event) {
@@ -1043,7 +1042,7 @@ events:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
           sheet.onSelectionChanged.add(function (event) {

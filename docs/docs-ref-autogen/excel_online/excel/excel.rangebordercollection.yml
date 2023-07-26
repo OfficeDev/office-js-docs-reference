@@ -73,7 +73,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => {
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -128,7 +128,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const sheetName = "Sheet1";
           const rangeAddress = "A1:F8";
@@ -198,7 +198,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const sheetName = "Sheet1";
               const rangeAddress = "A1:F8";

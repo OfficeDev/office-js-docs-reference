@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   const contextInfo = Office.context.diagnostics;
   console.log("Platform: " + contextInfo.platform);
   ```

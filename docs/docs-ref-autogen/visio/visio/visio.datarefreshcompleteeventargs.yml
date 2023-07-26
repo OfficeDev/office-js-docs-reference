@@ -12,7 +12,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   Visio.run(session, function (ctx) {
       const document1 = ctx.document;
       eventResult1 = document1.onDataRefreshComplete.add(

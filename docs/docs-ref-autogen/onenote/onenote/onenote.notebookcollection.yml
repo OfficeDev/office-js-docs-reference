@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
 
           // Get the notebooks that are open in the application instance and have the specified name.
@@ -170,7 +170,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await OneNote.run(async (context) => {
 
               // Get the notebooks that are open in the application instance and have the specified name.

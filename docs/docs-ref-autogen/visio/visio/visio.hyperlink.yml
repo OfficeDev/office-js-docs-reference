@@ -110,7 +110,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const activePage = ctx.document.getActivePage();
               const shape = activePage.shapes.getItem(0);

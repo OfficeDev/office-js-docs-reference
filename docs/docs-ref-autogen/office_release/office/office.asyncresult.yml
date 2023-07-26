@@ -15,7 +15,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   // The following is an example applicable to content and task pane add-ins.
   // The example shows a call to the getSelectedDataAsync method of the Document object.
   Office.context.document.getSelectedDataAsync("text", {
@@ -65,7 +65,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function getDataWithContext() {
               const format = "Your data: ";
               Office.context.document.getSelectedDataAsync(
@@ -131,7 +131,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -164,7 +164,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function getData() {
               Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
                   if (asyncResult.status == Office.AsyncResultStatus.Failed) {
@@ -199,7 +199,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function getData() {
           Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {

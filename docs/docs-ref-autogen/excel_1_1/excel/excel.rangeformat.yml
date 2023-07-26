@@ -144,7 +144,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Select all of the range's format properties.
           await Excel.run(async (context) => { 
               const sheetName = "Sheet1";

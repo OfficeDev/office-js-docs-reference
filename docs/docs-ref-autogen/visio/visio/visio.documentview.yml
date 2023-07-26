@@ -46,7 +46,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           Visio.run(session, function (ctx) {
               const documentView = ctx.document.view;
               documentView.disableHyperlinks();

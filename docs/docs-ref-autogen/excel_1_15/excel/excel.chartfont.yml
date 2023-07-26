@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```typescript
   // Set the chart title font to Calibri, size 10, bold, and the color red.
   await Excel.run(async (context) => { 
       const title = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;

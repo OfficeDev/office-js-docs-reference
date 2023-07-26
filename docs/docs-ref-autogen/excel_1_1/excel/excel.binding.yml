@@ -58,7 +58,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const range = binding.getRange();
@@ -85,7 +85,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const table = binding.getTable();
@@ -112,7 +112,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await Excel.run(async (context) => { 
           const binding = context.workbook.bindings.getItemAt(0);
           const text = binding.getText();
@@ -171,7 +171,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await Excel.run(async (context) => { 
               const binding = context.workbook.bindings.getItemAt(0);
               binding.load('type');

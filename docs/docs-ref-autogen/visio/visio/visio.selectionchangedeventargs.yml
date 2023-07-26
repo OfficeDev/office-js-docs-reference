@@ -12,7 +12,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   let eventResult; // Global variable to store the EventHandlerResult returned on attaching handler.
 
   function AttachHandler() {

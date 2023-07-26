@@ -73,7 +73,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // This function retrieves the query collection in a workbook, 
       // loads the query items in that collection, and then
       // logs the name of each query to the console.
@@ -102,7 +102,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // This function retrieves the query collection in a workbook, 
       // loads the query items in that collection, and then
       // logs the last refresh date of each query to the console.
@@ -133,7 +133,7 @@ properties:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       // This function retrieves the query collection in a workbook, 
       // loads the query items in that collection, and then
       // logs the number of rows loaded in each query.

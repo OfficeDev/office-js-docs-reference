@@ -14,7 +14,7 @@ remarks: >-
   #### Examples
 
 
-  ```TypeScript
+  ```javascript
 
   // Link to full sample:
   https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-icons.yaml

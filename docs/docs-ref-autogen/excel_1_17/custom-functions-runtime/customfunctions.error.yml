@@ -9,7 +9,7 @@ remarks: |-
 
   #### Examples
 
-  ```TypeScript
+  ```javascript
   /**
    * Returns the #NUM! error as part of a 2-dimensional array.
    * @customfunction

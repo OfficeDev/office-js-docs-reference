@@ -91,8 +91,8 @@ methods:
     fullName: getItemOrNullObject(name)
     summary: >-
       Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, then this method returns an
-      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
-      methods and
+      object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods
+      and
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'

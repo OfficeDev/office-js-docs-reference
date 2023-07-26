@@ -32,7 +32,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function showBindingColumnCount() {
               Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
                   write("Column: " + asyncResult.value.columnCount);
@@ -60,7 +60,7 @@ properties:
 
           #### Examples
 
-          ```TypeScript
+          ```javascript
           function showBindingHasHeaders() {
               Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
                   write("Binding has headers: " + asyncResult.value.hasHeaders);
@@ -98,7 +98,7 @@ properties:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showBindingRowCount() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -155,7 +155,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example adds a single column with three rows to a bound table with the id "myTable"
 
@@ -296,7 +296,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function addRowsToTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -386,7 +386,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
 
@@ -441,7 +441,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```javascript
       function deleteAllRowsFromTable() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               const binding = asyncResult.value;
@@ -517,8 +517,7 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -578,8 +577,7 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
     isPreview: false
     isDeprecated: false
     syntax:
@@ -642,8 +640,7 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -712,7 +709,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // Specifying a single target
 
@@ -812,8 +809,7 @@ methods:
 
 
       The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
-      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt;
-      **Format Cells**).
+      dialog box in Excel (Right-click then select **Format Cells**, or **Home** &gt; **Format** &gt; **Format Cells**).
 
 
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
@@ -920,7 +916,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       // The following example shows how to:
 

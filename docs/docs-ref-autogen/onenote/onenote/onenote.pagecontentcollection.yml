@@ -75,7 +75,7 @@ methods:
 
       #### Examples
 
-      ```TypeScript
+      ```typescript
       await OneNote.run(async (context) => {
 
           const page = context.application.getActivePage();
@@ -147,7 +147,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           await OneNote.run(async (context) => {
 
               // Get the collection of pageContent items from the page.

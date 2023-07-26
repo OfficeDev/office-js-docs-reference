@@ -54,7 +54,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function addXMLPart() {
           Office.context.document.customXmlParts.addAsync(
@@ -114,7 +114,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showXMLPartInnerXML() {
           Office.context.document.customXmlParts.getByIdAsync(
@@ -231,7 +231,7 @@ methods:
       #### Examples
 
 
-      ```TypeScript
+      ```javascript
 
       function showXMLPartsInNamespace() {
           Office.context.document.customXmlParts.getByNamespaceAsync(

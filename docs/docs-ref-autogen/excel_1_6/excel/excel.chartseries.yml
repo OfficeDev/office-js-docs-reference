@@ -102,7 +102,7 @@ methods:
 
           #### Examples
 
-          ```TypeScript
+          ```typescript
           // Rename the 1st series of Chart1 to "New Series Name".
           await Excel.run(async (context) => { 
               const chart = context.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
