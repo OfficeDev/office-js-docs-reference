@@ -12,7 +12,7 @@ remarks: |-
 
   #### Examples
 
-  ```javascript
+  ```TypeScript
   Visio.run(session, function (ctx) {
       const document1= ctx.document;
       eventResult2 = document1.onShapeMouseEnter.add(

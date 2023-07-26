@@ -418,7 +418,7 @@ properties:
     package: excel!
     fullName: overlap
     summary: >-
-      For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and
+      For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between -100 and
       100. Applies only to 2-D bar and 2-D column charts.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false

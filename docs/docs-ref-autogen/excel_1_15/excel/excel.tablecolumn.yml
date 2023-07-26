@@ -99,7 +99,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const column = context.workbook.tables.getItem(tableName).columns.getItemAt(2);
@@ -124,7 +124,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const column = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -152,7 +152,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -180,7 +180,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -208,7 +208,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const columns = context.workbook.tables.getItem(tableName).columns.getItemAt(0);
@@ -268,7 +268,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await Excel.run(async (context) => { 
               const tableName = 'Table1';
               const column = context.workbook.tables.getItem(tableName).columns.getItem(0);

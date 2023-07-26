@@ -14,8 +14,8 @@ remarks: >-
 
 
   **[Minimum permission level
-  (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-  **restricted**
+  (Outlook)](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+  -->**: **restricted**
 
 
   **[Applicable Outlook
@@ -39,7 +39,7 @@ properties:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // In this example, consider a button defined in an add-in manifest.
 
@@ -230,7 +230,7 @@ properties:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // Function is used by two buttons:
 
@@ -285,13 +285,13 @@ methods:
 
 
       **[Minimum permission
-      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      **restricted**
+      level](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
+      -->**: **restricted**
 
 
       **[Applicable Outlook
-      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
+      mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
+      -->**: Compose or Read
 
 
       **Note**: The `options` parameter was introduced in Mailbox 1.8.
@@ -300,7 +300,7 @@ methods:
       #### Examples
 
 
-      ```javascript
+      ```TypeScript
 
       // For the following example, the processItem function is
 
@@ -316,7 +316,7 @@ methods:
 
       ```
 
-      ```javascript
+      ```TypeScript
 
       // In this example, the function is registered as an event handler for the OnAppointmentSend event.
 

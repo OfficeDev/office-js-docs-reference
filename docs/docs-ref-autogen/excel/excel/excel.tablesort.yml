@@ -70,7 +70,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await Excel.run(async (context) => { 
           const tableName = 'Table1';
           const table = context.workbook.tables.getItem(tableName);

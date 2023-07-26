@@ -108,7 +108,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -154,7 +154,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -214,7 +214,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -264,7 +264,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -316,7 +316,7 @@ methods:
 
       #### Examples
 
-      ```typescript
+      ```TypeScript
       await OneNote.run(async (context) => {
           const app = context.application;
           const outline = app.getActiveOutline();
@@ -398,7 +398,7 @@ methods:
 
           #### Examples
 
-          ```typescript
+          ```TypeScript
           await OneNote.run(async (context) => {
               const app = context.application;
               const outline = app.getActiveOutline();

@@ -3218,6 +3218,7 @@ Excel.EventTriggerSource,thisLocalAddin,EnumField,Fine,false
 Excel.EventTriggerSource,unknown,EnumField,Fine,false
 Excel.EventType,N/A,Enum,Fine,false
 Excel.EventType,agaveVisualUpdate,EnumField,Fine,false
+Excel.EventType,annotationAdded,EnumField,Fine,false
 Excel.EventType,chartActivated,EnumField,Fine,false
 Excel.EventType,chartAdded,EnumField,Fine,false
 Excel.EventType,chartDeactivated,EnumField,Fine,false
@@ -3230,6 +3231,7 @@ Excel.EventType,linkedDataTypeRefreshModeChanged,EnumField,Fine,false
 Excel.EventType,linkedDataTypeRefreshRequestCompleted,EnumField,Fine,false
 Excel.EventType,linkedWorkbookRefreshCompleted,EnumField,Fine,false
 Excel.EventType,linkedWorkbookWorkbookLinksChanged,EnumField,Fine,false
+Excel.EventType,rangeValuesPreviewDismissed,EnumField,Fine,false
 Excel.EventType,ribbonCommandExecuted,EnumField,Fine,false
 Excel.EventType,shapeActivated,EnumField,Fine,false
 Excel.EventType,shapeDeactivated,EnumField,Fine,false
@@ -3240,6 +3242,7 @@ Excel.EventType,tableFiltered,EnumField,Fine,false
 Excel.EventType,tableSelectionChanged,EnumField,Fine,false
 Excel.EventType,visualChange,EnumField,Fine,false
 Excel.EventType,visualSelectionChanged,EnumField,Fine,false
+Excel.EventType,workbookActionRecorded,EnumField,Fine,false
 Excel.EventType,workbookActivated,EnumField,Fine,false
 Excel.EventType,workbookAutoSaveSettingChanged,EnumField,Fine,false
 Excel.EventType,workbookNavigationObjectChanged,EnumField,Fine,false
@@ -6569,6 +6572,10 @@ Office.AddinCommands.Event,completed(options),Method,Poor,true
 Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
 Office.AddinCommands.EventCompletedOptions,allowEvent,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,errorMessage,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,folderName,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,onErrorDeleteItem,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,postProcessingAction,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,showPostProcessingDialog,Property,Good,true
 Office.AddinCommands.Source,N/A,Class,Fine,false
 Office.AddinCommands.Source,id,Property,Good,true
 Office.AsyncContextOptions,N/A,Class,Fine,false
@@ -6790,6 +6797,7 @@ Office.EventType,ResourceSelectionChanged,EnumField,Fine,false
 Office.EventType,SelectedItemsChanged,EnumField,Good,false
 Office.EventType,SensitivityLabelChanged,EnumField,Good,false
 Office.EventType,SettingsChanged,EnumField,Poor,false
+Office.EventType,SpamReporting,EnumField,Good,false
 Office.EventType,TaskSelectionChanged,EnumField,Fine,false
 Office.EventType,ViewSelectionChanged,EnumField,Fine,false
 Office.File,N/A,Class,Good,false
@@ -7520,14 +7528,14 @@ OfficeExtension.DebugInfo,innerError,Property,Poor,false
 OfficeExtension.DebugInfo,message,Property,Fine,false
 OfficeExtension.DebugInfo,statement,Property,Fine,false
 OfficeExtension.DebugInfo,surroundingStatements,Property,Fine,false
-OfficeExtension.EmbeddedOptions,N/A,Class,Missing,false
+OfficeExtension.EmbeddedOptions,N/A,Class,Good,false
 OfficeExtension.EmbeddedOptions,container,Property,Missing,false
 OfficeExtension.EmbeddedOptions,height,Property,Missing,false
 OfficeExtension.EmbeddedOptions,id,Property,Missing,false
 OfficeExtension.EmbeddedOptions,sessionKey,Property,Missing,false
 OfficeExtension.EmbeddedOptions,timeoutInMilliseconds,Property,Missing,false
 OfficeExtension.EmbeddedOptions,width,Property,Missing,false
-OfficeExtension.EmbeddedSession,N/A,Class,Missing,false
+OfficeExtension.EmbeddedSession,N/A,Class,Good,false
 OfficeExtension.EmbeddedSession,init(),Method,Poor,false
 OfficeExtension.Error,N/A,Class,Fine,false
 OfficeExtension.Error,code,Property,Fine,false
@@ -7550,13 +7558,13 @@ OfficeExtension.ErrorCodes,invalidRequestContext,Property,Missing,false
 OfficeExtension.ErrorCodes,propertyNotLoaded,Property,Missing,false
 OfficeExtension.ErrorCodes,runMustReturnPromise,Property,Missing,false
 OfficeExtension.ErrorCodes,valueNotLoaded,Property,Missing,false
-OfficeExtension.EventHandlerResult,N/A,Class,Missing,false
+OfficeExtension.EventHandlerResult,N/A,Class,Good,false
 OfficeExtension.EventHandlerResult,context,Property,Fine,false
 OfficeExtension.EventHandlerResult,remove(),Method,Poor,false
 OfficeExtension.EventHandlers,N/A,Class,Missing,false
 OfficeExtension.EventHandlers,add(handler),Method,Poor,false
 OfficeExtension.EventHandlers,remove(handler),Method,Poor,false
-OfficeExtension.EventInfo,N/A,Class,Missing,false
+OfficeExtension.EventInfo,N/A,Class,Good,false
 OfficeExtension.EventInfo,eventArgsTransformFunc,Property,Missing,false
 OfficeExtension.EventInfo,registerFunc,Property,Missing,false
 OfficeExtension.EventInfo,unregisterFunc,Property,Missing,false

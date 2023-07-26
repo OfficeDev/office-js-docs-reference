@@ -37,7 +37,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/text/get-set-textrange.yaml

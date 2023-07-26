@@ -23,7 +23,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
@@ -60,7 +60,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
@@ -109,7 +109,7 @@ properties:
       #### Examples
 
 
-      ```typescript
+      ```TypeScript
 
       // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/30-events/events-worksheet-protection.yaml
