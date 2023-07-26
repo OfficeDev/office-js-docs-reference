@@ -8950,7 +8950,7 @@ Office.MessageRead,displayReplyFormAsync(formData,Method,Fine,false
 Office.MessageRead,getAllInternetHeadersAsync(options,Method,Poor,true
 Office.MessageRead,getAllInternetHeadersAsync(callback),Method,Poor,false
 Office.MessageRead,getAsFileAsync(options,Method,Poor,false
-Office.MessageRead,getAsFileAsync(callback),Method,Poor,false
+Office.MessageRead,getAsFileAsync(callback),Method,Poor,true
 Office.MessageRead,getAttachmentContentAsync(attachmentId,Method,Poor,false
 Office.MessageRead,getEntities(),Method,Poor,true
 Office.MessageRead,getEntitiesByType(entityType),Method,Fine,true

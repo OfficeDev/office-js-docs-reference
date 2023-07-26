@@ -2168,6 +2168,26 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Message Read
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/get-eml-format.yaml
+
+      Office.context.mailbox.item.getAsFileAsync((asyncResult) => {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log(`Error encountered during processing: ${asyncResult.error.message}`);
+          return;
+        }
+
+        console.log(asyncResult.value);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:

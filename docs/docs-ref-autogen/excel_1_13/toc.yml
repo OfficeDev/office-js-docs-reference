@@ -1315,6 +1315,9 @@ items:
             href: ../../manifest/longstrings.md
           - name: MobileFormFactor
             href: ../../manifest/mobileformfactor.md
+          - name: MoreInfo
+            href: ../../manifest/moreinfo.md
+            displayName: preview
           - name: OfficeMenu
             href: ../../manifest/officemenu.md
           - name: OfficeTab
@@ -1325,6 +1328,15 @@ items:
             href: ../../manifest/overriddenbyribbonapi.md
           - name: Page
             href: ../../manifest/page.md
+          - name: PreProcessingDialog
+            href: ../../manifest/preprocessingdialog.md
+            displayName: preview
+          - name: ReportPhishingCustomization
+            href: ../../manifest/reportphishingcustomization.md
+            displayName: preview
+          - name: ReportingOptions
+            href: ../../manifest/reportingoptions.md
+            displayName: preview
           - name: Resources
             href: ../../manifest/resources.md
           - name: Runtime
