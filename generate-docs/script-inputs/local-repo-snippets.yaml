@@ -1684,6 +1684,120 @@ Office.AddinCommands.EventCompletedOptions#errorMessage:member:
             }
         });
     }
+Office.AddinCommands.EventCompletedOptions#folderName:member:
+  - |-
+    // The following example handles a SpamReporting event to process a reported spam or phishing message.
+    function onSpamReport(event) {
+        // Gets the Base64-encoded EML format of a reported message.
+        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                return;
+            }
+
+            // Run additional processing operations here.
+
+            /**
+            * Signals that the spam-reporting event has completed processing.
+            * It then moves the reported message to a custom mailbox folder named "Reported Messages"
+            * and shows a post-processing dialog to the user.
+            */
+            const event = asyncResult.asyncContext;
+            event.completed({
+                postProcessingAction: "moveToCustomFolder",
+                folderName: "Reported Messages",
+                showPostProcessingDialog: {
+                    title: "Contoso Spam Reporting",
+                    description: "Thank you for reporting this message.",
+                },
+            });
+        });
+    }
+Office.AddinCommands.EventCompletedOptions#onErrorDeleteItem:member:
+  - |-
+    // The following example handles a SpamReporting event to process a reported spam or phishing message.
+    function onSpamReport(event) {
+        // Gets the Base64-encoded EML format of a reported message.
+        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                return;
+            }
+
+            // Run additional processing operations here.
+
+            /**
+            * Signals that the spam-reporting event has completed processing.
+            * It then deletes the reported message from the mailbox and shows a post-processing dialog
+            * to the user. If an error occurs while the message is being processed, the `onErrorDeleteItem`
+            * property determines whether the message will be deleted.
+            */
+            const event = asyncResult.asyncContext;
+            event.completed({
+                postProcessingAction: "delete",
+                onErrorDeleteItem: true,
+                showPostProcessingDialog: {
+                    title: "Contoso Spam Reporting",
+                    description: "Thank you for reporting this message.",
+                },
+            });
+        });
+    }
+Office.AddinCommands.EventCompletedOptions#postProcessingAction:member:
+  - |-
+    // The following example handles a SpamReporting event to process a reported spam or phishing message.
+    function onSpamReport(event) {
+        // Gets the Base64-encoded EML format of a reported message.
+        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                return;
+            }
+
+            // Run additional processing operations here.
+
+            /**
+            * Signals that the spam-reporting event has completed processing.
+            * It then moves the reported message to the Junk Email folder of the mailbox and shows a
+            * post-processing dialog to the user.
+            */
+            const event = asyncResult.asyncContext;
+            event.completed({
+                postProcessingAction: "moveToSpamFolder",
+                showPostProcessingDialog: {
+                    title: "Contoso Spam Reporting",
+                    description: "Thank you for reporting this message.",
+                },
+            });
+        });
+    }
+Office.AddinCommands.EventCompletedOptions#showPostProcessingDialog:member:
+  - |-
+    // The following example handles a SpamReporting event to process a reported spam or phishing message.
+    function onSpamReport(event) {
+        // Gets the Base64-encoded EML format of a reported message.
+        Office.context.mailbox.item.getAsFileAsync({ asyncContext: event }, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(`Error encountered during message processing: ${asyncResult.error.message}`);
+                return;
+            }
+
+            // Run additional processing operations here.
+
+            /**
+            * Signals that the spam-reporting event has completed processing.
+            * The reported message is left in its current folder, then a post-processing dialog is shown to the user.
+            */
+            const event = asyncResult.asyncContext;
+            event.completed({
+                postProcessingAction: "noMove",
+                showPostProcessingDialog: {
+                    title: "Contoso Spam Reporting",
+                    description: "Thank you for reporting this message.",
+                },
+            });
+        });
+    }
 Office.AddinCommands.Source#id:member:
   - |-
     // In this example, consider a button defined in an add-in manifest.

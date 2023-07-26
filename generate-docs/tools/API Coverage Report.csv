@@ -6572,10 +6572,10 @@ Office.AddinCommands.Event,completed(options),Method,Poor,true
 Office.AddinCommands.EventCompletedOptions,N/A,Class,Fine,false
 Office.AddinCommands.EventCompletedOptions,allowEvent,Property,Good,true
 Office.AddinCommands.EventCompletedOptions,errorMessage,Property,Good,true
-Office.AddinCommands.EventCompletedOptions,folderName,Property,Good,false
-Office.AddinCommands.EventCompletedOptions,onErrorDeleteItem,Property,Good,false
-Office.AddinCommands.EventCompletedOptions,postProcessingAction,Property,Good,false
-Office.AddinCommands.EventCompletedOptions,showPostProcessingDialog,Property,Good,false
+Office.AddinCommands.EventCompletedOptions,folderName,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,onErrorDeleteItem,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,postProcessingAction,Property,Good,true
+Office.AddinCommands.EventCompletedOptions,showPostProcessingDialog,Property,Good,true
 Office.AddinCommands.Source,N/A,Class,Fine,false
 Office.AddinCommands.Source,id,Property,Good,true
 Office.AsyncContextOptions,N/A,Class,Fine,false
@@ -8950,7 +8950,7 @@ Office.MessageRead,displayReplyFormAsync(formData,Method,Fine,false
 Office.MessageRead,getAllInternetHeadersAsync(options,Method,Poor,true
 Office.MessageRead,getAllInternetHeadersAsync(callback),Method,Poor,false
 Office.MessageRead,getAsFileAsync(options,Method,Poor,false
-Office.MessageRead,getAsFileAsync(callback),Method,Poor,false
+Office.MessageRead,getAsFileAsync(callback),Method,Poor,true
 Office.MessageRead,getAttachmentContentAsync(attachmentId,Method,Poor,false
 Office.MessageRead,getEntities(),Method,Poor,true
 Office.MessageRead,getEntitiesByType(entityType),Method,Fine,true
