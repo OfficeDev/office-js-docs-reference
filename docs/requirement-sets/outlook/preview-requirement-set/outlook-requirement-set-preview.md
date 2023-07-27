@@ -155,6 +155,24 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 
 ---
 
+### Smart Alerts: Customize the Don't Send option and override the send mode option at runtime
+
+#### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options for Smart Alerts
+
+Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog and override the send mode option at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)
+
+Add an enum to specify the send mode option that overrides the option set in the manifest at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+---
+
+---
+
 ### Temporarily set the body or subject displayed in read mode
 
 #### [Office.context.mailbox.item.display](/javascript/api/outlook/office.messageread?view=outlook-js-preview&preserve-view=true#outlook-office-messageread-display-member)
