@@ -1,7 +1,7 @@
 ---
 title: Outlook add-in API preview requirement set
 description: Features and APIs that are currently in preview for Outlook add-ins.
-ms.date: 07/20/2023
+ms.date: 07/28/2023
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -101,7 +101,7 @@ Added a method to get the Base64 encoding of a message.
 
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
-#### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options
+#### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options for spam reporting
 
 Added options to customize a post-processing dialog or configure a spam-reporting add-in to perform additional operations on a reported message, such as deleting it from the inbox.
 
@@ -144,6 +144,24 @@ Added `OfficeThemeChanged` event to `Mailbox`.
 **Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 <br>
+
+---
+
+---
+
+### Smart Alerts: Customize the Don't Send option and override the send mode option at runtime
+
+#### [Office.AddinCommands.EventCompletedOptions](/javascript/api/office/office.addincommands.eventcompletedoptions?view=outlook-js-preview&preserve-view=true): Additional options for Smart Alerts
+
+Added additional `event.completed` options to customize the **Don't Send** button of the Smart Alerts dialog and override the send mode option at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
+
+#### [Office.MailboxEnums.SendModeOverride](/javascript/api/outlook/office.mailboxenums.sendmodeoverride)
+
+Add an enum to specify the send mode option that overrides the option set in the manifest at runtime.
+
+**Available in**: Outlook on Windows (Microsoft 365 subscription)
 
 ---
 
